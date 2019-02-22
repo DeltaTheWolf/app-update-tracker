@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/spend_offer_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:background="@drawable/kinecosystem_item_bg_placeholder" android:layout_width="300.0dip" android:layout_height="90.0dip" />
+    <FrameLayout android:id="@id/earn_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/kinecosystem_block_medium_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/kinecosystem_title" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="24" style="@style/KinecosysSubTitle" />
+            <TextView android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="30" style="@style/KinecosysSubTitle" />
+        </LinearLayout>
+        <TextView android:textColor="@color/kinecosystem_bluePrimary" android:gravity="right" android:layout_gravity="right" android:id="@id/amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KinecosysSubTitleMedium" />
+    </FrameLayout>
+</LinearLayout>

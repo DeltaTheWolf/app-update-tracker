@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_divider" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/preference_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:minHeight="66.0dip">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+            <kik.android.widget.RobotoTextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KikTextView.Settings.Title" />
+            <kik.android.widget.RobotoTextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@android:id/title" style="@style/KikTextView.Settings.Description" />
+        </RelativeLayout>
+        <include android:id="@id/kik_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" layout="@layout/kik_switch" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divider" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_below="@id/preference_list_item" android:layout_alignParentBottom="true" />
+</RelativeLayout>

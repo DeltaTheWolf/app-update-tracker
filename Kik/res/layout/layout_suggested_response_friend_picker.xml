@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/suggested_response_background_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_find_friends" />
+    <kik.android.widget.RobotoTextView android:textColor="@color/kik_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MessageBody" />
+</LinearLayout>

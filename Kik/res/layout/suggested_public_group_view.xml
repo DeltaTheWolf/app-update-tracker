@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggested_public_group_view_0" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.MaxSizeFrameLayout android:layout_gravity="center_horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="@dimen/chat_suggestion_image_size" android:maxHeight="@dimen/chat_suggestion_image_size">
+        <FrameLayout android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/circular_prof_pic_selector">
+            <ImageView android:tag="binding_1" android:background="@drawable/circular_button_outline_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        </FrameLayout>
+    </kik.android.widget.MaxSizeFrameLayout>
+    <kik.android.widget.RobotoTextView android:gravity="center" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" style="@style/KikTextView.PublicGroups.QuickSearch" />
+</LinearLayout>

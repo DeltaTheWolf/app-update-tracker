@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/image_default_dialog_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" />
+        <kik.android.widget.RobotoTextView android:gravity="center_horizontal" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" style="@style/KikTextView.Dialog.Title" />
+        <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/message_attribution_color_darkened" android:gravity="center_horizontal" android:id="@id/tipping_message_textview" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+    </LinearLayout>
+</ScrollView>

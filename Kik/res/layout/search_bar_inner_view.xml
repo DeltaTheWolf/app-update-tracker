@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/search_bar_search_icon" android:background="?selectableItemBackground" android:padding="12.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_search_searchbar" android:scaleType="center" />
+    <kik.android.widget.RobotoEditText android:textSize="16.0sp" android:textColor="@color/text_primary" android:textColorHint="@color/gray_3" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_bar_search_field" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" android:inputType="textVisiblePassword" android:imeOptions="actionDone" />
+    <ImageView android:id="@id/search_bar_clear_search" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_close" android:scaleType="center" android:layout_centerVertical="true" />
+</merge>

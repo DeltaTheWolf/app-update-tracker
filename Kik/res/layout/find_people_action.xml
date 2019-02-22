@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/find_people_action_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" android:scaleType="center" />
+    <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/gray_5" android:id="@id/find_people_action_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/find_people_action_icon" android:layout_centerVertical="true" />
+    <include android:id="@id/action_divider_short" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_toRightOf="@id/find_people_action_icon" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+    <include android:id="@id/action_divider_long" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_toRightOf="@id/find_people_action_icon" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+</RelativeLayout>

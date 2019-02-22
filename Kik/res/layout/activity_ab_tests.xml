@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/chat_info_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/profile_button_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:background="@drawable/cell_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/padding" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <ListView android:id="@id/ab_tests_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/native_topbar_height" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/list_divider_color" android:dividerHeight="0.0px" />
+    <RelativeLayout android:id="@id/topbar" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentTop="true">
+        <include layout="@layout/kik_back_button" />
+        <kik.android.widget.RobotoTextView android:gravity="center" android:id="@id/laforge_button" android:background="?selectableItemBackgroundBorderless" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="LaForge" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/top_shadow" android:background="@drawable/nav_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/native_topbar_height" android:layout_alignParentLeft="true" />
+</RelativeLayout>

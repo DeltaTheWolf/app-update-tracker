@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/talk_to_navbar" android:background="@color/appbar_background" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/kik_back_button" />
+        <kik.android.chat.view.TransparentSearchBarViewImpl android:id="@id/inline_search_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-32.0dip" android:hint="@string/find_people_search_placeholder" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <kik.android.widget.TransparentListView android:id="@id/compose_list" android:paddingTop="@dimen/search_bar_minimum_height" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/talk_to_navbar" android:smoothScrollbar="true" style="@style/KikListView" />
+    <kik.android.chat.view.SearchBarViewImpl android:id="@id/floating_search_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/find_people_search_placeholder" android:layout_below="@id/talk_to_navbar" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/compose_list" android:layout_alignTop="@id/compose_list" android:layout_alignRight="@id/compose_list" android:layout_alignBottom="@id/compose_list" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_empty_find_by_username" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/talk_to_navbar" layout="@layout/contact_list_empty_view" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_below="@id/talk_to_navbar" layout="@layout/navbar_underline" />
+    <LinearLayout android:orientation="vertical" android:id="@id/try_find_people" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/compose_list">
+        <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/contacts_username_text" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/talk_to_inline_tray_table_footer_helper_text" />
+    </LinearLayout>
+</RelativeLayout>

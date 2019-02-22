@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/chat_group_profile_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:tag="binding_1" android:background="@color/gray_1" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/kik_databound_navbar" />
+    </FrameLayout>
+    <include layout="@layout/list_divider" />
+    <android.support.v4.widget.NestedScrollView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/circle_white" android:padding="2.0dip" android:focusableInTouchMode="true" android:layout_width="@dimen/contact_image_size_large" android:layout_height="@dimen/contact_image_size_large" android:layout_marginTop="24.0dip">
+                <FrameLayout android:tag="binding_4" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/circular_prof_pic_selector">
+                    <kik.android.widget.CircleCroppedImageView android:layout_gravity="center_horizontal" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" app:nullBackground="@drawable/img_profile_large" />
+                </FrameLayout>
+                <kik.android.widget.CircleCroppedImageView android:layout_gravity="center_horizontal" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:textSize="20.0sp" android:textColor="@color/text_primary" android:ellipsize="end" android:gravity="center" android:id="@id/profile_name" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:maxLines="1" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_tertiary" android:ellipsize="end" android:gravity="center" android:id="@id/profile_username" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <include android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" layout="@layout/layout_group_bio" />
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_marginTop="24.0dip" layout="@layout/list_divider" />
+            <kik.android.widget.SeparatorLineRecyclerView android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+            <include layout="@layout/list_divider" />
+            <kik.android.widget.AutoResizeRecyclerGridView android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="5.0dip" android:columnWidth="75.0dip" android:nestedScrollingEnabled="false" app:layoutManager="android.support.v7.widget.GridLayoutManager" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/you_are_not_a_member_of_this_group" />
+</LinearLayout>

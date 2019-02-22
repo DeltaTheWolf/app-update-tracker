@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="bottom|center" android:id="@id/scan_spinner" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginBottom="200.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/spinner_loading" android:indeterminateDuration="1000" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/scan_load_error_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="200.0dip" android:src="@drawable/error" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/code_info_holder" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/scan_load_error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="Oh No!" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/scan_load_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/scan_code_having_troubles_reading" />
+        <TextView android:textSize="17.0sp" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/scan_load_error_retry_button" android:background="@xml/button_rounded_white" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_marginLeft="40.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="30.0dip" android:text="@string/scan_code_try_again" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kik.android.widget.BubbleFramelayout android:orientation="vertical" android:id="@id/bubble" android:tag="layout/attachment_message_bubble_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:isBottomRounded="true" app:isOutgoing="true" app:isPreview="true" app:isTopRounded="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/message_content_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="center|right|top" android:id="@id/bubble_remove" android:tag="binding_1" android:background="@drawable/delete_photo_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" />
+</kik.android.widget.BubbleFramelayout>

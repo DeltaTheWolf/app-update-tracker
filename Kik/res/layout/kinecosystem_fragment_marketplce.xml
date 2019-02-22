@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/earn_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.52">
+        <LinearLayout android:orientation="vertical" android:id="@id/earn_title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/kinecosystem_main_margin" android:layout_marginTop="@dimen/kinecosystem_block_margin" android:layout_marginRight="@dimen/kinecosystem_main_margin">
+            <TextView android:id="@id/earn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/kinecosystem_tiny_margin" android:text="@string/kinecosystem_earn" style="@style/KinecosysTitleTextMedium" />
+            <TextView android:id="@id/earn_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KinecosysSubTitle" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/earn_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/kinecosystem_main_small_margin" />
+    </LinearLayout>
+    <View android:background="@color/kinecosystem_gray_darker" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/spend_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.48">
+        <LinearLayout android:orientation="vertical" android:id="@id/spend_title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/kinecosystem_main_margin" android:layout_marginTop="@dimen/kinecosystem_block_margin" android:layout_marginRight="@dimen/kinecosystem_main_margin">
+            <TextView android:id="@id/spend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/kinecosystem_tiny_margin" android:text="@string/kinecosystem_spend" style="@style/KinecosysTitleTextMedium" />
+            <TextView android:id="@id/spend_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KinecosysSubTitle" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/spend_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/kinecosystem_main_small_margin" />
+    </LinearLayout>
+</LinearLayout>

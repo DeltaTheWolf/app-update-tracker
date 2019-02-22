@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/mute_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/chat_info_mute_icon" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/ic_chat_info_bell" android:scaleType="centerInside" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0">
+        <kik.android.widget.RobotoTextView android:id="@id/mute_primary" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_conversations_notifications" style="@style/KikTextView.ChatInfo.IconButton.Primary" />
+        <kik.android.widget.RobotoTextView android:id="@id/mute_secondary" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KikTextView.ChatInfo.IconButton.Secondary" />
+    </LinearLayout>
+    <android.support.v7.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@id/mute_conversation_toggle" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" theme="@style/CompoundButtonTheme" />
+</LinearLayout>

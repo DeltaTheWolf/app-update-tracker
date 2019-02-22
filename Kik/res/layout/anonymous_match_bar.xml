@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kik.android.widget.AnonymousMatchBarView android:tag="layout/anonymous_match_bar_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/meet_new_people_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:tag="binding_1" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/meet_new_people_bar_height">
+        <ImageView android:id="@id/meet_new_people_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/meet_new_people_bar_icon_separation" android:src="@drawable/bounding_box" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/meet_new_people_text" app:layout_constraintTop_toTopOf="parent" />
+        <kik.android.widget.RobotoTextView android:textSize="@dimen/meet_new_people_bar_text_size" android:textColor="@color/kik_blue" android:id="@id/meet_new_people_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_meet_new_people" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toRightOf="@id/meet_new_people_icon" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</kik.android.widget.AnonymousMatchBarView>

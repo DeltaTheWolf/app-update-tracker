@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/search_container" android:tag="layout/list_entry_public_group_search_searching_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/contacts_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/progress_bar" layout="@layout/search_progress_bar" />
+    <kik.android.widget.EllipsizingTextView android:layout_gravity="center_vertical" android:id="@id/search_text" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="16.0dip" android:text="@string/searching___" style="@style/KikTextView.ContactListEntry.Status" />
+</LinearLayout>

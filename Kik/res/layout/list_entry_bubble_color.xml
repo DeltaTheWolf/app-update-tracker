@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/contacts_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/color_swatch" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <kik.android.widget.RobotoTextView android:id="@id/color_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_toLeftOf="@id/color_selection_indicator" android:layout_toRightOf="@id/color_swatch" android:layout_centerInParent="true" style="@style/KikTextView.Settings.Title" />
+    <RadioButton android:id="@id/color_selection_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/KikRadioButtonStyle.List" />
+    <include android:id="@id/color_divider_short" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_alignLeft="@id/color_name" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+    <include android:id="@id/color_divider_long" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+</RelativeLayout>

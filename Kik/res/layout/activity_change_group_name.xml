@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/topbar" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height">
+        <include android:id="@id/back_button_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/kik_back_button" />
+        <kik.android.widget.KikTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/confirm_name_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/save" style="@style/KikTextView.Toolbar.Action" />
+    </LinearLayout>
+    <include layout="@layout/navbar_underline" />
+    <kik.android.chat.view.ValidateableInputView android:id="@id/new_groupname_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/group_name_hint" android:maxLength="100" android:inputType="textCapSentences" android:imeOptions="actionGo" />
+</LinearLayout>

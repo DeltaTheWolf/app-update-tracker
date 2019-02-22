@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/gallery_list_item_0" android:background="@color/gray_2" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/gallery_image" android:tag="binding_1" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground">
+        <ImageView android:layout_gravity="center" android:tag="binding_2" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|right|top" android:tag="binding_3" android:background="@drawable/gallery_outline_selected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|right|top" android:tag="binding_4" android:background="@color/kik_blue" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    </FrameLayout>
+    <FrameLayout android:tag="binding_5" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/video_bar" android:tag="binding_6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="19.0dip">
+        <ImageView android:layout_gravity="center|left" android:id="@id/gallery_video_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/galleryvideoicon" android:scaleType="center" />
+        <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center|right" android:id="@id/video_duration" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+    </FrameLayout>
+</FrameLayout>

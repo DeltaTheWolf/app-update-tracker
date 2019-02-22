@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_send_to_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/empty_view_used_for_list_anim" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" />
+    <kik.android.widget.TransparentListView android:id="@id/conversation_list" android:tag="binding_1" android:paddingTop="@dimen/search_bar_minimum_height" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_below="@id/empty_view_used_for_list_anim" android:smoothScrollbar="true" style="@style/KikListView" />
+    <FrameLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/navigation_bar" android:tag="binding_2" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/layout_back" layout="@layout/kik_back_button" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_below="@id/navigation_bar" layout="@layout/navbar_underline" />
+    <ImageView android:id="@id/search_bar_background_image" android:background="@drawable/floating_search_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/search_bar_minimum_height" android:layout_below="@id/navigation_bar" />
+    <kik.android.chat.view.TransitionableSearchBarViewImpl android:id="@id/floating_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/chats_search_hint" android:layout_below="@id/navigation_bar" android:inputType="textShortMessage" />
+    <kik.android.widget.ChatSearchRecyclerView android:id="@id/chat_search_results" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/navigation_bar" android:overScrollMode="never" />
+    <FrameLayout android:id="@id/empty_view_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/floating_search_bar">
+        <kik.android.widget.RobotoTextView android:gravity="center" android:id="@id/empty_view_text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/you_have_no_conversations" style="@style/KikTextView.EmptyState.Title" />
+    </FrameLayout>
+</RelativeLayout>

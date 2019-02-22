@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/gallery_widget_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/gray_5" android:layout_gravity="center" android:id="@id/no_photos_text" android:tag="binding_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_no_photos" />
+    <kik.android.widget.GalleryRecyclerView android:layout_gravity="center" android:id="@id/gallery_recycler_view" android:tag="binding_2" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:columnWidth="100.0dip" />
+    <kik.android.widget.AnimatedImageView android:layout_gravity="bottom|center|right" android:id="@id/os_gallery" android:tag="binding_3" android:background="@drawable/gallery_maximize_active" android:padding="12.0dip" android:visibility="gone" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="14.0dip" android:src="@drawable/ic_gallery_maximize" app:actionDownAnimatorId="@animator/gallery_os_action_down_animator" app:actionUpAnimatorId="@animator/gallery_os_action_up_animator" />
+</FrameLayout>

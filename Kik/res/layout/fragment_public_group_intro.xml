@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/img_public_groups_intro_half_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <kik.android.widget.RobotoTextView android:textSize="24.0sp" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/public_group_intro_title" />
+        <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:paddingLeft="32.0dip" android:paddingTop="8.0dip" android:paddingRight="32.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/public_group_intro_body" style="@style/KikTextView" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" layout="@layout/list_divider" />
+        <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:id="@id/public_group_intro_body" android:paddingLeft="28.0dip" android:paddingTop="24.0dip" android:paddingRight="28.0dip" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/public_group_intro_reminder_body" style="@style/KikTextView" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/public_group_intro_accept_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/title_got_it" style="@style/KikButton.Hero" />
+    </LinearLayout>
+</ScrollView>

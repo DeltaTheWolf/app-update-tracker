@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_your_account_info"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.preferences.UsernamePreference android:title="@string/title_kik_username" android:key="kik.username" kik:pref_divider="none" />
+    <kik.android.widget.preferences.KikEmailPreference android:title="@string/title_email" android:key="kik.change.email" android:inputType="textEmailAddress" kik:pref_divider="top" />
+    <kik.android.widget.preferences.NamePreference android:enabled="true" android:title="@string/title_name" android:key="kik.name" kik:pref_divider="top" />
+    <kik.android.widget.preferences.PasswordPreference android:enabled="true" android:title="@string/change_password" android:key="kik.change.password" kik:pref_divider="full_bottom|top" />
+    <kik.android.widget.preferences.KikEmptyPreference android:enabled="false" />
+    <kik.android.widget.preferences.ResetKikPreference android:title="@string/title_logout" android:key="kik.reset.app" kik:pref_divider="full_bottom|full_top" />
+    <kik.android.widget.preferences.AbTestsPreference android:title="A/B Tests" android:key="kik.abtests" kik:pref_divider="full_bottom" />
+</PreferenceScreen>

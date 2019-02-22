@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/contact_not_found_container" android:tag="layout/list_entry_public_group_search_not_found_0" android:background="@drawable/list_background_bottom_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/contacts_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/failed_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:src="@drawable/ic_exclamation_mark" android:scaleType="center" />
+    <kik.android.widget.EllipsizingTextView android:layout_gravity="center_vertical" android:id="@id/contact_not_found_text" android:tag="binding_1" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" style="@style/KikTextView.ContactListEntry.Status" />
+</LinearLayout>

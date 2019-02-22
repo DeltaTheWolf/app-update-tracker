@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:tag="layout/layout_content_cover_0" android:background="@color/content_reveal_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/content_footer" android:layout_alignTop="@id/content_image" android:layout_alignRight="@id/content_righter" android:layout_alignBottom="@id/content_footer" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="16.0dip" android:text="@string/media_blur_overlay" android:drawableTop="@drawable/icon_blurmedia_32" android:drawablePadding="6.0dip" />
+            <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/gray_6" android:gravity="center" android:layout_gravity="center" android:background="@drawable/reveal_text_background" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_reveal" android:textAllCaps="true" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

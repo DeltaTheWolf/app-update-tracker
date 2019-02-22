@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/sticker_widget_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.StickerPackViewPager android:id="@id/sticker_view_pager" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/sticker_tab_bar_height" />
+    <FrameLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/sticker_tab_bar" android:layout_width="fill_parent" android:layout_height="@dimen/sticker_tab_bar_height">
+        <ImageView android:layout_gravity="left" android:id="@id/sticker_shop_button" android:tag="binding_2" android:background="@drawable/sticker_shop_background" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="@dimen/sticker_tab_length" android:layout_height="@dimen/sticker_tab_bar_height" android:src="@drawable/ic_add" />
+        <kik.android.widget.StickerRecyclerView android:layout_gravity="end" android:orientation="horizontal" android:id="@id/sticker_tab_bar_recycler_view" android:tag="binding_3" android:background="@drawable/sticker_tab_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/sticker_tab_bar_height" android:layout_marginLeft="@dimen/sticker_tab_length" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        <kik.android.widget.IndicatorBadge android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sticker_shop_badge" android:tag="binding_4" android:paddingLeft="3.5dip" android:paddingRight="3.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_marginTop="2.0dip" android:includeFontPadding="false" app:minLength="15.0dip" />
+    </FrameLayout>
+</FrameLayout>

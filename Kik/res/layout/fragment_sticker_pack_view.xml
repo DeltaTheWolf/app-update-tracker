@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_sticker_pack_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.StickerRecyclerView android:layout_gravity="center" android:id="@id/sticker_recycler_view" android:tag="binding_1" android:paddingLeft="@dimen/sticker_recycler_view_horizontal_padding" android:paddingTop="@dimen/sticker_recycler_view_vertical_padding" android:paddingRight="@dimen/sticker_recycler_view_horizontal_padding" android:paddingBottom="@dimen/sticker_recycler_view_vertical_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:columnWidth="@dimen/sticker_cell_length" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_4" android:layout_gravity="center" android:id="@id/empty_recycler_view" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

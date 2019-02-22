@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_user_profile_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView android:orientation="vertical" android:id="@id/user_profile_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/background_photo_layout" />
+                <LinearLayout android:orientation="vertical" android:paddingBottom="24.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_gravity="center_horizontal" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@id/profile_pic_container" android:tag="binding_3" android:background="@drawable/circular_profile_outline_double_stroke" android:padding="2.0dip" android:focusable="true" android:layout_width="112.0dip" android:layout_height="112.0dip" android:layout_marginTop="108.0dip" android:foreground="@drawable/circular_prof_pic_selector">
+                            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/set_profile_pic" android:tag="binding_4" android:background="@drawable/circular_button_outline" android:paddingTop="32.0dip" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_set_photo" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/kik_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_photo" />
+                            </LinearLayout>
+                            <kik.android.widget.CircleCroppedImageView android:id="@id/profile_pic" android:tag="binding_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                        </FrameLayout>
+                        <kik.android.widget.EmojiStatusCircleView android:layout_gravity="bottom|center|right" android:id="@id/emoji_status_circle_view" android:tag="binding_6" style="@style/KikEmojiStatus.Large" />
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/profile_username_button" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/text_primary" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/profile_name" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:maxLines="1" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/text_tertiary" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/profile_username" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:maxLines="1" />
+                        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" layout="@layout/layout_days_on_kik" />
+                        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" layout="@layout/layout_current_user_interests" />
+                        <include layout="@layout/layout_current_user_bio" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.nhaarman.supertooltips.ToolTipRelativeLayout android:id="@id/tooltip_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <include layout="@layout/layout_preferences_root" />
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    <include layout="@layout/user_profile_navbar" />
+</FrameLayout>

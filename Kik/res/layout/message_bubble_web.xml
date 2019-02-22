@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kik.android.widget.BubbleFramelayout android:tag="layout/message_bubble_web_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:isBottomClipped="false" app:isHidden="false" app:isPreview="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.WubbleView android:id="@id/web_view" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:tag="binding_3" android:background="@color/wubble_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <kik.android.widget.ProgressWheel android:theme="@style/KikProgressWheel" android:layout_gravity="center" android:id="@id/progress_widget" android:tag="binding_4" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+</kik.android.widget.BubbleFramelayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <android.support.percent.PercentRelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/kik_logo_welcome" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/flat_kik_logo" />
+        <kik.android.widget.RobotoTextView android:textSize="23.0dip" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:id="@id/welcome_subheader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_with_friends" android:layout_below="@id/kik_logo_welcome" kik:font_type="light" kik:layout_marginBottomPercent="12.0%" kik:layout_marginTopPercent="2.9999971%" />
+        <LinearLayout android:orientation="vertical" android:id="@id/welcome_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/welcome_subheader">
+            <Button android:id="@id/register_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/title_sign_up" android:layout_weight="1.0" style="@style/KikButton.Hero" />
+            <Button android:id="@id/login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/title_log_in_caps" android:layout_weight="1.0" style="@style/KikButton.Classic.Bordered" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/text_peripheral" android:gravity="center_horizontal" android:layout_gravity="bottom" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/made_with_love_in_waterloo" android:layout_alignParentBottom="true" kik:layout_widthPercent="100.0%" />
+</FrameLayout>

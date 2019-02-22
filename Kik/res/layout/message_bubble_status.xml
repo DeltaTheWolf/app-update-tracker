@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/message_bubble_status_0" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/contact_image" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_below="@id/message_timestamp">
+        <kik.android.widget.CirclePopupMenuImageView android:id="@id/sender_image" android:tag="binding_1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/admin_badge" android:tag="binding_2" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <kik.android.widget.BotProfileImageBadgeView android:id="@id/message_sender_verified_star" android:tag="binding_3" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_alignRight="@id/sender_image" android:layout_alignBottom="@id/sender_image" />
+    </RelativeLayout>
+    <kik.android.widget.LinkifiedTextView android:textSize="@dimen/message_timestamp_size" android:gravity="center_horizontal" android:layout_gravity="center" android:tag="binding_4" android:paddingTop="6.0dip" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

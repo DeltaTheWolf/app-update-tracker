@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/list_background_bottom_border" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/contacts_list_item_height" style="@style/KikSelectableCellStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:src="@drawable/ic_bot_grey" />
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/text_secondary" android:gravity="center_vertical" android:id="@id/list_entry_bot_text" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="60.0dip" android:text="@string/inline_bot_no_results" android:maxLines="1" />
+</FrameLayout>

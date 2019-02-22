@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:tag="layout/activity_view_picture_0" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/video_play_icon" android:background="@drawable/largevideoplay_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:maxWidth="46.0dip" android:maxHeight="46.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.kik.cache.ContentImageView android:id="@id/image_display_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    <FrameLayout android:id="@id/video_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <VideoView android:layout_gravity="center" android:id="@id/video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </FrameLayout>
+    <com.kik.cache.ProfileImageView android:id="@id/contact_display_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    <kik.android.widget.GlideImageView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <FrameLayout android:gravity="top" android:orientation="horizontal" android:id="@id/top_bar" android:background="#d9000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentTop="true">
+        <FrameLayout android:gravity="left" android:orientation="horizontal" android:id="@id/back_button" android:background="?selectableItemBackgroundBorderless" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/native_topbar_height">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/material_navbar_button_width" android:layout_height="@dimen/material_navbar_button_height" android:src="@drawable/back_white" android:scaleType="center" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="@dimen/native_topbar_height">
+            <ImageButton android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/save_button" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="@dimen/native_topbar_height" android:src="@drawable/save_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/overflow_menu" android:tag="binding_2" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="@dimen/native_topbar_height" android:layout_height="@dimen/native_topbar_height" android:scaleType="center" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_marginLeft="56.0dip" android:layout_marginRight="56.0dip">
+            <kik.android.widget.RobotoTextView android:textSize="@dimen/topbar_text_size" android:textColor="@color/top_bar_text_color_white" android:ellipsize="end" android:gravity="center|left" android:id="@id/label_chat_title" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:singleLine="true" android:layout_toLeftOf="@id/save_button" android:layout_toRightOf="@id/back_button" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:id="@id/open_button" android:background="@xml/open_button_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="26.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/open_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/default_web_icon" android:scaleType="centerInside" />
+        <kik.android.widget.EllipsizingTextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/open_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

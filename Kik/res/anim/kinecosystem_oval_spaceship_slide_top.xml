@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:duration="1200" android:repeatCount="infinite" android:fromAlpha="1.0" android:toAlpha="0.0" />
+    <translate android:duration="1200" android:repeatCount="infinite" android:fromYDelta="0.0%" android:toYDelta="-100.0%" />
+    <scale android:duration="1000" android:pivotX="4.999995%p" android:pivotY="4.999995%p" android:startOffset="200" android:repeatCount="infinite" android:fromXScale="1.0" android:toXScale="0.9" android:fromYScale="1.0" android:toYScale="0.9" />
+</set>

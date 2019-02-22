@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/topbar" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentTop="true">
+        <include layout="@layout/kik_back_button" />
+    </LinearLayout>
+    <include layout="@layout/navbar_underline" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <kik.android.widget.RobotoTextView android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/request_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="24.0dip" />
+            <include layout="@layout/list_divider" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_link" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <kik.android.widget.RectNetworkedImageView android:id="@id/app_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/iconmask" android:scaleType="centerCrop" app:nullBackground="@drawable/app_drawer_browser" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                            <kik.android.widget.RobotoTextView android:id="@id/app_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/KikTextView.ChatList.ConversationName" />
+                            <kik.android.widget.RobotoTextView android:id="@id/app_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:drawableLeft="@drawable/ic_lock_small" android:drawablePadding="4.0dip" style="@style/KikTextView.ChatList.MessagePreview" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <include android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_marginLeft="69.0dip" layout="@layout/list_divider" />
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.kik.cache.ContactImageView android:id="@id/profile_pic" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerVertical="true" app:nullBackground="@drawable/img_profile_medium" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                            <kik.android.widget.RobotoTextView android:textSize="17.0sp" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@id/display_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/KikTextView.ChatList.ConversationName" />
+                            <kik.android.widget.RobotoTextView android:id="@id/username_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" style="@style/KikTextView.ChatList.MessagePreview" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/list_divider" />
+            <Button android:gravity="center" android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:text="@string/allow_and_continue" style="@style/KikButton.Hero" />
+            <kik.android.widget.RobotoTextView android:gravity="center_horizontal" android:id="@id/tos_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" style="@style/KikTextView.Terms" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/search_container" android:tag="layout/chats_search_username_searching_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/chats_search_cell_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center" android:id="@id/progress_bar" app:cpv_animAutostart="true" app:cpv_color="@color/kik_blue" app:cpv_indeterminate="true" app:cpv_thickness="2.0dip" style="@style/ChatsSearchUsernameDrawable" />
+    <kik.android.widget.EllipsizingTextView android:id="@id/search_text" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/searching___" style="@style/KikTextView.ChatSearch.UsernameSearch.Failure" />
+</LinearLayout>

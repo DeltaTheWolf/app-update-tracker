@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_privacy" android:key="@string/title_privacy"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.preferences.BlockListPreference android:enabled="true" android:title="@string/title_block_list" android:key="kik.open.block.list" android:summary="@string/block_list_description" kik:pref_divider="none" />
+    <kik.android.widget.preferences.UsePhoneContactsPreference android:enabled="true" android:title="@string/find_people_use_phone_contacts" android:key="@string/find_people_use_phone_contacts" android:summary="@string/sync_contacts_to_find_friends" kik:pref_divider="top" />
+    <kik.android.widget.preferences.LetFriendsFindMePreference android:enabled="true" android:title="@string/let_friends_find_me" android:key="@string/let_friends_find_me" android:summary="@string/people_will_find_me" kik:pref_divider="full_bottom|top" />
+</PreferenceScreen>

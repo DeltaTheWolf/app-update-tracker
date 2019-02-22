@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/dialog_kik_gran_report_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <kik.android.widget.RobotoTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/gran_report_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/report_spam_description" style="@style/KikTextView.Dialog.Message" />
+        <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gran_report_option1_layout" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+                <kik.android.widget.RobotoTextView android:id="@id/gran_report_option1_text" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" style="@style/KikTextView.Dialog.ReportOption" />
+                <RadioButton android:id="@id/option1_radio_btn" android:tag="binding_3" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" style="@style/KikRadioButtonStyle.List" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gran_report_option2_layout" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+                <kik.android.widget.RobotoTextView android:id="@id/gran_report_option2_text" android:tag="binding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" style="@style/KikTextView.Dialog.ReportOption" />
+                <RadioButton android:id="@id/option2_radio_btn" android:tag="binding_6" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/KikRadioButtonStyle.List" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gran_report_option3_layout" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+                <kik.android.widget.RobotoTextView android:id="@id/gran_report_option3_text" android:tag="binding_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" style="@style/KikTextView.Dialog.ReportOption" />
+                <RadioButton android:id="@id/option3_radio_btn" android:tag="binding_9" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/KikRadioButtonStyle.List" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/gran_report_hist_layout" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/half_dp" layout="@layout/list_divider" />
+            <LinearLayout android:gravity="center_vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+                <kik.android.widget.RobotoTextView android:id="@id/gran_report_history_text" android:tag="binding_11" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" style="@style/KikTextView.Dialog.ReportOption" />
+                <CheckBox android:id="@id/gran_report_checkbox" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" style="@style/KikCheckboxStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

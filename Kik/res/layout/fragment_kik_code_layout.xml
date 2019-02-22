@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/tell_a_friend" android:paddingRight="4.0dip" android:visibility="invisible" android:clickable="true" android:duplicateParentState="false" android:layout_width="@dimen/material_navbar_button_width" android:layout_height="@dimen/native_topbar_height" android:src="@xml/tell_a_friend_white_selector" android:scaleType="center" />
+    <FrameLayout android:id="@id/code_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="200.0dip">
+        <kik.android.widget.KikCodeBackgroundImageView android:id="@id/fake_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" />
+        <kik.android.widget.KikFinderCodeImageView android:id="@id/code_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/code_spinner" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/spinner_loading" android:indeterminateDuration="1000" />
+        <ImageView android:layout_gravity="center" android:id="@id/retry" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/retry" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/code_info_holder" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="20.0dip">
+        <LinearLayout android:layout_gravity="center|top" android:id="@id/profile_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <com.kik.cache.ContactImageView android:id="@id/profile_pic" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" kik:nullBackground="@drawable/prof_pic_placeholder" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <kik.android.widget.EllipsizingTextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="@color/kik_code_username" android:ellipsize="end" android:id="@id/profile_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/scan_message" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:maxLines="1" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/code_error_holder" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_code_having_troubles_displaying" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/scan_code_tap_code_to_try_again" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/wipe_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

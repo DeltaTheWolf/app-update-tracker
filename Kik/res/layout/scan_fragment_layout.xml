@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/scan_fragment_layout_0" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/scan_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/camera_blur_view" android:background="@drawable/camera_background_blur" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/scan_snapshot_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <kik.android.scan.widget.ScannerViewFinder android:layout_gravity="center" android:id="@id/scan_view_finder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/call_to_action_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/point_camera_kik_code" />
+    </FrameLayout>
+    <include android:id="@id/camera_locked_error_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/camera_locked_error_layout" />
+    <FrameLayout android:id="@id/animation_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/scan_loading_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/scan_loading_layout" />
+    <include layout="@layout/camera_permission_view" />
+</FrameLayout>

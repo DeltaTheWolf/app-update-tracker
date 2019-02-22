@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/sticker_settings_inactive_list_item_0" android:background="?selectableItemBackground" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/sticker_settings_list_item" />
+    <kik.android.widget.DownloadImageView android:layout_gravity="center|right" android:id="@id/download_view" android:tag="binding_1" android:background="?selectableItemBackgroundBorderless" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="4.0dip" />
+</FrameLayout>

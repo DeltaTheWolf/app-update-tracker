@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topbar" android:background="@drawable/white" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentTop="true">
+        <include android:id="@id/pv_back_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" layout="@layout/kik_back_button" />
+        <kik.android.widget.RobotoTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0dip" android:textColor="@xml/preference_title_color_selector" android:ellipsize="marquee" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_select_country" android:singleLine="true" android:layout_toRightOf="@id/pv_back_button" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <kik.android.chat.view.PhoneVerificationCountryCodeSearchViewImpl android:id="@id/pv_country_code_search_view" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_below="@id/topbar" />
+    <android.support.v7.widget.RecyclerView android:id="@id/pv_country_code_results_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pv_country_code_search_view" />
+    <FrameLayout android:background="@drawable/cell_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topbar" />
+    <FrameLayout android:background="@drawable/nav_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pv_country_code_search_view" />
+</RelativeLayout>

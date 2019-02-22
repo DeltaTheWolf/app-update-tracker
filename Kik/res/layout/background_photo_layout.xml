@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/background_photo_layout_0" android:layout_width="fill_parent" android:layout_height="180.0dip" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/gray_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/kik_blue" android:gravity="center" android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:text="@string/profile_set_background_photo" android:drawableLeft="@drawable/ic_set_photo" android:drawablePadding="4.0dip" />
+        <View android:layout_gravity="bottom" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" />
+    </FrameLayout>
+    <kik.android.widget.GlideImageView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+</FrameLayout>

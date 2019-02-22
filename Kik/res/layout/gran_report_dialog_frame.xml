@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/gran_report_dialog_frame_layout" android:tag="layout/gran_report_dialog_frame_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/gran_report_portrait_child" layout="@layout/dialog_kik_gran_report" />
+    <include android:id="@id/gran_report_landscape_child" layout="@layout/dialog_kik_gran_report_landscape" />
+</FrameLayout>

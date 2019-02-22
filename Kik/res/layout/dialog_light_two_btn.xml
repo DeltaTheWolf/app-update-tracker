@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/dialog_light_two_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingTop="24.0dip" android:paddingRight="32.0dip" android:paddingBottom="16.0dip" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/dialog_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+        <kik.android.widget.RobotoTextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/title_light_dialog" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KikTextView.Dialog.Title" />
+        <kik.android.widget.RobotoTextView android:gravity="center_horizontal" android:id="@id/body_light_dialog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/KikTextView.Dialog.Message" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/button_positive" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/KikButton.Hero" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/button_negative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/KikButton.Classic.Dialog" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/contacts_list_item_height" style="@style/KikSelectableCellStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center|left" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="18.0dip" style="@style/CircularProgressView" />
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/text_secondary" android:gravity="center_vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="60.0dip" android:text="@string/inline_bot_loading" android:maxLines="1" />
+</FrameLayout>

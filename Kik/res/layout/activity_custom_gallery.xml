@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/custom_gallery_view" android:background="@color/black_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/gallery_top_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height">
+        <include layout="@layout/kik_back_button" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/media_select_bottom" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentBottom="true">
+        <include layout="@layout/layout_native_picker_lower_bar" />
+    </LinearLayout>
+    <kik.android.widget.RobotoTextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/gallery_empty_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <GridView android:gravity="left" android:id="@id/gallery_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:listSelector="@null" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:layout_above="@id/media_select_bottom" android:layout_below="@id/gallery_top_bar" />
+    <FrameLayout android:id="@id/bottom_shadow" android:background="@drawable/chatbar_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/media_select_bottom" />
+    <FrameLayout android:background="@drawable/nav_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/gallery_top_bar" />
+</RelativeLayout>

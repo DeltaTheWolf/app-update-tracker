@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/gif_widget_tab_bar_0" android:background="@xml/gif_tab_background" android:layout_width="fill_parent" android:layout_height="@dimen/gif_button_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gif_favourites_tab" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/gif_favourites_tab_image" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/gif_trending_tab" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/gif_trending_tab_image" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/gif_featured_tab" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/gif_featured_tab_image" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/gif_emoji_tab" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/gif_emoji_tab_image" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

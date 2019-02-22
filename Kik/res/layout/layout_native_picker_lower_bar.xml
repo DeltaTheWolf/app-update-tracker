@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.UserMediaImageThumbNailList android:gravity="center_vertical" android:id="@id/top_scroll" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="7.0dip" android:layout_weight="1.0" />
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/gallery_button_ok" android:background="@xml/blue_button_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginRight="7.0dip" android:text="@string/title_done" />
+</merge>

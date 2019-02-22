@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/chat_info_cell" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/chat_info_button_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:scaleType="centerInside" />
+    <kik.android.widget.RobotoTextView android:gravity="center_vertical" android:id="@id/chat_info_button_text" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="32.0dip" android:layout_weight="1.0" style="@style/KikTextView.ChatInfo.IconButton.Primary" />
+    <android.support.v7.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@id/chat_info_button_switch" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" theme="@style/CompoundButtonTheme" />
+</LinearLayout>

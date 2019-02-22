@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/list_entry_public_group_search_create_0" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/contacts_list_item_height" style="@style/KikSelectableCellStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/create_group_icon" android:paddingLeft="22.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    <kik.android.widget.EllipsizingTextView android:ellipsize="marquee" android:id="@id/group_not_found_text" android:tag="binding_1" android:paddingLeft="18.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:maxLines="1" android:layout_toRightOf="@id/create_group_icon" android:layout_centerVertical="true" style="@style/KikTextView.ContactListEntry.Create" />
+</RelativeLayout>

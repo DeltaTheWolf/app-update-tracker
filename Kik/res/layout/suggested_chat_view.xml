@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggested_chat_view_0" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.MaxSizeFrameLayout android:layout_gravity="center_horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="@dimen/chat_suggestion_image_size" android:maxHeight="@dimen/chat_suggestion_image_size">
+        <FrameLayout android:tag="binding_1" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/circular_prof_pic_selector">
+            <kik.android.widget.CircleCroppedImageView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <kik.android.widget.SelfMaskingImageLayout android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <kik.android.widget.BotProfileImageBadgeView android:layout_gravity="bottom|center|right" android:tag="binding_4" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+    </kik.android.widget.MaxSizeFrameLayout>
+    <kik.android.widget.RobotoTextView android:gravity="center" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" style="@style/KikTextView.SuggestedChats.ChatName" />
+</LinearLayout>

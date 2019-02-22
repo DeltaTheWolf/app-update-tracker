@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/unwrapped_message_bubble_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.RobotoTextView android:textSize="@dimen/message_timestamp_size" android:gravity="center_horizontal" android:id="@id/message_timestamp" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:font_type="medium" />
+    <ViewStub android:id="@id/message_content_stub" android:background="@color/android_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/message_timestamp" />
+</RelativeLayout>

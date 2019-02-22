@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="200.0dip" android:width="200.0dip" />
+            <gradient android:startColor="@color/kik_blue" android:endColor="@color/transparent" android:type="radial" android:gradientRadius="100.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="40.0dip" android:color="@android:color/transparent" />
+            <size android:height="160.0dip" android:width="160.0dip" />
+            <solid android:color="@color/kik_blue" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/navigation_bar" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/kik_back_button" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/add_button_container" android:background="?selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/search_button" android:duplicateParentState="true" android:layout_width="@dimen/native_topbar_height" android:layout_height="fill_parent" android:src="@drawable/search_grey" android:scaleType="center" />
+        </FrameLayout>
+    </LinearLayout>
+    <kik.android.widget.TransparentListView android:id="@id/compose_list" android:paddingTop="@dimen/search_bar_minimum_height" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/navigation_bar" android:smoothScrollbar="true" style="@style/KikListView" />
+    <kik.android.chat.view.SearchBarViewImpl android:id="@id/floating_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/find_people_search_placeholder" android:layout_below="@id/navigation_bar" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/floating_search_bar" layout="@layout/contact_list_empty_view" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_below="@id/navigation_bar" layout="@layout/navbar_underline" />
+</RelativeLayout>

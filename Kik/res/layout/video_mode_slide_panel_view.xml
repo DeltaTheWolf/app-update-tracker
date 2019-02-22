@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@android:color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/blue_panel" android:background="@color/blue_video_mode_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center|left" android:id="@id/infoContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/big_camera_icon" android:scaleType="centerInside" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:text="@string/release_to_full" android:lines="2" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left" android:id="@id/hintContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/hintIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/big_camera_icon" android:scaleType="centerInside" />
+    </FrameLayout>
+</FrameLayout>

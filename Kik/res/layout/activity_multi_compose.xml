@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/start_group_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/floating_search_bar" layout="@layout/contact_list_empty_view" />
+    <kik.android.widget.ResizeEventList android:id="@id/compose_list" android:paddingTop="@dimen/search_bar_minimum_height" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/multi_compose_navbar" android:smoothScrollbar="true" style="@style/KikListView" />
+    <LinearLayout android:orientation="vertical" android:id="@id/start_group_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/multi_compose_navbar">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/start_group_edittexts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/private_start_group_header_minimum_height">
+            <ImageView android:layout_gravity="center" android:id="@id/group_contact_picture" android:background="@drawable/start_group_image_bg" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/ic_setphoto" android:scaleType="centerInside" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="14.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="74.0dip" android:layout_weight="1.0">
+                <kik.android.chat.view.ValidateableInputView android:layout_gravity="center" android:id="@id/group_name_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/name_group_hint" android:maxLength="100" android:inputType="textCapSentences" kik:subtextVisible="false" />
+                <kik.android.chat.view.ValidateableInputView android:layout_gravity="center" android:id="@id/group_tag_edittext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:hint="@string/create_group_hashtag_placeholder" android:maxLength="33" android:inputType="textVisiblePassword|textNoSuggestions" kik:errorDrawable="@drawable/ic_error" kik:progressDrawable="@drawable/indeterminate_input_spinner" kik:successDrawable="@drawable/ic_checkmark" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/list_divider" />
+    </LinearLayout>
+    <kik.android.chat.view.SearchBarViewImpl android:id="@id/floating_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_group_hint" android:layout_below="@id/start_group_header" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/multi_compose_navbar" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="0.0dip" android:layout_height="@dimen/native_topbar_height" android:layout_weight="1.0" layout="@layout/kik_back_button" />
+        <kik.android.widget.KikTextView android:layout_gravity="center|right" android:id="@id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_done" style="@style/KikTextView.Toolbar.Action" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_below="@id/multi_compose_navbar" layout="@layout/navbar_underline" />
+    <FrameLayout android:id="@id/bottom_shadow" android:background="@drawable/chatbar_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/start_group_selection_list_height" android:layout_alignParentBottom="true" />
+    <include layout="@layout/layout_contact_thumbnail_list" />
+</RelativeLayout>

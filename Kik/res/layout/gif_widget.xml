@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/gif_widget_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/gif_selection_view" android:tag="binding_1" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/gif_widget_search_bar" />
+        <FrameLayout android:id="@id/intermediate_state_views" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/gif_grey" android:gravity="center" android:id="@id/gif_no_results_textview" android:tag="binding_3" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center" android:id="@id/gif_results_loading" android:tag="binding_4" style="@style/CircularProgressView" />
+        </FrameLayout>
+        <kik.android.gifs.view.GifRecyclerView android:id="@id/gif_search_results_recycler_view" android:tag="binding_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <kik.android.gifs.view.GifRecyclerView android:id="@id/gif_featured_recycler_view" android:tag="binding_6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <kik.android.gifs.view.EmojiRecyclerView android:id="@id/gif_emoji_recycler_view" android:tag="binding_7" android:paddingLeft="@dimen/gif_border" android:paddingRight="@dimen/gif_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:columnWidth="40.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:orientation="vertical" android:tag="binding_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <kik.android.gifs.view.GifRecyclerView android:id="@id/gif_favourites_recycler_view" android:tag="binding_9" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gif_grey" android:gravity="center" android:id="@id/gif_no_favourites_textview" android:tag="binding_10" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_gif_favourites" />
+        </FrameLayout>
+        <include layout="@layout/riffsy_attribution_bar" />
+        <include layout="@layout/gif_widget_tab_bar" />
+    </LinearLayout>
+    <include layout="@layout/gif_preview" />
+</FrameLayout>

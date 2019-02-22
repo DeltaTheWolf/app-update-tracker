@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/error_image_view" android:background="@drawable/upload_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="left" android:id="@id/something_went_wrong" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_retry" />
+</LinearLayout>

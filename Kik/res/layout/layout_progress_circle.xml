@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/layout_progress_circle_0" android:background="@color/convo_theme_picker_item_progress_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:tag="binding_1" android:background="@drawable/circle_shape" android:layout_width="24.0dip" android:layout_height="24.0dip" android:max="100" android:progressDrawable="@drawable/circular_progress_bar" style="?android:progressBarStyleHorizontal" />
+    <ImageView android:layout_gravity="center" android:tag="binding_2" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_checkmark_bubble" android:tint="@color/kik_blue" />
+    <ImageView android:layout_gravity="center" android:tag="binding_3" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_failed" />
+</FrameLayout>

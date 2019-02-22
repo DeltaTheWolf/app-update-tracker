@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_in_app_alerts"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.preferences.NotifySoundPreference android:enabled="true" android:title="@string/title_sound" android:key="kik.sound" android:summary="@string/play_sound_on_new_message" kik:pref_divider="none" />
+    <kik.android.widget.preferences.VibratePreference android:enabled="true" android:title="@string/title_vibration" android:key="kik.vibrate" android:summary="@string/vibrate_on_new_message" kik:pref_divider="top" />
+    <kik.android.widget.preferences.LEDNotificationPreference android:enabled="true" android:entries="@array/led_colors" android:title="@string/title_led_color" android:key="kik.led.color" android:summary="@string/change_led_color_summary" android:entryValues="@array/led_values" kik:pref_divider="top" />
+</PreferenceScreen>

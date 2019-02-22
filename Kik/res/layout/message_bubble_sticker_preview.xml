@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:tag="layout/message_bubble_sticker_preview_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.ContentPreviewImageView android:id="@id/content_image" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:maxWidth="143.0dip" android:maxHeight="143.0dip" android:minWidth="143.0dip" android:minHeight="143.0dip" app:colorFilter="@color/preview_image_tint" />
+</LinearLayout>

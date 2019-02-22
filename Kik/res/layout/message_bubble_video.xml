@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/message_bubble_video_0" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_content_message_components" />
+    <kik.android.widget.InlineVideoPlayerView android:id="@id/inlineVideoPlayerView" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/content_image" android:layout_alignTop="@id/content_image" android:layout_alignRight="@id/content_image" android:layout_alignBottom="@id/content_image" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/content_image" android:layout_alignTop="@id/content_image" android:layout_alignRight="@id/content_image" android:layout_alignBottom="@id/content_image">
+        <kik.android.widget.IndependentPressImageView android:layout_gravity="center" android:tag="binding_2" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_icon_selector" />
+        <kik.android.widget.IndependentPressImageView android:layout_gravity="center|left|top" android:id="@id/unmute_icon" android:tag="binding_3" android:background="@xml/forward_background_selector" android:padding="12.0dip" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sound_off" android:scaleType="centerInside" />
+        <kik.android.widget.IndependentPressImageView android:layout_gravity="center|left|top" android:id="@id/mute_icon" android:tag="binding_4" android:background="@xml/forward_background_selector" android:padding="12.0dip" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sound_on" android:scaleType="centerInside" />
+        <kik.android.widget.IndependentPressImageView android:layout_gravity="bottom|center|left" android:tag="binding_5" android:padding="4.0dip" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/inline_media_pause" android:scaleType="centerInside" />
+    </FrameLayout>
+    <include layout="@layout/layout_content_cover" />
+</RelativeLayout>

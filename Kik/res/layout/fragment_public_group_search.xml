@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kik.android.chat.view.AnimatingSearchBarLayout android:id="@id/public_group_search_root" android:tag="layout/fragment_public_group_search_0" android:layout_width="fill_parent" android:layout_height="fill_parent" kik:navBarId="@id/navigation_bar" kik:recyclerViewId="@id/public_groups_recycler" kik:searchBarId="@id/floating_search_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/empty_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/navigation_bar" layout="@layout/suggested_groups_empty_view" />
+    <kik.android.widget.PublicGroupSearchRecyclerView android:id="@id/public_groups_recycler" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:layout_gravity="top" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/public_group_search_navbar" />
+    <kik.android.chat.view.TransitionableSearchBarViewImpl android:id="@id/floating_search_bar" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_public_groups_placeholder" android:layout_below="@id/navigation_bar" kik:showClearTextOnlyWhenFocused="false" />
+</kik.android.chat.view.AnimatingSearchBarLayout>

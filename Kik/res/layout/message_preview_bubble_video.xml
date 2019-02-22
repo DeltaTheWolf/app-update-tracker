@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/message_preview_bubble_video_0" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_content_message_components" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/content_image" android:layout_alignTop="@id/content_image" android:layout_alignRight="@id/content_image" android:layout_alignBottom="@id/content_image">
+        <kik.android.widget.IndependentPressImageView android:layout_gravity="center" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_icon_selector" />
+    </FrameLayout>
+</RelativeLayout>

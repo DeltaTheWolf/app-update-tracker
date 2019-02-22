@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/shadow" android:background="@drawable/nav_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/native_topbar_height" android:layout_below="@id/action_bar" android:alpha="0.0" />
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView android:id="@id/login_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/native_topbar_height" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <kik.android.chat.view.ValidateableInputView android:id="@id/username_or_email_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_username_or_email" android:singleLine="true" android:inputType="textEmailAddress" />
+            <kik.android.chat.view.ValidateableInputView android:id="@id/password_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_password" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionGo" />
+            <Button android:id="@id/login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="16.0dip" android:text="@string/title_log_in_caps" style="@style/KikButton.Hero" />
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    <include android:id="@id/action_bar" layout="@layout/kik_back_button_clear" />
+</FrameLayout>

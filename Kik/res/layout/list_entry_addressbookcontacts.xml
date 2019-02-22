@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/address_book_contact_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/contacts_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/contact_item_container" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_entry_addressbookcontacts_left_margin" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+        <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/text_primary" android:ellipsize="marquee" android:id="@id/contact_name" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/text_secondary" android:ellipsize="marquee" android:id="@id/phone_number_or_email" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/abm_invite_friends_list_cell_invite_text_not_selected" android:layout_gravity="center|right" android:id="@id/share_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/title_invite" android:textAllCaps="true" kik:font_type="medium" />
+</LinearLayout>

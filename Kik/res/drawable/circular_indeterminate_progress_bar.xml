@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress">
+        <rotate android:toDegrees="360.0">
+            <shape android:shape="ring" android:innerRadiusRatio="2.5" android:useLevel="true" android:thickness="2.0dip">
+                <gradient android:startColor="@color/kik_blue_50pc_opacity" android:endColor="@color/kik_blue" android:type="sweep" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

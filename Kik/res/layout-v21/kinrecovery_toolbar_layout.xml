@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@style/KinrecoveryToolbarTheme" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip" app:contentInsetStartWithNavigation="0.0dip" app:titleTextAppearance="@style/KinrecoveryToolbar.TitleText" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/kinrecovery_black" android:gravity="center" android:id="@id/steps_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/kinrecovery_margin_main" android:fontFamily="sans-serif" android:letterSpacing="-0.04" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

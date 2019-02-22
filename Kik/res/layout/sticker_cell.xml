@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/sticker_cell_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center" android:id="@id/sticker_progress_view" android:tag="binding_1" android:layout_width="20.0dip" android:layout_height="20.0dip" app:cpv_thickness="2.0dip" style="@style/CircularProgressView" />
+    <kik.android.widget.AnimatedImageView android:layout_gravity="center" android:id="@id/sticker_cell_image_view" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/sticker_cell_padding" app:actionUpAnimatorId="@animator/sticker_cell_animator" />
+</FrameLayout>

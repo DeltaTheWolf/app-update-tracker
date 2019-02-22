@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/suggested_chats_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:src="@drawable/img_chat_search" />
+        <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/text_secondary" android:gravity="center" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/chats_search_empty_text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <kik.android.widget.RobotoTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="9.0dip" android:text="@string/suggested_chat_header" app:font_type="medium" style="@style/KikTextView.SuggestedChats.Header" />
+        <kik.android.widget.SuggestedChatsRecyclerView android:id="@id/suggested_chats" android:tag="binding_3" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="92.0dip" android:overScrollMode="never" />
+        <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/layout_five_star_rating_0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RatingBar android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KikRatingBar.ProfileRatingBar" />
+    <kik.android.widget.RobotoTextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KikTextView.RatingText" />
+</LinearLayout>

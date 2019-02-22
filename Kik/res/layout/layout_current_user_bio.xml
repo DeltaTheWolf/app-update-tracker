@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/layout_current_user_bio_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:tag="binding_1" android:background="@drawable/transparent_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <kik.android.widget.RobotoTextView android:layout_gravity="center_horizontal" android:id="@id/profile_current_bio" android:tag="binding_2" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/KikTextView.Profile.Text.CurrentUser" />
+        <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/blue_text_button_selector" android:gravity="center" android:layout_gravity="center_horizontal" android:tag="binding_3" android:background="@color/transparent" android:padding="4.0dip" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_bio_empty_hint" android:drawableLeft="@drawable/ic_edit_text_selectable" android:drawablePadding="4.0dip" android:textAllCaps="true" app:font_type="medium" />
+    </FrameLayout>
+</FrameLayout>

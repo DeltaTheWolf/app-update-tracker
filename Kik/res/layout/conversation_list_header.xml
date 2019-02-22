@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.ExploreView android:id="@id/conv_list_header_explore_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/conv_list_header_new_chats" android:visibility="gone" layout="@layout/new_chats_header" />
+</LinearLayout>

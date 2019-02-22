@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/tooltip_image" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_search_small_white" android:scaleType="fitCenter" />
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tooltip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="1.0dip" android:text="@string/pull_to_search" app:font_type="medium" />
+</LinearLayout>

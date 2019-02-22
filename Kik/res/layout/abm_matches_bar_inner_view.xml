@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/abm_matches_image_3_container" android:background="@drawable/abm_matches_bar_circle" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="-7.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.kik.cache.SoftwareContactImageView android:layout_gravity="center" android:id="@id/abm_matches_image_3" android:layout_width="22.0dip" android:layout_height="22.0dip" kik:nullBackground="@drawable/img_profile_small" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/abm_matches_image_2_container" android:background="@drawable/abm_matches_bar_circle" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="-7.0dip" android:layout_toRightOf="@id/abm_matches_image_3_container" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <com.kik.cache.SoftwareContactImageView android:layout_gravity="center" android:id="@id/abm_matches_image_2" android:layout_width="22.0dip" android:layout_height="22.0dip" kik:nullBackground="@drawable/img_profile_small" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/abm_matches_image_1_container" android:background="@drawable/abm_matches_bar_circle" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_toRightOf="@id/abm_matches_image_2_container" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <com.kik.cache.SoftwareContactImageView android:layout_gravity="center" android:id="@id/abm_matches_image_1" android:layout_width="22.0dip" android:layout_height="22.0dip" kik:nullBackground="@drawable/img_profile_small" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/abm_matches_text_matches_found" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip" android:lines="1" android:layout_toLeftOf="@id/abm_matches_view_all" android:layout_toRightOf="@id/abm_matches_image_1_container" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/abm_matches_view_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/abm_find_people_matches_bar_view_all_caps" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/abm_matches_text_no_matches" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/abm_find_people_matches_bar_no_new_friends" android:lines="1" android:layout_centerVertical="true" />
+</merge>

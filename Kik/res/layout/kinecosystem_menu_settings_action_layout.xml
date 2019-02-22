@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingRight="@dimen/kinrecovery_margin_block" android:layout_width="wrap_content" android:layout_height="wrap_content" style="attr/actionButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/settings_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kinecosystem_settings_icon" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/ic_info_dot" android:background="@color/kinecosystem_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/kinecosystem_stroke_small_padding" android:layout_marginRight="@dimen/kinecosystem_stroke_small_padding" android:src="@drawable/kinecosystem_info_red_dot" />
+</FrameLayout>

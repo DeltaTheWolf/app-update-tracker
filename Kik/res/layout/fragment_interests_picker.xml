@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_interests_picker_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/navbar" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/kik_back_button" />
+        <kik.android.widget.RobotoTextView android:textSize="24.0sp" android:textColor="@color/text_primary" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/interests_title" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="@dimen/native_topbar_height" android:layout_weight="1.0" />
+        <kik.android.widget.KikTextView android:layout_gravity="center|right" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_done" style="@style/KikTextView.Toolbar.Action" />
+    </LinearLayout>
+    <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:paddingTop="16.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginRight="48.0dip" android:text="@string/interests_body" />
+    <kik.android.widget.SelectedInterestsRecyclerView android:layout_gravity="center" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" />
+    <View android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="@dimen/half_dp" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center" android:id="@id/progress_wheel" android:tag="binding_4" android:layout_width="80.0dip" android:layout_height="80.0dip" style="@style/CircularProgressView" />
+        <android.support.v4.widget.NestedScrollView android:tag="binding_5" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip">
+                <kik.android.widget.SelecteableInterestsRecyclerView android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="16.0dip" android:paddingBottom="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/text_tertiary" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interests_suggest_hint" />
+                    <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/blue_text_button_selector" android:gravity="center" android:tag="binding_7" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interests_suggest_link" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+</LinearLayout>

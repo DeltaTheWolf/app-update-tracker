@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:tag="layout/blocked_retained_cover_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <View android:id="@id/bottom_bar_shadow" android:background="@color/grey_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <kik.android.widget.KikTextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:tag="binding_1" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="@dimen/media_tray_bar_height" />
+    </LinearLayout>
+</merge>

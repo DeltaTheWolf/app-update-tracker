@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.VelocityControlledViewPager android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/top_bar" layout="@layout/kik_back_button" />
+    <LinearLayout android:layout_gravity="bottom|center" android:id="@id/scan_toggle_holder" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/camera_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/code_camera_white" android:scaleType="fitCenter" />
+        <include android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="wrap_content" layout="@layout/seek_bar_scan_toggle" />
+        <ImageView android:layout_gravity="center" android:id="@id/code_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/kik_code_white" android:scaleType="fitCenter" />
+    </LinearLayout>
+</FrameLayout>

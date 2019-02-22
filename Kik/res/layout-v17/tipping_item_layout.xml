@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/tipping_item_layout_0" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginStart="14.0dip">
+        <kik.android.widget.CircleCroppedImageView android:id="@id/admin_profile_pic_holder" android:tag="binding_2" android:focusable="true" android:layout_width="54.0dip" android:layout_height="54.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <ImageView android:tag="binding_3" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="centerInside" android:layout_alignRight="@id/admin_profile_pic_holder" android:layout_alignBottom="@id/admin_profile_pic_holder" />
+        <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/message_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:tag="binding_4" android:layout_width="42.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:maxLines="1" android:layout_below="@id/admin_profile_pic_holder" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

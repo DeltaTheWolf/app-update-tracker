@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:id="@id/gif_attribution_bar" android:tag="layout/riffsy_attribution_bar_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gray_1" android:layout_width="fill_parent" android:layout_height="@dimen/half_dp" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_dp" android:src="@drawable/tenor" />
+</FrameLayout>

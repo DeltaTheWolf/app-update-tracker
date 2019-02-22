@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:paddingBottom="16.0dip" android:duplicateParentState="true" android:layout_width="@dimen/chat_info_grid_item_width" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/group_member_profile_pic_holder" android:duplicateParentState="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:foreground="@drawable/circular_prof_pic_selector">
+            <com.kik.cache.ContactImageView android:id="@id/group_member_profile_pic" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" kik:nullBackground="@drawable/img_profile_medium" />
+        </FrameLayout>
+        <ImageView android:id="@id/admin_badge" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/ic_moderator" android:scaleType="centerInside" android:layout_alignRight="@id/group_member_profile_pic_holder" android:layout_alignBottom="@id/group_member_profile_pic_holder" />
+        <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/text_secondary" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/group_member_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" android:layout_below="@id/group_member_profile_pic_holder" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

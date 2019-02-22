@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:tag="layout/smiley_widget_item_layout_0" android:focusable="false" android:clickable="true" android:clipChildren="false" android:layout_width="@dimen/smiley_tray_cell_width" android:layout_height="@dimen/smiley_tray_cell_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:tag="binding_1" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <View android:tag="binding_2" android:background="@color/smiley_tray_overlay" android:visibility="gone" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <kik.android.widget.SmileyPopupView android:tag="binding_3" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:tag="binding_4" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+</FrameLayout>

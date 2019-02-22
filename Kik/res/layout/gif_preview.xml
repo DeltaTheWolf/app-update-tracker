@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/gif_preview_view" android:tag="layout/gif_preview_0" android:background="@color/black" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center" android:tag="binding_1" android:visibility="visible" style="@style/CircularProgressView" />
+    <kik.android.gifs.view.AspectRatioGifView android:layout_gravity="center" android:id="@id/gif_preview_image" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/gif_rechoose_button" android:tag="binding_3" android:background="@xml/back_button_selector_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginBottom="28.0dip" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/gif_use_button" android:tag="binding_4" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/camera_use_icon_selector" />
+    <kik.android.gifs.view.GifFavouriteToggle android:layout_gravity="center|left|top" android:tag="binding_5" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" />
+</FrameLayout>

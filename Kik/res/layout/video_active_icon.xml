@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/video_indicator_pulse" android:paddingLeft="1.0dip" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/video_indicator_pulse" android:scaleX="0.92" android:scaleY="0.92" />
+    <ImageView android:id="@id/video_indicator_image_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_button_off" />
+    <ImageView android:id="@id/video_indicator_image_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_button_on" android:alpha="0.0" />
+</FrameLayout>

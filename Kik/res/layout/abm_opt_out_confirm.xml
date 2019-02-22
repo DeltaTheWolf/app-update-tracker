@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chat_info_root" android:paddingLeft="32.0dip" android:paddingTop="24.0dip" android:paddingRight="32.0dip" android:paddingBottom="16.0dip" android:fadingEdgeLength="0.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.RobotoTextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_are_you_sure" style="@style/KikTextView.Dialog.Title" />
+    <kik.android.widget.RobotoTextView android:gravity="center_horizontal" android:id="@id/addressbook_privacy_dialog_text" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="24.0dip" android:maxLines="4" style="@style/KikTextView.Dialog.Message" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contact_info_upload_checkbox_container" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+        <View android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="14.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/let_friends_find_me" />
+                <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/text_peripheral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/people_will_find_me" />
+            </LinearLayout>
+            <CheckBox android:id="@id/contact_info_upload_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" style="@style/KikCheckboxStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="center_horizontal" android:id="@id/button_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/im_sure_caps" style="@style/KikButton.Hero" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/button_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_cancel" style="@style/KikButton.Classic.Dialog" />
+</LinearLayout>

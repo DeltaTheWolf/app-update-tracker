@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:padding="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/tipping_loading_progress" android:background="@drawable/filled_white_circle" android:clipToPadding="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:progress="100" android:indeterminateDrawable="@drawable/indeterminate_tipping_progress_spinner" android:progressDrawable="@drawable/circular_progress_bar" style="?android:progressBarStyleHorizontal" />
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/tipping_loading_icon" android:visibility="visible" android:layout_width="28.0dip" android:layout_height="28.0dip" android:scaleType="center" />
+</FrameLayout>

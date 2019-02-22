@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/masks_menu" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="500.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.rounds.kik.view.masks.MaskRecyclerView android:layout_gravity="bottom" android:id="@id/list" android:paddingLeft="@dimen/mask_item_right_margin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/mask_item_size" android:layout_marginBottom="@dimen/masks_list_margin_bottom" />
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/menu_close" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="@dimen/masks_menu_close_margin_bottom">
+        <ImageView android:layout_gravity="center" android:id="@id/menu_close_circle" android:clickable="false" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/close_mask_menu_circle" />
+        <ImageView android:layout_gravity="center" android:id="@id/menu_close_arrow" android:clickable="false" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/close_mask_menu_arrow" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/menu_open" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginBottom="@dimen/masks_menu_open_margin_bottom">
+        <ImageView android:layout_gravity="center" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/masks_menu_icon" />
+    </FrameLayout>
+</FrameLayout>

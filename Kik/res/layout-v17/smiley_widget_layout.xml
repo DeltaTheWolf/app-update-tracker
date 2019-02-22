@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/smiley_widget_layout_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:tag="binding_1" android:background="@color/smiley_help_blue" android:paddingLeft="11.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/smiley_tray_notification_white" />
+        <kik.android.widget.RobotoTextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smileys_tap_and_hold" android:textAlignment="textStart" />
+    </LinearLayout>
+    <kik.android.widget.SmileyRecyclerView android:layout_gravity="center_horizontal" android:id="@id/smiley_recycler" android:tag="binding_2" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:columnWidth="50.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/hashtags_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:layout_gravity="center|left" android:tag="binding_3" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/shop_open_selector" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/delete_back" android:tag="binding_4" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

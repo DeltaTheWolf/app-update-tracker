@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="vertical" android:id="@id/top_divider" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignLeft="@id/preference_list_item" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/preference_list_item" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="1.0px">
+        <kik.android.widget.RobotoTextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" style="@style/KikTextView.Settings.Title" />
+        <kik.android.widget.RobotoTextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_below="@android:id/title" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="@style/KikTextView.Settings.Description" />
+        <kik.android.widget.RobotoTextView android:gravity="right" android:id="@id/preference_current" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:minWidth="40.0dip" android:layout_toRightOf="@android:id/title" android:layout_alignBaseline="@android:id/title" android:layout_alignParentRight="true" style="@style/KikTextView.Settings.Current" />
+    </RelativeLayout>
+    <View android:id="@id/bottom_divider" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/preference_list_item" android:layout_alignLeft="@id/preference_list_item" android:layout_alignParentBottom="true" />
+</RelativeLayout>

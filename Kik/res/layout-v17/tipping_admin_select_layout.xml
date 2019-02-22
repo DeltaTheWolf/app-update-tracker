@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/admin_list_layout" android:tag="layout/tipping_admin_select_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="bottom" android:id="@id/animated_layout" android:tag="binding_1" android:background="@color/appbar_background" android:layout_width="wrap_content" android:layout_height="96.0dip">
+        <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/tipping_users_list" android:tag="binding_2" android:background="@color/appbar_background" android:paddingRight="14.0dip" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/nav_bar_shadow" android:paddingEnd="14.0dip" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        <RelativeLayout android:id="@id/selected_admin" android:background="@color/appbar_background" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/nav_bar_shadow">
+            <RelativeLayout android:orientation="vertical" android:id="@id/admin_image" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="12.0dip">
+                <kik.android.widget.CircleCroppedImageView android:id="@id/admin_profile_pic_holder" android:tag="binding_3" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+                <ImageView android:tag="binding_4" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="centerInside" android:layout_alignRight="@id/admin_profile_pic_holder" android:layout_alignBottom="@id/admin_profile_pic_holder" />
+            </RelativeLayout>
+            <kik.android.widget.RobotoTextView android:textSize="18.0sp" android:textColor="@color/gray_6" android:ellipsize="end" android:id="@id/selected_name" android:tag="binding_5" android:layout_width="154.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/change_admin" android:layout_toRightOf="@id/admin_image" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toStartOf="@id/change_admin" android:layout_toEndOf="@id/admin_image" app:font_type="medium" />
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/change_admin" android:tag="binding_6" android:padding="13.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/edit_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_text" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/kik_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/change_admin" android:layout_toRightOf="@id/edit_image" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/edit_image" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:id="@id/nav_bar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_alignParentBottom="true" layout="@layout/navbar_underline" />
+    </RelativeLayout>
+</FrameLayout>

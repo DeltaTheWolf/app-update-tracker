@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/validateable_text_view_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" style="@style/KikTextView.FloatingHintText" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/floating_hint_margin" android:layout_marginRight="16.0dip" android:layout_marginBottom="2.0dip" android:minHeight="24.0dip">
+        <kik.android.widget.MaxHeightScrollView android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="200.0dip" android:layout_weight="1.0">
+            <kik.android.widget.RobotoEditText android:id="@id/validateable_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:imeOptions="actionDone" style="@style/KikEditTextV2.Validateable" />
+        </kik.android.widget.MaxHeightScrollView>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/validateable_text_view_clear_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EditTextClearTextButton" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/validateable_text_view_right_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/validateable_text_view_underline" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <TextView android:id="@id/validateable_subtext_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" style="@style/KikTextView.Subtext" />
+</merge>

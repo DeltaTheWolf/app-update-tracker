@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center|left" android:id="@id/retake_photo_button" android:background="@xml/camera_touch_circle_selector" android:padding="12.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="40.0dip" android:src="@drawable/ic_retake" android:layout_centerVertical="true" />
+    <kik.android.widget.ArcImageView android:layout_gravity="center" android:id="@id/shutter_button" android:background="@xml/new_camera_shutter_circle_selector" android:padding="5.0dip" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+    <kik.android.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/use_photo_button" android:background="@xml/camera_use_photo_circle_selector" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:text="@string/title_send" android:textAllCaps="true" app:font_type="medium" />
+    <ImageView android:layout_gravity="center|left" android:id="@id/lighting_button" android:background="@xml/camera_touch_circle_selector" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="40.0dip" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/swap_camera_button" android:background="@xml/camera_touch_circle_selector" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="40.0dip" android:src="@drawable/ic_camera_front_black_24_px" android:scaleType="fitCenter" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|left" android:id="@id/video_timer" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" />
+</merge>

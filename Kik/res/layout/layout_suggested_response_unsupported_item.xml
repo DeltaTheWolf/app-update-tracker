@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/suggested_response_background_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_sr_unsupported" android:scaleType="centerInside" />
+</FrameLayout>

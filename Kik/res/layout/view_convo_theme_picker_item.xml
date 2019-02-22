@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_convo_theme_picker_item_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/theme_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/skeleton_state_color" android:scaleType="fitCenter" />
+    <include layout="@layout/layout_progress_circle" />
+</FrameLayout>

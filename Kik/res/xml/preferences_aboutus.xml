@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_help_about_us"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.preferences.TOSPreference android:enabled="true" android:title="@string/title_terms_of_service" android:key="kik.privacy.terms.of.service" kik:pref_divider="none" />
+    <kik.android.widget.preferences.PrivacyPolicyPreference android:enabled="true" android:title="@string/title_privacy_policy" android:key="kik.privacy.policy" kik:pref_divider="top" />
+    <kik.android.widget.preferences.CommunityGuideLinesPreference android:enabled="true" android:title="@string/title_community_guidelines" android:key="kik.community.guidelines" kik:pref_divider="top">
+        <intent android:action="android.intent.action.VIEW" android:data="@string/web_kik_community_guidelines" />
+    </kik.android.widget.preferences.CommunityGuideLinesPreference>
+    <kik.android.widget.preferences.HelpPreference android:enabled="true" android:title="@string/title_help" android:key="kik.help" kik:pref_divider="top">
+        <intent android:action="android.intent.action.VIEW" android:data="@string/web_kik_support" />
+    </kik.android.widget.preferences.HelpPreference>
+    <kik.android.widget.preferences.LicensePreference android:enabled="true" android:title="@string/title_licenses" android:key="kik.licenses" kik:pref_divider="top" />
+    <kik.android.widget.preferences.DevelopersPreference android:title="@string/title_developers" kik:pref_divider="top" kik:preference_screen="@xml/preferences_developers" kik:topbar_alt_layout="@layout/kik_back_button" />
+    <kik.android.widget.preferences.KinWalletPreference android:enabled="true" android:title="@string/title_kin_wallet" android:key="kik.kinwallet" kik:pref_divider="top">
+        <intent android:targetPackage="kik.android" android:action="android.intent.action.VIEW" android:data="cards://kinpreview.kik.com/" />
+    </kik.android.widget.preferences.KinWalletPreference>
+    <kik.android.widget.preferences.CopyrightPreference android:enabled="true" android:title="@string/title_copyright" android:key="kik.copyright" kik:pref_divider="full_bottom|top" />
+</PreferenceScreen>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/round_rect_mask_bg" android:layout_width="@dimen/mask_item_size" android:layout_height="@dimen/mask_item_size" android:layout_marginRight="@dimen/mask_item_right_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/maskThumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ImageView android:layout_gravity="center" android:id="@id/loader" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/masks_loader_icon" />
+    <ImageView android:id="@id/selection" android:background="@drawable/mask_selected_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

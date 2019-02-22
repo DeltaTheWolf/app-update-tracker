@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kik.android.widget.SquareFrameLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.RectNetworkedImageView android:id="@id/photo_sr_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:background="@drawable/photo_sr_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</kik.android.widget.SquareFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/list_entry_public_group_search_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/list_entry_public_group_search_found" />
+    <include layout="@layout/list_entry_public_group_search_not_found" />
+    <include layout="@layout/list_entry_public_group_search_timeout" />
+    <include layout="@layout/list_entry_public_group_search_create" />
+    <include layout="@layout/list_entry_public_group_search_searching" />
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" layout="@layout/list_divider" />
+</FrameLayout>

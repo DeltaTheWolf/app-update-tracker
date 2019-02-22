@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/chats_search_username_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.RobotoTextView android:id="@id/recent_list_helper_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/talk_to_inline_tray_table_header_username_search" style="@style/KikTextView.ListHeader" />
+    <FrameLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/chats_search_cell_min_height">
+        <include layout="@layout/chats_search_username_found" />
+        <include layout="@layout/chats_search_username_not_found" />
+        <include layout="@layout/chats_search_username_timed_out" />
+        <include layout="@layout/chats_search_username_searching" />
+    </FrameLayout>
+    <include layout="@layout/list_divider" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/camera_touch_focus" android:background="@drawable/touchfocus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/camera_clip_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:background="@drawable/dark_camera_overlay" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        <kik.android.widget.RotatableTextView android:textColor="@color/white" android:layout_gravity="bottom|center" android:id="@id/video_instruction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/desc_video_instruction" android:shadowColor="#80000000" android:shadowRadius="15.0" />
+    </FrameLayout>
+    <View android:id="@id/camera_preview_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

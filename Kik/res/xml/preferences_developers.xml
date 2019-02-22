@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_developers"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.preferences.DeveloperModePreference android:enabled="true" android:title="@string/title_developer_mode" android:key="kik.developer.mode" android:summary="@string/summary_developer" kik:pref_divider="full_bottom" />
+</PreferenceScreen>

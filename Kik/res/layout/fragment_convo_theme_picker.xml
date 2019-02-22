@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:tag="layout/fragment_convo_theme_picker_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/convo_picker_dummy_chat" />
+    <View android:background="@drawable/shape_gradient_top_shadow" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginBottom="-18.0dip" app:layout_anchor="@id/bottom_sheet" app:layout_anchorGravity="top" />
+    <include layout="@layout/convo_themes_picker_bottom_drawer" />
+</android.support.design.widget.CoordinatorLayout>

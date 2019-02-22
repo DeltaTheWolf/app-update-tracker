@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_chat_settings" android:key="@string/title_chat_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.preferences.BlockListPreference android:enabled="true" android:title="@string/title_block_list" android:key="kik.open.block.list" android:summary="@string/block_list_description" kik:pref_divider="top" />
+    <kik.android.widget.preferences.EnterKeySendPreference android:enabled="true" android:title="@string/title_enter_key_send" android:key="kik.enterbutton.sends" android:summary="@string/enter_send_summary" kik:pref_divider="top" />
+    <kik.android.widget.preferences.ChatBubblesPreference android:entries="@array/chat_bubble_colors" android:title="@string/settings_bubble_color" android:key="kik.sweet.bubble.colors" android:summary="@string/change_chat_bubble_color_summary" android:entryValues="@array/chat_bubble_values" kik:pref_divider="top" />
+    <kik.android.widget.preferences.KikVideoPrefetchPreference android:entries="@array/prefetch_video_options" android:title="@string/settings_auto_download_videos" android:key="kik.chat.video.prefetch" android:entryValues="@array/prefetch_video_options" kik:pref_divider="top" />
+    <kik.android.widget.preferences.AutoplayVideoPreference android:entries="@array/autoplay_video_options" android:title="@string/settings_autoplay_videos" android:key="kik.chat.video.autoplay" android:summary="@string/settings_autoplay_videos_blurb" android:defaultValue="@string/wifi_and_cellular" android:entryValues="@array/autoplay_video_options" kik:pref_divider="top" />
+    <kik.android.widget.preferences.AutomaticFullscreenPreference android:enabled="true" android:title="@string/settings_automatic_fullscreen_title" android:key="kik.android.chat.video.automatic_fullscreen" android:summary="@string/settings_automatic_fullscreen_summary" kik:pref_divider="full_bottom|top" />
+</PreferenceScreen>

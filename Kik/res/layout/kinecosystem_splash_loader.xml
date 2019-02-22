@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/kinecosystem_bluePrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/lets_get_started_button" android:background="@drawable/kinecosystem_button_background_white_rounded" android:visibility="visible" android:layout_width="@dimen/kinecosystem_round_button_width" android:layout_height="@dimen/kinecosystem_round_button_height" android:layout_margin="@dimen/kinecosystem_block_margin" android:text="@string/kinecosystem_let_s_get_started" android:textAllCaps="false" />
+    <View android:layout_gravity="center" android:id="@id/circle_dash" android:background="@drawable/kinecosystem_circle_dash_line" android:visibility="gone" android:layout_width="@dimen/kinecosystem_round_button_height" android:layout_height="@dimen/kinecosystem_round_button_height" />
+    <ImageView android:layout_gravity="center" android:id="@id/center_image" android:padding="@dimen/kinecosystem_main_small_margin" android:visibility="gone" android:layout_width="@dimen/kinecosystem_round_button_height" android:layout_height="@dimen/kinecosystem_round_button_height" android:src="@drawable/kinecosystem_diamond_1" />
+</merge>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_address_book_setting_contact_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/topbar" android:tag="binding_1" android:background="@color/gray_1" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentTop="true">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_settings" android:layout_alignParentLeft="true" layout="@layout/kik_back_button" />
+        <ImageView android:id="@id/button_settings" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/material_navbar_button_width" android:layout_height="fill_parent" android:src="@drawable/ic_overflow_menu" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+        <Space android:id="@id/popup_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topbar">
+        <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView android:id="@id/abm_invite_friends_recycler_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <kik.android.chat.view.SearchBarViewImpl android:id="@id/abm_search_impl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/find_people_invite_search_placeholder" />
+        <FrameLayout android:background="@drawable/topbar_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/abm_permission_view" />
+    </FrameLayout>
+</RelativeLayout>

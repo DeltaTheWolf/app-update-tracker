@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/hint_center" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/hint_arrows" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/hint_center" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/arrow_hint0" android:background="@drawable/arrows_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="1.0" />
+        <ImageView android:id="@id/arrow_hint1" android:background="@drawable/arrows_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5" />
+        <ImageView android:id="@id/arrow_hint2" android:background="@drawable/arrows_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.25" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="Swipe left for photo filters" android:layout_below="@id/hint_arrows" android:layout_centerHorizontal="true" />
+</RelativeLayout>

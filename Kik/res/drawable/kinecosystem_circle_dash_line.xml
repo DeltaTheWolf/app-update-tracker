@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval" android:thicknessRatio="2.0"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/kinecosystem_transparent" />
+            <stroke android:width="@dimen/kinecosystem_stroke_padding" android:color="@color/kinecosystem_cyan" android:dashWidth="5.0dip" android:dashGap="3.0dip" />
+        </shape>
+    </item>
+    <item android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip">
+        <shape android:shape="oval" android:thicknessRatio="2.0"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/kinecosystem_white" />
+        </shape>
+    </item>
+</layer-list>

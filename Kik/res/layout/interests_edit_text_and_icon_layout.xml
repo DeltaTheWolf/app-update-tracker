@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.KikTextView android:textSize="12.0sp" android:textColor="@color/blue_text_button_selector" android:gravity="center" android:background="@drawable/interests_pill_edit_background_selector" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="8.0dip" android:paddingBottom="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/interests_suggest_edit_button" android:drawableLeft="@drawable/ic_edit_text_interests_selectable" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/dialog_call_rating" android:paddingLeft="32.0dip" android:paddingTop="12.0dip" android:paddingRight="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/button_rate_1" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/rating_star_empty" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/button_rate_2" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/rating_star_empty" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/button_rate_3" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/rating_star_empty" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/button_rate_4" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/rating_star_empty" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/button_rate_5" android:layout_width="0.0dip" android:layout_height="44.0dip" android:src="@drawable/rating_star_empty" android:scaleType="fitCenter" android:layout_weight="1.0" />
+</LinearLayout>

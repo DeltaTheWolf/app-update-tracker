@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="autoplay_video_options">
+        <item>@string/wifi_only</item>
+        <item>@string/wifi_and_cellular</item>
+        <item>@string/never_autoplay_videos</item>
+    </string-array>
+    <string-array name="chat_bubble_colors">
+        <item>@string/Blue</item>
+        <item>@string/Green</item>
+        <item>@string/Silver</item>
+        <item>@string/Gold</item>
+        <item>@string/Pink</item>
+        <item>@string/Purple</item>
+        <item>@string/Orange</item>
+        <item>@string/Red</item>
+    </string-array>
+    <string-array name="chat_bubble_values">
+        <item>out_message_selector_blue</item>
+        <item>out_message_selector_green</item>
+        <item>out_message_selector_silver</item>
+        <item>out_message_selector_yellow</item>
+        <item>out_message_selector_pink</item>
+        <item>out_message_selector_violet</item>
+        <item>out_message_selector_orange</item>
+        <item>out_message_selector_red</item>
+    </string-array>
+    <string-array name="led_colors">
+        <item>@string/None</item>
+        <item>@string/Red</item>
+        <item>@string/Blue</item>
+        <item>@string/Green</item>
+        <item>@string/White</item>
+    </string-array>
+    <string-array name="led_values">
+        <item>00000000</item>
+        <item>ffff0000</item>
+        <item>ff0000ff</item>
+        <item>ff00ff00</item>
+        <item>ffffffff</item>
+    </string-array>
+    <string-array name="prefetch_video_options">
+        <item>@string/wifi_only</item>
+        <item>@string/wifi_and_cellular</item>
+        <item>@string/never</item>
+    </string-array>
+    <string-array name="refreshDeviceListForNewSurface">
+        <item>LG-H340</item>
+    </string-array>
+</resources>

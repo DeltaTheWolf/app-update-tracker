@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/chat_search_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/chat_search_bar_container" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/native_topbar_height">
+        <FrameLayout android:id="@id/chat_search_back_button" android:background="?selectableItemBackgroundBorderless" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/chat_search_back_button_image" android:duplicateParentState="true" android:layout_width="@dimen/material_navbar_button_width" android:layout_height="@dimen/material_navbar_button_height" android:src="@drawable/ic_back" android:scaleType="center" android:alpha="0.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/chat_search_search_icon_image" android:duplicateParentState="true" android:layout_width="@dimen/material_navbar_button_width" android:layout_height="@dimen/material_navbar_button_height" android:src="@drawable/ic_search_dark" android:scaleType="center" />
+        </FrameLayout>
+        <kik.android.chat.view.TransparentSearchBarViewImpl android:id="@id/chat_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/chats_search_hint" android:inputType="textShortMessage" />
+    </LinearLayout>
+    <include layout="@layout/navbar_underline" />
+    <FrameLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <kik.android.widget.ChatSearchRecyclerView android:id="@id/chat_search_results" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <include android:id="@id/chat_search_suggested" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/suggested_chats_view" />
+    </FrameLayout>
+</LinearLayout>

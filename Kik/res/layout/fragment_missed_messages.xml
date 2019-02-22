@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/topbar" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height">
+            <include layout="@layout/kik_back_button" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/mute_button_container" android:layout_width="@dimen/native_topbar_height" android:layout_height="fill_parent">
+                <ImageView android:id="@id/button_mute" android:background="?selectableItemBackgroundBorderless" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_bell" android:scaleType="centerInside" />
+                <ImageView android:id="@id/button_unmute" android:background="?selectableItemBackgroundBorderless" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_bell_muted" android:scaleType="centerInside" />
+            </FrameLayout>
+            <ImageView android:id="@id/button_clear" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/native_topbar_height" android:layout_height="fill_parent" android:src="@drawable/ic_trash" android:scaleType="centerInside" />
+        </LinearLayout>
+        <include layout="@layout/navbar_underline" />
+        <kik.android.widget.TransparentListView android:id="@id/conversation_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:smoothScrollbar="true" style="@style/KikListView" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <kik.android.widget.RobotoTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_no_new_chats" style="@style/KikTextView.EmptyState.Title" />
+            <kik.android.widget.RobotoTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_chats_new_people" style="@style/KikTextView.EmptyState.Description" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

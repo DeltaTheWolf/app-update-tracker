@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/chat_bugme_bar" android:background="@color/appbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bugme_container" android:background="?selectableItemBackground" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/bugme_bar_height">
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/ic_set_photo_bugme_bar" />
+        <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/gray_5" android:ellipsize="end" android:id="@id/chat_bugme_single_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/navbar_underline_height" android:layout_alignParentBottom="true" layout="@layout/navbar_underline" />
+</RelativeLayout>

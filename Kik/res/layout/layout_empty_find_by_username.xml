@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/find_friends_empty_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/clickable_text_selector" android:gravity="center_horizontal" android:id="@id/find_friends_empty_text" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="115.0dip" android:layout_marginRight="12.0dip" android:text="@string/find_by_username_empty_state"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

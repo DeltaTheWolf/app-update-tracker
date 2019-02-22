@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/loading_screen" android:tag="layout/profile_loading_view_0" android:paddingBottom="24.0dip" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kik_databound_navbar" />
+    <FrameLayout android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+        <View android:layout_gravity="center" android:id="@id/profile_pic_placeholder" android:background="@drawable/placeholder_circle" android:focusable="true" android:layout_width="@dimen/contact_image_size_large" android:layout_height="@dimen/contact_image_size_large" />
+        <include android:layout_gravity="center" android:id="@id/group_progress_spinner" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" layout="@layout/chat_info_progress_wheel" />
+    </FrameLayout>
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/rounded_trans_corners" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="14.0dip" />
+    <View android:layout_gravity="center_horizontal" android:id="@id/username_placeholder" android:background="@drawable/rounded_trans_corners" android:layout_width="70.0dip" android:layout_height="16.0dip" android:layout_marginTop="6.0dip" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_marginTop="32.0dip" layout="@layout/list_divider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/placeholder_circle" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" />
+        <View android:layout_gravity="center_vertical" android:background="@drawable/rounded_trans_corners" android:layout_width="110.0dip" android:layout_height="10.0dip" android:layout_marginLeft="32.0dip" />
+    </LinearLayout>
+    <include layout="@layout/list_divider" />
+</LinearLayout>

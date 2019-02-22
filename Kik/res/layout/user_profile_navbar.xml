@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kik.android.widget.NavbarContainer android:id="@id/kik_navbar" android:tag="layout/user_profile_navbar_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/native_topbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height_with_shadow" android:src="@drawable/navbar_background_shadow" />
+    <ImageView android:tag="binding_2" android:background="@drawable/circle_ripple_selector" android:layout_width="@dimen/native_topbar_height" android:layout_height="@dimen/native_topbar_height" android:src="@drawable/ic_back" android:scaleType="center" />
+    <ImageView android:layout_gravity="right" android:tag="binding_3" android:background="@drawable/circle_ripple_selector" android:layout_width="@dimen/native_topbar_height" android:layout_height="@dimen/native_topbar_height" android:src="@drawable/ic_share" android:scaleType="center" />
+</kik.android.widget.NavbarContainer>

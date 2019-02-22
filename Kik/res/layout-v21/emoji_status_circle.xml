@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/circle_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/circular_prof_pic_selector" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/default_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_addemoji" />
+    <ImageView android:layout_gravity="center" android:id="@id/emoji_image" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+</FrameLayout>

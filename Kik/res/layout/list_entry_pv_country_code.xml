@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/country_code_container" android:background="@xml/settings_item_selector" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <kik.android.widget.RobotoTextView android:textSize="16.0dip" android:textColor="@color/black" android:ellipsize="end" android:id="@id/country_description" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <kik.android.widget.RobotoTextView android:textColor="@color/phone_verification_light_grey_text_color" android:id="@id/country_code" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>
