@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kik.android">
+    <supports-screens/>
+    <permission android:name="kik.android.permission.CONTACT" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:description="@string/read_phone_state_annotation" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="kik.android.permission.CONTACT"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="kik.android.chat.KikApplication" android:supportsRtl="false" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.car.application" android:resource="@xml/automotive_app_desc"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_fpxk8WuTwagFbmshrrtx3lijCvnqVRgC"/>
+        <activity android:label="@string/app_name" android:name="kik.android.chat.activity.KikApiLandingActivity" android:noHistory="true" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="api.kik.com" android:scheme="kik"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/u/open/" android:scheme="http"/>
+                <data android:host="kik.com" android:pathPrefix="/u/open/" android:scheme="https"/>
+                <data android:host="www.kik.com" android:pathPrefix="/u/open/" android:scheme="http"/>
+                <data android:host="www.kik.com" android:pathPrefix="/u/open/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.me" android:pathPattern=".*" android:scheme="http"/>
+                <data android:host="kik.me" android:pathPattern=".*" android:scheme="https"/>
+                <data android:host="www.kik.me" android:pathPattern=".*" android:scheme="http"/>
+                <data android:host="www.kik.me" android:pathPattern=".*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/u/" android:scheme="kik-share"/>
+                <data android:host="kik.com" android:pathPrefix="/g/" android:scheme="kik-share"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/back" android:scheme="kik-share"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kik.com" android:pathPrefix="/send/" android:scheme="kik-share"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="users" android:scheme="kik"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="card"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="cards"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="kik"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="kik.android.chat.activity.IntroActivity" android:noHistory="true" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="kik.android.chat.activity.KikCropActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="kik.android.chat.activity.KikPlatformLanding" android:noHistory="true" android:taskAffinity="" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="kik.platform.send"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.kik.cards.browser.PopupWindowActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.kik.cards.usermedia.CustomGalleryActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="kik.android.chat.fragment.SimpleFragmentWrapperActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="kik.android.chat.activity.KikWelcomeFragmentActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="kik.android.chat.activity.ConversationsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="kik.android.chat.activity.ChatActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="kik.android.chat.activity.MissedConversationsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="kik.android.chat.activity.FragmentWrapperActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="kik.android.deeplinks.PublicGroupDeepLinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="gs" android:scheme="kik"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="kik.android.deeplinks.ChatInfoDeepLinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="u" android:scheme="kik"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="kik.android.deeplinks.UserProfileDeepLinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="settings" android:scheme="kik"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="kik.android.deeplinks.InternalDeeplinkActivity" android:noHistory="true" android:theme="@style/TransparentTheme.NoAnimation" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <service android:label="Kik Executor Service" android:name="kik.android.sdkutils.concurrent.AlarmManagerExecutorService"/>
+        <service android:exported="false" android:name="kik.android.net.push.FirebaseTickleService">
+            <intent-filter android:priority="10000">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:label="Video Chat Notification Service" android:name="kik.android.videochat.VideoChatNotificationService"/>
+        <provider android:authorities="kik.android.KikDataProvider" android:name="kik.android.KikDataProvider" android:permission="kik.android.permission.CONTACT"/>
+        <provider android:authorities="kik.android.KikFileProvider" android:name="kik.android.KikFileProvider"/>
+        <provider android:authorities="kik.android.VideoContentProvider" android:exported="false" android:name="kik.android.VideoContentProvider"/>
+        <receiver android:name="kik.android.chat.service.StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="kik.android.chat.service.KikCommAlarmReceiver"/>
+        <receiver android:exported="true" android:name="kik.android.chat.service.CustomCampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="kik.android.AlarmReceiver"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="05f490868c9518194f9555a7d8664f006da667ac"/>
+        <provider android:authorities="kik.android.provider" android:exported="false" android:grantUriPermissions="true" android:name="kik.android.KikShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="kik.android.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="kik.android.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="@string/kinecosystem_welcome_to_kin" android:name="com.kin.ecosystem.splash.view.SplashActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:label="@string/kinecosystem_kin_marketplace" android:name="com.kin.ecosystem.main.view.EcosystemActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.kin.ecosystem.poll.view.PollWebViewActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar"/>
+        <activity android:name="com.kin.ecosystem.settings.view.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <provider android:authorities="kik.android.KinRecoveryFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.kin.ecosystem.recovery.KinRecoveryFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/kinrecovery_file_provider_paths"/>
+        </provider>
+        <activity android:label="@string/kinrecovery_backup" android:name="com.kin.ecosystem.recovery.backup.view.BackupActivity" android:screenOrientation="portrait" android:theme="@style/KinrecoveryNoActionBar"/>
+        <activity android:label="@string/kinrecovery_restore" android:name="com.kin.ecosystem.recovery.restore.view.RestoreActivity" android:screenOrientation="portrait" android:theme="@style/KinrecoveryNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="kik.android.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+    </application>
+</manifest>
