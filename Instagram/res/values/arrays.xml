@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="background_wifi_prefetcher_job_ids">
+        <item>@id/background_wifi_prefetcher_job_scheduler_compat_id</item>
+    </array>
+    <string-array name="comments_sorting_options">
+        <item>Top Comments</item>
+        <item>Newest First</item>
+    </string-array>
+    <array name="direct_mutation_manager_job_ids">
+        <item>@id/direct_mutation_manager_job_id</item>
+    </array>
+    <string-array name="faulty_security_ids">
+        <item>9774d56d682e549c</item>
+        <item>9d1d1f0dfa440886</item>
+        <item>fc067667235b8f19</item>
+    </string-array>
+    <array name="ig_http_update_job_ids">
+        <item>@id/ig_http_update_job_id</item>
+    </array>
+    <array name="iig_dialog_autosize_text_sizes">
+        <item>@dimen/font_small</item>
+        <item>@dimen/font_xsmall_not_scaled</item>
+        <item>@dimen/font_smaller</item>
+        <item>@dimen/font_small</item>
+        <item>@dimen/font_small_medium</item>
+        <item>@dimen/font_medium</item>
+        <item>@dimen/font_medium_large</item>
+        <item>@dimen/font_medium_xlarge</item>
+    </array>
+    <array name="jobscheduler_app_module_download_ids">
+        <item>@id/jobscheduler_app_module_download</item>
+    </array>
+    <array name="memory_dump_upload_job_service_ids">
+        <item>@id/memory_dump_upload_job_service_id</item>
+    </array>
+    <string-array name="report_ranking_options">
+        <item>I have seen this before</item>
+        <item>I should have seen this sooner</item>
+        <item>Post is too old</item>
+        <item>Post is not relevant</item>
+    </string-array>
+    <array name="self_update_job_service_ids">
+        <item>@id/self_update_job_service</item>
+    </array>
+</resources>

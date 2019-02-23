@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anonymous_comments_message">
+        <item quantity="other">Погледајте %1$d коментара {original_post}.</item>
+        <item quantity="one">Погледајте %1$d коментар {original_post}.</item>
+    </plurals>
+    <plurals name="anonymous_likers_message">
+        <item quantity="other">Погледајте %1$d свиђања {original_post}.</item>
+        <item quantity="one">Погледајте %1$d свиђање {original_post}.</item>
+    </plurals>
+    <plurals name="average_time_spent_hours">
+        <item quantity="other">%1$d ч.</item>
+    </plurals>
+    <plurals name="average_time_spent_minutes">
+        <item quantity="other">%1$d мин.</item>
+    </plurals>
+    <plurals name="blocked_story_videos_delete_button_text">
+        <item quantity="other">Избриши %1$d видео записа</item>
+        <item quantity="one">Избриши %1$d видео запис</item>
+    </plurals>
+    <plurals name="close_friends_button">
+        <item quantity="other">%1$d блиских пријатеља</item>
+        <item quantity="one">%1$d близак пријатељ</item>
+        <item quantity="few">%1$d блиска пријатеља</item>
+    </plurals>
+    <plurals name="comment_like_count">
+        <item quantity="other">%1$d свиђања</item>
+        <item quantity="one">%1$d свиђање</item>
+    </plurals>
+    <plurals name="countdown_sticker_day">
+        <item quantity="other">д.</item>
+    </plurals>
+    <plurals name="countdown_sticker_hour">
+        <item quantity="other">ч.</item>
+    </plurals>
+    <plurals name="countdown_sticker_minute">
+        <item quantity="other">мин.</item>
+    </plurals>
+    <plurals name="countdown_sticker_month">
+        <item quantity="other">мес.</item>
+    </plurals>
+    <plurals name="countdown_sticker_second">
+        <item quantity="other">сек.</item>
+    </plurals>
+    <plurals name="delete_videos_dialog_message">
+        <item quantity="other">Више нећете моћи да видите ове видео записе.</item>
+    </plurals>
+    <plurals name="delete_videos_dialog_title">
+        <item quantity="other">Желите ли да избришете %1$d видео записа?</item>
+        <item quantity="one">Желите ли да избришете %1$d видео запис?</item>
+    </plurals>
+    <plurals name="direct_add_member_dialog_message">
+        <item quantity="other">Моћи ће да виде све претходне поруке из овог разговора.</item>
+    </plurals>
+    <plurals name="direct_digest_is_active_x_hours_ago">
+        <item quantity="other">Активан пре %1$d ч.</item>
+    </plurals>
+    <plurals name="direct_digest_is_active_x_mins_ago">
+        <item quantity="other">Активан пре %1$d мин.</item>
+    </plurals>
+    <plurals name="direct_digest_num_active_recipients_today">
+        <item quantity="other">Активни данас: %1$d</item>
+    </plurals>
+    <plurals name="direct_group_max_size">
+        <item quantity="other">Не можете додати више од %1$s особа у групу.</item>
+    </plurals>
+    <plurals name="direct_max_recipients_reached_body">
+        <item quantity="other">Група може да има највише %1$s чланова. Да бисте довршили прављење групе, смањите број чланова на %1$s, укључујући и вас.</item>
+        <item quantity="one">Група може да има највише %1$s члана. Да бисте довршили прављење групе, смањите број чланова на %1$s, укључујући и вас.</item>
+        <item quantity="few">Група може да има највише %1$s члана. Да бисте довршили прављење групе, смањите број чланова на %1$s, укључујући и вас.</item>
+    </plurals>
+    <plurals name="direct_notification_summary_more_messages">
+        <item quantity="other">Још %1$d порука</item>
+        <item quantity="few">Још %1$d поруке</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_allow">
+        <item quantity="other">Дозволи (%1$d)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_decline">
+        <item quantity="other">Одбиј (%1$d)</item>
+    </plurals>
+    <plurals name="direct_permissions_decline_x_messages">
+        <item quantity="other">Ових %1$d порука биће уклоњено, а њихови пошиљаоци више неће моћи да вам шаљу поруке.</item>
+        <item quantity="one">Ова %1$d порука биће уклоњена, а њихови пошиљаоци више неће моћи да вам шаљу поруке.</item>
+        <item quantity="few">Ове %1$d поруке биће уклоњене, а њихови пошиљаоци више неће моћи да вам шаљу поруке.</item>
+    </plurals>
+    <plurals name="direct_permissions_inviter_follower_count">
+        <item quantity="other">%1$d пратилаца</item>
+        <item quantity="one">%1$d пратилац</item>
+        <item quantity="few">%1$d пратиоца</item>
+    </plurals>
+    <plurals name="direct_permissions_inviter_post_count">
+        <item quantity="other">%1$d објава</item>
+        <item quantity="few">%1$d објаве</item>
+    </plurals>
+    <plurals name="direct_x_message_requests_caps">
+        <item quantity="other">%1$s захтева</item>
+        <item quantity="one">%1$s захтев</item>
+    </plurals>
+    <plurals name="discard_x_drafts">
+        <item quantity="other">Желите ли да одбаците %1$d нацрта?</item>
+        <item quantity="one">Желите ли да одбаците %1$d нацрт?</item>
+    </plurals>
+    <plurals name="discovery_item_follow">
+        <item quantity="other">Зато што пратите</item>
+    </plurals>
+    <plurals name="discovery_item_liked_by">
+        <item quantity="other">Особе којима се свиђа:</item>
+    </plurals>
+    <plurals name="discovery_item_multiple_users_format">
+        <item quantity="other">%1$s + још %2$d</item>
+    </plurals>
+    <plurals name="followers_button">
+        <item quantity="other">%1$d пратилаца</item>
+        <item quantity="one">%1$d пратилац</item>
+        <item quantity="few">%1$d пратиоца</item>
+    </plurals>
+    <plurals name="grid_carousel_n_photos_one_video">
+        <item quantity="other">%1$d фотографија и 1 видео запис корисника %2$s у %3$d. реду, %4$d. колони</item>
+        <item quantity="few">%1$d фотографије и 1 видео запис корисника %2$s у %3$d. реду, %4$d. колони</item>
+    </plurals>
+    <plurals name="grid_carousel_one_photo_n_videos">
+        <item quantity="other">1 фотографија и %1$d видео записа корисника %2$s у %3$d. реду, %4$d. колони</item>
+        <item quantity="one">1 фотографија и %1$d видео запис корисника %2$s у %3$d. реду, %4$d. колони</item>
+    </plurals>
+    <plurals name="hashtag_posts">
+        <item quantity="other">%1$s објава</item>
+        <item quantity="few">%1$s објаве</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d хештегова</item>
+        <item quantity="one">%1$d хештег</item>
+        <item quantity="few">%1$d хештега</item>
+    </plurals>
+    <plurals name="header_hashtag_posts_formatted">
+        <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> објава</item>
+    </plurals>
+    <plurals name="igtv_profile_follower_count">
+        <item quantity="other">%1$s пратилаца</item>
+        <item quantity="one">%1$s пратилац</item>
+        <item quantity="few">%1$s пратиоца</item>
+    </plurals>
+    <plurals name="igtv_video_count">
+        <item quantity="other">%1$s видео записа</item>
+        <item quantity="one">%1$s видео запис</item>
+    </plurals>
+    <plurals name="import_posts_label">
+        <item quantity="other">Увезите %1$d објава</item>
+        <item quantity="one">Увезите %1$d објаву</item>
+        <item quantity="few">Увезите %1$d објаве</item>
+    </plurals>
+    <plurals name="insights_profile_visits">
+        <item quantity="other">%1$d посета профилу у последњих %2$s</item>
+        <item quantity="few">%1$d посете профилу у последњих %2$s</item>
+    </plurals>
+    <plurals name="insights_profile_visits_days">
+        <item quantity="other">%1$d дана</item>
+        <item quantity="one">%1$d дан</item>
+    </plurals>
+    <plurals name="live_broadcast_total_views">
+        <item quantity="other">%1$s гледалаца</item>
+        <item quantity="one">%1$s гледалац</item>
+        <item quantity="few">%1$s гледаоца</item>
+    </plurals>
+    <plurals name="live_with_multiple_join_requests_received_comment">
+        <item quantity="other">%1$s и још %2$d особа послали су захтев за учешће у вашем видео преносу уживо.</item>
+        <item quantity="few">%1$s и још %2$d особе послале су захтев за учешће у вашем видео преносу уживо.</item>
+    </plurals>
+    <plurals name="multi_author_story_view_count_nux_photo_title_plural">
+        <item quantity="other">Ваша фотографија се налази у причи %1$s и још %2$s прича.</item>
+        <item quantity="one">Ваша фотографија се налази у причи %1$s и још %2$s причи.</item>
+        <item quantity="few">Ваша фотографија се налази у причи %1$s и још %2$s приче.</item>
+    </plurals>
+    <plurals name="multi_author_story_view_count_nux_video_title_plural">
+        <item quantity="other">Ваш видео запис се налази у причи %1$s и још %2$s прича.</item>
+        <item quantity="one">Ваш видео запис се налази у причи %1$s и још %2$s причи.</item>
+        <item quantity="few">Ваш видео запис се налази у причи %1$s и још %2$s приче.</item>
+    </plurals>
+    <plurals name="multi_author_story_viewer_list_megaphone_photo_hashtag_title">
+        <item quantity="other">Фотографија је додата у %1$s прича о хештегу</item>
+        <item quantity="one">Фотографија је додата у %1$s причу о хештегу</item>
+        <item quantity="few">Фотографија је додата у %1$s приче о хештегу</item>
+    </plurals>
+    <plurals name="multi_author_story_viewer_list_megaphone_photo_location_title">
+        <item quantity="other">Фотографија је додата у %1$s прича о локацији</item>
+        <item quantity="one">Фотографија је додата у %1$s причу о локацији</item>
+        <item quantity="few">Фотографија је додата у %1$s приче о локацији</item>
+    </plurals>
+    <plurals name="multi_author_story_viewer_list_megaphone_video_hashtag_title">
+        <item quantity="other">Видео запис је додат у %1$s прича о хештегу</item>
+        <item quantity="one">Видео запис је додат у %1$s причу о хештегу</item>
+        <item quantity="few">Видео запис је додат у %1$s приче о хештегу</item>
+    </plurals>
+    <plurals name="multi_author_story_viewer_list_megaphone_video_location_title">
+        <item quantity="other">Видео запис је додат у %1$s прича о локацији</item>
+        <item quantity="one">Видео запис је додат у %1$s причу о локацији</item>
+        <item quantity="few">Видео запис је додат у %1$s приче о локацији</item>
+    </plurals>
+    <plurals name="n_characters_over_the_limit">
+        <item quantity="other">Прекорачили сте број знакова за %1$d</item>
+    </plurals>
+    <plurals name="n_characters_remaining">
+        <item quantity="other">Преостали број знакова: %1$d</item>
+    </plurals>
+    <plurals name="notification_badge_description_more_than">
+        <item quantity="other">%1$d непрочитаних порука или више</item>
+        <item quantity="one">%1$d непрочитана порука или више</item>
+        <item quantity="few">%1$d непрочитане поруке или више</item>
+    </plurals>
+    <plurals name="notification_badge_description_plural">
+        <item quantity="other">%1$d непрочитаних порука</item>
+        <item quantity="one">%1$d непрочитана порука</item>
+        <item quantity="few">%1$d непрочитане поруке</item>
+    </plurals>
+    <plurals name="num_products_formatted">
+        <item quantity="other">%1$d производа</item>
+        <item quantity="one">%1$d производ</item>
+    </plurals>
+    <plurals name="number_of_viewers">
+        <item quantity="other">%1$s гледалаца</item>
+        <item quantity="one">%1$s гледалац</item>
+        <item quantity="few">%1$s гледаоца</item>
+    </plurals>
+    <plurals name="on_this_day_subtitle">
+        <item quantity="other">Пре тачно %1$d година</item>
+        <item quantity="one">Пре тачно %1$d годину</item>
+        <item quantity="few">Пре тачно %1$d године</item>
+    </plurals>
+    <plurals name="on_x_countries">
+        <item quantity="other">Укључено (%1$d земаља)</item>
+        <item quantity="one">Укључено (%1$d земља)</item>
+        <item quantity="few">Укључено (%1$d земље)</item>
+    </plurals>
+    <plurals name="pending_promoted_posts">
+        <item quantity="other">Имате %1$d промоција на чекању.</item>
+        <item quantity="one">Имате %1$d промоцију на чекању.</item>
+        <item quantity="few">Имате %1$d промоције на чекању.</item>
+    </plurals>
+    <plurals name="reel_dashboard_slider_results_summary">
+        <item quantity="other">Гласало је %1$d особа. Ово је просечан одговор.</item>
+        <item quantity="one">Гласала је %1$d особа. Ово је просечан одговор.</item>
+        <item quantity="few">Гласале су %1$d особе. Ово је просечан одговор.</item>
+    </plurals>
+    <plurals name="remove_videos_from_highlight_dialog_message">
+        <item quantity="other">Уклањате %1$d видео записа из истакнуте објаве.</item>
+        <item quantity="one">Уклањате %1$d видео запис из истакнуте објаве.</item>
+    </plurals>
+    <plurals name="remove_videos_from_highlight_dialog_title">
+        <item quantity="other">Желите ли да уклоните %1$d видео записа из истакнутих видео записа?</item>
+        <item quantity="one">Желите ли да уклоните %1$d видео запис из истакнутих видео записа?</item>
+    </plurals>
+    <plurals name="rolodex_hour">
+        <item quantity="other">%1$d ч.</item>
+    </plurals>
+    <plurals name="rolodex_minute">
+        <item quantity="other">%1$d мин.</item>
+    </plurals>
+    <plurals name="save_photos_captured">
+        <item quantity="other">Желите ли да сачувате снимљене фотографије?</item>
+    </plurals>
+    <plurals name="save_videos_captured">
+        <item quantity="other">Желите ли да сачувате снимљене видео записе?</item>
+    </plurals>
+    <plurals name="segmented_video_block_blacklist_title">
+        <item quantity="other">%1$d видео записа је блокирано у неким земљама</item>
+        <item quantity="one">%1$d видео запис је блокиран у неким земљама</item>
+        <item quantity="few">%1$d видео записа су блокирана у неким земљама</item>
+    </plurals>
+    <plurals name="segmented_video_block_global_title">
+        <item quantity="other">%1$d видео записа је блокирано</item>
+        <item quantity="one">%1$d видео запис је блокиран</item>
+        <item quantity="few">%1$d видео записа су блокирана</item>
+    </plurals>
+    <plurals name="segmented_video_block_whitelist_title">
+        <item quantity="other">%1$d видео записа је доступно само у неким земљама</item>
+        <item quantity="one">%1$d видео запис је доступан само у неким земљама</item>
+        <item quantity="few">%1$d видео записа су доступна само у неким земљама</item>
+    </plurals>
+    <plurals name="selection_max_reached">
+        <item quantity="other">Не можете да изаберете више од %1$d коментара истовремено.</item>
+    </plurals>
+    <plurals name="shopping_viewer_ugc_edit_posts_added_toast">
+        <item quantity="other">Објаве су додате</item>
+    </plurals>
+    <plurals name="shopping_viewer_ugc_edit_posts_removed_toast">
+        <item quantity="other">Објаве су уклоњене</item>
+    </plurals>
+    <plurals name="thread_title_x_y_and_n_others">
+        <item quantity="other">%1$s, %2$s и још %3$s</item>
+    </plurals>
+    <plurals name="typing_indicator_many">
+        <item quantity="other">%1$s и још %2$d куцају…</item>
+    </plurals>
+    <plurals name="undo_x_deleted">
+        <item quantity="other">Избрисали сте више коментара (%1$d). Додирните да бисте опозвали.</item>
+    </plurals>
+    <plurals name="unseen_posts">
+        <item quantity="other">%1$d нових објава</item>
+        <item quantity="one">%1$d нова објава</item>
+        <item quantity="few">%1$d нове објаве</item>
+    </plurals>
+    <plurals name="x_and_n_others">
+        <item quantity="other">%1$s и &lt;b>још %2$s&lt;/b></item>
+    </plurals>
+    <plurals name="x_contacts_on_instagram">
+        <item quantity="other">%1$s ваших контаката користи Instagram</item>
+        <item quantity="one">%1$s ваш контакт користи Instagram</item>
+        <item quantity="few">%1$s ваша контакта користе Instagram</item>
+    </plurals>
+    <plurals name="x_days_ago">
+        <item quantity="other">Пре %1$s дана</item>
+        <item quantity="one">Пре %1$s дан</item>
+    </plurals>
+    <plurals name="x_fb_friends_on_instagram">
+        <item quantity="other">%1$s ваших пријатеља са Фејсбука користи Instagram</item>
+        <item quantity="one">%1$s ваш пријатељ са Фејсбука користи Instagram</item>
+        <item quantity="few">%1$s ваша пријатеља са Фејсбука користе Instagram</item>
+    </plurals>
+    <plurals name="x_hours_ago">
+        <item quantity="other">Пре %1$s h</item>
+    </plurals>
+    <plurals name="x_minutes_ago">
+        <item quantity="other">Пре %1$s минута</item>
+        <item quantity="one">Пре %1$s минут</item>
+    </plurals>
+    <plurals name="x_people">
+        <item quantity="other">%1$d особа</item>
+        <item quantity="few">%1$d особе</item>
+    </plurals>
+    <plurals name="x_seconds_ago">
+        <item quantity="other">Пре %1$s секунди</item>
+        <item quantity="one">Пре %1$s секунде</item>
+        <item quantity="few">Пре %1$s секунде</item>
+    </plurals>
+    <plurals name="x_selected">
+        <item quantity="other">Изабрали сте %1$d</item>
+    </plurals>
+    <plurals name="x_survey_question_responders">
+        <item quantity="other">%1$d особа је одговорило</item>
+        <item quantity="one">%1$d особа је одговорила</item>
+        <item quantity="few">%1$d особе су одговориле</item>
+    </plurals>
+    <plurals name="x_weeks_ago">
+        <item quantity="other">Пре %1$s недеља</item>
+        <item quantity="one">Пре %1$s недељу</item>
+        <item quantity="few">Пре %1$s недеље</item>
+    </plurals>
+    <plurals name="x_y_and_n_others">
+        <item quantity="other">%1$s, %2$s и &lt;b>још %3$s&lt;/b></item>
+    </plurals>
+    <plurals name="x_y_z_and_n_others">
+        <item quantity="other">%1$s, %2$s, %3$s и &lt;b>још %4$s&lt;/b></item>
+    </plurals>
+</resources>

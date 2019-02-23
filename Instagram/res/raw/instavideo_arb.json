@@ -1,0 +1,179 @@
+{
+  "enabled": 1,
+  "minBitrate": 100000,
+  "maxBitrate": 1048576,
+  "videoBitrateThreshold216": 202500,
+  "videoBitrateThreshold288": 360000,
+  "videoBitrateThreshold360": 562500,
+  "videoBitrateThreshold504": 700000,
+  "videoBitrateThreshold648": 1048576,
+  "videoBitrateThreshold720": 1049600,
+  "rules": [
+    {
+      "numberOfVideoFramesProcessed": [0, 30],
+      "estimatedNetworkBitrateFromSpeedTest": [1, 1e+32],
+      "controlParameters": {
+        "inputVideoBitrate": 0,
+        "estimatedNetworkBitrateFromSpeedTest": 1,
+        "intercept": -64000
+      }
+    },
+    {
+      "numberOfVideoFramesProcessed": [0, 30],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 1
+      }
+    },
+    {
+      "inputBitrate": [500000, 600000],
+      "networkQueueSizeInMilliseconds_mean": [-500, -500],
+      "networkQueueSizeInMilliseconds_delta": [-100, 100],
+      "millisecondsSinceLastBitrateIncrease": [0, 30000],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 1
+      }
+    },
+    {
+      "networkQueueSizeInMilliseconds_mean": [5000, 1e+32],
+      "networkQueueSizeInMilliseconds_delta": [50, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 0.5
+      }
+    },
+    {
+      "networkQueueSizeInMilliseconds_mean": [2500, 1e+32],
+      "networkQueueSizeInMilliseconds_delta": [100, 1e+32],
+      "millisecondsSinceLastBitrateDecrease": [2000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 0.65
+      }
+    },
+    {
+      "networkQueueSizeInMilliseconds_mean": [1500, 1e+32],
+      "networkQueueSizeInMilliseconds_delta": [100, 1e+32],
+      "millisecondsSinceLastBitrateDecrease": [2000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 0.85
+      }
+    },
+    {
+      "networkQueueSizeInBytes_delta": [10000, 1e+32],
+      "networkQueueSizeInMilliseconds": [500, 1e+32],
+      "networkQueueSizeInMilliseconds_delta": [50, 1e+32],
+      "millisecondsSinceLastBitrateDecrease": [2000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 0,
+        "networkQueueSizeInBytes_delta": 0,
+        "estimatedThroughput_mean": 1,
+        "intercept": -64000
+      }
+    },
+    {
+      "networkQueueSizeInBytes_delta": [10000, 1e+32],
+      "networkQueueSizeInMilliseconds": [500, 1e+32],
+      "millisecondsSinceLastBitrateDecrease": [-1e+32, 0],
+      "networkQueueSizeInMilliseconds_delta": [50, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 0,
+        "networkQueueSizeInBytes_delta": 0,
+        "estimatedThroughput_mean": 1,
+        "intercept": -64000
+      }
+    },
+    {
+      "networkRTT_mean": [-1e+32, 1],
+      "networkRTT_derivative_mean": [-1e+32, 0.001],
+      "inputVideoBitrate": [0, 300000],
+      "networkQueueSizeInMilliseconds": [-500, 500],
+      "networkQueueSizeInMilliseconds_derivative_mean": [-50, 50],
+      "millisecondsSinceLastBitrateDecrease": [10000, 1e+32],
+      "millisecondsSinceLastBitrateIncrease": [2000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 1,
+        "intercept": 32000
+      }
+    },
+    {
+      "networkRTT_mean": [-1e+32, 1],
+      "networkRTT_derivative_mean": [-1e+32, 0.001],
+      "inputVideoBitrate": [300000, 500000],
+      "networkQueueSizeInMilliseconds": [-500, 500],
+      "networkQueueSizeInMilliseconds_derivative_mean": [-50, 50],
+      "millisecondsSinceLastBitrateDecrease": [10000, 1e+32],
+      "millisecondsSinceLastBitrateIncrease": [4000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 1,
+        "intercept": 64000
+      }
+    },
+    {
+      "networkRTT_mean": [-1e+32, 1],
+      "networkRTT_derivative_mean": [-1e+32, 0.001],
+      "inputVideoBitrate": [500000, 1000000],
+      "networkQueueSizeInMilliseconds": [-500, 500],
+      "networkQueueSizeInMilliseconds_derivative_mean": [-50, 50],
+      "millisecondsSinceLastBitrateDecrease": [10000, 1e+32],
+      "millisecondsSinceLastBitrateIncrease": [10000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 1,
+        "intercept": 1280000
+      }
+    },
+    {
+      "networkRTT_mean": [-1e+32, 1],
+      "networkRTT_derivative_mean": [-1e+32, 0.001],
+      "networkQueueSizeInMilliseconds_mean": [-500, 500],
+      "networkQueueSizeInMilliseconds_derivative_mean": [-100, 1],
+      "millisecondsSinceLastBitrateIncrease": [10000, 1e+32],
+      "millisecondsSinceLastBitrateDecrease": [15000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 1.3
+      }
+    },
+    {
+      "networkRTT_mean": [-1e+32, 1],
+      "networkRTT_derivative_mean": [-1e+32, 0.001],
+      "networkQueueSizeInMilliseconds_mean": [-500, 500],
+      "networkQueueSizeInMilliseconds_derivative_mean": [-100, 1],
+      "millisecondsSinceLastBitrateDecrease": [-1e+32, 0],
+      "milliseconds_since_last_change": [15000, 1e+32],
+      "controlParameters": {
+        "inputVideoBitrate": 1.5
+      }
+    },
+    {
+      "networkRTT_mean": [-1e+32, 1],
+      "networkRTT_derivative_mean": [-1e+32, 0.001],
+      "inputVideoBitrate": [500000, 1e+32],
+      "networkQueueSizeInMilliseconds": [-1e+32, 1],
+      "networkQueueSizeInMilliseconds_delta_mean": [-1, 1],
+      "milliseconds_since_last_change": [50000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 2
+      }
+    },
+    {
+      "networkRTT_mean": [-1e+32, 1],
+      "networkRTT_derivative_mean": [-1e+32, 0.001],
+      "inputVideoBitrate": [0, 500000],
+      "networkQueueSizeInMilliseconds": [-1e+32, 1],
+      "networkQueueSizeInMilliseconds_delta_mean": [-1e+32, 50],
+      "milliseconds_since_last_change": [30000, 1e+32],
+      "controlParameters":
+      {
+        "inputVideoBitrate": 2
+      }
+    }]
+}
