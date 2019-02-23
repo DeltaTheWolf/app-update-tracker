@@ -71,23 +71,23 @@
     <string name="abm_permission_cover_body">"We don't have access to your contacts. Change your settings so we can help you find your friends"</string>
     <string name="abm_permission_title">Kik Does Not Have Access to Your Contacts</string>
     <string name="abm_privacy_options_title">Privacy Options</string>
-    <string name="about_copyright_text">Copyright © 2018 Kik Interactive Inc All rights reserved</string>
-    <string name="about_copyright_text_extended">"Copyright © 2018 Kik Interactive Inc All rights reserved
+    <string name="about_copyright_text">Copyright © 2019 Kik Interactive Inc All rights reserved</string>
+    <string name="about_copyright_text_extended">"Copyright © 2019 Kik Interactive Inc All rights reserved
 
 Kik Interactive Inc
-420 Weber St North
-Suite I
-Waterloo, ON
+137 Glasgow Street
+Unit 525 (Bay Area 5)
+Kitchener, ON
 Canada
-N2L 4E7"</string>
-    <string name="about_copyright_text_extended_link">"Copyright © 2018 Kik Interactive Inc All rights reserved
+N2G 4X8"</string>
+    <string name="about_copyright_text_extended_link">"Copyright © 2019 Kik Interactive Inc All rights reserved
 
 Kik Interactive Inc
-420 Weber St North
-Suite I
-Waterloo, ON
+137 Glasgow Street
+Unit 525 (Bay Area 5)
+Kitchener, ON
 Canada
-N2L 4E7
+N2G 4X8
 
 http://help.kik.com"</string>
     <string name="about_kik">About Kik</string>
@@ -113,6 +113,8 @@ http://help.kik.com"</string>
     <string name="add_contacts">Add Contacts</string>
     <string name="add_description">Add a description</string>
     <string name="add_effect">Add effects!</string>
+    <string name="add_friend_modal_message1">Your profile will only be revealed if both of you agree to become friends</string>
+    <string name="add_friend_modal_message2">Becoming friends also allows you to send and receive photos and videos</string>
     <string name="add_group_hint">Who do you want to add?</string>
     <string name="add_payment_screen_title">New Card</string>
     <string name="added_you_attribution_message">%1$s started chatting with you</string>
@@ -228,6 +230,7 @@ Shop"</string>
     <string name="camera_permission_body">To scan a Kik Code, you can enable access in settings App Permissions</string>
     <string name="camera_permission_title">Kik Does Not Have Access to Your Camera</string>
     <string name="cannot_select_bots">Bots cannot be selected.</string>
+    <string name="cannot_start_kin_error_message_body">The Kin Marketplace is currently unavailable. Please try again later!</string>
     <string name="cant_create_group_hashtag_body">Set a hashtag for your group. A hashtag lets users search for and join your group</string>
     <string name="cant_create_group_members_body">Please add at least one other group member</string>
     <string name="cant_create_group_title">"Can't Create Group"</string>
@@ -316,7 +319,7 @@ Shop"</string>
     <string name="code_download_website">http://kik.me/%s #kik #kikme</string>
     <string name="collection_not_found_message_body">Themes cannot be displayed at this time. Please try again later.</string>
     <string name="collection_not_found_title">"Couldn't Load Theme"</string>
-    <string name="com.crashlytics.android.build_id">71334fec-d8b6-4ff4-a763-f42951b41714</string>
+    <string name="com.crashlytics.android.build_id">34077729-09fb-413a-a9b8-251a21397217</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -443,7 +446,7 @@ from **%2$s**"</string>
     <string name="disable_debug">Disable Debug Mode</string>
     <string name="disabled_admin_dialog_body">This admin is unable to accept tips. Please select another admin you want to tip.</string>
     <string name="disabled_admin_dialog_title">Admin Not Available</string>
-    <string name="discard_filter_dialog_message">This will discard the filters you have selected</string>
+    <string name="discard_filter_dialog_message">This will discard any changes you have made to your filters</string>
     <string name="discard_image_effects_message">Are you sure you want to discard all edits made to your image?</string>
     <string name="dismiss_pin_to_top">Swipe Up to Dismiss</string>
     <string name="do_you_want_to_continue_">Do you want to continue?</string>
@@ -1710,6 +1713,7 @@ Photo"</string>
     <string name="the_user_x_needs_to_upgrade_before_they_can_use_group_conversations">The user %s needs to upgrade before they can use group conversations</string>
     <string name="theme_already_purchased_message">Looks like you already own this theme. Hit \"Set Theme\" to apply it to your chat!</string>
     <string name="theme_already_purchased_title">Theme Already Purchased</string>
+    <string name="theme_can_not_be_purchased_message">Theme can not be purchased at this moment. Please try again later!</string>
     <string name="theme_not_found_message_body">This theme cannot be displayed at this time. Please try again later.</string>
     <string name="theme_not_found_title">"Couldn't Load Theme"</string>
     <string name="theme_preview_are_you_sure_dialog_body">This will discard the theme you have selected.</string>
@@ -1755,6 +1759,12 @@ Photo"</string>
     <string name="tipping_earn_kin_dialog_title">Earn Kin to Tip Admin</string>
     <string name="tipping_failure_dialog_body">Oops! Your tip was unable to be sent. Please try again, or cancel your tip to discard the transaction.</string>
     <string name="tipping_failure_dialog_title">Failed to Send</string>
+    <string name="tipping_no_kin_claim_kin_second_dialog">Claim your Kin by completing a short tutorial in the Kin Marketplace!</string>
+    <string name="tipping_no_kin_longer_blurb_dialog">Thank your admins by tipping them Kin! Complete a short tutorial in the Kin Marketplace to get started.</string>
+    <string name="tipping_no_kin_short_tutorial_second_dialog">Complete a short tutorial in the Marketplace to get started with Kin.</string>
+    <string name="tipping_no_kin_tip_admins_first_dialog">You can now tip admins with Kin!</string>
+    <string name="tipping_no_kin_two_choices_first_dialog">Show your admins you care with Kin!</string>
+    <string name="tipping_no_kin_two_choices_second_dialog">To get started, complete the tutorial or survey in the Kin Marketplace.</string>
     <string name="tipping_notification_admin_overflow_count">+ %1$d</string>
     <string name="tipping_notification_subtext">Explore the Kin Marketplace to view your wallet</string>
     <string name="tipping_notification_tipped_value_string">"You've Been Tipped @kinlogo@ *%1$d*!"</string>
@@ -1763,6 +1773,7 @@ Photo"</string>
     <string name="tipping_unavailable_dialog_title">Tipping Unavailable</string>
     <string name="title_accept">Accept</string>
     <string name="title_add">Add</string>
+    <string name="title_add_friend">Add Friend</string>
     <string name="title_add_people">Add People</string>
     <string name="title_add_to_contacts">Add to Contacts</string>
     <string name="title_add_to_conversation_question">Add to conversation?</string>
@@ -1848,6 +1859,7 @@ Photo"</string>
     <string name="title_group_invite">Group Invite</string>
     <string name="title_group_name">Group Name</string>
     <string name="title_hands">Hands</string>
+    <string name="title_heads_up">Heads Up!</string>
     <string name="title_help">Help</string>
     <string name="title_help_about_us">Help &amp; About Us</string>
     <string name="title_hide">Hide</string>
@@ -2167,7 +2179,7 @@ Photo"</string>
     <string name="view_all_camelcase">View All</string>
     <string name="view_info">View Info</string>
     <string name="view_members">View Members</string>
-    <string name="visit_marketplace_kin_message">Visit the marketplace to earn Kin</string>
+    <string name="visit_marketplace_kin_message">Visit the Marketplace to earn Kin</string>
     <string name="we_cannot_launch_sms_application_on_this_iphone_os__please_try_a_different_method">"We can't find an SMS app on this device. Try telling your friend about Kik using one of the other options"</string>
     <string name="web_kik_community_guidelines">http://kik.com/standards</string>
     <string name="web_kik_privacy">http://kik.com/privacy</string>
