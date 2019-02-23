@@ -97,7 +97,6 @@
     <string name="account_privacy_option_status_private">privat</string>
     <string name="account_privacy_option_status_public">öffentlich</string>
     <string name="account_privacy_option_title">Konto-Privatsphäre</string>
-    <string name="account_section_title">Bei %1$s einkaufen</string>
     <string name="action_button">CTA-Button</string>
     <string name="action_view">Ansehen</string>
     <string name="activation_card_bio_button_completed_text">Steckbrief bearbeiten</string>
@@ -254,6 +253,11 @@
     <string name="appeal_submitted_title">Dein Einspruch wurde eingereicht.</string>
     <string name="apply">Übernehmen</string>
     <string name="apps_header">Weitere Konten</string>
+    <string name="ar_effect_cta_text">Effekt ansehen</string>
+    <string name="ar_effect_cta_text_with_name">&lt;b>%1$s&lt;/b> ausprobieren</string>
+    <string name="ar_effect_link_option">Kamera-Effekt</string>
+    <string name="ar_effect_link_preview_explanation_text">Betrachter deiner Story können nach oben wischen, um den von dir ausgewählten Kamera-Effekt auszuprobieren. %1$s</string>
+    <string name="ar_effect_link_preview_link_text">Vorschau</string>
     <string name="ar_gallery_button_label">AR-DESIGN</string>
     <string name="archive_highlight_failure">Highlight konnte nicht archiviert werden.</string>
     <string name="archive_highlight_option">Highlight archivieren</string>
@@ -414,6 +418,7 @@
     <string name="business_account_splash_subtitle">Mit einem kostenlosen Business-Konto hast du mehr Tools, um dein Wachstum zu fördern.</string>
     <string name="business_account_splash_title">Erstelle ein Instagram-Business-Konto</string>
     <string name="business_address_optional">Geschäftsadresse (optional)</string>
+    <string name="business_attribute_sync_toggle_label">Diese Info für deine Facebook-Seite verwenden</string>
     <string name="business_conversion_enable_cross_posting">Neue Beiträge auf Facebook-Seite teilen</string>
     <string name="business_conversion_import_profile_pic">Profilbild von Instagram importieren</string>
     <string name="business_email_consent">Füge die E-Mail-Adresse hinzu, über die du unternehmensbezogene Kontakte erhalten möchtest. In deinem Business-Profil erscheint dann ein Button für die Kontaktaufnahme per E-Mail.</string>
@@ -421,10 +426,12 @@
     <string name="business_is_not_on_instagram">Dieses Unternehmen ist noch nicht auf Instagram. Möchtest du es auf Facebook besuchen?</string>
     <string name="business_landing_terms">Nutzungsbedingungen und Richtlinien</string>
     <string name="business_name">Name des Unternehmens</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Wenn du Produkte eines Unternehmens in einem Beitrag markierst, kannst du nur dieses Unternehmen als Partner markieren.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Produkte von %1$s können nicht markiert werden</string>
     <string name="business_partner_and_user_name">Business-Partner: %1$s</string>
     <string name="business_partner_settings">Business-Partner-Einstellungen</string>
     <string name="business_phone_consent">Füge eine Telefonnummer hinzu, über die du unternehmensbezogene Anrufe erhalten möchtest. Diese Nummer sollte nicht mit einem bestehenden Instagram-Konto verbunden sein.</string>
-    <string name="business_profile">Unternehmensprofil</string>
+    <string name="business_profile">Business-Profil</string>
     <string name="business_profile_linked_to_pages">Unternehmensprofile auf Instagram sind mit Facebook-Seiten verbunden und unterliegen ihren %1$s.</string>
     <string name="business_profile_terms_and_guidelines">Wenn du auf „Weiter“ tippst, stimmst du den %1$s von Instagram zu.</string>
     <string name="business_settings">Unternehmenseinstellungen</string>
@@ -443,7 +450,7 @@
     <string name="business_signup_steal_phone_number_dialog_description">Diese Telefonnummer wurde von einem anderen Konto bestätigt. Du solltest eine neue Nummer verwenden, da diese als geschäftliche Telefonnummer veröffentlicht wird.</string>
     <string name="business_signup_steal_phone_number_dialog_title">Andere Telefonnummer verwenden?</string>
     <string name="business_signup_use_different_phone_number">Alternative verwenden</string>
-    <string name="business_signup_welcome_user_desc">Dein Unternehmensprofil ist fertig eingerichtet. Du kannst jetzt Fotos, Videos und Stories mit deinen Abonnenten teilen und dein Unternehmen weiter voranbringen. Du kannst deinen Benutzernamen jederzeit ändern.</string>
+    <string name="business_signup_welcome_user_desc">Dein Business-Profil ist fertig eingerichtet. Du kannst jetzt Fotos, Videos und Stories mit deinen Abonnenten teilen und dein Unternehmen weiter voranbringen. Du kannst deinen Benutzernamen jederzeit ändern.</string>
     <string name="business_signup_welcome_user_title">Willkommen bei Instagram,</string>
     <string name="caboose_shadow_hint_text">Scrolle, um weitere Empfehlungen anzusehen</string>
     <string name="caboose_shadow_hint_text_older">Zu älteren Beiträgen scrollen</string>
@@ -577,13 +584,14 @@
     <string name="choose_partner">Handlung auswählen</string>
     <string name="choose_sms_flow">SMS senden</string>
     <string name="choose_title">Wähle einen Namen aus, um anderen zu zeigen, worum es bei deiner Seite geht.</string>
-    <string name="choose_title_and_category">Wähle einen Titel und eine Kategorie aus, um Besuchern zu erklären, worum es auf deiner Seite geht. Diese Kategorie wird in deinem Unternehmensprofil angezeigt.</string>
+    <string name="choose_title_and_category">Wähle einen Titel und eine Kategorie aus, um Besuchern zu erklären, worum es auf deiner Seite geht. Diese Kategorie wird in deinem Business-Profil angezeigt.</string>
     <string name="choose_title_and_sync_options">Wähle einen Namen aus und aktiviere die Synchronisierung deiner Facebook-Seite mit deinem Instagram Business-Profil.</string>
     <string name="choose_title_category_and_sync_options">Wähle einen Namen und eine Kategorie aus und aktiviere die Synchronisierung deiner Facebook-Seite mit deinem Instagram Business-Profil.</string>
     <string name="choosing_who_can_reply_to_your_story">Wer auf deine Story antworten kann</string>
     <string name="choosing_who_can_see_your_story">Wer deine Story sehen kann</string>
     <string name="city_town">Stadt/Ort</string>
     <string name="claim">Beanspruchen</string>
+    <string name="claim_dialog_with_connect_existing_page_content">Eine Facebook-Seite wurde für dich erstellt, als du zu einem Unternehmenskonto gewechselt hast. Beanspruche sie oder verknüpfe eine bereits von dir verwaltete Seite, um mehr Menschen zu erreichen und um leichter gefunden zu werden. Facebook-Seiten unterliegen den folgenden %1$s.</string>
     <string name="claim_facebook_page">Facebook-Seite beanspruchen</string>
     <string name="claim_page">Seite beanspruchen</string>
     <string name="claim_page_button_label">Standort beanspruchen</string>
@@ -867,7 +875,6 @@
     <string name="cta_context_view_on_ig">Auf Instagram ansehen</string>
     <string name="cta_context_view_website_on_ig">Website auf Instagram ansehen</string>
     <string name="cta_section_checkout_label">Kaufvorgang in Instagram abschließen</string>
-    <string name="cta_section_offsite_label">Auf der Website ansehen</string>
     <string name="cta_section_sold_out_label">Ausverkauft</string>
     <string name="current_password">Aktuelles Passwort</string>
     <string name="currently_promoted">Aktuell hervorgehoben</string>
@@ -1046,6 +1053,7 @@
     <string name="direct_digest_you_sent_gif">Du hast ein GIF gesendet</string>
     <string name="direct_digest_you_sent_message">Du hast eine Nachricht gesendet</string>
     <string name="direct_digest_you_sent_sticker">Du hast einen Sticker gesendet</string>
+    <string name="direct_digest_you_sent_text_message">Du: %1$s</string>
     <string name="direct_digest_you_sent_voice">Du hast eine Sprachnachricht gesendet</string>
     <string name="direct_digest_you_shared_a_comment">Du hast einen Kommentar geteilt</string>
     <string name="direct_digest_you_shared_link">Du hast einen Link geteilt</string>
@@ -1227,6 +1235,7 @@
     <string name="direct_reel_share_sender_info_own_story">Hat deine Story angesehen</string>
     <string name="direct_replay_expiring_media">Nochmal abspielen</string>
     <string name="direct_reply">Antworten</string>
+    <string name="direct_reply_edittext_hint_message">Antworten ...</string>
     <string name="direct_reply_sharesheet_row_message">%1$s eine Nachricht senden</string>
     <string name="direct_reply_to">Antwort an:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Mit Nachricht antworten.</string>
@@ -1825,10 +1834,8 @@
     <string name="igtv_about_settings_header">Info</string>
     <string name="igtv_account_settings_header">Konto</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Dein Titelbild muss in vertikalem Format vorliegen.</string>
-    <string name="igtv_attribution">Von IGTV</string>
     <string name="igtv_blocked_media">Dein Video wurde blockiert</string>
     <string name="igtv_blocked_media_item_header">Blockiert</string>
-    <string name="igtv_browse_for_you_title">Für dich</string>
     <string name="igtv_channel_settings_header">Kategorie</string>
     <string name="igtv_copy_link">Link kopieren</string>
     <string name="igtv_cover_picker_camera_roll">Von den Aufnahmen hochladen</string>
@@ -1879,9 +1886,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Betrachter deiner Story können auf diesen Sticker tippen, um das Video auf IGTV anzusehen.</string>
     <string name="igtv_search_results_channels_header">Kanäle</string>
     <string name="igtv_search_results_no_channels_found">Keine Kanäle gefunden</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Nur für IGTV-Videos, die länger sind als eine Minute.</string>
-    <string name="igtv_share_trailer_to_feed_info">Teile in deinem Profil und deinem Feed. Personen können darauf klicken, um sich das ganze Video anzusehen.</string>
-    <string name="igtv_share_trailer_to_feed_title">Vorschau auf Instagram teilen</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Nur für IGTV-Videos, die länger sind als eine Minute</string>
+    <string name="igtv_share_trailer_to_feed_info">Vorschau in deinem Profil und im Feed teilen</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Mehr dazu</string>
+    <string name="igtv_share_trailer_to_feed_title">Auf Instagram teilen</string>
     <string name="igtv_skip_button_text_delay_skippable">Überspringen in %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Video wird in %1$s abgespielt</string>
     <string name="igtv_skip_button_text_skippable">Überspringen</string>
@@ -2418,6 +2426,7 @@
     <string name="no_admin_pages_show">Wird deine Seite hier nicht angezeigt? Dann bist du möglicherweise kein Administrator. Wende dich in dem Fall an den Administrator deiner Seite, um Berechtigungen zu erhalten.</string>
     <string name="no_country_selection_dialog_subtitle">Du hast keine Länder für die Veröffentlichung deines Contents ausgewählt. Dein Content wird nirgends angezeigt, weshalb wir die Einstellung „Orte auswählen“ deaktiviert haben.</string>
     <string name="no_country_selection_dialog_title">Du hast noch keine Länder ausgewählt</string>
+    <string name="no_effects_found">Keine Effekte verfügbar</string>
     <string name="no_eligible_post_subtitle">Du hast keine Beiträge, die hervorgehoben werden können.</string>
     <string name="no_eligible_post_title">Keine passenden Beiträge</string>
     <string name="no_internet_error_message">Nametags können nicht gescannt werden, während du offline bist. Überprüfe deine Internetverbindung oder versuche es später noch einmal.</string>
@@ -2517,7 +2526,7 @@
     <string name="one_tap_new_footer_switch_account">&lt;b>Konten wechseln&lt;/b> oder</string>
     <string name="one_tap_upsell_text">Meine Login-Informationen speichern</string>
     <string name="one_tap_user_row_login">Anmelden</string>
-    <string name="only_you_can_do_this">Nur du hast darauf Zugriff.</string>
+    <string name="only_you_can_do_this">Nur du kannst das machen.</string>
     <string name="open">Öffnen</string>
     <string name="open_appstore_error">Es war uns leider nicht möglich, die App im Google Play Store zu öffnen.</string>
     <string name="open_archive">Archiv öffnen</string>
@@ -2782,7 +2791,6 @@
     <string name="product_tagging_add_product_limit_reached_video">Du kannst höchstens 5 Produkte zu einem Video hinzufügen.</string>
     <string name="product_tagging_add_products">Produkte markieren</string>
     <string name="product_tagging_carousel_add_product_limit_reached">Du kannst insgesamt maximal 20 Personen in deinem Beitrag markieren.</string>
-    <string name="product_tagging_carousel_editing_not_available">Beiträge, in denen bereits Produkte markiert sind, können nicht bearbeitet werden.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Du kannst in Beiträgen mit Branded Content keine Produkte markieren.</string>
     <string name="product_tagging_tag_another_product">Markiere ein weiteres Produkt</string>
     <string name="product_tagging_tap_to_add_photo">Tippe das Foto an, um Produkte zu markieren.</string>
@@ -2892,13 +2900,11 @@
     <string name="recipient_picker_sharing_preferences">„Teilen“-Optionen</string>
     <string name="recipient_picker_sharing_to_fb">Und Facebook-Story</string>
     <string name="recipient_view_mode_allow_replay">Erneutes Ansehen erlauben</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 Stunden</string>
     <string name="recipient_view_mode_allow_replay_upper_case">ERNEUTES ANSEHEN ERLAUBEN</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 STUNDEN</string>
     <string name="recipient_view_mode_keep_in_chat">Im Chat behalten</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">IM CHAT BEHALTEN</string>
-    <string name="recipient_view_mode_one_view">Ein Aufruf</string>
-    <string name="recipient_view_mode_one_view_upper_case">EIN AUFRUF</string>
+    <string name="recipient_view_mode_view_once">Einmal ansehen</string>
+    <string name="recipient_view_mode_view_once_upper_case">EINMAL ANSEHEN</string>
     <string name="recommend_accounts_follow_all_button">Allen folgen</string>
     <string name="recommend_accounts_header">Konten, die %1$s gefallen könnten</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> empfiehlt dir diese Konten.</string>
@@ -3046,7 +3052,7 @@
     <string name="remove_from_saved_or_collection">Du kannst diesen Beitrag aus dieser Sammlung oder aus allen deinen gespeicherten Inhalten entfernen</string>
     <string name="remove_from_saves">Entfernen</string>
     <string name="remove_from_saves_and_collections_dialog_title">Aus gespeicherten Inhalten und Sammlungen entfernen?</string>
-    <string name="remove_igtv_media">Vorschau entfernen</string>
+    <string name="remove_igtv_media">Vorschau entfernen ...</string>
     <string name="remove_me_from_post">Mich aus dem Beitrag entfernen</string>
     <string name="remove_me_from_profile">Link entfernen</string>
     <string name="remove_me_from_profile_dialog_message">Dein Benutzername wird weiterhin in diesem Steckbrief angezeigt, er ist aber nicht mehr mit deinem Profil verlinkt.</string>
@@ -3063,7 +3069,7 @@
     <string name="remove_sponsor_tag_subtitle">Insights werden dir nicht mehr angezeigt. Der Beitrag wird dadurch jedoch nicht von Instagram entfernt.</string>
     <string name="remove_sponsor_tag_title">Mich aus dem Beitrag entfernen</string>
     <string name="remove_tag">Markierung entfernen</string>
-    <string name="remove_this_igtv_post_confirmation">Deine Abonnenten können die Vorschau deines Videos nicht mehr in ihrem Feed oder Profil sehen. Dein Video bleibt auf IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">Deine Abonnenten können die Vorschau deines Videos nicht mehr in ihrem Feed oder deinem Profil sehen. Dein Video bleibt auf IGTV.</string>
     <string name="remove_video_highlight_button">Video entfernen</string>
     <string name="remove_video_highlight_message">Du kannst dieses Video weiterhin in deinem Archiv anzeigen. Wenn du möchtest, kannst du es dauerhaft daraus löschen.</string>
     <string name="remove_video_highlight_message_active">Wenn du dieses Video aus deinem Highlight entfernst, wird es nicht automatisch aus deiner Story entfernt.</string>
@@ -3375,6 +3381,7 @@
     <string name="shopping_on_profile_null_state_message">Momentan kannst nur du dies sehen. Sobald du einen Beitrag mit markierten Produkten erstellt hast, werden sie anderen hier angezeigt.</string>
     <string name="shopping_on_profile_null_state_title">Beiträge mit markierten Produkten werden hier angezeigt</string>
     <string name="shopping_posts">Verkaufsbeiträge</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (ausverkauft)</string>
     <string name="shopping_viewer_add_posts">Beiträge hinzufügen</string>
     <string name="shopping_viewer_description_title">Beschreibung</string>
     <string name="shopping_viewer_edit">Bearbeiten</string>
@@ -3451,7 +3458,7 @@
     <string name="start_live_video_button_label">Live-Video starten</string>
     <string name="start_live_video_button_label_experiment_go_live">Live-Übertragung starten</string>
     <string name="start_live_video_button_label_experiment_go_live_now">Live-Übertragung jetzt starten</string>
-    <string name="start_with_new_business_tools">Deine Seite „%1$s“ wurde mit deinem Unternehmensprofil verbunden. Du kannst sie auf Facebook bearbeiten. Zudem kannst du ab jetzt von neuen Business-Tools wie Promotions und Insights zu deinen Beiträgen und Abonnenten profitieren.</string>
+    <string name="start_with_new_business_tools">Deine Seite „%1$s“ wurde mit deinem Business-Profil verbunden. Du kannst sie auf Facebook bearbeiten. Zudem kannst du ab jetzt von neuen Business-Tools wie Promotions und Insights zu deinen Beiträgen und Abonnenten profitieren.</string>
     <string name="sticker_drag_affordance">Zum Verschieben oder Löschen ziehen</string>
     <string name="sticker_tap_for_more">Für mehr Optionen hier tippen</string>
     <string name="stickers_section_title">Sticker</string>
@@ -3567,7 +3574,7 @@
     <string name="switch_business_profile_back_to_regular">Zurück zum persönlichen Konto wechseln?</string>
     <string name="switch_button">Zurückwechseln</string>
     <string name="switch_facebook_page">Zu deiner verbundenen Facebook-Seite wechseln?</string>
-    <string name="switch_facebook_page_explain">Durch das Wechseln deiner Seite wird die in deinem Unternehmensprofil aufgeführte Kategorie eventuell geändert.</string>
+    <string name="switch_facebook_page_explain">Durch das Wechseln deiner Seite wird die in deinem Business-Profil aufgeführte Kategorie eventuell geändert.</string>
     <string name="switch_front_camera">Zur Frontkamera wechseln</string>
     <string name="switch_page">Facebook-Seite wechseln</string>
     <string name="switch_to_business_profile_instruction">Du kannst in den Einstellungen jederzeit zu einem Unternehmenskonto wechseln.</string>
@@ -3613,6 +3620,7 @@
     <string name="tell_us_approval_reason">Erkläre uns, weshalb deine Werbeanzeige genehmigt werden sollte. Falls wir einen Fehler gemacht haben, genehmigen wir deine Werbeanzeige so bald wie möglich.</string>
     <string name="terms">Nutzungsbedingungen</string>
     <string name="terms_and_data_policy">Nutzungsbedingungen und Datenrichtlinie</string>
+    <string name="terms_and_privacy">Nutzungsbedingungen und Privatsphäre</string>
     <string name="terms_of_service">Nutzungsbedingungen</string>
     <string name="terms_of_use">Nutzungsbedingungen</string>
     <string name="terms_of_use_link">Vollständige Nutzungsbedingungen lesen</string>
@@ -3640,7 +3648,7 @@
     <string name="thanks_for_let_us_know">Danke, dass du uns das mitteilst.</string>
     <string name="this_account_is_private">Dieses Konto ist privat</string>
     <string name="this_user_is_private">Dieses Konto ist privat</string>
-    <string name="thumbnail_image_variance_selector_title">%1$s auswählen</string>
+    <string name="thumbnail_image_variant_selector_title">%1$s auswählen</string>
     <string name="time_remaining">Verbleibende Zeit</string>
     <string name="time_spent_dashboard_action_bar_title">Deine Aktivität</string>
     <string name="time_spent_data_section_title">Zeit auf Instagram</string>
@@ -3868,6 +3876,7 @@
     <string name="under_age_body">Aus rechtlichen Gründen müssen wir dein Konto und deine Daten innerhalb von 30 Tagen löschen.</string>
     <string name="under_age_title">Du bist zu jung, um Instagram nutzen zu können</string>
     <string name="undo">Rückgängig</string>
+    <string name="undo_delete_comments">Rückgängig</string>
     <string name="unfinished_reg_dialog_continue_button">Weiter</string>
     <string name="unfinished_reg_dialog_message">Du kannst deine Registrierung abschließen oder dich neu registrieren.</string>
     <string name="unfinished_reg_dialog_start_over_button">Neu beginnen</string>
@@ -4042,12 +4051,10 @@
     <string name="view_insights">Insights ansehen</string>
     <string name="view_location">Ort anzeigen</string>
     <string name="view_mode_toggle">Ansichtsmodus umschalten</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Du kannst die Nachricht so einstellen, dass sie nach einem Aufruf nicht mehr angezeigt wird, oder dass sie dauerhaft unten im Chat zu sehen ist.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Du kannst die Nachricht so einstellen, dass sie nach einem Aufruf nicht mehr angezeigt wird, oder dass sie dauerhaft im Chat unten zu sehen ist.</string>
-    <string name="view_modes_nux_replayability_title">Dies ist für die nächsten 24 Stunden sichtbar</string>
     <string name="view_more_information">Weitere Informationen anzeigen</string>
     <string name="view_more_replies">Weitere Antworten anzeigen (%1$d)</string>
     <string name="view_more_replies_no_count">Weitere Antworten anzeigen</string>
+    <string name="view_on_website">Auf der Website ansehen</string>
     <string name="view_original">Original anzeigen</string>
     <string name="view_previous_replies">Vorherige Antworten anzeigen (%1$d)</string>
     <string name="view_previous_replies_no_count">Vorherige Antworten anzeigen</string>
@@ -4107,7 +4114,7 @@
     <string name="yes_im_sure">Ja, ich bin mir sicher</string>
     <string name="yesterday">Gestern</string>
     <string name="your_business_profile_message">Füge Kontakt-Buttons hinzu, damit Kunden dir direkt über dein Profil E-Mails schreiben oder dich anrufen können.</string>
-    <string name="your_business_profile_value_props">Dein Unternehmensprofil</string>
+    <string name="your_business_profile_value_props">Dein Business-Profil</string>
     <string name="your_pages">Deine Seiten</string>
     <string name="your_profile_will_change">Wenn du zu einem persönlichen Konto zurückwechselst, gehen Content und Insights von deinen Promotions verloren. Außerdem kannst du bei aktuellen und zukünftigen Beiträgen und Stories nicht mehr auf Insights zugreifen. Du kannst jederzeit zu einem Unternehmenskonto zurückwechseln.</string>
     <string name="your_stories_button_text">Deine Stories</string>

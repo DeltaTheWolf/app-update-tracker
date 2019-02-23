@@ -130,16 +130,6 @@
         <item quantity="other">هل تريد تجاهل %1$d من المسودات؟</item>
         <item quantity="one">هل تريد تجاهل مسودة واحدة؟</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">لأنك تتابع</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">المعجبون</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d من الأشخاص الآخرين</item>
-        <item quantity="one">%1$s + %2$d شخص آخر</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d متابع</item>
         <item quantity="one">متابع واحد</item>
@@ -343,10 +333,6 @@
         <item quantity="other">%1$s و%2$d من الأشخاص الآخرين يكتبون...</item>
         <item quantity="one">%1$s وشخص آخر يكتبان...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">تم حذف %1$d من التعليقات. اضغط للتراجع.</item>
-        <item quantity="one">تم حذف التعليق. اضغط للتراجع.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d منشور جديد</item>
         <item quantity="two">%1$d منشوران جديدان</item>
@@ -356,6 +342,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s و&lt;b>%2$s من الأشخاص الآخرين&lt;/b></item>
         <item quantity="one">%1$s و&lt;b>شخص آخر&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">تم حذف %1$d من التعليقات.</item>
+        <item quantity="one">تم حذف التعليق.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s من جهات اتصالك يستخدمون Instagram</item>

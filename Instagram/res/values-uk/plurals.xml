@@ -95,17 +95,6 @@
     <plurals name="discard_x_drafts">
         <item quantity="other">Видалити чернетки (%1$d)?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Оскільки ви стежите за</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Уподобали</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + ще %2$d осіб</item>
-        <item quantity="one">%1$s + ще %2$d особа</item>
-        <item quantity="few">%1$s + ще %2$d особи</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d читачів</item>
         <item quantity="one">%1$d читач</item>
@@ -267,11 +256,6 @@
     <plurals name="typing_indicator_many">
         <item quantity="other">%1$s і ще %2$d пишуть…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d коментарів видалено. Торкніться, щоб скасувати.</item>
-        <item quantity="one">%1$d коментар видалено. Торкніться, щоб скасувати.</item>
-        <item quantity="few">%1$d коментарі видалено. Торкніться, щоб скасувати.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d нових дописів</item>
         <item quantity="one">%1$d новий допис</item>
@@ -279,6 +263,11 @@
     </plurals>
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s і &lt;b>ще %2$s&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">Видалено %1$d коментарів.</item>
+        <item quantity="one">Видалено %1$d коментар.</item>
+        <item quantity="few">Видалено %1$d коментарі.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">Ваші контакти в Instagram: %1$s</item>

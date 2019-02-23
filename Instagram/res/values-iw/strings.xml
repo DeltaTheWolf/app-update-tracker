@@ -92,7 +92,6 @@
     <string name="account_privacy_option_status_private">פרטי</string>
     <string name="account_privacy_option_status_public">ציבורי</string>
     <string name="account_privacy_option_title">פרטיות החשבון</string>
-    <string name="account_section_title">קניה מ%1$s</string>
     <string name="action_button">לחצן פעולה</string>
     <string name="action_view">צפייה</string>
     <string name="activation_card_bio_button_completed_text">עריכת ביוגרפיה</string>
@@ -252,6 +251,11 @@
     <string name="appeal_violation_title">משוב</string>
     <string name="apply">הפעלה</string>
     <string name="apps_header">חשבונות אחרים</string>
+    <string name="ar_effect_cta_text">הצגת אפקט</string>
+    <string name="ar_effect_cta_text_with_name">אפשר לנסות את &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">אפקט מצלמה</string>
+    <string name="ar_effect_link_preview_explanation_text">הצופים יוכלו להחליק כלפי מעלה כדי לנסות את אפקט המצלמה שבחרת. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">תצוגה מקדימה</string>
     <string name="ar_gallery_button_label">מסגרת AR</string>
     <string name="archive_highlight_failure">העברת הפריט הנבחר לארכיון נכשלה.</string>
     <string name="archive_highlight_option">העברת פריט נבחר לארכיון</string>
@@ -416,6 +420,7 @@
     <string name="business_account_splash_subtitle">חשבון עסקי חינמי נותן לך כלים נוספים להגדלת העסק.</string>
     <string name="business_account_splash_title">קבלת חשבון עסקי באינסטגרם</string>
     <string name="business_address_optional">כתובת העסק (לא חובה)</string>
+    <string name="business_attribute_sync_toggle_label">שימוש בפרטים אלה בדף הפייסבוק שלך</string>
     <string name="business_conversion_enable_cross_posting">שיתוף פוסטים חדשים בדף פייסבוק</string>
     <string name="business_conversion_import_profile_pic">יבא/י תמונת פרופיל מאינסטגרם</string>
     <string name="business_email_consent">יש להוסיף את כתובת הדוא\"ל שבה ברצונך לקבל קשרים הקשורים לעסק. לחצן יצירת הקשר בדוא\"ל יופיע בפרופיל העסקי שלך.</string>
@@ -423,6 +428,8 @@
     <string name="business_is_not_on_instagram">העסק עדיין לא נמצא באינסטגרם. רוצה לבקר אותו בפייסבוק?</string>
     <string name="business_landing_terms">תנאים והנחיות</string>
     <string name="business_name">שם העסק</string>
+    <string name="business_partner_and_merchant_products_dialog_message">בעת תיוג מוצרים מעסק בפוסט, ניתן לתייג את העסק כשותף בלבד.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">לא ניתן לתייג מוצרים מ%1$s</string>
     <string name="business_partner_and_user_name">שותף עסקי: %1$s</string>
     <string name="business_partner_settings">הגדרות שותף עסקי</string>
     <string name="business_phone_consent">יש להוסיף מספר טלפון שבו ברצונך לקבל שיחות הקשורות לעסק. זה צריך להיות מספר שאינו מקושר לחשבון אינסטגרם קיים.</string>
@@ -448,6 +455,7 @@
     <string name="business_signup_welcome_user_desc">פרופיל העסק שלך מוכן. כעת אפשר לשתף תמונות, סרטונים וסיפורים עם העוקבים שלך תוך הגדלת העסק. ניתן לשנות את שם המשתמש בכל עת.</string>
     <string name="business_signup_welcome_user_title">ברוכים הבאים לאינסטגרם,</string>
     <string name="business_tutorials">מדריכים</string>
+    <string name="button_description">לחצן</string>
     <string name="caboose_shadow_hint_text">המשך גלילה לקבלת המלצות</string>
     <string name="caboose_shadow_hint_text_older">ניתן להמשיך לגלול לעיון בפוסטים ישנים יותר</string>
     <string name="calendar">לוח שנה</string>
@@ -590,8 +598,9 @@
     <string name="choosing_who_can_see_your_story">בחירה מי יוכל לראות את הסיפור שלך</string>
     <string name="city_town">עיר/יישוב</string>
     <string name="claim">בקשה</string>
+    <string name="claim_dialog_with_connect_existing_page_content">נוצר בשבילך דף פייסובק כשהחלפת לחשבון עסקי. אפשר לבקש בעלות עליו או לחבר דף שמנוהל כבר על ידך כדי שיהיה אפשר להציג לעוד אנשים ולעזור להם למצוא אותך. דפי פייסבוק כפופים ל%1$s אלו.</string>
     <string name="claim_facebook_page">בקש בעלות על דף פייסבוק</string>
-    <string name="claim_page">בקשת דף</string>
+    <string name="claim_page">בקשת בעלות על דף</string>
     <string name="claim_page_button_label">בקשת מיקום זה</string>
     <string name="claim_page_content">%1$s נוצר בשביל כשהחלפת לחשבון עסקי. מומלץ לבקש עליו עכשיו בעלות כדי שיהיה אפשר להציג בפני יותר אנשים ולעזור להם למצוא אותך. הדפים של פייסבוק כפופים ל%2$s אלו.</string>
     <string name="claim_page_error_dialog_message">כדי לבקש מיקום זה, יש להיות מנהל של דף פייסבוק שמקושר לכתובת זו.</string>
@@ -875,7 +884,6 @@
     <string name="cta_context_view_on_ig">הצגה באינסטגרם</string>
     <string name="cta_context_view_website_on_ig">הצגת אתר באינסטגרם</string>
     <string name="cta_section_checkout_label">תשלום באינסטגרם</string>
-    <string name="cta_section_offsite_label">הצגה באתר</string>
     <string name="cta_section_sold_out_label">אזל</string>
     <string name="current_password">סיסמה נוכחית</string>
     <string name="currently_promoted">מקודם כעת</string>
@@ -1057,6 +1065,7 @@
     <string name="direct_digest_you_sent_gif">שלחת GIF</string>
     <string name="direct_digest_you_sent_message">שלחת הודעה</string>
     <string name="direct_digest_you_sent_sticker">שלחת מדבקה.</string>
+    <string name="direct_digest_you_sent_text_message">את/ה: %1$s</string>
     <string name="direct_digest_you_sent_voice">שלחת הודעה קולית</string>
     <string name="direct_digest_you_shared_a_comment">שיתפת תגובה</string>
     <string name="direct_digest_you_shared_link">שיתפת קישור</string>
@@ -1239,6 +1248,7 @@
     <string name="direct_reel_share_sender_info_own_story">הסיפור שלך נצפה</string>
     <string name="direct_replay_expiring_media">הפעלה חוזרת</string>
     <string name="direct_reply">תשובה</string>
+    <string name="direct_reply_edittext_hint_message">תשובה...</string>
     <string name="direct_reply_sharesheet_row_message">שליחת הודעה אל %1$s</string>
     <string name="direct_reply_to">תשובה אל:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">תשובה עם הודעה.</string>
@@ -1850,10 +1860,8 @@
     <string name="igtv_about_settings_header">אודות</string>
     <string name="igtv_account_settings_header">חשבון</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">תמנות הנושא שלך חייבת להיות אנכית.</string>
-    <string name="igtv_attribution">מ-IGTV</string>
     <string name="igtv_blocked_media">הסרטון שלך נחסם</string>
     <string name="igtv_blocked_media_item_header">חסומה</string>
-    <string name="igtv_browse_for_you_title">בשבילך</string>
     <string name="igtv_channel_settings_header">ערוץ</string>
     <string name="igtv_copy_link">העתקת קישור</string>
     <string name="igtv_cover_picker_camera_roll">העלאה מסרט הצילום</string>
@@ -1904,9 +1912,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">הצופים שלך יוכלו להקיש על מדבקה זו כדי לצפות ב-IGTV.</string>
     <string name="igtv_search_results_channels_header">ערוצים</string>
     <string name="igtv_search_results_no_channels_found">לא נמצאו ערוצים</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">רק לסרטוני IGTV באורך של יותר מדקה.</string>
-    <string name="igtv_share_trailer_to_feed_info">שיתוף בפרופיל ובפיד שלך. אנשים יכולים להקיש כדי לצפות בסרטון המלא.</string>
-    <string name="igtv_share_trailer_to_feed_title">שיתוף התצוגה המקדימה באינסטגרם</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">רק לסרטוני IGTV באורך של יותר מדקה</string>
+    <string name="igtv_share_trailer_to_feed_info">שיתוף תצוגה מקדימה בפרופיל ובפיד שלך</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">מידע נוסף</string>
+    <string name="igtv_share_trailer_to_feed_title">שיתוף באינסטגרם</string>
     <string name="igtv_skip_button_text_delay_skippable">דילוג בעוד %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">הסרטון יופעל בעוד %1$s</string>
     <string name="igtv_skip_button_text_skippable">דילוג</string>
@@ -2457,6 +2466,7 @@
     <string name="no_admin_pages_show">אינך רואה את הדף שלך כאן? יתכן שאת/ה לא המנהל/ת. יש לפנות למנהל הדף שלך לקבלת הרשאות.</string>
     <string name="no_country_selection_dialog_subtitle">"לא בחרת ארצות לשדר להן את התוכן שלך, כלומר התוכן שלך לא יוצג בשום מקום, לכן השבתנו את ההגדרה 'בחירת מיקומים'."</string>
     <string name="no_country_selection_dialog_title">לא בחרת עדיין מדינות</string>
+    <string name="no_effects_found">אין אפקטים זמינים</string>
     <string name="no_eligible_post_subtitle">אין לך פוסטים שניתן לקדם.</string>
     <string name="no_eligible_post_title">אין פוסטים כשירים</string>
     <string name="no_internet_error_message">לא ניתן לסרוק תגי שם במצב לא מקוון. יש לבדוק את החיבור או לנסות שוב מאוחר יותר.</string>
@@ -2829,7 +2839,6 @@
     <string name="product_tagging_add_product_limit_reached_video">לא ניתן להוסיף יותר מ-5 מוצרים לסרטון.</string>
     <string name="product_tagging_add_products">תיוג מוצרים</string>
     <string name="product_tagging_carousel_add_product_limit_reached">לא ניתן לתייג יותר מ-20 מוצרים בכל הפוסט שלך.</string>
-    <string name="product_tagging_carousel_editing_not_available">לא ניתן לערוך פוסטים שתויגו כבר עם מוצרים.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">לא ניתן לתייג מוצרים בפוסטים שיש בהם תוכן ממותג.</string>
     <string name="product_tagging_tag_another_product">תייג/י מוצר אחר</string>
     <string name="product_tagging_tap_to_add_photo">הקש/הקישי על התמונה כדי לתייג מוצרים.</string>
@@ -2942,13 +2951,11 @@
     <string name="recipient_picker_sharing_preferences">אפשרויות שיתוף</string>
     <string name="recipient_picker_sharing_to_fb">ובסיפור בפייסבוק</string>
     <string name="recipient_view_mode_allow_replay">אפשרות להפעלה חוזרת</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 שעות</string>
     <string name="recipient_view_mode_allow_replay_upper_case">אפשרות להפעלה חוזרת</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 שעות</string>
     <string name="recipient_view_mode_keep_in_chat">"שמירה בצ'אט"</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">"שמירה בצ'אט"</string>
-    <string name="recipient_view_mode_one_view">צפייה אחת</string>
-    <string name="recipient_view_mode_one_view_upper_case">צפייה אחת</string>
+    <string name="recipient_view_mode_view_once">צפייה אחת</string>
+    <string name="recipient_view_mode_view_once_upper_case">צפייה אחת</string>
     <string name="recommend_accounts_follow_all_button">מעקב אחרי כולם</string>
     <string name="recommend_accounts_header">חשבונות שאולי ימצאו חן בעיני %1$s</string>
     <string name="recommend_accounts_header_text">לדעת &lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> יתכן שימצאו בעיניך חשבונות אלו.</string>
@@ -3100,7 +3107,7 @@
     <string name="remove_from_saved_or_collection">אפשר להסיר את הפריט מהאוסף הזה או להסיר אותו מכל מה ששמרת</string>
     <string name="remove_from_saves">הסר/הסירי</string>
     <string name="remove_from_saves_and_collections_dialog_title">להסיר מהשמורים ומהאוספים?</string>
-    <string name="remove_igtv_media">הסרת התצוגה המקדימה</string>
+    <string name="remove_igtv_media">הסרת התצוגה המקדימה...</string>
     <string name="remove_me_from_post">הסר אותי מהפוסט</string>
     <string name="remove_me_from_profile">הסרת קישור</string>
     <string name="remove_me_from_profile_dialog_message">שם המשתמש שלך עדיין יופיע בביוגרפיה הזו, אך הוא לא יהיה מקושר עוד לפרופיל שלך.</string>
@@ -3117,7 +3124,7 @@
     <string name="remove_sponsor_tag_subtitle">לא יוצגו לך עוד נתוני שימוש. פעולה זאת לא מסירה את הפוסט מאינסטגרם.</string>
     <string name="remove_sponsor_tag_title">הסירו אותי מהפוסט</string>
     <string name="remove_tag">הסר תיוג</string>
-    <string name="remove_this_igtv_post_confirmation">העוקבים שלך לא יוכלו לצפות בתצוגה מקדימה של הסרטון שלך בפיד או ברשת הפרופיל שלהם. הסרטון שלך יישאר ב-IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">העוקבים שלך לא יוכלו לצפות בתצוגה מקדימה של הסרטון שלך בפיד שלהם או בפרופיל שלך. הסרטון שלך יישאר ב-IGTV.</string>
     <string name="remove_video_highlight_button">הסר/הסירי את הסרטון</string>
     <string name="remove_video_highlight_message">עדיין ניתן לראות את הסרטון בארכיון שלך. אפשר למחוק אותו לצמיתות מהארכיון.</string>
     <string name="remove_video_highlight_message_active">הסרת הסרטון מהנבחרים שלך לא תסיר אותו מהסיפור.</string>
@@ -3436,6 +3443,7 @@
     <string name="shopping_on_profile_null_state_message">כרגע זה מוצג רק לך. לאחר יצירת פוסט אחד עם מוצרים מתויגים, אנשים יראו אותם כאן.</string>
     <string name="shopping_on_profile_null_state_title">פוסטים עם מוצרים מתוייגים יופיעו כאן</string>
     <string name="shopping_posts">פוסטים של קניות</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (אזל מהמלאי)</string>
     <string name="shopping_viewer_add_posts">הוספת פוסטים</string>
     <string name="shopping_viewer_description_title">תיאור</string>
     <string name="shopping_viewer_edit">עריכה</string>
@@ -3680,6 +3688,7 @@
     <string name="tell_us_approval_reason">ספר/י לנו מדוע המודעה שלך צריכה להיות מאושרת. אם שגינו, נאשר את המודעה שלך בהקדם האפשרי.</string>
     <string name="terms">תנאים</string>
     <string name="terms_and_data_policy">תנאים ומדיניות הנתונים</string>
+    <string name="terms_and_privacy">תנאים ופרטיות</string>
     <string name="terms_of_service">תנאי שימוש</string>
     <string name="terms_of_use">תנאי השימוש</string>
     <string name="terms_of_use_link">לקריאת תנאי השימוש המלאים</string>
@@ -3709,7 +3718,7 @@
     <string name="thanks_for_let_us_know">תודה שהודעת לנו.</string>
     <string name="this_account_is_private">חשבון זה פרטי</string>
     <string name="this_user_is_private">החשבון הזה פרטי</string>
-    <string name="thumbnail_image_variance_selector_title">בחירת %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">בחירת %1$s</string>
     <string name="tilt_mode_linear">ליניארי</string>
     <string name="tilt_mode_radial">רדיאלי</string>
     <string name="tiltshift">הטיה ותנועה</string>
@@ -3942,6 +3951,7 @@
     <string name="under_age_body">על פי חוק, עלינו למחוק את חשבונך ואת הנתונים שלך בתוך 30 יום.</string>
     <string name="under_age_title">גילך צעיר מדי לשימוש באינסטגרם</string>
     <string name="undo">ביטול</string>
+    <string name="undo_delete_comments">ביטול פעולה</string>
     <string name="unfinished_reg_dialog_continue_button">המשך/המשיכי</string>
     <string name="unfinished_reg_dialog_message">ניתן להמשיך להירשם לחשבון או להתחיל מהתחלה.</string>
     <string name="unfinished_reg_dialog_start_over_button">התחל/התחילי מחדש</string>
@@ -4123,12 +4133,10 @@
     <string name="view_insights">להצגת נתוני השימוש</string>
     <string name="view_location">צפייה במיקום</string>
     <string name="view_mode_toggle">החלפת מצב תצוגה</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">"באפשרותך להגדיר שההודעה תיעלם לאחר צפייה אחת או לשמור אותה בצ'אט לצמיתות."</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">"באפשרותך להגדיר שההודעה תיעלם לאחר צפייה אחת או לשמור אותה בצ'אט לצמיתות למטה."</string>
-    <string name="view_modes_nux_replayability_title">זה יהיה ניתן לצפייה במשך 24 השעות הבאות</string>
     <string name="view_more_information">הצגת מידע נוסף</string>
     <string name="view_more_replies">הצג/הציגי תשובות נוספות (%1$d)</string>
     <string name="view_more_replies_no_count">הצג/הציגי תשובות נוספות</string>
+    <string name="view_on_website">הצגה באתר</string>
     <string name="view_original">הצג/הציגי את המקור</string>
     <string name="view_previous_replies">הצג/הציגי תשובות קודמות (%1$d)</string>
     <string name="view_previous_replies_no_count">הצג/הציגי תשובות קודמות</string>

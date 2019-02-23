@@ -8,4 +8,5 @@
     <include layout="@layout/action_bar_shadow" />
     <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/view_drag_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <ViewStub android:id="@id/nux_overlay_stub" android:layout="@layout/punched_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/gallery_media_thumbnail_tray_stub" android:layout="@layout/media_thumbnail_tray" android:inflatedId="@id/gallery_media_thumbnail_tray" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </com.instagram.common.ui.widget.draggable.DraggableContainer>

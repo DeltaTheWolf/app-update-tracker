@@ -110,16 +110,6 @@
         <item quantity="other">Vuoi eliminare %1$d bozze?</item>
         <item quantity="one">Vuoi eliminare 1 bozza?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Perché segui</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Persone a cui piace</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + altre %2$d persone</item>
-        <item quantity="one">%1$s + altra %2$d persona</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d follower</item>
         <item quantity="one">1 follower</item>
@@ -211,8 +201,8 @@
         <item quantity="one">1 prodotto</item>
     </plurals>
     <plurals name="number_of_viewers">
-        <item quantity="other">%1$s spettatori</item>
-        <item quantity="one">1 spettatore</item>
+        <item quantity="other">Visualizzazioni: %1$s</item>
+        <item quantity="one">Visualizzazioni: 1</item>
     </plurals>
     <plurals name="on_this_day_subtitle">
         <item quantity="other">Esattamente %1$d anni fa.</item>
@@ -286,10 +276,6 @@
         <item quantity="other">%1$s e %2$d stanno scrivendo...</item>
         <item quantity="one">%1$s e 1 altra persona stanno scrivendo...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">"%1$d commenti eliminati. Tocca per annullare l'operazione."</item>
-        <item quantity="one">"Commento eliminato. Tocca per annullare l'operazione."</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d nuovi post</item>
         <item quantity="one">1 nuovo post</item>
@@ -297,6 +283,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s e &lt;b>altri %2$s&lt;/b></item>
         <item quantity="one">%1$s e &lt;b>1 altra persona&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d commenti eliminati.</item>
+        <item quantity="one">Commento eliminato.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s dei tuoi contatti sono su Instagram</item>

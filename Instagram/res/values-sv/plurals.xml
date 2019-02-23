@@ -110,15 +110,6 @@
         <item quantity="other">Vill du slänga %1$d utkast?</item>
         <item quantity="one">Vill du slänga 1 utkast?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Eftersom du följer</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Gillas av</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s och %2$d andra</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d följare</item>
         <item quantity="one">1 följare</item>
@@ -283,10 +274,6 @@
         <item quantity="other">%1$s och %2$d andra skriver …</item>
         <item quantity="one">%1$s och 1 till skriver ...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d kommentarer har tagits bort. Tryck för att ångra.</item>
-        <item quantity="one">Kommentaren är borttagen. Tryck för att ångra</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d nya inlägg</item>
         <item quantity="one">1 nytt inlägg</item>
@@ -294,6 +281,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s och &lt;b>%2$s andra&lt;/b></item>
         <item quantity="one">%1$s och &lt;b>1 till&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d kommentarer har tagits bort.</item>
+        <item quantity="one">Comment deleted.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s av dina kontakter finns på Instagram</item>

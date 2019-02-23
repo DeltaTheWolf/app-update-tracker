@@ -98,7 +98,6 @@
     <string name="account_privacy_option_status_private">private</string>
     <string name="account_privacy_option_status_public">public</string>
     <string name="account_privacy_option_title">Account Privacy</string>
-    <string name="account_section_title">Shop %1$s</string>
     <string name="action_button">Action Button</string>
     <string name="action_view">View</string>
     <string name="activation_card_bio_button_completed_text">Edit Bio</string>
@@ -271,6 +270,11 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="appeal_violation_title">Feedback</string>
     <string name="apply">Apply</string>
     <string name="apps_header">Other Accounts</string>
+    <string name="ar_effect_cta_text">View Effect</string>
+    <string name="ar_effect_cta_text_with_name">Try &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Camera Effect</string>
+    <string name="ar_effect_link_preview_explanation_text">Viewers will be able to swipe up to try the camera effect you choose. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">Preview</string>
     <string name="ar_gallery_button_label">AR FRAME</string>
     <string name="archive_highlight_failure">Failed to archive highlight.</string>
     <string name="archive_highlight_option">Archive Highlight</string>
@@ -383,6 +387,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="blocking_button_unblock_voice">Unblock %1$s</string>
     <string name="blocking_step_content">"You can't sign up for Instagram based on the information you provided."</string>
     <string name="blocking_step_title">Problem Creating Your Account</string>
+    <string name="bloks_shell">Bloks Shell</string>
     <string name="bloks_shell_title">Bloks Shell</string>
     <string name="book">Book</string>
     <string name="boomerang_capture_error">Something went wrong. Please try again.</string>
@@ -439,6 +444,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="business_account_splash_subtitle">A free business account gives you more tools to grow.</string>
     <string name="business_account_splash_title">Get an Instagram Business Account</string>
     <string name="business_address_optional">Business address (Optional)</string>
+    <string name="business_attribute_sync_toggle_label">Use this info for your Facebook Page</string>
     <string name="business_conversion_enable_cross_posting">Share New Posts to Facebook Page</string>
     <string name="business_conversion_import_profile_pic">Import Profile Photo From Instagram</string>
     <string name="business_email_consent">"Add the email address where you'd like to receive business-related contacts. An email contact button will appear on your business profile."</string>
@@ -446,6 +452,8 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="business_is_not_on_instagram">"This business isn't on Instagram yet. Want to visit them on Facebook?"</string>
     <string name="business_landing_terms">Terms and Guidelines</string>
     <string name="business_name">Business name</string>
+    <string name="business_partner_and_merchant_products_dialog_message">When you tag products from a business in a post, you can only tag that business as a partner.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">"Can't tag products from %1$s"</string>
     <string name="business_partner_and_user_name">Business Partner: %1$s</string>
     <string name="business_partner_settings">Business Partner Settings</string>
     <string name="business_phone_consent">"Add a phone number where you'd like to receive business-related calls. This number should not be linked to an existing Instagram account."</string>
@@ -471,6 +479,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="business_signup_welcome_user_desc">Your business profile is ready. Now you can share photos, videos and stories with your followers while you grow your business. You can change your username anytime.</string>
     <string name="business_signup_welcome_user_title">Welcome to Instagram,</string>
     <string name="business_tutorials">Tutorials</string>
+    <string name="button_description">Button</string>
     <string name="caboose_shadow_hint_text">Keep Scrolling for Recommendations</string>
     <string name="caboose_shadow_hint_text_older">Keep Scrolling for Older Posts</string>
     <string name="calendar">Calendar</string>
@@ -623,6 +632,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="choosing_who_can_see_your_story">Choosing Who Can See Your Story</string>
     <string name="city_town">City/Town</string>
     <string name="claim">Claim</string>
+    <string name="claim_dialog_with_connect_existing_page_content">A Facebook Page was created for you when you switched to a business account. Claim this Page or connect one you already manage so you can reach more people and help them find you. Facebook Pages are subject to these %1$s.</string>
     <string name="claim_facebook_page">Claim Facebook Page</string>
     <string name="claim_page">Claim Page</string>
     <string name="claim_page_button_label">Claim This Location</string>
@@ -767,7 +777,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="connect_contacts_learn_more_text">Learn more in our %1$s.</string>
     <string name="connect_contacts_options_info_text">To help people connect on Instagram, your contacts are periodically synced and stored on our servers. You choose which ones to follow. %1$s.</string>
     <string name="connect_contacts_subtitle">Find people you know on Instagram and choose who to follow.</string>
-    <string name="connect_existing_page">Connect Existing Page</string>
+    <string name="connect_existing_page">Connect an Existing Page</string>
     <string name="connect_facebook_dialog_message">You need to connect to Facebook in order to access the latest builds. Connect to Facebook now?</string>
     <string name="connect_facebook_no">Cancel</string>
     <string name="connect_facebook_yes">Okay</string>
@@ -919,7 +929,6 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="cta_context_view_on_ig">View on Instagram</string>
     <string name="cta_context_view_website_on_ig">View website on Instagram</string>
     <string name="cta_section_checkout_label">Checkout on Instagram</string>
-    <string name="cta_section_offsite_label">View on Website</string>
     <string name="cta_section_sold_out_label">Sold Out</string>
     <string name="current_password">Current password</string>
     <string name="currently_promoted">Currently Promoted</string>
@@ -1186,6 +1195,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="direct_digest_you_sent_gif">You sent a GIF</string>
     <string name="direct_digest_you_sent_message">You sent a message</string>
     <string name="direct_digest_you_sent_sticker">You sent a sticker</string>
+    <string name="direct_digest_you_sent_text_message">You: %1$s</string>
     <string name="direct_digest_you_sent_voice">You sent a voice message</string>
     <string name="direct_digest_you_shared_a_comment">You shared a comment</string>
     <string name="direct_digest_you_shared_link">You shared a link</string>
@@ -1373,6 +1383,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="direct_reel_share_sender_info_own_story">Viewed your story</string>
     <string name="direct_replay_expiring_media">Replay</string>
     <string name="direct_reply">Reply</string>
+    <string name="direct_reply_edittext_hint_message">Reply…</string>
     <string name="direct_reply_sharesheet_row_message">Message %s</string>
     <string name="direct_reply_to">Reply to</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Reply with a message.</string>
@@ -2008,10 +2019,9 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="igtv_account_settings_header">Account</string>
     <string name="igtv_app_name">IGTV</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Your cover photo must be vertical.</string>
-    <string name="igtv_attribution">From IGTV</string>
+    <string name="igtv_attribution">IGTV</string>
     <string name="igtv_blocked_media">Your video was blocked</string>
     <string name="igtv_blocked_media_item_header">Blocked</string>
-    <string name="igtv_browse_for_you_title">For You</string>
     <string name="igtv_channel_settings_header">Channel</string>
     <string name="igtv_copy_link">Copy Link</string>
     <string name="igtv_cover_picker_camera_roll">Upload From Camera Roll</string>
@@ -2064,9 +2074,10 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="igtv_reshare_sticker_tap_affordance">Your viewers will be able to tap this sticker to watch on IGTV.</string>
     <string name="igtv_search_results_channels_header">Channels</string>
     <string name="igtv_search_results_no_channels_found">No channels found</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Only for IGTV videos longer than a minute.</string>
-    <string name="igtv_share_trailer_to_feed_info">Share to your profile and feed. People can tap to watch the full video.</string>
-    <string name="igtv_share_trailer_to_feed_title">Share Preview to Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Only for IGTV videos longer than a minute</string>
+    <string name="igtv_share_trailer_to_feed_info">Share a preview on your profile and feed</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Learn More</string>
+    <string name="igtv_share_trailer_to_feed_title">Share on Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">Skip in %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Video will play in %1$s</string>
     <string name="igtv_skip_button_text_skippable">Skip</string>
@@ -2652,6 +2663,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="no_admin_pages_show">"Don't see your Page here? You may not be an admin. Contact your Page's admin to get permissions."</string>
     <string name="no_country_selection_dialog_subtitle">"You haven't select any countries to broadcast your content to, which means your content wouldn't show anywhere, so we've turned the \"Choose Locations\" setting off."</string>
     <string name="no_country_selection_dialog_title">"You haven't selected any countries"</string>
+    <string name="no_effects_found">No available effects</string>
     <string name="no_eligible_post_subtitle">"You don't have any posts that can be promoted."</string>
     <string name="no_eligible_post_title">No Eligible Posts</string>
     <string name="no_internet_error_message">"Nametags can't be scanned while you're offline. Check your connection or try again later."</string>
@@ -2853,10 +2865,6 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="password_too_easy_to_guess">"This is a common password. Try something that's harder to guess."</string>
     <string name="passwords_do_not_match">Passwords do not match.</string>
     <string name="paste">Paste</string>
-    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
-    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
-    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
-    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="pause_boosted_post_failed">Could not pause promotion. Please try again later.</string>
     <string name="pause_promotion">Pause Promotion</string>
     <string name="paused">Paused</string>
@@ -3083,7 +3091,6 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="product_tagging_add_product_limit_reached_video">You cannot add more than 5 products to a video.</string>
     <string name="product_tagging_add_products">Tag Products</string>
     <string name="product_tagging_carousel_add_product_limit_reached">You cannot tag more than 20 products in your entire post.</string>
-    <string name="product_tagging_carousel_editing_not_available">"Posts already tagged with products can't be edited."</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">"You can't tag products in posts with branded content."</string>
     <string name="product_tagging_tag_another_product">Tag Another Product</string>
     <string name="product_tagging_tap_to_add_photo">Tap photo to tag products.</string>
@@ -3210,13 +3217,11 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="recipient_picker_sharing_preferences">Sharing Options</string>
     <string name="recipient_picker_sharing_to_fb">And Facebook Story</string>
     <string name="recipient_view_mode_allow_replay">Allow Replay</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 Hours</string>
     <string name="recipient_view_mode_allow_replay_upper_case">ALLOW REPLAY</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 HOURS</string>
     <string name="recipient_view_mode_keep_in_chat">Keep In Chat</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">KEEP IN CHAT</string>
-    <string name="recipient_view_mode_one_view">One View</string>
-    <string name="recipient_view_mode_one_view_upper_case">ONE VIEW</string>
+    <string name="recipient_view_mode_view_once">View Once</string>
+    <string name="recipient_view_mode_view_once_upper_case">VIEW ONCE</string>
     <string name="recommend_accounts_follow_all_button">Follow All</string>
     <string name="recommend_accounts_header">Accounts %1$s Might Like</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> thinks you might like these accounts.</string>
@@ -3368,7 +3373,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="remove_from_saved_or_collection">"You can remove from this collection or remove it from everything you've saved"</string>
     <string name="remove_from_saves">Remove</string>
     <string name="remove_from_saves_and_collections_dialog_title">Remove from Saved and Collections?</string>
-    <string name="remove_igtv_media">Remove Preview</string>
+    <string name="remove_igtv_media">Remove Preview…</string>
     <string name="remove_me_from_post">Remove Me From Post</string>
     <string name="remove_me_from_profile">Remove Link</string>
     <string name="remove_me_from_profile_dialog_message">Your username will still appear in this bio, but it will no longer be linked to your profile.</string>
@@ -3385,7 +3390,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="remove_sponsor_tag_subtitle">"You will no longer see insights. This doesn't remove the post from Instagram."</string>
     <string name="remove_sponsor_tag_title">Remove Me From Post</string>
     <string name="remove_tag">Remove Tag</string>
-    <string name="remove_this_igtv_post_confirmation">"Your followers won't be able to preview your video on their feed or profile grid. Your video will stay on IGTV."</string>
+    <string name="remove_this_igtv_post_confirmation">"Your followers won't be able to preview your video on their feed or your profile. Your video will stay on IGTV."</string>
     <string name="remove_video_highlight_button">Remove Video</string>
     <string name="remove_video_highlight_message">"You'll still be able to see this video in your archive. You can delete it permanently from archive."</string>
     <string name="remove_video_highlight_message_active">Removing this video from your highlight does not remove it from your story.</string>
@@ -3723,6 +3728,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="shopping_on_profile_null_state_message">Right now, only you can see this. Once you create one post with tagged products, people will see them here.</string>
     <string name="shopping_on_profile_null_state_title">Posts With Tagged Products Will Appear Here</string>
     <string name="shopping_posts">Shopping Posts</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (Sold Out)</string>
     <string name="shopping_viewer_add_posts">Add Posts</string>
     <string name="shopping_viewer_description_title">Description</string>
     <string name="shopping_viewer_edit">Edit</string>
@@ -3966,15 +3972,18 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="take_picture">Take Photo</string>
     <string name="tap_for_caption_title">Tap for caption</string>
     <string name="tap_to_keep_watching">Keep Watching</string>
+    <string name="tap_to_keep_watching_video_description">Tap to keep watching video</string>
     <string name="tap_to_like">Tap to like comment</string>
     <string name="tap_to_reload">"Couldn't load image. Tap to retry."</string>
     <string name="tap_to_unlike">Tap to unlike comment</string>
     <string name="tap_to_view_combined_tags">TAP TO VIEW TAGS</string>
     <string name="tap_to_view_product_items">TAP TO VIEW PRODUCTS</string>
+    <string name="tap_to_watch_video_description">Tap to watch video</string>
     <string name="tap_to_watch_video_nux">WATCH FULL VIDEO</string>
     <string name="tell_us_approval_reason">Tell us why your ad should be approved. If we made a mistake, we will approve your ad as soon as we can.</string>
     <string name="terms">Terms</string>
     <string name="terms_and_data_policy">Terms and Data Policy</string>
+    <string name="terms_and_privacy">Terms &amp; Privacy</string>
     <string name="terms_of_service">Terms of Use</string>
     <string name="terms_of_use">Terms of Use</string>
     <string name="terms_of_use_link">Read the Full Terms of Use</string>
@@ -4005,7 +4014,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="this_account_is_private">This Account is Private</string>
     <string name="this_user_is_private">This Account is Private</string>
     <string name="thread_title_x_comma_y">%1$s, %2$s</string>
-    <string name="thumbnail_image_variance_selector_title">Select %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Select %1$s</string>
     <string name="tilt_mode_linear">Linear</string>
     <string name="tilt_mode_radial">Radial</string>
     <string name="tiltshift">Tilt Shift</string>
@@ -4241,6 +4250,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="under_age_body">Legally, we need to delete your account and your data within 30 days.</string>
     <string name="under_age_title">"You're Not Old Enough to Use Instagram"</string>
     <string name="undo">Undo</string>
+    <string name="undo_delete_comments">Undo</string>
     <string name="unfinished_reg_dialog_continue_button">Continue</string>
     <string name="unfinished_reg_dialog_message">You can continue signing up for an account or start over.</string>
     <string name="unfinished_reg_dialog_start_over_button">Start Over</string>
@@ -4423,12 +4433,10 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="view_insights">View Insights</string>
     <string name="view_location">View Location</string>
     <string name="view_mode_toggle">Toggle View Mode</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">You can set the message to disappear after one view or to keep it in the chat permanently.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">You can set the message to disappear after one view or to keep it in the chat permanently below.</string>
-    <string name="view_modes_nux_replayability_title">This will be viewable for the next 24 hours</string>
     <string name="view_more_information">View More Information</string>
     <string name="view_more_replies">View more replies (%1$d)</string>
     <string name="view_more_replies_no_count">View more replies</string>
+    <string name="view_on_website">View on Website</string>
     <string name="view_original">View Original</string>
     <string name="view_previous_replies">View previous replies (%1$d)</string>
     <string name="view_previous_replies_no_count">View previous replies</string>
@@ -4538,10 +4546,10 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="zero_video_setting_drawer_title_auto_play_video_settings">Play Videos and Stories Automatically?</string>
     <string name="zero_video_setting_drawer_title_photos_free">Photos are Free</string>
     <string name="zip_code">Zip Code</string>
-    <item type="string" name="APKTOOL_DUMMY_6ba">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b36">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b41">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b4a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ca0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ca2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_6c5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b3e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b49">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b52">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ca5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ca7">false</item>
 </resources>

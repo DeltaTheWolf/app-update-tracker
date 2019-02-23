@@ -112,16 +112,6 @@
         <item quantity="one">Odrzucić %1$d wersję roboczą?</item>
         <item quantity="few">Odrzucić %1$d wersje robocze?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Ponieważ obserwujesz</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Polubione przez</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d innych użytkowników</item>
-        <item quantity="one">%1$s + %2$d inny użytkownik</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d obserwujących</item>
         <item quantity="one">1 obserwujący</item>
@@ -314,10 +304,6 @@
         <item quantity="one">%1$s i %2$d inna osoba piszą…</item>
         <item quantity="few">%1$s i %2$d inne osoby piszą…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">Usunięto komentarze (%1$d). Dotknij, aby cofnąć.</item>
-        <item quantity="one">Usunięto komentarz. Dotknij, aby cofnąć.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d nowych postów</item>
         <item quantity="one">%1$d nowy post</item>
@@ -326,6 +312,11 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s i &lt;b>%2$s innych&lt;/b></item>
         <item quantity="one">%1$s i &lt;b>1 inny&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d komentarzy zostało usuniętych.</item>
+        <item quantity="one">%1$d komentarz został usunięty.</item>
+        <item quantity="few">%1$d komentarze zostały usunięte.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s z Twoich kontaktów jest na Instagramie.</item>

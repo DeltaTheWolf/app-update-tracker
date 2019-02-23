@@ -101,15 +101,6 @@
         <item quantity="other">Желите ли да одбаците %1$d нацрта?</item>
         <item quantity="one">Желите ли да одбаците %1$d нацрт?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Зато што пратите</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Особе којима се свиђа:</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + још %2$d</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d пратилаца</item>
         <item quantity="one">%1$d пратилац</item>
@@ -291,9 +282,6 @@
     <plurals name="typing_indicator_many">
         <item quantity="other">%1$s и још %2$d куцају…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">Избрисали сте више коментара (%1$d). Додирните да бисте опозвали.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d нових објава</item>
         <item quantity="one">%1$d нова објава</item>
@@ -301,6 +289,11 @@
     </plurals>
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s и &lt;b>још %2$s&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">Избрисано је %1$d коментара.</item>
+        <item quantity="one">Избрисан је %1$d коментар.</item>
+        <item quantity="few">Избрисана су %1$d коментара.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s ваших контаката користи Instagram</item>

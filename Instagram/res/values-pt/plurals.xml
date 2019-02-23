@@ -110,16 +110,6 @@
         <item quantity="other">Descartar %1$d rascunhos?</item>
         <item quantity="one">Descartar 1 rascunho?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Porque você segue</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Curtido por</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s e mais %2$d pessoas</item>
-        <item quantity="one">%1$s e mais %2$d pessoa</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d seguidores</item>
         <item quantity="one">1 seguidor</item>
@@ -181,7 +171,7 @@
     </plurals>
     <plurals name="multi_author_story_viewer_list_megaphone_photo_hashtag_title">
         <item quantity="other">Sua foto foi adicionada a %1$s histórias de hashtag</item>
-        <item quantity="one">Sua foto foi adicionada a um story de hashtag</item>
+        <item quantity="one">Sua foto foi adicionada a um story com hashtag</item>
     </plurals>
     <plurals name="multi_author_story_viewer_list_megaphone_photo_location_title">
         <item quantity="other">Sua foto foi adicionada a %1$s histórias de localização</item>
@@ -189,7 +179,7 @@
     </plurals>
     <plurals name="multi_author_story_viewer_list_megaphone_video_hashtag_title">
         <item quantity="other">Seu vídeo foi adicionado a %1$s histórias de hashtag</item>
-        <item quantity="one">Seu vídeo foi adicionado a um story de hashtag</item>
+        <item quantity="one">Seu vídeo foi adicionado a um story com hashtag</item>
     </plurals>
     <plurals name="multi_author_story_viewer_list_megaphone_video_location_title">
         <item quantity="other">Seu vídeo foi adicionado a %1$s histórias de localização</item>
@@ -290,10 +280,6 @@
         <item quantity="other">%1$s e outras %2$d pessoas estão digitando…</item>
         <item quantity="one">%1$s e 1 outra pessoa estão digitando…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d comentários excluídos. Toque para desfazer.</item>
-        <item quantity="one">Comentário excluído. Toque para desfazer.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d novas publicações</item>
         <item quantity="one">1 nova publicação</item>
@@ -301,6 +287,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s e &lt;b>outras %2$s pessoas&lt;/b></item>
         <item quantity="one">%1$s e &lt;b>1 outra pessoa&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d comentários excluídos.</item>
+        <item quantity="one">Comentário excluído.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s de seus contatos estão no Instagram</item>

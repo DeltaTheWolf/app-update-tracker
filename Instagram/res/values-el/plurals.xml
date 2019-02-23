@@ -110,17 +110,6 @@
         <item quantity="other">Απόρριψη %1$d προσχεδίων;</item>
         <item quantity="one">Απόρριψη 1 προσχεδίου;</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Επειδή ακολουθείτε τους χρήστες</item>
-        <item quantity="one">Επειδή ακολουθείτε το χρήστη</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Αρέσει στους</item>
-        <item quantity="one">Αρέσει στο χρήστη</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d ακόμη</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d ακόλουθοι</item>
         <item quantity="one">1 ακόλουθος</item>
@@ -291,10 +280,6 @@
         <item quantity="other">Ο χρήστης %1$s και %2$d ακόμη πληκτρολογούν…</item>
         <item quantity="one">Ο χρήστης %1$s και 1 ακόμη πληκτρολογούν…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">Διαγράφηκαν %1$d σχόλια. Πατήστε για αναίρεση.</item>
-        <item quantity="one">Το σχόλιο διαγράφηκε. Πατήστε για αναίρεση.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d νέες δημοσιεύσεις</item>
         <item quantity="one">1 νέα δημοσίευση</item>
@@ -302,6 +287,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">Ο χρήστης %1$s και &lt;b>%2$s ακόμη&lt;/b></item>
         <item quantity="one">Ο χρήστης %1$s και &lt;b>1 ακόμη&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">Διαγράφηκαν %1$d σχόλια.</item>
+        <item quantity="one">Το σχόλιο διαγράφηκε.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s από τις επαφές σας είναι στο Instagram</item>

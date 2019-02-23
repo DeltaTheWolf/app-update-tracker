@@ -24,7 +24,6 @@
     <string name="account_privacy_option_public_title">Público</string>
     <string name="account_privacy_option_settings_noun">Configuración</string>
     <string name="account_privacy_option_status">Tu cuenta está configurada actualmente como &lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b>.</string>
-    <string name="account_section_title">Tienda de %1$s</string>
     <string name="activation_card_bio_button_text">Añadir biografía</string>
     <string name="activation_card_bio_subtitle">Cuenta a tus seguidores algo sobre ti.</string>
     <string name="activation_card_bio_title">Añade tu biografía</string>
@@ -114,6 +113,7 @@
     <string name="appeal_reason_hint">Infórmanos sobre esta foto o este vídeo...</string>
     <string name="appeal_submitted_message">¡Gracias! Tus comentarios nos ayudan a mejorar Instagram para todos. Si nos comunicas que tu publicación no es contenido de marca, lo apreciamos. Este proceso es nuevo y estamos aprendiendo.</string>
     <string name="appeal_submitted_title">Se ha enviado tu reclamación.</string>
+    <string name="ar_effect_link_preview_explanation_text">Los espectadores podrán deslizar el dedo hacia arriba para probar el efecto de la cámara que elijas. %1$s</string>
     <string name="ar_gallery_button_label">Marco de AR</string>
     <string name="archive_highlight_success">La historia destacada se ha archivado correctamente.</string>
     <string name="archive_opt_out_dialog_title">Presentación del archivo de tus historias</string>
@@ -255,6 +255,7 @@
     <string name="choose_title_and_category">Elige un título y una categoría para ayudar a las personas a saber de qué trata tu página. Esta categoría se mostrará en el perfil de tu empresa.</string>
     <string name="choose_title_and_sync_options">Elige un nombre y permite la sincronización entre tu página de Facebook y el perfil de Instagram para empresas.</string>
     <string name="choose_title_category_and_sync_options">Elige un nombre y una categoría, y permite la sincronización entre tu página de Facebook y el perfil de Instagram para empresas.</string>
+    <string name="claim_dialog_with_connect_existing_page_content">Cuando cambiaste a una cuenta empresarial, se creó una página de Facebook. Reclámala o conecta otra que ya administres para llegar a más personas y ayudarlas a encontrarte. Las páginas de Facebook están sujetas a estas %1$s.</string>
     <string name="claim_facebook_page">Solicitar página de Facebook</string>
     <string name="claim_page_content">%1$s se creó cuando cambiaste a una cuenta de empresa. Reclámala ahora para poder llegar a más personas y ayudarlas a encontrarte. Las páginas de Facebook están sujetas a estas %2$s.</string>
     <string name="claim_page_error_dialog_message">Para reclamar esta ubicación, debes ser administrador de una página de Facebook vinculada a esta dirección.</string>
@@ -322,6 +323,7 @@
     <string name="contact_from_new_button_ix">Tu información de contacto permite que las personas te envíen mensajes de correo, te llamen por teléfono o realicen acciones desde los botones que se muestran en tu perfil.</string>
     <string name="contact_import_dialog_title">Encuentra personas a las que seguir</string>
     <string name="contact_import_dialog_title_invite">Invita a amigos a unirse a Instagram</string>
+    <string name="contact_import_permissions_dialog_subtitle">Para que sea más fácil conectarte en Instagram, puedes configurar tu cuenta para que tus contactos se sincronicen y se almacenen en nuestros servidores periódicamente. Tú eliges a qué contactos quieres seguir. Desconéctate cuando quieras para detener la sincronización.</string>
     <string name="contact_import_permissions_dialog_subtitle_invite">Para ayudarte a conectarte con otras personas en Instagram, tus contactos se sincronizan y se almacenan en nuestros servidores periódicamente. Tú eliges a qué contactos quieres invitar. Desconéctate en cualquier momento para detener la sincronización.</string>
     <string name="contact_list_description">Elige amigos a los que invitar a Instagram. Recibirán un mensaje de Instagram a través de WhatsApp, correo electrónico o SMS.</string>
     <string name="contact_list_nux_2">Le enviaremos un correo electrónico o SMS con el siguiente texto:</string>
@@ -521,7 +523,7 @@
     <string name="direct_location_story_share_sender_info">Has enviado la historia de %1$s</string>
     <string name="direct_malicious_link">Se ha detectado que el enlace no es seguro y no se ha enviado.</string>
     <string name="direct_max_recipients_reached_title">Se ha alcanzado el límite del grupo</string>
-    <string name="direct_media_picker_empty_text">Una vez que hayas compartido fotos y vídeos en tu sección de noticias, podrás enviar estas publicaciones en un mensaje directo.</string>
+    <string name="direct_media_picker_empty_text">Una vez que hayas compartido fotos y vídeos en tu sección de noticias, podrás enviar esas publicaciones en un mensaje directo.</string>
     <string name="direct_media_picker_empty_title">Todavía no hay publicaciones</string>
     <string name="direct_media_picker_liked_posts_empty_text">Todas las publicaciones que te han gustado se mostrarán aquí. Si indicas que te gusta una publicación, podrás enviarla en un mensaje directo.</string>
     <string name="direct_media_picker_liked_posts_empty_title">Todavía no has indicado que te gusta ninguna publicación</string>
@@ -569,6 +571,7 @@
     <string name="direct_reel_share_recipient_info_own_story">Has visto su historia</string>
     <string name="direct_reel_share_sender_info">Has respondido a su historia</string>
     <string name="direct_reel_share_sender_info_own_story">Ha visto tu historia</string>
+    <string name="direct_reply_edittext_hint_message">Responder...</string>
     <string name="direct_reply_to_author_message_content_replied_to_post">Ha respondido a tu publicación</string>
     <string name="direct_reply_to_author_message_content_you_replied">Has respondido a su publicación</string>
     <string name="direct_report_message">Denunciar</string>
@@ -854,10 +857,10 @@
     <string name="igtv_no_videos_found">No hay vídeos disponibles.</string>
     <string name="igtv_page_connect_subtitle">Conecta una página de Facebook para compartir vídeos de IGTV con tu público de Facebook. Si quieres conectar una página diferente, ve a \"Cuentas vinculadas\" en la configuración de la aplicación de Instagram.</string>
     <string name="igtv_report_problem">Informar de un problema</string>
-    <string name="igtv_reshare_sticker_tap_affordance">Tus espectadores podrán tocar este sticker para ver contenido en IGTV.</string>
+    <string name="igtv_reshare_sticker_tap_affordance">Las personas podrán tocar este sticker para ver el vídeo en IGTV.</string>
     <string name="igtv_search_results_no_channels_found">No se han encontrado canales</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Solo para vídeos de IGTV que duren más de un minuto.</string>
-    <string name="igtv_share_trailer_to_feed_info">Comparte el vídeo en tu perfil y tu sección de noticias y las personas podrán tocar para verlo completo.</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Solo para vídeos de IGTV que duren más de un minuto</string>
+    <string name="igtv_share_trailer_to_feed_info">Comparte una vista previa en tu perfil y las noticias.</string>
     <string name="igtv_skip_button_text_non_skippable">El vídeo se reproducirá en %1$s</string>
     <string name="igtv_storage_permission_rationale_message">Permite a %1$s acceder a contenido de tu teléfono para que puedas publicar en tu canal.</string>
     <string name="igtv_storage_permission_rationale_title">Permite el acceso a tus vídeos</string>
@@ -866,6 +869,7 @@
     <string name="igtv_tv_guide_up_next_button_label">Siguiente</string>
     <string name="igtv_tv_guide_upload_video">Subir vídeo</string>
     <string name="igtv_up_next_channel_title">Siguiente</string>
+    <string name="igtv_uploading">Subiendo...</string>
     <string name="igtv_video_preview_text_long">El vídeo se reproducirá a continuación</string>
     <string name="igtv_video_preview_text_short">Siguiente</string>
     <string name="import_facebook_page_content_add_photo_label">Añadir fotos</string>
@@ -1267,7 +1271,7 @@
     <string name="reel_dashboard_add_to_story_entry_point_label">Añade contenido a tu historia</string>
     <string name="reel_dashboard_cta_add_to_highlight">Añádela a las historias destacadas</string>
     <string name="reel_dashboard_cta_highlight">Historia destacada</string>
-    <string name="reel_dashboard_expired_story_notice">Las listas de espectadores dejan de estar disponibles tras 24 horas.</string>
+    <string name="reel_dashboard_expired_story_notice">Las listas de personas que han visto el contenido dejan de estar disponibles después de 24 horas.</string>
     <string name="reel_dashboard_poll_result_option_tally_label">votos para %1$s</string>
     <string name="reel_dashboard_save_button_label">Guardar en el carrete</string>
     <string name="reel_dashboard_share_button_label">Compartir como publicación en la sección de noticias</string>
@@ -1311,12 +1315,13 @@
     <string name="remove_from_saved_explanation">Si eliminas este elemento, desaparecerá de todas las colecciones.</string>
     <string name="remove_from_saved_or_collection">Puedes eliminarla de esta colección o de todos los lugares donde la hayas guardado</string>
     <string name="remove_from_saves_and_collections_dialog_title">¿Eliminar de los elementos guardados y de las colecciones?</string>
+    <string name="remove_igtv_media">Eliminar vista previa...</string>
     <string name="remove_photo_highlight_message">Podrás seguir viendo esta foto en tu archivo. Tienes la opción de borrarla de forma definitiva desde este.</string>
     <string name="remove_product_from_saved">¿Seguro que quieres eliminar esto de tu colección de compras?</string>
     <string name="remove_school">Eliminar centro educativo</string>
     <string name="remove_school_confirmation_title">¿Seguro que quieres eliminar este centro educativo?</string>
     <string name="remove_sponsor_tag_subtitle">Dejarás de ver las estadísticas, pero la publicación no se eliminará de Instagram.</string>
-    <string name="remove_this_igtv_post_confirmation">Tus seguidores no podrán obtener una vista previa de tu vídeo en su sección de noticias ni en la cuadrícula del perfil. Tu vídeo permanecerá en IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">Tus seguidores no podrán obtener una vista previa del vídeo en sus noticias ni en tu perfil. El vídeo seguirá estando disponible en IGTV.</string>
     <string name="remove_video_highlight_button">Eliminar vídeo</string>
     <string name="remove_video_highlight_message">Podrás seguir viendo este vídeo en tu archivo. Tienes la opción de borrarla de forma definitiva desde este.</string>
     <string name="remove_video_highlight_message_active">Aunque elimines este vídeo de los elementos destacados, no se eliminará de tu historia.</string>
@@ -1567,6 +1572,7 @@
     <string name="text_format_label_modern">MODERNO</string>
     <string name="text_message_verification_description_with_learn_more_link">Si activas esta opción, te enviaremos un código de seguridad para confirmar tu identidad al entrar. %1$s.</string>
     <string name="thanks_for_let_us_know">Gracias por informarnos.</string>
+    <string name="thumbnail_image_variant_selector_title">Selecciona %1$s</string>
     <string name="tiltshift">Desenfoque</string>
     <string name="time_spent_data_section_title">Tiempo invertido en Instagram</string>
     <string name="time_spent_info_dialog_body">Tiempo medio que has usado Instagram cada día durante los últimos siete días. El tiempo se cuenta mientras usas la aplicación de Instagram en este dispositivo. Este resultado está en desarrollo y es posible que cambie a medida que mejoramos nuestra metodología.</string>

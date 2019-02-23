@@ -90,7 +90,6 @@
     <string name="account_privacy_option_status_private">privát</string>
     <string name="account_privacy_option_status_public">nyilvános</string>
     <string name="account_privacy_option_title">A fiók adatvédelme</string>
-    <string name="account_section_title">A(z) %1$s bolt felkeresése</string>
     <string name="action_button">Műveletgomb</string>
     <string name="action_view">Megtekintés</string>
     <string name="activation_card_bio_button_completed_text">Rövid bemutatkozás módosítása</string>
@@ -248,6 +247,11 @@
     <string name="appeal_violation_title">Visszajelzés</string>
     <string name="apply">Alkalmazás</string>
     <string name="apps_header">Egyéb fiókok</string>
+    <string name="ar_effect_cta_text">Effektus megtekintése</string>
+    <string name="ar_effect_cta_text_with_name">A(z) &lt;b>%1$s&lt;/b> kipróbálása</string>
+    <string name="ar_effect_link_option">Kameraeffektus</string>
+    <string name="ar_effect_link_preview_explanation_text">A nézők pöccintéssel próbálhatják ki az általad választott kameraeffektust. %1$s</string>
+    <string name="ar_effect_link_preview_link_text">Előnézet</string>
     <string name="ar_gallery_button_label">AR-KERET</string>
     <string name="archive_highlight_failure">Az összefoglalót nem sikerült archiválni.</string>
     <string name="archive_highlight_option">Összefoglaló archiválása</string>
@@ -414,6 +418,7 @@
     <string name="business_account_splash_subtitle">Az ingyenes üzleti fiók több eszközt biztosít a vállalkozásod bővítéséhez.</string>
     <string name="business_account_splash_title">Instagram üzleti fiók létrehozása</string>
     <string name="business_address_optional">Vállalkozás címe (nem kötelező kitölteni)</string>
+    <string name="business_attribute_sync_toggle_label">Ennek az információnak a használata Facebook-oldaladon.</string>
     <string name="business_conversion_enable_cross_posting">Új bejegyzések megosztása Facebook-oldalon</string>
     <string name="business_conversion_import_profile_pic">Profilkép importálása az Instagramról</string>
     <string name="business_email_consent">Adj meg egy e-mail-címet, ahova a vállalkozással kapcsolatos üzeneteket várod. Az üzleti profilodban megjelenik egy kapcsolatfelvételi gomb az e-mail-címeddel.</string>
@@ -421,6 +426,8 @@
     <string name="business_is_not_on_instagram">Ez a vállalkozás még nincs jelen az Instagramon. Meg szeretnéd nézni a Facebook-fiókját?</string>
     <string name="business_landing_terms">Feltételek és szabályzatok</string>
     <string name="business_name">Vállalkozás neve</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Amikor egy vállalkozás termékeit jelölöd meg egy bejegyzésben, a vállalkozást csak partnerként jelölheted meg.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">A(z) %1$s termékeit nem jelölheted meg.</string>
     <string name="business_partner_and_user_name">Üzleti partner: %1$s</string>
     <string name="business_partner_settings">Üzleti partner beállításai</string>
     <string name="business_phone_consent">Adj meg egy telefonszámot, ahova a vállalkozással kapcsolatos hívásokat várod. Fontos, hogy ez a szám ne legyen összekapcsolva meglévő Instagram-fiókkal.</string>
@@ -446,6 +453,7 @@
     <string name="business_signup_welcome_user_desc">Elkészült az üzleti profilod! Most már megoszthatsz a követőiddel fényképeket, videókat és történeteket, miközben a vállalkozásod növekedhet. A felhasználónevedet később bármikor módosíthatod.</string>
     <string name="business_signup_welcome_user_title">Üdvözöl az Instagram!</string>
     <string name="business_tutorials">Oktatóanyagok</string>
+    <string name="button_description">Gomb</string>
     <string name="caboose_shadow_hint_text">Görgess lentebb az ajánlásokért!</string>
     <string name="caboose_shadow_hint_text_older">Tovább görgetve a régebbi bejegyzéseket is megjelenítheted.</string>
     <string name="calendar">Naptár</string>
@@ -589,8 +597,9 @@
     <string name="choosing_who_can_see_your_story">A történeted láthatóságának beállítása</string>
     <string name="city_town">Város/település</string>
     <string name="claim">Átadás kérése</string>
+    <string name="claim_dialog_with_connect_existing_page_content">Létrehoztunk egy Facebook-oldalt a számodra, amikor üzleti fiókra váltottál. Ha most átveszed, vagy ha hozzákapcsolsz egy már meglévő oldalt, több embert érhetsz el, és segíthetsz nekik megtalálni a vállalkozásodat. A Facebook-oldalakra ezek a %1$s vonatkoznak.</string>
     <string name="claim_facebook_page">Facebook-oldal átvételének kérése</string>
-    <string name="claim_page">Oldal kérése</string>
+    <string name="claim_page">Oldal átvételének kérése</string>
     <string name="claim_page_button_label">Helyszín átadásának kérése</string>
     <string name="claim_page_content">Létrehoztuk a(z) %1$s oldalt számodra, amikor üzleti fiókra váltottál. Ha most átveszed, több embert érhetsz el, és segíthetsz nekik megtalálni a vállalkozásodat. A Facebook-oldalakra ezek a %2$s vonatkoznak.</string>
     <string name="claim_page_error_dialog_message">A helyszín átadásának kéréséhez a címhez hozzákapcsolt Facebook-oldal adminisztrátorának kell lenned.</string>
@@ -873,7 +882,6 @@
     <string name="cta_context_view_on_ig">Megtekintés az Instagramon</string>
     <string name="cta_context_view_website_on_ig">Webhely megtekintése az Instagramon</string>
     <string name="cta_section_checkout_label">Megnézheted az Instagramon</string>
-    <string name="cta_section_offsite_label">Megtekintés webhelyen</string>
     <string name="cta_section_sold_out_label">Elfogyott</string>
     <string name="current_password">Jelenlegi jelszó</string>
     <string name="currently_promoted">Jelenleg hirdeted</string>
@@ -1055,6 +1063,7 @@
     <string name="direct_digest_you_sent_gif">Elküldtél egy GIF-et.</string>
     <string name="direct_digest_you_sent_message">Elküldtél egy üzenetet.</string>
     <string name="direct_digest_you_sent_sticker">Elküldtél egy matricát.</string>
+    <string name="direct_digest_you_sent_text_message">Te: %1$s</string>
     <string name="direct_digest_you_sent_voice">Hangüzenetet küldtél.</string>
     <string name="direct_digest_you_shared_a_comment">Megosztottál egy hozzászólást.</string>
     <string name="direct_digest_you_shared_link">Megosztottál egy hivatkozást</string>
@@ -1237,6 +1246,7 @@
     <string name="direct_reel_share_sender_info_own_story">Megnézte a történetedet</string>
     <string name="direct_replay_expiring_media">Újra</string>
     <string name="direct_reply">Válasz</string>
+    <string name="direct_reply_edittext_hint_message">Válasz…</string>
     <string name="direct_reply_sharesheet_row_message">Üzenet %1$s számára</string>
     <string name="direct_reply_to">Válasz neki:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Üzenetben válaszolhatsz.</string>
@@ -1849,10 +1859,8 @@
     <string name="igtv_about_settings_header">Névjegy</string>
     <string name="igtv_account_settings_header">Fiók</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">A borítóképed csak álló tájolású lehet.</string>
-    <string name="igtv_attribution">Az IGTV-ről</string>
     <string name="igtv_blocked_media">A videód le van tiltva.</string>
     <string name="igtv_blocked_media_item_header">Letiltva</string>
-    <string name="igtv_browse_for_you_title">Neked</string>
     <string name="igtv_channel_settings_header">Csatorna</string>
     <string name="igtv_copy_link">Hivatkozás másolása</string>
     <string name="igtv_cover_picker_camera_roll">Feltöltés a filmtekercsből</string>
@@ -1903,8 +1911,9 @@
     <string name="igtv_search_results_channels_header">Csatornák</string>
     <string name="igtv_search_results_no_channels_found">Nem található csatorna.</string>
     <string name="igtv_share_trailer_to_feed_ineligible">Csak egy percnél hosszabb IGTV-videók esetében.</string>
-    <string name="igtv_share_trailer_to_feed_info">Megoszthatod a profilodban és a képfolyamban. Az emberek rákoppintással tudják megnézni a teljes videót.</string>
-    <string name="igtv_share_trailer_to_feed_title">Előnézet megosztása az Instagramon</string>
+    <string name="igtv_share_trailer_to_feed_info">Előnézet megosztása a profilodban és a hírfolyamodban</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">További információ</string>
+    <string name="igtv_share_trailer_to_feed_title">Megosztás az Instagramon</string>
     <string name="igtv_skip_button_text_delay_skippable">Átugrás ennyi idő múlva: %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">A videó kezdéséig hátra van: %1$s</string>
     <string name="igtv_skip_button_text_skippable">Kihagyás</string>
@@ -2456,12 +2465,13 @@
     <string name="no_admin_pages_show">Nem látod itt az oldaladat? Lehet, hogy nem vagy adminisztrátor. Jogosultság kérése céljából fordulj az oldal adminisztrátorához.</string>
     <string name="no_country_selection_dialog_subtitle">Nem választottál ki országot a tartalmad adásához, ami azt jelenti, hogy a tartalmad sehol nem jelenne meg, ezért a „Helyszínek kiválasztása” beállítást kikapcsoltuk.</string>
     <string name="no_country_selection_dialog_title">Még nem választottál ki országot.</string>
+    <string name="no_effects_found">Nincs elérhető effektus</string>
     <string name="no_eligible_post_subtitle">Nincs kiemelhető bejegyzésed.</string>
     <string name="no_eligible_post_title">Nincsenek használható bejegyzések.</string>
     <string name="no_internet_error_message">Ha offline vagy, nem tudsz névcímkét beolvasni. Ellenőrizd a kapcsolatodat, majd próbáld meg újra.</string>
     <string name="no_internet_error_title">Nincs internetkapcsolat</string>
     <string name="no_locations_found">Nem található hely.</string>
-    <string name="no_media_previews">Még nincsenek bejegyzések</string>
+    <string name="no_media_previews">Még nincsenek bejegyzések.</string>
     <string name="no_nametags_found">Nem található névcímke.</string>
     <string name="no_pages_found">Nem található Facebook-oldal.</string>
     <string name="no_people_blocked">Nem értesítjük a letiltott felhasználókat, amikor letiltod őket. A bejegyzéseidhez fűzött hozzászólásaikat rajtuk kívül senki sem látja.</string>
@@ -2773,7 +2783,7 @@
     <string name="product_appeals_remove_tag_dialog_content">Ezzel a termékmegjelölést távolítod el, magát a bejegyzést nem törlöd.</string>
     <string name="product_appeals_remove_tag_dialog_title">Eltávolítod a termékmegjelölést?</string>
     <string name="product_appeals_request_another_review">újabb ellenőrzést kérhetsz</string>
-    <string name="product_appeals_request_another_review_content">Amennyiben úgy gondolod, hibát vétettünk az ellenőrzés során, ismételten ránézünk.</string>
+    <string name="product_appeals_request_another_review_content">Ha úgy gondolod, tévedtünk a termék ellenőrzése során, újra megnézzük.</string>
     <string name="product_appeals_request_review_button_text">Ellenőrzés kérése</string>
     <string name="product_appeals_request_review_header">Újabb ellenőrzés kérése</string>
     <string name="product_catalog_selection_footer">Amennyiben a termékek nem jelennek meg itt, lépj kapcsolatba az oldal adminisztrátorával, vagy ellenőrizd a jogosultságaidat a Vállalkozáskezelőben.</string>
@@ -2823,7 +2833,6 @@
     <string name="product_tagging_add_product_limit_reached_video">Egy videón 5-nél több terméket nem lehet megadni.</string>
     <string name="product_tagging_add_products">Termékek megjelölése</string>
     <string name="product_tagging_carousel_add_product_limit_reached">A bejegyzésedben 20-nál több embert nem jelölhetsz meg.</string>
-    <string name="product_tagging_carousel_editing_not_available">Azok a bejegyzések, amelyekben termékeket jelöltél meg, nem módosíthatók.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Nem lehet termékeket megjelölni márkához kapcsolódó tartalommal ellátott bejegyzésekben.</string>
     <string name="product_tagging_tag_another_product">Másik termék megjelölése</string>
     <string name="product_tagging_tap_to_add_photo">A fényképre koppintva megjelölheted a termékeket.</string>
@@ -2936,13 +2945,11 @@
     <string name="recipient_picker_sharing_preferences">Megosztási lehetőségek</string>
     <string name="recipient_picker_sharing_to_fb">Facebook-történet is</string>
     <string name="recipient_view_mode_allow_replay">Ismétlés engedélyezése</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 óra</string>
     <string name="recipient_view_mode_allow_replay_upper_case">ISMÉTLÉS ENGEDÉLYEZÉSE</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 ÓRA</string>
     <string name="recipient_view_mode_keep_in_chat">Megtartás a chatben</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">MEGTARTÁS A CHATBEN</string>
-    <string name="recipient_view_mode_one_view">Egy megtekintés</string>
-    <string name="recipient_view_mode_one_view_upper_case">EGY MEGTEKINTÉS</string>
+    <string name="recipient_view_mode_view_once">Egyszeri megtekintés</string>
+    <string name="recipient_view_mode_view_once_upper_case">EGYSZERI MEGTEKINTÉS</string>
     <string name="recommend_accounts_follow_all_button">Az összes követése</string>
     <string name="recommend_accounts_header">Fiókok, melyeket %1$s valószínűleg kedvelne</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> szerint ezek a fiókok esetleg tetszenek majd neked.</string>
@@ -3111,7 +3118,7 @@
     <string name="remove_sponsor_tag_subtitle">A továbbiakban nem látod az elemzési adatokat. A bejegyzés ettől még nem tűnik el az Instagramról.</string>
     <string name="remove_sponsor_tag_title">Eltávolítom magamat a bejegyzésből</string>
     <string name="remove_tag">Megjelölés eltávolítása</string>
-    <string name="remove_this_igtv_post_confirmation">A követőid a képfolyamukban vagy a profil rácsában nem fogják tudni megnézni a videód előnézetét. A videód megmarad az IGTV-n.</string>
+    <string name="remove_this_igtv_post_confirmation">A követőid a képfolyamukban vagy a profilodban nem fogják tudni megnézni a videód előnézetét. A videód megmarad az IGTV-n.</string>
     <string name="remove_video_highlight_button">Videó eltávolítása</string>
     <string name="remove_video_highlight_message">Ezt a videót az archívumodban továbbra is meg tudod nézni. Az archívumból végleg törölni tudod.</string>
     <string name="remove_video_highlight_message_active">Attól, hogy az összefoglalódból eltávolítod a videót, az a történetedből nem lesz eltávolítva.</string>
@@ -3428,6 +3435,7 @@
     <string name="shopping_on_profile_null_state_message">Jelenleg csak te láthatod ezt. Ha már lesz bejegyzésed megjelölt termékekkel, az emberek itt fogják látni.</string>
     <string name="shopping_on_profile_null_state_title">Itt fognak megjelenni a megjelölt termékeket tartalmazó bejegyzések.</string>
     <string name="shopping_posts">Vásárlásos bejegyzések</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (elfogyott)</string>
     <string name="shopping_viewer_add_posts">Bejegyzések hozzáadása</string>
     <string name="shopping_viewer_description_title">Leírás</string>
     <string name="shopping_viewer_edit">Szerkesztés</string>
@@ -3664,15 +3672,18 @@
     <string name="take_picture">Fénykép készítése</string>
     <string name="tap_for_caption_title">Koppints ide a képaláíráshoz.</string>
     <string name="tap_to_keep_watching">Folytatás</string>
+    <string name="tap_to_keep_watching_video_description">Ide koppintva tovább nézheted a videót</string>
     <string name="tap_to_like">Koppints ide a hozzászólás kedveléséhez.</string>
     <string name="tap_to_reload">A képet nem sikerült betölteni. Koppints ide az ismételt próbálkozáshoz.</string>
     <string name="tap_to_unlike">Koppints ide a kedvelés visszavonásához</string>
     <string name="tap_to_view_combined_tags">IDE KOPPINTVA MEGTEKINTHETED A MEGJELÖLÉSEKET</string>
     <string name="tap_to_view_product_items">IDE KOPPINTVA MEGTEKINTHETED A TERMÉKEKET</string>
+    <string name="tap_to_watch_video_description">Ide koppintva megnézheted a videót.</string>
     <string name="tap_to_watch_video_nux">A TELJES VIDEÓ MEGTEKINTÉSE</string>
     <string name="tell_us_approval_reason">Mondd el, hogy szerinted miért kéne jóváhagynunk a hirdetésedet. Ha kiderül, hogy hibáztunk a döntés meghozatalakor, a lehető leghamarabb jóvá fogjuk hagyni a hirdetésedet.</string>
     <string name="terms">Feltételek</string>
     <string name="terms_and_data_policy">Felhasználási feltételek és adatkezelési szabályzat</string>
+    <string name="terms_and_privacy">Feltételek és adatvédelem</string>
     <string name="terms_of_service">Felhasználási feltételek</string>
     <string name="terms_of_use">Felhasználási feltételek</string>
     <string name="terms_of_use_link">A teljes felhasználási feltételek elolvasása</string>
@@ -3700,7 +3711,7 @@
     <string name="thanks_for_let_us_know">Köszönjük, hogy tudomásunkra hoztad.</string>
     <string name="this_account_is_private">Ez privát fiók.</string>
     <string name="this_user_is_private">Ez privát fiók.</string>
-    <string name="thumbnail_image_variance_selector_title">%1$s kiválasztása</string>
+    <string name="thumbnail_image_variant_selector_title">%1$s kiválasztása</string>
     <string name="tilt_mode_linear">Vonalas</string>
     <string name="tilt_mode_radial">Körkörös</string>
     <string name="tiltshift">Makett</string>
@@ -3933,6 +3944,7 @@
     <string name="under_age_body">Törvényi előírások értelmében 30 napon belül törölnünk kell a fiókodat és az adataidat.</string>
     <string name="under_age_title">Nem vagy elég idős az Instagram használatához.</string>
     <string name="undo">Visszavonás</string>
+    <string name="undo_delete_comments">Visszavonás</string>
     <string name="unfinished_reg_dialog_continue_button">Tovább</string>
     <string name="unfinished_reg_dialog_message">Folytathatod a regisztrációt, vagy újra is kezdheted a folyamatot.</string>
     <string name="unfinished_reg_dialog_start_over_button">Újrakezdés</string>
@@ -4006,7 +4018,7 @@
     <string name="username_not_available">A felhasználónév nem érhető el.</string>
     <string name="username_placeholder">felhasználónév</string>
     <string name="valid_address_to_map">Kérjük, adj meg érvényes címet, hogy az emberek a térképalkalmazásokkal el tudjanak navigálni hozzád.</string>
-    <string name="variant_selector_section_error_message">Add meg az egyik lehetőséget!</string>
+    <string name="variant_selector_section_error_message">Válaszd ki az egyik lehetőséget.</string>
     <string name="verification_code_instructions">Írd be a hatjegyű megerősítő kódot, amelyet a következő számra küldtünk el: %1$s. &lt;b>Kód újraküldése.&lt;/b></string>
     <string name="verification_code_instructions_with_rate_limit">Írd be a hatjegyű megerősítő kódot, amelyet a következő címre küldtünk el: %1$s. Lehetséges, hogy néhány percet várni kell a kód megérkezésére. Ha nem kaptad meg, %2$s.</string>
     <string name="verification_code_request_new_link">Új kód kérése</string>
@@ -4114,12 +4126,10 @@
     <string name="view_insights">Elemzések megtekintése</string>
     <string name="view_location">Helyszín megtekintése</string>
     <string name="view_mode_toggle">Megtekintési mód bekapcsolása</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Beállíthatod, hogy az üzenet eltűnjön a megtekintése után, de akár meg is tarthatod a chatben, állandóra.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Beállíthatod, hogy az üzenet eltűnjön a megtekintése után, de lentebb akár meg is tarthatod a chatben, állandóra.</string>
-    <string name="view_modes_nux_replayability_title">Ez 24 órán keresztül lesz megtekinthető.</string>
     <string name="view_more_information">További információ megtekintése</string>
     <string name="view_more_replies">További válaszok megtekintése (%1$d)</string>
     <string name="view_more_replies_no_count">További válaszok megtekintése</string>
+    <string name="view_on_website">Megtekintés webhelyen</string>
     <string name="view_original">Az eredeti megtekintése</string>
     <string name="view_previous_replies">Előző válaszok megtekintése (%1$d)</string>
     <string name="view_previous_replies_no_count">Előző válaszok megtekintése</string>

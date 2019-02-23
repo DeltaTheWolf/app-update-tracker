@@ -109,15 +109,6 @@
         <item quantity="other">לבטל את הטיוטות של %1$d?</item>
         <item quantity="one">לבטל טיוטה אחת?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">בגלל המעקב שלך</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">סומן בלייק על ידי</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d נוספים</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d עוקבים</item>
         <item quantity="one">עוקב אחד</item>
@@ -281,10 +272,6 @@
         <item quantity="other">%1$s ו-%2$d נוספים מקלידים...</item>
         <item quantity="one">%1$s ואדם אחד נוסף מקלידים...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d תגובות נמחקו. הקש/הקישי כדי לבטל.</item>
-        <item quantity="one">התגובה נמחקה. יש להקיש כדי לבטל את הפעולה.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d פוסטים חדשים</item>
         <item quantity="one">פוסט חדש אחד</item>
@@ -292,6 +279,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s ו-&lt;b>%2$s נוספים&lt;/b></item>
         <item quantity="one">%1$s ו&lt;b>אדם אחד נוסף&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d תגובות נמחקו.</item>
+        <item quantity="one">התגובה נמחקה.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s מאנשי הקשר שלך נמצאים באינסטגרם</item>

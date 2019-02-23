@@ -118,6 +118,9 @@
     <string name="appeal_reason_hint">Tell us about this photo or video...</string>
     <string name="appeal_submitted_message">"Thanks! Your feedback helps make Instagram better for everyone. If you've let us know that your post wasn't branded content, we appreciate it. This is a new process and we're learning, too."</string>
     <string name="apps_header">Other accounts</string>
+    <string name="ar_effect_cta_text">View effect</string>
+    <string name="ar_effect_link_option">Camera effect</string>
+    <string name="ar_effect_link_preview_explanation_text">Viewers will be able to swipe up to try the camera effect that you choose. %1$s.</string>
     <string name="archive_opt_out_dialog_body">"Your stories will now be kept in your archive so that you don't have to save them on your phone. Only you will be able to see them there after they've disappeared from your story."</string>
     <string name="archive_opt_out_dialog_title">Introducing your stories archive</string>
     <string name="archive_suggested_highlights_title">Suggested highlights</string>
@@ -199,6 +202,7 @@
     <string name="bugreporter_wait">Preparing bug report...</string>
     <string name="business_account_splash_title">Get an Instagram Business account</string>
     <string name="business_address_optional">Business address (optional)</string>
+    <string name="business_attribute_sync_toggle_label">Use this information for your Facebook Page</string>
     <string name="business_conversion_enable_cross_posting">Share new posts to Facebook Page</string>
     <string name="business_conversion_import_profile_pic">Import profile photo from Instagram</string>
     <string name="business_email_consent">"Add the email address at which you'd like to receive business-related contacts. An email contact button will appear on your business profile."</string>
@@ -265,6 +269,7 @@
     <string name="choosing_who_can_reply_to_your_story">Choosing who can reply to your story</string>
     <string name="choosing_who_can_see_your_story">Choosing who can see your story</string>
     <string name="city_town">Town/City</string>
+    <string name="claim_dialog_with_connect_existing_page_content">A Facebook Page was created for you when you switched to a business account. Claim this Page or connect one that you already manage so you can reach more people and help them find you. Facebook Pages are subject to these %1$s.</string>
     <string name="claim_page_content">%1$s was created for you when you switched to a business account. Claim it now so that you can reach more people and help them find you. Facebook Pages are subject to these %2$s.</string>
     <string name="claim_page_sub_title">"To link your Instagram profile to this location, start by connecting your Facebook Page. We'll then copy your business information from your Facebook Page so that you can edit it."</string>
     <string name="claim_page_success_dialog_edit_message">You can now edit the information people see when they view this location.</string>
@@ -763,7 +768,6 @@
     <string name="iglive_rm_interruption_screen_body">Your live video has been stopped because it may contain music, audio or video that belongs to someone else. Resume your broadcast if you have the rights to share all of the content in your video. Otherwise, please finish your broadcast now. If you resume your broadcast, the owner of the original material may review your video to see if it matches their content.</string>
     <string name="iglive_rm_interruption_screen_title">Matching content detected</string>
     <string name="igtv_blocked_media">Your video has been blocked</string>
-    <string name="igtv_browse_for_you_title">For you</string>
     <string name="igtv_cover_picker_camera_roll">Upload from Camera Roll</string>
     <string name="igtv_cover_picker_video">Choose Cover from Video</string>
     <string name="igtv_create_channel_settings">Create channel</string>
@@ -789,7 +793,8 @@
     <string name="igtv_open_source_libraries">Open-source libraries</string>
     <string name="igtv_page_connect_subtitle">Connect a Facebook Page to share IGTV videos with your Facebook audience. You can connect a different Page by going to Linked accounts in your Instagram app settings.</string>
     <string name="igtv_report_problem">Report a problem</string>
-    <string name="igtv_share_trailer_to_feed_title">Share preview to Instagram</string>
+    <string name="igtv_share_trailer_to_feed_info">Share a preview on your profile and in your feed</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Learn more</string>
     <string name="igtv_storage_permission_rationale_title">Please allow access to your videos</string>
     <string name="igtv_suggested_channels_header">Suggested for you</string>
     <string name="igtv_switch_account">Switch accounts</string>
@@ -800,7 +805,6 @@
     <string name="igtv_upload_cover_photo">Edit cover</string>
     <string name="igtv_upload_cover_photo_screen_title">Edit cover</string>
     <string name="igtv_upload_share_to">Make visible on Facebook</string>
-    <string name="igtv_uploading">Uploading...</string>
     <string name="igtv_view_profile">View profile</string>
     <string name="import_0_post_label">Import posts</string>
     <string name="import_facebook_page_post_success_dialog_subtitle">"The posts you've selected will be imported, along with the original text descriptions. They will appear on your profile soon. You can tap the top of any post to edit it."</string>
@@ -1227,9 +1231,8 @@
     <string name="recipient_picker_sharing_preferences">Sharing options</string>
     <string name="recipient_picker_sharing_to_fb">And Facebook story</string>
     <string name="recipient_view_mode_allow_replay">Allow replay</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 hours</string>
     <string name="recipient_view_mode_keep_in_chat">Keep in chat</string>
-    <string name="recipient_view_mode_one_view">One view</string>
+    <string name="recipient_view_mode_view_once">View once</string>
     <string name="recommend_accounts_header">Accounts %1$s might like</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> thinks that you might like these accounts.</string>
     <string name="recommend_accounts_receiver_title">Chosen for you</string>
@@ -1297,6 +1300,7 @@
     <string name="remove_from_collection_failure_notification">Could not be removed from %1$s</string>
     <string name="remove_from_saved_or_collection">"You can remove it from this collection or remove it from everything you've saved"</string>
     <string name="remove_from_saves_and_collections_dialog_title">Remove from Saved and collections?</string>
+    <string name="remove_igtv_media">Remove preview…</string>
     <string name="remove_me_from_post">Remove Me from Post</string>
     <string name="remove_me_from_profile">Remove link</string>
     <string name="remove_me_from_profile_dialog_message">Your username will still appear in this bio, but will no longer be linked to your profile.</string>
@@ -1308,6 +1312,7 @@
     <string name="remove_school">Remove School/University</string>
     <string name="remove_school_confirmation_title">Are you sure that you want to remove this school/university?</string>
     <string name="remove_sponsor_tag_title">Remove me from post</string>
+    <string name="remove_this_igtv_post_confirmation">"Your followers won't be able to preview your video in their feed or on your profile. Your video will stay on IGTV."</string>
     <string name="remove_video_highlight_message">"You'll still be able to see this video in your archive. You can delete it permanently from the archive."</string>
     <string name="remove_video_highlight_title">Remove video from highlight?</string>
     <string name="remove_videos_from_highlight_failed">"Your video(s) weren't removed from the highlight. Please try again."</string>
@@ -1421,7 +1426,6 @@
     <string name="setup_your_close_friends_title">Add people to your Close Friends list</string>
     <string name="share_as_post">Share as post…</string>
     <string name="share_new_post_title">New post</string>
-    <string name="share_on_messenger">Share in Messenger</string>
     <string name="share_on_whatsapp">Share in WhatsApp</string>
     <string name="share_photos_default">Facebook profile</string>
     <string name="share_photos_to">Share to</string>
@@ -1442,6 +1446,7 @@
     <string name="shopping_on_profile_null_state_message">"Only you can see this currently. Once you've created one post with tagged products, people will see it here."</string>
     <string name="shopping_on_profile_null_state_title">Posts with tagged products will appear here</string>
     <string name="shopping_posts">Shopping posts</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (sold out)</string>
     <string name="shopping_viewer_edit_feed_num_selected">%1$d selected</string>
     <string name="shopping_viewer_photos_of_you">Photos of you</string>
     <string name="shopping_viewer_related_posts_title">Posts with this item</string>
@@ -1634,7 +1639,6 @@
     <string name="two_fac_login_confirmation_help_text">"&lt;b>I'm having trouble with logging in.&lt;/b>"</string>
     <string name="two_fac_login_confirmation_option_dialog_title">Trouble with logging in?</string>
     <string name="two_fac_login_confirmation_resend_code">"Haven't received a security code? %1$s"</string>
-    <string name="two_fac_login_confirmation_send_messenger_code">Get your code in Facebook Messenger.</string>
     <string name="two_fac_login_confirmation_send_messenger_messenge">"Don't have access to this number at the moment? %1$s"</string>
     <string name="two_fac_login_confirmation_support_request_option">Submit support request</string>
     <string name="two_fac_login_confirmation_title">Enter security code</string>
@@ -1652,8 +1656,7 @@
     <string name="two_fac_option_text_message">Text message</string>
     <string name="two_fac_resend_success_toast">New code sent.</string>
     <string name="two_fac_screenshot_dialog_title">Take a screenshot of your backup codes</string>
-    <string name="two_fac_send_messenger_code_dialog_body">"We've sent you your 6-digit security code in Facebook Messenger. You should receive a message from Instagram with your code."</string>
-    <string name="two_fac_send_messenger_code_dialog_title">Get your code in Facebook Messenger?</string>
+    <string name="two_fac_send_messenger_code_dialog_body">"We've sent you your 6-digit security code on Facebook Messenger. You should receive a message from Instagram with your code."</string>
     <string name="two_fac_setup_manually_actionbar_title">Your key</string>
     <string name="two_fac_setup_manually_copy_key">Copy key</string>
     <string name="two_fac_setup_manually_para2">"Enter the key in your authentication app to link it to Instagram. If your app requires an account name, title it \"Instagram\" so that it's easy to find."</string>
@@ -1740,8 +1743,6 @@
     <string name="view_hashtag_page">View hashtag page</string>
     <string name="view_location">View location</string>
     <string name="view_mode_toggle">Toggle view mode</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">You can set the message to disappear after one view or to stay in the chat permanently.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">You can set the message to disappear after one view or to stay in the chat permanently below.</string>
     <string name="view_more_replies">View More Replies (%1$d)</string>
     <string name="view_more_replies_no_count">View More Replies</string>
     <string name="view_previous_replies">View Previous Replies (%1$d)</string>

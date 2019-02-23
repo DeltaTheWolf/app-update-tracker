@@ -25,7 +25,7 @@
                         <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:padding="@dimen/row_text_padding" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/media_option_button" android:scaleType="center" app:normal="@color/white" />
                         <TextView android:id="@id/toolbar_menu_button_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/labeled_items_max_width" android:text="@string/more" android:maxLines="2" style="@style/ReelViewerToolbarButtonLabel" />
                     </LinearLayout>
-                    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/toolbar_reply_side_button" android:padding="@dimen/row_text_padding" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/reaction_icon" android:scaleType="center" app:normal="@color/white" />
+                    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/toolbar_reply_side_button" android:padding="@dimen/row_text_padding" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/button_icon_camera_gradient" android:scaleType="center" app:normal="@color/white" />
                 </LinearLayout>
             </android.support.constraint.ConstraintLayout>
         </FrameLayout>

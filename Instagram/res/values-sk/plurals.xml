@@ -114,19 +114,6 @@
         <item quantity="one">Zahodiť %1$d koncept?</item>
         <item quantity="few">Zahodiť %1$d koncepty?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Pretože sledujete používateľov</item>
-        <item quantity="one">Pretože používateľa sledujete</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Páčilo sa to priateľom</item>
-        <item quantity="one">Páčilo sa to priateľovi</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d ďalších</item>
-        <item quantity="one">%1$s + %2$d ďalší</item>
-        <item quantity="few">%1$s + %2$d ďalší</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">Sledovatelia: %1$d</item>
         <item quantity="one">1 sledovateľ</item>
@@ -307,10 +294,6 @@
         <item quantity="other">%1$s a %2$d ďalší píšu…</item>
         <item quantity="one">%1$s a 1 ďalší píšu…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">Odstránené komentáre: %1$d. Ťuknutím to odvoláte.</item>
-        <item quantity="one">Komentár bol odstránený. Ťuknutím to odvoláte.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d nových príspevkov</item>
         <item quantity="one">%1$d nový príspevok</item>
@@ -319,6 +302,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s a &lt;b>ďalší (%2$s)&lt;/b></item>
         <item quantity="one">%1$s a &lt;b>1 ďalší&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">Komentáre (%1$d) boli odstránené.</item>
+        <item quantity="one">Komentár bol odstránený.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s z vašich kontaktov je na Instagrame</item>

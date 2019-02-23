@@ -88,7 +88,6 @@
     <string name="account_privacy_option_status_private">privatno</string>
     <string name="account_privacy_option_status_public">javno</string>
     <string name="account_privacy_option_title">Privatnost korisničkog računa</string>
-    <string name="account_section_title">Trgovina %1$s</string>
     <string name="action_button">Gumb za akciju</string>
     <string name="action_view">Prikaži</string>
     <string name="activation_card_bio_button_completed_text">Uredite predstavljanje</string>
@@ -247,6 +246,11 @@
     <string name="appeal_violation_title">Povratne informacije</string>
     <string name="apply">Primijeni</string>
     <string name="apps_header">Drugi korisnički računi</string>
+    <string name="ar_effect_cta_text">Prikaži efekt</string>
+    <string name="ar_effect_cta_text_with_name">Isprobajte &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Efekt kamere</string>
+    <string name="ar_effect_link_preview_explanation_text">Gledatelji će moći prijeći prstom prema gore kako bi isprobali efekt kamere koji vi izaberete. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">Pretpregled</string>
     <string name="ar_gallery_button_label">AR OKVIR</string>
     <string name="archive_highlight_failure">Nije uspjelo arhiviranje naglaska.</string>
     <string name="archive_highlight_option">Arhiviraj naglasak</string>
@@ -409,6 +413,7 @@
     <string name="business_account_splash_subtitle">Na besplatnom poslovnom računu dostupno vam je više alata za proširenje poslovanja.</string>
     <string name="business_account_splash_title">Kreirajte poslovni račun za Instagram</string>
     <string name="business_address_optional">Poslovna adresa (nije obavezno)</string>
+    <string name="business_attribute_sync_toggle_label">Upotrijebite ove informacije za stranicu na Facebooku</string>
     <string name="business_conversion_enable_cross_posting">Podijeli nove objave na stranici na Facebooku</string>
     <string name="business_conversion_import_profile_pic">Uvezite sliku profila s Instagrama</string>
     <string name="business_email_consent">Dodajte adresu e-pošte na koju želite primati poslovne kontakte. Na poslovnom profilu pojavit će vam se gumb za kontakt e-poštom.</string>
@@ -416,6 +421,8 @@
     <string name="business_is_not_on_instagram">Poduzeće još nije na Instagramu. Želite li ga posjetiti na Facebooku?</string>
     <string name="business_landing_terms">Uvjeti i smjernice</string>
     <string name="business_name">Naziv poduzeća</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Kad u objavi označite artikl nekog poduzeća, možete označiti samo to poduzeće kao partnera.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Ne možete označiti artikle %1$s</string>
     <string name="business_partner_and_user_name">Poslovni partner: %1$s</string>
     <string name="business_partner_settings">Postavke za poslovnog partnera</string>
     <string name="business_phone_consent">Dodajte broj telefona na koji želite primati poslovne pozive. Ovaj broj ne bi smio biti povezan s postojećim korisničkim računom za Instagram.</string>
@@ -441,6 +448,7 @@
     <string name="business_signup_welcome_user_desc">Poslovni profil je spreman. Sada možete dijeliti fotografije, videozapise i priče sa svojim pratiteljima te širiti poslovanje. Uvijek možete promijeniti korisničko ime.</string>
     <string name="business_signup_welcome_user_title">Dobro došli u Instagram,</string>
     <string name="business_tutorials">Upute</string>
+    <string name="button_description">Gumb</string>
     <string name="caboose_shadow_hint_text">Pomičite se i dalje za prikaz preporuka</string>
     <string name="caboose_shadow_hint_text_older">Pomičite dalje za starije objave</string>
     <string name="calendar">Kalendar</string>
@@ -584,6 +592,7 @@
     <string name="choosing_who_can_see_your_story">Odabir publike koja može vidjeti vašu priču</string>
     <string name="city_town">Grad/mjesto</string>
     <string name="claim">Preuzmi</string>
+    <string name="claim_dialog_with_connect_existing_page_content">Kad ste se prebacili na poslovni račun, za vas smo kreirali stranicu na Facebooku. Preuzmite ovu stranicu ili povežite neku koju već vodite kako biste doprli do više ljudi i kako bi vas lakše pronašli. Stranice na Facebooku podliježu ovim %1$s</string>
     <string name="claim_facebook_page">Preuzmi stranicu na Facebooku</string>
     <string name="claim_page">Preuzmi stranicu</string>
     <string name="claim_page_button_label">Preuzmi lokaciju</string>
@@ -726,7 +735,7 @@
     <string name="connect_contacts_learn_more_text">Saznajte više u %1$s.</string>
     <string name="connect_contacts_options_info_text">U želji da olakšamo povezivanje ljudi na Instagramu, povremeno sinkroniziramo vaše kontakte i pohranjujemo ih na poslužiteljima. Vi odabirete koje želite pratiti. %1$s</string>
     <string name="connect_contacts_subtitle">Pronađite ljude koje poznajete na Instagramu i odaberite koga želite pratiti.</string>
-    <string name="connect_existing_page">Povezivanje s postojećom stranicom</string>
+    <string name="connect_existing_page">Povežite postojeću stranicu</string>
     <string name="connect_fb_and_agree">Dodirom gornjeg gumba i pristupanjem analitici prihvaćate naša %1$s.</string>
     <string name="connect_fb_get_insights">Saznajte više o svojim pratiteljima i pogledajte rezultate svojih objava. Ništa nećemo objavljivati na Facebooku bez vašeg dopuštenja.</string>
     <string name="connect_ig_to_fb_page_explain">Povežite svoj korisnički račun Instagram Business sa stranicom na Facebooku kako bi vas ljudi lakše pronašli. Poslovni računi na Instagramu povezani su sa stranicama na Facebooku i podliježu njihovim %1$s.</string>
@@ -871,7 +880,6 @@
     <string name="cta_context_view_on_ig">Prikaži na Instagramu</string>
     <string name="cta_context_view_website_on_ig">Prikaži web-mjesto na Instagramu</string>
     <string name="cta_section_checkout_label">Dovršetak kupnje na Instagramu</string>
-    <string name="cta_section_offsite_label">Prikaži na web-mjestu</string>
     <string name="cta_section_sold_out_label">Rasprodano</string>
     <string name="current_password">Sadašnja lozinka</string>
     <string name="currently_promoted">Promoviranje u tijeku</string>
@@ -1053,6 +1061,7 @@
     <string name="direct_digest_you_sent_gif">Poslali ste GIF</string>
     <string name="direct_digest_you_sent_message">Poslali ste poruku</string>
     <string name="direct_digest_you_sent_sticker">Poslali ste naljepnicu</string>
+    <string name="direct_digest_you_sent_text_message">Vi: %1$s</string>
     <string name="direct_digest_you_sent_voice">Poslali ste glasovnu poruku</string>
     <string name="direct_digest_you_shared_a_comment">Podijelili ste komentar</string>
     <string name="direct_digest_you_shared_link">Podijelili ste poveznicu</string>
@@ -1235,6 +1244,7 @@
     <string name="direct_reel_share_sender_info_own_story">Pregledava vašu priču</string>
     <string name="direct_replay_expiring_media">Ponovo pokreni</string>
     <string name="direct_reply">Odgovori</string>
+    <string name="direct_reply_edittext_hint_message">Odgovor...</string>
     <string name="direct_reply_sharesheet_row_message">Pošaljite poruku %1$s</string>
     <string name="direct_reply_to">Odgovorite primatelju:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Odgovorite porukom.</string>
@@ -1844,10 +1854,8 @@
     <string name="igtv_about_settings_header">Informacije</string>
     <string name="igtv_account_settings_header">Korisnički račun</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Naslovna slika mora biti okomita.</string>
-    <string name="igtv_attribution">S IGTV-a</string>
     <string name="igtv_blocked_media">Videozapis je blokiran</string>
     <string name="igtv_blocked_media_item_header">Blokirano</string>
-    <string name="igtv_browse_for_you_title">Za vas</string>
     <string name="igtv_channel_settings_header">Kanal</string>
     <string name="igtv_copy_link">Kopirajte poveznicu</string>
     <string name="igtv_cover_picker_camera_roll">Prenesi iz albuma kamere</string>
@@ -1898,9 +1906,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Vaši će gledatelji moći dodirnuti ovu naljepnicu za gledanje na IGTV-u.</string>
     <string name="igtv_search_results_channels_header">Kanali</string>
     <string name="igtv_search_results_no_channels_found">Nema pronađenih kanala</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Samo za videozapise na IGTV-u koji su dulji od minute.</string>
-    <string name="igtv_share_trailer_to_feed_info">Podijelite profil i novosti. Ljudi mogu dodirnuti da bi pogledali cijeli videozapis.</string>
-    <string name="igtv_share_trailer_to_feed_title">Podijelite pregled na Instagramu</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Samo za videozapise na IGTV-u koji su dulji od minute</string>
+    <string name="igtv_share_trailer_to_feed_info">Podijelite pretpregled na svom profilu i u sažetku</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Saznajte više</string>
+    <string name="igtv_share_trailer_to_feed_title">Podijelite na Instagramu</string>
     <string name="igtv_skip_button_text_delay_skippable">Preskoči za %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Videozapis će se reproducirati nakon %1$s</string>
     <string name="igtv_skip_button_text_skippable">Preskoči</string>
@@ -1932,7 +1941,7 @@
     <string name="igtv_upload_share_to">Neka bude vidljivo na Facebooku</string>
     <string name="igtv_upload_title">Naslov</string>
     <string name="igtv_upload_title_missing_error">Obavezno</string>
-    <string name="igtv_uploading">Učitavanje...</string>
+    <string name="igtv_uploading">Prijenos...</string>
     <string name="igtv_video_preview_text_long">Videozapis će se sljedeći reproducirati</string>
     <string name="igtv_video_preview_text_short">Slijedi</string>
     <string name="igtv_view_profile">Prikaži profil</string>
@@ -2450,6 +2459,7 @@
     <string name="no_admin_pages_show">Vaša se stranica ne prikazuje ovdje? Možda niste administrator. Javite se administratoru stranice da biste dobili dopuštenja.</string>
     <string name="no_country_selection_dialog_subtitle">Niste odabrali nijednu državu u kojoj će se prikazivati vaš sadržaj te se on stoga uopće ne bi prikazivao pa smo isključili postavku \"Odabir lokacija\".</string>
     <string name="no_country_selection_dialog_title">Niste odabrali nijednu državu</string>
+    <string name="no_effects_found">Nema dostupnih videozapisa</string>
     <string name="no_eligible_post_subtitle">Nemate objave koje bi se mogle promovirati.</string>
     <string name="no_eligible_post_title">Nijedna objava ne ispunjava uvjete</string>
     <string name="no_internet_error_message">Skeniranje kartica s imenom nije moguće kad ste izvan mreže. Provjerite vezu ili pokušajte ponovo kasnije.</string>
@@ -2821,7 +2831,6 @@
     <string name="product_tagging_add_product_limit_reached_video">U videozapis ne možete dodati više od 5 proizvoda.</string>
     <string name="product_tagging_add_products">Označi proizvode</string>
     <string name="product_tagging_carousel_add_product_limit_reached">U cijeloj objavi ne možete označiti više od 20 proizvoda.</string>
-    <string name="product_tagging_carousel_editing_not_available">Ne možete uređivati objave u kojima su već označeni proizvodi.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Ne možete označavati artikle u objavama sa sadržajem povezanim s robnim markama.</string>
     <string name="product_tagging_tag_another_product">Označite još jedan artikl</string>
     <string name="product_tagging_tap_to_add_photo">Za označavanje artikala dodirnite fotografiju.</string>
@@ -2933,13 +2942,11 @@
     <string name="recipient_picker_sharing_preferences">Mogućnosti dijeljenja</string>
     <string name="recipient_picker_sharing_to_fb">I u priči na Facebooku</string>
     <string name="recipient_view_mode_allow_replay">Dopusti ponovni prikaz</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 sata</string>
     <string name="recipient_view_mode_allow_replay_upper_case">DOPUSTI PONOVNO PRIKAZIVANJE</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 SATA</string>
     <string name="recipient_view_mode_keep_in_chat">Zadrži u razgovoru</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">ZADRŽI U RAZGOVORU</string>
-    <string name="recipient_view_mode_one_view">Jedan prikaz</string>
-    <string name="recipient_view_mode_one_view_upper_case">JEDAN PRIKAZ</string>
+    <string name="recipient_view_mode_view_once">Prikaži jedanput</string>
+    <string name="recipient_view_mode_view_once_upper_case">PRIKAŽI JEDANPUT</string>
     <string name="recommend_accounts_follow_all_button">Prati sve</string>
     <string name="recommend_accounts_header">Korisnički računi koji bi se mogli svidjeti %1$s</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> misli da bi vam se ovi računi mogli svidjeti.</string>
@@ -3091,7 +3098,7 @@
     <string name="remove_from_saved_or_collection">Možete ukloniti iz ove zbirke ili iz svega što ste spremili</string>
     <string name="remove_from_saves">Ukloni</string>
     <string name="remove_from_saves_and_collections_dialog_title">Ukloniti iz spremljenih i iz zbirki?</string>
-    <string name="remove_igtv_media">Ukloni pregled</string>
+    <string name="remove_igtv_media">Ukloni pretpregled...</string>
     <string name="remove_me_from_post">Ukloni me iz objave</string>
     <string name="remove_me_from_profile">Ukloni poveznicu</string>
     <string name="remove_me_from_profile_dialog_message">Vaše korisničko ime i dalje će se pojavljivati u ovom predstavljanju, ali više vam neće biti povezano s profilom.</string>
@@ -3426,6 +3433,7 @@
     <string name="shopping_on_profile_null_state_message">Ovo trenutno vidite samo vi. Kad kreirate jednu objavu s označenim artiklima, ljudi će ih vidjeti ovdje.</string>
     <string name="shopping_on_profile_null_state_title">Ovdje će se pojaviti objave s označenim artiklima</string>
     <string name="shopping_posts">Prodajne objave</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (rasprodano)</string>
     <string name="shopping_viewer_add_posts">Dodaj objave</string>
     <string name="shopping_viewer_description_title">Opis</string>
     <string name="shopping_viewer_edit">Uredi</string>
@@ -3674,6 +3682,7 @@
     <string name="tell_us_approval_reason">Recite nam zašto bismo trebali odobriti vaš oglas. Ako smo pogriješili, odobrit ćemo oglas što prije.</string>
     <string name="terms">Uvjeti</string>
     <string name="terms_and_data_policy">Uvjeti upotrebe i Pravila o upotrebi podataka</string>
+    <string name="terms_and_privacy">Uvjeti i privatnost</string>
     <string name="terms_of_service">Uvjeti upotrebe</string>
     <string name="terms_of_use">Uvjeti upotrebe</string>
     <string name="terms_of_use_link">Pročitajte \"Uvjete upotrebe\" u cijelosti</string>
@@ -3702,7 +3711,7 @@
     <string name="thanks_for_let_us_know">Zahvaljujemo na obavijesti.</string>
     <string name="this_account_is_private">Ovo je privatni račun</string>
     <string name="this_user_is_private">Ovo je privatni račun</string>
-    <string name="thumbnail_image_variance_selector_title">Odaberite %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Odaberite %1$s</string>
     <string name="tilt_mode_linear">Linearno</string>
     <string name="tilt_mode_radial">Kružno</string>
     <string name="tiltshift">Promjena nagiba</string>
@@ -3935,6 +3944,7 @@
     <string name="under_age_body">Prema zakonu, vaš korisnički račun i podatke moramo izbrisati u roku od 30 dana.</string>
     <string name="under_age_title">Premladi ste da biste upotrebljavali Instagram</string>
     <string name="undo">Poništi</string>
+    <string name="undo_delete_comments">Poništi</string>
     <string name="unfinished_reg_dialog_continue_button">Nastavi</string>
     <string name="unfinished_reg_dialog_message">Možete nastaviti s registracijom za korisnički račun ili početi iznova.</string>
     <string name="unfinished_reg_dialog_start_over_button">Počni ispočetka</string>
@@ -4008,7 +4018,7 @@
     <string name="username_not_available">Korisničko ime nije dostupno</string>
     <string name="username_placeholder">korisničko ime</string>
     <string name="valid_address_to_map">Dodajte valjanu adresu da bi drugi mogli pronaći vašu lokaciju na kartama.</string>
-    <string name="variant_selector_section_error_message">Unesite odabir</string>
+    <string name="variant_selector_section_error_message">Odaberite</string>
     <string name="verification_code_instructions">Unesite 6-znamenkasti potvrdni kôd koji smo poslali na %1$s. Ako ga niste dobili, možemo &lt;b>ponovo poslati kôd&lt;/b>.</string>
     <string name="verification_code_instructions_with_rate_limit">Unesite 6-znamenkasti potvrdni kôd koji smo poslali na %1$s. Primanje koda može potrajati nekoliko minuta. Ako ga niste dobili, možemo %2$s.</string>
     <string name="verification_code_request_new_link">Zatražite novi</string>
@@ -4116,12 +4126,10 @@
     <string name="view_insights">Prikaži analitiku</string>
     <string name="view_location">Prikaži lokaciju</string>
     <string name="view_mode_toggle">Promjena načina prikaza</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Možete namjestiti da poruka nestane nakon jednog pregleda ili da trajno ostane u razgovoru.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Ispod možete namjestiti hoće li poruka nestati poslije jednog pregleda ili ćete je trajno zadržati u razgovoru.</string>
-    <string name="view_modes_nux_replayability_title">Ovo će se moći vidjeti tijekom sljedeća 24 sata.</string>
     <string name="view_more_information">Prikaži više informacija</string>
     <string name="view_more_replies">Prikaži više odgovora (%1$d)</string>
     <string name="view_more_replies_no_count">Prikaži više odgovora</string>
+    <string name="view_on_website">Prikaži na web-mjestu</string>
     <string name="view_original">Prikaži original</string>
     <string name="view_previous_replies">Prikaži prethodne odgovore (%1$d)</string>
     <string name="view_previous_replies_no_count">Prikaži prethodne odgovore</string>

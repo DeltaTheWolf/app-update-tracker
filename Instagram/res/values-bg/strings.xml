@@ -88,7 +88,6 @@
     <string name="account_privacy_option_status_private">поверителен</string>
     <string name="account_privacy_option_status_public">публичен</string>
     <string name="account_privacy_option_title">Поверителност на акаунта</string>
-    <string name="account_section_title">Пазарувайте %1$s</string>
     <string name="action_button">Бутон за действие</string>
     <string name="action_view">Преглед</string>
     <string name="activation_card_bio_button_completed_text">Редактиране на биографията</string>
@@ -246,6 +245,11 @@
     <string name="appeal_violation_title">Обратна връзка</string>
     <string name="apply">Прилагане</string>
     <string name="apps_header">Други акаунти</string>
+    <string name="ar_effect_cta_text">Вижте ефекта</string>
+    <string name="ar_effect_cta_text_with_name">Пробвайте &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Ефект на камера</string>
+    <string name="ar_effect_link_preview_explanation_text">Зрителите ще могат да плъзнат нагоре, за да пробват ефекта на камерата, който изберете. %1$s</string>
+    <string name="ar_effect_link_preview_link_text">Визуализация</string>
     <string name="ar_gallery_button_label">AR РАМКА</string>
     <string name="archive_highlight_failure">Неуспешно архивиране на акцента.</string>
     <string name="archive_highlight_option">Архивиране на акцента</string>
@@ -412,6 +416,7 @@
     <string name="business_account_splash_subtitle">Безплатният бизнес акаунт ви предоставя повече инструменти за разрастване.</string>
     <string name="business_account_splash_title">Сдобийте се с бизнес акаунт в Instagram</string>
     <string name="business_address_optional">Бизнес адрес (по избор)</string>
+    <string name="business_attribute_sync_toggle_label">Използвайте тази информация за страницата си във Facebook</string>
     <string name="business_conversion_enable_cross_posting">Споделете нови публикации в страницата във Facebook</string>
     <string name="business_conversion_import_profile_pic">Импортиране на снимката на профила от Instagram</string>
     <string name="business_email_consent">Добавете имейл адреса, на който да получавате бизнес контакти. Бутон с контакт чрез имейл ще се покаже в бизнес профила ви.</string>
@@ -419,6 +424,8 @@
     <string name="business_is_not_on_instagram">Този бизнес все още не е в Instagram. Искате ли да го посетите във Facebook?</string>
     <string name="business_landing_terms">Условия и насоки</string>
     <string name="business_name">Корпоративно име</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Когато отбелязвате продукти от даден бизнес в публикация, можете да отбележите този бизнес само като партньор.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Не могат да се отбележат продукти от %1$s</string>
     <string name="business_partner_and_user_name">Бизнес партньор: %1$s</string>
     <string name="business_partner_settings">Настройки за бизнес партньор</string>
     <string name="business_phone_consent">Добавете телефонния номер, на който да получавате бизнес обаждания. Този номер не трябва да е свързан със съществуващ акаунт в Instagram.</string>
@@ -444,6 +451,7 @@
     <string name="business_signup_welcome_user_desc">Бизнес профилът ви е готов. Вече можете да споделяте снимки, видеоклипове и истории с последователите си, докато разраствате бизнеса си. Можете да промените потребителското си име по всяко време.</string>
     <string name="business_signup_welcome_user_title">Добре дошли в Instagram,</string>
     <string name="business_tutorials">Обучаващи модули</string>
+    <string name="button_description">Бутон</string>
     <string name="caboose_shadow_hint_text">Продължете да превъртате за препоръки</string>
     <string name="caboose_shadow_hint_text_older">Продължете да превъртате за по-стари публикации</string>
     <string name="calendar">Календар</string>
@@ -587,8 +595,9 @@
     <string name="choosing_who_can_see_your_story">Изберете кой може да види историята ви</string>
     <string name="city_town">Населено място</string>
     <string name="claim">Претендиране</string>
+    <string name="claim_dialog_with_connect_existing_page_content">За вас беше създадена страница във Facebook, когато превключихте към бизнес акаунт. Претендирайте тази страница или свържете страница, която вече управлявате, за да можете да достигнете до повече хора и да им помогнете да ви открият. Страниците на Facebook подлежат на тези %1$s.</string>
     <string name="claim_facebook_page">Претендиране на страница във Facebook</string>
-    <string name="claim_page">Претендиране на страница</string>
+    <string name="claim_page">Претендиране на страницата</string>
     <string name="claim_page_button_label">Претендирайте това местоположение</string>
     <string name="claim_page_content">Страницата %1$s беше създадена за вас, когато превключихте към бизнес акаунт. Претендирайте я сега, за да можете да достигнете до повече хора и да им помогнете да ви открият. Страниците на Facebook са обект на тези %2$s.</string>
     <string name="claim_page_error_dialog_message">За да претендирате това местоположение, трябва да сте администратор на страница във Facebook, свързана към този адрес</string>
@@ -728,7 +737,7 @@
     <string name="connect_contacts_learn_more_text">Научете повече в нашия %1$s.</string>
     <string name="connect_contacts_options_info_text">За да помогнем на хората да се свързват в Instagram, контактите ви периодично се синхронизират и съхраняват на сървърите ни. Вие избирате кои да последвате. %1$s.</string>
     <string name="connect_contacts_subtitle">Намерете хора, които познавате в Instagram и изберете кого да последвате.</string>
-    <string name="connect_existing_page">Свързване на съществуваща страница</string>
+    <string name="connect_existing_page">Свържете съществуваща страница</string>
     <string name="connect_fb_and_agree">Като щракнете бутона отгоре и получите достъп до анализите, вие се съгласявате с нашата %1$s.</string>
     <string name="connect_fb_get_insights">Научете относно последователите си и вижте как се представят публикациите ви. Ние няма да публикуваме нещо във Facebook без вашето разрешение.</string>
     <string name="connect_ig_to_fb_page_explain">Свържете бизнес акаунта си в Instagram към страница във Facebook, за да могат хората да ви намират по-лесно. Бизнес акаунтите в Instagram са свързани към страниците във Facebook и се подчиняват на техните %1$s.</string>
@@ -873,7 +882,6 @@
     <string name="cta_context_view_on_ig">Преглед в Instagram</string>
     <string name="cta_context_view_website_on_ig">Преглед на уеб сайта в Instagram</string>
     <string name="cta_section_checkout_label">Финализиране в Instagram</string>
-    <string name="cta_section_offsite_label">Преглед в уеб сайта</string>
     <string name="cta_section_sold_out_label">Разпродадено</string>
     <string name="current_password">Текуща парола</string>
     <string name="currently_promoted">В момента се популяризира</string>
@@ -1056,6 +1064,7 @@
     <string name="direct_digest_you_sent_gif">Изпратихте GIF</string>
     <string name="direct_digest_you_sent_message">Изпратихте съобщение</string>
     <string name="direct_digest_you_sent_sticker">Изпратихте стикер</string>
+    <string name="direct_digest_you_sent_text_message">Вие: %1$s</string>
     <string name="direct_digest_you_sent_voice">Изпратихте гласово съобщение</string>
     <string name="direct_digest_you_shared_a_comment">Споделихте коментар</string>
     <string name="direct_digest_you_shared_link">Споделихте връзка</string>
@@ -1238,6 +1247,7 @@
     <string name="direct_reel_share_sender_info_own_story">Прегледана ваша история</string>
     <string name="direct_replay_expiring_media">Повторно възпроизвеждане</string>
     <string name="direct_reply">Отговор</string>
+    <string name="direct_reply_edittext_hint_message">Отговор...</string>
     <string name="direct_reply_sharesheet_row_message">Съобщение до %1$s</string>
     <string name="direct_reply_to">Отговорете на</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Отговорете със съобщение.</string>
@@ -1847,10 +1857,8 @@
     <string name="igtv_about_settings_header">Относно</string>
     <string name="igtv_account_settings_header">Акаунт</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Снимката на корицата ви трябва да е вертикална.</string>
-    <string name="igtv_attribution">От IGTV</string>
     <string name="igtv_blocked_media">Видеоклипът ви е блокиран</string>
     <string name="igtv_blocked_media_item_header">Блокирано</string>
-    <string name="igtv_browse_for_you_title">За вас</string>
     <string name="igtv_channel_settings_header">Канал</string>
     <string name="igtv_copy_link">Копиране на връзката</string>
     <string name="igtv_cover_picker_camera_roll">Качване от албума от камерата</string>
@@ -1902,9 +1910,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Зрителите ви ще могат да докоснат този стикер, за да гледат в IGTV.</string>
     <string name="igtv_search_results_channels_header">Канали</string>
     <string name="igtv_search_results_no_channels_found">Не са намерени канали</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Само за видеоклипове в IGTV, по-дълги от минута.</string>
-    <string name="igtv_share_trailer_to_feed_info">Споделете в профила си и в информационния си канал. Хората могат да докоснат, за да гледат целия видеоклип.</string>
-    <string name="igtv_share_trailer_to_feed_title">Споделете визуализацията в Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Само за видеоклипове в IGTV, по-дълги от минута</string>
+    <string name="igtv_share_trailer_to_feed_info">Споделете визуализация в профила си и информационния си канал</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Научете повече</string>
+    <string name="igtv_share_trailer_to_feed_title">Споделяне в Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">Пропускане след %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Видеоклипът ще продължи след %1$s</string>
     <string name="igtv_skip_button_text_skippable">Пропускане</string>
@@ -2458,6 +2467,7 @@
     <string name="no_admin_pages_show">Не виждате страницата си тук? Възможно е да не сте администратор. Свържете се с администратора на страницата си, за да получите разрешения.</string>
     <string name="no_country_selection_dialog_subtitle">Не сте избрали държави, в които да излъчите съдържанието си, което означава, че съдържанието ви няма да се показва никъде, затова изключихме настройката \"Избор на местоположения\".</string>
     <string name="no_country_selection_dialog_title">Не сте избрали държави</string>
+    <string name="no_effects_found">Няма налични ефекти</string>
     <string name="no_eligible_post_subtitle">Нямате публикации, които могат да се популяризират.</string>
     <string name="no_eligible_post_title">Няма публикации, отговарящи на условията</string>
     <string name="no_internet_error_message">Баджовете не могат да се сканират, докато сте офлайн. Проверете връзката си и опитайте отново.</string>
@@ -2827,7 +2837,6 @@
     <string name="product_tagging_add_product_limit_reached_video">Не можете да добавите повече от 5 продукта към видеоклип.</string>
     <string name="product_tagging_add_products">Отбелязване на продукти</string>
     <string name="product_tagging_carousel_add_product_limit_reached">Не можете да отбележите повече от 20 продукта в цялата си публикация.</string>
-    <string name="product_tagging_carousel_editing_not_available">Публикации, които вече са отбелязани с продукти, не могат да се редактират.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Не можете да отбелязвате продукти в публикации с брандирано съдържание.</string>
     <string name="product_tagging_tag_another_product">Отбележете друг продукт</string>
     <string name="product_tagging_tap_to_add_photo">Докоснете снимката, за да отбележите продукти.</string>
@@ -2939,13 +2948,11 @@
     <string name="recipient_picker_sharing_preferences">Опции за споделяне</string>
     <string name="recipient_picker_sharing_to_fb">И история във Facebook</string>
     <string name="recipient_view_mode_allow_replay">Разрешаване на повторното възпроизвеждане</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 часа</string>
     <string name="recipient_view_mode_allow_replay_upper_case">РАЗРЕШАВАНЕ НА ПОВТОРНО ВЪЗПРОИЗВЕЖДАНЕ</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 ЧАСА</string>
     <string name="recipient_view_mode_keep_in_chat">Запазване в чата</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">ЗАПАЗВАНЕ В ЧАТА</string>
-    <string name="recipient_view_mode_one_view">Едно преглеждане</string>
-    <string name="recipient_view_mode_one_view_upper_case">ЕДНО ПРЕГЛЕЖДАНЕ</string>
+    <string name="recipient_view_mode_view_once">Вижте веднъж</string>
+    <string name="recipient_view_mode_view_once_upper_case">ВИЖТЕ ВЕДНЪЖ</string>
     <string name="recommend_accounts_follow_all_button">Последване на всички</string>
     <string name="recommend_accounts_header">Акаунти, които %1$s може да хареса</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> мисли, че може да харесате тези акаунти.</string>
@@ -3097,7 +3104,7 @@
     <string name="remove_from_saved_or_collection">Можете да я премахнете от тази колекция или от всички записани неща</string>
     <string name="remove_from_saves">Премахване</string>
     <string name="remove_from_saves_and_collections_dialog_title">Премахване от записаните и от колекциите?</string>
-    <string name="remove_igtv_media">Премахване на визуализацията</string>
+    <string name="remove_igtv_media">Премахване на визуализацията...</string>
     <string name="remove_me_from_post">Премахни ме от публикациите</string>
     <string name="remove_me_from_profile">Премахване на връзка</string>
     <string name="remove_me_from_profile_dialog_message">Потребителското ви име все още ще се показва в тази биография, но повече няма да е свързано с профила ви.</string>
@@ -3114,7 +3121,7 @@
     <string name="remove_sponsor_tag_subtitle">Повече няма да виждате анализите. Това не премахва публикацията от Instagram.</string>
     <string name="remove_sponsor_tag_title">Премахни ме от публикацията</string>
     <string name="remove_tag">Премахване на отбелязване</string>
-    <string name="remove_this_igtv_post_confirmation">Последователите ви няма да могат да визуализират видеоклипа ви в информационния си канал или решетката на профила. Видеоклипът ви ще остане в IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">Последователите ви няма да могат да визуализират видеоклипа ви в информационния си канал или в профила ви. Видеоклипът ви ще остане в IGTV.</string>
     <string name="remove_video_highlight_button">Премахване на видеоклип</string>
     <string name="remove_video_highlight_message">Все още ще можете да виждате това видео в архива си. Можете да го изтриете от архива окончателно.</string>
     <string name="remove_video_highlight_message_active">Премахването на този видеоклип от акцента ви не го премахва от историята ви.</string>
@@ -3432,6 +3439,7 @@
     <string name="shopping_on_profile_null_state_message">В момента само вие можете да видите това. След като създадете една публикация с отбелязани продукти, хората ще ги виждат тук.</string>
     <string name="shopping_on_profile_null_state_title">Публикациите с отбелязани продукти ще се показват тук</string>
     <string name="shopping_posts">Публикации за пазаруване</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (разпродадено)</string>
     <string name="shopping_viewer_add_posts">Добавете публикации</string>
     <string name="shopping_viewer_description_title">Описание</string>
     <string name="shopping_viewer_edit">Редактиране</string>
@@ -3678,6 +3686,7 @@
     <string name="tell_us_approval_reason">Кажете ни защо трябва да одобрим рекламата ви. Ако допуснем грешка, ще одобрим рекламата ви възможно най-бързо.</string>
     <string name="terms">Условия</string>
     <string name="terms_and_data_policy">Условия и Политика за данни</string>
+    <string name="terms_and_privacy">Условия и поверителност</string>
     <string name="terms_of_service">Условия за ползване</string>
     <string name="terms_of_use">Условия за ползване</string>
     <string name="terms_of_use_link">Прочетете пълните Условия за използване</string>
@@ -3707,7 +3716,7 @@
     <string name="thanks_for_let_us_know">Благодарим ви, че ни уведомихте.</string>
     <string name="this_account_is_private">Този акаунт е поверителен</string>
     <string name="this_user_is_private">Този акаунт е поверителен</string>
-    <string name="thumbnail_image_variance_selector_title">Изберете %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Изберете %1$s</string>
     <string name="tilt_mode_linear">Линейно</string>
     <string name="tilt_mode_radial">Радиално</string>
     <string name="tiltshift">Промяна на наклона</string>
@@ -3940,6 +3949,7 @@
     <string name="under_age_body">По закон трябва да изтрием акаунта и данните ви в рамките на 30 дни.</string>
     <string name="under_age_title">Не сте достигнали изискуемата възраст за използване на Instagram</string>
     <string name="undo">Отмяна</string>
+    <string name="undo_delete_comments">Отмяна</string>
     <string name="unfinished_reg_dialog_continue_button">Продължаване</string>
     <string name="unfinished_reg_dialog_message">Можете да продължите регистрирането на акаунт или да започнете отначало.</string>
     <string name="unfinished_reg_dialog_start_over_button">Започване отначало</string>
@@ -4121,12 +4131,10 @@
     <string name="view_insights">Преглед на анализите</string>
     <string name="view_location">Преглед на местоположението</string>
     <string name="view_mode_toggle">Режим на изглед с превключване</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Можете да зададете съобщението да изчезва след едно преглеждане или да го задържите за постоянно в чата.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">По-долу можете да зададете съобщението да изчезва след едно преглеждане или да го задържите за постоянно в чата.</string>
-    <string name="view_modes_nux_replayability_title">Това ще бъде видимо за следващите 24 часа.</string>
     <string name="view_more_information">Вижте още информация</string>
     <string name="view_more_replies">Вижте още отговори (%1$d)</string>
     <string name="view_more_replies_no_count">Вижте още отговори</string>
+    <string name="view_on_website">Преглед в уеб сайта</string>
     <string name="view_original">Преглед на оригинала</string>
     <string name="view_previous_replies">Вижте предишните отговори (%1$d)</string>
     <string name="view_previous_replies_no_count">Вижте предишните отговори</string>

@@ -97,7 +97,6 @@
     <string name="account_privacy_option_status_private">不公開</string>
     <string name="account_privacy_option_status_public">公開</string>
     <string name="account_privacy_option_title">帳號隱私設定</string>
-    <string name="account_section_title">到%1$s購物</string>
     <string name="action_button">行動呼籲按鈕</string>
     <string name="action_view">查看</string>
     <string name="activation_card_bio_button_completed_text">編輯個人簡介</string>
@@ -257,6 +256,11 @@
     <string name="appeal_violation_title">意見回饋</string>
     <string name="apply">套用</string>
     <string name="apps_header">其他帳號</string>
+    <string name="ar_effect_cta_text">查看特效</string>
+    <string name="ar_effect_cta_text_with_name">試用&lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">相機特效</string>
+    <string name="ar_effect_link_preview_explanation_text">用戶向上滑動即可試用你選擇的相機特效。%1$s。</string>
+    <string name="ar_effect_link_preview_link_text">預覽</string>
     <string name="ar_gallery_button_label">AR 特效框</string>
     <string name="archive_highlight_failure">無法封存精選。</string>
     <string name="archive_highlight_option">典藏精選</string>
@@ -421,6 +425,7 @@
     <string name="business_account_splash_subtitle">免費的商業帳號讓你使用更多工具來拓展商機。</string>
     <string name="business_account_splash_title">取得 Instagram 商業帳號</string>
     <string name="business_address_optional">公司地址（選填）</string>
+    <string name="business_attribute_sync_toggle_label">在 Facebook 粉絲專頁使用這些資料</string>
     <string name="business_conversion_enable_cross_posting">分享新貼文到 Facebook 粉絲專頁</string>
     <string name="business_conversion_import_profile_pic">從 Instagram 匯入大頭貼照</string>
     <string name="business_email_consent">新增你想收到業務相關聯絡人郵件的電子郵件地址。電子郵件聯絡人按鈕會顯示在你的商業檔案上。</string>
@@ -428,6 +433,8 @@
     <string name="business_is_not_on_instagram">此商家尚未加入 Instagram。想在 Facebook 瀏覽他們的資料嗎？</string>
     <string name="business_landing_terms">條款與規定</string>
     <string name="business_name">商家名稱</string>
+    <string name="business_partner_and_merchant_products_dialog_message">在貼文中標註商家的產品時，僅可將商家標註為合作夥伴。</string>
+    <string name="business_partner_and_merchant_products_dialog_title">無法標註%1$s的產品</string>
     <string name="business_partner_and_user_name">企業合作夥伴：%1$s</string>
     <string name="business_partner_settings">企業合作夥伴設定</string>
     <string name="business_phone_consent">新增你想收到業務相關電話的電話號碼。這個號碼不應連結至現有的 Instagram 帳號。</string>
@@ -453,6 +460,7 @@
     <string name="business_signup_welcome_user_desc">你的商業檔案已就緒。現在你可以與粉絲分享相片、影片和限時動態，拓展事業版圖。你可以隨時變更用戶名稱。</string>
     <string name="business_signup_welcome_user_title">歡迎使用 Instagram，</string>
     <string name="business_tutorials">教學導覽</string>
+    <string name="button_description">按鈕</string>
     <string name="caboose_shadow_hint_text">繼續捲動可查看推薦</string>
     <string name="caboose_shadow_hint_text_older">繼續捲動可查看更多舊貼文</string>
     <string name="calendar">日曆</string>
@@ -597,6 +605,7 @@
     <string name="choosing_who_can_see_your_story">選擇限時動態分享對象</string>
     <string name="city_town">城市／鄉鎮</string>
     <string name="claim">認領</string>
+    <string name="claim_dialog_with_connect_existing_page_content">你切換至商業帳號時，系統已為你建立了 Facebook 粉絲專頁。認領此專頁或連結你已在管理的專頁，即可觸及更多用戶，並幫助這些用戶找到你。Facebook 粉絲專頁必須遵守這些%1$s。</string>
     <string name="claim_facebook_page">認領 Facebook 粉絲專頁</string>
     <string name="claim_page">認領粉絲專頁</string>
     <string name="claim_page_button_label">認領此分店地點</string>
@@ -882,7 +891,6 @@
     <string name="cta_context_view_on_ig">在 Instagram 查看</string>
     <string name="cta_context_view_website_on_ig">在 Instagram 查看網站</string>
     <string name="cta_section_checkout_label">在 Instagram 結帳</string>
-    <string name="cta_section_offsite_label">在網站上查看</string>
     <string name="cta_section_sold_out_label">已售完</string>
     <string name="current_password">目前的密碼</string>
     <string name="currently_promoted">已推廣</string>
@@ -1064,6 +1072,7 @@
     <string name="direct_digest_you_sent_gif">你傳送了一張 GIF</string>
     <string name="direct_digest_you_sent_message">你傳送了 1 則訊息</string>
     <string name="direct_digest_you_sent_sticker">你傳送了 1 張貼圖</string>
+    <string name="direct_digest_you_sent_text_message">你：%1$s</string>
     <string name="direct_digest_you_sent_voice">你發送了 1 則語音訊息</string>
     <string name="direct_digest_you_shared_a_comment">你分享了 1 則留言</string>
     <string name="direct_digest_you_shared_link">你分享了 1 條連結</string>
@@ -1246,6 +1255,7 @@
     <string name="direct_reel_share_sender_info_own_story">已查看你的限時動態</string>
     <string name="direct_replay_expiring_media">重播</string>
     <string name="direct_reply">回覆</string>
+    <string name="direct_reply_edittext_hint_message">回覆......</string>
     <string name="direct_reply_sharesheet_row_message">傳送訊息給%1$s</string>
     <string name="direct_reply_to">回覆</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">以訊息回覆。</string>
@@ -1858,10 +1868,8 @@
     <string name="igtv_about_settings_header">關於</string>
     <string name="igtv_account_settings_header">帳號</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">封面相片必須是直向。</string>
-    <string name="igtv_attribution">來自 IGTV</string>
     <string name="igtv_blocked_media">你的影片已遭到封鎖</string>
     <string name="igtv_blocked_media_item_header">已封鎖</string>
-    <string name="igtv_browse_for_you_title">為你推薦</string>
     <string name="igtv_channel_settings_header">管道</string>
     <string name="igtv_copy_link">複製連結</string>
     <string name="igtv_cover_picker_camera_roll">從相機膠卷上傳</string>
@@ -1913,9 +1921,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">你的觀眾點按這個貼圖就能夠在 IGTV 上觀看。</string>
     <string name="igtv_search_results_channels_header">頻道</string>
     <string name="igtv_search_results_no_channels_found">查無頻道</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">僅限長度超過 1 分鐘的 IGTV 影片。</string>
-    <string name="igtv_share_trailer_to_feed_info">分享到你的個人檔案和動態消息。用戶可以點按觀看完整影片。</string>
-    <string name="igtv_share_trailer_to_feed_title">分享預覽到 Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">僅限長度超過 1 分鐘的 IGTV 影片</string>
+    <string name="igtv_share_trailer_to_feed_info">分享預覽到個人檔案和動態消息</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">瞭解詳情</string>
+    <string name="igtv_share_trailer_to_feed_title">在 Instagram 上分享</string>
     <string name="igtv_skip_button_text_delay_skippable">%1$s後略過</string>
     <string name="igtv_skip_button_text_non_skippable">影片將在%1$s後播放</string>
     <string name="igtv_skip_button_text_skippable">略過</string>
@@ -2468,6 +2477,7 @@
     <string name="no_admin_pages_show">在這裡看不到你的粉絲專頁嗎？你可能不是管理員喔！請聯絡你粉絲專頁的管理員以取得權限。</string>
     <string name="no_country_selection_dialog_subtitle">你尚未選擇要直播內容的國家／地區。這代表你的內容不會顯示在任何地方，因此系統已關閉「選擇地點」設定。</string>
     <string name="no_country_selection_dialog_title">你尚未選擇任何國家／地區</string>
+    <string name="no_effects_found">沒有可用的特效</string>
     <string name="no_eligible_post_subtitle">你沒有任何可推廣的貼文。</string>
     <string name="no_eligible_post_title">沒有可推廣的貼文</string>
     <string name="no_internet_error_message">離線時無法掃描名牌，請檢查網路連線或稍後再試。</string>
@@ -2838,7 +2848,6 @@
     <string name="product_tagging_add_product_limit_reached_video">你多只能在一段影片中新增 5 項商品。</string>
     <string name="product_tagging_add_products">標註商品</string>
     <string name="product_tagging_carousel_add_product_limit_reached">你最多只能在單一貼文中標註 20 項商品。</string>
-    <string name="product_tagging_carousel_editing_not_available">無法編輯已標註產品的貼文。</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">無法在使用品牌置入內容的貼文中標註產品。</string>
     <string name="product_tagging_tag_another_product">標註其他產品</string>
     <string name="product_tagging_tap_to_add_photo">點按相片可標註產品。</string>
@@ -2951,13 +2960,11 @@
     <string name="recipient_picker_sharing_preferences">分享選項</string>
     <string name="recipient_picker_sharing_to_fb">也分享到 Facebook 限時動態</string>
     <string name="recipient_view_mode_allow_replay">允許重播</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 小時</string>
     <string name="recipient_view_mode_allow_replay_upper_case">允許重播</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 小時</string>
     <string name="recipient_view_mode_keep_in_chat">保留在聊天室中</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">保留在聊天室中</string>
-    <string name="recipient_view_mode_one_view">只能查看一次</string>
-    <string name="recipient_view_mode_one_view_upper_case">只能查看一次</string>
+    <string name="recipient_view_mode_view_once">查看一次</string>
+    <string name="recipient_view_mode_view_once_upper_case">查看一次</string>
     <string name="recommend_accounts_follow_all_button">全部追蹤</string>
     <string name="recommend_accounts_header">%1$s可能會喜歡的帳號</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b>認為你可能會喜歡這些帳號。</string>
@@ -3109,7 +3116,7 @@
     <string name="remove_from_saved_or_collection">你可以從這個珍藏分類移除內容，或是從你所有的珍藏分類中移除該內容</string>
     <string name="remove_from_saves">移除</string>
     <string name="remove_from_saves_and_collections_dialog_title">從「我的珍藏」和「珍藏分類」中移除？</string>
-    <string name="remove_igtv_media">移除預覽</string>
+    <string name="remove_igtv_media">移除預覽......</string>
     <string name="remove_me_from_post">將我的標籤從貼文中移除</string>
     <string name="remove_me_from_profile">移除連結</string>
     <string name="remove_me_from_profile_dialog_message">你的用戶名稱仍然會顯示在此個人簡介中，但是不會再連結到你的個人檔案。</string>
@@ -3126,7 +3133,7 @@
     <string name="remove_sponsor_tag_subtitle">你不會再看到洞察報告。此動作不會將貼文從 Instagram 刪除。</string>
     <string name="remove_sponsor_tag_title">將我的標籤從貼文中移除</string>
     <string name="remove_tag">移除標籤</string>
-    <string name="remove_this_igtv_post_confirmation">你的粉絲將無法在動態消息或個人檔案網格中預覽你的影片。你的影片會留在 IGTV 上。</string>
+    <string name="remove_this_igtv_post_confirmation">粉絲將無法在動態消息或你的個人檔案中預覽你的影片。你的影片會留在 IGTV 上。</string>
     <string name="remove_video_highlight_button">移除影片</string>
     <string name="remove_video_highlight_message">你仍然可以在典藏中觀看這段影片，也可以將影片從典藏永久刪除。</string>
     <string name="remove_video_highlight_message_active">從精選動態移除此影片時，不會同時從限時動態移除影片。</string>
@@ -3444,6 +3451,7 @@
     <string name="shopping_on_profile_null_state_message">目前只有你能看到這則貼文。建立一則標註商品的貼文後，用戶就會在這裡看到貼文。</string>
     <string name="shopping_on_profile_null_state_title">已標註商品的貼文會顯示在這裡</string>
     <string name="shopping_posts">購物貼文</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s（售罄）</string>
     <string name="shopping_viewer_add_posts">新增貼文</string>
     <string name="shopping_viewer_description_title">簡介</string>
     <string name="shopping_viewer_edit">編輯</string>
@@ -3681,15 +3689,18 @@
     <string name="take_picture">拍照</string>
     <string name="tap_for_caption_title">點按以顯示標題</string>
     <string name="tap_to_keep_watching">繼續觀看</string>
+    <string name="tap_to_keep_watching_video_description">點按可繼續觀看影片</string>
     <string name="tap_to_like">點按對留言按讚</string>
     <string name="tap_to_reload">無法載入圖像，點一下再試一次。</string>
     <string name="tap_to_unlike">點按即可收回對留言的讚</string>
     <string name="tap_to_view_combined_tags">點按可查看標籤</string>
     <string name="tap_to_view_product_items">點按以查看產品</string>
+    <string name="tap_to_watch_video_description">點按以觀看影片</string>
     <string name="tap_to_watch_video_nux">觀看完整影片</string>
     <string name="tell_us_approval_reason">請說明你的廣告應獲准刊登的原因。若我們發現處置有誤，就會盡快批准你的廣告。</string>
     <string name="terms">使用條款</string>
     <string name="terms_and_data_policy">使用條款和資料政策</string>
+    <string name="terms_and_privacy">使用條款與隱私</string>
     <string name="terms_of_service">使用條款</string>
     <string name="terms_of_use">使用條款</string>
     <string name="terms_of_use_link">閱讀完整的使用條款</string>
@@ -3720,7 +3731,7 @@
     <string name="this_account_is_private">此帳號為私人帳號</string>
     <string name="this_user_is_private">此帳號為私人帳號</string>
     <string name="thread_title_x_comma_y">%1$s、%2$s</string>
-    <string name="thumbnail_image_variance_selector_title">選擇%1$s</string>
+    <string name="thumbnail_image_variant_selector_title">選擇%1$s</string>
     <string name="tilt_mode_linear">線性</string>
     <string name="tilt_mode_radial">放射狀</string>
     <string name="tiltshift">移軸鏡頭</string>
@@ -3953,6 +3964,7 @@
     <string name="under_age_body">我們依法必須在 30 天內刪除你的帳號和資料。</string>
     <string name="under_age_title">你未達使用的規定年齡，無法使用 Instagram</string>
     <string name="undo">取消</string>
+    <string name="undo_delete_comments">取消</string>
     <string name="unfinished_reg_dialog_continue_button">繼續</string>
     <string name="unfinished_reg_dialog_message">你可以繼續註冊帳號或重新開始。</string>
     <string name="unfinished_reg_dialog_start_over_button">重新開始</string>
@@ -4134,12 +4146,10 @@
     <string name="view_insights">查看洞察報告</string>
     <string name="view_location">查看地點</string>
     <string name="view_mode_toggle">切換檢視模式</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">你可以將訊息設定為查看一次之後自動刪除，或是永久保存在聊天室中。</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">你可以在下方將訊息設定為查看一次之後自動刪除，或是永久保存在聊天室中。</string>
-    <string name="view_modes_nux_replayability_title">此內容將從現在開始顯示 24 小時</string>
     <string name="view_more_information">查看更多資訊</string>
     <string name="view_more_replies">查看更多回覆（%1$d）</string>
     <string name="view_more_replies_no_count">查看更多回覆</string>
+    <string name="view_on_website">在網站上查看</string>
     <string name="view_original">查看原始推廣</string>
     <string name="view_previous_replies">查看之前的回覆（%1$d）</string>
     <string name="view_previous_replies_no_count">查看之前的回覆</string>

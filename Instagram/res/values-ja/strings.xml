@@ -88,7 +88,6 @@
     <string name="account_privacy_option_status_private">非公開</string>
     <string name="account_privacy_option_status_public">公開</string>
     <string name="account_privacy_option_title">アカウントのプライバシー設定</string>
-    <string name="account_section_title">%1$sでショッピング</string>
     <string name="action_button">アクションボタン</string>
     <string name="action_view">表示</string>
     <string name="activation_card_bio_button_completed_text">自己紹介を編集</string>
@@ -247,6 +246,11 @@
     <string name="appeal_violation_title">フィードバック</string>
     <string name="apply">適用</string>
     <string name="apps_header">その他のアカウント</string>
+    <string name="ar_effect_cta_text">エフェクトを表示</string>
+    <string name="ar_effect_cta_text_with_name">&lt;b>%1$s&lt;/b>を試そう</string>
+    <string name="ar_effect_link_option">カメラエフェクト</string>
+    <string name="ar_effect_link_preview_explanation_text">視聴者は上にスワイプすることで、あなたが選んだカメラエフェクトを試すことができます。%1$s。</string>
+    <string name="ar_effect_link_preview_link_text">プレビュー</string>
     <string name="ar_gallery_button_label">ARフレーム</string>
     <string name="archive_highlight_failure">ハイライトをアーカイブできませんでした。</string>
     <string name="archive_highlight_option">ハイライトをアーカイブする</string>
@@ -412,6 +416,7 @@
     <string name="business_account_splash_subtitle">ビジネスアカウントの利用は無料で、ビジネスの拡大に役立つツールがもっと利用できるようになります。</string>
     <string name="business_account_splash_title">Instagramビジネスアカウントを取得</string>
     <string name="business_address_optional">ビジネスの住所(任意)</string>
+    <string name="business_attribute_sync_toggle_label">この情報をFacebookページに使用する</string>
     <string name="business_conversion_enable_cross_posting">Facebookページで新しい投稿をシェア</string>
     <string name="business_conversion_import_profile_pic">Instagramからプロフィール写真をインポート</string>
     <string name="business_email_consent">ビジネス関連の問い合わせを受信するメールアドレスを追加してください。ビジネスプロフィールにメール問い合わせのボタンが表示されます。</string>
@@ -419,6 +424,8 @@
     <string name="business_is_not_on_instagram">このビジネスではまだInstagramを利用していません。Facebookでアクセスしますか？</string>
     <string name="business_landing_terms">利用規約とガイドライン</string>
     <string name="business_name">ビジネス名</string>
+    <string name="business_partner_and_merchant_products_dialog_message">ビジネスの製品をタグ付けしている投稿では、パートナーとしてのみそのビジネスをタグ付けできます。</string>
+    <string name="business_partner_and_merchant_products_dialog_title">%1$sの製品はタグ付けできません</string>
     <string name="business_partner_and_user_name">ビジネスパートナー: %1$s</string>
     <string name="business_partner_settings">ビジネスパートナー設定</string>
     <string name="business_phone_consent">ビジネス関連の電話を受ける電話番号を追加してください。既存のInstagramアカウントにリンクした番号は設定できません。</string>
@@ -444,6 +451,7 @@
     <string name="business_signup_welcome_user_desc">ビジネスプロフィールの準備が完了しました。ビジネスをアピールするとともに、写真や動画、ストーリーズをフォロワーとシェアできるようになりました。ユーザーネームはいつでも変更できます</string>
     <string name="business_signup_welcome_user_title">Instagramへようこそ</string>
     <string name="business_tutorials">チュートリアル</string>
+    <string name="button_description">ボタン</string>
     <string name="caboose_shadow_hint_text">おすすめが表示されるまでスクロールしてください</string>
     <string name="caboose_shadow_hint_text_older">スクロールして過去の投稿をさらに表示</string>
     <string name="calendar">カレンダー</string>
@@ -587,8 +595,9 @@
     <string name="choosing_who_can_see_your_story">ストーリーズのプライバシー設定を選択</string>
     <string name="city_town">市区町村</string>
     <string name="claim">所有権を申請</string>
+    <string name="claim_dialog_with_connect_existing_page_content">ビジネスアカウントに切り替えたときにFacebookページが作成されました。このページの所有権を取得するかすでに管理しているページにリンクし、より多くの人にリーチしてあなたを見つけやすくしましょう。Facebookページには%1$sが適用されます。</string>
     <string name="claim_facebook_page">Facebookページを取得</string>
-    <string name="claim_page">ページを取得</string>
+    <string name="claim_page">Facebookページの所有権を申請</string>
     <string name="claim_page_button_label">この所在地ページの所有権を申請</string>
     <string name="claim_page_content">ビジネスアカウントに切り替えたときに%1$sが作成されました。このページを取得してより多くの人にリーチし、あなたを見つけやすくしよう。Facebookページには%2$sが適用されます。</string>
     <string name="claim_page_error_dialog_message">この所在地ページの所有権を申請するには、この住所にリンクされているFacebookページの管理者である必要があります。</string>
@@ -873,7 +882,6 @@
     <string name="cta_context_view_on_ig">Instagramで表示</string>
     <string name="cta_context_view_website_on_ig">Instagramでウェブサイトを表示</string>
     <string name="cta_section_checkout_label">Instagramでチェックアウト</string>
-    <string name="cta_section_offsite_label">ウェブサイトで見る</string>
     <string name="cta_section_sold_out_label">売り切れ</string>
     <string name="current_password">現在のパスワード</string>
     <string name="currently_promoted">掲載中</string>
@@ -1055,6 +1063,7 @@
     <string name="direct_digest_you_sent_gif">GIFを送信しました</string>
     <string name="direct_digest_you_sent_message">メッセージを送信しました</string>
     <string name="direct_digest_you_sent_sticker">あなたがスタンプを送信しました。</string>
+    <string name="direct_digest_you_sent_text_message">あなた: %1$s</string>
     <string name="direct_digest_you_sent_voice">ボイスメッセージを送信しました</string>
     <string name="direct_digest_you_shared_a_comment">コメントをシェアしました</string>
     <string name="direct_digest_you_shared_link">リンクをシェアしました</string>
@@ -1185,7 +1194,7 @@
     <string name="direct_persisted_reel_label">他の人には表示されません。</string>
     <string name="direct_photo_no_longer_available">この写真は利用できなくなりました。</string>
     <string name="direct_private_account_title">非公開アカウント</string>
-    <string name="direct_private_share_action_label_add_to_story">ストーリーに追加</string>
+    <string name="direct_private_share_action_label_add_to_story">ストーリーズに追加</string>
     <string name="direct_private_share_action_label_copy_link">リンクをコピー</string>
     <string name="direct_private_share_action_label_reply">返信</string>
     <string name="direct_private_share_action_label_share_to">シェア</string>
@@ -1238,6 +1247,7 @@
     <string name="direct_reel_share_sender_info_own_story">あなたのストーリーを見ました</string>
     <string name="direct_replay_expiring_media">リプレイ</string>
     <string name="direct_reply">返信する</string>
+    <string name="direct_reply_edittext_hint_message">返信する…</string>
     <string name="direct_reply_sharesheet_row_message">%1$sさんにメッセージを送信</string>
     <string name="direct_reply_to">返信:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">メッセージで返信します。</string>
@@ -1848,10 +1858,8 @@
     <string name="igtv_about_settings_header">基本データ</string>
     <string name="igtv_account_settings_header">アカウント</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">カバー写真は縦型のものを使用してください。</string>
-    <string name="igtv_attribution">IGTVより</string>
     <string name="igtv_blocked_media">動画はブロックされました</string>
     <string name="igtv_blocked_media_item_header">ブロック済み</string>
-    <string name="igtv_browse_for_you_title">おすすめ</string>
     <string name="igtv_channel_settings_header">チャンネル</string>
     <string name="igtv_copy_link">リンクをコピー</string>
     <string name="igtv_cover_picker_camera_roll">カメラロールからアップロード</string>
@@ -1903,9 +1911,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">視聴者がこのスタンプをタップするとIGTVで動画を視聴できるようになります。</string>
     <string name="igtv_search_results_channels_header">チャンネル</string>
     <string name="igtv_search_results_no_channels_found">チャンネルが見つかりませんでした</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">IGTV動画は1分以上にしてください。</string>
-    <string name="igtv_share_trailer_to_feed_info">プロフィールとフィードでシェアします。他の人はタップして完全な動画を再生できます。</string>
-    <string name="igtv_share_trailer_to_feed_title">Instagramでプレビューをシェア</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">IGTV動画は1分以上にしてください</string>
+    <string name="igtv_share_trailer_to_feed_info">プロフィールとフィードでプレビューをシェア</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">詳しくはこちら</string>
+    <string name="igtv_share_trailer_to_feed_title">Instagramでシェア</string>
     <string name="igtv_skip_button_text_delay_skippable">%1$s後にスキップ</string>
     <string name="igtv_skip_button_text_non_skippable">動画は%1$s後に再生されます</string>
     <string name="igtv_skip_button_text_skippable">スキップ</string>
@@ -2013,7 +2022,7 @@
     <string name="invite_friends_subject">Instagramを一緒に使おう！</string>
     <string name="invite_new_facebook_freinds">新規: %1$s</string>
     <string name="invite_title">友達を招待する</string>
-    <string name="invite_whatsapp_friends">WhatsApp連絡先を招待</string>
+    <string name="invite_whatsapp_friends">WhatsAppの連絡先を招待</string>
     <string name="ix_add_action_button">アクションボタンを追加</string>
     <string name="ix_choose_action_subtitle">アクションボタンでInstagramのプロフィールと現在利用しているオンラインサービスがリンクされるため、利用者はあなたのプロフィールから直接取引ができます。</string>
     <string name="ix_choose_action_title">アクションボタンを追加</string>
@@ -2343,7 +2352,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">別のアプリからシェアした曲をストーリーズに追加することはできません。</string>
     <string name="music_overlay_cant_save_story_alert">曲が含まれているストーリーズは保存できません</string>
     <string name="music_overlay_cant_share_to_fb_alert">曲が追加されたストーリーズをFacebookでシェアすることはできません</string>
-    <string name="music_overlay_question_text_response_description">検索に一致する曲がありません。上をタップすると、検索をテキストの返信として送信できます。</string>
+    <string name="music_overlay_question_text_response_description">検索に一致する曲がありません。上をタップすると、検索した語句をテキストの返信として送信できます。</string>
     <string name="music_overlay_sticker_description">音楽オーバーレイスタンプ</string>
     <string name="music_overlay_story_attribution_from_username">%1$sさんのストーリーズから</string>
     <string name="music_overlay_story_attribution_header_info">曲を選択して自分のミュージックストーリーの作成を開始します。</string>
@@ -2453,6 +2462,7 @@
     <string name="no_admin_pages_show">ページがここに表示されていない場合は、そのページの管理者になっていない可能性があります。ページの管理者に連絡して、アクセスをリクエストしてください。</string>
     <string name="no_country_selection_dialog_subtitle">コンテンツを配信する国が選択されていません。この設定のままではコンテンツがどの国でも表示されなくなるため、[地域を選択]の設定はオフになりました。</string>
     <string name="no_country_selection_dialog_title">国が選択されていません</string>
+    <string name="no_effects_found">使用できるエフェクトがありません</string>
     <string name="no_eligible_post_subtitle">宣伝できる投稿はありません。</string>
     <string name="no_eligible_post_title">使用できる投稿がありません</string>
     <string name="no_internet_error_message">オフライン時はネームタグをスキャンできません。接続を確認するか、後ほどもう一度実行してください。</string>
@@ -2821,7 +2831,6 @@
     <string name="product_tagging_add_product_limit_reached_video">1件の動画に追加できる製品は5件までです。</string>
     <string name="product_tagging_add_products">製品をタグ付け</string>
     <string name="product_tagging_carousel_add_product_limit_reached">投稿全体でタグ付けできる製品は20件までです。</string>
-    <string name="product_tagging_carousel_editing_not_available">製品がタグ付けされている投稿は編集できません。</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">ブランドコンテンツを使用した投稿に製品をタグ付けすることはできません。</string>
     <string name="product_tagging_tag_another_product">他の製品をタグ付け</string>
     <string name="product_tagging_tap_to_add_photo">写真をタップして製品をタグ付けします。</string>
@@ -2934,13 +2943,11 @@
     <string name="recipient_picker_sharing_preferences">シェアのオプション</string>
     <string name="recipient_picker_sharing_to_fb">Facebookストーリーズにもシェア</string>
     <string name="recipient_view_mode_allow_replay">リプレイを許可</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24時間</string>
     <string name="recipient_view_mode_allow_replay_upper_case">リプレイを許可</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24時間</string>
     <string name="recipient_view_mode_keep_in_chat">チャットに保存</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">チャットに保存</string>
-    <string name="recipient_view_mode_one_view">一回きりの表示</string>
-    <string name="recipient_view_mode_one_view_upper_case">一回きりの表示</string>
+    <string name="recipient_view_mode_view_once">1回表示</string>
+    <string name="recipient_view_mode_view_once_upper_case">1回表示</string>
     <string name="recommend_accounts_follow_all_button">すべてフォローする</string>
     <string name="recommend_accounts_header">%1$sさんへのおすすめアカウント</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b>さんからのおすすめアカウントです。</string>
@@ -3028,7 +3035,7 @@
     <string name="reel_viewer_gestures_nux_tap_backward_title">戻る</string>
     <string name="reel_viewer_gestures_nux_tap_forward_subtitle">画面をタップ</string>
     <string name="reel_viewer_gestures_nux_tap_forward_title">先へ進む</string>
-    <string name="reel_viewer_gestures_nux_tap_to_dismiss">タップして再生を続ける</string>
+    <string name="reel_viewer_gestures_nux_tap_to_dismiss">タップしてこのまま見る</string>
     <string name="reel_viewer_gestures_nux_title">ストーリーズを見る</string>
     <string name="reel_viewer_promote_tool_tip">このストーリーズを宣伝します。</string>
     <string name="reel_viewer_see_hashtag">ハッシュタグを見る</string>
@@ -3090,7 +3097,7 @@
     <string name="remove_from_saved_or_collection">このコレクションから削除するか、すべての保存済みのコレクションから削除できます</string>
     <string name="remove_from_saves">削除</string>
     <string name="remove_from_saves_and_collections_dialog_title">[保存済み]と[コレクション]から削除しますか？</string>
-    <string name="remove_igtv_media">プレビューを削除</string>
+    <string name="remove_igtv_media">プレビューを削除…</string>
     <string name="remove_me_from_post">投稿から自分を削除</string>
     <string name="remove_me_from_profile">リンクを削除</string>
     <string name="remove_me_from_profile_dialog_message">ユーザーネームはこの自己紹介に表示されますが、あなたのプロフィールへのリンクはなくなります。</string>
@@ -3107,7 +3114,7 @@
     <string name="remove_sponsor_tag_subtitle">インサイトは表示されなくなりますが、この投稿自体はInstagramに残ります。</string>
     <string name="remove_sponsor_tag_title">投稿から自分を削除</string>
     <string name="remove_tag">タグを削除</string>
-    <string name="remove_this_igtv_post_confirmation">フォロワーが自分のフィードまたはプロフィールグリッドであなたの動画をプレビューできなくなります。動画はIGTVから削除されません。</string>
+    <string name="remove_this_igtv_post_confirmation">フォロワーは自分のフィードまたはプロフィールであなたの動画をプレビューできなくなります。動画はIGTVから削除されません。</string>
     <string name="remove_video_highlight_button">動画を削除</string>
     <string name="remove_video_highlight_message">この動画はアーカイブで引き続き見ることができます。動画をアーカイブから完全に削除することもできます。</string>
     <string name="remove_video_highlight_message_active">この動画をハイライトから削除しても、ストーリーズからは削除されません。</string>
@@ -3391,7 +3398,7 @@
     <string name="share_photos_also_post">次の場所にも投稿:</string>
     <string name="share_photos_default">Facebookプロフィール</string>
     <string name="share_photos_to">シェア:</string>
-    <string name="share_product_to_your_story_label">ストーリーに追加</string>
+    <string name="share_product_to_your_story_label">ストーリーズに追加</string>
     <string name="share_profile_photo_to_feed_subtitle">この写真を最初の投稿にすることで、友達がいいね！やコメントできるようにしよう。</string>
     <string name="share_profile_photo_to_feed_title">この写真を投稿としてシェア</string>
     <string name="share_to">シェア:</string>
@@ -3425,9 +3432,10 @@
     <string name="shopping_on_profile_null_state_message">これは現在あなた以外の人には表示されません。タグ付けされた製品の投稿1件を作成すると、ここで他の人にも表示されるようになります。</string>
     <string name="shopping_on_profile_null_state_title">タグ付けされた製品の投稿はここに表示されます</string>
     <string name="shopping_posts">ショッピング投稿</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s(売り切れ)</string>
     <string name="shopping_viewer_add_posts">投稿を追加</string>
     <string name="shopping_viewer_description_title">詳細</string>
-    <string name="shopping_viewer_edit">編集する</string>
+    <string name="shopping_viewer_edit">編集</string>
     <string name="shopping_viewer_edit_feed_notice">%1$sが含まれる投稿を選択します。</string>
     <string name="shopping_viewer_edit_feed_num_selected">%1$d件選択済み</string>
     <string name="shopping_viewer_more_from_business_header">%1$sの他の投稿</string>
@@ -3665,15 +3673,18 @@
     <string name="take_picture">写真を撮る</string>
     <string name="tap_for_caption_title">タップしてキャプションを表示</string>
     <string name="tap_to_keep_watching">このまま見る</string>
+    <string name="tap_to_keep_watching_video_description">タップして動画の再生を続ける</string>
     <string name="tap_to_like">タップしてコメントに「いいね！」</string>
     <string name="tap_to_reload">画像を読み込めませんでした。タップして、もう一度お試しください。</string>
     <string name="tap_to_unlike">タップしてコメントへの「いいね！」を取り消す</string>
     <string name="tap_to_view_combined_tags">タップしてタグを表示</string>
     <string name="tap_to_view_product_items">タップして製品を表示</string>
+    <string name="tap_to_watch_video_description">タップして動画を再生する</string>
     <string name="tap_to_watch_video_nux">動画の全編を再生</string>
     <string name="tell_us_approval_reason">広告が承認されるべきだと思う理由をお聞かせください。何らかの間違いにより広告が却下された場合は、すみやかに承認いたします。</string>
     <string name="terms">利用規約</string>
     <string name="terms_and_data_policy">利用規約とデータに関するポリシー</string>
+    <string name="terms_and_privacy">利用規約とプライバシー</string>
     <string name="terms_of_service">利用規約</string>
     <string name="terms_of_use">利用規約</string>
     <string name="terms_of_use_link">利用規約の全文を読む</string>
@@ -3704,7 +3715,7 @@
     <string name="this_account_is_private">このアカウントは非公開です</string>
     <string name="this_user_is_private">このアカウントは非公開です</string>
     <string name="thread_title_x_comma_y">%1$sさん、%2$sさん</string>
-    <string name="thumbnail_image_variance_selector_title">%1$sを選択</string>
+    <string name="thumbnail_image_variant_selector_title">%1$sを選択</string>
     <string name="tilt_mode_linear">リニア</string>
     <string name="tilt_mode_radial">円形</string>
     <string name="tiltshift">チルトシフト</string>
@@ -3937,6 +3948,7 @@
     <string name="under_age_body">あなたのアカウントとデータを30日以内に削除する必要があります。</string>
     <string name="under_age_title">あなたは年齢制限を満たしていないため、Instagramを利用できません</string>
     <string name="undo">元に戻す</string>
+    <string name="undo_delete_comments">取り消す</string>
     <string name="unfinished_reg_dialog_continue_button">続行</string>
     <string name="unfinished_reg_dialog_message">アカウントの登録を続行するか、最初からやり直すことができます。</string>
     <string name="unfinished_reg_dialog_start_over_button">やり直す</string>
@@ -4103,7 +4115,7 @@
     <string name="view_ads_empty_state_title">アクティブな広告はありません</string>
     <string name="view_ads_feed_empty_state_description">この広告主は現在Instagramでフィード広告を掲載していません。</string>
     <string name="view_ads_home_feed">フィード</string>
-    <string name="view_ads_home_story">ストーリー</string>
+    <string name="view_ads_home_story">ストーリーズ</string>
     <string name="view_ads_story_empty_state_description">この広告主は現在Instagramでストーリーズ広告を掲載していません。</string>
     <string name="view_ads_title">アクティブな広告</string>
     <string name="view_all">すべて表示</string>
@@ -4117,12 +4129,10 @@
     <string name="view_insights">インサイトを見る</string>
     <string name="view_location">場所を見る</string>
     <string name="view_mode_toggle">表示モードを切り替える</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">1回表示された後にメッセージが消えるようにするか、チャットに保存されるように設定することができます。</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">1回表示された後にメッセージが消えるようにするか、以下のチャットに保存されるように設定することができます。</string>
-    <string name="view_modes_nux_replayability_title">このメッセージは以降24時間表示されます</string>
     <string name="view_more_information">その他の情報を見る</string>
     <string name="view_more_replies">さらに返信%1$d件を表示</string>
     <string name="view_more_replies_no_count">他の返信</string>
+    <string name="view_on_website">ウェブサイトで見る</string>
     <string name="view_original">元のコンテンツ</string>
     <string name="view_previous_replies">過去の返信%1$d件を表示</string>
     <string name="view_previous_replies_no_count">過去の返信を表示</string>

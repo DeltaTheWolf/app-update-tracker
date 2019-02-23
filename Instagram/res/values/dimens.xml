@@ -185,6 +185,7 @@
     <dimen name="ar_effect_notification_container_height">52.0dip</dimen>
     <dimen name="ar_effect_notification_icon_single_icon_corner_radius">8.0dip</dimen>
     <dimen name="ar_effect_notification_icon_single_icon_width">38.0dip</dimen>
+    <dimen name="ar_effect_option_icon_size">84.0dip</dimen>
     <dimen name="archive_disclaimer_padding">15.0dip</dimen>
     <dimen name="arrow_image_size">20.0dip</dimen>
     <dimen name="asset_picker_affordance_horizontal_padding">18.0dip</dimen>
@@ -230,6 +231,7 @@
     <dimen name="avatar_size_large">48.0dip</dimen>
     <dimen name="avatar_size_med">44.0dip</dimen>
     <dimen name="avatar_size_medium">40.0dip</dimen>
+    <dimen name="avatar_size_medium_xlarge">44.0dip</dimen>
     <dimen name="avatar_size_redesign">56.0dip</dimen>
     <dimen name="avatar_size_ridiculously_large">80.0dip</dimen>
     <dimen name="avatar_size_ridiculously_large_plus">88.0dip</dimen>
@@ -567,7 +569,6 @@
     <dimen name="countdown_sticker_date_picker_sheet_height">294.0dip</dimen>
     <dimen name="countdown_sticker_date_picker_sheet_horizontal_padding">16.0dip</dimen>
     <dimen name="countdown_sticker_date_picker_title_bottom_padding">16.0dip</dimen>
-    <dimen name="countdown_sticker_date_picker_title_height">60.0dip</dimen>
     <dimen name="countdown_sticker_date_picker_title_text_size">17.0sp</dimen>
     <dimen name="countdown_sticker_date_picker_title_top_padding">24.0dip</dimen>
     <dimen name="countdown_sticker_digit_background_corner_radius">5.0dip</dimen>
@@ -667,6 +668,7 @@
     <dimen name="dialog_bottom_margin_big">32.0dip</dimen>
     <dimen name="dialog_bottom_margin_difference">20.0dip</dimen>
     <dimen name="dialog_bottom_margin_small">12.0dip</dimen>
+    <dimen name="dialog_bottom_margin_xsmall">10.0dip</dimen>
     <dimen name="dialog_button_cell_height">48.0dip</dimen>
     <dimen name="dialog_circular_image_size">100.0dip</dimen>
     <dimen name="dialog_corner_radius">4.0dip</dimen>
@@ -698,9 +700,6 @@
     <dimen name="direct_avatar_xsmall">24.0dip</dimen>
     <dimen name="direct_camera_controls_bottom_margin">24.0dip</dimen>
     <dimen name="direct_composer_bar_emoji_toolbar_composer_background_corner_radius">25.0dip</dimen>
-    <dimen name="direct_expiration_timer_drawable_padding">12.0dip</dimen>
-    <dimen name="direct_expiration_timer_drawable_radius">8.0dip</dimen>
-    <dimen name="direct_expiration_timer_padding">12.0dip</dimen>
     <dimen name="direct_expiring_media_pause_sparkler_size">150.0dip</dimen>
     <dimen name="direct_expiring_media_thread_tooltip_offset">28.0dip</dimen>
     <dimen name="direct_font_large">16.0sp</dimen>
@@ -780,10 +779,6 @@
     <dimen name="direct_reply_message_content_reply_message_padding_bottom">6.0dip</dimen>
     <dimen name="direct_reply_precapture_top_bar_margin">16.0dip</dimen>
     <dimen name="direct_reply_top_camera_controls_offset">35.0dip</dimen>
-    <dimen name="direct_reply_view_mode_nux_description_size">16.0sp</dimen>
-    <dimen name="direct_reply_view_mode_nux_title_padding">16.0dip</dimen>
-    <dimen name="direct_reply_view_mode_nux_title_size">24.0sp</dimen>
-    <dimen name="direct_reply_view_mode_nux_vertical_padding">48.0dip</dimen>
     <dimen name="direct_reply_view_mode_picker_height">36.0dip</dimen>
     <dimen name="direct_row_inbox_glyph_padding">4.0dip</dimen>
     <dimen name="direct_row_message_action_icon_width">24.0dip</dimen>
@@ -1030,6 +1025,7 @@
     <dimen name="font_large">18.0sp</dimen>
     <dimen name="font_large_not_scaled">18.0dip</dimen>
     <dimen name="font_large_xlarge">20.0sp</dimen>
+    <dimen name="font_large_xlarge_not_scaled">20.0dip</dimen>
     <dimen name="font_medium">14.0sp</dimen>
     <dimen name="font_medium_large">15.0sp</dimen>
     <dimen name="font_medium_large_not_scaled">17.0dip</dimen>
@@ -1195,6 +1191,8 @@
     <dimen name="iglive_toolbar_button_badge_offset">4.0dip</dimen>
     <dimen name="iglive_username_offset">4.0dip</dimen>
     <dimen name="iglive_username_right_offset">4.0dip</dimen>
+    <dimen name="igtv_browse_autoplaying_header_profile_icon">26.0dip</dimen>
+    <dimen name="igtv_browse_autoplaying_unit_text_margin">12.0dip</dimen>
     <dimen name="igtv_browse_item_padding">8.0dip</dimen>
     <dimen name="igtv_browse_pending_media_cover_frame_height">40.0dip</dimen>
     <dimen name="igtv_channel_list_height">56.0dip</dimen>
@@ -1301,6 +1299,7 @@
     <dimen name="labeled_items_max_width">54.0dip</dimen>
     <dimen name="landscape_pinch_to_zoom_dot_width">60.0dip</dimen>
     <dimen name="language_picker_padding">15.0dip</dimen>
+    <dimen name="large_row_height">120.0dip</dimen>
     <dimen name="large_screen_confirm_button_height">66.0dip</dimen>
     <dimen name="launch_button_margin">2.0dip</dimen>
     <dimen name="layout_min_height">70.0dip</dimen>
@@ -1681,6 +1680,7 @@
     <dimen name="product_feed_product_thumbnail_corner_radius">6.0dip</dimen>
     <dimen name="product_feed_product_thumbnail_stroke_width">1.0px</dimen>
     <dimen name="product_feed_profile_avatar_padding">2.5dip</dimen>
+    <dimen name="product_feed_save_button_margin">4.0dip</dimen>
     <dimen name="product_feed_text_start_margin">8.0dip</dimen>
     <dimen name="product_list_item_delete_button_left_margin">12.0dip</dimen>
     <dimen name="product_list_item_delete_button_touch_rect_padding">15.0dip</dimen>
@@ -1765,7 +1765,7 @@
     <dimen name="profile_header_user_actions_button_vertical_spacing">6.0dip</dimen>
     <dimen name="profile_header_user_actions_no_divider_bottom_padding">2.0dip</dimen>
     <dimen name="profile_header_user_info_bottom_margin">13.0dip</dimen>
-    <dimen name="profile_header_user_info_side_margin">12.0dip</dimen>
+    <dimen name="profile_header_user_info_side_margin">14.0dip</dimen>
     <dimen name="profile_header_user_info_top_margin">4.0dip</dimen>
     <dimen name="profile_image_dimension">60.0dip</dimen>
     <dimen name="profile_pull_to_refresh_container_height">70.0dip</dimen>
@@ -1851,7 +1851,7 @@
     <dimen name="question_sticker_answer_corner_radius">8.0dip</dimen>
     <dimen name="question_sticker_answer_padding">15.0dip</dimen>
     <dimen name="question_sticker_answer_rounded_corner_radius">30.0dip</dimen>
-    <item type="dimen" name="question_sticker_answer_text_size">@dimen/font_medium</item>
+    <item type="dimen" name="question_sticker_answer_text_size">@dimen/font_medium_not_scaled</item>
     <dimen name="question_sticker_avatar_offset">23.0dip</dimen>
     <dimen name="question_sticker_avatar_size">46.0dip</dimen>
     <dimen name="question_sticker_avatar_stroke_width">2.0dip</dimen>
@@ -1861,8 +1861,8 @@
     <dimen name="question_sticker_format_picker_tile_vertical_padding">10.0dip</dimen>
     <item type="dimen" name="question_sticker_hint_text_size">@dimen/font_small_not_scaled</item>
     <dimen name="question_sticker_padding">16.0dip</dimen>
-    <dimen name="question_sticker_question_text_padding">12.0dip</dimen>
-    <item type="dimen" name="question_sticker_question_text_size">@dimen/font_large_xlarge</item>
+    <dimen name="question_sticker_question_text_padding">0.0dip</dimen>
+    <item type="dimen" name="question_sticker_question_text_size">@dimen/font_large_xlarge_not_scaled</item>
     <dimen name="question_sticker_question_text_vertical_padding">2.0dip</dimen>
     <dimen name="question_sticker_question_top_margin">14.0dip</dimen>
     <dimen name="question_sticker_rounded_answer_horizontal_padding">30.0dip</dimen>
@@ -2032,12 +2032,12 @@
     <dimen name="reel_viewer_fast_navigation_edge_press_y_threshold">50.0dip</dimen>
     <dimen name="reel_viewer_fast_navigation_indicator_chevron_spacing_negative">-8.0dip</dimen>
     <dimen name="reel_viewer_fast_navigation_indicator_chevron_spacing_positive">8.0dip</dimen>
-    <dimen name="reel_viewer_forward_backward_dividing_line">44.0dip</dimen>
     <dimen name="reel_viewer_gestures_nux_icon_width">36.0dip</dimen>
     <dimen name="reel_viewer_gestures_nux_subtitle_margin_top">6.0dip</dimen>
     <dimen name="reel_viewer_gestures_nux_tips_margin_bottom">96.0dip</dimen>
     <dimen name="reel_viewer_gestures_nux_tips_margin_left_to_icon">26.0dip</dimen>
     <dimen name="reel_viewer_gestures_nux_tips_margin_top">26.0dip</dimen>
+    <dimen name="reel_viewer_gutter_width">44.0dip</dimen>
     <dimen name="reel_viewer_horizontal_viewer_margin_top">60.0dip</dimen>
     <dimen name="reel_viewer_horizontal_viewer_max_height">240.0dip</dimen>
     <dimen name="reel_viewer_progress_anchor_top_offset">-6.0dip</dimen>
@@ -2207,7 +2207,6 @@
     <dimen name="school_intro_vertical_margin">10.0dip</dimen>
     <dimen name="school_invite_row_button_padding">2.0dip</dimen>
     <dimen name="school_reel_actionbar_height">118.0dip</dimen>
-    <dimen name="school_reel_actionbar_title_badge_size">20.0dip</dimen>
     <dimen name="school_reel_actionbar_title_image_size">56.0dip</dimen>
     <dimen name="school_reel_actionbar_title_ring_bottom_margin">6.0dip</dimen>
     <dimen name="school_reel_actionbar_title_ring_size">64.0dip</dimen>
@@ -2354,6 +2353,12 @@
     <dimen name="sponsored_reel_landscape_bottom_padding_without_cta">48.0dip</dimen>
     <dimen name="sponsored_reel_landscape_text_padding">20.0dip</dimen>
     <dimen name="sponsored_reel_landscape_top_padding">50.0dip</dimen>
+    <dimen name="sponsored_reel_oval_background_cta_button_height">40.0dip</dimen>
+    <dimen name="sponsored_reel_oval_background_cta_button_margin_bottom">6.0dip</dimen>
+    <dimen name="sponsored_reel_oval_background_cta_button_min_width">140.0dip</dimen>
+    <dimen name="sponsored_reel_oval_background_cta_button_padding">16.0dip</dimen>
+    <dimen name="sponsored_reel_oval_background_cta_button_radius">20.0dip</dimen>
+    <dimen name="sponsored_reel_oval_background_cta_chevron_margin_bottom">30.0dip</dimen>
     <dimen name="sponsored_video_preview_container_boarder_radius">6.0dip</dimen>
     <dimen name="sponsored_video_preview_height">60.0dip</dimen>
     <dimen name="sponsored_video_preview_text_padding">14.0dip</dimen>
@@ -2651,17 +2656,18 @@
     <dimen name="unavailable_product_remove_button_size">37.0dip</dimen>
     <dimen name="undo_button_margin">2.0dip</dimen>
     <dimen name="universal_cta_button_view_margin">13.0dip</dimen>
-    <dimen name="universal_cta_chevron_margin_end">8.0dip</dimen>
+    <dimen name="universal_cta_chevron_margin_end">11.0dip</dimen>
     <dimen name="universal_cta_description_margin_start">58.0dip</dimen>
-    <dimen name="universal_cta_empty_button_view_height">65.0dip</dimen>
-    <dimen name="universal_cta_icon_margin_start">8.0dip</dimen>
+    <dimen name="universal_cta_empty_button_view_height">67.0dip</dimen>
+    <dimen name="universal_cta_icon_margin_start">16.0dip</dimen>
     <dimen name="universal_cta_icon_radius">12.0dip</dimen>
-    <dimen name="universal_cta_icon_size">36.0dip</dimen>
-    <dimen name="universal_cta_view_height">52.0dip</dimen>
+    <dimen name="universal_cta_icon_size">32.0dip</dimen>
+    <dimen name="universal_cta_view_height">54.0dip</dimen>
     <dimen name="universal_location_sticker_icon_offset">3.25dip</dimen>
     <dimen name="update_button_height">28.0dip</dimen>
     <dimen name="update_button_margin">64.0dip</dimen>
     <dimen name="upload_flow_metadata_side_padding">16.0dip</dimen>
+    <dimen name="upload_flow_metadata_vertical_padding">12.0dip</dimen>
     <dimen name="user_list_row_text_padding">10.0dip</dimen>
     <dimen name="username_font_size">40.0dip</dimen>
     <dimen name="username_vertical_margin">16.0dip</dimen>
@@ -2681,6 +2687,7 @@
     <dimen name="v3_title_bottom_margin">4.0dip</dimen>
     <dimen name="v3_vertical_margin">20.0dip</dimen>
     <dimen name="v3_vertical_margin_small">16.0dip</dimen>
+    <dimen name="variant_picker_list_item_padding">10.0dip</dimen>
     <dimen name="variant_selector_section_height">54.0dip</dimen>
     <dimen name="variant_selector_section_item_margin">6.5dip</dimen>
     <dimen name="vertical_separator_padding">8.0dip</dimen>
@@ -2688,14 +2695,10 @@
     <item type="dimen" name="video_item_optional_text_letter_spacing">0.06</item>
     <dimen name="video_item_overlay_background_extra_height">90.0dip</dimen>
     <dimen name="video_item_overlay_background_extra_width">105.0dip</dimen>
-    <dimen name="video_item_overlay_context_margin">12.0dip</dimen>
     <dimen name="video_item_overlay_context_padding">6.0dip</dimen>
     <dimen name="video_item_overlay_header_padding_large">3.0dip</dimen>
     <dimen name="video_item_overlay_header_padding_small">1.0dip</dimen>
     <dimen name="video_item_overlay_padding">12.0dip</dimen>
-    <dimen name="video_item_overlay_profile_badge_size">14.0dip</dimen>
-    <dimen name="video_item_overlay_profile_image_border_size">2.0dip</dimen>
-    <dimen name="video_item_overlay_profile_image_size">36.0dip</dimen>
     <dimen name="video_item_overlay_title_font_large">18.0sp</dimen>
     <dimen name="video_item_overlay_title_font_small">16.0sp</dimen>
     <dimen name="video_item_overlay_top_aligned_icon_padding">12.0dip</dimen>
@@ -2810,6 +2813,6 @@
     <dimen name="zero_rating_video_settings_drawer_video_title_top_padding">24.0dip</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_8">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_9">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_da">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_dc">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_db">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_dd">false</item>
 </resources>

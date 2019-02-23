@@ -86,7 +86,6 @@
     <string name="account_privacy_option_status">Momentan contul tău are setarea &lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b>.</string>
     <string name="account_privacy_option_status_private">privat</string>
     <string name="account_privacy_option_title">Confidenţialitatea contului</string>
-    <string name="account_section_title">Cumpărături la %1$s</string>
     <string name="action_button">Buton de acţiune</string>
     <string name="action_view">Vezi</string>
     <string name="activation_card_bio_button_completed_text">Editează biografia</string>
@@ -242,6 +241,11 @@
     <string name="appeal_submitted_title">Contestaţia a fost trimisă.</string>
     <string name="apply">Aplică</string>
     <string name="apps_header">Alte conturi</string>
+    <string name="ar_effect_cta_text">Vezi efectul</string>
+    <string name="ar_effect_cta_text_with_name">Încearcă &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Efect vizual</string>
+    <string name="ar_effect_link_preview_explanation_text">Spectatorii vor putea să gliseze în sus pentru a încerca efectul vizual pe care îl alegi. %1$s</string>
+    <string name="ar_effect_link_preview_link_text">Previzualizare</string>
     <string name="archive_highlight_failure">Reperul nu a fost arhivat.</string>
     <string name="archive_highlight_option">Arhivează reperul</string>
     <string name="archive_highlight_success">Reperul a fost arhivat.</string>
@@ -402,6 +406,7 @@
     <string name="business_account_splash_subtitle">Un cont de afaceri gratuit îţi oferă mai multe instrumente care să te ajute să creşti.</string>
     <string name="business_account_splash_title">Creează un cont Instagram Business</string>
     <string name="business_address_optional">Adresa afacerii (opţional)</string>
+    <string name="business_attribute_sync_toggle_label">Foloseşte această informaţie pentru Pagina ta de Facebook</string>
     <string name="business_conversion_enable_cross_posting">Distribuie postările noi în Pagina de Facebook</string>
     <string name="business_conversion_import_profile_pic">Importă fotografia de profil de pe Instagram</string>
     <string name="business_email_consent">Adaugă adresa de e-mail la care doreşti să primeşti mesaje de afaceri. În profilul tău de afaceri va apărea un buton pentru contactarea prin e-mail.</string>
@@ -409,6 +414,8 @@
     <string name="business_is_not_on_instagram">Această afacere nu este încă pe Instagram. Doreşti să o vizitezi pe Facebook?</string>
     <string name="business_landing_terms">Condiţiile şi Instrucţiunile</string>
     <string name="business_name">Numele afacerii</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Când etichetezi produsele unei afaceri într-o postare, afacerea respectivă poate fi etichetată doar ca partener.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Nu poţi eticheta produse de la %1$s</string>
     <string name="business_partner_and_user_name">Partener: %1$s</string>
     <string name="business_partner_settings">Setările partenerului de afaceri</string>
     <string name="business_phone_consent">Adaugă un număr de telefon pe care ai dori să primeşti apeluri legate de afacere. Acest număr nu ar trebui să fie asociat unui cont Instagram existent.</string>
@@ -434,6 +441,7 @@
     <string name="business_signup_welcome_user_desc">Profilul tău de afaceri este gata. Acum poţi să distribui fotografii, clipuri video şi poveşti pentru urmăritorii tăi pe măsură ce îţi creşti afacerea. Poţi oricând să îţi schimbi numele de utilizator.</string>
     <string name="business_signup_welcome_user_title">Bun venit pe Instagram,</string>
     <string name="business_tutorials">Ghiduri introductive</string>
+    <string name="button_description">Buton</string>
     <string name="caboose_shadow_hint_text">Continuă să derulezi pentru recomandări</string>
     <string name="caboose_shadow_hint_text_older">Derulează pentru a vedea postări mai vechi</string>
     <string name="call">Sună</string>
@@ -572,8 +580,9 @@
     <string name="choosing_who_can_see_your_story">Selectarea persoanelor care pot vedea povestea ta</string>
     <string name="city_town">Localitate</string>
     <string name="claim">Revendică</string>
+    <string name="claim_dialog_with_connect_existing_page_content">A fost creată o Pagină Facebook pentru tine atunci când ai trecut la un cont de afaceri. Revendic-o acum sau asociază o pagină existentă pe care o administrezi pentru a te adresa mai multor utilizatori şi pentru a-i ajuta să te găsească. Paginile Facebook trebuie să respecte aceste %1$s.</string>
     <string name="claim_facebook_page">Revendică pagina de Facebook</string>
-    <string name="claim_page">Revendică pagina</string>
+    <string name="claim_page">Revendică o Pagină</string>
     <string name="claim_page_button_label">Revendică această locaţie</string>
     <string name="claim_page_content">Pagina %1$s a fost creată pentru tine când ai trecut la un cont de afaceri. Revendic-o acum pentru a te adresa mai multor utilizatori şi pentru a-i ajuta să te găsească. Paginile Facebook trebuie să respecte aceste %2$s.</string>
     <string name="claim_page_error_dialog_message">Pentru a revendica această locaţie, trebuie să fii administrator al unei Pagini de Facebook asociate acestei adrese.</string>
@@ -854,7 +863,6 @@
     <string name="cta_context_view_on_ig">Vezi pe Instagram</string>
     <string name="cta_context_view_website_on_ig">Vezi site-ul web pe Instagram</string>
     <string name="cta_section_checkout_label">Finalizează comanda pe Instagram</string>
-    <string name="cta_section_offsite_label">Vezi pe site-ul web</string>
     <string name="cta_section_sold_out_label">Stoc epuizat</string>
     <string name="current_password">Parolă actuală</string>
     <string name="currently_promoted">Promovare în curs</string>
@@ -1035,6 +1043,7 @@
     <string name="direct_digest_you_sent_gif">Ai trimis un GIF</string>
     <string name="direct_digest_you_sent_message">Ai trimis un mesaj</string>
     <string name="direct_digest_you_sent_sticker">Ai trimis un sticker</string>
+    <string name="direct_digest_you_sent_text_message">Tu: %1$s</string>
     <string name="direct_digest_you_sent_voice">Ai trimis un mesaj vocal</string>
     <string name="direct_digest_you_shared_a_comment">Ai distribuit un comentariu.</string>
     <string name="direct_digest_you_shared_link">Ai distribuit un link</string>
@@ -1218,6 +1227,7 @@
     <string name="direct_reel_share_sender_info_own_story">A văzut povestea ta</string>
     <string name="direct_replay_expiring_media">Reia</string>
     <string name="direct_reply">Răspunde</string>
+    <string name="direct_reply_edittext_hint_message">Răspunde...</string>
     <string name="direct_reply_sharesheet_row_message">Mesaj către %1$s</string>
     <string name="direct_reply_to">Răspuns către</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Răspunde cu un mesaj.</string>
@@ -1821,10 +1831,8 @@
     <string name="igtv_about_settings_header">Despre</string>
     <string name="igtv_account_settings_header">Cont</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Fotografia de copertă trebuie să fie verticală.</string>
-    <string name="igtv_attribution">DE LA IGTV</string>
     <string name="igtv_blocked_media">Clipul tău video a fost blocat</string>
     <string name="igtv_blocked_media_item_header">Blocat</string>
-    <string name="igtv_browse_for_you_title">Pentru tine</string>
     <string name="igtv_channel_settings_header">Canal</string>
     <string name="igtv_copy_link">Copiază linkul</string>
     <string name="igtv_cover_picker_camera_roll">Încarcă din Galerie foto</string>
@@ -1876,9 +1884,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Spectatorii tăi vor putea să atingă acest sticker pentru a viziona pe IGTV.</string>
     <string name="igtv_search_results_channels_header">Canale</string>
     <string name="igtv_search_results_no_channels_found">Nu a fost găsit niciun canal</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Doar pentru clipuri IGTV mai lungi de un minut.</string>
-    <string name="igtv_share_trailer_to_feed_info">Distribuie în profilul şi fluxul tău. Spectatorii pot atinge pentru a vedea întregul clip video.</string>
-    <string name="igtv_share_trailer_to_feed_title">Distribuie previzualizarea pe Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Doar pentru clipuri IGTV mai lungi de un minut</string>
+    <string name="igtv_share_trailer_to_feed_info">Distribuie o previzualizare în profilul şi fluxul tău</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Află mai multe</string>
+    <string name="igtv_share_trailer_to_feed_title">Distribuie pe Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">Sari peste %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Clipul video va fi redat în %1$s</string>
     <string name="igtv_skip_button_text_skippable">Sari</string>
@@ -2027,7 +2036,7 @@
     <string name="language_it_it">Italiană</string>
     <string name="language_ja_jp">Japoneză</string>
     <string name="language_ko_kr">Coreeană</string>
-    <string name="language_ms_my">Malaieză</string>
+    <string name="language_ms_my">Malaeză</string>
     <string name="language_nb_no">Norvegiană (bokmal)</string>
     <string name="language_nl_nl">Olandeză</string>
     <string name="language_picker_content_description">Alege limba. %1$s.</string>
@@ -2423,6 +2432,7 @@
     <string name="no_admin_pages_show">Nu-ţi vezi Pagina aici? Este posibil să nu fii administrator. Contactează administratorul Paginii pentru a obţine permisiuni.</string>
     <string name="no_country_selection_dialog_subtitle">Nu ai selectat nicio ţară în care să fie difuat conţinutul, ceea ce înseamnă că acesta nu va fi afişat nicăieri. Aşadar, am dezactivat setarea „Alege locaţiile”.</string>
     <string name="no_country_selection_dialog_title">Nu ai selectat nicio ţară</string>
+    <string name="no_effects_found">Nu există niciun efect disponibil</string>
     <string name="no_eligible_post_subtitle">Nu ai nicio postare care să poată fi promovată.</string>
     <string name="no_eligible_post_title">Nu există postări eligibile</string>
     <string name="no_internet_error_message">Ecusoanele nu pot fi scanate cât timp eşti offline. Verifică-ţi conexiunea sau încearcă din nou mai târziu.</string>
@@ -2790,7 +2800,6 @@
     <string name="product_tagging_add_product_limit_reached_video">Nu poţi adăuga mai mult de 5 produse la un clip video.</string>
     <string name="product_tagging_add_products">Etichetează produse</string>
     <string name="product_tagging_carousel_add_product_limit_reached">Nu poţi eticheta mai mult de 20 de produse în cadrul întregii postări.</string>
-    <string name="product_tagging_carousel_editing_not_available">Postările în care au fost deja etichetate produse nu pot fi editate.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Nu poţi eticheta produse în postări cu conţinut de marcă.</string>
     <string name="product_tagging_tag_another_product">Adaugă o etichetă pentru un alt produs</string>
     <string name="product_tagging_tap_to_add_photo">Atinge fotografia pentru a eticheta produse.</string>
@@ -2903,13 +2912,11 @@
     <string name="recipient_picker_sharing_preferences">Opţiuni de distribuire</string>
     <string name="recipient_picker_sharing_to_fb">Şi poveste Facebook</string>
     <string name="recipient_view_mode_allow_replay">Permite reluarea</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 de ore</string>
     <string name="recipient_view_mode_allow_replay_upper_case">PERMITE RELUAREA</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 DE ORE</string>
     <string name="recipient_view_mode_keep_in_chat">Păstrează în chat</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">PĂSTREAZĂ ÎN CHAT</string>
-    <string name="recipient_view_mode_one_view">O vizualizare</string>
-    <string name="recipient_view_mode_one_view_upper_case">O VIZUALIZARE</string>
+    <string name="recipient_view_mode_view_once">Vezi o dată</string>
+    <string name="recipient_view_mode_view_once_upper_case">VEZI O DATĂ</string>
     <string name="recommend_accounts_follow_all_button">Urmăreşte-i pe toţi</string>
     <string name="recommend_accounts_header">Conturi care i-ar putea plăcea %1$s</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> crede că s-ar putea să-ţi placă aceste conturi.</string>
@@ -3060,7 +3067,7 @@
     <string name="remove_from_saved_or_collection">Poţi şterge elementul din această colecţie sau din întreaga listă de elemente salvate</string>
     <string name="remove_from_saves">Şterge</string>
     <string name="remove_from_saves_and_collections_dialog_title">Ştergi din elemente salvate şi colecţii?</string>
-    <string name="remove_igtv_media">Şterge previzualizarea</string>
+    <string name="remove_igtv_media">Şterge previzualizarea...</string>
     <string name="remove_me_from_post">Şterge-mă din postare</string>
     <string name="remove_me_from_profile">Şterge linkul</string>
     <string name="remove_me_from_profile_dialog_message">Numele tău de utilizator va apărea în continuare în această biografie, dar nu va mai fi asociat profilului tău.</string>
@@ -3077,7 +3084,7 @@
     <string name="remove_sponsor_tag_subtitle">Nu vei mai vedea statistici. Postarea nu va fi ştearsă de pe Instagram.</string>
     <string name="remove_sponsor_tag_title">Şterge-mă din postare</string>
     <string name="remove_tag">Şterge eticheta</string>
-    <string name="remove_this_igtv_post_confirmation">Urmăritorii tăi nu vor putea previzualiza clipul video în fluxurile lor sau în grila profilurilor. Clipul tău video va rămâne pe IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">Urmăritorii tăi nu vor putea previzualiza clipul video în fluxurile lor sau în profilul tău. Clipul tău video va rămâne pe IGTV.</string>
     <string name="remove_video_highlight_button">Şterge clipul video</string>
     <string name="remove_video_highlight_message">Vei putea în continuare să vezi acest clip video în arhivă. Îl poţi şterge definitv din arhivă.</string>
     <string name="remove_video_highlight_message_active">Dacă ştergi acest clip video din reper, nu va fi şters şi din povestea ta.</string>
@@ -3635,6 +3642,7 @@
     <string name="tell_us_approval_reason">Spune-ne de ce ar trebui aprobată reclama ta. Dacă am făcut o greşeală, vom aproba reclama în cel mai scurt timp.</string>
     <string name="terms">Condiţii de utilizare</string>
     <string name="terms_and_data_policy">Condiţiile de utilizare şi Politica de utilizare a datelor</string>
+    <string name="terms_and_privacy">Condiţii şi confidenţialitate</string>
     <string name="terms_of_service">Condiţii de utilizare</string>
     <string name="terms_of_use">Condiţiile de utilizare</string>
     <string name="terms_of_use_link">Citeşte versiunea completă a Condiţiilor de utilizare</string>
@@ -3660,7 +3668,7 @@
     <string name="thanks_for_let_us_know">Îţi mulţumim că ne-ai anunţat.</string>
     <string name="this_account_is_private">Acest cont este privat</string>
     <string name="this_user_is_private">Acest cont este privat</string>
-    <string name="thumbnail_image_variance_selector_title">Selectează %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Selectează %1$s</string>
     <string name="tilt_mode_linear">Liniar</string>
     <string name="time_remaining">Timp rămas</string>
     <string name="time_spent_dashboard_action_bar_title">Activităţile tale</string>
@@ -3889,6 +3897,7 @@
     <string name="under_age_body">Conform legislaţiei, trebuie să-ţi ştergem contul şi datele în termen de 30 de zile.</string>
     <string name="under_age_title">Nu ai vârsta minimă necesară pentru a folosi Instagram</string>
     <string name="undo">Anulează</string>
+    <string name="undo_delete_comments">Anulează</string>
     <string name="unfinished_reg_dialog_continue_button">Continuă</string>
     <string name="unfinished_reg_dialog_message">Poţi să continui înregistrarea sau să începi din nou.</string>
     <string name="unfinished_reg_dialog_start_over_button">Începe din nou</string>
@@ -4069,12 +4078,10 @@
     <string name="view_insights">Vezi statistici</string>
     <string name="view_location">Vezi locaţia</string>
     <string name="view_mode_toggle">Comută în modul vizualizare</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Poţi seta ca mesajul să dispară după o vizualizare sau să îl păstrezi permanent în conversaţie.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Mai jos poţi seta ca mesajul să dispară după o vizualizare sau să îl păstrezi permanent în conversaţie.</string>
-    <string name="view_modes_nux_replayability_title">Va putea fi văzut în următoarele 24 de ore</string>
     <string name="view_more_information">Vezi mai multe informaţii</string>
     <string name="view_more_replies">Vezi mai multe răspunsuri (%1$d)</string>
     <string name="view_more_replies_no_count">Vezi mai multe răspunsuri</string>
+    <string name="view_on_website">Vezi pe site-ul web</string>
     <string name="view_original">Vezi postarea iniţială</string>
     <string name="view_previous_replies">Vezi răspunsurile anterioare (%1$d)</string>
     <string name="view_previous_replies_no_count">Vezi răspunsurile anterioare</string>

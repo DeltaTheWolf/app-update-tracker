@@ -87,7 +87,6 @@
     <string name="account_privacy_option_status_private">निजी</string>
     <string name="account_privacy_option_status_public">सार्वजनिक</string>
     <string name="account_privacy_option_title">खाते की गोपनीयता</string>
-    <string name="account_section_title">शॉप %1$s</string>
     <string name="action_button">कार्रवाई बटन</string>
     <string name="action_view">देखें</string>
     <string name="activation_card_bio_button_completed_text">जीवनी संपादित करें</string>
@@ -246,6 +245,11 @@
     <string name="appeal_violation_title">फ़ीडबैक</string>
     <string name="apply">लागू करें</string>
     <string name="apps_header">अन्य खाते</string>
+    <string name="ar_effect_cta_text">प्रभाव देखें</string>
+    <string name="ar_effect_cta_text_with_name">&lt;b>%1$s&lt;/b> आज़माएँ</string>
+    <string name="ar_effect_link_option">कैमरा प्रभाव</string>
+    <string name="ar_effect_link_preview_explanation_text">दर्शक ऊपर स्वाइप करके आपके द्वारा चुने गए कैमरा प्रभाव को आज़मा सकेंगे. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">पूर्वावलोकन करें</string>
     <string name="ar_gallery_button_label">AR फ़्रेम</string>
     <string name="archive_highlight_failure">हाइलाइट को संग्रहीत करने में विफल रहे.</string>
     <string name="archive_highlight_option">हाइलाइट को संग्रहीत करें</string>
@@ -412,6 +416,7 @@
     <string name="business_account_splash_subtitle">फ़्री व्यावसायिक खाता आपको आगे बढ़ने के लिए और टूल देता है.</string>
     <string name="business_account_splash_title">Instagram व्यावसायिक खाता पाएँ</string>
     <string name="business_address_optional">व्यावसायिक पता (वैकल्पिक)</string>
+    <string name="business_attribute_sync_toggle_label">अपने Facebook पेज के लिए इस जानकारी का उपयोग करें</string>
     <string name="business_conversion_enable_cross_posting">Facebook पेज पर नई पोस्ट साझा करें</string>
     <string name="business_conversion_import_profile_pic">Instagram से प्रोफ़ाइल फ़ोटो इम्पोर्ट करें</string>
     <string name="business_email_consent">वह ईमेल पता जोड़ें जहाँ आप व्यवसाय-संबंधी संपर्क प्राप्त करना चाहेंगे. आपकी व्यावसायिक प्रोफ़ाइल पर एक ईमेल संपर्क बटन दिखने लगेगा.</string>
@@ -419,6 +424,8 @@
     <string name="business_is_not_on_instagram">यह व्यवसाय अभी तक Instagram पर नहीं है. क्या आप Facebook पर उन्हें विज़िट करना चाहते हैं?</string>
     <string name="business_landing_terms">शर्तें और दिशानिर्देश</string>
     <string name="business_name">व्यवसाय का नाम</string>
+    <string name="business_partner_and_merchant_products_dialog_message">जब आप किसी पोस्ट में व्यवसाय से उत्पादों को टैग करते हैं, तो आप केवल आप ही उस व्यवसाय को साझेदार के रूप में टैग कर सकते हैं.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">%1$s से उत्पादों को टैग नहीं कर सकते</string>
     <string name="business_partner_and_user_name">व्यावसायिक साझेदार: %1$s</string>
     <string name="business_partner_settings">व्यावसायिक साझेदार सेटिंग</string>
     <string name="business_phone_consent">वह फ़ोन नंबर जोड़ें जिस पर आप अपने व्यवसाय-संबंधी कॉल पाना चाहेंगे. यह नंबर किसी मौजूदा Instagram खाते से लिंक नहीं होना चाहिए.</string>
@@ -444,6 +451,7 @@
     <string name="business_signup_welcome_user_desc">आपकी व्यावसायिक प्रोफ़ाइल तैयार है. अब आप अपने व्यवसाय को बढ़ाते हुए अपने फ़ॉलोअर के साथ फ़ोटो, वीडियो और कहानियाँ साझा कर सकते हैं. आप अपने उपयोगकर्ता नाम को किसी भी समय बदल सकते हैं.</string>
     <string name="business_signup_welcome_user_title">Instagram में आपका स्वागत है,</string>
     <string name="business_tutorials">ट्यूटोरियल</string>
+    <string name="button_description">बटन</string>
     <string name="caboose_shadow_hint_text">सुझाव देखने के लिए स्क्रॉल करते रहें</string>
     <string name="caboose_shadow_hint_text_older">पुरानी पोस्ट के लिए स्क्रॉल करते रहें</string>
     <string name="calendar">कैलेंडर</string>
@@ -591,6 +599,7 @@
     <string name="choosing_who_can_see_your_story">चुनना कि आपकी कहानी कौन देख सकता है</string>
     <string name="city_town">शहर/कस्बा</string>
     <string name="claim">दावा करें</string>
+    <string name="claim_dialog_with_connect_existing_page_content">जब आपने किसी व्यावसायिक खाते पर स्विच किया, तो आपके लिए एक Facebook पेज बनाया गया था. अभी इस पेज पर दावा करें या अपने द्वारा प्रबंधित किए जाने वाले पेज से जुड़ें, ताकि आप और लोगों तक पहुँच सकें और आपको ढूँढने में उनकी मदद करें. Facebook पेज, इन %1$s के अधीन होते हैं.</string>
     <string name="claim_facebook_page">Facebook पेज पर दावा करें</string>
     <string name="claim_page">पेज पर दावा करें</string>
     <string name="claim_page_button_label">इस जगह पर दावा करें</string>
@@ -733,7 +742,7 @@
     <string name="connect_contacts_learn_more_text">हमारे %1$s में और जानें.</string>
     <string name="connect_contacts_options_info_text">Instagram पर कनेक्ट होने में लोगों की मदद करने के लिए, आपके संपर्कों को समय-समय पर हमारे सर्वर पर सिंक और स्टोर किया जाता है. आप चुनते हैं कि किसे फ़ॉलो करें. %1$s.</string>
     <string name="connect_contacts_subtitle">Instagram पर अपने परिचित लोगों को ढूँढें और चुनें कि किसे फ़ॉलो करें.</string>
-    <string name="connect_existing_page">मौजूदा पेज को कनेक्ट करें</string>
+    <string name="connect_existing_page">किसी मौजूदा पेज को कनेक्ट करें</string>
     <string name="connect_fb_and_agree">उपरोक्त बटन पर टैप करके और इनसाइट एक्सेस करके, आप हमारी %1$s के प्रति सहमति देते हैं.</string>
     <string name="connect_fb_get_insights">अपने फ़ॉलोअर के बारे में जानें और देखें कि आपकी पोस्ट कैसा प्रदर्शन कर रही हैं. हम आपकी अनुमति के बिना Facebook पर कुछ भी पोस्ट नहीं करेंगे.</string>
     <string name="connect_ig_to_fb_page_explain">लोगों के लिए आपको ढूँढना आसान बनाने के लिए अपने Instagram व्यवसाय खाते को किसी Facebook पेज से कनेक्ट करें. Instagram पर व्यावसायिक खातों को Facebook पेज से लिंक किया गया है और उन पर उनकी %1$s लागू हैं.</string>
@@ -878,7 +887,6 @@
     <string name="cta_context_view_on_ig">Instagram पर देखें</string>
     <string name="cta_context_view_website_on_ig">Instagram पर वेबसाइट देखें</string>
     <string name="cta_section_checkout_label">Instagram पर चेकआउट करें</string>
-    <string name="cta_section_offsite_label">वेबसाइट पर देखें</string>
     <string name="cta_section_sold_out_label">बिक गया है</string>
     <string name="current_password">मौजूदा पासवर्ड</string>
     <string name="currently_promoted">वर्तमान में प्रचारित</string>
@@ -1061,6 +1069,7 @@
     <string name="direct_digest_you_sent_gif">आपने एक GIF भेजा</string>
     <string name="direct_digest_you_sent_message">आपने संदेश भेजा</string>
     <string name="direct_digest_you_sent_sticker">आपने स्टिकर भेजा है.</string>
+    <string name="direct_digest_you_sent_text_message">आप: %1$s</string>
     <string name="direct_digest_you_sent_voice">आपने एक वॉइस मैसेज भेजा</string>
     <string name="direct_digest_you_shared_a_comment">आपने एक कमेंट शेयर किया</string>
     <string name="direct_digest_you_shared_link">आपने एक लिंक साझा किया</string>
@@ -1243,6 +1252,7 @@
     <string name="direct_reel_share_sender_info_own_story">आपकी कहानी देखी</string>
     <string name="direct_replay_expiring_media">फिर से प्ले करें</string>
     <string name="direct_reply">जवाब दें</string>
+    <string name="direct_reply_edittext_hint_message">जवाब दें...</string>
     <string name="direct_reply_sharesheet_row_message">%1$s को संदेश भेजें</string>
     <string name="direct_reply_to">इसका जवाब दें</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">संदेश द्वारा जवाब दें.</string>
@@ -1853,10 +1863,8 @@
     <string name="igtv_about_settings_header">परिचय</string>
     <string name="igtv_account_settings_header">खाता</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">आपकी कवर फ़ोटो लंबवत ही होनी चाहिए.</string>
-    <string name="igtv_attribution">IGTV से</string>
     <string name="igtv_blocked_media">आपका वीडियो ब्लॉक कर दिया गया था</string>
     <string name="igtv_blocked_media_item_header">ब्लॉक किया गया</string>
-    <string name="igtv_browse_for_you_title">आपके लिए</string>
     <string name="igtv_channel_settings_header">चैनल</string>
     <string name="igtv_copy_link">लिंक कॉपी करें</string>
     <string name="igtv_cover_picker_camera_roll">कैमरा रोल से अपलोड करें</string>
@@ -1908,9 +1916,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">आपके दर्शक IGTV पर देखने के लिए इस स्टिकर पर टैप कर पाएँगे.</string>
     <string name="igtv_search_results_channels_header">चैनल</string>
     <string name="igtv_search_results_no_channels_found">कोई चैनल नहीं मिले</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">केवल एक मिनट से लंबे IGTV वीडियो के लिए.</string>
-    <string name="igtv_share_trailer_to_feed_info">अपनी प्रोफ़ाइल और फ़ीड से साझा करें. लोग पूरा वीडियो देखने के लिए टैप कर सकते हैं.</string>
-    <string name="igtv_share_trailer_to_feed_title">Instagram पर पूर्वावलोकन साझा करें</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">केवल एक मिनट से लंबे IGTV वीडियो के लिए</string>
+    <string name="igtv_share_trailer_to_feed_info">अपनी प्रोफ़ाइल और फ़ीड पर पूर्वावलोकन साझा करें</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">और जानें</string>
+    <string name="igtv_share_trailer_to_feed_title">Instagram पर साझा करें</string>
     <string name="igtv_skip_button_text_delay_skippable">%1$s में छोड़ें</string>
     <string name="igtv_skip_button_text_non_skippable">वीडियो %1$s में प्ले होगा</string>
     <string name="igtv_skip_button_text_skippable">छोड़ें</string>
@@ -2463,6 +2472,7 @@
     <string name="no_admin_pages_show">यहाँ अपना पेज दिखाई नहीं दे रहा? हो सकता है कि आप व्यवस्थापक न हों. अनुमतियाँ पाने के लिए अपने पेज के व्यवस्थापक से संपर्क करें.</string>
     <string name="no_country_selection_dialog_subtitle">आपने अपनी सामग्री प्रसारित करने के लिए किसी भी देश का चयन नहीं किया है, इसका मतलब यह है कि आपकी सामग्री कहीं भी दिखाई नहीं देगी, इसलिए हमने \"स्थान चुनें\" सेटिंग बंद कर दी है.</string>
     <string name="no_country_selection_dialog_title">आपने किसी भी देश का चयन नहीं किया है</string>
+    <string name="no_effects_found">कोई उपलब्ध प्रभाव नहीं</string>
     <string name="no_eligible_post_subtitle">आपकी ऐसी कोई पोस्ट नहीं है, जिसका प्रचार किया जा सके.</string>
     <string name="no_eligible_post_title">कोई भी योग्य पोस्ट नहीं है</string>
     <string name="no_internet_error_message">नामटैग को आपके आफ़लाइन होने पर स्कैन नहीं किया जा सकता. अपना कनेक्शन जाँचें या बाद में फिर से कोशिश करें.</string>
@@ -2833,7 +2843,6 @@
     <string name="product_tagging_add_product_limit_reached_video">आप किसी वीडियो में 5 से ज़्यादा उत्पादों को नहीं जोड़ सकते.</string>
     <string name="product_tagging_add_products">उत्पादों को टैग करें</string>
     <string name="product_tagging_carousel_add_product_limit_reached">आप अपनी पूरी पोस्ट में 20 से ज़्यादा उत्पादों को टैग नहीं कर सकते.</string>
-    <string name="product_tagging_carousel_editing_not_available">उत्पादों के साथ पहले से टैग की गईं पोस्ट को संपादित नहीं किया जा सकता.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">आप ब्रांड की सामग्री वाली पोस्ट में उत्पादों को टैग नहीं कर सकते.</string>
     <string name="product_tagging_tag_another_product">कोई अन्य उत्पाद टैग करें</string>
     <string name="product_tagging_tap_to_add_photo">उत्पादों को टैग करने के लिए फ़ोटो पर टैप करें.</string>
@@ -2946,13 +2955,11 @@
     <string name="recipient_picker_sharing_preferences">साझाकरण विकल्प</string>
     <string name="recipient_picker_sharing_to_fb">और Facebook कहानी</string>
     <string name="recipient_view_mode_allow_replay">रीप्ले करने दें</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 घंटे</string>
     <string name="recipient_view_mode_allow_replay_upper_case">जवाब की अनुमति दें</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 घंटे</string>
     <string name="recipient_view_mode_keep_in_chat">चैट में रखें</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">चैट में रखें</string>
-    <string name="recipient_view_mode_one_view">एक बार देखा जाने वाला</string>
-    <string name="recipient_view_mode_one_view_upper_case">एक बार देखा जाने वाला</string>
+    <string name="recipient_view_mode_view_once">एक बार देखें</string>
+    <string name="recipient_view_mode_view_once_upper_case">एक बार देखें</string>
     <string name="recommend_accounts_follow_all_button">सभी को फ़ॉलो करें</string>
     <string name="recommend_accounts_header">वे खाते, जो %1$s को पसंद आ सकते हैं</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> को लगता है कि आपको शायद ये खाते पसंद आएँगे.</string>
@@ -3104,7 +3111,7 @@
     <string name="remove_from_saved_or_collection">आप इस संग्रहण से निकाल सकते हैं या इसे अपने द्वारा सहेजी गईं सभी चीज़ों से निकाल सकते हैं</string>
     <string name="remove_from_saves">निकालें</string>
     <string name="remove_from_saves_and_collections_dialog_title">सहेजे गए और संग्रहणों से निकालें?</string>
-    <string name="remove_igtv_media">पूर्वावलोकन निकालें</string>
+    <string name="remove_igtv_media">पूर्वावलोकन निकालें...</string>
     <string name="remove_me_from_post">मुझे पोस्ट से निकालें</string>
     <string name="remove_me_from_profile">लिंक निकालें</string>
     <string name="remove_me_from_profile_dialog_message">आपका उपयोगकर्ता नाम अभी भी इस जीवनी में दिखाई देगा, लेकिन अब यह आपकी प्रोफ़ाइल से लिंक नहीं रहेगा.</string>
@@ -3121,7 +3128,7 @@
     <string name="remove_sponsor_tag_subtitle">अब आपको इनसाइट दिखाई नहीं देंगे. इससे Instagram से पोस्ट नहीं निकलेगी.</string>
     <string name="remove_sponsor_tag_title">मुझे पोस्ट से निकालें</string>
     <string name="remove_tag">टैग निकालें</string>
-    <string name="remove_this_igtv_post_confirmation">आपके फ़ॉलोअर अपनी फ़ीड या प्रोफ़ाइल ग्रिड पर आपके वीडियो का पूर्वावलोकन नहीं देख पाएँगे. आपका वीडियो IGTV पर बना रहेगा.</string>
+    <string name="remove_this_igtv_post_confirmation">आपके फ़ॉलोअर अपनी फ़ीड या आपकी प्रोफ़ाइल पर आपके वीडियो का पूर्वावलोकन नहीं देख पाएँगे. आपका वीडियो IGTV पर बना रहेगा.</string>
     <string name="remove_video_highlight_button">वीडियो निकालें</string>
     <string name="remove_video_highlight_message">आप फिर भी अपने संग्रह में यह वीडियो देख पाएँगे. आप इसे संग्रह से स्थायी रूप से हटा सकते हैं.</string>
     <string name="remove_video_highlight_message_active">इस वीडियो को अपने हाइलाइट से निकालने से इसे आपकी कहानी से नहीं निकाला जाता है.</string>
@@ -3439,6 +3446,7 @@
     <string name="shopping_on_profile_null_state_message">अभी, केवल आप इसे देख सकते हैं. टैग किए गए उत्पादों की जब आप एक पोस्ट बनाएंगे तो लोग उन्हें यहाँ देख पाएंगे.</string>
     <string name="shopping_on_profile_null_state_title">टैग किए गए उत्पादों वाली पोस्ट यहाँ दिखाई देंगी</string>
     <string name="shopping_posts">खरीदारी पोस्ट</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (बिक गया)</string>
     <string name="shopping_viewer_add_posts">पोस्ट जोड़ें</string>
     <string name="shopping_viewer_description_title">वर्णन</string>
     <string name="shopping_viewer_edit">संपादित करें</string>
@@ -3677,15 +3685,18 @@
     <string name="take_picture">फ़ोटो लें</string>
     <string name="tap_for_caption_title">कैप्शन के लिए टैप करें</string>
     <string name="tap_to_keep_watching">लगातार देखते रहें</string>
+    <string name="tap_to_keep_watching_video_description">निरंतर वीडियो देखते रहने के लिए टैप करें</string>
     <string name="tap_to_like">टिप्पणी को पसंद करने के लिए टैप करें</string>
     <string name="tap_to_reload">चित्र लोड नहीं कर सके. फिर से कोशिश करने के लिए टैप करें.</string>
     <string name="tap_to_unlike">टिप्पणी को नापसंद करने के लिए टैप करें</string>
     <string name="tap_to_view_combined_tags">टैग देखने के लिए टैप करें</string>
     <string name="tap_to_view_product_items">उत्पाद देखने के लिए टैप करें</string>
+    <string name="tap_to_watch_video_description">वीडियो देखने के लिए टैप करें</string>
     <string name="tap_to_watch_video_nux">पूरा वीडियो देखें</string>
     <string name="tell_us_approval_reason">हमें बताएँ कि आपके विज्ञापन को क्यों स्वीकृति मिलनी चाहिए. अगर हमने कोई गलती की है, तो हम आपका विज्ञापन जल्दी से जल्दी स्वीकार कर देंगे.</string>
     <string name="terms">शर्तें</string>
     <string name="terms_and_data_policy">शर्तें और डेटा नीति</string>
+    <string name="terms_and_privacy">शर्तें और गोपनीयता</string>
     <string name="terms_of_service">उपयोग की शर्तें</string>
     <string name="terms_of_use">उपयोग की शर्तें</string>
     <string name="terms_of_use_link">उपयोग की पूरी शर्तें पढ़ें</string>
@@ -3715,7 +3726,7 @@
     <string name="thanks_for_let_us_know">हमें बताने के लिए धन्यवाद.</string>
     <string name="this_account_is_private">यह खाता निजी है</string>
     <string name="this_user_is_private">यह खाता निजी है</string>
-    <string name="thumbnail_image_variance_selector_title">%1$s का चयन करें</string>
+    <string name="thumbnail_image_variant_selector_title">%1$s का चयन करें</string>
     <string name="tilt_mode_linear">रेखिक</string>
     <string name="tilt_mode_radial">रेडियल</string>
     <string name="tiltshift">टिल्ट शिफ़्ट</string>
@@ -3948,6 +3959,7 @@
     <string name="under_age_body">कानूनन, हमें आपके खाते और आपके डेटा को 30 दिनों में हटाना होगा.</string>
     <string name="under_age_title">Instagram का उपयोग करने के लिए आपकी आयु कम है</string>
     <string name="undo">पूर्ववत करें</string>
+    <string name="undo_delete_comments">पूर्ववत करें</string>
     <string name="unfinished_reg_dialog_continue_button">जारी रखें</string>
     <string name="unfinished_reg_dialog_message">आप किसी खाते के लिए साइन अप करना जारी रख सकते हैं या फिर से शुरू कर सकते हैं.</string>
     <string name="unfinished_reg_dialog_start_over_button">फिर से शुरू करें</string>
@@ -4128,12 +4140,10 @@
     <string name="view_insights">इनसाइट देखें</string>
     <string name="view_location">स्थान देखें</string>
     <string name="view_mode_toggle">देखने का मोड टॉगल करें</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">आप वह संदेश सेट कर सकते हैं, जो व्यक्ति द्वारा देखे जाने के बाद गायब हो जाए या उसे चैट में हमेशा के लिए बनाए रख सकते हैं.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">आप नीचे वह संदेश सेट कर सकते हैं, जो व्यक्ति द्वारा देखे जाने के बाद गायब हो जाए या उसे चैट में हमेशा के लिए बनाए रख सकते हैं.</string>
-    <string name="view_modes_nux_replayability_title">यह अगले 24 घंटे तक दिखाई देगा</string>
     <string name="view_more_information">और जानकारी देखें</string>
     <string name="view_more_replies">और जवाब देखें (%1$d)</string>
     <string name="view_more_replies_no_count">और जवाब देखें</string>
+    <string name="view_on_website">वेबसाइट पर देखें</string>
     <string name="view_original">मूल देखें</string>
     <string name="view_previous_replies">पिछले जवाब देखें (%1$d)</string>
     <string name="view_previous_replies_no_count">पिछले जवाब देखें</string>

@@ -110,16 +110,6 @@
         <item quantity="other">Hylätäänkö %1$d luonnosta?</item>
         <item quantity="one">Hylätäänkö 1 luonnos?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Perustuu seuraamiseen.</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Tykkääjät</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d muuta</item>
-        <item quantity="one">%1$s + %2$d muu</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d seuraajaa</item>
         <item quantity="one">1 seuraaja</item>
@@ -290,10 +280,6 @@
         <item quantity="other">%1$s ja %2$d muuta kirjoittaa…</item>
         <item quantity="one">%1$s ja yksi muu käyttäjä kirjoittavat…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d kommenttia poistettiin. Kumoa napauttamalla.</item>
-        <item quantity="one">Kommentti poistettiin. Kumoa napauttamalla.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d uutta julkaisua</item>
         <item quantity="one">1 uusi julkaisu</item>
@@ -301,6 +287,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s ja &lt;b>%2$s muuta&lt;/b></item>
         <item quantity="one">%1$s ja &lt;b>1 muu&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d kommenttia poistettiin.</item>
+        <item quantity="one">Kommentti poistettiin.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s kontaktiasi on Instagramissa</item>

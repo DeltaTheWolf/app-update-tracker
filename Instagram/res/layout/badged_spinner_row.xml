@@ -2,6 +2,6 @@
 <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <View android:layout_gravity="start|center" android:id="@id/account_badge" android:background="?backgroundNotificationBadge" android:visibility="gone" android:layout_width="@dimen/dot_size" android:layout_height="@dimen/dot_size" android:layout_marginRight="@dimen/dropdown_item_margin" android:layout_marginEnd="@dimen/dropdown_item_margin" />
-    <com.instagram.common.ui.text.TitleTextView android:ellipsize="marquee" android:id="@id/row_user_textview" style="?defaultSpinnerStyle" />
+    <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_user_textview" style="?defaultSpinnerStyle" />
     <com.instagram.ui.text.BadgeTextView android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/notification_count" android:background="@drawable/red_pill_profile_navbar" android:paddingLeft="@dimen/notification_badge_padding" android:paddingRight="@dimen/notification_badge_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_text_button_padding" android:includeFontPadding="false" android:layout_marginStart="@dimen/row_text_button_padding" style="?profileSwitchAccountNotificationText" />
 </LinearLayout>

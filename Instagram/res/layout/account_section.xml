@@ -6,5 +6,5 @@
         <TextView android:textSize="@dimen/font_medium_xlarge" android:ellipsize="end" android:id="@id/account_section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
         <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:ellipsize="end" android:id="@id/account_section_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
     </LinearLayout>
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/shopping_viewer_margin" android:src="@drawable/right_caret" app:normal="@color/grey_2" />
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center_vertical" android:id="@id/account_section_caret" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/shopping_viewer_margin" android:src="@drawable/right_caret" app:normal="@color/grey_2" />
 </LinearLayout>

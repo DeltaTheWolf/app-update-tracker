@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+<com.instagram.discovery.ui.FixedAspectRatioVideoLayout android:id="@id/layout_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <include layout="@layout/video_item_image_preview_layout" />
     <com.instagram.ui.widget.imageview.BlinkingImageView android:id="@id/video_overlay_state_icon" android:background="@drawable/channel_play_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/video_item_overlay_top_aligned_icon_padding" android:layout_marginTop="@dimen/video_item_overlay_top_aligned_icon_padding" android:src="@drawable/channel_play" />
     <ImageView android:layout_gravity="center|right|top" android:id="@id/video_overlay_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/profile_image_layout_stub" android:layout="@layout/video_item_profile_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/video_item_overlay_top_aligned_icon_padding" android:layout_marginTop="@dimen/video_item_overlay_top_aligned_icon_padding" />
     <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/video_overlay" android:paddingLeft="@dimen/video_item_overlay_padding" android:paddingRight="@dimen/video_item_overlay_padding" android:paddingBottom="@dimen/video_item_overlay_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <ViewStub android:id="@id/video_overlay_text_timestamp_stub" android:layout="@layout/video_overlay_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         <TextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:ellipsize="end" android:id="@id/video_overlay_text_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="sans-serif" />
         <TextView android:textSize="@dimen/video_item_overlay_title_font_large" android:textColor="@color/white" android:ellipsize="end" android:gravity="bottom" android:id="@id/video_overlay_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
         <ViewStub android:id="@id/video_overlay_text_username_stub" android:layout="@layout/video_overlay_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </LinearLayout>
-    <ViewStub android:layout_gravity="end|center|top" android:id="@id/video_context_stub" android:layout="@layout/video_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/video_item_overlay_context_margin" />
-</merge>
+</com.instagram.discovery.ui.FixedAspectRatioVideoLayout>

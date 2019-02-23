@@ -2,7 +2,7 @@
 <FrameLayout android:id="@id/igtv_feed_preview_keep_watching_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <View android:id="@id/igtv_feed_preview_keep_watching_backdrop" android:background="@color/black_50_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:layout_gravity="bottom" android:id="@id/igtv_feed_preview_keep_watching_button" android:background="@drawable/empty_white_rounded_rect" android:layout_width="fill_parent" android:layout_height="@dimen/igtv_preview_overlay_button_height" android:layout_margin="12.0dip">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/igtv_feed_preview_keep_watching_button" android:background="@drawable/empty_white_rounded_rect" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/igtv_preview_overlay_button_height" android:layout_margin="12.0dip" android:contentDescription="@string/tap_to_keep_watching_video_description">
         <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/igtv_feed_preview_keep_watching_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_keep_watching" android:drawablePadding="5.0dip" app:capitalize="false" style="@style/ShadowTextViewStyle" />
     </FrameLayout>
 </FrameLayout>

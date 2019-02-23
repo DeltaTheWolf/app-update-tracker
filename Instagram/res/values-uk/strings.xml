@@ -88,7 +88,6 @@
     <string name="account_privacy_option_status_private">приватний</string>
     <string name="account_privacy_option_status_public">загальнодоступний</string>
     <string name="account_privacy_option_title">Конфіденційність облікового запису</string>
-    <string name="account_section_title">У магазин «%1$s»</string>
     <string name="action_button">Кнопка дії</string>
     <string name="action_view">Переглянути</string>
     <string name="activation_card_bio_button_completed_text">Редагувати біографію</string>
@@ -246,6 +245,11 @@
     <string name="appeal_violation_title">Відгуки</string>
     <string name="apply">Застосувати</string>
     <string name="apps_header">Інші облікові записи</string>
+    <string name="ar_effect_cta_text">Переглянути ефект</string>
+    <string name="ar_effect_cta_text_with_name">Спробуйте ефект &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Ефект камери</string>
+    <string name="ar_effect_link_preview_explanation_text">Щоб спробувати вибраний вами ефект камери, глядачі проводитимуть по екрану вгору. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">Перегляд</string>
     <string name="ar_gallery_button_label">РАМКА З ДОПОВНЕНОЮ РЕАЛЬНІСТЮ</string>
     <string name="archive_highlight_failure">Не вдалося додати вибране до архіву.</string>
     <string name="archive_highlight_option">Архівувати вибране</string>
@@ -410,6 +414,7 @@
     <string name="business_account_splash_subtitle">Безкоштовний обліковий запис компанії надає інструменти для її розвитку.</string>
     <string name="business_account_splash_title">Отримайте обліковий запис компанії в Instagram</string>
     <string name="business_address_optional">"Адреса компанії (необов'язково)"</string>
+    <string name="business_attribute_sync_toggle_label">Використовувати цю інформацію для сторінки Facebook</string>
     <string name="business_conversion_enable_cross_posting">Поширювати нові дописи на сторінку Facebook</string>
     <string name="business_conversion_import_profile_pic">Імпортувати основну світлину з Instagram</string>
     <string name="business_email_consent">"Укажіть електронну адресу, на яку ви хочете отримувати повідомлення, пов'язані з вашою компанією. У профілі компанії відобразиться кнопка для зв'язку з вами через електронну пошту."</string>
@@ -417,6 +422,8 @@
     <string name="business_is_not_on_instagram">Ця компанія ще не зареєстрована в Instagram. Бажаєте відвідати її сторінку у Facebook?</string>
     <string name="business_landing_terms">Умови та правила</string>
     <string name="business_name">Назва компанії</string>
+    <string name="business_partner_and_merchant_products_dialog_message">У дописі можна позначити як партнера лише ту компанію, чиї продукти позначено в цьому дописі.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Неможливо позначити продукти від %1$s</string>
     <string name="business_partner_and_user_name">Бізнес-партнер: %1$s</string>
     <string name="business_partner_settings">Налаштування для бізнес-партнерів</string>
     <string name="business_phone_consent">"Укажіть номер телефону, на який ви хочете отримувати виклики, пов'язані з вашою компанією. Цей номер не повинен бути пов'язаний з уже наявним обліковим записом Instagram."</string>
@@ -442,6 +449,7 @@
     <string name="business_signup_welcome_user_desc">"Ваш профіль компанії готовий. Тепер ви можете поширювати для своїх читачів світлини, відео та розповіді, розвиваючи свою компанію. Ви можете змінити своє ім'я користувача в будь-який момент."</string>
     <string name="business_signup_welcome_user_title">Вітаємо в Instagram</string>
     <string name="business_tutorials">Посібники</string>
+    <string name="button_description">Кнопка</string>
     <string name="caboose_shadow_hint_text">Продовжуйте прокручувати, щоб переглянути рекомендації</string>
     <string name="caboose_shadow_hint_text_older">Продовжуйте прокручувати, щоб переглянути давніші дописи</string>
     <string name="calendar">Календар</string>
@@ -585,8 +593,9 @@
     <string name="choosing_who_can_see_your_story">Хто може бачити вашу розповідь</string>
     <string name="city_town">Місто</string>
     <string name="claim">Зарезервувати</string>
+    <string name="claim_dialog_with_connect_existing_page_content">"Після переходу на обліковий запис компанії для вас створено сторінку у Facebook. Заявіть на неї права або прив'яжіть сторінку, якою ви вже керуєте, щоб охопити більше людей і допомогти їм знайти вашу компанію. На сторінки у Facebook поширюються ці %1$s."</string>
     <string name="claim_facebook_page">Зарезервувати сторінку у Facebook</string>
-    <string name="claim_page">Зарезервувати сторінку</string>
+    <string name="claim_page">Заявити права на сторінку</string>
     <string name="claim_page_button_label">Зарезервувати це розташування</string>
     <string name="claim_page_content">Після переходу на обліковий запис компанії для вас створено сторінку %1$s. Заявіть на неї права просто зараз, щоб охопити більше людей і допомогти їм знайти вашу компанію. На сторінки у Facebook поширюються ці %2$s.</string>
     <string name="claim_page_error_dialog_message">"Щоб зарезервувати це розташування, ви маєте бути адміністратором сторінки Facebook, пов'язаної з цією адресою."</string>
@@ -869,7 +878,6 @@
     <string name="cta_context_view_on_ig">Переглянути в Instagram</string>
     <string name="cta_context_view_website_on_ig">Переглянути сайт в Instagram</string>
     <string name="cta_section_checkout_label">Переглянути в Instagram</string>
-    <string name="cta_section_offsite_label">Переглянути на сайті</string>
     <string name="cta_section_sold_out_label">Розпродано</string>
     <string name="current_password">Поточний пароль</string>
     <string name="currently_promoted">Рекламується</string>
@@ -1051,6 +1059,7 @@
     <string name="direct_digest_you_sent_gif">Ви надіслали GIF</string>
     <string name="direct_digest_you_sent_message">Ви надіслали повідомлення</string>
     <string name="direct_digest_you_sent_sticker">Ви надіслали наліпку</string>
+    <string name="direct_digest_you_sent_text_message">Ви: %1$s</string>
     <string name="direct_digest_you_sent_voice">Ви надіслали голосове повідомлення</string>
     <string name="direct_digest_you_shared_a_comment">Ви поширили коментар</string>
     <string name="direct_digest_you_shared_link">Ви поширили посилання</string>
@@ -1233,6 +1242,7 @@
     <string name="direct_reel_share_sender_info_own_story">Переглянув(-ла) вашу розповідь</string>
     <string name="direct_replay_expiring_media">Відтворити</string>
     <string name="direct_reply">Відповісти</string>
+    <string name="direct_reply_edittext_hint_message">Відповісти...</string>
     <string name="direct_reply_sharesheet_row_message">Надіслати повідомлення %1$s</string>
     <string name="direct_reply_to">Відповісти</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Відповісти в повідомленні.</string>
@@ -1843,10 +1853,8 @@
     <string name="igtv_about_settings_header">Інформація</string>
     <string name="igtv_account_settings_header">Обліковий запис</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Світлина обкладинки має бути у вертикальній орієнтації.</string>
-    <string name="igtv_attribution">З IGTV</string>
     <string name="igtv_blocked_media">Ваше відео заблоковано</string>
     <string name="igtv_blocked_media_item_header">Заблоковано</string>
-    <string name="igtv_browse_for_you_title">Для вас</string>
     <string name="igtv_channel_settings_header">Канал</string>
     <string name="igtv_copy_link">Копіювати посилання</string>
     <string name="igtv_cover_picker_camera_roll">Завантажити з галереї камери</string>
@@ -1898,9 +1906,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Ваші глядачі зможуть натиснути цю наліпку і переглянути відео в IGTV.</string>
     <string name="igtv_search_results_channels_header">Канали</string>
     <string name="igtv_search_results_no_channels_found">Каналів не знайдено</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Лише для відео IGTV, довших за одну хвилину.</string>
-    <string name="igtv_share_trailer_to_feed_info">Поширити у вашому профілі та стрічці. Щоб переглянути повне відео, користувачам потрібно натиснути на нього.</string>
-    <string name="igtv_share_trailer_to_feed_title">Поширення попереднього перегляду в Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Лише для відео IGTV, довших за одну хвилину</string>
+    <string name="igtv_share_trailer_to_feed_info">Поширте попередній перегляд у своєму профілі та стрічці</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Докладніше</string>
+    <string name="igtv_share_trailer_to_feed_title">Поширити в Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">Пропустити через %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Відео почнеться через %1$s</string>
     <string name="igtv_skip_button_text_skippable">Пропустити</string>
@@ -2453,6 +2462,7 @@
     <string name="no_admin_pages_show">Не бачите тут свою сторінку? Можливо, ви не адміністратор. Зверніться до адміністратора своєї сторінки, щоб отримати дозвіл.</string>
     <string name="no_country_selection_dialog_subtitle">Ви не вибрали жодної країни для показу свого контенту. Це означає, що він ніде не відображатиметься, тож налаштування вибору розташування вимкнено.</string>
     <string name="no_country_selection_dialog_title">Ви не вибрали жодної країни</string>
+    <string name="no_effects_found">Немає доступних ефектів</string>
     <string name="no_eligible_post_subtitle">Ви не маєте дописів, які можна рекламувати.</string>
     <string name="no_eligible_post_title">Немає відповідних дописів</string>
     <string name="no_internet_error_message">Позначки імені не можна сканувати без підключення до Інтернету. Перевірте підключення та повторіть спробу.</string>
@@ -2821,7 +2831,6 @@
     <string name="product_tagging_add_product_limit_reached_video">До відео можна додати максимум 5 продуктів.</string>
     <string name="product_tagging_add_products">Позначити товари</string>
     <string name="product_tagging_carousel_add_product_limit_reached">У всьому дописі можна позначити максимум 20 продуктів.</string>
-    <string name="product_tagging_carousel_editing_not_available">Не можна редагувати дописи, які вже мають позначки товарів.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Неможливо позначити продукти в дописах із брендованими матеріалами.</string>
     <string name="product_tagging_tag_another_product">Позначити інший продукт</string>
     <string name="product_tagging_tap_to_add_photo">Торкніться світлини, щоб позначити продукти.</string>
@@ -2934,13 +2943,11 @@
     <string name="recipient_picker_sharing_preferences">Параметри поширення</string>
     <string name="recipient_picker_sharing_to_fb">І розповідь у Facebook</string>
     <string name="recipient_view_mode_allow_replay">Дозволити відтворення</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 години</string>
     <string name="recipient_view_mode_allow_replay_upper_case">ДОЗВОЛИТИ ВІДТВОРЕННЯ</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 ГОДИНИ</string>
     <string name="recipient_view_mode_keep_in_chat">Зберегти в чаті</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">ЗБЕРЕГТИ В ЧАТІ</string>
-    <string name="recipient_view_mode_one_view">Один перегляд</string>
-    <string name="recipient_view_mode_one_view_upper_case">ОДИН ПЕРЕГЛЯД</string>
+    <string name="recipient_view_mode_view_once">Один перегляд</string>
+    <string name="recipient_view_mode_view_once_upper_case">ОДИН ПЕРЕГЛЯД</string>
     <string name="recommend_accounts_follow_all_button">Стежити за всіма</string>
     <string name="recommend_accounts_header">Облікові записи, які можуть сподобатися користувачу %1$s</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> вважає, що вам можуть сподобатися ці облікові записи.</string>
@@ -3109,7 +3116,7 @@
     <string name="remove_sponsor_tag_subtitle">Ви більше не бачитимете статистику. Ця дія не видалить допис з Instagram.</string>
     <string name="remove_sponsor_tag_title">Видалити мене з допису</string>
     <string name="remove_tag">Видалити позначку</string>
-    <string name="remove_this_igtv_post_confirmation">Ваші читачі не зможуть переглядати ваше відео у своїй стрічці або сітці профілю. Воно залишиться в IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">Попередній перегляд відео буде недоступний для ваших читачів у їхній стрічці або вашому профілі. Відео залишиться в IGTV.</string>
     <string name="remove_video_highlight_button">Видалити відео</string>
     <string name="remove_video_highlight_message">Ви зможете переглядати це відео в архіві. З архіву його можна видалити назавжди.</string>
     <string name="remove_video_highlight_message_active">Якщо видалити це відео з вибраного, його не буде видалено з вашої розповіді.</string>
@@ -3427,6 +3434,7 @@
     <string name="shopping_on_profile_null_state_message">Зараз це можете бачити лише ви. Як тільки ви створите допис із позначеними продуктами, люди побачать їх тут.</string>
     <string name="shopping_on_profile_null_state_title">Дописи з позначеними товарами відображатимуться тут</string>
     <string name="shopping_posts">Дописи з товарами</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (продано)</string>
     <string name="shopping_viewer_add_posts">Додати дописи</string>
     <string name="shopping_viewer_description_title">Опис</string>
     <string name="shopping_viewer_edit">Редагувати</string>
@@ -3671,6 +3679,7 @@
     <string name="tell_us_approval_reason">Розкажіть нам, чому вашу рекламу слід затвердити. Якщо сталася помилка, ми затвердимо вашу рекламу якнайшвидше.</string>
     <string name="terms">Умови</string>
     <string name="terms_and_data_policy">Умови та Політика використання даних</string>
+    <string name="terms_and_privacy">Умови та конфіденційність</string>
     <string name="terms_of_service">Умови використання</string>
     <string name="terms_of_use">Умови використання</string>
     <string name="terms_of_use_link">Див. Умови користування повністю</string>
@@ -3700,7 +3709,7 @@
     <string name="thanks_for_let_us_know">Дякуємо, що повідомили нам.</string>
     <string name="this_account_is_private">Це приватний обліковий запис</string>
     <string name="this_user_is_private">Це приватний обліковий запис</string>
-    <string name="thumbnail_image_variance_selector_title">Виберіть %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Виберіть %1$s</string>
     <string name="tilt_mode_linear">Лінійне</string>
     <string name="tilt_mode_radial">Радіальне</string>
     <string name="tiltshift">Розмиття</string>
@@ -3933,6 +3942,7 @@
     <string name="under_age_body">За законом ми маємо видалити ваш обліковий запис і ваші дані впродовж 30 днів.</string>
     <string name="under_age_title">Ви не досягли потрібного віку, щоб користуватися Instagram</string>
     <string name="undo">Скасувати</string>
+    <string name="undo_delete_comments">Скасувати</string>
     <string name="unfinished_reg_dialog_continue_button">Продовжити</string>
     <string name="unfinished_reg_dialog_message">Ви можете продовжити реєстрацію або почати процес спочатку.</string>
     <string name="unfinished_reg_dialog_start_over_button">Почати знову</string>
@@ -4114,12 +4124,10 @@
     <string name="view_insights">Переглянути статистику</string>
     <string name="view_location">Переглянути розташування</string>
     <string name="view_mode_toggle">Змінити режим перегляду</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Можна налаштувати повідомлення так, щоб воно зникало після одного перегляду або відображалося в чаті завжди.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Можна налаштувати повідомлення так, щоб воно зникало після одного перегляду або відображалося в чаті завжди.</string>
-    <string name="view_modes_nux_replayability_title">Цей допис відображатиметься впродовж наступних 24 год</string>
     <string name="view_more_information">Більше інформації</string>
     <string name="view_more_replies">Переглянути інші відповіді (%1$d)</string>
     <string name="view_more_replies_no_count">Переглянути більше відповідей</string>
+    <string name="view_on_website">Переглянути на сайті</string>
     <string name="view_original">Переглянути оригінал</string>
     <string name="view_previous_replies">Переглянути попередні відповіді (%1$d)</string>
     <string name="view_previous_replies_no_count">Переглянути попередні відповіді</string>

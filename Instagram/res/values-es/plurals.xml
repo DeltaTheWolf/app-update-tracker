@@ -110,17 +110,6 @@
         <item quantity="other">¿Descartar %1$d borradores?</item>
         <item quantity="one">¿Descartar un borrador?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Porque sigues a</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Les gusta a</item>
-        <item quantity="one">Le gusta a</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d personas más</item>
-        <item quantity="one">%1$s + %2$d persona más</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d seguidores</item>
         <item quantity="one">1 seguidor</item>
@@ -288,10 +277,6 @@
         <item quantity="other">%1$s y %2$d personas más están escribiendo…</item>
         <item quantity="one">%1$s y una persona más están escribiendo…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d comentarios eliminados. Toca para deshacer.</item>
-        <item quantity="one">Comentario eliminado. Toca para deshacer</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d publicaciones nuevas</item>
         <item quantity="one">1 publicación nueva</item>
@@ -299,6 +284,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s y &lt;b>%2$s más&lt;/b></item>
         <item quantity="one">%1$s y &lt;b>1 más&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d comentarios eliminados.</item>
+        <item quantity="one">Comentario eliminado.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s de tus contactos están en Instagram</item>

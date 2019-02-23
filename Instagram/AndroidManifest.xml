@@ -64,7 +64,7 @@
         <meta-data android:name="com.facebook.rscmp" android:value="true"/>
         <meta-data android:name="com.facebook.build_rule" android:value="instagram_multi_bytecode_dextr_comp_zstdso_mdpi_armv7_release_fbsign"/>
         <meta-data android:name="com.facebook.package_type" android:value="release"/>
-        <meta-data android:name="com.facebook.build_time" android:value="1548706959000L"/>
+        <meta-data android:name="com.facebook.build_time" android:value="1549392689000L"/>
         <meta-data android:name="com.facebook.versioncontrol.branch" android:value="master"/>
         <meta-data android:name="com.facebook.versioncontrol.revision" android:value="MASTER"/>
         <activity android:alwaysRetainTaskState="true" android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.instagram.mainactivity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
@@ -247,7 +247,8 @@
         <service android:exported="false" android:name="com.facebook.analytics.appstatelogger.AppStateDeathMonitorService" android:process=":deathmon"/>
         <service android:exported="false" android:name="com.facebook.analytics2.logger.LollipopUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <service android:exported="false" android:name="com.facebook.analytics2.logger.AlarmBasedUploadService"/>
-        <receiver android:exported="false" android:name="com.facebook.appcomponentmanager.IndicatorFlagReceiver"/>
+        <receiver android:exported="false" android:name="com.facebook.appcomponentmanager.OperationIndicatorFlagReceiver"/>
+        <service android:exported="false" android:name="com.facebook.appcomponentmanager.AppComponentManagerService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pretosproc"/>
         <receiver android:exported="false" android:name="com.facebook.nobreak.CrashLoop$LastState">
             <meta-data android:name="crash.loop.exclude" android:value="true"/>
         </receiver>
@@ -464,7 +465,7 @@
         <service android:exported="false" android:name="com.instagram.util.offline.BackgroundWifiPrefetcherWorkerService"/>
         <service android:exported="false" android:name="com.instagram.util.offline.BackgroundWifiPrefetcherJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <receiver android:exported="false" android:name="com.instagram.util.share.ShareUtil$ChosenComponentReceiver"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:label="@string/videocall_label" android:launchMode="singleTask" android:name="com.instagram.video.videocall.activity.VideoCallActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:showOnLockScreen="true" android:supportsPictureInPicture="true" android:taskAffinity="com.instagram.android.VideoCallActivity" android:theme="@style/VideoCallTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:label="@string/videocall_label" android:launchMode="singleTask" android:name="com.instagram.video.videocall.activity.VideoCallActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:showOnLockScreen="true" android:supportsPictureInPicture="true" android:taskAffinity="com.instagram.android.VideoCallActivity" android:theme="@style/VideoCallTheme" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
         <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>

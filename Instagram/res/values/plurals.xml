@@ -110,18 +110,6 @@
         <item quantity="other">Discard %1$d Drafts?</item>
         <item quantity="one">Discard 1 Draft?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Because you Follow</item>
-        <item quantity="one">Because you Follow</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Liked by</item>
-        <item quantity="one">Liked by</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d Others</item>
-        <item quantity="one">%1$s + %2$d Other</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d Followers</item>
         <item quantity="one">1 Follower</item>
@@ -293,10 +281,6 @@
         <item quantity="other">%1$s and %2$d others are typing…</item>
         <item quantity="one">%1$s and 1 other are typing…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d comments deleted. Tap to undo.</item>
-        <item quantity="one">Comment deleted. Tap to undo.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d new posts</item>
         <item quantity="one">1 new post</item>
@@ -304,6 +288,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s and &lt;b>%2$s others&lt;/b></item>
         <item quantity="one">%1$s and &lt;b>1 other&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d comments deleted.</item>
+        <item quantity="one">Comment deleted.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s of Your Contacts are on Instagram</item>

@@ -91,7 +91,6 @@
     <string name="account_privacy_option_status_private">yksityinen</string>
     <string name="account_privacy_option_status_public">julkinen</string>
     <string name="account_privacy_option_title">Käyttäjätilin yksityisyys</string>
-    <string name="account_section_title">Osta kaupasta %1$s</string>
     <string name="action_button">Toimintopainike</string>
     <string name="action_view">Näytä</string>
     <string name="activation_card_bio_button_completed_text">Muokkaa elämäkertaa</string>
@@ -249,6 +248,11 @@
     <string name="appeal_violation_title">Palaute</string>
     <string name="apply">Käytä</string>
     <string name="apps_header">Muut käyttäjätilit</string>
+    <string name="ar_effect_cta_text">Näytä tehoste</string>
+    <string name="ar_effect_cta_text_with_name">Kokeile tehostetta &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Kameratehoste</string>
+    <string name="ar_effect_link_preview_explanation_text">Katsojat voivat kokeilla valitsemaasi kameratehostetta pyyhkäisemällä ylöspäin. %1$s</string>
+    <string name="ar_effect_link_preview_link_text">Esikatselu</string>
     <string name="ar_gallery_button_label">AR-KEHYS</string>
     <string name="archive_highlight_failure">Kohokohdan arkistoiminen epäonnistui.</string>
     <string name="archive_highlight_option">Arkistoi kohokohta</string>
@@ -413,6 +417,7 @@
     <string name="business_account_splash_subtitle">Ilmainen yritystili tarjoaa käyttöösi lisää työkaluja kasvamiseen.</string>
     <string name="business_account_splash_title">Hanki Instagram-yritystili</string>
     <string name="business_address_optional">Yritysosoite (valinnainen)</string>
+    <string name="business_attribute_sync_toggle_label">Käytä näitä tietoja Facebook-sivullasi</string>
     <string name="business_conversion_enable_cross_posting">Jaa uusia julkaisuja Facebook-sivulle</string>
     <string name="business_conversion_import_profile_pic">Tuo profiilikuva Instagramista</string>
     <string name="business_email_consent">Lisää sähköpostiosoite, johon haluat vastaanottaa yritykseen liittyvää sähköpostia. Yritysprofiilissasi näkyy sähköpostiyhteyspainike.</string>
@@ -420,6 +425,8 @@
     <string name="business_is_not_on_instagram">Tämä organisaatio ei vielä ole Instagramissa. Haluatko käydä sen profiilissa Facebookissa?</string>
     <string name="business_landing_terms">Käyttöehdot ja säännöt</string>
     <string name="business_name">Yrityksen nimi</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Kun merkitset yrityksen tuotteita julkaisussa, voit merkitä kyseisen yrityksen vain kumppanina.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Kumppanin %1$s tuotteita ei voi merkitä</string>
     <string name="business_partner_and_user_name">Liiketoimintakumppani: %1$s</string>
     <string name="business_partner_settings">Liiketoimintakumppanin asetukset</string>
     <string name="business_phone_consent">Lisää puhelinnumero, johon haluat saada yritykseen liittyviä puheluita. Tämän numeron ei tule olla linkitetty olemassa olevaan Instagram-tiliin.</string>
@@ -445,6 +452,7 @@
     <string name="business_signup_welcome_user_desc">Yritysprofiilision valmis. Voit nyt jakaa kuvia, videoita ja tarinoita seuraajillesi samalla, kun kasvatat liiketoimintaasi. Voit koska tahansa vaihtaa käyttäjänimesi.</string>
     <string name="business_signup_welcome_user_title">Tervetuloa Instagramiin,</string>
     <string name="business_tutorials">Esittelyt</string>
+    <string name="button_description">Painike</string>
     <string name="caboose_shadow_hint_text">Katso suositukset vierittämällä</string>
     <string name="caboose_shadow_hint_text_older">Näytä vanhemmat julkaisut vierittämällä edelleen</string>
     <string name="calendar">Kalenteri</string>
@@ -587,6 +595,7 @@
     <string name="choosing_who_can_see_your_story">Tarinasi näkevien ihmisten valitseminen</string>
     <string name="city_town">Paikkakunta</string>
     <string name="claim">Varaa</string>
+    <string name="claim_dialog_with_connect_existing_page_content">Sinulle luotiin Facebook-sivu, kun otit käyttöön yritystilin. Varaa sivu tai yhdistä tili, jota hallinnoit tällä hetkellä, niin voit tavoittaa enemmän ihmisiä ja helpottaa yrityksesi löytämistä. Facebook-sivuja koskevat %1$s.</string>
     <string name="claim_facebook_page">Lunasta Facebook-sivu</string>
     <string name="claim_page">Varaa sivu</string>
     <string name="claim_page_button_label">Varaa tämä sijainti</string>
@@ -874,7 +883,6 @@
     <string name="cta_context_view_on_ig">Näytä Instagramissa</string>
     <string name="cta_context_view_website_on_ig">Näytä sivusto Instagramissa</string>
     <string name="cta_section_checkout_label">Siirry kassalle Instagramissa</string>
-    <string name="cta_section_offsite_label">Näytä sivustossa</string>
     <string name="cta_section_sold_out_label">Loppuunmyyty</string>
     <string name="current_password">Nykyinen salasana</string>
     <string name="currently_promoted">Tällä hetkellä markkinoitu</string>
@@ -1056,6 +1064,7 @@
     <string name="direct_digest_you_sent_gif">Lähetit GIF-animaation</string>
     <string name="direct_digest_you_sent_message">Lähetit viestin</string>
     <string name="direct_digest_you_sent_sticker">Lähetit tarran</string>
+    <string name="direct_digest_you_sent_text_message">Sinä: %1$s</string>
     <string name="direct_digest_you_sent_voice">Lähetit ääniviestin</string>
     <string name="direct_digest_you_shared_a_comment">Jaoit kommentin</string>
     <string name="direct_digest_you_shared_link">Jaoit linkin</string>
@@ -1238,6 +1247,7 @@
     <string name="direct_reel_share_sender_info_own_story">Näki tarinasi</string>
     <string name="direct_replay_expiring_media">Toista</string>
     <string name="direct_reply">Vastaa</string>
+    <string name="direct_reply_edittext_hint_message">Vastaa…</string>
     <string name="direct_reply_sharesheet_row_message">Lähetä viesti käyttäjälle %1$s</string>
     <string name="direct_reply_to">Vastaa:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Vastaa viestillä.</string>
@@ -1850,10 +1860,8 @@
     <string name="igtv_about_settings_header">Tietoja</string>
     <string name="igtv_account_settings_header">Tili</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Kansikuvan on oltava pystysuuntainen.</string>
-    <string name="igtv_attribution">IGTV:STÄ</string>
     <string name="igtv_blocked_media">Videosi estettiin</string>
     <string name="igtv_blocked_media_item_header">Estetty</string>
-    <string name="igtv_browse_for_you_title">Sinulle</string>
     <string name="igtv_channel_settings_header">Kanava</string>
     <string name="igtv_copy_link">Kopioi linkki</string>
     <string name="igtv_cover_picker_camera_roll">Lataa kameran rullasta</string>
@@ -1905,9 +1913,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Katselijasi voivat katsella IGTV:ssä napauttamalla tätä tarraa.</string>
     <string name="igtv_search_results_channels_header">Kanavat</string>
     <string name="igtv_search_results_no_channels_found">Kanavia ei löytynyt</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Vain yli minuutin pituisille IGTV-videoille.</string>
-    <string name="igtv_share_trailer_to_feed_info">Jaa profiiliisi ja syötteeseesi. Ihmiset voivat katsella koko videon napauttamalla.</string>
-    <string name="igtv_share_trailer_to_feed_title">Jaa esikatselu Instagramiin</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Vain yli minuutin pituisille IGTV-videoille</string>
+    <string name="igtv_share_trailer_to_feed_info">Jaa esikatselu profiilissasi ja syötteessäsi</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Lue lisää</string>
+    <string name="igtv_share_trailer_to_feed_title">Jaa Instagramissa</string>
     <string name="igtv_skip_button_text_delay_skippable">Ohita kohdassa %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Video toistetaan: %1$s</string>
     <string name="igtv_skip_button_text_skippable">Ohita</string>
@@ -2456,6 +2465,7 @@
     <string name="no_admin_pages_show">Etkö näe sivuasi tässä? Et ehkä ole sivun ylläpitäjä. Ota yhteyttä sivun ylläpitäjään ja pyydä käyttöoikeuksia.</string>
     <string name="no_country_selection_dialog_subtitle">Et ole valinnut maita, joihin sisältöäsi lähetetään, jolloin sisältöäsi ei näkyisi missään. Valitse sijainnit -asetus on tämän vuoksi poistettu käytöstä.</string>
     <string name="no_country_selection_dialog_title">Et ole valinnut maita</string>
+    <string name="no_effects_found">Ei tehosteita saatavilla</string>
     <string name="no_eligible_post_subtitle">Sinulla ei ole markkinoitavia julkaisuja.</string>
     <string name="no_eligible_post_title">Ei kelpaavia julkaisuja</string>
     <string name="no_internet_error_message">Nimitunnuksia ei voi skannata offline-tilassa. Tarkista yhteys tai yritä myöhemmin uudelleen.</string>
@@ -2825,7 +2835,6 @@
     <string name="product_tagging_add_product_limit_reached_video">Videoon voi lisätä enintään viisi tuotetta.</string>
     <string name="product_tagging_add_products">Merkitse tuotteita</string>
     <string name="product_tagging_carousel_add_product_limit_reached">Voit merkitä enintään 20 tuotetta koko julkaisuusi.</string>
-    <string name="product_tagging_carousel_editing_not_available">Jos julkaisuissa on tuotteen merkintä, niitä ei voi muokata.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Et voi merkitä tuotteita julkaisuihin, joissa on brändisisältöä.</string>
     <string name="product_tagging_tag_another_product">Merkitse toinen tuote</string>
     <string name="product_tagging_tap_to_add_photo">Merkitse tuotteita napauttamalla kuvaa.</string>
@@ -2938,13 +2947,11 @@
     <string name="recipient_picker_sharing_preferences">Jakamisvaihtoehdot</string>
     <string name="recipient_picker_sharing_to_fb">Ja Facebook-tarina</string>
     <string name="recipient_view_mode_allow_replay">Salli toisto</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 tuntia</string>
     <string name="recipient_view_mode_allow_replay_upper_case">SALLI TOISTO</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 tuntia</string>
     <string name="recipient_view_mode_keep_in_chat">Säilytä keskustelussa</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">SÄILYTÄ KESKUSTELUSSA</string>
-    <string name="recipient_view_mode_one_view">Yksi katselukerta</string>
-    <string name="recipient_view_mode_one_view_upper_case">YKSI NÄYTTÖKERTA</string>
+    <string name="recipient_view_mode_view_once">Näytä kerran</string>
+    <string name="recipient_view_mode_view_once_upper_case">NÄYTÄ KERRAN</string>
     <string name="recommend_accounts_follow_all_button">Seuraa kaikkia</string>
     <string name="recommend_accounts_header">Käyttäjätilejä, joista %1$s saattaa tykätä</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> on sitä mieltä, että voisit tykätä näistä käyttäjätileistä.</string>
@@ -3095,7 +3102,7 @@
     <string name="remove_from_saved_or_collection">Voit poistaa sen kokoelmasta tai poistaa sen tallennetuista kohteista.</string>
     <string name="remove_from_saves">Poista</string>
     <string name="remove_from_saves_and_collections_dialog_title">Poistetaanko tallennetuista kohteista ja kokoelmista?</string>
-    <string name="remove_igtv_media">Poista esikatselu</string>
+    <string name="remove_igtv_media">Poista esikatselu…</string>
     <string name="remove_me_from_post">Poista minut julkaisusta</string>
     <string name="remove_me_from_profile">Poista linkki</string>
     <string name="remove_me_from_profile_dialog_message">Käyttäjänimesi näytetään edelleen tässä elämäkerrassa, mutta sitä ei enää linkitetä profiiliisi.</string>
@@ -3112,7 +3119,7 @@
     <string name="remove_sponsor_tag_subtitle">Et enää näe kävijätietoja. Julkaisua ei poisteta Instagramista.</string>
     <string name="remove_sponsor_tag_title">Poista minut julkaisusta</string>
     <string name="remove_tag">Poista merkintä</string>
-    <string name="remove_this_igtv_post_confirmation">Seuraajasi eivät voi esikatsella videotasi syötteessään tai profiilinsa ruudukossa. Videosi pysyy IGTV:ssä.</string>
+    <string name="remove_this_igtv_post_confirmation">Seuraajasi eivät voi esikatsella videotasi syötteessään tai profiilissasi. Videosi pysyy IGTV:ssä.</string>
     <string name="remove_video_highlight_button">Poista video</string>
     <string name="remove_video_highlight_message">Näet tämän videon edelleen arkistossasi. Halutessasi voit poistaa videon arkistosta pysyvästi.</string>
     <string name="remove_video_highlight_message_active">Vaikka poistat videon kohokohdista, sitä ei poisteta tarinastasi.</string>
@@ -3431,6 +3438,7 @@
     <string name="shopping_on_profile_null_state_message">Tällä hetkellä vain sinä näet tämän. Kun olet luonut yhden julkaisun, jossa on merkittyjä tuotteita, julkaisu näytetään tässä kaikille.</string>
     <string name="shopping_on_profile_null_state_title">Julkaisut, joissa on merkittyjä tuotteita, näytetään tässä</string>
     <string name="shopping_posts">Ostojulkaisut</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (loppuunmyyty)</string>
     <string name="shopping_viewer_add_posts">Lisää julkaisuja</string>
     <string name="shopping_viewer_description_title">Kuvaus</string>
     <string name="shopping_viewer_edit">Muokkaa</string>
@@ -3676,6 +3684,7 @@
     <string name="tell_us_approval_reason">Kerro, miksi mainoksesi on hyväksyttävä. Jos on tapahtunut virhe, hyväksymme mainoksesi mahdollisimman pian.</string>
     <string name="terms">Käyttöehdot</string>
     <string name="terms_and_data_policy">Käyttöehdot ja tietokäytäntö</string>
+    <string name="terms_and_privacy">Ehdot ja tietosuoja</string>
     <string name="terms_of_service">Käyttöehdot</string>
     <string name="terms_of_use">Käyttöehdot</string>
     <string name="terms_of_use_link">Lue täydet käyttöehdot</string>
@@ -3704,14 +3713,14 @@
     <string name="thanks_for_let_us_know">Kiitos tiedosta.</string>
     <string name="this_account_is_private">Tämä tili on yksityinen</string>
     <string name="this_user_is_private">Käyttäjätili on yksityinen.</string>
-    <string name="thumbnail_image_variance_selector_title">Valitse %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Valitse %1$s</string>
     <string name="tilt_mode_linear">Lineaarinen</string>
     <string name="tilt_mode_radial">Radiaalinen</string>
     <string name="tiltshift">Tilt-shift</string>
     <string name="time_remaining">Jäljellä oleva aika</string>
     <string name="time_spent_dashboard_action_bar_title">Sinun toimintasi</string>
     <string name="time_spent_data_section_title">Instagramissa vietetty aika</string>
-    <string name="time_spent_info_dialog_body">Tämän verran olet keskimäärin viettänyt aikaa Instagramissa joka päivä viimeisen viikon aikana. Aika on laskettu, kun olet käyttänyt Instagramia tällä laitteella. Tämän arvon käsittely on kesken ja se saattaa muuttua sitä mukaa, kun kehitämme menetelmiämme.</string>
+    <string name="time_spent_info_dialog_body">Olet viettänyt keskimäärin tämän verran aikaa Instagramissa joka päivä viimeisen viikon aikana. Aika on laskettu, kun olet käyttänyt Instagramia tällä laitteella. Tämän arvon käsittely on kesken ja se saattaa muuttua sitä mukaa, kun kehitämme menetelmiämme.</string>
     <string name="time_spent_info_dialog_title">Instagramissa vietetty aika</string>
     <string name="time_spent_info_learn_more">Lisätietoja</string>
     <string name="time_spent_settings_section_title">Hallinnoi aikaasi</string>
@@ -3937,6 +3946,7 @@
     <string name="under_age_body">Lain mukaan meidän on poistettava tilisi ja tietosi 30 päivän kuluessa.</string>
     <string name="under_age_title">Et ole tarpeeksi vanha käyttämään Instagramia</string>
     <string name="undo">Kumoa</string>
+    <string name="undo_delete_comments">Kumoa</string>
     <string name="unfinished_reg_dialog_continue_button">Jatka</string>
     <string name="unfinished_reg_dialog_message">Voit jatkaa tilin rekisteröimistä tai aloittaa alusta.</string>
     <string name="unfinished_reg_dialog_start_over_button">Aloita alusta</string>
@@ -4116,12 +4126,10 @@
     <string name="view_insights">Näytä kävijätiedot</string>
     <string name="view_location">Näytä sijainti</string>
     <string name="view_mode_toggle">Muokkaa näyttötilaa</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Voit määrittää viestin katoamaan yhden katselukerran jälkeen tai pitää sen keskustelussa pysyvästi.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Voit määrittää viestin katoamaan yhden katselukerran jälkeen tai pitää sen keskustelussa pysyvästi alla.</string>
-    <string name="view_modes_nux_replayability_title">Tämä on nähtävissä seuraavan vuorokauden ajan</string>
     <string name="view_more_information">Näytä lisätietoja</string>
     <string name="view_more_replies">Näytä lisää vastauksia (%1$d)</string>
     <string name="view_more_replies_no_count">Näytä lisää vastauksia</string>
+    <string name="view_on_website">Näytä sivustossa</string>
     <string name="view_original">Näytä alkuperäinen</string>
     <string name="view_previous_replies">Näytä aiemmat vastaukset (%1$d)</string>
     <string name="view_previous_replies_no_count">Näytä aiemmat vastaukset</string>

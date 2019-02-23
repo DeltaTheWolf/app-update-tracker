@@ -6,4 +6,5 @@
     <com.instagram.tagging.widget.TagsLayout android:id="@id/row_feed_photo_product_tagging" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <com.instagram.tagging.widget.TagHintsLayout android:id="@id/row_feed_photo_product_tag_hints" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <ViewStub android:layout_gravity="bottom" android:id="@id/hashtag_recycler_view_stub" android:layout="@layout/row_feed_tags_hashtag_hscroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tag_bubble_padding" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/product_overlay_recycler_view_stub" android:layout="@layout/row_feed_product_overlay_hscroll" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </merge>

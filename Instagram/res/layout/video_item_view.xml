@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.discovery.ui.FixedAspectRatioVideoLayout android:id="@id/layout_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/video_overlay_full_darkened_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/video_item_image_preview_layout" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/video_overlay_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/video_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.instagram.ui.widget.imageview.BlinkingImageView android:id="@id/video_overlay_state_icon" android:background="@drawable/channel_play_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_play" />
+        <TextView android:textSize="@dimen/video_item_overlay_title_font_large" android:textColor="@color/white" android:ellipsize="end" android:id="@id/video_overlay_text_title" android:paddingTop="@dimen/video_item_overlay_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/white_75_transparent" android:ellipsize="end" android:id="@id/video_overlay_text_header" android:paddingTop="@dimen/video_item_overlay_context_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</com.instagram.discovery.ui.FixedAspectRatioVideoLayout>

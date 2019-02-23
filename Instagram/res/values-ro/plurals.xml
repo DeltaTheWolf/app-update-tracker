@@ -116,16 +116,6 @@
         <item quantity="other">Renunţi la %1$d schiţe?</item>
         <item quantity="one">Renunţi la 1 schiţă?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Deoarece urmăreşti pe</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Apreciat(ă) de</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + alţi %2$d</item>
-        <item quantity="one">%1$s + %2$d altă persoană</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d de urmăritori</item>
         <item quantity="one">%1$d urmăritori</item>
@@ -318,11 +308,6 @@
         <item quantity="other">%1$s şi alţi %2$d scriu…</item>
         <item quantity="one">%1$s şi încă cineva scriu…</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d de comentarii au fost şterse. Atinge pentru a anula.</item>
-        <item quantity="one">%1$d comentarii au fost şterse. Atinge pentru a anula.</item>
-        <item quantity="few">%1$d comentarii au fost şterse. Atinge pentru a anula.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d postări noi</item>
         <item quantity="one">1 postare nouă</item>
@@ -330,6 +315,11 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s şi &lt;b>alţi %2$s&lt;/b></item>
         <item quantity="one">%1$s şi încă &lt;b>1 persoană&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d de comentarii şterse.</item>
+        <item quantity="one">%1$d comentarii şterse.</item>
+        <item quantity="few">%1$d comentarii şterse.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s dintre contactele tale sunt pe Instagram</item>

@@ -89,7 +89,6 @@
     <string name="account_privacy_option_status_private">soukromé</string>
     <string name="account_privacy_option_status_public">veřejné</string>
     <string name="account_privacy_option_title">Účet a soukromí</string>
-    <string name="account_section_title">Obchod %1$s</string>
     <string name="action_button">Tlačítko akce</string>
     <string name="action_view">Zobrazit</string>
     <string name="activation_card_bio_button_completed_text">Upravit životopis</string>
@@ -247,6 +246,11 @@
     <string name="appeal_violation_title">Váš názor</string>
     <string name="apply">Použít</string>
     <string name="apps_header">Ostatní účty</string>
+    <string name="ar_effect_cta_text">Zobrazit efekt</string>
+    <string name="ar_effect_cta_text_with_name">Vyzkoušet &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Vizuální efekt</string>
+    <string name="ar_effect_link_preview_explanation_text">Diváci budou moct potáhnout prstem nahoru a vyzkoušet vámi vybraný vizuální efekt. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">Náhled</string>
     <string name="ar_gallery_button_label">AR RÁMEČEK</string>
     <string name="archive_highlight_failure">Výběr se nepodařilo archivovat.</string>
     <string name="archive_highlight_option">Archivovat výběr</string>
@@ -410,6 +414,7 @@
     <string name="business_account_splash_subtitle">S firemním účtem zdarma získáte víc nástrojů, které vám pomůžou růst.</string>
     <string name="business_account_splash_title">Získejte instagramový firemní účet</string>
     <string name="business_address_optional">Firemní adresa (nepovinná)</string>
+    <string name="business_attribute_sync_toggle_label">Využít tyhle informace pro vaši Facebook stránku</string>
     <string name="business_conversion_enable_cross_posting">Sdílet nové příspěvky na Facebook stránce</string>
     <string name="business_conversion_import_profile_pic">Importovat profilovou fotku z Instagramu</string>
     <string name="business_email_consent">Přidejte e-mailovou adresu, kam vám má přicházet firemní komunikace. Na vašem firemním profilu se objeví tlačítko pro kontaktování e-mailem.</string>
@@ -417,6 +422,8 @@
     <string name="business_is_not_on_instagram">Tato firma zatím na Instagramu není. Chcete ji navštívit na Facebooku?</string>
     <string name="business_landing_terms">Podmínky a pravidla</string>
     <string name="business_name">Název firmy</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Když v příspěvku označíte produkty od firmy, jde jako partnera označit jen danou firmu.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Příspěvky od %1$s označit nejde</string>
     <string name="business_partner_and_user_name">Obchodní partner: %1$s</string>
     <string name="business_partner_settings">Nastavení obchodního partnera</string>
     <string name="business_phone_consent">Přidejte telefonní číslo, kam vám mají přicházet firemní hovory. Toto číslo nemůže být propojené s žádným stávajícím instagramovým účtem.</string>
@@ -442,6 +449,7 @@
     <string name="business_signup_welcome_user_desc">Váš firemní profil je hotový. Teď můžete se svými sledujícími sdílet fotky, videa a příběhy a rozšiřovat tak svoji firmu. Uživatelské jméno můžete kdykoli změnit.</string>
     <string name="business_signup_welcome_user_title">Vítejte na Instagramu,</string>
     <string name="business_tutorials">Průvodci</string>
+    <string name="button_description">Tlačítko</string>
     <string name="caboose_shadow_hint_text">Posouváním dolů uvidíte doporučení</string>
     <string name="caboose_shadow_hint_text_older">Posouvejte se dál a uvidíte starší příspěvky</string>
     <string name="calendar">Kalendář</string>
@@ -584,6 +592,7 @@
     <string name="choosing_who_can_see_your_story">Vyberte, kdo uvidí váš příběh</string>
     <string name="city_town">Město</string>
     <string name="claim">Registrovat</string>
+    <string name="claim_dialog_with_connect_existing_page_content">Po přepnutí na firemní účet jsme vám vytvořili Facebook stránku. Zaregistrujte si ji nebo propojte stránku, kterou už spravujete, ať oslovíte víc lidí, kteří vás snadněji najdou. Facebook stránky se řídí těmito %1$s.</string>
     <string name="claim_facebook_page">Zaregistrovat Facebook stránku</string>
     <string name="claim_page">Zaregistrovat stránku</string>
     <string name="claim_page_button_label">Zaregistrovat lokalitu</string>
@@ -723,7 +732,7 @@
     <string name="connect_contacts_learn_more_text">Víc se dozvíte %1$s.</string>
     <string name="connect_contacts_options_info_text">Abychom vám pomohli se na Instagramu spojit s dalšími lidmi, vaše kontakty se opakovaně synchronizují a ukládají na našich serverech. Vy si vyberete, koho chcete sledovat. %1$s</string>
     <string name="connect_contacts_subtitle">Najděte na Instagramu lidi, které znáte, a vyberte si, koho chcete sledovat.</string>
-    <string name="connect_existing_page">Propojit existující stránku</string>
+    <string name="connect_existing_page">Propojte existující stránku</string>
     <string name="connect_fb_and_agree">Klepnutím na tlačítko nahoře a otevřením přehledů souhlasíte s našimi %1$s.</string>
     <string name="connect_fb_get_insights">Zjistěte víc informací o lidech, kteří vás sledují, a podívejte se, jak si vaše příspěvky vedou. Na Facebook nic bez vašeho svolení nezveřejníme.</string>
     <string name="connect_ig_to_fb_page_explain">Propojte svůj Instagram Business účet s Facebook stránkou, ať vás lidé najdou snadněji. Na takto propojené účty se vztahují %1$s dané Facebook stránky.</string>
@@ -868,7 +877,6 @@
     <string name="cta_context_view_on_ig">Zobrazit na Instagramu</string>
     <string name="cta_context_view_website_on_ig">Zobrazit web na Instagramu</string>
     <string name="cta_section_checkout_label">Dokončete nákup na Instagramu</string>
-    <string name="cta_section_offsite_label">Zobrazit na webu</string>
     <string name="cta_section_sold_out_label">Vyprodáno</string>
     <string name="current_password">Stávající heslo</string>
     <string name="currently_promoted">Právě teď běží reklama</string>
@@ -1049,6 +1057,7 @@
     <string name="direct_digest_you_sent_gif">Poslal(a) jste GIF</string>
     <string name="direct_digest_you_sent_message">Poslal(a) jste zprávu</string>
     <string name="direct_digest_you_sent_sticker">Posíláte samolepku</string>
+    <string name="direct_digest_you_sent_text_message">Já: %1$s</string>
     <string name="direct_digest_you_sent_voice">Poslal(a) jste hlasovou zprávu</string>
     <string name="direct_digest_you_shared_a_comment">Sdílíte komentář</string>
     <string name="direct_digest_you_shared_link">Sdílel(a) jste odkaz</string>
@@ -1231,6 +1240,7 @@
     <string name="direct_reel_share_sender_info_own_story">Prohlédl(a) si váš příběh</string>
     <string name="direct_replay_expiring_media">Přehrát znovu</string>
     <string name="direct_reply">Odpovědět</string>
+    <string name="direct_reply_edittext_hint_message">Odpovědět...</string>
     <string name="direct_reply_sharesheet_row_message">Napište %1$s</string>
     <string name="direct_reply_to">Odpovědět:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Odpovíte zprávou.</string>
@@ -1838,10 +1848,8 @@
     <string name="igtv_about_settings_header">Informace</string>
     <string name="igtv_account_settings_header">Účet</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Vaše úvodní fotka musí být na výšku.</string>
-    <string name="igtv_attribution">Z IGTV</string>
     <string name="igtv_blocked_media">Vaše video bylo zablokováno</string>
     <string name="igtv_blocked_media_item_header">Blokováno</string>
-    <string name="igtv_browse_for_you_title">Pro vás</string>
     <string name="igtv_channel_settings_header">Kanál</string>
     <string name="igtv_copy_link">Zkopírovat odkaz</string>
     <string name="igtv_cover_picker_camera_roll">Nahrát z galerie fotoaparátu</string>
@@ -1892,9 +1900,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Vaši diváci budou moct na samolepku klepnout a podívat se na IGTV video.</string>
     <string name="igtv_search_results_channels_header">Kanály</string>
     <string name="igtv_search_results_no_channels_found">Nenašli jsme žádné kanály</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Jen pro IGTV videa delší než minutu.</string>
-    <string name="igtv_share_trailer_to_feed_info">Sdílejte to na svém profilu a kanálu. Lidé se můžou klepnutím podívat na celé video.</string>
-    <string name="igtv_share_trailer_to_feed_title">Sdílet náhled na Instagramu</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Jen pro IGTV videa delší než minutu</string>
+    <string name="igtv_share_trailer_to_feed_info">Sdílejte náhled na svém profilu a v kanálu</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Další informace</string>
+    <string name="igtv_share_trailer_to_feed_title">Sdílet na Instagramu</string>
     <string name="igtv_skip_button_text_delay_skippable">Přeskočit za %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Video se přehraje za %1$s</string>
     <string name="igtv_skip_button_text_skippable">Přeskočit</string>
@@ -2447,6 +2456,7 @@
     <string name="no_admin_pages_show">Nevidíte tady svoji stránku? Je možné, že nejste jejím správcem. Požádejte správce stránky o oprávnění.</string>
     <string name="no_country_selection_dialog_subtitle">Nemáte vybrané žádné země k vysílání obsahu, který se tím pádem nebude zobrazovat nikde, a proto jsme vám vypnuli možnost nastavit lokality.</string>
     <string name="no_country_selection_dialog_title">Nemáte vybrané žádné země</string>
+    <string name="no_effects_found">Žádné dostupné efekty</string>
     <string name="no_eligible_post_subtitle">Nemáte žádné příspěvky, které by šlo propagovat.</string>
     <string name="no_eligible_post_title">Žádné odpovídající příspěvky</string>
     <string name="no_internet_error_message">Jmenovky jde skenovat, jen když jste online. Zkontrolujte svoje připojení a zkuste to znovu.</string>
@@ -2815,7 +2825,6 @@
     <string name="product_tagging_add_product_limit_reached_video">K videu můžete přidat maximálně 5 produktů.</string>
     <string name="product_tagging_add_products">Označit produkty</string>
     <string name="product_tagging_carousel_add_product_limit_reached">V celém příspěvku můžete dohromady označit maximálně 20 produktů.</string>
-    <string name="product_tagging_carousel_editing_not_available">Příspěvky, ve kterých jsou označené produkty, upravit nejde.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">V příspěvcích se značkovým obsahem nemůžete označovat produkty.</string>
     <string name="product_tagging_tag_another_product">Označit jiný produkt</string>
     <string name="product_tagging_tap_to_add_photo">Produkty můžete označit klepnutím na fotku.</string>
@@ -2928,13 +2937,11 @@
     <string name="recipient_picker_sharing_preferences">Možnosti sdílení</string>
     <string name="recipient_picker_sharing_to_fb">A v příběhu na Facebooku</string>
     <string name="recipient_view_mode_allow_replay">Povolit opětovné přehrání</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 hodin</string>
     <string name="recipient_view_mode_allow_replay_upper_case">POVOLIT OPĚTOVNÉ PŘEHRÁVÁNÍ</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 HODIN</string>
     <string name="recipient_view_mode_keep_in_chat">Zachovat v chatu</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">ZACHOVAT V CHATU</string>
-    <string name="recipient_view_mode_one_view">Jedno zobrazení</string>
-    <string name="recipient_view_mode_one_view_upper_case">JEDNO ZOBRAZENÍ</string>
+    <string name="recipient_view_mode_view_once">Zobrazit jednou</string>
+    <string name="recipient_view_mode_view_once_upper_case">ZOBRAZIT JEDNOU</string>
     <string name="recommend_accounts_follow_all_button">Sledovat vše</string>
     <string name="recommend_accounts_header">Účty, které by se %1$s mohly líbit</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> si myslí, že by se vám tyhle účty mohly líbit.</string>
@@ -3086,7 +3093,7 @@
     <string name="remove_from_saved_or_collection">Můžete to odebrat z této sbírky nebo ze všechno, co jste uložili</string>
     <string name="remove_from_saves">Odebrat</string>
     <string name="remove_from_saves_and_collections_dialog_title">Odebrat z uložených a sbírek?</string>
-    <string name="remove_igtv_media">Odebrat náhled</string>
+    <string name="remove_igtv_media">Odebírání náhledu...</string>
     <string name="remove_me_from_post">Odebrat mě z příspěvku</string>
     <string name="remove_me_from_profile">Odebrat odkaz</string>
     <string name="remove_me_from_profile_dialog_message">Vaše uživatelské jméno se objeví v těchto životopisných údajích, ale už nebude propojené s vaším profilem.</string>
@@ -3422,6 +3429,7 @@
     <string name="shopping_on_profile_null_state_message">Prozatím tohle vidíte jen vy. Až vytvoříte další příspěvek s označenými produkty, tak je lidé tady uvidí.</string>
     <string name="shopping_on_profile_null_state_title">Tady se ukážou příspěvky s označenými produkty</string>
     <string name="shopping_posts">Nákupní příspěvky</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (vyprodáno)</string>
     <string name="shopping_viewer_add_posts">Přidat příspěvky</string>
     <string name="shopping_viewer_description_title">Popis</string>
     <string name="shopping_viewer_edit">Upravit</string>
@@ -3659,15 +3667,18 @@
     <string name="take_picture">Vyfotit</string>
     <string name="tap_for_caption_title">Klepnutím se objeví text</string>
     <string name="tap_to_keep_watching">Pokračovat ve sledování</string>
+    <string name="tap_to_keep_watching_video_description">Klepnutím sem se podíváte na video</string>
     <string name="tap_to_like">Klepnutím dáte komentáři To se mi líbí</string>
     <string name="tap_to_reload">Obrázek nelze načíst. Klepnutím pokus opakujte.</string>
     <string name="tap_to_unlike">Klepnutím odeberete To se mi líbí u komentáře</string>
     <string name="tap_to_view_combined_tags">KLEPNUTÍM ZOBRAZÍTE TAGY</string>
     <string name="tap_to_view_product_items">KLEPNUTÍM ZOBRAZÍTE PRODUKTY</string>
+    <string name="tap_to_watch_video_description">Klepněte a podívejte se na video</string>
     <string name="tap_to_watch_video_nux">KOUKNOUT NA CELÉ VIDEO</string>
     <string name="tell_us_approval_reason">Řekněte nám, proč bychom měli vaši reklamu schválit. Pokud jsme udělali chybu, tak ji co nejdřív napravíme.</string>
     <string name="terms">Smluvní podmínky</string>
     <string name="terms_and_data_policy">Smluvní podmínky a zásady používání dat</string>
+    <string name="terms_and_privacy">Podmínky a soukromí</string>
     <string name="terms_of_service">Smluvní podmínky</string>
     <string name="terms_of_use">Smluvní podmínky</string>
     <string name="terms_of_use_link">Přečíst si úplné smluvní podmínky</string>
@@ -3697,7 +3708,7 @@
     <string name="thanks_for_let_us_know">Děkujeme vám za zprávu.</string>
     <string name="this_account_is_private">Tento účet je soukromý</string>
     <string name="this_user_is_private">Tento účet je soukromý</string>
-    <string name="thumbnail_image_variance_selector_title">Vyberte: %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Vyberte: %1$s</string>
     <string name="tilt_mode_linear">Lineární</string>
     <string name="tilt_mode_radial">Radiální</string>
     <string name="time_remaining">Zbývající čas</string>
@@ -3929,6 +3940,7 @@
     <string name="under_age_body">Z právního hlediska musíme váš účet a data odstranit do 30 dnů.</string>
     <string name="under_age_title">Na Instagram ještě nemáte dost let</string>
     <string name="undo">Zpět</string>
+    <string name="undo_delete_comments">Zpět</string>
     <string name="unfinished_reg_dialog_continue_button">Pokračovat</string>
     <string name="unfinished_reg_dialog_message">Můžete pokračovat v registraci účtu nebo začít znovu.</string>
     <string name="unfinished_reg_dialog_start_over_button">Začít znovu</string>
@@ -4107,12 +4119,10 @@
     <string name="view_insights">Zobrazit přehledy</string>
     <string name="view_location">Zobrazit lokalitu</string>
     <string name="view_mode_toggle">Přepnout režim zobrazení</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Můžete nastavit, aby zpráva po jednom zhlédnutí zmizela, nebo aby zůstala v chatu dole.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Můžete nastavit, aby zpráva po jednom zhlédnutí zmizela, nebo aby zůstala v chatu dole.</string>
-    <string name="view_modes_nux_replayability_title">Bude to vidět dalších 24 hodin</string>
     <string name="view_more_information">Zobrazit další informace</string>
     <string name="view_more_replies">Zobrazit další odpovědi (%1$d)</string>
     <string name="view_more_replies_no_count">Zobrazit další odpovědi</string>
+    <string name="view_on_website">Zobrazit na webu</string>
     <string name="view_original">Zobrazit originál</string>
     <string name="view_previous_replies">Zobrazit předchozí odpovědi (%1$d)</string>
     <string name="view_previous_replies_no_count">Zobrazit předchozí odpovědi</string>

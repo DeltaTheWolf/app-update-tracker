@@ -124,17 +124,6 @@
         <item quantity="one">Zahodit %1$d koncept?</item>
         <item quantity="few">Zahodit %1$d koncepty?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Protože sledujete</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">To se mi líbí od</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + %2$d dalších</item>
-        <item quantity="one">%1$s + %2$d další</item>
-        <item quantity="few">%1$s + %2$d další</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d sledujících</item>
         <item quantity="one">%1$d sledující</item>
@@ -335,10 +324,6 @@
         <item quantity="one">%1$s a %2$d další píšou...</item>
         <item quantity="few">%1$s a %2$d další píšou...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">Komentáře odstraněny (celkem %1$d). Klepnutím akci vrátíte zpět.</item>
-        <item quantity="one">Komentář odstraněn. Klepnutím akci vrátíte zpět.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d nových příspěvků</item>
         <item quantity="one">%1$d nový příspěvek</item>
@@ -348,6 +333,11 @@
         <item quantity="other">%1$s a &lt;b>%2$s dalších&lt;/b></item>
         <item quantity="one">%1$s a &lt;b>%2$s další&lt;/b></item>
         <item quantity="few">%1$s a &lt;b>%2$s další&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d odstraněných komentářů.</item>
+        <item quantity="one">%1$d odstraněný komentář.</item>
+        <item quantity="few">%1$d odstraněné komentáře.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">Na Instagramu jsou některé z vašich kontaktů (%1$s).</item>

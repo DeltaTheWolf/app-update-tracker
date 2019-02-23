@@ -3,7 +3,6 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/layout_comment_thread_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" app:backgroundColor="@color/white" app:errorImage="@drawable/loadmore_icon_refresh_compound" />
-        <ViewStub android:layout_gravity="top" android:id="@id/undo_banner_view_stub" android:layout="@layout/layout_undo_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         <com.instagram.ui.listview.StickyHeaderListView android:id="@id/sticky_header_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <include layout="@layout/layout_refreshablelistview" />
         </com.instagram.ui.listview.StickyHeaderListView>

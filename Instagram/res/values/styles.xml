@@ -423,7 +423,6 @@
         <item name="directVideoCallActiveDrawable">@drawable/video_call_active</item>
         <item name="directVideoCallActivePulseColor">@color/blue_5_10_transparent</item>
         <item name="directVisualMessageThumbnailMask">@drawable/unseen_permanent_visual_thumbnail_mask</item>
-        <item name="directVisualMessageThumbnailUnseenOverlay">@drawable/direct_visual_message_thumbnail_overlay_unseen_received</item>
         <item name="dividerColor">@color/grey_2</item>
         <item name="glyphColorPrimary">@color/grey_9</item>
         <item name="glyphColorSecondary">@color/grey_5</item>
@@ -1972,6 +1971,13 @@
         <item name="capitalize">false</item>
         <item name="medium">false</item>
     </style>
+    <style name="ListRowSubTitleTextRegular">
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:textColor">@color/grey_5</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="capitalize">false</item>
+        <item name="medium">false</item>
+    </style>
     <style name="ListRowTitleText">
         <item name="android:textSize">@dimen/font_medium</item>
         <item name="android:textColor">@color/grey_9</item>
@@ -2129,10 +2135,6 @@
     </style>
     <style name="PendingReviewSubtitleStyleForProductTags">
         <item name="android:textColor">@color/grey_5</item>
-    </style>
-    <style name="PickerDialogAnimation">
-        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
-        <item name="android:windowExitAnimation">@anim/bottom_out</item>
     </style>
     <style name="PillButton">
         <item name="android:background">@drawable/pill_background</item>
@@ -3095,7 +3097,6 @@
         <item name="directUploadButtonBackground">@drawable/action_bar_modal_button_background_whiteout</item>
         <item name="directUploadButtonForeground">@color/green_5</item>
         <item name="directUploadButtonForegroundPressed">@color/green_5</item>
-        <item name="directViewModesNuxAllowed">true</item>
         <item name="feedLikeActiveColor">@color/red_5</item>
         <item name="feedSaveActiveColor">@color/grey_9</item>
         <item name="filterListTheme">@style/Widget.FilterList.Redesign</item>
@@ -3646,11 +3647,6 @@
     <style name="igtv_action_button" parent="@style/ActionBarTextButton.Whiteout">
         <item name="android:shadowColor">@color/black_40_transparent</item>
         <item name="android:shadowRadius">8.0</item>
-    </style>
-    <style name="igtv_browse_loading_placeholder">
-        <item name="android:background">@drawable/browse_loading_placeholder_background</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="igtv_browse_loading_shimmer">
         <item name="android:layout_width">wrap_content</item>

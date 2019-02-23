@@ -101,16 +101,6 @@
         <item quantity="other">Abandonner %1$d brouillons ?</item>
         <item quantity="one">Abandonner 1 brouillon ?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Car vous êtes abonné(e) à</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Aimé par</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s et %2$d autres personnes</item>
-        <item quantity="one">%1$s et %2$d autre personne</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d abonnés</item>
         <item quantity="one">1 abonné(e)</item>
@@ -277,10 +267,6 @@
         <item quantity="other">%1$s et %2$d autres personnes sont en train d’écrire...</item>
         <item quantity="one">%1$s et 1 autre personne sont en train d’écrire...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d commentaires supprimés. Touchez pour annuler.</item>
-        <item quantity="one">Commentaire supprimé. Touchez pour annuler</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d nouvelles publications</item>
         <item quantity="one">1 nouvelle publication</item>
@@ -288,6 +274,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s et &lt;b>%2$s autres personnes&lt;/b></item>
         <item quantity="one">%1$s et &lt;b>1 autre personne&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d commentaires supprimés.</item>
+        <item quantity="one">Commentaire supprimé.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s de vos contacts sont sur Instagram</item>

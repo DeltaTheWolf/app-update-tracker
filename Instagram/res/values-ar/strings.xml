@@ -90,7 +90,6 @@
     <string name="account_privacy_option_status_private">خاص</string>
     <string name="account_privacy_option_status_public">عام</string>
     <string name="account_privacy_option_title">خصوصية الحساب</string>
-    <string name="account_section_title">متجر %1$s</string>
     <string name="action_button">زر الإجراء</string>
     <string name="action_view">عرض</string>
     <string name="activation_card_bio_button_completed_text">تعديل السيرة الذاتية</string>
@@ -249,6 +248,11 @@
     <string name="appeal_violation_title">الملاحظات</string>
     <string name="apply">تطبيق</string>
     <string name="apps_header">حسابات أخرى</string>
+    <string name="ar_effect_cta_text">عرض التأثير</string>
+    <string name="ar_effect_cta_text_with_name">تجربة &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">تأثير كاميرا</string>
+    <string name="ar_effect_link_preview_explanation_text">سيتمكن المشاهدون من التمرير لأعلى لتجربة تأثير الكاميرا الذي تختاره. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">معاينة</string>
     <string name="ar_gallery_button_label">إطار AR</string>
     <string name="archive_highlight_failure">فشلت أرشفة أبرز القصص.</string>
     <string name="archive_highlight_option">أرشفة أبرز القصص</string>
@@ -413,6 +417,7 @@
     <string name="business_account_splash_subtitle">يمنحك حساب العمل المجاني المزيد من الأدوات لتنمية نشاطك التجاري.</string>
     <string name="business_account_splash_title">الحصول على حساب Instagram للأعمال</string>
     <string name="business_address_optional">عنوان النشاط التجاري (اختياري)</string>
+    <string name="business_attribute_sync_toggle_label">استخدام هذه المعلومات لصفحتك على فيسبوك</string>
     <string name="business_conversion_enable_cross_posting">مشاركة منشورات جديدة إلى صفحة فيسبوك</string>
     <string name="business_conversion_import_profile_pic">استيراد صورة الملف الشخصي من Instagram</string>
     <string name="business_email_consent">يرجى إضافة عنوان البريد الإلكتروني الذي تريد تلقي عمليات التواصل المرتبطة بالعمل عليه. سيظهر زر التواصل عبر البريد الإلكتروني على الملف الشخصي لنشاطك التجاري.</string>
@@ -420,6 +425,8 @@
     <string name="business_is_not_on_instagram">هذا النشاط التجاري غير موجود على Instagram حتى الآن. هل تريد زيارته على فيسبوك؟</string>
     <string name="business_landing_terms">الشروط والإرشادات</string>
     <string name="business_name">اسم النشاط التجاري</string>
+    <string name="business_partner_and_merchant_products_dialog_message">عندما تقوم بالإشارة إلى منتجات من نشاط تجاري في منشور، لا يمكنك سوى الإشارة إلى هذا النشاط التجاري كشريك.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">لا يمكن الإشارة إلى منتجات من %1$s</string>
     <string name="business_partner_and_user_name">شريك الأعمال: %1$s</string>
     <string name="business_partner_settings">إعدادات شريك الأعمال</string>
     <string name="business_phone_consent">يرجى إضافة رقم هاتف تريد تلقي المكالمات المرتبطة بالعمل عليه. يجب ألا يكون هذا الرقم مرتبطًا بحساب Instagram حالي.</string>
@@ -445,6 +452,7 @@
     <string name="business_signup_welcome_user_desc">ملفك الشخصي للنشاط التجاري جاهز. يمكنك الآن مشاركة صور ومقاطع فيديو وقصص لها متابعين مع تعزيز نمو نشاطك التجاري. يمكنك تغيير اسم المستخدم الخاص بك في أي وقت.</string>
     <string name="business_signup_welcome_user_title">مرحبًا بك في Instagram،</string>
     <string name="business_tutorials">العروض التوضيحية</string>
+    <string name="button_description">زر</string>
     <string name="caboose_shadow_hint_text">استمر في التمرير لرؤية التوصيات</string>
     <string name="caboose_shadow_hint_text_older">متابعة التمرير لعرض المنشورات الأقدم</string>
     <string name="calendar">التقويم</string>
@@ -589,6 +597,7 @@
     <string name="choosing_who_can_see_your_story">اختيار الأشخاص الذين يمكنهم مشاهدة قصتك</string>
     <string name="city_town">المدينة/البلدة</string>
     <string name="claim">مطالبة</string>
+    <string name="claim_dialog_with_connect_existing_page_content">تم إنشاء صفحة فيسبوك نيابةً عنك عندما بدّلت إلى حساب عمل. يمكنك المطالبة بالصفحة أو ربط صفحة تديرها بالفعل حتى تتمكن من الوصول إلى مزيد من الأشخاص ومساعدتهم في العثور عليك. وتخضع صفحات فيسبوك لهذه %1$s.</string>
     <string name="claim_facebook_page">المطالبة بصفحة فيسبوك</string>
     <string name="claim_page">المطالبة بالصفحة</string>
     <string name="claim_page_button_label">المطالبة بهذا الموقع</string>
@@ -731,7 +740,7 @@
     <string name="connect_contacts_learn_more_text">تعرف على المزيد في %1$s.</string>
     <string name="connect_contacts_options_info_text">لمساعدة الأشخاص في التواصل على Instagram، تتم مزامنة جهات اتصالك بصفة دورية ويتم تخزينها على خوادمنا. ويمكنك اختيار جهات الاتصال التي تريد متابعتها. %1$s.</string>
     <string name="connect_contacts_subtitle">يمكنك العثور على أشخاص تعرفهم على Instagram واختيار من تتابعهم.</string>
-    <string name="connect_existing_page">ربط الصفحة الحالية</string>
+    <string name="connect_existing_page">ربط صفحة حالية</string>
     <string name="connect_fb_and_agree">بالضغط على الزر أعلاه والوصول إلى الرؤى، أنت توافق على %1$s.</string>
     <string name="connect_fb_get_insights">تعرف على متابعيك ومستوى أداء منشوراتك. لن نقوم بنشر أي شيء على فيسبوك دون إذنك.</string>
     <string name="connect_ig_to_fb_page_explain">يمكنك ربط حسابك على Instagram للأعمال بصفحة فيسبوك لتسهيل الأمر على الأشخاص للعثور عليك. ويتم ربط حسابات العمل على Instagram بصفحات فيسبوك وتخضع لـ %1$s.</string>
@@ -876,7 +885,6 @@
     <string name="cta_context_view_on_ig">عرض في Instagram</string>
     <string name="cta_context_view_website_on_ig">عرض موقع الويب على Instagram</string>
     <string name="cta_section_checkout_label">إتمام الشراء على Instagram</string>
-    <string name="cta_section_offsite_label">عرض على موقع الويب</string>
     <string name="cta_section_sold_out_label">مُباع</string>
     <string name="current_password">كلمة السر الحالية</string>
     <string name="currently_promoted">يتم الترويج حاليًا</string>
@@ -1058,6 +1066,7 @@
     <string name="direct_digest_you_sent_gif">لقد أرسلت صورة GIF</string>
     <string name="direct_digest_you_sent_message">لقد أرسلت رسالة</string>
     <string name="direct_digest_you_sent_sticker">أرسلت ملصقًا</string>
+    <string name="direct_digest_you_sent_text_message">أنت: %1$s</string>
     <string name="direct_digest_you_sent_voice">لقد أرسلت رسالة صوتية</string>
     <string name="direct_digest_you_shared_a_comment">لقد قمت بمشاركة تعليق</string>
     <string name="direct_digest_you_shared_link">لقد قمت بمشاركة رابط</string>
@@ -1192,9 +1201,9 @@
     <string name="direct_private_share_action_label_reply">رد</string>
     <string name="direct_private_share_action_label_share_to">مشاركة إلى...</string>
     <string name="direct_private_share_private_live_2_post">لن يتمكن من رؤية فيديو البث المباشر هذا سوى متابعي %1$s فقط.</string>
-    <string name="direct_private_share_private_media_2_post">لن يتمكن من رؤية هذا المنشور سوى متابعي %1$s فقط.</string>
+    <string name="direct_private_share_private_media_2_post">لن يتمكن إلا متابعي %1$s فقط من رؤية هذا المنشور.</string>
     <string name="direct_private_share_private_self_live_2_post">لن يتمكن من رؤية فيديو البث المباشر هذا سوى متابعيك فقط.</string>
-    <string name="direct_private_share_private_self_media_2_post">لن يتمكن من رؤية هذا المنشور سوى متابعيك فقط.</string>
+    <string name="direct_private_share_private_self_media_2_post">لن يتمكن إلا متابعيك فقط من رؤية هذا المنشور.</string>
     <string name="direct_private_share_private_self_story_2_post">لن يتمكن من رؤية هذه القصة سوى متابعيك فقط.</string>
     <string name="direct_private_share_private_story_2_post">سيتمكن متابعو %1$s فقط من رؤية هذه القصة.</string>
     <string name="direct_quick_replies">الردود السريعة</string>
@@ -1240,6 +1249,7 @@
     <string name="direct_reel_share_sender_info_own_story">تمت مشاهدة قصتك</string>
     <string name="direct_replay_expiring_media">إعادة تشغيل</string>
     <string name="direct_reply">رد</string>
+    <string name="direct_reply_edittext_hint_message">رد...</string>
     <string name="direct_reply_sharesheet_row_message">مراسلة %1$s</string>
     <string name="direct_reply_to">رد على</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">يمكنك الرد برسالة.</string>
@@ -1797,7 +1807,7 @@
     <string name="hide_video_from_multi_author_story_message">لن يتم تضمين هذا الفيديو بعد ذلك في قصة %1$s. يمكنك دائمًا إلغاء إخفائه.</string>
     <string name="hide_video_from_multi_author_story_title">هل تريد إخفاء الفيديو من قصة %1$s؟</string>
     <string name="hiding_media">جارٍ الإخفاء...</string>
-    <string name="highlight">إضافة إلى أبرز القصص</string>
+    <string name="highlight">أبرز القصص</string>
     <string name="highlight_button_tooltip">يمكنك الإضافة إلى أبرز القصص لاستمرار ظهور المحتوى على ملفك الشخصي لأكثر من 24 ساعة.</string>
     <string name="highlight_custom_cover_gallery_button_description">فتح المعرض</string>
     <string name="highlight_full_warning_dialog_body_photo">يمكن أن تحتوي أبرز القصص على نحو %1$d من العناصر. في حالة إضافة هذه الصورة، ستتم إزالة أقدم صورة أو فيديو من أبرز القصص لديك.</string>
@@ -1854,10 +1864,8 @@
     <string name="igtv_about_settings_header">حول</string>
     <string name="igtv_account_settings_header">الحساب</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">يجب أن تكون صورة غلافك عمودية.</string>
-    <string name="igtv_attribution">من IGTV</string>
     <string name="igtv_blocked_media">تم حظر الفيديو الخاص بك</string>
     <string name="igtv_blocked_media_item_header">محظور</string>
-    <string name="igtv_browse_for_you_title">عناصر قد تعجبك</string>
     <string name="igtv_channel_settings_header">القناة</string>
     <string name="igtv_copy_link">نسخ الرابط</string>
     <string name="igtv_cover_picker_camera_roll">تحميل من ألبوم الكاميرا</string>
@@ -1909,9 +1917,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">سيتمكن المشاهدون من الضغط على هذا الملصق للمشاهدة على IGTV.</string>
     <string name="igtv_search_results_channels_header">القنوات</string>
     <string name="igtv_search_results_no_channels_found">لم يتم العثور على قنوات</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">خاص فقط بمقاطع فيديو IGTV الأطول من دقيقة.</string>
-    <string name="igtv_share_trailer_to_feed_info">يمكنك المشاركة في ملفك الشخصي أو الموجز. وبإمكان الأشخاص الضغط لمشاهدة الفيديو بالكامل.</string>
-    <string name="igtv_share_trailer_to_feed_title">مشاركة المعاينة في Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">خاص فقط بمقاطع فيديو IGTV الأطول من دقيقة</string>
+    <string name="igtv_share_trailer_to_feed_info">مشاركة معاينة على ملفك الشخصي والموجز</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">تعرف على المزيد</string>
+    <string name="igtv_share_trailer_to_feed_title">مشاركة على Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">تخطي خلال %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">سيتم تشغيل الفيديو خلال %1$s</string>
     <string name="igtv_skip_button_text_skippable">تخطي</string>
@@ -2464,6 +2473,7 @@
     <string name="no_admin_pages_show">ألا ترى صفحتك هنا؟ قد لا تكون مسؤولاً. اتصل بمسؤول صفحتك للحصول على الأذونات.</string>
     <string name="no_country_selection_dialog_subtitle">إنك لم تحدد أي بلدان لبث محتواك فيها، وهو ما يعني أنه لن يتم محتواك في أي مكان، لذلك أوقفنا تشغيل إعداد \"اختيار المواقع\".</string>
     <string name="no_country_selection_dialog_title">لم تقم بتحديد أي بلدان</string>
+    <string name="no_effects_found">لا تتوفر تأثيرات</string>
     <string name="no_eligible_post_subtitle">لا توجد لديك أي منشورات يمكن ترويجها.</string>
     <string name="no_eligible_post_title">لا توجد منشورات مؤهلة</string>
     <string name="no_internet_error_message">لا يمكن مسح البطاقات التعريفية ضوئيًا أثناء عدم الاتصال. يرجى التحقق من الاتصال أو إعادة المحاولة لاحقًا.</string>
@@ -2834,7 +2844,6 @@
     <string name="product_tagging_add_product_limit_reached_video">لا يمكنك إضافة أكثر من 5 منتجات إلى فيديو.</string>
     <string name="product_tagging_add_products">إشارة إلى المنتجات</string>
     <string name="product_tagging_carousel_add_product_limit_reached">لا يمكنك الإشارة إلى أكثر من 20 منتجًا في منشورك بالكامل.</string>
-    <string name="product_tagging_carousel_editing_not_available">لا يمكن تعديل المنشورات التي تمت الإشارة فيها بالفعل إلى منتجات.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">لا يمكنك الإشارة إلى المنتجات في المنشورات التي بها محتوى مرتبط بعلامة تجارية.</string>
     <string name="product_tagging_tag_another_product">الإشارة إلى منتج آخر</string>
     <string name="product_tagging_tap_to_add_photo">اضغط على الصورة للإشارة إلى المنتجات.</string>
@@ -2947,13 +2956,11 @@
     <string name="recipient_picker_sharing_preferences">خيارات المشاركة</string>
     <string name="recipient_picker_sharing_to_fb">وFacebook Story</string>
     <string name="recipient_view_mode_allow_replay">السماح بإعادة التشغيل</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 ساعة</string>
     <string name="recipient_view_mode_allow_replay_upper_case">السماح بإعادة التشغيل</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 ساعة</string>
     <string name="recipient_view_mode_keep_in_chat">عرض في الدردشة بصفة دائمة</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">عرض في الدردشة بصفة دائمة</string>
-    <string name="recipient_view_mode_one_view">مشاهدة واحدة</string>
-    <string name="recipient_view_mode_one_view_upper_case">مشاهدة واحدة</string>
+    <string name="recipient_view_mode_view_once">مشاهدة مرة واحدة</string>
+    <string name="recipient_view_mode_view_once_upper_case">مشاهدة مرة واحدة</string>
     <string name="recommend_accounts_follow_all_button">متابعة الكل</string>
     <string name="recommend_accounts_header">حسابات قد تحوز على إعجاب %1$s</string>
     <string name="recommend_accounts_header_text">يعتقد &lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> أن هذه الحسابات قد تحوز على إعجابك.</string>
@@ -2976,7 +2983,7 @@
     <string name="reel_dashboard_cta_add_to_highlight">إضافة إلى أبرز القصص</string>
     <string name="reel_dashboard_cta_edit">تعديل</string>
     <string name="reel_dashboard_cta_edit_highlight">تعديل %1$s</string>
-    <string name="reel_dashboard_cta_highlight">إضافة إلى أبرز القصص</string>
+    <string name="reel_dashboard_cta_highlight">أبرز القصص</string>
     <string name="reel_dashboard_cta_share_memory">مشاركة هذه الذكرى</string>
     <string name="reel_dashboard_delete_button_label">حذف القصة</string>
     <string name="reel_dashboard_expired_story_notice">لا تتوفر قوائم المشاهدين بعد 24 ساعة.</string>
@@ -3105,7 +3112,7 @@
     <string name="remove_from_saved_or_collection">يمكنك الإزالة من هذه المجموعة أو إزالة هذا العنصر من كل شيء حفظته</string>
     <string name="remove_from_saves">إزالة</string>
     <string name="remove_from_saves_and_collections_dialog_title">هل تريد الإزالة من العناصر المحفوظة والمجموعات؟</string>
-    <string name="remove_igtv_media">إزالة المعاينة</string>
+    <string name="remove_igtv_media">إزالة المعاينة...</string>
     <string name="remove_me_from_post">إزالتي من المنشور</string>
     <string name="remove_me_from_profile">إزالة الرابط</string>
     <string name="remove_me_from_profile_dialog_message">سيظل اسم المستخدم الخاص بك يظهر في هذه السيرة الذاتية، لكنه لن يصبح مرتبطًا بملفك الشخصي بعد ذلك.</string>
@@ -3122,7 +3129,7 @@
     <string name="remove_sponsor_tag_subtitle">لن تتمكن من الاطلاع على الرؤى بعد ذلك. لن يؤدي هذا إلى إزالة المنشور من Instagram.</string>
     <string name="remove_sponsor_tag_title">إزالتي من المنشور</string>
     <string name="remove_tag">إزالة الإشارة</string>
-    <string name="remove_this_igtv_post_confirmation">لن يتمكن متابعوك من معاينة الفيديو الخاص بك على الموجز لديهم أو شبكة الملف الشخصي. وسيظل الفيديو على IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">لن يتمكن متابعوك من معاينة الفيديو الخاص بك على الموجز لديهم أو ملفك الشخصي. وسيظل الفيديو على IGTV.</string>
     <string name="remove_video_highlight_button">إزالة الفيديو</string>
     <string name="remove_video_highlight_message">سيظل بإمكانك مشاهدة هذا الفيديو في الأرشيف. يمكنك حذفه نهائيًا من الأرشيف.</string>
     <string name="remove_video_highlight_message_active">لا تؤدي إزالة هذا الفيديو من أبرز القصص إلى إزالته من قصتك.</string>
@@ -3441,6 +3448,7 @@
     <string name="shopping_on_profile_null_state_message">الآن، لا يمكن لأي شخص غيرك رؤية هذا. وبمجرد إنشاء منشور واحد به منتجات تمت الإشارة إليها، سيراها الأشخاص هنا.</string>
     <string name="shopping_on_profile_null_state_title">ستظهر هنا المنشورات التي تحتوي على منتجات تمت الإشارة إليها</string>
     <string name="shopping_posts">منشورات التسوق</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (مُباع)</string>
     <string name="shopping_viewer_add_posts">إضافة منشورات</string>
     <string name="shopping_viewer_description_title">الوصف</string>
     <string name="shopping_viewer_edit">تعديل</string>
@@ -3687,6 +3695,7 @@
     <string name="tell_us_approval_reason">أخبرنا عن سبب ضرورة موافقتنا على إعلانك. إذا كان هناك خطأ من جانبنا، فسنوافق على إعلانك في أقرب وقت ممكن.</string>
     <string name="terms">الشروط</string>
     <string name="terms_and_data_policy">الشروط وسياسة البيانات</string>
+    <string name="terms_and_privacy">الشروط والخصوصية</string>
     <string name="terms_of_service">شروط الاستخدام</string>
     <string name="terms_of_use">شروط الاستخدام</string>
     <string name="terms_of_use_link">قراء شروط الاستخدام بالكامل</string>
@@ -3716,7 +3725,7 @@
     <string name="this_account_is_private">هذا الحساب خاص</string>
     <string name="this_user_is_private">هذا الحساب خاص</string>
     <string name="thread_title_x_comma_y">%1$s، %2$s</string>
-    <string name="thumbnail_image_variance_selector_title">تحديد %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">تحديد %1$s</string>
     <string name="tilt_mode_linear">خطي</string>
     <string name="tilt_mode_radial">قطري</string>
     <string name="tiltshift">الميل والتحويل</string>
@@ -3949,6 +3958,7 @@
     <string name="under_age_body">من الناحية القانونية، يتعين علينا حذف حسابك وبياناتك خلال 30 يومًا.</string>
     <string name="under_age_title">عمرك الحالي ليس كافيًا لتتمكن من استخدام Instagram</string>
     <string name="undo">تراجع</string>
+    <string name="undo_delete_comments">تراجع</string>
     <string name="unfinished_reg_dialog_continue_button">متابعة</string>
     <string name="unfinished_reg_dialog_message">يمكنك متابعة تسجيل اشتراك حساب أو البدء من جديد.</string>
     <string name="unfinished_reg_dialog_start_over_button">البدء من جديد</string>
@@ -4130,12 +4140,10 @@
     <string name="view_insights">عرض الرؤى</string>
     <string name="view_location">عرض الموقع</string>
     <string name="view_mode_toggle">تبديل وضع العرض</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">يمكنك تعيين اختفاء الرسالة بعد مشاهدة واحدة أو عرضها في الدردشة بصفة دائمة.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">يمكنك تعيين اختفاء الرسالة بعد مشاهدة واحدة أو عرضها في الدردشة بصفة دائمة أدناه.</string>
-    <string name="view_modes_nux_replayability_title">يمكن رؤية هذا المحتوى لمدة 24 ساعة قادمة</string>
     <string name="view_more_information">عرض المزيد من المعلومات</string>
     <string name="view_more_replies">عرض المزيد من الردود (%1$d)</string>
     <string name="view_more_replies_no_count">عرض المزيد من الردود</string>
+    <string name="view_on_website">عرض على موقع الويب</string>
     <string name="view_original">عرض الأصل</string>
     <string name="view_previous_replies">عرض الردود السابقة (%1$d)</string>
     <string name="view_previous_replies_no_count">عرض الردود السابقة</string>

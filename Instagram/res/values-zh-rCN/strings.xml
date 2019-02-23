@@ -91,7 +91,6 @@
     <string name="account_privacy_option_status_private">私密</string>
     <string name="account_privacy_option_status_public">公开</string>
     <string name="account_privacy_option_title">帐户隐私设置</string>
-    <string name="account_section_title">到%1$s购物</string>
     <string name="action_button">行动号召按钮</string>
     <string name="action_view">查看</string>
     <string name="activation_card_bio_button_completed_text">编辑个人简介</string>
@@ -251,6 +250,11 @@
     <string name="appeal_violation_title">反馈</string>
     <string name="apply">应用</string>
     <string name="apps_header">其他帐户</string>
+    <string name="ar_effect_cta_text">查看特效</string>
+    <string name="ar_effect_cta_text_with_name">试试&lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">相机特效</string>
+    <string name="ar_effect_link_preview_explanation_text">浏览者向上滑动即可试用你选择的相机特效。%1$s。</string>
+    <string name="ar_effect_link_preview_link_text">预览</string>
     <string name="ar_gallery_button_label">AR 效果框</string>
     <string name="archive_highlight_failure">无法把快拍精选加入私人影集。</string>
     <string name="archive_highlight_option">移入私人影集</string>
@@ -415,6 +419,7 @@
     <string name="business_account_splash_subtitle">免费业务帐户为你提供更多工具，帮助你增长业务。</string>
     <string name="business_account_splash_title">获得 Instagram 业务帐户</string>
     <string name="business_address_optional">公司地址（非必填）</string>
+    <string name="business_attribute_sync_toggle_label">为你的 Facebook 公共主页使用这项信息</string>
     <string name="business_conversion_enable_cross_posting">把新帖分享到 Facebook 主页</string>
     <string name="business_conversion_import_profile_pic">从 Instagram 导入头像</string>
     <string name="business_email_consent">添加你希望接收业务相关咨询的邮箱。请不要使用与现有 Instagram 帐户关联的电话号码。</string>
@@ -422,6 +427,8 @@
     <string name="business_is_not_on_instagram">这个商家还没加入 Instagram。要不要看看 TA 的 Facebook 主页？</string>
     <string name="business_landing_terms">条款和准则</string>
     <string name="business_name">业务名称</string>
+    <string name="business_partner_and_merchant_products_dialog_message">在帖子中标记商家的商品时，只能把所属商家标记为合作伙伴。</string>
+    <string name="business_partner_and_merchant_products_dialog_title">无法标记%1$s的商品</string>
     <string name="business_partner_and_user_name">合作伙伴：%1$s</string>
     <string name="business_partner_settings">合作伙伴设置</string>
     <string name="business_phone_consent">添加你希望接收业务相关咨询的电话号码。请不要使用与现有 Instagram 帐户绑定的电话号码。</string>
@@ -447,6 +454,7 @@
     <string name="business_signup_welcome_user_desc">你的商家主页已准备就绪。你可以和粉丝分享照片、视频和快拍，进而拓展业务。你可以随时更改帐号。</string>
     <string name="business_signup_welcome_user_title">欢迎使用 Instagram，</string>
     <string name="business_tutorials">教程</string>
+    <string name="button_description">按钮</string>
     <string name="caboose_shadow_hint_text">继续滚动来查看推荐</string>
     <string name="caboose_shadow_hint_text_older">继续滚动查看更早的帖子</string>
     <string name="calendar">日历</string>
@@ -591,13 +599,14 @@
     <string name="choosing_who_can_see_your_story">选择快拍的分享对象</string>
     <string name="city_town">市/县</string>
     <string name="claim">认领</string>
+    <string name="claim_dialog_with_connect_existing_page_content">切换成业务帐户时，系统为你创建了 Facebook 公共主页。认领这个主页或绑定一个你管理的主页，即可向更多用户推广业务，帮助他们找到你。Facebook 公共主页必须遵守这些%1$s。</string>
     <string name="claim_facebook_page">认领 Facebook 主页</string>
     <string name="claim_page">认领主页</string>
     <string name="claim_page_button_label">认领分店</string>
     <string name="claim_page_content">你切换成商家主页时，系统为你创建了%1$s。认领主页即可向更多用户推广业务，帮助他们找到你。Facebook 公共主页必须遵守这些%2$s。</string>
     <string name="claim_page_error_dialog_message">如需认领此地点，你必须是此地址所绑定 Facebook 主页的管理员。</string>
     <string name="claim_page_error_dialog_title">不能认领这个地点</string>
-    <string name="claim_page_sub_title">如需把你的 Instagram 商家主页和这个分店绑定，请先绑定你的 Facebook 主页。我们之后会将 Facebook 主页的业务信息复制过来，方便你编辑。</string>
+    <string name="claim_page_sub_title">如需把你的 Instagram 商家主页和这家分店绑定，请先绑定你的 Facebook 主页。我们之后会将 Facebook 主页的业务信息复制过来，方便你编辑。</string>
     <string name="claim_page_success_dialog_claim_message">你已认领%1$s</string>
     <string name="claim_page_success_dialog_edit_message">现在你可以编辑向用户显示的分店信息。</string>
     <string name="claim_page_success_dialog_titile">分店已认领</string>
@@ -876,7 +885,6 @@
     <string name="cta_context_view_on_ig">在 Instagram 上查看</string>
     <string name="cta_context_view_website_on_ig">在 Instagram 上查看网站</string>
     <string name="cta_section_checkout_label">在 Instagram 结账</string>
-    <string name="cta_section_offsite_label">在网站上查看</string>
     <string name="cta_section_sold_out_label">售罄</string>
     <string name="current_password">旧密码</string>
     <string name="currently_promoted">正在推广</string>
@@ -1058,6 +1066,7 @@
     <string name="direct_digest_you_sent_gif">你发了 1 张动图</string>
     <string name="direct_digest_you_sent_message">你发了消息</string>
     <string name="direct_digest_you_sent_sticker">你发了贴图</string>
+    <string name="direct_digest_you_sent_text_message">你：%1$s</string>
     <string name="direct_digest_you_sent_voice">你发送了语音消息</string>
     <string name="direct_digest_you_shared_a_comment">你分享了评论</string>
     <string name="direct_digest_you_shared_link">你分享了链接</string>
@@ -1240,6 +1249,7 @@
     <string name="direct_reel_share_sender_info_own_story">看了你的快拍</string>
     <string name="direct_replay_expiring_media">重播</string>
     <string name="direct_reply">回复</string>
+    <string name="direct_reply_edittext_hint_message">回复…</string>
     <string name="direct_reply_sharesheet_row_message">发消息给%1$s</string>
     <string name="direct_reply_to">回复：</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">用消息回复。</string>
@@ -1852,10 +1862,8 @@
     <string name="igtv_about_settings_header">简介</string>
     <string name="igtv_account_settings_header">帐户</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">你的封面照片必须为纵向格式。</string>
-    <string name="igtv_attribution">来自 IGTV</string>
     <string name="igtv_blocked_media">你的视频已被屏蔽</string>
     <string name="igtv_blocked_media_item_header">已屏蔽</string>
-    <string name="igtv_browse_for_you_title">为你推荐</string>
     <string name="igtv_channel_settings_header">频道</string>
     <string name="igtv_copy_link">复制链接</string>
     <string name="igtv_cover_picker_camera_roll">从相机胶卷上传</string>
@@ -1907,9 +1915,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">你的观众可以点击此贴图前往 IGTV 观看。</string>
     <string name="igtv_search_results_channels_header">频道</string>
     <string name="igtv_search_results_no_channels_found">找不到频道</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">仅适用于时长超过 1 分钟的 IGTV 视频。</string>
-    <string name="igtv_share_trailer_to_feed_info">分享到你的个人主页和动态。用户轻触即可观看完整视频。</string>
-    <string name="igtv_share_trailer_to_feed_title">把预览分享到 Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">仅适用于时长超过 1 分钟的 IGTV 视频</string>
+    <string name="igtv_share_trailer_to_feed_info">把预览分享到你的个人主页和动态</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">详细了解</string>
+    <string name="igtv_share_trailer_to_feed_title">分享到 Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">即将跳过：%1$s</string>
     <string name="igtv_skip_button_text_non_skippable">%1$s后，精彩放送</string>
     <string name="igtv_skip_button_text_skippable">跳过</string>
@@ -2461,6 +2470,7 @@
     <string name="no_admin_pages_show">未显示主页？你可能不是管理员，请与主页管理员联系获取权限。</string>
     <string name="no_country_selection_dialog_subtitle">你没有选择在什么国家/地区直播内容，这意味着你的内容不会显示到任何地方，因此我们已关闭了“选择地区”设置。</string>
     <string name="no_country_selection_dialog_title">还没选择国家/地区哦</string>
+    <string name="no_effects_found">没有可用特效</string>
     <string name="no_eligible_post_subtitle">你没有可推广的帖子。</string>
     <string name="no_eligible_post_title">没有可推广的帖子</string>
     <string name="no_internet_error_message">离线时无法扫描名片哦。请检查网络连接或稍后再试试。</string>
@@ -2831,7 +2841,6 @@
     <string name="product_tagging_add_product_limit_reached_video">每个视频最多可标记 5 件商品。</string>
     <string name="product_tagging_add_products">标记商品</string>
     <string name="product_tagging_carousel_add_product_limit_reached">整篇帖子最多可标记 20 件商品。</string>
-    <string name="product_tagging_carousel_editing_not_available">帖子已标记商品，无法编辑。</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">无法在包含品牌内容的帖子中标记商品。</string>
     <string name="product_tagging_tag_another_product">标记更多商品</string>
     <string name="product_tagging_tap_to_add_photo">轻触照片，标记商品。</string>
@@ -2944,13 +2953,11 @@
     <string name="recipient_picker_sharing_preferences">分享选项</string>
     <string name="recipient_picker_sharing_to_fb">和 Facebook 快拍</string>
     <string name="recipient_view_mode_allow_replay">允许回看</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 小时</string>
     <string name="recipient_view_mode_allow_replay_upper_case">允许回看</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 小时</string>
     <string name="recipient_view_mode_keep_in_chat">保留在聊天中</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">保留在聊天中</string>
-    <string name="recipient_view_mode_one_view">阅过即焚</string>
-    <string name="recipient_view_mode_one_view_upper_case">阅过即焚</string>
+    <string name="recipient_view_mode_view_once">只能查看一次</string>
+    <string name="recipient_view_mode_view_once_upper_case">只能查看一次</string>
     <string name="recommend_accounts_follow_all_button">全部关注</string>
     <string name="recommend_accounts_header">%1$s可能喜欢的帐户</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b>为你推荐了这些帐户。</string>
@@ -3102,7 +3109,7 @@
     <string name="remove_from_saved_or_collection">你可以从此收藏夹中移除照片/视频，或者从所有收藏中移除该内容</string>
     <string name="remove_from_saves">移除</string>
     <string name="remove_from_saves_and_collections_dialog_title">移出所有收藏夹？</string>
-    <string name="remove_igtv_media">移除预览</string>
+    <string name="remove_igtv_media">移除预览…</string>
     <string name="remove_me_from_post">把我从帖子中移除</string>
     <string name="remove_me_from_profile">移除链接</string>
     <string name="remove_me_from_profile_dialog_message">你的帐号仍会显示在此个人简介中，但不会绑定你的个人主页。</string>
@@ -3119,7 +3126,7 @@
     <string name="remove_sponsor_tag_subtitle">成效分析将不再显示。此操作不会把帖子从 Instagram 移除。</string>
     <string name="remove_sponsor_tag_title">把我从帖子中移除</string>
     <string name="remove_tag">移除标记</string>
-    <string name="remove_this_igtv_post_confirmation">你的粉丝无法在自己的动态或个人主页网格中预览你的视频。你的视频将保留在 IGTV 中。</string>
+    <string name="remove_this_igtv_post_confirmation">粉丝无法在自己的动态或你的个人主页中预览你的视频。视频将保留在 IGTV 中。</string>
     <string name="remove_video_highlight_button">移除视频</string>
     <string name="remove_video_highlight_message">你可以在私人影集中查看或彻底删除这个视频。</string>
     <string name="remove_video_highlight_message_active">从精选中移除这个视频，并不会同时从快拍中移除它。</string>
@@ -3437,6 +3444,7 @@
     <string name="shopping_on_profile_null_state_message">现在只有你能看到哦。创建 1 篇标记商品的帖子后，用户就能在这里看到这篇帖子了。</string>
     <string name="shopping_on_profile_null_state_title">标记商品的帖子都会显示在这里哦</string>
     <string name="shopping_posts">购物帖</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s（售罄）</string>
     <string name="shopping_viewer_add_posts">添加帖子</string>
     <string name="shopping_viewer_description_title">描述</string>
     <string name="shopping_viewer_edit">编辑</string>
@@ -3683,6 +3691,7 @@
     <string name="tell_us_approval_reason">请说明广告应当获得批准的原因。如果是系统误判，我们会尽快批准你的广告投放。</string>
     <string name="terms">条款</string>
     <string name="terms_and_data_policy">条款和数据使用政策</string>
+    <string name="terms_and_privacy">条款和隐私</string>
     <string name="terms_of_service">使用条款</string>
     <string name="terms_of_use">使用条款</string>
     <string name="terms_of_use_link">阅读完整的使用条款</string>
@@ -3713,7 +3722,7 @@
     <string name="this_account_is_private">这是私密帐户</string>
     <string name="this_user_is_private">这是私密帐户</string>
     <string name="thread_title_x_comma_y">%1$s、%2$s</string>
-    <string name="thumbnail_image_variance_selector_title">选择%1$s</string>
+    <string name="thumbnail_image_variant_selector_title">选择%1$s</string>
     <string name="tilt_mode_linear">线性</string>
     <string name="tilt_mode_radial">辐射</string>
     <string name="tiltshift">移轴</string>
@@ -3946,6 +3955,7 @@
     <string name="under_age_body">依据法律规定，我们需要在 30 天内删除你的帐户和数据。</string>
     <string name="under_age_title">你未满规定年龄，不能使用 Instagram</string>
     <string name="undo">撤销</string>
+    <string name="undo_delete_comments">撤销</string>
     <string name="unfinished_reg_dialog_continue_button">继续</string>
     <string name="unfinished_reg_dialog_message">你可以继续注册帐户或重新开始。</string>
     <string name="unfinished_reg_dialog_start_over_button">重新注册</string>
@@ -4019,7 +4029,7 @@
     <string name="username_not_available">帐号不可用</string>
     <string name="username_placeholder">帐号</string>
     <string name="valid_address_to_map">请添加有效地址，方便用户在地图中找到你的位置。</string>
-    <string name="variant_selector_section_error_message">先选择吧</string>
+    <string name="variant_selector_section_error_message">请选择</string>
     <string name="verification_code_instructions">请输入我们发送到%1$s的 6 位数验证码。如果你没有收到验证码，我们可以&lt;b>重发验证码&lt;/b>。</string>
     <string name="verification_code_instructions_with_rate_limit">请输入发送到%1$s的 6 位数验证码。你会在几分钟内收到验证码。如果你未收到，我们可以%2$s。</string>
     <string name="verification_code_request_new_link">重发验证码</string>
@@ -4127,12 +4137,10 @@
     <string name="view_insights">查看成效分析</string>
     <string name="view_location">查看位置</string>
     <string name="view_mode_toggle">切换查看模式</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">你可以将消息设置为阅过即焚，或者让它永久显示在聊天中。</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">你可以在下方将消息设置为阅过即焚，或者让它永久显示在聊天中。</string>
-    <string name="view_modes_nux_replayability_title">此内容将在接下来 24 小时可见</string>
     <string name="view_more_information">查看更多信息</string>
     <string name="view_more_replies">查看更多回复（%1$d）</string>
     <string name="view_more_replies_no_count">查看更多回复</string>
+    <string name="view_on_website">在网站上查看</string>
     <string name="view_original">查看原始媒体</string>
     <string name="view_previous_replies">查看之前的回复（%1$d）</string>
     <string name="view_previous_replies_no_count">查看之前的回复</string>

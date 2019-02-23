@@ -91,7 +91,6 @@
     <string name="account_privacy_option_status_private">privat</string>
     <string name="account_privacy_option_status_public">offentlig</string>
     <string name="account_privacy_option_title">Kontopersonvern</string>
-    <string name="account_section_title">Handle i %1$s</string>
     <string name="action_button">Handlingsknapp</string>
     <string name="action_view">Vis</string>
     <string name="activation_card_bio_button_completed_text">Rediger biografi</string>
@@ -249,6 +248,11 @@
     <string name="appeal_violation_title">Tilbakemeldinger</string>
     <string name="apply">Bruk</string>
     <string name="apps_header">Andre kontoer</string>
+    <string name="ar_effect_cta_text">Se effekt</string>
+    <string name="ar_effect_cta_text_with_name">Prøv &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">Kameraeffekt</string>
+    <string name="ar_effect_link_preview_explanation_text">Seere kan sveipe opp for å prøve kameraeffekten du velger. %1$s.</string>
+    <string name="ar_effect_link_preview_link_text">Forhåndsvisning</string>
     <string name="ar_gallery_button_label">AR-RAMME</string>
     <string name="archive_highlight_failure">Kunne ikke arkivere høydepunkt.</string>
     <string name="archive_highlight_option">Arkiver høydepunkt</string>
@@ -410,6 +414,7 @@
     <string name="business_account_splash_subtitle">Med en gratis bedriftskonto får du flere verktøy som kan skape vekst.</string>
     <string name="business_account_splash_title">Skaff deg en Instagram Business-konto</string>
     <string name="business_address_optional">Bedriftsadresse (valgfritt)</string>
+    <string name="business_attribute_sync_toggle_label">Bruk denne informasjonen på Facebook-siden din</string>
     <string name="business_conversion_enable_cross_posting">Del nye innlegg på Facebook-siden</string>
     <string name="business_conversion_import_profile_pic">Importer profilbilde fra Instagram</string>
     <string name="business_email_consent">Legg til e-postadressen der du ønsker å motta bedriftsrelaterte meldinger. En kontaktknapp for e-post blir vist på bedriftsprofilen din.</string>
@@ -417,6 +422,8 @@
     <string name="business_is_not_on_instagram">Denne bedriften er ikke på Instagram ennå. Vil du besøke den på Facebook?</string>
     <string name="business_landing_terms">Betingelser og retningslinjer</string>
     <string name="business_name">Bedriftsnavn</string>
+    <string name="business_partner_and_merchant_products_dialog_message">Når du tagger produkter fra en bedrift i et innlegg, kan du bare tagge den bedriften som partner.</string>
+    <string name="business_partner_and_merchant_products_dialog_title">Kan ikke tagge produkter fra %1$s</string>
     <string name="business_partner_and_user_name">Forretningspartner: %1$s</string>
     <string name="business_partner_settings">Innstillinger for forretningspartner</string>
     <string name="business_phone_consent">Legg til et telefonnummer der du ønsker å motta bedriftsrelaterte anrop. Dette nummeret bør ikke være tilknyttet en eksisterende Instagram-konto.</string>
@@ -442,6 +449,7 @@
     <string name="business_signup_welcome_user_desc">Bedriftsprofilen din er klar. Nå kan du dele bilder, videoer og historier med følgerne dine, mens du skaper vekst i bedriften. Du kan når som helst endre brukernavnet.</string>
     <string name="business_signup_welcome_user_title">Velkommen til Instagram,</string>
     <string name="business_tutorials">Veiledninger</string>
+    <string name="button_description">Knapp</string>
     <string name="caboose_shadow_hint_text">Fortsett å bla for å se forslag</string>
     <string name="caboose_shadow_hint_text_older">Fortsett å bla for å se eldre innlegg</string>
     <string name="calendar">Kalender</string>
@@ -582,6 +590,7 @@
     <string name="choosing_who_can_see_your_story">Velge hvem som kan se historien din</string>
     <string name="city_town">By/sted</string>
     <string name="claim">Gjør krav på</string>
+    <string name="claim_dialog_with_connect_existing_page_content">En Facebook-side ble opprettet for deg da du byttet til en bedriftskonto. Gjør krav på denne siden nå eller tilknytt en side du allerede administrerer, slik at du kan nå flere personer og hjelpe dem med å finne deg. Facebook-sider er underlagt disse %1$s.</string>
     <string name="claim_facebook_page">Gjør krav på Facebook-side</string>
     <string name="claim_page">Gjør krav på side</string>
     <string name="claim_page_button_label">Gjør krav på dette stedet</string>
@@ -723,7 +732,7 @@
     <string name="connect_contacts_learn_more_text">Finn ut mer i %1$s.</string>
     <string name="connect_contacts_options_info_text">For å hjelpe folk å få kontakt på Instagram, blir kontaktene dine regelmessig synkronisert og lagret på serverne våre. Du velger hvem du vil følge. %1$s.</string>
     <string name="connect_contacts_subtitle">Finn folk du kjenner, på Instagram, og velg hvem du vil følge.</string>
-    <string name="connect_existing_page">Koble til eksisterende side</string>
+    <string name="connect_existing_page">Tilknytt en eksisterende side</string>
     <string name="connect_fb_and_agree">Ved å trykke på knappen over og åpne innsikt, samtykker du i våre %1$s.</string>
     <string name="connect_fb_get_insights">Bli kjent med følgerne dine, og se hvordan innleggene dine gjør det. Vi publiserer ikke noe på Facebook uten din tillatelse.</string>
     <string name="connect_ig_to_fb_page_explain">Knytt Instagram Business-kontoen din til en Facebook-side, slik at det blir enklere for folk å finne deg. Bedriftskontoer på Instagram tilknyttes Facebook-sider og er underlagt deres %1$s.</string>
@@ -868,7 +877,6 @@
     <string name="cta_context_view_on_ig">Vis på Instagram</string>
     <string name="cta_context_view_website_on_ig">Vis nettsted på Instagram</string>
     <string name="cta_section_checkout_label">Betal på Instagram</string>
-    <string name="cta_section_offsite_label">Se på nettstedet</string>
     <string name="cta_section_sold_out_label">Utsolgt</string>
     <string name="current_password">Nåværende passord</string>
     <string name="currently_promoted">Promotert for øyeblikket</string>
@@ -1050,6 +1058,7 @@
     <string name="direct_digest_you_sent_gif">Du har sendt en GIF</string>
     <string name="direct_digest_you_sent_message">Du har sendt en melding</string>
     <string name="direct_digest_you_sent_sticker">Du har sendt en etikett</string>
+    <string name="direct_digest_you_sent_text_message">Du: %1$s</string>
     <string name="direct_digest_you_sent_voice">Du har sendt en talemelding</string>
     <string name="direct_digest_you_shared_a_comment">Du har delt en kommentar</string>
     <string name="direct_digest_you_shared_link">Du har delt en lenke</string>
@@ -1230,6 +1239,7 @@
     <string name="direct_reel_share_sender_info_own_story">Har sett historien din</string>
     <string name="direct_replay_expiring_media">Spill av på nytt</string>
     <string name="direct_reply">Svar</string>
+    <string name="direct_reply_edittext_hint_message">Svar …</string>
     <string name="direct_reply_sharesheet_row_message">Send melding til %1$s</string>
     <string name="direct_reply_to">Svar til</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Svar med en melding.</string>
@@ -1836,10 +1846,8 @@
     <string name="igtv_about_settings_header">Om</string>
     <string name="igtv_account_settings_header">Konto</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Forsidebildet må være vertikalt.</string>
-    <string name="igtv_attribution">Fra IGTV</string>
     <string name="igtv_blocked_media">Videoen din ble blokkert</string>
     <string name="igtv_blocked_media_item_header">Blokkert</string>
-    <string name="igtv_browse_for_you_title">For deg</string>
     <string name="igtv_channel_settings_header">Kanal</string>
     <string name="igtv_copy_link">Kopier lenke</string>
     <string name="igtv_cover_picker_camera_roll">Last opp fra kamerarull</string>
@@ -1891,9 +1899,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">Seerene dine vil kunne trykke på dette klistremerket for å se på IGTV.</string>
     <string name="igtv_search_results_channels_header">Kanaler</string>
     <string name="igtv_search_results_no_channels_found">Fant ingen kanaler</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Bare for IGTV-videoer som er lengre enn et minutt.</string>
-    <string name="igtv_share_trailer_to_feed_info">Del på profilen og i oppdateringen din. Folk kan trykke for å se hele videoen.</string>
-    <string name="igtv_share_trailer_to_feed_title">Del forhåndsvisningen på Instagram</string>
+    <string name="igtv_share_trailer_to_feed_ineligible">Bare for IGTV-videoer som er lengre enn et minutt</string>
+    <string name="igtv_share_trailer_to_feed_info">Del en forhåndsvisning i profilen din og oppdateringen din</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">Finn ut mer</string>
+    <string name="igtv_share_trailer_to_feed_title">Del på Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">Hopp over om %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Videoen spilles av om %1$s</string>
     <string name="igtv_skip_button_text_skippable">Hopp over</string>
@@ -2441,6 +2450,7 @@
     <string name="no_admin_pages_show">Ser du ikke siden din her? Du er kanskje ikke administrator. Kontakt sideadministratoren for å få tillatelser.</string>
     <string name="no_country_selection_dialog_subtitle">Du har ikke valgt noen land der du vil sende innholdet ditt, noe som betyr at innholdet ikke vises noe sted. Vi har derfor slått av innstillingen \"Velg steder\".</string>
     <string name="no_country_selection_dialog_title">Du har ikke valgt noen land ennå</string>
+    <string name="no_effects_found">Ingen tilgjengelige effekter</string>
     <string name="no_eligible_post_subtitle">Du har ingen innlegg som kan promoteres.</string>
     <string name="no_eligible_post_title">Ingen kvalifiserte innlegg</string>
     <string name="no_internet_error_message">Navnelapper kan ikke skannes nor du ikke er tilkoblet Internett. Kontroller tilkoblingen, eller prøv på nytt senere.</string>
@@ -2809,7 +2819,6 @@
     <string name="product_tagging_add_product_limit_reached_video">Du kan ikke legge til flere enn 5 produkter i en video.</string>
     <string name="product_tagging_add_products">Tagg produkter</string>
     <string name="product_tagging_carousel_add_product_limit_reached">Du kan ikke tagge flere enn 20 produkter i innlegget ditt.</string>
-    <string name="product_tagging_carousel_editing_not_available">Innlegg som allerede er tagget med produkter, kan ikke redigeres.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Du kan ikke tagge produkter i innlegg med merkeinnhold.</string>
     <string name="product_tagging_tag_another_product">Tagg et annet produkt</string>
     <string name="product_tagging_tap_to_add_photo">Trykk på bildet for å tagge produkter.</string>
@@ -2921,13 +2930,11 @@
     <string name="recipient_picker_sharing_preferences">Delingsvalg</string>
     <string name="recipient_picker_sharing_to_fb">Og Facebook Story</string>
     <string name="recipient_view_mode_allow_replay">Tillat å spille av på nytt</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 timer</string>
     <string name="recipient_view_mode_allow_replay_upper_case">TILLAT Å SPILLE AV PÅ NYTT</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 TIMER</string>
     <string name="recipient_view_mode_keep_in_chat">Behold i chat</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">BEHOLD I CHAT</string>
-    <string name="recipient_view_mode_one_view">Én visning</string>
-    <string name="recipient_view_mode_one_view_upper_case">ÉN VISNING</string>
+    <string name="recipient_view_mode_view_once">Vis én gang</string>
+    <string name="recipient_view_mode_view_once_upper_case">VIS ÉN GANG</string>
     <string name="recommend_accounts_follow_all_button">Følg alle</string>
     <string name="recommend_accounts_header">Kontoer %1$s kanskje vil like</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> tror at du kan like disse kontoene.</string>
@@ -3078,7 +3085,7 @@
     <string name="remove_from_saved_or_collection">Du kan fjerne ting fra denne samlingen eller fra alt du har lagret</string>
     <string name="remove_from_saves">Fjern</string>
     <string name="remove_from_saves_and_collections_dialog_title">Vil du fjerne fra lagrede og samlinger?</string>
-    <string name="remove_igtv_media">Fjern forhåndsvisning</string>
+    <string name="remove_igtv_media">Fjern forhåndsvisning ...</string>
     <string name="remove_me_from_post">Fjern meg fra innlegget</string>
     <string name="remove_me_from_profile">Fjern lenke</string>
     <string name="remove_me_from_profile_dialog_message">Brukernavnet ditt vises fortsatt i biografien, men det er ikke lenger koblet til profilen din.</string>
@@ -3095,7 +3102,7 @@
     <string name="remove_sponsor_tag_subtitle">Du vil ikke lenger se innsikt. Dette fjerner ikke innlegget fra Instagram.</string>
     <string name="remove_sponsor_tag_title">Fjern meg fra innlegget</string>
     <string name="remove_tag">Fjern tagg</string>
-    <string name="remove_this_igtv_post_confirmation">Følgerne dine vil ikke kunne forhåndsvise videoen din i oppdateringen sin eller profilrutene sine. Videoen din blir på IGTV.</string>
+    <string name="remove_this_igtv_post_confirmation">Følgerne dine vil ikke kunne forhåndsvise videoen din i oppdateringen sin eller på profilen din. Videoen din blir på IGTV.</string>
     <string name="remove_video_highlight_button">Fjern video</string>
     <string name="remove_video_highlight_message">Du kan fortsatt se denne videoen i arkivet ditt. Du kan slette den fra arkivet for godt.</string>
     <string name="remove_video_highlight_message_active">Selv om du fjerner denne videoen fra høydepunktet, blir den ikke fjernet fra historien.</string>
@@ -3410,6 +3417,7 @@
     <string name="shopping_on_profile_null_state_message">Akkurat nå er det bare du som kan se dette. Straks du har opprettet ett innlegg med taggede produkter, kan andre se dem her.</string>
     <string name="shopping_on_profile_null_state_title">Innlegg med taggede produkter vil bli vist her</string>
     <string name="shopping_posts">Innlegg om shopping</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (utsolgt)</string>
     <string name="shopping_viewer_add_posts">Legg til innlegg</string>
     <string name="shopping_viewer_description_title">Beskrivelse</string>
     <string name="shopping_viewer_edit">Rediger</string>
@@ -3647,15 +3655,18 @@
     <string name="take_picture">Ta bilde</string>
     <string name="tap_for_caption_title">Trykk for undertekst</string>
     <string name="tap_to_keep_watching">Se videre</string>
+    <string name="tap_to_keep_watching_video_description">Trykk for å fortsette å se på videoen</string>
     <string name="tap_to_like">Trykk for å like kommentaren</string>
     <string name="tap_to_reload">Kan ikke laste inn bilde. Trykk for å prøve igjen</string>
     <string name="tap_to_unlike">Trykk for å slutte å like kommentaren</string>
     <string name="tap_to_view_combined_tags">TRYKK FOR Å SE TAGGER</string>
     <string name="tap_to_view_product_items">TRYKK FOR Å VISE PRODUKTER</string>
+    <string name="tap_to_watch_video_description">Trykk for å se videoen</string>
     <string name="tap_to_watch_video_nux">SE HELE VIDEOEN</string>
     <string name="tell_us_approval_reason">Fortell oss hvorfor annonsen din burde bli godkjent. Hvis vi har gjort en feil, godkjenner vi annonsen så snart som mulig.</string>
     <string name="terms">Betingelser</string>
     <string name="terms_and_data_policy">Betingelser og retningslinjer for data</string>
+    <string name="terms_and_privacy">Vilkår og personvern</string>
     <string name="terms_of_service">Betingelser</string>
     <string name="terms_of_use">Betingelser</string>
     <string name="terms_of_use_link">Les de fullstendige betingelsene</string>
@@ -3684,7 +3695,7 @@
     <string name="thanks_for_let_us_know">Takk for at du sa fra.</string>
     <string name="this_account_is_private">Denne kontoen er privat</string>
     <string name="this_user_is_private">Denne kontoen er privat</string>
-    <string name="thumbnail_image_variance_selector_title">Velg %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Velg %1$s</string>
     <string name="tilt_mode_linear">Lineær</string>
     <string name="tilt_mode_radial">Radiell</string>
     <string name="tiltshift">Endre helling</string>
@@ -3917,6 +3928,7 @@
     <string name="under_age_body">Ifølge loven må vi slette kontoen din og dataene dine innen 30 dager.</string>
     <string name="under_age_title">Du er ikke gammel nok til å bruke Instagram</string>
     <string name="undo">Angre</string>
+    <string name="undo_delete_comments">Angre</string>
     <string name="unfinished_reg_dialog_continue_button">Fortsett</string>
     <string name="unfinished_reg_dialog_message">Du kan fortsette å registrere deg for en konto eller starte på nytt.</string>
     <string name="unfinished_reg_dialog_start_over_button">Start på nytt</string>
@@ -4093,15 +4105,13 @@
     <string name="view_features">Vis funksjoner</string>
     <string name="view_hashtag_page">Vis emneknaggside</string>
     <string name="view_hashtags">Vis emneknagger</string>
-    <string name="view_insights">Vis innsikt</string>
+    <string name="view_insights">Se innsikt</string>
     <string name="view_location">Vis sted</string>
     <string name="view_mode_toggle">Bytt visningsmodus</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Du kan velge om meldingen skal forsvinne etter én visning eller beholdes permanent i chatten.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Du kan velge om meldingen skal forsvinne etter én visning eller beholdes permanent i chatten.</string>
-    <string name="view_modes_nux_replayability_title">Dette er synlig i de neste 24 timene</string>
     <string name="view_more_information">Vis mer informasjon</string>
     <string name="view_more_replies">Vis flere svar (%1$d)</string>
     <string name="view_more_replies_no_count">Vis flere svar</string>
+    <string name="view_on_website">Se på nettstedet</string>
     <string name="view_original">Se opprinnelig</string>
     <string name="view_previous_replies">Vis tidligere svar (%1$d)</string>
     <string name="view_previous_replies_no_count">Vis tidligere svar</string>

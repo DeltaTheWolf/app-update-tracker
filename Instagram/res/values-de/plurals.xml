@@ -110,16 +110,6 @@
         <item quantity="other">%1$d Entwürfe verwerfen?</item>
         <item quantity="one">1 Entwurf verwerfen?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Du folgst</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Gefällt:</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s und %2$d weitere(n) Personen</item>
-        <item quantity="one">%1$s und %2$d weitere(n) Person</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d Abonnenten</item>
         <item quantity="one">1 Abonnent</item>
@@ -286,10 +276,6 @@
         <item quantity="other">%1$s und %2$d weitere Personen schreiben etwas ...</item>
         <item quantity="one">%1$s und 1 weitere Person schreiben etwas ...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d Kommentare gelöscht. Zum Rückgängigmachen antippen.</item>
-        <item quantity="one">Kommentar gelöscht. Zum Rückgängigmachen antippen.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d neue Beiträge</item>
         <item quantity="one">1 neuer Beitrag</item>
@@ -297,6 +283,10 @@
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s und &lt;b>%2$s weitere Personen&lt;/b></item>
         <item quantity="one">%1$s und &lt;b>1 weitere Person&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">%1$d Kommentare wurden gelöscht.</item>
+        <item quantity="one">Kommentar gelöscht.</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">%1$s deiner Kontakte sind auf Instagram</item>

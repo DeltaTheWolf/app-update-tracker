@@ -100,15 +100,6 @@
         <item quantity="one">Сбросить %1$d черновик?</item>
         <item quantity="few">Сбросить %1$d черновика?</item>
     </plurals>
-    <plurals name="discovery_item_follow">
-        <item quantity="other">Потому что вы подписаны на:</item>
-    </plurals>
-    <plurals name="discovery_item_liked_by">
-        <item quantity="other">Отметки \"Нравится\":</item>
-    </plurals>
-    <plurals name="discovery_item_multiple_users_format">
-        <item quantity="other">%1$s + еще %2$d</item>
-    </plurals>
     <plurals name="followers_button">
         <item quantity="other">%1$d подписчиков</item>
         <item quantity="one">%1$d подписчик</item>
@@ -274,11 +265,6 @@
     <plurals name="typing_indicator_many">
         <item quantity="other">%1$s и еще %2$d печатают сообщения...</item>
     </plurals>
-    <plurals name="undo_x_deleted">
-        <item quantity="other">%1$d комментариев удалено. Коснитесь, чтобы отменить.</item>
-        <item quantity="one">%1$d комментарий удален. Коснитесь, чтобы отменить.</item>
-        <item quantity="few">%1$d комментария удалено. Коснитесь, чтобы отменить.</item>
-    </plurals>
     <plurals name="unseen_posts">
         <item quantity="other">%1$d новых публикаций</item>
         <item quantity="one">%1$d новая публикация</item>
@@ -286,6 +272,11 @@
     </plurals>
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s и ещё &lt;b>%2$s&lt;/b></item>
+    </plurals>
+    <plurals name="x_comments_deleted">
+        <item quantity="other">Удалены %1$d комментариев</item>
+        <item quantity="one">Удален %1$d комментарий</item>
+        <item quantity="few">Удалено %1$d комментария</item>
     </plurals>
     <plurals name="x_contacts_on_instagram">
         <item quantity="other">Ваши контакты в Instagram: %1$s</item>

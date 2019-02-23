@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.instagram.discovery.ui.FixedAspectRatioVideoLayout android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<com.instagram.discovery.ui.FixedAspectRatioVideoLayout android:id="@id/layout_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <View android:background="@drawable/video_overlay_full_darkened_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <include layout="@layout/video_item_image_preview_layout" />
@@ -9,5 +9,4 @@
         <TextView android:textSize="@dimen/video_item_overlay_title_font_large" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/video_overlay_text_title" android:paddingBottom="@dimen/video_item_overlay_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
         <com.instagram.ui.widget.imageview.BlinkingImageView android:id="@id/video_overlay_state_icon" android:background="@drawable/channel_play_container_dark_transparent_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_play" />
     </LinearLayout>
-    <ViewStub android:layout_gravity="end|center|top" android:id="@id/video_context_stub" android:layout="@layout/video_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/video_item_overlay_context_margin" />
 </com.instagram.discovery.ui.FixedAspectRatioVideoLayout>

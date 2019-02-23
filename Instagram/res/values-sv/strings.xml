@@ -96,7 +96,6 @@
     <string name="account_privacy_option_status_private">privat</string>
     <string name="account_privacy_option_status_public">offentligt</string>
     <string name="account_privacy_option_title">Kontosekretess</string>
-    <string name="account_section_title">Butiken %1$s</string>
     <string name="action_button">Knapp för Call to Action</string>
     <string name="action_view">Visa</string>
     <string name="activation_card_bio_button_completed_text">Redigera biografi</string>
@@ -253,6 +252,8 @@
     <string name="appeal_submitted_title">Din överklagan har skickats.</string>
     <string name="apply">Tillämpa</string>
     <string name="apps_header">Andra konton</string>
+    <string name="ar_effect_link_option">Kameraeffekt</string>
+    <string name="ar_effect_link_preview_link_text">Förhandsgranska</string>
     <string name="archive_highlight_failure">Det gick inte att arkivera höjdpunkten.</string>
     <string name="archive_highlight_option">Arkivera höjdpunkt</string>
     <string name="archive_highlight_success">Höjdpunkten har arkiverats.</string>
@@ -410,6 +411,7 @@
     <string name="business_account_splash_subtitle">Ett kostnadsfritt företagskonto ger dig fler verktyg för att växa.</string>
     <string name="business_account_splash_title">Skaffa ett Instagram Business-konto</string>
     <string name="business_address_optional">Företagsadress (valfritt)</string>
+    <string name="business_attribute_sync_toggle_label">Använd den här infon för din Facebook-sida</string>
     <string name="business_conversion_enable_cross_posting">Dela nya inlägg på Facebook-sidan</string>
     <string name="business_conversion_import_profile_pic">Importera profilfoto från Instagram</string>
     <string name="business_email_consent">Lägg till den e-postadress där du vill ta emot affärsrelaterade meddelanden. En knapp för e-postkontakt visas i din företagsprofil.</string>
@@ -575,6 +577,7 @@
     <string name="choosing_who_can_see_your_story">Välj vem som kan se din händelse</string>
     <string name="city_town">Stad/ort</string>
     <string name="claim">Gör anspråk på</string>
+    <string name="claim_dialog_with_connect_existing_page_content">En Facebook-sida skapades åt dig när du ändrade till ett företagskonto. Gör anspråk på den här sidan eller anslut en sida du redan hanterar så att du kan nå fler personer och hjälpa dem att hitta dig. Facebook-sidor omfattas av dessa %1$s.</string>
     <string name="claim_facebook_page">Gör anspråk på Facebook-sida</string>
     <string name="claim_page">Gör anspråk på sida</string>
     <string name="claim_page_button_label">Gör anspråk på den här platsen</string>
@@ -714,6 +717,7 @@
     <string name="connect_contacts_learn_more_text">Få reda på mer i %1$s.</string>
     <string name="connect_contacts_options_info_text">För att hjälpa användarna att få kontakt på Instagram synkas dina kontakter regelbundet och lagras på våra servrar. Du väljer vilka du vill följa. %1$s.</string>
     <string name="connect_contacts_subtitle">Hitta personer som du känner på Instagram och välj vilka du vill följa.</string>
+    <string name="connect_existing_page">Anslut en befintlig sida</string>
     <string name="connect_fb_and_agree">Genom att trycka på knappen ovan och få tillgång till statistiken godkänner du vår %1$s.</string>
     <string name="connect_fb_get_insights">Läs mer om dina följare och se resultaten för dina inlägg. Vi publicerar inget på Facebook utan ditt godkännande.</string>
     <string name="connect_ig_to_fb_page_explain">Länka till Instagram Business-konto till en Facebook-sida för att göra det lättare för andra att hitta dig. Företagskonton på Instagram är länkade till Facebook-sidor och omfattas av samma %1$s.</string>
@@ -854,7 +858,6 @@
     <string name="cta_context_view_on_ig">Visa på Instagram</string>
     <string name="cta_context_view_website_on_ig">Visa webbplats på Instagram</string>
     <string name="cta_section_checkout_label">Betala på Instagram</string>
-    <string name="cta_section_offsite_label">Visa på webbplatsen</string>
     <string name="cta_section_sold_out_label">Slutsålt</string>
     <string name="current_password">Nuvarande lösenord</string>
     <string name="currently_promoted">Marknadsförs just nu</string>
@@ -1034,6 +1037,7 @@
     <string name="direct_digest_you_sent_gif">Du har skickat en GIF</string>
     <string name="direct_digest_you_sent_message">Du har skickat ett meddelande</string>
     <string name="direct_digest_you_sent_sticker">Du har skickat en dekal</string>
+    <string name="direct_digest_you_sent_text_message">Du: %1$s</string>
     <string name="direct_digest_you_sent_voice">Du har skickat ett röstmeddelande</string>
     <string name="direct_digest_you_shared_a_comment">Du har delat en kommentar</string>
     <string name="direct_digest_you_shared_link">Du har delat en länk</string>
@@ -1206,6 +1210,7 @@
     <string name="direct_reel_share_sender_info_own_story">Har visat din händelse</string>
     <string name="direct_replay_expiring_media">Spela igen</string>
     <string name="direct_reply">Svara</string>
+    <string name="direct_reply_edittext_hint_message">Svara ...</string>
     <string name="direct_reply_sharesheet_row_message">Skicka meddelande till %1$s</string>
     <string name="direct_reply_to">Svara till</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">Svara med ett meddelande.</string>
@@ -1806,10 +1811,8 @@
     <string name="igtv_about_settings_header">Om</string>
     <string name="igtv_account_settings_header">Konto</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">Din omslagsbild måste vara vertikal.</string>
-    <string name="igtv_attribution">Från IGTV</string>
     <string name="igtv_blocked_media">Ditt videoklipp har blockerats</string>
     <string name="igtv_blocked_media_item_header">Blockerat</string>
-    <string name="igtv_browse_for_you_title">För dig</string>
     <string name="igtv_channel_settings_header">Kanal</string>
     <string name="igtv_copy_link">Kopiera länk</string>
     <string name="igtv_cover_picker_camera_roll">Ladda upp från kamerarullen</string>
@@ -2744,7 +2747,6 @@
     <string name="product_tagging_add_product_limit_reached_video">Du kan inte lägga till fler än 5 produkter i ett videoklipp.</string>
     <string name="product_tagging_add_products">Tagga produkter</string>
     <string name="product_tagging_carousel_add_product_limit_reached">Du kan inte tagga fler än 20 produkter i ditt inlägg.</string>
-    <string name="product_tagging_carousel_editing_not_available">Inlägg som redan har taggats med produkter går inte att redigera.</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">Du kan inte tagga produkter i inlägg med branded content.</string>
     <string name="product_tagging_tag_another_product">Tagga en annan produkt</string>
     <string name="product_tagging_tap_to_add_photo">Tryck på fotot för att tagga produkter.</string>
@@ -2848,13 +2850,9 @@
     <string name="recipient_picker_sharing_preferences">Delningsalternativ</string>
     <string name="recipient_picker_sharing_to_fb">Och Facebook-händelse</string>
     <string name="recipient_view_mode_allow_replay">Tillåt att spela igen</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 timmar</string>
     <string name="recipient_view_mode_allow_replay_upper_case">TILLÅT ATT SPELA IGEN</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 TIMMAR</string>
     <string name="recipient_view_mode_keep_in_chat">Behåll i chatten</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">BEHÅLL I CHATTEN</string>
-    <string name="recipient_view_mode_one_view">En enda visning</string>
-    <string name="recipient_view_mode_one_view_upper_case">EN ENDA VISNING</string>
     <string name="recommend_accounts_follow_all_button">Följ alla</string>
     <string name="recommend_accounts_header">Konton som %1$s kanske gillar</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> tror att du kanske gillar dessa konton.</string>
@@ -3562,6 +3560,7 @@
     <string name="tell_us_approval_reason">Berätta varför din annons borde godkännas. Om vi har gjort ett misstag kommer vi att godkänna din annons så snart vi kan.</string>
     <string name="terms">användarvillkor</string>
     <string name="terms_and_data_policy">Användarvillkor och datapolicy</string>
+    <string name="terms_and_privacy">Villkor och sekretess</string>
     <string name="terms_of_service">Användarvillkor</string>
     <string name="terms_of_use">Användarvillkor</string>
     <string name="terms_of_use_link">Läs igenom de fullständiga villkoren</string>
@@ -3590,7 +3589,7 @@
     <string name="thanks_for_let_us_know">Tack för att du meddelat oss.</string>
     <string name="this_account_is_private">Det här kontot är privat</string>
     <string name="this_user_is_private">Det här kontot är privat</string>
-    <string name="thumbnail_image_variance_selector_title">Välj %1$s</string>
+    <string name="thumbnail_image_variant_selector_title">Välj %1$s</string>
     <string name="tilt_mode_linear">Linjär</string>
     <string name="time_remaining">Återstående tid</string>
     <string name="time_spent_dashboard_action_bar_title">Din aktivitet</string>
@@ -3819,6 +3818,7 @@
     <string name="under_age_body">Av juridiska skäl måste vi ta bort ditt konto och dina data inom 30 dagar.</string>
     <string name="under_age_title">Du är inte tillräckligt gammal för att använda Instagram</string>
     <string name="undo">Ångra</string>
+    <string name="undo_delete_comments">Ångra</string>
     <string name="unfinished_reg_dialog_continue_button">Fortsätt</string>
     <string name="unfinished_reg_dialog_message">Du kan fortsätta registrera dig för ett konto eller börja om.</string>
     <string name="unfinished_reg_dialog_start_over_button">Börja om</string>
@@ -3993,9 +3993,6 @@
     <string name="view_insights">Visa statistik</string>
     <string name="view_location">Visa plats</string>
     <string name="view_mode_toggle">Ändra visningsläge</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">Du kan låta meddelandet försvinna efter en visning eller behålla det i chatten permanent.</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">Du kan välja att låta meddelandet försvinna efter en visning eller behålla det i chatten permanent nedan.</string>
-    <string name="view_modes_nux_replayability_title">Detta går att visa under det närmaste dygnet</string>
     <string name="view_more_information">Visa mer information</string>
     <string name="view_more_replies">Visa fler svar (%1$d)</string>
     <string name="view_more_replies_no_count">Visa fler svar</string>

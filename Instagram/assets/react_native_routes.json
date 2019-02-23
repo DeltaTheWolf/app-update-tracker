@@ -649,7 +649,16 @@
       }
     },
     "path": "/ig_payments_checkout_add_new_payment_method",
-    "paramDefinitions": {}
+    "paramDefinitions": {
+      "payPalURL": {
+        "type": "String",
+        "required": false
+      },
+      "payPalLoginReferenceId": {
+        "type": "String",
+        "required": false
+      }
+    }
   },
   {
     "name": "IgPaymentsCheckoutUpdateCheckoutAPIExampleRoute",
@@ -659,7 +668,8 @@
   {
     "name": "IgPaymentsCreditCardFormRoute",
     "navigationOptions": {
-      "analyticsModule": "payments_settings_add_card"
+      "analyticsModule": "payments_settings_add_card",
+      "disableGesture": true
     },
     "path": "/ig_payments_credit_card_form",
     "paramDefinitions": {
@@ -692,6 +702,28 @@
     }
   },
   {
+    "name": "IgPaymentsCheckoutAddPayPalRoute",
+    "path": "/ig_payments_checkout_payment_methods_add_paypal",
+    "paramDefinitions": {
+      "emitEventOnSuccess": {
+        "type": "Bool",
+        "required": true
+      },
+      "paymentType": {
+        "type": "String",
+        "required": true
+      },
+      "refId": {
+        "type": "String",
+        "required": true
+      },
+      "url": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
     "name": "IgPaymentsPINMutationRoute",
     "navigationOptions": {
       "analyticsModule": "payments_settings_security_pin"
@@ -702,7 +734,8 @@
   {
     "name": "IgPaymentsPINRoute",
     "navigationOptions": {
-      "analyticsModule": "payments_settings_security_pin"
+      "analyticsModule": "payments_settings_security_pin",
+      "disableGesture": true
     },
     "path": "/ig_payments_pin",
     "paramDefinitions": {
@@ -780,7 +813,8 @@
   {
     "name": "IgPaymentsSettingsShippingAddressRoute",
     "navigationOptions": {
-      "analyticsModule": "payments_settings_edit_address"
+      "analyticsModule": "payments_settings_edit_address",
+      "disableGesture": true
     },
     "path": "/ig_payments_settings_shipping_address",
     "paramDefinitions": {
@@ -820,7 +854,8 @@
         "fbt": true,
         "hashKey": "WDpwP"
       },
-      "analyticsModule": "payments_settings_contact_info"
+      "analyticsModule": "payments_settings_contact_info",
+      "disableGesture": true
     },
     "path": "/ig_payments_settings_contact_info",
     "paramDefinitions": {
@@ -1798,7 +1833,8 @@
     "name": "IgOrderDisputeCreationApp",
     "navigationOptions": {
       "hidesTabBar": true,
-      "presentationMethod": "MODAL"
+      "presentationMethod": "MODAL",
+      "disableGesture": true
     },
     "path": "",
     "paramDefinitions": {},

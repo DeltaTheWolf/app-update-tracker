@@ -91,7 +91,6 @@
     <string name="account_privacy_option_status_private">ส่วนตัว</string>
     <string name="account_privacy_option_status_public">สาธารณะ</string>
     <string name="account_privacy_option_title">ความเป็นส่วนตัวของบัญชีผู้ใช้</string>
-    <string name="account_section_title">เลือกซื้อของจาก %1$s</string>
     <string name="action_button">ปุ่มการดำเนินการ</string>
     <string name="action_view">ดู</string>
     <string name="activation_card_bio_button_completed_text">แก้ไขคำอธิบายตัวเอง</string>
@@ -250,6 +249,11 @@
     <string name="appeal_violation_title">คำติชม</string>
     <string name="apply">ใช้</string>
     <string name="apps_header">บัญชีอื่นๆ</string>
+    <string name="ar_effect_cta_text">ดูเอ็ฟเฟ็กต์</string>
+    <string name="ar_effect_cta_text_with_name">ลองใช้ &lt;b>%1$s&lt;/b></string>
+    <string name="ar_effect_link_option">เอ็ฟเฟ็กต์กล้อง</string>
+    <string name="ar_effect_link_preview_explanation_text">ผู้ชมจะสามารถปัดขึ้นเพื่อลองใช้เอ็ฟเฟ็กต์กล้องที่คุณเลือกได้ %1$s</string>
+    <string name="ar_effect_link_preview_link_text">แสดงตัวอย่าง</string>
     <string name="ar_gallery_button_label">กรอบรูป AR</string>
     <string name="archive_highlight_failure">จัดเก็บไฮไลท์ไม่สำเร็จ</string>
     <string name="archive_highlight_option">จัดเก็บไฮไลท์</string>
@@ -360,6 +364,7 @@
     <string name="blocking_button_unblock_voice">เลิกบล็อก %1$s</string>
     <string name="blocking_step_content">คุณไม่สามารถสมัครใช้งาน Instagram ด้วยข้อมูลที่คุณระบุได้</string>
     <string name="blocking_step_title">มีปัญหาในการสร้างบัญชีผู้ใช้ของคุณ</string>
+    <string name="bloks_shell">เชลล์บล็อกส์</string>
     <string name="book">จอง</string>
     <string name="boomerang_capture_error">มีบางอย่าผิดพลาด โปรดลองอีกครั้ง</string>
     <string name="boomerang_modal_button_create">เปิด Boomerang</string>
@@ -414,6 +419,7 @@
     <string name="business_account_splash_subtitle">บัญชีธุรกิจฟรีมีเครื่องมือเพิ่มเติมให้คุณใช้เพื่อขยายธุรกิจ</string>
     <string name="business_account_splash_title">สร้างบัญชีธุรกิจ Instagram</string>
     <string name="business_address_optional">ที่อยู่ธุรกิจ (ระบุหรือไม่ก็ได้)</string>
+    <string name="business_attribute_sync_toggle_label">ใช้ข้อมูลนี้สำหรับเพจบน Facebook ของคุณ</string>
     <string name="business_conversion_enable_cross_posting">แชร์โพสต์ใหม่ไปที่เพจ Facebook</string>
     <string name="business_conversion_import_profile_pic">นำเข้ารูปโปรไฟล์จาก Instagram</string>
     <string name="business_email_consent">เพิ่มอีเมลที่คุณต้องการรับการติดต่อเกี่ยวกับธุรกิจ ปุ่มติดต่อทางอีเมลจะปรากฏในโปรไฟล์ธุรกิจของคุณ</string>
@@ -421,6 +427,8 @@
     <string name="business_is_not_on_instagram">ธุรกิจนี้ยังไม่มี Instagram ต้องการไปที่ Facebook ของธุรกิจหรือไม่</string>
     <string name="business_landing_terms">ข้อกำหนดและแนวทางปฏิบัติ</string>
     <string name="business_name">ชื่อธุรกิจ</string>
+    <string name="business_partner_and_merchant_products_dialog_message">เมื่อคุณแท็กสินค้าจากธุรกิจในโพสต์ คุณจะแท็กธุรกิจนั้นเป็นพาร์ทเนอร์ได้แค่ธุรกิจเดียวเท่านั้น</string>
+    <string name="business_partner_and_merchant_products_dialog_title">แท็กสินค้าจาก %1$s ไม่ได้</string>
     <string name="business_partner_and_user_name">พาร์ทเนอร์ธุรกิจ: %1$s</string>
     <string name="business_partner_settings">การตั้งค่าพาร์ทเนอร์ทางธุรกิจ</string>
     <string name="business_phone_consent">เพิ่มหมายเลขโทรศัพท์มือถือที่คุณต้องการรับสายเกี่ยวข้องกับธุรกิจ หมายเลขนี้ไม่ควรเชื่อมโยงกับบัญชีผู้ใช้ Instagram ที่มี</string>
@@ -446,6 +454,7 @@
     <string name="business_signup_welcome_user_desc">โปรไฟล์ธุรกิจของคุณพร้อมแล้ว คุณสามารถแชร์รูป วิดีโอ และเรื่องราวกับผู้ติดตามไปพร้อมกับขยายธุรกิจของคุณได้แล้ว และคุณสามารถเปลี่ยนชื่อผู้ใช้ได้ทุกเมื่อ</string>
     <string name="business_signup_welcome_user_title">ยินดีต้อนรับสู่ Instagram</string>
     <string name="business_tutorials">แนะนำการใช้งาน</string>
+    <string name="button_description">ปุ่ม</string>
     <string name="caboose_shadow_hint_text">เลื่อนต่อไปเพื่อดูรายการแนะนำ</string>
     <string name="caboose_shadow_hint_text_older">เลื่อนต่อไปเพื่อดูโพสต์เก่า</string>
     <string name="calendar">ปฏิทิน</string>
@@ -590,8 +599,9 @@
     <string name="choosing_who_can_see_your_story">การเลือกผู้ที่สามารถเห็นเรื่องราวของคุณ</string>
     <string name="city_town">เมือง</string>
     <string name="claim">อ้างสิทธิ์</string>
+    <string name="claim_dialog_with_connect_existing_page_content">ระบบได้สร้างเพจบน Facebook ขึ้นมาให้คุณเมื่อคุณสลับไปใช้บัญชีผู้ใช้ธุรกิจ ขอรับสิทธิ์เพจนี้หรือเชื่อมต่อกับเพจที่คุณจัดการอยู่แล้วเพื่อเข้าถึงผู้คนให้ได้มากขึ้นและช่วยให้พวกเขาหาคุณพบได้ เพจบน Facebook จะอยู่ใต้การควบคุมของ%1$sเหล่านี้</string>
     <string name="claim_facebook_page">ขอรับสิทธิ์เพจ Facebook</string>
-    <string name="claim_page">ขอรับสิทธิ์เพจ</string>
+    <string name="claim_page">ขอรับสิทธิ์ในเพจ</string>
     <string name="claim_page_button_label">อ้างสิทธิ์ในตำแหน่งที่ตั้งนี้</string>
     <string name="claim_page_content">%1$s ถูกสร้างขึ้นให้คุณเมื่อคุณสลับไปใช้บัญชีผู้ใช้ธุรกิจ ขอรับสิทธิ์ตอนนี้เพื่อเข้าถึงผู้คนมากขึ้นและช่วยพวกเขาค้นหาคุณให้พบ เพจ Facebook ต้องเป็นไปตาม%2$sเหล่านี้</string>
     <string name="claim_page_error_dialog_message">หากต้องการอ้างสิทธิ์ตำแหน่งที่ตั้งนี้ คุณต้องเป็นผู้ดูแลเพจ Facebook ที่เชื่อมโยงกับที่อยู่นี้</string>
@@ -732,7 +742,7 @@
     <string name="connect_contacts_learn_more_text">เรียนรู้เพิ่มเติมได้ในส่วน%1$sของเรา</string>
     <string name="connect_contacts_options_info_text">ระบบจะซิงค์รายชื่อผู้ติดต่อของคุณเป็นระยะและจัดเก็บไว้บนเซิร์ฟเวอร์ของเราเพื่อช่วยให้ผู้คนเชื่อมต่อกันบน Instagram คุณสามารถเลือกผู้ติดต่อเพื่อติดตามได้ %1$s</string>
     <string name="connect_contacts_subtitle">ค้นหาผู้คนที่คุณรู้จักบน Instagram และเลือกว่าจะติดตามใครบ้าง</string>
-    <string name="connect_existing_page">เชื่อมต่อเพจที่มีอยู่เดิม</string>
+    <string name="connect_existing_page">เชื่อมต่อกับเพจที่มีอยู่</string>
     <string name="connect_fb_and_agree">การแตะที่ปุ่มด้านบนและเข้าถึงข้อมูลเชิงลึก แสดงว่าคุณยินยอมตาม %1$s ของเรา</string>
     <string name="connect_fb_get_insights">เรียนรู้เกี่ยวกับผู้ติดตามของคุณและดูวิธีดำเนินการกับโพสต์ของคุณ เราจะไม่โพสต์สิ่งใดๆ ไปยัง Facebook โดยไม่ได้รับอนุญาตจากคุณ</string>
     <string name="connect_ig_to_fb_page_explain">เชื่อมต่อบัญชีผู้ใช้ Instagram Business กับเพจ Facebook เพื่อทำให้ผู้คนค้นพบคุณได้ง่ายขึ้น บัญชีผู้ใช้ธุรกิจบน Instagram จะเชื่อมโยงกับเพจ Facebook และอยู่ภายใต้%1$sของเพจ Facebook</string>
@@ -877,7 +887,6 @@
     <string name="cta_context_view_on_ig">ดูบน Instagram</string>
     <string name="cta_context_view_website_on_ig">ดูเว็บไซต์บน Instagram</string>
     <string name="cta_section_checkout_label">ชำระเงินบน Instagram</string>
-    <string name="cta_section_offsite_label">ดูบนเว็บไซต์</string>
     <string name="cta_section_sold_out_label">ขายหมดแล้ว</string>
     <string name="current_password">รหัสผ่านปัจจุบัน</string>
     <string name="currently_promoted">โปรโมทอยู่ในขณะนี้</string>
@@ -1059,6 +1068,7 @@
     <string name="direct_digest_you_sent_gif">คุณได้ส่ง GIF</string>
     <string name="direct_digest_you_sent_message">คุณได้ส่งข้อความ</string>
     <string name="direct_digest_you_sent_sticker">คุณส่งสติกเกอร์</string>
+    <string name="direct_digest_you_sent_text_message">คุณ: %1$s</string>
     <string name="direct_digest_you_sent_voice">คุณส่งข้อความเสียง</string>
     <string name="direct_digest_you_shared_a_comment">คุณได้แชร์ความคิดเห็น</string>
     <string name="direct_digest_you_shared_link">คุณได้แชร์ลิงก์</string>
@@ -1241,6 +1251,7 @@
     <string name="direct_reel_share_sender_info_own_story">ดูเรื่องราวของคุณ</string>
     <string name="direct_replay_expiring_media">เล่นซ้ำ</string>
     <string name="direct_reply">ตอบกลับ</string>
+    <string name="direct_reply_edittext_hint_message">ตอบกลับ...</string>
     <string name="direct_reply_sharesheet_row_message">ส่งข้อความถึง %1$s</string>
     <string name="direct_reply_to">ตอบกลับ:</string>
     <string name="direct_reply_to_author_feed_tooltip_nux">ตอบกลับข้อความ</string>
@@ -1515,7 +1526,7 @@
     <string name="face_mask_button_description">หน้ากาก</string>
     <string name="facebook_account_not_linked_use_current_password_instead">บัญชีผู้ใช้ Facebook นี้ไม่ได้เชื่อมต่อกับบัญชีผู้ใช้ Instagram ที่คุณป้อน โปรดป้อนรหัสผ่านปัจจุบันของคุณแทน</string>
     <string name="facebook_automatic_sharing_message_dialog_message">แชร์รูปภาพและวิดีโอของคุณไปยังเรื่องราวบน Facebook ของคุณด้วย คุณสามารถเปลี่ยนการตั้งค่านี้ใน \"การตั้งค่า\" ของเรื่องราวได้ทุกเมื่อ</string>
-    <string name="facebook_automatic_sharing_message_dialog_title">แชร์ไปที่ Facebook โดยอัตโนมัติเลยหรือไม่</string>
+    <string name="facebook_automatic_sharing_message_dialog_title">แชร์ไปยัง Facebook โดยอัตโนมัติเลยหรือไม่</string>
     <string name="facebook_connect_subtitle">คุณสามารถเลือกคนที่ต้องการติดตามได้ และเราจะไม่โพสต์ไปยัง Facebook โดยไม่ได้รับอนุญาตจากคุณ</string>
     <string name="facebook_connect_title">ค้นหาเพื่อนใน Facebook เพื่อติดตาม</string>
     <string name="facebook_notification_dialog_message">คุณกำลังจะออกจาก Instagram เพื่อเปิดการแจ้งเตือนนี้ใน Facebook เราจะไม่แสดงข้อความนี้อีกครั้งในการแจ้งเตือนครั้งต่อไปที่คล้ายกัน</string>
@@ -1529,10 +1540,10 @@
     <string name="facebook_sharing_dialog_message_turn_off_auto_share">ปิดการแชร์ Facebook Story</string>
     <string name="facebook_sharing_dialog_message_turn_off_auto_share_once">ปิดหนึ่งครั้ง</string>
     <string name="facebook_sharing_dialog_message_turn_off_single_share">ปิด</string>
-    <string name="facebook_sharing_dialog_message_turn_on_auto_share">แชร์ไปที่ Facebook ทุกครั้ง</string>
+    <string name="facebook_sharing_dialog_message_turn_on_auto_share">แชร์ไปยัง Facebook ทุกครั้ง</string>
     <string name="facebook_sharing_dialog_message_turn_on_single_share">แชร์ครั้งเดียว</string>
-    <string name="facebook_sharing_dialog_message_turn_on_single_share_from_single_share_off">แชร์ไปที่ Facebook ครั้งเดียว</string>
-    <string name="facebook_sharing_dialog_title">แชร์ไปที่ Facebook</string>
+    <string name="facebook_sharing_dialog_message_turn_on_single_share_from_single_share_off">แชร์ไปยัง Facebook ครั้งเดียว</string>
+    <string name="facebook_sharing_dialog_title">แชร์ไปยัง Facebook</string>
     <string name="faces">ใบหน้า</string>
     <string name="fade">เฟด</string>
     <string name="fail_confirm_email">เราไม่สามารถยืนยันอีเมลของคุณได้ในขณะนี้ โปรดลองอีกครั้งภายหลัง</string>
@@ -1555,7 +1566,7 @@
     <string name="feed_auto_xpost_to_fb_label">แชร์โพสต์ของคุณไปยัง Facebook</string>
     <string name="feed_auto_xpost_to_fb_upsell_dialog_confirm">เปิด</string>
     <string name="feed_auto_xpost_to_fb_upsell_dialog_message">แชร์รูปภาพและวิดีโอที่คุณโพสต์ไปยัง Facebook ของคุณด้วย คุณสามารถเปลี่ยนในการตั้งค่าได้ทุกเมื่อ</string>
-    <string name="feed_auto_xpost_to_fb_upsell_dialog_title">แชร์ไปที่ Facebook โดยอัตโนมัติหรือไม่</string>
+    <string name="feed_auto_xpost_to_fb_upsell_dialog_title">แชร์ไปยัง Facebook โดยอัตโนมัติหรือไม่</string>
     <string name="feed_comment_undo_button">เลิกทำ</string>
     <string name="feed_controls_allow_message_replies_description">เลือกผู้ที่สามารถตอบกลับโพสต์ของคุณแบบส่วนตัวได้</string>
     <string name="feed_controls_allow_message_replies_header">อนุญาตให้ตอบกลับเป็นข้อความ</string>
@@ -1851,10 +1862,8 @@
     <string name="igtv_about_settings_header">เกี่ยวกับ</string>
     <string name="igtv_account_settings_header">บัญชีผู้ใช้</string>
     <string name="igtv_aspect_ratio_for_cover_photo_upload">รูปภาพหน้าปกของคุณต้องเป็นแนวตั้ง</string>
-    <string name="igtv_attribution">จาก IGTV</string>
     <string name="igtv_blocked_media">วิดีโอของคุณถูกบล็อก</string>
     <string name="igtv_blocked_media_item_header">บล็อกแล้ว</string>
-    <string name="igtv_browse_for_you_title">สำหรับคุณ</string>
     <string name="igtv_channel_settings_header">ช่อง</string>
     <string name="igtv_copy_link">คัดลอกลิงก์</string>
     <string name="igtv_cover_picker_camera_roll">อัพโหลดจากม้วนฟิล์ม</string>
@@ -1907,8 +1916,9 @@
     <string name="igtv_search_results_channels_header">ช่อง</string>
     <string name="igtv_search_results_no_channels_found">ไม่พบช่อง</string>
     <string name="igtv_share_trailer_to_feed_ineligible">สำหรับวิดีโอ IGTV ที่มีความยาวมากกว่าหนึ่งนาทีเท่านั้น</string>
-    <string name="igtv_share_trailer_to_feed_info">แชร์ไปที่โปรไฟล์และฟีดของคุณ ผู้คนสามารถแตะเพื่อรับชมวิดีโอจนจบได้</string>
-    <string name="igtv_share_trailer_to_feed_title">แชร์ภาพตัวอย่างไปที่ Instagram</string>
+    <string name="igtv_share_trailer_to_feed_info">แชร์ตัวอย่างบนโปรไฟล์และฟีดของคุณ</string>
+    <string name="igtv_share_trailer_to_feed_learn_more">เรียนรู้เพิ่มเติม</string>
+    <string name="igtv_share_trailer_to_feed_title">แชร์บน Instagram</string>
     <string name="igtv_skip_button_text_delay_skippable">ข้ามในอีก %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">วิดีโอจะเล่นหลังในอีก %1$s ข้างหน้านี้</string>
     <string name="igtv_skip_button_text_skippable">ข้าม</string>
@@ -2460,6 +2470,7 @@
     <string name="no_admin_pages_show">คุณไม่เห็นเพจของคุณที่นี่ใช่หรือไม่ คุณอาจจะไม่ใช่ผู้ดูแลเพจ ติดต่อผู้ดูแลเพจของคุณเพื่อขอรับสิทธิ์</string>
     <string name="no_country_selection_dialog_subtitle">คุณยังไม่ได้เลือกประเทศที่จะแพร่ภาพเนื้อหา ซึ่งหมายความว่าเนื้อหาของคุณจะไม่แสดงในที่ใดๆ เลย ดังนั้นเราจึงปิดการตั้งค่า \"เลือกตำแหน่งที่ตั้ง\"</string>
     <string name="no_country_selection_dialog_title">คุณยังไม่ได้เลือกประเทศ</string>
+    <string name="no_effects_found">ไม่มีเอ็ฟเฟ็กต์ที่พร้อมใช้งาน</string>
     <string name="no_eligible_post_subtitle">คุณไม่มีโพสต์ที่สามารถโปรโมทได้</string>
     <string name="no_eligible_post_title">ไม่มีโพสต์ที่มีสิทธิ์</string>
     <string name="no_internet_error_message">ขณะที่คุณออฟไลน์จะไม่สามารถสแกนเนมแท็กได้ โปรดตรวจสอบการเชื่อมต่อของคุณหรือลองอีกครั้งในภายหลัง</string>
@@ -2624,7 +2635,7 @@
     <string name="pending_media_auto_post_when_possible">จะโพสต์อัตโนมัติเมื่อสามารถทำได้</string>
     <string name="pending_media_discard_button">ทิ้ง</string>
     <string name="pending_media_discard_post">ทิ้งโพสต์</string>
-    <string name="pending_media_discard_question">ทิ้งโพสต์?</string>
+    <string name="pending_media_discard_question">ทิ้งโพสต์หรือไม่</string>
     <string name="pending_media_finishing_up">เกือบเสร็จแล้ว</string>
     <string name="pending_media_finishing_up_xshare">โพสต์ไปที่ %1$s แล้ว แตะเพื่อดู</string>
     <string name="pending_media_not_posted">ยังไม่ได้โพสต์ โปรดลองอีกครั้ง</string>
@@ -2830,7 +2841,6 @@
     <string name="product_tagging_add_product_limit_reached_video">เพิ่มสินค้าลงในวิดีโอได้ไม่เกิน 5 รายการ</string>
     <string name="product_tagging_add_products">แท็กสินค้า</string>
     <string name="product_tagging_carousel_add_product_limit_reached">แท็กสินค้าในโพสต์ได้ไม่เกิน 20 รายการ</string>
-    <string name="product_tagging_carousel_editing_not_available">โพสต์มีการแท็กสินค้าที่ไม่สามารถแก้ไขได้อยู่แล้ว</string>
     <string name="product_tagging_disabled_with_branded_content_explanation">คุณไม่สามารถแท็กสินค้าในโพสต์ที่มีเนื้อหาที่มีแบรนด์</string>
     <string name="product_tagging_tag_another_product">แท็กสินค้าอื่น</string>
     <string name="product_tagging_tap_to_add_photo">แตะที่รูปภาพเพื่อแท็กสินค้า</string>
@@ -2943,13 +2953,11 @@
     <string name="recipient_picker_sharing_preferences">ตัวเลือกการแชร์</string>
     <string name="recipient_picker_sharing_to_fb">และเรื่องราว Facebook</string>
     <string name="recipient_view_mode_allow_replay">อนุญาตให้เล่นซ้ำ</string>
-    <string name="recipient_view_mode_allow_replay_24_hours">24 ชั่วโมง</string>
     <string name="recipient_view_mode_allow_replay_upper_case">อนุญาตให้เล่นซ้ำ</string>
-    <string name="recipient_view_mode_allow_replay_upper_case_24_hours">24 ชั่วโมง</string>
     <string name="recipient_view_mode_keep_in_chat">คงไว้ในแชท</string>
     <string name="recipient_view_mode_keep_in_chat_upper_case">คงไว้ในแชท</string>
-    <string name="recipient_view_mode_one_view">ดูครั้งเดียว</string>
-    <string name="recipient_view_mode_one_view_upper_case">ดูครั้งเดียว</string>
+    <string name="recipient_view_mode_view_once">ดูได้ครั้งเดียว</string>
+    <string name="recipient_view_mode_view_once_upper_case">ดูได้ครั้งเดียว</string>
     <string name="recommend_accounts_follow_all_button">ติดตามทั้งหมด</string>
     <string name="recommend_accounts_header">บัญชีผู้ใช้ที่ %1$s อาจชอบ</string>
     <string name="recommend_accounts_header_text">&lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> คิดว่าคุณอาจถูกใจบัญชีผู้ใช้เหล่านี้</string>
@@ -3101,7 +3109,7 @@
     <string name="remove_from_saved_or_collection">คุณสามารถลบออกจากคอลเลกชันนี้ หรือลบออกจากทุกแห่งที่คุณได้บันทึกไว้</string>
     <string name="remove_from_saves">ลบออก</string>
     <string name="remove_from_saves_and_collections_dialog_title">ต้องการลบออกจากรายการที่บันทึกไว้และคอลเลคชั่นหรือไม่</string>
-    <string name="remove_igtv_media">ลบภาพตัวอย่างออก</string>
+    <string name="remove_igtv_media">ลบตัวอย่างออก...</string>
     <string name="remove_me_from_post">ลบฉันออกจากโพสต์</string>
     <string name="remove_me_from_profile">ลบลิงก์ออก</string>
     <string name="remove_me_from_profile_dialog_message">ชื่อผู้ใช้ของคุณจะยังคงปรากฏในประวัติย่อนี้ แต่จะไม่ลิงก์กับโปรไฟล์ของคุณอีกต่อไป</string>
@@ -3118,7 +3126,7 @@
     <string name="remove_sponsor_tag_subtitle">คุณจะไม่สามารถเห็นข้อมูลเชิงลึกได้อีกต่อไป โพสต์จาก Instagram จะไม่ถูกลบออก</string>
     <string name="remove_sponsor_tag_title">ลบฉันออกจากโพสต์</string>
     <string name="remove_tag">ลบแท็กออก</string>
-    <string name="remove_this_igtv_post_confirmation">ผู้ติดตามของคุณจะไม่สามารถดูภาพตัวอย่างวิดีโอของคุณบนฟีดหรือตารางโปรไฟล์ของตนได้แต่วิดีโอจะยังคงอยู่ใน IGTV</string>
+    <string name="remove_this_igtv_post_confirmation">ผู้ติดตามของคุณจะดูตัวอย่างวิดีโอของคุณบนฟีดของตนหรือโปรไฟล์ของคุณไม่ได้ แต่วิดีโอจะยังคงอยู่ใน IGTV</string>
     <string name="remove_video_highlight_button">ลบวิดีโอ</string>
     <string name="remove_video_highlight_message">คุณจะยังสามารถดูวิดีโอนี้ในคลังของคุณได้อยู่ คุณสามารถลบวิดีโอออกจากคลังอย่างถาวรได้</string>
     <string name="remove_video_highlight_message_active">การลบวิดีโอนี้ออกจากไฮไลท์ของคุณไม่ได้เป็นการลบวิดีโอออกจากเรื่องราว</string>
@@ -3436,6 +3444,7 @@
     <string name="shopping_on_profile_null_state_message">ขณะนี้ เฉพาะคุณเท่านั้นที่สามารถเห็นโพสต์นี้ได้ เมื่อคุณสร้างโพสต์ที่มีสินค้าที่แท็กแล้ว ผู้คนจะเห็นโพสต์ได้ที่นี่</string>
     <string name="shopping_on_profile_null_state_title">โพสต์ที่มีสินค้าที่แท็กจะปรากฏที่นี่</string>
     <string name="shopping_posts">โพสต์ช้อปปิ้ง</string>
+    <string name="shopping_variant_value_selector_sold_out_label">%1$s (ขายหมดแล้ว)</string>
     <string name="shopping_viewer_add_posts">เพิ่มโพสต์</string>
     <string name="shopping_viewer_description_title">คำอธิบาย</string>
     <string name="shopping_viewer_edit">แก้ไข</string>
@@ -3670,15 +3679,18 @@
     <string name="take_picture">ถ่ายภาพ</string>
     <string name="tap_for_caption_title">แตะเพื่อใส่คำบรรยายภาพ</string>
     <string name="tap_to_keep_watching">รับชมต่อ</string>
+    <string name="tap_to_keep_watching_video_description">แตะที่นี่เพื่อรับชมวิดีโอต่อไป</string>
     <string name="tap_to_like">แตะเพื่อถูกใจความคิดเห็น</string>
     <string name="tap_to_reload">ไม่สามารถโหลดภาพได้ แตะเพื่อลองใหม่</string>
     <string name="tap_to_unlike">แตะเพื่อเลิกถูกใจความคิดเห็น</string>
     <string name="tap_to_view_combined_tags">แตะเพื่อดูแท็ก</string>
     <string name="tap_to_view_product_items">แตะเพื่อดูสินค้า</string>
+    <string name="tap_to_watch_video_description">แตะเพื่อรับชมวิดีโอ</string>
     <string name="tap_to_watch_video_nux">รับชมวิดีโอจนจบ</string>
     <string name="tell_us_approval_reason">โปรดบอกเหตุผลว่าทำไมเราจึงควรอนุมัติโฆษณาของคุณ หากเราทำผิดพลาด เราจะอนุมัติโฆษณาของคุณโดยเร็วที่สุด</string>
     <string name="terms">ข้อกำหนด</string>
     <string name="terms_and_data_policy">ข้อกำหนดและนโยบายข้อมูล</string>
+    <string name="terms_and_privacy">ข้อกำหนดและความเป็นส่วนตัว</string>
     <string name="terms_of_service">ข้อกำหนดการใช้งาน</string>
     <string name="terms_of_use">ข้อกำหนดการใช้งาน</string>
     <string name="terms_of_use_link">อ่านข้อกำหนดการใช้งานฉบับเต็ม</string>
@@ -3708,7 +3720,7 @@
     <string name="thanks_for_let_us_know">ขอบคุณที่แจ้งให้เราทราบ</string>
     <string name="this_account_is_private">บัญชีผู้ใช้นี้เป็นบัญชีส่วนตัว</string>
     <string name="this_user_is_private">บัญชีผู้ใช้เป็นบัญชีส่วนบุคคล</string>
-    <string name="thumbnail_image_variance_selector_title">เลือก%1$s</string>
+    <string name="thumbnail_image_variant_selector_title">เลือก %1$s</string>
     <string name="tilt_mode_linear">แนวตรง</string>
     <string name="tilt_mode_radial">รัศมีวงกลม</string>
     <string name="tiltshift">ทิลท์-ชิฟท์</string>
@@ -3941,6 +3953,7 @@
     <string name="under_age_body">ตามกฎหมายแล้ว เราจำเป็นต้องลบบัญชีผู้ใช้และข้อมูลของคุณภายใน 30 วัน</string>
     <string name="under_age_title">คุณยังมีอายุไม่ถึงเกณฑ์การใช้ Instagram</string>
     <string name="undo">เปลี่ยนกลับ</string>
+    <string name="undo_delete_comments">เลิกทำ</string>
     <string name="unfinished_reg_dialog_continue_button">ดำเนินการต่อ</string>
     <string name="unfinished_reg_dialog_message">คุณสามารถสมัครใช้งานบัญชีผู้ใช้ต่อหรือเริ่มต้นใหม่ก็ได้</string>
     <string name="unfinished_reg_dialog_start_over_button">เริ่มต้นใหม่</string>
@@ -4013,7 +4026,7 @@
     <string name="username_not_available">ไม่สามารถเลือกชื่อผู้ใช้นี้</string>
     <string name="username_placeholder">ชื่อผู้ใช้</string>
     <string name="valid_address_to_map">โปรดเพิ่มที่อยู่ที่ถูกต้องเพื่อให้ผู้คนสามารถไปยังตำแหน่งที่ตั้งของคุณในแผนที่ได้</string>
-    <string name="variant_selector_section_error_message">ทำการเลือก</string>
+    <string name="variant_selector_section_error_message">โปรดเลือกสินค้า</string>
     <string name="verification_code_instructions">ป้อนรหัสยืนยัน 6 หลักที่เราส่งไปให้ที่ %1$s หากคุณยังไม่ได้รับรหัส เราสามารถ &lt;b>ส่งรหัสอีกครั้ง&lt;/b> ได้</string>
     <string name="verification_code_instructions_with_rate_limit">ป้อนรหัสยืนยัน 6 หลักที่เราได้ส่งไปยัง %1$s อาจต้องใช้เวลาสักครู่ในการส่งรหัส หากคุณไม่ได้รับรหัส เราสามารถ%2$s</string>
     <string name="verification_code_request_new_link">ขอรหัสใหม่</string>
@@ -4121,12 +4134,10 @@
     <string name="view_insights">ดูข้อมูลเชิงลึก</string>
     <string name="view_location">ดูตำแหน่งที่ตั้ง</string>
     <string name="view_mode_toggle">สลับโหมดการรับชม</string>
-    <string name="view_modes_nux_replayability_description_button_toggle">คุณสามารถตั้งให้ข้อความหายไปหลังจากมีการรับชมหนึ่งครั้งหรือจะเก็บไว้ในแชทอย่างถาวรก็ได้</string>
-    <string name="view_modes_nux_replayability_description_scrolling_picker">คุณสามารถตั้งให้ข้อความหายไปหลังจากมีการรับชมหนึ่งครั้งหรือจะเก็บไว้ในแชทอย่างถาวรด้านล่างก็ได้</string>
-    <string name="view_modes_nux_replayability_title">ข้อความจะสามารถดูได้เป็นเวลา 24 ชั่วโมงจากนี้</string>
     <string name="view_more_information">ดูข้อมูลเพิ่มเติม</string>
     <string name="view_more_replies">ดูข้อความตอบกลับเพิ่มเติม (%1$d)</string>
     <string name="view_more_replies_no_count">ดูข้อความตอบกลับเพิ่มเติม</string>
+    <string name="view_on_website">ดูบนเว็บไซต์</string>
     <string name="view_original">ดูต้นฉบับ</string>
     <string name="view_previous_replies">ดูข้อความตอบกลับก่อนหน้านี้ (%1$d)</string>
     <string name="view_previous_replies_no_count">ดูข้อความตอบกลับก่อนหน้านี้</string>
