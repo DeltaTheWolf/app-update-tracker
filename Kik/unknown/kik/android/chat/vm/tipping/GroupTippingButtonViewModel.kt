@@ -101,6 +101,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 p2pTransactionManager.retrieveSpendTransactionLimits(PaymentType.ADMIN_TIP).map { it.remainingDailyLimit.toInt() == 0 }.startWith(true),
                 KikObservable.fromEvent(networkState.eventNetworkAvailable()).startWith(networkState.isNetworkAvailable),
                 kinStellarSDKController.isSDKStarted, adminWalletCheckError) { balance, limitReached, network, kinSdk, walletCheckError ->
+
             if (limitReached) {
                 return@combineLatest IGroupTippingButtonViewModel.TipButtonState.DAILY_LIMIT_REACHED
             }
@@ -154,9 +155,15 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
             kinButtonTappedMetric()
         }
         when (buttonState.value) {
-            IGroupTippingButtonViewModel.TipButtonState.GENERAL_ERROR -> navigator.showTwoMessageDialog(generalErrorDialog)
+            IGroupTippingButtonViewModel.TipButtonState.GENERAL_ERROR -> {
+                noTippingDialogShownMetric()
+                navigator.showTwoMessageDialog(generalErrorDialog)
+            }
             IGroupTippingButtonViewModel.TipButtonState.DAILY_LIMIT_REACHED -> navigator.showTwoMessageDialog(dailyLimitDialog)
-            IGroupTippingButtonViewModel.TipButtonState.NO_KIN_ERROR -> navigator.showTwoMessageDialog(noKinDialog)
+            IGroupTippingButtonViewModel.TipButtonState.NO_KIN_ERROR -> {
+                noKinDialogShownMetric()
+                navigator.showTwoMessageDialog(noKinDialog)
+            }
             IGroupTippingButtonViewModel.TipButtonState.NO_ERROR -> {
                 navigator.navigateTo(GroupTippingViewModel(group.identifier))
             }
@@ -230,8 +237,6 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
             }
 
             noKinDialog = build()
-
-            noKinDialogShownMetric()
         }
     }
 
@@ -243,8 +248,6 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 .title(resources.getString(R.string.tipping_unavailable_dialog_title))
                 .image(resources.getDrawable(R.drawable.img_errorload))
                 .build()
-
-        noTippingDialogShownMetric()
     }
 
     private fun createDailyLimitDialog(coreComponent: CoreComponent) {
@@ -266,7 +269,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                             .setGroupJid(CommonTypes.GroupJid(group.jid.node))
                             .setAdminStatus(getAdminStatus(group))
                             .setKinBalance(CommonTypes.KinBalance(it.toDouble()))
-                            .setVariant(ChatDialogshownBase.Variant(DIALOG_TYPE))
+                            .setVariant(ChatDialogshownBase.Variant(abManager.getAssignedVariantForExperimentName(AbManager.NO_KIN_DIALOG) ?: DIALOG_TYPE))
                             .build())
                 }, {
                     LOG.error(it.message)
