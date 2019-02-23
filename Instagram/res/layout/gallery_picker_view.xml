@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:layout_gravity="center_horizontal" android:id="@id/preview_container" android:background="?creationTertiaryBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instagram.creation.photo.crop.CropImageView android:id="@id/crop_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/draft_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/draft_video_container" android:background="?creationTertiaryBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.instagram.creation.capture.IgCaptureVideoPreviewView android:layout_gravity="center" android:id="@id/video_preview_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_preview_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_button" />
+        <ViewStub android:id="@id/punched_overlay_stub" android:layout="@layout/punched_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/crop_border_overlay_stub" android:layout="@layout/crop_border_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="start|bottom|center" android:id="@id/croptype_toggle_button" android:background="@drawable/preview_overlay_dark_background" android:visibility="invisible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="12.0dip" android:src="@drawable/croptype_toggle_btn" android:scaleType="centerInside" android:contentDescription="@string/toggle_square_description" app:active="@color/grey_3" app:normal="@color/white" />
+        <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/boomerang_button" android:background="@drawable/preview_overlay_dark_background" android:visibility="invisible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/boomerang_overlay" android:scaleType="centerInside" android:contentDescription="@string/boomerang_description" android:layout_marginEnd="12.0dip" app:active="@color/grey_3" app:normal="@color/white" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/layout_button" android:background="@drawable/preview_overlay_dark_background" android:visibility="invisible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/layout_overlay_18" android:scaleType="centerInside" android:contentDescription="@string/get_layout_description" android:layout_marginEnd="12.0dip" app:active="@color/grey_3" app:normal="@color/white" />
+            <com.instagram.ui.widget.slideouticon.SlideInAndOutIconView android:id="@id/multi_select_slide_button" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginEnd="12.0dip" app:enableBorder="true" app:textPaddingLeft="6.0dip" app:textSize="12.0sp" />
+        </LinearLayout>
+    </com.instagram.common.ui.widget.framelayout.MediaFrameLayout>
+    <FrameLayout android:id="@id/media_picker_container" android:background="?mediaPickerBackground" android:paddingTop="?mediaPickerSpacing" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/gallery_media_grid_view_stub" android:inflatedId="@id/media_picker_grid_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</merge>

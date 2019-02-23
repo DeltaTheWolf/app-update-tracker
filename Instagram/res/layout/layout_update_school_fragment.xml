@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <com.instagram.common.ui.text.TitleTextView android:id="@id/school_label" android:text="@string/school_label" android:labelFor="@id/school_edit_text" style="@style/SchoolLabelText" />
+    <EditText android:id="@id/school_edit_text" android:focusableInTouchMode="false" android:inputType="none" style="@style/SchoolEditText" />
+    <com.instagram.common.ui.text.TitleTextView android:id="@id/class_year_label" android:text="@string/class_year_label" android:labelFor="@id/class_year_spinner" style="@style/SchoolLabelText" />
+    <EditText android:id="@id/class_year_spinner" android:focusableInTouchMode="false" android:inputType="none" style="@style/SchoolEditText" />
+    <com.instagram.common.ui.text.TitleTextView android:id="@id/description_label" android:text="@string/major_label" android:labelFor="@id/description_edit_text" style="@style/SchoolLabelText" />
+    <EditText android:id="@id/description_edit_text" style="@style/SchoolEditText" />
+    <com.instagram.common.ui.text.TitleTextView android:id="@id/show_in_bio_label" android:text="@string/show_in_bio_as_label" style="@style/SchoolLabelText" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:id="@id/tag_preview_text" android:layout_marginTop="@dimen/edit_school_bio_tag_vertical_margin" android:layout_marginBottom="@dimen/edit_school_row_vertical_margin" style="@style/SchoolLabelText" />
+    <include android:id="@id/remove_school_divider" android:visibility="gone" layout="@layout/row_divider" />
+    <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/red_5" android:id="@id/remove_school_button" android:padding="@dimen/row_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remove_school" />
+</LinearLayout>

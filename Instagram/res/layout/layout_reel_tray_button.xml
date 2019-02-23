@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="6.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReelFeedItemAvatarContainer">
+        <FrameLayout android:layout_width="@dimen/tray_ring_size" android:layout_height="@dimen/tray_ring_size">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/button_background_view" android:layout_width="@dimen/tray_avatar_inner_size" android:layout_height="@dimen/tray_avatar_inner_size" />
+            <ImageView android:layout_gravity="center" android:id="@id/inner_button_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_small" android:ellipsize="end" android:gravity="center" android:id="@id/label" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/notification" android:layout="@layout/reel_item_notification_layout" android:layout_width="@dimen/led_notification_size" android:layout_height="@dimen/led_notification_size" android:layout_marginBottom="7.0dip" />
+</LinearLayout>

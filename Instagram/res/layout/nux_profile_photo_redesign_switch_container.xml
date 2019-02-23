@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_picture_preview_share_container" android:paddingLeft="@dimen/reg_nux_preview_switch_margin_sides" android:paddingRight="@dimen/reg_nux_preview_switch_margin_sides" android:paddingBottom="@dimen/reg_nux_preview_switch_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/reg_nux_preview_switch_margin_sides" android:paddingEnd="@dimen/reg_nux_preview_switch_margin_sides"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/reg_nux_preview_header_footer_padding" android:text="@string/share_profile_photo_to_feed_title" android:maxLines="2" android:layout_weight="1.0" android:layout_marginEnd="@dimen/reg_nux_preview_header_footer_padding" />
+        <com.instagram.ui.widget.switchbutton.IgSwitch android:id="@id/share_profile_photo_to_feed_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/reg_nux_preview_header_footer_padding" android:text="@string/share_profile_photo_to_feed_subtitle" android:maxLines="2" android:layout_weight="1.0" />
+</LinearLayout>

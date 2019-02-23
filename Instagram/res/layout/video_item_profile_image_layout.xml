@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/profile_picture" android:layout_width="@dimen/video_item_overlay_profile_image_size" android:layout_height="@dimen/video_item_overlay_profile_image_size" android:contentDescription="@string/profile_photo_description" app:strokeColor="@color/grey_0" app:strokeWidth="@dimen/video_item_overlay_profile_image_border_size" />
+    <com.instagram.ui.widget.badgeicon.BadgeIconView android:layout_gravity="end|bottom|center" android:id="@id/profile_picture_badge" android:layout_width="@dimen/video_item_overlay_profile_badge_size" android:layout_height="@dimen/video_item_overlay_profile_badge_size" />
+</FrameLayout>

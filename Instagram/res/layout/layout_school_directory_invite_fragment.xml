@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.ui.widget.typeahead.TypeaheadHeader android:id="@id/typeahead_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/layout_refreshablelistview_with_empty_state" />
+    </LinearLayout>
+    <include layout="@layout/layout_listview_progressbar" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="end|center" android:id="@id/sending_indicator_stub" android:layout="@layout/sending_indicator" android:layout_width="@dimen/direct_row_message_send_indicator_size" android:layout_height="@dimen/direct_row_message_send_indicator_size" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="end|center" android:id="@id/message_status" android:paddingLeft="@dimen/direct_row_message_common_padding" android:layout_width="@dimen/direct_row_message_timestamp_width" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/direct_row_message_send_state_icon_text_gap" android:paddingStart="@dimen/direct_row_message_common_padding" />
+    <ViewStub android:layout_gravity="end|bottom|center" android:id="@id/action_icon" android:layout="@layout/message_action_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginEnd="4.0dip" />
+</merge>

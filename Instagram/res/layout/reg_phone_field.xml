@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/phone_inline_error" style="@style/RegInlineErrorMessageViewStyle">
+        <LinearLayout android:id="@id/phone_field_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RegEditTextContainerStyle">
+            <TextView android:textStyle="bold" android:textColor="@color/grey_5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/country_code_picker" android:layout_width="wrap_content" android:layout_height="fill_parent" android:freezesText="true" android:inputType="none" style="@style/RegEditTextStyle.InContainer" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/country_code_drop_down" android:visibility="gone" android:layout_width="@dimen/dropdown_arrow_size" android:layout_height="@dimen/dropdown_arrow_size" android:src="@drawable/back_arrow" style="@style/CountrySelector" />
+            <View android:id="@id/phone_field_vertical_divider" android:background="@color/grey_2" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <AutoCompleteTextView android:id="@id/phone_field" android:layout_width="0.0dip" android:hint="@string/login_phone_hint" android:digits="0123456789 -()" android:layout_weight="1.0" android:inputType="phone" style="@style/RegEditTextStyle.InContainer" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/phone_clear_button" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/row_padding" android:src="@drawable/search_clear" android:contentDescription="@string/clear" android:layout_marginEnd="@dimen/row_padding" />
+        </LinearLayout>
+    </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:gravity="center_horizontal" android:id="@id/sms_consent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_small" android:text="@string/sms_consent" />
+</LinearLayout>

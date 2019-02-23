@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="120.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/business_title_card_bigger_title" />
+            <include layout="@layout/row_divider" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:gravity="center_vertical" android:id="@id/page_title_section_label" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:text="@string/page_title" />
+            <FrameLayout android:id="@id/page_title_edit_container" android:background="@drawable/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:minHeight="@dimen/row_height_small">
+                <EditText android:layout_gravity="center_vertical" android:id="@id/page_title_edit" android:background="@null" android:paddingTop="@dimen/row_text_padding" android:paddingRight="30.0dip" android:paddingBottom="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences" android:imeOptions="actionDone" style="@style/FieldWithGlyph" />
+                <com.instagram.ui.widget.spinner.RefreshSpinner android:layout_gravity="end|center" android:id="@id/title_spinner" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" app:dark="true" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/title_check_indicator" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="fill_parent" android:src="@drawable/check_blue" android:tint="@color/green_4" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/red_5" android:id="@id/page_title_error" android:paddingLeft="@dimen/row_padding" android:paddingTop="8.0dip" android:paddingRight="@dimen/row_padding" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include android:id="@id/page_title_error_divider" android:visibility="gone" layout="@layout/row_divider" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/page_title_explain" android:paddingLeft="@dimen/row_padding" android:paddingTop="8.0dip" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/page_title_explanation" />
+            <LinearLayout android:orientation="vertical" android:id="@id/page_category_selection_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:gravity="center_vertical" android:id="@id/page_category_section_label" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:layout_marginTop="@dimen/row_padding" android:text="@string/page_category" />
+                <com.instagram.business.ui.BusinessCategorySelectionView android:id="@id/category_selection_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/page_category_explain" android:paddingLeft="@dimen/row_padding" android:paddingTop="8.0dip" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/page_category_explanation" />
+            </LinearLayout>
+            <include layout="@layout/business_conversion_sync_options" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/business_conversion_stepper_header" />
+    <com.instagram.business.ui.BusinessNavBar android:layout_gravity="bottom" android:id="@id/navigation_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:primaryText="@string/next" app:secondaryText="@string/skip" app:showSecondaryButton="true" />
+</FrameLayout>

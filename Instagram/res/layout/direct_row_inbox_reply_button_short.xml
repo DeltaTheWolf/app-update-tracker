@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/options_text_view_container" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/direct_inbox_row_padding" android:paddingEnd="@dimen/direct_inbox_row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/options_reply_button" android:background="@drawable/direct_inbox_reply_pill_background_gray" android:paddingLeft="@dimen/direct_inbox_row_reply_left_padding" android:paddingRight="@dimen/direct_inbox_row_reply_right_padding" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direct_reply" android:textAllCaps="true" android:drawableStart="@drawable/camera_icon_small" android:paddingStart="@dimen/direct_inbox_row_reply_left_padding" android:paddingEnd="@dimen/direct_inbox_row_reply_right_padding" style="?directRowUserName" />
+</FrameLayout>

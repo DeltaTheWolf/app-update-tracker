@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NewRegContainer">
+        <ImageView android:layout_marginBottom="@dimen/reg_nux_icon_bottom_margin" android:src="@drawable/find_friends_icon" style="@style/RegIcon" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/new_reg_title" />
+        <FrameLayout android:id="@id/connect_button" android:layout_marginTop="@dimen/reg_margin_medium" style="@style/RegProgressButtonStyle">
+            <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/connect_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/share_facebook" android:drawablePadding="@dimen/reg_drawable_padding" android:drawableStart="@drawable/share_facebook" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:gravity="center" android:id="@id/social_context" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/social_context_margin" android:fontFamily="sans-serif-medium" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_medium" layout="@layout/reg_skip" />
+    </LinearLayout>
+</merge>

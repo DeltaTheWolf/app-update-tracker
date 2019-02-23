@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <FrameLayout android:id="@id/container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+                <ImageView android:id="@id/cross_button_for_spinner" android:visibility="invisible" android:layout_width="?actionBarHeight" android:layout_height="?actionBarHeight" android:src="@drawable/instagram_x_outline_24" android:scaleType="center" />
+                <LinearLayout android:orientation="vertical" android:id="@id/welcome_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/header_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/cross_button" android:layout_width="?actionBarHeight" android:layout_height="?actionBarHeight" android:src="@drawable/instagram_x_outline_24" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/grey_5" android:id="@id/not_business" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_business" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+                        <com.instagram.ui.widget.spinner.RefreshSpinner android:id="@id/spinner" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="16.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:dark="true" />
+                    </RelativeLayout>
+                    <include android:id="@id/slide_card_value_props" layout="@layout/business_conversion_slide_card_value_props" />
+                    <TextView android:textAppearance="@style/Business.TextAppearance" android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:gravity="bottom|center" android:id="@id/social_context" android:paddingLeft="@dimen/business_sign_up_padding" android:paddingRight="@dimen/business_sign_up_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/combined_flow_margin_medium_1" android:minHeight="@dimen/business_sign_up_content_min_height" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" style="@style/BusinessText.CenterText" />
+                </LinearLayout>
+                <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/spinner_large" />
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.instagram.business.ui.BusinessNavBar android:layout_gravity="bottom" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:primaryText="@string/continue_no_connection" app:showSecondaryButton="true" />
+</FrameLayout>

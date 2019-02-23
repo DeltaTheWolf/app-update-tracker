@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_horizontal" android:id="@id/empty_state_image" android:layout_width="@dimen/avatar_size_ridiculously_xlarge" android:layout_height="@dimen/avatar_size_ridiculously_xlarge" android:layout_marginTop="40.0dip" />
+    <Space android:id="@id/empty_state_header_empty_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/empty_state_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+    <TextView android:textSize="@dimen/font_medium" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_state_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="48.0dip" />
+    <include android:id="@id/row_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" layout="@layout/row_divider" />
+</LinearLayout>

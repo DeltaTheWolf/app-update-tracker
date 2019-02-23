@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" layout="@layout/save_to_collections_collection_tile" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/blue_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/save_home_collection_feed_change_cover_photo" />
+</LinearLayout>

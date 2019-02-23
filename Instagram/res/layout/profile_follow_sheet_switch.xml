@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/follow_sheet_row_height" android:paddingEnd="@dimen/follow_sheet_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/profile_media_setting_row_label" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/ProfileFollowSheetRowTitle" />
+    <com.instagram.ui.widget.switchbutton.IgSwitch android:id="@id/profile_media_setting_row_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

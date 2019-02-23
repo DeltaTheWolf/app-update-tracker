@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:orientation="vertical" android:id="@id/checkbox_error_view" android:background="@drawable/bg_simple_row" android:paddingBottom="@dimen/lead_ad_checkbox_row_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/checkbox_separator" android:background="@color/grey_1" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lead_ad_checkbox_row_top_margin">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_6" android:id="@id/text_view" android:paddingRight="@dimen/lead_ad_checkbox_start_padding" android:paddingBottom="@dimen/lead_ad_checkbox_text_bottom_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="@dimen/lead_ad_checkbox_start_padding" />
+        <CheckBox android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:id="@id/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.instagram.ui.widget.inlineerror.InlineErrorMessageView>

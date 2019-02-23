@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/recipients_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" layout="@layout/layout_listview_with_progress" />
+    <ViewStub android:layout_gravity="top" android:id="@id/action_bar_search_stub" android:layout="@layout/direct_action_bar_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/direct_action_bar_search_top_margin" />
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/button_send" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" android:text="@string/done" android:maxLines="1" />
+    <ViewStub android:layout_gravity="end" android:id="@id/direct_fast_scroll_container" android:layout="@layout/layout_fast_scroll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" />
+</FrameLayout>

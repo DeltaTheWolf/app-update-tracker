@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/business_sign_up_content_min_height" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/business_sign_up_margin_medium">
+            <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/grey_9" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/business_sign_up_padding_small_medium" android:paddingTop="@dimen/business_sign_up_splash_margin" android:paddingRight="@dimen/business_sign_up_padding_small_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/business_sign_up_splash_margin" android:minHeight="@dimen/business_sign_up_splash_title_min_height" android:text="@string/choose_flow_title" />
+            <TextView android:textAppearance="@style/Business.TextAppearance" android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:paddingLeft="@dimen/business_sign_up_padding_small_medium" android:paddingRight="@dimen/business_sign_up_padding_small_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/business_subtitle_horizontal_margin" android:minHeight="@dimen/business_sign_up_content_min_height" android:text="@string/choose_flow_subtitle" android:lineSpacingMultiplier="1.2" style="@style/BusinessText.CenterText" />
+            <include android:id="@id/first_row" layout="@layout/row_conversion_creation" />
+            <include layout="@layout/row_divider" />
+            <include android:id="@id/second_row" layout="@layout/row_conversion_creation" />
+            <include layout="@layout/row_divider" />
+        </LinearLayout>
+    </ScrollView>
+    <com.instagram.business.ui.BusinessNavBar android:layout_gravity="bottom" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:primaryText="@string/next" />
+</FrameLayout>

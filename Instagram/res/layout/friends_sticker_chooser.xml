@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/friend_sticker_container" android:paddingTop="25.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_xlarge" android:textStyle="bold" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/row_padding_small" android:text="@string/friends_sticker_header" android:shadowColor="@color/black_40_transparent" android:shadowRadius="3.0" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v7.widget.RecyclerView android:id="@id/friends_sticker_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/refresh_affordance" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh_big" app:normal="@color/white" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" />
+        </LinearLayout>
+        <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_large" app:normal="@color/white" />
+    </FrameLayout>
+</LinearLayout>

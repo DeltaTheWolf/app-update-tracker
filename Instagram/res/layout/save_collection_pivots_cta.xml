@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/save_collections_pivots_cta_view_height" android:contentDescription="@string/save_collection_pivots_cta_content_description"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/cta_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/save_collection_pivots_cta" />
+</FrameLayout>

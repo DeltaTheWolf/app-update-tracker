@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="210.0dip" android:layout_height="214.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center|top" android:id="@id/find_people_dismiss_button" android:padding="4.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/search_clear" app:normal="?glyphColorSecondary" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/activation_card_background" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="@dimen/activation_card_icon_container_width" android:layout_height="@dimen/activation_card_icon_size" android:layout_marginBottom="@dimen/activation_card_icon_bottom_margin">
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center_horizontal" android:id="@id/find_people_card_image" android:layout_width="@dimen/activation_card_icon_size" android:layout_height="fill_parent" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|bottom|center" android:id="@id/find_people_card_completed_image" android:background="@color/white" android:visibility="gone" android:layout_width="@dimen/activation_card_completed_icon_size" android:layout_height="@dimen/activation_card_completed_icon_size" android:src="@drawable/instagram_circle_check_filled_24" app:normal="@color/activator_card_progress_good" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_medium_not_scaled" android:textStyle="bold" android:textColor="?textColorPrimary" android:gravity="center" android:id="@id/find_people_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="@dimen/font_small_not_scaled" android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/find_people_card_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" android:layout_marginBottom="@dimen/activation_card_button_bottom_margin">
+        <com.instagram.common.ui.text.TitleTextView android:id="@id/find_people_card_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?primaryButtonStyle" />
+        <com.instagram.common.ui.text.TitleTextView android:id="@id/find_people_card_secondary_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?secondaryButtonStyle" />
+    </FrameLayout>
+</FrameLayout>

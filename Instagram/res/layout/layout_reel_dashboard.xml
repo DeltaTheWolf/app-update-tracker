@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/view_pager" android:paddingTop="?actionBarHeight" android:paddingBottom="24.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="start|center|top" android:id="@id/button_settings" android:layout_height="?actionBarHeight" android:src="@drawable/instagram_settings_outline_24" android:contentDescription="@string/settings" app:normal="@color/black" style="@style/ActionBarButton.Modal" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center|top" android:id="@id/button_saveall" android:visibility="gone" android:layout_height="?actionBarHeight" android:layout_marginRight="40.0dip" android:src="@drawable/save_story_arrow" android:contentDescription="@string/save_all" android:layout_marginEnd="40.0dip" app:normal="@color/black" style="@style/ActionBarButton.Modal" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center|top" android:id="@id/button_close" android:layout_height="?actionBarHeight" android:src="@drawable/instagram_x_outline_24" android:contentDescription="@string/cancel" style="@style/ActionBarButton.Modal" />
+            <com.instagram.ui.widget.triangleshape.TriangleShape android:layout_gravity="bottom" android:id="@id/notch" android:layout_width="fill_parent" android:layout_height="12.0dip" app:fillColor="@color/white" app:lineColor="@color/grey_5" />
+        </FrameLayout>
+        <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/list_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errorImage="@drawable/loadmore_icon_refresh_compound" />
+</com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

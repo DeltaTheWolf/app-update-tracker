@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/feed_inline_composer_button_stub" android:layout="@layout/inline_composer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="end" android:id="@id/feed_emoji_picker_view_stub" android:layout="@layout/row_feed_emoji_picker" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

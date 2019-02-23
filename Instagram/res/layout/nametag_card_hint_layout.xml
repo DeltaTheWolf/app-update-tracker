@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:layout_gravity="center" android:id="@id/shimmer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shimmer_base_alpha="0.5" app:shimmer_direction="left_to_right" app:shimmer_duration="2000">
+        <com.instagram.ui.widget.nametag.UsernameTextView android:id="@id/username_hint_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</merge>

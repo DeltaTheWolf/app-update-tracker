@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/vertical_separator_padding_large" android:paddingBottom="@dimen/vertical_separator_padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <NumberPicker android:id="@id/class_year_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vertical_separator_padding_large" />
+    <include layout="@layout/row_divider" />
+    <Button android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/row_padding" android:layout_marginTop="@dimen/vertical_separator_padding_large" android:layout_marginRight="@dimen/row_padding" android:text="@string/select_class_year_bottom_sheet_done_button_text" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" style="?primaryButtonStyle" />
+</LinearLayout>

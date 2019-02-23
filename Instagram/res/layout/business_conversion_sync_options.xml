@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/business_conversion_sync_options_container" android:padding="@dimen/row_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/import_profile_pic_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:id="@id/import_profile_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_conversion_import_profile_pic" android:layout_toLeftOf="@id/import_profile_pic_switch" android:layout_alignParentLeft="true" />
+        <com.instagram.ui.widget.switchbutton.IgSwitch android:id="@id/import_profile_pic_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:id="@id/enable_cross_posting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_conversion_enable_cross_posting" android:layout_toLeftOf="@id/enable_cross_posting_switch" android:layout_alignParentLeft="true" />
+        <com.instagram.ui.widget.switchbutton.IgSwitch android:id="@id/enable_cross_posting_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

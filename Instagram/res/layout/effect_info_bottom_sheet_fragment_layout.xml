@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/effect_info_bottom_sheet_root" android:background="@drawable/camera_effects_bottom_sheet_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/drag_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/bottom_sheet_drag_handle" android:layout_alignParentTop="true" />
+        <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:id="@id/ar_effect_icon" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="4.0dip" app:radius="5.0dip" />
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/black" android:id="@id/ar_effect_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/black" android:id="@id/ar_profile_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:includeFontPadding="false" />
+        <View android:id="@id/divider" android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="14.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/options_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

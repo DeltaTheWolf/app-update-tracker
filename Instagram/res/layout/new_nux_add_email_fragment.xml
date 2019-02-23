@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NewRegContainer">
+        <ImageView android:layout_marginBottom="@dimen/reg_nux_edit_margin" android:src="@drawable/email" style="@style/RegIcon" />
+        <include layout="@layout/new_reg_title" />
+        <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" android:layout_marginTop="@dimen/reg_nux_edit_margin" style="@style/RegProgressButtonStyle" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_nux_control_margin" layout="@layout/reg_skip" />
+    </LinearLayout>
+</merge>

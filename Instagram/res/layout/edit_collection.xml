@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/edit_collection_fields" android:paddingBottom="@dimen/row_text_padding" android:layout_height="fill_parent" style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="center" android:id="@id/change_cover_photo_stub" android:layout="@layout/change_cover_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/collection_name_edit" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <View android:layout_gravity="bottom" android:background="@color/grey_4" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginBottom="@dimen/row_height_small" />
+        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/red_5" android:gravity="center" android:layout_gravity="bottom" android:id="@id/delete_button" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:text="@string/save_home_collection_feed_delete_collection" android:includeFontPadding="false" />
+        <include layout="@layout/row_divider" />
+    </FrameLayout>
+</LinearLayout>

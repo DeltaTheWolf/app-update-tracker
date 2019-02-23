@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/action_bar" android:background="@drawable/product_details_page_transparent_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="start" android:id="@id/action_bar_back_button" android:background="@color/transparent" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarHeight" android:src="@drawable/instagram_arrow_left_outline_44" android:scaleType="center" android:contentDescription="@string/back" />
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:gravity="end" android:id="@id/action_bar_menu_button" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarHeight" android:src="@drawable/instagram_more_vertical_outline_44" android:scaleType="center" android:contentDescription="@string/menu_options" />
+</LinearLayout>

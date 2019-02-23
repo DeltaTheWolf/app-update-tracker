@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/grey_8" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" android:background="@drawable/iglive_shadow_top" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/iglive_surface_view_frame" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" />
+    <ViewStub android:id="@id/iglive_capture_debug_textview" android:layout="@layout/iglive_debug_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" />
+    <ViewStub android:id="@id/iglive_cobroadcast_progress_stub" android:layout="@layout/layout_iglive_livewith_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/layout_iglive_broadcaster_reactions" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_button_width">
+        <com.instagram.ui.widget.slidecontentlayout.SlideContentLayout android:id="@id/interactivity_livewith_question_sticker_container" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/iglive_interactivity_qa_container_margin_bottom" android:layout_marginStart="@dimen/iglive_row_margin" android:layout_marginEnd="@dimen/iglive_row_margin" />
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end" android:id="@id/iglive_livewith_kickout" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/instagram_x_outline_44" android:contentDescription="@string/close" />
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom" android:id="@id/iglive_viewers_list_stub" android:layout="@layout/layout_iglive_viewer_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/iglive_livewith_capture_end_stub" android:layout="@layout/layout_iglive_guest_capture_end" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/layout_iglive_reel_attribution" />
+</FrameLayout>

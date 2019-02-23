@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/persisting_reel_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/direct_persisted_reel_label_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/persisted_reel_archive_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instagram_history_outline_24" android:tint="?textColorSecondary" />
+    <TextView android:textSize="@dimen/direct_font_small" android:textColor="?textColorSecondary" android:id="@id/persisted_reel_text" android:layout_width="@dimen/direct_persisted_reel_label_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/direct_persisted_reel_label_margin" android:text="@string/direct_persisted_reel_label" />
+</LinearLayout>

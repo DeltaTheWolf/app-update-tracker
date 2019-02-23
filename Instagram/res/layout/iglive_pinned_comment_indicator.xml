@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/pinned_comment_indicator" android:scaleType="center" android:alpha="0.8" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" />
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_pinned_comment_indicator" android:shadowColor="@color/black_15_transparent" android:shadowDy="1.0" android:shadowRadius="1.0" android:alpha="0.8" />
+</LinearLayout>

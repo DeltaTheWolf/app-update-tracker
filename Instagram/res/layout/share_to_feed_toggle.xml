@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/share_to_feed_toggle_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:paddingRight="@dimen/upload_flow_metadata_side_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/upload_flow_metadata_side_padding" android:layout_weight="1.0" android:layout_marginStart="@dimen/upload_flow_metadata_side_padding">
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:id="@id/feed_trailer_share_title" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/igtv_share_trailer_to_feed_title" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:id="@id/feed_trailer_share_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/igtv_share_trailer_to_feed_info" />
+    </LinearLayout>
+    <com.instagram.ui.widget.switchbutton.IgSwitch android:layout_gravity="end|center" android:id="@id/feed_trailer_share_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/upload_flow_metadata_side_padding" android:layout_marginEnd="@dimen/upload_flow_metadata_side_padding" />
+</LinearLayout>

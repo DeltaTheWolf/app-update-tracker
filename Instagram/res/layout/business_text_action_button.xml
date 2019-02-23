@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher android:gravity="center" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:textColor="@color/blue_5" android:gravity="center" android:id="@id/action_bar_button_text" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?actionBarTextButtonStyle" />
+    <com.instagram.ui.widget.spinner.RefreshSpinner android:layout_gravity="center" android:layout_width="@dimen/refresh_button_size" android:layout_height="@dimen/refresh_button_size" android:tint="@color/blue_5" />
+</ViewSwitcher>

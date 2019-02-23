@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/show_more_accounts" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/show_more_accounts_background" android:background="@drawable/pill_button_white_gradient_background" android:layout_width="fill_parent" android:layout_height="@dimen/pill_background_gradient_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:gravity="center_horizontal" android:id="@id/show_more_accounts_pill" android:background="@drawable/feed_pill" android:paddingLeft="@dimen/pill_button_side_padding" android:paddingTop="@dimen/pill_button_top_padding" android:paddingRight="@dimen/pill_button_side_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pill_button_bottom_margin" android:text="@string/more_accounts_like_this" android:maxLines="1" android:drawablePadding="@dimen/pill_button_drawable_padding" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:textSize="@dimen/title_text_size" android:gravity="start" android:orientation="vertical" android:paddingLeft="@dimen/consent_screen_margin_horizontal" android:paddingRight="@dimen/consent_screen_margin_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/title_text_size" android:gravity="start" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_title_margin_top" android:layout_marginBottom="@dimen/content_title_margin_bottom" android:fontFamily="sans-serif-medium" />
+    <LinearLayout android:orientation="vertical" android:id="@id/paragraphs_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RadioGroup android:orientation="vertical" android:id="@id/age_button_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/radio_group_margin_top" android:layout_marginBottom="@dimen/radio_group_margin_bottom">
+        <RadioButton android:id="@id/over_age_button" style="@style/GDPRRadioButtonStyle" />
+        <RadioButton android:id="@id/between_age_button" style="@style/GDPRRadioButtonStyle" />
+        <RadioButton android:id="@id/under_age_button" style="@style/GDPRRadioButtonStyle" />
+    </RadioGroup>
+</LinearLayout>

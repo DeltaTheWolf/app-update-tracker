@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/suggested_live_videos_title" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/suggested_live_videos" style="@style/ShadowTextViewStyle" />
+</LinearLayout>

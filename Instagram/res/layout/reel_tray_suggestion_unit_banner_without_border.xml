@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/suggestion_unit_banner_container" android:paddingLeft="@dimen/tray_item_padding" android:paddingTop="@dimen/tray_suggestion_banner_without_border_container_padding_top" android:paddingRight="@dimen/tray_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/facepile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tray_suggestion_banner_padding">
+        <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:id="@id/banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:id="@id/banner_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

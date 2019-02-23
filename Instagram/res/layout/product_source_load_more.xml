@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/product_source_load_more_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/product_source_load_more_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/blue_5" android:layout_gravity="start|center" android:id="@id/product_source_load_more_text" android:paddingLeft="@dimen/product_source_row_horizontal_padding" android:paddingRight="@dimen/product_source_row_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_source_load_more" />
+    <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/product_source_load_more_spinner" android:visibility="gone" android:layout_width="@dimen/product_source_load_more_row_spinner_size" android:layout_height="@dimen/product_source_load_more_row_spinner_size" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/megaphone_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/v3_vertical_margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/v3_button_separation">
+        <com.instagram.common.ui.text.TitleTextView android:id="@id/primary_button" android:layout_width="0.0dip" android:layout_height="@dimen/v3_button_height" android:layout_marginRight="@dimen/v3_button_separation" android:layout_weight="1.0" style="?primaryButtonStyle" />
+        <com.instagram.common.ui.text.TitleTextView android:id="@id/secondary_button" android:layout_width="0.0dip" android:layout_height="@dimen/v3_button_height" android:layout_weight="1.0" style="?secondaryButtonStyle" />
+    </LinearLayout>
+    <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_horizontal" android:id="@id/inverse_primary_button" android:layout_width="wrap_content" android:layout_height="@dimen/v3_button_height" style="?inversePrimaryButtonStyle" />
+</LinearLayout>

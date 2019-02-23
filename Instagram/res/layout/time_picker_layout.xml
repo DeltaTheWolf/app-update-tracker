@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <NumberPicker android:theme="@style/NumberPickerText" android:id="@id/date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <NumberPicker android:theme="@style/NumberPickerText" android:id="@id/hour_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/date_picker_internal_margin" />
+    <NumberPicker android:theme="@style/NumberPickerText" android:id="@id/minute_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/date_picker_internal_margin" />
+    <NumberPicker android:theme="@style/NumberPickerText" android:id="@id/ampm_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/date_picker_internal_margin" />
+</LinearLayout>

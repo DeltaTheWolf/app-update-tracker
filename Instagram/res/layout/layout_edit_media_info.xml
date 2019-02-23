@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/edit_media_relative_layout" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/feed_row_header_height">
+                <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/edit_media_user_imageview" android:layout_marginLeft="@dimen/feed_header_padding" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/feed_header_padding" android:layout_alignParentStart="true" style="@style/Avatar.XXSmall" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edit_media_linear_layout" android:paddingRight="@dimen/feed_header_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/edit_media_user_imageview" android:layout_centerVertical="true" android:paddingEnd="@dimen/feed_header_padding" android:layout_toEndOf="@id/edit_media_user_imageview">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/media_header_location_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/feed_header_padding" android:layout_weight="1.0" android:paddingEnd="@dimen/media_header_location_padding" android:layout_marginEnd="@dimen/feed_header_padding">
+                        <TextView android:textColor="?textColorPrimary" android:ellipsize="end" android:id="@id/edit_media_username" android:paddingLeft="@dimen/feed_profile_name_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/feed_profile_name_padding" />
+                        <TextView android:textSize="?textSizeLocation" android:textColor="@color/blue_5" android:ellipsize="end" android:id="@id/below_username_label" android:paddingLeft="@dimen/feed_profile_name_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_location" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/feed_profile_name_padding" />
+                    </LinearLayout>
+                    <TextView android:textColor="?textColorSecondary" android:id="@id/edit_media_timestamp" android:paddingLeft="@dimen/feed_header_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/feed_header_padding" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ViewStub android:id="@id/extra_location_label_stub" android:layout="@layout/row_feed_media_profile_extra_location_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="bottom" android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+        <ScrollView android:id="@id/edit_media_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewStub android:id="@id/single_media_group_stub" android:layout="@layout/layout_edit_media_info_non_carousel_media_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/carousel_media_group_stub" android:layout="@layout/row_edit_carousel_media_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.instagram.ui.widget.textview.IgAutoCompleteTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/edit_media_caption" android:background="@drawable/input_background" android:padding="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:layout_marginBottom="@dimen/row_text_padding" android:minHeight="@dimen/row_height_small" android:hint="@string/enter_caption" android:maxLength="@integer/max_comments_length" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:imeOptions="actionDone" android:dropDownHeight="wrap_content" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" style="@style/IgAutoCompleteTextView" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ViewStub android:id="@id/edit_media_failed_view_stub" android:layout="@layout/layout_failed" android:inflatedId="@id/edit_media_failed_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

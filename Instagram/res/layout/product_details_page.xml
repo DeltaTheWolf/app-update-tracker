@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_listview" />
+    <ViewStub android:layout_gravity="top" android:id="@id/action_bar_overlay_viewstub" android:layout="@layout/product_details_page_transparent_action_bar_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/pdp_action_bar" layout="@layout/action_bar" />
+</FrameLayout>

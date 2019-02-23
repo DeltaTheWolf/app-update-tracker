@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.feed.ui.views.FeedTabBarLayout android:orientation="horizontal" android:id="@id/group_set_container" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="48.0dip" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:gravity="center" android:id="@id/groupset_tab_0" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAllCaps="true" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:gravity="center" android:id="@id/groupset_tab_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAllCaps="true" />
+</com.instagram.feed.ui.views.FeedTabBarLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/direct_visual_message_viewer_root_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/direct_expiring_media_viewer_content" layout="@layout/layout_direct_story_viewer_item" />
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/profile_transition_view" android:visibility="invisible" android:layout_width="@dimen/tray_avatar_inner_size" android:layout_height="@dimen/tray_avatar_inner_size" />
+    <com.instagram.ui.widget.volume.VolumeIndicator android:layout_gravity="top" android:id="@id/direct_expiring_media_viewer_volume_indicator" android:background="@color/white" android:paddingLeft="6.0dip" android:paddingTop="7.0dip" android:paddingRight="6.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" android:progressDrawable="@drawable/reel_volume_indicator_background" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" style="?android:progressBarStyleHorizontal" />
+</com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

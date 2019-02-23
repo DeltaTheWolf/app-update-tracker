@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/grey_2" android:padding="@dimen/login_activity_map_border_width" android:layout_width="fill_parent" android:layout_height="@dimen/login_history_map_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.instagram.maps.ui.IgStaticMapView android:id="@id/login_activity_map_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/login_history_map_tooltip_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/map_info_rectangle" android:padding="@dimen/row_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/status_icon" android:layout_width="@dimen/login_history_map_tooltip_icon_size" android:layout_height="@dimen/login_history_map_tooltip_icon_size" android:layout_marginRight="@dimen/row_padding_medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:layout_gravity="start" android:id="@id/title_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <TextView android:textSize="@dimen/font_small" android:layout_gravity="start" android:id="@id/body_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_arrow" android:background="@drawable/icon_arrow_down" android:layout_width="@dimen/login_history_map_tooltip_anchor_size" android:layout_height="@dimen/login_history_map_tooltip_anchor_size" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/button_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/login_history_row_height">
+        <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/left_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/login_history_review_map_left_button_text" android:maxLines="1" android:layout_weight="1.0" />
+        <include layout="@layout/vertical_divider" />
+        <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/right_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/login_history_review_map_right_button_text" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textColor="@color/grey_5" android:gravity="center" android:layout_gravity="bottom" android:id="@id/confirm_text" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/login_history_row_height" />
+</FrameLayout>

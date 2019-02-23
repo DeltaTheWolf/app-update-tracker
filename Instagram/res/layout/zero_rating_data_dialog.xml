@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/modal_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:id="@id/profile_image_container" android:layout_width="@dimen/zero_rating_data_dialog_image_container_size" android:layout_height="@dimen/zero_rating_data_dialog_image_container_size" android:layout_marginTop="@dimen/zero_rating_data_dialog_image_container_margin_top">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/user_profile_pic" android:layout_width="@dimen/zero_rating_data_dialog_profile_image_size" android:layout_height="@dimen/zero_rating_data_dialog_profile_image_size" />
+            <com.instagram.ui.widget.gradientspinner.GradientSpinner android:layout_gravity="center" android:id="@id/seen_state" android:layout_width="@dimen/zero_rating_data_dialog_image_container_size" android:layout_height="@dimen/zero_rating_data_dialog_image_container_size" />
+            <View android:layout_gravity="end|bottom|center" android:background="@drawable/spinsta_data_black" android:layout_width="@dimen/zero_rating_data_dialog_branding_badge_size" android:layout_height="@dimen/zero_rating_data_dialog_branding_badge_size" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_medium_xxlarge" android:textStyle="bold" android:textColor="@color/grey_9" android:gravity="center" android:id="@id/title_text" android:padding="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_rating_data_dialog_story_title_text" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:gravity="center" android:id="@id/subtitle_text" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:paddingBottom="@dimen/zero_rating_data_dialog_close_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_rating_data_dialog_subtitle_text" />
+        <include layout="@layout/row_divider" />
+        <TextView android:textColor="@color/blue_5" android:gravity="center" android:id="@id/zero_rating_data_dialog_use_data_button" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:text="@string/zero_rating_data_dialog_story_confirm_button" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/zero_rating_data_dialog_use_data_close_button" android:padding="@dimen/zero_rating_data_dialog_close_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:tint="@color/grey_4" />
+</FrameLayout>

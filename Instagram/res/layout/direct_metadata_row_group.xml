@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="?directRowHeight">
+        <ViewStub android:id="@id/metadata_row_double_avatar_stub" android:layout="@layout/inbox_double_avatar" android:layout_width="@dimen/avatar_size_redesign" android:layout_height="@dimen/avatar_size_redesign" android:layout_marginRight="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" />
+        <RelativeLayout android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="@dimen/row_text_padding">
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/metadata_row_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" style="?directRowUserName" />
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/metadata_row_usernames" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:layout_below="@id/metadata_row_group_name" style="?directRowUserInfo" />
+        </RelativeLayout>
+        <CheckBox android:id="@id/group_toggle" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+    </LinearLayout>
+</FrameLayout>

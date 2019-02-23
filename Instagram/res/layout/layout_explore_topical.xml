@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.viewpager.SwipeConfigurableViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center" android:id="@id/loading_stub" android:layout="@layout/large_spinner_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center" android:id="@id/failed_stub" android:layout="@layout/layout_explore_topical_error_state" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

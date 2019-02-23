@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/private_switch_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/private_account" android:layout_weight="1.0" style="@style/FieldWithGlyph.WithMargin" />
+        <com.instagram.ui.widget.switchbutton.IgSwitch android:layout_gravity="center_vertical" android:id="@id/private_switch" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/row_height_small" />
+    </LinearLayout>
+    <include android:id="@id/private_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" layout="@layout/row_divider" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/private_explanation" android:paddingLeft="@dimen/row_padding" android:paddingTop="8.0dip" android:paddingRight="@dimen/row_padding" android:paddingBottom="@dimen/row_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/private_text_bottom_margin" android:text="@string/need_to_be_public" />
+</merge>

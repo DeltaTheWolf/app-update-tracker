@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_container" android:background="@drawable/bg_simple_row" android:paddingLeft="0.0dip" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_medium_redesign" android:paddingStart="0.0dip" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/avatar_image_view" android:padding="3.0dip" android:layout_width="@dimen/avatar_reel_ring_size_medium" android:layout_height="@dimen/avatar_reel_ring_size_medium" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" android:layout_marginStart="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" />
+    <com.instagram.common.ui.text.TitleTextView android:textColor="?directPaletteColor5" android:ellipsize="end" android:id="@id/row_user_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" style="?rowUserName" />
+</LinearLayout>

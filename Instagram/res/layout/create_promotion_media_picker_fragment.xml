@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/media_carousel_padding" android:layout_marginBottom="@dimen/media_carousel_padding" />
+    <include layout="@layout/row_divider" />
+    <FrameLayout android:id="@id/fragment_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/spinner_large" />
+</LinearLayout>

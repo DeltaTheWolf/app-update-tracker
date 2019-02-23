@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/red_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/violation_banner_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:textColorHighlight="@color/transparent" android:gravity="center_vertical" android:layout_gravity="start|bottom|center" android:id="@id/violation_banner_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/violation_text_padding" android:layout_marginRight="@dimen/violation_text_padding" android:layout_marginStart="@dimen/violation_text_padding" android:layout_marginEnd="@dimen/violation_text_padding" />
+</FrameLayout>

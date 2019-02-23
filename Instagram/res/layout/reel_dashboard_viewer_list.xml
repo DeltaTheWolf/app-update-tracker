@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/dashboard_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+            <ViewStub android:id="@id/close_friends_badge_stub" android:layout="@layout/close_friends_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginStart="@dimen/row_padding" />
+            <ViewStub android:id="@id/insights_button_stub" android:layout="@layout/layout_reel_insights_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" />
+            <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/activated_color_states" android:gravity="start|center" android:id="@id/views_textview" android:background="@drawable/blue_state_underline" android:paddingLeft="@dimen/row_button_padding" android:paddingRight="@dimen/row_button_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ViewStub android:id="@id/promote_button_stub" android:layout="@layout/layout_reel_promote_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/save_button" android:background="@drawable/bg_simple_row" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/instagram_download_outline_24" android:scaleType="center" android:contentDescription="@string/reel_dashboard_save_button_label" app:normal="@color/grey_8" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/share_button" android:background="@drawable/bg_simple_row" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/instagram_share_outline_24" android:scaleType="center" android:contentDescription="@string/reel_dashboard_share_button_label" app:normal="@color/grey_8" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/delete_button" android:background="@drawable/bg_simple_row" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/instagram_delete_outline_24" android:scaleType="center" android:contentDescription="@string/reel_dashboard_delete_button_label" app:normal="@color/grey_8" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" style="@style/Widget.Instagram.Divider" />
+        <include android:id="@id/menu" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/layout_listview" />
+        <ViewStub android:id="@id/no_views_stub" android:layout="@layout/layout_no_reel_views" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ViewStub android:id="@id/retry_upload_stub" android:layout="@layout/layout_reel_retry_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ViewStub android:id="@id/uploading_stub" android:layout="@layout/layout_reel_uploading_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ViewStub android:id="@id/delete_stub" android:layout="@layout/layout_reel_delete_upload" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ViewStub android:id="@id/call_to_action_stub" android:layout="@layout/layout_reel_call_to_action" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/insights_fragment_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom" android:id="@id/dashboard_footer_stub" android:layout="@layout/layout_reel_footer_notice" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" />
+</FrameLayout>

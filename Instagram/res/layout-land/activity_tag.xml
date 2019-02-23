@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_container_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:background="?creationPrimaryBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/action_bar_tagging" />
+        <com.instagram.tagging.widget.PhotoScrollView android:id="@id/photo_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" android:fillViewport="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/photo_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.instagram.common.ui.widget.squareframelayout.SquareFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ViewStub android:layout_gravity="center" android:id="@id/tag_photo_view_stub" android:layout="@layout/layout_tag_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:layout_gravity="center" android:id="@id/tag_video_view_stub" android:layout="@layout/layout_tag_video" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/tag_carousel_view_stub" android:layout="@layout/layout_tag_carousel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </com.instagram.common.ui.widget.squareframelayout.SquareFrameLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tags_help_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ViewStub android:layout_gravity="center" android:id="@id/tap_to_tag_icon_view_stub" android:layout="@layout/layout_tap_to_tag_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+                    <TextView android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/fb_tags_help_text" android:paddingBottom="@dimen/tagging_help_text_top_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tagging_help_text_padding" android:layout_marginRight="@dimen/tagging_help_text_padding" android:text="@string/tagging_only_you_can_see_fb_friends" android:freezesText="true" android:layout_marginStart="@dimen/tagging_help_text_padding" android:layout_marginEnd="@dimen/tagging_help_text_padding" />
+                    <TextView android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/tags_help_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tagging_help_text_padding" android:layout_marginRight="@dimen/tagging_help_text_padding" android:freezesText="true" android:layout_marginStart="@dimen/tagging_help_text_padding" android:layout_marginEnd="@dimen/tagging_help_text_padding" />
+                    <TextView android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/tags_secondary_help_text" android:paddingTop="@dimen/tagging_help_text_top_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tagging_help_text_padding" android:layout_marginRight="@dimen/tagging_help_text_padding" android:text="@string/tagging_drag_to_move" android:freezesText="true" android:layout_marginStart="@dimen/tagging_help_text_padding" android:layout_marginEnd="@dimen/tagging_help_text_padding" />
+                    <TextView android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/tags_tertiary_help_text" android:paddingTop="@dimen/tagging_help_text_top_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tagging_help_text_padding" android:layout_marginRight="@dimen/tagging_help_text_padding" android:text="@string/tagging_swipe_to_see_more" android:freezesText="true" android:layout_marginStart="@dimen/tagging_help_text_padding" android:layout_marginEnd="@dimen/tagging_help_text_padding" />
+                </LinearLayout>
+                <ViewStub android:gravity="center" android:id="@id/tagged_items_view_stub" android:layout="@layout/layout_tagged_items" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </com.instagram.tagging.widget.PhotoScrollView>
+        <include layout="@layout/action_bar_shadow" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="?rowPadding" android:paddingRight="?rowPadding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small" android:paddingStart="?rowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:paddingRight="?rowTextPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="?rowTextPadding">
+        <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_vertical" android:id="@id/row_simple_text_textview" android:padding="?rowTextPadding" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" style="?rowTextStyle" />
+        <TextView android:textColor="?textColorSecondary" android:layout_gravity="center_vertical" android:id="@id/row_simple_text_metadata_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+</FrameLayout>

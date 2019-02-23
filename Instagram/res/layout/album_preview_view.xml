@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/album_preview_view_margin" android:layout_marginEnd="@dimen/album_preview_view_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/filter_view_container" android:background="?creationTertiaryBackground" android:layout_width="@dimen/album_preview_view_width" android:layout_height="@dimen/album_preview_view_width">
+        <ImageView android:id="@id/filter_image_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="start|bottom|center" android:id="@id/album_submedia_edit_button" android:background="@drawable/album_preview_action_button_background" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/filter_16" android:scaleType="centerInside" android:layout_marginStart="12.0dip" app:normal="@color/black" />
+    </FrameLayout>
+</FrameLayout>

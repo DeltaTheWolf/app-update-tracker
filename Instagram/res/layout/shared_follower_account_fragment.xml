@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:id="@id/intro_textview" android:paddingTop="@dimen/intro_text_bottom_padding" android:paddingBottom="@dimen/intro_text_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ListView android:id="@id/shared_follower_accounts_listview" android:focusable="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    </LinearLayout>
+    <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/spinner_large" />
+</FrameLayout>

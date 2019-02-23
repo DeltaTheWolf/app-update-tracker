@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/product_sticker_tokenized_edit_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/white_80_transparent" android:layout_gravity="start" android:id="@id/product_sticker_tokens_title" android:paddingLeft="@dimen/product_sticker_editor_token_title_horizontal_margin" android:paddingRight="@dimen/product_sticker_editor_token_title_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_sticker_tokens_title_remove" />
+    <com.instagram.ui.widget.flowlayout.HorizontalFlowLayout android:orientation="horizontal" android:id="@id/product_sticker_tokens_container" android:paddingTop="@dimen/product_sticker_editor_token_container_top_padding" android:paddingBottom="@dimen/product_sticker_editor_token_container_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/product_sticker_editor_token_container_padding" android:paddingEnd="@dimen/product_sticker_editor_token_container_padding" />
+</LinearLayout>

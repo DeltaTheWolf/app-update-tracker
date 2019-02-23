@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundDrawable" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="?activityRowHeight" android:minHeight="?activityRowHeight" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:paddingTop="@dimen/vertical_separator_padding" android:paddingBottom="@dimen/vertical_separator_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?activityPaddingSmall">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/row_newsfeed_user_imageview" android:contentDescription="@string/profile_picture" style="?activityAvatar" />
+            <include layout="@layout/row_newsfeed_story_single_avatar_story_ring" style="?activityAvatarReelRing" />
+        </FrameLayout>
+        <com.instagram.ui.widget.stackedavatar.StackedAvatarView android:id="@id/row_newsfeed_stacked_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?activityPaddingSmall" android:contentDescription="@string/profile_picture" app:avatarSize="?activityStackedAvatar" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="@dimen/row_height_small" android:layout_toLeftOf="@id/row_newsfeed_media_image" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/row_newsfeed_media_image" android:layout_alignParentStart="true">
+                <com.instagram.common.ui.text.TitleTextView android:id="@id/row_newsfeed_text" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" style="?activityUserDetails" />
+                <ViewStub android:id="@id/heart_and_reply" android:layout="@layout/row_newsfeed_heart_and_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/row_newsfeed_media_image" android:layout_width="@dimen/row_height_small" android:layout_height="@dimen/row_height_small" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:placeholder="@color/image_placeholder" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/row_divider" style="?defaultDividerStyle" />
+</FrameLayout>

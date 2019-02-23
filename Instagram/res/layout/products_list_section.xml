@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/products_list_section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/shopping_viewer_margin" android:text="@string/products_section_more_from_this_post_title" style="@style/ProductDetailsSectionHeaderTitle" />
+    <android.support.v7.widget.RecyclerView android:id="@id/tracked_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/products_list_section_margin" android:layout_marginTop="0.0dip" android:layout_marginRight="@dimen/products_list_section_margin" android:layout_marginBottom="@dimen/shopping_viewer_section_bottom_margin" android:layout_marginStart="@dimen/products_list_section_margin" android:layout_marginEnd="@dimen/products_list_section_margin" />
+</LinearLayout>

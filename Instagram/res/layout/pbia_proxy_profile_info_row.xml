@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/grey_0" android:padding="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/advertiser_not_on_instagram_textview" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/advertiser_not_on_instagram_description" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:id="@id/pbia_learn_more_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pbia_learn_more_label" />
+</LinearLayout>

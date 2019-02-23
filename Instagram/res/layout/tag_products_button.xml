@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/metadata_row_products" android:background="@drawable/bg_simple_row" style="?creationRowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="?creationPadding" android:paddingRight="?creationPadding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:paddingStart="?creationPadding" android:paddingEnd="?creationPadding">
+        <ImageView android:id="@id/tag_product_icon" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_product" android:paddingEnd="@dimen/row_text_padding" style="?creationTagIcon" />
+        <com.instagram.common.ui.text.TitleTextView android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/product_tagging_add_products" android:layout_weight="1.0" android:paddingEnd="@dimen/row_text_padding" style="?creationTitleText" />
+        <com.instagram.common.ui.text.TitleTextView android:textColor="?textColorSecondary" android:id="@id/metadata_textview_product" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?creationSubTitleText" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" />
+</FrameLayout>

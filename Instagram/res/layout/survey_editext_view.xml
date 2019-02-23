@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:gravity="top" android:id="@id/survey_edit_text" android:background="@android:color/transparent" android:paddingLeft="@dimen/row_text_padding" android:paddingTop="@dimen/row_padding" android:paddingRight="@dimen/row_text_padding" android:paddingBottom="@dimen/row_padding" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="3" android:scrollHorizontally="false" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" />
+</merge>

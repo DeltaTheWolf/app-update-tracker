@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/hero_image_section_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/hero_image_section_indicator_stub" android:layout="@layout/hero_image_section_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/hero_image_section_indicator_height" />
+</FrameLayout>

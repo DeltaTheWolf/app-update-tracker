@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/location_page_header_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/reel" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/location_page_header_reel_margin_left" android:layout_marginTop="@dimen/location_page_header_reel_margin_top" android:layout_marginBottom="@dimen/location_page_header_reel_margin_bottom" android:layout_marginStart="@dimen/location_page_header_reel_margin_left">
+            <com.instagram.ui.widget.gradientspinner.GradientSpinner android:layout_gravity="center" android:id="@id/reel_ring" android:layout_width="@dimen/avatar_size_ridiculously_large_plus" android:layout_height="@dimen/avatar_size_ridiculously_large_plus" />
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/profile_image" style="@style/Avatar.ExtraExtraLarge" />
+            <com.instagram.reels.ui.badge.ReelBrandingBadgeView android:layout_gravity="end|bottom|center" android:id="@id/branding_badge" android:layout_width="@dimen/location_page_header_reel_title_badge_size" android:layout_height="@dimen/location_page_header_reel_title_badge_size" android:layout_marginRight="@dimen/location_page_header_reel_title_badge_margin_right" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/row_padding_large">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_medium_large" android:textColor="@color/grey_5" android:ellipsize="end" android:id="@id/category_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_medium_large" android:textColor="@color/grey_5" android:id="@id/dot_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding_small" android:layout_marginRight="@dimen/row_padding_small" android:text="•" android:maxLines="1" />
+                <TextView android:textSize="@dimen/font_medium_large" android:textColor="@color/grey_5" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+            <ViewStub android:id="@id/more_info_primary_stub" android:layout="@layout/location_page_header_cta_button_primary_style" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/more_info_stub" android:layout="@layout/location_page_header_cta_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/font_medium_large" android:textColor="@color/grey_5" android:layout_gravity="center_horizontal" android:id="@id/city" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/row_divider" />
+</LinearLayout>

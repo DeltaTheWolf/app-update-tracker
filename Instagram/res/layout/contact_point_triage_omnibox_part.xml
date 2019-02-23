@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/omnibox_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:textColor="@color/grey_9" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/omnibox_title" />
+    <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/omnibox_inline_error" style="@style/RegInlineErrorMessageViewStyle"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:id="@id/omnibox_field_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_small" style="@style/RegEditTextContainerStyle">
+            <com.instagram.nux.ui.Omnibox android:id="@id/omnibox" android:layout_width="0.0dip" android:hint="@string/omnibox_hint" android:layout_weight="1.0" style="@style/RegEditTextStyle.InContainer" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/clear_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/row_padding" android:src="@drawable/search_clear" android:contentDescription="@string/clear" android:layout_marginEnd="@dimen/row_padding" />
+        </LinearLayout>
+    </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
+    <TextView android:textSize="@dimen/font_small" android:textColor="?nuxTextColor" android:gravity="center_horizontal" android:id="@id/sms_consent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_small" android:text="@string/sms_consent" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" style="@style/RegProgressButtonStyle" />
+</LinearLayout>

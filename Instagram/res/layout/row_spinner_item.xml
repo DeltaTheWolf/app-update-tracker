@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:minHeight="@dimen/row_height_small" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="start|center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/menu_row_spinner" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+</FrameLayout>

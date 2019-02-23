@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.ui.dynamiclayout.DynamicCoordinatorLayout android:orientation="vertical" android:id="@id/coordinator_root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/swipe_refresh_animated_progressbar_container_background" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:id="@id/swipe_refresh_animated_progressbar_container" android:layout_width="@dimen/profile_pull_to_refresh_container_width" android:layout_height="@dimen/profile_pull_to_refresh_container_height" />
+    <android.support.design.widget.AppBarLayout android:id="@id/tab_appbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/profile_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.instagram.common.ui.widget.adapterlayout.AdapterLinearLayout android:theme="@style/Theme.Instagram" android:orientation="vertical" android:id="@id/profile_header_fixed_list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_tabs_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewStub android:id="@id/profile_tabs_top_divider_stub" android:layout="@layout/row_divider" android:inflatedId="@id/profile_tabs_top_divider" style="@style/Widget.Instagram.Divider" />
+                <android.support.design.widget.TabLayout android:theme="@style/ProfileTabHeaderTheme" android:layout_gravity="top" android:id="@id/profile_tab_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorHeight="@dimen/profile_tab_indicator_height" app:tabPaddingEnd="@dimen/profile_tab_start_end_padding" app:tabPaddingStart="@dimen/profile_tab_start_end_padding" />
+                <include android:id="@id/profile_tabs_bottom_divider" layout="@layout/row_divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <ViewStub android:id="@id/private_profile_empty_state_stub" android:layout="@layout/layout_private_profile_empty_state" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.instagram.ui.widget.nestablescrollingview.NestableViewPager android:id="@id/profile_viewpager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.ui.widget.refresh.RefreshableListView android:id="@android:id/list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <ViewStub android:id="@id/blocked_profile_stub" android:layout="@layout/blocked_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ViewStub android:layout_gravity="bottom" android:id="@id/ar_effect_notification_container" android:layout="@layout/ar_effect_notification" android:layout_width="fill_parent" android:layout_height="@dimen/ar_effect_notification_container_height" />
+    <ViewStub android:id="@id/nametag_result_card_stub" android:layout="@layout/nametag_result_card_black_bg" android:inflatedId="@id/nametag_outer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.instagram.ui.dynamiclayout.DynamicCoordinatorLayout>

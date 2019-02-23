@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.ui.widget.scrollview.MaxHeightScrollView android:overScrollMode="never" app:maxHeight="@dimen/max_token_group_height" style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.widget.flowlayout.HorizontalFlowLayout android:id="@id/token_group_container" android:paddingTop="@dimen/row_padding_medium" android:paddingBottom="@dimen/row_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instagram.ui.widget.searchedittext.SearchWithDeleteEditText android:gravity="center_vertical" android:id="@id/search_edit_text" android:background="@null" android:paddingTop="@dimen/token_text_view_padding_top" android:paddingBottom="@dimen/token_text_view_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/min_token_group_search_text_width" android:maxLines="1" android:freezesText="true" android:inputType="textAutoComplete" android:imeOptions="actionSearch" />
+    </com.instagram.ui.widget.flowlayout.HorizontalFlowLayout>
+</com.instagram.ui.widget.scrollview.MaxHeightScrollView>

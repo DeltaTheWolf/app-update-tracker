@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?textColorSecondary" android:gravity="center_vertical" android:id="@id/business_section_header" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:text="@string/your_pages" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/header_height" android:layout_marginBottom="@dimen/header_height" layout="@layout/page_list_group" />
+    <include layout="@layout/business_fb_page_footer" />
+</FrameLayout>

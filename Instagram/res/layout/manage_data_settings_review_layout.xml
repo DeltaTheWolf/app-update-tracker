@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/title_text_size" android:gravity="start" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/consent_screen_margin_horizontal" android:layout_marginTop="@dimen/content_title_margin_top" android:layout_marginRight="@dimen/consent_screen_margin_horizontal" android:layout_marginBottom="@dimen/content_title_margin_bottom" android:fontFamily="sans-serif-medium" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/consent_screen_margin_horizontal" android:layout_marginRight="@dimen/consent_screen_margin_horizontal" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/paragraphs_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <Button android:textSize="@dimen/content_text_size" android:textColor="@color/blue_5" android:id="@id/manage_data_settings_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/gdpr_button_height" android:text="@string/manage_data_settings" android:fontFamily="sans-serif-medium" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:textSize="@dimen/content_text_size" android:gravity="center" android:layout_gravity="bottom" android:id="@id/accept_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/gdpr_button_height" android:layout_marginLeft="@dimen/consent_button_margin_horizontal" android:layout_marginRight="@dimen/consent_button_margin_horizontal" android:layout_marginBottom="@dimen/gdpr_button_margin_vertical" android:text="@string/next_button" />
+</LinearLayout>

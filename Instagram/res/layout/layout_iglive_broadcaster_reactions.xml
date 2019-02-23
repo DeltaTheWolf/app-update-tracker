@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/iglive_reactions_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/default_ar_effect_picker_container_stub" android:layout="@layout/default_ar_effect_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/dial_ar_effect_picker_container_stub" android:layout="@layout/dial_ar_effect_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/ar_effect_loading_indicator_stub" android:layout="@layout/ar_effect_loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center" android:id="@id/ar_effect_instruction_text_stub" android:layout="@layout/ar_effect_instruction_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/layout_iglive_reactions_container" />
+    <include layout="@layout/layout_iglive_avatar_likes_container" />
+    <View android:id="@id/dismiss_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/button_width" />
+</FrameLayout>

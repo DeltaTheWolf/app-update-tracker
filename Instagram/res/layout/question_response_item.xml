@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/QuestionResponse"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.base.AspectRatioLinearLayout android:id="@id/question_response_card" style="@style/QuestionResponseCard">
+        <LinearLayout style="@style/QuestionResponseCardResponder">
+            <com.instagram.reels.question.view.AvatarView android:id="@id/question_responder_avatar" style="@style/QuestionResponseAvatar" />
+            <TextView android:id="@id/question_responder" style="@style/QuestionResponseCardResponderText" />
+        </LinearLayout>
+        <ViewStub android:id="@id/question_response" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/question_responses_padding_horizontal" android:layout_marginEnd="@dimen/question_responses_padding_horizontal" />
+        <LinearLayout android:id="@id/question_cta" style="@style/QuestionResponseCardCTA">
+            <TextView android:id="@id/question_cta_text" style="@style/QuestionResponseCardCTAText" />
+            <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/question_cta_arrow" style="@style/QuestionResponseCardCTAArrow" />
+        </LinearLayout>
+    </com.instagram.ui.widget.base.AspectRatioLinearLayout>
+    <View android:id="@id/question_response_overlay" style="@style/QuestionResponseCardOverlay" />
+</FrameLayout>

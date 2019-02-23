@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="?textColorPrimary" android:gravity="center" android:id="@id/hon_question" android:paddingTop="@dimen/question_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/survey_question" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/answer_button_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/first_ad" android:text="@string/first_ad" style="@style/question_section_button" />
+        <TextView android:id="@id/second_ad" android:layout_marginLeft="@dimen/question_section_button_margin" android:text="@string/second_ad" style="@style/question_section_button" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center" android:id="@id/skip" android:paddingTop="@dimen/answer_button_margin" android:paddingBottom="@dimen/answer_button_margin" android:text="@string/skip" style="@style/question_section_button" />
+</LinearLayout>

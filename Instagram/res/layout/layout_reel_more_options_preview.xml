@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/reel_more_options_preview_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.IgImageView android:layout_gravity="center_horizontal" android:id="@id/media_container" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/toolbar_text_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/toolbar_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cta_fill_chevron_margin" android:src="@drawable/viewer_swipeup" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/toolbar_text" android:layout_width="wrap_content" android:layout_height="@dimen/button_width" style="@style/ShadowTextViewStyle" />
+        </FrameLayout>
+        <LinearLayout android:gravity="top" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/toolbar_buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ViewStub android:layout_gravity="center_vertical" android:id="@id/toolbar_reshare_button_stub" android:layout="@layout/layout_toolbar_reshare_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/reel_more_options_preview_toolbar_reshare_button_margin_right" />
+            <ViewStub android:id="@id/toolbar_menu_option_button_stub" android:layout="@layout/layout_toolbar_menu_option_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/reel_more_options_preview_toolbar_menu_option_button_margin_right" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/ProfileFollowSheetScrollContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/ProfileFollowSheetContainer">
+        <include layout="@layout/profile_follow_sheet_header" />
+        <RadioGroup android:id="@id/follow_sheet_live_radio_group" android:showDividers="middle" style="@style/ProfileFollowSheetContent">
+            <RadioButton android:id="@id/follow_sheet_live_all_notifications" android:text="@string/user_notification_settings_live_all" style="@style/ProfileFollowSheetRadioButton" />
+            <RadioButton android:id="@id/follow_sheet_live_some_notifications" android:text="@string/user_notification_settings_live_default" style="@style/ProfileFollowSheetRadioButton" />
+            <RadioButton android:id="@id/follow_sheet_live_no_notifications" android:text="@string/user_notification_settings_live_none" style="@style/ProfileFollowSheetRadioButton" />
+            <include layout="@layout/profile_follow_sheet_footer" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

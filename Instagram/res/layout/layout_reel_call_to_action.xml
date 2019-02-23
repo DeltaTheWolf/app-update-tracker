@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="?actionBarHeight" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/reel_dashboard_call_to_action_icon" android:background="@drawable/reel_dashboard_call_to_action_icon_background" android:layout_width="@dimen/reel_dashboard_cta_icon_size" android:layout_height="@dimen/reel_dashboard_cta_icon_size" android:src="@drawable/instagram_share_outline_24" />
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:gravity="center" android:id="@id/reel_dashboard_call_to_action_title" android:paddingTop="@dimen/reel_dashboard_cta_icon_spacing" android:paddingBottom="@dimen/reel_dashboard_cta_button_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reel_dashboard_cta_share_memory" />
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/blue_5" android:gravity="center" android:id="@id/reel_dashboard_call_to_action_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share" />
+</LinearLayout>

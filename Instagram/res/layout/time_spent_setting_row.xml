@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/setting_row_vertical_padding" android:paddingBottom="@dimen/setting_row_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_row_margin_between_text_and_right_chevron" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/grey_9" android:id="@id/title" android:paddingBottom="@dimen/setting_row_padding_between_title_and_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TimeSpentTextBodyStyle" />
+    </LinearLayout>
+    <TextView android:id="@id/daily_time_spent_quota" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_row_padding_between_daily_quota_and_chevron" style="@style/TimeSpentTextBodyStyle" />
+    <ImageView android:id="@id/chevron_right" android:layout_width="@dimen/setting_row_chevron_size" android:layout_height="@dimen/setting_row_chevron_size" android:src="@drawable/chevron_right_grey" />
+</LinearLayout>

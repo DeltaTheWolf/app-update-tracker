@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/row_header_divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_later_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/share_later_share_link_margin_top">
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/grey_9" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_later_share_link_text" android:layout_weight="1.0" />
+        <ImageView android:id="@id/chevron_right" android:layout_width="@dimen/setting_row_chevron_size" android:layout_height="@dimen/setting_row_chevron_size" android:layout_marginLeft="@dimen/row_padding" android:src="@drawable/chevron_right_grey" android:layout_marginStart="@dimen/row_padding" />
+    </LinearLayout>
+</LinearLayout>

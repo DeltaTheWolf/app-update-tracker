@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/message_content_voice_bubble_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foregroundGravity="fill|clip_horizontal|clip_vertical" app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center_vertical" android:id="@id/playback_control" android:layout_width="@dimen/direct_voice_messaging_playback_icon_size" android:layout_height="@dimen/direct_voice_messaging_playback_icon_size" android:src="@drawable/direct_voice_play" android:scaleType="centerInside" />
+            <com.instagram.direct.voice.VoiceVisualizer android:gravity="center_vertical" android:id="@id/message_content_voice_visualizer" android:paddingTop="@dimen/direct_voice_messaging_visualizer_padding" android:paddingBottom="@dimen/direct_voice_messaging_visualizer_padding" android:layout_width="wrap_content" android:layout_height="@dimen/direct_voice_messaging_visualizer_height" android:layout_marginEnd="@dimen/direct_voice_messaging_visualizer_padding" app:segmentColor="@color/grey_9" />
+        </LinearLayout>
+    </FrameLayout>
+    <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/message_content_voice_bubble_container" app:layout_constraintTop_toBottomOf="@id/message_content_voice_bubble_container" />
+    <ViewStub android:id="@id/direct_voice_raise_nux_stub" android:layout="@layout/direct_voice_raise_nux" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/message_content_voice_bubble_container" app:layout_constraintTop_toBottomOf="@id/message_content_voice_bubble_container" />
+</android.support.constraint.ConstraintLayout>

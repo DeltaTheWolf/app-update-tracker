@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/action_bar_archive_profile_icon_with_badge" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/action_bar_archive_profile_icon_small" android:src="@drawable/instagram_history_outline_24" style="@style/ProfileNavbarButton" />
+    <ViewStub android:layout_gravity="start" android:id="@id/action_bar_archive_badge_stub" android:layout="@layout/navbar_profile_icon_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="14.0dip" />
+</FrameLayout>

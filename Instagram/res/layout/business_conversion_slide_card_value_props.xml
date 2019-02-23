@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/slide_card_value_props" android:paddingBottom="@dimen/content_to_border_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <View android:id="@id/extra_space_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/switch_business_pager" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/Business.TextAppearance" android:textColor="@color/blue_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_features" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0sp" android:layout_marginRight="4.0dip" android:src="@drawable/chevron" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+    <com.instagram.ui.widget.pageindicator.CirclePageIndicator android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/page_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:activeColor="@color/blue_5" app:inactiveColor="@color/grey_2" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.instagram.ui.widget.pageindicator.CirclePageIndicator android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/page_indicator_bottom" android:paddingTop="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:activeColor="@color/blue_5" app:inactiveColor="@color/grey_2" />
+</LinearLayout>

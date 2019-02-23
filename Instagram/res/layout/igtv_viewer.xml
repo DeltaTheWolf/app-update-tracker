@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.igtv.ui.GestureManagerFrameLayout android:id="@id/root_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/inner_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/viewer_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/tv_guide" />
+            <com.instagram.ui.widget.volume.VolumeIndicator android:layout_gravity="top" android:id="@id/volume_indicator" android:background="@color/white" android:paddingLeft="6.0dip" android:paddingTop="7.0dip" android:paddingRight="6.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" android:progressDrawable="@drawable/volume_indicator_drawable" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" style="?android:progressBarStyleHorizontal" />
+            <ViewStub android:id="@id/igtv_in_app_nux_stub" android:layout="@layout/in_app_nux_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </com.instagram.igtv.ui.GestureManagerFrameLayout>
+    <com.instagram.igtv.ui.GestureManagerFrameLayout android:layout_gravity="bottom" android:id="@id/modal_drawer_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/drawer_content" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="0.0dip">
+            <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" />
+        </FrameLayout>
+    </com.instagram.igtv.ui.GestureManagerFrameLayout>
+    <ViewStub android:id="@id/create_channel_nux_stub" android:layout="@layout/creator_nux" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/insights_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.instagram.igtv.ui.SystemWindowSpy android:layout_gravity="bottom" android:id="@id/system_window_spy" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

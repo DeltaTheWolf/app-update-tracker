@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="start" android:orientation="vertical" android:id="@id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/cancel">
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:background="@drawable/videocall_button_fill_white" android:layout_width="@dimen/videocall_button_size" android:layout_height="@dimen/videocall_button_size" android:src="@drawable/instagram_x_outline_24" android:scaleType="center" app:normal="@color/black" />
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/videocall_end_screen_timeout_controls_text_top_margin" android:text="@string/cancel" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="end" android:orientation="vertical" android:id="@id/call_again_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/videocall_call_again">
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:background="@drawable/videocall_button_fill_blue" android:layout_width="@dimen/videocall_button_size" android:layout_height="@dimen/videocall_button_size" android:src="@drawable/video_camera" android:scaleType="center" app:normal="@color/white" />
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/videocall_end_screen_timeout_controls_text_top_margin" android:text="@string/videocall_call_again" />
+    </LinearLayout>
+</FrameLayout>

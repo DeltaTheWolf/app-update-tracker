@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/music_search_row_vertical_padding" android:paddingBottom="@dimen/music_search_row_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:layout_gravity="center_vertical" android:id="@id/cover_photo" android:padding="@dimen/music_search_row_image_padding" android:layout_width="@dimen/music_search_row_image_size" android:layout_height="@dimen/music_search_row_image_size" android:scaleType="fitXY" android:layout_marginStart="@dimen/music_search_row_start_padding" android:layout_marginEnd="@dimen/music_search_row_image_end_margin" app:radius="@dimen/music_album_art_corner_radius" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/title_subtitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/music_search_row_title_text_size" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/song_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="@dimen/music_search_row_subtitle_text_size" android:textColor="@color/white_70_transparent" android:ellipsize="end" android:id="@id/artist_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center" android:id="@id/preview_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/music_action_buttons_horizontal_padding" android:paddingEnd="@dimen/music_action_buttons_horizontal_padding">
+            <ImageView android:id="@id/preview_button_image" android:layout_width="@dimen/music_action_buttons_size" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <ViewStub android:layout_gravity="center" android:id="@id/selection_button_stub" android:layout="@layout/music_search_row_track_selection_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/music_action_buttons_horizontal_padding" android:paddingEnd="@dimen/music_action_buttons_horizontal_padding" />
+    </FrameLayout>
+</LinearLayout>

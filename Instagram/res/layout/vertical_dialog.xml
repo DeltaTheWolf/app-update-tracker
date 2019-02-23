@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/panel" android:background="@drawable/dialog_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dialog_custom_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="16.0dip" />
+    <com.instagram.common.ui.widget.imageview.IgImageView android:layout_gravity="center" android:id="@id/dialog_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:scaleType="center" />
+    <Space android:id="@id/title_header_empty_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="19.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:paddingBottom="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:capitalize="false" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/text" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="32.0dip" />
+    <FrameLayout android:id="@id/primary_button_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/row_divider_top" />
+        <TextView android:textSize="@dimen/font_large" android:textColor="@color/blue_5" android:gravity="center" android:id="@id/primary_button" android:background="@drawable/bg_simple_row" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/auxiliary_button_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/row_divider_top" />
+        <TextView android:textSize="@dimen/font_large" android:textColor="@color/black" android:gravity="center" android:id="@id/auxiliary_button" android:background="@drawable/bg_simple_row" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/negative_button_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/row_divider_top" />
+        <TextView android:textSize="@dimen/font_large" android:textColor="@color/black" android:gravity="center" android:id="@id/negative_button" android:background="@drawable/bg_simple_row_rounded_bottom" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

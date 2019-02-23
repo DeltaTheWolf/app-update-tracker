@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center" android:id="@id/background_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholder="@color/image_placeholder" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom|center" android:id="@id/text_view" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/viewers_icon" android:drawablePadding="4.0dip" android:drawableStart="@drawable/viewers_icon" style="@style/ShadowTextViewStyle" />
+</FrameLayout>

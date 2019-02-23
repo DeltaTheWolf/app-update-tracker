@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/video_controls_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_item_margin" android:layout_marginRight="@dimen/channel_item_margin" android:minHeight="@dimen/video_scrubber_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:gravity="center_vertical" android:id="@id/progress_bar" android:paddingTop="@dimen/scrubber_padding_vertical" android:paddingBottom="@dimen/scrubber_padding_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/channel_item_margin" android:maxHeight="@dimen/scrubber_height" android:indeterminate="false" android:progressDrawable="@drawable/video_scrubber_progress_bar_drawable" android:minHeight="@dimen/scrubber_height" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white_80_transparent" android:gravity="center_vertical" android:id="@id/skip_info_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+</LinearLayout>

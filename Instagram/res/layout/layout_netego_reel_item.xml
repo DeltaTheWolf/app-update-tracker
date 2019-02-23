@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/reel_viewer_tall_android_top_bar_stub" android:layout="@layout/reel_viewer_tall_android_top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/reel_viewer_tall_android_top_bar_max_height" />
+    <com.instagram.reels.viewer.ReelViewGroup android:id="@id/reel_view_group" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:id="@id/rounded_frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/reel_viewer_media_layout_stub" android:layout="@layout/layout_netego_reel_media_group" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:id="@id/reel_viewer_top_shadow" android:background="@drawable/reel_viewer_shadow_top" android:layout_width="fill_parent" android:layout_height="@dimen/reel_viewer_top_shadow_height" />
+            <View android:id="@id/back_shadow_affordance" android:background="@drawable/reel_viewer_shadow_left" android:layout_width="@dimen/reel_navigation_shadow_affordance_width" android:layout_height="fill_parent" />
+            <ViewStub android:layout_gravity="top" android:id="@id/reel_viewer_attribution_stub" android:layout="@layout/layout_netego_reel_attribution" android:layout_width="fill_parent" android:layout_height="@dimen/reel_attribution_height" />
+            <ViewStub android:id="@id/ad4ad_overlay_stub" android:layout="@layout/reel_ad4ad_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.instagram.ui.widget.segmentedprogressbar.SegmentedProgressBar android:layout_gravity="top" android:id="@id/reel_viewer_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/segmented_progress_bar_default_height" android:layout_marginTop="@dimen/segmented_progress_bar_default_margin_top" />
+            <ViewStub android:layout_gravity="center" android:id="@id/simple_action_stub" android:layout="@layout/reel_simple_action" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+        <include layout="@layout/layout_netego_reel_item_toolbar" />
+    </com.instagram.reels.viewer.ReelViewGroup>
+</LinearLayout>

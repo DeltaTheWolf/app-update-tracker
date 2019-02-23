@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_65_transparent" android:padding="@dimen/iglive_broadcast_end_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_iglive_horizontal_double_avatar" />
+        <TextView android:textSize="@dimen/font_medium_xxlarge" android:textStyle="bold" android:paddingBottom="@dimen/row_text_padding" android:text="@string/iglive_cobroadcast_end_title" android:fontFamily="sans-serif-regular" style="@style/BroadcastEndText" />
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:id="@id/iglive_cobroadcast_end_subtitle" android:paddingBottom="@dimen/row_text_padding" android:fontFamily="sans-serif-regular" style="@style/BroadcastEndText" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/grey_9" android:gravity="center" android:layout_gravity="bottom" android:id="@id/iglive_end_done_button" android:background="@drawable/button_white_background" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:layout_marginBottom="16.0dip" android:text="@string/done" />
+</FrameLayout>

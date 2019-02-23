@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:id="@id/in_feed_item_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tray_in_feed_item_margin" android:layout_marginRight="@dimen/tray_in_feed_item_margin" app:backgroundColour="@color/white" app:edgeRadius="@dimen/tray_item_with_preview_corner_radius" app:strokeColor="@color/tray_item_border_color" app:strokeRadius="@dimen/tray_item_with_preview_border_stroke_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/background_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:layout_gravity="bottom" android:id="@id/background_content_black_gradient" android:background="@drawable/reel_background_content_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/reel_item_with_background_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/reel_item_story_unit" />
+    </LinearLayout>
+</com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>

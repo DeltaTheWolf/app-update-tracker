@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dialog_root_view" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="ifContentScrolls">
+            <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewStub android:layout_gravity="center" android:id="@id/dialog_image_holder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_bottom_margin_big" android:layout_marginBottom="@dimen/dialog_bottom_margin_big" />
+                <Space android:id="@id/title_header_empty_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_title_margin_top" />
+                <ViewStub android:layout_gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_standard_horizontal_margin" android:layout_marginRight="@dimen/dialog_standard_horizontal_margin" android:layout_marginBottom="@dimen/dialog_bottom_margin_small" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_body" android:paddingLeft="@dimen/dialog_standard_horizontal_margin" android:paddingRight="@dimen/dialog_standard_horizontal_margin" android:visibility="gone" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_bottom_margin_big" android:includeFontPadding="false" style="@style/Body" />
+                <Space android:id="@id/title_bottom_empty_space" android:visibility="gone" android:layout_width="@dimen/dialog_width" android:layout_height="@dimen/dialog_bottom_margin_difference" />
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@id/header_row_divider" layout="@layout/row_divider" />
+        <FrameLayout android:id="@id/primary_button_row" android:background="@drawable/dialog_button_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_cell_height">
+            <TextView android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/primary_button" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_cell_height" android:layout_marginLeft="@dimen/dialog_standard_horizontal_margin" android:layout_marginRight="@dimen/dialog_standard_horizontal_margin" android:maxLines="1" android:includeFontPadding="false" android:lineSpacingMultiplier="1.0" android:autoSizeTextType="uniform" android:autoSizePresetSizes="@array/iig_dialog_autosize_text_sizes" />
+            <include layout="@layout/row_divider" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/auxiliary_button_row" android:background="@drawable/dialog_button_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_cell_height">
+            <TextView android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/auxiliary_button" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_cell_height" android:layout_marginLeft="@dimen/dialog_standard_horizontal_margin" android:layout_marginRight="@dimen/dialog_standard_horizontal_margin" android:maxLines="1" android:includeFontPadding="false" android:lineSpacingMultiplier="1.0" android:autoSizeTextType="uniform" android:autoSizePresetSizes="@array/iig_dialog_autosize_text_sizes" />
+            <include layout="@layout/row_divider" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/negative_button_row" android:background="@drawable/dialog_button_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_cell_height">
+            <TextView android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/negative_button" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_cell_height" android:layout_marginLeft="@dimen/dialog_standard_horizontal_margin" android:layout_marginRight="@dimen/dialog_standard_horizontal_margin" android:maxLines="1" android:includeFontPadding="false" android:lineSpacingMultiplier="1.0" android:autoSizeTextType="uniform" android:autoSizePresetSizes="@array/iig_dialog_autosize_text_sizes" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

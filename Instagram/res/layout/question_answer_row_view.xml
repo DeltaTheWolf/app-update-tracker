@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/answer_container" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/text" android:paddingLeft="@dimen/feed_header_padding" android:paddingRight="@dimen/answer_textview_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RadioButton android:layout_gravity="end|center" android:id="@id/button" android:paddingRight="@dimen/feed_header_padding" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

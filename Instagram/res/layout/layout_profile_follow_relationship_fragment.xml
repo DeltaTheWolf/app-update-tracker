@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/ProfileFollowSheetScrollContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/ProfileFollowSheetContainer">
+        <include layout="@layout/profile_follow_sheet_header" />
+        <LinearLayout android:showDividers="end|middle" style="@style/ProfileFollowSheetContent">
+            <include android:id="@id/follow_sheet_close_friends_row" layout="@layout/profile_follow_relationship_row" />
+            <include android:id="@id/follow_sheet_notifications_row" layout="@layout/profile_follow_relationship_row" />
+            <include android:id="@id/follow_sheet_mute_row" layout="@layout/profile_follow_relationship_row" />
+            <TextView android:textColor="@color/red_5" android:id="@id/follow_sheet_unfollow_row" android:layout_width="fill_parent" android:layout_height="@dimen/follow_sheet_row_height" android:text="@string/unfollow" style="@style/ProfileFollowSheetRowTitle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

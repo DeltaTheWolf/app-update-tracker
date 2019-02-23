@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/profile_tab_led_notification_stub" android:layout="@layout/profile_tab_led_notification_layout" android:layout_width="@dimen/led_notification_size" android:layout_height="@dimen/led_notification_size" android:layout_marginBottom="7.0dip" />
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/profile_tab_text_view" android:clickable="true" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

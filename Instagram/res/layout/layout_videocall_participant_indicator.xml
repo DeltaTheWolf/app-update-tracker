@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/videocall_participant_avatar" style="@style/VideoCallAvatar" />
+    <ImageView android:layout_gravity="center" android:id="@id/videocall_participant_mute_indicator" android:visibility="gone" android:layout_width="@dimen/videocall_avatar_mute_indicator_size" android:layout_height="@dimen/videocall_avatar_mute_indicator_size" android:src="@drawable/mic_off_overlay" android:scaleType="centerInside" />
+</FrameLayout>

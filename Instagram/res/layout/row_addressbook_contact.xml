@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/row_addressbook_container" android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="?contactRowHeight" android:minHeight="?contactRowHeight" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="?rowRightPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="?rowRightPadding">
+        <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_contact_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?rowUserName" />
+        <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_contact_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?rowUserInfo" />
+    </LinearLayout>
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/invite_list_large_invite_button_stub" android:layout="@layout/invite_button" android:layout_width="@dimen/invite_button_width" android:layout_height="@dimen/follow_button_height" />
+</LinearLayout>

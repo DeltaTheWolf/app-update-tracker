@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/reg_page_side_margin" android:paddingTop="@dimen/reg_page_side_margin" android:paddingRight="@dimen/reg_page_side_margin" android:paddingBottom="@dimen/reg_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/reg_header" />
+            <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/inline_error" android:layout_marginTop="@dimen/reg_margin_medium" style="@style/RegInlineErrorMessageViewStyle">
+                <com.instagram.ui.text.FreeAutoCompleteTextView android:id="@id/fragment_lookup_edittext" android:hint="@string/username_hint_access" android:completionThreshold="1" style="@style/RegEditTextStyle" />
+            </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
+            <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" style="@style/RegProgressButtonStyle" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_small" layout="@layout/reg_facebook_option" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:gravity="center_horizontal" android:id="@id/help_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_small" />
+    </LinearLayout>
+</ScrollView>

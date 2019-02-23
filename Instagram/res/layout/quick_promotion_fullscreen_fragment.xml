@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/landing_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/fullscreen_content_horizontal_margin" android:layout_marginRight="@dimen/fullscreen_content_horizontal_margin" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fullscreen_top_margin">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="@dimen/fullscreen_image_size" android:layout_height="@dimen/fullscreen_image_size" />
+            <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fullscreen_between_sections_vertical_margin" />
+            <TextView android:textSize="@dimen/font_medium" android:gravity="center" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fullscreen_between_sections_vertical_margin" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/primary_button" android:background="@drawable/button_blue_background" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/fullscreen_button_horizontal_margin" android:layout_marginTop="@dimen/fullscreen_button_horizontal_margin" android:layout_marginRight="@dimen/fullscreen_button_horizontal_margin" />
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/blue_5" android:gravity="center" android:layout_gravity="bottom" android:id="@id/secondary_button" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/fullscreen_button_horizontal_margin" android:layout_marginTop="@dimen/fullscreen_button_in_between_vertical_margin" android:layout_marginRight="@dimen/fullscreen_button_horizontal_margin" />
+</LinearLayout>

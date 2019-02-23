@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/language_picker" />
+    <View android:id="@id/login_logo_padding" android:layout_width="fill_parent" android:layout_height="@dimen/top_min_margin" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/login_component" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_horizontal_margin" android:layout_marginRight="@dimen/login_horizontal_margin" android:layout_marginStart="@dimen/login_horizontal_margin" android:layout_marginEnd="@dimen/login_horizontal_margin">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/login_landing_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/logo_bottom_margin" android:src="?nuxLogoDrawable" />
+        <AutoCompleteTextView android:id="@id/login_username" android:layout_marginBottom="@dimen/textbox_bottom_margin" android:hint="@string/username_hint_login" android:completionThreshold="1" style="@style/RegEditTextStyle" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/avatar_login_button_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_horizontal_margin" android:layout_marginRight="@dimen/login_horizontal_margin">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/profile_pic" app:strokeColor="@color/avatar_stroke" app:strokeWidth="@dimen/circular_avatar_stroke_width" style="@style/RegIcon" />
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/login_username_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/username_vertical_margin" android:layout_marginBottom="@dimen/username_vertical_margin" />
+        </LinearLayout>
+        <EditText android:id="@id/password" android:hint="@string/password" android:inputType="textPassword" style="@style/RegEditTextStyle" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.instagram.ui.widget.checkbox.IgCheckBox android:ellipsize="end" android:id="@id/remember_password_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_xsmall" android:text="@string/remember_password" android:layout_weight="1.0" style="@style/RegCheckBox" />
+            <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="?nuxTextColor" android:gravity="end|bottom|center" android:id="@id/new_login_forgot_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" android:text="@string/nux_dayone_log_in" style="@style/RegProgressButtonStyle" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="?nuxTextColor" android:gravity="center" android:id="@id/login_forgot_button" android:background="@null" android:paddingTop="@dimen/forget_button_padding" android:paddingBottom="@dimen/forget_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/reg_facebook_option" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.instagram.nux.ui.NetzDgTermsTextView style="@style/NetDzTermsText" />
+    <include layout="@layout/reg_footer" />
+    <include layout="@layout/reg_footer_two_buttons_new" />
+</merge>

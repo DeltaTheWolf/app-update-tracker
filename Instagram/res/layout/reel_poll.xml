@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/reel_poll_question_text_stub" android:layout="@layout/reel_poll_question_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/poll_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/touch_views_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/first_option_touch_view" android:layout_width="@dimen/polling_option_width" android:layout_height="@dimen/polling_option_height" />
+        <View android:layout_width="@dimen/polling_options_divider_width" android:layout_height="@dimen/polling_option_height" />
+        <View android:id="@id/second_option_touch_view" android:layout_width="@dimen/polling_option_width" android:layout_height="@dimen/polling_option_height" />
+    </LinearLayout>
+</FrameLayout>

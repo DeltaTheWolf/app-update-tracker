@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?backgroundColorPrimary" android:paddingTop="36.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:gravity="center" android:layout_width="154.0dip" android:layout_height="wrap_content">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="start|center" android:id="@id/iglive_sender_avatar_imageview" app:strokeColor="@color/white" app:strokeWidth="3.0dip" style="@style/Avatar.ExtraExtraLarge" />
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="end|center" android:id="@id/iglive_camera_preview_overlay_stroke" app:strokeColor="@color/white" app:strokeWidth="3.0dip" style="@style/Avatar.ExtraExtraLarge" />
+            <com.instagram.ui.widget.textureview.CircularTextureView android:layout_gravity="end|center" android:id="@id/iglive_camera_preview_texture" app:strokeColor="@color/white" app:strokeWidth="2.0dip" style="@style/Avatar.ExtraExtraLarge" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_large" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/iglive_invitation_attribution_message" android:paddingLeft="45.0dip" android:paddingTop="25.0dip" android:paddingRight="45.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textAlignment="center" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center_horizontal" android:id="@id/iglive_invitation_privacy_description" android:paddingLeft="45.0dip" android:paddingRight="45.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/iglive_livewith_invitation_confirm" android:background="@drawable/button_blue_background" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" android:maxLines="1" android:layout_marginStart="45.0dip" android:layout_marginEnd="45.0dip" />
+    <TextView android:textStyle="bold" android:textColor="@color/red_5" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/iglive_livewith_invitation_cancel" android:layout_width="wrap_content" android:layout_height="?actionBarHeight" android:text="@string/cancel" android:maxLines="1" />
+</LinearLayout>

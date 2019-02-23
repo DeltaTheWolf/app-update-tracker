@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="end" android:layout_gravity="end" android:id="@id/message_content" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/link_preview_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/link_preview" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.instagram.common.ui.text.TightTextView android:textSize="@dimen/direct_font_large" android:id="@id/message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DirectMessageContentPadded" />
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/link_preview_image" android:padding="@dimen/direct_row_message_border_size" android:layout_width="fill_parent" android:layout_height="@dimen/direct_link_preview_height" />
+                <View android:id="@id/separator" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.instagram.common.ui.text.TightTextView android:textSize="@dimen/direct_font_medium" android:ellipsize="end" android:id="@id/link_preview_title" android:paddingTop="@dimen/direct_row_message_link_inner_preview_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/DirectMessageContentPaddedSides" />
+                <com.instagram.common.ui.text.TightTextView android:textSize="@dimen/direct_font_small" android:ellipsize="end" android:id="@id/link_preview_summary" android:paddingBottom="@dimen/direct_row_message_content_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" style="@style/DirectMessageContentPaddedSides" />
+            </LinearLayout>
+            <include layout="@layout/double_tap_big_heart" />
+        </FrameLayout>
+        <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

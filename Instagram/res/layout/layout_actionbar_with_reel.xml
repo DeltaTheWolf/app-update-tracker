@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center|top" android:orientation="vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/reel" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/school_reel_actionbar_title_ring_top_margin" android:layout_marginBottom="@dimen/school_reel_actionbar_title_ring_bottom_margin">
+        <com.instagram.ui.widget.gradientspinner.GradientSpinner android:layout_gravity="center" android:id="@id/reel_ring" android:layout_width="@dimen/school_reel_actionbar_title_ring_size" android:layout_height="@dimen/school_reel_actionbar_title_ring_size" />
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/profile_image" android:layout_width="@dimen/school_reel_actionbar_title_image_size" android:layout_height="@dimen/school_reel_actionbar_title_image_size" android:src="@drawable/school_directory_reel_empty_icon" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/empty_badge" android:layout_width="@dimen/school_reel_actionbar_title_badge_size" android:layout_height="@dimen/school_reel_actionbar_title_badge_size" android:src="?reelEmptyStoryBadge" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_medium_xlarge" android:textStyle="bold" android:textColor="?textColorPrimary" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

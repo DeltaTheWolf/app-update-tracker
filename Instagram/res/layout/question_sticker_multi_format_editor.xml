@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:id="@id/question_sticker_color_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:layout_marginTop="4.0dip" android:scaleType="center" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/question_sticker_editor" style="@style/QuestionSticker"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:id="@id/question_sticker_card" style="@style/QuestionStickerCard">
+            <EditText android:id="@id/question_sticker_question" android:layout_width="fill_parent" style="@style/QuestionStickerQuestion" />
+            <ViewStub android:id="@id/question_sticker_text_answer_stub" android:layout="@layout/question_sticker_text_answer_card" style="@style/QuestionStickerAnswerCard" />
+            <ViewStub android:id="@id/question_sticker_interactive_answer_stub" android:layout="@layout/question_sticker_interactive_answer_card" style="@style/QuestionStickerInteractiveAnswerCard" />
+        </LinearLayout>
+        <com.instagram.reels.question.view.AvatarView android:id="@id/question_sticker_avatar" style="@style/QuestionStickerAvatar" />
+    </FrameLayout>
+    <com.instagram.common.ui.widget.reboundhorizontalscrollview.ReboundHorizontalScrollView android:layout_gravity="bottom|center" android:id="@id/format_picker_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

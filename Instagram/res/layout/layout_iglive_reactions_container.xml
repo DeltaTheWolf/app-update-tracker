@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/reactions_container" android:background="@drawable/iglive_shadow_bottom" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.touchconstrainedrecyclerview.TouchConstrainedRecyclerView android:id="@id/iglive_comment_list" android:paddingBottom="@dimen/iglive_bottom_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    <ViewStub android:id="@id/iglive_pinned_comment_stub" android:layout="@layout/layout_iglive_comment_row" android:inflatedId="@id/iglive_pinned_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/iglive_bottom_padding" />
+    <com.instagram.ui.widget.slidecontentlayout.SlideContentLayout android:id="@id/interactivity_question_sticker_container" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/iglive_row_margin" android:layout_marginStart="@dimen/iglive_row_margin" android:layout_marginEnd="@dimen/iglive_row_margin" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/iglive_bottom_padding" layout="@layout/layout_iglive_comment_prompts" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/iglive_reactions_composer" android:paddingLeft="@dimen/iglive_row_padding" android:paddingRight="@dimen/iglive_row_padding" android:paddingBottom="@dimen/iglive_bottom_padding" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/button_width" android:paddingStart="@dimen/iglive_row_padding" android:paddingEnd="@dimen/iglive_row_padding">
+        <include android:id="@id/iglive_comment_composer_container" layout="@layout/iglive_viewer_comments_composer" />
+        <ViewStub android:id="@id/iglive_buttons_container_stub" android:inflatedId="@id/iglive_buttons_container" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

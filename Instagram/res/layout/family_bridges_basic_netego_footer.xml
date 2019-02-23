@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="@dimen/footer_row_bottom_padding" android:layout_width="fill_parent" android:layout_height="@dimen/footer_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/footer_cta" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/footer_row_bottom_divider_height">
+        <TextView android:textSize="@dimen/font_medium_large" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="start|bottom|center" android:id="@id/footer_main_action_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" />
+        <include android:layout_gravity="end|center" android:id="@id/footer_glyph" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/row_feed_ad_cta_chevron" />
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:id="@id/family_bridges_unit_divider" android:layout_width="fill_parent" android:layout_height="@dimen/footer_row_bottom_divider_height" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" layout="@layout/row_divider" />
+</FrameLayout>

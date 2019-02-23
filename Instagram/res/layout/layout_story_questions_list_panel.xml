@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewAnimator android:id="@id/interactivity_ama_questions_list_animator" android:layout_width="fill_parent" android:layout_height="0.0dip" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/bottom_sheet_drag_handle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/loading_spinner" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.ui.widget.spinner.SpinnerImageView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_large" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/interactivity_ama_questions_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/interactivity_container_padding_xxxlarge" android:paddingEnd="@dimen/interactivity_container_padding_xxxlarge">
+        <ImageView android:layout_width="@dimen/interactivity_sheet_empty_state_glyph_size" android:layout_height="@dimen/interactivity_sheet_empty_state_glyph_size" android:src="@drawable/instagram_questions_empty_state_outline" />
+        <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/grey_9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/interactivity_container_padding_large" android:text="@string/interactivity_ama_broadcaster_question_sheet_empty_state_headline" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/interactivity_container_padding_large" android:layout_marginBottom="@dimen/interactivity_container_padding_xxxlarge" android:text="@string/interactivity_ama_broadcaster_question_sheet_empty_state_body" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/interactivity_ama_questions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</ViewAnimator>

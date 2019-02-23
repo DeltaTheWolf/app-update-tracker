@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/simple_action_icon" android:layout_width="@dimen/netego_simple_action_icon_side" android:layout_height="@dimen/netego_simple_action_icon_side" android:layout_marginBottom="@dimen/netego_simple_action_items_separation" />
+    <TextView android:textSize="@dimen/netego_simple_action_title_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/simple_action_title" android:paddingLeft="@dimen/netego_simple_action_title_padding_horizontal" android:paddingRight="@dimen/netego_simple_action_title_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/netego_simple_action_title_message_size" android:textColor="@color/white_75_transparent" android:gravity="center_horizontal" android:id="@id/simple_action_subtitle" android:paddingLeft="@dimen/netego_simple_action_subtitle_padding_horizontal" android:paddingRight="@dimen/netego_simple_action_subtitle_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/netego_simple_action_items_separation" />
+</LinearLayout>

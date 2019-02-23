@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_40_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:textColorHighlight="@color/transparent" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="center" android:id="@id/banner_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/political_ad_banner_padding" android:layout_marginRight="@dimen/political_ad_banner_padding" android:maxLines="2" android:layout_marginStart="@dimen/political_ad_banner_padding" android:layout_marginEnd="@dimen/political_ad_banner_padding" />
+</FrameLayout>

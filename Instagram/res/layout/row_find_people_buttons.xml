@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/row_padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instagram.share.facebook.widget.FindPeopleButton android:id="@id/facebook_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:defaultSubtitle="@string/subtitle_default_people_facebook" app:defaultTitle="@string/title_default_people_facebook" app:icon="@drawable/fb_connect" app:iconColor="@color/facebook_logo_blue" />
+        <com.instagram.share.facebook.widget.FindPeopleButton android:id="@id/contacts_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:defaultSubtitle="@string/subtitle_default_people_contacts" app:defaultTitle="@string/title_default_people_contacts" app:icon="@drawable/instagram_hero_contacts" app:iconColor="@color/grey_9" />
+        <View android:layout_gravity="bottom" android:id="@id/row_find_people_buttons_bottom_divider" android:background="@color/grey_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/row_padding_small" android:layout_marginBottom="@dimen/row_padding_small" />
+    </LinearLayout>
+</FrameLayout>

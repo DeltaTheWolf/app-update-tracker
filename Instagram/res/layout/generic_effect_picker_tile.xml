@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/generic_effect_picker_tile_width" android:layout_height="@dimen/generic_effect_picker_tile_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.IgImageView android:layout_gravity="center" android:id="@id/generic_effect_picker_icon" android:background="@drawable/generic_effect_picker_background_color_state_list" android:layout_width="@dimen/generic_effect_picker_icon_width" android:layout_height="@dimen/generic_effect_picker_icon_height" />
+    <com.instagram.ui.widget.bubblespinner.BubbleSpinner android:layout_gravity="center" android:id="@id/effect_loading_spinner" android:visibility="gone" android:layout_width="@dimen/generic_effect_picker_loading_icon_width" android:layout_height="@dimen/generic_effect_picker_loading_icon_height" app:bubble_radius="5.0" app:center_bubble_vertically="true" app:interval_ms="1000" app:total_bubble_count="18" />
+    <View android:layout_gravity="center" android:id="@id/selected_ring" android:background="@drawable/generic_effect_picker_selected_ring" android:visibility="gone" android:layout_width="@dimen/generic_effect_picker_selection_circle_width" android:layout_height="@dimen/generic_effect_picker_selection_circle_height" />
+</FrameLayout>

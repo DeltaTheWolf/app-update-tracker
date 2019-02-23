@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_small" android:id="@id/shortcut" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BodyDetail" />
+    <com.instagram.common.ui.text.TitleTextView android:textColor="@color/grey_9" android:ellipsize="end" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/BodyDetail" />
+</LinearLayout>

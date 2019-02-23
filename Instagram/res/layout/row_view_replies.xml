@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_comment_horizontal_padding" android:paddingTop="@dimen/row_view_replies_vertical_padding" android:paddingRight="@dimen/row_comment_horizontal_padding" android:paddingBottom="@dimen/row_view_replies_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/row_comment_horizontal_padding" android:paddingEnd="@dimen/row_comment_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.Space style="@style/CommentChildRowIndentSpace" />
+    <View android:layout_width="@dimen/row_comment_child_avatar_reel_ring_size" android:layout_height="@dimen/row_view_replies_dash_height" style="@style/Widget.Instagram.Divider" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/row_view_replies_text" android:paddingLeft="@dimen/row_comment_avatar_right_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" android:paddingStart="@dimen/row_comment_avatar_right_padding" />
+</LinearLayout>

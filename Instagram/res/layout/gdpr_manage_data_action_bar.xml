@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="?actionBarHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/manage_data_cross_button" android:layout_width="?actionBarHeight" android:layout_height="?actionBarHeight" android:src="@drawable/instagram_x_outline_24" android:scaleType="center" />
+    <TextView android:textSize="@dimen/title_text_size" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/action_bar_title_margin_left" android:text="@string/manage_data_settings" android:fontFamily="sans-serif-medium" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/grey_9" android:gravity="center" android:layout_gravity="center" android:id="@id/create_button" android:background="@drawable/bg_rounded_white" android:layout_width="wrap_content" android:layout_height="@dimen/countdown_home_create_button_height" android:layout_marginTop="@dimen/countdown_home_create_button_vertical_margin" android:layout_marginBottom="@dimen/countdown_home_create_button_vertical_margin" android:text="@string/countdown_home_create_button_label" android:paddingStart="@dimen/countdown_home_create_button_horizontal_padding" android:paddingEnd="@dimen/countdown_home_create_button_horizontal_padding" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/header" android:paddingTop="?actionBarHeight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_medium" android:textColorHighlight="@color/grey_2_30_transparent" android:gravity="center" android:layout_gravity="center" android:id="@id/close_friends_home_description" android:background="@color/grey_0" android:paddingLeft="50.0dip" android:paddingTop="@dimen/row_padding" android:paddingRight="50.0dip" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_friends_home_header_text" android:lineSpacingMultiplier="1.2" android:paddingStart="50.0dip" android:paddingEnd="50.0dip" />
+            <com.instagram.ui.widget.fixedtabbar.FixedTabBar android:id="@id/fixed_tabbar_view" android:layout_width="fill_parent" style="?fixedTabBarStyle" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeightWithShadow" />
+            <include layout="@layout/search_row" />
+            <include layout="@layout/view_switcher_shadow" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/search_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

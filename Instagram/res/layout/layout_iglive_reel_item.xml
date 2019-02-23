@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/reel_viewer_tall_android_top_bar_stub" android:layout="@layout/reel_viewer_tall_android_top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/reel_viewer_tall_android_top_bar_max_height" />
+    <ViewStub android:id="@id/reel_viewer_zero_rating_data_banner_stub" android:layout="@layout/zero_rating_data_banner" android:layout_width="fill_parent" android:layout_height="@dimen/zero_rating_data_banner_height" />
+    <FrameLayout android:id="@id/iglive_reel_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:id="@id/iglive_media_layout" android:background="@color/grey_8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.instagram.ui.widget.textureview.ScalingTextureView android:id="@id/reel_viewer_texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.instagram.feed.widget.IgProgressImageView android:id="@id/reel_viewer_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:perfTrackingCategory="reel_media" />
+            <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/reel_viewer_broadcast_cover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholder="@color/grey_8" />
+            <View android:id="@id/reel_viewer_top_shadow" android:background="@drawable/reel_viewer_shadow_top" android:layout_width="fill_parent" android:layout_height="@dimen/reel_viewer_top_shadow_height" />
+            <ViewStub android:id="@id/iglive_error_viewstub" android:layout="@layout/layout_iglive_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/layout_iglive_reel_attribution" />
+        </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+        <include layout="@layout/layout_iglive_viewer_reactions" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/iglive_permissions_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/message_content_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="start|bottom|center" android:id="@id/sender_avatar_stub" android:layout="@layout/message_avatar" android:layout_width="@dimen/direct_avatar_small" android:layout_height="@dimen/direct_avatar_small" android:layout_marginLeft="@dimen/direct_row_message_horizontal_padding" android:layout_marginStart="@dimen/direct_row_message_horizontal_padding" />
+    <ViewStub android:layout_gravity="start|bottom|center" android:id="@id/stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/direct_message_unified_inbox_avatar_spacing" android:layout_marginStart="@dimen/direct_message_unified_inbox_avatar_spacing" />
+    <include layout="@layout/thread_list_message_metadata" />
+</FrameLayout>

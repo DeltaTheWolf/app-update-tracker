@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/gallery_header_row_height" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:layout_gravity="start|center" android:id="@id/gallery_section_title" android:paddingTop="@dimen/gallery_header_row_spacing" android:paddingBottom="@dimen/gallery_header_row_spacing" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textAllCaps="true" />
+    <Button android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:gravity="end" android:layout_gravity="end|center" android:id="@id/gallery_manage_button" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/gallery_header_row_spacing" android:paddingBottom="@dimen/gallery_header_row_spacing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</FrameLayout>

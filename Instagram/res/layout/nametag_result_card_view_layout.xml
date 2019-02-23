@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center|top" android:id="@id/dismiss_button" android:layout_width="@dimen/dismiss_button_size" android:layout_height="@dimen/dismiss_button_size" android:src="@drawable/instagram_x_outline_24" android:scaleType="center" android:contentDescription="@string/dismiss" app:active_alpha="0x00000080" app:normal="?glyphColorSecondary" />
+    <LinearLayout android:orientation="vertical" android:id="@id/nametag_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/profile_photo" android:src="@drawable/profile_anonymous_user" android:contentDescription="@string/profile_photo_description" style="?profileAvatarLarge" />
+            <com.instagram.ui.widget.nametag.UsernameTextView android:id="@id/username_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/full_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/button_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/row_divider" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/result_bottom_button_margin" android:layout_marginTop="@dimen/result_bottom_button_margin" android:layout_marginRight="@dimen/result_bottom_button_margin" android:layout_marginBottom="@dimen/result_bottom_button_margin_bottom" android:layout_marginStart="@dimen/result_bottom_button_margin" android:layout_marginEnd="@dimen/result_bottom_button_margin">
+                <com.instagram.user.follow.FollowButton android:textSize="@dimen/font_medium" android:id="@id/follow_button" android:layout_width="fill_parent" android:layout_height="@dimen/result_bottom_button_height" app:followButtonStyle="large" app:innerSpacing="4.0dip" style="?updatableButtonStyle" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:ellipsize="end" android:gravity="center" android:id="@id/follow_status_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/result_bottom_button_height" android:text="@string/follow_status_now_following" android:maxLines="2" android:lineSpacingMultiplier="1.2" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:gravity="center" android:id="@id/view_profile_button" android:layout_width="fill_parent" android:layout_height="@dimen/result_bottom_button_height" android:text="@string/view_profile" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

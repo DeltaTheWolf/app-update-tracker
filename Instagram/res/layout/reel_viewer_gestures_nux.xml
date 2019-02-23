@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/blurred_image_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/background" android:background="@android:color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/title" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_title" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white_70_transparent" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reel_viewer_gestures_nux_subtitle_margin_top" android:text="@string/reel_viewer_gestures_nux_subtitle_line_1" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white_70_transparent" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_subtitle_line_2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/tip_tap_forward" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reel_viewer_gestures_nux_tips_margin_top">
+            <com.instagram.common.ui.widget.imageview.IgImageView android:layout_width="@dimen/reel_viewer_gestures_nux_icon_width" android:layout_height="wrap_content" android:src="@drawable/viewer_gestures_tap_forward" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reel_viewer_gestures_nux_tips_margin_left_to_icon">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_tap_forward_title" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white_70_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_tap_forward_subtitle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/tip_pause" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reel_viewer_gestures_nux_tips_margin_top">
+            <com.instagram.common.ui.widget.imageview.IgImageView android:layout_width="@dimen/reel_viewer_gestures_nux_icon_width" android:layout_height="wrap_content" android:src="@drawable/viewer_gestures_pause" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reel_viewer_gestures_nux_tips_margin_left_to_icon">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_pause_title" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white_70_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_pause_subtitle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/tip_tap_backward" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reel_viewer_gestures_nux_tips_margin_top">
+            <com.instagram.common.ui.widget.imageview.IgImageView android:layout_width="@dimen/reel_viewer_gestures_nux_icon_width" android:layout_height="wrap_content" android:src="@drawable/viewer_gestures_tap_backward" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reel_viewer_gestures_nux_tips_margin_left_to_icon">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_tap_backward_title" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white_70_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_tap_backward_subtitle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/tip_swipe" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reel_viewer_gestures_nux_tips_margin_top" android:layout_marginBottom="@dimen/reel_viewer_gestures_nux_tips_margin_bottom">
+            <com.instagram.common.ui.widget.imageview.IgImageView android:layout_width="@dimen/reel_viewer_gestures_nux_icon_width" android:layout_height="wrap_content" android:src="@drawable/viewer_gestures_swipe" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reel_viewer_gestures_nux_tips_margin_left_to_icon">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_swipe_title" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white_70_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_swipe_subtitle" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tap_to_dismiss" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reel_viewer_gestures_nux_tap_to_dismiss" />
+    </LinearLayout>
+</FrameLayout>

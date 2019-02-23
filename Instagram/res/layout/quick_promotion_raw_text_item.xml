@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/qp_raw_text_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/row_padding" android:text="@string/dev_qp_raw_response_label" style="@style/Dev.TextAppearance.Body.Primary" />
+    <TextView android:textStyle="bold" android:textColor="?android:textColorLink" android:id="@id/qp_raw_text_toggle_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/row_padding" android:text="@string/dev_qp_raw_response_cta_show" android:layout_alignBaseline="@id/qp_raw_text_description" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/font_small" android:id="@id/qp_raw_text_body" android:paddingBottom="@dimen/row_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/qp_raw_text_description" android:textIsSelectable="true" android:fontFamily="serif-monospace" style="@style/Dev.TextAppearance.Caption.Primary" />
+</RelativeLayout>

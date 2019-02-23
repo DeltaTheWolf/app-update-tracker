@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_listview_parent_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.listview.StickyHeaderListView android:id="@id/sticky_header_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_refreshablelistview" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/feed_pill_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.instagram.ui.listview.StickyHeaderListView>
+    <ViewStub android:id="@id/save_popout_image_stub" android:layout="@layout/save_popout_image" android:layout_width="@dimen/save_popout_size" android:layout_height="@dimen/save_popout_size" />
+    <include layout="@layout/layout_listview_progressbar" />
+    <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errorImage="@drawable/loadmore_icon_refresh_compound" />
+    <ViewStub android:id="@id/blocked_profile_stub" android:layout="@layout/blocked_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/feed_list_header" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center|top" android:id="@id/static_action_bar_stub" android:layout="@layout/static_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="end" android:id="@id/fast_scroll_container" android:layout="@layout/layout_fast_scroll" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/ar_effect_notification_container" android:layout="@layout/ar_effect_notification" android:layout_width="fill_parent" android:layout_height="@dimen/ar_effect_notification_container_height" />
+    <ViewStub android:id="@id/nametag_result_card_stub" android:layout="@layout/nametag_result_card_black_bg" android:inflatedId="@id/nametag_outer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.instagram.feed.ui.views.CabooseLayout android:layout_gravity="bottom" android:id="@id/feed_list_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

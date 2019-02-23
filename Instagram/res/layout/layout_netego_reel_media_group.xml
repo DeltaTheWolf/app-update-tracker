@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:id="@id/reel_viewer_media_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceFullWidth="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.widget.textureview.ScalingTextureView android:id="@id/reel_viewer_texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/reel_viewer_image_view_transition" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.instagram.feed.widget.IgProgressImageView android:id="@id/reel_viewer_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:perfTrackingCategory="reel_media" app:retryType="icon" />
+</com.instagram.common.ui.widget.framelayout.MediaFrameLayout>

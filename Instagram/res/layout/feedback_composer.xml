@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/row_text_padding" android:paddingBottom="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PaddedRow">
+            <EditText android:id="@id/description_field" android:padding="@dimen/row_text_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="false" android:maxLength="1000" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" />
+            <GridLayout android:id="@id/screenshot_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textColor="?textColorSecondary" android:id="@id/disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" android:lineSpacingMultiplier="1.2" android:layout_marginStart="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" />
+            <TextView android:textSize="10.0sp" android:textColor="?textColorSecondary" android:autoLink="web" android:id="@id/legal_info_footer" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" android:lineSpacingMultiplier="1.2" android:layout_marginStart="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

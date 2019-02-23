@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:gravity="center" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_marginTop="@dimen/two_fac_margin_medium" android:text="@string/two_fac_enter_phone_number_fragment_title" style="@style/TwoFacTitleStyle" />
+            <TextView android:layout_marginBottom="@dimen/two_fac_margin_xlarge" android:text="@string/two_fac_enter_phone_number_fragment_body" style="@style/TwoFacParagraphStyle" />
+            <com.instagram.ui.widget.editphonenumber.EditPhoneNumberView android:id="@id/edit_phone_number_view" android:background="@drawable/input_highlighted" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:layout_marginLeft="@dimen/two_fac_screen_margin_horizontal" android:layout_marginRight="@dimen/two_fac_screen_margin_horizontal" app:clearTextEnabled="true" app:countryCodeTextBold="true" app:countryCodeTextColor="@color/blue_5" app:innerPadding="@dimen/two_fac_textfield_padding" app:paddingLeft="@dimen/two_fac_textfield_padding" app:paddingRight="@dimen/two_fac_textfield_padding" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" android:layout_marginBottom="@dimen/two_fac_button_margin_small" android:text="@string/two_fac_enter_phone_number_button" style="@style/StickyButtonStyle" />
+    <TextView android:textSize="@dimen/font_small" android:id="@id/learn_more_and_policy" android:layout_marginBottom="@dimen/two_fac_button_margin_small" style="@style/TwoFacLinkStyle" />
+</LinearLayout>

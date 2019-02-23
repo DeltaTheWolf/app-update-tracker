@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/phone_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/reg_phone_view" />
+    <include android:id="@id/email_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/reg_email_view" />
+</FrameLayout>

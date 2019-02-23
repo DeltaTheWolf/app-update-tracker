@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?creationRowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:id="@id/tagging_hint_text" android:paddingLeft="?creationPadding" android:paddingTop="9.0dip" android:paddingRight="?creationPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tagging_limitation_explanation" android:paddingStart="?creationPadding" android:paddingEnd="?creationPadding" style="?creationSubTitleText" />
+</FrameLayout>

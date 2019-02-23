@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/feed_content_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/feed_content_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/comment_composer_post_button_color" android:layout_gravity="center" android:id="@id/row_feed_comment_undo_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/undo_button_margin" android:layout_marginRight="@dimen/undo_button_margin" android:text="@string/feed_comment_undo_button" android:layout_marginStart="@dimen/undo_button_margin" android:layout_marginEnd="@dimen/undo_button_margin" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/action_bar_search_stub" android:layout="@layout/direct_new_group_action_bar_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/direct_action_bar_search_top_margin" />
+    <EditText android:gravity="center_vertical" android:id="@id/group_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:minHeight="@dimen/row_height" android:hint="@string/direct_story_name_group" android:maxLines="1" android:maxLength="20" android:inputType="textAutoComplete" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" style="@style/EditTextStyle" />
+    <ViewStub android:id="@id/user_search_bar_stub" android:layout="@layout/direct_story_create_group_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/recipients_list" layout="@layout/layout_listview_with_progress" />
+</LinearLayout>

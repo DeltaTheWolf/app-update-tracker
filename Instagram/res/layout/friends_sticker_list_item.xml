@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="start|center" android:id="@id/sticker" android:background="@drawable/sticker_background_rect" android:layout_width="wrap_content" android:layout_height="57.0dip" android:layout_marginRight="82.0dip" android:scaleType="fitCenter" android:layout_marginEnd="82.0dip" />
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center" android:id="@id/edit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/edit_list" android:scaleType="center" app:normal="@color/white" />
+</FrameLayout>

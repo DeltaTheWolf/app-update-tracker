@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/blast_list_candidates_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_medium_redesign" style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/blast_list_candidates_icon" android:background="@drawable/blast_icon_small_colored" android:layout_width="@dimen/avatar_size_medium" android:layout_height="@dimen/avatar_size_medium" android:layout_marginRight="@dimen/recipient_picker_extra_image_end_margin" android:layout_marginBottom="@dimen/recipient_picker_vertical_margin" android:scaleType="center" android:layout_marginEnd="@dimen/recipient_picker_extra_image_end_margin" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding">
+        <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direct_send_again" android:maxLines="1" android:scrollHorizontally="true" style="?rowUserName" />
+        <com.instagram.common.ui.text.ExpandingTextView android:id="@id/candidate_names" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:animationEnabled="false" app:ellipsisText="@string/ellipsis_more" style="?rowUserInfo" />
+    </LinearLayout>
+    <include layout="@layout/selectable_user_row_send_button" />
+</LinearLayout>

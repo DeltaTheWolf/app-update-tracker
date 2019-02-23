@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_listview_parent_container_top_level" android:paddingTop="@dimen/row_padding" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium_xlarge" android:textStyle="bold" android:id="@id/highlight_suggestions_title" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/archive_suggested_highlights_title" />
+    <TextView android:id="@id/highlight_suggestions_subtitle" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/archive_suggested_highlights_subtitle" />
+    <android.support.v7.widget.RecyclerView android:id="@id/archive_suggested_highlights_list" android:layout_width="fill_parent" android:layout_height="104.0dip" />
+</LinearLayout>

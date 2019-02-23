@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_places_container" android:background="@drawable/bg_simple_row" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:layout_width="fill_parent" android:layout_height="?searchRowHeight" android:minHeight="?searchRowHeight" android:paddingStart="?searchRowPadding" android:paddingEnd="?searchRowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/row_search_place_profile_image" android:layout_width="?searchReelAvatarSize" android:layout_height="?searchReelAvatarSize" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="?searchTextPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?searchTextPadding">
+        <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_place_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?searchUserName" />
+        <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_place_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?searchUserInfo" />
+    </LinearLayout>
+</LinearLayout>

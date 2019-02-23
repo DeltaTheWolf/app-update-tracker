@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/qp_slot_item_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_header_top_padding" style="@style/Dev.TextAppearance.Title" />
+    <TextView android:textColor="@color/qp_promotion_info_text" android:id="@id/qp_qualified_promotion_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Dev.TextAppearance.Caption" />
+    <TextView android:id="@id/qp_slot_item_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Dev.TextAppearance.Caption.Secondary" />
+</LinearLayout>

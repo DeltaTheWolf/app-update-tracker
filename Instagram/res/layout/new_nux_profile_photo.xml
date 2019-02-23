@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NewRegContainer">
+        <FrameLayout android:background="@drawable/filled_circle_grey_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/reg_nux_control_margin" style="@style/RegIcon">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/add_photo_view" android:tint="@color/transparent" android:contentDescription="@string/profile_photo_description" app:strokeColor="@color/avatar_stroke" app:strokeWidth="@dimen/circular_avatar_stroke_width" style="@style/RegIcon" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/add_photo_progress_spinner" android:visibility="gone" android:layout_width="@dimen/reg_icon_spinner_dimension" android:layout_height="@dimen/reg_icon_spinner_dimension" />
+        </FrameLayout>
+        <include layout="@layout/new_reg_title" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_nux_control_margin" layout="@layout/nux_share_profile_photo_to_feed" />
+        <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/progress_button" android:layout_marginTop="@dimen/reg_nux_control_margin" style="@style/RegProgressButtonStyle" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_nux_control_margin" layout="@layout/reg_skip" />
+    </LinearLayout>
+</merge>

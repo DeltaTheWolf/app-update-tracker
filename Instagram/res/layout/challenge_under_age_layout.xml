@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/challenge_screen_horizontal_margin" android:layout_marginRight="@dimen/challenge_screen_horizontal_margin" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lock_circle" />
+        <TextView android:textSize="@dimen/font_large" android:gravity="center_horizontal" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/challenge_vertical_margin" android:layout_marginBottom="@dimen/challenge_vertical_margin" android:text="@string/under_age_title" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center_horizontal" android:id="@id/content_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/challenge_vertical_margin" android:text="@string/under_age_body" />
+    </LinearLayout>
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:textSize="@dimen/font_medium" android:gravity="center" android:id="@id/appeal_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/challenge_button_height" android:layout_marginLeft="@dimen/challenge_button_vertical_margin" android:layout_marginTop="@dimen/challenge_button_vertical_margin" android:layout_marginRight="@dimen/challenge_button_vertical_margin" android:layout_marginBottom="@dimen/challenge_button_vertical_margin" android:text="@string/under_age_appeal" />
+    <Button android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:id="@id/logout_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/challenge_button_vertical_margin" android:text="@string/challenge_log_out" android:fontFamily="sans-serif-medium" />
+</LinearLayout>

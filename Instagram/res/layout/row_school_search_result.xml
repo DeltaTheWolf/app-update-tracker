@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/row_padding_medium" android:paddingRight="@dimen/row_padding_medium" android:layout_width="fill_parent" android:layout_height="@dimen/row_height" android:paddingStart="@dimen/row_padding_medium" android:paddingEnd="@dimen/row_padding_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_vertical" android:layout_marginTop="@dimen/vertical_separator_padding" android:layout_marginBottom="@dimen/vertical_separator_padding" android:src="@drawable/instagram_location_outline_24" android:scaleType="center" app:strokeColor="@color/black_15_transparent" app:strokeWidth="@dimen/circular_avatar_stroke_width" style="@style/Avatar.Large" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/row_padding_medium" android:paddingRight="@dimen/row_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/row_padding_medium" android:paddingEnd="@dimen/row_padding_medium">
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/grey_9" android:id="@id/school_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:id="@id/school_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

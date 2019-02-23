@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/color_picker_button" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/circle" android:background="@drawable/text_to_cam_color_picker_circle" android:layout_width="@dimen/text_background_color_picker_size_with_shadow" android:layout_height="@dimen/text_background_color_picker_size_with_shadow" />
+</FrameLayout>

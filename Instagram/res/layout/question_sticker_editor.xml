@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/question_sticker" style="@style/QuestionSticker"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/question_sticker_card" style="@style/QuestionStickerCard">
+        <EditText android:id="@id/question_sticker_question" android:hint="@string/question_sticker_question_default_text" style="@style/QuestionStickerQuestion" />
+        <FrameLayout android:id="@id/question_sticker_answer_card" style="@style/QuestionStickerAnswerCard">
+            <TextView android:id="@id/question_sticker_answer" android:text="@string/question_sticker_answer_hint_text" style="@style/QuestionStickerAnswer" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.instagram.reels.question.view.AvatarView android:id="@id/question_sticker_avatar" style="@style/QuestionStickerAvatar" />
+</FrameLayout>

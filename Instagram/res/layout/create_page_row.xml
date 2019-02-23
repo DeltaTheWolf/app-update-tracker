@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/create_page_container" android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.text.TitleTextView android:textColor="?textColorSecondary" android:ellipsize="end" android:id="@id/create_page" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/create_a_new_page" android:maxLines="1" android:layout_weight="1.0" app:capitalize="false" />
+    <ImageView android:id="@id/chevron" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/chevron_right_grey" android:tint="?glyphColorSecondary" />
+</LinearLayout>

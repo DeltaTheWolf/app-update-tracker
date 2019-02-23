@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_simple_row" style="?creationRowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="?creationPadding" android:paddingRight="?creationPadding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small">
+        <ImageView android:id="@id/close_friends_icon" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?creationTagIcon" />
+        <com.instagram.common.ui.text.TitleTextView android:paddingLeft="?creationLegacyPadding" android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/feed_share_to_close_friends" android:layout_weight="1.0" style="?creationTitleText" />
+        <com.instagram.ui.widget.switchbutton.IgSwitch android:layout_gravity="center_vertical" android:id="@id/share_to_feed_toggle_switch" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:checkedDrawable="@drawable/toggle_green" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" />
+</FrameLayout>

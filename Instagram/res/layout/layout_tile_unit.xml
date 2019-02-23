@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.feed.ui.views.TileShadowLayout android:padding="@dimen/tile_shadow_layout_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.feed.ui.views.TileViewContainer android:orientation="vertical" android:id="@id/rounded_tile_container" android:padding="@dimen/tile_layout_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:containerBackgroundColor="@color/white" app:strokeRadius="1.0px">
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:textStyle="bold" android:textColor="?textColorPrimary" android:id="@id/tile_title" android:paddingLeft="@dimen/tile_text_indent" android:paddingRight="@dimen/tile_text_indent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tile_layout_spacing" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/tile_subtitle" android:paddingLeft="@dimen/tile_text_indent" android:paddingRight="@dimen/tile_text_indent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tile_layout_title_spacing_top" />
+        <com.instagram.feed.ui.views.TileView android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/white" app:strokeRadius="0.0px">
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:fitAspectRatio="true" app:strokeColour="@color/transparent" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_6" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+            <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:strokeColour="@color/transparent">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/grid_8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColour="@color/transparent" app:fitAspectRatio="true" />
+            </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
+        </com.instagram.feed.ui.views.TileView>
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="?nuxActionButtonTextColor" android:gravity="center" android:id="@id/show_recs_button" android:layout_marginTop="@dimen/tile_layout_spacing" style="@style/RegProgressButtonStyle" />
+    </com.instagram.feed.ui.views.TileViewContainer>
+    <View android:id="@id/bottom_spacer" android:layout_width="fill_parent" android:layout_height="@dimen/tile_shadow_layout_spacer_height" />
+</com.instagram.feed.ui.views.TileShadowLayout>

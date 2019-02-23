@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_large" android:textStyle="bold" android:textColor="?textColorPrimary" android:gravity="center" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_padding_xlarge" android:layout_marginBottom="@dimen/container_margin_top" android:text="@string/enter_phone" />
+    <com.instagram.ui.widget.editphonenumber.EditPhoneNumberView android:id="@id/phone_number_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/container_margin_top" android:layout_marginBottom="@dimen/container_margin_top" app:clearTextEnabled="true" app:containerStyle="true" app:countryCodeTextBold="true" app:countryCodeTextColor="@color/blue_5" app:showIcons="true" app:textSize="@dimen/font_medium_xlarge" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/phone_view_next_button" style="@style/RegProgressButtonStyle" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:gravity="center_horizontal" android:id="@id/instructions_view" android:paddingTop="@dimen/row_text_padding" android:text="@string/phone_number_associated_with_account" style="@style/PaddedRow" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/foreground_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foregroundGravity="fill|clip_horizontal|clip_vertical">
+        <LinearLayout android:orientation="vertical" android:id="@id/message_content_profile_bubble_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DirectMessageContentAvatarAndTextHeader">
+                <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_marginRight="@dimen/direct_row_message_content_avatar_spacing_large" android:layout_marginEnd="@dimen/direct_row_message_content_avatar_spacing_large" style="@style/DirectAvatar.Large" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/direct_font_large" android:textStyle="bold" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <TextView android:textSize="@dimen/font_small" android:ellipsize="end" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/message_thumbnail_grid" />
+        </LinearLayout>
+        <include layout="@layout/double_tap_big_heart" />
+    </FrameLayout>
+    <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

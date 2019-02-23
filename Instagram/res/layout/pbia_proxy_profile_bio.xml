@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/border_bottom" android:paddingBottom="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:id="@id/pbia_profile_header_textview_name" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="3.0dip" android:lineSpacingMultiplier="@string/pbia_profile_header_spacing_multiplier" />
+    <ViewStub android:id="@id/pbia_profile_header_business_category_stub" android:layout="@layout/business_info_text" android:inflatedId="@id/pbia_profile_header_business_category" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/pbia_profile_header_bio_stub" android:layout="@layout/business_info_text" android:inflatedId="@id/pbia_profile_header_bio" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/pbia_profile_header_phone_number_stub" android:layout="@layout/business_info_text" android:inflatedId="@id/pbia_profile_header_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/pbia_profile_header_textview_website_stub" android:layout="@layout/pbia_profile_website_text" android:inflatedId="@id/pbia_profile_header_textview_website" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/pbia_profile_header_textview_business_address_stub" android:layout="@layout/business_info_text" android:inflatedId="@id/pbia_profile_header_textview_business_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>
