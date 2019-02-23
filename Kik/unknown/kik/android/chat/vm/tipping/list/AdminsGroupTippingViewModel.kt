@@ -207,7 +207,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
                         .subscribe ({
                             profile: ContactProfile ->
                             val payment = P2PPayment(profile.jid, profile.kinUserId, amount, PaymentType.ADMIN_TIP, AdminTippingMetaData(BareJid.fromString(conversationJid)))
-                            p2pTransactionManager.doTransaction(payment)
+                            p2pTransactionManager.getOfferAndDoTransaction(payment)
                             navigator.finish()
                             },
                             { e -> LOG.warn("error getting selectedAdminBareJid. Reason = ${e.message}") }

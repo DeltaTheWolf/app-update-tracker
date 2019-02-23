@@ -24,7 +24,9 @@ import kik.android.chat.vm.AbstractViewModel
 import kik.android.chat.vm.IGroupTippingProgressViewModel
 import kik.android.chat.vm.INavigator
 import kik.android.chat.vm.TwoMessageDialogViewModel
+import kik.core.abtesting.AbManager
 import kik.core.datatypes.KikGroup
+import kik.core.interfaces.IAbManager
 import kik.core.kin.PaymentType
 import kik.core.observable.KikObservable
 import kik.core.xdata.IOneTimeUseRecordManager
@@ -35,14 +37,23 @@ import rx.schedulers.Schedulers
 import rx.subjects.BehaviorSubject
 import javax.inject.Inject
 
-class GroupTippingButtonViewModel(private val group: KikGroup, val context: Context): IGroupTippingButtonViewModel, AbstractViewModel() {
-    @Inject lateinit var metricsService: MetricsService
-    @Inject lateinit var groupEntityService: GroupProfileRepository
-    @Inject lateinit var oneTimeUseRecordManager: IOneTimeUseRecordManager
-    @Inject lateinit var kinStellarSDKController: IKinStellarSDKController
-    @Inject lateinit var resources: Resources
-    @Inject lateinit var p2pTransactionManager: IP2PTransactionManager
-    @Inject lateinit var kinAccountsManager: IKinAccountsManager
+class GroupTippingButtonViewModel(private val group: KikGroup, val context: Context) : IGroupTippingButtonViewModel, AbstractViewModel() {
+    @Inject
+    lateinit var metricsService: MetricsService
+    @Inject
+    lateinit var groupEntityService: GroupProfileRepository
+    @Inject
+    lateinit var oneTimeUseRecordManager: IOneTimeUseRecordManager
+    @Inject
+    lateinit var kinStellarSDKController: IKinStellarSDKController
+    @Inject
+    lateinit var resources: Resources
+    @Inject
+    lateinit var p2pTransactionManager: IP2PTransactionManager
+    @Inject
+    lateinit var kinAccountsManager: IKinAccountsManager
+    @Inject
+    lateinit var abManager: IAbManager
 
     private var groupTippingProgressViewModel: GroupTippingProgressViewModel = GroupTippingProgressViewModel(group)
     private var networkState: NetworkState = NetworkState(context)
@@ -178,20 +189,50 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     }
 
     private fun createNoKinDialog(coreComponent: CoreComponent) {
-        noKinDialog = TwoMessageDialogViewModel.Builder()
-                .confirmAction(resources.getString(R.string.go_to_marketplace_button_text)) {
-                    onGoToKinMarketplaceConfirmedMetric()
-                    goToMarketplace(coreComponent, noKinDialog)
-                }.cancelAction (Runnable {
-                    onGoToKinMarketplaceCancelledMetric()
-                })
-                .firstMessage(resources.getString(R.string.tipping_earn_kin_dialog_body))
-                .secondMessage(resources.getString(R.string.visit_marketplace_kin_message))
-                .title(resources.getString(R.string.tipping_earn_kin_dialog_title))
-                .image(resources.getDrawable(R.drawable.img_kin_present))
-                .build()
+        with(TwoMessageDialogViewModel.Builder()) {
+            confirmAction(resources.getString(R.string.go_to_marketplace_button_text)) {
+                onGoToKinMarketplaceConfirmedMetric()
+                goToMarketplace(coreComponent, noKinDialog)
+            }
 
-        noKinDialogShownMetric()
+            cancelAction(Runnable {
+                onGoToKinMarketplaceCancelledMetric()
+            })
+
+            title(resources.getString(R.string.tipping_earn_kin_dialog_title))
+            image(resources.getDrawable(R.drawable.img_kin_present))
+
+            firstMessage(resources.getString(R.string.tipping_earn_kin_dialog_body))
+            secondMessage(resources.getString(R.string.visit_marketplace_kin_message))
+
+            when (abManager.getAssignedVariantForExperimentName(AbManager.NO_KIN_DIALOG)) {
+                AbManager.NO_KIN_DIALOG_LONGER_BLURB -> {
+                    firstMessage(resources.getString(R.string.tipping_no_kin_longer_blurb_dialog))
+                }
+                AbManager.NO_KIN_DIALOG_TWO_CHOICES -> {
+                    firstMessage(resources.getString(R.string.tipping_no_kin_two_choices_first_dialog))
+                    secondMessage(resources.getString(R.string.tipping_no_kin_two_choices_second_dialog))
+                }
+                AbManager.NO_KIN_DIALOG_CLAIM_KIN -> {
+                    firstMessage(resources.getString(R.string.tipping_no_kin_tip_admins_first_dialog))
+                    secondMessage(resources.getString(R.string.tipping_no_kin_claim_kin_second_dialog))
+                }
+                AbManager.NO_KIN_DIALOG_SHORT_TUTORIAL -> {
+                    firstMessage(resources.getString(R.string.tipping_no_kin_tip_admins_first_dialog))
+                    secondMessage(resources.getString(R.string.tipping_no_kin_short_tutorial_second_dialog))
+                }
+                AbManager.NO_KIN_DIALOG_ORIGINAL -> {
+                    // Keep original
+                }
+                else -> {
+                    // Keep original
+                }
+            }
+
+            noKinDialog = build()
+
+            noKinDialogShownMetric()
+        }
     }
 
     private fun createGeneralErrorDialog(coreComponent: CoreComponent) {
@@ -209,7 +250,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     private fun createDailyLimitDialog(coreComponent: CoreComponent) {
         val firstMessage = resources.getString(R.string.daily_limit_dialog_first_message, 500)
         dailyLimitDialog = TwoMessageDialogViewModel.Builder()
-                .confirmAction(resources.getString(R.string.go_to_marketplace_button_text)) {goToMarketplace(coreComponent, dailyLimitDialog)}
+                .confirmAction(resources.getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, dailyLimitDialog) }
                 .firstMessage(firstMessage)
                 .secondMessage(resources.getString(R.string.daily_limit_dialog_second_message))
                 .title(resources.getString(R.string.daily_limit_dialog_title))
@@ -220,7 +261,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     private fun noKinDialogShownMetric() {
         lifecycleSubscription.add(kinStellarSDKController.balance
                 .take(1)
-                .subscribe ({
+                .subscribe({
                     metricsService.track(ChatNokindialogShown.builder()
                             .setGroupJid(CommonTypes.GroupJid(group.jid.node))
                             .setAdminStatus(getAdminStatus(group))
@@ -235,7 +276,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     private fun noTippingDialogShownMetric() {
         lifecycleSubscription.add(kinStellarSDKController.balance
                 .take(1)
-                .subscribe ({
+                .subscribe({
                     metricsService.track(ChatNotippingdialogShown.builder()
                             .setGroupJid(CommonTypes.GroupJid(group.jid.node))
                             .setAdminStatus(getAdminStatus(group))
@@ -251,7 +292,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     private fun noTippableAdminsDialogShownMetric() {
         lifecycleSubscription.add(kinStellarSDKController.balance
                 .take(1)
-                .subscribe ({
+                .subscribe({
                     metricsService.track(ChatNotippableadminsdialogShown.builder()
                             .setGroupJid(CommonTypes.GroupJid(group.jid.node))
                             .setAdminStatus(getAdminStatus(group))
@@ -280,7 +321,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     private fun kinButtonTappedMetric() {
         lifecycleSubscription.add(kinStellarSDKController.balance
                 .take(1)
-                .subscribe ({
+                .subscribe({
                     metricsService.track(ChatKinbuttonTapped.builder()
                             .setGroupJid(CommonTypes.GroupJid(group.jid.node))
                             .setAdminStatus(getAdminStatus(group))

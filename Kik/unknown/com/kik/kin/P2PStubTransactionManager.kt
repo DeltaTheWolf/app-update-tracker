@@ -7,9 +7,12 @@ import kik.core.kin.PaymentType
 import kik.core.kin.SpendLimits
 import rx.Completable
 import rx.Observable
+import rx.Single
 
 class P2PStubTransactionManager : IP2PTransactionManager {
-    override fun doTransaction(offer: P2PPayment) {}
+    override fun getTransaction(offer: P2PPayment?, offerJWT: String?) = Single.just("")
+
+    override fun getOfferAndDoTransaction(offer: P2PPayment) {}
 
     override fun retryFailedTransaction(offer: P2PPayment) {}
 

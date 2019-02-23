@@ -274,7 +274,7 @@ class ThemesManager<in KeyType> constructor(private val themesRepository: ITheme
 
         fun purchaseTheme(themeId: UUID) {
             themePurchaseStateMap.advanceSuccessState(themeId)
-            productPaymentManager.doTransaction(themeId)
+            productPaymentManager.getOfferAndDoTransaction(themeId)
         }
 
         fun retryPurchaseTheme(themeId: UUID) {

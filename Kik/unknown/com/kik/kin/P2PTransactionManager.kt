@@ -32,7 +32,8 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
                     transactions.map { transaction -> transaction as P2PTransaction }
                             .forEach {
                                 _transactionStateMap.initialize(it.offer, it.status)
-                                recoverPendingTransaction(it.offer, it.status) }
+                                recoverPendingTransaction(it.offer, it.status)
+                            }
                 }, { error -> LOG.error("error found when retrieving transactions from storage", error) })
 
         spendLimitsSubjectMap.faults().subscribe(
@@ -55,8 +56,8 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
                 }
 
     override fun doRequestTransactionJwt(payment: P2PPayment) =
-        p2pPaymentService.getPayToUserJwt(payment.recipient, payment.amount, payment.metaData)
-                .doOnSuccess { offerJwt -> payment.paymentJwt = offerJwt }
+            p2pPaymentService.getPayToUserJwt(payment.recipient, payment.amount, payment.metaData)
+                    .doOnSuccess { offerJwt -> payment.paymentJwt = offerJwt }
 
     override fun doRequestConfirmationJwt(payment: P2PPayment) =
             kinStellarSDKController.getOrderConfirmation(payment.paymentJwt)
@@ -111,13 +112,14 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
                     with(e as Exception) {
                         spendLimitsSubjectMap.onError(paymentType, this)
                     }
-                    LOG.error("Error while retrieving spend transaction limits", e)})
+                    LOG.error("Error while retrieving spend transaction limits", e)
+                })
     }
 
     private fun retryFailedTransaction(transaction: P2PPayment, status: P2PTransactionStatus, advanceState: Boolean) {
         when (status) {
             P2PTransactionStatus.KIN_P2P_PAYMENT_ERROR,
-            P2PTransactionStatus.P2P_PAYMENT_JWT_FETCH_ERROR -> doTransaction(transaction)
+            P2PTransactionStatus.P2P_PAYMENT_JWT_FETCH_ERROR -> getOfferAndDoTransaction(transaction)
             P2PTransactionStatus.P2P_PAYMENT_CONFIRM_ERROR -> {
                 if (advanceState) {
                     _transactionStateMap.advanceRetryState(transaction)
@@ -132,11 +134,12 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
 
     private fun recoverPendingTransaction(transaction: P2PPayment, status: P2PTransactionStatus) {
         when (status) {
-            P2PTransactionStatus.PENDING_P2P_PAYMENT_JWT_FETCH, P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT -> doTransaction(transaction)
+            P2PTransactionStatus.PENDING_P2P_PAYMENT_JWT_FETCH -> getOfferAndDoTransaction(transaction)
+            P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT -> getTransaction(transaction, transaction.paymentJwt).subscribe()
             P2PTransactionStatus.PENDING_P2P_PAYMENT_CONFIRM, P2PTransactionStatus.P2P_PAYMENT_CONFIRM_ERROR ->
-                // in this case the payment has been successful, so we need to force a retry
+                // in this case the payment might have been successful, so we need to force a retry
                 retryConfirmTransaction(transaction)
-                        .doOnError{ deletePaymentConfirmTransaction(transaction) }
+                        .doOnError { deletePaymentConfirmTransaction(transaction) }
                         .onErrorComplete()
                         .subscribe()
         }

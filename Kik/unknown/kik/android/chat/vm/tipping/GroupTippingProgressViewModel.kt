@@ -34,9 +34,12 @@ class GroupTippingProgressViewModel(private val group: KikGroup) : AbstractResou
         private var LOG = LoggerFactory.getLogger(GroupTippingProgressViewModel::class.java.simpleName)
     }
 
-    @Inject lateinit var metricsService: MetricsService
-    @Inject lateinit var p2pTransactionManager: IP2PTransactionManager
-    @Inject lateinit var kinStellarSDKController: IKinStellarSDKController
+    @Inject
+    lateinit var metricsService: MetricsService
+    @Inject
+    lateinit var p2pTransactionManager: IP2PTransactionManager
+    @Inject
+    lateinit var kinStellarSDKController: IKinStellarSDKController
 
     private var transactionStatusPairSubject: BehaviorSubject<Pair<P2PPayment, P2PTransactionStatus>> = BehaviorSubject.create()
     private var isCancelled: BehaviorSubject<Boolean> = BehaviorSubject.create(false)
@@ -51,13 +54,15 @@ class GroupTippingProgressViewModel(private val group: KikGroup) : AbstractResou
                 }?.let {
                     isCancelled.onNext(false)
                     p2pTransactionManager.transactionStatus(it.offer)
-                    transactionStatusPairSubject.onNext(Pair(it.offer, it.status)) }
+                    transactionStatusPairSubject.onNext(Pair(it.offer, it.status))
+                }
 
         lifecycleSubscription.add(p2pTransactionManager.onTransactionMapChanged()
                 .filter { it.first.metaData.getType() == PaymentType.ADMIN_TIP && isTransactionInGroup(it.first) }
                 .subscribe { transactionPair ->
                     isCancelled.onNext(false)
-                    transactionStatusPairSubject.onNext(transactionPair) })
+                    transactionStatusPairSubject.onNext(transactionPair)
+                })
 
         registerCompletionMetrics()
     }
@@ -99,7 +104,7 @@ class GroupTippingProgressViewModel(private val group: KikGroup) : AbstractResou
         }
 
     private fun isError(state: P2PTransactionStatus) =
-            when(state) {
+            when (state) {
                 P2PTransactionStatus.P2P_PAYMENT_JWT_FETCH_ERROR,
                 P2PTransactionStatus.KIN_P2P_PAYMENT_ERROR,
                 P2PTransactionStatus.P2P_PAYMENT_CONFIRM_ERROR -> true
@@ -132,7 +137,7 @@ class GroupTippingProgressViewModel(private val group: KikGroup) : AbstractResou
                 kinStellarSDKController.isSDKStarted
                         .filter { it }
                         .flatMap {
-                            Observable.combineLatest(kinStellarSDKController.balance, transactionStatusPairSubject)
+                            Observable.zip(kinStellarSDKController.balance.take(1), transactionStatusPairSubject.take(1))
                             { balance, transaction ->
                                 when {
                                     isError(transaction.second) ->
@@ -162,6 +167,7 @@ class GroupTippingProgressViewModel(private val group: KikGroup) : AbstractResou
                                 }
                             }
                         }
+                        .take(1)
                         .subscribe())
     }
 
