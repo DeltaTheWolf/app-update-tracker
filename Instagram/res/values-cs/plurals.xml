@@ -144,11 +144,6 @@
         <item quantity="one">%1$s příspěvek</item>
         <item quantity="few">%1$s příspěvky</item>
     </plurals>
-    <plurals name="hashtags_link_row_title">
-        <item quantity="other">%1$d hashtagů</item>
-        <item quantity="one">%1$d hashtag</item>
-        <item quantity="few">%1$d hashtagy</item>
-    </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> příspěvků</item>
         <item quantity="one">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> příspěvek</item>
@@ -278,6 +273,14 @@
         <item quantity="other">%1$d minut</item>
         <item quantity="one">%1$d minuta</item>
         <item quantity="few">%1$d minuty</item>
+    </plurals>
+    <plurals name="save_collection_header_contributors">
+        <item quantity="other">přispěvatelé</item>
+        <item quantity="one">přispěvatel</item>
+    </plurals>
+    <plurals name="save_collection_header_saved_posts">
+        <item quantity="other">uložené příspěvky</item>
+        <item quantity="one">uložený příspěvek</item>
     </plurals>
     <plurals name="save_photos_captured">
         <item quantity="other">Uložit pořízené fotky?</item>

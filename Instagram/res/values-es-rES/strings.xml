@@ -19,6 +19,13 @@
     <string name="account_info_learn_more_fragment_bullet3_body">Ver los anuncios que una cuenta tiene en circulación en un momento concreto puede ayudar a las personas a obtener más información sobre la cuenta.</string>
     <string name="account_info_learn_more_fragment_bullet4_body">Ver los cambios que una cuenta ha realizado en su nombre de usuario desde septiembre de 2017 puede ayudar a las personas a identificar si esta cuenta es auténtica o falsa.</string>
     <string name="account_info_learn_more_fragment_bullet5_body">Ver las cuentas públicas que tienen más seguidores en común con otra cuenta puede ayudar a las personas a identificar cuentas con intereses similares.</string>
+    <string name="account_linking_main_account_confirm_dialog_body">Cualquier persona que conozca la contraseña de tu cuenta principal tendrá acceso a las cuentas conectadas con ella.</string>
+    <string name="account_linking_main_account_selection_body">Si inicias sesión en la cuenta principal, también se iniciará sesión en todas las cuentas que se encuentren conectadas a ella.</string>
+    <string name="account_linking_missing_account_prompt">¿No aparece ninguna cuenta? %1$s</string>
+    <string name="account_linking_missing_account_tappable_log_in">Iniciar sesión</string>
+    <string name="account_linking_opt_in_first_body">Convierte una de tus cuentas en la cuenta principal y úsala para iniciar sesión en todas tus cuentas a la vez.</string>
+    <string name="account_linking_opt_in_second_body">Tus cuentas seguirán siendo independientes, pero podrás entrar de forma más rápida y sencilla.</string>
+    <string name="account_linking_opt_in_title">Un único inicio de sesión&lt;br/>para todas tus cuentas</string>
     <string name="account_privacy_option_private_content">Solo las personas que apruebes podrán ver las fotos y los vídeos que compartes. Esto no afectará a tus seguidores actuales.</string>
     <string name="account_privacy_option_public_content">Cualquier persona puede ver las fotos y los vídeos que compartes.</string>
     <string name="account_privacy_option_public_title">Público</string>
@@ -122,6 +129,11 @@
     <string name="ask_a_parent">Solicita la aprobación de tu padre, madre o tutor</string>
     <string name="ask_parent_button_text">Solicitar aprobación</string>
     <string name="asset">Emoticonos y stickers</string>
+    <string name="attribute_sync_confirm_title">Confirmar la información</string>
+    <string name="attribute_sync_intro_subtitle">Sincroniza la información de contacto pública que compartes en tu cuenta de Instagram y en tu página de Facebook para mantener tu perfil de empresa actualizado.</string>
+    <string name="attribute_sync_missing_address">No se ha indicado ninguna. No usar ninguna dirección</string>
+    <string name="attribute_sync_missing_email">No se ha indicado ninguna. No usar ninguna dirección de correo electrónico</string>
+    <string name="attribute_sync_missing_phone">No se ha indicado ninguno. No usar ningún número de teléfono</string>
     <string name="attribution_camera_face_filter">Máscaras</string>
     <string name="attribution_camera_made_with_focus">Creado con Focus</string>
     <string name="audience">Audiencia</string>
@@ -188,6 +200,7 @@
     <string name="bugreporter_low_memory_screenshot_error">\"Lo sentimos, pero no hay memoria suficiente para hacer una captura de pantalla.\"</string>
     <string name="bugreporter_not_now">Ahora no</string>
     <string name="bugreporter_rageshake_hint">Explica brevemente lo que ha sucedido.</string>
+    <string name="bugreporter_rageshake_video_quality_hint">Explica brevemente por qué la calidad del vídeo o el audio no es la que esperabas.</string>
     <string name="bugreporter_save_annotated_screenshot_error">No se ha podido guardar la captura de pantalla. Vuelve a intentarlo.</string>
     <string name="bugreporter_send_success">Error de %1$s enviado</string>
     <string name="bugreporter_takescreenshot_capture">Hacer foto</string>
@@ -208,8 +221,12 @@
     <string name="business_signup_splash_title">Crear cuenta empresarial</string>
     <string name="business_signup_steal_phone_number_dialog_description">Otra cuenta ha verificado este número de teléfono. Te recomendamos que uses uno distinto, ya que se publicará como punto de contacto de tu empresa.</string>
     <string name="business_signup_welcome_user_desc">Tu perfil de empresa está listo. Ya puedes compartir fotos, vídeos e historias con tus seguidores mientras haces crecer tu negocio. Puedes cambiar tu nombre de usuario cuando quieras.</string>
+    <string name="business_tools_description">Las herramientas de Instagram para empresas te ayudan a aumentar tu audiencia y alcanzar tus objetivos profesionales. Puedes elegir las más adecuadas para ti y añadirlas de forma gratuita.</string>
+    <string name="business_tools_intro_start">Empezar</string>
+    <string name="business_tools_title">Obtener herramientas empresariales para %1$s</string>
     <string name="call_to_action_added_confirmation">Se ha añadido la llamada a la acción</string>
     <string name="call_to_action_preview_explanation">Las personas que vean la historia podrán deslizar el dedo hacia arriba para ir a esta página. Para probar la función, puedes %1$s.</string>
+    <string name="camera_close_friends_share_button_tooltip_text_video">Comparte este vídeo solo con tus mejores amigos.</string>
     <string name="camera_effect_draw_directly_on_your_screen">Dibuja directamente en tu pantalla o mantén pulsado mientras mueves el teléfono</string>
     <string name="camera_effect_find_a_face">Busca una cara</string>
     <string name="camera_effect_flip_the_camera">Gira la cámara</string>
@@ -225,7 +242,6 @@
     <string name="camera_effect_touch_hold">Mantén pulsado</string>
     <string name="camera_effect_try_with_friends">Pruébalo con amigos</string>
     <string name="camera_effect_tvshow">Programa de televisión</string>
-    <string name="camera_favorites_share_button_tooltip_text_video">Comparte este vídeo solo con tus mejores amigos.</string>
     <string name="camera_permission_rationale_message">Haz fotos y vídeos con la aplicación de %1$s.</string>
     <string name="cannot_edit_promoted_post">No puedes editar una publicación que ya se ha promocionado</string>
     <string name="cant_add_partner_title">No se puede añadir al socio</string>
@@ -311,11 +327,11 @@
     <string name="confirm_request_review_ad_subtitle">Entiendo que, si mi anuncio se aprueba tras la revisión, se activará y podría ponerse en circulación inmediatamente.</string>
     <string name="confirm_resume_boosted_post_subtitle">Tu promoción se seguirá publicando en Instagram. Efectuaremos el cobro en el método de pago registrado.</string>
     <string name="connect_and_learn_followers">Vincula tu cuenta de Instagram con tu página de Facebook para conectarte e interactuar con tus seguidores.</string>
+    <string name="connect_contacts_legal_explanation">Tus contactos se sincronizan y se guardan en los servidores de Instagram periódicamente para ayudarte a ti y a otras personas a encontrar amigos, y para que podamos ofrecer un mejor servicio. Para eliminarlos, ve a la configuración y desconecta tu lista de contactos. Obtén más información.</string>
     <string name="connect_contacts_options_info_text">Para ayudar a las personas a conectar en Instagram, tus contactos se sincronizan periódicamente y se guardan en nuestros servidores. Tú eliges a cuáles seguir. %1$s.</string>
     <string name="connect_fb_and_agree">Al tocar el botón anterior y acceder a las estadísticas, confirmas que aceptas nuestra %1$s.</string>
     <string name="connect_fb_get_insights">Obtén información sobre tus seguidores y consulta el rendimiento de tus publicaciones. No publicaremos nada en Facebook sin tu permiso.</string>
     <string name="connect_ig_to_fb_page_explain">Conecta tu cuenta empresarial de Instagram a una página de Facebook para que las personas puedan encontrarte más fácilmente. Las cuentas empresariales en Instagram están vinculadas a las páginas de Facebook y están sujetas a sus %1$s.</string>
-    <string name="connect_to_fb_page_explain">Los perfiles de empresas en Instagram están vinculados a una página de Facebook. Copiaremos la información de tu empresa para que puedas editarla.</string>
     <string name="connect_to_fb_page_explain_ads_increase_connection">Los perfiles de empresa de Instagram están vinculados a una página de Facebook. Puedes usar este perfil cuando crees anuncios en Facebook. Copiaremos la información de tu empresa y te permitiremos editarla.</string>
     <string name="connect_with_customers">Conecta con clientes</string>
     <string name="connect_your_contacts">Conectar con tus contactos</string>
@@ -774,6 +790,7 @@
     <string name="gdpr_download_your_data">Descarga tus datos</string>
     <string name="gdpr_photos_and_videos_of_you">Fotos y vídeos en los que apareces</string>
     <string name="gdpr_switch_to_business_account">Cambio a cuenta comercial</string>
+    <string name="get_business_tools">Obtener herramientas para empresas en Instagram</string>
     <string name="get_directions">Cómo llegar</string>
     <string name="get_layout_description">Diseño</string>
     <string name="gif_sticker_description">Sticker en GIF</string>
@@ -859,8 +876,8 @@
     <string name="igtv_report_problem">Informar de un problema</string>
     <string name="igtv_reshare_sticker_tap_affordance">Las personas podrán tocar este sticker para ver el vídeo en IGTV.</string>
     <string name="igtv_search_results_no_channels_found">No se han encontrado canales</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">Solo para vídeos de IGTV que duren más de un minuto</string>
-    <string name="igtv_share_trailer_to_feed_info">Comparte una vista previa en tu perfil y las noticias.</string>
+    <string name="igtv_share_preview_not_available_explained">Tu vídeo debe durar al menos un minuto para poder crear una vista previa.</string>
+    <string name="igtv_share_trailer_to_feed_info">Las vistas previas aparecen en tu perfil y las noticias</string>
     <string name="igtv_skip_button_text_non_skippable">El vídeo se reproducirá en %1$s</string>
     <string name="igtv_storage_permission_rationale_message">Permite a %1$s acceder a contenido de tu teléfono para que puedas publicar en tu canal.</string>
     <string name="igtv_storage_permission_rationale_title">Permite el acceso a tus vídeos</string>
@@ -912,6 +929,7 @@
     <string name="landing_bottom_policy_eu">Al hacer clic en \"Siguiente\", aceptas nuestras %1$s. Obtén más información sobre cómo recopilamos, usamos y compartimos tus datos en la %2$s, así como el uso que hacemos de las cookies y tecnologías similares en nuestra %3$s.</string>
     <string name="language_zh_cn">Chino (Simplificado)</string>
     <string name="layout_dialog_description">Incluye varias fotos en una publicación y compártelas directamente en Instagram.</string>
+    <string name="layout_import_failed">Se ha producido un error al recibir los resultados de Layout.</string>
     <string name="lead_ad_conditional_questions_disabled_message">Primero responde la pregunta anterior</string>
     <string name="learn_about_follower">Obtén información sobre tus seguidores y consulta el rendimiento de tus publicaciones.</string>
     <string name="learn_more_about_claim_page_in_setting">Como has elegido no conectar tu página a Instagram, se ha creado una página \"%1$s\" sin propietario para que las personas puedan buscar y consultar tu empresa. %2$s sobre cómo reclamar esta página o ve a \"Configuración\" para reclamarla. Ahora puedes explorar nuevas herramientas para empresas, como las promociones y las estadísticas sobre tus publicaciones y seguidores.</string>
@@ -1015,6 +1033,7 @@
     <string name="mention_sharing_privacy_setting_label">¿Permitir que las personas que mencionas añadan este contenido a su historia?</string>
     <string name="menu_label_live_video_unblock_username">¿Mostrar vídeo en directo a %1$s?</string>
     <string name="menu_label_turn_off_post_notifications">Desactivar las notificaciones de publicaciones</string>
+    <string name="more_mutual_followers">%1$d más</string>
     <string name="most_recent_posts_hidden">Las publicaciones recientes de %1$s están ocultas actualmente porque la comunidad ha denunciado cierto contenido que podría infringir las Normas comunitarias de Instagram.</string>
     <string name="multi_author_story_view_count_nux_video_title_one">Tu vídeo está en la historia de %1$s.</string>
     <string name="multi_author_story_viewer_list_megaphone_description">Si usas un sticker de ubicación o hashtag, tu foto o vídeo se incluirán en la historia de esa ubicación o hashtag.</string>
@@ -1220,8 +1239,6 @@
     <string name="product_tagging_add_product_limit_reached_video">No puedes añadir más de cinco productos a un vídeo.</string>
     <string name="product_tagging_carousel_add_product_limit_reached">No puedes etiquetar más de 20 productos en la publicación.</string>
     <string name="product_unavailable_message">La empresa ha eliminado el artículo</string>
-    <string name="products_section_more_from_this_post_title">Destacado también en esta publicación</string>
-    <string name="products_section_more_from_this_story_title">Destacado también en esta historia</string>
     <string name="profile_chaining_unit_action_button_text">Buscar</string>
     <string name="profile_header_followed_by">Seguidores:</string>
     <string name="profile_me_only_description">Archivar</string>
@@ -1249,8 +1266,11 @@
     <string name="question_sticker_music_format_tooltip_text">Prueba a hacer una pregunta sobre música</string>
     <string name="question_sticker_question_music_prompt_last_listened">¿Cuál ha sido la última canción que has escuchado?</string>
     <string name="question_sticker_tray_description">Sticker de pregunta</string>
+    <string name="quiz_sticker_first_answer_hint">Respuesta n.º 1</string>
+    <string name="quiz_sticker_second_answer_hint">Respuesta n.º 2</string>
     <string name="rageshake_disable_option">Desactivar \"Sacudida\"</string>
     <string name="rageshake_title">Informar de un problema</string>
+    <string name="rageshake_video_quality_issue">Problema con la calidad del vídeo</string>
     <string name="reach_explanation">Número de cuentas que han visto tu publicación.</string>
     <string name="react_error_title">Se ha producido un error inesperado.</string>
     <string name="react_media_picker_choose_from_library">Elegir de la fototeca</string>
@@ -1374,10 +1394,12 @@
     <string name="reverse_nux_text">Reproduce los vídeos al revés</string>
     <string name="robocall_support_text">¿No te ha llegado el código? Te llamaremos dentro de %1$s.</string>
     <string name="row_viewer_hide_button_description">Ocultar de %1$s</string>
+    <string name="save_collection_header_add_people">Añadir personas</string>
     <string name="save_collection_pivots_cta">Ver elementos similares</string>
     <string name="save_draft_dialog_text">Los borradores te permiten guardar los cambios para que puedas recuperarlos más adelante.</string>
     <string name="save_explanation_subtitle">Guarda fotos y vídeos que quieras volver a ver. Nadie recibirá ninguna notificación y solo tú podrás ver lo que has guardado.</string>
     <string name="save_fail_external_storage_permission_toast">No se ha podido guardar. Si quieres guardar fotos y vídeos, concede acceso al permiso de almacenamiento.</string>
+    <string name="save_home_collection_feed_add_contributors_text">Añadir colaboradores</string>
     <string name="save_home_collection_feed_add_from">Añadir desde</string>
     <string name="save_home_collection_feed_add_to_collection">Añadir a una colección</string>
     <string name="save_home_collection_feed_delete_collection_confirmation_message">Aunque elimines esta colección, las fotos y los vídeos seguirán guardados.</string>
@@ -1443,6 +1465,8 @@
     <string name="self_profile_empty_body">Cuando compartas fotos y vídeos, aparecerán en tu perfil.</string>
     <string name="self_profile_empty_cta">¡Comparte tu primera foto o vídeo!</string>
     <string name="set_daily_reminder_subtitle">Te enviaremos un recordatorio cuando haya pasado el tiempo que has configurado.</string>
+    <string name="set_main_account">Definir cuenta principal</string>
+    <string name="set_main_account_explanation">Entra en todas tus cuentas de Instagram de forma rápida y segura con un solo identificador y una única contraseña.</string>
     <string name="settings_viewers_choose_locations_feature_off">Desactivada</string>
     <string name="setup_your_close_friends_button_continue">Añadir a la lista</string>
     <string name="setup_your_close_friends_text">Comparte publicaciones e historias con tus mejores amigos. Añade personas a tu lista para compartir contenido solo con ellas.</string>
@@ -1560,10 +1584,12 @@
     <string name="tagging_upsell_dialog_cancel_button_text">Compartir de todas formas</string>
     <string name="tagging_upsell_dialog_positive_action_button_text">Añadir etiquetas</string>
     <string name="take_picture">Hacer foto</string>
+    <string name="tap_to_keep_watching_video_description">Tocar para seguir reproduciendo el vídeo</string>
     <string name="tap_to_like">Tocar para indicar que te gusta el comentario</string>
     <string name="tap_to_reload">No se puede cargar la imagen. Toca el botón para volver a intentarlo.</string>
     <string name="tap_to_unlike">Tocar parar indicar que ya no te gusta el comentario</string>
     <string name="tap_to_view_combined_tags">TOCA PARA VER ETIQUETAS</string>
+    <string name="tap_to_watch_video_description">Tocar para reproducir el vídeo</string>
     <string name="tap_to_watch_video_nux">VER EL VÍDEO COMPLETO</string>
     <string name="tell_us_approval_reason">Explica por qué se debe aprobar tu anuncio. Si hemos cometido un error, aprobaremos el anuncio tan pronto como podamos.</string>
     <string name="test_settings">Configuración de la prueba</string>
@@ -1752,7 +1778,6 @@
     <string name="videocall_call_again">Volver a llamar</string>
     <string name="videocall_camera_button_turn_off_description">Desactivar vídeo</string>
     <string name="videocall_camera_button_turn_on_description">Activar vídeo</string>
-    <string name="videocall_close_button_description">Finalizar chat de vídeo</string>
     <string name="videocall_continuing_in_background_toast">El chat de vídeo continuará con la cámara desactivada</string>
     <string name="videocall_create_call_during_call_error_message">Finaliza la llamada actual para empezar a usar el chat de vídeo.</string>
     <string name="videocall_create_call_during_call_error_title">Finaliza la llamada para usar el chat de vídeo</string>
@@ -1798,6 +1823,7 @@
     <string name="wait_for_uploads_to_finish_logout">No puedes salir mientras subes contenido. Vuelve a intentarlo cuando finalice el proceso.</string>
     <string name="wait_for_uploads_to_finish_switch">No puedes cambiar de cuenta mientras subes algo. Vuelve a intentarlo cuando hayas terminado.</string>
     <string name="waiting_for_approval">Pendiente de aprobación</string>
+    <string name="wam_chevron_accessibility_label">Toca para seguir viendo. Icono de Ver más.</string>
     <string name="web_error">No hemos podido cargar el sitio web.</string>
     <string name="weblink_edit">Modificar el enlace</string>
     <string name="weblink_empty_link_error">Añade un enlace para acceder a la vista previa.</string>

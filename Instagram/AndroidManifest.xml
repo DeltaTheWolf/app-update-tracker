@@ -64,7 +64,7 @@
         <meta-data android:name="com.facebook.rscmp" android:value="true"/>
         <meta-data android:name="com.facebook.build_rule" android:value="instagram_multi_bytecode_dextr_comp_zstdso_mdpi_armv7_release_fbsign"/>
         <meta-data android:name="com.facebook.package_type" android:value="release"/>
-        <meta-data android:name="com.facebook.build_time" android:value="1549392689000L"/>
+        <meta-data android:name="com.facebook.build_time" android:value="1549930602000L"/>
         <meta-data android:name="com.facebook.versioncontrol.branch" android:value="master"/>
         <meta-data android:name="com.facebook.versioncontrol.revision" android:value="MASTER"/>
         <activity android:alwaysRetainTaskState="true" android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.instagram.mainactivity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
@@ -203,6 +203,7 @@
         <activity android:exported="false" android:name="com.instagram.wellbeing.timespent.activity.TimeSpentDashboardActivity" android:screenOrientation="portrait"/>
         <activity android:exported="false" android:name="com.instagram.business.activity.FbConnectPageActivity" android:screenOrientation="portrait"/>
         <activity android:exported="false" android:name="com.instagram.business.activity.BusinessConversionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.instagram.business.activity.BusinessAttributeSyncActivity" android:screenOrientation="portrait"/>
         <service android:exported="false" android:name="com.instagram.contacts.ccu.intf.CCUJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <service android:exported="false" android:name="com.instagram.contacts.ccu.intf.CCUWorkerService"/>
         <service android:exported="false" android:name="com.instagram.lazyload.download.ModuleDownloadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>

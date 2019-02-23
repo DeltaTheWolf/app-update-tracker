@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+<merge
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.text.TitleTextView android:text="@string/save_home_collection_feed_collection_name" style="@style/RowHeaderText" />
-    <include layout="@layout/row_header_divider" />
-    <EditText android:id="@id/saved_collection_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small" android:hint="@string/save_home_collection_feed_collection_name_hint" android:maxLength="@integer/collection_name_max_length" android:inputType="textAutoCorrect|textCapSentences" android:imeOptions="actionDone" />
-</LinearLayout>
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_collection_edit_text_top_margin" android:layout_marginBottom="@dimen/edit_collection_subtext_margin" android:text="@string/save_home_collection_feed_collection_name" />
+    <include layout="@layout/row_divider" />
+    <EditText android:textSize="@dimen/font_large" android:id="@id/saved_collection_name" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small" android:hint="@string/save_home_collection_feed_collection_name_hint" android:maxLength="@integer/collection_name_max_length" android:inputType="textAutoCorrect|textCapSentences" android:imeOptions="actionDone" />
+    <include layout="@layout/row_divider" />
+</merge>

@@ -265,12 +265,11 @@
     <color name="purple_5">#ffa307ba</color>
     <color name="qp_promotion_error_text">@color/red_6</color>
     <color name="qp_promotion_info_text">@color/blue_6</color>
-    <color name="question_music_response_bottom_sheet_arrow">@color/grey_6</color>
-    <color name="question_music_response_bottom_sheet_explicit_icon">@color/grey_3</color>
-    <color name="question_music_response_card_subtitle_color">@color/grey_9_70_transparent</color>
-    <color name="question_music_response_primary_text_color">@color/grey_9</color>
+    <color name="question_response_bottom_sheet_arrow">@color/grey_6</color>
+    <color name="question_response_bottom_sheet_explicit_icon">@color/grey_3</color>
     <color name="question_response_card_outline">#ffe1e1e1</color>
     <color name="question_response_card_outline_selected">@color/grey_9</color>
+    <color name="question_response_card_subtitle_color">@color/grey_9_70_transparent</color>
     <color name="question_response_card_text">@color/black</color>
     <color name="question_response_composer_cancel_button_text">@color/white</color>
     <color name="question_response_composer_colored_send_button_text">@color/white</color>
@@ -278,6 +277,7 @@
     <color name="question_response_composer_send_button_enabled">@color/blue_5</color>
     <color name="question_response_composer_send_button_pressed">@color/green_5</color>
     <color name="question_response_composer_text_shadow">@color/black_20_transparent</color>
+    <color name="question_response_primary_text_color">@color/grey_9</color>
     <color name="question_response_reshare_sticker_grey_background">@color/grey_9</color>
     <color name="question_sticker_answer_background">@color/grey_1</color>
     <color name="question_sticker_answer_text">@color/grey_9_40_transparent</color>
@@ -291,6 +291,13 @@
     <color name="question_sticker_tray_background_second">@color/grey_3</color>
     <color name="question_sticker_tray_foreground">@color/white</color>
     <color name="quick_capture_next_button_text_color">@color/grey_9</color>
+    <color name="quiz_sticker_answer_checkbox_selected">@color/green_5</color>
+    <color name="quiz_sticker_answer_checkbox_unselected">@color/grey_2</color>
+    <color name="quiz_sticker_answer_hint_text">@color/grey_3</color>
+    <color name="quiz_sticker_answer_text">@color/grey_7</color>
+    <color name="quiz_sticker_background">@color/white</color>
+    <color name="quiz_sticker_question_hint_text">@color/grey_5</color>
+    <color name="quiz_sticker_question_text">@color/grey_9</color>
     <color name="red_0">#fffff5f5</color>
     <color name="red_1">#ffffe0e2</color>
     <color name="red_2">#ffffb9be</color>
@@ -302,7 +309,7 @@
     <color name="red_8">#ff6e0008</color>
     <color name="red_9">#ff4d0008</color>
     <color name="reel_background_content_gradient_end">@android:color/transparent</color>
-    <color name="reel_background_content_gradient_start">#bf000000</color>
+    <color name="reel_background_content_gradient_start">@color/black_30_transparent</color>
     <color name="reel_item_mention_reshare_button_color">@color/white</color>
     <color name="reel_item_mention_reshare_button_pressed_color">@color/grey_2</color>
     <color name="reel_item_mention_reshare_text_color">@color/grey_9</color>
@@ -312,6 +319,7 @@
     <color name="result_bar_active_color">#ff4999da</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text">#ff999999</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>

@@ -3,4 +3,5 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/hero_image_section_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
     <ViewStub android:layout_gravity="bottom" android:id="@id/hero_image_section_indicator_stub" android:layout="@layout/hero_image_section_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/hero_image_section_indicator_height" />
+    <View android:layout_gravity="bottom" android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="0.5dip" />
 </FrameLayout>

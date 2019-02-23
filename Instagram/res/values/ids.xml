@@ -7,6 +7,7 @@
     <item type="id" name="accessibility_role">false</item>
     <item type="id" name="account_badge">false</item>
     <item type="id" name="account_details_scroll_view">false</item>
+    <item type="id" name="account_missing_prompt_textview">false</item>
     <item type="id" name="account_recs_avatar">false</item>
     <item type="id" name="account_recs_background_image">false</item>
     <item type="id" name="account_recs_biography">false</item>
@@ -15,8 +16,8 @@
     <item type="id" name="account_recs_subtitle">false</item>
     <item type="id" name="account_recs_title">false</item>
     <item type="id" name="account_row">false</item>
+    <item type="id" name="account_section_arrow">false</item>
     <item type="id" name="account_section_avatar">false</item>
-    <item type="id" name="account_section_caret">false</item>
     <item type="id" name="account_section_subtitle">false</item>
     <item type="id" name="account_section_title">false</item>
     <item type="id" name="account_type_company">false</item>
@@ -86,6 +87,9 @@
     <item type="id" name="activators_row_card_primary_button">false</item>
     <item type="id" name="activators_row_card_title">false</item>
     <item type="id" name="activators_row_single_card_primary_button">false</item>
+    <item type="id" name="active_canvas_element_dice_view">false</item>
+    <item type="id" name="active_canvas_element_view">false</item>
+    <item type="id" name="active_canvas_element_view_stub">false</item>
     <item type="id" name="ad4ad_message">false</item>
     <item type="id" name="ad4ad_overlay_stub">false</item>
     <item type="id" name="ad4ad_privacy_icon">false</item>
@@ -432,12 +436,14 @@
     <item type="id" name="business_sign_up_nav_bar">false</item>
     <item type="id" name="business_sign_up_terms_footer">false</item>
     <item type="id" name="business_splash_scroll_view">false</item>
+    <item type="id" name="business_title_card_bigger_title">false</item>
     <item type="id" name="buttom_margin">false</item>
     <item type="id" name="button">false</item>
     <item type="id" name="button1">false</item>
     <item type="id" name="button2">false</item>
     <item type="id" name="buttonPanel">false</item>
     <item type="id" name="button_accept_adjust">false</item>
+    <item type="id" name="button_aspect_crop">false</item>
     <item type="id" name="button_back">false</item>
     <item type="id" name="button_background_view">false</item>
     <item type="id" name="button_blue">false</item>
@@ -624,12 +630,14 @@
     <item type="id" name="close_friends_button_stub">false</item>
     <item type="id" name="close_friends_home_description">false</item>
     <item type="id" name="close_friends_icon">false</item>
+    <item type="id" name="close_friends_story_avatar">false</item>
     <item type="id" name="close_friends_tab_button">false</item>
     <item type="id" name="close_friends_tab_notification">false</item>
     <item type="id" name="coach_mark_overlay">false</item>
     <item type="id" name="coach_mark_stub">false</item>
     <item type="id" name="cobroadcast_avatar_viewstub">false</item>
     <item type="id" name="code_verification_instruction">false</item>
+    <item type="id" name="collection_add_contributors_stub">false</item>
     <item type="id" name="collection_cta">false</item>
     <item type="id" name="collection_image">false</item>
     <item type="id" name="collection_main_image">false</item>
@@ -696,6 +704,8 @@
     <item type="id" name="contact_point_input_stub">false</item>
     <item type="id" name="contact_point_taken_message">false</item>
     <item type="id" name="contact_point_taken_title">false</item>
+    <item type="id" name="contact_preference_group">false</item>
+    <item type="id" name="contact_review_header">false</item>
     <item type="id" name="contact_text">false</item>
     <item type="id" name="contacts_button">false</item>
     <item type="id" name="container">false</item>
@@ -774,7 +784,6 @@
     <item type="id" name="create_button">false</item>
     <item type="id" name="create_channel_nux_stub">false</item>
     <item type="id" name="create_collection_edit_text">false</item>
-    <item type="id" name="create_collection_fields">false</item>
     <item type="id" name="create_highlight_button_view">false</item>
     <item type="id" name="create_highlight_button_view_stub">false</item>
     <item type="id" name="create_ig_biz_text">false</item>
@@ -846,6 +855,8 @@
     <item type="id" name="delete_button">false</item>
     <item type="id" name="delete_button_arrow">false</item>
     <item type="id" name="delete_button_text">false</item>
+    <item type="id" name="delete_collection_button">false</item>
+    <item type="id" name="delete_collection_confirmation">false</item>
     <item type="id" name="delete_stub">false</item>
     <item type="id" name="delete_text_button">false</item>
     <item type="id" name="demarcator_icon">false</item>
@@ -873,6 +884,8 @@
     <item type="id" name="devserver_indicator_stub">false</item>
     <item type="id" name="dial_ar_effect_picker_background">false</item>
     <item type="id" name="dial_ar_effect_picker_container_stub">false</item>
+    <item type="id" name="dial_ar_effect_picker_switch_camera_container">false</item>
+    <item type="id" name="dial_ar_effect_picker_switch_gallery_container">false</item>
     <item type="id" name="dial_ar_effect_title">false</item>
     <item type="id" name="dialog_and_bar_container">false</item>
     <item type="id" name="dialog_body">false</item>
@@ -936,6 +949,7 @@
     <item type="id" name="direct_media_picker_header_title">false</item>
     <item type="id" name="direct_media_picker_loading_spinner">false</item>
     <item type="id" name="direct_media_picker_max_selected_title">false</item>
+    <item type="id" name="direct_media_picker_no_saved_collections">false</item>
     <item type="id" name="direct_media_picker_post_list">false</item>
     <item type="id" name="direct_media_picker_retry_button">false</item>
     <item type="id" name="direct_media_picker_root_container">false</item>
@@ -1063,7 +1077,6 @@
     <item type="id" name="edit_alt_text_button">false</item>
     <item type="id" name="edit_button">false</item>
     <item type="id" name="edit_buttons_toolbar">false</item>
-    <item type="id" name="edit_collection_fields">false</item>
     <item type="id" name="edit_cover">false</item>
     <item type="id" name="edit_cover_link">false</item>
     <item type="id" name="edit_highlight_cover_button">false</item>
@@ -1168,7 +1181,6 @@
     <item type="id" name="extra_space_before_button_options">false</item>
     <item type="id" name="extra_space_before_button_share">false</item>
     <item type="id" name="extra_space_top">false</item>
-    <item type="id" name="eye_icon">false</item>
     <item type="id" name="eyedropper_color_picker">false</item>
     <item type="id" name="eyedropper_color_picker_container">false</item>
     <item type="id" name="eyedropper_color_picker_stub">false</item>
@@ -1213,7 +1225,6 @@
     <item type="id" name="fast_scroll_section_bubble">false</item>
     <item type="id" name="fast_scroll_thumb">false</item>
     <item type="id" name="fast_scrubber">false</item>
-    <item type="id" name="favorites_story_avatar">false</item>
     <item type="id" name="fb_connect_card_container">false</item>
     <item type="id" name="fb_connect_card_context">false</item>
     <item type="id" name="fb_connect_card_logo">false</item>
@@ -1341,8 +1352,10 @@
     <item type="id" name="follow_chaining_button">false</item>
     <item type="id" name="follow_chaining_container">false</item>
     <item type="id" name="follow_header_banner">false</item>
+    <item type="id" name="follow_list_comma_separated">false</item>
     <item type="id" name="follow_list_container">false</item>
     <item type="id" name="follow_list_large_follow_button_stub">false</item>
+    <item type="id" name="follow_list_mutual_count">false</item>
     <item type="id" name="follow_list_social_context">false</item>
     <item type="id" name="follow_list_subtitle">false</item>
     <item type="id" name="follow_list_user_imageview">false</item>
@@ -1503,6 +1516,7 @@
     <item type="id" name="grid_8">false</item>
     <item type="id" name="grid_pattern_view">false</item>
     <item type="id" name="grid_switch_button_stub">false</item>
+    <item type="id" name="grids_container">false</item>
     <item type="id" name="group_divider">false</item>
     <item type="id" name="group_follow_request_count">false</item>
     <item type="id" name="group_name">false</item>
@@ -1965,6 +1979,7 @@
     <item type="id" name="list_header_text_three">false</item>
     <item type="id" name="list_header_text_two">false</item>
     <item type="id" name="list_switch_button_stub">false</item>
+    <item type="id" name="list_view">false</item>
     <item type="id" name="list_view_container">false</item>
     <item type="id" name="list_view_pager">false</item>
     <item type="id" name="listener_id_for_direct_gated_media_item_viewer_image_binding">false</item>
@@ -2109,6 +2124,7 @@
     <item type="id" name="media_viewer_container">false</item>
     <item type="id" name="media_viewer_content_container">false</item>
     <item type="id" name="media_viewer_scalable_container">false</item>
+    <item type="id" name="media_viewer_zoom_container">false</item>
     <item type="id" name="megaphone_content">false</item>
     <item type="id" name="megaphone_frame">false</item>
     <item type="id" name="megaphone_icon">false</item>
@@ -2251,7 +2267,8 @@
     <item type="id" name="music_search_precapture_landing_page_container">false</item>
     <item type="id" name="music_search_precapture_search_results_container">false</item>
     <item type="id" name="music_search_results_container">false</item>
-    <item type="id" name="music_search_stub">false</item>
+    <item type="id" name="music_search_stub_background">false</item>
+    <item type="id" name="music_search_stub_foreground">false</item>
     <item type="id" name="music_snippet_button">false</item>
     <item type="id" name="music_snippet_button_stub">false</item>
     <item type="id" name="music_sound_wave">false</item>
@@ -2260,7 +2277,7 @@
     <item type="id" name="my_story_avatar">false</item>
     <item type="id" name="my_story_button">false</item>
     <item type="id" name="my_story_button_label">false</item>
-    <item type="id" name="my_story_favorites_button">false</item>
+    <item type="id" name="my_story_close_friends_button">false</item>
     <item type="id" name="name">false</item>
     <item type="id" name="nameLabel">false</item>
     <item type="id" name="nametag_card_container">false</item>
@@ -2596,9 +2613,13 @@
     <item type="id" name="product_image">false</item>
     <item type="id" name="product_image_thumbnail">false</item>
     <item type="id" name="product_image_view">false</item>
+    <item type="id" name="product_item_image">false</item>
+    <item type="id" name="product_item_text">false</item>
+    <item type="id" name="product_item_text_caret">false</item>
     <item type="id" name="product_message_content">false</item>
     <item type="id" name="product_name">false</item>
     <item type="id" name="product_name_text_view">false</item>
+    <item type="id" name="product_overlay_background">false</item>
     <item type="id" name="product_overlay_recycler_view">false</item>
     <item type="id" name="product_overlay_recycler_view_stub">false</item>
     <item type="id" name="product_price">false</item>
@@ -2622,10 +2643,7 @@
     <item type="id" name="product_thumbnail_image">false</item>
     <item type="id" name="product_with_media_context_stub">false</item>
     <item type="id" name="product_with_prominent_save_stub">false</item>
-    <item type="id" name="products_list_section_item_name">false</item>
-    <item type="id" name="products_list_section_item_price">false</item>
-    <item type="id" name="products_list_section_item_thumbnail">false</item>
-    <item type="id" name="products_list_section_title">false</item>
+    <item type="id" name="products_section_title">false</item>
     <item type="id" name="productsource_row_footer_text">false</item>
     <item type="id" name="profile">false</item>
     <item type="id" name="profile_button">false</item>
@@ -2791,9 +2809,18 @@
     <item type="id" name="quick_capture_top_shadow_overlay">false</item>
     <item type="id" name="quick_reply_post_list">false</item>
     <item type="id" name="quick_reply_text_list">false</item>
+    <item type="id" name="quiz_sticker">false</item>
+    <item type="id" name="quiz_sticker_answer_text">false</item>
+    <item type="id" name="quiz_sticker_avatar">false</item>
+    <item type="id" name="quiz_sticker_card">false</item>
+    <item type="id" name="quiz_sticker_editor_stub">false</item>
+    <item type="id" name="quiz_sticker_first_answer">false</item>
+    <item type="id" name="quiz_sticker_question">false</item>
+    <item type="id" name="quiz_sticker_second_answer">false</item>
     <item type="id" name="quote_bar">false</item>
     <item type="id" name="quote_bar_stub">false</item>
     <item type="id" name="radio">false</item>
+    <item type="id" name="radiobutton">false</item>
     <item type="id" name="random_attribution">false</item>
     <item type="id" name="random_attribution_stub">false</item>
     <item type="id" name="rapidfeedback_page">false</item>
@@ -3339,6 +3366,8 @@
     <item type="id" name="row_simple_text_container">false</item>
     <item type="id" name="row_simple_text_description">false</item>
     <item type="id" name="row_simple_text_detail">false</item>
+    <item type="id" name="row_simple_text_end_imageview">false</item>
+    <item type="id" name="row_simple_text_end_stub">false</item>
     <item type="id" name="row_simple_text_metadata_textview">false</item>
     <item type="id" name="row_simple_text_textview">false</item>
     <item type="id" name="row_simple_text_title">false</item>
@@ -3405,6 +3434,11 @@
     <item type="id" name="same_email_chbox">false</item>
     <item type="id" name="save">false</item>
     <item type="id" name="save_button">false</item>
+    <item type="id" name="save_collection_header_author">false</item>
+    <item type="id" name="save_collection_header_cover_image">false</item>
+    <item type="id" name="save_collection_header_cover_image_container">false</item>
+    <item type="id" name="save_collection_header_media_count">false</item>
+    <item type="id" name="save_collection_header_title">false</item>
     <item type="id" name="save_non_transition_alpha">false</item>
     <item type="id" name="save_overlay_view">false</item>
     <item type="id" name="save_popout_image_stub">false</item>
@@ -3418,6 +3452,7 @@
     <item type="id" name="save_to_collections_new_collection">false</item>
     <item type="id" name="save_to_collections_new_collection_stub">false</item>
     <item type="id" name="save_to_collections_recycler_view">false</item>
+    <item type="id" name="saved_collection_add_contributors_button">false</item>
     <item type="id" name="saved_collection_glyph_stub">false</item>
     <item type="id" name="saved_collection_name">false</item>
     <item type="id" name="saved_collection_thumbnail">false</item>
@@ -3434,6 +3469,7 @@
     <item type="id" name="school_location">false</item>
     <item type="id" name="school_name">false</item>
     <item type="id" name="school_notification_landing_content">false</item>
+    <item type="id" name="school_notification_landing_subtitle">false</item>
     <item type="id" name="school_notification_landing_title">false</item>
     <item type="id" name="school_tag_edittext">false</item>
     <item type="id" name="scrbber_focus_box_ring_view">false</item>
@@ -3522,7 +3558,7 @@
     <item type="id" name="seen_state">false</item>
     <item type="id" name="seen_state_circle_back">false</item>
     <item type="id" name="seen_state_circle_front">false</item>
-    <item type="id" name="seen_state_container">false</item>
+    <item type="id" name="seen_state_text">false</item>
     <item type="id" name="segment_progress_bar">false</item>
     <item type="id" name="select_check_mark">false</item>
     <item type="id" name="select_dialog_listview">false</item>
@@ -3625,6 +3661,10 @@
     <item type="id" name="shop_on_profile_row_profile_pic">false</item>
     <item type="id" name="shop_on_profile_row_subtitle">false</item>
     <item type="id" name="shop_on_profile_row_title">false</item>
+    <item type="id" name="shop_section_avatar">false</item>
+    <item type="id" name="shop_section_caret">false</item>
+    <item type="id" name="shop_section_subtitle">false</item>
+    <item type="id" name="shop_section_title">false</item>
     <item type="id" name="shopping_indicator">false</item>
     <item type="id" name="shopping_indicator_stub">false</item>
     <item type="id" name="short_divider">false</item>
@@ -4252,7 +4292,6 @@
     <item type="id" name="videocall_call_target_avatars_container">false</item>
     <item type="id" name="videocall_calling_stub">false</item>
     <item type="id" name="videocall_cell_mute_indicator">false</item>
-    <item type="id" name="videocall_controls_stub">false</item>
     <item type="id" name="videocall_debug_stub">false</item>
     <item type="id" name="videocall_end_facepile">false</item>
     <item type="id" name="videocall_end_stub">false</item>
@@ -4282,7 +4321,6 @@
     <item type="id" name="videocall_ring_swipe_up_label">false</item>
     <item type="id" name="videocall_ring_title">false</item>
     <item type="id" name="videocall_root">false</item>
-    <item type="id" name="videocall_surface_view_frame">false</item>
     <item type="id" name="videocall_title">false</item>
     <item type="id" name="videocall_user_feedback">false</item>
     <item type="id" name="view_ad_disclaimer_button">false</item>
@@ -4372,5 +4410,5 @@
     <item type="id" name="zero_rating_video_setting_banner_stub">false</item>
     <item type="id" name="zip">false</item>
     <item type="id" name="zoomable_view_container">false</item>
-    <item type="id" name="APKTOOL_DUMMY_4f">false</item>
+    <item type="id" name="APKTOOL_DUMMY_50">false</item>
 </resources>

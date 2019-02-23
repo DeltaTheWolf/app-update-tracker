@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/welcome_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.iig.components.facepile.IgFacepile android:id="@id/social_context_facepile" android:paddingTop="@dimen/vertical_separator_padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content" app:pileType="large" />
+        <include layout="@layout/business_title_card_bigger_title" />
+    </LinearLayout>
+    <com.instagram.business.ui.BusinessNavBar android:id="@id/navigation_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:primaryText="@string/import_0_post_label" app:showSecondaryButton="false" />
+</android.support.constraint.ConstraintLayout>

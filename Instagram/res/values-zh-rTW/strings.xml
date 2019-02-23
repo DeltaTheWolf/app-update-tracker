@@ -86,6 +86,18 @@
     <string name="account_info_learn_more_fragment_bullet5_title">有共同粉絲的帳號</string>
     <string name="account_info_learn_more_fragment_header">為什麼 Instagram 會顯示這個？</string>
     <string name="account_info_learn_more_fragment_title">個人檔案更新</string>
+    <string name="account_linking_continue">繼續</string>
+    <string name="account_linking_main_account_confirm_dialog_body">任何擁有你主要帳號密碼的用戶將能使用與之連結的帳號。</string>
+    <string name="account_linking_main_account_confirm_dialog_change_account_button">變更主要帳號</string>
+    <string name="account_linking_main_account_confirm_dialog_title">帳號安全提醒</string>
+    <string name="account_linking_main_account_selection_body">登入主要帳號會將你登入所有與之連結的帳號。</string>
+    <string name="account_linking_main_account_selection_title">選擇主要帳號</string>
+    <string name="account_linking_missing_account_prompt">沒有看到帳號？%1$s</string>
+    <string name="account_linking_missing_account_tappable_log_in">登 入。</string>
+    <string name="account_linking_next">繼續</string>
+    <string name="account_linking_opt_in_first_body">將你的 1 個帳號設為主要帳號，並用於一次登入你的所有帳號。</string>
+    <string name="account_linking_opt_in_second_body">你的帳號會保持獨立，但登入程序將更快速、簡便。</string>
+    <string name="account_linking_opt_in_title">將單一登入用於&lt;br/>你所有的帳號</string>
     <string name="account_privacy_banner_private">你的帳號設為不公開</string>
     <string name="account_privacy_option_private_content">只有你批准可追蹤你的用戶才可以看見你分享的相片和影片。你目前的粉絲不會受到影響。</string>
     <string name="account_privacy_option_private_title">不公開</string>
@@ -275,7 +287,18 @@
     <string name="are_you_sure">你確定嗎？</string>
     <string name="ask_a_parent">徵求父母／監護人同意</string>
     <string name="ask_parent_button_text">要求批准</string>
+    <string name="aspect">長寬大小</string>
     <string name="asset">表情符號和貼圖</string>
+    <string name="attribute_sync_action_bar_title">同步聯絡資料</string>
+    <string name="attribute_sync_address_subtitle">你的 Facebook 粉絲專頁列出的街道地址與 Instagram 商業檔案上的地址不一致。請為這兩個帳號統一選擇一個地址。</string>
+    <string name="attribute_sync_confirm_header">你的公開聯絡資料</string>
+    <string name="attribute_sync_confirm_subtitle">相關資料會同步至你的 Facebook 粉絲專頁和 Instagram 商業檔案。日後若你在 Instagram 變更任何公開聯絡資料，變更內容也會顯示在 Facebook 粉絲專頁。</string>
+    <string name="attribute_sync_confirm_title">確認你的資料</string>
+    <string name="attribute_sync_email_subtitle">你的 Facebook 粉絲專頁列出的電子郵件地址與 Instagram 商業檔案上的電子郵件不一致。請為這兩個帳號統一選擇一個電子郵件。</string>
+    <string name="attribute_sync_intro_subtitle">將你在 Instagram 帳號和 Facebook 粉絲專頁分享的公開聯絡資料同步，即可確保商業檔案隨時顯示最新的正確資訊。</string>
+    <string name="attribute_sync_missing_email">未提供──不使用電子郵件</string>
+    <string name="attribute_sync_phone_subtitle">你的 Facebook 粉絲專頁列出的電話號碼與 Instagram 商業檔案上的號碼不一致。請為這兩個帳號統一選擇一個電話號碼。</string>
+    <string name="attribute_sync_review_info">檢查你的資料</string>
     <string name="attributed_asset_by_format">%2$s創作的%1$s</string>
     <string name="attribution_camera_face_filter">臉部濾鏡</string>
     <string name="attribution_camera_made_with_boomerang">使用 Boomerang 製作</string>
@@ -412,6 +435,7 @@
     <string name="bugreporter_low_memory_screenshot_error">「很抱歉！記憶體不足，無法擷取螢幕截圖。」</string>
     <string name="bugreporter_not_now">稍後再說</string>
     <string name="bugreporter_rageshake_hint">簡述發生的狀況</string>
+    <string name="bugreporter_rageshake_video_quality_hint">簡短說明影片畫質或音訊品質與預期不符之處。</string>
     <string name="bugreporter_save_annotated_screenshot_error">無法儲存螢幕截圖，請再試一次。</string>
     <string name="bugreporter_save_annotated_screenshot_wait">儲存中⋯⋯</string>
     <string name="bugreporter_send_description">非常感謝你的意見回饋！</string>
@@ -459,6 +483,9 @@
     <string name="business_signup_use_different_phone_number">改用其他電話號碼</string>
     <string name="business_signup_welcome_user_desc">你的商業檔案已就緒。現在你可以與粉絲分享相片、影片和限時動態，拓展事業版圖。你可以隨時變更用戶名稱。</string>
     <string name="business_signup_welcome_user_title">歡迎使用 Instagram，</string>
+    <string name="business_tools_description">Instagram 商業工具可協助你拓展粉絲群及達成職涯目標。你可以免費新增商業工具並選擇最適合自己的工具。</string>
+    <string name="business_tools_intro_start">立即開始</string>
+    <string name="business_tools_title">為%1$s取得商業工具</string>
     <string name="business_tutorials">教學導覽</string>
     <string name="button_description">按鈕</string>
     <string name="caboose_shadow_hint_text">繼續捲動可查看推薦</string>
@@ -470,6 +497,8 @@
     <string name="call_to_action_preview_link">預覽連結</string>
     <string name="calls">通話次數</string>
     <string name="camera">相機</string>
+    <string name="camera_close_friends_share_button_tooltip_text_photo">只與摯友分享這張相片。</string>
+    <string name="camera_close_friends_share_button_tooltip_text_video">只與摯友分享這段影片。</string>
     <string name="camera_description">相機</string>
     <string name="camera_effect_beats">節奏</string>
     <string name="camera_effect_blink_eyes">眨眨眼</string>
@@ -510,8 +539,6 @@
     <string name="camera_effect_tvshow">電視節目</string>
     <string name="camera_effect_wave">揮揮手</string>
     <string name="camera_effects">相機特效</string>
-    <string name="camera_favorites_share_button_tooltip_text_photo">只與摯友分享這張相片。</string>
-    <string name="camera_favorites_share_button_tooltip_text_video">只與摯友分享這段影片。</string>
     <string name="camera_home_button_description">返回首頁</string>
     <string name="camera_permission_name">相機</string>
     <string name="camera_permission_rationale_link">開啟</string>
@@ -529,6 +556,8 @@
     <string name="cannot_edit_promoted_branded_content_post">你無法在推廣期間和推廣結束後修改貼文。</string>
     <string name="cannot_edit_promoted_post">你無法編輯之前推廣過的貼文</string>
     <string name="cant_add_partner_title">無法新增合作夥伴</string>
+    <string name="canvas_dial_element_poll_label">票選活動</string>
+    <string name="canvas_dial_element_questions_label">問題</string>
     <string name="caption_ellipsis_less">較少</string>
     <string name="caption_ellipsis_more">……更多內容</string>
     <string name="caption_more">更多</string>
@@ -548,10 +577,6 @@
     <string name="carousel_photo_n_of_n_with_alt_text">相片%1$d/%2$d，%3$s</string>
     <string name="carousel_posts">輪播貼文</string>
     <string name="carousel_story_description">%1$s的限時動態（在%2$d欄位）</string>
-    <string name="carousel_tap_nux_message_both">滑動或點按可繼續</string>
-    <string name="carousel_tap_nux_message_swipe_1">滑動可繼續</string>
-    <string name="carousel_tap_nux_message_swipe_2">滑動可查看更多</string>
-    <string name="carousel_tap_nux_message_tap">點按可繼續</string>
     <string name="carousel_video_n_of_n">影片%1$d/%2$d，由%3$s拍攝</string>
     <string name="carousel_video_n_of_n_with_alt_text">影片%1$d/%2$d，%3$s</string>
     <string name="category">類別</string>
@@ -744,6 +769,7 @@
     <string name="connect_and_learn_followers">將 Instagram 帳號連結到 Facebook 粉絲專頁，以便與粉絲聯絡，並且更進一步瞭解他們。</string>
     <string name="connect_contacts">連結聯絡人</string>
     <string name="connect_contacts_learn_more_text">瀏覽%1$s以瞭解詳情。</string>
+    <string name="connect_contacts_legal_explanation">你的聯絡人會定期同步並儲存在 Instagram 的伺服器上，以方便你和其他用戶尋找朋友，同時協助我們提供更優質的服務。若要移除聯絡人，請前往「設定」並取消連結。瞭解詳情。</string>
     <string name="connect_contacts_options_info_text">為了幫助用戶在 Instagram 上聯繫，你的聯絡人會定期同步並儲存在我們的伺服器上。你可以選擇要追蹤哪些人。%1$s。</string>
     <string name="connect_contacts_subtitle">搜尋你認識的 Instagram 用戶，並選擇想要追蹤的對象。</string>
     <string name="connect_existing_page">連結現有粉絲專頁</string>
@@ -753,7 +779,6 @@
     <string name="connect_to_facebook">連結 Facebook</string>
     <string name="connect_to_fb">連結到 Facebook</string>
     <string name="connect_to_fb_page">連結你的 Facebook 粉絲專頁</string>
-    <string name="connect_to_fb_page_explain">Instagram 上的商業檔案會連結到 Facebook 粉絲專頁。我們會複製你的公司資料，並讓你編輯。</string>
     <string name="connect_to_fb_page_explain_ads_increase_connection">Instagram 上的商業檔案會連結到 Facebook 粉絲專頁。你可以使用此個人檔案在 Facebook 建立廣告。我們會複製你的公司資料，並讓你編輯。</string>
     <string name="connect_with_customers">與顧客聯繫</string>
     <string name="connect_your_contacts">連結聯絡人</string>
@@ -996,6 +1021,11 @@
     <string name="direct_activity_indicator_in_camera">正在使用相機......</string>
     <string name="direct_activity_indicator_in_camera_multiple_members_group_thread">%1$d人開啟了相機......</string>
     <string name="direct_activity_indicator_in_camera_single_member_group_thread">%1$s開啟了相機......</string>
+    <string name="direct_activity_indicator_seen">已讀</string>
+    <string name="direct_activity_indicator_seen_expanded">%1$s都已看過</string>
+    <string name="direct_activity_indicator_seen_group_multiple_viewers">%1$s、%2$s + %3$d都已看過</string>
+    <string name="direct_activity_indicator_seen_group_one_viewer">%1$s已看過</string>
+    <string name="direct_activity_indicator_seen_group_two_viewers">%1$s、%2$s都已看過</string>
     <string name="direct_activity_indicator_typing">正在輸入......</string>
     <string name="direct_activity_indicator_typing_multiple_members_group_thread">%1$d人輸入訊息中......</string>
     <string name="direct_activity_indicator_typing_single_member_group_thread">%1$s輸入訊息中......</string>
@@ -1428,6 +1458,7 @@
     <string name="dont_delete">請勿刪除</string>
     <string name="dont_remove_igtv_media">取消</string>
     <string name="dont_show_for_this_hashtag">不要顯示使用這個主題標籤的媒體項目</string>
+    <string name="double_tap_to_like_comments_nux">現在你可以在留言上點按兩下，以便對留言按讚。</string>
     <string name="double_tap_to_like_hint">提示：雙點貼文即可按讚！</string>
     <string name="download_data">下載資料</string>
     <string name="draft_section_title">草稿</string>
@@ -1750,6 +1781,7 @@
     <string name="gender_female">女性</string>
     <string name="gender_male">男性</string>
     <string name="gender_unspecified">未指定</string>
+    <string name="get_business_tools">取得 Instagram 商業工具</string>
     <string name="get_directions">規劃路線次數</string>
     <string name="get_insights">取得洞察報告</string>
     <string name="get_insights_here">在這裡可取得有關你帳號的洞察報告。</string>
@@ -1779,6 +1811,7 @@
     <string name="hashtag_sticker_default_text">\#主題標籤</string>
     <string name="hashtag_sticker_description">主題標籤貼圖</string>
     <string name="hashtags">主題標籤</string>
+    <string name="hashtags_link_row_title">主題標籤</string>
     <string name="header_icon">頁首圖示</string>
     <string name="help_center">使用說明</string>
     <string name="help_center_text_link">如需更多協助，請瀏覽%1$s。</string>
@@ -1921,10 +1954,10 @@
     <string name="igtv_reshare_sticker_tap_affordance">你的觀眾點按這個貼圖就能夠在 IGTV 上觀看。</string>
     <string name="igtv_search_results_channels_header">頻道</string>
     <string name="igtv_search_results_no_channels_found">查無頻道</string>
-    <string name="igtv_share_trailer_to_feed_ineligible">僅限長度超過 1 分鐘的 IGTV 影片</string>
-    <string name="igtv_share_trailer_to_feed_info">分享預覽到個人檔案和動態消息</string>
+    <string name="igtv_share_preview_not_available">無法預覽</string>
+    <string name="igtv_share_preview_not_available_explained">你的影片長度至少需達 1 分鐘，才能建立預覽內容。</string>
     <string name="igtv_share_trailer_to_feed_learn_more">瞭解詳情</string>
-    <string name="igtv_share_trailer_to_feed_title">在 Instagram 上分享</string>
+    <string name="igtv_share_trailer_to_feed_title">發佈預覽內容</string>
     <string name="igtv_skip_button_text_delay_skippable">%1$s後略過</string>
     <string name="igtv_skip_button_text_non_skippable">影片將在%1$s後播放</string>
     <string name="igtv_skip_button_text_skippable">略過</string>
@@ -2101,6 +2134,7 @@
     <string name="layout_dialog_description">在一則貼文中放入多張相片並分享到 Instagram，體驗即時順暢的操作過程。</string>
     <string name="layout_dialog_get_layout_button">下載 Layout</string>
     <string name="layout_dialog_title">組合相片</string>
+    <string name="layout_import_failed">從 Layout 接收結果時發生錯誤。</string>
     <string name="lead_ad_close">關閉</string>
     <string name="lead_ad_conditional_questions_disabled_message">請先回答上一個問題。</string>
     <string name="lead_ad_custom_disclaimer_checkbox_error">請同意必要條款</string>
@@ -2334,6 +2368,7 @@
     <string name="more_accounts_like_this">更多類似帳號</string>
     <string name="more_available">查看全部</string>
     <string name="more_information">更多資訊</string>
+    <string name="more_mutual_followers">還有%1$d人</string>
     <string name="more_options">更多選項</string>
     <string name="more_options_title">更多選項</string>
     <string name="most_recent">最新動態</string>
@@ -2377,6 +2412,7 @@
     <string name="music_play_button_content_description">播放</string>
     <string name="music_snippet_button_description">編輯音樂播放時間</string>
     <string name="music_snippet_button_tooltip_text">選擇這首歌曲的其他部分。</string>
+    <string name="music_snippet_choose_song_tooltip_text">選擇歌曲</string>
     <string name="music_sticker_consumption_cannot_preview_track">你所在的區域無法播放這首歌曲。</string>
     <string name="music_sticker_consumption_no_artist_profile">此演唱者未連結任何個人檔案。</string>
     <string name="music_sticker_consumption_sheet_try_music">在限時動態中試用音樂</string>
@@ -2405,6 +2441,8 @@
     <string name="mute_follow_unmute_story_option">取消噤聲限時動態</string>
     <string name="mute_generic_mas_story">噤聲%1$s}限時動態</string>
     <string name="mute_hashtag_story">噤聲 #%1$s限時動態</string>
+    <string name="mute_mas_confirm_toast_mute">已噤聲</string>
+    <string name="mute_mas_confirm_toast_unmute">已取消噤聲</string>
     <string name="mute_push_notifications">關閉推播通知</string>
     <string name="mute_story_failure">此限時動態並未停止顯示，請再試一次。</string>
     <string name="mute_video">靜音</string>
@@ -2634,7 +2672,7 @@
     <string name="payments">付款</string>
     <string name="pbia_facebook_followers">%1$s位 Facebook 粉絲</string>
     <string name="pbia_learn_more_label">瞭解詳情</string>
-    <string name="pdp_attributes_shipped_and_sold_by_template">出貨及銷售者：^1</string>
+    <string name="pdp_attributes_shipped_and_sold_by_template">銷售及出貨者：^1</string>
     <string name="pdp_attributes_sold_by_template">賣家：^1</string>
     <string name="pending_approval">待批准</string>
     <string name="pending_media_airplane_mode_warning">關閉飛航模式以完成貼文的發佈。</string>
@@ -2853,8 +2891,6 @@
     <string name="product_tagging_tap_to_add_photo">點按相片可標註產品。</string>
     <string name="product_tagging_tap_to_add_video">點按可標註商品。</string>
     <string name="product_unavailable_message">商家已移除商品</string>
-    <string name="products_section_more_from_this_post_title">這則貼文中的其他產品</string>
-    <string name="products_section_more_from_this_story_title">這則限時動態中的其他產品</string>
     <string name="profanity_filter">留言控制項</string>
     <string name="profile_chaining_unit_action_button_text">瀏覽</string>
     <string name="profile_close_friends_description">摯友</string>
@@ -2936,9 +2972,15 @@
     <string name="question_sticker_viewer_nux_tooltip_text">傳送回覆。</string>
     <string name="quick_replies">快速回覆</string>
     <string name="quick_reply_description">快速回覆</string>
+    <string name="quiz_sticker_first_answer_hint">答案 1</string>
+    <string name="quiz_sticker_question_hint">提問題</string>
+    <string name="quiz_sticker_second_answer_hint">答案 2</string>
+    <string name="quiz_sticker_tray_description">測驗貼圖</string>
+    <string name="quiz_sticker_tray_label">測驗</string>
     <string name="rageshake_bug_report_option">有些地方出錯了</string>
     <string name="rageshake_disable_option">停用搖動功能</string>
     <string name="rageshake_title">回報問題</string>
+    <string name="rageshake_video_quality_issue">影片畫質問題</string>
     <string name="rapidfeedback_survey_title">問卷調查</string>
     <string name="rate_ads">開始評分</string>
     <string name="rate_limit_header">無法要求其他下載</string>
@@ -3037,7 +3079,7 @@
     <string name="reel_settings_title">限時動態設定</string>
     <string name="reel_settings_viewers_description">針對特定對象隱藏限時動態和直播視訊。</string>
     <string name="reel_settings_viewers_title_blocked">隱藏限時動態名單：</string>
-    <string name="reel_settings_viewers_title_favorites">摯友</string>
+    <string name="reel_settings_viewers_title_close_friends">摯友</string>
     <string name="reel_slider_voters_list_title">回答</string>
     <string name="reel_tagging_bubble_default_subtitle">點按可瞭解詳情</string>
     <string name="reel_tray_item_live_label">直播</string>
@@ -3233,6 +3275,8 @@
     <string name="save_all">全部儲存</string>
     <string name="save_button_description">儲存到裝置</string>
     <string name="save_button_text">儲存</string>
+    <string name="save_collection_header_created_by_other">由%1$s建立</string>
+    <string name="save_collection_header_created_by_you">由你建立</string>
     <string name="save_collection_pivots_cta">查看更多類似內容</string>
     <string name="save_collection_pivots_cta_content_description">「查看更多類似內容」按鈕</string>
     <string name="save_collection_pivots_feed_title">類似%1$s</string>
@@ -3389,6 +3433,8 @@
     <string name="set_a_profile_picture">設為大頭貼照</string>
     <string name="set_daily_reminder_subtitle">到了你設定的時間後，我們就會傳送提醒給你。</string>
     <string name="set_daily_reminder_title">設定每日提醒</string>
+    <string name="set_main_account">設定主要帳號</string>
+    <string name="set_main_account_explanation">使用一組編號和密碼快速且安全地登入你所有的 Instagram 帳號。</string>
     <string name="set_up_business_profile">設定你的商業檔案</string>
     <string name="settings">設定</string>
     <string name="settings_viewers_choose_locations_feature_off">關閉</string>
@@ -3453,11 +3499,9 @@
     <string name="shopping_posts">購物貼文</string>
     <string name="shopping_variant_value_selector_sold_out_label">%1$s（售罄）</string>
     <string name="shopping_viewer_add_posts">新增貼文</string>
-    <string name="shopping_viewer_description_title">簡介</string>
     <string name="shopping_viewer_edit">編輯</string>
     <string name="shopping_viewer_edit_feed_notice">選擇包含%1$s的貼文。</string>
     <string name="shopping_viewer_edit_feed_num_selected">已選%1$d個</string>
-    <string name="shopping_viewer_more_from_business_header">%1$s的其他貼文</string>
     <string name="shopping_viewer_photos_of_you">有你在內的相片</string>
     <string name="shopping_viewer_related_posts_title">包含此商品的貼文</string>
     <string name="shopping_viewer_remove_posts">移除貼文</string>
@@ -4088,7 +4132,6 @@
     <string name="videocall_call_again">重撥</string>
     <string name="videocall_camera_button_turn_off_description">關閉視訊</string>
     <string name="videocall_camera_button_turn_on_description">開啟視訊功能</string>
-    <string name="videocall_close_button_description">結束視訊聊天</string>
     <string name="videocall_contacting">撥號中......</string>
     <string name="videocall_continuing_in_background_toast">關閉相機並繼續視訊聊天</string>
     <string name="videocall_create_call_during_call_error_message">結束目前的通話才能開始使用視訊聊天。</string>
@@ -4185,6 +4228,7 @@
     <string name="wait_for_uploads_to_finish_logout">不能在上傳時登出。請等到完成後再試一次。</string>
     <string name="wait_for_uploads_to_finish_switch">不能在上傳時切換帳號。請等到完成後再試一次。</string>
     <string name="waiting_for_approval">等待批准中</string>
+    <string name="wam_chevron_accessibility_label">點按可繼續觀賞。「觀看更多」雙箭頭。</string>
     <string name="wam_launch_button_nux_long">點按即可繼續觀賞並查看更多。</string>
     <string name="wam_launch_button_nux_short">點按可查看更多。</string>
     <string name="warmth">暖色調節</string>

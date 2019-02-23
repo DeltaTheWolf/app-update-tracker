@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:text="@string/save_home_collection_feed_contributors" style="@style/RowHeaderText" />
+    <include layout="@layout/row_header_divider" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:id="@id/saved_collection_add_contributors_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/save_edit_collection_add_contributor_margin" android:layout_marginTop="@dimen/save_edit_collection_add_contributor_margin" android:text="@string/save_home_collection_feed_add_contributors_text" />
+</LinearLayout>

@@ -152,12 +152,6 @@
         <item quantity="few">%1$s منشورات</item>
         <item quantity="many">%1$s منشورًا</item>
     </plurals>
-    <plurals name="hashtags_link_row_title">
-        <item quantity="other">%1$d علامة هاشتاج</item>
-        <item quantity="one">علامة هاشتاج واحدة</item>
-        <item quantity="two">علامتا هاشتاج</item>
-        <item quantity="few">%1$d علامات هاشتاج</item>
-    </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> من المنشورات</item>
         <item quantity="one">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> منشور</item>
@@ -258,8 +252,10 @@
         <item quantity="many">%1$s مشاهدًا</item>
     </plurals>
     <plurals name="on_this_day_subtitle">
-        <item quantity="other">منذ %1$d من السنوات من اليوم.</item>
-        <item quantity="one">منذ سنة من اليوم.</item>
+        <item quantity="other">منذ %1$d سنة من اليوم.</item>
+        <item quantity="one">منذ سنة واحدة من اليوم.</item>
+        <item quantity="two">منذ سنتين من اليوم.</item>
+        <item quantity="few">منذ %1$d سنوات من اليوم.</item>
     </plurals>
     <plurals name="on_x_countries">
         <item quantity="other">في (%1$d من البلدان)</item>
@@ -292,6 +288,14 @@
         <item quantity="one">دقيقة واحدة</item>
         <item quantity="two">دقيقتان</item>
         <item quantity="few">%1$d دقائق</item>
+    </plurals>
+    <plurals name="save_collection_header_contributors">
+        <item quantity="other">مساهمون</item>
+        <item quantity="one">مساهم</item>
+    </plurals>
+    <plurals name="save_collection_header_saved_posts">
+        <item quantity="other">منشورات محفوظة</item>
+        <item quantity="one">منشور محفوظ</item>
     </plurals>
     <plurals name="save_photos_captured">
         <item quantity="other">هل تريد حفظ الصور الملتقطة؟</item>
@@ -363,12 +367,16 @@
         <item quantity="one">شخص واحد من أصدقائك على فيسبوك يستخدم Instagram</item>
     </plurals>
     <plurals name="x_hours_ago">
-        <item quantity="other">منذ %1$s من الساعات</item>
-        <item quantity="one">قبل %1$s ساعة</item>
+        <item quantity="other">منذ %1$s ساعة</item>
+        <item quantity="one">منذ ساعة واحدة</item>
+        <item quantity="two">منذ ساعتين</item>
+        <item quantity="few">منذ %1$s ساعات</item>
     </plurals>
     <plurals name="x_minutes_ago">
-        <item quantity="other">قبل %1$s من الدقائق</item>
-        <item quantity="one">قبل %1$s دقيقة</item>
+        <item quantity="other">منذ %1$s دقيقة</item>
+        <item quantity="one">منذ دقيقة واحدة</item>
+        <item quantity="two">منذ دقيقتين</item>
+        <item quantity="few">منذ %1$s دقائق</item>
     </plurals>
     <plurals name="x_people">
         <item quantity="other">%1$d من الأشخاص</item>
@@ -376,7 +384,7 @@
     </plurals>
     <plurals name="x_seconds_ago">
         <item quantity="other">منذ %1$s من الثواني</item>
-        <item quantity="one">قبل %1$s ثانية</item>
+        <item quantity="one">منذ %1$s ثانية</item>
     </plurals>
     <plurals name="x_selected">
         <item quantity="other">تم تحديد %1$d</item>
@@ -387,8 +395,11 @@
         <item quantity="one">استجاب شخص واحد.</item>
     </plurals>
     <plurals name="x_weeks_ago">
-        <item quantity="other">قبل %1$s من الأسابيع</item>
-        <item quantity="one">قبل %1$s أسبوع</item>
+        <item quantity="other">منذ %1$s أسبوع</item>
+        <item quantity="one">منذ أسبوع واحد</item>
+        <item quantity="two">منذ أسبوعين</item>
+        <item quantity="few">منذ %1$s أسابيع</item>
+        <item quantity="many">منذ %1$s أسبوعًا</item>
     </plurals>
     <plurals name="x_y_and_n_others">
         <item quantity="other">%1$s و%2$s و&lt;b>%3$s من الأشخاص الآخرين&lt;/b></item>

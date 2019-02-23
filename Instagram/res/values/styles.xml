@@ -191,6 +191,10 @@
         <item name="strokeOnOutside">false</item>
         <item name="strokeWidth">@dimen/circular_avatar_inner_stroke_width</item>
     </style>
+    <style name="AvatarReel.OnColoredBackground.Icon" parent="@style/AvatarReel.OnColoredBackground">
+        <item name="android:layout_width">@dimen/avatar_size_icon</item>
+        <item name="android:layout_height">@dimen/avatar_size_icon</item>
+    </style>
     <style name="AvatarReel.OnColoredBackground.Large" parent="@style/AvatarReel.OnColoredBackground">
         <item name="android:layout_width">@dimen/avatar_size_large</item>
         <item name="android:layout_height">@dimen/avatar_size_large</item>
@@ -202,6 +206,10 @@
     <style name="AvatarReel.OnColoredBackground.XLarge" parent="@style/AvatarReel.OnColoredBackground">
         <item name="android:layout_width">@dimen/avatar_size_xlarge</item>
         <item name="android:layout_height">@dimen/avatar_size_xlarge</item>
+    </style>
+    <style name="AvatarReelRing.Icon" parent="@style/Avatar">
+        <item name="android:layout_width">@dimen/avatar_reel_ring_size_icon</item>
+        <item name="android:layout_height">@dimen/avatar_reel_ring_size_icon</item>
     </style>
     <style name="AvatarReelRing.Large" parent="@style/Avatar">
         <item name="android:layout_width">@dimen/avatar_reel_ring_size_large</item>
@@ -2048,6 +2056,13 @@
     <style name="MerchantNameColorForInfluencerTags">
         <item name="android:textColor">@color/grey_5</item>
     </style>
+    <style name="MutualFollowRowGradientPatternStyle">
+        <item name="gradientColor1">@color/white</item>
+        <item name="gradientColor2">@color/white</item>
+        <item name="gradientColor3">@color/white</item>
+        <item name="gradientColor4">@color/white</item>
+        <item name="gradientColor5">@color/white</item>
+    </style>
     <style name="NetDzTermsText">
         <item name="android:textSize">@dimen/font_small</item>
         <item name="android:textStyle">bold</item>
@@ -2289,7 +2304,7 @@
         <item name="android:layout_width">@dimen/quick_capture_edit_button_dim</item>
         <item name="android:layout_height">@dimen/quick_capture_edit_button_dim</item>
     </style>
-    <style name="ProductDetailsSectionHeaderClickableLink" parent="@style/ProductDetailsSectionHeaderTitle">
+    <style name="ProductDetailsSectionHeaderClickableLink">
         <item name="android:textColor">@color/blue_5</item>
     </style>
     <style name="ProductDetailsSectionHeaderTitle" parent="@style/BodyEmphasized">
@@ -2297,6 +2312,9 @@
     </style>
     <style name="ProductPriceColor">
         <item name="android:textColor">@color/blue_5</item>
+    </style>
+    <style name="ProductPriceColorForOverlay">
+        <item name="android:textColor">@color/grey_1</item>
     </style>
     <style name="ProductPriceColorForTags">
         <item name="android:textColor">@color/grey_5</item>
@@ -3471,6 +3489,12 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="@style/Base.Widget.AppCompat.TextView.SpinnerItem" />
     <style name="Widget.AppCompat.Toolbar" parent="@style/Base.Widget.AppCompat.Toolbar" />
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation" />
+    <style name="Widget.BubbleSpinner.Igtone" parent="">
+        <item name="bubble_radius">8.0</item>
+        <item name="bubble_style">1</item>
+        <item name="interval_ms">800</item>
+        <item name="total_bubble_count">30</item>
+    </style>
     <style name="Widget.CameraInstruction.TextView" parent="">
         <item name="android:textColor">#feffffff</item>
         <item name="android:shadowColor">@color/black_60_transparent</item>

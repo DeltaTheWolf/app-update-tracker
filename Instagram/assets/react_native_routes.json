@@ -316,6 +316,7 @@
     "name": "IgInsightsStoryGridRoute",
     "navigationOptions": {
       "hidesTabBar": true,
+      "perfLogger_ttiEventName": "ig_insights_story_grid",
       "title": {
         "text": "Stories",
         "fbt": true,
@@ -969,6 +970,10 @@
       "objective": {
         "type": "String",
         "required": false
+      },
+      "forceBackButton": {
+        "type": "Bool",
+        "required": false
       }
     }
   },
@@ -1002,39 +1007,6 @@
       "isModal": {
         "type": "Bool",
         "required": true
-      }
-    }
-  },
-  {
-    "name": "IgShoppingCatalogSettingsRoute",
-    "navigationOptions": {
-      "title": {
-        "text": "Product Catalogs",
-        "fbt": true,
-        "hashKey": "3E0GIs"
-      }
-    },
-    "path": "/ig_shopping_catalog_settings",
-    "paramDefinitions": {
-      "analyticsModule": {
-        "type": "String",
-        "required": true
-      },
-      "entryPoint": {
-        "type": "String",
-        "required": false
-      },
-      "waterfallId": {
-        "type": "String",
-        "required": false
-      },
-      "isModal": {
-        "type": "Bool",
-        "required": false
-      },
-      "initialSelectedCatalogId": {
-        "type": "String",
-        "required": false
       }
     }
   },

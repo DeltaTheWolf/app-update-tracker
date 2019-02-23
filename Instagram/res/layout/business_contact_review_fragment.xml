@@ -4,7 +4,8 @@
     <LinearLayout android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
             <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <ViewStub android:id="@id/header_stub" android:inflatedId="@id/header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/business_title_card_bigger_title" layout="@layout/business_title_card_bigger_title" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorPrimary" android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contact_review_header" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:paddingStart="@dimen/row_padding" />
                 <include android:id="@id/row_email" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_contact_non_edit_row" />
                 <include android:id="@id/row_phone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_contact_non_edit_row" />
                 <include android:id="@id/row_address" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_contact_non_edit_row" />

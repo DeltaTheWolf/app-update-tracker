@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small"
+<android.support.constraint.ConstraintLayout android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:id="@id/language_holder" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/button_width" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/button_width">
+    <LinearLayout android:orientation="vertical" android:id="@id/language_holder" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/button_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/button_width" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/language_checkmark" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
         <com.instagram.common.ui.text.TitleTextView android:id="@id/language_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?rowTextStyle" />
         <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:id="@id/language_translation" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?rowDetailStyle" />
     </LinearLayout>
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center" android:id="@id/language_checkmark" android:paddingRight="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check" android:paddingEnd="@dimen/row_padding" app:normal="@color/blue_5" />
-    <include android:id="@id/row_divider" layout="@layout/row_divider" />
-</FrameLayout>
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center" android:id="@id/language_checkmark" android:paddingRight="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check" android:paddingEnd="@dimen/row_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/language_holder" app:layout_constraintTop_toTopOf="parent" app:normal="@color/blue_5" />
+    <include android:id="@id/row_divider" app:layout_constraintBottom_toBottomOf="parent" layout="@layout/row_divider" />
+</android.support.constraint.ConstraintLayout>

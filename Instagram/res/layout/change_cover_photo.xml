@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" layout="@layout/save_to_collections_collection_tile" />
-    <TextView android:textSize="@dimen/font_small" android:textColor="@color/blue_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/save_home_collection_feed_change_cover_photo" />
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/edit_collection_cover_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.widget.selectableview.RoundedCornerCheckMarkSelectableImageView android:id="@id/collection_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_collection_cover_vertical_margin" android:layout_marginBottom="@dimen/edit_collection_cover_photo_bottom_margin" app:imageCornerRadius="@dimen/edit_collection_cover_photo_corner_radius" app:imageHeight="@dimen/edit_collection_cover_photo_size" app:imageWidth="@dimen/edit_collection_cover_photo_size" />
+    <TextView android:textSize="@dimen/font_large" android:textColor="@color/blue_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_home_collection_feed_change_cover_photo" />
 </LinearLayout>

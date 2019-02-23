@@ -85,6 +85,18 @@
     <string name="account_info_learn_more_fragment_bullet5_title">Konton med gemensamma följare</string>
     <string name="account_info_learn_more_fragment_header">Varför visar Instagram detta?</string>
     <string name="account_info_learn_more_fragment_title">Profiluppdatering</string>
+    <string name="account_linking_continue">Fortsätt</string>
+    <string name="account_linking_main_account_confirm_dialog_body">Alla som har tillgång till lösenordet till ditt huvudkonto har tillgång till de konton som är kopplade till det.</string>
+    <string name="account_linking_main_account_confirm_dialog_change_account_button">Ändra huvudkonto</string>
+    <string name="account_linking_main_account_confirm_dialog_title">Säkerhetspåminnelse</string>
+    <string name="account_linking_main_account_selection_body">Om du loggar in på ditt huvudkonto loggar du även in på alla de konton du kopplar till det.</string>
+    <string name="account_linking_main_account_selection_title">Välj huvudkonto</string>
+    <string name="account_linking_missing_account_prompt">Ser du inte något konto? %1$s</string>
+    <string name="account_linking_missing_account_tappable_log_in">Logga in.</string>
+    <string name="account_linking_next">Nästa</string>
+    <string name="account_linking_opt_in_first_body">Gör ett av dina konton till huvudkonto och använd det för att logga in på alla dina konton samtidigt.</string>
+    <string name="account_linking_opt_in_second_body">Dina konton förblir separata, men det går snabbt och enkelt att logga in.</string>
+    <string name="account_linking_opt_in_title">En inloggning för&lt;br/>alla dina konton</string>
     <string name="account_privacy_banner_private">Ditt konto är inställt på privat</string>
     <string name="account_privacy_option_private_content">Det är bara personer du godkänner som följare som kan se de foton och videoklipp du delar. Dina nuvarande följare påverkas inte.</string>
     <string name="account_privacy_option_private_title">Privat</string>
@@ -268,6 +280,8 @@
     <string name="ask_a_parent">Fråga en förälder/målsman</string>
     <string name="ask_parent_button_text">Be om godkännande</string>
     <string name="asset">Emoji-symboler och dekaler</string>
+    <string name="attribute_sync_confirm_title">Bekräfta dina uppgifter</string>
+    <string name="attribute_sync_email_header">E-postadress</string>
     <string name="attributed_asset_by_format">%1$s av %2$s</string>
     <string name="attribution_camera_face_filter">Ansiktsfilter</string>
     <string name="attribution_camera_made_with_boomerang">Skapat med Boomerang</string>
@@ -398,6 +412,7 @@
     <string name="bugreporter_low_memory_screenshot_error">Det finns inte tillräckligt med minne för att ta en skärmbild.</string>
     <string name="bugreporter_not_now">Inte nu</string>
     <string name="bugreporter_rageshake_hint">Förklara kort vad som hände</string>
+    <string name="bugreporter_rageshake_video_quality_hint">Förklara kort hur videokvaliteten eller ljudkvaliteten skiljer sig från vad du förväntar dig.</string>
     <string name="bugreporter_save_annotated_screenshot_error">Det gick inte att spara skärmbilden. Försök igen.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">Sparar...</string>
     <string name="bugreporter_send_description">Tack för dina synpunkter!</string>
@@ -443,6 +458,7 @@
     <string name="business_signup_use_different_phone_number">Använd ett annat nummer</string>
     <string name="business_signup_welcome_user_desc">Din företagsprofil är redo. Nu kan du dela foton, videoklipp och händelser med dina följare och få ditt företag att växa. Du kan när som helst ändra användarnamn.</string>
     <string name="business_signup_welcome_user_title">Välkommen till Instagram,</string>
+    <string name="business_tools_intro_start">Börja nu</string>
     <string name="business_tutorials">Vägledningar</string>
     <string name="caboose_shadow_hint_text">Bläddra vidare för rekommendationer</string>
     <string name="caboose_shadow_hint_text_older">Fortsätt att söka efter äldre inlägg</string>
@@ -453,6 +469,7 @@
     <string name="call_to_action_preview_link">förhandsgranska länken</string>
     <string name="calls">Samtal</string>
     <string name="camera">Kamera</string>
+    <string name="camera_close_friends_share_button_tooltip_text_photo">Dela bara det här fotot med dina nära vänner.</string>
     <string name="camera_description">Kamera</string>
     <string name="camera_effect_blink_eyes">Blinka</string>
     <string name="camera_effect_customize_stickers">Tryck och dra i dekaler för att flytta</string>
@@ -490,8 +507,6 @@
     <string name="camera_effect_turn_on_sound">Slå på ljudet</string>
     <string name="camera_effect_tvshow">Tv-serie</string>
     <string name="camera_effect_wave">Vinka</string>
-    <string name="camera_favorites_share_button_tooltip_text_photo">Dela bara det här fotot med dina nära vänner.</string>
-    <string name="camera_favorites_share_button_tooltip_text_video">Dela bara den här videon med dina nära vänner.</string>
     <string name="camera_home_button_description">Tillbaka till startsidan</string>
     <string name="camera_permission_name">Kamera</string>
     <string name="camera_permission_rationale_link">Aktivera</string>
@@ -526,7 +541,6 @@
     <string name="carousel_photo_n_of_n_with_alt_text">Foto %1$d av %2$d, %3$s</string>
     <string name="carousel_posts">Carousel-inlägg</string>
     <string name="carousel_story_description">%1$ss händelse i kolumn %2$d</string>
-    <string name="carousel_tap_nux_message_swipe_2">Svep för att visa mer</string>
     <string name="carousel_video_n_of_n">Video %1$d av %2$d från %3$s</string>
     <string name="carousel_video_n_of_n_with_alt_text">Video %1$d av %2$d, %3$s</string>
     <string name="category">Kategori</string>
@@ -715,6 +729,7 @@
     <string name="connect_and_learn_followers">Koppla ditt Instagram-konto till din Facebook-sida för att samverka med och få veta mer om dina följare.</string>
     <string name="connect_contacts">Anslut till kontakter</string>
     <string name="connect_contacts_learn_more_text">Få reda på mer i %1$s.</string>
+    <string name="connect_contacts_legal_explanation">Dina kontakter synkas regelbundet och lagras på Instagrams servrar för att hjälpa dig och andra att hitta vänner, och för att vi ska kunna tillhandahålla en bättre tjänst. Gå till inställningarna och koppla bort funktionen om du vill ta bort kontakterna. Ta reda på mer.</string>
     <string name="connect_contacts_options_info_text">För att hjälpa användarna att få kontakt på Instagram synkas dina kontakter regelbundet och lagras på våra servrar. Du väljer vilka du vill följa. %1$s.</string>
     <string name="connect_contacts_subtitle">Hitta personer som du känner på Instagram och välj vilka du vill följa.</string>
     <string name="connect_existing_page">Anslut en befintlig sida</string>
@@ -724,7 +739,6 @@
     <string name="connect_to_facebook">Anslut till Facebook</string>
     <string name="connect_to_fb">Anslut till Facebook</string>
     <string name="connect_to_fb_page">Koppla din Facebook-sida</string>
-    <string name="connect_to_fb_page_explain">Företagsprofiler på Instagram är kopplade till en Facebook-sida. Vi kopierar över information om ditt företag och låter dig redigera den.</string>
     <string name="connect_to_fb_page_explain_ads_increase_connection">Företagsprofiler på Instagram är kopplade till en Facebook-sida. Du kan använda den här profilen när du skapar annonser på Facebook. Vi kopierar över information om ditt företag och låter dig redigera den.</string>
     <string name="connect_with_customers">Få kontakt med kunder</string>
     <string name="connect_your_contacts">Anslut dina kontakter</string>
@@ -962,6 +976,11 @@
     <string name="direct_activity_indicator_in_camera">I kameran ...</string>
     <string name="direct_activity_indicator_in_camera_multiple_members_group_thread">%1$d personer har öppnat kameran ...</string>
     <string name="direct_activity_indicator_in_camera_single_member_group_thread">%1$s har öppnat kameran ...</string>
+    <string name="direct_activity_indicator_seen">Visat</string>
+    <string name="direct_activity_indicator_seen_expanded">Visat av %1$s</string>
+    <string name="direct_activity_indicator_seen_group_multiple_viewers">Visat av %1$s, %2$s + %3$d</string>
+    <string name="direct_activity_indicator_seen_group_one_viewer">Visat av %1$s</string>
+    <string name="direct_activity_indicator_seen_group_two_viewers">Visat av %1$s, %2$s</string>
     <string name="direct_activity_indicator_typing">Skriver ...</string>
     <string name="direct_activity_indicator_typing_multiple_members_group_thread">%1$d personer skriver ...</string>
     <string name="direct_activity_indicator_typing_single_member_group_thread">%1$s skriver ...</string>
@@ -1381,6 +1400,7 @@
     <string name="dont_connect_facebook_page">Länka inte till Facebook</string>
     <string name="dont_delete">Ta inte bort</string>
     <string name="dont_show_for_this_hashtag">Visa inte för den här hashtaggen</string>
+    <string name="double_tap_to_like_comments_nux">Nu kan du dubbeltrycka på en kommentar för att gilla den.</string>
     <string name="double_tap_to_like_hint">Tips! Gilla inlägg genom att dubbeltrycka på dem!</string>
     <string name="download_data">Ladda ned data</string>
     <string name="draft_section_title">Utkast</string>
@@ -1697,6 +1717,7 @@
     <string name="gender_female">Kvinna</string>
     <string name="gender_male">Man</string>
     <string name="gender_unspecified">Ej angivet</string>
+    <string name="get_business_tools">Få tillgång till Instagrams företagsverktyg</string>
     <string name="get_directions">Visa vägbeskrivning</string>
     <string name="get_insights">Hämta statistik</string>
     <string name="get_insights_here">Se statistik för ditt konto här.</string>
@@ -1863,6 +1884,9 @@
     <string name="igtv_reshare_sticker_tap_affordance">Dina tittare kan trycka på den här dekalen för att titta på IGTV.</string>
     <string name="igtv_search_results_channels_header">Kanaler</string>
     <string name="igtv_search_results_no_channels_found">Inga kanaler hittades</string>
+    <string name="igtv_share_preview_not_available">Förhandsgranskning inte tillgänglig</string>
+    <string name="igtv_share_preview_not_available_explained">Din video måste vara minst 1 minut lång för att skapa en förhandsgranskning.</string>
+    <string name="igtv_share_trailer_to_feed_title">Publicera en förhandsgranskning</string>
     <string name="igtv_skip_button_text_delay_skippable">Hoppa över om %1$s</string>
     <string name="igtv_skip_button_text_non_skippable">Videon spelas upp om %1$s</string>
     <string name="igtv_skip_button_text_skippable">Hoppa över</string>
@@ -2037,6 +2061,7 @@
     <string name="layout_dialog_description">Lägg till flera foton i ett inlägg och dela dem sedan sömlöst med Instagram.</string>
     <string name="layout_dialog_get_layout_button">skaffa layout</string>
     <string name="layout_dialog_title">Kombinera dina foton</string>
+    <string name="layout_import_failed">Ett fel inträffade när resultaten från Layout togs emot.</string>
     <string name="lead_ad_close">Stäng</string>
     <string name="lead_ad_conditional_questions_disabled_message">Svara på föregående fråga först.</string>
     <string name="lead_ad_custom_disclaimer_checkbox_error">Godkänn de obligatoriska villkoren</string>
@@ -2258,6 +2283,7 @@
     <string name="more_accounts_like_this">Fler konton som detta</string>
     <string name="more_available">Visa alla</string>
     <string name="more_information">Mer information</string>
+    <string name="more_mutual_followers">%1$d till</string>
     <string name="more_options">Fler alternativ</string>
     <string name="more_options_title">Fler alternativ</string>
     <string name="most_recent">Senaste</string>
@@ -2294,6 +2320,7 @@
     <string name="music_overlay_tab_themes">Teman</string>
     <string name="music_overlay_tab_trending">Populärt</string>
     <string name="music_overlay_tray_sticker_default_text">MUSIK</string>
+    <string name="music_snippet_choose_song_tooltip_text">Välj en låt</string>
     <string name="music_sticker_consumption_cannot_preview_track">Den här låten är inte tillgänglig i din region.</string>
     <string name="music_sticker_consumption_no_artist_profile">Ingen profil har länkats till den här artisten.</string>
     <string name="music_sticker_consumption_sheet_try_music">Prova musik i din händelse</string>
@@ -2321,6 +2348,7 @@
     <string name="mute_follow_unmute_story_option">Aktivera händelse</string>
     <string name="mute_generic_mas_story">Inaktivera %1$s-händelsen</string>
     <string name="mute_hashtag_story">Inaktivera #%1$s-händelsen</string>
+    <string name="mute_mas_confirm_toast_unmute">Återaktiverat</string>
     <string name="mute_push_notifications">Inaktivera push-meddelanden</string>
     <string name="mute_story_failure">Händelsen har inte dolts. Försök igen.</string>
     <string name="mute_video">Stäng av ljud</string>
@@ -2545,6 +2573,7 @@
     <string name="payments">Betalningar</string>
     <string name="pbia_facebook_followers">%1$s Facebook-följare</string>
     <string name="pbia_learn_more_label">Läs mer</string>
+    <string name="pdp_attributes_shipped_and_sold_by_template">Säljs och levereras av ^1</string>
     <string name="pdp_attributes_sold_by_template">Säljs av ^1</string>
     <string name="pending_approval">Väntar på godkännande</string>
     <string name="pending_media_airplane_mode_warning">Stäng av flygplansläget för att slutföra inlägget.</string>
@@ -2752,8 +2781,6 @@
     <string name="product_tagging_tap_to_add_photo">Tryck på fotot för att tagga produkter.</string>
     <string name="product_tagging_tap_to_add_video">Tryck för att tagga produkter.</string>
     <string name="product_unavailable_message">Objektet har tagits bort av företaget</string>
-    <string name="products_section_more_from_this_post_title">Visas också i det här inlägget</string>
-    <string name="products_section_more_from_this_story_title">Visas också i den här händelsen</string>
     <string name="profanity_filter">Kommentarsinställningar</string>
     <string name="profile_close_friends_description">Nära vänner</string>
     <string name="profile_description">Profil</string>
@@ -2826,9 +2853,15 @@
     <string name="question_sticker_viewer_nux_tooltip_text">Skicka ett svar.</string>
     <string name="quick_replies">Snabbsvar</string>
     <string name="quick_reply_description">Snabbsvar</string>
+    <string name="quiz_sticker_first_answer_hint">Svar 1</string>
+    <string name="quiz_sticker_question_hint">Ställ en fråga</string>
+    <string name="quiz_sticker_second_answer_hint">Svar 2</string>
+    <string name="quiz_sticker_tray_description">Frågesportdekal</string>
+    <string name="quiz_sticker_tray_label">FRÅGESPORT</string>
     <string name="rageshake_bug_report_option">Det är något som inte fungerar</string>
     <string name="rageshake_disable_option">Inaktivera skakfunktion</string>
     <string name="rageshake_title">Rapportera ett problem</string>
+    <string name="rageshake_video_quality_issue">Problem med videokvalitet</string>
     <string name="rapidfeedback_survey_title">Undersökning</string>
     <string name="rate_ads">Börja betygsätt</string>
     <string name="rate_limit_header">Du kan inte begära en ny nedladdning</string>
@@ -2917,7 +2950,6 @@
     <string name="reel_settings_title">Händelseinställningar</string>
     <string name="reel_settings_viewers_description">Dölj din händelse och dina livevideoklipp från utvalda personer.</string>
     <string name="reel_settings_viewers_title_blocked">Dölj händelse från</string>
-    <string name="reel_settings_viewers_title_favorites">Nära vänner</string>
     <string name="reel_slider_voters_list_title">Svar</string>
     <string name="reel_tagging_bubble_default_subtitle">Tryck för att läsa mer</string>
     <string name="reel_tray_item_live_question_and_answer_label">Frågor</string>
@@ -3108,6 +3140,9 @@
     <string name="save_all">Spara alla</string>
     <string name="save_button_description">Spara på enheten</string>
     <string name="save_button_text">Spara</string>
+    <string name="save_collection_header_add_people">Lägg till personer</string>
+    <string name="save_collection_header_created_by_other">skapad av %1$s</string>
+    <string name="save_collection_header_created_by_you">skapad av dig</string>
     <string name="save_collection_pivots_cta">Se mer som liknar detta</string>
     <string name="save_collection_pivots_cta_content_description">Visa mer som liknar den här knappen</string>
     <string name="save_collection_pivots_feed_title">Liknar %1$s</string>
@@ -3117,14 +3152,15 @@
     <string name="save_explanation_subtitle">Spara foton och videoklipp som du vill se igen. Ingen får en avisering om det och det är bara du som kan se vad du har sparat.</string>
     <string name="save_explanation_title">Spara</string>
     <string name="save_fail_external_storage_permission_toast">Det gick inte att spara. Om du vill spara foton och videoklipp måste du tillåta åtkomst till lagring.</string>
+    <string name="save_home_collection_feed_add_contributors_text">Lägg till medskapare</string>
     <string name="save_home_collection_feed_add_from">Lägg till från</string>
     <string name="save_home_collection_feed_add_to_collection">Lägg till i samling</string>
     <string name="save_home_collection_feed_change_cover_photo">Byt omslagsbild</string>
     <string name="save_home_collection_feed_collection_name">Namn</string>
     <string name="save_home_collection_feed_collection_name_hint">Samlingens namn</string>
+    <string name="save_home_collection_feed_contributors">Medskapare</string>
     <string name="save_home_collection_feed_create_collection">Skapa samling</string>
     <string name="save_home_collection_feed_delete_collection">Ta bort samling</string>
-    <string name="save_home_collection_feed_delete_collection_confirmation_message">När du tar bort den här samlingen kommer fotona och videoklippen fortfarande att sparas.</string>
     <string name="save_home_collection_feed_delete_collection_confirmation_title">Ta bort samling?</string>
     <string name="save_home_collection_feed_edit_collection">Redigera samling</string>
     <string name="save_home_collection_feed_num_selected">%1$d har valts</string>
@@ -3260,6 +3296,8 @@
     <string name="set_a_profile_picture">Välj en profilbild</string>
     <string name="set_daily_reminder_subtitle">Vi skickar en påminnelse när du har uppnått den tid du angett.</string>
     <string name="set_daily_reminder_title">Skapa daglig påminnelse</string>
+    <string name="set_main_account">Ange huvudkonto</string>
+    <string name="set_main_account_explanation">Logga in snabbt och säkert på alla dina Instagram-konton med ett id och lösenord.</string>
     <string name="set_up_business_profile">Skapa en företagsprofil</string>
     <string name="settings">Inställningar</string>
     <string name="settings_viewers_choose_locations_feature_off">Av</string>
@@ -3323,7 +3361,6 @@
     <string name="shopping_on_profile_null_state_title">Inlägg med taggade produkter visas här</string>
     <string name="shopping_posts">Shopping-inlägg</string>
     <string name="shopping_viewer_add_posts">Lägg till inlägg</string>
-    <string name="shopping_viewer_description_title">Beskrivning</string>
     <string name="shopping_viewer_edit">Redigera</string>
     <string name="shopping_viewer_edit_feed_notice">Välj inlägg som innehåller %1$s.</string>
     <string name="shopping_viewer_edit_feed_num_selected">%1$d har valts</string>
@@ -3551,11 +3588,13 @@
     <string name="take_picture">Ta foto</string>
     <string name="tap_for_caption_title">Tryck för bildtext</string>
     <string name="tap_to_keep_watching">Fortsätt titta</string>
+    <string name="tap_to_keep_watching_video_description">Tryck för att fortsätta titta på videon</string>
     <string name="tap_to_like">Tryck för att gilla kommentaren</string>
     <string name="tap_to_reload">Bilden kunde inte laddas. Tryck för att prova igen.</string>
     <string name="tap_to_unlike">Tryck för att sluta gilla kommentaren</string>
     <string name="tap_to_view_combined_tags">TRYCK FÖR ATT VISA TAGGAR</string>
     <string name="tap_to_view_product_items">TRYCK FÖR ATT VISA PRODUKTERNA</string>
+    <string name="tap_to_watch_video_description">Tryck för att titta på videon</string>
     <string name="tap_to_watch_video_nux">SE HELA VIDEON</string>
     <string name="tell_us_approval_reason">Berätta varför din annons borde godkännas. Om vi har gjort ett misstag kommer vi att godkänna din annons så snart vi kan.</string>
     <string name="terms">användarvillkor</string>
@@ -3936,7 +3975,6 @@
     <string name="videocall_call_again">Ring upp igen</string>
     <string name="videocall_camera_button_turn_off_description">Inaktivera video</string>
     <string name="videocall_camera_button_turn_on_description">Aktivera video</string>
-    <string name="videocall_close_button_description">Avsluta videochatt</string>
     <string name="videocall_contacting">Kontaktar ...</string>
     <string name="videocall_create_call_during_call_error_message">Avsluta samtalet för att börja videochatta.</string>
     <string name="videocall_create_call_during_call_error_title">Avsluta samtalet för att videochatta</string>
