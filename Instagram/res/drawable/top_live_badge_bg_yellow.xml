@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="@dimen/iglive_row_padding" android:insetBottom="@dimen/iglive_row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/ig_yellow" />
+        <corners android:radius="@dimen/iglive_button_radius" />
+    </shape>
+</inset>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/blue_4_85_transparent" android:endColor="@color/blue_5_85_transparent" android:angle="90.0" />
+        </shape>
+    </item>
+    <item android:id="@id/direct_visual_message_thumbnail_overlay_icon">
+        <bitmap android:gravity="center|clip_horizontal|clip_vertical" android:src="@drawable/direct_visual_message_thumbnail_overlay_play" android:tint="@color/white" />
+    </item>
+    <item android:drawable="@drawable/unified_inbox_message_mask_no_border" />
+</layer-list>

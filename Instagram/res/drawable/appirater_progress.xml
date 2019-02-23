@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <bitmap android:src="@drawable/instagram_gold_star_outline_24" android:alpha="0.3" />
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <bitmap android:src="@drawable/instagram_gold_star_outline_24" android:alpha="0.5" />
+    </item>
+    <item android:id="@android:id/progress">
+        <bitmap android:src="@drawable/instagram_gold_star_outline_24" android:alpha="1.0" />
+    </item>
+</layer-list>

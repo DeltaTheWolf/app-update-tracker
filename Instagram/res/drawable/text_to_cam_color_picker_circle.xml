@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/shadow">
+        <shape android:shape="oval">
+            <gradient android:startColor="@color/black_40_transparent" android:endColor="@color/transparent" android:type="radial" android:gradientRadius="0.0" />
+        </shape>
+    </item>
+    <item android:left="@dimen/text_background_color_picker_shadow_size" android:top="@dimen/text_background_color_picker_shadow_size" android:right="@dimen/text_background_color_picker_shadow_size" android:bottom="@dimen/text_background_color_picker_shadow_size">
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:id="@id/fill" android:left="@dimen/text_background_color_picker_shadow_size" android:top="@dimen/text_background_color_picker_shadow_size" android:right="@dimen/text_background_color_picker_shadow_size" android:bottom="@dimen/text_background_color_picker_shadow_size">
+        <shape android:shape="oval">
+            <stroke android:width="@dimen/text_background_color_picker_border_size" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

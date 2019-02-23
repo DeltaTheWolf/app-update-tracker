@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:gravity="left" android:src="@drawable/chevron_right" android:left="@dimen/reel_viewer_fast_navigation_indicator_chevron_spacing_negative" />
+    </item>
+    <item android:left="@dimen/reel_viewer_fast_navigation_indicator_chevron_spacing_positive">
+        <bitmap android:gravity="left" android:src="@drawable/chevron_right" />
+    </item>
+</layer-list>
