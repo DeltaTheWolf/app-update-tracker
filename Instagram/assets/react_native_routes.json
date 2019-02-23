@@ -1,0 +1,1808 @@
+[
+  {
+    "name": "AdsPaymentsCollectTaxDetailsRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "/ads_payments_collect_tax_details",
+    "paramDefinitions": {
+      "account": {
+        "type": "String",
+        "required": true
+      },
+      "contextID": {
+        "type": "String",
+        "required": true
+      }
+    },
+    "access": "exported"
+  },
+  {
+    "name": "AdsPaymentsFlowRoute",
+    "navigationOptions": {
+      "fb_showNavBarSearchField": false,
+      "presentationMethod": "MODAL",
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "/ads_payments_flow",
+    "paramDefinitions": {
+      "account": {
+        "type": "String",
+        "required": true
+      },
+      "contextID": {
+        "type": "String",
+        "required": true
+      },
+      "adBudgetAmountInHundredths": {
+        "type": "String",
+        "required": false
+      },
+      "adBudgetType": {
+        "type": "String",
+        "required": false
+      },
+      "adDuration": {
+        "type": "Float",
+        "required": false
+      },
+      "adCampaignGroupID": {
+        "type": "String",
+        "required": false
+      },
+      "adEditTime": {
+        "type": "Float",
+        "required": false
+      },
+      "adNewEndTime": {
+        "type": "Float",
+        "required": false
+      },
+      "offlineMode": {
+        "type": "Bool",
+        "required": false
+      },
+      "legacyAccountID": {
+        "type": "String",
+        "required": false
+      },
+      "addPaymentMethodMessage": {
+        "type": "String",
+        "required": false
+      },
+      "disableCouponEntry": {
+        "type": "Bool",
+        "required": false
+      },
+      "countryCode": {
+        "type": "String",
+        "required": false
+      },
+      "currencyCode": {
+        "type": "String",
+        "required": false
+      },
+      "boostAfterComplete": {
+        "type": "Bool",
+        "required": false
+      },
+      "pageID": {
+        "type": "String",
+        "required": false
+      },
+      "externalFlowID": {
+        "type": "String",
+        "required": false
+      },
+      "originRootTag": {
+        "type": "Float",
+        "required": false
+      }
+    },
+    "access": "exported"
+  },
+  {
+    "name": "IgAdsManagerRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "perfLogger_ttiEventName": "ig_ads_manager",
+      "title": {
+        "text": "Promotions",
+        "fbt": true,
+        "hashKey": "1f6WMM"
+      }
+    },
+    "path": "/ig_ads_manager",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgAsyncStorageSettingsRoute",
+    "navigationOptions": {
+      "title": "Async Storage Settings"
+    },
+    "path": "/async_storage_settings",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgBusinessTutorialsRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "perfLogger_ttiEventName": "ig_business_tutorials",
+      "title": {
+        "text": "Tutorials",
+        "fbt": true,
+        "hashKey": "CRglc"
+      }
+    },
+    "path": "/ig_business_tutorials",
+    "paramDefinitions": {
+      "fbUserID": {
+        "type": "Float",
+        "required": false
+      },
+      "pk": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgCommentModerationSettingsRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Comment Moderation Settings",
+        "fbt": true,
+        "hashKey": "2nwF6b"
+      }
+    },
+    "path": "/comment_moderation_settings",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgEmailSmsSettingsRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Email Sms Settings",
+        "fbt": true,
+        "hashKey": "JvS5N"
+      }
+    },
+    "path": "/igemailsmssettings",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgFacebookNotificationSettingsRoute",
+    "path": "/igfacebooknotificationsettings",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgInsightsAccountInsightsRoute",
+    "navigationOptions": {
+      "disableGesture": true,
+      "perfLogger_ttiEventName": "ig_insights_account_insights"
+    },
+    "path": "/ig_insights_account_insights",
+    "paramDefinitions": {
+      "entryPoint": {
+        "type": "String",
+        "required": true
+      },
+      "fbUserID": {
+        "type": "Float",
+        "required": false
+      },
+      "userID": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgInsightsIGTVInsightsRoute",
+    "navigationOptions": {
+      "perfLogger_ttiEventName": "ig_insights_felix_insights"
+    },
+    "path": "/ig_insights_igtv_insights",
+    "paramDefinitions": {
+      "video_id": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgInsightsPostGridRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "perfLogger_ttiEventName": "ig_insights_post_grid",
+      "title": {
+        "text": "Feed Posts",
+        "fbt": true,
+        "hashKey": "3sZfZF"
+      }
+    },
+    "path": "/ig_insights_post_grid",
+    "paramDefinitions": {
+      "selectedMediaType": {
+        "type": "String",
+        "required": false
+      },
+      "selectedMetric": {
+        "type": "String",
+        "required": false
+      },
+      "selectedTimeframe": {
+        "type": "String",
+        "required": false
+      },
+      "userID": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgInsightsPromoteInsightsRoute",
+    "navigationOptions": {
+      "perfLogger_ttiEventName": "ig_insights_promote_insights"
+    },
+    "path": "/ig_insights_promote_insights",
+    "paramDefinitions": {
+      "accessToken": {
+        "type": "String",
+        "required": true
+      },
+      "entryPoint": {
+        "type": "String",
+        "required": true
+      },
+      "fbUserID": {
+        "type": "String",
+        "required": false
+      },
+      "mediaID": {
+        "type": "String",
+        "required": true
+      },
+      "mode": {
+        "type": "String",
+        "required": false
+      },
+      "pk": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgInsightsShoppingInsightsRoute",
+    "navigationOptions": {
+      "perfLogger_ttiEventName": "ig_insights_shopping_insights"
+    },
+    "path": "/ig_insights_shopping_insights",
+    "paramDefinitions": {
+      "entryPoint": {
+        "type": "String",
+        "required": true
+      },
+      "fbUserID": {
+        "type": "String",
+        "required": false
+      },
+      "mediaID": {
+        "type": "String",
+        "required": true
+      },
+      "pk": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgInsightsStoryGridRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "title": {
+        "text": "Stories",
+        "fbt": true,
+        "hashKey": "1fQBfc"
+      }
+    },
+    "path": "/ig_insights_story_grid",
+    "paramDefinitions": {
+      "userID": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgLocationSettingsLearnMoreRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Learn More",
+        "fbt": true,
+        "hashKey": "jJsWR"
+      }
+    },
+    "path": "/iglocationsettingslearnmore",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgLocationSettingsRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Location Settings",
+        "fbt": true,
+        "hashKey": "10tVoB"
+      }
+    },
+    "path": "/iglocationsettings",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgLotusIntroRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "navigationBar": "hidden"
+    },
+    "path": "/lotus_intro",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgLotusCompositionsRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "navigationBar": "hidden"
+    },
+    "path": "/lotus_compositions",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgLotusSampleCompositionsRoute",
+    "navigationOptions": {
+      "fb_hidesStatusBar": true,
+      "hidesTabBar": true,
+      "navigationBar": "hidden"
+    },
+    "path": "/lotus_sample_compositions",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      },
+      "initialTemplateId": {
+        "type": "String",
+        "required": true
+      },
+      "initialTitle": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgLotusMediaSelectionRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "navigationBar": "hidden"
+    },
+    "path": "/lotus_media_selection",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgLotusLivePreviewRoute",
+    "navigationOptions": {
+      "fb_hidesStatusBar": true,
+      "hidesTabBar": true,
+      "navigationBar": "hidden"
+    },
+    "path": "/lotus_live_preview",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgLotusReviewRoute",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "navigationBar": "hidden"
+    },
+    "path": "/lotus_review",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgLotusStoriesReviewRoute",
+    "navigationOptions": {
+      "fb_hidesStatusBar": true,
+      "hidesTabBar": true,
+      "navigationBar": "hidden"
+    },
+    "path": "/lotus_stories_review",
+    "paramDefinitions": {
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "accessToken": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgMediaPickerAppRoute",
+    "path": "/ig_promote_media_picker_app",
+    "paramDefinitions": {
+      "accessToken": {
+        "type": "String",
+        "required": true
+      },
+      "entryPoint": {
+        "type": "String",
+        "required": true
+      },
+      "pk": {
+        "type": "String",
+        "required": true
+      },
+      "waterfallID": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsCheckoutNUXRoute",
+    "path": "/ig_payments_checkout_nux",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsCheckoutContactInfoEditRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_checkout_contact_info_edit",
+      "perfLogger_ttiEventName": "payments_checkout_contact_info_edit",
+      "title": {
+        "text": "Checkout",
+        "fbt": true,
+        "hashKey": "1XWkzM"
+      }
+    },
+    "path": "/ig_payments_checkout_contact_info_edit",
+    "paramDefinitions": {
+      "email": {
+        "type": "String",
+        "required": false
+      },
+      "emailId": {
+        "type": "String",
+        "required": false
+      },
+      "enableEditEmail": {
+        "type": "Bool",
+        "required": true
+      },
+      "enableEditName": {
+        "type": "Bool",
+        "required": true
+      },
+      "name": {
+        "type": "String",
+        "required": false
+      },
+      "paymentType": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsCheckoutFixedAmountExampleRoute",
+    "path": "/ig_payments_checkout_example_fixed_amount",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsCheckoutConfirmationRoute",
+    "navigationOptions": {
+      "leftActionButton": {
+        "icon": "none"
+      },
+      "title": {
+        "text": "Checkout",
+        "fbt": true,
+        "hashKey": "1XWkzM"
+      }
+    },
+    "path": "/ig_payments_checkout_confirmation",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsCheckoutDeliveryInfoRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_checkout_delivery_info",
+      "perfLogger_ttiEventName": "payments_checkout_delivery_info",
+      "title": {
+        "text": "Checkout",
+        "fbt": true,
+        "hashKey": "1XWkzM"
+      }
+    },
+    "path": "/ig_payments_checkout_delivery_info",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsCheckoutDeliveryInfoEditRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_checkout_delivery_info_add_edit",
+      "perfLogger_ttiEventName": "payments_checkout_delivery_info_add_edit"
+    },
+    "path": "/ig_payments_checkout_delivery_info_edit",
+    "paramDefinitions": {
+      "address": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsCheckoutShippingAddressExtensionSelectorRoute",
+    "path": "/ig_payments_checkout_shipping_address_extension_selector",
+    "paramDefinitions": {
+      "paymentType": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsCheckoutPaymentMethodsRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_checkout_payment_methods",
+      "perfLogger_ttiEventName": "payments_checkout_payment_methods",
+      "title": {
+        "text": "Checkout",
+        "fbt": true,
+        "hashKey": "1XWkzM"
+      }
+    },
+    "path": "/ig_payments_checkout_payment_methods",
+    "paramDefinitions": {
+      "payment_account_id": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsCheckoutAddNewPaymentMethodRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_checkout_payment_methods_add",
+      "perfLogger_ttiEventName": "payments_checkout_payment_methods_add",
+      "primaryActionButton": {
+        "icon": "done"
+      },
+      "title": {
+        "text": "Checkout",
+        "fbt": true,
+        "hashKey": "kbQqw"
+      }
+    },
+    "path": "/ig_payments_checkout_add_new_payment_method",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsCheckoutUpdateCheckoutAPIExampleRoute",
+    "path": "/ig_payments_checkout_example_update_checkout_api",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsCreditCardFormRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_settings_add_card"
+    },
+    "path": "/ig_payments_credit_card_form",
+    "paramDefinitions": {
+      "creditCardItem": {
+        "type": "String",
+        "required": true
+      },
+      "paymentAccountId": {
+        "type": "String",
+        "required": true
+      },
+      "paymentType": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsSettingsAddPayPalRoute",
+    "path": "/ig_payments_settings_payment_methods_add_paypal",
+    "paramDefinitions": {
+      "refId": {
+        "type": "String",
+        "required": true
+      },
+      "url": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsPINMutationRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_settings_security_pin"
+    },
+    "path": "/ig_payments_pin_mutation",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsPINRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_settings_security_pin"
+    },
+    "path": "/ig_payments_pin",
+    "paramDefinitions": {
+      "flowType": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsReceiptRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Order Details",
+        "fbt": true,
+        "hashKey": "xnXO2"
+      },
+      "hidesTabBar": true,
+      "presentationMethod": "PUSH",
+      "analyticsModule": "order_details"
+    },
+    "path": "/ig_payments_receipt",
+    "paramDefinitions": {
+      "receiptID": {
+        "type": "String",
+        "required": true
+      },
+      "referrer": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsSettingsSecurityPinRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Security PIN",
+        "fbt": true,
+        "hashKey": "4tDDQM"
+      },
+      "analyticsModule": "payments_settings_security_pin"
+    },
+    "path": "/ig_payments_settings_security_pin",
+    "paramDefinitions": {
+      "sessionId": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsSettingsAddShippingInfoRoute",
+    "path": "/ig_payments_settings_add_shipping_info",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsSettingsShippingInfoRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Delivery Info",
+        "fbt": true,
+        "hashKey": "1DWx4c"
+      },
+      "analyticsModule": "payments_settings_shipping_info"
+    },
+    "path": "/ig_payments_settings_shipping_info",
+    "paramDefinitions": {
+      "sessionId": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsSettingsShippingAddressRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_settings_edit_address"
+    },
+    "path": "/ig_payments_settings_shipping_address",
+    "paramDefinitions": {
+      "mailingAddress": {
+        "type": "String",
+        "required": false
+      },
+      "mailingAddressId": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsSettingsPaymentMethodsRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Payment Methods",
+        "fbt": true,
+        "hashKey": "1jMV7g"
+      },
+      "analyticsModule": "payments_settings_payment_methods"
+    },
+    "path": "/ig_payments_settings_payment_methods",
+    "paramDefinitions": {
+      "sessionId": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsSettingsContactInfoRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Contact Information",
+        "fbt": true,
+        "hashKey": "WDpwP"
+      },
+      "analyticsModule": "payments_settings_contact_info"
+    },
+    "path": "/ig_payments_settings_contact_info",
+    "paramDefinitions": {
+      "sessionId": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPaymentsSettingsDeprecatedRoute",
+    "path": "/ig_payments_depractated_settings",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsSettingsRoute",
+    "path": "/ig_payments_settings",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsShoppingCheckoutRoute",
+    "path": "/ig_payments_shopping_checkout",
+    "paramDefinitions": {
+      "checkoutConfiguration": {
+        "type": "String",
+        "required": true
+      },
+      "checkoutSessionId": {
+        "type": "String",
+        "required": true
+      },
+      "igUserId": {
+        "type": "String",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgPromoteAdPreviewPlacementsRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Promotions",
+        "fbt": true,
+        "hashKey": "2HrFUM"
+      }
+    },
+    "path": "/igpromoteadpreviewplacements",
+    "paramDefinitions": {
+      "instagram_media_id": {
+        "type": "String",
+        "required": true
+      },
+      "callToActionType": {
+        "type": "String",
+        "required": false
+      },
+      "politicalAdBylineText": {
+        "type": "String",
+        "required": false
+      },
+      "disableFeedPreview": {
+        "type": "Bool",
+        "required": false
+      },
+      "shouldShowPlacementSubtitleForPO": {
+        "type": "Bool",
+        "required": false
+      },
+      "accessToken": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgPromoteAppRoute",
+    "path": "/ig_promote_app",
+    "paramDefinitions": {
+      "instagram_media_id": {
+        "type": "String",
+        "required": true
+      },
+      "entryPoint": {
+        "type": "String",
+        "required": true
+      },
+      "fbDomain": {
+        "type": "String",
+        "required": false
+      },
+      "isSubflow": {
+        "type": "String",
+        "required": false
+      },
+      "accessToken": {
+        "type": "String",
+        "required": false
+      },
+      "waterfallID": {
+        "type": "String",
+        "required": false
+      },
+      "overrideFacebookAccessToken": {
+        "type": "String",
+        "required": false
+      },
+      "couponOfferId": {
+        "type": "String",
+        "required": false
+      },
+      "objective": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgShoppingBusinessSignupRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Shopping",
+        "fbt": true,
+        "hashKey": "2GiDwY"
+      }
+    },
+    "path": "/shopping_business_signup",
+    "paramDefinitions": {
+      "clientOnboardingState": {
+        "type": "String",
+        "required": false
+      },
+      "entryPoint": {
+        "type": "String",
+        "required": true
+      },
+      "signupStep": {
+        "type": "String",
+        "required": false
+      },
+      "waterfallId": {
+        "type": "String",
+        "required": false
+      },
+      "isModal": {
+        "type": "Bool",
+        "required": true
+      }
+    }
+  },
+  {
+    "name": "IgShoppingCatalogSettingsRoute",
+    "navigationOptions": {
+      "title": {
+        "text": "Product Catalogs",
+        "fbt": true,
+        "hashKey": "3E0GIs"
+      }
+    },
+    "path": "/ig_shopping_catalog_settings",
+    "paramDefinitions": {
+      "analyticsModule": {
+        "type": "String",
+        "required": true
+      },
+      "entryPoint": {
+        "type": "String",
+        "required": false
+      },
+      "waterfallId": {
+        "type": "String",
+        "required": false
+      },
+      "isModal": {
+        "type": "Bool",
+        "required": false
+      },
+      "initialSelectedCatalogId": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgOrdersRoute",
+    "navigationOptions": {},
+    "path": "/ig_orders",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "RNRouteExplorerRoute",
+    "navigationOptions": {
+      "title": "Route Explorer",
+      "navigationBar": "shown",
+      "hideNavBarRightButton": true,
+      "presentationMethod": "PUSH"
+    },
+    "path": "/rnregisteredroutes",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsPayPalSettingsRoute",
+    "navigationOptions": {
+      "analyticsModule": "payments_checkout_paypal_details",
+      "perfLogger_ttiEventName": "payments_checkout_paypal_details",
+      "title": {
+        "text": "PayPal",
+        "fbt": true,
+        "hashKey": "1i1Mep"
+      }
+    },
+    "path": "/ig-payments/payment-methods/paypal-settings",
+    "paramDefinitions": {
+      "email": {
+        "type": "String",
+        "required": false
+      },
+      "id": {
+        "type": "String",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "IgCommonComponentsDevRoute",
+    "path": "/ig_common_componets_dev",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "IgPaymentsCheckoutInfoExampleRoute",
+    "path": "/ig_payments_checkout_dev_example_checkout_info",
+    "paramDefinitions": {}
+  },
+  {
+    "name": "CheckpointApp",
+    "navigationOptions": {
+      "logoAsTitle": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "CheckpointFullMapViewScreen",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteDestinationScreen",
+    "navigationOptions": {
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteMainScreenVersioning",
+    "navigationOptions": {
+      "title": {
+        "text": "Promote",
+        "fbt": true,
+        "hashKey": "2GJi5j"
+      },
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteCitySelectorScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "City / State",
+        "fbt": true,
+        "hashKey": "4a90n7"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAudienceSelectorScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Audience",
+        "fbt": true,
+        "hashKey": "4rRPTs"
+      },
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAudienceCreationScreen",
+    "navigationOptions": {
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAudienceEditScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Edit Audience",
+        "fbt": true,
+        "hashKey": "25udqy"
+      },
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteLocalAwarenessNewAudienceScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "New Audience",
+        "fbt": true,
+        "hashKey": "32UrWj"
+      },
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteCustomLocationInputScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Custom Location",
+        "fbt": true,
+        "hashKey": "2y33KK"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAudienceCityTypeheadScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "City / State",
+        "fbt": true,
+        "hashKey": "4a90n7"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteLocationsTypeaheadScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Locations",
+        "fbt": true,
+        "hashKey": "2Wsjc9"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAddressTypeaheadScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Address",
+        "fbt": true,
+        "hashKey": "S5EEe"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteCreateAudienceLocationsScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Locations",
+        "fbt": true,
+        "hashKey": "2Wsjc9"
+      },
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteLocalAwarenessLocationSelectorScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Location",
+        "fbt": true,
+        "hashKey": "2vOP9"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteInterestsTypeaheadScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Interests",
+        "fbt": true,
+        "hashKey": "KD3uk"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAudienceInterestsScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Interests",
+        "fbt": true,
+        "hashKey": "KD3uk"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteBudgetDurationSliderScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Budget & Duration",
+        "fbt": true,
+        "hashKey": "2ClrEm"
+      },
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteWebsiteScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Destination",
+        "fbt": true,
+        "hashKey": "7c3ah"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteWebsiteDestinationScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Website",
+        "fbt": true,
+        "hashKey": "314e46"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAddPaymentScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Add Payment",
+        "fbt": true,
+        "hashKey": "38meUW"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PromoteAgeGenderScreen",
+    "navigationOptions": {
+      "title": {
+        "text": "Age & Gender",
+        "fbt": true,
+        "hashKey": "1DbIXE"
+      },
+      "disableGesture": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsCountrySelectorRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "hideNavBarRightButton": true,
+      "title": {
+        "text": "Country",
+        "fbt": true,
+        "hashKey": "1HA9s7"
+      },
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsAddCreditCardRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "hideNavBarRightButton": true,
+      "title": {
+        "text": "Add a Card",
+        "fbt": true,
+        "hashKey": "1Plgg9"
+      },
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsAddPaypalRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "hideNavBarRightButton": true,
+      "title": {
+        "text": "Connect PayPal",
+        "fbt": true,
+        "hashKey": "4j1rdd"
+      },
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsBrazilAddressInfoRoute",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsPrepayBusinessInfoRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti",
+      "title": {
+        "text": "Business Info",
+        "fbt": true,
+        "hashKey": "48GxZG"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsPrepayClientInfoRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti",
+      "title": {
+        "text": "Client Info",
+        "fbt": true,
+        "hashKey": "23Ws50"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsPrepayDisclaimerRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsPrepayFundingRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "hideNavBarRightButton": true,
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsPrepayPaymentStatusRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "hideNavBarRightButton": true,
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsSelectPaymentMethodRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "hideNavBarRightButton": true,
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti",
+      "title": {
+        "text": "Add Payment Method",
+        "fbt": true,
+        "hashKey": "4hudRi"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsAddBankAccountRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "hideNavBarRightButton": true,
+      "fb_showNavBarSearchField": false,
+      "title": {
+        "text": "Bank Account",
+        "fbt": true,
+        "hashKey": "B4IoX"
+      },
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "AdsPaymentsUKDirectDebitGuaranteeRoute",
+    "navigationOptions": {
+      "fb_hidesTabBar_POST_IN_IOS_NAVIGATION_BEFORE_USING": true,
+      "fb_showNavBarSearchField": false,
+      "hideNavBarRightButton": true,
+      "title": {
+        "text": "Direct Debit",
+        "fbt": true,
+        "hashKey": "1PEB4m"
+      },
+      "perfLogger_ttiEventId": 13828101,
+      "perfLogger_ttiEventName": "ads_payments_tti"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgInsightsPostInsightsApp",
+    "navigationOptions": {
+      "perfLogger_ttiEventName": "ig_insights_post_insights"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgInsightsStoryInsightsApp",
+    "navigationOptions": {
+      "perfLogger_ttiEventName": "ig_insights_story_insights"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "CompassionResourceApp",
+    "navigationOptions": {
+      "navigationBar": "hidden",
+      "presentationMethod": "ADD_TO_STACK",
+      "transparent": true,
+      "transparent_dimmed_DEPRECATED": true
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PushSettingsApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "EmailSmsSettingsApp",
+    "navigationOptions": {
+      "title": {
+        "text": "Email Sms Settings",
+        "fbt": true,
+        "hashKey": "JvS5N"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "FacebookNotificationSettingsApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgBrandedContentSettingsApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgBrandedContentApproveAccountsApp",
+    "navigationOptions": {
+      "title": {
+        "text": "Approve Accounts",
+        "fbt": true,
+        "hashKey": "33vnMJ"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgBrandedContentOnboardingApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgMediaGeoGatingSettingsApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "CommentModerationAudienceSettingsApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "LeadGen",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "PageComponentFlowApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "FacebookAppRouteHandler",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgPaymentsIXCheckoutApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgOrderCancellationApp",
+    "navigationOptions": {
+      "title": {
+        "text": "Cancel Order",
+        "fbt": true,
+        "hashKey": "K9DlE"
+      },
+      "hidesTabBar": true,
+      "presentationMethod": "PUSH"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "EditEmailApp",
+    "navigationOptions": {
+      "title": {
+        "text": "Email",
+        "fbt": true,
+        "hashKey": "3QE5dQ"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgInsightsIGTVInsightsApp",
+    "navigationOptions": {
+      "perfLogger_ttiEventName": "ig_insights_felix_insights"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgOrderOffsiteReturnApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgOrderReturnApp",
+    "navigationOptions": {
+      "title": {
+        "text": "Return Order",
+        "fbt": true,
+        "hashKey": "11ZcNv"
+      },
+      "hidesTabBar": true,
+      "presentationMethod": "PUSH"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgOrderReturnDetailsApp",
+    "navigationOptions": {},
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgOrderContactMerchantApp",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "presentationMethod": "PUSH",
+      "leftActionButton": {
+        "icon": "back"
+      }
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgOrderDisputeStatusApp",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "presentationMethod": "MODAL"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  },
+  {
+    "name": "IgOrderDisputeCreationApp",
+    "navigationOptions": {
+      "hidesTabBar": true,
+      "presentationMethod": "MODAL"
+    },
+    "path": "",
+    "paramDefinitions": {},
+    "access": "private",
+    "isFromRegistry": true
+  }
+]
