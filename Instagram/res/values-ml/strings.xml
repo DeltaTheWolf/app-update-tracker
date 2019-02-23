@@ -61,7 +61,6 @@
     <string name="ads_options">പരസ്യങ്ങൾ</string>
     <string name="agree">യോജിക്കുന്നു</string>
     <string name="album_thumbnails">ആൽബത്തിന്റെ ലഘുചിത്ര പ്രിവ്യൂ</string>
-    <string name="allow">അനുവദിക്കുക</string>
     <string name="allow_permission">അനുവദിക്കുക</string>
     <string name="allow_resharing_to_stories_explanation">മറ്റ് വ്യക്തികൾക്ക് അവരുടെ സ്‌റ്റോറികളിൽ നിങ്ങളുടെ ഫീഡ് പോസ്‌റ്റുകളും IGTV വീഡിയോകളും ചേർക്കാനാകും. നിങ്ങളുടെ പോസ്‌റ്റിനൊപ്പം എപ്പോഴും ഉപയോക്തൃനാമം ദൃശ്യമാകും.</string>
     <string name="allow_resharing_to_stories_explanation_shopping_enabled">ആളുകളെ അവരുടെ സ്‌റ്റോറികളിൽ നിങ്ങളുടെ പോസ്‌റ്റുകളും IGTV വീഡിയോകളും ഉൽപ്പന്നങ്ങളും ചേർക്കാൻ അനുവദിക്കുക.</string>
@@ -264,6 +263,7 @@
     <string name="followers_title">പിന്തുടരുന്നവർ</string>
     <string name="following_button_follow">പിന്തുടരുക</string>
     <string name="following_button_follow_back">തിരികെ പിന്തുടരുക</string>
+    <string name="following_button_follow_back_voice">ഫോളോ ബാക്ക് ബട്ടൺ</string>
     <string name="following_button_follow_voice">%1$s ബട്ടൺ പിന്തുടരുക</string>
     <string name="following_button_following">പിന്തുടരുന്നു</string>
     <string name="following_button_following_voice">%1$s ബട്ടൺ പിന്തുടരുക</string>
@@ -428,6 +428,7 @@
     <string name="network_error">ഒരു അജ്ഞാത നെറ്റ്‌വർക്ക് പിശകുണ്ടായി.</string>
     <string name="new_collection">പുതിയ ശേഖരം</string>
     <string name="new_message">പുതിയ സന്ദേശം</string>
+    <string name="new_messages">പുതിയ സന്ദേശങ്ങൾ</string>
     <string name="new_password">പുതിയ പാസ്‌വേഡ്</string>
     <string name="new_password_again">വീണ്ടും പുതിയ പാസ്‌വേഡ്</string>
     <string name="new_profile_photo">പുതിയ പ്രൊഫൈൽ ഫോട്ടോ</string>
@@ -581,6 +582,8 @@
     <string name="review_request">അഭ്യർത്ഥന കാണുക</string>
     <string name="save">സംരക്ഷിക്കുക</string>
     <string name="save_all">എല്ലാം സംരക്ഷിക്കുക</string>
+    <string name="save_changes">മാറ്റങ്ങൾ സംരക്ഷിക്കുക</string>
+    <string name="save_changes_question">മാറ്റങ്ങൾ സംരക്ഷിക്കണോ?</string>
     <string name="save_collection_header_add_people">ആളുകളെ ചേര്‍ക്കുക</string>
     <string name="save_collection_header_created_by_other">സൃഷ്ടിച്ചത് %1$s</string>
     <string name="save_collection_header_created_by_you">നിങ്ങൾ സൃഷ്‌ടിച്ചത്‌</string>
@@ -596,8 +599,10 @@
     <string name="save_home_collection_feed_change_cover_photo">കവര്‍ മാറ്റുക</string>
     <string name="save_home_collection_feed_collection_name">പേര്</string>
     <string name="save_home_collection_feed_collection_name_hint">ശേഖരത്തിന്റെ പേര്</string>
+    <string name="save_home_collection_feed_contributors">സംഭാവകർ</string>
     <string name="save_home_collection_feed_create_collection">ശേഖരം സൃഷ്‌ടിക്കുക</string>
     <string name="save_home_collection_feed_delete_collection">ശേഖരം ഇല്ലാതാക്കുക</string>
+    <string name="save_home_collection_feed_delete_collection_confirmation_message">നിങ്ങൾ ഈ ശേഖരം ഇല്ലാതാക്കുമ്പോൾ, ഫോട്ടോകളും വീഡിയോകളും തുടർന്നും സുരക്ഷിതമായിരിക്കും.</string>
     <string name="save_home_collection_feed_delete_collection_confirmation_title">ശേഖരം ഇല്ലാതാക്കണോ?</string>
     <string name="save_home_collection_feed_edit_collection">ശേഖരം എഡിറ്റ്‌ ചെയ്യുക</string>
     <string name="save_home_collection_feed_num_selected">%1$d തിരഞ്ഞെടുത്തു</string>
@@ -765,10 +770,13 @@
     <string name="visit_page">പേജ് സന്ദർശിക്കുക</string>
     <string name="waiting_for_approval">അംഗീകാരത്തിന് കാത്തിരിക്കുന്നു</string>
     <string name="web_error">ക്ഷമിക്കണം, ആ വെബ്‌സൈറ്റ് ലോഡുചെയ്യാൻ ഞങ്ങൾക്കായില്ല.</string>
+    <string name="x_and_others">%1$s എന്നയാളും മറ്റുള്ളവരും</string>
     <string name="x_and_y">%1$s, %2$s എന്നിവർ</string>
     <string name="x_options">%1$s ഓപ്‌ഷനുകൾ</string>
     <string name="x_problems">%1$s ഇപ്പോൾ പ്രശ്നങ്ങളുണ്ടെങ്കിൽ തോന്നുന്നു. കുറച്ച് നിമിഷങ്ങൾക്കകം വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="x_y_and_others">%1$s, %2$s എന്നിവരും മറ്റുള്ളവരും</string>
     <string name="x_y_and_z">%1$s, %2$s, %3$s എന്നിവർ</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s എന്നിവരും മറ്റുള്ളവരും</string>
     <string name="xshare_facebook_page_tooltip">ഇപ്പോൾ നിങ്ങളുടെ Facebook പേജിലേക്കും ഈ പോസ്‌റ്റ് പങ്കിടാനാകും.</string>
     <string name="yes">അതെ</string>
     <string name="yes_im_sure">അതെ, എനിക്ക് ഉറപ്പുണ്ട്</string>

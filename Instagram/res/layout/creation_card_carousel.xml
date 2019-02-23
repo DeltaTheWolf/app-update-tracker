@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:paddingTop="@dimen/row_padding_medium" android:paddingBottom="@dimen/row_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="@dimen/creation_card_height" />
+    <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </FrameLayout>

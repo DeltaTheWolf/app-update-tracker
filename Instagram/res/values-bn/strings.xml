@@ -45,7 +45,6 @@
     <string name="ads_options">বিজ্ঞাপন</string>
     <string name="agree">সম্মত</string>
     <string name="album_thumbnails">অ্যালবাম থাম্বনেইলের পূর্বরূপ</string>
-    <string name="allow">অনুমতি দিন</string>
     <string name="allow_permission">অনুমতি দিন</string>
     <string name="allow_resharing_to_stories_explanation">অন্য লোকজন তাদের স্টোরিতে আপনার ফীডের পোস্ট এবং IGTV ভিডিওগুলো যোগ করতে পারবেন৷ আপনার পোস্টের সাথে আপনার ব্যবহারকারীর নাম সর্বদা দেখা যাবে৷</string>
     <string name="allow_resharing_to_stories_explanation_shopping_enabled">লোকজনকে তাদের স্টোরিতে আপনার পোস্ট, IGTV ভিডিও এবং পণ্যগুলো যোগ করতে দিন।</string>
@@ -250,6 +249,7 @@
     <string name="followers_title">অনুসরণকারীগণ</string>
     <string name="following_button_follow">অনুসরণ করুন</string>
     <string name="following_button_follow_back">আবার অনুসরণ করুন</string>
+    <string name="following_button_follow_back_voice">ফিরে যান বোতামটি অনুসরণ করুন</string>
     <string name="following_button_follow_voice">%1$s বোতাম অনুসরণ করুন</string>
     <string name="following_button_following">অনুসরণ করছেন</string>
     <string name="following_button_following_voice">%1$s বোতাম অনুসরণ করছেন</string>
@@ -416,6 +416,7 @@
     <string name="network_error">একটি অজানা নেটওয়ার্ক ত্রুটি ঘটেছে৷</string>
     <string name="new_collection">নতুন সংগ্রহ</string>
     <string name="new_message">নতুন বার্তা</string>
+    <string name="new_messages">নতুন বার্তা</string>
     <string name="new_password">নতুন পাসওয়ার্ড</string>
     <string name="new_password_again">নতুন পাসওয়ার্ড, আবার</string>
     <string name="new_profile_photo">নতুন প্রোফাইল ছবি</string>
@@ -566,7 +567,10 @@
     <string name="review_request">অনুরোধ দেখুন</string>
     <string name="save">সংরক্ষণ করুন</string>
     <string name="save_all">সমস্ত সংরক্ষণ করুন</string>
-    <string name="save_collection_header_created_by_other">%1$s-এর দ্বারা তৈরি করা হয়েছে</string>
+    <string name="save_changes">পরিবর্তনগুলিকে সংরক্ষণ করুন</string>
+    <string name="save_changes_question">পরিবর্তন সংরক্ষণ করবেন?</string>
+    <string name="save_collection_header_add_people">লোকজনকে যোগ করুন</string>
+    <string name="save_collection_header_created_by_other">%1$s তৈরি করেছেন</string>
     <string name="save_collection_header_created_by_you">আপনি তৈরি করেছেন</string>
     <string name="save_collection_pivots_cta">এটির মতো আরও কিছু দেখুন</string>
     <string name="save_collection_pivots_cta_content_description">এই বোতামটির মতো আরও কিছু দেখুন</string>
@@ -574,14 +578,16 @@
     <string name="save_draft_logout_text">আপনি যদি এখন লগ আউট করেন, তাহলে আপনি আপনার খসড়াটি হারাবেন৷</string>
     <string name="save_explanation_subtitle">আপনি আবার দেখতে চান এমন ফটো এবং ভিডিওগুলো সংরক্ষণ করুন। কাউকে জানানো হয়নি এবং আপনি যা সংরক্ষণ করেছেন তা শুধুমাত্র আপনিই দেখতে পাবেন।</string>
     <string name="save_explanation_title">সংরক্ষণ করুন</string>
-    <string name="save_home_collection_feed_add_contributors_text">অবদানকারীদের যোগ করুন</string>
+    <string name="save_home_collection_feed_add_contributors_text">অবদানকারীকে যোগ করুন</string>
     <string name="save_home_collection_feed_add_from">এর থেকে যোগ করুন</string>
     <string name="save_home_collection_feed_add_to_collection">সংগ্রহে যোগ করুন</string>
     <string name="save_home_collection_feed_change_cover_photo">কভার পরিবর্তন করুন</string>
     <string name="save_home_collection_feed_collection_name">নাম</string>
     <string name="save_home_collection_feed_collection_name_hint">সংগ্রহের নাম</string>
+    <string name="save_home_collection_feed_contributors">অবদানকারী</string>
     <string name="save_home_collection_feed_create_collection">সংগ্রহ তৈরি করুন</string>
     <string name="save_home_collection_feed_delete_collection">সংগ্রহ মুছুন</string>
+    <string name="save_home_collection_feed_delete_collection_confirmation_message">যখন আপনি এই সংগ্রহটি মুছবেন, তখনও ফটো এবং ভিডিওগুলি সংরক্ষিত থাকবে।</string>
     <string name="save_home_collection_feed_delete_collection_confirmation_title">সংগ্রহ মুছে ফেলবেন?</string>
     <string name="save_home_collection_feed_edit_collection">সংগ্রহ সম্পাদনা করুন</string>
     <string name="save_home_collection_feed_num_selected">%1$dটি নির্বাচন করা হয়েছে</string>
@@ -753,10 +759,13 @@
     <string name="waiting_for_approval">অনুমোদনের জন্য অপেক্ষা করা হচ্ছে</string>
     <string name="web_error">দুঃখিত, আমরা সেই ওয়েবসাইটটি লোড করতে পারিনি৷</string>
     <string name="weeks_abbreviation_with_placeholder">%1$dসপ্তাহ</string>
+    <string name="x_and_others">%1$s এবং অন্যান্য</string>
     <string name="x_and_y">%1$s এবং %2$s</string>
     <string name="x_options">%1$s বিকল্পগুলি</string>
     <string name="x_problems">%1$s -কে দেখে মনে হচ্ছে এই মুহূর্তে কিছু একটা সমস্যা হচ্ছে। অনুগ্রহ করে কয়েক মুহূর্তের মধ্যে আবার চেষ্টা করুন।</string>
+    <string name="x_y_and_others">%1$s, %2$s এবং অন্যান্য</string>
     <string name="x_y_and_z">%1$s, %2$s এবং %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s এবং অন্যান্য</string>
     <string name="xshare_facebook_page_tooltip">এছাড়াও আপনি এখন আপনার Facebook পৃষ্ঠাতে এই পোস্টটি শেয়ার করতে পারবেন।</string>
     <string name="yes">হ্যাঁ</string>
     <string name="yes_im_sure">হ্যা, আমি নিশ্চিত</string>

@@ -15,6 +15,7 @@
             </FrameLayout>
             <ViewStub android:id="@id/music_overlay_search_stub" android:layout="@layout/layout_music_search_postcapture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
             <ViewStub android:id="@id/countdown_home_stub" android:layout="@layout/countdown_sticker_home" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/fundraiser_sticker_search_stub" android:layout="@layout/fundraiser_sticker_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
             <FrameLayout android:id="@id/gallery_sticker_grid_container" android:paddingTop="25.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
                 <android.support.v7.widget.RecyclerView android:id="@id/gallery_sticker_grid_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
                 <TextView android:layout_gravity="center" android:id="@id/gallery_sticker_grid_empty_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_sticker_grid_empty" style="@style/Widget.TextView.Capture.Shadow.Medium" />

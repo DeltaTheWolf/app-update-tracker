@@ -82,6 +82,10 @@
         <item quantity="other">Jeszcze %1$d wiadomości</item>
         <item quantity="one">%1$d wiadomość więcej</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">Zaakceptuj (%1$d)</item>
+        <item quantity="one">Zaakceptuj</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">Zezwól (%1$d)</item>
         <item quantity="one">Zezwól</item>
@@ -89,6 +93,10 @@
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">Odrzuć (%1$d)</item>
         <item quantity="one">Odrzuć</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">Usuń (%1$d)</item>
+        <item quantity="one">Usuń</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">Te wiadomości (%1$d) zostaną usunięte, a nadawcy nie będą mieć możliwości wysłania do Ciebie kolejnej wiadomości.</item>
@@ -130,6 +138,11 @@
         <item quantity="other">%1$s postów</item>
         <item quantity="one">%1$s post</item>
         <item quantity="few">%1$s posty</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d hasztagów</item>
+        <item quantity="one">%1$d hasztag</item>
+        <item quantity="few">%1$d hasztagi</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> postów</item>

@@ -82,6 +82,10 @@
         <item quantity="other">%d more messages</item>
         <item quantity="one">%d more message</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">Accept (%1$d)</item>
+        <item quantity="one">Accept</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">Allow (%1$d)</item>
         <item quantity="one">Allow</item>
@@ -89,6 +93,10 @@
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">Decline (%1$d)</item>
         <item quantity="one">Decline</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">Delete (%1$d)</item>
+        <item quantity="one">Delete</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">"These %1$d messages will be removed and the senders won't be able to message you again."</item>
@@ -125,6 +133,10 @@
     <plurals name="hashtag_posts">
         <item quantity="other">%1$s posts</item>
         <item quantity="one">%1$s post</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d Hashtags</item>
+        <item quantity="one">1 Hashtag</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\"#262626\">%1$s&lt;/font>&lt;/b> posts</item>

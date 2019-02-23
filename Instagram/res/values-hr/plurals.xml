@@ -71,11 +71,17 @@
     <plurals name="direct_notification_summary_more_messages">
         <item quantity="other">Broj preostalih poruka: %1$d</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">Prihvati (%1$d)</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">Dopusti (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">Odbij (%1$d)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">Izbriši (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">Ovih ćemo %1$d poruka ukloniti i pošiljatelj vam više neće moći slati poruke.</item>
@@ -108,6 +114,11 @@
     <plurals name="hashtag_posts">
         <item quantity="other">%1$s objava</item>
         <item quantity="few">%1$s objave</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d znakova #</item>
+        <item quantity="one">%1$d znak #</item>
+        <item quantity="few">%1$d znaka #</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> objava</item>

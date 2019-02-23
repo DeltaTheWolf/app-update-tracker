@@ -197,8 +197,8 @@
     <string name="boomerang_modal_title">Essayer Boomerang depuis Instagram</string>
     <string name="bottom_sheet_music_player_pause_button_description">Suspendre</string>
     <string name="bottom_sheet_music_player_play_button_description">Lire</string>
-    <string name="brand_change_disabled_dialog_message">Vous ne pouvez identifier des produits que d’une seule marque.</string>
-    <string name="brand_change_disabled_dialog_title">Seules les identifications de produits de %1$s sont autorisées</string>
+    <string name="brand_change_disabled_dialog_message">Vous pouvez seulement identifier des produits d’un partenaire à la fois.</string>
+    <string name="brand_change_disabled_dialog_title">Vous avez identifié des produits de %1$s</string>
     <string name="branded_content_violation_post_banner_learn_more">La publication enfreint les politiques sur le contenu de marque. %1$s</string>
     <string name="branded_content_violation_story_banner_learn_more">Le contenu de la story enfreint les politiques sur le contenu de marque. %1$s</string>
     <string name="bugreporter_addscreenrecording_takescreenshot">Faire un enregistrement d’écran</string>
@@ -272,6 +272,8 @@
     <string name="camera_sharing_options_button_tooltip_text">Partager dans l’actualité Facebook</string>
     <string name="camera_shortcut">Caméra</string>
     <string name="cannot_connect_camera">Impossible d’établir la connexion avec l’appareil photo.</string>
+    <string name="canvas_question_sticker_book_rec_hint">Des recommandations de livres?</string>
+    <string name="canvas_question_sticker_movie_rec_hint">Des recommandations de films?</string>
     <string name="capture_format_focus">MISE AU POINT</string>
     <string name="capture_format_reverse">VIDÉO INVERSÉE</string>
     <string name="carousel_bumping_nux_title">Balayez l’écran pour en voir plus</string>
@@ -342,7 +344,7 @@
     <string name="close_friends_profile_empty_title">Partagez ce contenu uniquement avec vos amis proches.</string>
     <string name="close_friends_self_privacy_notice">Seules les personnes qui font partie de votre liste d’amis proches peuvent voir ces publications</string>
     <string name="color_picker_nux">Appuyez une nouvelle fois pour la régler</string>
-    <string name="comment_offensive_alert_message">D’autres personnes pourraient juger que cela est irrespectueux</string>
+    <string name="comment_offensive_alert_message">Voulez-vous vraiment publier ce contenu?</string>
     <string name="commenting_limited_to_followers">Seules les personnes abonnées à votre compte peuvent ajouter des commentaires. Tout le monde peut voir les commentaires.</string>
     <string name="commenting_limited_to_followers_and_following">Seules les personnes abonnées à votre compte et celles auxquelles vous êtes abonné peuvent ajouter des commentaires. Tout le monde peut voir les commentaires.</string>
     <string name="commenting_limited_to_following">Seules les personnes auxquelles vous êtes abonné peuvent ajouter des commentaires. Ces commentaires sont visibles à tous.</string>
@@ -355,6 +357,7 @@
     <string name="common_google_play_services_update_title">Mettre à jour les services Google Play</string>
     <string name="common_google_play_services_updating_text">%1$s ne fonctionnera pas sans les services Google Play, qui sont actuellement mis à jour.</string>
     <string name="common_google_play_services_wear_update_text">La nouvelle version des services Google Play est nécessaire. Elle sera bientôt installée automatiquement.</string>
+    <string name="complete_profile">Complétez votre profil</string>
     <string name="completion_screen_body">Vous avez déjà pris connaissance de notre Politique d’utilisation des données révisée et accepté nos nouvelles Conditions d’utilisation.</string>
     <string name="completion_screen_title">Vous avez terminé!</string>
     <string name="confirm_appeal_ad_subtitle">Je comprends que si ma promotion est approuvée après l’appel, elle sera activée et pourrait être diffusée immédiatement après son approbation.</string>
@@ -496,6 +499,7 @@
     <string name="direct_add_member_to_conversation">Ajouter des personnes…</string>
     <string name="direct_adding_member_to_conversation">Ajout de personnes en cours...</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Déplacer vers les demandes?</string>
+    <string name="direct_block_choices_block_account">Bloquer le compte</string>
     <string name="direct_button_change_group_name">Terminé</string>
     <string name="direct_delete_conversation">Supprimer la conversation?</string>
     <string name="direct_digest_mentioned_you_story">Vous a identifié(e) dans une story</string>
@@ -560,10 +564,12 @@
     <string name="direct_pending_inbox_instructions">Les demandes ne sont pas marquées comme étant lues tant que vous ne les avez pas autorisées.</string>
     <string name="direct_pending_instructions">Voulez-vous autoriser %1$s à vous envoyer des messages à partir de maintenant? Cette personne saura que vous avez vu sa demande uniquement si vous choisissez Autoriser.</string>
     <string name="direct_pending_instructions_blended_inbox">Si vous cliquez sur Répondre, %1$s saura que vous avez vu ce message.</string>
+    <string name="direct_permission_edit">Modifier</string>
     <string name="direct_permissions_choice_allow_question_mark">Autoriser?</string>
     <string name="direct_permissions_choice_decline_all_explanation">Aucune de ces personnes ne pourra vous envoyer de messages à l’avenir.</string>
     <string name="direct_permissions_choice_decline_all_question_mark">Tout refuser?</string>
     <string name="direct_permissions_choice_decline_question_mark">Refuser?</string>
+    <string name="direct_permissions_choice_delete_all">Tout supprimer</string>
     <string name="direct_permissions_decline_99_plus_messages">Ces 99 messages et plus seront supprimés et les expéditeurs ne pourront plus vous envoyer de message.</string>
     <string name="direct_permissions_decline_block_info_1">Si vous refusez, ce message sera supprimé et %1$s ne pourra plus vous en envoyer.</string>
     <string name="direct_persisted_reel_label">Vous êtes la seule personne qui puisse voir ceci.</string>
@@ -622,6 +628,7 @@
     <string name="direct_thread_title_change_dismiss_accessibility">Ignorer de nommer ce groupe.</string>
     <string name="direct_thread_title_change_hint">Donnez un nom à ce groupe...</string>
     <string name="direct_thread_title_changing">Modification du titre...</string>
+    <string name="direct_unblock_account">Débloquer le compte</string>
     <string name="direct_unmute_notifications">Réactiver les alertes</string>
     <string name="direct_unsend_message">Retirer un message</string>
     <string name="direct_unsend_message_dialog_message">En retirant le message, vous le supprimez de la vue de tous. Mais des personnes peuvent l’avoir déjà vu.</string>
@@ -731,6 +738,7 @@
     <string name="facebook_notification_dialog_title">Afficher la notification sur Facebook</string>
     <string name="facebook_sharing_dialog_message_share_off">Vous pouvez partager le contenu dans votre story Facebook à chaque fois ou une seule fois. Vous pouvez changer ceci dans les paramètres.</string>
     <string name="facebook_sharing_dialog_message_turn_off_auto_share">Désactiver le partage de la story sur Facebook</string>
+    <string name="faces_subtitle">\#égoportraits #moi #amis</string>
     <string name="fail_confirm_email">Nous ne pouvons pas confirmer votre adresse courriel pour le moment. Veuillez réessayer plus tard.</string>
     <string name="fail_send_confirm_email">Nous ne pouvons pas vous envoyer un courriel de confirmation pour le moment. Veuillez réessayer plus tard.</string>
     <string name="failed_to_create_video_directories">Avant d’enregistrer une vidéo, vérifiez la carte mémoire SD et débranchez le téléphone de l’ordinateur.</string>
@@ -812,6 +820,7 @@
     <string name="friends_sticker_header">Choisissez les personnes avec lesquelles partager du contenu</string>
     <string name="friends_sticker_instructions">Lorsque vous ajoutez cet autocollant à une actualité, vous choisissez les personnes qui peuvent voir cette actualité.</string>
     <string name="friends_sticker_max_stickers_per_story_message">Vous pouvez seulement utiliser cet autocollant 5 fois dans une actualité.</string>
+    <string name="fundraiser_sticker_tray_description">Autocollant de collecte de fonds</string>
     <string name="gallery_sticker_description">Autocollant de collection</string>
     <string name="gallery_video_thumbnail">Miniature de la vidéo</string>
     <string name="gdpr_activity_status">État d’activité</string>
@@ -839,7 +848,7 @@
     <string name="hashtag_sticker_default_text">\#MOT-CLIC</string>
     <string name="hashtag_sticker_description">Autocollant de mot-clic</string>
     <string name="hashtags">Mots-clics</string>
-    <string name="hashtags_link_row_title">Mots-clics</string>
+    <string name="hashtags_link_row_title_no_quantity">Mots-clics</string>
     <string name="hidden_grid_video">Vignette de vidéo masquée à la ligne %1$d, colonne %2$d</string>
     <string name="hidden_live_video">Miniature de la vidéo en direct de la publication masquée : rangée %1$d, colonne %2$d</string>
     <string name="hidden_video_from_multi_author_story_toast">Vous avez masqué cette vidéo de la story %1$s</string>
@@ -858,6 +867,7 @@
     <string name="hiding_media">Masquage...</string>
     <string name="highlight">Mettre en vedette</string>
     <string name="highlight_button_tooltip">Mettez-la en vedette dans votre profil afin de la conserver plus de 24 heures.</string>
+    <string name="highlight_create_selected_item_failure">Une erreur est survenue lors de la création de l’élément en vedette. Veuillez resélectionner le contenu et réessayer.</string>
     <string name="highlight_custom_cover_gallery_button_description">Ouvrir la galerie</string>
     <string name="highlight_full_warning_dialog_body_photo">Les actualités en vedette peuvent contenir jusqu’à %1$d éléments. Si vous ajoutez cette photo, la photo ou la vidéo la plus ancienne sera supprimée de votre actualité en vedette.</string>
     <string name="highlight_full_warning_dialog_body_video">Les actualités en vedette peuvent contenir jusqu’à %1$d éléments. Si vous ajoutez cette vidéo, la photo ou la vidéo la plus ancienne sera supprimée de votre actualité en vedette.</string>
@@ -878,6 +888,7 @@
     <string name="ig_time_picker_am">Matinée</string>
     <string name="ig_time_picker_pm">Après-midi ou soirée</string>
     <string name="igds_view_reply_button_label">Afficher la réponse</string>
+    <string name="iglive_captioned_notification">%1$s est en direct : %2$s</string>
     <string name="iglive_cobroadcast_end_title">Merci de votre participation!</string>
     <string name="iglive_discard">Annuler</string>
     <string name="iglive_livewith_notification">%1$s diffuse présentement en direct avec %2$s.</string>
@@ -939,6 +950,8 @@
     <string name="interactivity_ama_broadcaster_question_sheet_header_live">Choisissez une question pour l’afficher à l’écran et la partager avec vos spectateurs.</string>
     <string name="interactivity_ama_broadcaster_question_tooltip">Discutez des questions posées pendant votre diffusion en direct.</string>
     <string name="interactivity_ama_card_question_story_header">Réponse à l’autocollant de question</string>
+    <string name="interactivity_ama_card_question_story_subtitle">De votre story</string>
+    <string name="interactivity_ama_viewer_question_submission_sheet_info">%1$s pourrait partager votre question avec toutes les personnes qui regardent sa vidéo.</string>
     <string name="interest_recommendations_tombstone_thanks">Les suggestions de mots-clics ont été masquées.</string>
     <string name="invalid_character_error_message">Les mots-clics ne peuvent contenir que des lettres et des chiffres.</string>
     <string name="invalid_email">Veuillez saisir une adresse courriel valide.</string>
@@ -1068,6 +1081,8 @@
     <string name="menu_label_turn_on_post_notifications">Activer les alertes de publications</string>
     <string name="menu_label_turn_on_story_notifications">Activer les notifications de la story</string>
     <string name="minutes_ago_abbreviation">Il y a %1$d min.</string>
+    <string name="moment_card_fallback_title">Souvenirs</string>
+    <string name="moment_subtitle_suffix">• #retourenarrière</string>
     <string name="more_available">Afficher tout</string>
     <string name="more_mutual_followers">%1$d autres abonnements</string>
     <string name="most_recent">Plus récents</string>
@@ -1195,6 +1210,7 @@
     <string name="offline_status_message">Le commentaire sera ajouté lorsque vous vous connecterez.</string>
     <string name="omnibox_hint">Adresse courriel ou numéro de téléphone</string>
     <string name="omnibox_title">Entrer l’adresse courriel ou le numéro de téléphone</string>
+    <string name="on_this_day_subtitle">\#cejourlà #souvenirs</string>
     <string name="one_tap_logo">Logo « un seul appui »</string>
     <string name="one_tap_new_footer_one_button">Premiers pas sur Instagram? &lt;b> Inscrivez-vous.&lt;/b></string>
     <string name="one_tap_upsell_text">Enregistrer mes informations de connexion</string>
@@ -1314,8 +1330,15 @@
     <string name="product_tagging_add_product_limit_reached_photo">Vous ne pouvez pas identifier plus de 5 produits sur une photo.</string>
     <string name="product_tagging_add_products">Identifier des produits</string>
     <string name="profanity_filter">Options des commentaires</string>
+    <string name="profile_completed_edit_label">Vous pouvez modifier votre profil à tout moment.</string>
+    <string name="profile_completed_label">Profil terminé</string>
+    <string name="profile_exit_dialog_confirmation_subtitle">Nous pouvons enregistrer vos modifications afin que vous puissiez terminer votre profil plus tard.</string>
     <string name="profile_grid_description">Affichage grille</string>
     <string name="profile_header_followed_by">Abonnés</string>
+    <string name="profile_input_add_your_bio_subtitle">Présentez-vous en ajoutant une biographie à votre profil. Pour ajouter un lien vers un autre compte, utilisez @, et pour ajouter des mots-clés, utilisez #.</string>
+    <string name="profile_input_add_your_bio_title">Ajoutez votre biographie</string>
+    <string name="profile_input_field_bio_hint">Biographie</string>
+    <string name="profile_input_field_name_hint">Prénom et nom</string>
     <string name="profile_list_description">Affichage de la liste</string>
     <string name="profile_message_user_button">Envoyer un message</string>
     <string name="profile_picture_download_failed">Échec du téléchargement de la photo de profil</string>
@@ -1503,6 +1526,7 @@
     <string name="row_viewer_hide_button_description">Masquer à %1$s</string>
     <string name="same_as_signup_email">Identique à l’adresse courriel d’inscription</string>
     <string name="save_all">Tout enregistrer</string>
+    <string name="save_changes_question">Enregistrer les changements?</string>
     <string name="save_collection_header_created_by_other">créée par %1$s</string>
     <string name="save_collection_pivots_cta">Afficher des éléments similaires</string>
     <string name="save_collection_pivots_feed_title">Semblable à %1$s</string>
@@ -1540,6 +1564,7 @@
     <string name="scroll_to_top">Revenir en haut</string>
     <string name="search_find_friends_empty_state_detail">Recherchez des personnes que vous connaissez. Choisissez les comptes auxquels vous voulez vous abonner et découvrez le contenu qu’ils partagent.</string>
     <string name="search_find_friends_title">Retrouver des amis</string>
+    <string name="search_fundraiser">Rechercher des organismes sans but lucratif</string>
     <string name="search_hashtags">Rechercher des mots-clics</string>
     <string name="search_hide_item">Masquer %1$s?</string>
     <string name="search_music">Rechercher de la musique</string>
@@ -1615,7 +1640,10 @@
     <string name="shop">Magasiner</string>
     <string name="shop_on_profile_row_continue_shopping">Continuer de magasiner</string>
     <string name="shopping">Magasinage</string>
+    <string name="shopping_merchant_remove_tag_dialog_title">Supprimer l’identification du produit?</string>
+    <string name="shopping_merchant_tag_action_sheet_view_product_action">Afficher le produit</string>
     <string name="shopping_on_profile_null_state_title">Les publications avec des identifications de produits seront affichées ici</string>
+    <string name="shopping_options_approved_partners">Comptes de partenaires approuvés</string>
     <string name="shopping_variant_value_selector_sold_out_label">%1$s (rupture de stock)</string>
     <string name="shopping_viewer_edit_feed_notice">Sélectionnez des publications qui incluent %1$s.</string>
     <string name="shopping_viewer_edit_feed_num_selected">%1$d éléments sélectionnés</string>
@@ -1945,6 +1973,7 @@
     <string name="view_hashtag_page">Afficher la page du mot-clic</string>
     <string name="view_hashtags">Afficher les mots-clics</string>
     <string name="view_insights">Afficher les statistiques</string>
+    <string name="view_likes">Afficher les mentions J’aime</string>
     <string name="view_location">Afficher le lieu</string>
     <string name="view_more_information">Afficher plus de renseignements</string>
     <string name="view_more_replies">Afficher plus de réponses (%1$d)</string>

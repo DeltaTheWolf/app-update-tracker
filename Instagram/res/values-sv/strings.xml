@@ -234,7 +234,6 @@
     <string name="album_videos_audio_unmute">Videoljud har slagits på</string>
     <string name="all">Alla</string>
     <string name="all_suggestions_header">Alla förslag</string>
-    <string name="allow">Tillåt</string>
     <string name="allow_business_partner_promote_description">Detta låter din taggade affärspartner marknadsföra ditt inlägg som en annons på Instagram. Det finns begränsningar i hur du kan redigera inlägget under och efter kampanjen. %1$s</string>
     <string name="allow_business_partner_to_promote">Tillåt att en affärspartner marknadsför</string>
     <string name="allow_permission">Tillåt</string>
@@ -385,7 +384,6 @@
     <string name="boomerang_modal_title">Testa Boomerang från Instagram</string>
     <string name="border">Ram</string>
     <string name="brand_poll_survey_title_content">skulle vilja höra från dig</string>
-    <string name="brand_selection_title">Välj ett varumärke</string>
     <string name="branded_content_approvals">Branded Content-godkännanden</string>
     <string name="branded_content_tagging_upsell_tooltip_text">Du kan tagga din affärspartner här</string>
     <string name="branded_content_violation_post_banner_learn_more">Inlägget bryter mot villkoren för Branded Content. %1$s</string>
@@ -524,6 +522,9 @@
     <string name="cannot_edit_promoted_branded_content_post">Du kan inte redigera ditt inlägg under och efter kampanjen.</string>
     <string name="cannot_edit_promoted_post">Det går inte att redigera inlägg som har marknadsförts tidigare</string>
     <string name="cant_add_partner_title">Det gick inte att lägga till partnern</string>
+    <string name="canvas_mode_format_picker_label">SKAPA</string>
+    <string name="canvas_question_sticker_book_rec_hint">Bokrekommendationer</string>
+    <string name="canvas_question_sticker_movie_rec_hint">Filmrekommendationer</string>
     <string name="caption_ellipsis_less">mindre</string>
     <string name="caption_ellipsis_more">... mer</string>
     <string name="caption_more">mer</string>
@@ -667,6 +668,7 @@
     <string name="comment_count_singular">%1$s kommentar</string>
     <string name="comment_ellipsis_less">mindre</string>
     <string name="comment_hint">Lägg till en kommentar ...</string>
+    <string name="comment_offensive_alert_message">Är du säker på att du vill publicera det här?</string>
     <string name="comment_undo_button">Ångra</string>
     <string name="commenting_disabled_hint">Kommentarerna för det här inlägget har begränsats.</string>
     <string name="commenting_limited_to_followers">Det är enbart dina följare som kan lägga till kommentarer. Kommentarer är synliga för alla.</string>
@@ -693,6 +695,7 @@
     <string name="common_new">Nytt</string>
     <string name="common_open_on_phone">Öppna på mobilen</string>
     <string name="compare">Jämför</string>
+    <string name="complete_profile">Gör klart profilen</string>
     <string name="completion_screen_body">Du har redan granskat vår uppdaterade datapolicy och godkänt våra nya villkor.</string>
     <string name="completion_screen_title">Nu är allt klart!</string>
     <string name="confirm">Bekräfta</string>
@@ -993,6 +996,8 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_confirm_button">Flytta till förfrågningar</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_message">Det här meddelandet flyttas från din inkorg till dina förfrågningar. Du kan flytta tillbaka det när som helst.</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Flytta till förfrågningar?</string>
+    <string name="direct_block_account">Blockera konto</string>
+    <string name="direct_block_choices_block_account">Blockera konto</string>
     <string name="direct_block_user">Blockera användare</string>
     <string name="direct_blocked">Blockerad</string>
     <string name="direct_button_change_group_name">Klar</string>
@@ -1092,7 +1097,6 @@
     <string name="direct_failed_to_deliver_permanent">Det går inte att skicka meddelandet</string>
     <string name="direct_flag">Flagga</string>
     <string name="direct_group_name">Gruppnamn</string>
-    <string name="direct_header_groups">Grupper</string>
     <string name="direct_igtv_share_generic_recipient_info">Har skickat en video</string>
     <string name="direct_igtv_share_generic_sender_info">Du har skickat en video</string>
     <string name="direct_inbox_empty_view_back_to_inbox">Tillbaka till inkorgen</string>
@@ -1161,16 +1165,20 @@
     <string name="direct_pending_instructions_header_one_on_one">^1 vill skicka ett meddelande till dig.</string>
     <string name="direct_pending_instructions_unknown_sender">okänt</string>
     <string name="direct_permission_select">Välj</string>
+    <string name="direct_permissions_choice_accept">Godkänn</string>
     <string name="direct_permissions_choice_allow">Tillåt</string>
     <string name="direct_permissions_choice_allow_all_explanation">Alla de här personerna kommer att kunna skicka meddelanden till dig i framtiden.</string>
     <string name="direct_permissions_choice_allow_blended_inbox">Svara</string>
     <string name="direct_permissions_choice_allow_question_mark">Tillåt?</string>
+    <string name="direct_permissions_choice_block">Blockera</string>
     <string name="direct_permissions_choice_decline">Tacka nej</string>
     <string name="direct_permissions_choice_decline_all">Neka alla</string>
     <string name="direct_permissions_choice_decline_all_explanation">Ingen av de här personerna kommer att kunna skicka meddelanden till dig i framtiden.</string>
     <string name="direct_permissions_choice_decline_all_question_mark">Vill du neka alla?</string>
     <string name="direct_permissions_choice_decline_blended_inbox">Flytta till förfrågningar</string>
     <string name="direct_permissions_choice_decline_question_mark">Avvisa?</string>
+    <string name="direct_permissions_choice_delete">Ta bort</string>
+    <string name="direct_permissions_choice_delete_all">Ta bort alla</string>
     <string name="direct_permissions_decline_99_plus_messages">Dessa 99+ meddelanden kommer att tas bort och avsändarna kan inte skicka meddelanden till dig igen.</string>
     <string name="direct_permissions_decline_block_info_1">Om du väljer att avvisa tas meddelandet bort och %1$s kan inte skicka meddelanden till dig längre.</string>
     <string name="direct_persisted_reel_label">Det är bara du som kan se det här.</string>
@@ -1304,6 +1312,7 @@
     <string name="direct_timestamp_today">Idag</string>
     <string name="direct_timestamp_yesterday">Igår</string>
     <string name="direct_ummute_video_call_notifications">Inaktivera videochattar</string>
+    <string name="direct_unblock_account">Avblockera konto</string>
     <string name="direct_unblock_user">Avblockera användare</string>
     <string name="direct_unflag">Sluta flagga</string>
     <string name="direct_unknown_error">Nätverksbegäran misslyckades. Försök igen senare.</string>
@@ -1364,7 +1373,6 @@
     <string name="direct_weak_internet_error">Det gick inte att skicka nätverksbegäran. Försök igen när anslutningen är bättre.</string>
     <string name="direct_x_message_requests_more_than_99_caps">99+ förfrågningar</string>
     <string name="directions">Vägbeskrivning</string>
-    <string name="directshare_hide">Dölj</string>
     <string name="directshare_metadata_to">Till:</string>
     <string name="disable_2fac_dialog_body">Om du inaktiverar tvåfaktorsautentisering behöver du inge ange en säkerhetskod när du loggar in.</string>
     <string name="disable_2fac_dialog_confirm_button">Stäng av</string>
@@ -1681,6 +1689,7 @@
     <string name="full_name_and_password_title">Namn och lösenord</string>
     <string name="full_single_line_address">%1$s, %3$s %2$s</string>
     <string name="full_terms_rw">Fullständiga villkor</string>
+    <string name="fundraiser_sticker_tray_label">SKÄNKA EN GÅVA</string>
     <string name="gallery">Galleri</string>
     <string name="gallery_album_thumbnail">Albumets miniatyrbild</string>
     <string name="gallery_description">Galleri</string>
@@ -1780,6 +1789,7 @@
     <string name="hiding_media">Döljer ...</string>
     <string name="highlight">Markera som höjdpunkt</string>
     <string name="highlight_button_tooltip">Markera som höjdpunkt för att behålla detta i din profil i mer än 24 timmar.</string>
+    <string name="highlight_create_selected_item_failure">Ett fel uppstod när höjdpunkten skulle skapas. Välj media på nytt och försök igen.</string>
     <string name="highlight_custom_cover_gallery_button_description">Öppna galleriet</string>
     <string name="highlight_full_warning_dialog_body_photo">Höjdpunkter kan inkludera upp till %1$d objekt. Om du lägger till det här fotot tas det äldsta fotot eller videoklippet bort från din höjdpunkt.</string>
     <string name="highlight_full_warning_dialog_body_video">Höjdpunkter kan inkludera upp till %1$d objekt. Om du lägger till den här videon tas det äldsta fotot eller videoklippet bort från din höjdpunkt.</string>
@@ -1810,6 +1820,7 @@
     <string name="ig_browser_chrome_title_loading_text">Laddar ...</string>
     <string name="igds_reply_button_label">Svara</string>
     <string name="igds_view_reply_button_label">Visa svar</string>
+    <string name="iglive_captioned_notification">%1$s sänder live: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">Du har varit med i %1$ss livevideo.</string>
     <string name="iglive_cobroadcast_end_title">Tack för att du var med!</string>
     <string name="iglive_discard">Släng</string>
@@ -1969,8 +1980,8 @@
     <string name="interactivity_ama_broadcaster_question_sheet_header_live">Välj en för att visa den på skärmen och dela den med dina tittare.</string>
     <string name="interactivity_ama_broadcaster_question_tooltip">Prata om frågedekaler när du sänder live.</string>
     <string name="interactivity_ama_card_question_story_header">Svar på frågedekal</string>
-    <string name="interactivity_ama_viewer_question_submission_composer_title">Ställ en fråga till %1$s</string>
     <string name="interactivity_ama_viewer_question_submission_input_hint">Ställ en fråga ...</string>
+    <string name="interactivity_ama_viewer_question_submission_sheet_info">%1$s kan dela din fråga med alla som tittar på videon.</string>
     <string name="interest_recommendations_tombstone_thanks">Hashtag-förslag har dolts.</string>
     <string name="interest_recommendations_tombstone_thanks_feedback">Vi visar dessa mindre ofta från och med nu.</string>
     <string name="internal_only">Internt</string>
@@ -2279,6 +2290,7 @@
     <string name="microphone_permission_name">Mikrofon</string>
     <string name="minutes_abbreviation_with_placeholder">%1$d min.</string>
     <string name="minutes_ago_abbreviation">%1$d m. sedan</string>
+    <string name="moment_card_fallback_title">Minnen</string>
     <string name="more">Mer</string>
     <string name="more_accounts_like_this">Fler konton som detta</string>
     <string name="more_available">Visa alla</string>
@@ -2390,6 +2402,7 @@
     <string name="new_filters_nux">Nytt</string>
     <string name="new_follower">Ny följare</string>
     <string name="new_message">Nytt meddelande</string>
+    <string name="new_messages">Nya meddelanden</string>
     <string name="new_password">Nytt lösenord</string>
     <string name="new_password_again">Nytt lösenord en gång till</string>
     <string name="new_photo">Ny profilbild</string>
@@ -2734,7 +2747,6 @@
     <string name="product_appeals_request_another_review">begära en ny granskning</string>
     <string name="product_catalog_selection_footer">Kontakta sidans administratör eller kontrollera din behörighet i Business Manager om du inte ser de produkter du behöver här.</string>
     <string name="product_catalog_selection_invalid_footer">Ingen giltig katalog har valts. Välj en ny.</string>
-    <string name="product_catalog_selection_title">Produkter</string>
     <string name="product_in_review_dialog_message">Den här produkten granskas för närvarande. De produkter som godkänns visas i ditt inlägg.</string>
     <string name="product_in_review_dialog_title">Produkten granskas</string>
     <string name="product_name_rejected_dialog_title">Produktnamnet har inte godkänts</string>
@@ -2753,7 +2765,6 @@
     <string name="product_source_load_more">Läs in fler kataloger</string>
     <string name="product_source_network_error">Kontrollera internetanslutningen och försök igen.</string>
     <string name="product_source_no_catalog">Inga produktkataloger hittades</string>
-    <string name="product_source_selection_brands_tab_title">Varumärken</string>
     <string name="product_sticker_added_with_branded_content_toast_content">Du kan inte lägga till en produktdekal i en Branded Content-händelse.</string>
     <string name="product_sticker_default_text">PRODUKT</string>
     <string name="product_sticker_description">Produktdekal</string>
@@ -2783,11 +2794,17 @@
     <string name="product_unavailable_message">Objektet har tagits bort av företaget</string>
     <string name="profanity_filter">Kommentarsinställningar</string>
     <string name="profile_close_friends_description">Nära vänner</string>
+    <string name="profile_completed_edit_label">Du kan när som helst redigera detta från din profil.</string>
     <string name="profile_description">Profil</string>
     <string name="profile_grid_description">Visa rutnät</string>
     <string name="profile_header_followed_by">Följs av</string>
     <string name="profile_header_followers">Följare</string>
     <string name="profile_header_following">Följer</string>
+    <string name="profile_input_add_your_bio_subtitle">Säg något om dig själv genom att lägga till en biografi i din profil. Om du vill länka till ett annat konto använder du @ och för hashtaggar använder du #.</string>
+    <string name="profile_input_add_your_bio_title">Lägg till din biografi</string>
+    <string name="profile_input_add_your_name_title">Lägg till ditt namn</string>
+    <string name="profile_input_field_bio_hint">Biografi</string>
+    <string name="profile_input_field_name_hint">Fullständigt namn</string>
     <string name="profile_list_description">Listvy</string>
     <string name="profile_me_only_description">Arkiv</string>
     <string name="profile_message_user_button">Meddelande</string>
@@ -2853,9 +2870,7 @@
     <string name="question_sticker_viewer_nux_tooltip_text">Skicka ett svar.</string>
     <string name="quick_replies">Snabbsvar</string>
     <string name="quick_reply_description">Snabbsvar</string>
-    <string name="quiz_sticker_first_answer_hint">Svar 1</string>
-    <string name="quiz_sticker_question_hint">Ställ en fråga</string>
-    <string name="quiz_sticker_second_answer_hint">Svar 2</string>
+    <string name="quiz_sticker_second_answer_hint">Alternativ 2</string>
     <string name="quiz_sticker_tray_description">Frågesportdekal</string>
     <string name="quiz_sticker_tray_label">FRÅGESPORT</string>
     <string name="rageshake_bug_report_option">Det är något som inte fungerar</string>
@@ -3140,6 +3155,8 @@
     <string name="save_all">Spara alla</string>
     <string name="save_button_description">Spara på enheten</string>
     <string name="save_button_text">Spara</string>
+    <string name="save_changes">Spara ändringar</string>
+    <string name="save_changes_question">Vill du spara ändringarna?</string>
     <string name="save_collection_header_add_people">Lägg till personer</string>
     <string name="save_collection_header_created_by_other">skapad av %1$s</string>
     <string name="save_collection_header_created_by_you">skapad av dig</string>
@@ -3277,7 +3294,6 @@
     <string name="select_school_before_class_year_warning_title">Ingen skola har valts</string>
     <string name="select_your_country">Välj ditt land</string>
     <string name="select_your_language">Välj språk</string>
-    <string name="selected_catalog">Vald katalog</string>
     <string name="selected_highlights_tab">Valt</string>
     <string name="selected_max_items">Gränsen är %1$d foton eller videoklipp.</string>
     <string name="self_profile_empty_body">När du delar foton och videoklipp visas de i din profil.</string>
@@ -3356,9 +3372,15 @@
     <string name="sharpie_brush_button_description">Tunn pensel</string>
     <string name="shop">Handla</string>
     <string name="shop_on_profile_row_continue_shopping">Fortsätt handla</string>
+    <string name="shopping_merchant_remove_tag_dialog_remove_button">Ta bort taggen</string>
+    <string name="shopping_merchant_remove_tag_dialog_title">Ta bort produkttagg?</string>
+    <string name="shopping_merchant_tag_action_sheet_header">%1$s från %2$s</string>
+    <string name="shopping_merchant_tag_action_sheet_view_product_action">Visa produkt</string>
     <string name="shopping_on_profile_null_state_cta">Skapa inlägg</string>
     <string name="shopping_on_profile_null_state_message">Just nu är det bara du som kan se detta. När du har skapat ett inlägg med taggade produkter kommer andra att kunna se det här.</string>
     <string name="shopping_on_profile_null_state_title">Inlägg med taggade produkter visas här</string>
+    <string name="shopping_options_approved_partners">Godkända partnerkonton</string>
+    <string name="shopping_options_products">Produkter</string>
     <string name="shopping_posts">Shopping-inlägg</string>
     <string name="shopping_viewer_add_posts">Lägg till inlägg</string>
     <string name="shopping_viewer_edit">Redigera</string>
@@ -4025,10 +4047,12 @@
     <string name="view_appeal">Visa överklagan</string>
     <string name="view_count_plural">%1$s visningar</string>
     <string name="view_count_singular">%1$s visning</string>
+    <string name="view_directory">Visa skola</string>
     <string name="view_features">Visa funktioner</string>
     <string name="view_hashtag_page">Visa hashtaggsida</string>
     <string name="view_hashtags">Visa hashtaggar</string>
     <string name="view_insights">Visa statistik</string>
+    <string name="view_likes">Visa gilla-markeringar</string>
     <string name="view_location">Visa plats</string>
     <string name="view_mode_toggle">Ändra visningsläge</string>
     <string name="view_more_information">Visa mer information</string>
@@ -4082,12 +4106,15 @@
     <string name="welcome_to_instagram_business">Välkommen %1$s</string>
     <string name="welcome_to_instagram_business_tools">Välkommen till Instagrams företagsverktyg</string>
     <string name="wrong_datetime">Det gick inte att logga in. Kontrollera att tid och datum stämmer på din enhet.</string>
+    <string name="x_and_others">%1$s och andra</string>
     <string name="x_and_y">%1$s och %2$s</string>
     <string name="x_more">+ %1$d till</string>
     <string name="x_options">%1$s-alternativ</string>
     <string name="x_problems">%1$s verkar ha problem just nu. Försök igen om en liten stund.</string>
     <string name="x_wants_to_follow_you">%1$s vill följa dig</string>
+    <string name="x_y_and_others">%1$s, %2$s och ännu fler</string>
     <string name="x_y_and_z">%1$s, %2$s och %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s och andra</string>
     <string name="xshare_facebook_page_tooltip">Nu kan du även dela det här inlägget på din Facebook-sida.</string>
     <string name="yes">Ja</string>
     <string name="yes_im_sure">Ja, jag är säker</string>

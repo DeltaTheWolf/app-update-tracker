@@ -45,7 +45,6 @@
     <string name="ads_options">[Ads#0ac4902228c15173f5152e6ce2098479:1]</string>
     <string name="agree">[Agree#f50613532b8c5a3b54f65f0affd77ae8:1]</string>
     <string name="album_thumbnails">[Album Thumbnail Preview#79fffa09f4c38aa88c0641fbd97e6eff:1]</string>
-    <string name="allow">[Allow#ec15af1f0207b1bb4ab9a4be0105bf1b:1]</string>
     <string name="allow_permission">[Allow#ec15af1f0207b1bb4ab9a4be0105bf1b:1]</string>
     <string name="allow_resharing_to_stories_explanation">[Other people can add your feed posts and IGTV videos to their stories. Your username will always show up with your post.#99838c13f19996b397ace19ef9232696:1]</string>
     <string name="allow_resharing_to_stories_explanation_shopping_enabled">[Let people add your posts, IGTV videos and products to their stories.#e0702529f5c1c14612482bfcb860f743:1]</string>
@@ -239,6 +238,7 @@
     <string name="followers_title">[Followers#4143352db862e7f102ebecc9f9de9ab6:1]</string>
     <string name="following_button_follow">[Follow#97ed831d213d447056bffd983a82cf95:1]</string>
     <string name="following_button_follow_back">[Follow Back#43113ef3bc17589c13cf331ff0852679:1]</string>
+    <string name="following_button_follow_back_voice">[Follow back button#e217d0eda44f205a89450a58ee34a4ff:1]</string>
     <string name="following_button_follow_voice">[Follow %1$s button#43d4e19528768bc07c55a196175ca9ec:1]</string>
     <string name="following_button_following">[Following#bb8a2a95e2f7ffcffc6cf8e3662a530f:1]</string>
     <string name="following_button_following_voice">[Following %1$s button#a5e718e7006f18c5c4245164fda4c5b7:1]</string>
@@ -407,6 +407,7 @@
     <string name="network_error">[An unknown network error has occurred.#c00bb4f92871574c758fab2c8df1ee4c:1]</string>
     <string name="new_collection">[New Collection#63fa3d2a3fe236b3eaa413743c6c5240:1]</string>
     <string name="new_message">[New Message#1fa09926fdadb6db22f2f9ddfacb5a80:1]</string>
+    <string name="new_messages">[New Messages#11abdd04d3a47dab122ddb81557ca084:1]</string>
     <string name="new_password">[New password#b58d584baee635fedda70f996e09b398:1]</string>
     <string name="new_password_again">[New password, again#dcaf64e2ab1cb95c63ee91f37f422856:1]</string>
     <string name="new_profile_photo">[New Profile Photo#ce52c6d2d6fe75f207f2f62b98782ed1:1]</string>
@@ -578,6 +579,8 @@
     <string name="review_request">[View Request#9880af28526d66130b776c1c8e2c2826:1]</string>
     <string name="save">[Save#1fc026ac44d80c2ff43ffc3252e8eeee:1]</string>
     <string name="save_all">[Save All#a3c9622c22f23df4d0eb92c90088d3c6:1]</string>
+    <string name="save_changes">[Save Changes#0777e858a60f6ddcce1a8839c916e037:1]</string>
+    <string name="save_changes_question">[Save Changes?#eb1067f22c725ac665cae65089310fac:1]</string>
     <string name="save_collection_header_add_people">[Add People#e8bea5e217d845e657b914667bbdfe78:1]</string>
     <string name="save_collection_header_created_by_other">[created by %1$s#6e56ceb1f4d44ceb8f3e25753b264ccf:1]</string>
     <string name="save_collection_header_created_by_you">[created by you#3b83f5bcf6f3ed2ea6a7b6add601e9f3:1]</string>
@@ -771,10 +774,13 @@
     <string name="web_error">"[Sorry, we weren't able to load that website.#5cb716adca622f9832078361e9080a9c:1]"</string>
     <string name="weeks_abbreviation_with_placeholder">[%1$dw#dc26555045fea8ada4368791b3f206c4:1]</string>
     <string name="weeks_ago_abbreviation">[%1$dw ago#8e6325294c572406687a89eb8a4bf24b:1]</string>
+    <string name="x_and_others">[%1$s and others#d174ac82868505caf6dd703ec2ca1735:1]</string>
     <string name="x_and_y">[%1$s and %2$s#e85467f76c12b9a5a7e8f830397a7a12:1]</string>
     <string name="x_options">[%1$s Options#2dffb4fccd1150918c32fa12312c0982:1]</string>
     <string name="x_problems">[%1$s seems to be having problems right now. Please try again in a few moments.#70b0821996df11f930afd231df7ef50d:1]</string>
+    <string name="x_y_and_others">[%1$s, %2$s and others#944fe8863a5dbd0b98f5a509ca0d23ad:1]</string>
     <string name="x_y_and_z">[%1$s, %2$s and %3$s#b24e36b00bd3b8c638f07e0cce08a58b:1]</string>
+    <string name="x_y_z_and_others">[%1$s, %2$s, %3$s and others#4a999b7329410fd04e6719b01cd613c6:1]</string>
     <string name="xshare_facebook_page_tooltip">[Now you can also share this post to your Facebook Page.#cfbfc7cfc7e7ff450b023f7dc31bca94:1]</string>
     <string name="yes">[Yes#05da425dbc956d5df29d4ef9e606ad7f:1]</string>
     <string name="yes_im_sure">"[Yes, I'm sure#4918ad5f0a59c0dcef585f1b0b203ea8:1]"</string>

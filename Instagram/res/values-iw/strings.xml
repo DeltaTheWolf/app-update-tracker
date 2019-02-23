@@ -231,7 +231,6 @@
     <string name="album_videos_audio_unmute">כל הצלילים בסרטונים פעילים</string>
     <string name="all">הכול</string>
     <string name="all_suggestions_header">כל ההצעות</string>
-    <string name="allow">אפשר</string>
     <string name="allow_business_partner_promote_description">הדבר מאפשר לשותף העסקי המתויג שלך לקדם את הפוסט שלך כמודעה באינסטגרם. יש הגבלות על האופן שבו ניתן לשנות את הפוסט במהלך הקידום ואחריו. %1$s.</string>
     <string name="allow_business_partner_to_promote">מתן אפשרות לשותף עסקי לקדם</string>
     <string name="allow_permission">אפשר</string>
@@ -399,11 +398,8 @@
     <string name="border">גבול</string>
     <string name="bottom_sheet_music_player_pause_button_description">השהיה</string>
     <string name="bottom_sheet_music_player_play_button_description">הפעלה</string>
-    <string name="brand">מותג</string>
-    <string name="brand_change_disabled_dialog_message">אפשר רק לתייג מוצרים ממותג יחיד.</string>
-    <string name="brand_change_disabled_dialog_title">מותרים רק תגיות מוצרים מ%1$s</string>
+    <string name="brand_change_disabled_dialog_message">ניתן לתייג מוצרים משותף אחד בלבד בכל פעם.</string>
     <string name="brand_poll_survey_title_content">רוצה לשמוע ממך</string>
-    <string name="brand_selection_title">בחירת מותג</string>
     <string name="branded_content">תוכן ממותג</string>
     <string name="branded_content_approvals">אישורי תוכן ממותג</string>
     <string name="branded_content_tagging_upsell_tooltip_text">אפשר לתייג את השותף העסקי שלך כאן</string>
@@ -552,6 +548,7 @@
     <string name="cant_add_partner_title">אין אפשרות להוסיף שותף</string>
     <string name="canvas_dial_element_poll_label">סקר</string>
     <string name="canvas_dial_element_questions_label">שאלות</string>
+    <string name="canvas_mode_format_picker_label">יצירה</string>
     <string name="caption_ellipsis_less">פחות</string>
     <string name="caption_ellipsis_more">… עוד</string>
     <string name="caption_more">עוד</string>
@@ -699,7 +696,7 @@
     <string name="comment_count_singular">%1$s תגובה</string>
     <string name="comment_ellipsis_less">פחות</string>
     <string name="comment_hint">הוספת תגובה...</string>
-    <string name="comment_offensive_alert_message">אנשים אחרים עשוים לחשוב שזה גס רוח</string>
+    <string name="comment_offensive_alert_message">האם באמת ברצונך לפרסם את זה?</string>
     <string name="comment_undo_button">ביטול פעולה</string>
     <string name="commenting_disabled_hint">התגובות בפוסט זה הוגבלו.</string>
     <string name="commenting_limited_to_followers">רק העוקבים שלך יכולים להוסיף תגובות. התגובות מוצגות לכולם.</string>
@@ -1032,6 +1029,9 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_confirm_button">העברה לבקשות</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_message">ההודעה הזו תועבר מתיבת הדואר הנכנס שלך לבקשות שלך. אפשר להחזיר אותה בכל עת.</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_title">להעביר לבקשות?</string>
+    <string name="direct_block_account">חסימת החשבון</string>
+    <string name="direct_block_choices_block_account">חסימת החשבון</string>
+    <string name="direct_block_choices_block_messages">חסימת הודעות</string>
     <string name="direct_block_user">חסימת משתמש</string>
     <string name="direct_blocked">נחסם/נחסמה</string>
     <string name="direct_button_change_group_name">סיום</string>
@@ -1137,7 +1137,6 @@
     <string name="direct_group_name">שם הקבוצה</string>
     <string name="direct_hashtag_story_share_recipient_info">הסיפור של %1$s נשלח</string>
     <string name="direct_hashtag_story_share_sender_info">שלחת את הסיפור של %1$s</string>
-    <string name="direct_header_groups">קבוצות</string>
     <string name="direct_igtv_share_generic_recipient_info">נשלח סרטון</string>
     <string name="direct_igtv_share_generic_sender_info">שלחת סרטון</string>
     <string name="direct_inbox_empty_view_back_to_inbox">חזרה לתיבת הדואר</string>
@@ -1210,17 +1209,22 @@
     <string name="direct_pending_instructions_header_group">^1 רוצה להוסיף אותך לקבוצה זו.</string>
     <string name="direct_pending_instructions_header_one_on_one">^1 רוצה לשלוח לך הודעה.</string>
     <string name="direct_pending_instructions_unknown_sender">לא ידוע</string>
+    <string name="direct_permission_edit">עריכה</string>
     <string name="direct_permission_select">בחירה</string>
+    <string name="direct_permissions_choice_accept">אישור</string>
     <string name="direct_permissions_choice_allow">מתן אפשרות</string>
     <string name="direct_permissions_choice_allow_all_explanation">כל האנשים האלה יוכלו לשלוח לך הודעות בעתיד.</string>
     <string name="direct_permissions_choice_allow_blended_inbox">תשובה</string>
     <string name="direct_permissions_choice_allow_question_mark">לאפשר?</string>
+    <string name="direct_permissions_choice_block">חסימה</string>
     <string name="direct_permissions_choice_decline">דחייה</string>
     <string name="direct_permissions_choice_decline_all">לדחות הכול</string>
     <string name="direct_permissions_choice_decline_all_explanation">אף אחד מאנשים אלה לא יוכל לשלוח לך הודעות בעתיד.</string>
     <string name="direct_permissions_choice_decline_all_question_mark">לדחות הכל?</string>
     <string name="direct_permissions_choice_decline_blended_inbox">העברה לבקשות</string>
     <string name="direct_permissions_choice_decline_question_mark">לדחות?</string>
+    <string name="direct_permissions_choice_delete">מחיקה</string>
+    <string name="direct_permissions_choice_delete_all">מחיקת הכל</string>
     <string name="direct_permissions_decline_99_plus_messages">99+ הודעות אלה יוסרו והשולחים לא יוכלו לשלוח לך הודעות שוב.</string>
     <string name="direct_permissions_decline_block_info_1">דחייה משמעה שהודעה זו תוסר ו%1$s לא יוכל/תוכל עוד לשלוח לך הודעות.</string>
     <string name="direct_persisted_reel_label">רק לך יש אפשרות לראות את זה.</string>
@@ -1354,6 +1358,7 @@
     <string name="direct_timestamp_today">היום</string>
     <string name="direct_timestamp_yesterday">אתמול</string>
     <string name="direct_ummute_video_call_notifications">"ביטול השתקה של צ'אטים בוידאו"</string>
+    <string name="direct_unblock_account">ביטול חסימת החשבון</string>
     <string name="direct_unblock_user">בטל/י את חסימת המשתמש</string>
     <string name="direct_unflag">ביטול הסימון</string>
     <string name="direct_unknown_error">בקשת הרשת נכשלה. יש לנסות שוב מאוחר יותר.</string>
@@ -1414,7 +1419,6 @@
     <string name="direct_weak_internet_error">שליחת בקשת הרשת נכשלה. יש לנסות שוב כאשר החיבור ישתפר.</string>
     <string name="direct_x_message_requests_more_than_99_caps">99+ בקשות</string>
     <string name="directions">הוראות הגעה</string>
-    <string name="directshare_hide">הסתר/הסתירי</string>
     <string name="directshare_metadata_to">אל:</string>
     <string name="disable_2fac_dialog_body">המשמעות של כיבוי האימות הדו-שלבי היא שאין צורך להזין קוד אבטחה בעת ההתחברות.</string>
     <string name="disable_2fac_dialog_confirm_button">כיבוי</string>
@@ -1576,7 +1580,7 @@
     <string name="facebook_sharing_dialog_message_turn_on_single_share">שיתוף פעם אחת</string>
     <string name="facebook_sharing_dialog_message_turn_on_single_share_from_single_share_off">שיתוף בפייסבוק פעם אחת</string>
     <string name="facebook_sharing_dialog_title">שיתוף בפייסבוק</string>
-    <string name="faces">פרצופים</string>
+    <string name="faces_title">פרצופים</string>
     <string name="fade">עמעום</string>
     <string name="fail_confirm_email">לא ניתן לאשר את הדוא\"ל שלך עכשיו. נסה/נסי שוב מאוחר יותר.</string>
     <string name="fail_send_confirm_email">איננו יכולים לשלוח לך אישור בדוא\"ל כעת. יש לנסות שוב מאוחר יותר.</string>
@@ -1740,6 +1744,7 @@
     <string name="full_name">שם מלא</string>
     <string name="full_name_and_password_title">שם וסיסמה</string>
     <string name="full_terms_rw">התנאים המלאים</string>
+    <string name="fundraiser_sticker_tray_label">תרומה</string>
     <string name="gallery">גלריה</string>
     <string name="gallery_album_thumbnail">תמונה ממוזערת של אלבום</string>
     <string name="gallery_description">גלריה</string>
@@ -1806,7 +1811,7 @@
     <string name="hashtag_sticker_default_text">\#האשטאג</string>
     <string name="hashtag_sticker_description">מדבקת האשטאג</string>
     <string name="hashtags">האשטאגים</string>
-    <string name="hashtags_link_row_title">האשטאגים</string>
+    <string name="hashtags_link_row_title_no_quantity">האשטאגים</string>
     <string name="header_icon">סמל כותרת</string>
     <string name="help_center">מרכז העזרה</string>
     <string name="help_center_text_link">לקבלת עזרה נוספת, בקר/י ב%1$s.</string>
@@ -1841,6 +1846,7 @@
     <string name="hiding_media">מסתיר...</string>
     <string name="highlight">הדגש/הדגישי</string>
     <string name="highlight_button_tooltip">יש לסמן כנבחר כדי להשאיר בפרופיל שלך למשך יותר מ-24 שעות.</string>
+    <string name="highlight_create_selected_item_failure">אירעה שגיאה ביצירת הנבחר. יש לבחור שוב את המדיה ולנסות שוב.</string>
     <string name="highlight_custom_cover_gallery_button_description">פתיחת גלריה</string>
     <string name="highlight_full_warning_dialog_body_photo">נבחרים יכולים להכיל עד %1$d פריטים. בהוספת תמונה זו, התמונה או הסרטון הישנים ביותר יוסרו מהנבחר שלך.</string>
     <string name="highlight_full_warning_dialog_body_video">נבחרים יכולים להכיל עד %1$d פריטים. בהוספת סרטון זה, התמונה או הסרטון הישנים ביותר יוסרו מהנבחר שלך.</string>
@@ -1872,6 +1878,7 @@
     <string name="ig_browser_chrome_title_loading_text">טוען...</string>
     <string name="igds_reply_button_label">תשובה</string>
     <string name="igds_view_reply_button_label">הצגת תשובה</string>
+    <string name="iglive_captioned_notification">%1$s בשידור חי: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">היית בסרטון בשידור חי של %1$s.</string>
     <string name="iglive_cobroadcast_end_title">תודה שהצטרפת!</string>
     <string name="iglive_discard">בטל/י</string>
@@ -2033,8 +2040,9 @@
     <string name="interactivity_ama_broadcaster_question_sheet_header_live">אפשר לבחור שאלה להצגה במסך, ולשתף אותה עם הצופים שלך.</string>
     <string name="interactivity_ama_broadcaster_question_tooltip">אפשר לדבר על מדבקות של שאלות בשידור חי.</string>
     <string name="interactivity_ama_card_question_story_header">מענה למדבקת שאלה</string>
-    <string name="interactivity_ama_viewer_question_submission_composer_title">אפשר לשאול אל %1$s שאלה</string>
+    <string name="interactivity_ama_card_question_story_subtitle">מהסיפור שלך</string>
     <string name="interactivity_ama_viewer_question_submission_input_hint">שאלת שאלה...</string>
+    <string name="interactivity_ama_viewer_question_submission_sheet_info">ייתכן שהשאלה שלך תשותף על ידי %1$s עם כל מי שצופה בסרטון שלו/שלה.</string>
     <string name="interest_recommendations_tombstone_thanks">הצעות להאשטאגים הוסתרו.</string>
     <string name="interest_recommendations_tombstone_thanks_feedback">מעכשיו והלאה, נציג לך הצעות כאלה לעתים רחוקות יותר.</string>
     <string name="internal_only">פנימי</string>
@@ -2355,6 +2363,7 @@
     <string name="minute_symbol">"ד'"</string>
     <string name="minutes_abbreviation_with_placeholder">%1$d דקות</string>
     <string name="minutes_ago_abbreviation">לפני %1$d דקות</string>
+    <string name="moment_card_fallback_title">זיכרונות</string>
     <string name="more">עוד</string>
     <string name="more_accounts_like_this">חשבונות נוספים כמו זה</string>
     <string name="more_available">הכול</string>
@@ -2834,7 +2843,6 @@
     <string name="product_appeals_request_review_header">בקשת בדיקה נוספת</string>
     <string name="product_catalog_selection_footer">אם אינך רואה את המוצרים הדרושים לך כאן, יש לפנות למנהל הדף או לבדוק את ההרשאות שלך ב-Business Manager</string>
     <string name="product_catalog_selection_invalid_footer">לא נבחר קטלוג בתוקף. נסה/נסי לבחור קטלוג חדש.</string>
-    <string name="product_catalog_selection_title">מוצרים</string>
     <string name="product_in_review_dialog_message">מוצר זה בבדיקה כעת. מוצרים שיאושרו יופיעו בפוסט שלך.</string>
     <string name="product_in_review_dialog_title">מוצר בבדיקה</string>
     <string name="product_name_rejected_dialog_title">שם המוצר לא אושר</string>
@@ -2854,7 +2862,6 @@
     <string name="product_source_load_more">טעינת קטלוגים נוספים</string>
     <string name="product_source_network_error">יש לבדוק את החיבור לאינטרנט ולנסות שוב.</string>
     <string name="product_source_no_catalog">לא נמצאו קטלוגים של מוצרים</string>
-    <string name="product_source_selection_brands_tab_title">מותגים</string>
     <string name="product_source_selection_catalogs_tab_title">קטלוגים</string>
     <string name="product_source_selection_title">בחירת מקור מוצר</string>
     <string name="product_sticker_added_with_branded_content_toast_content">לא ניתן להוסיף מדבקת מוצר לסיפור של תוכן ממותג.</string>
@@ -2887,11 +2894,14 @@
     <string name="profanity_filter">בקרות של תגובות</string>
     <string name="profile_chaining_unit_action_button_text">עיון</string>
     <string name="profile_close_friends_description">חברים קרובים</string>
+    <string name="profile_completed_edit_label">ניתן לערוך בכל עת מהפרופיל שלך.</string>
     <string name="profile_description">פרופיל</string>
     <string name="profile_grid_description">תצוגת רשת</string>
     <string name="profile_header_followed_by">במעקב על ידי</string>
     <string name="profile_header_followers">עוקבים</string>
     <string name="profile_header_following">במעקב</string>
+    <string name="profile_input_add_your_bio_subtitle">כדאי הוסיף לפרופיל את הביוגרפיה שלך עם פרטים על עצמך. כדי לקשר לחשבון אחר יש להשתמש ב-@ או להאשטאגים יש להשתמש ב-#.</string>
+    <string name="profile_input_field_bio_hint">ביוגרפיה</string>
     <string name="profile_list_description">תצוגת רשימה</string>
     <string name="profile_me_only_description">ארכיון</string>
     <string name="profile_message_user_button">הודעה</string>
@@ -2965,9 +2975,6 @@
     <string name="question_sticker_viewer_nux_tooltip_text">שליחת תשובה.</string>
     <string name="quick_replies">תשובות מהירות</string>
     <string name="quick_reply_description">תגובה מהירה</string>
-    <string name="quiz_sticker_first_answer_hint">תשובה 1</string>
-    <string name="quiz_sticker_question_hint">שאלה</string>
-    <string name="quiz_sticker_second_answer_hint">תשובה 2</string>
     <string name="quiz_sticker_tray_description">מדבקת שאלון</string>
     <string name="quiz_sticker_tray_label">שאלון</string>
     <string name="rageshake_bug_report_option">משהו לא פועל</string>
@@ -3269,6 +3276,7 @@
     <string name="save_all">שמירת הכל</string>
     <string name="save_button_description">שמור/שמרי במכשיר</string>
     <string name="save_button_text">שמירה</string>
+    <string name="save_changes">שמירת השינויים</string>
     <string name="save_collection_header_add_people">הוספת אנשים</string>
     <string name="save_collection_header_created_by_other">נוצר על ידי %1$s</string>
     <string name="save_collection_header_created_by_you">נוצר על ידך</string>
@@ -3410,7 +3418,6 @@
     <string name="select_school_before_class_year_warning_title">לא נבחר בית ספר</string>
     <string name="select_your_country">בחר/י את הארץ שלך</string>
     <string name="select_your_language">בחירת השפה שלך</string>
-    <string name="selected_catalog">הקטלוג שנבחר</string>
     <string name="selected_highlights_tab">נבחרו</string>
     <string name="selected_max_items">המגבלה היא %1$d תמונות או סרטונים.</string>
     <string name="self_profile_empty_body">כשתשתף/תשתפי תמונות וסרטונים, הם יופיעו בפרופיל שלך.</string>
@@ -3493,6 +3500,8 @@
     <string name="shopping_on_profile_null_state_cta">יצירת פוסט</string>
     <string name="shopping_on_profile_null_state_message">כרגע זה מוצג רק לך. לאחר יצירת פוסט אחד עם מוצרים מתויגים, אנשים יראו אותם כאן.</string>
     <string name="shopping_on_profile_null_state_title">פוסטים עם מוצרים מתוייגים יופיעו כאן</string>
+    <string name="shopping_options_approved_partners">חשבונות שותף שאושרו</string>
+    <string name="shopping_options_products">מוצרים</string>
     <string name="shopping_posts">פוסטים של קניות</string>
     <string name="shopping_variant_value_selector_sold_out_label">%1$s (אזל מהמלאי)</string>
     <string name="shopping_viewer_add_posts">הוספת פוסטים</string>
@@ -4238,6 +4247,7 @@
     <string name="welcome_to_instagram_business">ברוך/ברוכה הבא/ה, %1$s</string>
     <string name="welcome_to_instagram_business_tools">ברוך/ברוכה הבא/ה לכלים העסקיים של אינסטגרם</string>
     <string name="wrong_datetime">אין אפשרות להתחבר. ודא/י שהתאריך והשעה במכשיר שלך נכונים.</string>
+    <string name="x_and_others">%1$s ואחרים</string>
     <string name="x_and_y">%1$s ו%2$s</string>
     <string name="x_more">+%1$d נוספים</string>
     <string name="x_options">אפשרויות %1$s</string>

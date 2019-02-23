@@ -15,5 +15,6 @@
         </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
         <include layout="@layout/layout_iglive_viewer_reactions" />
         <FrameLayout android:layout_gravity="bottom" android:id="@id/iglive_permissions_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/broadcast_caption_overlay_stub" android:layout="@layout/layout_iglive_reel_caption_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
 </LinearLayout>

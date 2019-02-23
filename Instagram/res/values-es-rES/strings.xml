@@ -129,11 +129,11 @@
     <string name="ask_a_parent">Solicita la aprobación de tu padre, madre o tutor</string>
     <string name="ask_parent_button_text">Solicitar aprobación</string>
     <string name="asset">Emoticonos y stickers</string>
-    <string name="attribute_sync_confirm_title">Confirmar la información</string>
+    <string name="attribute_sync_address_subtitle">La dirección postal que aparece en tu página de Facebook es diferente a la de tu perfil de Instagram. Selecciona la que quieres usar para ambas cuentas.</string>
     <string name="attribute_sync_intro_subtitle">Sincroniza la información de contacto pública que compartes en tu cuenta de Instagram y en tu página de Facebook para mantener tu perfil de empresa actualizado.</string>
-    <string name="attribute_sync_missing_address">No se ha indicado ninguna. No usar ninguna dirección</string>
-    <string name="attribute_sync_missing_email">No se ha indicado ninguna. No usar ninguna dirección de correo electrónico</string>
-    <string name="attribute_sync_missing_phone">No se ha indicado ninguno. No usar ningún número de teléfono</string>
+    <string name="attribute_sync_missing_address">No proporcionada. No usar ninguna dirección</string>
+    <string name="attribute_sync_missing_email">No proporcionada. No usar ninguna dirección de correo electrónico</string>
+    <string name="attribute_sync_missing_phone">No proporcionado. No usar ningún número de teléfono</string>
     <string name="attribution_camera_face_filter">Máscaras</string>
     <string name="attribution_camera_made_with_focus">Creado con Focus</string>
     <string name="audience">Audiencia</string>
@@ -184,6 +184,7 @@
     <string name="book">Reservar</string>
     <string name="boomerang_capture_error">Se ha producido un error. Vuelve a intentarlo.</string>
     <string name="boomerang_modal_message">Graba y comparte vídeos breves con la nueva aplicación gratuita de Instagram.</string>
+    <string name="brand_change_disabled_dialog_title">Has etiquetado productos de %1$s</string>
     <string name="branded_content_tagging_upsell_tooltip_text">Aquí puedes etiquetar a tu socio empresarial</string>
     <string name="browse_header">Explorar %1$s</string>
     <string name="bugreporter_addscreenshot_gallery">Añadir de la galería</string>
@@ -209,6 +210,7 @@
     <string name="bugreporter_wait">Preparando el informe de errores...</string>
     <string name="business_account_splash_subtitle">Una cuenta de empresa gratuita te ofrece más herramientas para hacer crecer tu negocio.</string>
     <string name="business_account_splash_title">Obtener una cuenta empresarial de Instagram</string>
+    <string name="business_attribute_sync_toggle_label">Usar esta información en la página de Facebook</string>
     <string name="business_email_consent">Añade la dirección de correo electrónico donde quieres recibir los mensajes que se envíen a tu empresa. Aparecerá un botón de correo electrónico de contacto en tu perfil.</string>
     <string name="business_is_not_on_instagram">Esta empresa aún no está en Instagram. ¿Quieres verla en Facebook?</string>
     <string name="business_phone_consent">Añade el número de teléfono donde quieres recibir las llamadas que se hagan a tu empresa. Este número no debe estar vinculado con una cuenta de Instagram existente.</string>
@@ -245,6 +247,8 @@
     <string name="camera_permission_rationale_message">Haz fotos y vídeos con la aplicación de %1$s.</string>
     <string name="cannot_edit_promoted_post">No puedes editar una publicación que ya se ha promocionado</string>
     <string name="cant_add_partner_title">No se puede añadir al socio</string>
+    <string name="canvas_question_sticker_book_rec_hint">Pedir recomendaciones de libros</string>
+    <string name="canvas_question_sticker_movie_rec_hint">Pide recomendaciones de películas</string>
     <string name="caption_ellipsis_more">… y más</string>
     <string name="capture_format_live">DIRECTO</string>
     <string name="capture_source_title">Elige una fuente</string>
@@ -306,7 +310,6 @@
     <string name="color_picker_nux">Toca de nuevo para ajustar la intensidad</string>
     <string name="comment">Comentario</string>
     <string name="comment_hint">Añade un comentario...</string>
-    <string name="comment_offensive_alert_message">Es posible que los demás lo encuentren irrespetuoso</string>
     <string name="comment_undo_button">Deshacer</string>
     <string name="commenting_disabled_hint">Se han limitado los comentarios en esta publicación.</string>
     <string name="commenting_limited_to_followers">Solo tus seguidores pueden añadir comentarios. Todo el mundo puede ver los comentarios.</string>
@@ -446,7 +449,7 @@
     <string name="direct_digest_mentioned_you_story">Te ha mencionado en una historia</string>
     <string name="direct_digest_no_author_shared_product">Se ha compartido un producto</string>
     <string name="direct_digest_pending_photo">Permite los mensajes para ver esta foto.</string>
-    <string name="direct_digest_pending_video">Permitir mensajes para ver este vídeo.</string>
+    <string name="direct_digest_pending_video">Permite los mensajes para ver este vídeo.</string>
     <string name="direct_digest_reacted_to_your_story">Ha reaccionado a la reacción %1$s de tu historia</string>
     <string name="direct_digest_recipient_reel_reply_poll_interactive">Ha respondido a tu voto de la encuesta</string>
     <string name="direct_digest_recipient_reel_reply_question_interactive">Ha contestado a tu respuesta de la pregunta</string>
@@ -557,6 +560,7 @@
     <string name="direct_pending_instructions_header_group">^1 quiere añadirte a este grupo.</string>
     <string name="direct_permissions_choice_allow_all_explanation">Todas estas personas podrás enviarte mensajes en el futuro.</string>
     <string name="direct_permissions_choice_decline_blended_inbox">Mover a la bandeja de solicitudes</string>
+    <string name="direct_permissions_choice_delete_all">Eliminar todas</string>
     <string name="direct_permissions_decline_99_plus_messages">Estos + de 99 mensajes se eliminarán y los remitentes no podrán volver a enviarte mensajes.</string>
     <string name="direct_private_share_action_label_add_to_story">Añadir a la historia</string>
     <string name="direct_private_share_action_label_share_to">Compartir con…</string>
@@ -833,6 +837,8 @@
     <string name="hours">Horas</string>
     <string name="how_would_you_like_to_be_reached">¿Cómo quieres que las personas se pongan en contacto contigo?</string>
     <string name="ig_time_picker_am">a.m.</string>
+    <string name="iglive_caption_hint">Añade un título para los espectadores...</string>
+    <string name="iglive_captioned_notification">%1$s está en directo: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">Has participado en el vídeo en directo de %1$s.</string>
     <string name="iglive_cobroadcast_end_title">¡Gracias por unirte!</string>
     <string name="iglive_livewith_notification">%1$s está en directo con %2$s.</string>
@@ -907,7 +913,7 @@
     <string name="interactivity_ama_broadcaster_question_sheet_header_camera">Inicia un vídeo en directo para mostrarlos en pantalla y compartirlas con los espectadores.</string>
     <string name="interactivity_ama_broadcaster_question_tooltip">Habla sobre los stickers de preguntas en directo.</string>
     <string name="interactivity_ama_card_question_story_header">Respuesta a un sticker de pregunta</string>
-    <string name="interactivity_ama_viewer_question_submission_composer_title">Hacer una pregunta a %1$s</string>
+    <string name="interactivity_ama_viewer_question_submission_sheet_info">Es posible que %1$s comparta tu pregunta con las personas que están viendo el vídeo.</string>
     <string name="interest_recommendations_tombstone_thanks">Se han ocultado las sugerencias de hashtags.</string>
     <string name="invalid_email">Introduce una dirección de correo electrónico válida.</string>
     <string name="invalid_fullname_character">No puedes usar marcas en tu nombre.</string>
@@ -1240,7 +1246,15 @@
     <string name="product_tagging_carousel_add_product_limit_reached">No puedes etiquetar más de 20 productos en la publicación.</string>
     <string name="product_unavailable_message">La empresa ha eliminado el artículo</string>
     <string name="profile_chaining_unit_action_button_text">Buscar</string>
+    <string name="profile_completed_edit_label">Puedes editarlos cuando quieras desde el perfil.</string>
+    <string name="profile_exit_dialog_confirmation_subtitle">Podemos guardar los cambios para que termines tu trabajo más tarde.</string>
     <string name="profile_header_followed_by">Seguidores:</string>
+    <string name="profile_input_add_your_bio_subtitle">Añade tus datos personales al perfil para que las personas te conozcan mejor. Para vincular otra cuenta, usa \"@\"; para incluir hashtags, utiliza \"#\".</string>
+    <string name="profile_input_add_your_bio_title">Añade tus datos personales</string>
+    <string name="profile_input_add_your_name_subtitle">Añade tu nombre al perfil para que las personas te reconozcan.</string>
+    <string name="profile_input_add_your_name_title">Añade tu nombre</string>
+    <string name="profile_input_field_bio_hint">Datos personales</string>
+    <string name="profile_input_field_name_hint">Nombre y apellidos</string>
     <string name="profile_me_only_description">Archivar</string>
     <string name="profile_photo_added_title">Se ha añadido la foto del perfil</string>
     <string name="profile_picture_changed">Ha cambiado tu foto del perfil.</string>
@@ -1266,8 +1280,6 @@
     <string name="question_sticker_music_format_tooltip_text">Prueba a hacer una pregunta sobre música</string>
     <string name="question_sticker_question_music_prompt_last_listened">¿Cuál ha sido la última canción que has escuchado?</string>
     <string name="question_sticker_tray_description">Sticker de pregunta</string>
-    <string name="quiz_sticker_first_answer_hint">Respuesta n.º 1</string>
-    <string name="quiz_sticker_second_answer_hint">Respuesta n.º 2</string>
     <string name="rageshake_disable_option">Desactivar \"Sacudida\"</string>
     <string name="rageshake_title">Informar de un problema</string>
     <string name="rageshake_video_quality_issue">Problema con la calidad del vídeo</string>
@@ -1443,6 +1455,7 @@
     <string name="search_for_a_product">Busca un producto</string>
     <string name="search_for_a_user">Busca un usuario</string>
     <string name="search_for_blended">Busca</string>
+    <string name="search_fundraiser">Busca organizaciones sin ánimo de lucro</string>
     <string name="search_giphy">Busca en GIPHY</string>
     <string name="search_hashtags">Busca hashtags</string>
     <string name="search_people">Busca personas</string>
@@ -1499,6 +1512,7 @@
     <string name="shop">Tienda</string>
     <string name="shop_on_profile_row_continue_shopping">Continuar comprando</string>
     <string name="shopping">Compras</string>
+    <string name="shopping_merchant_remove_tag_dialog_message">Se eliminará la etiqueta de producto de la publicación. Esta ya no podrá verse en la tienda de tu perfil.</string>
     <string name="shopping_on_profile_null_state_message">En este momento, solo tú puedes verlo. Cuando crees una publicación con productos etiquetados, las personas la verán aquí.</string>
     <string name="shopping_posts">Publicaciones de compras</string>
     <string name="shopping_viewer_add_posts">Añadir publicaciones</string>
@@ -1814,6 +1828,8 @@
     <string name="view_ads_story_empty_state_description">En este momento, el anunciante no tiene ningún anuncio de las historias en circulación en Instagram.</string>
     <string name="view_all">Ver todos</string>
     <string name="view_count_singular">%1$s visualización</string>
+    <string name="view_directory">Ver centro educativo</string>
+    <string name="view_likes">Ver \"Me gusta\"</string>
     <string name="view_mode_toggle">Cambiar el modo de visualización</string>
     <string name="view_story_reshares">Ver historias que se han vuelto a compartir</string>
     <string name="viewer_list_friend_list_media_megaphone_description">Esta historia solo se comparte con las personas del sticker que uses.</string>
@@ -1831,6 +1847,7 @@
     <string name="welcome_to_instagram_business">Te damos la bienvenida, %1$s</string>
     <string name="welcome_to_instagram_business_tools">Te damos la bienvenida a las herramientas para empresas en Instagram</string>
     <string name="x_problems">Parece que %1$s está experimentando ciertos problemas. Vuelve a intentarlo en unos instantes.</string>
+    <string name="x_y_and_others">%1$s, %2$s y otros</string>
     <string name="your_business_profile_message">Añade botones \"Contactar\" para que los clientes puedan enviarte un correo electrónico o llamarte por teléfono directamente desde tu perfil.</string>
     <string name="your_profile_will_change">Si cambias a una cuenta personal, el contenido y las estadísticas de tus promociones se perderán. Tampoco podrás acceder a las estadísticas de publicaciones e historias actuales o futuras. Puedes cambiar a la cuenta de empresa cuando quieras.</string>
     <string name="zero_rating_data_banner_text">USO DE DATOS</string>

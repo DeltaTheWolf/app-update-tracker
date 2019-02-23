@@ -6,7 +6,6 @@
             <include android:id="@id/row_caption_followshare" layout="@layout/row_caption" />
             <include layout="@layout/row_divider" />
             <ViewStub android:id="@id/share_to_close_friends_stub" android:layout="@layout/row_share_to_close_friends" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-            <ViewStub android:id="@id/add_hashtags_stub" android:layout="@layout/add_hashtags_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             <FrameLayout android:id="@id/metadata_row_people" android:background="@drawable/bg_simple_row" style="?creationRowPadding">
                 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="?creationPadding" android:paddingRight="?creationPadding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:paddingStart="?creationPadding" android:paddingEnd="?creationPadding">
                     <ImageView android:id="@id/tag_people_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_people" />
@@ -15,6 +14,7 @@
                 </LinearLayout>
                 <include layout="@layout/row_divider" />
             </FrameLayout>
+            <ViewStub android:id="@id/add_hashtags_stub" android:layout="@layout/add_hashtags_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             <ViewStub android:id="@id/tag_products_stub" android:layout="@layout/tag_products_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             <ViewStub android:id="@id/tagging_hint_stub" android:layout="@layout/row_tagging_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             <FrameLayout android:id="@id/share_title_container" android:paddingTop="?creationLegacyPadding" style="?creationRowPadding">

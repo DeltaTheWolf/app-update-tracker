@@ -73,11 +73,17 @@
         <item quantity="one">еще %1$d сообщение</item>
         <item quantity="few">еще %1$d сообщения</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">Принять (%1$d)</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">Разрешить (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">Отклонить (%1$d)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">Удалить (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">Эти %1$d сообщений будут удалены, и отправители не смогут больше вам написать.</item>
@@ -115,6 +121,9 @@
         <item quantity="other">%1$s публикаций</item>
         <item quantity="one">%1$s публикация</item>
         <item quantity="few">%1$s публикации</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">Хэштеги: %1$d</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">Публикации: &lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b></item>

@@ -63,11 +63,17 @@
     <plurals name="direct_notification_summary_more_messages">
         <item quantity="other">他メッセージ%1$d件</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">承認(%1$d件)</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">承認(%1$d件)</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">拒否(%1$d件)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">削除(%1$d件)</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">このメッセージ%1$d件が削除され、送信者は今後あなたにメッセージを送信できなくなります。</item>
@@ -95,6 +101,9 @@
     </plurals>
     <plurals name="hashtag_posts">
         <item quantity="other">投稿%1$s件</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">ハッシュタグ%1$d件</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">投稿&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b>件</item>

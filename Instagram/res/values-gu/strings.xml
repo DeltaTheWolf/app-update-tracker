@@ -45,7 +45,6 @@
     <string name="ads_options">જાહેરાતો</string>
     <string name="agree">સંમત</string>
     <string name="album_thumbnails">આલ્બમ થંબનેલનું પૂર્વાવલોકન</string>
-    <string name="allow">મંજૂરી આપો</string>
     <string name="allow_permission">મંજૂરી આપો</string>
     <string name="allow_resharing_to_stories_explanation">અન્ય લોકો તેમની વાર્તાઓમાં તમારી ફીડ પોસ્ટ અને IGTV વિડિઓ ઉમેરી શકે છે. તમારું વપરાશકર્તાનામ તમારી પોસ્ટ સાથે હંમેશાં બતાવવામાં આવશે.</string>
     <string name="allow_resharing_to_stories_explanation_shopping_enabled">લોકોને તેમની વાર્તાઓમાં તમારી પોસ્ટ, IGTV વિડિઓ અને ઉત્પાદનોને ઉમેરવા દો.</string>
@@ -411,6 +410,7 @@
     <string name="network_error">અજ્ઞાત નેટવર્ક ભૂલ આવી.</string>
     <string name="new_collection">નવો સંગ્રહ</string>
     <string name="new_message">નવો સંદેશ</string>
+    <string name="new_messages">નવા સંદેશા</string>
     <string name="new_password">નવો પાસવર્ડ</string>
     <string name="new_password_again">નવો પાસવર્ડ, ફરી</string>
     <string name="new_profile_photo">નવો પ્રોફાઇલ ફોટો</string>
@@ -563,6 +563,8 @@
     <string name="review_request">વિનંતી જુઓ</string>
     <string name="save">સાચવો</string>
     <string name="save_all">બધું સાચવો</string>
+    <string name="save_changes">પરિવર્તનો સાચવો</string>
+    <string name="save_changes_question">પરિવર્તનો સાચવીએ?</string>
     <string name="save_collection_header_add_people">લોકોને ઉમેરો</string>
     <string name="save_collection_header_created_by_other">%1$s દ્વારા બનાવેલ</string>
     <string name="save_collection_header_created_by_you">તમારા દ્વારા બનાવેલ</string>
@@ -572,14 +574,16 @@
     <string name="save_draft_logout_text">જો તમે હમણાં લૉગ આઉટ કરશો, તો તમે તમારો ડ્રાફ્ટ ગુમાવશો.</string>
     <string name="save_explanation_subtitle">જે તમે ફરીથી જોવા માંગો છો તે ફોટા અને વિડિઓ સાચવો. કોઈને સૂચિત કરવામાં આવ્યા નથી અને માત્ર તમે જ જોઈ શકો છો કે તમે શું સાચવ્યું છે.</string>
     <string name="save_explanation_title">સાચવો</string>
+    <string name="save_home_collection_feed_add_contributors_text">યોગદાનકર્તાઓને ઉમેરો</string>
     <string name="save_home_collection_feed_add_from">આમાંથી ઉમેરો</string>
     <string name="save_home_collection_feed_add_to_collection">સંગ્રહમાં ઉમેરો</string>
     <string name="save_home_collection_feed_change_cover_photo">કવર બદલો</string>
     <string name="save_home_collection_feed_collection_name">નામ</string>
     <string name="save_home_collection_feed_collection_name_hint">સંગ્રહનું નામ</string>
-    <string name="save_home_collection_feed_contributors">સહયોગીઓ</string>
+    <string name="save_home_collection_feed_contributors">યોગદાનકર્તાઓ</string>
     <string name="save_home_collection_feed_create_collection">સંગ્રહ બનાવો</string>
     <string name="save_home_collection_feed_delete_collection">સંગ્રહ કાઢી નાખો</string>
+    <string name="save_home_collection_feed_delete_collection_confirmation_message">તમે આ સંગ્રહ કાઢી નાખશો, તો પણ ફોટા અને વિડિઓ સાચવવામાં આવશે.</string>
     <string name="save_home_collection_feed_delete_collection_confirmation_title">સંગ્રહ કાઢી નાખીએ?</string>
     <string name="save_home_collection_feed_edit_collection">સંગ્રહ સંપાદિત કરો</string>
     <string name="save_home_collection_feed_num_selected">%1$d પસંદ કર્યા</string>
@@ -747,10 +751,12 @@
     <string name="waiting_for_approval">મંંજૂરી માટે રાહ જોઈ રહ્યું છે</string>
     <string name="web_error">માફ કરશો, અમે તે વેબસાઇટ લોડ કરવા સક્ષમ નહોતા.</string>
     <string name="weeks_abbreviation_with_placeholder">%1$d અ</string>
+    <string name="x_and_others">%1$s અને અન્ય લોકો</string>
     <string name="x_and_y">%1$s અને %2$s</string>
     <string name="x_options">%1$s વિકલ્પો</string>
     <string name="x_problems">%1$s પર અત્યારે સમસ્યાઓ હોય એવું લાગે છે. કૃપા કરીને થોડીવારમાં ફરી પ્રયાસ કરો.</string>
     <string name="x_y_and_z">%1$s, %2$s અને %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s અને અન્ય</string>
     <string name="xshare_facebook_page_tooltip">હવે તમે તમારા Facebook પૃષ્ઠ પર પણ આ પોસ્ટ શેર કરી શકો છો.</string>
     <string name="yes">હા</string>
     <string name="yes_im_sure">હા, હું સુનિશ્ચિત છું</string>

@@ -63,11 +63,17 @@
     <plurals name="direct_notification_summary_more_messages">
         <item quantity="other">อีก %1$d ข้อความ</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">ยอมรับ (%1$d)</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">อนุญาต (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">ปฏิเสธ (%1$d)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">ลบ (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">ข้อความ %1$d ข้อความนี้จะถูกลบออก และผู้ส่งจะไม่สามารถส่งข้อความถึงคุณได้อีก</item>
@@ -95,6 +101,9 @@
     </plurals>
     <plurals name="hashtag_posts">
         <item quantity="other">%1$s โพสต์</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">แฮชแท็ก %1$d รายการ</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> โพสต์</item>

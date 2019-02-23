@@ -202,7 +202,7 @@
     <string name="blocking_step_content">"You can't sign up for Instagram based on the information that you've provided."</string>
     <string name="blocking_step_title">Problem while creating your account</string>
     <string name="boomerang_modal_message">"Make and share mini videos with Instagram's new free app."</string>
-    <string name="brand_selection_title">Choose a brand</string>
+    <string name="brand_change_disabled_dialog_title">You tagged products from %1$s</string>
     <string name="branded_content">Branded content</string>
     <string name="branded_content_approvals">Branded content approvals</string>
     <string name="branded_content_violation_post_banner_learn_more">The post violates branded content policies. %1$s</string>
@@ -263,6 +263,7 @@
     <string name="cannot_edit_post">"Can't edit post"</string>
     <string name="cannot_edit_promoted_post">"You can't edit a post that has previously been promoted"</string>
     <string name="cant_add_partner_title">"Can't add partner"</string>
+    <string name="canvas_question_sticker_movie_rec_hint">Film recommendations?</string>
     <string name="caption_ellipsis_more">... more</string>
     <string name="capture_source_title">Choose a source</string>
     <string name="carousel_posts">Carousel posts</string>
@@ -326,8 +327,10 @@
     <string name="comment_as_hint">Comment as %1$s...</string>
     <string name="comment_ellipsis_less">less</string>
     <string name="comment_hint">Add a comment...</string>
+    <string name="comment_offensive_alert_message">Are you sure that you want to post this?</string>
     <string name="comments_disabled">Comments off</string>
     <string name="comments_disabled_title">Commenting is off</string>
+    <string name="complete_profile">Complete profile</string>
     <string name="completion_screen_title">"You're good to go!"</string>
     <string name="confirm_age_dialog_title">Confirm age</string>
     <string name="confirm_appeal_ad_subtitle">I understand that if my promotion is approved upon appeal, it will be made active and may start being delivered straight away.</string>
@@ -474,6 +477,7 @@
     <string name="direct_adding_member_to_conversation">Adding people...</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_message">This message will be moved out of your inbox and into your requests. You can move it back at any time.</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Move to requests?</string>
+    <string name="direct_block_account">Block account</string>
     <string name="direct_copy_message_text">Copy text</string>
     <string name="direct_delete_conversation">Delete conversation?</string>
     <string name="direct_details_error">Unable to load conversation details. Please try again.</string>
@@ -559,6 +563,7 @@
     <string name="direct_thread_title_change_error_too_long">Group names must be no more than 20 characters.</string>
     <string name="direct_thread_title_change_hint">Name this group...</string>
     <string name="direct_thread_title_changing">Changing title...</string>
+    <string name="direct_unblock_account">Unblock account</string>
     <string name="direct_unblock_user">Unblock user</string>
     <string name="direct_unsend_message">Unsend message</string>
     <string name="direct_unsend_message_dialog_title">Unsend message?</string>
@@ -711,6 +716,7 @@
     <string name="friends_sticker_saving">Saving...</string>
     <string name="full_name_and_password_title">Name and password</string>
     <string name="full_single_line_address">%1$s, %2$s, %3$s</string>
+    <string name="fundraiser_sticker_tray_description">Fundraiser sticker</string>
     <string name="gallery_album_thumbnail">Album thumbnail</string>
     <string name="gallery_photo_thumbnail">Photo thumbnail</string>
     <string name="gallery_sticker_description">Gallery sticker</string>
@@ -774,6 +780,7 @@
     <string name="hide_video_from_multi_author_story_message">This video will no longer be included in the %1$s story. You can always unhide it.</string>
     <string name="hide_video_from_multi_author_story_title">Hide video from the %1$s story?</string>
     <string name="highlight_button_tooltip">Highlight to keep on your profile for longer than 24 hours.</string>
+    <string name="highlight_create_selected_item_failure">Error while creating highlight. Please re-select media and try again.</string>
     <string name="highlight_full_warning_dialog_title">Your highlight is full</string>
     <string name="highlight_loading_message">Loading highlight...</string>
     <string name="highlights_dialog_title">Added to highlights</string>
@@ -850,6 +857,7 @@
     <string name="instantexperiences_browser_loading">Loading...</string>
     <string name="interactivity_ama_broadcaster_question_sheet_empty_state_body">Post a question sticker to your story and share responses live.</string>
     <string name="interactivity_ama_broadcaster_question_sheet_empty_state_headline">Questions from your story</string>
+    <string name="interactivity_ama_card_question_story_subtitle">From your story</string>
     <string name="invalid_character_error_message">Only letters and digits are allowed in hashtags.</string>
     <string name="invalid_fullname_character">"You can't use ticks in your name."</string>
     <string name="invalid_username_character">Usernames can only use letters, digits, underscores and full stops.</string>
@@ -1027,6 +1035,7 @@
     <string name="new_comments">New comments</string>
     <string name="new_follower">New follower</string>
     <string name="new_message">New message</string>
+    <string name="new_messages">New messages</string>
     <string name="new_password_again">Re-enter new password</string>
     <string name="new_posts">New posts</string>
     <string name="new_profile_photo">New profile photo</string>
@@ -1214,6 +1223,14 @@
     <string name="product_tagging_add_products">Tag products</string>
     <string name="product_unavailable_message">The item has been removed by the business</string>
     <string name="profanity_filter">Comment controls</string>
+    <string name="profile_completed_edit_label">You can edit at any time from your profile.</string>
+    <string name="profile_completed_label">Profile completed</string>
+    <string name="profile_exit_dialog_confirmation_subtitle">We can save your changes so that you can finish later.</string>
+    <string name="profile_input_add_your_bio_subtitle">Say something about yourself by adding a bio to your profile. To link to another account, use @, or for hashtags, use #.</string>
+    <string name="profile_input_add_your_bio_title">Add your bio</string>
+    <string name="profile_input_add_your_name_subtitle">"Add your name to your profile so that people know it's you."</string>
+    <string name="profile_input_add_your_name_title">Add your name</string>
+    <string name="profile_input_field_name_hint">Full name</string>
     <string name="profile_photo_added_title">Profile photo added</string>
     <string name="profile_photo_description">Profile photo</string>
     <string name="profile_user_list_followers_with_count">%1$s followers</string>
@@ -1247,6 +1264,7 @@
     <string name="question_sticker_tray_description">Question sticker</string>
     <string name="quick_replies">Quick replies</string>
     <string name="quick_reply_description">Quick reply</string>
+    <string name="quiz_sticker_question_hint">GUESS MY FAVOURITE…</string>
     <string name="quiz_sticker_tray_description">Quiz sticker</string>
     <string name="rageshake_bug_report_option">"Something isn't working"</string>
     <string name="rageshake_disable_option">Disable shake</string>
@@ -1377,6 +1395,8 @@
     <string name="robocall_now">"We're calling you now."</string>
     <string name="robocall_support_text">"Haven't received the code? We'll call you in %1$s."</string>
     <string name="same_as_signup_email">Same as sign-up email address</string>
+    <string name="save_changes">Save changes</string>
+    <string name="save_changes_question">Save changes?</string>
     <string name="save_collection_header_add_people">Add people</string>
     <string name="save_collection_header_created_by_other">Created by %1$s</string>
     <string name="save_collection_header_created_by_you">Created by you</string>
@@ -1423,6 +1443,7 @@
     <string name="search_find_friends_title">Find friends</string>
     <string name="search_followers">Search followers...</string>
     <string name="search_following">Search following...</string>
+    <string name="search_fundraiser">Search non-profits</string>
     <string name="search_location_service_disabled">Location disabled</string>
     <string name="search_school_footnote">This feature is not available for all universities yet</string>
     <string name="search_school_header">Find your school/university</string>
@@ -1443,7 +1464,6 @@
     <string name="select_class_year_bottom_sheet_done_button_text">Select Graduation Year</string>
     <string name="select_school_before_class_year_warning_message">Please select a school or university before selecting a year</string>
     <string name="select_school_before_class_year_warning_title">No school/university selected</string>
-    <string name="selected_catalog">Selected catalogue</string>
     <string name="selfie_sticker_description">Selfie sticker</string>
     <string name="send_an_sms">Send an SMS message</string>
     <string name="send_to_direct">Send to...</string>
@@ -1474,9 +1494,13 @@
     <string name="shared_with_close_friends_self_owner_story_video">Only the people on your Close Friends list can see this video. They can also see this label.</string>
     <string name="sharing_succeeded">Your post has been shared successfully.</string>
     <string name="shop_on_profile_row_continue_shopping">Continue shopping</string>
+    <string name="shopping_merchant_remove_tag_dialog_title">Remove product tag?</string>
+    <string name="shopping_merchant_tag_action_sheet_remove_tag_action">Remove tag from post</string>
+    <string name="shopping_merchant_tag_action_sheet_view_product_action">View product</string>
     <string name="shopping_on_profile_null_state_cta">Create post</string>
     <string name="shopping_on_profile_null_state_message">"Only you can see this currently. Once you've created one post with tagged products, people will see it here."</string>
     <string name="shopping_on_profile_null_state_title">Posts with tagged products will appear here</string>
+    <string name="shopping_options_approved_partners">Approved partner accounts</string>
     <string name="shopping_posts">Shopping posts</string>
     <string name="shopping_variant_value_selector_sold_out_label">%1$s (sold out)</string>
     <string name="shopping_viewer_edit_feed_num_selected">%1$d selected</string>
@@ -1771,6 +1795,7 @@
     <string name="view_ads_empty_state_title">No active ads</string>
     <string name="view_ads_title">Active ads</string>
     <string name="view_all_x_comments">View All %1$s Comments</string>
+    <string name="view_directory">View School/University</string>
     <string name="view_features">View features</string>
     <string name="view_hashtag_page">View hashtag page</string>
     <string name="view_location">View location</string>

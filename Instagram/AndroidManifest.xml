@@ -64,7 +64,7 @@
         <meta-data android:name="com.facebook.rscmp" android:value="true"/>
         <meta-data android:name="com.facebook.build_rule" android:value="instagram_multi_bytecode_dextr_comp_zstdso_mdpi_armv7_release_fbsign"/>
         <meta-data android:name="com.facebook.package_type" android:value="release"/>
-        <meta-data android:name="com.facebook.build_time" android:value="1549930602000L"/>
+        <meta-data android:name="com.facebook.build_time" android:value="1550615370000L"/>
         <meta-data android:name="com.facebook.versioncontrol.branch" android:value="master"/>
         <meta-data android:name="com.facebook.versioncontrol.revision" android:value="MASTER"/>
         <activity android:alwaysRetainTaskState="true" android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.instagram.mainactivity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
@@ -93,7 +93,6 @@
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.facebook.browser.lite.BrowserLiteActivity" android:process=":browser" android:theme="@style/BrowserWindow" android:windowSoftInputMode="adjustResize"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.instagram.watchandbrowse.WatchAndBrowseActivity" android:process=":browser" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.facebook.browser.lite.BrowserLiteBottomSheetActivity" android:process=":browser" android:theme="@style/BrowserRedesign" android:windowSoftInputMode="adjustResize"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.facebook.browser.lite.BrowserLiteFallbackActivity" android:theme="@style/BrowserWindow" android:windowSoftInputMode="adjustResize"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.instagram.business.instantexperiences.ui.InstantExperiencesBrowserActivity" android:windowSoftInputMode="adjustResize"/>
         <service android:exported="false" android:name="com.instagram.inappbrowser.service.BrowserLiteCallbackService">
             <intent-filter>
@@ -101,7 +100,6 @@
             </intent-filter>
         </service>
         <service android:exported="false" android:name="com.facebook.browser.lite.BrowserLiteIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":browser"/>
-        <service android:exported="false" android:name="com.facebook.browser.lite.BrowserLiteFallbackIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <service android:exported="false" android:name="com.instagram.lazyload.instagram.MainProcessCallbackService"/>
         <service android:enabled="true" android:exported="false" android:name="com.facebook.cameracore.mediapipeline.asyncscripting.AsyncScriptingService" android:process=":AsyncScriptingProcess"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.instagram.url.UrlHandlerActivity" android:screenOrientation="portrait" android:theme="@style/IgTranslucentWindow" android:windowSoftInputMode="adjustNothing">

@@ -45,7 +45,6 @@
     <string name="ads_options">ప్రకటనలు</string>
     <string name="agree">ఏకీభవిస్తున్నాను</string>
     <string name="album_thumbnails">ఆల్బమ్ సూక్ష్మచిత్ర పరిదృశ్యం</string>
-    <string name="allow">అనుమతించు</string>
     <string name="allow_permission">అనుమతించు</string>
     <string name="allow_resharing_to_stories_explanation">ఇతర వ్యక్తులు మీ ఫీడ్ పోస్ట్‌లను మరియు IGTV వీడియోలను వారి కథనాలకు జోడించగలరు. మీ పోస్ట్‌తో ఎల్లప్పుడూ మీ వినియోగదారు పేరు ప్రదర్శించబడుతుంది.</string>
     <string name="allow_resharing_to_stories_explanation_shopping_enabled">వ్యక్తులను వారి కథనాలకు మీ ఫోటోలు, IGTV వీడియోలు మరియు ఉత్పత్తులను జోడించనివ్వండి.</string>
@@ -249,6 +248,7 @@
     <string name="followers_title">అనుచరులు</string>
     <string name="following_button_follow">అనుసరణ</string>
     <string name="following_button_follow_back">వారిని అనుసరించండి</string>
+    <string name="following_button_follow_back_voice">మళ్లీ తిరిగి అనుసరించు బటన్</string>
     <string name="following_button_follow_voice">%1$sని అనుసరించు బటన్</string>
     <string name="following_button_following">అనుసరిస్తున్నారు</string>
     <string name="following_button_following_voice">%1$sని అనుసరిస్తున్నారు బటన్</string>
@@ -415,6 +415,7 @@
     <string name="network_error">తెలియని నెట్‌వర్క్ లోపం సంభవించింది.</string>
     <string name="new_collection">కొత్త సేకరణ</string>
     <string name="new_message">కొత్త సందేశం</string>
+    <string name="new_messages">కొత్త సందేశాలు</string>
     <string name="new_password">కొత్త పాస్‌వర్డ్</string>
     <string name="new_password_again">కొత్త పాస్‌వర్డ్‌ను మళ్లీ నమోదు చేయండి</string>
     <string name="new_profile_photo">కొత్త ప్రొఫైల్ ఫోటో</string>
@@ -570,7 +571,10 @@
     <string name="review_request">అభ్యర్థనను వీక్షించండి</string>
     <string name="save">సేవ్ చేయి</string>
     <string name="save_all">అన్నీ సేవ్ చేయండి</string>
-    <string name="save_collection_header_created_by_other">%1$s సృష్టించింది</string>
+    <string name="save_changes">మార్పులను సేవ్ చేయి</string>
+    <string name="save_changes_question">మార్పులను సేవ్ చేయాలా?</string>
+    <string name="save_collection_header_add_people">వ్యక్తులను జోడించు</string>
+    <string name="save_collection_header_created_by_other">%1$s సృష్టించారు</string>
     <string name="save_collection_header_created_by_you">మీరు సృష్టించారు</string>
     <string name="save_collection_pivots_cta">ఇలాంటివి మరిన్ని చూడండి</string>
     <string name="save_collection_pivots_cta_content_description">ఇలాంటివి మరిన్ని చూడండి బటన్</string>
@@ -578,13 +582,16 @@
     <string name="save_draft_logout_text">మీరు ఇప్పుడు లాగ్ అవుట్ చేస్తే, మీరు మీ చిత్తుప్రతిని కోల్పోతారు.</string>
     <string name="save_explanation_subtitle">మీరు మళ్లీ చూడాలనుకునే ఫోటోలు మరియు వీడియోలను సేవ్ చేయండి. ఎవరికీ సమాచారం అందించబడదు, మీరు సేవ్ చేసిన వాటిని కేవలం మీరు మాత్రమే చూడగలరు.</string>
     <string name="save_explanation_title">సేవ్ చేయండి</string>
+    <string name="save_home_collection_feed_add_contributors_text">సహకారులను జోడించు</string>
     <string name="save_home_collection_feed_add_from">ఇందులో నుండి జోడించండి</string>
     <string name="save_home_collection_feed_add_to_collection">సేకరణకు జోడించు</string>
     <string name="save_home_collection_feed_change_cover_photo">ముఖచిత్రాన్ని మార్చు</string>
     <string name="save_home_collection_feed_collection_name">పేరు</string>
     <string name="save_home_collection_feed_collection_name_hint">సేకరణ పేరు</string>
+    <string name="save_home_collection_feed_contributors">సహకారులు</string>
     <string name="save_home_collection_feed_create_collection">సేకరణను సృష్టించు</string>
     <string name="save_home_collection_feed_delete_collection">సేకరణను తొలగించు</string>
+    <string name="save_home_collection_feed_delete_collection_confirmation_message">మీరు ఈ సేకరణను తొలగించినప్పటికీ ఫోటోలు మరియు వీడియోలు సేవ్ చేయబడతాయి.</string>
     <string name="save_home_collection_feed_delete_collection_confirmation_title">సేకరణను తొలగించాలా?</string>
     <string name="save_home_collection_feed_edit_collection">సేకరణను సవరించు</string>
     <string name="save_home_collection_feed_num_selected">%1$d ఎంచుకోబడ్డాయి</string>
@@ -756,10 +763,13 @@
     <string name="waiting_for_approval">ఆమోదం కోసం వేచి ఉంది</string>
     <string name="web_error">క్షమించండి, మేము ఆ వెబ్‌సైట్‌ను లోడ్ చేయలేకున్నాము.</string>
     <string name="weeks_abbreviation_with_placeholder">%1$dవా</string>
+    <string name="x_and_others">%1$s మరియు ఇతరులు</string>
     <string name="x_and_y">%1$s మరియు %2$s</string>
     <string name="x_options">%1$s ఎంపికలు</string>
     <string name="x_problems">%1$sకి ప్రస్తుతం సమస్యలు ఉన్నట్లుగా కనిపిస్తోంది. దయచేసి కొన్ని క్షణాల్లో మళ్లీ ప్రయత్నించండి.</string>
+    <string name="x_y_and_others">%1$s, %2$s మరియు ఇతరులు</string>
     <string name="x_y_and_z">%1$s, %2$s మరియు %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s మరియు ఇతరులు</string>
     <string name="xshare_facebook_page_tooltip">ఇప్పుడు మీరు ఈ పోస్ట్‌ని మీ Facebook పేజీకి కూడా భాగస్వామ్యం చేయవచ్చు.</string>
     <string name="yes">అవును</string>
     <string name="yes_im_sure">అవును, నేను నిర్ధారిస్తున్నాను</string>

@@ -388,6 +388,7 @@
         <item name="android:tabWidgetStyle">@android:style/Widget.TabWidget</item>
         <item name="android:textViewStyle">@style/TextViewStyle</item>
         <item name="android:textColorLink">@color/blue_5</item>
+        <item name="android:listDivider">@null</item>
         <item name="android:soundEffectsEnabled">false</item>
         <item name="android:dialogTheme">@style/IgDialog</item>
         <item name="appName">@string/instagram</item>
@@ -2389,6 +2390,16 @@
         <item name="android:layout_weight">1.0</item>
     </style>
     <style name="ProfileTabHeaderTheme" parent="@style/Theme.AppCompat" />
+    <style name="ProfileWizardProgressButtonStyle">
+        <item name="android:background">?nuxActionButtonBackground</item>
+        <item name="android:paddingLeft">@dimen/reg_margin_xsmall</item>
+        <item name="android:paddingRight">@dimen/reg_margin_xsmall</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/reg_button_height</item>
+        <item name="android:layout_marginTop">@dimen/reg_margin_small</item>
+        <item name="android:text">@string/next</item>
+        <item name="progressBarTint">@color/blue_5</item>
+    </style>
     <style name="QuestionResponse">
         <item name="android:layout_width">@dimen/question_response_card_width</item>
         <item name="android:layout_height">wrap_content</item>

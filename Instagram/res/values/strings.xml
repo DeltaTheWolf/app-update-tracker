@@ -241,7 +241,6 @@
     <string name="album_videos_audio_unmute">All Video Sound On</string>
     <string name="all">All</string>
     <string name="all_suggestions_header">All Suggestions</string>
-    <string name="allow">Allow</string>
     <string name="allow_business_partner_promote_description">This lets your tagged business partner promote your post as an ad on Instagram. There are limitations on how you can modify the post during and after promotion. %1$s.</string>
     <string name="allow_business_partner_to_promote">Allow Business Partner to Promote</string>
     <string name="allow_permission">Allow</string>
@@ -426,11 +425,9 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="border">Border</string>
     <string name="bottom_sheet_music_player_pause_button_description">Pause</string>
     <string name="bottom_sheet_music_player_play_button_description">Play</string>
-    <string name="brand">Brand</string>
-    <string name="brand_change_disabled_dialog_message">You can only tag products from a single brand.</string>
-    <string name="brand_change_disabled_dialog_title">Only product tags from %1$s allowed</string>
+    <string name="brand_change_disabled_dialog_message">You can only tag products from one partner at a time.</string>
+    <string name="brand_change_disabled_dialog_title">You Tagged Products From %1$s</string>
     <string name="brand_poll_survey_title_content">would like to hear from you</string>
-    <string name="brand_selection_title">Choose a Brand</string>
     <string name="branded_content">Branded Content</string>
     <string name="branded_content_approvals">Branded Content Approvals</string>
     <string name="branded_content_tagging_upsell_tooltip_text">You can tag your business partner here</string>
@@ -586,6 +583,9 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="canvas_ad">Canvas Ad</string>
     <string name="canvas_dial_element_poll_label">Poll</string>
     <string name="canvas_dial_element_questions_label">Questions</string>
+    <string name="canvas_mode_format_picker_label">CREATE</string>
+    <string name="canvas_question_sticker_book_rec_hint">Book recommendations?</string>
+    <string name="canvas_question_sticker_movie_rec_hint">Movie recommendations?</string>
     <string name="caption_ellipsis_less">less</string>
     <string name="caption_ellipsis_more">… more</string>
     <string name="caption_more">more</string>
@@ -740,7 +740,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="comment_count_singular">%1$s comment</string>
     <string name="comment_ellipsis_less">　less</string>
     <string name="comment_hint">Add a comment…</string>
-    <string name="comment_offensive_alert_message">Other people may find this disrespectful</string>
+    <string name="comment_offensive_alert_message">Are you sure you want to post this?</string>
     <string name="comment_undo_button">Undo</string>
     <string name="commenting_disabled_hint">Comments on this post have been limited.</string>
     <string name="commenting_limited_to_followers">Only your followers can add comments. Comments are visible to everyone.</string>
@@ -767,6 +767,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="common_new">New</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="compare">Compare</string>
+    <string name="complete_profile">Complete Profile</string>
     <string name="completion_screen_body">"You've already reviewed our updated Data Policy and agreed to our new Terms."</string>
     <string name="completion_screen_button_text">OK</string>
     <string name="completion_screen_title">"You're All Set!"</string>
@@ -1173,6 +1174,9 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="direct_blended_inbox_move_to_requests_dialog_confirm_button">Move to Requests</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_message">This message will be moved out of your Inbox and into your Requests. You can move it back anytime.</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Move to Requests?</string>
+    <string name="direct_block_account">Block Account</string>
+    <string name="direct_block_choices_block_account">Block Account</string>
+    <string name="direct_block_choices_block_messages">Block Messages</string>
     <string name="direct_block_user">Block User</string>
     <string name="direct_blocked">Blocked</string>
     <string name="direct_button_change_group_name">Done</string>
@@ -1278,7 +1282,6 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="direct_group_name">Group Name</string>
     <string name="direct_hashtag_story_share_recipient_info">Sent the %1$s story</string>
     <string name="direct_hashtag_story_share_sender_info">You sent the %1$s story</string>
-    <string name="direct_header_groups">Groups</string>
     <string name="direct_igtv_share_generic_recipient_info">Sent a video</string>
     <string name="direct_igtv_share_generic_sender_info">You sent a video</string>
     <string name="direct_inbox_empty_view_back_to_inbox">Back to inbox</string>
@@ -1355,17 +1358,22 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="direct_pending_instructions_header_group">^1 wants to add you to this group.</string>
     <string name="direct_pending_instructions_header_one_on_one">^1 wants to send you a message.</string>
     <string name="direct_pending_instructions_unknown_sender">unknown</string>
+    <string name="direct_permission_edit">Edit</string>
     <string name="direct_permission_select">Select</string>
+    <string name="direct_permissions_choice_accept">Accept</string>
     <string name="direct_permissions_choice_allow">Allow</string>
     <string name="direct_permissions_choice_allow_all_explanation">All of these people will be able to send you messages in the future.</string>
     <string name="direct_permissions_choice_allow_blended_inbox">Reply</string>
     <string name="direct_permissions_choice_allow_question_mark">Allow?</string>
+    <string name="direct_permissions_choice_block">Block</string>
     <string name="direct_permissions_choice_decline">Decline</string>
     <string name="direct_permissions_choice_decline_all">Decline All</string>
     <string name="direct_permissions_choice_decline_all_explanation">None of these people will be able to send you messages in the future.</string>
     <string name="direct_permissions_choice_decline_all_question_mark">Decline All?</string>
     <string name="direct_permissions_choice_decline_blended_inbox">Move to Requests</string>
     <string name="direct_permissions_choice_decline_question_mark">Decline?</string>
+    <string name="direct_permissions_choice_delete">Delete</string>
+    <string name="direct_permissions_choice_delete_all">Delete All</string>
     <string name="direct_permissions_decline_99_plus_messages">"These 99+ messages will be removed and the senders won't be able to message you again."</string>
     <string name="direct_permissions_decline_block_info_1">"Declining means this message will be removed and %1$s won't be able to send you messages anymore."</string>
     <string name="direct_persisted_reel_label">Only you can see this.</string>
@@ -1505,6 +1513,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="direct_timestamp_today">Today</string>
     <string name="direct_timestamp_yesterday">Yesterday</string>
     <string name="direct_ummute_video_call_notifications">Unmute Video Chats</string>
+    <string name="direct_unblock_account">Unblock Account</string>
     <string name="direct_unblock_user">Unblock User</string>
     <string name="direct_unflag">Unflag</string>
     <string name="direct_unknown_error">Network request failed. Please try again later.</string>
@@ -1565,7 +1574,6 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="direct_weak_internet_error">Failed to send network request. Please try again when connection improves.</string>
     <string name="direct_x_message_requests_more_than_99_caps">99+ Requests</string>
     <string name="directions">Directions</string>
-    <string name="directshare_hide">Hide</string>
     <string name="directshare_metadata_to">To:</string>
     <string name="disable_2fac_dialog_body">"Turning off two-factor authentication means you won't need to enter a security code when you log in."</string>
     <string name="disable_2fac_dialog_confirm_button">Turn Off</string>
@@ -1734,7 +1742,8 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="facebook_sharing_dialog_message_turn_on_single_share">Share Once</string>
     <string name="facebook_sharing_dialog_message_turn_on_single_share_from_single_share_off">Share to Facebook Once</string>
     <string name="facebook_sharing_dialog_title">Share to Facebook</string>
-    <string name="faces">Faces</string>
+    <string name="faces_subtitle">\#selfies #me #friends</string>
+    <string name="faces_title">Faces</string>
     <string name="fade">Fade</string>
     <string name="fail_confirm_email">"We can't confirm your email right now. Try again later."</string>
     <string name="fail_send_confirm_email">"We can't send you a confirmation email right now. Try again later."</string>
@@ -1849,6 +1858,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="following">following</string>
     <string name="following_button_follow">Follow</string>
     <string name="following_button_follow_back">Follow Back</string>
+    <string name="following_button_follow_back_voice">Follow back button</string>
     <string name="following_button_follow_voice">Follow %1$s button</string>
     <string name="following_button_following">Following</string>
     <string name="following_button_following_voice">Following %1$s button</string>
@@ -1899,6 +1909,8 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="full_name_and_password_title">Name and Password</string>
     <string name="full_single_line_address">%1$s, %2$s %3$s</string>
     <string name="full_terms_rw">Full Terms</string>
+    <string name="fundraiser_sticker_tray_description">Fundraiser Sticker</string>
+    <string name="fundraiser_sticker_tray_label">DONATION</string>
     <string name="gallery">Gallery</string>
     <string name="gallery_album_thumbnail">Album Thumbnail</string>
     <string name="gallery_description">Gallery</string>
@@ -1971,7 +1983,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="hashtag_sticker_default_text">\#HASHTAG</string>
     <string name="hashtag_sticker_description">Hashtag Sticker</string>
     <string name="hashtags">Hashtags</string>
-    <string name="hashtags_link_row_title">Hashtags</string>
+    <string name="hashtags_link_row_title_no_quantity">Hashtags</string>
     <string name="header_icon">Header Icon</string>
     <string name="help_center">Help Center</string>
     <string name="help_center_text_link">For more help, visit the %1$s.</string>
@@ -2006,6 +2018,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="hiding_media">Hiding…</string>
     <string name="highlight">Highlight</string>
     <string name="highlight_button_tooltip">Highlight to keep on your profile longer than 24 hours.</string>
+    <string name="highlight_create_selected_item_failure">Error creating Highlight. Please re-select media and try again.</string>
     <string name="highlight_custom_cover_gallery_button_description">Open gallery</string>
     <string name="highlight_full_warning_dialog_body_photo">Highlights can have up to %1$d items. If you add this photo, the oldest photo or video will be removed from your highlight.</string>
     <string name="highlight_full_warning_dialog_body_video">Highlights can have up to %1$d items. If you add this video, the oldest photo or video will be removed from your highlight.</string>
@@ -2039,6 +2052,9 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="ig_time_picker_pm">PM</string>
     <string name="igds_reply_button_label">Reply</string>
     <string name="igds_view_reply_button_label">View Reply</string>
+    <string name="iglive_caption_character_count">%1$s/30</string>
+    <string name="iglive_caption_hint">Add a title for your viewers…</string>
+    <string name="iglive_captioned_notification">%1$s is live: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">"You were in %1$s's live video."</string>
     <string name="iglive_cobroadcast_end_title">Thanks for joining!</string>
     <string name="iglive_discard">Discard</string>
@@ -2212,8 +2228,9 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="interactivity_ama_broadcaster_question_sheet_header_live">Choose one to show it on screen and share it with your viewers.</string>
     <string name="interactivity_ama_broadcaster_question_tooltip">"Talk about question stickers while you're live."</string>
     <string name="interactivity_ama_card_question_story_header">Response to question sticker</string>
-    <string name="interactivity_ama_viewer_question_submission_composer_title">Ask %s a question</string>
+    <string name="interactivity_ama_card_question_story_subtitle">From Your Story</string>
     <string name="interactivity_ama_viewer_question_submission_input_hint">Ask a question…</string>
+    <string name="interactivity_ama_viewer_question_submission_sheet_info">%s may share your question with everyone who is watching their video.</string>
     <string name="interest_recommendations_tombstone_thanks">Hashtag suggestions have been hidden.</string>
     <string name="interest_recommendations_tombstone_thanks_feedback">"We'll show these less often from now on."</string>
     <string name="internal_only">Internal</string>
@@ -2556,6 +2573,8 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="minute_symbol">m</string>
     <string name="minutes_abbreviation_with_placeholder">%1$dm</string>
     <string name="minutes_ago_abbreviation">%1$dm ago</string>
+    <string name="moment_card_fallback_title">Memories</string>
+    <string name="moment_subtitle_suffix">• #throwback</string>
     <string name="more">More</string>
     <string name="more_accounts_like_this">More Accounts Like This</string>
     <string name="more_available">See All</string>
@@ -2684,6 +2703,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="new_filters_nux">New</string>
     <string name="new_follower">New Follower</string>
     <string name="new_message">New Message</string>
+    <string name="new_messages">New Messages</string>
     <string name="new_password">New password</string>
     <string name="new_password_again">New password, again</string>
     <string name="new_photo">New Profile Photo</string>
@@ -2861,6 +2881,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="omnibox_title">Enter Email or Phone Number</string>
     <string name="on_this_day">On This Day</string>
     <string name="on_this_day_sticker_text">ON THIS DAY</string>
+    <string name="on_this_day_subtitle">\#otd #memories</string>
     <string name="on_this_day_title">On This Day</string>
     <string name="one_hour">1 hour</string>
     <string name="one_tap_login_text_link_text">Log in With Another Account</string>
@@ -3097,7 +3118,6 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="product_appeals_request_review_header">Request Another Review</string>
     <string name="product_catalog_selection_footer">"If you don't see the products you need here then contact the Page Admin or check your permissions in Business Manager"</string>
     <string name="product_catalog_selection_invalid_footer">No valid catalog is selected. Try selecting a new one.</string>
-    <string name="product_catalog_selection_title">Products</string>
     <string name="product_in_review_dialog_message">This product is currently being reviewed. Products that are approved will appear on your post.</string>
     <string name="product_in_review_dialog_title">Product In Review</string>
     <string name="product_name_rejected_dialog_title">Product Name Not Approved</string>
@@ -3117,7 +3137,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="product_source_load_more">Load more catalogs</string>
     <string name="product_source_network_error">Please check your Internet connection and try again.</string>
     <string name="product_source_no_catalog">No Product Catalogs found</string>
-    <string name="product_source_selection_brands_tab_title">Brands</string>
+    <string name="product_source_selection_brands_tab_title">Partners</string>
     <string name="product_source_selection_catalogs_tab_title">Catalogs</string>
     <string name="product_source_selection_title">Choose a Product Source</string>
     <string name="product_sticker_added_with_branded_content_toast_content">"You can't add a product sticker to a branded content story."</string>
@@ -3150,12 +3170,21 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="profanity_filter">Comment Controls</string>
     <string name="profile_chaining_unit_action_button_text">Browse</string>
     <string name="profile_close_friends_description">Close Friends</string>
+    <string name="profile_completed_edit_label">You can edit anytime from your profile.</string>
+    <string name="profile_completed_label">Profile Completed</string>
     <string name="profile_description">Profile</string>
+    <string name="profile_exit_dialog_confirmation_subtitle">We can save your changes so you can finish later.</string>
     <string name="profile_grid_description">Grid View</string>
     <string name="profile_header_followed_by">Followed by</string>
     <string name="profile_header_followers">Followers</string>
     <string name="profile_header_following">Following</string>
     <item type="string" name="profile_header_name_spacing_multiplier">1.2</item>
+    <string name="profile_input_add_your_bio_subtitle">Say something about yourself by adding a bio to your profile. To link to another account use a @ or for hashtags use #.</string>
+    <string name="profile_input_add_your_bio_title">Add Your Bio</string>
+    <string name="profile_input_add_your_name_subtitle">"Add your name to your profile so people know it's you."</string>
+    <string name="profile_input_add_your_name_title">Add Your Name</string>
+    <string name="profile_input_field_bio_hint">Bio</string>
+    <string name="profile_input_field_name_hint">Full Name</string>
     <string name="profile_list_description">List View</string>
     <string name="profile_me_only_description">Archive</string>
     <string name="profile_message_user_button">Message</string>
@@ -3232,9 +3261,9 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="question_sticker_viewer_nux_tooltip_text">Send a response.</string>
     <string name="quick_replies">Quick Replies</string>
     <string name="quick_reply_description">Quick Reply</string>
-    <string name="quiz_sticker_first_answer_hint">Answer 1</string>
-    <string name="quiz_sticker_question_hint">Ask a question</string>
-    <string name="quiz_sticker_second_answer_hint">Answer 2</string>
+    <string name="quiz_sticker_first_answer_hint">Option 1</string>
+    <string name="quiz_sticker_question_hint">GUESS MY FAVORITE…</string>
+    <string name="quiz_sticker_second_answer_hint">Option 2</string>
     <string name="quiz_sticker_tray_description">Quiz Sticker</string>
     <string name="quiz_sticker_tray_label">QUIZ</string>
     <string name="rageshake_bug_report_option">"Something Isn't Working"</string>
@@ -3550,6 +3579,8 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="save_all">Save All</string>
     <string name="save_button_description">Save to Device</string>
     <string name="save_button_text">Save</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="save_changes_question">Save Changes?</string>
     <string name="save_collection_header_add_people">Add People</string>
     <string name="save_collection_header_created_by_other">created by %1$s</string>
     <string name="save_collection_header_created_by_you">created by you</string>
@@ -3638,6 +3669,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="search_for_a_user">Search for a user</string>
     <string name="search_for_blended">Search</string>
     <string name="search_for_x">Search for \"%1$s\"</string>
+    <string name="search_fundraiser">Search nonprofits</string>
     <string name="search_giphy">Search GIPHY</string>
     <string name="search_hashtags">Search for hashtags</string>
     <string name="search_hide">Hide</string>
@@ -3695,7 +3727,6 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="select_school_before_class_year_warning_title">No School Selected</string>
     <string name="select_your_country">Select your country</string>
     <string name="select_your_language">Select your language</string>
-    <string name="selected_catalog">Selected Catalog</string>
     <string name="selected_highlights_tab">Selected</string>
     <string name="selected_max_items">The limit is %1$d photos or videos.</string>
     <string name="self_profile_empty_body">"When you share photos and videos, they'll appear on your profile."</string>
@@ -3786,9 +3817,17 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="shop">Shop</string>
     <string name="shop_on_profile_row_continue_shopping">Continue Shopping</string>
     <string name="shopping">Shopping</string>
+    <string name="shopping_merchant_remove_tag_dialog_message">This will remove the product tag from this post. The post will no longer be visible in the shop on your profile.</string>
+    <string name="shopping_merchant_remove_tag_dialog_remove_button">Remove Tag</string>
+    <string name="shopping_merchant_remove_tag_dialog_title">Remove Product Tag?</string>
+    <string name="shopping_merchant_tag_action_sheet_header">%1$s from %2$s</string>
+    <string name="shopping_merchant_tag_action_sheet_remove_tag_action">Remove Tag From Post</string>
+    <string name="shopping_merchant_tag_action_sheet_view_product_action">View Product</string>
     <string name="shopping_on_profile_null_state_cta">Create Post</string>
     <string name="shopping_on_profile_null_state_message">Right now, only you can see this. Once you create one post with tagged products, people will see them here.</string>
     <string name="shopping_on_profile_null_state_title">Posts With Tagged Products Will Appear Here</string>
+    <string name="shopping_options_approved_partners">Approved Partner Accounts</string>
+    <string name="shopping_options_products">Products</string>
     <string name="shopping_posts">Shopping Posts</string>
     <string name="shopping_variant_value_selector_sold_out_label">%1$s (Sold Out)</string>
     <string name="shopping_viewer_add_posts">Add Posts</string>
@@ -4486,10 +4525,12 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="view_appeal">View Appeal</string>
     <string name="view_count_plural">%1$s views</string>
     <string name="view_count_singular">%1$s view</string>
+    <string name="view_directory">View School</string>
     <string name="view_features">View Features</string>
     <string name="view_hashtag_page">View Hashtag Page</string>
     <string name="view_hashtags">View hashtags</string>
     <string name="view_insights">View Insights</string>
+    <string name="view_likes">View Likes</string>
     <string name="view_location">View Location</string>
     <string name="view_mode_toggle">Toggle View Mode</string>
     <string name="view_more_information">View More Information</string>
@@ -4555,12 +4596,15 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="whitehat_settings_disable_liger_fizz">Do not use TLS 1.3</string>
     <string name="whitehat_settings_network">Network</string>
     <string name="wrong_datetime">Unable to sign in. Please check that the time and date on your device are correct.</string>
+    <string name="x_and_others">%1$s and others</string>
     <string name="x_and_y">%1$s and %2$s</string>
     <string name="x_more">+ %d more</string>
     <string name="x_options">%1$s Options</string>
     <string name="x_problems">%1$s seems to be having problems right now. Please try again in a few moments.</string>
     <string name="x_wants_to_follow_you">%1$s wants to follow you</string>
+    <string name="x_y_and_others">%1$s, %2$s and others</string>
     <string name="x_y_and_z">%1$s, %2$s and %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s and others</string>
     <string name="xshare_facebook_page_tooltip">Now you can also share this post to your Facebook Page.</string>
     <string name="yes">Yes</string>
     <string name="yes_im_sure">"Yes, I'm sure"</string>
@@ -4606,11 +4650,11 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="zero_video_setting_drawer_title_auto_play_video_settings">Play Videos and Stories Automatically?</string>
     <string name="zero_video_setting_drawer_title_photos_free">Photos are Free</string>
     <string name="zip_code">Zip Code</string>
-    <item type="string" name="APKTOOL_DUMMY_6f0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_9bd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b72">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b7d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b86">false</item>
-    <item type="string" name="APKTOOL_DUMMY_cdd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_cdf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_6f9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9ce">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b87">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b92">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cfa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cfc">false</item>
 </resources>

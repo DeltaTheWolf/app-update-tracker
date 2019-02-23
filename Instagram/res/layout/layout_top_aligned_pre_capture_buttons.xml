@@ -9,6 +9,7 @@
         <ViewStub android:id="@id/color_picker_stub" android:layout="@layout/text_to_cam_color_picker_button" style="@style/PreCaptureButtonTopAligned" />
         <include layout="@layout/layout_camera_button_add_asset" style="@style/PreCaptureButtonTopAligned" />
         <include layout="@layout/layout_camera_button_add_text" style="@style/PreCaptureButtonTopAligned" />
+        <include layout="@layout/layout_camera_button_canvas_add_gallery_media" style="@style/PreCaptureButtonTopAligned" />
         <include layout="@layout/layout_camera_capture_controls_ar_effect_button" style="@style/PreCaptureButtonTopAligned" />
         <ViewStub android:id="@id/music_snippet_button_stub" android:layout="@layout/layout_camera_button_music_snippet_button" style="@style/PreCaptureButtonTopAligned" />
         <ViewStub android:id="@id/music_asset_button_stub" android:layout="@layout/layout_camera_button_music_asset_button" style="@style/PreCaptureButtonTopAligned" />

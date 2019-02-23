@@ -7,6 +7,7 @@
     <ViewStub android:id="@id/iglive_capture_paused_stub" android:layout="@layout/layout_iglive_paused" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/layout_iglive_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
         <include layout="@layout/layout_iglive_label_row" />
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/white" android:ellipsize="end" android:id="@id/broadcast_caption" android:padding="@dimen/iglive_caption_broadcaster_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="8" android:fontFamily="sans-serif-medium" />
         <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
         <ImageView android:id="@id/audio_button" android:paddingTop="@dimen/iglive_row_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/microphone_on" android:hapticFeedbackEnabled="true" android:contentDescription="@string/audio_only" />
         <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />

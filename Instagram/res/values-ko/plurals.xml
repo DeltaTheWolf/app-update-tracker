@@ -63,11 +63,17 @@
     <plurals name="direct_notification_summary_more_messages">
         <item quantity="other">외 %1$d개 메시지</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">수락(%1$d개)</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">수락(%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">거절(%1$d개)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">삭제(%1$d개)</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">이 메시지 %1$d개가 삭제되며, 상대방이 더 이상 회원님에게 메시지를 보낼 수 없습니다.</item>
@@ -95,6 +101,9 @@
     </plurals>
     <plurals name="hashtag_posts">
         <item quantity="other">게시물 %1$s개</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">해시태그 %1$d개</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">게시물 &lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b>개</item>

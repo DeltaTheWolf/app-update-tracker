@@ -16,7 +16,7 @@
         <item quantity="other">删除%1$d个视频</item>
     </plurals>
     <plurals name="close_friends_button">
-        <item quantity="other">%1$d位特别关注好友</item>
+        <item quantity="other">%1$d位密友</item>
     </plurals>
     <plurals name="comment_like_count">
         <item quantity="other">%1$d次赞</item>
@@ -63,11 +63,17 @@
     <plurals name="direct_notification_summary_more_messages">
         <item quantity="other">其他%1$d条消息</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">接受 (%1$d)</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">允许 (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">拒绝 (%1$d)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">删除 (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">这些%1$d消息将被移除，发送者将无法再向你发消息。</item>
@@ -95,6 +101,9 @@
     </plurals>
     <plurals name="hashtag_posts">
         <item quantity="other">%1$s篇帖子</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d个话题标签</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b>篇帖子</item>

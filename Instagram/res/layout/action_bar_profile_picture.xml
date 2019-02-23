@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/profile_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" app:strokeColor="@color/black" app:strokeWidth="@dimen/shoppable_media_feed_action_bar_profile_pic_stroke_width" />
+</FrameLayout>

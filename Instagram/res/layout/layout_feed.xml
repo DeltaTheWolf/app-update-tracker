@@ -14,5 +14,5 @@
     <ViewStub android:layout_gravity="end" android:id="@id/fast_scroll_container" android:layout="@layout/layout_fast_scroll" android:layout_width="wrap_content" android:layout_height="fill_parent" />
     <ViewStub android:layout_gravity="bottom" android:id="@id/ar_effect_notification_container" android:layout="@layout/ar_effect_notification" android:layout_width="fill_parent" android:layout_height="@dimen/ar_effect_notification_container_height" />
     <ViewStub android:id="@id/nametag_result_card_stub" android:layout="@layout/nametag_result_card_black_bg" android:inflatedId="@id/nametag_outer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.instagram.feed.ui.views.CabooseLayout android:layout_gravity="bottom" android:id="@id/feed_list_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.instagram.feed.ui.views.CabooseLayout android:layout_gravity="bottom" android:id="@id/feed_list_footer" android:layout_width="fill_parent" android:layout_height="0.0dip" />
 </FrameLayout>

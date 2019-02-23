@@ -227,7 +227,6 @@
     <string name="album_videos_audio_unmute">Zvuk celého videa je zapnutý</string>
     <string name="all">Všetky</string>
     <string name="all_suggestions_header">Všetky návrhy</string>
-    <string name="allow">Povoliť</string>
     <string name="allow_business_partner_promote_description">Toto umožňuje vášmu označenému obchodnému partnerovi propagovať váš príspevok ako reklamu na Instagrame. Existujú isté obmedzenia úprav daného príspevku počas propagácie a po nej. %1$s.</string>
     <string name="allow_business_partner_to_promote">Povoliť obchodnému partnerovi propagovať</string>
     <string name="allow_permission">Povoliť</string>
@@ -398,11 +397,9 @@
     <string name="border">Rám</string>
     <string name="bottom_sheet_music_player_pause_button_description">Pozastaviť</string>
     <string name="bottom_sheet_music_player_play_button_description">Prehrať</string>
-    <string name="brand">Značka</string>
-    <string name="brand_change_disabled_dialog_message">Môžete označovať produkty iba od jednej značky.</string>
-    <string name="brand_change_disabled_dialog_title">Povolené sú len označenia produktov od značky %1$s</string>
+    <string name="brand_change_disabled_dialog_message">Môžete označovať produkty iba od jedného partnera naraz.</string>
+    <string name="brand_change_disabled_dialog_title">Označili ste produkty od značky %1$s</string>
     <string name="brand_poll_survey_title_content">má záujem o vašu odozvu</string>
-    <string name="brand_selection_title">Vyberte značku</string>
     <string name="branded_content">Značkový materiál</string>
     <string name="branded_content_approvals">Schválenia značkového materiálu</string>
     <string name="branded_content_tagging_upsell_tooltip_text">Tu môžete označiť svojho obchodného partnera</string>
@@ -550,6 +547,9 @@
     <string name="cant_add_partner_title">Partnera nie je možné pridať</string>
     <string name="canvas_dial_element_poll_label">Anketa</string>
     <string name="canvas_dial_element_questions_label">Otázky</string>
+    <string name="canvas_mode_format_picker_label">VYTVORIŤ</string>
+    <string name="canvas_question_sticker_book_rec_hint">Odporúčania kníh?</string>
+    <string name="canvas_question_sticker_movie_rec_hint">Odporúčania filmov?</string>
     <string name="caption_ellipsis_less">menej</string>
     <string name="caption_ellipsis_more">… viac</string>
     <string name="caption_more">viac</string>
@@ -697,7 +697,6 @@
     <string name="comment_count_singular">%1$s komentár</string>
     <string name="comment_ellipsis_less">menej</string>
     <string name="comment_hint">Pridať komentár...</string>
-    <string name="comment_offensive_alert_message">Iným ľuďom sa to môže zdať nezdvorilé</string>
     <string name="comment_undo_button">Odvolať</string>
     <string name="commenting_disabled_hint">Komentáre k tomuto príspevku boli obmedzené.</string>
     <string name="commenting_limited_to_followers">Komentáre môžu pridávať iba vaši sledovatelia. Komentáre sú viditeľné pre všetkých.</string>
@@ -724,6 +723,7 @@
     <string name="common_new">Nové</string>
     <string name="common_open_on_phone">Otvoriť v telefóne</string>
     <string name="compare">Porovnajte</string>
+    <string name="complete_profile">Vyplňte svoj profil</string>
     <string name="completion_screen_body">Už ste si skontrolovali naše aktualizované Zásady používania údajov a súhlasili ste s našimi novými Podmienkami.</string>
     <string name="completion_screen_title">Hotovo!</string>
     <string name="confirm">Potvrdiť</string>
@@ -1134,7 +1134,6 @@
     <string name="direct_group_name">Názov skupiny</string>
     <string name="direct_hashtag_story_share_recipient_info">Poslal/-a príbeh %1$s</string>
     <string name="direct_hashtag_story_share_sender_info">Poslali ste príbeh %1$s</string>
-    <string name="direct_header_groups">Skupiny</string>
     <string name="direct_igtv_share_generic_recipient_info">Používateľ poslal video</string>
     <string name="direct_igtv_share_generic_sender_info">Poslali ste video</string>
     <string name="direct_inbox_empty_view_back_to_inbox">Späť na Prijaté správy</string>
@@ -1207,17 +1206,21 @@
     <string name="direct_pending_instructions_header_group">Používateľ ^1 vás chce pridať do tejto skupiny.</string>
     <string name="direct_pending_instructions_header_one_on_one">Používateľ ^1 vám chce poslať správu.</string>
     <string name="direct_pending_instructions_unknown_sender">neznámy</string>
+    <string name="direct_permission_edit">Upraviť</string>
     <string name="direct_permission_select">Vybrať</string>
+    <string name="direct_permissions_choice_accept">Prijať</string>
     <string name="direct_permissions_choice_allow">Povoliť</string>
     <string name="direct_permissions_choice_allow_all_explanation">Všetci títo ľudia vám v budúcnosti budú môcť posielať správy.</string>
     <string name="direct_permissions_choice_allow_blended_inbox">Odpovedať</string>
     <string name="direct_permissions_choice_allow_question_mark">Povoliť?</string>
+    <string name="direct_permissions_choice_block">Zablokovať</string>
     <string name="direct_permissions_choice_decline">Zamietnuť</string>
     <string name="direct_permissions_choice_decline_all">Zamietnuť všetky</string>
     <string name="direct_permissions_choice_decline_all_explanation">Nikto z týchto ľudí vám v budúcnosti nebude môcť posielať správy.</string>
     <string name="direct_permissions_choice_decline_all_question_mark">Zamietnuť všetky?</string>
     <string name="direct_permissions_choice_decline_blended_inbox">Presunúť medzi žiadosti</string>
     <string name="direct_permissions_choice_decline_question_mark">Odmietnuť?</string>
+    <string name="direct_permissions_choice_delete_all">Odstrániť všetko</string>
     <string name="direct_permissions_decline_99_plus_messages">Týchto vyše 99 správ bude odstránených a ich odosielatelia vám už nebudú môcť poslať správu.</string>
     <string name="direct_permissions_decline_block_info_1">Zamietnutie znamená, že táto správa sa odstráni a používateľ %1$s vám už nebude môcť posielať správy.</string>
     <string name="direct_persisted_reel_label">Toto môžete vidieť iba vy.</string>
@@ -1352,6 +1355,7 @@
     <string name="direct_timestamp_today">Dnes</string>
     <string name="direct_timestamp_yesterday">Včera</string>
     <string name="direct_ummute_video_call_notifications">Zrušiť stlmenie videočetov</string>
+    <string name="direct_unblock_account">Odblokovať účet</string>
     <string name="direct_unblock_user">Odblokovať používateľa</string>
     <string name="direct_unflag">Zrušiť označenie</string>
     <string name="direct_unknown_error">Sieťová požiadavka bola neúspešná. Skúste to neskôr.</string>
@@ -1412,7 +1416,6 @@
     <string name="direct_weak_internet_error">Nepodarilo sa poslať sieťovú požiadavku. Skúste to znova, keď sa zlepší pripojenie.</string>
     <string name="direct_x_message_requests_more_than_99_caps">99+ žiadostí</string>
     <string name="directions">Trasy</string>
-    <string name="directshare_hide">Skryť</string>
     <string name="directshare_metadata_to">Príjemca:</string>
     <string name="disable_2fac_dialog_body">Vypnutie dvojstupňového overenia znamená, že pri prihlasovaní sa nebudete musieť zadávať bezpečnostný kód.</string>
     <string name="disable_2fac_dialog_confirm_button">Vypnúť</string>
@@ -1571,7 +1574,8 @@
     <string name="facebook_sharing_dialog_message_turn_on_single_share">Zdieľať raz</string>
     <string name="facebook_sharing_dialog_message_turn_on_single_share_from_single_share_off">Zdieľať na Facebooku raz</string>
     <string name="facebook_sharing_dialog_title">Zdieľať na Facebooku</string>
-    <string name="faces">Tváre</string>
+    <string name="faces_subtitle">\#selfie #me #priatelia</string>
+    <string name="faces_title">Tváre</string>
     <string name="fade">Vyblednutie</string>
     <string name="fail_confirm_email">Vašu e-mailovú adresu momentálne nemôžeme potvrdiť. Skúste neskôr.</string>
     <string name="fail_send_confirm_email">Momentálne vám nemôžeme poslať potvrdzovací e-mail. Skúste neskôr.</string>
@@ -1685,6 +1689,7 @@
     <string name="following">sledované</string>
     <string name="following_button_follow">Sledovať</string>
     <string name="following_button_follow_back">Sledovať recipročne</string>
+    <string name="following_button_follow_back_voice">Tlačidlo Sledovať recipročne</string>
     <string name="following_button_follow_voice">Tlačidlo sledovať používateľa %1$s</string>
     <string name="following_button_following">Sledované</string>
     <string name="following_button_following_voice">Tlačidlo Sledujete používateľa %1$s</string>
@@ -1734,6 +1739,8 @@
     <string name="full_name">Celé meno</string>
     <string name="full_name_and_password_title">Meno a heslo</string>
     <string name="full_terms_rw">úplné znenie Podmienok</string>
+    <string name="fundraiser_sticker_tray_description">Nálepka Zbierka</string>
+    <string name="fundraiser_sticker_tray_label">DARCOVSKÝ PRÍSPEVOK</string>
     <string name="gallery">Galéria</string>
     <string name="gallery_album_thumbnail">Miniatúra albumu</string>
     <string name="gallery_description">Galéria</string>
@@ -1798,7 +1805,7 @@
     <string name="hashtag_location_most_recent_description">Najnovšie príspevky</string>
     <string name="hashtag_sticker_description">Nálepka hashtagu</string>
     <string name="hashtags">Hashtagy</string>
-    <string name="hashtags_link_row_title">Hashtagy</string>
+    <string name="hashtags_link_row_title_no_quantity">Hashtagy</string>
     <string name="header_icon">Ikona záhlavia</string>
     <string name="help_center">Centrum pomoci</string>
     <string name="help_center_text_link">Ak potrebujete ďalšiu pomoc, navštívte %1$s.</string>
@@ -1865,6 +1872,8 @@
     <string name="ig_time_picker_pm">odp.</string>
     <string name="igds_reply_button_label">Odpovedať</string>
     <string name="igds_view_reply_button_label">Zobraziť odpoveď</string>
+    <string name="iglive_caption_hint">Pridajte názov pre svojich divákov...</string>
+    <string name="iglive_captioned_notification">%1$s je naživo: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">Boli ste v živom videu používateľa %1$s.</string>
     <string name="iglive_cobroadcast_end_title">Ďakujeme za vašu účasť!</string>
     <string name="iglive_discard">Zahodiť</string>
@@ -2026,7 +2035,6 @@
     <string name="interactivity_ama_broadcaster_question_sheet_header_live">Vyberte odpoveď, ktorá sa zobrazí na obrazovke, a podeľte sa o ňu s divákmi.</string>
     <string name="interactivity_ama_broadcaster_question_tooltip">Spomeňte behom živého vysielania nálepky otázok.</string>
     <string name="interactivity_ama_card_question_story_header">Odpoveď na nálepku otázky</string>
-    <string name="interactivity_ama_viewer_question_submission_composer_title">Položte %1$s otázku</string>
     <string name="interactivity_ama_viewer_question_submission_input_hint">Položte otázku…</string>
     <string name="interest_recommendations_tombstone_thanks">Návrhy hashtagov boli skryté.</string>
     <string name="interest_recommendations_tombstone_thanks_feedback">Odteraz vám budeme zobrazovať menej takýchto odporúčaní.</string>
@@ -2349,6 +2357,7 @@
     <string name="microphone_permission_name">Mikrofón</string>
     <string name="minutes_abbreviation_with_placeholder">%1$d m</string>
     <string name="minutes_ago_abbreviation">Pred %1$d min</string>
+    <string name="moment_subtitle_suffix">• #nostalgia</string>
     <string name="more">Viac</string>
     <string name="more_accounts_like_this">Ďalšie podobné účty</string>
     <string name="more_available">Zobraziť všetko</string>
@@ -2470,6 +2479,7 @@
     <string name="new_filters_nux">Nové</string>
     <string name="new_follower">Nový sledovateľ</string>
     <string name="new_message">Nová správa</string>
+    <string name="new_messages">Nové správy</string>
     <string name="new_password">Nové heslo</string>
     <string name="new_password_again">Nové heslo, znova</string>
     <string name="new_photo">Nová profilová fotka</string>
@@ -2593,6 +2603,7 @@
     <string name="omnibox_title">Zadajte e-mailovú adresu alebo telefónne číslo</string>
     <string name="on_this_day">V tento deň</string>
     <string name="on_this_day_sticker_text">V TENTO DEŇ</string>
+    <string name="on_this_day_subtitle">\#vtentoden #spomienky</string>
     <string name="on_this_day_title">V tento deň</string>
     <string name="one_hour">1 hodina</string>
     <string name="one_tap_login_text_link_text">Prihlásiť sa pomocou iného účtu</string>
@@ -2824,7 +2835,6 @@
     <string name="product_appeals_request_review_header">Požiadať o ďalšiu kontrolu</string>
     <string name="product_catalog_selection_footer">Ak sa vám nezobrazujú produkty, ktoré tu potrebujete mať, kontaktujte administrátora stránky alebo skontrolujte svoje povolenia v Business Manageri</string>
     <string name="product_catalog_selection_invalid_footer">Nie je vybraný žiadny platný katalóg. Skúste vybrať nový.</string>
-    <string name="product_catalog_selection_title">Produkty</string>
     <string name="product_in_review_dialog_message">Tento produkt sa momentálne kontroluje. Produkty, ktoré sú schválené, sa zobrazia vo vašom príspevku.</string>
     <string name="product_in_review_dialog_title">Produkt sa kontroluje</string>
     <string name="product_name_rejected_dialog_title">Názov produktu nebol schválený</string>
@@ -2844,7 +2854,7 @@
     <string name="product_source_load_more">Načítať ďalšie katalógy</string>
     <string name="product_source_network_error">Skontrolujte si internetové pripojenie a skúste to znova.</string>
     <string name="product_source_no_catalog">Nenašli sa žiadne katalógy produktov</string>
-    <string name="product_source_selection_brands_tab_title">Značky</string>
+    <string name="product_source_selection_brands_tab_title">Partneri</string>
     <string name="product_source_selection_catalogs_tab_title">Katalógy</string>
     <string name="product_source_selection_title">Vyberte zdroj produktu</string>
     <string name="product_sticker_added_with_branded_content_toast_content">Nemôžete pridať nálepku produktu do príbehu so značkovým materiálom.</string>
@@ -2877,11 +2887,18 @@
     <string name="profanity_filter">Nastavenia komentovania</string>
     <string name="profile_chaining_unit_action_button_text">Prezerať</string>
     <string name="profile_close_friends_description">Blízki priatelia</string>
+    <string name="profile_completed_label">Profil vyplnený</string>
     <string name="profile_description">Profil</string>
+    <string name="profile_exit_dialog_confirmation_subtitle">Môžeme uložiť vaše zmeny, aby ste mohli pokračovať neskôr.</string>
     <string name="profile_grid_description">Mriežkové zobrazenie</string>
     <string name="profile_header_followed_by">Sledovatelia:</string>
     <string name="profile_header_followers">Sledovatelia</string>
     <string name="profile_header_following">Sleduje</string>
+    <string name="profile_input_add_your_bio_title">Pridajte svoj životopis</string>
+    <string name="profile_input_add_your_name_subtitle">Pridajte si do profilu svoje meno, aby ľudia vedeli, že ste to vy.</string>
+    <string name="profile_input_add_your_name_title">Zadajte svoje meno</string>
+    <string name="profile_input_field_bio_hint">Životopis</string>
+    <string name="profile_input_field_name_hint">Celé meno</string>
     <string name="profile_list_description">Zobrazenie zoznamu</string>
     <string name="profile_me_only_description">Archív</string>
     <string name="profile_message_user_button">Správa</string>
@@ -2955,9 +2972,9 @@
     <string name="question_sticker_viewer_nux_tooltip_text">Pošlite odpoveď.</string>
     <string name="quick_replies">Rýchle odpovede</string>
     <string name="quick_reply_description">Rýchla odpoveď</string>
-    <string name="quiz_sticker_first_answer_hint">Odpoveď 1</string>
-    <string name="quiz_sticker_question_hint">Spýtajte sa</string>
-    <string name="quiz_sticker_second_answer_hint">Odpoveď 2</string>
+    <string name="quiz_sticker_first_answer_hint">Možnosť 1</string>
+    <string name="quiz_sticker_question_hint">UHÁDNITE MOJE OBĽÚBENÉ...</string>
+    <string name="quiz_sticker_second_answer_hint">Možnosť 2</string>
     <string name="quiz_sticker_tray_description">Nálepka kvízu</string>
     <string name="quiz_sticker_tray_label">KVÍZ</string>
     <string name="rageshake_bug_report_option">Vyskytol sa nejaký problém</string>
@@ -3259,6 +3276,8 @@
     <string name="save_all">Uložiť všetky</string>
     <string name="save_button_description">Uložiť v zariadení</string>
     <string name="save_button_text">Uložiť</string>
+    <string name="save_changes">Uložiť zmeny</string>
+    <string name="save_changes_question">Uložiť zmeny?</string>
     <string name="save_collection_header_add_people">Pridať ľudí</string>
     <string name="save_collection_header_created_by_other">autor: %1$s</string>
     <string name="save_collection_header_created_by_you">autorom ste vy</string>
@@ -3344,6 +3363,7 @@
     <string name="search_for_a_user">Hľadať používateľa</string>
     <string name="search_for_blended">Hľadať</string>
     <string name="search_for_x">Hľadať „%1$s“</string>
+    <string name="search_fundraiser">Hľadať neziskové organizácie</string>
     <string name="search_giphy">Hľadať na GIPHY</string>
     <string name="search_hashtags">Hľadať hashtagy</string>
     <string name="search_hide">Skryť</string>
@@ -3400,7 +3420,6 @@
     <string name="select_school_before_class_year_warning_title">Nie je vybraná žiadna škola</string>
     <string name="select_your_country">Vyberte svoju krajinu</string>
     <string name="select_your_language">Vyberte jazyk</string>
-    <string name="selected_catalog">Vybraný katalóg</string>
     <string name="selected_highlights_tab">Vybrané</string>
     <string name="selected_max_items">Maximálny počet fotiek a videí je %1$d.</string>
     <string name="self_profile_empty_body">Keď zdieľate fotky a videá, zobrazia sa vo vašom profile.</string>
@@ -3480,6 +3499,12 @@
     <string name="shop">Nakupovanie</string>
     <string name="shop_on_profile_row_continue_shopping">Pokračovať v nakupovaní</string>
     <string name="shopping">Nakupovanie</string>
+    <string name="shopping_merchant_remove_tag_dialog_message">Týmto odstránite označenie produktu z príspevku. Daný príspevok už nebude viditeľný v obchode vo vašom profile.</string>
+    <string name="shopping_merchant_remove_tag_dialog_remove_button">Odstrániť označenie</string>
+    <string name="shopping_merchant_remove_tag_dialog_title">Odstrániť označenie produktu?</string>
+    <string name="shopping_merchant_tag_action_sheet_header">%1$s od predajcu %2$s</string>
+    <string name="shopping_merchant_tag_action_sheet_remove_tag_action">Odstrániť označenie z príspevku</string>
+    <string name="shopping_merchant_tag_action_sheet_view_product_action">Zobraziť produkt</string>
     <string name="shopping_on_profile_null_state_cta">Vytvoriť príspevok</string>
     <string name="shopping_on_profile_null_state_message">Momentálne môžete toto vidieť iba vy. Keď vytvoríte jeden príspevok s označenými produktmi, ľuďom sa tu budú zobrazovať.</string>
     <string name="shopping_on_profile_null_state_title">Tu sa zobrazia príspevky s označenými produktmi</string>
@@ -4168,10 +4193,12 @@
     <string name="view_appeal">Zobraziť odvolanie</string>
     <string name="view_count_plural">%1$s pozretí</string>
     <string name="view_count_singular">%1$s pozretie</string>
+    <string name="view_directory">Zobraziť školu</string>
     <string name="view_features">Zobraziť funkcie</string>
     <string name="view_hashtag_page">Zobraziť stránku hashtagu</string>
     <string name="view_hashtags">Zobraziť hashtagy</string>
     <string name="view_insights">Zobraziť štatistiky</string>
+    <string name="view_likes">Zobraziť, komu sa to páči</string>
     <string name="view_location">Zobraziť polohu</string>
     <string name="view_mode_toggle">Prepnúť režim zobrazenia</string>
     <string name="view_more_information">Zobraziť ďalšie informácie</string>
@@ -4230,12 +4257,15 @@
     <string name="welcome_to_instagram_business">Vitajte, %1$s</string>
     <string name="welcome_to_instagram_business_tools">Vítajú vás firemné nástroje pre Instagram</string>
     <string name="wrong_datetime">Nedá sa prihlásiť. Skontrolujte, či máte v zariadení nastavený správny dátum a čas.</string>
+    <string name="x_and_others">%1$s a ďalší</string>
     <string name="x_and_y">%1$s a %2$s</string>
     <string name="x_more">+ %1$d ďalších</string>
     <string name="x_options">Možnosti pre %1$s</string>
     <string name="x_problems">Zdá sa, že %1$s má teraz problémy. Skúste to neskôr.</string>
     <string name="x_wants_to_follow_you">%1$s vás chce sledovať</string>
+    <string name="x_y_and_others">%1$s, %2$s a ďalší</string>
     <string name="x_y_and_z">%1$s, %2$s a %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s a ďalší</string>
     <string name="xshare_facebook_page_tooltip">Tento príspevok môžete odteraz zdieľať aj na svojej stránke na Facebooku.</string>
     <string name="yes">Áno</string>
     <string name="yes_im_sure">Áno, potvrdzujem</string>

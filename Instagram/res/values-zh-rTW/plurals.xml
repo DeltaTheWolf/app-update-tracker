@@ -63,11 +63,17 @@
     <plurals name="direct_notification_summary_more_messages">
         <item quantity="other">還有%1$d則訊息</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">接受（%1$d則）</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">允許（%1$d）</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">拒絕（%1$d）</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">刪除（%1$d則）</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">這%1$d則訊息將移除，而且傳送者將無法再傳送訊息給你。</item>
@@ -95,6 +101,9 @@
     </plurals>
     <plurals name="hashtag_posts">
         <item quantity="other">%1$s則貼文</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d個主題標籤</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b>則貼文</item>

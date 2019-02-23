@@ -70,11 +70,17 @@
         <item quantity="one">Ще %1$d повідомлення</item>
         <item quantity="few">Ще %1$d повідомлення</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">Прийняти (%1$d)</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">Дозволити (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">Відхилити (%1$d)</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">Видалити (%1$d)</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">Ці повідомлення (%1$d) буде видалено, а відправники більше не зможуть надсилати вам повідомлення.</item>
@@ -112,6 +118,11 @@
         <item quantity="other">%1$s дописів</item>
         <item quantity="one">%1$s допис</item>
         <item quantity="few">%1$s дописи</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d хештегів</item>
+        <item quantity="one">%1$d хештег</item>
+        <item quantity="few">%1$d хештеги</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> дописів</item>

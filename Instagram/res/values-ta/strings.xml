@@ -45,7 +45,6 @@
     <string name="ads_options">விளம்பரங்கள்</string>
     <string name="agree">ஏற்கிறேன்</string>
     <string name="album_thumbnails">ஆல்பத்தின் சிறுபட முன்னோட்டம்</string>
-    <string name="allow">அனுமதி</string>
     <string name="allow_permission">அனுமதி</string>
     <string name="allow_resharing_to_stories_explanation">பிறர் அவர்கள் கதைகளில் உங்கள் வழங்கல் இடுகை மற்றும் IGTV வீடியோக்களை சேர்க்க முடியும். உங்கள் இடுகையுடன் உங்கள் பயனர் பெயர் எப்போதும் தோன்றும்.</string>
     <string name="allow_resharing_to_stories_explanation_shopping_enabled">மக்கள் அவர்களின் கதைகளில் உங்களின் இடுகைகள், IGTV வீடியோக்கள் மற்றும் பொருட்களைச் சேர்க்கலாம்.</string>
@@ -247,6 +246,7 @@
     <string name="followers_title">பின்தொடர்பவர்கள்</string>
     <string name="following_button_follow">பின்தொடர்</string>
     <string name="following_button_follow_back">பின்தொடர்பவர்களைப் பின்தொடரவும்</string>
+    <string name="following_button_follow_back_voice">பின்தொடர் பொத்தான்</string>
     <string name="following_button_follow_voice">%1$s ஐப் பின்தொடர்வதற்கான பொத்தான்</string>
     <string name="following_button_following">பின்தொடர்வது</string>
     <string name="following_button_following_voice">%1$s பொத்தானை பின்தொடர்கிறது</string>
@@ -414,6 +414,7 @@
     <string name="network_error">அறியப்படாத நெட்வொர்க் பிழை ஏற்பட்டது.</string>
     <string name="new_collection">புதிய சேகரிப்பு</string>
     <string name="new_message">புதிய செய்தி</string>
+    <string name="new_messages">புதிய செய்திகள்</string>
     <string name="new_password">புதிய கடவுச்சொல்</string>
     <string name="new_password_again">புதிய கடவுச்சொல், மீண்டும் உள்ளிடவும்</string>
     <string name="new_profile_photo">புதிய சுயவிவரப் படம்</string>
@@ -567,7 +568,9 @@
     <string name="review_request">கோரிக்கையைக் காட்டு</string>
     <string name="save">சேமி</string>
     <string name="save_all">அனைத்தையும் சேமி</string>
-    <string name="save_collection_header_add_people">பிறரைச் சேர்க்கவும்</string>
+    <string name="save_changes">மாற்றங்களைச் சேமி</string>
+    <string name="save_changes_question">மாற்றங்களை சேமிக்கவா?</string>
+    <string name="save_collection_header_add_people">நபர்களைச் சேர்க்கவும்</string>
     <string name="save_collection_header_created_by_other">%1$s உருவாக்கினார்</string>
     <string name="save_collection_header_created_by_you">உங்களால் உருவாக்கப்பட்டது</string>
     <string name="save_collection_pivots_cta">இதைப் போல மேலும் காட்டு</string>
@@ -584,7 +587,7 @@
     <string name="save_home_collection_feed_collection_name_hint">சேகரிப்புப் பெயர்</string>
     <string name="save_home_collection_feed_create_collection">சேகரிப்பை உருவாக்கு</string>
     <string name="save_home_collection_feed_delete_collection">சேகரிப்பை நீக்கு</string>
-    <string name="save_home_collection_feed_delete_collection_confirmation_message">இந்தச் சேகரிப்பை நீங்கள் நீக்கும் போது, படங்கள் மற்றும் வீடியோக்கள் சேமிக்கப்படும்.</string>
+    <string name="save_home_collection_feed_delete_collection_confirmation_message">இந்தச் சேகரிப்பை நீங்கள் நீக்கும் போது, படங்கள் மற்றும் வீடியோக்கள் இன்னுமும் சேமிக்கப்படும்.</string>
     <string name="save_home_collection_feed_delete_collection_confirmation_title">சேகரிப்பை நீக்கவா?</string>
     <string name="save_home_collection_feed_edit_collection">சேகரிப்பைத் திருத்து</string>
     <string name="save_home_collection_feed_num_selected">%1$d தேர்ந்தெடுக்கப்பட்டன</string>
@@ -756,10 +759,13 @@
     <string name="waiting_for_approval">அனுமதிக்காகக் காத்திருகிறது</string>
     <string name="web_error">மன்னிக்கவும், அந்த இணையதளத்தை எங்களால் ஏற்ற முடியவில்லை.</string>
     <string name="weeks_abbreviation_with_placeholder">%1$dவா</string>
+    <string name="x_and_others">%1$s மற்றும் பிறர்</string>
     <string name="x_and_y">%1$s மற்றும் %2$s</string>
     <string name="x_options">%1$s விருப்பங்கள்</string>
     <string name="x_problems">தற்போது %1$s இல் சிக்கல்கள் இருப்பது போல் தெரிகிறது. சிறிது நேரத்தில் மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="x_y_and_others">%1$s, %2$s மற்றும் பிறர்</string>
     <string name="x_y_and_z">%1$s, %2$s மற்றும் %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s மற்றும் பிறர்</string>
     <string name="xshare_facebook_page_tooltip">இப்போது இந்த இடுகையை உங்கள் Facebook பக்கத்திலும் பகிரலாம்.</string>
     <string name="yes">ஆம்</string>
     <string name="yes_im_sure">ஆம், உறுதியாக உள்ளேன்</string>

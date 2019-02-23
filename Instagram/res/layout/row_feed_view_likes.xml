@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/insights_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:gravity="center" android:layout_gravity="center" android:id="@id/view_likes" android:paddingLeft="@dimen/row_padding" android:paddingTop="13.0dip" android:paddingRight="@dimen/row_padding" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_likes" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" layout="@layout/row_divider" />
+</LinearLayout>

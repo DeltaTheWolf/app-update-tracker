@@ -94,6 +94,10 @@
         <item quantity="two">%1$d رسالتان إضافيتان</item>
         <item quantity="few">%1$d رسائل إضافية</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">قبول (%1$d)</item>
+        <item quantity="one">قبول</item>
+    </plurals>
     <plurals name="direct_permissions_choice_allow">
         <item quantity="other">السماح (%1$d)</item>
         <item quantity="one">سماح</item>
@@ -101,6 +105,10 @@
     <plurals name="direct_permissions_choice_decline">
         <item quantity="other">رفض (%1$d)</item>
         <item quantity="one">رفض</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">حذف (%1$d)</item>
+        <item quantity="one">حذف</item>
     </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">ستتم إزالة هذه الرسائل (%1$d) ولن يتمكن المرسلون من مراسلتك مرة أخرى.</item>
@@ -151,6 +159,12 @@
         <item quantity="two">منشوران</item>
         <item quantity="few">%1$s منشورات</item>
         <item quantity="many">%1$s منشورًا</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d علامة هاشتاج</item>
+        <item quantity="one">علامة هاشتاج واحدة</item>
+        <item quantity="two">علامتا هاشتاج</item>
+        <item quantity="few">%1$d علامات هاشتاج</item>
     </plurals>
     <plurals name="header_hashtag_posts_formatted">
         <item quantity="other">&lt;b>&lt;font color=\\\"#262626\\\">%1$s&lt;/font>&lt;/b> من المنشورات</item>

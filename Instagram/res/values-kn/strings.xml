@@ -56,7 +56,6 @@
     <string name="ads_options">ಜಾಹೀರಾತು</string>
     <string name="agree">ಸಮ್ಮತಿಸು</string>
     <string name="album_thumbnails">ಆಲ್ಬಮ್ ಥಂಬ್‌ನೇಲ್ ಪೂರ್ವವೀಕ್ಷಣೆ</string>
-    <string name="allow">ಅನುಮತಿಸು</string>
     <string name="allow_permission">ಅನುಮತಿಸು</string>
     <string name="allow_resharing_to_stories_explanation">ಇತರ ಜನರು ನಿಮ್ಮ ಫೀಡ್ ಪೋಸ್ಟ್‌ಗಳು ಮತ್ತು IGTV ವೀಡಿಯೊಗಳನ್ನು ಅವರ ಕಥೆಗಳಿಗೆ ಸೇರಿಸಬಹುದು. ನಿಮ್ಮ ಬಳಕೆದಾರಹೆಸರು ಯಾವಾಗಲೂ ನಿಮ್ಮ ಪೋಸ್ಟ್‌ನೊಂದಿಗೆ ತೋರಿಸುತ್ತದೆ.</string>
     <string name="allow_resharing_to_stories_explanation_shopping_enabled">ನಿಮ್ಮ ಪೋಸ್ಟ್‌ಗಳಿಗೆ IGTV ವೀಡಿಯೊಗಳನ್ನು ಮತ್ತು ಉತ್ಪನ್ನಗಳನ್ನು ಜನರು ಅವರ ಸುದ್ದಿಗಳಿಗೆ ಸೇರಿಸಲು ಅನುಮತಿಸಿ.</string>
@@ -260,6 +259,7 @@
     <string name="followers_title">ಅನುಸರಣೆದಾರರು</string>
     <string name="following_button_follow">ಹಿಂಬಾಲಿಸಿರಿ</string>
     <string name="following_button_follow_back">ಮತ್ತೆ ಅನುಸರಿಸಿ</string>
+    <string name="following_button_follow_back_voice">ಮರಳಿ ಅನುಸರಿಸುವ ಬಟನ್</string>
     <string name="following_button_follow_voice">%1$s ಬಟನ್ ಅನ್ನು ಅನುಸರಿಸಿ</string>
     <string name="following_button_following">ಅನುಸರಿಸಲಾಗುತ್ತಿದೆ</string>
     <string name="following_button_following_voice">%1$s ಬಟನ್ ಅನ್ನು ಅನುಸರಿಸಲಾಗುತ್ತಿದೆ</string>
@@ -425,6 +425,7 @@
     <string name="network_error">ಒಂದು ಅಜ್ಞಾತವಾದ ನೆಟ್‌ವರ್ಕ್ ದೋಷ ಕಂಡುಬಂದಿದೆ.</string>
     <string name="new_collection">ಹೊಸ ಸಂಗ್ರಹಣೆ</string>
     <string name="new_message">ಹೊಸ ಸಂದೇಶ</string>
+    <string name="new_messages">ಹೊಸ ಸಂದೇಶಗಳು</string>
     <string name="new_password">ಹೊಸ ಪಾಸ್‌ವರ್ಡ್</string>
     <string name="new_password_again">ಹೊಸ ಪಾಸ್‌ವರ್ಡ್, ಮತ್ತೆ</string>
     <string name="new_profile_photo">ಹೊಸ ಪ್ರೊಫೈಲ್ ಫೋಟೋ</string>
@@ -580,6 +581,9 @@
     <string name="review_request">ವಿನಂತಿಯನ್ನು ವೀಕ್ಷಿಸು</string>
     <string name="save">ಉಳಿಸು</string>
     <string name="save_all">ಎಲ್ಲವನ್ನೂ ಉಳಿಸಿ</string>
+    <string name="save_changes">ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು</string>
+    <string name="save_changes_question">ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸುವುದೇ?</string>
+    <string name="save_collection_header_add_people">ಜನರನ್ನು ಸೇರಿಸಿ</string>
     <string name="save_collection_header_created_by_other">%1$s ಅವರು ರಚಿಸಿದ್ದಾರೆ</string>
     <string name="save_collection_header_created_by_you">ನಿಮ್ಮಿಂದ ರಚಿಸಲಾಗಿದೆ</string>
     <string name="save_collection_pivots_cta">ಇದೇ ರೀತಿಯ ಹೆಚ್ಚಿನದನ್ನು ವೀಕ್ಷಿಸಿ</string>
@@ -768,10 +772,13 @@
     <string name="waiting_for_approval">ಅನುಮೋದನೆಗಾಗಿ ನಿರೀಕ್ಷಿಸಲಾಗುತ್ತಿದೆ</string>
     <string name="web_error">ಕ್ಷಮಿಸಿ, ನಮಗೆ ಆ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ.</string>
     <string name="weeks_abbreviation_with_placeholder">%1$dವಾ</string>
+    <string name="x_and_others">%1$s ಮತ್ತು ಇತರರು</string>
     <string name="x_and_y">%1$s ಮತ್ತು %2$s</string>
     <string name="x_options">%1$s ಅವರ ಆಯ್ಕೆಗಳು</string>
     <string name="x_problems">%1$s ಅವರು ಇದೀಗ ಸಮಸ್ಯೆಗಳನ್ನು ಕಂಡಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕೆಲವು ಕ್ಷಣಗಳಲ್ಲಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="x_y_and_others">%1$s, %2$s ಮತ್ತು ಇತರರು</string>
     <string name="x_y_and_z">%1$s, %2$s ಮತ್ತು %3$s</string>
+    <string name="x_y_z_and_others">%1$s, %2$s, %3$s ಮತ್ತು ಇತರರು</string>
     <string name="xshare_facebook_page_tooltip">ನಿಮ್ಮ Facebook ಪುಟಕ್ಕೆ ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಈಗ ನೀವು ಹಂಚಿಕೊಳ್ಳಬಹುದು.</string>
     <string name="yes">ಹೌದು</string>
     <string name="yes_im_sure">ಹೌದು, ನಾನು ಖಂಡಿತಾ</string>

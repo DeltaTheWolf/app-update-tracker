@@ -2,5 +2,6 @@
 <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ViewStub android:id="@id/live_nux_stub" android:layout="@layout/live_nux" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:layout_gravity="top" android:id="@id/iglive_developer_options_stub" android:layout="@layout/iglive_developer_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" />
+    <ViewStub android:layout_gravity="top" android:id="@id/live_caption_composer_stub" android:layout="@layout/layout_live_caption_composer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center" android:id="@id/iglive_developer_options_stub" android:layout="@layout/iglive_developer_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" />
 </FrameLayout>

@@ -30,6 +30,14 @@
     <plurals name="direct_max_recipients_reached_body">
         <item quantity="other">Le nombre maximal de personnes dans un groupe est de %1$s. Pour terminer la création du groupe, veuillez limiter le nombre de personnes à %1$s, incluant vous-même.</item>
     </plurals>
+    <plurals name="direct_permissions_choice_accept">
+        <item quantity="other">Accepter (%1$d)</item>
+        <item quantity="one">Accepter</item>
+    </plurals>
+    <plurals name="direct_permissions_choice_delete">
+        <item quantity="other">Supprimer (%1$d)</item>
+        <item quantity="one">Supprimer</item>
+    </plurals>
     <plurals name="direct_permissions_decline_x_messages">
         <item quantity="other">Ces %1$d messages seront supprimés et les expéditeurs ne pourront plus vous envoyer de message.</item>
         <item quantity="one">Ce message sera supprimé et l’expéditeur ne pourra plus vous en envoyer.</item>
@@ -53,6 +61,10 @@
     <plurals name="grid_carousel_one_photo_n_videos">
         <item quantity="other">1 photo et %1$d vidéos de %2$s, rangée %3$d, colonne %4$d</item>
         <item quantity="one">1 photo et %1$d vidéo de %2$s, rangée %3$d, colonne %4$d</item>
+    </plurals>
+    <plurals name="hashtags_link_row_title">
+        <item quantity="other">%1$d mots-clics</item>
+        <item quantity="one">1 mot-clic</item>
     </plurals>
     <plurals name="igtv_profile_follower_count">
         <item quantity="other">%1$s abonnés</item>
