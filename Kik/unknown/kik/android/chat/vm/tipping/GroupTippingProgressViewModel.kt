@@ -136,38 +136,38 @@ class GroupTippingProgressViewModel(private val group: KikGroup) : AbstractResou
         lifecycleSubscription.add(
                 kinStellarSDKController.isSDKStarted
                         .filter { it }
-                        .flatMap {
-                            Observable.zip(kinStellarSDKController.balance.take(1), transactionStatusPairSubject.take(1))
-                            { balance, transaction ->
-                                when {
-                                    isError(transaction.second) ->
-                                        metricsService.track(ChatAdmintipFailed.builder()
-                                                .setTransactionId(CommonTypes.Uuid(transaction.first.id.toString()))
-                                                .setGroupJid(CommonTypes.GroupJid(group.bareJid.localPart))
-                                                .setAdminSelected(TipadminpageBase.AdminSelected(false))
-                                                .setKinValue(CommonTypes.KinValue(transaction.first.amount.toDouble()))
-                                                .setKinBalance(CommonTypes.KinBalance(balance.toDouble()))
-                                                .setAdminStatus(getAdminStatus(group))
-                                                .setAdminKinId(CommonTypes.KinId(transaction.first.kinUserId.id))
-                                                .setFailureStatus(ChatAdmintipFailed.FailureStatus(transaction.second.name))
-                                                .build())
-                                    transaction.second == P2PTransactionStatus.COMPLETE ->
-                                        metricsService.track(ChatAdmintipComplete.builder()
-                                                .setTransactionId(CommonTypes.Uuid(transaction.first.id.toString()))
-                                                .setGroupJid(CommonTypes.GroupJid(group.bareJid.localPart))
-                                                .setAdminSelected(TipadminpageBase.AdminSelected(false))
-                                                .setKinValue(CommonTypes.KinValue(transaction.first.amount.toDouble()))
-                                                .setKinBalance(CommonTypes.KinBalance(balance.toDouble()))
-                                                .setAdminStatus(getAdminStatus(group))
-                                                .setAdminKinId(CommonTypes.KinId(transaction.first.kinUserId.id))
-                                                .build())
-                                    else -> {
-                                        LOG.debug("transaction status is ${transaction.second.name} - nothing to report")
+                        .flatMap { transactionStatusPairSubject }
+                        .flatMapSingle { transaction ->
+                            kinStellarSDKController.balance.take(1).toSingle()
+                                    .map { balance ->
+                                        when {
+                                            isError(transaction.second) ->
+                                                metricsService.track(ChatAdmintipFailed.builder()
+                                                        .setTransactionId(CommonTypes.Uuid(transaction.first.id.toString()))
+                                                        .setGroupJid(CommonTypes.GroupJid(group.bareJid.localPart))
+                                                        .setAdminSelected(TipadminpageBase.AdminSelected(false))
+                                                        .setKinValue(CommonTypes.KinValue(transaction.first.amount.toDouble()))
+                                                        .setKinBalance(CommonTypes.KinBalance(balance.toDouble()))
+                                                        .setAdminStatus(getAdminStatus(group))
+                                                        .setAdminKinId(CommonTypes.KinId(transaction.first.kinUserId.id))
+                                                        .setFailureStatus(ChatAdmintipFailed.FailureStatus(transaction.second.name))
+                                                        .build())
+                                            transaction.second == P2PTransactionStatus.COMPLETE ->
+                                                metricsService.track(ChatAdmintipComplete.builder()
+                                                        .setTransactionId(CommonTypes.Uuid(transaction.first.id.toString()))
+                                                        .setGroupJid(CommonTypes.GroupJid(group.bareJid.localPart))
+                                                        .setAdminSelected(TipadminpageBase.AdminSelected(false))
+                                                        .setKinValue(CommonTypes.KinValue(transaction.first.amount.toDouble()))
+                                                        .setKinBalance(CommonTypes.KinBalance(balance.toDouble()))
+                                                        .setAdminStatus(getAdminStatus(group))
+                                                        .setAdminKinId(CommonTypes.KinId(transaction.first.kinUserId.id))
+                                                        .build())
+                                            else -> {
+                                                LOG.debug("transaction status is ${transaction.second.name} - nothing to report")
+                                            }
+                                        }
                                     }
-                                }
-                            }
                         }
-                        .take(1)
                         .subscribe())
     }
 

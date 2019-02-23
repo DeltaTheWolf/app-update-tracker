@@ -139,7 +139,7 @@ class OneToOneMatchingViewModel : AbstractResourceViewModel(), IOneToOneMatching
                 .build())
 
         lifecycleSubscription.add(
-                _matchingService.findChatPartner(chatInterest)
+                _matchingService.findChatPartner(chatInterest, AbManager.ANONYMOUS_MATCHING_V2)
                         .subscribe({
                             when (it.result) {
                                 AnonMatchingService.FindChatPartnerResponse.Result.REJECTED -> matchingRejected()

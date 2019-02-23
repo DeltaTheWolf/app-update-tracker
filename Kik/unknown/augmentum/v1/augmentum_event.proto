@@ -123,6 +123,7 @@ message AugmentumEvent {
     // This MUST be the UNPREFIXED device id.
     // ie: it MUST NOT start with CIP, CAN, etc.
     string device_id = 5 [(kik.validation.field_validation) = {
+        mandatory: false
         // Regex MAY be subject to change. Specifically, moving to base64 URL
         // safe encoding instead of base16 encoding
         regex: "^[a-f0-9]+$"

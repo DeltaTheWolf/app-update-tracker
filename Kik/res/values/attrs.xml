@@ -850,7 +850,9 @@
     <attr name="shouldScale" format="boolean" />
     <attr name="shouldSlide" format="boolean" />
     <attr name="should_animate" format="reference" />
+    <attr name="should_fade_animate" format="boolean" />
     <attr name="should_linkify" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="should_scale_animate" format="boolean" />
     <attr name="showAction" format="boolean" />
     <attr name="showAsAction">
         <flag name="always" value="0x00000002" />

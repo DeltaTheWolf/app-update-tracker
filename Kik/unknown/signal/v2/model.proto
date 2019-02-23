@@ -37,6 +37,8 @@ message Signal {
     oneof kind {
         GlobalSignal global_signal = 2;
         PersonaSignal persona_signal = 3;
+        ChatSignal chat_signal = 4;
+        ContactListSignal contact_list_signal = 5;
     }
 }
 
@@ -55,6 +57,20 @@ message PersonaSignal {
     // If persona_id is set, then only the specified persona should be updated.
     // If persona_id is not set, then all personas should be updated.
     common.v2.PersonaId persona_id = 1 [(kik.validation.field_validation) = {
+        mandatory: false
+    }];
+}
+
+message ChatSignal {
+    // if chat_id is set, then only the indicated chat should be updated.
+    // If chat_id is not set, then all chats should be updated.
+    common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
+        mandatory: false
+    }];
+}
+
+message ContactListSignal {
+    common.v2.PersonaId contact_id = 1 [(kik.validation.field_validation) = {
         mandatory: false
     }];
 }

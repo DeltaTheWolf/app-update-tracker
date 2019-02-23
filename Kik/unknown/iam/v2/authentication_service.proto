@@ -19,9 +19,10 @@ service Authentication {
     // sessions MUST go through this API call.
     rpc Authenticate(AuthenticateRequest) returns (AuthenticateResponse) {}
 
-    // Logout terminates the user's session by invalidating their session token.
-    // This request must be authenticated using the user's current session token.
-    rpc Logout(LogoutRequest) returns (LogoutResponse) {}
+    // RevokeSession terminates the user's session and invalidates their session
+    // token. This request must be authenticated using the user's current session
+    // token.
+    rpc RevokeSession(RevokeSessionRequest) returns (RevokeSessionResponse) {}
 }
 
 message AuthenticateRequest {
@@ -82,10 +83,10 @@ message AuthenticateResponse {
     common.v2.PersonaId genesis_persona = 4;
 }
 
-message LogoutRequest {
+message RevokeSessionRequest {
 }
 
-message LogoutResponse {
+message RevokeSessionResponse {
     Result result = 1;
     enum Result {
         OK = 0;

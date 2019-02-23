@@ -1,0 +1,80 @@
+syntax = "proto3";
+
+package mobile.chats.v2;
+
+option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/chats/v2;chats";
+option java_package = "com.kik.gen.chats.v2";
+option objc_class_prefix = "KPBMobileChatsV2";
+
+import "protobuf_validation.proto";
+import "common/v2/model.proto";
+
+service ChatList {
+    rpc GetChatList(GetChatListRequest) returns (stream GetChatListResponse) {}
+
+    // RemoveOneToOneChat removes a 1:1 chat from the callers chat list.
+    //
+    // The chat may be added back by server when messages are sent to this
+    // chat. This RPC is intended to support the case where a client wants
+    // to resync their entire chatlist (e.g. a fresh login), and does not
+    // wish to have chats they removed appearing again.
+    //
+    // Currently; the client can infer that the chat was added back due to
+    // a message being sent to that chat.
+    rpc RemoveOneToOneChat(RemoveOneToOneChatRequest) returns (RemoveOneToOneChatResponse) {}
+}
+
+message GetChatListRequest {
+    // Optionally specified by the last message in a previous stream.
+    ChatListPageToken page_token = 1 [(kik.validation.field_validation) = {
+        mandatory: false
+    }];
+}
+
+message GetChatListResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+    }
+
+    repeated common.v2.ChatId chat_ids = 2 [(kik.validation.field_validation) = {
+        max_repetitions: 1024
+    }];
+
+    // PageToken is a token that can be used to retry/resume a stream with.
+    //
+    // Every message in the stream will contain a page_token, _except_ the last
+    // message. That is, if page_token is not set; there are no more pages to
+    // fetch.
+    //
+    // Client implementation note: it's safer to retry the stream with no page
+    // token if a "sufficient" amount of time has past since the previous stream.
+    // That is, page_token should really only be used for retrying on errors,
+    // or for large data sets.
+    ChatListPageToken page_token = 3;
+}
+
+message RemoveOneToOneChatRequest {
+    common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message RemoveOneToOneChatResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+        // The provided chat_id wasn't a 1:1 chat.
+        INVALID_CHAT_ID = 1;
+    }
+}
+
+message ChatListPageToken {
+    bytes raw_value = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_byte_length: 1
+        // Sanity bound; but motivation is that it can contain a max sized
+        // common.v2.ChatId, with plenty of extra space.
+        max_byte_length: 1024
+    }];
+}

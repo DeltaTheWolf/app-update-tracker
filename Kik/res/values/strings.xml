@@ -249,7 +249,7 @@ Shop"</string>
     <string name="change_password">Change Password</string>
     <string name="change_photo">Change Photo</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
-    <string name="chat_anonymously_description">Chat with each other for 15 minutes before you decide on sharing your Kik profile</string>
+    <string name="chat_anonymously_description">Chat anonymously before you decide to reveal your profile</string>
     <string name="chat_bubble_color_army_green">Army Green</string>
     <string name="chat_bubble_color_avocado">Avocado</string>
     <string name="chat_bubble_color_black">Black</string>
@@ -319,7 +319,7 @@ Shop"</string>
     <string name="code_download_website">http://kik.me/%s #kik #kikme</string>
     <string name="collection_not_found_message_body">Themes cannot be displayed at this time. Please try again later.</string>
     <string name="collection_not_found_title">"Couldn't Load Theme"</string>
-    <string name="com.crashlytics.android.build_id">5285030d-4459-4a84-bc68-2ac20a3bb3e0</string>
+    <string name="com.crashlytics.android.build_id">553a81ab-d84f-4ffc-ab86-cf1defbbed84</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -397,6 +397,7 @@ You'll need to log in again to keep using Kik."</string>
     <string name="deep_link_user_profile_title">Welcome to Kik!</string>
     <string name="default_stanza_error">Something went wrong. Please give it another whirl</string>
     <string name="default_stanza_timeout_error">This is taking longer than it should. You should try again in a bit</string>
+    <string name="delete_chat_caps">DELETE CHAT</string>
     <string name="delete_chat_question">Delete Chat?</string>
     <string name="delete_message_confirmation_dialog_body">"The message will not be deleted from %1$s's chat"</string>
     <string name="delete_message_confirmation_dialog_body_group">The message will not be deleted from the chats of the other members</string>
@@ -517,7 +518,7 @@ from **%2$s**"</string>
     <string name="failed_to_set_password">Failed to Set Password</string>
     <string name="failed_to_start_conversation_with_user">Failed to start a conversation with the user</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="filter_description">Pick up to %1$s filters to find people that are similar to you</string>
+    <string name="filter_description">Pick up to %1$s filters to start chatting</string>
     <string name="filter_interests_description">Pick up to %1$s interests to find people that are similar to you</string>
     <string name="filter_interests_taking_longer_description">This is taking longer than expected, try Quick Chat instead?</string>
     <string name="find_by_username_empty_state">Your username is: %s</string>
@@ -1069,7 +1070,7 @@ Please try again later"</string>
     <string name="login_tos_and_privacy">"By logging in you accept Kik's &lt;a href=\"http://www.kik.com/terms\">terms&lt;/a> &amp; &lt;a href=\"http://www.kik.com/privacy\">privacy policy&lt;/a>"</string>
     <string name="lowercase_group_info">group info</string>
     <string name="made_with_love_in_waterloo">Made with love in Waterloo</string>
-    <string name="make_friends_description">Add each other, become Kik friends and continue the conversation</string>
+    <string name="make_friends_description">Become Kik friends and continue the conversation</string>
     <string name="manage_direct_messages_title">Manage Direct Messages</string>
     <string name="manually_find_friends_prompt_off">"You'll have to manually find your friends but friends who have you in their phone contacts won't see you're on Kik."</string>
     <string name="manually_find_friends_prompt_on">"You'll have to manually find your friends but friends who have you in their phone contacts may see you're on Kik."</string>
@@ -1089,9 +1090,9 @@ Please go to Settings > Privacy > Contacts to grant Kik access."</string>
     <string name="media_blur_action_row">Blur Media</string>
     <string name="media_blur_overlay">Media Blurring is enabled for this group</string>
     <string name="media_tray_helper_tool_tip">Tap to send pictures, GIFs and more</string>
-    <string name="meet_new_people_description">An instant chat experience that matches you with Kik users from around the world.</string>
+    <string name="meet_new_people_description">An instant chat experience that matches you with Kik users from around the world</string>
     <string name="meet_new_people_home_description">Start chatting with Kik users from around the world</string>
-    <string name="meet_new_people_home_description_with_interests">Chat with a random Kik user or with someone who shares similar interests</string>
+    <string name="meet_new_people_home_description_with_interests">Chat with Kik users from all around the world</string>
     <string name="meet_new_people_summary_description">Chat with Kik users from around the world anonymously before you decide on becoming friends</string>
     <string name="meet_new_people_temp_ban_body">You have been reported multiple times while using Meet New People. Continued reports will result in a permanent ban.</string>
     <string name="meet_new_people_temp_ban_timer_text">You can continue chatting in</string>
@@ -1210,7 +1211,7 @@ Please go to Settings > Privacy > Contacts to grant Kik access."</string>
     <string name="notifications_off_one_hour">Off for 1 hour</string>
     <string name="notifications_on">On</string>
     <string name="notifies_when_friend_joins">This helps you find your friends and notifies you when a friend joins Kik</string>
-    <string name="now_friends_dialog_message">"You're Now Friends!"</string>
+    <string name="now_friends_dialog_message">You are Now Friends!</string>
     <string name="number_is_invalid">Invalid phone number</string>
     <string name="off_until_notification_settings">Off until %1$s</string>
     <string name="ok">OK</string>
@@ -1498,6 +1499,8 @@ To help identify spam faster, please include the chat history"</string>
     <string name="restore_purchases">Restore Purchases</string>
     <string name="result_empty_text">No results</string>
     <string name="retrieving_">Retrieving...</string>
+    <string name="retrying_transaction_message">Transaction could not be completed at this time. The transaction will be retried. Please check back later</string>
+    <string name="retrying_transaction_title">Retrying Transaction</string>
     <string name="save">Save</string>
     <string name="save_failed">Save Failed</string>
     <string name="save_failed_file_too_large">Failed to save video. Video file is too large.</string>
@@ -1787,7 +1790,7 @@ Photo"</string>
     <string name="title_ask_replace_content">Replace Content?</string>
     <string name="title_ban">Ban</string>
     <string name="title_ban_user">Ban %1$s?</string>
-    <string name="title_be_nice">Be Nice</string>
+    <string name="title_be_nice">Be Safe</string>
     <string name="title_birthday">Birthday</string>
     <string name="title_block">Block</string>
     <string name="title_block_list">Block List</string>
@@ -1807,7 +1810,7 @@ Photo"</string>
     <string name="title_choose_existing">Choose Existing</string>
     <string name="title_clear">Clear</string>
     <string name="title_clear_chat_history">Clear Chat History</string>
-    <string name="title_clear_filters">Clear Filters</string>
+    <string name="title_clear_filters">CLEAR FILTERS</string>
     <string name="title_community_guidelines">Community Standards</string>
     <string name="title_confirm_download">Confirm Download</string>
     <string name="title_confirmation">Confirmation</string>
@@ -1902,7 +1905,7 @@ Photo"</string>
     <string name="title_love">Love</string>
     <string name="title_make_friends">Make Friends</string>
     <string name="title_meet_new_people">Meet New People</string>
-    <string name="title_meet_someone_new">Meet Someone New</string>
+    <string name="title_meet_someone_new">MEET SOMEONE NEW</string>
     <string name="title_message_sent">Message Sent</string>
     <string name="title_messages">Messages</string>
     <string name="title_microphone_no_access">Microphone Required</string>

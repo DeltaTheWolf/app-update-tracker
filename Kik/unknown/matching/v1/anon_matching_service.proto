@@ -29,15 +29,27 @@ service AnonMatching {
     // Returns session details
     rpc GetChatSession (GetChatSessionRequest) returns (GetChatSessionResponse);
 
-    // Allows clients to make a decision on the chat session.  "Yes" = make friends with
-    // the chat partner, "No" = don't make friends
-    // 
-    // *** TO BE SUPPORTED IN THE FUTURE
-    // rpc VoteOnChatSession(VoteOnChatSessionRequest) returns (VoteOnChatSessionResponse);
+    // Allows either chat participant to provide a rating for their chat experience.
+    // This rating will be sent off to data, and could be used to limit chats, or for 
+    // Matching purposes in the future
+    rpc RateChatSession(RateChatSessionRequest) returns (RateChatSessionResponse);
 
     // Used by clients to query the number of chats the server will allow a user before
     // they are rate limited
     rpc GetRemainingAnonChats(GetRemainingAnonChatsRequest) returns (GetRemainingAnonChatsResponse);
+
+    // Idempotent method to initiate upgrading an anon chat to a real conversation with real jids.
+    // This request will only indicate that the caller wants to become friends with 
+    // their anon chat partner, and will return immediately.
+    // The caller must be a member of the chat session or this will result in an error.
+    //
+    // Once both chat participants have requested friending, then the session will end, and a message will 
+    // be sent to both users, indicating the session has ended, the chat partner's real jid will be provided,
+    // and clients will handle upgrading the chat and requesting their new friend's user info.
+    rpc InitiateFriending(InitiateFriendingRequest) returns (InitiateFriendingResponse);
+
+    // Users call this to submit a new interest
+    rpc SubmitUserGeneratedInterest(SubmitUserGeneratedInterestRequest) returns (SubmitUserGeneratedInterestResponse);
 }
 
 // If the user already has an ongoing search in the queue, it will be updated
@@ -134,28 +146,41 @@ message GetChatSessionResponse {
     SessionDetails session_details = 2;
 }
 
-//message VoteOnChatSessionRequest {
-//    // The chat session id
-//    common.XiUuid session_id = 1 [(kik.validation.field_validation) = { mandatory: true }];
-//
-//    VoteDecision vote_decision = 2;
-//    enum VoteDecision {
-//        // Do not make friends with chat partner
-//        NO_FRIENDING = 0;
-//        // Make friends with chat partner.  Real jid details will come in separate xmpp message
-//        MAKE_FRIENDS = 1;
-//    }
-//}
+message RateChatSessionRequest {
+    // The chat session key
+    common.matching.v1.AnonMatchingSessionKey session_key = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
 
-//message VoteOnChatSessionResponse {
-//    Result result = 1;
-//    enum Result {
-//        // Vote logged, details will be provided.
-//        OK = 0;
-//        // Chat session not found or expired.  Clients should not retry this.
-//        NOT_FOUND = 1;
-//    }
-//}
+    // How the user has rated this session
+    ChatSessionRating chat_rating = 2 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message ChatSessionRating {
+    // The rating provided by the user.
+    SmileyChatRating rating = 1;
+
+    // This corresponds to the smilies that users click to rate chats
+    enum SmileyChatRating {
+        MAD_FACE = 0;
+        SAD_FACE = 1;
+        NEUTRAL_FACE = 2;
+        HAPPY_FACE = 3;
+        OPEN_MOUTH_HAPPY_FACE = 4;
+    }
+}
+
+message RateChatSessionResponse {
+    Result result = 1;
+    enum Result {
+        // Rating logged
+        OK = 0;
+        // Chat session not found or expired.  Clients should not retry this.
+        NOT_FOUND = 1;
+    }
+}
 
 message EndChatSessionRequest {
     common.matching.v1.AnonMatchingSessionKey session_key = 1 [(kik.validation.field_validation) = {
@@ -182,6 +207,45 @@ message GetRemainingAnonChatsResponse {
 
     // The number of chats remaining in a (configurable) time period.
     int32 remaining_chats = 2;
+}
+
+// The caller's userJid will be in the request, and must be part of the associated session, else error
+message InitiateFriendingRequest {
+    common.matching.v1.AnonMatchingSessionKey session_key = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message InitiateFriendingResponse {
+    Result result = 1;
+    enum Result {
+        // Friending has been initiated successfully
+        OK = 0;
+    }
+}
+
+// Users send this to submit a new interest
+// Send the text in exactly as the user typed it, including white space
+message SubmitUserGeneratedInterestRequest {
+    string interest = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_byte_length: 1
+        max_byte_length: 255
+    }];
+}
+
+// Users receive this response after submitting a new interest
+// OK means the request was received without error
+// It does not mean the interest was approved by moderation or it
+// will be trending anytime soon
+// RATE_LIMITED means the user has submitted too many interests recently
+// and should wait before trying again
+message SubmitUserGeneratedInterestResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+        RATE_LIMITED = 1;
+    }
 }
 
 // Represents a chat interest that the user optionally selects for chat matching

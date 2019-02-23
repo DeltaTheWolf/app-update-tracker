@@ -6,12 +6,11 @@ option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/i
 option java_package = "com.kik.gen.iam.v2";
 option objc_class_prefix = "KPBMobileIAMV2";
 
+import "google/protobuf/timestamp.proto";
 import "protobuf_validation.proto";
+
 import "client/v2/client_meta.proto";
 import "common/v2/model.proto";
-import "google/protobuf/timestamp.proto";
-import "session/v2/model.proto";
-import "common_model.proto";
 
 //----------------------------------------------------------------------------
 // Service Interfaces

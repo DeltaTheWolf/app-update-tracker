@@ -96,6 +96,21 @@ message PersonaFull {
     // https://github.com/kikinteractive/xiphias-service-feature-config/blob/970dc4932506c6a176b5ad07df553988d596bbc7/feature-config-service/src/main/java/com/kik/featureconfig/rpc/impl/FeatureConfigServiceImpl.java#L153
     // for more details.
     Interests interests = 6;
+
+    // Certain persona types (ie public group member persona / anon matching persona), can be
+    // used for chatting, but not friending.  By product decisions, friending someone means
+    // you might reveal more personal information to him/her.
+    // Currently, friending is implemented as revealing your genesis persona by adding your
+    // genesis persona to your contact list.
+    //
+    // contact_list_persona_id is the persona that the caller has in the contact list with
+    // the requested persona_id.
+    //
+    // To support classic kik behaviour, contact_list_persona_id is to be returned only if
+    // - Requested persona_id is backed by public group membner aliasjid or anon-matching
+    //   aliasjid
+    // - Requested persona's genesis persona is in caller's contact list
+    common.v2.PersonaId contact_list_persona_id = 7;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -46,6 +46,21 @@ message ChatId {
     //        but _only_ when creating a ChatId (see (1)).
     //     3. mobile.chats.v2.MobileChatId _must_ be a wire compatible subset of internal.chats.v2.InternalChatId.
     //
+    // For (3), the following is an implementation reference for values:
+    //
+    //     p1 = PersonaId{raw_value: decodeBase64Url("Ch0KG5j-vUg8byR0a2uP71YK7MJobMVQgPzCoMbQ9Q==")}
+    //     p2 = PersonaId{raw_value: decodeBase64Url("ChwKGpj_vkE4ZhoaaGrcMXY5MD9O3TsWsCJwt5ht")}
+    //
+    //     // Internal and mobile implementations may differ, but the result
+    //     // for a one-to-one should match.
+    //     c1 = constructChatID(p1, p2)
+    //     c2 = constructChatID(p2, p1)
+    //
+    //     // Ordering of p1 and p2 should not matter for construction.
+    //     assert(c1 == c2)
+    //
+    //     // The result should match the following:
+    //     assert(c1 == ChatId{raw_value: decodeBase64Url("CkUKIAoeChwKGpj_vkE4ZhoaaGrcMXY5MD9O3TsWsCJwt5htCiEKHwodChuY_r1IPG8kdGtrj-9WCuzCaGzFUID8wqDG0PU=)})
     bytes raw_value = 1 [(kik.validation.field_validation) = {
         mandatory: true
         min_byte_length: 1
@@ -58,7 +73,9 @@ message ChatId {
 message OneToOneId {
     repeated PersonaId personas = 1 [(kik.validation.field_validation) = {
         mandatory: true
-        // ordered: ASC todo: requires byte comparable support in Java
+        // ordering is defined as the lexicographical sort order of
+        // the raw_value's.
+        ordered: ASC
         min_repetitions: 2
         max_repetitions: 2
     }];

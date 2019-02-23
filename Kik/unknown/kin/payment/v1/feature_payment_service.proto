@@ -66,6 +66,8 @@ message GetPayToUserJwtResponse {
         DAILY_SPEND_LIMIT_EXCEEDED = 4;
         // The recipient doesn't have any remaining daily spend quota
         DAILY_RECEIVE_LIMIT_EXCEEDED = 5;
+        // The requesting user is not authorized to make this request
+        USER_NOT_AUTHORIZED = 6;
     }
 
     // The generated PayToUser JWT. The JWT payload is defined in the Kin ecosystem API:
@@ -131,6 +133,8 @@ message GetUserSpendTransactionLimitsResponse {
         UNKNOWN = 0;
         // The requested feature is not valid
         INVALID_FEATURE = 1;
+        // The requesting user is not authorized to make this request
+        USER_NOT_AUTHORIZED = 2;
     }
 
     // Limits related to the amount of a single transaction
@@ -162,6 +166,8 @@ message GetUsersReceiveTransactionLimitsResponse {
         INVALID_FEATURE = 1;
         // One or more of the requested alias jids are either not registered or are not valid for the requested feature
         INVALID_ALIAS_JID = 2;
+        // The requesting user is not authorized to make this request
+        USER_NOT_AUTHORIZED = 3;
     }
 
     // Sanity bound. There may be situations where the client needs to retrieve limits for more than this number of

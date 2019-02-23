@@ -23,3 +23,13 @@ message Hashtag {
         regex: "^#[\\w\\.]{2,32}$"
     }];
 }
+
+// Name of a group.
+// Note that this should be used only for updating a group's name.
+// For retrieving a group's name see DisplayName in chats/v2/chat_info.proto
+message GroupName {
+    string group_name = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        max_codepoints: 250
+    }];
+}

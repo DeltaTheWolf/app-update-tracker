@@ -13,7 +13,7 @@ import "google/protobuf/timestamp.proto";
 import "asset/v1/asset_common.proto";
 
 // Chat-specific information is contained here. For global information common to all chats,
-// see common.messaging.v2.Chat.
+// see common.chats.v2.Chat.
 
 // OneToOne chat-specific info.
 // Note that clients will look to the members of this chat for more display information.
@@ -25,7 +25,7 @@ message OneToOneInfo {
     // Members of the OneToOne chat. There can only be exactly two members of a OneToOne chat.
     repeated OneToOneMember members = 2 [(kik.validation.field_validation) = {
         mandatory: true
-        // ordered: ASC todo: requires byte comparable support in Java
+        ordered: ASC
         min_repetitions: 2
         max_repetitions: 2
     }];
@@ -128,10 +128,8 @@ message GroupMember {
     bool direct_messaging_disabled = 5;
 }
 
-// Display name of a group.
-// This is only ever outputted by server via GroupInfoShort/Full and therefore has more relaxed
-// validation in order to accommodate any additions to group display names.
-// See mobile.groups.v2.CreateGroupRequest for restrictions on group name when creating a group.
+// Display name of a chat.
+// This has very relaxed validation in order to accommodate various display name sizes.
 message DisplayName {
     string display_name = 1 [(kik.validation.field_validation) = {
         mandatory: true

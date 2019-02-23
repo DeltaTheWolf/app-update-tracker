@@ -7,9 +7,10 @@ option objc_class_prefix = "KPB";
 option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/messagepath/v1;messagepath";
 
 import "protobuf_validation.proto";
+import "kin/payment/v1/payment_common.proto";
 
 // TransactionDetailsAttachment is meant to be attached to status messages related to feature payments
-// It contains the intended target of the status message
+// It contains the intended target of the status message as well as the tip amount
 message TransactionDetailsAttachment {
 
     Target target = 1;
@@ -18,4 +19,6 @@ message TransactionDetailsAttachment {
         SENDER = 1;
         RECIPIENT = 2;
     }
+
+    common.kin.payment.v1.KinAmount amount = 2;
 }

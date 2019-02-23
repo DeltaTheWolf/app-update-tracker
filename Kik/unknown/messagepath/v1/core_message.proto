@@ -137,7 +137,7 @@ message CoreMessage {
             deny: MOBILE }];
 
     // This attachment will be sent with status messages to notify clients
-    // about updated chat theme information.
+    // about a payment transaction.
     //
     // This attachment may ONLY be set on the server side.
     // It is NOT valid for native clients to send messages with this attachment.

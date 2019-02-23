@@ -1,0 +1,263 @@
+syntax = "proto3";
+
+package mobile.messaging.v2;
+
+option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/messaging/v2;messaging";
+option java_package = "com.kik.gen.messaging.v2";
+option objc_class_prefix = "KPBMobileMessagingV2";
+
+import "protobuf_validation.proto";
+import "messaging/v2/model.proto";
+
+// Messaging is the 'public' facing service in which clients connect to to both
+// send and receive messages, as well as receive some metadata updates about chats.
+//
+// The Messaging service is designed around a few core principles:
+//
+//     1. Durability[1] + reliability of messages, as observed by the end user.
+//     2. A user should be able to launch their client and view their chats with
+//        the latest state as fast as possible
+//     3. A user should be able to select a chat to open and view the messages
+//        as fast as possible.
+//
+// The current implementation of messaging (ocassionally referred to as QoS,
+// though QoS is just a subsystem of messaging) does not offer (1), as there
+// are various locations in which a message can disappear without the sender
+// knowing. (2) and (3) is _sometimes_ problematic due to both client and server
+// implementations. Clients wait for _all_ of their messages to finish flushing
+// from the server before the app becomes responsive, which can impede (2). One
+// highlighted issue is that server returns oldest -> newest messages for _all_
+// chats, and has no capability to prioritize the order of messages. Another
+// highlighted issue is that receipts (pushed, delivered, and read) are inline
+// with the messaging system, which increases the size of QoS flushes by up to 3x.
+//
+// The current implementation of messaging is also somewhat inflexible to potential
+// features such as message history (write amplification costs), multi-device
+// (flushing on one device prevents delivery to another), and super large groups,
+// for example.
+//
+// In an attempt to address these issues, we introduce the notion of a Message
+// Log Storage Model (MLSM). In MLSM, every chat (1:1 and group) is represented
+// by a single log of messages. This is in contrast to the current model where
+// chats are generally keyed on a receiver. For example:
+//
+//     Client X has a chat with Y
+//     Client Y has a chat with X
+//
+// In this case, there are two 'chats' as viewed by both server and clients.
+// In MLSM, both clients refer to a single Chat.Id, which refers to a single
+// log which the server is also aware of. Both 1:1 and group chats use a
+// single log.
+//
+// In the MLSM model, messages are modelled with a Message.Id that is controlled
+// by the server, and observes the following property:
+//
+//     M[n].Id < M[n+1].Id
+//
+// where n is the 'insertion order' of the message, as observed by server. While
+// they exhibit similar properties of a timestamp, they are an opaque token with
+// with additional information that is useful for implementation details. The
+// evaluation of M[x].Id < M[y].Id can be evaluated by simply lexically comparing
+// the byte representation.
+//
+// The MSLM also introduces the notion of 'pointers'. Instead of having messages
+// that indicate pushed, delivered, or read, the notion of a pointer is introduced
+// that indicates the position (an Message.Id) of a user in the log. There are
+// three client facing pointrs: Pushed, Delivered, and Read. Instead of sending
+// explicit Delivered or Read messages, clients advance the respective pointer.
+// Pointers have the following properties:
+//
+//     1. P_pushed >= P_delivered >= P_read
+//     2. A pointer can never 'go back'. They can only move forward in the log.
+//
+// Clients should advance the Delivery pointer when the message has been
+// successfully persisted to the local device, and the Read pointer when
+// it is determined that the user has read the message.
+//
+// Server should only advance the Push pointers.
+//
+// The use of pointers instead of receipts drastically reduces the amount of
+// storage required for messages, but introduces an important caveat:
+//
+//     Advancing a pointer P implies that all messages up to P have been
+//     pushed/delivered/read (based on pointer).
+//
+// In order to prevent messages being lost, invariants are introduced in various
+// APIs to ensure that pointers can be advanced safely and robustly.
+//
+// In order to bound cost of message logs, the server implementations are allowed
+// to remove messages that:
+//
+//     1. Are older than the oldest delivery pointer.
+//     2. Are past the prune limit (which must be greater than client prune limit).
+//
+// There are some future advantages with MLSM:
+//
+//     1. Reduced storage requirements make 'history' more feasible.
+//     2. The Pointer model makes multi-device possible (from this layer)
+//     3. Group write amplification is drastically reduced from a DB / storage
+//        perspective.
+//
+// For the initial principles:
+//
+//     1. We do not return a success until the message has been successfully
+//        stored in the log. Clients will not render the S until this operation
+//        is successful.
+//     2. We decouple the Chat States API from QoS, as well as offer latest
+//        state preview (easy with MSLM)
+//     3. Server is allowed to dynamically prioritize message ordering, and can
+//        do so with a higher degree of confidence due to message ordering
+//        invariants.
+//
+// Mobile client rewrite can also address (2) and (3) by moving these things off
+// the 'main thread'.
+//
+// [1] Durability in this context means messages shouldn't disappear permanently
+// from the system. The "stuck on S" problem is a symptom of messages disappearing.
+// It does _not_ mean permanent message storage (persistence).
+service Messaging {
+    // OpenMessageStream opens a stream of batches of (all) messages for a user.
+    // As long as the stream remains open, new messages will be sent through
+    // the stream.
+    //
+    // A base case of the OpenChatStream is that the server sends messages
+    // from the beginning of time. However, this requires 'infinite; storage,
+    // and is very expensive / wasteful. However, this guarantees no loss of
+    // messages. To address these issues, clients advance their deliver pointer
+    // as they receive messages. However, advancing a pointer implies that all
+    // messages M[n] < P have been persisted / delivered to the device. Therefore,
+    // to not lose messages, the following invariant must hold:
+    //
+    //   A message M[x] must _not_ be delivered before M[n], for all n < x.
+    //
+    // That is, if a message M[x] is delivered, all of the previous messages
+    // must have been delivered first. Messages may be sent multiple times,
+    // however.
+    //
+    // There are no guarentees, however, about the ordering of delivery between
+    // Chats. That is, the following delivery of messages is valid:
+    //
+    //   1. CA -> M1
+    //   2. CB -> M1
+    //   3. CB -> M2
+    //   4. CB -> M3
+    //   5. CA -> M2
+    //
+    // Life Cycle Notes:
+    //   * The stream may be closed at any time, by server or client.
+    //   * The stream can be resumed at any time; but is intended to start at 'boot'.
+    //
+    // Server Optimizations | 'Niceness' | Implementation Notes:
+    //   * 1:1 convos should be prioritized on initial opening of the stream.
+    //   * Messages should be coallesced by Chat to avoid thrashing of list order.
+    //   * When resuming the stream, the log should be scanned before the delivery
+    //     pointer to avoid any insertion races.
+    rpc OpenMessageStream(OpenMessageStreamRequest) returns (stream Messages) {}
+
+    // OpenPointerStream opens a stream of batches of pointer updates for a user.
+    //
+    // There are no invariants that can be assumed about this stream, beyond the
+    // standard pointer invariants (pointers can only move forwards, not backwards).
+    //
+    // Life Cycle Notes:
+    //   * The stream may be closed at any time; by server or client.
+    //   * The stream can be resumed at any time; but is intended to start at 'boot'.
+    //
+    // Server Optimizations:
+    //     * In order to synchronize clients faster, the initial batchs should
+    // .     contain the current state of the points for all of the users Convos.
+    rpc OpenPointerStream(OpenPointerStreamRequest) returns (stream Pointers) {}
+
+    // SendMessage sends a message to a chat.
+    //
+    // When a successful response is returned, the clients may assume that
+    // the message is durable[1].
+    //
+    // [1] All participants should _eventually_ get the message without additional
+    // client action, provided participants come online before deletion rules
+    // apply.
+    rpc SendMessage(SendMessageRequest) returns (SendMessageResponse) {}
+
+    // UpdatePointers updates a (set) pointer for a Chat for the calling user.
+    // While pointers cannot move backwards, attempting to update a pointer in
+    // the past will still result in a successful RPC call, but no modification
+    // to the pointer will be made.
+    //
+    // Pointers have the invariant:
+    //
+    //   let P, D, R be a push, delivery, and read pointer, respectively
+    //   let c, m, u be a conversation, message and user, respectively.
+    //
+    //   P[c, m, u] >= D[c, m, u] >= R[c, m, u]
+    //
+    // Advancing a read pointer past a push or delivery pointer will result
+    // in all pointers being updated to R[c, m, u] to maintain the invariant.
+    //
+    // Push pointers cannot be updated by clients.
+    //
+    // Calling UpdatePointers is idempotent (since they cannot move backwards).
+    // As long as all pointers are valid, clients may retry updating the whole
+    // batch of pointers. If they don't retry, the state should eventually
+    // become consistent as they update pointers from a later cause.
+    rpc UpdatePointers(UpdatePointersRequest) returns (UpdatePointersResponse) {}
+}
+
+message OpenMessageStreamRequest {
+}
+
+message Messages {
+    repeated common.messaging.v2.Message messages = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_repetitions: 1
+        max_repetitions: 1024
+    }];
+}
+
+message OpenPointerStreamRequest {
+}
+
+message Pointers {
+    repeated common.messaging.v2.Pointer pointers = 1 [(kik.validation.field_validation) = {
+        max_repetitions: 1024
+    }];
+}
+
+message SendMessageRequest {
+    // Message.Id will be generated and returned by the server.
+    //
+    // Clients may wish to add a temporary Message.Id for display / storage
+    // purposes. However, they must update / remap the message once the response
+    // from the server comes in.
+    //
+    // When the Message.Id comes back from the server, the placement of this
+    // message (i.e. the order) may be updated (based on Message.Id sorting).
+    common.messaging.v2.Message message = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message SendMessageResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+    }
+
+    common.messaging.v2.Message.Id message_id = 2;
+}
+
+message UpdatePointersRequest {
+    // Pointers should only have the type Delivered or Read.
+    // Pointers not of that type will result in an INVALID_ARGUMENT.
+    repeated common.messaging.v2.Pointer pointers = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_repetitions: 1
+        max_repetitions: 1024
+    }];
+}
+
+message UpdatePointersResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+    }
+}

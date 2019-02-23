@@ -8,7 +8,7 @@ option objc_class_prefix = "KPBMobileContactListV2";
 
 import "protobuf_validation.proto";
 import "common/v2/model.proto";
-import "contactlist/v1/contact_list_common.proto";
+import "contactlist/v2/contact_list_common.proto";
 import "persona/v2/persona_common.proto";
 
 service ContactList {  
@@ -104,7 +104,7 @@ message AddContactRequest {
         mandatory: true
     }];
     // Friending context details
-    common.contactlist.v1.UserFriendContext friend_context = 2;
+    common.contactlist.v2.UserFriendContext friend_context = 2;
 }
 
 message AddContactResponse {

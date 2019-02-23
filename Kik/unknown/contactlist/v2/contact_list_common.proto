@@ -6,7 +6,6 @@ option java_generate_equals_and_hash = true;
 option objc_class_prefix = "KPBCommonCNLV2";
 option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/contactlist/v2;contactlist";
 
-import "common_model.proto";
 import "protobuf_validation.proto";
 import "common/v2/model.proto";
 
@@ -17,7 +16,7 @@ import "common/v2/model.proto";
 // Context Details for a user's friendship with another entity (eg: other user/group)
 message UserFriendContext {
     // The context of the relationship - i.e. how the user found the other / how the user was found
-    // This is sourced from com.kik.plugin.FriendContextExtended in kik-server, 
+    // This is sourced from com.kik.plugin.FriendContextExtended in kik-server,
     // but branched off to support:
     // https://github.com/kikinteractive/xiphias-api-mobile/blob/master/proto/contactlist/v2/contactlist_service.proto
     oneof context_kind {
@@ -60,7 +59,7 @@ message UserFriendContext {
     message Scan {
         // According to https://github.com/kikinteractive/kik-product/wiki/Scan-Code
         // scan_code has max length of 314 And nonce: 256.
-        // Here length restriction here is simply provide a reasonable bound.     
+        // Here length restriction here is simply provide a reasonable bound.
         bytes scan_code = 1 [(kik.validation.field_validation) = {
             mandatory: true
             max_byte_length: 500
@@ -89,15 +88,15 @@ message UserFriendContext {
         }
     }
     message WebKikMe {
-        string related_url = 3 [(kik.validation.field_validation) = { 
-            mandatory: true 
-            max_byte_length: 5000 
+        string related_url = 3 [(kik.validation.field_validation) = {
+            mandatory: true
+            max_byte_length: 5000
         }];
     }
     message WebProfileKikMe {
-        string related_url = 3 [(kik.validation.field_validation) = { 
+        string related_url = 3 [(kik.validation.field_validation) = {
             mandatory: true
-            max_byte_length: 5000 
+            max_byte_length: 5000
         }];
     }
     message CardProfileKikProtocol {
@@ -105,8 +104,8 @@ message UserFriendContext {
             mandatory: true
             max_byte_length: 5120 // arbitrary, but matches cerulean ingestion
         }];
-        string related_url = 3 [(kik.validation.field_validation) = { 
-            max_byte_length: 5000 
+        string related_url = 3 [(kik.validation.field_validation) = {
+            max_byte_length: 5000
         }];
     }
     message CardSendKikToUser {
@@ -114,27 +113,27 @@ message UserFriendContext {
             mandatory: true
             max_byte_length: 5120 // arbitrary, but matches cerulean ingestion
         }];
-        string related_url = 3 [(kik.validation.field_validation) = { 
-            max_byte_length: 5000 
-        }];  
+        string related_url = 3 [(kik.validation.field_validation) = {
+            max_byte_length: 5000
+        }];
     }
     message CardOpenConversation {
         string related_card_name = 2 [(kik.validation.field_validation) = {
             mandatory: true
             max_byte_length: 5120 // arbitrary, but matches cerulean ingestion
         }];
-        string related_url = 3 [(kik.validation.field_validation) = { 
-            max_byte_length: 5000 
-        }];       
+        string related_url = 3 [(kik.validation.field_validation) = {
+            max_byte_length: 5000
+        }];
     }
     message CardOpenProfile {
         string related_card_name = 2 [(kik.validation.field_validation) = {
             mandatory: true
             max_byte_length: 5120 // arbitrary, but matches cerulean ingestion
         }];
-        string related_url = 3 [(kik.validation.field_validation) = { 
-            max_byte_length: 5000 
-        }];        
+        string related_url = 3 [(kik.validation.field_validation) = {
+            max_byte_length: 5000
+        }];
     }
     message SuggestFriend {}
     message FriendPicker {}
@@ -147,12 +146,12 @@ message UserFriendContext {
     message GroupInfoMenuAdd {
         oneof key {
            common.v2.ChatId chat_id = 1;
-        }  
+        }
     }
     message GroupMenuAdd {
         oneof key {
            common.v2.ChatId chat_id = 1;
-        }     
+        }
     }
     message PullUsernameSearch {}
     message SendToUsernameSearch {}

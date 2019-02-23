@@ -7,12 +7,16 @@ option java_package = "com.kik.gen.groups.v2";
 option objc_class_prefix = "KPBMobileGroupsV2";
 
 import "protobuf_validation.proto";
+
 import "common/v2/model.proto";
-import "messaging/v2/model.proto";
-import "groups/v2/groups_common.proto";
 import "chats/v2/chat_info.proto";
+import "chats/v2/model.proto";
+import "groups/v2/groups_common.proto";
 
 service Group {
+    // Get short group information for a given group chat.
+    rpc GetGroupInfoShort(GetGroupInfoShortRequest) returns (GetGroupInfoShortResponse) {}
+
     // Get full group information for a given group chat.
     rpc GetGroupInfoFull(GetGroupInfoFullRequest) returns (GetGroupInfoFullResponse) {}
 
@@ -32,7 +36,6 @@ service Group {
     // Add persona(s) to a group chat.
     //
     // Notes:
-    // - A non-member persona may add themeselves to a group chat if the group chat allows this (e.g. is a public group).
     // - A member of the group chat may add other personas to this group chat.
     rpc AddToGroup(AddToGroupRequest) returns (AddToGroupResponse) {}
 
@@ -40,7 +43,7 @@ service Group {
     //
     // Notes:
     // - A group admin should use this to remove another member from the group chat.
-    // - This method is only useable by a member that is either an Admin or SuperAdmin.
+    // - This method is only usable by a member that is either an Admin or SuperAdmin.
     // - The group member to remove cannot be the requesting member.
     // - Admins cannot be removed by other Admins except SuperAdmins.
     rpc RemoveFromGroup(RemoveFromGroupRequest) returns (RemoveFromGroupResponse) {}
@@ -64,6 +67,30 @@ service Group {
     //
     // TODO: Not in scope for friends and family.
     // rpc GenerateInviteCode(GenerateInviteCodeRequest) returns (GenerateInviteCodeResponse) {}
+}
+
+message GetGroupInfoShortRequest {
+    common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    // Persona with the necessary permissions in the group chat to view short group chat info.
+    common.v2.PersonaId requestor_persona_id = 2 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message GetGroupInfoShortResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+
+        // No group was found in which requesting persona could retrieve short group info.
+        NOT_FOUND = 1;
+    }
+
+    // Set if result == OK.
+    common.chats.v2.GroupInfoShort info = 2;
 }
 
 message GetGroupInfoFullRequest {
@@ -139,7 +166,7 @@ message CreateGroupRequest {
     }];
 
     // Optional name of the group.
-    GroupName group_name = 3;
+    common.groups.v2.GroupName group_name = 3;
 
     // Set this if creating a public group.
     common.groups.v2.PublicGroupFields public_group_fields = 4;
@@ -173,7 +200,7 @@ message CreateGroupResponse {
     }
 
     // Chat info for the newly created chat. This will only be set if result == OK.
-    common.messaging.v2.Chat chat = 2;
+    common.chats.v2.Chat chat = 2;
 
     // This field is set if result == POLICY_RESTRICTION.
     // Will contain the all RestrictedFields in the request that caused the request to fail with POLICY_RESTRICTION.
@@ -183,13 +210,6 @@ message CreateGroupResponse {
         GROUP_NAME = 1;
         GROUP_HASHTAG = 2;
     }
-}
-
-message GroupName {
-    string group_name = 1 [(kik.validation.field_validation) = {
-        mandatory: true
-        max_codepoints: 250
-    }];
 }
 
 message LeaveGroupRequest {
@@ -225,8 +245,6 @@ message AddToGroupRequest {
     }];
 
     // Persona ids to add to the group.
-    // Note that the upper bound on the number of members in a group is a
-    // configuration setting and likely to be less than 1024.
     repeated common.v2.PersonaId new_member_ids = 3 [(kik.validation.field_validation) = {
         mandatory: true
         min_repetitions: 1
@@ -238,7 +256,7 @@ message AddToGroupResponse {
     Result result = 1;
     enum Result {
         // The request was successfully processed. Note that this does not mean all new member ids
-        // specified in the request were sucessfully added to the group. See failure_details for any failures.
+        // specified in the request were successfully added to the group. See failure_details for any failures.
         OK = 0;
 
         // Adder was not permitted to add other personas to this group chat.

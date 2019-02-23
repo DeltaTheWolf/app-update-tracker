@@ -65,12 +65,17 @@ class ThemeDefaults (private val resources: Resources,
                 .setBackgroundColor(resources.getString(R.color.white))
                 .build()
 
+        val statusBarStyle = Style.Builder()
+                .setBackgroundColor(resources.getString(R.color.status_bar_grey_v2))
+                .build()
+
         map[StyleIdentifier.BACKGROUND] = backgroundStyle
         map[StyleIdentifier.EXPRESSION_BAR] = expressionBarStyle
         map[StyleIdentifier.INCOMING_MESSAGE] = incomingMessageStyle
         map[StyleIdentifier.OUTGOING_MESSAGE] = outgoingStyle()
         map[StyleIdentifier.TOP_BAR] = topbarStyle
         map[StyleIdentifier.CHAT] = chatStyle
+        map[StyleIdentifier.STATUS_BAR] = statusBarStyle
 
         return map
     }

@@ -180,4 +180,8 @@ class AnonymousInterestPickerViewModel(private val interestListSubject: Behavior
             interestListSubject.onCompleted()
         }
     }
+
+    override fun applyChanges() {}
+
+    override fun clearFilters() {}
 }

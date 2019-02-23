@@ -55,9 +55,14 @@ class AnonymousMatchBarViewModel : AbstractViewModel(), IAnonymousMatchBarViewMo
 
     override fun launchOneToOneMatching() {
         metricsService.track(ChatlistMeetnewpeopleTapped.builder().build())
-        oneTimeUseRecordManager.meetNewPeopleTermsAccepted.first().subscribe { optIn ->
+        val inMatchingV3 = abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_0) ||
+                           abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_QUICKCHAT_INTEREST) ||
+                           abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_2) ||
+                           abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_5)
+                oneTimeUseRecordManager.meetNewPeopleTermsAccepted.first().subscribe { optIn ->
             when {
-                optIn -> navigator.navigateToOneToOneMatchingViewModel()
+                optIn && inMatchingV3 -> navigator.navigateToOneToOneMatchingV3ViewModel()
+                optIn && !inMatchingV3 -> navigator.navigateToOneToOneMatchingViewModel()
                 else -> navigator.navigateToOnePageAnonymousMatchingIntro()
             }
         }
@@ -67,7 +72,11 @@ class AnonymousMatchBarViewModel : AbstractViewModel(), IAnonymousMatchBarViewMo
 
     private fun isInAbTest(): Boolean {
         return abManager.isIn(AbManager.ANONYMOUS_MATCHING_V2, AbManager.ANONYMOUS_MATCHING_V2_SHOW_INTERESTS) ||
-                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V2, AbManager.ANONYMOUS_MATCHING_V2_SHOW_INTERESTS_CHATLIMIT)
+                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V2, AbManager.ANONYMOUS_MATCHING_V2_SHOW_INTERESTS_CHATLIMIT) ||
+                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_0) ||
+                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_QUICKCHAT_INTEREST) ||
+                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_2) ||
+                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_5)
     }
 
 }

@@ -13,39 +13,112 @@ option objc_class_prefix = "KPBCommonMessagingV2";
 
 import "google/protobuf/timestamp.proto";
 import "protobuf_validation.proto";
+
+import "blob/v2/model.proto";
 import "common/v2/model.proto";
-import "chats/v2/chat_info.proto";
-import "chats/v2/chats_common.proto";
+import "persona/v2/persona_common.proto";
+import "messaging/v2/chat_events.proto";
 
-// Chat represents the 'metadata' about a Chat. A chat is fundamentally broken
-// down into:
-//
-//     1. Metadata (id, type info, etc)
-//     2. Message Log (log of actual messages)
-//     3. Pointer States
-//
-// This represents (1), while the other two only have accessors via APIs, since
-// implementations of (2) and (3) are highly varied between server and clients.
-message Chat {
-    common.v2.ChatId id = 1;
+// RenderableText can be applied in many locations to annotate a string
+// for display to the user. This standardizes the display of links, smileys,
+// and mentions so that they can be consistently applied across message
+// fields
+message RenderableText {
+    string text = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        max_byte_length: 2048
+    }];
 
-    // Contains minimal chat info depending on the type of chat.
-    // Note that this oneof is required.
-    oneof info {
-        common.chats.v2.OneToOneInfo one_to_one_info = 2;
-        common.chats.v2.GroupInfoShort group_info = 3;
+    repeated RenderInstruction render_instructions = 2 [(kik.validation.field_validation) = {
+        max_repetitions: 100
+    }];
+    message RenderInstruction {
+        // offset and length are in units of character position within the text field
+        // The rendering client will apply appropriate rules to ensure regions do
+        // not overlap and that they fall within the bounds of the text
+        uint32 offset = 1 [(kik.validation.field_validation) = { mandatory: true }];
+        uint32 length = 2 [(kik.validation.field_validation) = { mandatory: true }];
+
+        oneof kind {
+            Smiley smiley = 3;
+            Link link = 4;
+            Mention mention = 5;
+        }
+
+        message Smiley {
+            string resource_id = 1 [(kik.validation.field_validation) = {
+                mandatory: true
+                regex: "^[A-Za-z_0-9]*$"
+                max_byte_length: 32
+            }];
+            string category_id = 2 [(kik.validation.field_validation) = {
+                mandatory: true
+                max_byte_length: 32
+            }];
+        }
+
+        message Mention {
+            common.persona.v2.Username username = 1;
+        }
     }
-
-    // Optional chat theme of this chat.
-    common.chats.v2.ChatThemeId chat_theme_id = 4;
-
-    // Optional mute status of this chat. Note that this is caller sensitive as it denotes
-    // whether or not the _caller_ has muted the chat. Multiple members of a chat might
-    // see different mute statuses here.
-    common.chats.v2.MuteStatus mute_status = 5;
 }
 
-// Message represents the a message. For now, it only includes the bare minimum
+// ImagePreview wraps a preview image for display. The properties of the image are
+// expanded into the body of this message to allow the client to display a lighter
+// weight preview color or ensure the correct aspect ratio before the image can
+// be fully loaded
+message ImagePreview {
+    ImageType image_type = 1;
+    enum ImageType {
+        JPEG = 0;
+        PNG = 1;
+    }
+
+    bytes image_data = 2 [(kik.validation.field_validation) = { max_byte_length: 40900 }];
+
+    // A 32-bit ARGB-encoded color that clients can use to "prefill" the image
+    // area with before loading the image_data.
+    uint32 preview_color = 3 [(kik.validation.field_validation) = { mandatory: true }];
+
+    // Defined as width px / height px of the full-size image.
+    //
+    // This aspect ratio is strictly for the preview. This bound should be
+    // imposed on client side as well. Images that cannot be transformed into
+    // this range of aspect ratios will not have an image preview.
+    double aspect_ratio = 4 [(kik.validation.field_validation) = {
+        min_double_val: 0.5
+        max_double_val: 2.0
+    }];
+}
+
+// Link represents a URL which can be launched from within the app with filtering
+// rules which dictate which platforms can launch which kinds of links. A platform
+// will launch the first target which applies to the given platform, for the order
+// in the targets list
+message Link {
+    message Target {
+        // A RFC 1738 URL. The URL can use a custom scheme like ITMS: or
+        // any standard web scheme (HTTP/HTTPS. It is up to the OS on the client
+        // to determine the ability to launch the given URL
+        string url = 1 [(kik.validation.field_validation) = {
+            mandatory: true
+            max_byte_length: 1020
+        }];
+
+        Type type = 2;
+        enum Type {
+            DEFAULT = 0;
+            IOS = 1;
+            ANDROID = 2;
+            WEB = 3; // legacy cards platform
+        }
+    }
+    repeated Target targets = 1 [(kik.validation.field_validation) = {
+        max_repetitions: 10
+    }];
+}
+
+// Message represents a message. For now, it only includes the bare minimum
 // for message routing / MLSM model. A fully defined message model still needs
 // to be defined (initial work was started multiple times).
 message Message {
@@ -53,6 +126,9 @@ message Message {
     // n is the order in the underlying message log (as seen by server). If time
     // was a universal truth, and servers had 100% accuracy, ID(M_n) would be the
     // time that the server inserted it into the log.
+    //
+    // The comparison of two ID's is defined as the lexicographical comparison
+    // of the raw_value's.
     //
     // The ID(M_n) < ID(M_n+1) invariant is the _only_ assumption that can be
     // made about the ID. The comparator is a lexical sort.
@@ -69,8 +145,20 @@ message Message {
         mandatory: true
     }];
 
+    Origin origin = 7;
+    enum Origin {
+        // Standard user-generated message
+        USER = 0;
+        // Server-generated message (i.e. "system-message")
+        // NOTE: Clients are not permitted to send messages specifying this origin
+        SERVER = 1;
+    }
+
+    // Sender is the user which created the message.
+    // For regular messages with Origin = USER, this field is MANDATORY.
+    // For system messages with Origin = SERVER, this field must remain empty.
     common.v2.PersonaId sender = 3 [(kik.validation.field_validation) = {
-        mandatory: true
+        mandatory: false
     }];
 
     // Only used for rendering purposes.
@@ -78,69 +166,108 @@ message Message {
         mandatory: true
     }];
 
-    string body = 5;
+    // deprecated:
+    // string body = 5;
+
+    // Content of the message to be displayed.
+    //
+    // NOTE: If a ChatEvent is specified below, and that event is understood, the client should generate
+    //       message content based on the event instead of using this content.  In such a case, this
+    //       content serves as a default message if the chat event's type is not understood.
+    Content content = 6;
+
+    // The content of a message is the payload portion actually rendered for
+    // the sending and receiving user
+    message Content {
+        oneof kind {
+            Text text = 1;
+            GalleryPhoto gallery = 2;
+            CameraPhoto camera = 3;
+            Platform platform = 4;
+        }
+
+        // A pure-text message including smiley rendering, links, etc.
+        message Text {
+            RenderableText renderable_text = 1 [(kik.validation.field_validation) = {
+                mandatory: true
+            }];
+        }
+
+        // A photo selected from the sending user's gallery, with the
+        // associated photo upload
+        message GalleryPhoto {
+            ImagePreview preview = 1 [(kik.validation.field_validation) = { mandatory: true }];
+            common.blob.v2.BlobReference image = 2 [(kik.validation.field_validation) = { mandatory: true }];
+        }
+
+        // A photo taken from the sending user's camera, with the associated
+        // photo upload
+        message CameraPhoto {
+            ImagePreview preview = 1 [(kik.validation.field_validation) = { mandatory: true }];
+            common.blob.v2.BlobReference blob = 2 [(kik.validation.field_validation) = { mandatory: true }];
+        }
+
+        // A message constructed using one of the provided Kik SDK integrations.
+        // The rendering of the message will be predicated on the existance of
+        // certain fields
+        message Platform {
+            string app_name = 1 [(kik.validation.field_validation) = {
+                mandatory: true
+                max_byte_length: 1024
+            }];
+            // NOTE: one of image, title or description must be set for this to be a valid model
+            ImagePreview image = 2;
+            RenderableText title = 3;
+            RenderableText description = 4;
+            Link link = 5;
+
+            // Extras are generated by and relayed along to 3rd party web sites
+            // hosted inside of the Kik webview. Kik features should never use
+            // the contents of the extras section
+            //
+            // The values are generated by third party apps, and consumed by
+            // third party apps. Therefore, there is no validation by clients
+            // (or kik servers) except for size restrictions. Currently, there
+            // is no per-value size restriction, but the sum size of the entire
+            // map must be <= 5120.
+            map<string, string> extras = 6 [(kik.validation.field_validation) = {
+                // todo: total map size validation?
+                max_byte_length: 512 // This restriction currently enforces key size.
+            }];
+        }
+    }
+
+    // Optional Chat-specific metadata included when the kik server processes generate a message.
+    // This ChatEvent defines further context details about some action or response that has taken place
+    // within the context of the chat that the message was posted to.
+    //
+    // NOTE: ChatEvent metadata may only be provided by a server-generated message.  Messages created by clients
+    //       which contain a ChatEvent are considered invalid and should be treated as such.
+    //
+    // Clients that receive a message containing a ChatEvent and are familiar with the ChatEvent kind
+    // should generate their own localized text in the chat rather than using the 'content' field of the message.
+    // "Legacy" clients (clients NOT familiar with the event type) should use the message 'content' field as a
+    // fallback, which will be a simple english description of the event.
+    common.messaging.v2.ChatEvent chat_event = 8;
 }
 
 message Pointer {
-    common.v2.ChatId chat_id = 1;
-    Message.Id message_id = 2;
-    common.v2.PersonaId persona = 3;
+    common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    Message.Id message_id = 2 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    common.v2.PersonaId persona = 3 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
 
     Type type = 4;
     enum Type {
         PUSHED = 0;
         DELIVERED = 1;
         READ = 2;
-    }
-}
-
-message ChatUpdate {
-    common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
-        mandatory: true
-    }];
-
-    // An optional preview of the chat. This is only to be used for rendering
-    // purposes on the chat list stream. It must not be used for any chat storage.
-    oneof preview {
-        TextPreview text_preview = 2;
-        ImagePreview image_preview = 3;
-    }
-
-    message TextPreview {
-        string preview_text = 1 [(kik.validation.field_validation) = {
-            mandatory: true
-            max_byte_length: 1024
-        }];
-    }
-
-    message ImagePreview {
-        // todo: fill me out
-    }
-
-
-    // NameUpdate indicates that there is an update to the name of the chat.
-    NameUpdate name_update = 4;
-    message NameUpdate {
-        // Note: If name is an empty string, then this is indicitive of the name
-        // being cleared. It is up to the client to determine what should be
-        // rendered.
-        string name = 3;
-    }
-
-    // If ProfilePicUpdate is set, then there is an update to the chat's profile
-    // picture.
-    ProfilePicUpdate profile_pic_update = 5;
-    message ProfilePicUpdate {
-        string profile_pic_url = 4;
-    }
-
-    // If ParticipansChange is set, then the participants of the chat has changed,
-    // and clients should call out to the respective services to refresh their
-    // participants list.
-    ParticipantsUpdate participants_update = 6;
-    message ParticipantsUpdate {
-        // todo: deal with diffing?
-        // perhaps anything larger than a certain size will not be participants
-        repeated common.v2.PersonaId participant_ids = 1;
     }
 }
