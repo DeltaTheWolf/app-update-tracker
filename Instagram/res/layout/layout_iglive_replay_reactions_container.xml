@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/reactions_container" android:paddingBottom="@dimen/button_width" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="250.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.ui.widget.touchconstrainedrecyclerview.TouchConstrainedRecyclerView android:id="@id/iglive_comment_list" android:paddingBottom="@dimen/iglive_bottom_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
-    <ViewStub android:id="@id/iglive_pinned_comment_stub" android:layout="@layout/layout_iglive_comment_row" android:inflatedId="@id/iglive_pinned_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.instagram.ui.widget.slidecontentlayout.SlideContentLayout android:id="@id/interactivity_question_sticker_container" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/iglive_row_margin" android:layout_marginStart="@dimen/iglive_row_margin" android:layout_marginEnd="@dimen/iglive_row_margin" />
-</LinearLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/view_play_button_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/view_play_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_button" android:scaleType="center" />
-    <LinearLayout android:gravity="center" android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:id="@id/zero_rating_video_badge_container" android:background="@drawable/zero_rating_direct_video_badge_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/zero_rating_direct_video_nux_height" android:layout_marginLeft="@dimen/zero_rating_direct_video_nux_margin" android:layout_marginBottom="@dimen/zero_rating_direct_video_nux_margin">
-        <ImageView android:id="@id/zero_rating_video_badge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinsta_data_white" />
-        <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:ellipsize="end" android:id="@id/zero_rating_data_video_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_rating_turn_on_video_text" android:textAllCaps="true" maxLines="1" />
-    </LinearLayout>
-</FrameLayout>

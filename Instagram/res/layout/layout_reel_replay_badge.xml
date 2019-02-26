@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="bottom|center" android:id="@id/play_badge_view" android:background="@drawable/reel_badge_white_background" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/badge_icon" android:background="@drawable/reel_badge_label_background" android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="17.0dip" android:layout_height="13.0dip" android:src="@drawable/play_button" android:scaleType="fitCenter" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" />
-</FrameLayout>

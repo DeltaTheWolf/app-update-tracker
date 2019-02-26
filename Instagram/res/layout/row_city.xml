@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" style="@style/PaddedRow"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textStyle="bold" android:ellipsize="end" android:gravity="start|center" android:id="@id/row_city_text" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small" android:maxLines="1" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" />
-    <include layout="@layout/row_divider" />
-</LinearLayout>

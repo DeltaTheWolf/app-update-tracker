@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reg_page_info_margin" android:layout_marginTop="@dimen/reg_page_info_margin" android:layout_marginRight="@dimen/reg_page_info_margin" android:layout_marginBottom="@dimen/reg_margin_medium" android:layout_marginStart="@dimen/reg_page_info_margin" android:layout_marginEnd="@dimen/reg_page_info_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/grey_9" android:gravity="center_horizontal" android:id="@id/field_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
-    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:gravity="center_horizontal" android:id="@id/field_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_small" android:includeFontPadding="false" android:fontFamily="sans-serif" />
-</LinearLayout>

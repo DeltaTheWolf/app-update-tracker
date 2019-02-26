@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="25.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/nux_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pinch_to_zoom_nux" />
-    <ImageView android:id="@id/left_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/translucent_circle" />
-    <ImageView android:id="@id/right_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/translucent_circle" />
-</FrameLayout>

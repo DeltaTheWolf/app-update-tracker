@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.ui.widget.thumbnailview.ThumbnailView android:id="@id/saved_collection_thumbnail" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/save_home_collections_collection_name_bottom_padding" android:paddingBottom="@dimen/save_home_collections_collection_name_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ViewStub android:layout_gravity="center_vertical" android:id="@id/saved_collection_glyph_stub" android:layout="@layout/saved_collection_glyph" android:layout_width="@dimen/font_medium" android:layout_height="@dimen/font_medium" android:layout_marginRight="@dimen/saved_collection_glyph_margin" android:layout_marginEnd="@dimen/saved_collection_glyph_margin" />
-        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:ellipsize="end" android:gravity="start" android:id="@id/saved_collection_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" app:capitalize="false" />
-    </LinearLayout>
-</LinearLayout>

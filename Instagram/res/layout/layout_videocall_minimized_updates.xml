@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@color/black_30_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.facebook.shimmer.ShimmerFrameLayout android:layout_gravity="center" android:id="@id/videocall_minimized_update_indicator_shimmer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shimmer_auto_start="true" app:shimmer_base_alpha="0.6" app:shimmer_direction="left_to_right" app:shimmer_duration="1500" app:shimmer_width_ratio="1.0">
-        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/videocall_minimized_update_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:normal="@color/white" />
-    </com.facebook.shimmer.ShimmerFrameLayout>
-</FrameLayout>

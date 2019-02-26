@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:layout_gravity="center_horizontal" android:id="@id/retry_button" android:background="@drawable/refresh_big" android:layout_width="64.0dip" android:layout_height="64.0dip" />
-    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:id="@id/info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_failed" android:singleLine="true" />
-        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="?textColorSecondary" android:id="@id/retry_text_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/retry" android:singleLine="true" android:layout_marginStart="4.0dip" />
-    </LinearLayout>
-</LinearLayout>

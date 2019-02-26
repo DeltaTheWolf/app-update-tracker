@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/follow_header_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_hashtag_feed_header" />
-    <include android:id="@id/related_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip" layout="@layout/related_item_carousel_view" />
-</LinearLayout>

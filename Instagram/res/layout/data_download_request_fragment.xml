@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/data_download_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <include layout="@layout/data_download_fragment" />
-    <View android:id="@id/divider" android:layout_above="@id/button_container" style="@style/Widget.Instagram.Divider" />
-    <LinearLayout android:orientation="vertical" android:id="@id/button_container" android:padding="@dimen/container_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
-        <com.instagram.ui.widget.progressbutton.ProgressButton android:layout_gravity="center" android:id="@id/download_request_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/next_button_height" android:text="@string/data_download_request_download" app:progressBarTint="@color/blue_5" />
-    </LinearLayout>
-</RelativeLayout>

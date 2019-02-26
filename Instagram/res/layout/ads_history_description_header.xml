@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/recent_ads_activity_end_top_padding" android:paddingBottom="@dimen/recent_ads_activity_start_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/recent_ads_activity_start_bottom_padding" android:paddingEnd="@dimen/recent_ads_activity_end_top_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:id="@id/your_ad_activity_title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ad_activity_title" />
-    <TextView android:textSize="@dimen/font_medium" android:id="@id/your_ad_activity_description_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ad_activity_description" />
-</LinearLayout>

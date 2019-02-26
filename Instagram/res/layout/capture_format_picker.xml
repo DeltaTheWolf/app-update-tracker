@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="bottom" android:id="@id/format_picker" android:layout_width="fill_parent" android:layout_height="@dimen/quick_capture_format_picker_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.reboundhorizontalscrollview.ReboundHorizontalScrollView android:id="@id/format_picker_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.instagram.ui.widget.triangleshape.TriangleShape android:layout_gravity="bottom|center" android:id="@id/format_picker_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/quick_capture_format_indicator_height" />
-</FrameLayout>

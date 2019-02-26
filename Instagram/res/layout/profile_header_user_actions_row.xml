@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/profile_header_actions_top_row" style="@style/ProfileHeaderActionButtonsRow" />
-    <ViewStub android:id="@id/profile_header_actions_bottom_row_stub" android:layout="@layout/profile_header_user_action_bottom_button_row" android:layout_marginTop="@dimen/profile_header_user_actions_button_vertical_spacing" style="@style/ProfileHeaderActionButtonsRow" />
-    <include layout="@layout/profile_header_suggested_users_container" />
-</LinearLayout>

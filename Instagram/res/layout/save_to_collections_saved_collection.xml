@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/save_to_collections_collection_tile" />
-    <TextView android:textSize="@dimen/font_small" android:ellipsize="end" android:gravity="center" android:id="@id/collection_name" android:layout_width="@dimen/save_to_collections_saved_collection_size" android:layout_height="wrap_content" android:maxLines="1" />
-</LinearLayout>

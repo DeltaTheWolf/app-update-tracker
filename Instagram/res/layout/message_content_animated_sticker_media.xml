@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/image_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
-        <include layout="@layout/double_tap_big_heart" />
-    </FrameLayout>
-    <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</LinearLayout>

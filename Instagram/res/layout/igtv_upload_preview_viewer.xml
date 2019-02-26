@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/root_container" android:background="@color/grey_9" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.videopreviewview.VideoPreviewView android:id="@id/pending_video_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" layout="@layout/video_scrubber_layout" />
-    <include app:layout_constraintTop_toTopOf="parent" layout="@layout/action_bar" />
-</android.support.constraint.ConstraintLayout>

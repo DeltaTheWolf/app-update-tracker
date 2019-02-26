@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/confirmation_field_inline_error" style="@style/RegInlineErrorMessageViewStyle">
-        <com.instagram.ui.widget.searchedittext.SearchEditText android:id="@id/confirmation_field" android:hint="@string/confirmation_code" android:drawableRight="@drawable/search_clear" android:inputType="number" android:drawableEnd="@drawable/search_clear" style="@style/RegEditTextStyle" />
-    </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
-</merge>

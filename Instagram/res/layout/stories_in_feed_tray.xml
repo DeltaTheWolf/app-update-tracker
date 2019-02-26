@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/row_divider_1px" android:showDividers="beginning|end"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/stories_tray_header_row" />
-    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="@dimen/tray_padding_horizontal" android:paddingRight="@dimen/tray_padding_horizontal" android:paddingBottom="@dimen/tray_padding_bottom" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

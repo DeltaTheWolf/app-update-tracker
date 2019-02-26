@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/slider_results_summary_emoji_size" android:gravity="center_horizontal" android:id="@id/slider_results_summary_emoji" android:paddingTop="@dimen/slider_results_summary_emoji_padding_top" android:paddingBottom="@dimen/slider_results_summary_emoji_padding_bottom" android:layout_width="@dimen/slider_results_summary_emoji_width" android:layout_height="wrap_content" />
-    <ImageView android:id="@id/slider_results_summary_slider" android:paddingTop="@dimen/slider_results_summary_slider_padding_top" android:paddingBottom="@dimen/slider_results_summary_slider_padding_bottom" android:layout_width="@dimen/slider_results_summary_slider_width" android:layout_height="wrap_content" />
-    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:id="@id/slider_results_summary_description" android:paddingLeft="@dimen/slider_results_summary_description_padding_horizontal" android:paddingRight="@dimen/slider_results_summary_description_padding_horizontal" android:paddingBottom="@dimen/slider_results_summary_description_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</LinearLayout>

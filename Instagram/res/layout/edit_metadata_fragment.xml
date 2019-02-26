@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include layout="@layout/video_metadata_section" />
-        <View android:layout_gravity="bottom" android:layout_marginTop="12.0dip" style="@style/igtv_end_divider" />
-    </LinearLayout>
-</ScrollView>

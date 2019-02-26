@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.ui.widget.roundedcornerlayout.RoundedCornerMediaFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:strokeColor="@color/black_20_transparent" app:strokeWidth="@dimen/selectable_view_image_stroke_width"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/selectable_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholder="@color/image_placeholder" />
-    <ImageView android:layout_gravity="center" android:id="@id/select_check_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check" />
-</com.instagram.ui.widget.roundedcornerlayout.RoundedCornerMediaFrameLayout>

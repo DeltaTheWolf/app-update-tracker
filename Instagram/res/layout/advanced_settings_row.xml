@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?creationRowPadding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:layout_gravity="bottom" android:id="@id/advanced_settings_row_divider" android:background="@color/grey_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="8.0dip" />
-    <com.instagram.common.ui.text.TitleTextView android:id="@id/advanced_settings_text_view" android:paddingLeft="?creationPadding" android:paddingRight="?creationPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advanced_settings" android:paddingStart="?creationPadding" android:paddingEnd="?creationPadding" style="?creationFootnote" />
-</LinearLayout>

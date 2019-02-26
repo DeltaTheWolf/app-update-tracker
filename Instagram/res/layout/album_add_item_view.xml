@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center_vertical" android:paddingRight="@dimen/album_preview_add_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/add" android:paddingEnd="@dimen/album_preview_add_item_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/add_item_view" android:background="@drawable/album_add_item_background" android:layout_width="@dimen/album_preview_add_item_circle_size" android:layout_height="@dimen/album_preview_add_item_circle_size" android:layout_marginLeft="@dimen/album_preview_add_item_margin" android:layout_marginRight="@dimen/album_preview_add_item_margin" />
-    <View android:layout_gravity="center" android:background="@drawable/album_add_item_plus" android:layout_width="@dimen/album_preview_add_item_plus_length" android:layout_height="@dimen/album_preview_add_item_plus_length" />
-</FrameLayout>

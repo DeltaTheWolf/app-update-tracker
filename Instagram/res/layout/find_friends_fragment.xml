@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/landing_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.ui.widget.searchedittext.SearchEditText android:gravity="center_vertical" android:id="@id/search_edit_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/find_friends_search_margin_horizontal" android:layout_marginRight="@dimen/find_friends_search_margin_horizontal" android:minHeight="@dimen/row_height_small" android:singleLine="true" android:freezesText="true" android:drawableLeft="@drawable/nav_search" android:drawableRight="@drawable/search_clear" android:drawablePadding="@dimen/find_friends_search_drawable_padding" android:imeOptions="actionSearch" android:drawableStart="@drawable/nav_search" android:drawableEnd="@drawable/search_clear" android:layout_marginStart="@dimen/find_friends_search_margin_horizontal" android:layout_marginEnd="@dimen/find_friends_search_margin_horizontal" />
-    <include android:id="@id/empty_view" layout="@layout/find_friends_fragment_empty_view" />
-    <ListView android:id="@android:id/list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ListViewStyle" />
-</LinearLayout>

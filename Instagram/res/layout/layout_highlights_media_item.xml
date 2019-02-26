@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/media_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholder="@color/image_placeholder" />
-    <View android:id="@id/selected_item_overlay" android:background="@color/white_50_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <CheckBox android:layout_gravity="end|bottom|center" android:id="@id/media_toggle" android:background="@drawable/blue_checkbox_background" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:button="@null" />
-</com.instagram.common.ui.widget.framelayout.MediaFrameLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_large" />
-    <com.instagram.common.ui.widget.calendar.CalendarRecyclerView android:id="@id/calendar" android:paddingLeft="@dimen/calendar_edge_padding" android:paddingRight="@dimen/calendar_edge_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/calendar_edge_padding" android:paddingEnd="@dimen/calendar_edge_padding" />
-</FrameLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/zero_rating_data_banner_container" android:background="@color/zero_rating_data_banner_color" android:layout_width="fill_parent" android:layout_height="@dimen/zero_rating_data_banner_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/zero_rating_data_banner_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinsta_data_white" />
-    <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:id="@id/zero_rating_data_banner_text" android:background="@color/zero_rating_data_banner_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_rating_data_banner_text" maxLines="1" />
-</LinearLayout>

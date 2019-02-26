@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/active_canvas_element_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:layout_gravity="bottom|center" android:id="@id/active_canvas_element_dice_view" android:background="@drawable/canvas_action_button_bg" android:visibility="gone" android:layout_width="@dimen/canvas_action_button_width" android:layout_height="@dimen/canvas_action_button_height" android:src="@drawable/canvas_dice_icon" android:scaleType="center" />
-</FrameLayout>

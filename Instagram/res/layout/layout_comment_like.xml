@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/feed_content_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/feed_content_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.ui.widget.bouncyufibutton.IgBouncyUfiButtonImageView android:layout_gravity="center" android:id="@id/row_feed_comment_like_button" android:layout_width="@dimen/like_or_x_button_size" android:layout_height="@dimen/like_or_x_button_size" android:layout_marginLeft="@dimen/like_or_x_button_margin" android:layout_marginRight="@dimen/like_or_x_button_margin" android:src="@drawable/ufi_heart_icon" android:layout_marginStart="@dimen/like_or_x_button_margin" android:layout_marginEnd="@dimen/like_or_x_button_margin" app:active="?feedLikeActiveColor" app:normal="?glyphColorSecondary" />
-</FrameLayout>

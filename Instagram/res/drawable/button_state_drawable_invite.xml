@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:state_enabled="true" android:drawable="@drawable/primary_button_selector" app:state_blue="true" />
-    <item android:state_enabled="true" android:drawable="@drawable/secondary_button_selector" app:state_grey="true" />
-    <item android:state_enabled="true" android:drawable="@color/white" app:state_blue="false" app:state_grey="false" />
-    <item android:state_enabled="false" android:drawable="@color/white" />
-</selector>

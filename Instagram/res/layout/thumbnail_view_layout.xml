@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.ui.widget.roundedcornerlayout.RoundedCornerMediaFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:edgeRadius="@dimen/thumbnail_radius"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ViewStub android:id="@id/single_thumbnail_stub" android:layout="@layout/single_image_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:id="@id/two_by_two_thumbnail_stub" android:visibility="gone" android:layout="@layout/two_by_two_grid_layout" android:inflatedId="@id/two_by_two_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:id="@id/two_rows_one_column_thumbnail_stub" android:visibility="gone" android:layout="@layout/two_rows_one_column_grid_layout" android:inflatedId="@id/two_rows_one_column_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:id="@id/two_columns_one_row_thumbnail_stub" android:visibility="gone" android:layout="@layout/two_columns_one_row_layout" android:inflatedId="@id/two_columns_one_row_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</com.instagram.ui.widget.roundedcornerlayout.RoundedCornerMediaFrameLayout>

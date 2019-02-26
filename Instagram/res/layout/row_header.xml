@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:gravity="start" android:id="@id/frame_header" android:paddingTop="8.0dip" android:clickable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:minHeight="@dimen/row_height_small"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/row_divider" android:background="@color/grey_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
-    <include android:gravity="start|center" layout="@layout/row_title_textview" />
-</android.support.constraint.ConstraintLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.ui.widget.dashededge.DashedEdgeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bottomEdge="false" app:endEdge="false" app:startEdge="true" app:topEdge="false" style="@style/DirectReplyMessageDashedEdge">
-        <TextView android:paddingBottom="@dimen/direct_reply_message_content_reply_message_padding_bottom" android:text="@string/direct_reply_to_author_message_content_replied_to_post" style="@style/DirectMessageSmallReplyText" />
-        <com.instagram.feed.widget.IgProgressImageView android:id="@id/image" android:layout_width="140.0dip" android:layout_height="140.0dip" android:foreground="@drawable/unified_inbox_message_mask" android:scaleType="centerCrop" />
-    </com.instagram.ui.widget.dashededge.DashedEdgeLinearLayout>
-    <ViewStub android:id="@id/direct_text_message_text_view_stub" android:layout="@layout/direct_text_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/direct_row_message_spacing" />
-</LinearLayout>

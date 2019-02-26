@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="?textColorPrimary" android:id="@id/pager_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compare" style="?contextualFeedTitleStyle" />
-    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_xsmall" android:id="@id/pager_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?contextualFeedTitleStyle" />
-</LinearLayout>

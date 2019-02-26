@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/business_fb_page_footer" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/row_divider" />
-    <TextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/business_fb_page_footer_text" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="@dimen/header_height" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" />
-</LinearLayout>

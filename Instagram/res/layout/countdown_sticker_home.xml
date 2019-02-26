@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/countdown_sticker_container" android:paddingTop="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/row_padding_small">
-        <TextView android:textSize="@dimen/font_xlarge" android:textStyle="bold" android:textColor="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/countdown_home_title" android:shadowColor="@color/black_40_transparent" android:shadowRadius="3.0" android:layout_weight="1.0" />
-        <TextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:id="@id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:shadowColor="@color/black_40_transparent" android:shadowRadius="3.0" android:paddingStart="@dimen/countdown_home_cancel_button_horizontal_padding" android:paddingEnd="@dimen/countdown_home_cancel_button_horizontal_padding" />
-    </LinearLayout>
-    <android.support.v7.widget.RecyclerView android:id="@id/countdown_sticker_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>

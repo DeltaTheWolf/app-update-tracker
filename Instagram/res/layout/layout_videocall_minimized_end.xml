@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/videocall_minimized_end_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call" android:rotation="-135.0" app:normal="@color/white" />
-    <TextView android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center" android:id="@id/videocall_minimized_end_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/videocall_row_margin" android:text="@string/video_call_user_feedback_request_navigation" android:maxLines="3" />
-</FrameLayout>

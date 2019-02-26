@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/message_content" android:background="@drawable/rounded_bubble_background_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DirectMessageContentPadded"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</LinearLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/email_suggestions_row" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?creationRowPadding"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <HorizontalScrollView android:id="@id/horizontal_scroll_view" android:background="@color/white" android:paddingLeft="?creationPadding" android:paddingRight="?creationPadding" android:visibility="gone" android:scrollbars="none" android:fadingEdgeLength="@dimen/email_scroll_fade" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:overScrollMode="never" android:requiresFadingEdge="horizontal" android:paddingStart="?creationPadding" android:paddingEnd="?creationPadding">
-        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/suggested_email_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-    </HorizontalScrollView>
-</LinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/fast_navigation_layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/fast_navigation_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" />
-    <com.instagram.feed.widget.IgProgressImageViewProgressBar android:layout_gravity="center" android:id="@id/fast_navigation_loading_progress_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/reel_image_determinate_progress" />
-</FrameLayout>

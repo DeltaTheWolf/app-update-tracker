@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="350.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.ui.widget.searchedittext.SearchEditText android:textColor="@color/black" android:id="@id/search" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:layout_marginRight="@dimen/action_bar_item_padding" android:hint="@string/category_name" android:imeOptions="actionSearch|flagNoExtractUi" android:layout_marginEnd="@dimen/action_bar_item_padding" style="@style/SearchEditText" />
-    <include android:id="@id/separator" android:visibility="gone" layout="@layout/row_divider" />
-    <ListView android:id="@id/category_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
-</LinearLayout>

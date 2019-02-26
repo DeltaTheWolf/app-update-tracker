@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:background="@drawable/interactivity_sheet_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/bottom_sheet_drag_handle" android:background="@drawable/interactivity_sheet_drag_handle" android:layout_width="@dimen/interactivity_sheet_drag_handle_width" android:layout_height="@dimen/interactivity_sheet_drag_handle_height" android:layout_marginTop="@dimen/interactivity_container_padding" android:layout_marginBottom="@dimen/interactivity_container_padding" app:layout_constraintBottom_toTopOf="@id/interactivity_ama_questions_list_animator" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <include android:id="@id/interactivity_ama_questions_list_animator" layout="@layout/layout_story_questions_list_panel" />
-</android.support.constraint.ConstraintLayout>

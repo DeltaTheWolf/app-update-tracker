@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:id="@id/dev_server" android:layout_width="fill_parent" android:layout_height="34.0dip" android:hint="@string/dev_choose_api_host" android:inputType="textNoSuggestions" />
-    <EditText android:id="@id/dev_mqtt_server" android:layout_width="fill_parent" android:layout_height="34.0dip" android:hint="@string/dev_choose_mqtt_host" android:inputType="textNoSuggestions" />
-    <TextView android:textColor="#ff999999" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dev_choose_hosts_subtitle" />
-</LinearLayout>

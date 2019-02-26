@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:id="@id/top_image" style="@style/ThumbnailGridItem" />
-    <Space android:layout_width="fill_parent" android:layout_height="@dimen/thumbnail_grid_margin" />
-    <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:id="@id/bottom_image" style="@style/ThumbnailGridItem" />
-</LinearLayout>

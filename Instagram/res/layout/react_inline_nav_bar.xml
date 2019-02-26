@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/inline_nav_bar_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center|left|top" android:id="@id/react_inline_close_button" android:visibility="gone" android:layout_width="@dimen/inline_nav_bar_height" android:layout_height="@dimen/inline_nav_bar_height" android:src="@drawable/close_button" android:scaleType="centerInside" android:tint="@color/close_button_tint_color" />
-    <TextView android:textSize="16.0sp" android:textColor="#7f000000" android:gravity="center_vertical" android:id="@id/react_inline_title" android:layout_width="fill_parent" android:layout_height="@dimen/inline_nav_bar_height" android:layout_marginLeft="@dimen/title_margin_left" android:maxLines="1" android:drawablePadding="2.0dip" />
-    <View android:layout_gravity="bottom" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="1.0px" />
-</FrameLayout>

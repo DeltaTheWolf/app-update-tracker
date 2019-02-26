@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/megaphone_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/v3_vertical_margin_small"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.text.TitleTextView android:id="@id/primary_button" android:layout_width="fill_parent" style="@style/Megaphone.PrimaryButton" />
-    <com.instagram.common.ui.text.TitleTextView android:id="@id/inverse_primary_button" android:layout_width="fill_parent" android:layout_marginTop="@dimen/v3_button_separation" style="@style/Megaphone.PrimaryButton.Inverse" />
-</LinearLayout>

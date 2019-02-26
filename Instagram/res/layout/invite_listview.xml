@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
-        <include layout="@layout/layout_listview_with_progress" />
-    </LinearLayout>
-    <Button android:textSize="@dimen/font_medium_xlarge" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/invite_bar" android:background="@color/blue_5" android:paddingTop="@dimen/invite_bar_vert_padding" android:paddingBottom="@dimen/invite_bar_vert_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invite_button_invite" />
-</LinearLayout>

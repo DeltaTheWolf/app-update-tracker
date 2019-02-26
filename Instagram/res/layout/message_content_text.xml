@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/direct_message_unified_inbox_avatar_spacing" android:layout_marginRight="@dimen/direct_row_message_horizontal_padding" android:layout_marginStart="@dimen/direct_message_unified_inbox_avatar_spacing" android:layout_marginEnd="@dimen/direct_row_message_horizontal_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/direct_text_message" />
-    <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</LinearLayout>

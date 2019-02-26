@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.ui.widget.base.BoundedLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/camera_save_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/save_button_description"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/camera_save_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instagram_download_outline_44" />
-    <TextView android:id="@id/camera_save_button_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_button_text" style="@style/StoryShortcutButtonV0Text" />
-</com.instagram.ui.widget.base.BoundedLinearLayout>

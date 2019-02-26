@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/username_inline_error" style="@style/RegInlineErrorMessageViewStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:id="@id/username_container" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RegEditTextContainerStyle">
-        <com.instagram.ui.widget.searchedittext.SearchEditText android:id="@id/username" android:layout_width="0.0dip" android:hint="@string/username" android:layout_weight="1.0" style="@style/RegEditTextStyle.InContainer" />
-        <ImageView android:layout_gravity="center_vertical" android:id="@id/username_validation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/row_padding" android:src="@drawable/username_valid" android:layout_marginEnd="@dimen/row_padding" />
-    </LinearLayout>
-</com.instagram.ui.widget.inlineerror.InlineErrorMessageView>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/video_call_participant_avatar" android:layout_width="@dimen/direct_video_call_participant_avatar_size" android:layout_height="@dimen/direct_video_call_participant_avatar_size" android:layout_margin="@dimen/direct_video_call_participant_avatar_margin" app:strokeColor="@color/grey_2" app:strokeWidth="@dimen/direct_video_call_participant_avatar_stroke_width" />
-    <ImageView android:id="@id/videocall_inviting_participant_indicator" android:background="@drawable/dark_translucent_oval" android:padding="@dimen/direct_video_call_inviting_participant_indicator_padding" android:visibility="gone" android:layout_width="@dimen/direct_video_call_participant_avatar_size" android:layout_height="@dimen/direct_video_call_participant_avatar_size" android:layout_margin="@dimen/direct_video_call_participant_avatar_margin" android:scaleType="centerInside" />
-</FrameLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/action_bar" />
-    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" layout="@layout/page_list_group" />
-    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" layout="@layout/igtv_no_admin_page_layout" />
-</FrameLayout>

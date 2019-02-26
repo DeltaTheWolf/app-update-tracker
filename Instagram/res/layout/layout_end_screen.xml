@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/end_padding" android:paddingRight="@dimen/end_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/end_padding" android:paddingEnd="@dimen/end_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/survey_logo" />
-    <TextView android:textSize="@dimen/thanks_text_size" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/thanks_margin_top" android:text="@string/thanks" />
-    <TextView android:textSize="@dimen/feedback_text_size" android:textColor="@color/grey_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feedback_margin_top" android:text="@string/thanks_for_feedback" />
-</LinearLayout>

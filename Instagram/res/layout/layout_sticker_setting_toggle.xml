@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sticker_setting_toggle_container" android:background="@color/black_60_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/sticker_setting_toggle_height" android:layout_marginTop="@dimen/sticker_setting_toggle_top_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:ellipsize="end" android:id="@id/sticker_setting_toggle_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:layout_marginStart="@dimen/sticker_setting_toggle_label_margin" />
-    <com.instagram.ui.widget.switchbutton.IgSwitch android:id="@id/sticker_setting_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/sticker_setting_toggle_label_margin" android:layout_marginEnd="@dimen/sticker_setting_toggle_label_margin" />
-</LinearLayout>

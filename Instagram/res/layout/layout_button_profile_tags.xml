@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/button_profile_tags_imageview" android:clickable="true" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/instagram_tag_up_outline_24" android:scaleType="center" android:contentDescription="@string/profile_tagged_description" app:active="@color/blue_5" app:normal="?glyphColorSecondary" />
-    <TextView android:id="@id/button_profile_tags_textview" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginBottom="3.0dip" android:layout_marginStart="16.0dip" style="@style/NotificationBadge.Medium" />
-</merge>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/message_content_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ViewStub android:layout_gravity="end|center|top" android:id="@id/stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/direct_row_message_horizontal_padding" android:layout_marginEnd="@dimen/direct_row_message_horizontal_padding" />
-        <include layout="@layout/thread_list_message_metadata" />
-    </FrameLayout>
-    <ViewStub android:layout_gravity="end|bottom|center" android:id="@id/will_not_upload_message_stub" android:layout="@layout/will_not_upload_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/direct_row_message_common_padding" android:layout_marginBottom="@dimen/direct_row_message_common_padding" android:layout_marginEnd="@dimen/direct_row_message_common_padding" />
-</LinearLayout>

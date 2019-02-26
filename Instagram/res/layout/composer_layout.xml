@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <GridView android:id="@id/gallery_grid" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/direct_gallery_grid_spacing" android:verticalSpacing="@dimen/direct_gallery_grid_spacing" android:numColumns="@integer/direct_gallery_grid_num_columns" />
-    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.instagram.direct.ui.inlinegallerysendbutton.InlineGallerySendButton android:layout_gravity="center" android:id="@id/inline_gallery_send_button" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginBottom="@dimen/direct_camera_controls_bottom_margin" android:contentDescription="@string/direct_media_composer_send_button_description" app:arrowColour="@color/blue_5" app:arrowHeadEdgeLength="12.0dip" app:arrowLength="20.0dip" app:arrowThickness="2.0dip" app:innerCircleColour="@android:color/white" app:innerCircleInset="12.5dip" app:outerCircleColour="@color/white_30_transparent" />
-        <TextView android:textColor="@color/grey_5" android:gravity="center" android:layout_gravity="bottom" android:id="@id/max_limit_view" android:background="@color/grey_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" />
-    </LinearLayout>
-</merge>

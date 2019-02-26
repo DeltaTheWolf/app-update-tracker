@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/permissions_inbox_header_title" android:background="@color/grey_0" android:padding="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <include layout="@layout/row_divider" />
-</FrameLayout>

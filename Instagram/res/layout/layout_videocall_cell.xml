@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/videocall_debug_stub" android:layout="@layout/layout_videocall_debug_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <View android:gravity="center" android:layout_gravity="center" android:id="@id/videocall_cell_mute_indicator" android:background="@drawable/mic_off_overlay" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:alpha="0.5" style="@style/ShadowTextViewStyle" />
-</FrameLayout>

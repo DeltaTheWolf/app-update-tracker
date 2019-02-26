@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.reboundhorizontalscrollview.ReboundHorizontalScrollView android:gravity="center_vertical" android:id="@id/render_scroll_view" android:background="?creationSecondaryBackground" android:paddingLeft="@dimen/album_preview_container_padding" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/album_preview_container_padding" />
-    <ViewSwitcher android:id="@id/album_edit_filter_view_switcher" android:background="?creationSecondaryBackground" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.instagram.creation.base.ui.effectpicker.FilterPicker android:id="@id/album_filter_picker" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-        <include layout="@layout/filter_strength_adjust" />
-    </ViewSwitcher>
-</LinearLayout>

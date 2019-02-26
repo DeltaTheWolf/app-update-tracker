@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/end_of_feed_unit_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/see_more_top_divider" style="@style/Widget.Instagram.Divider" />
-    <TextView android:gravity="center" android:id="@id/see_more_title" android:paddingLeft="@dimen/end_of_feed_unit_outer_padding" android:paddingTop="@dimen/see_more_outer_padding" android:paddingRight="@dimen/end_of_feed_unit_outer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SeeMoreTitleText" />
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/see_more_chevron" android:paddingBottom="@dimen/see_more_outer_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_header_chevron" app:normal="@color/blue_5" />
-    <View android:id="@id/see_more_bottom_divider" style="@style/Widget.Instagram.Divider" />
-</LinearLayout>

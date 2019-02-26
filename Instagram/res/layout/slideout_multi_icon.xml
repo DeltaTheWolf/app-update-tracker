@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/slideout_iconview" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/slideout_iconview_icons_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/slideout_iconview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" app:medium="true" />
-    <ViewStub android:layout_gravity="center" android:id="@id/slideout_iconview_chevron_stub" android:layout="@layout/slideout_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</LinearLayout>

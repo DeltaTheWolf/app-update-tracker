@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/row_category_container" android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/row_height" android:minHeight="@dimen/row_height">
-        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/row_category_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
-        <RadioButton android:id="@id/radio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" />
-    </LinearLayout>
-    <include layout="@layout/row_divider" />
-</FrameLayout>

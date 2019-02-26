@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:ellipsize="end" android:gravity="start|center" android:id="@id/tooltip_bold_text" android:paddingLeft="14.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" app:capitalize="false" style="@style/ShadowTextViewStyle" />
-        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:ellipsize="end" android:gravity="start|center" android:id="@id/tooltip_plain_text" android:paddingLeft="14.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" app:capitalize="false" app:medium="true" style="@style/ShadowTextViewStyle" />
-    </LinearLayout>
-    <ImageView android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reel_tagging_chevron" />
-</LinearLayout>

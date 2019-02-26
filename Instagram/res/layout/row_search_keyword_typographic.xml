@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_simple_row" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:layout_width="fill_parent" android:layout_height="66.0dip" android:minHeight="66.0dip" android:paddingStart="?searchRowPadding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/keyword_title" />
-    <include layout="@layout/keyword_chevron" />
-</LinearLayout>

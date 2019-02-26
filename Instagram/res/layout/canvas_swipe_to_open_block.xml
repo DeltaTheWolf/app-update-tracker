@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/swipe_to_open_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_block_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="@drawable/reel_viewer_shadow_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ImageView android:layout_gravity="bottom|center" android:id="@id/chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/canvas_swipe_to_open_text_margin_bottom" android:src="@drawable/viewer_swipeup" />
-    <ImageView android:layout_gravity="bottom|center" android:id="@id/chevron_fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/canvas_swipe_to_open_text_margin_bottom" android:src="@drawable/viewer_swipeup_fill" android:alpha="0.0" />
-    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/swipe_to_open_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/canvas_swipe_to_open_text_margin_bottom" android:text="@string/swipe_to_open_text" style="@style/ShadowTextViewStyle" />
-</FrameLayout>

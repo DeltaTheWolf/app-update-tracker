@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_gravity="center"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/pulse_circle_outer" android:visibility="gone" android:layout_width="@dimen/pulse_circle_outer_radius" android:layout_height="@dimen/pulse_circle_outer_radius" android:src="@drawable/pulse_circle_outer" />
-    <ImageView android:layout_gravity="center" android:id="@id/pulse_circle_inner" android:visibility="gone" android:layout_width="@dimen/pulse_circle_inner_radius" android:layout_height="@dimen/pulse_circle_inner_radius" android:src="@drawable/pulse_circle_inner" />
-    <ImageView android:layout_gravity="center" android:id="@id/pulse_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pulse_circle_side_margin_offset" android:layout_marginStart="@dimen/pulse_circle_side_margin_offset" />
-</merge>

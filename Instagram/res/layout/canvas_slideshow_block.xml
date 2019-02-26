@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ImageView android:layout_gravity="end|center" android:id="@id/canvas_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/canvas_slideshow_nux_margin_right" android:src="@drawable/canvas_right" />
-    <include android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" layout="@layout/carousel_page_indicator" />
-</FrameLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/between_button_vertical_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ScrollView android:id="@id/consent_scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
-        <include android:id="@id/age_confirm" layout="@layout/gdpr_age_confirm_layout" />
-    </ScrollView>
-    <include android:id="@id/row_divider" layout="@layout/row_divider" />
-    <com.instagram.ui.widget.progressbutton.ProgressButton android:textSize="@dimen/content_text_size" android:gravity="center" android:id="@id/agree_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/gdpr_button_height" android:layout_marginLeft="@dimen/consent_button_margin_horizontal" android:layout_marginTop="@dimen/gdpr_button_margin_vertical" android:layout_marginRight="@dimen/consent_button_margin_horizontal" android:layout_marginBottom="@dimen/between_button_vertical_margin" android:text="@string/agree_button" />
-</LinearLayout>

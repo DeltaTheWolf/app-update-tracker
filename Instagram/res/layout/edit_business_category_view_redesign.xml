@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:minHeight="@dimen/row_height_small"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:id="@id/category_label" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/page_category" android:layout_weight="1.0" style="?label" />
-    <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:id="@id/category_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:freezesText="true" style="?bodyDetail" />
-</LinearLayout>

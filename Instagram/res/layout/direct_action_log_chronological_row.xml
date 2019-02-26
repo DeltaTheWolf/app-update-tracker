@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/direct_action_row_profile_pic" android:layout="@layout/direct_action_row_profile_pic" android:layout_width="@dimen/direct_row_message_send_state_icon_size_without_padding" android:layout_height="@dimen/direct_row_message_send_state_icon_size_without_padding" android:layout_marginTop="@dimen/direct_action_log_row_spacing" />
-    <ViewStub android:id="@id/direct_action_row_action_icon" android:layout="@layout/direct_action_row_action_icon" android:layout_width="@dimen/direct_row_message_send_state_icon_size" android:layout_height="@dimen/direct_row_message_send_state_icon_size" android:layout_marginTop="@dimen/direct_action_log_row_spacing" />
-    <TextView android:textSize="@dimen/direct_font_medium" android:textColor="@color/grey_9" android:ellipsize="end" android:id="@id/direct_action_row_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
-    <TextView android:textSize="@dimen/direct_font_medium" android:textColor="@color/grey_5" android:ellipsize="end" android:id="@id/direct_action_row_time_stamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
-</LinearLayout>

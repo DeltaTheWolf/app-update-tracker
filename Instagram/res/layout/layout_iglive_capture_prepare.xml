@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:id="@id/iglive_capture_prepare" android:background="@color/black_65_transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/iglive_connecting_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
-    <TextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/iglive_cancel_button" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="60.0dip" android:text="@string/cancel" android:contentDescription="@string/cancel" />
-</FrameLayout>

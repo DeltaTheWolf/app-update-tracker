@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_view" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:gravity="start" android:id="@id/title" android:paddingLeft="@dimen/row_padding" android:paddingTop="@dimen/row_text_padding" android:paddingRight="@dimen/row_padding" android:paddingBottom="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" />
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center_vertical" android:id="@id/more_options_button" android:paddingLeft="@dimen/feed_more_button_padding" android:paddingTop="@dimen/row_text_padding" android:paddingRight="@dimen/feed_more_button_padding" android:paddingBottom="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_option_button" android:contentDescription="@string/menu_options" app:active="?glyphColorSecondaryActive" app:normal="?glyphColorSecondary"
-      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
-</LinearLayout>

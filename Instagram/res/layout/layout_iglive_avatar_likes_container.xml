@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/avatar_likes_container" android:layout_width="@dimen/avatar_likes_container_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/button_width"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-    <com.instagram.ui.widget.avatarlike.AvatarLikesView android:id="@id/avatar_likes_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-</LinearLayout>

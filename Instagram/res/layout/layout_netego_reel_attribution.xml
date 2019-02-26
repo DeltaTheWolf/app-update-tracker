@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:paddingBottom="@dimen/reel_attribution_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/reel_viewer_profile_picture" android:layout_marginLeft="@dimen/reel_attribution_margin_left" android:contentDescription="@string/profile_photo_description" android:layout_marginStart="@dimen/reel_attribution_margin_left" style="@style/Avatar.Reel" />
-    <LinearLayout android:orientation="vertical" android:id="@id/reel_viewer_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/reel_viewer_title" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/reel_username_right_offset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/reel_username_right_offset" style="@style/ShadowTextViewStyle" />
-        <TextView android:textSize="@dimen/font_small" android:textColor="@color/white_70_transparent" android:ellipsize="end" android:id="@id/reel_viewer_subtitle" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" style="@style/ShadowTextViewStyle" />
-    </LinearLayout>
-</LinearLayout>

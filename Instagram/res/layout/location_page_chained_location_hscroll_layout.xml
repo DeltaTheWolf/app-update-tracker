@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:id="@id/chained_location_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginTop="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:layout_marginBottom="@dimen/row_padding" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" />
-    <com.instagram.ui.recyclerpager.HorizontalRecyclerPager android:orientation="horizontal" android:id="@id/chained_location_container" android:layout_width="fill_parent" android:layout_height="@dimen/location_chaining_card_unit_height" android:layout_marginBottom="@dimen/row_padding" />
-</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/selectable_single_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/selectable_avatar" style="@style/Avatar.ExtraLarge" />
-        <ImageView android:layout_gravity="center" android:id="@id/select_check_mark" android:visibility="gone" android:src="@drawable/check" style="@style/Avatar.XXSmall" />
-    </FrameLayout>
-</merge>

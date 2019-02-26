@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/carousel_media_group" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:id="@id/carousel_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-        <ViewStub android:layout_gravity="start|bottom|center" android:id="@id/media_indicator_view_stub" android:layout="@layout/view_media_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginBottom="@dimen/feed_content_padding" android:layout_marginStart="@dimen/feed_content_padding" />
-    </FrameLayout>
-    <include android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="@dimen/feed_feedback_item_height" layout="@layout/carousel_page_indicator" />
-</LinearLayout>

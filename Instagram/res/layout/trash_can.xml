@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/trash_can" android:padding="@dimen/trash_can_touch_padding" android:visibility="gone" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_medium" android:textColor="#feffffff" android:id="@id/trash_can_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="@string/trash_can_label" android:shadowColor="@color/black_25_transparent" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="7.2" />
-    <ImageView android:id="@id/trash_can_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:src="@drawable/overlay_trash_can" />
-</LinearLayout>

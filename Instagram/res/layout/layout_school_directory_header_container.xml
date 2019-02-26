@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/school_directory_header_group" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.ui.widget.typeahead.TypeaheadHeader android:id="@id/typeahead_header" android:background="?backgroundColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.instagram.ui.widget.fixedtabbar.FixedTabBar android:id="@id/fixed_tabbar_view" android:background="?backgroundColorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" />
-    <include android:layout_width="fill_parent" android:layout_height="@dimen/view_switcher_shadow_height" layout="@layout/view_switcher_shadow" />
-    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_listview" />
-</LinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:layout_gravity="center" android:id="@id/image_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.videopreviewview.VideoPreviewView android:layout_gravity="center" android:id="@id/tag_video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.instagram.common.ui.widget.imageview.IgImageView android:layout_gravity="center" android:id="@id/tag_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
-</com.instagram.common.ui.widget.framelayout.MediaFrameLayout>

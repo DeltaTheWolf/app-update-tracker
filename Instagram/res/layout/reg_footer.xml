@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/horizontal_footer_divider" android:background="?nuxDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
-    <TextView android:textSize="@dimen/font_small" android:textColor="?nuxTextColor" android:gravity="center" android:id="@id/log_in_button" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" />
-    <View android:layout_gravity="bottom" android:id="@id/short_divider" android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_text_padding" />
-</merge>

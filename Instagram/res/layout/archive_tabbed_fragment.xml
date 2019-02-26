@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/edit_highlights_metadata_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.instagram.ui.widget.fixedtabbar.FixedTabBar android:id="@id/fixed_tabbar_view" android:layout_width="fill_parent" style="?fixedTabBarStyle" />
-    <android.support.v4.view.ViewPager android:id="@id/tabs_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>

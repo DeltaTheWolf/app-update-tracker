@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main_container" android:paddingBottom="@dimen/row_text_button_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_large_not_scaled" android:textStyle="bold" android:gravity="center" android:id="@id/count" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <TextView android:textSize="@dimen/font_medium_not_scaled" android:ellipsize="end" android:gravity="center" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
-</LinearLayout>

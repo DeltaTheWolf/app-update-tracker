@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/video_reactions_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/video_reactions_discard_icon" android:padding="8.0dip" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/reaction_discard_cross" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:normal="@color/grey_5" />
-</RelativeLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/share_profile_photo_to_feed_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/reg_margin_small">
-        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_profile_photo_to_feed_title" android:layout_weight="1.0" android:fontFamily="sans-serif" />
-        <com.instagram.ui.widget.switchbutton.IgSwitch android:id="@id/share_profile_photo_to_feed_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </LinearLayout>
-    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_profile_photo_to_feed_subtitle" android:fontFamily="sans-serif" />
-</LinearLayout>

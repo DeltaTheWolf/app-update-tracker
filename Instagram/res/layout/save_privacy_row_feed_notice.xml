@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:gravity="center" android:layout_gravity="center" android:id="@id/notice_text_view" android:paddingLeft="@dimen/row_text_padding" android:paddingTop="@dimen/save_privacy_row_feed_notice_row_padding" android:paddingRight="@dimen/row_text_padding" android:paddingBottom="@dimen/save_privacy_row_feed_notice_row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_header_text" />
-</FrameLayout>

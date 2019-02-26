@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/row_divider" />
-    <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:ellipsize="end" android:gravity="start|center" android:id="@id/dismissable_callout_info_banner" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/comment_input_row_directmention_banner_height" android:maxLines="1" android:textAlignment="viewStart" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" />
-    <FrameLayout android:layout_gravity="end" android:id="@id/dismiss_button" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/like_or_x_button_padding_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/like_or_x_button_padding_right">
-        <ImageView android:layout_gravity="center" android:layout_width="@dimen/like_or_x_button_size" android:layout_height="@dimen/like_or_x_button_size" android:layout_marginLeft="@dimen/like_or_x_button_margin" android:layout_marginRight="@dimen/like_or_x_button_margin" android:src="@drawable/close" android:tint="@color/black" android:contentDescription="@string/dismiss" android:layout_marginStart="@dimen/like_or_x_button_margin" android:layout_marginEnd="@dimen/like_or_x_button_margin" />
-    </FrameLayout>
-</merge>

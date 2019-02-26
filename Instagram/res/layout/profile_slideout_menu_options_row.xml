@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/menu_row_pressed_state" android:paddingTop="@dimen/menu_item_spacing" android:paddingBottom="@dimen/menu_item_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="@dimen/menu_item_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/row_with_image" />
-    <ViewStub android:layout_gravity="center_vertical" android:id="@id/menu_badge_stub" android:layout="@layout/menu_options_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/row_text_padding" />
-</LinearLayout>

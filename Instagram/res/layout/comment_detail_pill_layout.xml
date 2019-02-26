@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.comments.realtime.CommentDetailPillLayout android:orientation="horizontal" android:padding="@dimen/comment_detail_pill_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/comment_detail_pill_top_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/comment_detail_pill_text_size" android:textColor="@color/black" android:id="@id/comment_detail_pill_text" android:paddingTop="@dimen/comment_detail_pill_text_padding_vertical" android:paddingBottom="@dimen/comment_detail_pill_text_padding_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/new_comments" android:paddingStart="@dimen/comment_detail_pill_text_padding_horizontal" android:paddingEnd="@dimen/comment_detail_pill_text_padding_horizontal" />
-</com.instagram.comments.realtime.CommentDetailPillLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="12.0sp" android:textColor="@color/white_70_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="12.0dip" android:text="@string/music_overlay_story_attribution_header_info" android:layout_marginStart="@dimen/music_search_row_start_padding" android:layout_marginEnd="@dimen/music_search_row_start_padding" />
-    <com.instagram.common.ui.text.TitleTextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/from_story_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/music_search_row_start_padding" android:layout_marginEnd="@dimen/music_search_row_start_padding" app:capitalize="false" />
-    <include android:id="@id/music_track_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" layout="@layout/music_search_row_track" />
-    <View android:id="@id/music_track_divider" android:background="@color/white_20_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="@dimen/music_search_row_start_padding" android:layout_marginEnd="@dimen/music_search_row_start_padding" />
-</LinearLayout>

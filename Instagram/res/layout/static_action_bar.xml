@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/static_action_bar_gradient_background" android:paddingBottom="@dimen/static_action_bar_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:layout_gravity="top" android:id="@id/touch_target" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" />
-    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/grey_3" android:layout_gravity="center|top" android:id="@id/static_action_bar_text" android:paddingTop="@dimen/static_action_bar_top_padding" android:layout_width="wrap_content" android:layout_height="?actionBarHeight" />
-    <ImageButton android:layout_gravity="center|right|top" android:id="@id/close_button" android:background="@color/transparent" android:padding="16.0dip" android:layout_width="?actionBarHeight" android:layout_height="?actionBarHeight" android:src="@drawable/close_dialog_button" android:scaleType="fitXY" android:contentDescription="@string/close" />
-</FrameLayout>

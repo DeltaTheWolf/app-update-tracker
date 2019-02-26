@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/layout_listview_parent_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.ui.listview.StickyHeaderListView android:id="@id/sticky_header_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <include layout="@layout/layout_refreshable_overscrollable_listview" />
-    </com.instagram.ui.listview.StickyHeaderListView>
-    <include layout="@layout/layout_listview_progressbar" />
-    <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errorImage="@drawable/loadmore_icon_refresh_compound" />
-</FrameLayout>

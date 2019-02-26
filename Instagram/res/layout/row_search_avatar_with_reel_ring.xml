@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/row_search_avatar_with_ring" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/row_search_avatar_in_ring" android:layout_width="?searchReelAvatarSize" android:layout_height="?searchReelAvatarSize" />
-    <com.instagram.ui.widget.gradientspinner.GradientSpinner android:layout_gravity="center" android:id="@id/reel_seen_state" android:visibility="invisible" android:layout_width="?searchReelRingSize" android:layout_height="?searchReelRingSize" />
-</FrameLayout>

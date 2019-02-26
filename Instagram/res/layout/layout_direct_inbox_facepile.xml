@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:focusable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/direct_inbox_indicator_content_description"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/empty_state" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" />
-    <FrameLayout android:layout_gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width">
-        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/user_avatar" android:visibility="gone" android:layout_width="@dimen/direct_inbox_indicator_facepile_avatar_size" android:layout_height="@dimen/direct_inbox_indicator_facepile_avatar_size" app:strokeColor="@color/white" app:strokeWidth="@dimen/direct_inbox_indicator_facepile_avatar_border_size" />
-        <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/unseen_threads_count" android:background="?badgeIndicatorBackgroundDrawable" android:visibility="gone" android:layout_width="@dimen/quick_capture_indicator_size" android:layout_height="@dimen/quick_capture_indicator_size" android:layout_marginTop="@dimen/quick_capture_indicator_margin" android:layout_marginRight="@dimen/quick_capture_indicator_margin" android:maxLines="1" android:layout_marginEnd="@dimen/quick_capture_indicator_margin" />
-    </FrameLayout>
-</FrameLayout>

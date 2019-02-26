@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.ui.widget.slideouticon.SlideInAndOutIconView android:layout_gravity="center" android:id="@id/sliding_play_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gradientEndColor="@color/cyan_5" app:gradientStartColor="@color/blue_5" app:text="@string/direct_inbox_play" app:textPaddingRight="10.0dip" app:textSize="@dimen/font_small" />
-    <com.instagram.ui.widget.gradientspinner.GradientSpinner android:layout_gravity="center" android:id="@id/loading_spinner" android:layout_width="28.0dip" android:layout_height="28.0dip" app:gradientPatternStyle="@style/DirectGradientStyle" />
-</FrameLayout>

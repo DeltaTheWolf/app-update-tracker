@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
-    <FrameLayout android:paddingTop="@dimen/lead_ad_button_padding_vertical" android:paddingBottom="@dimen/lead_ad_button_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lead_ad_button_margin" android:layout_marginRight="@dimen/lead_ad_button_margin">
-        <com.instagram.ui.widget.progressbutton.ProgressButton android:textSize="@dimen/font_medium" android:layout_gravity="center_vertical" android:id="@id/lead_ad_cta" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_button_height" android:maxLines="1" app:progressBarTint="@color/blue_5" app:textHorizontalPadding="@dimen/lead_ad_text_padding" />
-    </FrameLayout>
-</LinearLayout>

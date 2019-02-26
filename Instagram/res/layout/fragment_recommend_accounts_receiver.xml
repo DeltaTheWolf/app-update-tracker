@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/ListViewStyle" />
-        <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/follow_all_button" android:background="@drawable/button_blue_background_no_rounding" android:layout_width="fill_parent" android:layout_height="@dimen/recommend_accounts_follow_all_button_height" android:text="@string/recommend_accounts_follow_all_button" android:fontFamily="sans-serif-medium" />
-    </LinearLayout>
-    <include layout="@layout/layout_listview_progressbar" />
-</FrameLayout>

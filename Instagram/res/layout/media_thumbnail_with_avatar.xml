@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:gravity="center_vertical" android:id="@id/context_image" android:layout_width="@dimen/avatar_size_small" android:layout_height="@dimen/avatar_size_small" android:scaleType="fitXY" app:radius="8.0dip" app:strokeColor="@color/grey_3" app:strokeWidth="1.0dip" />
-    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="end|bottom|center" android:id="@id/context_badge" android:layout_width="@dimen/media_thumbnail_badge_size" android:layout_height="@dimen/media_thumbnail_badge_size" app:strokeColor="@color/white" app:strokeWidth="1.0dip" />
-</FrameLayout>

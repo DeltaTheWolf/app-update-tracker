@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/account_privacy_banner_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/account_privacy_banner_private" />
-    <View android:layout_gravity="bottom" style="@style/Widget.Instagram.Divider" />
-</FrameLayout>

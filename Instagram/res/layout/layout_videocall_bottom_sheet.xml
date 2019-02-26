@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/videocall_bottom_sheet" android:paddingTop="@dimen/videocall_bottom_sheet_peek_height" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:behavior_peekHeight="@dimen/videocall_bottom_sheet_peek_height" app:layout_behavior="com.instagram.video.videocall.view.VideoCallBottomSheetBehavior"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/bottom_sheet_drag_handle" android:background="@drawable/bottom_sheet_background" android:paddingTop="@dimen/videocall_bottom_sheet_handle_top_padding" android:paddingBottom="@dimen/videocall_bottom_sheet_handle_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_sheet_drag_handle" android:scaleType="fitCenter" />
-    <LinearLayout android:orientation="vertical" android:id="@id/bottom_sheet_contents" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>

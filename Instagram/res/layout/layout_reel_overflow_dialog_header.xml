@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/reel_overflow_dialog_header_profile_image_view" android:src="@drawable/profile_anonymous_user" style="@style/Avatar.ExtraExtraLarge" />
-    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/reel_overflow_dialog_header_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" />
-</LinearLayout>

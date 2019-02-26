@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/thumbnail_preview_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@android:id/list" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>

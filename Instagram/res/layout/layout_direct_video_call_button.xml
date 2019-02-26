@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="@dimen/direct_presence_indicator_width" android:layout_height="@dimen/direct_presence_indicator_height" android:src="@drawable/presence_indicator_badge_medium" />
-    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/video_call" android:paddingStart="@dimen/direct_presence_video_call_icon_padding_left" android:paddingEnd="@dimen/direct_presence_video_call_icon_padding_right" />
-</LinearLayout>

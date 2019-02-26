@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_gravity="center" android:layout_width="@dimen/facepile_large_width" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/facepile_avatar_left" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/FacepileAvatarStyle.Large.Secondary" />
-    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/facepile_avatar_right" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/FacepileAvatarStyle.Large.Secondary" />
-    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/facepile_avatar_center" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/FacepileAvatarStyle.Large.Primary" />
-</android.support.constraint.ConstraintLayout>

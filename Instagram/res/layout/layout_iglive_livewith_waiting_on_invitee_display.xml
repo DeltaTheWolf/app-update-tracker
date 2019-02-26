@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="?backgroundColorPrimary" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:gravity="center" android:layout_gravity="start|center" android:id="@id/iglive_livewith_waiting_on_invitee_cancel" android:background="@null" android:padding="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/dialog_x" android:scaleType="center" android:contentDescription="@string/cancel" app:normal="@color/black" />
-    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/iglive_waiting_on_invitee_message" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
-</FrameLayout>

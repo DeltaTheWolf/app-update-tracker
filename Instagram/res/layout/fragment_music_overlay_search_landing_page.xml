@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.instagram.ui.widget.fixedtabbar.FixedTabBar android:id="@id/music_overlay_landing_page_tab_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" />
-        <View android:background="@color/white_10_transparent" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-        <android.support.v4.view.ViewPager android:id="@id/music_overlay_search_results" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    </LinearLayout>
-</FrameLayout>

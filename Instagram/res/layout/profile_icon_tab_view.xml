@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ViewStub android:layout_gravity="bottom|center" android:id="@id/profile_tab_led_notification_stub" android:layout="@layout/profile_tab_led_notification_layout" android:layout_width="@dimen/led_notification_size" android:layout_height="@dimen/led_notification_size" android:layout_marginBottom="7.0dip" />
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/profile_tab_icon_view" android:clickable="true" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" app:normal="?glyphColorSecondary" />
-    <ViewStub android:id="@id/profile_tab_badge_count_view_stub" android:layout="@layout/profile_tab_badge_count_layout" android:layout_marginLeft="16.0dip" android:layout_marginBottom="3.0dip" android:layout_marginStart="16.0dip" style="@style/NotificationBadge.Medium" />
-</merge>

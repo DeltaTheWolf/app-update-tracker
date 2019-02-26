@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@drawable/topic_explore_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/zero_rating_video_setting_banner_stub" android:layout="@layout/zero_rating_video_setting_banner" android:layout_width="fill_parent" android:layout_height="@dimen/zero_rating_video_settings_banner_height" />
-    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:id="@id/topic_cluster_title_view" android:paddingLeft="@dimen/topic_cluster_header_padding" android:paddingTop="@dimen/topic_cluster_header_padding" android:paddingRight="@dimen/topic_cluster_header_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/topic_cluster_header_padding" />
-    <android.support.v7.widget.RecyclerView android:id="@id/topic_cluster_hscroll" android:paddingTop="@dimen/topic_cluster_header_padding" android:paddingBottom="@dimen/topic_cluster_header_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" />
-</LinearLayout>

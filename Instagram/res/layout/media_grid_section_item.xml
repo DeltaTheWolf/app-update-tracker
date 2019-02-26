@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.ui.widget.imagebutton.IgMultiImageButton android:id="@id/media_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/media_view_overlay_stub" android:layout="@layout/media_grid_section_item_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

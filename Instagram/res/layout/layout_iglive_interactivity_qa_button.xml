@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/live_interactivity_qa_button_container" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/live_interactivity_qa_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/live_interactivity_qa_button_background" android:scaleType="center"
-      xmlns:android="http://schemas.android.com/apk/res/android" />
-    <View android:layout_gravity="end|center|top" android:id="@id/live_interactivity_qa_button_badge" android:background="?badgeIndicatorBackgroundDrawable" android:visibility="gone" android:layout_width="@dimen/button_badge_width" android:layout_height="@dimen/button_badge_height" android:layout_marginTop="@dimen/button_badge_margin_top" android:layout_marginEnd="@dimen/button_badge_margin_end" />
-</FrameLayout>

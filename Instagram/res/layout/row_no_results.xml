@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:minHeight="?creationRowHeight" style="@style/PaddedRow"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_vertical" android:id="@id/row_no_results_textview" android:paddingLeft="?noResultsPadding" android:paddingRight="?noResultsPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?noResultsPadding" android:paddingEnd="?noResultsPadding" style="?creationSubTitleText" />
-    <include android:id="@id/row_divider" layout="@layout/row_divider" />
-</FrameLayout>

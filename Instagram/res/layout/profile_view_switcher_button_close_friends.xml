@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:layout_gravity="bottom|center" android:id="@id/close_friends_tab_notification" android:background="?backgroundNotificationBadge" android:layout_width="@dimen/led_notification_size" android:layout_height="@dimen/led_notification_size" android:layout_marginBottom="7.0dip" />
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/close_friends_tab_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instagram_circle_star_outline_24" android:scaleType="center" android:contentDescription="@string/profile_close_friends_description" app:active="@color/blue_5" app:disabled_alpha="0x00000080" app:normal="?glyphColorSecondary" />
-</FrameLayout>

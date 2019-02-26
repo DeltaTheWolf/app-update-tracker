@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:id="@id/page_list_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/page_list_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_listview_with_progress" />
-    <ImageView android:layout_gravity="center" android:id="@id/refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loadmore_icon_refresh" />
-</FrameLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/shopping_viewer_margin">
-        <TextView android:id="@id/media_list_section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ProductDetailsSectionHeaderTitle" />
-        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:layout_gravity="end" android:id="@id/media_list_section_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:capitalize="false" style="@style/ProductDetailsSectionHeaderClickableLink" />
-    </FrameLayout>
-    <android.support.v7.widget.RecyclerView android:id="@id/tracked_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shopping_viewer_section_bottom_margin" />
-</LinearLayout>

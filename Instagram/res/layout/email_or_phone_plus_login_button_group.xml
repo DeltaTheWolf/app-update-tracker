@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textStyle="bold" android:textColor="?nuxActionButtonTextColor" android:gravity="center" android:id="@id/sign_up_with_email_or_phone" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:layout_marginBottom="@dimen/reg_button_bottom_margin" android:text="@string/sign_up_with_email_or_phone" />
-    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/blue_5" android:gravity="center" android:id="@id/log_in_button" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:text="@string/log_in" />
-</merge>

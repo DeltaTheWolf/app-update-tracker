@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/former_username_list_container" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/login_history_row_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-        <TextView android:textSize="@dimen/font_medium_xlarge" android:ellipsize="end" android:gravity="start|center" android:id="@id/login_history_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
-        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:ellipsize="end" android:gravity="start|center" android:id="@id/login_history_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
-    </LinearLayout>
-    <ImageView android:id="@id/more_icon" android:layout_width="@dimen/three_dot_width" android:layout_height="@dimen/three_dot_height" android:src="@drawable/instagram_more_horizontal_outline_24" />
-</LinearLayout>

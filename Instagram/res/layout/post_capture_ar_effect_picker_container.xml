@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/post_capture_effect_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/post_capture_ar_touch_gesture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <android.support.v7.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/ar_effect_picker_recycler_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/face_effect_picker_height" />
-</FrameLayout>

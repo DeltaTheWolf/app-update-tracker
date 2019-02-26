@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.SlidingPaneLayout android:id="@id/profile_sliding_pane_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/profile_slideout_menu_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/user_detail_fragment" android:paddingBottom="?tabBarHeight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
-</android.support.v4.widget.SlidingPaneLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <include android:id="@id/row_ix_partner" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_title_annotation_row" />
-    <include android:id="@id/row_ix_partner_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/row_ix_partner" layout="@layout/business_title_annotation_row" />
-    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/footer_text" android:paddingLeft="@dimen/row_padding" android:paddingTop="@dimen/vertical_separator_padding" android:paddingRight="@dimen/row_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ix_self_serve_detail_footer" android:layout_below="@id/row_ix_partner_url" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" />
-    <com.instagram.business.ui.BusinessNavBar android:id="@id/remove_action_bar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:secondaryText="@string/ix_self_remove_action" app:showSecondaryButton="true" />
-</RelativeLayout>

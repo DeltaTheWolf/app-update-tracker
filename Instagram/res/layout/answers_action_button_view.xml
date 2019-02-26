@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/action_button_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/action_button_container_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="@color/white" android:id="@id/multi_action_button" android:background="@drawable/action_button_enable_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/action_button_left_right_margin" android:layout_marginTop="@dimen/action_button_top_bottom_margin" android:layout_marginRight="@dimen/action_button_left_right_margin" android:layout_marginBottom="@dimen/action_button_top_bottom_margin" style="@style/IgConnectButton" />
-</FrameLayout>

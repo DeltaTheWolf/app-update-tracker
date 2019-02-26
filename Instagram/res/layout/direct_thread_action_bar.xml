@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/direct_thread_action_bar_header_height"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.ui.widget.gradientspinneravatarview.GradientSpinnerAvatarView android:id="@id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:doubleAvatarGradientRingSidePadding="8.0dip" app:doubleAvatarGradientRingSize="30.0dip" app:doubleAvatarHorizontalMargin="2.0dip" app:doubleAvatarSize="26.0dip" app:gradientPatternStyle="@style/DirectGradientStyle" app:singleAvatarGradientRingSize="36.0dip" app:singleAvatarSize="28.0dip" />
-    <TextView android:textSize="14.0dip" android:textStyle="bold" android:ellipsize="end" android:id="@id/thread_title" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/chevron_small" android:drawableEnd="@drawable/chevron_small" />
-</LinearLayout>

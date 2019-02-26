@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/generic_effect_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/generic_effect_picker_margin_top"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.creation.capture.quickcapture.faceeffectui.SnapPickerRecyclerView android:layout_gravity="bottom|center" android:id="@id/recyclerview" android:layout_width="wrap_content" android:layout_height="@dimen/generic_effect_picker_height" />
-</FrameLayout>

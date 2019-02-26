@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:id="@id/non_carousel_media_group" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/edit_media_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholder="@color/image_placeholder" />
-    <include layout="@layout/video_icon" />
-    <include layout="@layout/tag_indicator_button" />
-    <include layout="@layout/edit_alt_text_button_layout" />
-</com.instagram.common.ui.widget.framelayout.MediaFrameLayout>

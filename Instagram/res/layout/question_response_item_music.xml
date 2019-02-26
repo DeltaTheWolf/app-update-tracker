@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:id="@id/cover_photo" android:padding="@dimen/question_music_response_card_album_art_shadow_width" android:layout_width="@dimen/question_music_response_card_album_art_size" android:layout_height="@dimen/question_music_response_card_album_art_size" android:layout_marginEnd="@dimen/question_music_response_card_album_art_margin_end" app:radius="@dimen/question_music_response_card_album_art_corner_radius" />
-    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <TextView android:textSize="@dimen/question_music_response_card_text_size" android:textStyle="bold" android:textColor="@color/question_response_primary_text_color" android:ellipsize="end" android:id="@id/track_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
-        <TextView android:textSize="@dimen/question_music_response_card_text_size" android:textColor="@color/question_response_card_subtitle_color" android:ellipsize="end" android:id="@id/artist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-regular" />
-    </LinearLayout>
-</LinearLayout>

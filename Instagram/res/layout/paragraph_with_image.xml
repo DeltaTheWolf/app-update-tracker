@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/consent_screen_margin_horizontal" android:layout_marginRight="@dimen/consent_screen_margin_horizontal" android:layout_marginBottom="@dimen/manage_data_paragraph_margin_bottom"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/image_view" android:layout_width="@dimen/manage_data_icon_width" android:layout_height="@dimen/manage_data_icon_height" android:layout_marginTop="@dimen/manage_data_icon_margin_top" android:layout_marginRight="@dimen/manage_data_icon_margin_right" app:normal="@color/black" />
-    <TextView android:textSize="@dimen/inline_content_text_size" android:textColor="@color/grey_5" android:gravity="start" android:id="@id/paragraph_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-</LinearLayout>
