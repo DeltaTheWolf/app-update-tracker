@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:fromDegrees="270.0" android:toDegrees="270.0" android:pivotX="50.0%" android:pivotY="50.0%"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="ring" android:useLevel="true" android:innerRadius="@dimen/camera_button_ring_innerRadius" android:thickness="@dimen/camera_button_ring_thickness_large">
+        <solid android:color="@color/record_red" />
+    </shape>
+</rotate>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/delete_button_bg_padding" android:top="@dimen/delete_button_bg_padding" android:right="@dimen/delete_button_bg_padding" android:bottom="@dimen/delete_button_bg_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/delete_button_background_color" />
+            <stroke android:width="1.0dip" android:color="@color/quantum_white_100" />
+        </shape>
+    </item>
+</layer-list>

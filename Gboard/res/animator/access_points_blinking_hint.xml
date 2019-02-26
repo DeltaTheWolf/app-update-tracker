@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="@integer/access_point_scale_hint_duration" android:repeatCount="infinite" android:repeatMode="reverse" android:valueTo="1.4" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/access_point_scale_hint_duration" android:repeatCount="infinite" android:repeatMode="reverse" android:valueTo="1.4" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:duration="@integer/access_point_scale_hint_duration" android:repeatCount="infinite" android:repeatMode="reverse" android:valueFrom="0.5" android:valueTo="0.3" android:valueType="floatType" android:propertyName="alpha" />
+</set>
