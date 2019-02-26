@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" style="@style/PopupItemBoard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:id="@id/item_board_popup_content" style="@style/PopupItemBoardContent" />
+        <LinearLayout android:id="@id/item_board_popup_button_wrapper" style="@style/PopupItemBoardButtonWrapper">
+            <ImageView android:id="@id/item_board_popup_paste_button" android:tag=".icon.clipboard-keys" android:src="@drawable/ic_clipboard_paste" android:contentDescription="@string/item_board_paste_button_content_desc" style="@style/PopupItemBoardButton" />
+            <ImageView android:id="@id/item_board_popup_pin_button" android:tag=".icon.clipboard-keys" android:src="@drawable/ic_clipboard_pin" android:contentDescription="@string/item_board_pin_button_content_desc" style="@style/PopupItemBoardButton" />
+            <ImageView android:id="@id/item_board_popup_unpin_button" android:tag=".icon.clipboard-keys-pinned" android:visibility="gone" android:src="@drawable/ic_clipboard_unpin" android:contentDescription="@string/item_board_unpin_button_content_desc" style="@style/PopupItemBoardButton" />
+            <ImageView android:id="@id/item_board_popup_delete_button" android:tag=".icon.clipboard-keys" android:src="@drawable/ic_clipboard_delete" android:contentDescription="@string/item_board_delete_button_content_desc" style="@style/PopupItemBoardButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

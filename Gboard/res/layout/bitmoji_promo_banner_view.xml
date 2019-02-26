@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_marginBottom="0.0dip" style="@style/StickerErrorCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/bitmoji_promo_title_image" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/bitmoji_logo" android:adjustViewBounds="true" android:contentDescription="@string/bitmoji" />
+                <TextView android:ellipsize="end" android:id="@id/bitmoji_promo_text" android:paddingTop="10.0dip" android:layout_width="190.0dip" android:layout_height="wrap_content" android:text="@string/bitmoji_promo_text" android:maxLines="3" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/bitmoji_promo_avatar" android:layout_width="wrap_content" android:layout_height="@dimen/bitmoji_promo_avatar_height" android:layout_marginTop="5.0dip" android:src="@drawable/bitmoji_promo_avatars" android:scaleType="fitCenter" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+                <Button android:textStyle="bold" android:gravity="center|left" android:id="@id/bitmoji_promo_button" android:background="@drawable/bg_download_sticker_button" android:paddingLeft="14.0dip" android:layout_width="135.0dip" android:layout_marginTop="@dimen/bitmoji_promo_button_margin_top" android:layout_marginBottom="5.0dip" android:foreground="?android:selectableItemBackground" android:text="@string/bitmoji_get_sticker_packs_button" android:drawableLeft="@drawable/ic_playstore" android:drawablePadding="8.0dip" style="@style/StickerErrorCardButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton android:layout_gravity="end|center|top" android:id="@id/bitmoji_promo_card_close_button" android:layout_width="@dimen/sticker_error_card_close_btn_size" android:layout_height="@dimen/sticker_error_card_close_btn_size" android:src="?CloseIcon" android:contentDescription="@string/stickers_dismiss_promo_btn_content_desc" style="?android:attr/borderlessButtonStyle" />
+</androidx.cardview.widget.CardView>

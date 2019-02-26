@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/animated_image_holder_view_container" android:paddingBottom="@dimen/category_vertical_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@integer/art_keyboard_content_area_weight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.inputmethod.libs.search.widget.AnimatedImageHolderView android:id="@id/animated_image_holder_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/sticker_keyboard_horizontal_margin" android:paddingEnd="@dimen/sticker_keyboard_horizontal_margin" image_view_layout="@layout/animated_sticker_view" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/animated_image_holder_view_loading_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <FrameLayout android:id="@id/sticker_inline_error_card_container" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="?HeaderBarHorizontalMargin" android:layout_marginEnd="?HeaderBarHorizontalMargin" />
+</FrameLayout>

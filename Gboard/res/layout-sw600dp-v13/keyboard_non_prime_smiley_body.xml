@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/Body.NonPrime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="@integer/weight_sum" style="@style/NonPrimeBodyInner">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="950.0" android:layout_weight="?KeyboardInputAreaWeight">
+            <FrameLayout android:layout_weight="750.0" style="@style/InputArea">
+                <com.google.android.apps.inputmethod.libs.framework.keyboard.widget.PageableRecentSubCategorySoftKeyListHolderView android:id="@id/pageable_view" android:layout_width="fill_parent" android:layout_height="fill_parent" emoji_filter="@bool/use_rendering_time_rendering_filter" page_layout="@layout/keyboard_non_prime_page_emoji_without_delete_key" />
+                <include layout="@layout/non_prime_keyboard_page_indicator" />
+            </FrameLayout>
+            <include layout="@layout/keyboard_non_prime_sub_category" />
+        </LinearLayout>
+        <include layout="@layout/keyboard_non_prime_bottom_smiley_gif_emoticon" />
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

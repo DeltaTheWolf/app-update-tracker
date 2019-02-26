@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/add_clip_item_popup_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/add_clip_item_dialog_keyboard_placeholder" android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_height" android:layout_alignParentBottom="true">
+        <View android:id="@id/add_clip_item_dialog_keyboard_placeholder_left" android:background="@color/add_clip_item_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/add_clip_item_dialog_keyboard_placeholder_bottom" android:layout_alignParentLeft="true" />
+        <View android:id="@id/add_clip_item_dialog_keyboard_placeholder_right" android:background="@color/add_clip_item_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/add_clip_item_dialog_keyboard_placeholder_bottom" android:layout_alignParentRight="true" />
+        <View android:id="@id/add_clip_item_dialog_keyboard_placeholder_bottom" android:background="@color/add_clip_item_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/add_clip_item_dialog_dialog_zone" android:layout_above="@id/add_clip_item_dialog_keyboard_placeholder" style="@style/AddClipItemDialogZone">
+        <LinearLayout android:id="@id/add_clip_item_dialog_dialog_view" android:background="@drawable/clipboard_add_item_background_with_shadow" style="@style/AddClipItemDialogView">
+            <TextView android:text="@string/add_clip_item_dialog_title" style="@style/AddClipItemTitle" />
+            <com.google.android.apps.inputmethod.libs.framework.module.EditTextOnKeyboard android:id="@id/add_clip_item_dialog_edit_text" style="@style/AddClipItemEditText" />
+            <LinearLayout android:id="@id/add_clip_item_dialog_button_wrapper" style="@style/AddClipItemButtonWrapper">
+                <TextView android:id="@id/add_clip_item_dialog_cancel" android:text="@string/add_clip_item_dialog_cancel" android:layout_marginEnd="@dimen/add_clip_item_dialog_button_margin_end" style="@style/AddClipItemButton" />
+                <TextView android:id="@id/add_clip_item_dialog_confirm" android:text="@string/add_clip_item_dialog_confirm" style="@style/AddClipItemButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

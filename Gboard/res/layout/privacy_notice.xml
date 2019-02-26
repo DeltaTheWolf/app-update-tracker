@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/keyboard_overlap_privacy_notice" style="@style/PrivacyNotice"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:src="@mipmap/ic_app" style="@style/PrivacyNoticeAppImage" />
+    <LinearLayout style="@style/PrivacyNoticeContentWrapper">
+        <RelativeLayout style="@style/PrivacyNoticeTextViewWrapper">
+            <com.google.android.apps.inputmethod.libs.framework.keyboard.widget.AutoSizeTextView android:id="@id/privacy_notice_title" android:text="@string/sharing_snippets_privacy_notice_title" android:contentDescription="@string/sharing_snippets_privacy_notice_title" style="@style/PrivacyNoticeTitle" />
+            <RelativeLayout android:id="@id/privacy_notice_content" style="@style/PrivacyNoticeContent">
+                <TextView android:id="@id/privacy_notice_content_text" android:text="@string/sharing_snippets_privacy_notice_content" style="@style/PrivacyNoticeContentText" />
+                <TextView android:id="@id/privacy_notice_learn_more" android:text="@string/sharing_snippets_learn_more" android:layout_alignBottom="@id/privacy_notice_content_text" style="@style/PrivacyNoticeLearnMore" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/PrivacyNoticeButtonWrapper">
+            <com.google.android.apps.inputmethod.latin.keyboard.widget.PrivacyNoticeButton android:id="@id/agree_button" android:text="@string/label_agree_share_snippets" android:layout_alignParentEnd="true" style="@style/KeyboardOverlayOkayButton" />
+            <com.google.android.apps.inputmethod.latin.keyboard.widget.PrivacyNoticeButton android:id="@id/refuse_button" android:text="@string/label_refuse_suggested_feature" android:layout_toStartOf="@id/agree_button" style="@style/KeyboardOverlayCancelButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

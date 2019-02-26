@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/StickerErrorCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/sticker_error_card_text_width" android:layout_height="wrap_content" android:text="@string/sticker_error_message_no_bitmoji_no_stickers" android:maxLines="3" />
+        <Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_height="@dimen/bitmoji_sticker_avatar_height" style="@style/BitmojiZeroStateAvatar" />
+                <Button android:id="@id/error_card_bitmoji_button" android:background="@drawable/bg_download_bitmoji_button" android:layout_width="150.0dip" android:layout_height="36.0dip" android:layout_marginTop="@dimen/bitmoji_sticker_setup_button_margin_top" android:foreground="?android:selectableItemBackground" android:text="@string/bitmoji_get_sticker_packs_button" style="@style/StickerErrorCardButton" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/sticker_avatar" android:layout_height="@dimen/bitmoji_sticker_avatar_height" android:src="@drawable/sticker_avatars" style="@style/BitmojiZeroStateAvatar" />
+                <Button android:id="@id/error_card_sticker_button" android:background="@drawable/bg_download_sticker_button" android:layout_width="150.0dip" android:layout_height="36.0dip" android:layout_marginTop="@dimen/bitmoji_sticker_setup_button_margin_top" android:foreground="?android:selectableItemBackground" android:text="@string/stickers_get_sticker_packs_button" style="@style/StickerErrorCardButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="end|center|top" android:id="@id/error_card_close_button" android:visibility="gone" android:layout_width="@dimen/sticker_error_card_close_btn_size" android:layout_height="@dimen/sticker_error_card_close_btn_size" android:src="?CloseIcon" android:contentDescription="@string/gboard_error_card_close_content_desc" style="?android:attr/borderlessButtonStyle" />
+</androidx.cardview.widget.CardView>

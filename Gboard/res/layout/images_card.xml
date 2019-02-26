@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/card_image_host" android:layout_width="wrap_content" style="@style/CardHostView">
+        <RelativeLayout android:id="@id/action_view_bar" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.google.android.apps.inputmethod.libs.search.nativecard.widget.FixedHeightVariableWidthImageView android:id="@id/card_images_src" android:layout_width="@dimen/native_card_width" android:layout_height="@dimen/native_card_height" android:scaleType="fitCenter" />
+            <RelativeLayout android:id="@id/action_view_bar" android:background="@color/animated_image_view_footer_background" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" android:layout_alignStart="@id/card_images_src" android:layout_alignEnd="@id/card_images_src">
+                <com.google.android.apps.inputmethod.libs.search.nativecard.widget.ActionListView android:id="@id/text_action_list_view" android:layout_marginStart="0.0dip" android:layout_toStartOf="@id/action_list_view" android:layout_alignParentStart="true" style="@style/ActionList.ForImages.WithAttribution" />
+                <com.google.android.apps.inputmethod.libs.search.nativecard.widget.ActionListView android:id="@id/text_action_list_view_end" android:layout_alignParentEnd="true" style="@style/ActionList.ForImages.WithAttribution" />
+                <com.google.android.apps.inputmethod.libs.search.nativecard.widget.ActionListView android:id="@id/action_list_view" android:layout_marginStart="0.0dip" android:layout_alignParentEnd="true" style="@style/ActionList.ForImages.WithAttribution" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

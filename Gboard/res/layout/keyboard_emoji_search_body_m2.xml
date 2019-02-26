@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.search.widget.VariableHeightSoftKeyboardView style="@style/Body.NonPrime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <LinearLayout style="@style/ExpressionInnerBody">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?KeyboardInputAreaWeight">
+            <FrameLayout android:id="@id/search_result_error_card_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="@integer/art_keyboard_content_area_weight" />
+            <FrameLayout android:layout_weight="@integer/art_keyboard_content_area_weight" style="@style/InputArea">
+                <com.google.android.apps.inputmethod.libs.framework.keyboard.widget.PageableSoftKeyListHolderView android:id="@id/keyboard_emoji_search_body" android:layout_width="fill_parent" android:layout_height="fill_parent" emoji_filter="true" offscreen_page_limit="2" page_margin_ratio="15" page_layout="@layout/keyboard_emoji_body_search_results" />
+                <include layout="@layout/non_prime_keyboard_page_indicator" />
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/keyboard_expression_navigation_row" />
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.search.widget.VariableHeightSoftKeyboardView>

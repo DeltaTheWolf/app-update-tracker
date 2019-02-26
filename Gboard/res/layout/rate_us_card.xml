@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:ellipsize="end" android:id="@id/card_rate_us_title" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+            <ImageView android:id="@id/card_rate_us_image" android:padding="@dimen/rate_us_card_image_padding" android:layout_width="@dimen/rate_us_card_image_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/card_horizontal_margin" android:layout_marginBottom="@dimen/rate_us_card_image_margin_bottom" android:src="@drawable/quantum_ic_stars_googblue_48" android:scaleType="fitCenter" android:adjustViewBounds="false" android:cropToPadding="true" android:layout_below="@id/card_rate_us_title" android:layout_alignParentRight="true" />
+            <TextView android:ellipsize="end" android:id="@id/card_rate_us_content" android:layout_marginRight="0.0dip" android:maxLines="@integer/longer_string_max_lines_responsive" android:layout_toLeftOf="@id/card_rate_us_image" android:layout_below="@id/card_rate_us_title" style="@style/TextLine.Secondary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/card_translate_icon" android:layout_width="@dimen/translate_icon_width" android:layout_height="@dimen/translate_icon_height" android:layout_marginTop="@dimen/card_vertical_margin" android:layout_marginRight="@dimen/card_horizontal_margin" android:src="@drawable/product_logo_translate_color_48" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:id="@id/card_translation_target" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_toLeftOf="@id/card_translate_icon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+            <TextView android:id="@id/card_translation_pronunciation" android:layout_marginTop="1.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_toLeftOf="@id/card_translate_icon" android:layout_below="@id/card_translation_target" style="@style/TextLine.Secondary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.inputmethod.libs.framework.preference.SettingPreferenceListView android:id="@id/account_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+    <LinearLayout android:id="@id/setting_deny_sign_in" style="@style/SettingAccountAction">
+        <ImageView android:src="@drawable/ic_deny_sign_in" style="@style/SettingAccountActionIcon" />
+        <TextView android:id="@id/setting_deny_sign_in_text" style="@style/SettingAccountActionText" />
+        <ImageView style="@style/SettingAccountSelectedIndicator" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/setting_add_account" style="@style/SettingAccountAction">
+        <ImageView android:src="@drawable/ic_add_account" style="@style/SettingAccountActionIcon" />
+        <TextView android:text="@string/use_another_account_text" style="@style/SettingAccountActionText" />
+    </LinearLayout>
+    <View android:background="#ffe8eaed" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="60.0dip" />
+    <com.google.android.apps.inputmethod.libs.framework.core.LinkableTextView android:id="@id/setting_voice_activity_link_text_view" style="@style/ActivityControlLinkableText" linkable_text="@string/setting_voice_activity_link_text" />
+</LinearLayout>

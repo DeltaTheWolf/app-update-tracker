@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/search_query_header_container" android:tag=".keyboard-header-area" android:background="?BgKeyboardSearchHeader" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_header" />
+    <androidx.cardview.widget.CardView style="@style/HeaderInner.SearchBar.Small">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout style="@style/GBoardIconHolder">
+                <com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyView android:id="@id/key_pos_header_search" style="@style/GBoardIcon" />
+            </FrameLayout>
+            <com.google.android.apps.inputmethod.libs.search.widget.CardViewerHeaderQueryView android:id="@id/search_query_header" style="@style/SearchResultQueryTextView" query_layout="@layout/softkey_query_candidate" />
+            <FrameLayout style="@style/ThreePartRowFrame.End">
+                <com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyView android:id="@id/key_pos_header_cancel_input" android:layout_width="@dimen/header_icon_size" android:layout_height="@dimen/header_icon_size" style="@style/HeaderClearIcon" />
+                <com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyView android:id="@id/key_pos_emoji_handwriting_launcher" android:visibility="gone" android:layout_width="@dimen/header_icon_size" android:layout_height="@dimen/header_icon_size" style="@style/HeaderEmojiHandwriting" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

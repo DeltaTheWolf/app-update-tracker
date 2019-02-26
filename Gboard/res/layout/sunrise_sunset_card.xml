@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:id="@id/card_sunrise_sunset_time" android:maxLines="@integer/single_line_fixed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+            <TextView android:id="@id/card_sunrise_sunset_date" android:layout_marginTop="1.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_below="@id/card_sunrise_sunset_time" style="@style/TextLine.Secondary" />
+            <TextView android:id="@id/card_sunrise_sunset_location" android:layout_marginTop="1.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_below="@id/card_sunrise_sunset_date" style="@style/TextLine.Secondary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

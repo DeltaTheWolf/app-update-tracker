@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrivacyNotice" parent="@style/KeyboardOverlay">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="PrivacyNoticeAppImage">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_weight">285.0</item>
+    </style>
+    <style name="PrivacyNoticeButtonWrapper">
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:paddingBottom">24.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">400.0</item>
+    </style>
+    <style name="PrivacyNoticeContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingStart">@dimen/privacy_notice_content_padding_left</item>
+        <item name="android:paddingEnd">@dimen/privacy_notice_content_padding_right</item>
+    </style>
+    <style name="PrivacyNoticeContentWrapper">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">715.0</item>
+    </style>
+    <style name="PrivacyNoticeTextViewWrapper">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">600.0</item>
+    </style>
+    <style name="PrivacyNoticeTitle" parent="@style/KeyboardOverlayTitle">
+        <item name="android:layout_marginBottom">@dimen/privacy_notice_title_margin_bottom</item>
+        <item name="android:layout_above">@id/privacy_notice_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+</resources>

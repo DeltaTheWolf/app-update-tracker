@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/Header.NonPrime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_header" />
+    <com.google.android.apps.inputmethod.libs.framework.keyboard.widget.AccessPointsBar style="@style/AccessPointsBar" />
+    <com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyView android:id="@id/key_pos_header_access_points_menu" style="@style/SuggestionStripAccessPointsMenuIcon" />
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

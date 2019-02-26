@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ink_container" android:background="@drawable/bg_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ink_engine_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ink_toolbar" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ink_text" />
+</FrameLayout>

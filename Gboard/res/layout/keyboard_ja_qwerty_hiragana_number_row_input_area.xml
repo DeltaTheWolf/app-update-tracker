@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/InputArea.QwertyWithNumbers"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_prime_number_row" />
+    <include layout="@layout/keyboard_ja_qwerty_input_area" />
+</LinearLayout>

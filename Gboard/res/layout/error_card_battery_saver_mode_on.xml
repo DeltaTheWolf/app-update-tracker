@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/StickerErrorCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingStart="@dimen/error_card_horizontal_padding" android:paddingEnd="@dimen/error_card_horizontal_padding" style="@style/GBoardErrorCard">
+        <TextView android:textSize="@dimen/error_card_header_font_size" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sticker_battery_saver_error_title" />
+        <TextView android:textSize="@dimen/error_card_message_font_size" android:textColor="#8a000000" android:id="@id/error_card_single_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sticker_battery_saver_error_message" android:paddingStart="40.0dip" android:paddingEnd="40.0dip" />
+        <Button android:background="@drawable/bg_download_sticker_button" android:layout_marginTop="20.0dip" android:text="@string/sticker_battery_saver_error_button_text" style="@style/StickerErrorCardButton" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

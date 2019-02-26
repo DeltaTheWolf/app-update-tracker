@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/voice_language_selector_custom_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/voice_language_selector_image" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_language_googblue_24" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_language_picker_title" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_language_picker_subtitle" />
+</LinearLayout>

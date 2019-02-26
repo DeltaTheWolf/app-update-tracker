@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/UniversalMedia"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_height="fill_parent" card_view:cardBackgroundColor="?BgHeader" style="@style/StickerCardViewWrapper" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <com.google.android.apps.inputmethod.libs.search.widget.VariableWidthAnimatedImageView android:id="@id/animated_image_view" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/gboard_gif_image_content_desc" />
+        <include layout="@layout/animated_image_view_footer" />
+    </androidx.cardview.widget.CardView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/animated_image_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+</FrameLayout>

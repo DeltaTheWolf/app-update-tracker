@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/CardHostView">
+        <ImageView android:id="@id/card_video_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:background="@color/video_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.4" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_gravity="right" android:id="@id/card_video_length" android:background="@drawable/bg_video_duration" android:layout_width="42.0dip" android:layout_height="22.0dip" android:maxLines="@integer/single_line_fixed" style="@style/TextLine.Secondary.Dark" />
+            <TextView android:id="@id/card_video_title" android:layout_marginTop="40.0dip" android:maxLines="@integer/short_string_max_lines_fixed" style="@style/TextLine.Primary.Dark" />
+        </LinearLayout>
+        <include layout="@layout/action_view_dark" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

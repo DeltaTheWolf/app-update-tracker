@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="fraction" name="bikey_skip_silence_cost">3.0</item>
+    <item type="fraction" name="contextual_webref_threshold">0.0</item>
+    <item type="fraction" name="diacritic_cost_single_letter">6.0</item>
+    <item type="fraction" name="dlam_auto_correction_revert_threshold">0.5</item>
+    <item type="fraction" name="dynamic_rate_limit_scale_factor">2.0</item>
+    <item type="fraction" name="email_dynamic_biasing_oov_score">0.0</item>
+    <item type="fraction" name="email_dynamic_biasing_rescore_lm_scale">1.0</item>
+    <item type="fraction" name="emoji_predictor_scaling_factor">0.7</item>
+    <item type="fraction" name="federatedc2q_inference_sampling_factor">100000.0</item>
+    <item type="fraction" name="federatedc2q_inference_triggering_threshold">0.0</item>
+    <item type="fraction" name="federatedc2q_inference_triggering_threshold_trending_queries">0.0</item>
+    <item type="fraction" name="federatedc2q_inference_triggering_threshold_webanswer_queries">0.0</item>
+    <item type="fraction" name="fullscreen_handwriting_panel_normal_alpha">0.4</item>
+    <item type="fraction" name="fullscreen_handwriting_panel_pen_down_alpha">0.6</item>
+    <item type="fraction" name="gesture_completion_cost_adaptation_max">1.1</item>
+    <item type="fraction" name="gesture_completion_cost_adaptation_min">0.9</item>
+    <item type="fraction" name="gesture_completion_cost_adaptation_step">0.005</item>
+    <item type="fraction" name="glide_bitmap_pool_screens">-1.0</item>
+    <item type="fraction" name="glide_max_cache_size_multiplier">0.3</item>
+    <item type="fraction" name="glide_max_cache_size_multiplier_low_memory">0.15</item>
+    <item type="fraction" name="glide_memory_cache_screens">-1.0</item>
+    <item type="fraction" name="greylist_demotion_threshold">2.0</item>
+    <item type="fraction" name="handwriting_scrollout_remainder_fraction">0.1</item>
+    <item type="fraction" name="key_correction_ignore_fraction">0.8</item>
+    <item type="fraction" name="key_correction_language_weight">1.0</item>
+    <item type="fraction" name="key_correction_max_speed_weight">2.0</item>
+    <item type="fraction" name="key_gaussian_height_multiplier">1.0</item>
+    <item type="fraction" name="key_gaussian_width_multiplier">1.0</item>
+    <item type="fraction" name="keyboard_body_height_ratio">1.0</item>
+    <item type="fraction" name="keyboard_header_height_ratio">1.0</item>
+    <item type="fraction" name="literal_start_penalty_any_autocor_relative_step">0.001</item>
+    <item type="fraction" name="literal_start_penalty_any_autocor_step">0.0</item>
+    <item type="fraction" name="literal_start_penalty_bad_autocor_step">0.0</item>
+    <item type="fraction" name="literal_start_penalty_max">20.0</item>
+    <item type="fraction" name="literal_start_penalty_min">0.0</item>
+    <item type="fraction" name="literal_start_penalty_missed_autocor_step">0.0</item>
+    <item type="fraction" name="literal_start_penalty_outlier">0.0</item>
+    <item type="fraction" name="literal_start_penalty_relative_max">1.1</item>
+    <item type="fraction" name="literal_start_penalty_relative_min">0.7</item>
+    <item type="fraction" name="literal_start_penalty_revert_relative_step">0.01</item>
+    <item type="fraction" name="literal_start_penalty_revert_step">0.0</item>
+    <item type="fraction" name="multiword_gesture_cost">5.0</item>
+    <item type="fraction" name="multiword_prediction_cost">0.1</item>
+    <item type="fraction" name="multiword_threshold_score">3.0</item>
+    <fraction name="navigation_row_weight">21.500004%</fraction>
+    <item type="fraction" name="nsm_skip_silence_cost">-3.0</item>
+    <item type="fraction" name="nsm_spatial_score_scale">0.0</item>
+    <item type="fraction" name="oov_cost_adaptation_max">20.0</item>
+    <item type="fraction" name="oov_cost_adaptation_min">0.0</item>
+    <item type="fraction" name="oov_cost_adaptation_step">1.0</item>
+    <item type="fraction" name="postcorrect_autocorrections_score_boost">0.0</item>
+    <item type="fraction" name="punctuation_prediction_penalty">0.0</item>
+    <item type="fraction" name="ranker_additional_weight_intercept_emoji">-0.7</item>
+    <item type="fraction" name="ranker_additional_weight_nwp_and_other">0.0</item>
+    <item type="fraction" name="ranker_additional_weight_slope_emoji">0.0</item>
+    <item type="fraction" name="rescore_lm_scale_adaptation_max">1.0</item>
+    <item type="fraction" name="rescore_lm_scale_adaptation_min">0.1</item>
+    <item type="fraction" name="rescore_lm_scale_adaptation_step">0.1</item>
+    <fraction name="ring_g_scale_to_reveal_factor">90.0%</fraction>
+    <fraction name="spatial_model_pruning_delta_score">0.0%</fraction>
+    <item type="fraction" name="tap_completion_cost_adaptation_max">1.1</item>
+    <item type="fraction" name="tap_completion_cost_adaptation_min">0.9</item>
+    <item type="fraction" name="tap_completion_cost_adaptation_step">0.005</item>
+    <item type="fraction" name="twiddler_multiword_score_boost">1.0</item>
+    <item type="fraction" name="twiddler_multiword_suggest_score">-10.0</item>
+    <fraction name="wear_ja_keyboard_body_height">0.0%</fraction>
+    <item type="fraction" name="APKTOOL_DUMMY_8">false</item>
+    <item type="fraction" name="APKTOOL_DUMMY_18">false</item>
+    <item type="fraction" name="APKTOOL_DUMMY_2b">false</item>
+    <item type="fraction" name="APKTOOL_DUMMY_2d">false</item>
+    <item type="fraction" name="APKTOOL_DUMMY_2f">false</item>
+    <item type="fraction" name="APKTOOL_DUMMY_31">false</item>
+    <item type="fraction" name="APKTOOL_DUMMY_3a">false</item>
+</resources>

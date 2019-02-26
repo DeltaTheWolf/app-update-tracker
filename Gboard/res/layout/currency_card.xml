@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:id="@id/card_currency_base" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Secondary" />
+            <TextView android:id="@id/card_currency_target" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_below="@id/card_currency_base" style="@style/TextLine.Primary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

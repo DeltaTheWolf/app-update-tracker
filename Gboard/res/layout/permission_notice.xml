@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/keyboard_overlap_permission_notice" style="@style/PermissionNotice"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:src="@drawable/quantum_ic_camera_alt_googblue_36" style="@style/PermissionNoticeAppImage" />
+    <LinearLayout style="@style/PermissionNoticeContentWrapper">
+        <RelativeLayout style="@style/PermissionNoticeTextViewWrapper">
+            <com.google.android.apps.inputmethod.libs.framework.keyboard.widget.AutoSizeTextView android:id="@id/permission_notice_title" android:text="@string/soft_permission_title" android:contentDescription="@string/soft_permission_title" style="@style/PermissionNoticeTitle" />
+            <RelativeLayout android:id="@id/permission_notice_content" style="@style/PermissionNoticeContent">
+                <TextView android:id="@id/permission_notice_content_text" android:text="@string/soft_permission_body" style="@style/PermissionNoticeContentText" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/PermissionNoticeButtonWrapper">
+            <Button android:id="@id/agree_button" android:text="@string/soft_permission_positive_button" android:layout_alignParentEnd="true" style="@style/KeyboardOverlayOkayButton" />
+            <Button android:id="@id/refuse_button" android:text="@string/soft_permission_negative_button" android:layout_alignParentStart="true" style="@style/KeyboardOverlayCancelButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.firstrun.SetupDonePage style="@style/FirstRunPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/first_run_page_header" />
+    <LinearLayout style="@style/FirstRunPageContent">
+        <TextView android:text="@string/setup_done_page_title" style="@style/FirstRunPageTitle" />
+        <com.google.android.apps.inputmethod.libs.framework.core.LinkableTextView android:id="@id/first_run_page_setup_languages_label" linkable_text="@string/first_run_page_select_language" style="@style/FirstRunPageDescription" />
+        <Button android:id="@id/first_run_page_setup_done_button" android:text="@string/tutorial_done" style="@style/FirstRunPageButton" />
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.framework.firstrun.SetupDonePage>

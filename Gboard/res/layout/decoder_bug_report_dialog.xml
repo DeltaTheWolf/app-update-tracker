@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.inputmethod.libs.framework.core.LinkableTextView android:id="@id/span_bug_report_intro_message" android:layout_width="fill_parent" android:layout_height="wrap_content" linkable_text="@string/bug_report_intro_message" />
+    <TextView android:id="@id/span_selection_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bug_report_dialog_span_selection_message" />
+    <ListView android:gravity="center_vertical" android:id="@id/span_selection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/send_to_buganizer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/bug_report_dialog_report_to_buganizer_option_message" />
+    <LinearLayout android:orientation="vertical" android:id="@id/send_to_buganizer_if_checked" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:id="@id/send_to_buganizer_options" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/create_bug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_bug_message" />
+            <RadioButton android:id="@id/update_bug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_bug_message" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/create_bug_options" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/bug_description_title_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bug_report_dialog_bug_description_title_message" />
+            <EditText android:gravity="center|left|top" android:id="@id/bug_description_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="false" android:singleLine="false" android:inputType="textMultiLine" />
+            <TextView android:id="@id/bug_description_comment_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bug_report_dialog_bug_description_comment_message" />
+            <EditText android:gravity="center|left|top" android:id="@id/bug_description_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="false" android:singleLine="false" android:inputType="textMultiLine" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/update_bug_options" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/existing_bug_id_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bug_report_dialog_existing_bug_id_message" />
+            <EditText android:gravity="center|left|top" android:id="@id/existing_bug_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="false" android:singleLine="false" android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

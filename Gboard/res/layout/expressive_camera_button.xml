@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/expressive_camera_effect_container" android:background="@drawable/expressive_camera_effect_button_background" android:layout_width="@dimen/camera_effect_button_size" android:layout_height="@dimen/camera_effect_button_size" android:layout_margin="6.0dip" android:elevation="3.0dip">
+        <ImageButton android:layout_gravity="center" android:id="@id/expressive_camera_effect_button" android:background="?android:selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:scaleType="fitCenter" android:contentDescription="@string/makeagif_filter_content_desc" />
+        <FrameLayout android:id="@id/loading_decals" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@drawable/expressive_camera_loading_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/encode_progress_bar" android:layout_width="28.0dip" android:layout_height="28.0dip" android:indeterminate="true" android:indeterminateTint="#ffffffff" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

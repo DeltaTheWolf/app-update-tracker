@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/Body.NonPrime" allow_mock_action_down="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" style="@style/NonPrimeBodyInner">
+        <include layout="@layout/search_result_error_card_container" />
+        <LinearLayout android:orientation="vertical" android:id="@id/gboard_sticker_keyboard_main_body" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?KeyboardInputAreaWeight">
+            <include layout="@layout/animated_sticker_holder_view" />
+            <com.google.android.apps.inputmethod.libs.search.widget.CategoryHolderView android:id="@id/sticker_category_holder_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?ArtKeyboardSubCategoryRowWeight" textLabelLayout="@layout/category_text_label" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?KeyboardBottomTabWeight" android:layout_marginStart="?KeyboardInnerPadding" android:layout_marginEnd="?KeyboardInnerPadding" layout="@layout/keyboard_non_prime_bottom_smiley_gif_emoticon" />
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/Body.NonPrime" allow_mock_action_down="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" style="@style/NonPrimeBodyInner">
+        <include layout="@layout/search_result_error_card_container" />
+        <LinearLayout android:orientation="vertical" android:id="@id/gboard_universal_media_keyboard_main_body" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?KeyboardInputAreaWeight">
+            <FrameLayout android:id="@id/animated_image_holder_view_container" android:paddingBottom="@dimen/category_vertical_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@integer/art_keyboard_content_area_weight">
+                <com.google.android.apps.inputmethod.libs.search.widget.AnimatedImageSidebarHolderView android:id="@id/animated_image_holder_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/header_bar_horizontal_margin_portrait" android:paddingEnd="@dimen/header_bar_horizontal_margin_portrait" image_view_layout="@layout/animated_media_view" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/animated_image_holder_view_loading_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?KeyboardBottomTabWeight" android:layout_marginStart="?KeyboardInnerPadding" android:layout_marginEnd="?KeyboardInnerPadding" layout="@layout/keyboard_non_prime_bottom_smiley_gif_emoticon" />
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

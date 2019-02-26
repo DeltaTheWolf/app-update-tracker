@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/card_flight_host" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include layout="@layout/action_view" />
+            <View android:background="@color/quantum_grey500" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/action_view_bar" />
+            <TextView android:id="@id/card_flight_title" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/TextLine.Primary" />
+            <TextView android:id="@id/card_flight_status" android:layout_width="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="0.0dip" android:layout_below="@id/card_flight_title" style="@style/TextLine.Secondary" />
+            <TextView android:id="@id/card_flight_time" android:layout_width="wrap_content" android:layout_alignBaseline="@id/card_flight_status" android:layout_toEndOf="@id/card_flight_status" style="@style/TextLine.Secondary" />
+            <TextView android:id="@id/card_flight_terminal_and_gate" android:layout_marginTop="5.0dip" android:layout_marginBottom="@dimen/card_vertical_margin" android:layout_below="@id/card_flight_status" style="@style/TextLine.Secondary" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/card_flight_terminal_and_gate">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/card_flight_departure_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" style="@style/TextLine.Primary" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.apps.inputmethod.libs.search.nativecard.widget.ImageProgressBar android:id="@id/card_flight_ratio_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/native_card_height" android:progressDrawable="@drawable/flight_progress_bar" android:thumb="@drawable/flight_airplane_icon" android:paddingStart="-10.0dip" android:paddingEnd="-10.0dip" />
+                    <ImageView android:layout_gravity="start|center" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/green_circle" />
+                    <ImageView android:layout_gravity="end|center" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/gray_circle" />
+                </FrameLayout>
+                <TextView android:layout_gravity="center_vertical" android:id="@id/card_flight_arrival_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" style="@style/TextLine.Primary" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

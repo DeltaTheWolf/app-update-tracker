@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/CardHostView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/card_maps_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="1.0" />
+            <TextView android:id="@id/card_maps_address" android:lines="1" style="@style/TextLine.Primary" />
+            <TextView android:ellipsize="end" android:id="@id/card_maps_city" android:lines="1" style="@style/TextLine.Secondary" />
+        </LinearLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

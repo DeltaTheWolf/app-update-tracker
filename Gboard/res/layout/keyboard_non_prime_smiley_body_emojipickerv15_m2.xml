@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/Body.NonPrime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <LinearLayout style="@style/ExpressionInnerBody">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?KeyboardInputAreaWeight">
+            <FrameLayout android:layout_weight="@integer/art_keyboard_content_area_weight" style="@style/InputArea">
+                <com.google.android.apps.inputmethod.libs.framework.keyboard.widget.EmojiPickerRecyclerView android:id="@id/pageable_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include layout="@layout/non_prime_keyboard_page_indicator" />
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/keyboard_expression_navigation_row" />
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" style="@style/GBoardErrorCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:layout_gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/gboard_no_gms_header" />
+    <TextView android:textSize="15.0dip" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/gboard_no_gms_subheader" />
+    <Button android:textSize="14.0dip" android:textColor="@color/no_connection_button_text_color" android:id="@id/error_card_button" android:background="@drawable/bg_no_connection_button" android:layout_width="130.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="4.0dip" android:foreground="?android:selectableItemBackground" android:text="@string/gboard_no_gms_button" android:fontFamily="sans-serif" />
+</LinearLayout>

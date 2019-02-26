@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/faded_background" android:background="@color/sign_in_popup_faded_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/sign_in_card" />
+    <LinearLayout android:id="@id/sign_in_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SignInCard">
+        <ImageView android:id="@id/sign_in_feature_icon" style="@style/SignInFeatureIcon" />
+        <TextView android:id="@id/sign_in_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SignInTitle" />
+        <TextView android:id="@id/sign_in_description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SignInDescription" />
+        <View android:background="#ffe8eaed" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include layout="@layout/account_item" />
+        <Button android:id="@id/sign_in_confirm_button" style="@style/SignInConfirmButton" />
+        <TextView android:id="@id/deny_sign_in_text_view" style="@style/DenySignInTextView" />
+    </LinearLayout>
+</RelativeLayout>

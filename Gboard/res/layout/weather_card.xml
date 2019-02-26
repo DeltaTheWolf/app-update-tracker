@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="fill" android:id="@id/card_weather_condition_image" android:layout_width="@dimen/weather_image_width" android:layout_height="@dimen/weather_image_height" android:layout_marginTop="@dimen/card_vertical_margin" android:layout_marginRight="@dimen/card_horizontal_margin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/quantum_black_secondary_text" android:id="@id/card_weather_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/card_horizontal_margin" android:layout_marginBottom="16.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/quantum_black_text" android:id="@id/card_weather_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="16.0dip" android:layout_toLeftOf="@id/card_weather_min" android:layout_alignParentBottom="true" />
+            <TextView android:id="@id/card_weather_city" android:maxLines="@integer/single_line_fixed" android:layout_toLeftOf="@id/card_weather_condition_image" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+            <TextView android:ellipsize="end" android:id="@id/card_weather_day_condition" android:layout_marginTop="0.0dip" android:maxLines="@integer/single_line_fixed" android:layout_toLeftOf="@id/card_weather_condition_image" android:layout_below="@id/card_weather_city" style="@style/TextLine.Secondary" />
+            <TextView android:textSize="42.0dip" android:textColor="@color/quantum_black_100" android:id="@id/card_weather_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_horizontal_margin" android:layout_below="@id/card_weather_day_condition" android:fontFamily="sans-serif-light" />
+            <TextView android:textSize="24.0dip" android:textColor="@color/quantum_black_100" android:gravity="center|top" android:id="@id/card_weather_temperature_unit" android:layout_width="wrap_content" android:layout_marginLeft="0.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/card_weather_temperature" android:layout_below="@id/card_weather_day_condition" android:layout_alignTop="@id/card_weather_temperature" android:fontFamily="sans-serif-light" style="@style/TextLine.Primary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

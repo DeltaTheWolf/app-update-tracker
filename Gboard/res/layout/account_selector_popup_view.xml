@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/faded_background" android:background="@color/sign_in_popup_faded_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/sign_in_card" />
+    <LinearLayout android:id="@id/sign_in_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SignInCard.AccountSelector">
+        <ListView android:id="@id/account_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_account_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/add_account_margin_bottom">
+            <ImageView style="@style/AddAccountIcon" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AddAccountTextView" />
+        </LinearLayout>
+        <Button android:id="@id/sign_in_confirm_button" style="@style/SignInConfirmButton" />
+    </LinearLayout>
+</RelativeLayout>

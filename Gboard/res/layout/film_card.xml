@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/card_film_host" android:divider="?SearchCardDividerDark" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/card_film_image" android:layout_alignParentRight="true" style="@style/ProfileImage" />
+            <TextView android:textColor="@color/quantum_white_text" android:id="@id/card_film_title" android:maxLines="@integer/short_string_max_lines_responsive" android:layout_toLeftOf="@id/card_film_image" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+            <RatingBar android:id="@id/card_film_rating" android:layout_marginLeft="@dimen/card_horizontal_margin" android:layout_marginTop="@dimen/card_vertical_margin" android:layout_below="@id/card_film_title" style="@style/RatingBar.White" />
+            <TextView android:textColor="@color/quantum_white_text" android:id="@id/card_film_comment" android:layout_marginLeft="4.0dip" android:layout_marginTop="0.0dip" android:maxLines="@integer/single_line_fixed" android:includeFontPadding="false" android:layout_toLeftOf="@id/card_film_image" android:layout_toRightOf="@id/card_film_rating" android:layout_below="@id/card_film_title" android:layout_alignTop="@id/card_film_rating" style="@style/TextLine.Secondary" />
+            <TextView android:textColor="@color/quantum_white_secondary_text" android:ellipsize="end" android:id="@id/card_film_genre" android:visibility="gone" android:layout_marginTop="4.0dip" android:maxLines="@integer/single_line_fixed" android:layout_toLeftOf="@id/card_film_image" android:layout_below="@id/card_film_rating" style="@style/TextLine.Secondary" />
+            <TextView android:textColor="@color/quantum_white_secondary_text" android:ellipsize="end" android:id="@id/card_film_duration" android:visibility="gone" android:layout_marginTop="0.0dip" android:maxLines="@integer/single_line_fixed" android:layout_toLeftOf="@id/card_film_image" android:layout_below="@id/card_film_genre" style="@style/TextLine.Secondary" />
+            <TextView android:textColor="@color/quantum_white_secondary_text" android:ellipsize="end" android:id="@id/card_film_release_date" android:visibility="gone" android:layout_marginTop="0.0dip" android:maxLines="@integer/single_line_fixed" android:layout_toLeftOf="@id/card_film_image" android:layout_below="@id/card_film_duration" style="@style/TextLine.Secondary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view_dark" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

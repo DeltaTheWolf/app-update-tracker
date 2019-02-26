@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag=".keyboard-header-area" android:background="?BgHeader" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_header" />
+    <TextView android:textSize="@dimen/text_size_candidate" android:textColor="?ColorLabelCandidate" android:layout_gravity="center" android:id="@id/voiceime_label" android:tag=".label.for-candidate-key" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.google.android.apps.inputmethod.libs.voiceime.VoiceCircleView android:gravity="center" android:layout_gravity="end|center" android:id="@id/voiceime_circle_bar" android:tag=".background-icon.for-voiceime-circle-bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/voiceime_mic" android:layout_width="@dimen/voiceime_mic_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/voiceime_mic_margin_right" android:layout_marginRight="@dimen/voiceime_mic_margin_right" android:src="@drawable/quantum_ic_keyboard_voice_white_24" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+    <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:id="@id/voiceime_language_selector_view_id" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/voiceime_mic_margin_right" style="@style/VoiceLanguageSelectorStyle">
+        <TextView android:textSize="@dimen/text_size_tiny" android:textColor="?ColorLabelCandidate" android:layout_gravity="center_vertical" android:id="@id/voiceime_language_selector_box" android:tag=".label.for-candidate-key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" android:paddingStart="@dimen/voiceime_mic_margin_right" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_mirrored_grey600_24" />
+    </LinearLayout>
+</FrameLayout>

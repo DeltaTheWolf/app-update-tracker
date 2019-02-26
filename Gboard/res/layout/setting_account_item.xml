@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/current_selected_account" style="@style/AccountItemView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView card_view:cardBackgroundColor="@android:color/transparent" style="@style/RoundCardView" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <ImageView android:id="@id/account_round_photo" style="@style/AccountPhotoImageView" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/account_item_name_margin_start">
+        <TextView android:id="@id/account_name" style="@style/AccountItemUserName" />
+        <TextView android:id="@id/account_email" style="@style/AccountItemEmail" />
+    </LinearLayout>
+    <ImageView style="@style/SettingAccountSelectedIndicator" />
+</LinearLayout>

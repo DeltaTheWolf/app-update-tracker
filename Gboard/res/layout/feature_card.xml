@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:focusable="false" style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/card_feature_host" android:focusable="false" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:id="@id/card_feature_title" android:layout_width="fill_parent" android:maxLines="@integer/single_line_fixed" android:scrollHorizontally="true" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" style="@style/TextLine.Primary.FeatureCard" />
+            <ImageView android:id="@id/card_feature_profile" android:padding="8.0dip" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:scaleType="fitCenter" android:adjustViewBounds="false" android:cropToPadding="true" android:layout_below="@id/card_feature_title" android:layout_alignParentRight="true" />
+            <TextView android:ellipsize="end" android:id="@id/card_feature_description" android:maxLines="@integer/longer_string_max_lines_responsive" android:layout_toLeftOf="@id/card_feature_profile" android:layout_below="@id/card_feature_title" style="@style/TextLine.Secondary.FeatureCard" />
+        </RelativeLayout>
+        <TextView android:id="@id/card_feature_color_bar" android:focusable="false" style="@style/ColorBar" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

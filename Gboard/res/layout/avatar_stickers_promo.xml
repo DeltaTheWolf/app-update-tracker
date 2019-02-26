@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_marginBottom="0.0dip" style="@style/StickerErrorCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.libraries.avatar.promo.AvatarPromoBannerView android:id="@id/avatar_stickers_promo" android:background="@drawable/bg_avatar_stickers_promo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+        </RelativeLayout>
+    </ScrollView>
+    <ImageButton android:layout_gravity="end|center|top" android:id="@id/avatar_promo_close_button" android:layout_width="@dimen/sticker_error_card_close_btn_size" android:layout_height="@dimen/sticker_error_card_close_btn_size" android:src="?CloseIcon" android:contentDescription="@string/stickers_dismiss_promo_btn_content_desc" style="?android:attr/borderlessButtonStyle" />
+</androidx.cardview.widget.CardView>

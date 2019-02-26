@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/Body"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <LinearLayout android:id="@id/input_area" style="@style/BodyInner">
+        <include layout="@layout/keyboard_9key_input_area" />
+        <include layout="@layout/keyboard_latin_bottom" />
+    </LinearLayout>
+    <include layout="@layout/keyboard_candidates_body_zh_9key" />
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

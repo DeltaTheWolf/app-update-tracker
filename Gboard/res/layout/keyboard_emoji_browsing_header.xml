@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/ResultHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_search_result_header_inner_no_theme" />
+    <FrameLayout android:id="@id/emoji_browsing_keyboard_empty_header" android:visibility="visible" style="@style/Header.NonPrime">
+        <include layout="@layout/keyboard_incognito_overlay_header" />
+    </FrameLayout>
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

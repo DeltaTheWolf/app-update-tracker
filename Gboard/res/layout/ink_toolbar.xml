@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ink_toolbar" android:background="@drawable/bg_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/ink_text_button" android:background="@drawable/transparent_button_bg" android:padding="@dimen/camera_button_padding" android:layout_width="@dimen/ink_text_tool_width" android:layout_height="@dimen/ink_text_tool_height" android:layout_margin="@dimen/camera_top_margin" android:src="@drawable/quantum_ic_text_format_white_24" android:scaleType="fitXY" android:cropToPadding="true" android:contentDescription="@string/text_tool_content_desc" android:layout_alignParentEnd="true" />
+</RelativeLayout>

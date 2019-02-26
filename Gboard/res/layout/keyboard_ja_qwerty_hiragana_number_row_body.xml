@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView style="@style/Body"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <FrameLayout style="@style/BodyInnerWrapper">
+        <include layout="@layout/keyboard_ja_candidates_body_inner" />
+        <FrameLayout style="@style/InputAreaFrame">
+            <LinearLayout style="@style/BodyInner.Japanese">
+                <include layout="@layout/keyboard_ja_qwerty_hiragana_number_row_input_area" />
+                <include layout="@layout/keyboard_ja_qwerty_bottom" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyboardView>

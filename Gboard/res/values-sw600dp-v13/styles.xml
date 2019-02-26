@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeaderInner.NonPrime.WeightSum" parent="@style/HeaderInner.NonPrime">
+        <item name="android:gravity">center</item>
+        <item name="android:weightSum">1100.0</item>
+    </style>
+    <style name="LabelSecondary.Qwerty" parent="@style/LabelSecondary">
+        <item name="android:textSize">@dimen/text_size_qwerty_footer</item>
+        <item name="android:textColor">?ColorLabelSecondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:tag">.label.secondary.text-size-qwerty-footer</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">@integer/softkey_qwerty_bottom_label_weight</item>
+    </style>
+    <style name="SubCategoryHolder">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">@integer/non_prime_header_sub_category_holder_weight</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">center</item>
+    </style>
+</resources>

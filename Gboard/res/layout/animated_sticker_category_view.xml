@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="@dimen/sticker_category_item_size" android:layout_height="@dimen/sticker_category_row_height" android:layout_marginStart="@dimen/sticker_category_item_horizontal_margin" android:layout_marginEnd="@dimen/sticker_category_item_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingTop="@dimen/sticker_category_row_top_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView style="@style/StickerCardViewWrapper">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.apps.inputmethod.libs.search.widget.VariableWidthAnimatedImageView android:id="@id/animated_image_view" android:padding="@dimen/sticker_category_item_stroke_width" android:layout_width="@dimen/sticker_category_item_size" android:layout_height="@dimen/sticker_category_item_size" android:scaleType="fitCenter" android:contentDescription="@string/gboard_sticker_pack_image_content_desc" app:errorPlaceholder="@drawable/ic_sticker_sad" />
+                <ImageView android:tag=".icon.extension-tab" android:layout_width="@dimen/sticker_category_item_size" android:layout_height="@dimen/sticker_category_item_size" android:src="@drawable/bg_sticker_category_selector" />
+            </FrameLayout>
+            <include layout="@layout/animated_image_view_footer" />
+        </androidx.cardview.widget.CardView>
+        <ProgressBar android:layout_gravity="center" android:id="@id/animated_image_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/sticker_category_item_progress_max_width" android:indeterminate="true" android:minWidth="0.0dip" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/stickers_new_releases_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sticker_category_row_top_margin_neg" android:src="@drawable/quantum_ic_new_releases_black_18" android:tint="#ff1a73e8" />
+</FrameLayout>

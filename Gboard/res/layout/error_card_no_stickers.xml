@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/StickerErrorCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_sticker_sad" />
+        <TextView android:textSize="@dimen/error_card_message_font_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sticker_error_message_description_no_result" />
+        <TextView android:textSize="@dimen/error_card_message_font_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/sticker_error_message_action_no_result" />
+        <Button android:textSize="14.0dip" android:textColor="@android:color/white" android:id="@id/error_card_button" android:background="@drawable/bg_download_sticker_button" android:layout_width="260.0dip" android:layout_height="36.0dip" android:foreground="?android:selectableItemBackground" android:text="@string/sticker_open_gallery_button_text" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

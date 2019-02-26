@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="@dimen/ink_color_button_diameter_for_touch" android:layout_height="@dimen/ink_color_button_diameter_for_touch"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/ink_color_selection_button_border" android:background="@drawable/ink_color_button_default_circle" android:focusable="false" android:clickable="false" android:layout_width="@dimen/ink_color_button_inactive_diameter" android:layout_height="@dimen/ink_color_button_inactive_diameter" android:layout_margin="@dimen/ink_color_inactive_button_margin" android:elevation="@dimen/ink_color_button_elevation">
+        <ImageView android:layout_gravity="center" android:id="@id/ink_color_selection_button" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="@dimen/ink_color_button_inner_diameter" android:layout_height="@dimen/ink_color_button_inner_diameter" android:scaleType="centerInside" />
+    </FrameLayout>
+</FrameLayout>

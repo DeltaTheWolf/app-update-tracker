@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:ellipsize="end" android:id="@id/card_definition_word" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+            <TextView android:id="@id/card_definition_pronounciation" android:layout_marginTop="1.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_below="@id/card_definition_word" style="@style/TextLine.Secondary" />
+            <TextView android:id="@id/card_definition_category" android:layout_marginTop="1.0dip" android:maxLines="@integer/single_line_fixed" android:layout_below="@id/card_definition_pronounciation" style="@style/TextLine.Secondary" />
+            <TextView android:ellipsize="end" android:id="@id/card_definition_definition" android:layout_marginTop="1.0dip" android:maxLines="@integer/short_string_max_lines_responsive" android:layout_below="@id/card_definition_category" style="@style/TextLine.Secondary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:baselineAligned="false" android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/card_primary_text_size" android:textColor="@color/quantum_black_text" android:id="@id/card_sports_match_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/card_vertical_margin" android:layout_weight="1.0" android:layout_marginStart="@dimen/card_horizontal_margin" android:layout_marginEnd="@dimen/card_horizontal_margin" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.25">
+                <TextView android:textSize="@dimen/card_secondary_text_size" android:textStyle="bold" android:textColor="@android:color/holo_green_dark" android:gravity="center_vertical" android:id="@id/card_sports_match_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/card_horizontal_margin" android:layout_marginEnd="@dimen/card_horizontal_margin" />
+                <TextView android:textSize="@dimen/card_secondary_text_size" android:textColor="@color/quantum_black_secondary_text" android:gravity="center_vertical" android:id="@id/card_sports_match_location" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.25">
+                <TextView android:textSize="@dimen/card_primary_text_size" android:textColor="@color/quantum_black_text" android:gravity="center_vertical" android:id="@id/card_sports_top_team_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/card_horizontal_margin" android:layout_marginEnd="@dimen/card_horizontal_margin" android:layout_alignParentStart="true" />
+                <TextView android:textSize="@dimen/card_primary_text_size" android:textColor="@color/quantum_black_text" android:gravity="center_vertical" android:id="@id/card_sports_top_team_score" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/card_sports_top_team_logo" />
+                <ImageView android:id="@id/card_sports_top_team_logo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_marginStart="@dimen/card_horizontal_margin" android:layout_marginEnd="@dimen/card_horizontal_margin" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.25">
+                <TextView android:textSize="@dimen/card_primary_text_size" android:textColor="@color/quantum_black_text" android:gravity="center_vertical" android:id="@id/card_sports_bottom_team_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/card_horizontal_margin" android:layout_marginEnd="@dimen/card_horizontal_margin" android:layout_alignParentStart="true" />
+                <TextView android:textSize="@dimen/card_primary_text_size" android:textColor="@color/quantum_black_text" android:gravity="center_vertical" android:id="@id/card_sports_bottom_team_score" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/card_sports_bottom_team_logo" />
+                <ImageView android:id="@id/card_sports_bottom_team_logo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_marginStart="@dimen/card_horizontal_margin" android:layout_marginEnd="@dimen/card_horizontal_margin" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.25" />
+        </LinearLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

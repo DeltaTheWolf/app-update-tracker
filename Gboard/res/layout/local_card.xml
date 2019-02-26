@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:divider="?SearchCardDivider" android:showDividers="middle" style="@style/CardHostView">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/card_vertical_margin" android:layout_weight="1.0">
+                <TextView android:id="@id/card_local_title" android:layout_marginBottom="8.0dip" android:maxLines="@integer/single_line_fixed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0">
+                    <LinearLayout android:id="@id/card_local_rating_components" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <RatingBar android:id="@id/card_local_rating" android:layout_marginLeft="@dimen/card_horizontal_margin" android:layout_marginBottom="0.0dip" style="@style/RatingBar" />
+                        <TextView android:id="@id/card_local_comment" android:layout_marginLeft="4.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:maxLines="@integer/single_line_fixed" android:includeFontPadding="false" style="@style/TextLine.Secondary" />
+                    </LinearLayout>
+                    <TextView android:id="@id/card_local_current_status" android:layout_marginTop="0.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_weight="1.0" style="@style/TextLine.Secondary" />
+                    <TextView android:ellipsize="end" android:id="@id/card_local_address" android:layout_marginTop="0.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_weight="1.0" style="@style/TextLine.Secondary" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/card_local_profile" android:layout_alignParentRight="true" style="@style/ProfileImage" />
+        </LinearLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

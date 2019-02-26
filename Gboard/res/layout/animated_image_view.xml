@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AnimatedGif"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.inputmethod.libs.search.widget.MaxHeightCardView android:layout_gravity="center_vertical" android:id="@id/animated_image_view_card" android:layout_width="wrap_content" android:layout_height="fill_parent" card_view:cardBackgroundColor="?BgHeader" card_view:cardElevation="0.0dip" card_view:cardUseCompatPadding="true" max_height="@dimen/native_card_height" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <com.google.android.apps.inputmethod.libs.search.widget.VariableWidthAnimatedImageView android:id="@id/animated_image_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/gboard_gif_image_content_desc" />
+        <include layout="@layout/animated_image_view_footer" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/image_delete_button" android:background="@drawable/delete_button_background" android:padding="@dimen/delete_button_content_padding" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_margin="2.0dip" android:src="@drawable/quantum_ic_clear_white_24" android:contentDescription="@string/makeagif_delete_gif_content_desc" />
+    </com.google.android.apps.inputmethod.libs.search.widget.MaxHeightCardView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/animated_image_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+</FrameLayout>

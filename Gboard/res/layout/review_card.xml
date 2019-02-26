@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/card_local_review" style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:id="@id/card_reviews_title" android:text="@string/review_card_title" android:maxLines="@integer/single_line_fixed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Primary" />
+            <ImageView android:id="@id/card_review_profile_photo_top" android:layout_width="@dimen/review_profile_photo_width" android:layout_height="@dimen/review_profile_photo_height" android:layout_marginTop="7.0dip" android:scaleType="centerCrop" android:adjustViewBounds="false" android:layout_below="@id/card_reviews_title" android:layout_marginStart="@dimen/card_horizontal_margin" />
+            <TextView android:ellipsize="end" android:id="@id/card_review_text_top" android:layout_marginTop="0.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_toRightOf="@id/card_review_profile_photo_top" android:layout_alignTop="@id/card_review_profile_photo_top" style="@style/TextLine.Secondary" />
+            <ImageView android:id="@id/card_review_profile_photo_bottom" android:layout_width="@dimen/review_profile_photo_width" android:layout_height="@dimen/review_profile_photo_height" android:layout_marginTop="9.0dip" android:scaleType="centerCrop" android:adjustViewBounds="false" android:layout_below="@id/card_review_profile_photo_top" android:layout_marginStart="@dimen/card_horizontal_margin" />
+            <TextView android:ellipsize="end" android:id="@id/card_review_text_bottom" android:layout_marginTop="0.0dip" android:maxLines="@integer/short_string_max_lines_fixed" android:layout_toRightOf="@id/card_review_profile_photo_bottom" android:layout_alignTop="@id/card_review_profile_photo_bottom" style="@style/TextLine.Secondary" />
+        </RelativeLayout>
+        <include layout="@layout/action_view" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

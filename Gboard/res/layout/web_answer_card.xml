@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/CommonCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/CardHostView">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include layout="@layout/action_view" />
+            <View android:background="@color/quantum_grey500" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/action_view_bar" />
+            <TextView android:textStyle="bold" android:textColor="@color/quantum_black_text" android:ellipsize="end" android:id="@id/card_web_answer_short_answer" android:maxLines="@integer/single_line_fixed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Secondary" />
+            <TextView android:textColor="@color/quantum_black_text" android:ellipsize="end" android:id="@id/card_web_answer_short_answer_explanation" android:layout_marginTop="1.0dip" android:maxLines="@integer/long_string_max_lines_responsive" android:layout_below="@id/card_web_answer_short_answer" style="@style/TextLine.Secondary" />
+            <TextView android:textColor="@color/quantum_black_text" android:ellipsize="end" android:id="@id/card_web_answer_answer" android:maxLines="@integer/longer_string_max_lines_responsive" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextLine.Secondary" />
+            <TextView android:textColor="?SearchCardBlueTextColor" android:ellipsize="end" android:id="@id/card_web_answer_title" android:layout_marginTop="0.0dip" android:layout_marginBottom="@dimen/card_vertical_margin" android:maxLines="@integer/single_line_fixed" android:layout_above="@id/action_view_bar" style="@style/TextLine.Secondary" />
+            <TextView android:textColor="?SearchCardGreenTextColor" android:ellipsize="end" android:id="@id/card_web_answer_source" android:maxLines="@integer/single_line_fixed" android:layout_above="@id/card_web_answer_title" style="@style/TextLine.Secondary" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

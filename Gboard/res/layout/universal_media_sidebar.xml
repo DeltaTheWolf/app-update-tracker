@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/universal_media_emoji_holder_view_container" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip">
+        <TextView android:text="@string/universal_media_emoji_header_text" style="@style/UniversalMediaHeaderTextView" />
+        <com.google.android.apps.inputmethod.libs.search.widget.FixedSizeZeroPaddingSoftKeyViewsPage android:orientation="vertical" android:id="@id/universal_media_emoji_holder_view" android:layout_width="@dimen/universal_media_emoji_one_col_width" android:layout_height="fill_parent" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" column_count="@integer/universal_media_num_emoji_cols" row_count="@integer/universal_media_num_emoji_rows" horizontal_alignment="false" softkeyview_layout="@layout/softkeyview_pageable_transparent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/animated_sticker_holder_view_container" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip">
+        <TextView android:text="@string/universal_media_sticker_header_text" style="@style/UniversalMediaHeaderTextView" />
+        <com.google.android.apps.inputmethod.libs.search.widget.AnimatedImageSidebarHolderView android:id="@id/animated_sticker_holder_view" android:layout_width="wrap_content" android:layout_height="fill_parent" image_view_layout="@layout/animated_sticker_view" />
+    </LinearLayout>
+</LinearLayout>

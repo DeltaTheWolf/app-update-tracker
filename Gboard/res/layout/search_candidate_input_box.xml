@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout style="@style/GBoardIconHolder">
+        <com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyView android:id="@id/key_pos_search_header_search" style="@style/GBoardIcon" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/edit_text_search_box_holder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <FrameLayout style="@style/ThreePartRowFrame.End">
+        <com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyView android:id="@id/key_pos_search_header_cancel" style="@style/HeaderClearIcon" />
+        <com.google.android.apps.inputmethod.libs.framework.keyboard.SoftKeyView android:id="@id/key_pos_search_header_emojihwr_launcher" style="@style/HeaderEmojiHandwriting" />
+    </FrameLayout>
+</merge>
