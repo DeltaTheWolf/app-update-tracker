@@ -21,6 +21,9 @@ enum class ProductTransactionStatus(val id: Int) : StatefulEnum<ProductTransacti
         }
     },
     PRODUCT_JWT_FETCH_ERROR(1001) {
+        override fun advance(): ProductTransactionStatus {
+            return PENDING_KIN_PURCHASE
+        }
         override fun retry(): ProductTransactionStatus {
             return PENDING_PRODUCT_JWT_FETCH
         }
@@ -39,6 +42,10 @@ enum class ProductTransactionStatus(val id: Int) : StatefulEnum<ProductTransacti
         }
     },
     KIN_PURCHASE_ERROR(2001) {
+        override fun advance(): ProductTransactionStatus {
+            return PENDING_UNLOCK_PRODUCT
+        }
+
         override fun retry(): ProductTransactionStatus {
             return PENDING_PRODUCT_JWT_FETCH
         }

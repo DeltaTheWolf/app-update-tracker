@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:splitMotionEvents="false"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <include layout="@layout/kinecosystem_toolbar_layout" />
     <com.kin.ecosystem.balance.view.BalanceView android:id="@id/balance_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subTitle="@string/kinecosystem_welcome_to_kin_marketplace" />

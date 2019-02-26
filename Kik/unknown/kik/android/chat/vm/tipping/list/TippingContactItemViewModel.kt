@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory
 import rx.Observable
 import javax.inject.Inject
 
-class TippingContactItemViewModel(override val kinEnabled: Observable<Boolean>, val jid: BareJid, override val isSuperAdmin: Boolean, private val adminSelectedListener: IAdminSelectedListener) : AbstractViewModel(), ITippingContactItemViewModel {
+class TippingContactItemViewModel(override val kinEnabled: Boolean, val jid: BareJid, override val isSuperAdmin: Boolean, private val adminSelectedListener: IAdminSelectedListener) : AbstractViewModel(), ITippingContactItemViewModel {
     companion object {
         private var LOG = LoggerFactory.getLogger(TippingContactItemViewModel::class.java.simpleName)
     }
@@ -62,17 +62,10 @@ class TippingContactItemViewModel(override val kinEnabled: Observable<Boolean>, 
     }
 
     override fun onSelected() {
-        lifecycleSubscription.add(
-                kinEnabled.onErrorReturn {
-                    LOG.error(it.message)
-                    false
-                }.subscribe {
-                    adminSelectedListener.onAdminSelected(jid)
-                    if (!it) {
-                        showDisabledDialog()
-                    }
-                }
-        )
+        adminSelectedListener.onAdminSelected(jid)
+        if (!kinEnabled) {
+            showDisabledDialog()
+        }
     }
 
     private fun showDisabledDialog() {

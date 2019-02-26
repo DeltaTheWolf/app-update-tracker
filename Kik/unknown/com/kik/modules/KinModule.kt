@@ -7,11 +7,11 @@ import com.kik.abtesting.StubProductPaymentManager
 import com.kik.core.domain.kin.KinController
 import com.kik.core.domain.kin.KinRepository
 import com.kik.kin.*
+import com.kik.metrics.service.MetricsService
 import com.kik.storage.KinProductTransactionEntrySqlStorage
 import com.kik.storage.P2PTransactionEntrySqlStorage
 import com.kik.storage.StubKinProductTransactionEntrySqlStorage
 import com.kik.storage.StubP2PTransactionEntrySqlStorage
-import com.kin.ecosystem.Environment
 
 import java.util.UUID
 import java.util.concurrent.Executors
@@ -27,13 +27,12 @@ import kik.android.util.ISharedPrefProvider
 import kik.core.CoreModule
 import kik.core.chat.profile.IContactProfileRepository
 import kik.core.interfaces.*
-import kik.core.xiphias.GroupProfileRepository
 import kik.core.xiphias.IP2PPaymentService
 import kik.core.xiphias.IProductDataService
 import kik.core.xiphias.XiphiasP2PPaymentService
 import rx.schedulers.Schedulers
 
-@Module(includes = arrayOf(CoreModule::class, SharedPrefProviderModule::class, UserJWTAuthModule::class))
+@Module(includes = arrayOf(CoreModule::class, SharedPrefProviderModule::class, UserJWTAuthModule::class, MetricsServiceModule::class))
 class KinModule(private val _applicationContext: Context, private val _configurations: IConfigurations, private val _storage: IStorage) {
 
     // Kin Ether SDK -----
@@ -56,18 +55,16 @@ class KinModule(private val _applicationContext: Context, private val _configura
 
 
     // Kin Stellar SDK -----
-
     @Provides
     @Singleton
-    internal fun providesKinStellarSdkController(jwtAuthController: IUserJWTAuthController, userProfile: IUserProfile, sharedPrefProvider: ISharedPrefProvider): IKinStellarSDKController {
+    internal fun providesKinStellarSdkController(jwtAuthController: IUserJWTAuthController, userProfile: IUserProfile, sharedPrefProvider: ISharedPrefProvider, kinSdkMetrics: IKinSdkMetrics): IKinStellarSDKController {
         if (DeviceUtils.kinSupportedDevice()) {
-            val serverProfile = _configurations.getCurrentServerProfile(sharedPrefProvider)
             return KinStellarSDKController(_applicationContext,
                     jwtAuthController,
                     KinEcosystemSDKWrapper(),
-                    if (serverProfile == KikConfigurations.SERVER_PROFILE_DEV) Environment.getBeta() else Environment.getProduction(),
                     userProfile,
-                    Schedulers.from(Executors.newSingleThreadExecutor()))
+                    Schedulers.from(Executors.newSingleThreadExecutor()),
+                    kinSdkMetrics)
         }
 
         return StubKinStellarSDKController()
@@ -134,4 +131,10 @@ class KinModule(private val _applicationContext: Context, private val _configura
             if (DeviceUtils.kinSupportedDevice()) {
                 KinAccountsManager(adminKinAccountRepository)
             } else StubKinAccountsManager()
+
+    @Provides
+    @Singleton
+    internal fun providesKinMetrics(metricsService: MetricsService): IKinSdkMetrics {
+        return KinSdkMetrics(metricsService)
+    }
 }

@@ -270,7 +270,22 @@ class ThemesManager<in KeyType> constructor(private val themesRepository: ITheme
 
             themePurchaseStateMap.stateChanged()
                     .subscribe { (themeId, themeTransactionState) -> themeTransactionStatusMap.onNext(themeId, themeTransactionState) }
+
+            if (canAccessPaidThemes) {
+                productPaymentManager.pendingTransactions()
+                        .subscribe { transactionIds ->
+                            transactionIds.forEach {
+                                themePurchaseState(it).let { existingState ->
+                                    if (existingState == null || existingState == ThemeTransactionStatus.NO_TRANSACTION) {
+                                        adaptProductTransaction(it)
+                                    }
+                                }
+                            }
+                        }
+            }
         }
+
+        fun themePurchaseState(themeId: UUID) = themePurchaseStateMap.currentState(themeId)
 
         fun purchaseTheme(themeId: UUID) {
             themePurchaseStateMap.advanceSuccessState(themeId)
@@ -307,12 +322,14 @@ class ThemesManager<in KeyType> constructor(private val themesRepository: ITheme
                         } else {
                             themePurchaseStateMap.advanceErrorState(themeId)
                         }
-                    }
-                    .doOnError { themePurchaseStateMap.advanceErrorState(themeId); LOG.debug("Failed to convert ProductTransactionStatus to ThemeTransactionStatus") }
-                    .doOnNext {
-                        if (it.second == ThemeTransactionStatus.PENDING_REFRESH_THEME) {
-                            refreshTheme(themeId);
+
+                        if (productTransactionStatus == ThemeTransactionStatus.PENDING_REFRESH_THEME) {
+                            refreshTheme(themeId)
                         }
+                    }
+                    .doOnError {
+                        themePurchaseStateMap.advanceErrorState(themeId)
+                        LOG.debug("Failed to convert ProductTransactionStatus to ThemeTransactionStatus")
                     }
                     .subscribe()
         }

@@ -11,6 +11,8 @@ import rx.Observable
 import rx.Scheduler
 import rx.Single
 import rx.schedulers.Schedulers
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.TimeoutException
 
 class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKController,
                             private val p2pPaymentService: IP2PPaymentService,
@@ -62,7 +64,18 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
     override fun doRequestConfirmationJwt(payment: P2PPayment) =
             kinStellarSDKController.getOrderConfirmation(payment.paymentJwt)
 
-    override fun doKinTransaction(jwt: String) = kinStellarSDKController.payTo(jwt).subscribeOn(scheduler)
+    override fun doKinTransaction(payment: P2PPayment, jwt: String) = kinStellarSDKController.payTo(jwt)
+            .observeOn(scheduler)
+            .timeout(30, TimeUnit.SECONDS)
+            .retryWhen { errors ->
+                errors.flatMap { error: Throwable ->
+                    if (error is TimeoutException) {
+                        return@flatMap Observable.just(null)
+                    } else {
+                        return@flatMap Observable.error<Throwable>(error)
+                    }
+                }
+            }
 
     override fun doConfirmTransaction(payment: P2PPayment, offerConfirmationJwt: String): Completable {
         payment.confirmationJwt = offerConfirmationJwt
@@ -135,7 +148,7 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
     private fun recoverPendingTransaction(transaction: P2PPayment, status: P2PTransactionStatus) {
         when (status) {
             P2PTransactionStatus.PENDING_P2P_PAYMENT_JWT_FETCH -> getOfferAndDoTransaction(transaction)
-            P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT -> getTransaction(transaction, transaction.paymentJwt).subscribe()
+            P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT -> getTransaction(transaction, transaction.paymentJwt).toCompletable().onErrorComplete().subscribe()
             P2PTransactionStatus.PENDING_P2P_PAYMENT_CONFIRM, P2PTransactionStatus.P2P_PAYMENT_CONFIRM_ERROR ->
                 // in this case the payment might have been successful, so we need to force a retry
                 retryConfirmTransaction(transaction)

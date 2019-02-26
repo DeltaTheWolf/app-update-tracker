@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:id="@id/earn_offer_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/image" android:background="@drawable/kinecosystem_item_bg_placeholder" android:layout_width="140.0dip" android:layout_height="90.0dip" />
+    <ImageView android:id="@id/image" android:layout_width="140.0dip" android:layout_height="90.0dip" />
     <TextView android:textColor="@color/kinecosystem_title" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/kinecosystem_block_margin" android:layout_marginBottom="@dimen/kinecosystem_tiny_margin" android:maxLength="14" style="@style/KinecosysSubTitle" />
     <TextView android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/kinecosystem_tiny_margin" android:maxLength="20" style="@style/KinecosysSubTitle" />
     <TextView android:textColor="@color/kinecosystem_bluePrimary" android:id="@id/amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KinecosysSubTitleMedium" />

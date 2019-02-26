@@ -4,6 +4,8 @@ import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import com.kik.components.CoreComponent
+import com.kik.core.domain.groups.GroupRepository
+import com.kik.core.domain.groups.model.Group
 import com.kik.core.domain.users.UserRepository
 import com.kik.core.domain.users.model.User
 import com.kik.core.network.xmpp.jid.BareJid
@@ -14,10 +16,9 @@ import kik.android.R
 import kik.android.chat.vm.AbstractListViewModel
 import kik.android.chat.vm.DialogViewModel
 import kik.android.chat.vm.INavigator
+import kik.android.chat.vm.profile.GroupUtils.DISPLAY_NAME_COMPARATOR_FUNC
 import kik.core.chat.profile.ContactProfile
 import kik.core.chat.profile.IContactProfileRepository
-import kik.core.datatypes.KikGroup
-import kik.core.interfaces.IGroupManager
 import kik.core.interfaces.IImageRequester
 import kik.core.interfaces.IProfileImageProvider
 import kik.core.kin.AdminTippingMetaData
@@ -25,13 +26,16 @@ import kik.core.kin.PaymentType
 import kik.core.xdata.IOneTimeUseRecordManager
 import org.slf4j.LoggerFactory
 import rx.Observable
+import rx.android.schedulers.AndroidSchedulers
 import rx.subjects.BehaviorSubject
 import rx.subjects.PublishSubject
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.TimeoutException
 import javax.inject.Inject
 
 class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdminsGroupTippingViewModel, AbstractListViewModel<ITippingContactItemViewModel>(), TippingContactItemViewModel.IAdminSelectedListener {
     @Inject
-    lateinit var groupManager: IGroupManager
+    lateinit var groupRepository: GroupRepository
     @Inject
     lateinit var userRepository: UserRepository
     @Inject
@@ -47,14 +51,18 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
     @Inject
     lateinit var oneTimeUseRecordManager: IOneTimeUseRecordManager
 
-    private val adminJids = arrayListOf<BareJid>()
+    private val allAdminJids = mutableSetOf<BareJid>()
 
-    private lateinit var group: KikGroup
+    private val superAdminJids = mutableSetOf<BareJid>()
+
+    private lateinit var groupObservables: Observable<Group>
 
     private val selectedUser = BehaviorSubject.create<User?>()
     private val changeAdminButtonSelected = BehaviorSubject.create<Unit>()
 
     private val untippableAdminTapped = PublishSubject.create<BareJid>()
+
+    private val currentUserPairs = mutableListOf<Pair<User, Boolean>>()
 
     private val inAnimation = BehaviorSubject.create<Boolean>(false)
 
@@ -66,8 +74,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
         coreComponent.inject(this)
         super.attach(coreComponent, navigator)
 
-        fetchGroup()
-
+        groupObservables = groupRepository.findGroupByJid(BareJid.fromString(conversationJid))
         oneTimeUseRecordManager.firstTimeTippingScreenShown.filter { !it }.subscribe {
             val viewModel = DialogViewModel.Builder<DialogViewModel.Builder<*>>()
                     .title(resources.getString(R.string.first_time_dialog_title))
@@ -81,46 +88,105 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
             oneTimeUseRecordManager.setFirstTimeTippingScreenShown(true)
         }
 
-        loadList()
-
-        lifecycleSubscription.add(
-                groupManager.groupUpdatedObservable()
-                        .filter { it == conversationJid }
-                        .subscribe { updateList() }
-        )
+        lifecycleSubscription.add(groupObservables.subscribe { group -> updateList(group) })
     }
 
-    override fun size(): Int {
-        return adminJids.size
-    }
+    override fun size() = currentUserPairs.size
 
     override fun createItemViewModel(currentIndex: Int): ITippingContactItemViewModel {
-        return TippingContactItemViewModel(kinAccountsManager.canAdminBeTipped(adminJids[currentIndex]), adminJids[currentIndex], checkSuper(adminJids[currentIndex]), this)
+
+        val pair = currentUserPairs[currentIndex]
+        val bareJid = pair.first.bareJid
+        return TippingContactItemViewModel(pair.second, bareJid, checkSuper(bareJid), this)
     }
 
-    public override fun getUniqueIdentifierForIndex(currentIndex: Int): String {
-        return adminJids[currentIndex].toString()
-    }
+    public override fun getUniqueIdentifierForIndex(currentIndex: Int) = currentUserPairs[currentIndex].toString()
 
     @Synchronized
-    private fun loadList() {
-        adminJids.clear()
-        adminJids.addAll(group.allAdmins)
+    private fun loadList(group: Group) {
+        currentUserPairs.clear()
+        reload()
+        allAdminJids.clear()
+        superAdminJids.clear()
+        allAdminJids.addAll(group.admins)
+
+        val newSuperAdmins = group.superAdmins
+        superAdminJids.addAll(newSuperAdmins)
+
+        val adminJids = mutableListOf<BareJid>()
+        adminJids.addAll(allAdminJids)
+        adminJids.removeAll(newSuperAdmins)
+
+        val getUserFromBareJid = { jid: BareJid -> userRepository.findUserById(jid).first().timeout(1000, TimeUnit.MILLISECONDS, Observable.just<User?>(null)) }
+
+        val superAdmins = Observable.from(newSuperAdmins).flatMap(getUserFromBareJid).toSortedList(DISPLAY_NAME_COMPARATOR_FUNC)
+        val admins = Observable.from(allAdminJids).flatMap(getUserFromBareJid).toSortedList(DISPLAY_NAME_COMPARATOR_FUNC)
+
+        lifecycleSubscription.add(Observable.zip(superAdmins, admins)
+        { superAdminUsers, adminUsers ->
+            val fullList = mutableListOf<User?>()
+            fullList.addAll(superAdminUsers)
+            fullList.addAll(adminUsers)
+            return@zip fullList
+        }
+                .flatMap { getUserPairObservable(it) }
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({ addUsers(it) }) {})
     }
 
-    private fun updateList() {
-        fetchGroup()
+    private fun getUserPairObservable(newUsers: List<User?>): Observable<List<Pair<User, Boolean>>> {
+        var adminTipStatusConcat = Observable.empty<Pair<User, Boolean>>()
+        newUsers.forEach { user ->
+            if (user != null) {
+                adminTipStatusConcat = adminTipStatusConcat.concatWith(kinAccountsManager.canAdminBeTipped(user.bareJid)
+                        .timeout(1000, TimeUnit.MILLISECONDS)
+                        .retryWhen { errors ->
+                            return@retryWhen errors.zipWith(Observable.range(0, 3)
+                            ) { error, _ ->
+                                if (error is TimeoutException) {
+                                    return@zipWith Observable.just(user.bareJid)
+                                } else {
+                                    return@zipWith Observable.error<Any>(error)
+                                }
+                            }
+                        }
+                        .onErrorReturn { false }
+                        .map { Pair(user, it) })
+            }
+        }
 
-        if (group.allAdmins == adminJids) {
+        return adminTipStatusConcat.toList()
+    }
+
+    private fun addUsers(userPairs: List<Pair<User, Boolean>>) {
+        val availableList = mutableListOf<Pair<User, Boolean>>()
+        val unavailableList = mutableListOf<Pair<User, Boolean>>()
+        userPairs.forEach { pair ->
+            if (pair.second) {
+                availableList.add(pair)
+            } else {
+                unavailableList.add(pair)
+            }
+        }
+
+        val insertionFunction = { user: Pair<User, Boolean> ->
+            if (!currentUserPairs.contains(user)) {
+                currentUserPairs.add(user)
+                insertAt(currentUserPairs.size - 1)
+            }
+        }
+
+        availableList.forEach(insertionFunction)
+        unavailableList.forEach(insertionFunction)
+    }
+
+    private fun updateList(group: Group) {
+
+        if (group.admins == allAdminJids) {
             return
         }
 
-        loadList()
-        reload()
-    }
-
-    private fun fetchGroup() {
-        group = groupManager.getGroupbyJid(conversationJid, true)
+        loadList(group)
     }
 
     override fun onChangeAdminButtonPressed() {
@@ -134,8 +200,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
                 .subscribe {
                     if (selectedUser.value != null) {
                         selectedUser.onNext(null)
-                    }
-                    else {
+                    } else {
                         navigator.finish()
                     }
                 })
@@ -154,7 +219,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
                     inAnimation.take(1)
                             .filter { !it }
                             .flatMap { userRepository.findUserById(jid).first() }
-                }.subscribe ({ user ->
+                }.subscribe({ user ->
                     if (selectedUser.value == null) {
                         selectedUser.onNext(user)
                     }
@@ -195,31 +260,26 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
                     }
                 }))
 
-    override fun selectAnimationShown(isShown: Boolean) {
-        inAnimation.onNext(isShown)
-    }
-    
+    override fun selectAnimationShown(isShown: Boolean) = inAnimation.onNext(isShown)
+
     override fun doTip(amount: Int) {
         lifecycleSubscription.add(
                 selectedAdminBareJid
                         .first()
                         .flatMap { contactProfileRepository.profileForJid(it) }
-                        .subscribe ({
-                            profile: ContactProfile ->
+                        .subscribe({ profile: ContactProfile ->
                             val payment = P2PPayment(profile.jid, profile.kinUserId, amount, PaymentType.ADMIN_TIP, AdminTippingMetaData(BareJid.fromString(conversationJid)))
                             p2pTransactionManager.getOfferAndDoTransaction(payment)
                             navigator.finish()
-                            },
-                            { e -> LOG.warn("error getting selectedAdminBareJid. Reason = ${e.message}") }
+                        },
+                                { e -> LOG.warn("error getting selectedAdminBareJid. Reason = ${e.message}") }
                         )
         )
     }
 
-    private fun checkSuper(bareJid: BareJid) = group.superAdmins.contains(bareJid.toString())
+    private fun checkSuper(bareJid: BareJid) = superAdminJids.contains(bareJid)
 
     private val validSelectedUser: Observable<User>
-        get() = selectedUser.distinctUntilChanged().filter { it != null }.map { contact -> contact!!}
+        get() = selectedUser.distinctUntilChanged().filter { it != null }.map { contact -> contact!! }
 
-    private val KikGroup.allAdmins: List<BareJid>
-        get() = regularAdmins.plus(group.superAdmins).mapNotNull { BareJid.fromString(it) }
 }

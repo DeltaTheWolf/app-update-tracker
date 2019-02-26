@@ -1,5 +1,6 @@
 package com.kik.kin
 
+import com.google.common.collect.ImmutableSet
 import com.kik.core.network.xmpp.jid.BareJid
 import kik.core.chat.profile.KinUserId
 import kik.core.kin.AdminTippingMetaData
@@ -19,6 +20,8 @@ class P2PStubTransactionManager : IP2PTransactionManager {
     override fun cancelFailedTransaction(offer: P2PPayment) = Completable.complete()
 
     override fun transactionStatus(offer: P2PPayment) = Observable.just(P2PTransactionStatus.COMPLETE)
+
+    override fun pendingTransactions(): Observable<ImmutableSet<P2PPayment>> = Observable.just(ImmutableSet.of())
 
     override fun pendingTransactionCount() = Observable.just(0)
 

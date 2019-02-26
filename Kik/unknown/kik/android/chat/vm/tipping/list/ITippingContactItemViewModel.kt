@@ -25,7 +25,7 @@ interface ITippingContactItemViewModel : IListItemViewModel {
      *
      * @returns a Boolean stating if the contact is kin-enabled
      */
-    val kinEnabled: Observable<Boolean>
+    val kinEnabled: Boolean
 
     /**
      * retrieves the profile picture of the contact

@@ -2,6 +2,7 @@ package kik.android.chat.theming
 
 import com.kik.metrics.events.*
 import com.kik.metrics.service.MetricsService
+import kik.android.themes.ThemeTransactionStatus
 import kik.core.datatypes.ConvoId
 import kik.core.interfaces.IProductEventsMetricsHelper
 import kik.core.themes.items.ITheme
@@ -20,7 +21,7 @@ interface IThemeListViewModelMetrics {
 interface IThemeItemViewModelMetrics {
     fun metricTransactionRetry(theme: ITheme)
     fun metricTransactionComplete(theme: ITheme)
-    fun metricTransactionFailed(theme: ITheme)
+    fun metricTransactionFailed(theme: ITheme, transactionStatus: ThemeTransactionStatus)
 }
 
 interface IThemeDialogMetrics {
@@ -99,10 +100,19 @@ open class ThemeMetricsDelegate(private val metricsService: MetricsService,
                 .build())
     }
 
-    override fun metricTransactionFailed(theme: ITheme) {
+    override fun metricTransactionFailed(theme: ITheme, transactionStatus: ThemeTransactionStatus) {
+        val status = when(transactionStatus) {
+            ThemeTransactionStatus.PRODUCT_JWT_FETCH_ERROR -> ThemepreviewThemetrayTransactionfailed.ThemeTransactionStatus.pRODUCTJWTFETCHERROR()
+            ThemeTransactionStatus.KIN_PURCHASE_ERROR -> ThemepreviewThemetrayTransactionfailed.ThemeTransactionStatus.kINPURCHASEERROR()
+            ThemeTransactionStatus.UNLOCK_PRODUCT_ERROR -> ThemepreviewThemetrayTransactionfailed.ThemeTransactionStatus.uNLOCKPRODUCTERROR()
+            ThemeTransactionStatus.REFRESH_THEME_ERROR -> ThemepreviewThemetrayTransactionfailed.ThemeTransactionStatus.rEFRESHTHEMEERROR()
+            else -> null
+        }
+
         metricsService.track(productEventsMetricsHelper
                 .createThemeBuilder(ThemepreviewThemetrayTransactionfailed.Builder::class.java, theme, convoId)
                 .setTransactionTime(CommonTypes.Milliseconds(0))
+                .setThemeTransactionStatus(status)
                 // lol we don't show the retry button
                 .setRetryAllowed(ThemepreviewThemetrayTransactionfailed.RetryAllowed(false))
                 .build())
