@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/keymapping_fragment_secondary_symbols_arabic" />
+    <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+        <merge view_id="@id/key_pos_3_0" key_id="@id/softkey_fragment_superscript_tilde" />
+        <merge view_id="@id/key_pos_3_1" key_id="@id/softkey_fragment_superscript_arabic_left_square_bracket" />
+        <merge view_id="@id/key_pos_3_2" key_id="@id/softkey_fragment_superscript_arabic_right_square_bracket" />
+        <merge view_id="@id/key_pos_3_3" key_id="@id/softkey_fragment_superscript_arabic_left_curly_bracket" />
+        <merge view_id="@id/key_pos_3_4" key_id="@id/softkey_fragment_superscript_arabic_right_curly_bracket" />
+        <merge view_id="@id/key_pos_3_7" key_id="@id/softkey_fragment_superscript_vertical_line" />
+        <merge view_id="@id/key_pos_3_8" key_id="@id/softkey_fragment_superscript_circumflex_accent" />
+        <if language="az-IR                   |doi-Arab                   |dv-MV                   |khw                   |ks-Arab                   |ps                   |sd-Arab                   |trw                   |pa-PK">
+            <merge view_id="@id/key_pos_3_5" key_id="@id/softkey_fragment_superscript_less_than" />
+            <merge view_id="@id/key_pos_3_6" key_id="@id/softkey_fragment_superscript_more_than" />
+        </if>
+        <else>
+            <merge view_id="@id/key_pos_3_5" key_id="@id/softkey_fragment_superscript_arabic_left_pointing_double_angle_bracket" />
+            <merge view_id="@id/key_pos_3_6" key_id="@id/softkey_fragment_superscript_arabic_right_pointing_double_angle_bracket" />
+        </else>
+    </merge_key_mapping>
+</framework>

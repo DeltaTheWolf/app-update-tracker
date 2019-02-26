@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.nativecard.keyboard.NativeCardViewerKeyboardM2" id="@id/keyboard_native_card_viewer">
+        <view layout="@layout/keyboard_expression_header" scalable="false" direction="locale" type="header">
+            <softkeys href="@xml/softkeys_search_header" />
+            <softkeys href="@xml/softkeys_native_card_header" />
+            <include href="@xml/keymapping_native_card_search_result_header" />
+        </view>
+        <view layout="@layout/keyboard_native_card_body_m2" type="body" direction="locale">
+            <softkeys href="@xml/softkeys_gif_m2" />
+            <include href="@xml/keymapping_bottom_search_with_gif" />
+            <softkeys href="@xml/softkeys_function" />
+            <softkeys href="@xml/softkeys_card_viewer_bottom" />
+            <include href="@xml/keymapping_card_viewer_bottom_in_extension" />
+            <softkeys href="@xml/softkeys_back_to_prime_language_specific" />
+            <include href="@xml/keymapping_fragment_back_to_prime_language_specific" />
+        </view>
+    </keyboard>
+</framework>

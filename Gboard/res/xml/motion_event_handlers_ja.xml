@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <motion_event_handler class=".libs.framework.keyboard.handler.BasicMotionEventHandler" reverse_preference="true" preference_key="@string/pref_key_latin_auto_correction" />
+    <motion_event_handler class=".libs.framework.keyboard.handler.SpatialModelMotionEventHandler" reverse_preference="false" preference_key="@string/pref_key_latin_auto_correction" />
+</framework>

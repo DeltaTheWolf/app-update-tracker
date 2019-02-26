@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkeys_function_latin" />
+    <softkeys>
+        <softkey id="@id/softkey_switch_to_hiragana" layout="@attr/LayoutJaFunction" popup_timing="@string/qwerty_popup_timing" content_description="@string/cd_keyboard_kana">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="prime" />
+            <icon location="@id/icon" value="@attr/IconJaSwitchToHiragana" />
+        </softkey>
+        <softkey id="@id/softkey_switch_to_alphabet" layout="@attr/LayoutJaFunction" popup_timing="@string/qwerty_popup_timing" content_description="@string/cd_keyboard_alphabet">
+            <action type="PRESS" keycode="SWITCH_TO_JAPANESE_ALPHABET_KEYBOARD" />
+            <icon location="@id/icon" value="@attr/IconJaSwitchToAlphabet" />
+        </softkey>
+    </softkeys>
+</framework>

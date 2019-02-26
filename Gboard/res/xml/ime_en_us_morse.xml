@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_english_united_states_morse" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="en-US" always_show_suggestions="true" ascii_capable="true" auto_capital="true" display_app_completions="true" announce_auto_selected_candidate="true">
+        <keyboard_group variant="morse_2" variant_label="@string/variant_morse" layout_specific_settings="@xml/en_us_morse_2_layout_settings">
+            <keyboard type="prime" def="@xml/keyboard_morse_2" />
+        </keyboard_group>
+    </ime>
+</framework>

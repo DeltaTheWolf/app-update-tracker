@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_ko_single_vowel" class="com.google.android.apps.inputmethod.libs.framework.ime.AsyncProcessorBasedIme" keyevent_interpreter="com.google.android.apps.inputmethod.libs.korean.KoreanKeyEventInterpreter" language="ko" inline_composing="true" use_ascii_password_keyboard="true" display_app_completions="true" announce_auto_selected_candidate="true" language_specific_settings="@xml/ko_language_settings">
+        <if number_row="false">
+            <keyboard_group variant="korean_single_vowel" variant_label="@string/variant_korean_single_vowel">
+                <keyboard type="prime" def="@xml/keyboard_ko_single_vowel" />
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </if>
+        <else>
+            <keyboard_group variant="korean_single_vowel" variant_label="@string/variant_korean_single_vowel" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
+                <keyboard type="prime" def="@xml/keyboard_ko_single_vowel">
+                    <merge def="@xml/keyboard_latin_fragment_numbers_10_8_8_7_no_shift" />
+                </keyboard>
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </else>
+        <extra_values>
+            <item id="@id/extra_value_period" value=". " />
+            <item id="@id/extra_value_show_suggestion_pref_key" value="@string/pref_key_korean_show_suggestion" />
+            <item id="@id/extra_value_highlight_literal_candidate" value="false" />
+            <item id="@id/extra_value_metrics_processors" value="hmm" />
+        </extra_values>
+        <processors>
+            <processor id="@id/ime_app_completions_processor" class="com.google.android.apps.inputmethod.libs.framework.ime.AppCompletionsProcessor" />
+            <processor id="@id/ime_decode_processor" class="com.google.android.apps.inputmethod.libs.korean.HmmKoreanDecodeProcessor" />
+            <processor id="@id/ime_double_space_processor" class="com.google.android.apps.inputmethod.libs.korean.KoreanDoubleSpaceProcessor" />
+            <processor id="@id/ime_auto_space_processor" class="com.google.android.apps.inputmethod.libs.korean.KoreanAutoSpaceProcessor" />
+            <processor id="@id/ime_scrub_move_processor" class="com.google.android.apps.inputmethod.libs.framework.ime.ScrubMoveProcessor" />
+            <processor id="@id/ime_output_processor" class="com.google.android.apps.inputmethod.libs.framework.ime.OutputProcessor" />
+        </processors>
+    </ime>
+</framework>

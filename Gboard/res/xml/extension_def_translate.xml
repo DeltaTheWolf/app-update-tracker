@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module id="@string/id_access_point_translate" class="com.google.android.apps.inputmethod.libs.translate.TranslateUIExtension" label="@string/label_translate_access_point" icon="@attr/IconAccessPointTranslate" content_description="@string/translate_access_point_content_desc">
+        <initialization_deps>
+            <components value="UnicodeIme" />
+        </initialization_deps>
+    </module>
+</framework>

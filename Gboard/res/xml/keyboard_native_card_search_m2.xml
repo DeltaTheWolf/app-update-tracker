@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard id="@id/keyboard_native_card_search" class="com.google.android.apps.inputmethod.libs.search.nativecard.keyboard.NativeCardSearchKeyboard">
+        <view layout="@layout/keyboard_search_header_m2" scalable="false" direction="locale" type="header">
+            <softkeys href="@xml/softkeys_search_header" />
+            <softkeys href="@xml/softkeys_native_card_header" />
+            <include href="@xml/keymapping_search_header_native_card_m2" />
+        </view>
+        <view layout="@layout/popup_view_app_overlay" id="@id/popup_view_app_overlay" />
+    </keyboard>
+</framework>

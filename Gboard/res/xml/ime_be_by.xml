@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_belarusian_belarus" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="be-BY" auto_capital="true" display_app_completions="true" announce_auto_selected_candidate="true">
+        <if number_row="false">
+            <keyboard_group variant="belarusian_belarus" variant_label="@string/variant_belarusian_belarus">
+                <keyboard type="prime" def="@xml/keyboard_be_by" />
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+            <keyboard_group variant="belarusian_belarus_with_apostrophe" variant_label="@string/variant_belarusian_belarus_with_apostrophe">
+                <keyboard type="prime" def="@xml/keyboard_be_by_with_apostrophe" />
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </if>
+        <else>
+            <keyboard_group variant="belarusian_belarus" variant_label="@string/variant_belarusian_belarus" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
+                <keyboard type="prime" def="@xml/keyboard_be_by">
+                    <merge def="@xml/keyboard_latin_fragment_numbers_10_11_11_11" />
+                </keyboard>
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+            <keyboard_group variant="belarusian_belarus_with_apostrophe" variant_label="@string/variant_belarusian_belarus_with_apostrophe" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
+                <keyboard type="prime" def="@xml/keyboard_be_by_with_apostrophe">
+                    <merge def="@xml/keyboard_latin_fragment_numbers_10_12_11_11" />
+                </keyboard>
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </else>
+    </ime>
+</framework>

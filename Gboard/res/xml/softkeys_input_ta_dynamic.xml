@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple_dynamic">
+            <softkey id="@id/softkey_tamil_letter_a" press_data="அ" long_press_data="்‌‌‌,ஂ" />
+            <softkey id="@id/softkey_tamil_letter_aa" press_data="ஆ" long_press_data="ா" />
+            <softkey id="@id/softkey_tamil_letter_i" press_data="இ" long_press_data="ி" />
+            <softkey id="@id/softkey_tamil_letter_ii" press_data="ஈ" long_press_data="ீ" />
+            <softkey id="@id/softkey_tamil_letter_u" press_data="உ" long_press_data="ு" />
+            <softkey id="@id/softkey_tamil_letter_uu" press_data="ஊ" long_press_data="ூ" />
+            <softkey id="@id/softkey_tamil_letter_e" press_data="எ" long_press_data="ெ" />
+            <softkey id="@id/softkey_tamil_letter_ee" press_data="ஏ" long_press_data="ே" />
+            <softkey id="@id/softkey_tamil_letter_ai" press_data="ஐ" long_press_data="ை" />
+            <softkey id="@id/softkey_tamil_letter_o" press_data="ஒ" long_press_data="ொ,ௐ" />
+            <softkey id="@id/softkey_tamil_letter_oo" press_data="ஓ" long_press_data="ோ" />
+            <softkey id="@id/softkey_tamil_letter_au" press_data="ஔ" long_press_data="ௌ,ௗ" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_tamil_letter_ka" press_data="க" long_press_data="க்,க்க,க்கி,க்கு" />
+            <softkey id="@id/softkey_tamil_letter_nga" press_data="ங" long_press_data="ங்,ங்க,ங்கு" />
+            <softkey id="@id/softkey_tamil_letter_ca" press_data="ச" long_press_data="ச்,ச்ச" />
+            <softkey id="@id/softkey_tamil_letter_nya" press_data="ஞ" long_press_data="ஞ்,ஞ்ச" />
+            <softkey id="@id/softkey_tamil_letter_tta" press_data="ட" long_press_data="ட்,ட்ட,ட்ச" />
+            <softkey id="@id/softkey_tamil_letter_nna" press_data="ண" long_press_data="ண்,ண்ண,ண்ட" />
+            <softkey id="@id/softkey_tamil_letter_ta" press_data="த" long_press_data="த்,த்த,த்து,த்தி" />
+            <softkey id="@id/softkey_tamil_letter_na" press_data="ந" long_press_data="ந்,ந்த,ந்து" />
+            <softkey id="@id/softkey_tamil_letter_pa" press_data="ப" long_press_data="ப்,ப்ப,ப்பா" />
+            <softkey id="@id/softkey_tamil_letter_ma" press_data="ம" long_press_data="ம்,ம்ம,ம்ப,ம்பு" />
+            <softkey id="@id/softkey_tamil_letter_ya" press_data="ய" long_press_data="ய்,ய்ய,ய்யா" />
+            <softkey id="@id/softkey_tamil_letter_ra" press_data="ர" long_press_data="ர்" />
+            <softkey id="@id/softkey_tamil_letter_la" press_data="ல" long_press_data="ல்,ல்ல,ல்லு" />
+            <softkey id="@id/softkey_tamil_letter_va" press_data="வ" long_press_data="வ்,வ்வ" />
+            <softkey id="@id/softkey_tamil_letter_llla" press_data="ழ" long_press_data="ழ்" />
+            <softkey id="@id/softkey_tamil_letter_lla" press_data="ள" long_press_data="ள்,ள்ள,ள்ளி" />
+            <softkey id="@id/softkey_tamil_letter_rra" press_data="ற" long_press_data="ற்,ற்ற,ற்றி" />
+            <softkey id="@id/softkey_tamil_letter_nnna" press_data="ன" long_press_data="ன்,ன்ன,ன்ற" />
+            <softkey id="@id/softkey_tamil_letter_ssa" press_data="ஷ" long_press_data="ஷ்,ஷ்ஷ,ஷ்வ,ஷ்ர" />
+            <softkey id="@id/softkey_tamil_letter_sa" press_data="ஸ" long_press_data="ஸ்,ஸ்ஸ,ஸ்வ,ஶ" />
+            <softkey id="@id/softkey_tamil_letter_ja" press_data="ஜ" long_press_data="ஜ்,ஜ்ஜி" />
+            <softkey id="@id/softkey_tamil_letter_ha" press_data="ஹ" long_press_data="ஹ்,ஹ்ர" />
+            <softkey id="@id/softkey_tamil_letter_ka_tamil_sign_virama_tamil_letter_ssa" press_data="க்ஷ" />
+        </softkey_list>
+    </softkeys>
+</framework>

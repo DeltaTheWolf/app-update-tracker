@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/softkey_open_access_points" layout="@layout/softkey_access_points_menu_icon" content_description="@string/open_access_points_menu_content_desc">
+            <action type="PRESS" keycode="OPEN_ACCESS_POINTS" />
+            <icon location="@id/icon" value="@attr/IconAccessPointsMenu" />
+        </softkey>
+        <softkey id="@id/softkey_open_access_points_rtl" layout="@layout/softkey_access_points_menu_rtl_icon" content_description="@string/open_access_points_menu_content_desc">
+            <action type="PRESS" keycode="OPEN_ACCESS_POINTS" />
+            <icon location="@id/icon" value="@attr/IconAccessPointsMenu" />
+        </softkey>
+        <softkey id="@id/softkey_close_access_points" layout="@layout/softkey_access_points_menu_icon" content_description="@string/close_access_points_menu_content_desc">
+            <action type="PRESS" keycode="CLOSE_ACCESS_POINTS" />
+            <icon location="@id/icon" value="@attr/IconAccessPointsCloseMenu" />
+        </softkey>
+        <softkey id="@id/softkey_close_access_points_rtl" layout="@layout/softkey_access_points_menu_rtl_icon" content_description="@string/close_access_points_menu_content_desc">
+            <action type="PRESS" keycode="CLOSE_ACCESS_POINTS" />
+            <icon location="@id/icon" value="@attr/IconAccessPointsCloseMenu" />
+        </softkey>
+        <softkey id="@id/softkey_close_access_points_back_button" layout="@layout/softkey_function_key_icon" content_description="@string/close_access_points_menu_content_desc" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="CLOSE_ACCESS_POINTS" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+        <softkey id="@id/softkey_close_access_points_rtl_back_button" layout="@layout/softkey_access_points_back_rtl_icon" content_description="@string/close_access_points_menu_content_desc" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="CLOSE_ACCESS_POINTS" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+        <softkey id="@id/softkey_close_highlighted_access_point" layout="@layout/softkey_function_key_icon" content_description="@string/close_access_points_menu_content_desc" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="CLOSE_HIGHLIGHTED_ACCESS_POINT" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+        <softkey id="@id/softkey_close_highlighted_access_point_rtl" layout="@layout/softkey_access_points_back_rtl_icon" content_description="@string/close_access_points_menu_content_desc" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="CLOSE_HIGHLIGHTED_ACCESS_POINT" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+        <softkey id="@id/softkey_access_points_close_extension_back_arrow" layout="@layout/softkey_function_key_icon" content_description="@string/gboard_close_extension_and_back_to_letter_keyboard_desc" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="CLOSE_EXTENSION" data="prime" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+        <softkey id="@id/softkey_access_points_close_extension_back_arrow_rtl" layout="@layout/softkey_access_points_back_rtl_icon" content_description="@string/gboard_close_extension_and_back_to_letter_keyboard_desc" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="CLOSE_EXTENSION" data="prime" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+    </softkeys>
+</framework>

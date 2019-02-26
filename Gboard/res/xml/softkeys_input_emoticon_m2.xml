@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkeys_input_emoticon_templates" />
+    <softkeys>
+        <softkey id="@id/softkey_sub_category_separator_sticky" content_description="@string/emoticon_category_recents">
+            <action type="PRESS" keycode="UNKNOWN" data="RECENTS" />
+        </softkey>
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_classic">
+            <action type="PRESS" keycode="UNKNOWN" data="CLASSIC" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_classic" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_smiling">
+            <action type="PRESS" keycode="UNKNOWN" data="SMILING" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_smiling" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_love">
+            <action type="PRESS" keycode="UNKNOWN" data="LOVE" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_love" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_hugging">
+            <action type="PRESS" keycode="UNKNOWN" data="HUGGING" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_hugging" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_flexing">
+            <action type="PRESS" keycode="UNKNOWN" data="FLEXING" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_flexing" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_animals">
+            <action type="PRESS" keycode="UNKNOWN" data="ANIMALS" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_animals" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_surprise">
+            <action type="PRESS" keycode="UNKNOWN" data="SURPRISE" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_surprise_m2" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_dancing">
+            <action type="PRESS" keycode="UNKNOWN" data="DANCING" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_dancing" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_shruggie">
+            <action type="PRESS" keycode="UNKNOWN" data="SHRUGGIE" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_shruggie" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_table_flip">
+            <action type="PRESS" keycode="UNKNOWN" data="TABLE FLIP" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_table_flip" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_look_of_disapproval">
+            <action type="PRESS" keycode="UNKNOWN" data="LOOK OF DISAPPROVAL" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_look_of_disapproval" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_nervous">
+            <action type="PRESS" keycode="UNKNOWN" data="NERVOUS" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_nervous" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_crying">
+            <action type="PRESS" keycode="UNKNOWN" data="CRYING" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_crying" />
+        <softkey id="@id/softkey_sub_category_separator" content_description="@string/emoticon_category_pointers">
+            <action type="PRESS" keycode="UNKNOWN" data="POINTERS" />
+        </softkey>
+        <include href="@xml/softkeys_input_emoticon_category_pointers" />
+    </softkeys>
+</framework>

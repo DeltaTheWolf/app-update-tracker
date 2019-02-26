@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_label_header_simple">
+            <softkey id="@id/softkey_thaana_letter_daviyani" press_data="ޑ" long_press_data="1" hint_label="1" />
+            <softkey id="@id/softkey_thaana_letter_ainu" press_data="ޢ" long_press_data="ޣ,2" hint_label="ޣ" />
+            <softkey id="@id/softkey_thaana_eybeyfili" press_data="ޭ" long_press_data="3" hint_label="3" />
+            <softkey id="@id/softkey_thaana_letter_hhaa" press_data="ޙ" long_press_data="4" hint_label="4" />
+            <softkey id="@id/softkey_thaana_letter_taviyani" press_data="ޓ" long_press_data="5" hint_label="5" />
+            <softkey id="@id/softkey_thaana_letter_khaa" press_data="ޚ" long_press_data="6" hint_label="6" />
+            <softkey id="@id/softkey_thaana_ooboofili" press_data="ޫ" long_press_data="7" hint_label="7" />
+            <softkey id="@id/softkey_thaana_eebeefili" press_data="ީ" long_press_data="8" hint_label="8" />
+            <softkey id="@id/softkey_thaana_oaboafili" press_data="ޯ" long_press_data="9" hint_label="9" />
+            <softkey id="@id/softkey_thaana_letter_paviyani" press_data="ޕ" long_press_data="0" hint_label="0" />
+            <softkey id="@id/softkey_thaana_sukun" press_data="ް" />
+            <softkey id="@id/softkey_thaana_letter_alifu" long_press_data="ޤ" press_data="އ" hint_label="ޤ" />
+            <softkey id="@id/softkey_thaana_ebefili" press_data="ެ" />
+            <softkey id="@id/softkey_thaana_letter_raa" press_data="ރ" />
+            <softkey id="@id/softkey_thaana_letter_thaa" long_press_data="ޠ" press_data="ތ" hint_label="ޠ" />
+            <softkey id="@id/softkey_thaana_letter_yaa" press_data="ޔ" />
+            <softkey id="@id/softkey_thaana_ubufili" press_data="ު" />
+            <softkey id="@id/softkey_thaana_ibifili" press_data="ި" />
+            <softkey id="@id/softkey_thaana_obofili" press_data="ޮ" />
+            <softkey id="@id/softkey_thaana_letter_lhaviyani" press_data="ޅ" />
+            <softkey id="@id/softkey_thaana_aabaafili" press_data="ާ" />
+            <softkey id="@id/softkey_thaana_abafili" press_data="ަ" />
+            <softkey id="@id/softkey_thaana_letter_seenu" press_data="ސ" />
+            <softkey id="@id/softkey_thaana_letter_dhaalu" long_press_data="ޛ" press_data="ދ" hint_label="ޛ" />
+            <softkey id="@id/softkey_thaana_letter_faafu" long_press_data="ﷲ" press_data="ފ" hint_label="ﷲ" />
+            <softkey id="@id/softkey_thaana_letter_gaafu" press_data="ގ" />
+            <softkey id="@id/softkey_thaana_letter_haa" press_data="ހ" />
+            <softkey id="@id/softkey_thaana_letter_javiyani" press_data="ޖ" />
+            <softkey id="@id/softkey_thaana_letter_kaafu" press_data="ކ" />
+            <softkey id="@id/softkey_thaana_letter_laamu" press_data="ލ" />
+            <softkey id="@id/softkey_thaana_letter_sheenu" press_data="ޝ" />
+            <softkey id="@id/softkey_thaana_letter_shaviyani" press_data="ށ" />
+            <softkey id="@id/softkey_thaana_letter_zaviyani" long_press_data="ޜ,ޡ" press_data="ޒ" hint_label="ޜ" />
+            <softkey id="@id/softkey_thaana_letter_ttaa" press_data="ޘ" />
+            <softkey id="@id/softkey_thaana_letter_chaviyani" press_data="ޗ" />
+            <softkey id="@id/softkey_thaana_letter_vaavu" long_press_data="ޥ" press_data="ވ" hint_label="ޥ" />
+            <softkey id="@id/softkey_thaana_letter_baa" long_press_data="ޞ" press_data="ބ" hint_label="ޞ" />
+            <softkey id="@id/softkey_thaana_letter_noonu" long_press_data="ޏ,ޱ" press_data="ނ" hint_label="ޏ" />
+            <softkey id="@id/softkey_thaana_letter_meemu" long_press_data="ޟ" press_data="މ" hint_label="ޟ" />
+        </softkey_list>
+    </softkeys>
+</framework>

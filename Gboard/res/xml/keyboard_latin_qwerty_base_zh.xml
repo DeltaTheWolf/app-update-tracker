@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard>
+        <view layout="@layout/keyboard_latin_10_9_9_body_zh" type="body" override="motion_event_handler">
+            <motion_event_handler class=".libs.framework.keyboard.handler.BasicMotionEventHandler" reverse_preference="true" preference_key="@string/pref_key_enable_spatial_model" />
+            <motion_event_handler class=".libs.framework.keyboard.handler.SpatialModelMotionEventHandler" reverse_preference="false" preference_key="@string/pref_key_enable_spatial_model" />
+            <motion_event_handler class="com.google.android.apps.inputmethod.libs.framework.keyboard.handler.ScrubMoveMotionEventHandler" reverse_preference="false" preference_key="@string/pref_key_enable_scrub_move" />
+            <if language="zh-CN">
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.pinyin.PinyinGestureHandler" reverse_preference="false" preference_key="@string/pref_key_enable_gesture_input" />
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.pinyin.PinyinKeyboardLayoutHandler" reverse_preference="false" preference_key="@string/pref_key_enable_gesture_input" />
+            </if>
+            <if language="zh-TW">
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.zhuyin.ZhuyinGestureHandler" reverse_preference="false" preference_key="@string/pref_key_enable_gesture_input" />
+                <motion_event_handler class="com.google.android.apps.inputmethod.libs.zhuyin.PinyinKeyboardLayoutHandler" reverse_preference="false" preference_key="@string/pref_key_enable_gesture_input" />
+            </if>
+            <include href="@xml/keymapping_qwerty" />
+            <include href="@xml/keymapping_fragment_punctuation_bottom_popup_autosized_label_with_emoji_hint" />
+        </view>
+        <if device="tablet">
+            <view layout="@layout/keyboard_latin_tablet_11_10_11_body_zh" type="body" />
+        </if>
+    </keyboard>
+</framework>

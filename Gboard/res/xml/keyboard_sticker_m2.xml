@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.sticker.StickerKeyboardM2" id="@id/keyboard_sticker">
+        <view layout="@layout/keyboard_expression_header" scalable="false" direction="locale" type="header" />
+        <view layout="@layout/keyboard_sticker_body_m2" type="body" direction="locale">
+            <softkeys href="@xml/softkeys_gif_m2" />
+            <include href="@xml/keymapping_bottom_sticker_with_gif" />
+            <softkeys href="@xml/softkeys_function" />
+            <softkeys href="@xml/softkeys_non_prime_category" />
+            <softkeys href="@xml/softkeys_card_viewer_bottom" />
+            <include href="@xml/keymapping_card_viewer_bottom_in_extension" />
+            <softkeys href="@xml/softkeys_back_to_prime_language_specific" />
+            <include href="@xml/keymapping_fragment_back_to_prime_language_specific" />
+        </view>
+    </keyboard>
+</framework>

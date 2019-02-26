@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkeys_input_emoticon_templates" />
+    <softkeys>
+        <softkey_list splitter=" " template_id="@id/softkey_template_light_emoticon">
+            <softkey id="@id/softkey_emoticon_1_1" param_data="=-O" desc="@string/emoticon_description_shocked_face" />
+            <softkey id="@id/softkey_emoticon_1_2" param_data=":-P" desc="@string/emoticon_description_cheeky_face" />
+            <softkey id="@id/softkey_emoticon_1_3" param_data=";-)" desc="@string/emoticon_description_winking_face" />
+            <softkey id="@id/softkey_emoticon_1_4" param_data=":-(" desc="@string/emoticon_description_sad_face" />
+            <softkey id="@id/softkey_emoticon_1_5" param_data=":-)" desc="@string/emoticon_description_smiley_face" />
+            <softkey id="@id/softkey_emoticon_1_6" param_data=":-!" desc="@string/emoticon_description_straight_face" />
+            <softkey id="@id/softkey_emoticon_1_7" param_data=":-$" desc="@string/emoticon_description_confused_face" />
+            <softkey id="@id/softkey_emoticon_2_1" param_data="B-)" desc="@string/emoticon_description_cool_face" />
+            <softkey id="@id/softkey_emoticon_2_2" param_data=":O" desc="@string/emoticon_description_shocked_face" />
+            <softkey id="@id/softkey_emoticon_2_3" param_data=":-*" desc="@string/emoticon_description_angry_face" />
+            <softkey id="@id/softkey_emoticon_2_4" param_data=":-D" desc="@string/emoticon_description_happy_face" />
+            <softkey id="@id/softkey_emoticon_2_5" param_data=":'(" desc="@string/emoticon_description_crying_face" />
+            <softkey id="@id/softkey_emoticon_2_6" param_data=":-\\" desc="@string/emoticon_description_skeptical_face" />
+            <softkey id="@id/softkey_emoticon_2_7" param_data="O:-)" desc="@string/emoticon_description_angelic_face" />
+            <softkey id="@id/softkey_emoticon_3_1" param_data=":-[" desc="@string/emoticon_description_sad_face" />
+            <softkey id="@id/softkey_emoticon_3_2" param_data="(^^)" desc="@string/emoticon_description_happy_face" />
+            <softkey id="@id/softkey_emoticon_3_3" param_data="^_^" desc="@string/emoticon_description_happy_face" />
+            <softkey id="@id/softkey_emoticon_3_4" param_data=":-|" desc="@string/emoticon_description_straight_face" />
+            <softkey id="@id/softkey_emoticon_3_5" param_data="(TT)" desc="@string/emoticon_description_crying_face" />
+            <softkey id="@id/softkey_emoticon_3_6" param_data="=_=" desc="@string/emoticon_description_tired_face" />
+            <softkey id="@id/softkey_emoticon_3_7" param_data="(+_+)" desc="@string/emoticon_description_excited_face" />
+        </softkey_list>
+    </softkeys>
+</framework>

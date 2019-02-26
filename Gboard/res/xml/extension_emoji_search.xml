@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module class="com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension" start_strategy="AUTO_ASYNC_BACKGROUND">
+        <keyboard_types>
+            <keyboard type="@string/keyboard_type_emoji" />
+            <keyboard type="@string/keyboard_type_emoji_search_result" />
+            <keyboard type="@string/keyboard_type_emoji_handwriting" />
+        </keyboard_types>
+        <extra_values>
+            <item id="@id/extra_value_default_keyboard" value="@string/keyboard_type_emoji" />
+            <item id="@id/extra_value_default_keyboard_in_access_points" value="@string/keyboard_type_emoji" />
+            <item id="@id/extra_value_is_expression_extension" value="true" />
+        </extra_values>
+    </module>
+</framework>

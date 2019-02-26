@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter=" " template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_afghani_sign" press_data="؋" long_press_data="$ £ € ¢ ¥ ₱" />
+            <softkey id="@id/softkey_armenian_dram" press_data="֏" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_baht" press_data="฿" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_bengali_rupee" press_data="৳" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_cedi_sign" press_data="₵" long_press_data="$ £ € ¢ ¥ ₱" />
+            <softkey id="@id/softkey_cent_sign" press_data="¢" />
+            <softkey id="@id/softkey_colon_sign" press_data="₡" long_press_data="$ £ € ¢ ¥ ₱" />
+            <softkey id="@id/softkey_currency_pound" press_data="£" long_press_data="¢ $ € ¥ ₱" />
+            <softkey id="@id/softkey_dollar_long_press_cedi_naira" press_data="$" long_press_data="₵ ₦ ¢ £ € ¥" />
+            <softkey id="@id/softkey_dollar_long_press_rupee" press_data="$" long_press_data="₹ ¢ £ € ¥ ₱" />
+            <softkey id="@id/softkey_dollar_long_press_russian_ruble" press_data="$" long_press_data="₽ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_dollar_long_press_russian_ruble_georgian_lari" press_data="$" long_press_data="₽ ₾ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_dollar_sign" press_data="$" long_press_data="¢ £ € ¥ ₱" />
+            <softkey id="@id/softkey_dong" press_data="₫" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_euro" press_data="€" long_press_data="¢ £ $ ¥ ₱" />
+            <softkey id="@id/softkey_euro_sign" press_data="€" />
+            <softkey id="@id/softkey_florin" press_data="ƒ" />
+            <softkey id="@id/softkey_french_franc_sign" press_data="₣" long_press_data="€ ¢ £ $ ¥ ₱" />
+            <softkey id="@id/softkey_guarani_sign" press_data="₲" long_press_data="$ £ € ¢ ¥ ₱" />
+            <softkey id="@id/softkey_gujarati_rupee" press_data="૱" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_hryvnia" press_data="₴" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_indian_rupee" press_data="₹" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_indian_rupee_tamil" press_data="₹" long_press_data="$ ¢ € £ ¥ ₱ ௹" />
+            <softkey id="@id/softkey_khmer_currency_symbol_riel" press_data="៛" long_press_data="$ ¢ £ € ¥ ₱" />
+            <softkey id="@id/softkey_kip" press_data="₭" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_lari_sign" press_data="₾" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_lira_sign" press_data="₤" long_press_data="$ £ € ¢ ¥ ₱" />
+            <softkey id="@id/softkey_manat_sign" press_data="₼" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_naira" press_data="₦" long_press_data="$ £ € ¢ ¥ ₱" />
+            <softkey id="@id/softkey_nepalese_rupee" press_data="रु." long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_new_sheqel" press_data="₪" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_peso_sign" press_data="₱" long_press_data="$ £ € ¢ ¥" />
+            <softkey id="@id/softkey_pound_sign" press_data="£" />
+            <softkey id="@id/softkey_rial" press_data="﷼" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_russian_ruble_sign" press_data="₽" />
+            <softkey id="@id/softkey_sri_lankan_rupee" press_data="රු" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_tenge_sign" press_data="₸" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_tugrik" press_data="₮" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_turkish_lira" press_data="₺" long_press_data="$ ¢ € £ ¥ ₱" />
+            <softkey id="@id/softkey_won_sign" press_data="₩" long_press_data="$ € ¥ £ ¢ ₱" />
+            <softkey id="@id/softkey_yen_sign" press_data="¥" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_adlam_digit_one" press_data="U+1E951" long_press_data="1,¼,½,⅓,⅛" />
+            <softkey id="@id/softkey_adlam_digit_two" press_data="U+1E952" long_press_data="2,⅔" />
+            <softkey id="@id/softkey_adlam_digit_three" press_data="U+1E953" long_press_data="3,¾,⅜" />
+            <softkey id="@id/softkey_adlam_digit_four" press_data="U+1E954" long_press_data="4" />
+            <softkey id="@id/softkey_adlam_digit_five" press_data="U+1E955" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_adlam_digit_six" press_data="U+1E956" long_press_data="6" />
+            <softkey id="@id/softkey_adlam_digit_seven" press_data="U+1E957" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_adlam_digit_eight" press_data="U+1E958" long_press_data="8" />
+            <softkey id="@id/softkey_adlam_digit_nine" press_data="U+1E959" long_press_data="9" />
+            <softkey id="@id/softkey_adlam_digit_zero" press_data="U+1E950" long_press_data="0" />
+            <softkey id="@id/softkey_adlam_exclamation_mark" press_data="!" long_press_data="U+1E95E" />
+            <softkey id="@id/softkey_adlam_question_mark" press_data="؟" long_press_data="U+1E95F,?" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_arabic_indic_digit_one" press_data="١" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_arabic_indic_digit_two" press_data="٢" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_arabic_indic_digit_three" press_data="٣" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_arabic_indic_digit_four" press_data="٤" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_arabic_indic_digit_five" press_data="٥" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_arabic_indic_digit_six" press_data="٦" long_press_data="6" />
+            <softkey id="@id/softkey_arabic_indic_digit_seven" press_data="٧" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_arabic_indic_digit_eight" press_data="٨" long_press_data="8" />
+            <softkey id="@id/softkey_arabic_indic_digit_nine" press_data="٩" long_press_data="9" />
+            <softkey id="@id/softkey_arabic_indic_digit_zero" press_data="٠" long_press_data="0,٫,٬,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_balinese_digit_one" press_data="᭑" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_balinese_digit_two" press_data="᭒" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_balinese_digit_three" press_data="᭓" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_balinese_digit_four" press_data="᭔" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_balinese_digit_five" press_data="᭕" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_balinese_digit_six" press_data="᭖" long_press_data="6" />
+            <softkey id="@id/softkey_balinese_digit_seven" press_data="᭗" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_balinese_digit_eight" press_data="᭘" long_press_data="8" />
+            <softkey id="@id/softkey_balinese_digit_nine" press_data="᭙" long_press_data="9" />
+            <softkey id="@id/softkey_balinese_digit_zero" press_data="᭐" long_press_data="0,ⁿ,∅" />
+            <softkey id="@id/softkey_balinese_colon" press_data="᭝" long_press_data=":" />
+            <softkey id="@id/softkey_balinese_pasalinan" press_data="᭟᭜᭟" />
+            <softkey id="@id/softkey_balinese_panti" press_data="᭚" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_bengali_digit_one" press_data="১" press_label="১" long_press_data="1,¹,½,⅓,¼,⅛" long_press_label="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_bengali_digit_two" press_data="২" press_label="২" long_press_data="2,²,⅔" long_press_label="2,²,⅔" />
+            <softkey id="@id/softkey_bengali_digit_three" press_data="৩" press_label="৩" long_press_data="3,³,¾,⅜" long_press_label="3,³,¾,⅜" />
+            <softkey id="@id/softkey_bengali_digit_four" press_data="৪" press_label="৪" long_press_data="4,⁴,৷" long_press_label="4,⁴,৷" />
+            <softkey id="@id/softkey_bengali_digit_five" press_data="৫" press_label="৫" long_press_data="5,⅝" long_press_label="5,⅝" />
+            <softkey id="@id/softkey_bengali_digit_six" press_data="৬" press_label="৬" long_press_data="6" long_press_label="6" />
+            <softkey id="@id/softkey_bengali_digit_seven" press_data="৭" press_label="৭" long_press_data="7,⅞" long_press_label="7,⅞" />
+            <softkey id="@id/softkey_bengali_digit_eight" press_data="৮" press_label="৮" long_press_data="8" long_press_label="8" />
+            <softkey id="@id/softkey_bengali_digit_nine" press_data="৯" press_label="৯" long_press_data="9" long_press_label="9" />
+            <softkey id="@id/softkey_bengali_digit_zero" press_data="০" press_label="০" long_press_data="0,ⁿ,∅" long_press_label="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_cham_digit_one" press_data="꩑" press_label="꩑" long_press_data="1,¹,½,⅓,¼,⅛" long_press_label="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_cham_digit_two" press_data="꩒" press_label="꩒" long_press_data="2,²,⅔" long_press_label="2,²,⅔" />
+            <softkey id="@id/softkey_cham_digit_three" press_data="꩓" press_label="꩓" long_press_data="3,³,¾,⅜" long_press_label="3,³,¾,⅜" />
+            <softkey id="@id/softkey_cham_digit_four" press_data="꩔" press_label="꩔" long_press_data="4,⁴" long_press_label="4,⁴" />
+            <softkey id="@id/softkey_cham_digit_five" press_data="꩕" press_label="꩕" long_press_data="5,⅝" long_press_label="5,⅝" />
+            <softkey id="@id/softkey_cham_digit_six" press_data="꩖" press_label="꩖" long_press_data="6" long_press_label="6" />
+            <softkey id="@id/softkey_cham_digit_seven" press_data="꩗" press_label="꩗" long_press_data="7,⅞" long_press_label="7,⅞" />
+            <softkey id="@id/softkey_cham_digit_eight" press_data="꩘" press_label="꩘" long_press_data="8" long_press_label="8" />
+            <softkey id="@id/softkey_cham_digit_nine" press_data="꩙" press_label="꩙" long_press_data="9" long_press_label="9" />
+            <softkey id="@id/softkey_cham_digit_zero" press_data="꩐" press_label="꩐" long_press_data="0,ⁿ,∅" long_press_label="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_devanagari_digit_one" press_data="१" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_devanagari_digit_two" press_data="२" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_devanagari_digit_three" press_data="३" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_devanagari_digit_four" press_data="४" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_devanagari_digit_five" press_data="५" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_devanagari_digit_six" press_data="६" long_press_data="6" />
+            <softkey id="@id/softkey_devanagari_digit_seven" press_data="७" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_devanagari_digit_eight" press_data="८" long_press_data="8" />
+            <softkey id="@id/softkey_devanagari_digit_nine" press_data="९" long_press_data="9" />
+            <softkey id="@id/softkey_devanagari_digit_zero" press_data="०" long_press_data="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_ethiopic_digit_one" press_data="፩" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_ethiopic_digit_two" press_data="፪" long_press_data="2,፳,²,⅔" />
+            <softkey id="@id/softkey_ethiopic_digit_three" press_data="፫" long_press_data="3,፴,³,¾,⅜" />
+            <softkey id="@id/softkey_ethiopic_digit_four" press_data="፬" long_press_data="4,፵,⁴" />
+            <softkey id="@id/softkey_ethiopic_digit_five" press_data="፭" long_press_data="5,፶,⅝" />
+            <softkey id="@id/softkey_ethiopic_digit_six" press_data="፮" long_press_data="6,፷" />
+            <softkey id="@id/softkey_ethiopic_digit_seven" press_data="፯" long_press_data="7,፸,⅞" />
+            <softkey id="@id/softkey_ethiopic_digit_eight" press_data="፰" long_press_data="8,፹" />
+            <softkey id="@id/softkey_ethiopic_digit_nine" press_data="፱" long_press_data="9,፺" />
+            <softkey id="@id/softkey_ethiopic_number_ten" press_data="፲" long_press_data="0,፻,፼,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_extended_arabic_indic_digit_one" press_data="۱" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_two" press_data="۲" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_three" press_data="۳" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_four" press_data="۴" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_five" press_data="۵" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_six" press_data="۶" long_press_data="6" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_seven" press_data="۷" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_eight" press_data="۸" long_press_data="8" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_nine" press_data="۹" long_press_data="9" />
+            <softkey id="@id/softkey_extended_arabic_indic_digit_zero" press_data="۰" long_press_data="0,٫,٬,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_gujarati_digit_one" press_data="૧" press_label="૧" long_press_data="1,¹,½,⅓,¼,⅛" long_press_label="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_gujarati_digit_two" press_data="૨" press_label="૨" long_press_data="2,²,⅔" long_press_label="2,²,⅔" />
+            <softkey id="@id/softkey_gujarati_digit_three" press_data="૩" press_label="૩" long_press_data="3,³,¾,⅜" long_press_label="3,³,¾,⅜" />
+            <softkey id="@id/softkey_gujarati_digit_four" press_data="૪" press_label="૪" long_press_data="4,⁴" long_press_label="4,⁴" />
+            <softkey id="@id/softkey_gujarati_digit_five" press_data="૫" press_label="૫" long_press_data="5,⅝" long_press_label="5,⅝" />
+            <softkey id="@id/softkey_gujarati_digit_six" press_data="૬" press_label="૬" long_press_data="6" long_press_label="6" />
+            <softkey id="@id/softkey_gujarati_digit_seven" press_data="૭" press_label="૭" long_press_data="7,⅞" long_press_label="7,⅞" />
+            <softkey id="@id/softkey_gujarati_digit_eight" press_data="૮" press_label="૮" long_press_data="8" long_press_label="8" />
+            <softkey id="@id/softkey_gujarati_digit_nine" press_data="૯" press_label="૯" long_press_data="9" long_press_label="9" />
+            <softkey id="@id/softkey_gujarati_digit_zero" press_data="૦" press_label="૦" long_press_data="0,ⁿ,∅" long_press_label="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_gurmukhi_digit_zero" press_data="੦" long_press_data="0,ⁿ,∅" />
+            <softkey id="@id/softkey_gurmukhi_digit_one" press_data="੧" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_gurmukhi_digit_two" press_data="੨" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_gurmukhi_digit_three" press_data="੩" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_gurmukhi_digit_four" press_data="੪" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_gurmukhi_digit_five" press_data="੫" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_gurmukhi_digit_six" press_data="੬" long_press_data="6" />
+            <softkey id="@id/softkey_gurmukhi_digit_seven" press_data="੭" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_gurmukhi_digit_eight" press_data="੮" long_press_data="8" />
+            <softkey id="@id/softkey_gurmukhi_digit_nine" press_data="੯" long_press_data="9" />
+            <softkey id="@id/softkey_gurmukhi_ek_onkar" press_data="ੴ" long_press_data="☬" />
+            <softkey id="@id/softkey_gurmukhi_sign_visarga" press_data="ਃ" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_javanese_digit_one" press_data="꧑" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_javanese_digit_two" press_data="꧒" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_javanese_digit_three" press_data="꧓" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_javanese_digit_four" press_data="꧔" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_javanese_digit_five" press_data="꧕" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_javanese_digit_six" press_data="꧖" long_press_data="6" />
+            <softkey id="@id/softkey_javanese_digit_seven" press_data="꧗" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_javanese_digit_eight" press_data="꧘" long_press_data="8" />
+            <softkey id="@id/softkey_javanese_digit_nine" press_data="꧙" long_press_data="9" />
+            <softkey id="@id/softkey_javanese_digit_zero" press_data="꧐" long_press_data="0,ⁿ,∅" />
+            <softkey id="@id/softkey_javanese_pada_adeg" press_data="꧊" press_label="꧊" long_press_data="&quot;" long_press_label="&quot;" />
+            <softkey id="@id/softkey_javanese_pada_adeg_adeg" press_data="꧋" press_label="꧋" long_press_data="'" long_press_label="'" />
+            <softkey id="@id/softkey_javanese_pada_pangkat" press_data="꧇" long_press_data=":" />
+            <softkey id="@id/softkey_javanese_pada_windu" press_data="꧆" long_press_data="/" />
+            <softkey id="@id/softkey_javanese_pangrangkep" press_data="ꧏ" long_press_data="+,-" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_auto_centered_small" splitter=",">
+            <softkey id="@id/softkey_javanese_left_rerenggan" press_data="꧁" press_label="꧁" long_press_data="_" long_press_label="_" />
+            <softkey id="@id/softkey_javanese_pada_andap" press_data="꧃" press_label="꧃" long_press_data="꧄,꧅" long_press_label="꧄,꧅" />
+            <softkey id="@id/softkey_javanese_pada_piseleh" press_data="꧌" press_label="꧌" long_press_data="(" long_press_label="(" />
+            <softkey id="@id/softkey_javanese_right_rerenggan" press_data="꧂" press_label="꧂" long_press_data="&amp;" long_press_label="&amp;" />
+            <softkey id="@id/softkey_javanese_turned_pada_piseleh" press_data="꧍" press_label="꧍" long_press_data=")" long_press_label=")" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_kannada_digit_one" press_data="೧" press_label="೧" long_press_data="1,¹,½,⅓,¼,⅛" long_press_label="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_kannada_digit_two" press_data="೨" press_label="೨" long_press_data="2,²,⅔" long_press_label="2,²,⅔" />
+            <softkey id="@id/softkey_kannada_digit_three" press_data="೩" press_label="೩" long_press_data="3,³,¾,⅜" long_press_label="3,³,¾,⅜" />
+            <softkey id="@id/softkey_kannada_digit_four" press_data="೪" press_label="೪" long_press_data="4,⁴" long_press_label="4,⁴" />
+            <softkey id="@id/softkey_kannada_digit_five" press_data="೫" press_label="೫" long_press_data="5,⅝" long_press_label="5,⅝" />
+            <softkey id="@id/softkey_kannada_digit_six" press_data="೬" press_label="೬" long_press_data="6" long_press_label="6" />
+            <softkey id="@id/softkey_kannada_digit_seven" press_data="೭" press_label="೭" long_press_data="7,⅞" long_press_label="7,⅞" />
+            <softkey id="@id/softkey_kannada_digit_eight" press_data="೮" press_label="೮" long_press_data="8" long_press_label="8" />
+            <softkey id="@id/softkey_kannada_digit_nine" press_data="೯" press_label="೯" long_press_data="9" long_press_label="9" />
+            <softkey id="@id/softkey_kannada_digit_zero" press_data="೦" press_label="೦" long_press_data="0,ⁿ,∅" long_press_label="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_kayah_li_digit_one" press_data="꤁" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_kayah_li_digit_two" press_data="꤂" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_kayah_li_digit_three" press_data="꤃" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_kayah_li_digit_four" press_data="꤄" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_kayah_li_digit_five" press_data="꤅" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_kayah_li_digit_six" press_data="꤆" long_press_data="6" />
+            <softkey id="@id/softkey_kayah_li_digit_seven" press_data="꤇" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_kayah_li_digit_eight" press_data="꤈" long_press_data="8" />
+            <softkey id="@id/softkey_kayah_li_digit_nine" press_data="꤉" long_press_data="9" />
+            <softkey id="@id/softkey_kayah_li_digit_zero" press_data="꤀" long_press_data="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_malayalam_digit_one" press_data="1" long_press_data="൧,¹,½,⅓,¼,⅛,൰,൱,൲,൳,൴" />
+            <softkey id="@id/softkey_malayalam_digit_two" press_data="2" long_press_data="൨,²,⅔" />
+            <softkey id="@id/softkey_malayalam_digit_three" press_data="3" long_press_data="൩,³,¾,⅜,൵" />
+            <softkey id="@id/softkey_malayalam_digit_four" press_data="4" long_press_data="൪,⁴" />
+            <softkey id="@id/softkey_malayalam_digit_five" press_data="5" long_press_data="൫,⅝" />
+            <softkey id="@id/softkey_malayalam_digit_six" press_data="6" long_press_data="൬" />
+            <softkey id="@id/softkey_malayalam_digit_seven" press_data="7" long_press_data="൭,⅞" />
+            <softkey id="@id/softkey_malayalam_digit_eight" press_data="8" long_press_data="൮" />
+            <softkey id="@id/softkey_malayalam_digit_nine" press_data="9" long_press_data="൯" />
+            <softkey id="@id/softkey_malayalam_digit_zero" press_data="0" long_press_data="൦,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_meetei_mayek_digit_one" press_data="꯱" press_label="꯱" long_press_data="1,¹,½,⅓,¼,⅛" long_press_label="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_meetei_mayek_digit_two" press_data="꯲" press_label="꯲" long_press_data="2,²,⅔" long_press_label="2,²,⅔" />
+            <softkey id="@id/softkey_meetei_mayek_digit_three" press_data="꯳" press_label="꯳" long_press_data="3,³,¾,⅜" long_press_label="3,³,¾,⅜" />
+            <softkey id="@id/softkey_meetei_mayek_digit_four" press_data="꯴" press_label="꯴" long_press_data="4,⁴" long_press_label="4,⁴" />
+            <softkey id="@id/softkey_meetei_mayek_digit_five" press_data="꯵" press_label="꯵" long_press_data="5,⅝" long_press_label="5,⅝" />
+            <softkey id="@id/softkey_meetei_mayek_digit_six" press_data="꯶" press_label="꯶" long_press_data="6" long_press_label="6" />
+            <softkey id="@id/softkey_meetei_mayek_digit_seven" press_data="꯷" press_label="꯷" long_press_data="7,⅞" long_press_label="7,⅞" />
+            <softkey id="@id/softkey_meetei_mayek_digit_eight" press_data="꯸" press_label="꯸" long_press_data="8" long_press_label="8" />
+            <softkey id="@id/softkey_meetei_mayek_digit_nine" press_data="꯹" press_label="꯹" long_press_data="9" long_press_label="9" />
+            <softkey id="@id/softkey_meetei_mayek_digit_zero" press_data="꯰" press_label="꯰" long_press_data="0,ⁿ,∅" long_press_label="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_myanmar_digit_one" press_data="၁" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_myanmar_digit_two" press_data="၂" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_myanmar_digit_three" press_data="၃" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_myanmar_digit_four" press_data="၄" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_myanmar_digit_five" press_data="၅" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_myanmar_digit_six" press_data="၆" long_press_data="6" />
+            <softkey id="@id/softkey_myanmar_digit_seven" press_data="၇" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_myanmar_digit_eight" press_data="၈" long_press_data="8" />
+            <softkey id="@id/softkey_myanmar_digit_nine" press_data="၉" long_press_data="9" />
+            <softkey id="@id/softkey_myanmar_digit_zero" press_data="၀" long_press_data="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_new_tai_lue_digit_one" press_data="᧑" long_press_data="᧚,1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_new_tai_lue_digit_two" press_data="᧒" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_new_tai_lue_digit_three" press_data="᧓" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_new_tai_lue_digit_four" press_data="᧔" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_new_tai_lue_digit_five" press_data="᧕" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_new_tai_lue_digit_six" press_data="᧖" long_press_data="6" />
+            <softkey id="@id/softkey_new_tai_lue_digit_seven" press_data="᧗" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_new_tai_lue_digit_eight" press_data="᧘" long_press_data="8" />
+            <softkey id="@id/softkey_new_tai_lue_digit_nine" press_data="᧙" long_press_data="9" />
+            <softkey id="@id/softkey_new_tai_lue_digit_zero" press_data="᧐" long_press_data="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_nko_digit_one" press_data="߁" long_press_data="1,¼,½,⅓,⅛" />
+            <softkey id="@id/softkey_nko_digit_two" press_data="߂" long_press_data="2,⅔" />
+            <softkey id="@id/softkey_nko_digit_three" press_data="߃" long_press_data="3,¾,⅜" />
+            <softkey id="@id/softkey_nko_digit_four" press_data="߄" long_press_data="4" />
+            <softkey id="@id/softkey_nko_digit_five" press_data="߅" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_nko_digit_six" press_data="߆" long_press_data="6" />
+            <softkey id="@id/softkey_nko_digit_seven" press_data="߇" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_nko_digit_eight" press_data="߈" long_press_data="8" />
+            <softkey id="@id/softkey_nko_digit_nine" press_data="߉" long_press_data="9" />
+            <softkey id="@id/softkey_nko_digit_zero" press_data="߀" long_press_data="0" />
+            <softkey id="@id/softkey_nko_comma" press_data="߸" long_press_data=":" />
+            <softkey id="@id/softkey_nko_exclamation_mark" press_data="߹" long_press_data="!" />
+            <softkey id="@id/softkey_nko_letter_dagbasinna" press_data="ߑ" long_press_data=";" />
+            <softkey id="@id/softkey_nko_symbol_gbakurunen" press_data="߷" long_press_data="&quot;" />
+            <softkey id="@id/softkey_nko_symbol_lajanyalan" press_data="ߺ" long_press_data="'" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_ol_chiki_digit_one" press_data="᱑" long_press_data="1,¼,½,⅓,⅛" />
+            <softkey id="@id/softkey_ol_chiki_digit_two" press_data="᱒" long_press_data="2,⅔" />
+            <softkey id="@id/softkey_ol_chiki_digit_three" press_data="᱓" long_press_data="3,¾,⅜" />
+            <softkey id="@id/softkey_ol_chiki_digit_four" press_data="᱔" long_press_data="4" />
+            <softkey id="@id/softkey_ol_chiki_digit_five" press_data="᱕" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_ol_chiki_digit_six" press_data="᱖" long_press_data="6" />
+            <softkey id="@id/softkey_ol_chiki_digit_seven" press_data="᱗" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_ol_chiki_digit_eight" press_data="᱘" long_press_data="8" />
+            <softkey id="@id/softkey_ol_chiki_digit_nine" press_data="᱙" long_press_data="9" />
+            <softkey id="@id/softkey_ol_chiki_digit_zero" press_data="᱐" long_press_data="0" />
+            <softkey id="@id/softkey_ol_chiki_ahad" press_data="ᱽ" long_press_data="*" />
+            <softkey id="@id/softkey_ol_chiki_gaahlaa_ttuddaag" press_data="ᱹ" long_press_data="!" />
+            <softkey id="@id/softkey_ol_chiki_mu_gaahlaa_ttuddaag" press_data="ᱺ" long_press_data=":" />
+            <softkey id="@id/softkey_ol_chiki_mu_ttuddag" press_data="ᱸ" long_press_data=";" />
+            <softkey id="@id/softkey_ol_chiki_phaarkaa" press_data="ᱼ" long_press_data="-" />
+            <softkey id="@id/softkey_ol_chiki_punctuation_double_mucaad" press_data="᱿" long_press_data="&quot;" />
+            <softkey id="@id/softkey_ol_chiki_punctuation_mucaad" press_data="᱾" long_press_data="'" />
+            <softkey id="@id/softkey_ol_chiki_relaa" press_data="ᱻ" long_press_data="\?" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_oriya_digit_one" press_data="୧" press_label="୧" long_press_data="1,¹,½,⅓,¼,⅛" long_press_label="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_oriya_digit_two" press_data="୨" press_label="୨" long_press_data="2,²,⅔" long_press_label="2,²,⅔" />
+            <softkey id="@id/softkey_oriya_digit_three" press_data="୩" press_label="୩" long_press_data="3,³,¾,⅜" long_press_label="3,³,¾,⅜" />
+            <softkey id="@id/softkey_oriya_digit_four" press_data="୪" press_label="୪" long_press_data="4,⁴" long_press_label="4,⁴" />
+            <softkey id="@id/softkey_oriya_digit_five" press_data="୫" press_label="୫" long_press_data="5,⅝" long_press_label="5,⅝" />
+            <softkey id="@id/softkey_oriya_digit_six" press_data="୬" press_label="୬" long_press_data="6" long_press_label="6" />
+            <softkey id="@id/softkey_oriya_digit_seven" press_data="୭" press_label="୭" long_press_data="7,⅞" long_press_label="7,⅞" />
+            <softkey id="@id/softkey_oriya_digit_eight" press_data="୮" press_label="୮" long_press_data="8" long_press_label="8" />
+            <softkey id="@id/softkey_oriya_digit_nine" press_data="୯" press_label="୯" long_press_data="9" long_press_label="9" />
+            <softkey id="@id/softkey_oriya_digit_zero" press_data="୦" press_label="୦" long_press_data="0,ⁿ,∅" long_press_label="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_digit_one" press_data="1" long_press_data="¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_digit_two" press_data="2" long_press_data="²,⅔" />
+            <softkey id="@id/softkey_digit_three" press_data="3" long_press_data="³,¾,⅜" />
+            <softkey id="@id/softkey_digit_four" press_data="4" long_press_data="⁴" />
+            <softkey id="@id/softkey_digit_five" press_data="5" long_press_data="⅝" />
+            <softkey id="@id/softkey_digit_six" press_data="6" />
+            <softkey id="@id/softkey_digit_seven" press_data="7" long_press_data="⅞" />
+            <softkey id="@id/softkey_digit_eight" press_data="8" />
+            <softkey id="@id/softkey_digit_nine" press_data="9" />
+            <softkey id="@id/softkey_digit_zero" press_data="0" long_press_data="ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_digit_one_with_arabic_indic_longpress" press_data="1" long_press_data="١,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_digit_two_with_arabic_indic_longpress" press_data="2" long_press_data="٢,²,⅔" />
+            <softkey id="@id/softkey_digit_three_with_arabic_indic_longpress" press_data="3" long_press_data="٣,³,¾,⅜" />
+            <softkey id="@id/softkey_digit_four_with_arabic_indic_longpress" press_data="4" long_press_data="٤,⁴" />
+            <softkey id="@id/softkey_digit_five_with_arabic_indic_longpress" press_data="5" long_press_data="٥,⅝" />
+            <softkey id="@id/softkey_digit_six_with_arabic_indic_longpress" press_data="6" long_press_data="٦" />
+            <softkey id="@id/softkey_digit_seven_with_arabic_indic_longpress" press_data="7" long_press_data="٧,⅞" />
+            <softkey id="@id/softkey_digit_eight_with_arabic_indic_longpress" press_data="8" long_press_data="٨" />
+            <softkey id="@id/softkey_digit_nine_with_arabic_indic_longpress" press_data="9" long_press_data="٩" />
+            <softkey id="@id/softkey_digit_zero_with_arabic_indic_longpress" press_data="0" long_press_data="٠,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_digit_zero_with_church_slavonic_longpress" press_data="0" long_press_data="҂,҈,҉,꙰,꙱,꙲" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press" splitter=",">
+            <softkey id="@id/softkey_digit_one_with_coptic_longpress" press_data="1" press_label="1" long_press_data="ⲁ̅,ⲓ̅,ⲣ̅" long_press_label="ⲁ̅,ⲓ̅,ⲣ̅" />
+            <softkey id="@id/softkey_digit_two_with_coptic_longpress" press_data="2" press_label="2" long_press_data="ⲃ̅,ⲕ̅,ⲥ̅" long_press_label="ⲃ̅,ⲕ̅,ⲥ̅" />
+            <softkey id="@id/softkey_digit_three_with_coptic_longpress" press_data="3" press_label="3" long_press_data="ⲅ̅,ⲗ̅,ⲧ̅" long_press_label="ⲅ̅,ⲗ̅,ⲧ̅" />
+            <softkey id="@id/softkey_digit_four_with_coptic_longpress" press_data="4" press_label="4" long_press_data="ⲇ̅,ⲙ̅,ⲩ̅" long_press_label="ⲇ̅,ⲙ̅,ⲩ̅" />
+            <softkey id="@id/softkey_digit_five_with_coptic_longpress" press_data="5" press_label="5" long_press_data="ⲉ̅,ⲛ̅,ⲫ̅" long_press_label="ⲉ̅,ⲛ̅,ⲫ̅" />
+            <softkey id="@id/softkey_digit_six_with_coptic_longpress" press_data="6" press_label="6" long_press_data="ⲋ̅,ⲝ̅,ⲭ̅" long_press_label="ⲋ̅,ⲝ̅,ⲭ̅" />
+            <softkey id="@id/softkey_digit_seven_with_coptic_longpress" press_data="7" press_label="7" long_press_data="ⲍ̅,ⲟ̅,ⲯ̅" long_press_label="ⲍ̅,ⲟ̅,ⲯ̅" />
+            <softkey id="@id/softkey_digit_eight_with_coptic_longpress" press_data="8" press_label="8" long_press_data="ⲏ̅,ⲡ̅,ⲱ̅" long_press_label="ⲏ̅,ⲡ̅,ⲱ̅" />
+            <softkey id="@id/softkey_digit_nine_with_coptic_longpress" press_data="9" press_label="9" long_press_data="ⲑ̅,ϥ̅,⳨" long_press_label="ⲑ̅,ϥ̅,⳨" />
+            <softkey id="@id/softkey_digit_zero_with_coptic_longpress" press_data="0" press_label="0" long_press_data="̅" long_press_label="◌̅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_digit_one_with_devanagari_longpress" press_data="1" long_press_data="१,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_digit_two_with_devanagari_longpress" press_data="2" long_press_data="२,²,⅔" />
+            <softkey id="@id/softkey_digit_three_with_devanagari_longpress" press_data="3" long_press_data="३,³,¾,⅜" />
+            <softkey id="@id/softkey_digit_four_with_devanagari_longpress" press_data="4" long_press_data="४,⁴" />
+            <softkey id="@id/softkey_digit_five_with_devanagari_longpress" press_data="5" long_press_data="५,⅝" />
+            <softkey id="@id/softkey_digit_six_with_devanagari_longpress" press_data="6" long_press_data="६" />
+            <softkey id="@id/softkey_digit_seven_with_devanagari_longpress" press_data="7" long_press_data="७,⅞" />
+            <softkey id="@id/softkey_digit_eight_with_devanagari_longpress" press_data="8" long_press_data="८" />
+            <softkey id="@id/softkey_digit_nine_with_devanagari_longpress" press_data="9" long_press_data="९" />
+            <softkey id="@id/softkey_digit_zero_with_devanagari_longpress" press_data="0" long_press_data="०,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_digit_one_with_extended_arabic_indic_longpress" press_data="1" long_press_data="۱,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_digit_two_with_extended_arabic_indic_longpress" press_data="2" long_press_data="۲,²,⅔" />
+            <softkey id="@id/softkey_digit_three_with_extended_arabic_indic_longpress" press_data="3" long_press_data="۳,³,¾,⅜" />
+            <softkey id="@id/softkey_digit_four_with_extended_arabic_indic_longpress" press_data="4" long_press_data="۴,⁴" />
+            <softkey id="@id/softkey_digit_five_with_extended_arabic_indic_longpress" press_data="5" long_press_data="۵,⅝" />
+            <softkey id="@id/softkey_digit_six_with_extended_arabic_indic_longpress" press_data="6" long_press_data="۶" />
+            <softkey id="@id/softkey_digit_seven_with_extended_arabic_indic_longpress" press_data="7" long_press_data="۷,⅞" />
+            <softkey id="@id/softkey_digit_eight_with_extended_arabic_indic_longpress" press_data="8" long_press_data="۸" />
+            <softkey id="@id/softkey_digit_nine_with_extended_arabic_indic_longpress" press_data="9" long_press_data="۹" />
+            <softkey id="@id/softkey_digit_zero_with_extended_arabic_indic_longpress" press_data="0" long_press_data="۰,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_digit_one_with_thai_longpress" press_data="1" long_press_data="๑,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_digit_two_with_thai_longpress" press_data="2" long_press_data="๒,²,⅔" />
+            <softkey id="@id/softkey_digit_three_with_thai_longpress" press_data="3" long_press_data="๓,³,¾,⅜" />
+            <softkey id="@id/softkey_digit_four_with_thai_longpress" press_data="4" long_press_data="๔,⁴" />
+            <softkey id="@id/softkey_digit_five_with_thai_longpress" press_data="5" long_press_data="๕,⅝" />
+            <softkey id="@id/softkey_digit_six_with_thai_longpress" press_data="6" long_press_data="๖" />
+            <softkey id="@id/softkey_digit_seven_with_thai_longpress" press_data="7" long_press_data="๗,⅞" />
+            <softkey id="@id/softkey_digit_eight_with_thai_longpress" press_data="8" long_press_data="๘" />
+            <softkey id="@id/softkey_digit_nine_with_thai_longpress" press_data="9" long_press_data="๙" />
+            <softkey id="@id/softkey_digit_zero_with_thai_longpress" press_data="0" long_press_data="๐,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_digit_one_with_vai_longpress" press_data="1" long_press_data="꘡,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_digit_two_with_vai_longpress" press_data="2" long_press_data="꘢,²,⅔" />
+            <softkey id="@id/softkey_digit_three_with_vai_longpress" press_data="3" long_press_data="꘣,³,¾,⅜" />
+            <softkey id="@id/softkey_digit_four_with_vai_longpress" press_data="4" long_press_data="꘤,⁴" />
+            <softkey id="@id/softkey_digit_five_with_vai_longpress" press_data="5" long_press_data="꘥,⅝" />
+            <softkey id="@id/softkey_digit_six_with_vai_longpress" press_data="6" long_press_data="꘦" />
+            <softkey id="@id/softkey_digit_seven_with_vai_longpress" press_data="7" long_press_data="꘧,⅞" />
+            <softkey id="@id/softkey_digit_eight_with_vai_longpress" press_data="8" long_press_data="꘨" />
+            <softkey id="@id/softkey_digit_nine_with_vai_longpress" press_data="9" long_press_data="꘩" />
+            <softkey id="@id/softkey_digit_zero_with_vai_longpress" press_data="0" long_press_data="꘠,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_saurashtra_digit_one" press_data="꣑" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_saurashtra_digit_two" press_data="꣒" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_saurashtra_digit_three" press_data="꣓" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_saurashtra_digit_four" press_data="꣔" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_saurashtra_digit_five" press_data="꣕" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_saurashtra_digit_six" press_data="꣖" long_press_data="6" />
+            <softkey id="@id/softkey_saurashtra_digit_seven" press_data="꣗" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_saurashtra_digit_eight" press_data="꣘" long_press_data="8" />
+            <softkey id="@id/softkey_saurashtra_digit_nine" press_data="꣙" long_press_data="9" />
+            <softkey id="@id/softkey_saurashtra_digit_zero" press_data="꣐" long_press_data="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_sundanese_digit_one" press_data="᮱" long_press_data="1,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_sundanese_digit_two" press_data="᮲" long_press_data="2,²,⅔" />
+            <softkey id="@id/softkey_sundanese_digit_three" press_data="᮳" long_press_data="3,³,¾,⅜" />
+            <softkey id="@id/softkey_sundanese_digit_four" press_data="᮴" long_press_data="4,⁴" />
+            <softkey id="@id/softkey_sundanese_digit_five" press_data="᮵" long_press_data="5,⅝" />
+            <softkey id="@id/softkey_sundanese_digit_six" press_data="᮶" long_press_data="6" />
+            <softkey id="@id/softkey_sundanese_digit_seven" press_data="᮷" long_press_data="7,⅞" />
+            <softkey id="@id/softkey_sundanese_digit_eight" press_data="᮸" long_press_data="8" />
+            <softkey id="@id/softkey_sundanese_digit_nine" press_data="᮹" long_press_data="9" />
+            <softkey id="@id/softkey_sundanese_digit_zero" press_data="᮰" long_press_data="0,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_tamil_digit_one" press_data="1" long_press_data="௧,௰,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_tamil_digit_two" press_data="2" long_press_data="௨,௱,²,⅔" />
+            <softkey id="@id/softkey_tamil_digit_three" press_data="3" long_press_data="௩,௲,³,¾,⅜" />
+            <softkey id="@id/softkey_tamil_digit_four" press_data="4" long_press_data="௪,௳,⁴" />
+            <softkey id="@id/softkey_tamil_digit_five" press_data="5" long_press_data="௫,௴,⅝" />
+            <softkey id="@id/softkey_tamil_digit_six" press_data="6" long_press_data="௬,௵" />
+            <softkey id="@id/softkey_tamil_digit_seven" press_data="7" long_press_data="௭,௶,⅞" />
+            <softkey id="@id/softkey_tamil_digit_eight" press_data="8" long_press_data="௮,௷" />
+            <softkey id="@id/softkey_tamil_digit_nine" press_data="9" long_press_data="௯,௸" />
+            <softkey id="@id/softkey_tamil_digit_zero" press_data="0" long_press_data="௦,௺,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_telugu_digit_one" press_data="1" long_press_data="౧,౹,౼,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_telugu_digit_two" press_data="2" long_press_data="౨,౺,౽,²,⅔" />
+            <softkey id="@id/softkey_telugu_digit_three" press_data="3" long_press_data="౩,౻,౾,³,¾,⅜" />
+            <softkey id="@id/softkey_telugu_digit_four" press_data="4" long_press_data="౪,⁴" />
+            <softkey id="@id/softkey_telugu_digit_five" press_data="5" long_press_data="౫,⅝" />
+            <softkey id="@id/softkey_telugu_digit_six" press_data="6" long_press_data="౬" />
+            <softkey id="@id/softkey_telugu_digit_seven" press_data="7" long_press_data="౭,⅞" />
+            <softkey id="@id/softkey_telugu_digit_eight" press_data="8" long_press_data="౮" />
+            <softkey id="@id/softkey_telugu_digit_nine" press_data="9" long_press_data="౯" />
+            <softkey id="@id/softkey_telugu_digit_zero" press_data="0" long_press_data="౦,౸,౿,ⁿ,∅" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_tibetan_digit_zero" press_data="༠" long_press_data="0" />
+            <softkey id="@id/softkey_tibetan_digit_one" press_data="༡" long_press_data="1" />
+            <softkey id="@id/softkey_tibetan_digit_two" press_data="༢" long_press_data="2" />
+            <softkey id="@id/softkey_tibetan_digit_three" press_data="༣" long_press_data="3" />
+            <softkey id="@id/softkey_tibetan_digit_four" press_data="༤" long_press_data="4" />
+            <softkey id="@id/softkey_tibetan_digit_five" press_data="༥" long_press_data="5" />
+            <softkey id="@id/softkey_tibetan_digit_six" press_data="༦" long_press_data="6" />
+            <softkey id="@id/softkey_tibetan_digit_seven" press_data="༧" long_press_data="7" />
+            <softkey id="@id/softkey_tibetan_digit_eight" press_data="༨" long_press_data="8" />
+            <softkey id="@id/softkey_tibetan_digit_nine" press_data="༩" long_press_data="9" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_fix_order">
+            <softkey id="@id/softkey_arabic_apostrophe" press_data="'" press_label="'" long_press_data="‚,‘,’,›,‹" long_press_label="‚,‘,’,‹,›" />
+            <softkey id="@id/softkey_arabic_ligature_sallallahou_alayhe_wasallam" press_data="ﷺ" press_label="ﷺ" long_press_data="ﷲ,ؐ,ؑ,ؒ,ؓ,ؔ" long_press_label="ﷲ,ؐ,ؑ,ؒ,ؓ,ؔ" />
+            <softkey id="@id/softkey_arabic_number_sign" press_data="؀" press_label="؀" long_press_data="؁,؂,؃,؍,٭,؞" long_press_label="؁,؂,؃,؍,٭,؞" />
+            <softkey id="@id/softkey_arabic_quot" press_data="&quot;" press_label="&quot;" long_press_data="„,“,”,»,«" long_press_label="„,“,”,«,»" />
+            <softkey id="@id/softkey_hebrew_apostrophe" press_data="'" press_label="'" long_press_data="‘,’,‚,›,‹" long_press_label="‘,’,‚,‹,›" />
+            <softkey id="@id/softkey_hebrew_quot" press_data="&quot;" press_label="&quot;" long_press_data="“,”,„,»,«" long_press_label="“,”,„,«,»" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_arabic_asterisk" press_data="*" long_press_data="★,٭" />
+            <softkey id="@id/softkey_arabic_decimal_separator" press_data="٫" long_press_data="٬,',&quot;,*" />
+            <softkey id="@id/softkey_arabic_percent_sign" press_data="٪" long_press_data="%,‰,℅" />
+            <softkey id="@id/softkey_arabic_question_mark" press_data="؟" long_press_data="\?,¿" />
+            <softkey id="@id/softkey_arabic_semicolon" press_data="؛" long_press_data=";" />
+            <softkey id="@id/softkey_hebrew_asterisk" press_data="*" long_press_data="★" />
+            <softkey id="@id/softkey_hebrew_plus_sign" press_data="+" long_press_data="±,﬩" />
+            <softkey id="@id/softkey_percent_sign_with_arabic_long_press" press_data="%" long_press_data="‰,℅,٪" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press">
+            <softkey id="@id/softkey_arabic_left_curly_bracket" press_data="}" press_label="{" />
+            <softkey id="@id/softkey_arabic_left_parenthesis" press_data=")" press_label="(" long_press_data="﴿,>,},]" long_press_label="﴾,&lt;,{,[" />
+            <softkey id="@id/softkey_arabic_left_pointing_double_angle_quotation_mark" press_data="»" press_label="«" long_press_data="›,≥,>,⟩" long_press_label="‹,≤,&lt;,⟨" />
+            <softkey id="@id/softkey_arabic_left_square_bracket" press_data="]" press_label="[" />
+            <softkey id="@id/softkey_arabic_right_curly_bracket" press_data="{" press_label="}" />
+            <softkey id="@id/softkey_arabic_right_parenthesis" press_data="(" press_label=")" long_press_data="﴾,&lt;,{,[" long_press_label="﴿,>,},]" />
+            <softkey id="@id/softkey_arabic_right_pointing_double_angle_quotation_mark" press_data="«" press_label="»" long_press_data="‹,≤,&lt;,⟨" long_press_label="›,≥,>,⟩" />
+            <softkey id="@id/softkey_arabic_right_square_bracket" press_data="[" press_label="]" />
+            <softkey id="@id/softkey_hebrew_left_parenthesis" press_data=")" press_label="(" long_press_data=">,},]" long_press_label="&lt;,{,[" />
+            <softkey id="@id/softkey_hebrew_right_parenthesis" press_data="(" press_label=")" long_press_data="&lt;,{,[" long_press_label=">,},]" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_fix_order_simple">
+            <softkey id="@id/softkey_croatian_apostrophe" press_data="'" long_press_data="‘,‚,’,›,‹" />
+            <softkey id="@id/softkey_croatian_quot" press_data="&quot;" long_press_data="“,„,”,»,«" />
+            <softkey id="@id/softkey_danish_apostrophe" press_data="'" long_press_data="’,‚,‘,›,‹" />
+            <softkey id="@id/softkey_danish_quot" press_data="&quot;" long_press_data="”,„,“,»,«" />
+            <softkey id="@id/softkey_east_slavic_apostrophe" press_data="'" long_press_data="’,‚,‘,‹,›" />
+            <softkey id="@id/softkey_east_slavic_quot" press_data="&quot;" long_press_data="”,„,“,«,»" />
+            <softkey id="@id/softkey_roman_apostrophe" press_data="'" long_press_data="‘,‚,’,‹,›" />
+            <softkey id="@id/softkey_roman_quot" press_data="&quot;" long_press_data="“,„,”,«,»" />
+            <softkey id="@id/softkey_sami_apostrophe" press_data="'" long_press_data="‚,‘,’,‹,›,ʹ,´,ʼ,ˈ" />
+            <softkey id="@id/softkey_swedish_quot" press_data="&quot;" long_press_data="„,“,”,»,«" />
+            <softkey id="@id/softkey_swedish_apostrophe" press_data="'" long_press_data="‚,‘,’,›,‹" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_armenian_phonetic_exclamation_mark" press_data="!" long_press_data="՜,¡" />
+            <softkey id="@id/softkey_armenian_phonetic_question_mark" press_data="\?" long_press_data="՞,¿" />
+            <softkey id="@id/softkey_irish_amp_tironian_et" press_data="&amp;" long_press_data="⁊" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_fix_order_simple">
+            <softkey id="@id/softkey_quot" press_data="&quot;" long_press_data="„,“,”,«,»" />
+            <softkey id="@id/softkey_left_double_quotation_mask" press_data="“" long_press_data="&quot;,《" />
+            <softkey id="@id/softkey_right_double_quotation_mask" press_data="”" long_press_data="„,》" />
+            <softkey id="@id/softkey_apostrophe" press_data="'" long_press_data="‚,‘,’,‹,›" />
+            <softkey id="@id/softkey_left_single_quotation_mask" press_data="‘" long_press_data="',〈" />
+            <softkey id="@id/softkey_right_single_quotation_mask" press_data="’" long_press_data="‚,〉" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple" splitter=",">
+            <softkey id="@id/softkey_amp" press_data="&amp;" />
+            <softkey id="@id/softkey_asterisk" press_data="*" long_press_data="†,‡,★" />
+            <softkey id="@id/softkey_bullet" press_data="•" long_press_data="♪,♥,♠,♦,♣" />
+            <softkey id="@id/softkey_check_mark" press_data="✓" />
+            <softkey id="@id/softkey_circumflex_accent" press_data="^" long_press_data="↑,↓,←,→" />
+            <softkey id="@id/softkey_copyright_sign" press_data="©" />
+            <softkey id="@id/softkey_colon" press_data=":" />
+            <softkey id="@id/softkey_commercial_at" press_data="\@" />
+            <softkey id="@id/softkey_degree_sign" press_data="°" long_press_data="′,″" />
+            <softkey id="@id/softkey_division_sign" press_data="÷" />
+            <softkey id="@id/softkey_equals_sign" press_data="=" long_press_data="≠,≈,∞" />
+            <softkey id="@id/softkey_exclamation_mark" press_data="!" long_press_data="¡" />
+            <softkey id="@id/softkey_full_stop" press_data="." long_press_data="…" />
+            <softkey id="@id/softkey_fullwidth_colon" press_data="：" long_press_data=":" />
+            <softkey id="@id/softkey_fullwidth_exclamation_mark" press_data="！" long_press_data="!,¡" />
+            <softkey id="@id/softkey_fullwidth_left_parenthesis" press_data="（" long_press_data="(,&lt;,{,［,【" />
+            <softkey id="@id/softkey_fullwidth_left_square_bracket" press_data="［" long_press_data="[" />
+            <softkey id="@id/softkey_fullwidth_question_mark" press_data="？" long_press_data="\?,¿" />
+            <softkey id="@id/softkey_fullwidth_right_parenthesis" press_data="）" long_press_data="),>,},］,】" />
+            <softkey id="@id/softkey_fullwidth_right_square_bracket" press_data="］" long_press_data="]" />
+            <softkey id="@id/softkey_fullwidth_semicolon" press_data="；" long_press_data=";" />
+            <softkey id="@id/softkey_grave_accent" press_data="`" />
+            <softkey id="@id/softkey_greek_capital_letter_pi" press_data="Π" long_press_data="Π" />
+            <softkey id="@id/softkey_greek_small_letter_pi" press_data="π" long_press_data="Π,μ,Ω" />
+            <softkey id="@id/softkey_hyphen_minus" press_data="-" long_press_data="_,–,—,·" />
+            <softkey id="@id/softkey_ideographic_comma" press_data="、" />
+            <softkey id="@id/softkey_increment" press_data="∆" />
+            <softkey id="@id/softkey_left_corner_bracket" press_data="「" long_press_data="『" />
+            <softkey id="@id/softkey_left_curly_bracket" press_data="{" long_press_data="(" />
+            <softkey id="@id/softkey_left_parenthesis" press_data="(" long_press_data="&lt;,{,[" />
+            <softkey id="@id/softkey_left_square_bracket" press_data="[" />
+            <softkey id="@id/softkey_less_than_or_equal_to" press_data="≤" />
+            <softkey id="@id/softkey_low_line" press_data="_" />
+            <softkey id="@id/softkey_middle_dot" press_data="·" />
+            <softkey id="@id/softkey_more_than_or_equal_to" press_data="≥" />
+            <softkey id="@id/softkey_multiplication_sign" press_data="×" />
+            <softkey id="@id/softkey_not_equal_to" press_data="≠" />
+            <softkey id="@id/softkey_number_sign" press_data="\#" long_press_data="№" />
+            <softkey id="@id/softkey_percent_sign" press_data="%" long_press_data="‰,℅" />
+            <softkey id="@id/softkey_pilcrow_sign" press_data="¶" long_press_data="§" />
+            <softkey id="@id/softkey_plus_minus" press_data="±" />
+            <softkey id="@id/softkey_plus_sign" press_data="+" long_press_data="±" />
+            <softkey id="@id/softkey_question_mark" press_data="\?" long_press_data="¿,‽" />
+            <softkey id="@id/softkey_registered_sign" press_data="®" />
+            <softkey id="@id/softkey_reversed_semicolon" press_data="⁏" long_press_data=";" />
+            <softkey id="@id/softkey_reverse_solidus" press_data="\\" />
+            <softkey id="@id/softkey_right_corner_bracket" press_data="」" long_press_data="』" />
+            <softkey id="@id/softkey_right_curly_bracket" press_data="}" long_press_data=")" />
+            <softkey id="@id/softkey_right_parenthesis" press_data=")" long_press_data=">,},]" />
+            <softkey id="@id/softkey_right_square_bracket" press_data="]" />
+            <softkey id="@id/softkey_semicolon" press_data=";" />
+            <softkey id="@id/softkey_slash" press_data="/" />
+            <softkey id="@id/softkey_square_root" press_data="√" />
+            <softkey id="@id/softkey_tilde" press_data="~" />
+            <softkey id="@id/softkey_trade_mark_sign" press_data="™" />
+            <softkey id="@id/softkey_vertical_line" press_data="|" />
+        </softkey_list>
+    </softkeys>
+</framework>

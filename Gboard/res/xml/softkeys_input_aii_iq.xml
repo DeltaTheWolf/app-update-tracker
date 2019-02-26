@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press">
+            <softkey id="@id/softkey_syriac_dotted_zlama_horizontal" press_data="ܸ" press_label="ܸ◌" long_press_data="ܶ,ܷ" long_press_label="ܶ◌,ܷ◌" />
+            <softkey id="@id/softkey_syriac_dotted_zlama_angular" press_data="ܹ" press_label="ܹ◌" />
+            <softkey id="@id/softkey_syriac_hbasa_esasa_dotted" press_data="ܼ" press_label="ܼ◌" long_press_data="ܺ,ܻ,ܽ,ܾ" long_press_label="ܺ◌,ܻ◌,ܽ◌,ܾ◌" />
+            <softkey id="@id/softkey_syriac_rukkakha" press_data="݂" press_label="݂◌" long_press_data="݁,݇,݈" long_press_label="◌݁,݇◌,݈◌" />
+            <softkey id="@id/softkey_combining_breve_below" press_data="̮" press_label="◌̮" />
+            <softkey id="@id/softkey_syriac_pthaha_dotted" press_data="ܲ" press_label="ܲ◌" long_press_data="ܰ,ܱ" long_press_label="ܰ◌,ܱ◌" />
+            <softkey id="@id/softkey_syriac_zqapha_dotted" press_data="ܵ" press_label="ܵ◌" long_press_data="ܳ,ܴ" long_press_label="ܳ◌,ܴ◌" />
+            <softkey id="@id/softkey_syriac_letter_alaph" press_data="ܐ" press_label="ܐ" long_press_data="ܑ" long_press_label="ܑ◌" />
+            <softkey id="@id/softkey_combining_tilde_below" press_data="̰" press_label="◌̰" long_press_data="̃" long_press_label="◌̃" />
+            <softkey id="@id/softkey_syriac_rwaha" press_data="ܿ" press_label="ܿ◌" />
+            <softkey id="@id/softkey_syriac_letter_taw" press_data="ܬ" press_label="ܬ" long_press_data="݀" long_press_label="݀◌" />
+            <softkey id="@id/softkey_combining_diaeresis" press_data="̈" press_label="◌̈" long_press_data="̤" long_press_label="◌̤" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_syriac_letter_qaph" press_data="ܩ" />
+            <softkey id="@id/softkey_syriac_letter_waw" press_data="ܘ" />
+            <softkey id="@id/softkey_syriac_letter_rish" press_data="ܪ" />
+            <softkey id="@id/softkey_syriac_letter_yudh" press_data="ܝ" long_press_data="ܞ" />
+            <softkey id="@id/softkey_syriac_letter_e" press_data="ܥ" />
+            <softkey id="@id/softkey_syriac_letter_pe" press_data="ܦ" long_press_data="ܧ" />
+            <softkey id="@id/softkey_syriac_letter_semkath" press_data="ܣ" long_press_data="ܤ" />
+            <softkey id="@id/softkey_syriac_letter_dalath" press_data="ܕ" long_press_data="ܖ,ܯ" />
+            <softkey id="@id/softkey_syriac_letter_gamal" press_data="ܓ" long_press_data="ܔ,ܮ" />
+            <softkey id="@id/softkey_syriac_letter_he" press_data="ܗ" />
+            <softkey id="@id/softkey_syriac_letter_teth" press_data="ܛ" long_press_data="ܜ" />
+            <softkey id="@id/softkey_syriac_letter_kaph" press_data="ܟ" />
+            <softkey id="@id/softkey_syriac_letter_lamadh" press_data="ܠ" />
+            <softkey id="@id/softkey_syriac_letter_zain" press_data="ܙ" />
+            <softkey id="@id/softkey_syriac_letter_sadhe" press_data="ܨ" />
+            <softkey id="@id/softkey_syriac_letter_heth" press_data="ܚ" />
+            <softkey id="@id/softkey_syriac_letter_shin" press_data="ܫ" />
+            <softkey id="@id/softkey_syriac_letter_beth" press_data="ܒ" long_press_data="ܭ" />
+            <softkey id="@id/softkey_syriac_letter_nun" press_data="ܢ" />
+            <softkey id="@id/softkey_syriac_letter_mim" press_data="ܡ" />
+        </softkey_list>
+    </softkeys>
+</framework>

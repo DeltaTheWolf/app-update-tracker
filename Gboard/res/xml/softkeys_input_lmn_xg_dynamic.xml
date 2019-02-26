@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple_dynamic">
+            <softkey id="@id/softkey_telugu_letter_a" press_data="అ" long_press_data="ౕ,ఽ" />
+            <softkey id="@id/softkey_telugu_letter_aa" press_data="ఆ" long_press_data="ా" />
+            <softkey id="@id/softkey_telugu_letter_i" press_data="ఇ" long_press_data="ి" />
+            <softkey id="@id/softkey_telugu_letter_ii" press_data="ఈ" long_press_data="ీ" />
+            <softkey id="@id/softkey_telugu_letter_u" press_data="ఉ" long_press_data="ు" />
+            <softkey id="@id/softkey_telugu_letter_uu" press_data="ఊ" long_press_data="ూ" />
+            <softkey id="@id/softkey_telugu_letter_vocalic_r" press_data="ఋ" long_press_data="ృ,ఌ,ౢ" />
+            <softkey id="@id/softkey_telugu_letter_vocalic_rr" press_data="ౠ" long_press_data="ౄ,ౡ,ౣ" />
+            <softkey id="@id/softkey_telugu_letter_e" press_data="ఎ" long_press_data="ె" />
+            <softkey id="@id/softkey_telugu_letter_ee" press_data="ఏ" long_press_data="ే" />
+            <softkey id="@id/softkey_telugu_letter_ai" press_data="ఐ" long_press_data="ై,ౖ" />
+            <softkey id="@id/softkey_telugu_letter_o" press_data="ఒ" long_press_data="ొ" />
+            <softkey id="@id/softkey_telugu_letter_oo" press_data="ఓ" long_press_data="ో" />
+            <softkey id="@id/softkey_telugu_letter_au" press_data="ఔ" long_press_data="ౌ" />
+            <softkey id="@id/softkey_telugu_sign_anusvara" press_data="ం" long_press_data="ఁ" />
+            <softkey id="@id/softkey_telugu_sign_visarga" press_data="ః" />
+            <softkey id="@id/softkey_telugu_sign_virama" press_data="్" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_telugu_letter_ka" press_data="క" long_press_data="క్త,క్ర,క్ల,క్క,క్య,క్ష,క్మ,క్న" />
+            <softkey id="@id/softkey_telugu_letter_kha" press_data="ఖ" />
+            <softkey id="@id/softkey_telugu_letter_ga" press_data="గ" long_press_data="గ్ర,గ్డ,గ్ల,గ్ద,గ్య,గ్గ" />
+            <softkey id="@id/softkey_telugu_letter_gha" press_data="ఘ" long_press_data="ఙ" />
+            <softkey id="@id/softkey_telugu_letter_ca" press_data="చ" long_press_data="ౘ,చ్చ,చ్య,చ్క,చ్ర,చ్ల,చ్న" />
+            <softkey id="@id/softkey_telugu_letter_cha" press_data="ఛ" />
+            <softkey id="@id/softkey_telugu_letter_ja" press_data="జ" long_press_data="ౙ,జ్జ,జ్క,జ్య,జ్ర,జ్వ" />
+            <softkey id="@id/softkey_telugu_letter_jha" press_data="ఝ" long_press_data="ఞ" />
+            <softkey id="@id/softkey_telugu_letter_tta" press_data="ట" long_press_data="ట్ట,ట్ల,ట్క,ట్ప,ట్ర,ట్న" />
+            <softkey id="@id/softkey_telugu_letter_ttha" press_data="ఠ" />
+            <softkey id="@id/softkey_telugu_letter_dda" press_data="డ" long_press_data="డ్స,డ్ద,డ్క,డ్ర,డ్గ,డ్ల" />
+            <softkey id="@id/softkey_telugu_letter_ddha" press_data="ఢ" />
+            <softkey id="@id/softkey_telugu_letter_nna" press_data="ణ" long_press_data="ణ్క,ణ్మ,ణ్ణ,ణ్డ" />
+            <softkey id="@id/softkey_telugu_letter_ta" press_data="త" long_press_data="త్త,త్ర,త్మ,త్డ,త్ల,త్వ" />
+            <softkey id="@id/softkey_telugu_letter_tha" press_data="థ" />
+            <softkey id="@id/softkey_telugu_letter_da" press_data="ద" long_press_data="ద్మ,ద్క,ద్ర,ద్ద,ద్వ,ద్ల" />
+            <softkey id="@id/softkey_telugu_letter_dha" press_data="ధ" />
+            <softkey id="@id/softkey_telugu_letter_na" press_data="న" long_press_data="న్న,న్య,న్ద,న్స,న్క,న్గ" />
+            <softkey id="@id/softkey_telugu_letter_pa" press_data="ప" long_press_data="ప్ర,ప్త,ప్య,ప్ప,ప్డ,ప్ట" />
+            <softkey id="@id/softkey_telugu_letter_pha" press_data="ఫ" />
+            <softkey id="@id/softkey_telugu_letter_ba" press_data="బ" long_press_data="బ్బ,బ్ర,బ్ద,బ్య" />
+            <softkey id="@id/softkey_telugu_letter_bha" press_data="భ" long_press_data="భ్య" />
+            <softkey id="@id/softkey_telugu_letter_ma" press_data="మ" long_press_data="మ్క,మ్మ,మ్ద,మ్న,మ్జ,మ్య" />
+            <softkey id="@id/softkey_telugu_letter_ya" press_data="య" long_press_data="య్య" />
+            <softkey id="@id/softkey_telugu_letter_ra" press_data="ర" long_press_data="ఱ,ర్వ,ర్న,ర్ణ,ర్ల,ర్త,ర్గ,ర్ర,ర్స,ర్డ,ర్క,ర్ప,ర్య,ర్ద,ర్మ" />
+            <softkey id="@id/softkey_telugu_letter_la" press_data="ల" long_press_data="ల్ల,ల్క,ల్ద,ల్డ,ల్వ,ల్ర" />
+            <softkey id="@id/softkey_telugu_letter_va" press_data="వ" long_press_data="వ్న,వ్య,వ్ర,వ్ల,వ్వ,వ్ణ" />
+            <softkey id="@id/softkey_telugu_letter_lla" press_data="ళ" long_press_data="ళ్ల,ళ్త" />
+            <softkey id="@id/softkey_telugu_letter_sha" press_data="శ" long_press_data="శ్వ,శ్ర" />
+            <softkey id="@id/softkey_telugu_letter_ssa" press_data="ష" long_press_data="ష్ట,ష్ట్ర,ష్య,ష్ష" />
+            <softkey id="@id/softkey_telugu_letter_sa" press_data="స" long_press_data="స్త,స్మ,స్వ,స్స,స్త్,స్క,స్త్ర,స్ర,స్న,స్గ" />
+            <softkey id="@id/softkey_telugu_letter_ha" press_data="హ" />
+        </softkey_list>
+    </softkeys>
+</framework>

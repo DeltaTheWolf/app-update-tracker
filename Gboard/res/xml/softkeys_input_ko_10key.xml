@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template id="@+id/softkey_template_10key" layout="@layout/softkey_label_medium" content_description="$content_desc$">
+            <action type="PRESS" data="$press_data$" keycode="PLAIN_TEXT" intention="DECODE" />
+            <label location="@id/label" value="$label$" />
+        </softkey_template>
+        <softkey_list template_id="@id/softkey_template_10key" splitter=" ">
+            <softkey id="@id/softkey_hangul_letter_i" press_data="ㅣ" label="ㅣ" content_desc="이" />
+            <softkey id="@id/softkey_hangul_letter_araea" press_data="ㆍ" label="ㆍ" content_desc="아래 아" />
+            <softkey id="@id/softkey_hangul_letter_eu" press_data="ㅡ" label="ㅡ" content_desc="으" />
+            <softkey id="@id/softkey_hangul_letter_kiyeok" press_data="ㄱ" label="ㄱㅋ" content_desc="기역" />
+            <softkey id="@id/softkey_hangul_letter_nieun" press_data="ㄴ" label="ㄴㄹ" content_desc="니은" />
+            <softkey id="@id/softkey_hangul_letter_tikeut" press_data="ㄷ" label="ㄷㅌ" content_desc="디귿" />
+            <softkey id="@id/softkey_hangul_letter_pieup" press_data="ㅂ" label="ㅂㅍ" content_desc="비읍" />
+            <softkey id="@id/softkey_hangul_letter_sios" press_data="ㅅ" label="ㅅㅎ" content_desc="시옷" />
+            <softkey id="@id/softkey_hangul_letter_cieuc" press_data="ㅈ" label="ㅈㅊ" content_desc="지읒" />
+            <softkey id="@id/softkey_hangul_letter_ieung" press_data="ㅇ" label="ㅇㅁ" content_desc="이응" />
+        </softkey_list>
+        <softkey_template id="@+id/softkey_template_9key_left_panel" layout="@layout/softkey_9key_side_panel_label">
+            <action type="PRESS" keycode="PLAIN_TEXT" data="$press_data$" intention="COMMIT" />
+            <label location="@id/label" value="$press_data$" />
+        </softkey_template>
+        <softkey_list template_id="@id/softkey_template_9key_left_panel" splitter=" ">
+            <softkey id="@id/softkey_sentence" press_data="." />
+            <softkey id="@id/softkey_exclamation" press_data="!" />
+            <softkey id="@id/softkey_question" press_data="\?" />
+        </softkey_list>
+    </softkeys>
+</framework>

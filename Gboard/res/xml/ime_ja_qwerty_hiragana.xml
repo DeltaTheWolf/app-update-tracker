@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime class="com.google.android.apps.inputmethod.libs.mozc.ime.SimpleJapaneseIme" inline_composing="true" language="@string/japanese_language_id" string_id="@string/string_id_japanese_qwerty_hiragana" unacceptable_meta_keys="" display_app_completions="false" use_ascii_password_keyboard="true" language_specific_settings="@xml/setting_japanese_language_specific">
+        <if number_row="false">
+            <keyboard_group variant="japanese_qwerty" variant_label="@string/variant_japanese_qwerty">
+                <keyboard type="prime" def="@xml/keyboard_ja_qwerty" />
+                <keyboard type="digit" def="@xml/keyboard_non_prime_digit">
+                    <merge def="@xml/keyboard_fragment_back_to_prime_ja_qwerty" />
+                </keyboard>
+                <keyboard type="symbol" def="@xml/keyboard_non_prime_symbol">
+                    <merge def="@xml/keyboard_fragment_back_to_prime_ja_qwerty" />
+                </keyboard>
+                <keyboard type="smiley" def="@xml/keyboard_non_prime_smiley" />
+                <keyboard type="emoticon" def="@xml/keyboard_non_prime_emoticon" />
+            </keyboard_group>
+        </if>
+        <else>
+            <keyboard_group variant="japanese_qwerty" variant_label="@string/variant_japanese_qwerty" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
+                <keyboard type="prime" def="@xml/keyboard_ja_qwerty">
+                    <merge def="@xml/keyboard_ja_qwerty_hiragana_fragment_numbers_10_10_10_9" />
+                </keyboard>
+                <keyboard type="digit" def="@xml/keyboard_non_prime_digit">
+                    <merge def="@xml/keyboard_fragment_back_to_prime_ja_qwerty" />
+                </keyboard>
+                <keyboard type="symbol" def="@xml/keyboard_non_prime_symbol">
+                    <merge def="@xml/keyboard_fragment_back_to_prime_ja_qwerty" />
+                </keyboard>
+                <keyboard type="smiley" def="@xml/keyboard_non_prime_smiley" />
+                <keyboard type="emoticon" def="@xml/keyboard_non_prime_emoticon" />
+            </keyboard_group>
+        </else>
+        <extra_values>
+            <item id="@id/extra_value_prime_keyboard_specification" value="QWERTY_KANA" />
+            <item id="@id/extra_value_hardware_keyboard_specification" value="HARDWARE_QWERTY_KANA" />
+            <item id="@id/extra_value_is_language_switch_key_hidden_on_processing" value="true" />
+        </extra_values>
+    </ime>
+</framework>

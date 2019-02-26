@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module class="com.google.android.apps.inputmethod.libs.search.sense.ConversationToQueryExtension" start_strategy="AUTO_ASYNC_BACKGROUND">
+        <initialization_deps>
+            <preference_key value="@string/pref_key_enable_conv2query" />
+            <components value="GIMS_UserUnlockedAndKeyboardShown,UserSetupComplete,UnicodeIme" />
+        </initialization_deps>
+    </module>
+</framework>

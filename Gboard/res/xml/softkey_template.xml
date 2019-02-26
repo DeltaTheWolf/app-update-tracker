@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_list splitter=",">
+            <softkey_template id="@+id/softkey_template_no_popup_simple" layout="@layout/softkey_qwerty_label_character" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_data$" />
+                <label location="@id/label" value="$press_data$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_no_popup" layout="@layout/softkey_qwerty_label_character" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_label$" />
+                <label location="@id/label" value="$press_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press" layout="@layout/softkey_qwerty_label_character" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_auto_centered" layout="@layout/softkey_qwerty_label_character" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="SHORT_TEXT" intention="COMMIT" popup_label="$press_label$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredSmallLayout" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredLayout" />
+                <label location="@id/label" value="$press_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_auto_centered_small" layout="@layout/softkey_qwerty_label_character_small" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="SHORT_TEXT" intention="COMMIT" popup_label="$press_label$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredSmallLayout" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredSmallLayout" />
+                <label location="@id/label" value="$press_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_auto_centered_small_dynamic" layout="@layout/softkey_one_label_latin_key_dynamic_small" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="SHORT_TEXT" intention="COMMIT" popup_label="$press_label$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredSmallLayout" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredSmallLayout" />
+                <label location="@id/label" value="$press_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_dynamic" layout="@layout/softkey_one_label_latin_key_dynamic" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_simple" layout="@layout/softkey_qwerty_label_character" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_data$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_data$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_simple_dynamic" layout="@layout/softkey_one_label_latin_key_dynamic" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_data$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_data$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_symbol_multi_popup_on_long_press_simple" layout="@layout/softkey_label_big" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_data$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_data$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_label_header" layout="@layout/softkey_qwerty_label_character_label_header" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_label$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_label_header_large" layout="@layout/softkey_qwerty_label_character_label_header_large" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_label$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_label_header_simple" layout="@layout/softkey_qwerty_label_character_label_header" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_data$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_data$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_fix_order" layout="@layout/softkey_qwerty_label_character_label_header" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleCenteredArrayLayout" />
+                <label location="@id/label" value="$press_label$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_fix_order_simple" layout="@layout/softkey_qwerty_label_character_label_header" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_data$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleCenteredArrayLayout" />
+                <label location="@id/label" value="$press_data$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" layout="$param_layout$" multi_touch="false" popup_timing="@string/qwerty_popup_timing" content_description="$desc$">
+                <action type="PRESS" keycode="$param_keycode$" data="$param_data$" intention="COMMIT" popup_label="$param_data$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=DECODE$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLabelSmallLayout" />
+                <label location="@id/label_bottom" value="$param_data$" />
+                <label location="@id/label_sup" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" layout="$param_layout$" multi_touch="false" popup_timing="@string/qwerty_popup_timing" content_description="$desc$">
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=DECODE$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLabelSmallLayout" />
+                <label location="@id/label_sup" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_auto_centered_small" layout="$param_layout$" multi_touch="false" popup_timing="@string/qwerty_popup_timing" content_description="$desc$">
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=DECODE$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredSmallLayout" />
+                <label location="@id/label_sup" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" layout="$param_layout$" multi_touch="false" popup_timing="@string/qwerty_popup_timing" content_description="$desc$">
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=DECODE$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLabelSmallLayout" />
+                <label location="@id/label_sup" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_array" layout="$param_layout$" multi_touch="false" popup_timing="@string/qwerty_popup_timing" content_description="$desc$">
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=DECODE$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleArrayLayout" />
+                <label location="@id/label_sup" value="$hint_label$" />
+            </softkey_template>
+        </softkey_list>
+    </softkeys>
+</framework>

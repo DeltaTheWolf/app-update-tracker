@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template id="@+id/softkey_template_morse" layout="@layout/softkey_icon" content_description="$desc$">
+            <action type="PRESS" data="$press_data$" keycode="$key_code$" intention="DECODE" action_on_down="true" play_media_effect="false" />
+            <action type="UP" keycode="$key_code$" />
+            <icon location="@id/icon" value="$param_icon$" />
+        </softkey_template>
+        <softkey_list splitter="," template_id="@id/softkey_template_morse">
+            <softkey id="@id/softkey_morse_dot" press_data="." key_code="MORSE_DOT" param_icon="@drawable/ic_key_morse_dot" desc="dot" />
+            <softkey id="@id/softkey_morse_dash" press_data="-" key_code="MORSE_DASH" param_icon="@drawable/ic_key_morse_dash" desc="dash" />
+        </softkey_list>
+        <softkey id="@id/softkey_fragment_morse_enter" layout="@layout/softkey_ime_action_morse" />
+        <softkey id="@id/softkey_fragment_morse_space" layout="@layout/softkey_space_label_grey_morse" />
+        <softkey id="@id/softkey_morse_shift" layout="@layout/softkey_icon_shift" multi_touch="false" content_description="@string/shift_key_content_desc">
+            <action type="PRESS" keycode="LOCK_SHIFT" />
+            <icon location="@id/icon" value="@attr/IconShiftOff" />
+        </softkey>
+        <softkey id="@id/softkey_morse_shift_locked" layout="@layout/softkey_icon_shift_active" multi_touch="false" content_description="@string/shift_key_content_desc">
+            <action type="PRESS" keycode="UNLOCK_SHIFT" />
+            <icon location="@id/icon" value="@attr/IconShiftLocked" />
+        </softkey>
+        <softkey id="@id/softkey_morse_buffer" layout="@layout/softkey_morse_buffer" content_description="@string/space_key_content_desc">
+            <action type="PRESS" data=" " keycode="KEYCODE_SPACE" intention="DECODE" />
+            <label location="@id/label_morse_buffer_character" value=" " />
+            <label location="@id/label_morse_buffer_morse_hint" value=" " />
+        </softkey>
+        <softkey id="@id/softkey_morse_hint_card" layout="@layout/softkey_function_key_icon" multi_touch="false" content_description="@string/morse_display_hint_key_content_desc">
+            <action type="PRESS" keycode="DISPLAY_MORSE_HINT_CARD" />
+            <icon location="@id/icon" value="@attr/IconHelp" />
+        </softkey>
+        <softkey id="@id/softkey_morse_hint_card_displayed" layout="@layout/softkey_function_key_icon" multi_touch="false" content_description="@string/morse_hide_hint_key_content_desc">
+            <action type="PRESS" keycode="HIDE_MORSE_HINT_CARD" />
+            <icon location="@id/icon" value="@attr/IconHelpDisplayed" />
+        </softkey>
+    </softkeys>
+</framework>

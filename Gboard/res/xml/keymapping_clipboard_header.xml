@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping view_id="@id/key_pos_clipboard_back_to_prime" key_id="@id/softkey_close_clipboard" />
+        <mapping view_id="@id/key_pos_clipboard_batch_delete" key_id="@id/softkey_empty" />
+        <mapping view_id="@id/key_pos_clipboard_batch_pin" key_id="@id/softkey_empty" />
+        <mapping view_id="@id/key_pos_clipboard_edit_and_add" key_id="@id/softkey_edit" />
+    </key_mapping>
+    <key_mapping state="CTRL">
+        <mapping view_id="@id/key_pos_clipboard_back_to_prime" key_id="@id/softkey_close_clipboard_rtl" />
+    </key_mapping>
+    <key_mapping state="SUB_CATEGORY_1">
+        <mapping view_id="@id/key_pos_clipboard_back_to_prime" key_id="@id/softkey_close_edit" />
+        <mapping view_id="@id/key_pos_clipboard_batch_delete" key_id="@id/softkey_batch_delete_inactive" />
+        <mapping view_id="@id/key_pos_clipboard_batch_pin" key_id="@id/softkey_batch_pin_inactive" />
+        <mapping view_id="@id/key_pos_clipboard_edit_and_add" key_id="@id/softkey_add" />
+    </key_mapping>
+    <key_mapping state="SUB_CATEGORY_2">
+        <mapping view_id="@id/key_pos_clipboard_back_to_prime" key_id="@id/softkey_close_edit" />
+        <mapping view_id="@id/key_pos_clipboard_batch_delete" key_id="@id/softkey_batch_delete" />
+        <mapping view_id="@id/key_pos_clipboard_batch_pin" key_id="@id/softkey_batch_pin" />
+        <mapping view_id="@id/key_pos_clipboard_edit_and_add" key_id="@id/softkey_add_inactive" />
+    </key_mapping>
+    <key_mapping state="SUB_CATEGORY_3">
+        <mapping view_id="@id/key_pos_clipboard_back_to_prime" key_id="@id/softkey_close_edit" />
+        <mapping view_id="@id/key_pos_clipboard_batch_delete" key_id="@id/softkey_batch_delete" />
+        <mapping view_id="@id/key_pos_clipboard_batch_pin" key_id="@id/softkey_batch_unpin" />
+        <mapping view_id="@id/key_pos_clipboard_edit_and_add" key_id="@id/softkey_add_inactive" />
+    </key_mapping>
+</framework>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module class="com.google.android.apps.inputmethod.libs.contextual.ContextualPredictionExtension" start_strategy="AUTO">
+        <initialization_deps>
+            <components value="App_UserUnlocked" />
+            <min_api_level value="@integer/contextual_extension_min_api_level" />
+        </initialization_deps>
+    </module>
+</framework>

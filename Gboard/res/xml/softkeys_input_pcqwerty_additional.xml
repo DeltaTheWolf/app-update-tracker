@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_grave_accent" press_data="`" long_press_data="~" />
+            <softkey id="@id/softkey_digit_one" press_data="1" long_press_data="!,¡,¹,½,⅓,¼,⅛" />
+            <softkey id="@id/softkey_digit_two" press_data="2" long_press_data="\@,²,⅔" />
+            <softkey id="@id/softkey_digit_three" press_data="3" long_press_data="\#,³,¾,⅜" />
+            <softkey id="@id/softkey_digit_four" press_data="4" long_press_data="$,⁴" />
+            <softkey id="@id/softkey_digit_five" press_data="5" long_press_data="%,⅝" />
+            <softkey id="@id/softkey_digit_six" press_data="6" long_press_data="^" />
+            <softkey id="@id/softkey_digit_seven" press_data="7" long_press_data="&amp;,⅞" />
+            <softkey id="@id/softkey_digit_eight" press_data="8" long_press_data="*" />
+            <softkey id="@id/softkey_digit_nine" press_data="9" long_press_data="(" />
+            <softkey id="@id/softkey_digit_zero" press_data="0" long_press_data="),ⁿ,∅" />
+            <softkey id="@id/softkey_hyphen_minus" press_data="-" long_press_data="_,–,—,·" />
+            <softkey id="@id/softkey_dollar_sign" press_data="$" long_press_data="¢,£,€,¥,₱" />
+            <softkey id="@id/softkey_percent_sign" press_data="%" long_press_data="‰" />
+            <softkey id="@id/softkey_asterisk" press_data="*" long_press_data="†,‡,★" />
+            <softkey id="@id/softkey_plus_sign" press_data="+" long_press_data="±,×,÷,√" />
+            <softkey id="@id/softkey_left_square_bracket" press_data="[" long_press_data="{" />
+            <softkey id="@id/softkey_right_square_bracket" press_data="]" long_press_data="}" />
+            <softkey id="@id/softkey_reverse_solidus" press_data="\\" long_press_data="|" />
+            <softkey id="@id/softkey_solidus" press_data="/" long_press_data="\?,¿" />
+            <softkey id="@id/softkey_question_mark" press_data="\?" long_press_data="¿" />
+            <softkey id="@id/softkey_exclamation_mark" press_data="!" long_press_data="¡" />
+            <softkey id="@id/softkey_semicolon" press_data=";" long_press_data=":" />
+            <softkey id="@id/softkey_full_stop" press_data="." long_press_data=">" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_lower_comma" press_data="," long_press_data="&lt;" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_no_popup_simple">
+            <softkey id="@id/softkey_commercial_at" press_data="\@" />
+            <softkey id="@id/softkey_tilde" press_data="~" />
+            <softkey id="@id/softkey_number_sign" press_data="\#" />
+            <softkey id="@id/softkey_circumflex_accent" press_data="^" />
+            <softkey id="@id/softkey_amp" press_data="&amp;" />
+            <softkey id="@id/softkey_left_parenthesis" press_data="(" />
+            <softkey id="@id/softkey_right_parenthesis" press_data=")" />
+            <softkey id="@id/softkey_low_line" press_data="_" />
+            <softkey id="@id/softkey_left_curly_bracket" press_data="{" />
+            <softkey id="@id/softkey_right_curly_bracket" press_data="}" />
+            <softkey id="@id/softkey_vertical_line" press_data="|" />
+            <softkey id="@id/softkey_colon" press_data=":" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_fix_order_simple">
+            <softkey id="@id/softkey_equals_sign" press_data="=" long_press_data="∞,≠,≈,+" />
+            <softkey id="@id/softkey_apostrophe" press_data="'" long_press_data="„,“,”,&quot;,‚,‘,’" />
+            <softkey id="@id/softkey_quot" press_data="&quot;" long_press_data="„,“,”,‚,‘,’" />
+            <softkey id="@id/softkey_lt" press_data="&lt;" long_press_data="‹,≤,«" />
+            <softkey id="@id/softkey_gt" press_data=">" long_press_data="›,≥,»" />
+        </softkey_list>
+    </softkeys>
+</framework>

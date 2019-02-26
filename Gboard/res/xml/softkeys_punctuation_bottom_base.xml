@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_anusvara_malayalam" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="ം" long_press_data="ഃ ഽ ൹" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_bengali_sign_virama" param_layout="@layout/softkey_label_medium_bottom_label_top" param_keycode="ALPHABET" param_data="্" long_press_data="ং ঃ ঁ ় ʼ" long_press_label="ং ঃ ঁ ় ʼ" hint_label="ঁ​ং​ঃ" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press" splitter=" ">
+            <softkey id="@id/softkey_bottom_combining_acute_church_slavonic" press_data="́" press_label="◌́" long_press_data="҇ ̀ ҃ ̑ ҆́ ҆̀ ҆ ҅ ̾ ꙽ ̇ ꙼ ⸯ ꙿ ̈ ꙾" long_press_label="◌҇ ◌̀ ◌҃ ◌̑ ◌҆́ ◌҆̀ ◌҆ ◌҅ ◌̾ ◌꙽ ◌̇ ◌꙼ ⸯ ꙿ ◌̈ ꙾" />
+        </softkey_list>
+        <softkey id="@id/softkey_bottom_comma_adlam" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="⹁" intention="COMMIT" popup_label="⹁" />
+            <label location="@id/label_bottom" value="⹁" />
+        </softkey>
+        <softkey id="@id/softkey_bottom_comma_arabic" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="،" intention="COMMIT" popup_label="،" />
+            <label location="@id/label_bottom" value="،" />
+        </softkey>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_comma_balinese" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="᭞" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_comma_chinese" param_layout="@layout/softkey_label_medium_bottom" desc="@string/full_width_comma_key_content_desc" param_keycode="PLAIN_TEXT" param_data="，" />
+        </softkey_list>
+        <softkey id="@id/softkey_bottom_comma_ethiopic" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="፣" intention="COMMIT" popup_label="፣" />
+            <label location="@id/label_bottom" value="፣" />
+        </softkey>
+        <softkey id="@id/softkey_bottom_comma_meetei_mayek" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="꫰" intention="COMMIT" popup_label="꫰" />
+            <label location="@id/label_bottom" value="꫰" />
+        </softkey>
+        <softkey id="@id/softkey_bottom_comma_myanmar" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="၊" intention="COMMIT" popup_label="၊" />
+            <label location="@id/label_bottom" value="၊" />
+        </softkey>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_comma_lisu" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="꓾" />
+        </softkey_list>
+        <softkey id="@id/softkey_bottom_comma_nko" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="߸" intention="COMMIT" popup_label="߸" />
+            <label location="@id/label_bottom" value="߸" />
+        </softkey>
+        <softkey id="@id/softkey_bottom_comma_philippine" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="᜵" intention="COMMIT" popup_label="᜵" />
+            <label location="@id/label_bottom" value="᜵" />
+        </softkey>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_danda" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="।" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_danda_saurashtra" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="꣎" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_ethiopic_wordspace" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="፡" long_press_data="፟ ፞ ፝" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_hebrew_geresh" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="׳" />
+        </softkey_list>
+        <softkey id="@id/softkey_bottom_hebrew_patah" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="ALPHABET" data="ַ" intention="COMMIT" popup_label="◌ַ" />
+            <label location="@id/label_bottom" value="◌ַ" />
+        </softkey>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_hyphen_thai" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="-" long_press_data="'" long_press_label="'" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period" param_layout="@layout/softkey_label_medium_bottom" param_keycode="PERIOD" param_data="." />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_armenian_phonetic" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="։" long_press_data=", ՞ ՜ . ՚ ՙ ? ! ՝ ՛ ֊ » « ՟ ; :" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_balinese" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="᭟" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_cham" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="꩞" long_press_data="꩝ ꩟ ꩜ , ? ! . # / ) ( ; ' @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_chinese" param_layout="@layout/softkey_label_medium_bottom" desc="@string/full_width_period_key_content_desc" param_keycode="PLAIN_TEXT" param_data="。" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_cree" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="᙮" long_press_data=", ? ! . ᐀ # ) ( / ; ' @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_ethiopic" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="።" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_gujarati" param_layout="@layout/softkey_label_medium_bottom" param_keycode="PERIOD" param_data="." long_press_data="઼ ઁ ં ઃ ઽ ૐ લૃ ।" long_press_label="઼ ઁ ં ઃ ઽ ૐ લૃ ।" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_lisu" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="꓿" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_meetei_mayek" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="꯫" long_press_data="꫱ ꫰ ꯭ ꯬ ꫲ ꫳ ꫴ ꫵ ꫶" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_myanmar" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="။" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_philippine" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="᜶" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_period_urdu" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="۔" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_semicolon" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data=";" long_press_data=": ·" long_press_label=": ·" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_shad_tibetan" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="།" long_press_data="༉ ༔ ༊ ༄ ༅ ༆ ༎ ༈ ༸ ༴ ༽ ༼ ཿ ༑ ࿑ ཾ ࿐" long_press_label="༉ ༔ ༊ ༄ ༅ ༆ ༎ ༈ ༸ ༴ ༽ ༼ ཿ ༑ ࿑ ཾ ࿐" />
+        </softkey_list>
+        <softkey id="@id/softkey_bottom_javanese_pada_lingsa" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="꧈" intention="COMMIT" popup_label="꧈" />
+            <label location="@id/label_bottom" value="꧈" />
+        </softkey>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_javanese_pada_lungsi" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="꧉" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_kayah_li_sign_shya" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="꤯" />
+        </softkey_list>
+        <softkey id="@id/softkey_tamil_sign_visarga" layout="@layout/softkey_label_medium_bottom" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+            <action type="PRESS" keycode="COMMA" data="ஃ" intention="COMMIT" popup_label="ஃ" />
+            <label location="@id/label_bottom" value="ஃ" />
+        </softkey>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_tsheg_tibetan" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="་" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_vai_syllable_lengthener" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="ꘌ" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_virama_gujarati" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="્" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation_bottom_popup_label_small" splitter=" ">
+            <softkey id="@id/softkey_bottom_yi_syllable_iteration_mark" param_layout="@layout/softkey_label_medium_bottom" param_keycode="ALPHABET" param_data="ꀕ" />
+        </softkey_list>
+        <softkey_template id="@+id/softkey_template_bottom_line_punctuation" layout="$param_layout$" multi_touch="false" popup_timing="@string/qwerty_popup_timing" content_description="$desc$">
+            <action type="PRESS" keycode="$param_keycode$" data="$param_data$" intention="COMMIT" popup_label="$param_data$" />
+            <action type="LONG_PRESS" data="$long_press_data$" keycode="$param_keycode$" intention="COMMIT" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLabelSmallLayout" />
+            <label location="@id/label" value="$param_data$" />
+        </softkey_template>
+        <softkey_list template_id="@id/softkey_template_bottom_line_punctuation" splitter=",">
+            <if language="zh-CN">
+                <softkey id="@id/softkey_bottom_com" long_press_data="@string/label_dot_com_long_press_zh_cn" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/softkey_label_tiny" />
+            </if>
+            <else_if language="zh-HK">
+                <softkey id="@id/softkey_bottom_com" long_press_data="@string/label_dot_com_long_press_zh_hk" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/softkey_label_tiny" />
+            </else_if>
+            <else_if language="zh-TW">
+                <softkey id="@id/softkey_bottom_com" long_press_data="@string/label_dot_com_long_press_zh_tw" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/softkey_label_tiny" />
+            </else_if>
+            <else_if language="ko">
+                <softkey id="@id/softkey_bottom_com" long_press_data="@string/label_dot_com_long_press_ko" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/softkey_label_tiny" />
+            </else_if>
+            <else>
+                <softkey id="@id/softkey_bottom_com" long_press_data="@string/label_dot_com_long_press" param_data=".com" param_keycode="PLAIN_TEXT" param_layout="@layout/softkey_label_tiny" />
+            </else>
+        </softkey_list>
+        <softkey_list splitter=",">
+            <softkey id="@id/softkey_bottom_comma_chinese_zhuyin" layout="@layout/softkey_label_medium_bottom_top_auto_centered" slide_sensitivity="NORMAL" popup_timing="@string/qwerty_popup_timing" multi_touch="false">
+                <action type="PRESS" keycode="PLAIN_TEXT" intention="COMMIT" data="，" popup_label="，" />
+                <action type="SLIDE_UP" keycode="PLAIN_TEXT" intention="COMMIT" data="。" popup_label="｡" />
+                <action type="LONG_PRESS" data="。,.,！,？,、,「,」,『,』,…,：,；,XD,:P,:D,:(,:),^_^" keycode="PLAIN_TEXT" intention="COMMIT" popup_label="。,.,！,？,、,「,」,『,』,…,：,；,XD,:P,:D,:(,:),^_^" popup_layout="@attr/PopupBubbleRectangularLabelSmallLayout" />
+                <label location="@id/label_bottom" value="，" />
+                <label location="@id/label_top" value="。" />
+            </softkey>
+        </softkey_list>
+    </softkeys>
+</framework>

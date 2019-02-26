@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping view_id="@id/key_pos_0_0" key_id="@id/softkey_morse_dot" />
+        <mapping view_id="@id/key_pos_0_1" key_id="@id/softkey_morse_dash" />
+        <mapping view_id="@id/key_pos_shift" key_id="@id/softkey_shift" />
+        <mapping view_id="@id/key_pos_morse_buffer" key_id="@id/softkey_morse_buffer" />
+    </key_mapping>
+    <key_mapping state="INPUT_TYPE_SHORT_MESSAGE+MANUAL_SHIFT">
+        <mapping view_id="@id/key_pos_ime_action" key_id="@id/softkey_enter_plain_text" />
+    </key_mapping>
+    <if enable_morse_hint="true">
+        <key_mapping state="MORE_CANDIDATES_SHOWN">
+            <mapping view_id="@id/key_pos_morse_hint_card" key_id="@id/softkey_morse_hint_card_displayed" />
+        </key_mapping>
+        <key_mapping>
+            <mapping view_id="@id/key_pos_morse_hint_card" key_id="@id/softkey_morse_hint_card" />
+        </key_mapping>
+    </if>
+    <merge_key_mapping>
+        <merge view_id="@id/key_pos_ime_action" key_id="@id/softkey_fragment_morse_enter" />
+        <merge view_id="@id/key_pos_space" key_id="@id/softkey_fragment_morse_space" />
+    </merge_key_mapping>
+</framework>

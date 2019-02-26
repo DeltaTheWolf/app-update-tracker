@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_cyrillic_small_letter_short_i" press_data="й" long_press_data="ꙟ,ј,ѷ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_short_i" press_data="Й" long_press_data="Ꙟ,Ј,Ѷ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_tse" press_data="ц" long_press_data="ꙡ,ⷰ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_tse" press_data="Ц" long_press_data="Ꙡ,ⷰ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_monograph_uk" press_data="ꙋ" long_press_data="у,оу,ⷹ,ꙷ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_monograph_uk" press_data="Ꙋ" long_press_data="У,Оу,ⷹ,ꙷ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_ka" press_data="к" long_press_data="ѯ,к҄,ⷦ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_ka" press_data="К" long_press_data="Ѯ,К҄,ⷦ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_ie" press_data="е" long_press_data="є,э,ѥ,ё,ⷷ,ꙴ,ꚟ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_ie" press_data="Е" long_press_data="Є,Э,Ѥ,Ё,ꚟ,ⷷ,ꙴ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_en" press_data="н" long_press_data="н҄,ⷩ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_en" press_data="Н" long_press_data="Н҄,ⷩ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_ghe" press_data="г" long_press_data="г҄,ґ,ⷢ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_ghe" press_data="Г" long_press_data="Г҄,Ґ,ⷢ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_sha" press_data="ш" long_press_data="ћ,ⷲ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_sha" press_data="Ш" long_press_data="Ћ,ⷲ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_shcha" press_data="щ" long_press_data="ⷳ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_shcha" press_data="Щ" long_press_data="ⷳ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_ze" press_data="з" long_press_data="ѕ,ꙁ,ꙃ,ꙅ,ⷥ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_ze" press_data="З" long_press_data="Ѕ,Ꙁ,Ꙃ,Ꙅ,ⷥ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_ha" press_data="х" long_press_data="һ,х҄,ⷯ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_ha" press_data="Х" long_press_data="Һ,Х҄,ⷯ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_hard_sign" press_data="ъ" long_press_data="ꙏ,ꙸ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_hard_sign" press_data="Ъ" long_press_data="Ꙏ,ꙸ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_ef" press_data="ф" long_press_data="ѳ,ⷴ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_ef" press_data="Ф" long_press_data="Ѳ,ⷴ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_yeru" press_data="ы" long_press_data="ꙹ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_yeru" press_data="Ы" long_press_data="ꙹ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_ve" press_data="в" long_press_data="в҄,ѵ,ⷡ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_ve" press_data="В" long_press_data="В҄,Ѵ,ⷡ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_a" press_data="а" long_press_data="ꙗ,ⷶ,ⷼ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_a" press_data="А" long_press_data="Ꙗ,ⷶ,ⷼ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_pe" press_data="п" long_press_data="ѱ,ⷫ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_pe" press_data="П" long_press_data="Ѱ,ⷫ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_er" press_data="р" long_press_data="р҄,ⷬ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_er" press_data="Р" long_press_data="Р҄,ⷬ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_o" press_data="о" long_press_data="ⷪ,ꙩ,ꙭ,ꙮ,ꚙ,ꚛ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_o" press_data="О" long_press_data="ⷪ,Ꙩ,Ꙭ,ꙮ,Ꚙ,Ꚛ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_el" press_data="л" long_press_data="л҄,ꙥ,љ,ⷧ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_el" press_data="Л" long_press_data="Л҄,Ꙥ,Љ,ⷧ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_de" press_data="д" long_press_data="д҄,ⷣ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_de" press_data="Д" long_press_data="Д҄,ⷣ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_zhe" press_data="ж" long_press_data="ꙉ,ђ,ⷤ,ⷸ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_zhe" press_data="Ж" long_press_data="Ꙉ,Ђ,ⷤ,ⷸ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_omega" press_data="ѡ" long_press_data="ꙍ,ѻ,ѿ,ѽ,ꙻ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_omega" press_data="Ѡ" long_press_data="Ꙍ,Ѻ,Ѿ,Ѽ,ꙻ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_little_yus" press_data="ѧ" long_press_data="я,ѣ,ѩ,ꙓ,ꙙ,ꙝ,ⷽ,ⷺ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_little_yus" press_data="Ѧ" long_press_data="Я,Ѣ,Ѩ,Ꙓ,Ꙙ,Ꙝ,ⷽ,ⷺ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_che" press_data="ч" long_press_data="ҁ,ⷱ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_che" press_data="Ч" long_press_data="Ҁ,ⷱ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_es" press_data="с" long_press_data="ⷭ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_es" press_data="С" long_press_data="ⷭ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_em" press_data="м" long_press_data="м҄,ꙧ,ⷨ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_em" press_data="М" long_press_data="М҄,Ꙧ,ⷨ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_i" press_data="и" long_press_data="і,ї,ꙵ,ꙶ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_i" press_data="И" long_press_data="І,Ї,ꙵ,ꙶ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_te" press_data="т" long_press_data="ⷮ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_te" press_data="Т" long_press_data="ⷮ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_soft_sign" press_data="ь" long_press_data="ꙏ,ꙺ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_soft_sign" press_data="Ь" long_press_data="Ꙏ,ꙺ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_be" press_data="б" long_press_data="б҄,ⷠ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_be" press_data="Б" long_press_data="Б҄,ⷠ" />
+            <softkey id="@id/softkey_cyrillic_small_letter_yu" press_data="ю" long_press_data="ѫ,ѭ,ꙕ,ꙛ,ⷻ,ⷾ,ⷿ" />
+            <softkey id="@id/softkey_cyrillic_capital_letter_yu" press_data="Ю" long_press_data="Ѫ,Ѭ,Ꙕ,Ꙛ,ⷻ,ⷾ,ⷿ" />
+        </softkey_list>
+    </softkeys>
+</framework>

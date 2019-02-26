@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:id="@id/settings_header_preferences" android:title="@string/setting_preferences" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
+        <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_preferences" />
+    </header>
+    <header android:id="@id/settings_header_languages" android:title="@string/setting_languages" android:fragment="com.google.android.apps.inputmethod.libs.languageselection.preference.LanguageSettingFragment">
+        <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_languages" />
+    </header>
+    <header android:id="@id/settings_header_theme" android:title="@string/setting_theme" android:fragment="com.google.android.apps.inputmethod.libs.theme.listing.ThemeListingFragment" />
+    <header android:id="@id/settings_header_correction" android:title="@string/setting_correction" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
+        <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_correction" />
+    </header>
+    <header android:id="@id/settings_header_gesture" android:title="@string/setting_gesture" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
+        <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_gesture" />
+    </header>
+    <header android:id="@id/settings_header_unified_ime" android:title="@string/setting_voice_typing" android:fragment="com.google.android.apps.inputmethod.latin.preference.UnifiedImeSettingsFragment" />
+    <header android:id="@id/settings_header_dictionary" android:title="@string/setting_dictionary" android:fragment="com.google.android.apps.inputmethod.latin.preference.LatinDictionarySettingsFragment">
+        <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_dictionary" />
+    </header>
+    <header android:id="@id/settings_header_search" android:title="@string/setting_search" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
+        <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_search" />
+    </header>
+    <header android:id="@id/settings_header_advanced" android:title="@string/setting_advanced" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
+        <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_advanced" />
+    </header>
+    <header android:id="@id/settings_header_rate_us" android:title="@string/setting_rate_us" />
+</preference-headers>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard id="@id/keyboard_search" remember_recent_key="ALL_ACTIONS" recent_key_type="smiley" recent_key_layout="@layout/softkey_label_emoji_for_search" class="com.google.android.apps.inputmethod.libs.search.emoji.SearchKeyboardEmojiSpecializer">
+        <view layout="@layout/emoji_keyboard_search_header" scalable="false" direction="locale" type="header">
+            <softkeys href="@xml/softkeys_search_header" />
+            <include href="@xml/keymapping_search_header_gif_and_emoji" />
+        </view>
+        <view layout="@layout/popup_view_app_overlay" id="@id/popup_view_app_overlay" />
+    </keyboard>
+</framework>

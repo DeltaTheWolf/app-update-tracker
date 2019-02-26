@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_quot" press_data="&quot;" long_press_data="!,'" />
+            <softkey id="@id/softkey_solidus" press_data="/" />
+            <softkey id="@id/softkey_commercial_at" press_data="\@" />
+            <softkey id="@id/softkey_apostrophe" press_data="'" long_press_data="!,&quot;" />
+            <softkey id="@id/softkey_gt" press_data=">" long_press_data="." />
+            <softkey id="@id/softkey_full_stop" press_data="." long_press_data=">" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_lower_comma" press_data="," long_press_data="\? &lt;" />
+            <softkey id="@id/softkey_lt" press_data="&lt;" long_press_data="\? ," />
+        </softkey_list>
+    </softkeys>
+</framework>

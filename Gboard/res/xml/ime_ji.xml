@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_yiddish" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="ji" auto_capital="false" display_app_completions="true" announce_auto_selected_candidate="true">
+        <if number_row="false">
+            <keyboard_group variant="yiddish" variant_label="@string/variant_yiddish">
+                <keyboard type="prime" def="@xml/keyboard_ji" />
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </if>
+        <else>
+            <keyboard_group variant="yiddish" variant_label="@string/variant_yiddish" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
+                <keyboard type="prime" def="@xml/keyboard_ji">
+                    <merge def="@xml/keyboard_latin_fragment_numbers_10_10_10_10_no_shift" />
+                </keyboard>
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </else>
+    </ime>
+</framework>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard class="com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchResultKeyboard" id="@id/keyboard_emoji" remember_recent_key="ALL_ACTIONS" recent_key_type="smiley" recent_key_layout="@layout/softkey_label_emoji_for_search">
+        <view layout="@layout/keyboard_search_result_header_no_theme" scalable="false" direction="locale" type="header">
+            <softkeys href="@xml/softkeys_search_header" />
+            <softkeys href="@xml/softkeys_emoji_header" />
+            <include href="@xml/keymapping_emoji_query_search_result_header" />
+            <include href="@xml/keymapping_emoji_search_result_header" />
+        </view>
+        <view layout="@layout/keyboard_emoji_search_body" type="body">
+            <softkeys href="@xml/softkeys_function" />
+            <softkeys href="@xml/softkeys_non_prime_smiley_sub_category" />
+            <include href="@xml/keymapping_header_smiley" />
+            <softkeys href="@xml/softkeys_gif" />
+            <include href="@xml/keymapping_bottom_smiley_with_gif" />
+            <softkeys href="@xml/softkeys_card_viewer_bottom" />
+            <include href="@xml/keymapping_card_viewer_bottom_in_extension" />
+            <softkeys href="@xml/softkeys_back_to_prime_language_specific" />
+            <include href="@xml/keymapping_fragment_back_to_prime_language_specific" />
+        </view>
+    </keyboard>
+</framework>

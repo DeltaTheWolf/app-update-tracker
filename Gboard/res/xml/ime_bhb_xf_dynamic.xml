@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_bhili_gujarati_dynamic" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="bhb-XF" use_ascii_password_keyboard="true" auto_capital="false" display_app_completions="true" announce_auto_selected_candidate="true">
+        <keyboard_group variant="bhili" variant_label="@string/variant_bhili" layout_theme="@style/KeyboardLayoutTheme.5LetterRows">
+            <keyboard type="prime" def="@xml/keyboard_bhb_xf_dynamic" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+    </ime>
+</framework>

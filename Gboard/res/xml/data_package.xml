@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <data_package package_id="60FA3283-7560-4962-BA8A-029C63305568" version="24.0.0" consumers="mozc" update_checker="com.google.android.apps.inputmethod.libs.dataservice.download.OmahaCheckUpdateTask">
+        <extra_values>
+            <item id="@id/extra_omaha_client_id" value="@string/japanese_omaha_client_id" />
+        </extra_values>
+    </data_package>
+    <data_package package_id="5D1E452C-0442-4410-BEC8-716768C8B351" version="24.0.0" consumers="mozc" update_checker="com.google.android.apps.inputmethod.libs.dataservice.download.OmahaCheckUpdateTask" always_allow_metered_network="true" always_allow_download_with_battery="true">
+        <extra_values>
+            <item id="@id/extra_omaha_client_id" value="@string/japanese_omaha_client_id" />
+            <item id="@id/extra_omaha_is_foreground" value="true" />
+        </extra_values>
+    </data_package>
+</framework>

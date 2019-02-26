@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="dummy_hard" class="com.google.android.apps.inputmethod.libs.framework.core.DummyIme" language="en" prime_keyboard_type="HARD_QWERTY" announce_auto_selected_candidate="true">
+        <keyboard_group>
+            <keyboard type="prime" def="@xml/keyboard_dummy" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+    </ime>
+</framework>

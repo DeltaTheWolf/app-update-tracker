@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.apps.inputmethod.libs.voiceime.VoiceAccountPreference android:layout="@layout/setting_language_preference_layout" android:key="@string/setting_account_list_key" android:widgetLayout="@layout/setting_account_list" />
+</PreferenceScreen>

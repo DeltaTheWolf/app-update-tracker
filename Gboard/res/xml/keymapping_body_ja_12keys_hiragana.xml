@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping view_id="@id/key_pos_ja_12keys_key_0" key_id="@id/softkey_ja_12keys_hiragana_a_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_1" key_id="@id/softkey_ja_12keys_hiragana_ka_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_2" key_id="@id/softkey_ja_12keys_hiragana_sa_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_3" key_id="@id/softkey_ja_12keys_hiragana_ta_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_4" key_id="@id/softkey_ja_12keys_hiragana_na_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_5" key_id="@id/softkey_ja_12keys_hiragana_ha_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_6" key_id="@id/softkey_ja_12keys_hiragana_ma_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_7" key_id="@id/softkey_ja_12keys_hiragana_ya_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_8" key_id="@id/softkey_ja_12keys_hiragana_ra_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_9" key_id="@id/softkey_ja_daisyou" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_10" key_id="@id/softkey_ja_12keys_hiragana_wa_nosupport" />
+        <mapping view_id="@id/key_pos_ja_12keys_key_11" key_id="@id/softkey_ja_12keys_hiragana_touten" />
+        <mapping view_id="@id/key_pos_switch_hiragana_alphabet" key_id="@id/softkey_switch_to_alphabet" />
+    </key_mapping>
+    <key_mapping state="SHOW_LANGUAGE_SWITCH_KEY">
+        <mapping view_id="@id/key_pos_ja_12keys_key_9" key_id="@id/softkey_ja_switch_to_next_language" />
+    </key_mapping>
+    <key_mapping state="COMPOSING">
+        <mapping view_id="@id/key_pos_ja_12keys_key_9" key_id="@id/softkey_ja_daisyou" />
+    </key_mapping>
+</framework>

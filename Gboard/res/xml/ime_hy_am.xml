@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_armenian_armenia_phonetic" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="hy-AM" auto_capital="true" display_app_completions="true" announce_auto_selected_candidate="true">
+        <keyboard_group variant="armenian_armenia_phonetic" variant_label="@string/variant_armenian_armenia_phonetic" layout_theme="@style/KeyboardLayoutTheme.4LetterRows">
+            <keyboard type="prime" def="@xml/keyboard_hy_am" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+        <extra_values>
+            <item id="@id/extra_value_double_space_to_period_replacement" value="։ " />
+        </extra_values>
+    </ime>
+</framework>

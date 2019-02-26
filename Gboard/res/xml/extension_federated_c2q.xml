@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module class="com.google.android.apps.inputmethod.libs.search.federatedc2q.FederatedC2QExtension" start_strategy="AUTO_ASYNC_BACKGROUND">
+        <initialization_deps>
+            <components value="GIMS_UserUnlockedAndKeyboardShown,UserSetupComplete" />
+            <min_api_level value="@integer/federatedc2q_extension_min_api_level" />
+        </initialization_deps>
+    </module>
+</framework>

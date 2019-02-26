@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkeys_input_zh_tw_zhuyin_template" />
+    <softkeys>
+        <softkey_list template_id="@id/softkey_template_zhuyin_qwerty" splitter=" ">
+            <softkey id="@id/softkey_zhuyin_b" keycode_normal="KEYCODE_1" press_label="ㄅ" press_data="1" long_press_data="ㄅ 1 !" desc="@string/zhuyin_b_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_p" keycode_normal="Q" press_label="ㄆ" press_data="q" long_press_data="ㄆ q Q" desc="@string/zhuyin_p_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_m" keycode_normal="A" press_label="ㄇ" press_data="a" long_press_data="ㄇ a A" desc="@string/zhuyin_m_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_f" keycode_normal="Z" press_label="ㄈ" press_data="z" long_press_data="ㄈ z Z" desc="@string/zhuyin_f_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_d" keycode_normal="KEYCODE_2" press_label="ㄉ" slideup_data="\@" press_data="2" long_press_data="ㄉ 2 @" desc="@string/zhuyin_d_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_t" keycode_normal="W" press_label="ㄊ" press_data="w" long_press_data="ㄊ w W" desc="@string/zhuyin_t_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_n" keycode_normal="S" press_label="ㄋ" press_data="s" long_press_data="ㄋ s S" desc="@string/zhuyin_n_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_l" keycode_normal="X" press_label="ㄌ" press_data="x" long_press_data="ㄌ x X" desc="@string/zhuyin_l_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_g" keycode_normal="E" press_label="ㄍ" press_data="e" long_press_data="ㄍ e E" desc="@string/zhuyin_g_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_k" keycode_normal="D" press_label="ㄎ" press_data="d" long_press_data="ㄎ d D" desc="@string/zhuyin_k_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_h" keycode_normal="C" press_label="ㄏ" press_data="c" long_press_data="ㄏ c C" desc="@string/zhuyin_h_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_j" keycode_normal="R" press_label="ㄐ" press_data="r" long_press_data="ㄐ r R" desc="@string/zhuyin_j_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_q" keycode_normal="F" press_label="ㄑ" press_data="f" long_press_data="ㄑ f F" desc="@string/zhuyin_q_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_x" keycode_normal="V" press_label="ㄒ" press_data="v" long_press_data="ㄒ v V" desc="@string/zhuyin_x_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_zh" keycode_normal="KEYCODE_5" press_label="ㄓ" press_data="5" long_press_data="ㄓ 5 %" desc="@string/zhuyin_zh_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_ch" keycode_normal="T" press_label="ㄔ" press_data="t" long_press_data="ㄔ t T" desc="@string/zhuyin_ch_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_sh" keycode_normal="G" press_label="ㄕ" press_data="g" long_press_data="ㄕ g G" desc="@string/zhuyin_sh_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_r" keycode_normal="B" press_label="ㄖ" press_data="b" long_press_data="ㄖ b B" desc="@string/zhuyin_r_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_z" keycode_normal="Y" press_label="ㄗ" press_data="y" long_press_data="ㄗ y Y" desc="@string/zhuyin_z_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_c" keycode_normal="H" press_label="ㄘ" press_data="h" long_press_data="ㄘ h H" desc="@string/zhuyin_c_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_s" keycode_normal="N" press_label="ㄙ" press_data="n" long_press_data="ㄙ n N" desc="@string/zhuyin_s_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_i" keycode_normal="U" press_label="ㄧ" press_data="u" long_press_data="ㄧ u U" desc="@string/zhuyin_i_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_u" keycode_normal="J" press_label="ㄨ" press_data="j" long_press_data="ㄨ j J" desc="@string/zhuyin_u_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_yu" keycode_normal="M" press_label="ㄩ" press_data="m" long_press_data="ㄩ m M" desc="@string/zhuyin_yu_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_a" keycode_normal="KEYCODE_8" press_label="ㄚ" press_data="8" long_press_data="ㄚ 8 *" desc="@string/zhuyin_a_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_o" keycode_normal="I" press_label="ㄛ" press_data="i" long_press_data="ㄛ i I" desc="@string/zhuyin_o_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_e" keycode_normal="K" press_label="ㄜ" press_data="k" long_press_data="ㄜ k K" desc="@string/zhuyin_e_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_ai" keycode_normal="KEYCODE_9" press_label="ㄞ" press_data="9" long_press_data="ㄞ 9 (" desc="@string/zhuyin_ai_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_ei" keycode_normal="O" press_label="ㄟ" press_data="o" long_press_data="ㄟ o O" desc="@string/zhuyin_ei_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_ao" keycode_normal="L" press_label="ㄠ" press_data="l" long_press_data="ㄠ l L" desc="@string/zhuyin_ao_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_an" keycode_normal="KEYCODE_0" press_label="ㄢ" press_data="0" long_press_data="ㄢ 0 )" desc="@string/zhuyin_an_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_en" keycode_normal="P" press_label="ㄣ" press_data="p" long_press_data="ㄣ p P" desc="@string/zhuyin_en_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_tone2" keycode_normal="KEYCODE_6" press_label="ˊ" press_data="6" long_press_data="ˊ 6 ^" desc="@string/zhuyin_tone2_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_tone3" keycode_normal="KEYCODE_3" press_label="ˇ" slideup_data="\#" press_data="3" long_press_data="ˇ 3 #" desc="@string/zhuyin_tone3_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_tone4" keycode_normal="KEYCODE_4" press_label="ˋ" press_data="4" long_press_data="ˋ 4 $" desc="@string/zhuyin_tone4_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_tone5" keycode_normal="KEYCODE_7" press_label="˙" slideup_data="&amp;" press_data="7" long_press_data="· 7 &amp;" desc="@string/zhuyin_tone5_key_content_desc" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_zhuyin_qwerty_2" splitter=" ">
+            <softkey id="@id/softkey_zhuyin_ie" keycode_normal="COMMA" press_label="ㄝ" press_data="," label_header="…" long_press_data="ㄝ …" desc="@string/zhuyin_ie_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_ou" keycode_normal="PERIOD" press_label="ㄡ" press_data="." label_header="！" long_press_data="ㄡ ！" desc="@string/zhuyin_ou_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_ang" keycode_normal="SEMICOLON" press_label="ㄤ" press_data=";" label_header="：" long_press_data="ㄤ ：" desc="@string/zhuyin_ang_key_content_desc" />
+            <softkey id="@id/softkey_zhuyin_eng" keycode_normal="SLASH" press_label="ㄥ" press_data="/" label_header="？" long_press_data="ㄥ ？" desc="@string/zhuyin_eng_key_content_desc" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_zhuyin_qwerty_3">
+            <softkey id="@id/softkey_zhuyin_er" keycode_normal="MINUS" press_label="ㄦ" press_data="-" long_press_data="ㄦ" desc="@string/zhuyin_er_key_content_desc" />
+        </softkey_list>
+        <softkey id="@id/softkey_zhuyin_tone1" layout="@layout/softkey_space_label_grey" content_description="@string/zhuyin_tone1_key_content_desc">
+            <action type="PRESS" keycode="SPACE" data="ˉ" intention="DECODE" />
+            <label location="@id/label" value="ˉ" />
+        </softkey>
+        <softkey id="@id/softkey_zhuyin_space" layout="@layout/softkey_space_label_grey" long_press_delay="300" content_description="@string/space_key_content_desc">
+            <action type="PRESS" keycode="SPACE" data=" " />
+            <action type="LONG_PRESS" keycode="SHOW_SYSTEM_IME_PICKER" action_on_down="true" />
+            <label location="@id/label" value="@string/label_space_zhuyin" />
+        </softkey>
+    </softkeys>
+</framework>

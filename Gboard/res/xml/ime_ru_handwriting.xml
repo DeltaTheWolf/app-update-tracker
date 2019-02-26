@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_ru_handwriting" class="com.google.android.apps.inputmethod.libs.handwriting.ime.HandwritingIme" language="ru" auto_capital="false" always_show_suggestions="true" display_app_completions="true" use_ascii_password_keyboard="true">
+        <keyboard_group variant="handwriting" variant_label="@string/variant_handwriting">
+            <keyboard type="prime" def="@xml/keyboard_handwriting" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+    </ime>
+</framework>

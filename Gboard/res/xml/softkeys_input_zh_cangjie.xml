@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_template id="@+id/softkey_template_cangjie" layout="@layout/softkey_cangjie_label_character_label_header" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false">
+            <action type="PRESS" data="$press_data$" keycode="$keycode_normal$" intention="DECODE" popup_label="$label$" />
+            <action type="LONG_PRESS" data="$press_data$" keycode="PLAIN_TEXT" intention="COMMIT" merge_insertion_index="$merge_index=0$" popup_label="$press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+            <label location="@id/label" value="$label$" />
+            <label location="@id/label_header" value="$press_data$" />
+        </softkey_template>
+        <softkey_list template_id="@id/softkey_template_cangjie" splitter=",">
+            <softkey id="@id/softkey_latin_small_letter_q" label="手" press_data="q" keycode_normal="Q" />
+            <softkey id="@id/softkey_latin_small_letter_w" label="田" press_data="w" keycode_normal="W" />
+            <softkey id="@id/softkey_latin_small_letter_e" label="水" press_data="e" keycode_normal="E" />
+            <softkey id="@id/softkey_latin_small_letter_r" label="口" press_data="r" keycode_normal="R" />
+            <softkey id="@id/softkey_latin_small_letter_t" label="廿" press_data="t" keycode_normal="T" />
+            <softkey id="@id/softkey_latin_small_letter_y" label="卜" press_data="y" keycode_normal="Y" />
+            <softkey id="@id/softkey_latin_small_letter_u" label="山" press_data="u" keycode_normal="U" />
+            <softkey id="@id/softkey_latin_small_letter_i" label="戈" press_data="i" keycode_normal="I" />
+            <softkey id="@id/softkey_latin_small_letter_o" label="人" press_data="o" keycode_normal="O" />
+            <softkey id="@id/softkey_latin_small_letter_p" label="心" press_data="p" keycode_normal="P" />
+            <softkey id="@id/softkey_latin_small_letter_a" label="日" press_data="a" keycode_normal="A" />
+            <softkey id="@id/softkey_latin_small_letter_s" label="尸" press_data="s" keycode_normal="S" />
+            <softkey id="@id/softkey_latin_small_letter_d" label="木" press_data="d" keycode_normal="D" />
+            <softkey id="@id/softkey_latin_small_letter_f" label="火" press_data="f" keycode_normal="F" />
+            <softkey id="@id/softkey_latin_small_letter_g" label="土" press_data="g" keycode_normal="G" />
+            <softkey id="@id/softkey_latin_small_letter_h" label="竹" press_data="h" keycode_normal="H" />
+            <softkey id="@id/softkey_latin_small_letter_j" label="十" press_data="j" keycode_normal="J" />
+            <softkey id="@id/softkey_latin_small_letter_k" label="大" press_data="k" keycode_normal="K" />
+            <softkey id="@id/softkey_latin_small_letter_l" label="中" press_data="l" keycode_normal="L" />
+            <softkey id="@id/softkey_latin_small_letter_z" label="重" press_data="z" keycode_normal="Z" />
+            <softkey id="@id/softkey_latin_small_letter_x" label="難" press_data="x" keycode_normal="X" />
+            <softkey id="@id/softkey_latin_small_letter_c" label="金" press_data="c" keycode_normal="C" />
+            <softkey id="@id/softkey_latin_small_letter_v" label="女" press_data="v" keycode_normal="V" />
+            <softkey id="@id/softkey_latin_small_letter_b" label="月" press_data="b" keycode_normal="B" />
+            <softkey id="@id/softkey_latin_small_letter_n" label="弓" press_data="n" keycode_normal="N" />
+            <softkey id="@id/softkey_latin_small_letter_m" label="一" press_data="m" keycode_normal="M" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_latin_capital_letter_q" press_data="Q" long_press_data="q" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_w" press_data="W" long_press_data="w" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_e" press_data="E" long_press_data="e" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_r" press_data="R" long_press_data="r" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_t" press_data="T" long_press_data="t" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_y" press_data="Y" long_press_data="y" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_u" press_data="U" long_press_data="u" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_i" press_data="I" long_press_data="i" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_o" press_data="O" long_press_data="o" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_p" press_data="P" long_press_data="p" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_a" press_data="A" long_press_data="a" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_s" press_data="S" long_press_data="s" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_d" press_data="D" long_press_data="d" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_f" press_data="F" long_press_data="f" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_g" press_data="G" long_press_data="g" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_h" press_data="H" long_press_data="h" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_j" press_data="J" long_press_data="j" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_k" press_data="K" long_press_data="k" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_l" press_data="L" long_press_data="l" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_z" press_data="Z" long_press_data="z" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_x" press_data="X" long_press_data="x" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_c" press_data="C" long_press_data="c" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_v" press_data="V" long_press_data="v" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_b" press_data="B" long_press_data="b" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_n" press_data="N" long_press_data="n" long_press_intention="C" />
+            <softkey id="@id/softkey_latin_capital_letter_m" press_data="M" long_press_data="m" long_press_intention="C" />
+        </softkey_list>
+    </softkeys>
+</framework>

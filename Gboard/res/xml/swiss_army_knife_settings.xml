@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/swiss_army_knife_setting_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:persistent="true" android:title="@string/setting_include_lstm_internal_state_title" android:key="@string/pref_key_include_lstm_internal_state" android:summary="@string/setting_include_lstm_internal_state_summary" />
+    <SwitchPreference android:persistent="true" android:title="@string/setting_include_notification_smart_reply_internal_state_title" android:key="@string/pref_key_include_notification_smart_reply_internal_state" android:summary="@string/setting_include_notification_smart_reply_internal_state_summary" />
+    <SwitchPreference android:persistent="true" android:title="@string/setting_cache_uime_voice_data_title" android:key="@string/pref_key_cache_uime_voice_data" android:summary="@string/setting_cache_uime_voice_data_summary" />
+</PreferenceScreen>

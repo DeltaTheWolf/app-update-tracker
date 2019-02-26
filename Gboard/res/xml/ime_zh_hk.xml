@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_zh_hk" class="com.google.android.apps.inputmethod.libs.chinese.ime.AsyncChineseProcessorBasedIme" language="zh-HK" use_ascii_password_keyboard="true" inline_composing="false" always_show_suggestions="true" display_app_completions="true" announce_auto_selected_candidate="true" language_specific_settings="@xml/zh_hk_language_settings" secondary_ime_def="@xml/ime_zh_hk_pinyin_hard_qwerty">
+        <if number_row="false">
+            <keyboard_group variant="qwerty" variant_label="@string/variant_jyutping" layout_specific_settings="@xml/zh_hk_pinyin_layout_settings">
+                <keyboard type="prime" def="@xml/keyboard_fragment_zh_pinyin">
+                    <merge def="@xml/keyboard_chinese_pinyin_qwerty" />
+                    <merge def="@xml/keyboard_function_zh_pinyin" />
+                </keyboard>
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </if>
+        <else>
+            <keyboard_group variant="qwerty" variant_label="@string/variant_jyutping" layout_specific_settings="@xml/zh_hk_pinyin_layout_settings" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
+                <keyboard type="prime" def="@xml/keyboard_fragment_zh_pinyin">
+                    <merge def="@xml/keyboard_chinese_pinyin_qwerty" />
+                    <merge def="@xml/keyboard_function_zh_pinyin" />
+                    <merge def="@xml/keyboard_latin_fragment_numbers_10_10_9_9_zh" />
+                </keyboard>
+                <include href="@xml/keyboards_non_prime_latin" />
+            </keyboard_group>
+        </else>
+        <extra_values>
+            <item id="@id/extra_value_has_more_candidates_view" value="true" />
+            <item id="@id/extra_value_enter_commit_composing_text" value="true" />
+            <item id="@id/extra_value_period" value="。" />
+            <item id="@id/extra_value_metrics_processors" value="hmm" />
+        </extra_values>
+        <include href="@xml/processors_zh_hk_pinyin_qwerty" />
+    </ime>
+</framework>

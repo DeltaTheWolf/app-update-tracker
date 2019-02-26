@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_konkani_devanagari_dynamic" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="kok-XD" use_ascii_password_keyboard="true" auto_capital="false" display_app_completions="true" announce_auto_selected_candidate="true">
+        <keyboard_group variant="konkani_devanagari" variant_label="@string/variant_konkani" layout_theme="@style/KeyboardLayoutTheme.5LetterRows">
+            <keyboard type="prime" def="@xml/keyboard_kok_xd_dynamic" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+        <extra_values>
+            <item id="@id/extra_value_double_space_to_period_replacement" value="। " />
+        </extra_values>
+    </ime>
+</framework>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module id="@string/id_access_point_gif_search" class="com.google.android.apps.inputmethod.libs.search.gif.GifExtensionImpl" label="@string/label_access_point_gif" icon="@attr/IconTabGif" access_point_enabled="@bool/enable_gif_access_point" access_point_locales="@string/enabled_gif_access_point_locales" content_description="@string/gif_keyboard_key_content_desc">
+        <initialization_deps>
+            <components value="GIMS_UserUnlocked,UserSetupComplete,UnicodeIme" />
+        </initialization_deps>
+        <keyboard_types>
+            <keyboard type="@string/keyboard_type_gif_search_result" />
+        </keyboard_types>
+        <extra_values>
+            <item id="@id/extra_value_default_query" value="gif_keyboard_default_candidates" />
+            <item id="@id/extra_value_default_keyboard" value="@string/keyboard_type_gif_search_result" />
+            <item id="@id/extra_value_default_keyboard_in_access_points" value="@string/keyboard_type_gif_search_result" />
+            <item id="@id/extra_value_is_expression_extension" value="true" />
+        </extra_values>
+    </module>
+</framework>

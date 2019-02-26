@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_danda_popup" long_press_data=", . ? ! ॥ # ) ( / ' @ : ; - &quot; +" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_danda_popup_saurashtra" long_press_data=", . ? ! ꣏ # ) ( / ' @ : ; - &quot; +" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_danda_popup_syloti_nagri" long_press_data=", . ? ! ॥ # / ( ) ' @ : ; - &quot; + &amp; ꠨ ꠩ ꠪ ꠫" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_hebrew_patah_popup" long_press_data="ֶ ָ ֵ ֿ ִ ּ ֱ ֳ ְ ֲ ֹ ֻ" long_press_label="◌ֶ ◌ָ ◌ֵ ◌ֿ ◌ִ ◌ּ ◌ֱ ◌ֳ ◌ְ ◌ֲ ◌ֹ ◌ֻ" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_hebrew_geresh_translit_popup" long_press_data="״ ־ ׃ ׀" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_auto_centered_small" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_javanese_pada_lungsi_popup" long_press_data="! ? ꧍ ꧌ ꧇ - / @ ꧊ ꧋ ) ( ' &quot; , ." long_press_label="! ? ꧍ ꧌ ꧇ - / @ ꧊ ꧋ ) ( ' &quot; , ." />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_kayah_li_sign_shya_popup" long_press_data=", . ? ! ꤮ # ) ( / ' @ : ; - &quot; +" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_adlam" long_press_data="⹁ U+1E95F ؟ U+1E95E ! ' # ( ) / ⁏ @ : - &quot; + % &amp;" long_press_label="⹁ U+1E95F ؟ U+1E95E ! ' # ) ( / ⁏ @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_arabic" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,ً,ّ,ٌ,ٍ,ْ,ٔ,ٕ,َ,ـ,ُ,ِ,ٓ,ٰ,ٖ" long_press_label="؟,!,ً◌,ّ◌,ٌ◌,ٍ◌,ْ◌,ٔ◌,ٕ◌,َ◌,ــ,ُ◌,ِ◌,ٓ◌,ٰ◌,ٖ◌" hint_label="ً◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_arabic_translit" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="، ؟ ! # ) ( / ؛ ' @ : - &quot; + ٪ &amp;" long_press_label="، ؟ ! # ( ) / ؛ ' @ : - &quot; + ٪ &amp;" hint_label="؟" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_balinese" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="᭝,᭟,᭞,᭟᭜᭟,᭚,!,?,;" hint_label="᭝" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_batak" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; + % &amp; ᯲ ᯼ ᯽ ᯾ ᯿" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_catalan" long_press_data=", ? ! · # ) ( / ' @ : ; - &quot; + &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_chinese" long_press_data="… ？ ！ 、 ： ； _ % $ ^ &amp; :P :D :( :) ^_^" long_press_intention="COMMIT" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_church_slavonic" param_layout="@layout/softkey_label_medium_bottom" long_press_data=", ? ! ) ( # ' &quot; : ჻ · • ʼ ⸴ ; ⁞ ⁝ ⁖ ⸫ ⸪ ⁘ ⸬ ⁙ ⸭ ⁓ ∼ ∽ ∻ ≁ ※ ⁜ †" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_coptic" param_layout="@layout/softkey_label_medium_bottom" long_press_data=", ? ! ; # ) ( / ⸳ · ⳾ : ⁖ ⁘ ⁙ † ' &quot; ⸗ ~ — - + &amp; ⳼ ⸴ ⳻ ⳿ ⳺ ⳹ @ %" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_ethiopic" param_layout="@layout/softkey_label_medium_bottom" long_press_data="፥ ፦ ፤ ፡ , ? ! ) # ( / ; ' @ : - &quot; + % &amp; *" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_ethiopic_legacy" param_layout="@layout/softkey_label_medium_bottom" long_press_data="፤ ፥ ፦ ፧ ፨ ፠ , ? ! # ) ( / ; ' @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_hani" long_press_data=", ? ! # ) ( / ; ` @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_hebrew" long_press_data=", ? ! # ( ) / ; ' @ : - &quot; + % &amp;" long_press_label=", ? ! # ) ( / ; ' @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_kalam_kohistani" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,ِ,ّ,ُ,ٔ,ٓ,َ,ً,ٰ,ْ,ـ,ٞ,ٛ" long_press_label="؟,!,ِ◌,ّ◌,ُ◌,ٔ◌,ٓ◌,َ◌,ً◌,ٰ◌,ْ◌,ــ,ٞ◌,ٛ◌" hint_label="ِ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_kashmiri" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,ُ,ٗ,ِ,ٕ,ٔ,ٛ,ٚ,ٰ,ٖ,َ,ٓ,ْ,ً,ـ" long_press_label="؟,!,ُ◌,ٗ◌,ِ◌,ٕ◌,ٔ◌,ٛ◌,ٚ◌,ٰ◌,ٖ◌,َ◌,ٓ◌,ْ◌,ً◌,ــ" hint_label="ُ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_khorasani_turkic" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,َ,ُ,ِ,ْ,ٚ,ٓ,ٕ,ٔ,ٰ,ٖ,ً,ـ" long_press_label="؟,!,َ◌,ُ◌,ِ◌,ْ◌,ٚ◌,ٓ◌,ٕ◌,ٔ◌,ٰ◌,ٖ◌,ً◌,ــ" hint_label="ُ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_luri" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,ٙ,ٛ,َ,ُ,ِ,ْ,ً,ٌ,ٍ,ٔ,ّ,ٰ,ٓ,ـ" long_press_label="؟,!,ٙ◌,ٛ◌,َ◌,ُ◌,ِ◌,ْ◌,ً◌,ٌ◌,ٍ◌,ٔ◌,ّ◌,ٰ◌,ٓ◌,ــ" hint_label="ُ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_nko" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,߹,߸,ߑ,ߺ,ߴ,߯,߫,߲,߳,߭,߱,߮,ߵ,߰,߬" long_press_label="؟,߹,߸,ߑ,ߺ,ߴ,߯,߫,߲,߳,߭,߱,߮,ߵ,߰,߬" hint_label="؟" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_santali_ol_chiki" long_press_data="!,?,;,:,',&quot;,@,+,ᱹ,ᱻ,ᱸ,ᱺ,᱾,᱿,ᱽ,ᱼ" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_pashto" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,َ,ُ,ْ,ِ,ّ,ً,ٍ,ٌ,ٰ,ٔ,ٕ,ٙ,ـ,ٓ" long_press_label="؟,!,َ◌,ُ◌,ْ◌,ِ◌,ّ◌,ً◌,ٍ◌,ٌ◌,ٰ◌,ٔ◌,ٕ◌,ٙ◌,ــ,ٓ◌" hint_label="َ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_rejang" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; % &amp; ꥟" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_shina" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,،,َ,ُ,ْ,ِ,ّ,ً,ٍ,ٌ,ٰ,ٔ,ٕ,ٙ,ٓ,ۡ,٘,ٜ,ٞ,ـ" long_press_label="؟,!,،,َ◌,ُ◌,ْ◌,ِ◌,ّ◌,ً◌,ٍ◌,ٌ◌,ٰ◌,ٔ◌,ٕ◌,ٙ◌,ٓ◌,ۡ◌,٘◌,ٜ◌,ٞ,ـ" hint_label="َ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_spanish" long_press_data=", ? ! # ) ( / ; ' ¿ ¡ - &quot; @ &amp; :" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_sundanese" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; + % &amp; ᳀ ᳁ ᳂ ᳃ ᳄ ᳅ ᳆ ᳇" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_syriac" long_press_data="؟,!,܀,܁,܂,܃,܄,܅,܆,܇,܈,܉,܊,܋,܌,܍,݃,݄,݉,݊,ـ" long_press_label="؟,!,܀,܁,܂,܃,܄,܅,܆,܇,܈,܉,܊,܋,܌,܍,݃◌,݄◌,݉◌,݊◌,ـ" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_tai_viet" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; + % &amp; ꫞ ꫟" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_urdu" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,ِ,ّ,ُ,ٗ,ٔ,ٓ,َ,ً,ٰ,ٖ,ْ,ـ,٘,ٕ,ٌ,ٍ" long_press_label="؟,!,ِ◌,ّ◌,ُ◌,ٗ◌,ٔ◌,ٓ◌,َ◌,ً◌,ٰ◌,ٖ◌,ْ◌,ــ,٘◌,ٕ◌,ٌ◌,ٍ◌" hint_label="ِ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_vai" long_press_data=", ? ! ꘍ ꘎ ꘏ ) # ( / ' @ : ; - &quot; + &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_with_danda" long_press_data=", ? ! । # ) ( / ' @ : ॥ - &quot; + &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_with_okina" long_press_data=", ? ! ʻ # ) ( / ' @ : * - &quot; + &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=",">
+            <if language="zh-CN">
+                <softkey id="@id/softkey_fragment_bottom_period_popup_dot_com" long_press_data="@string/label_sentence_with_dot_com_long_press_zh_cn" long_press_intention="COMMIT" />
+            </if>
+            <else_if language="zh-HK">
+                <softkey id="@id/softkey_fragment_bottom_period_popup_dot_com" long_press_data="@string/label_sentence_with_dot_com_long_press_zh_hk" long_press_intention="COMMIT" />
+            </else_if>
+            <else_if language="zh-TW">
+                <softkey id="@id/softkey_fragment_bottom_period_popup_dot_com" long_press_data="@string/label_sentence_with_dot_com_long_press_zh_tw" long_press_intention="COMMIT" />
+            </else_if>
+            <else_if language="ko">
+                <softkey id="@id/softkey_fragment_bottom_period_popup_dot_com" long_press_data="@string/label_sentence_with_dot_com_long_press_ko" long_press_intention="COMMIT" />
+            </else_if>
+            <else>
+                <softkey id="@id/softkey_fragment_bottom_period_popup_dot_com" long_press_data="@string/label_sentence_with_dot_com_long_press" />
+            </else>
+        </softkey_list>
+    </softkeys>
+</framework>

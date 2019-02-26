@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <key_mapping>
+        <mapping view_id="@id/key_pos_header_search" key_id="@id/softkey_open_search_keyboard" />
+        <mapping view_id="@id/key_pos_header_cancel_input" key_id="@id/softkey_clear_and_open_search_no_theme" />
+        <mapping view_id="@id/key_pos_search_header_emojihwr_launcher" key_id="@id/softkey_open_emojihandwriting" />
+    </key_mapping>
+    <key_mapping state="EDITOR_EMPTY">
+        <mapping view_id="@id/key_pos_header_cancel_input" key_id="@id/softkey_empty" />
+    </key_mapping>
+</framework>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/softkey_close_extension" layout="@layout/softkey_function_key_icon_automirror_with_padding" content_description="@string/gboard_close_extension_and_back_to_letter_keyboard_desc">
+            <action type="PRESS" keycode="CLOSE_EXTENSION" data="prime" />
+            <icon location="@id/icon" value="@attr/IconKeyboardBackspace" alpha="@attr/IconAlphaOpaque" />
+        </softkey>
+        <softkey id="@id/softkey_close_extension_back_arrow_no_theme" layout="@layout/softkey_icon_automirror_no_theme_with_padding" content_description="@string/gboard_close_extension_and_back_to_letter_keyboard_desc">
+            <action type="PRESS" keycode="CLOSE_EXTENSION" data="prime" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_keyboard_backspace_grey600_24" />
+        </softkey>
+        <softkey id="@id/softkey_close_extension_back_arrow_no_theme_m2" layout="@layout/softkey_icon_no_theme" content_description="@string/gboard_close_extension_and_back_to_letter_keyboard_desc">
+            <action type="PRESS" keycode="CLOSE_EXTENSION" data="prime" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_search_grey600_24" />
+        </softkey>
+        <softkey id="@id/softkey_clear_query_no_theme" layout="@layout/softkey_icon_no_theme_with_padding" content_description="@string/gboard_cancel_query_content_desc">
+            <action type="PRESS" keycode="CLEAR_SEARCH" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_cancel_black_24" />
+        </softkey>
+        <softkey id="@id/softkey_clear_query_no_theme_m2" layout="@layout/softkey_icon_no_theme_with_padding" content_description="@string/gboard_cancel_query_content_desc">
+            <action type="PRESS" keycode="CLEAR_SEARCH" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_cancel_grey600_18" />
+        </softkey>
+        <softkey id="@id/softkey_open_search_keyboard_disabled" layout="@layout/softkey_icon_no_theme" content_description="@string/gboard_gif_search_content_desc">
+            <icon location="@id/icon" value="@drawable/ic_google_search_disabled" />
+        </softkey>
+        <softkey id="@id/softkey_open_emojihandwriting" layout="@layout/softkey_icon_no_theme_with_padding" content_description="@string/gboard_emojihandwriting_content_desc">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/keyboard_type_emoji_handwriting" />
+            <icon location="@id/icon" value="@drawable/ic_emojihandwriting_v2_black_32dp_inset" />
+        </softkey>
+        <softkey id="@id/softkey_open_emojihandwriting_in_search_keyboard" layout="@layout/softkey_icon_no_theme_with_padding" content_description="@string/gboard_emojihandwriting_content_desc">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD_AND_CLOSE_EXTENSION_VIEW" data="@string/keyboard_type_emoji_handwriting" />
+            <icon location="@id/icon" value="@drawable/ic_emojihandwriting_v2_black_32dp_inset" />
+        </softkey>
+        <softkey id="@id/softkey_open_emojihandwriting_in_search_keyboard_m2" layout="@layout/softkey_icon_no_theme_center_inside" content_description="@string/gboard_emojihandwriting_content_desc">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD_AND_CLOSE_EXTENSION_VIEW" data="@string/keyboard_type_emoji_handwriting" />
+            <icon location="@id/icon" value="@drawable/ic_emojihandwriting_v2_black_32dp_inset" />
+        </softkey>
+        <softkey id="@id/softkey_back_to_emoji_picker_no_theme" layout="@layout/softkey_icon_automirror_no_theme_with_padding" content_description="@string/switch_back_to_emoji_search">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/keyboard_type_emoji" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_keyboard_backspace_grey600_24" />
+        </softkey>
+        <softkey id="@id/softkey_back_to_emoji_picker_no_theme_m2" layout="@layout/softkey_icon_no_theme" content_description="@string/switch_back_to_emoji_search">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/keyboard_type_emoji" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_grey600_24" />
+        </softkey>
+    </softkeys>
+</framework>

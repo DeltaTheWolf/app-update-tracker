@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module id="@string/id_access_point_search" class="com.google.android.apps.inputmethod.libs.search.nativecard.NativeCardExtension" icon="@attr/IconAccessPointSearch" label="@string/label_search_access_point" content_description="@string/search_access_point_content_desc">
+        <initialization_deps>
+            <components value="GIMS_UserUnlocked,UserSetupComplete,UnicodeIme" />
+        </initialization_deps>
+        <keyboard_types>
+            <keyboard type="@string/keyboard_type_native_card_search_result" />
+        </keyboard_types>
+        <extra_values>
+            <item id="@id/extra_value_default_keyboard" value="@string/keyboard_type_native_card_search_result" />
+            <item id="@id/extra_value_is_expression_extension" value="true" />
+        </extra_values>
+    </module>
+</framework>

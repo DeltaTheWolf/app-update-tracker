@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_label_header">
+            <softkey id="@id/softkey_tibetan_letter_ka" press_data="ཀ" press_label="ཀ" long_press_data="ཀ,ྵ,ྐ" long_press_label="ཀ,ྵ,ྐ" />
+            <softkey id="@id/softkey_tibetan_letter_kha" press_data="ཁ" press_label="ཁ" long_press_data="ྑ" long_press_label="ྑ" />
+            <softkey id="@id/softkey_tibetan_letter_ga" press_data="ག" press_label="ག" long_press_data="ྒ" long_press_label="ྒ" />
+            <softkey id="@id/softkey_tibetan_letter_nga" press_data="ང" press_label="ང" long_press_data="ྔ" long_press_label="ྔ" />
+            <softkey id="@id/softkey_tibetan_vowel_sign_i" press_data="ི" press_label=" ི" long_press_data="ྀ" long_press_label="ྀ" />
+            <softkey id="@id/softkey_tibetan_vowel_sign_u" press_data="ུ" press_label=" ུ" long_press_data="྄" long_press_label="྄" />
+            <softkey id="@id/softkey_tibetan_vowel_sign_e" press_data="ེ" press_label="ེ" long_press_data="ཻ" long_press_label="ཻ" />
+            <softkey id="@id/softkey_tibetan_vowel_sign_o" press_data="ོ" press_label="   ོ" long_press_data="ཽ" long_press_label="ཽ" />
+            <softkey id="@id/softkey_tibetan_letter_ca" press_data="ཅ" press_label="ཅ" long_press_data="ྕ" long_press_label="ྕ" />
+            <softkey id="@id/softkey_tibetan_letter_cha" press_data="ཆ" press_label="ཆ" long_press_data="ྖ" long_press_label="ྖ" />
+            <softkey id="@id/softkey_tibetan_letter_ja" press_data="ཇ" press_label="ཇ" long_press_data="ྗ" long_press_label="ྗ" />
+            <softkey id="@id/softkey_tibetan_letter_nya" press_data="ཉ" press_label="ཉ" long_press_data="ྙ" long_press_label="ྙ" />
+            <softkey id="@id/softkey_tibetan_letter_ta" press_data="ཏ" press_label="ཏ" long_press_data="ཊ,ྟ,ྚ" long_press_label="ཊ,ྟ,ྚ" hint_label="ཊ" />
+            <softkey id="@id/softkey_tibetan_letter_tha" press_data="ཐ" press_label="ཐ" long_press_data="ཋ,ྠ,ྛ" long_press_label="ཋ,ྠ,ྛ" hint_label="ཋ" />
+            <softkey id="@id/softkey_tibetan_letter_da" press_data="ད" press_label="ད" long_press_data="ཌ,ྡ,ྜ" long_press_label="ཌ,ྡ,ྜ" hint_label="ཌ" />
+            <softkey id="@id/softkey_tibetan_letter_na" press_data="ན" press_label="ན" long_press_data="ཎ,ྣ,ྞ" long_press_label="ཎ,ྣ,ྞ" hint_label="ཎ" />
+            <softkey id="@id/softkey_tibetan_letter_pa" press_data="པ" press_label="པ" long_press_data="ྤ" long_press_label="ྤ" />
+            <softkey id="@id/softkey_tibetan_letter_pha" press_data="ཕ" press_label="ཕ" long_press_data="ྥ" long_press_label="ྥ" />
+            <softkey id="@id/softkey_tibetan_letter_ba" press_data="བ" press_label="བ" long_press_data="ྦ" long_press_label="ྦ" />
+            <softkey id="@id/softkey_tibetan_letter_ma" press_data="མ" press_label="མ" long_press_data="ྨ" long_press_label="ྨ" />
+            <softkey id="@id/softkey_tibetan_letter_tsa" press_data="ཙ" press_label="ཙ" long_press_data="ྩ" long_press_label="ྩ" />
+            <softkey id="@id/softkey_tibetan_letter_tsha" press_data="ཚ" press_label="ཚ" long_press_data="ྪ" long_press_label="ྪ" />
+            <softkey id="@id/softkey_tibetan_letter_dza" press_data="ཛ" press_label="ཛ" long_press_data="ྫ" long_press_label="ྫ" />
+            <softkey id="@id/softkey_tibetan_letter_wa" press_data="ཝ" press_label="ཝ" long_press_data="ྭ" long_press_label="ྭ" />
+            <softkey id="@id/softkey_tibetan_letter_zha" press_data="ཞ" press_label="ཞ" long_press_data="ྮ" long_press_label="ྮ" />
+            <softkey id="@id/softkey_tibetan_letter_za" press_data="ཟ" press_label="ཟ" long_press_data="ྯ" long_press_label="ྯ" />
+            <softkey id="@id/softkey_tibetan_letter_dash_a" press_data="འ" press_label="འ" long_press_data="ཱ,ྰ" long_press_label="ཱ,ྰ" />
+            <softkey id="@id/softkey_tibetan_letter_ya" press_data="ཡ" press_label="ཡ" long_press_data="ྱ" long_press_label="ྱ" />
+            <softkey id="@id/softkey_tibetan_letter_ra" press_data="ར" press_label="ར" long_press_data="ྲ" long_press_label="ྲ" />
+            <softkey id="@id/softkey_tibetan_letter_la" press_data="ལ" press_label="ལ" long_press_data="ླ" long_press_label="ླ" />
+            <softkey id="@id/softkey_tibetan_letter_sha" press_data="ཤ" press_label="ཤ" long_press_data="ཥ,ྴ,ྵ" long_press_label="ཥ,ྴ,ྵ" hint_label="ཥ" />
+            <softkey id="@id/softkey_tibetan_letter_sa" press_data="ས" press_label="ས" long_press_data="ྶ" long_press_label="ྶ" />
+            <softkey id="@id/softkey_tibetan_letter_ha" press_data="ཧ" press_label="ཧ" long_press_data="ྷ" long_press_label="ྷ" />
+            <softkey id="@id/softkey_tibetan_letter_a" press_data="ཨ" press_label="ཨ" long_press_data="ྸ" long_press_label="ྸ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ka" press_data="ྐ" press_label="ྐ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_kha" press_data="ྑ" press_label="ྑ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ga" press_data="ྒ" press_label="ྒ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_nga" press_data="ྔ" press_label="ྔ " />
+            <softkey id="@id/softkey_tibetan_vowel_sign_reversed_i" press_data="ྀ" press_label=" ྀ" />
+            <softkey id="@id/softkey_tibetan_mark_halanta" press_data="྄" press_label="྄" />
+            <softkey id="@id/softkey_tibetan_vowel_sign_ee" press_data="ཻ" press_label="ཻ" />
+            <softkey id="@id/softkey_tibetan_vowel_sign_oo" press_data="ཽ" press_label="   ཽ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ca" press_data="ྕ" press_label="ྕ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_cha" press_data="ྖ" press_label="ྖ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ja" press_data="ྗ" press_label="ྗ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_nya" press_data="ྙ" press_label="ྙ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ta" press_data="ྟ" press_label="ྟ " long_press_data="ྚ,ཊ" long_press_label="ྚ,ཊ" hint_label="ཊ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_tha" press_data="ྠ" press_label="ྠ " long_press_data="ཋ,ྛ" long_press_label="ཋ,ྛ" hint_label="ཋ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_da" press_data="ྡ" press_label="ྡ " long_press_data="ཌ,ྜ" long_press_label="ཌ,ྜ" hint_label="ཌ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_na" press_data="ྣ" press_label="ྣ " long_press_data="ཎ,ྞ" long_press_label="ཎ,ྞ" hint_label="ཎ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_pa" press_data="ྤ" press_label="ྤ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_pha" press_data="ྥ" press_label="ྥ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ba" press_data="ྦ" press_label="ྦ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ma" press_data="ྨ" press_label="ྨ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_tsa" press_data="ྩ" press_label="ྩ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_tsha" press_data="ྪ" press_label="ྪ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_dza" press_data="ྫ" press_label="ྫ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_wa" press_data="ྭ" press_label="ྭ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_zha" press_data="ྮ" press_label="ྮ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_za" press_data="ྯ" press_label="ྯ " />
+            <softkey id="@id/softkey_tibetan_vowel_sign_aa" press_data="ཱ" press_label="  ཱ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ya" press_data="ྱ" press_label="ྱ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ra" press_data="ྲ" press_label="ྲ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_la" press_data="ླ" press_label="ླ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_sha" press_data="ྴ" press_label="ྴ " long_press_data="ཥ,ྵ" long_press_label="ཥ,ྵ" hint_label="ཥ" />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_sa" press_data="ྶ" press_label="ྶ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_ha" press_data="ྷ" press_label="ྷ " />
+            <softkey id="@id/softkey_tibetan_subjoined_letter_a" press_data="ྸ" press_label="ྸ  " />
+        </softkey_list>
+    </softkeys>
+</framework>

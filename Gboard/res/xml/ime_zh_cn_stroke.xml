@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_zh_cn_stroke" class="com.google.android.apps.inputmethod.libs.chinese.ime.AsyncChineseProcessorBasedIme" language="zh-XB" language_tag="zh-Hans-CN-t-i0-stroke" use_ascii_password_keyboard="true" inline_composing="false" always_show_suggestions="true" display_app_completions="true" announce_auto_selected_candidate="true" language_specific_settings="@xml/zh_cn_language_settings">
+        <keyboard_group variant="stroke" variant_label="@string/variant_stroke">
+            <keyboard type="prime" def="@xml/keyboard_fragment_zh_stroke">
+                <merge def="@xml/keyboard_chinese_stroke" />
+            </keyboard>
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+        <extra_values>
+            <item id="@id/extra_value_has_more_candidates_view" value="true" />
+            <item id="@id/extra_value_prime_keyboard_support_space_decorator" value="false" />
+            <item id="@id/extra_value_space_label" value="@string/label_space_stroke" />
+            <item id="@id/extra_value_period" value="。" />
+            <item id="@id/extra_value_metrics_processors" value="hmm" />
+        </extra_values>
+        <processors>
+            <processor id="@id/ime_decode_processor" class="com.google.android.apps.inputmethod.libs.pinyin.HmmStrokeDecodeProcessor" />
+            <processor id="@id/ime_double_space_processor" class="com.google.android.apps.inputmethod.libs.chinese.ime.hmm.ChineseDoubleSpaceProcessor" />
+            <processor id="@id/ime_scrub_move_processor" class="com.google.android.apps.inputmethod.libs.framework.ime.ScrubMoveProcessor" />
+            <processor id="@id/ime_output_processor" class="com.google.android.apps.inputmethod.libs.framework.ime.OutputProcessor" />
+        </processors>
+    </ime>
+</framework>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" display_app_completions="true" language="su-XF" string_id="ime_sundanese_aksara_sunda_dynamic" announce_auto_selected_candidate="true">
+        <keyboard_group variant="sundanese" variant_label="@string/variant_sundanese" layout_theme="@style/KeyboardLayoutTheme.4LetterRows">
+            <keyboard def="@xml/keyboard_su_xf_dynamic" type="prime" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+    </ime>
+</framework>

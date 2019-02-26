@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template id="@+id/softkey_template_back_to_prime_keyboard" layout="@layout/softkey_function_key_label" content_description="@string/letter_keyboard_key_content_desc">
+            <action type="PRESS" keycode="$param_keycode$" data="prime" />
+            <label location="@id/label" value="@string/label_back_key_en" />
+        </softkey_template>
+        <softkey_list template_id="@id/softkey_template_back_to_prime_keyboard">
+            <softkey id="@id/softkey_back" param_keycode="SWITCH_KEYBOARD" />
+            <softkey id="@id/softkey_back_from_extension" param_keycode="CLOSE_EXTENSION" />
+        </softkey_list>
+    </softkeys>
+</framework>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey_template id="@+id/softkey_template_ko_short_vowel" layout="@layout/softkey_qwerty_label_character" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+            <action type="PRESS" data="$press_data$" keycode="PLAIN_TEXT" intention="DECODE" popup_label="$press_data$" />
+            <action type="LONG_PRESS" data="$double_tap_data$" keycode="PLAIN_TEXT" intention="DECODE" popup_label="$double_tap_data$" merge_insertion_index="$merge_index=0$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+            <action type="DOUBLE_TAP" data="$double_tap_data$" keycode="PLAIN_TEXT" intention="DECODE" popup_label="$double_tap_data$" popup_layout="$double_tap_data$" />
+            <action type="SLIDE_DOWN" data="$slidedown_data$" keycode="PLAIN_TEXT" intention="$slide_down_intention=COMMIT$" popup_label="$slidedown_data$" />
+            <label location="@id/label" value="$press_data$" />
+        </softkey_template>
+        <softkey_list splitter=" " template_id="@id/softkey_template_ko_short_vowel">
+            <softkey id="@id/softkey_hangul_letter_pieup" press_data="ㅂ" double_tap_data="ㅃ" desc="비읍" />
+            <softkey id="@id/softkey_hangul_letter_cieuc" press_data="ㅈ" double_tap_data="ㅉ" desc="지읒" />
+            <softkey id="@id/softkey_hangul_letter_tikeut" press_data="ㄷ" double_tap_data="ㄸ" desc="디귿" />
+            <softkey id="@id/softkey_hangul_letter_kiyeok" press_data="ㄱ" double_tap_data="ㄲ" desc="기역" />
+            <softkey id="@id/softkey_hangul_letter_sios" press_data="ㅅ" double_tap_data="ㅆ" desc="시옷" />
+            <softkey id="@id/softkey_hangul_letter_o" press_data="ㅗ" double_tap_data="ㅛ" desc="오" />
+            <softkey id="@id/softkey_hangul_letter_ae" press_data="ㅐ" double_tap_data="ㅒ" desc="애" />
+            <softkey id="@id/softkey_hangul_letter_e" press_data="ㅔ" double_tap_data="ㅖ" desc="에" />
+            <softkey id="@id/softkey_hangul_letter_mieum" press_data="ㅁ" desc="미음" />
+            <softkey id="@id/softkey_hangul_letter_nieun" press_data="ㄴ" desc="니은" />
+            <softkey id="@id/softkey_hangul_letter_ieung" press_data="ㅇ" desc="이응" />
+            <softkey id="@id/softkey_hangul_letter_rieul" press_data="ㄹ" desc="리을" />
+            <softkey id="@id/softkey_hangul_letter_hieuh" press_data="ㅎ" desc="히읗" />
+            <softkey id="@id/softkey_hangul_letter_eo" press_data="ㅓ" double_tap_data="ㅕ" desc="어" />
+            <softkey id="@id/softkey_hangul_letter_a" press_data="ㅏ" double_tap_data="ㅑ" desc="아" />
+            <softkey id="@id/softkey_hangul_letter_i" press_data="ㅣ" desc="이" />
+            <softkey id="@id/softkey_hangul_letter_khieukh" press_data="ㅋ" desc="키읔" />
+            <softkey id="@id/softkey_hangul_letter_thieuth" press_data="ㅌ" desc="티읕" />
+            <softkey id="@id/softkey_hangul_letter_chieuch" press_data="ㅊ" desc="치읓" />
+            <softkey id="@id/softkey_hangul_letter_phieuph" press_data="ㅍ" desc="피읖" />
+            <softkey id="@id/softkey_hangul_letter_u" press_data="ㅜ" double_tap_data="ㅠ" desc="우" />
+            <softkey id="@id/softkey_hangul_letter_eu" press_data="ㅡ" desc="으" />
+        </softkey_list>
+    </softkeys>
+</framework>

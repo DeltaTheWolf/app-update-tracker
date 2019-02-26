@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/softkey_translate_settings_source" layout="@layout/translate_softkey_label_white">
+            <action type="PRESS" keycode="SETUP_EXTENSION_OPTIONS" data="source" />
+            <label location="@id/label" value="@string/translate_language_auto_detect" />
+        </softkey>
+        <softkey id="@id/softkey_translate_settings_source_drop_down" layout="@layout/translate_softkey_icon" content_description="@string/translate_source_language_drop_down_content_desc">
+            <action type="PRESS" keycode="SETUP_EXTENSION_OPTIONS" data="source" />
+            <icon location="@id/icon" value="@attr/IconDropDown" />
+        </softkey>
+        <softkey id="@id/softkey_translate_settings_switch" layout="@layout/translate_softkey_icon" content_description="@string/translate_swap_language_content_desc">
+            <action type="PRESS" keycode="SETUP_EXTENSION_OPTIONS" data="swap" />
+            <icon location="@id/icon" value="@attr/IconSwapHoriz" />
+        </softkey>
+        <softkey id="@id/softkey_translate_settings_target" layout="@layout/translate_softkey_label_white">
+            <action type="PRESS" keycode="SETUP_EXTENSION_OPTIONS" data="target" />
+            <label location="@id/label" value="English" />
+        </softkey>
+        <softkey id="@id/softkey_translate_settings_target_drop_down" layout="@layout/translate_softkey_icon" content_description="@string/translate_target_language_drop_down_content_desc">
+            <action type="PRESS" keycode="SETUP_EXTENSION_OPTIONS" data="target" />
+            <icon location="@id/icon" value="@attr/IconDropDown" />
+        </softkey>
+    </softkeys>
+</framework>

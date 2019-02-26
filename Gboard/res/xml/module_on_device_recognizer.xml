@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module class="com.google.android.apps.inputmethod.libs.voiceime.ondevice.OnDeviceRecognizerModule" start_strategy="AUTO">
+        <initialization_deps>
+            <components value="App_UserUnlocked" />
+            <phenotype_id value="@bool/enable_ondevice_recognizer" />
+        </initialization_deps>
+    </module>
+</framework>

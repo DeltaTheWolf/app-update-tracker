@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime_list>
+        <item language="en-US" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_us" />
+            <def resource_id="@xml/ime_en_us_morse" flag_id="@bool/enable_en_us_morse" />
+            <condition bool_phenotype="@bool/enable_morse_hint" />
+            <condition bool_phenotype="@bool/enable_joystick_delete" />
+        </item>
+        <item language="ab-GE" resource_id="@xml/ime_ab_ge" default_variant="abkhaz" />
+        <item language="ace-ID" resource_id="@xml/ime_ace_id" default_variant="qwerty" />
+        <item language="acf-LC" resource_id="@xml/ime_acf_lc" default_variant="azerty" />
+        <item language="ach-UG" resource_id="@xml/ime_ach_ug" default_variant="qwerty" />
+        <item language="ady-RU" resource_id="@xml/ime_ady_ru" default_variant="adyghe" />
+        <item language="af" default_variant="qwerty">
+            <def resource_id="@xml/ime_af_handwriting" />
+            <def resource_id="@xml/ime_af" />
+        </item>
+        <item language="ahr-IN" default_variant="ahirani">
+            <def resource_id="@xml/ime_ahr_in_dynamic" />
+        </item>
+        <item language="aii-IQ" resource_id="@xml/ime_aii_iq" default_variant="assyrian" />
+        <item language="ak-GH" resource_id="@xml/ime_ak_gh" default_variant="akan" />
+        <item language="alz-CD" resource_id="@xml/ime_alz_cd" default_variant="qwerty" />
+        <item language="am" default_variant="amharic">
+            <def resource_id="@xml/ime_am_handwriting" />
+            <def resource_id="@xml/ime_am_dynamic" />
+        </item>
+        <item language="ami-TW" resource_id="@xml/ime_ami_tw" default_variant="qwerty_with_apostrophe" />
+        <item language="an-ES" resource_id="@xml/ime_an_es" default_variant="aragonese" />
+        <item language="anw-NG" resource_id="@xml/ime_anw_ng" default_variant="qwerty" />
+        <item language="ar-EG" default_variant="arabic">
+            <def resource_id="@xml/ime_ar_handwriting" />
+            <def resource_id="@xml/ime_ar" />
+        </item>
+        <item language="ar-AE" resource_id="@xml/ime_ar_ae" default_variant="arabic" />
+        <item language="ar-BH" resource_id="@xml/ime_ar_bh" default_variant="arabic" />
+        <item language="ar-DZ" resource_id="@xml/ime_ar_dz" default_variant="arabic" />
+        <item language="ar-LY" resource_id="@xml/ime_ar_ly" default_variant="arabic" />
+        <item language="ar-MA" default_variant="arabic">
+            <def resource_id="@xml/ime_ar_ma_handwriting" />
+            <def resource_id="@xml/ime_ar_ma" />
+        </item>
+        <item language="ar-OM" resource_id="@xml/ime_ar_om" default_variant="arabic" />
+        <item language="ar-SD" resource_id="@xml/ime_ar_sd" default_variant="arabic" />
+        <item language="ar-TN" resource_id="@xml/ime_ar_tn" default_variant="arabic" />
+        <item language="as-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_as_transliteration" />
+            <def resource_id="@xml/ime_as_dynamic" />
+        </item>
+        <item language="as-Latn" resource_id="@xml/ime_as_xa" default_variant="qwerty" />
+        <item language="ast-ES" resource_id="@xml/ime_ast_es" default_variant="asturian" />
+        <item language="awa-IN" default_variant="awadhi_dynamic">
+            <def resource_id="@xml/ime_awa_in_dynamic" />
+            <def resource_id="@xml/ime_awa_transliteration" />
+        </item>
+        <item language="ay-BO" resource_id="@xml/ime_ay_bo" default_variant="aymara" />
+        <item language="ay-PE" resource_id="@xml/ime_ay_pe" default_variant="aymara" />
+        <item language="az-AZ" default_variant="azerbaijani">
+            <def resource_id="@xml/ime_az_az_handwriting" />
+            <def resource_id="@xml/ime_az_az" />
+        </item>
+        <item language="az-IR" resource_id="@xml/ime_az_ir" default_variant="azerbaijani_iran" />
+        <item language="ba" resource_id="@xml/ime_ba" default_variant="bashkir" />
+        <item language="bah-BS" resource_id="@xml/ime_bah_bs" default_variant="bahamian_creole" />
+        <item language="bal-PK" default_variant="balochi">
+            <def resource_id="@xml/ime_bal_pk" />
+            <def resource_id="@xml/ime_bal_arab_transliteration" />
+        </item>
+        <item language="ban-ID" resource_id="@xml/ime_ban_id" default_variant="qwerty" />
+        <item language="bar-AT" resource_id="@xml/ime_bar_at" default_variant="bavarian" />
+        <item language="bbc-ID" resource_id="@xml/ime_bbc_id" default_variant="qwerty" />
+        <item language="bci-CI" resource_id="@xml/ime_bci_ci" default_variant="baoule" />
+        <item language="bcl-PH" resource_id="@xml/ime_bcl_ph" default_variant="qwerty" />
+        <item language="bcq-ET" resource_id="@xml/ime_bcq_et" default_variant="bench" />
+        <item language="be-BY" default_variant="belarusian_belarus">
+            <def resource_id="@xml/ime_be_handwriting" />
+            <def resource_id="@xml/ime_be_by" />
+        </item>
+        <item language="ber-Latn" resource_id="@xml/ime_ber_xa" default_variant="tamazight" />
+        <item language="ber-Tfng" resource_id="@xml/ime_ber_xg" default_variant="tamazight_tifinagh" />
+        <item language="bew-ID" resource_id="@xml/ime_bew_id" default_variant="qwerty" />
+        <item language="bfy-IN" default_variant="bagheli">
+            <def resource_id="@xml/ime_bfy_in_dynamic" />
+            <def resource_id="@xml/ime_bfy_transliteration" />
+        </item>
+        <item language="bg" default_variant="bulgarian">
+            <def resource_id="@xml/ime_bg_handwriting" />
+            <def resource_id="@xml/ime_bg" />
+            <def resource_id="@xml/ime_bg_bds" />
+        </item>
+        <item language="bgc-IN" default_variant="haryanvi">
+            <def resource_id="@xml/ime_bgc_in_dynamic" />
+            <def resource_id="@xml/ime_bgc_transliteration" />
+        </item>
+        <item language="bgq-IN" default_variant="bagri">
+            <def resource_id="@xml/ime_bgq_in_dynamic" />
+            <def resource_id="@xml/ime_bgq_transliteration" />
+        </item>
+        <item language="bgq-PK" default_variant="bagri_arabic">
+            <def resource_id="@xml/ime_bgq_pk" />
+            <def resource_id="@xml/ime_bgq_arab_transliteration" />
+        </item>
+        <item language="bhb-Deva" default_variant="bhili">
+            <def resource_id="@xml/ime_bhb_xd_dynamic" />
+        </item>
+        <item language="bhb-Gujr" resource_id="@xml/ime_bhb_xf_dynamic" default_variant="bhili" />
+        <item language="bho-IN" default_variant="bhojpuri">
+            <def resource_id="@xml/ime_bho_in_dynamic" />
+            <def resource_id="@xml/ime_bho_transliteration" />
+        </item>
+        <item language="bi-VU" resource_id="@xml/ime_bi_vu" default_variant="qwerty" />
+        <item language="bjj-IN" default_variant="kannauji">
+            <def resource_id="@xml/ime_bjj_in_dynamic" />
+        </item>
+        <item language="bjn-ID" resource_id="@xml/ime_bjn_id" default_variant="qwerty" />
+        <item language="bm-ML" resource_id="@xml/ime_bm_ml" default_variant="bambara" />
+        <item language="bm-Nkoo" resource_id="@xml/ime_bm_xf_dynamic" default_variant="bambara_nko_dynamic" />
+        <item language="bn-BD" default_variant="bengali_bangladesh">
+            <def resource_id="@xml/ime_bn_in_transliteration" />
+            <def resource_id="@xml/ime_bn_bd_handwriting" />
+            <def resource_id="@xml/ime_bn_bd" />
+        </item>
+        <item language="bn-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_bn_in_transliteration" />
+            <def resource_id="@xml/ime_bn_in" />
+            <def resource_id="@xml/ime_bn_in_handwriting" />
+        </item>
+        <item language="bn-Latn" resource_id="@xml/ime_bn_xa" default_variant="qwerty" />
+        <item language="bns-IN" default_variant="bundeli_dynamic">
+            <def resource_id="@xml/ime_bns_in_dynamic" />
+            <def resource_id="@xml/ime_bns_transliteration" />
+        </item>
+        <item language="bo-CN" default_variant="tibetan">
+            <def resource_id="@xml/ime_bo_cn" />
+        </item>
+        <item language="bpy-IN" default_variant="bishnupriya_manipuri">
+            <def resource_id="@xml/ime_bpy_in_dynamic" />
+            <def resource_id="@xml/ime_bpy_beng_transliteration" />
+        </item>
+        <item language="br-FR" resource_id="@xml/ime_br_fr" default_variant="azerty" />
+        <item language="brh-Arab" default_variant="brahui">
+            <def resource_id="@xml/ime_brh_xc" />
+        </item>
+        <item language="brh-PK" resource_id="@xml/ime_brh_pk" default_variant="qwerty" />
+        <item language="brx-Beng" default_variant="qwerty">
+            <def resource_id="@xml/ime_brx_beng_transliteration" />
+            <def resource_id="@xml/ime_brx_xe_dynamic" />
+        </item>
+        <item language="brx-Deva" default_variant="qwerty">
+            <def resource_id="@xml/ime_brx_deva_transliteration" />
+            <def resource_id="@xml/ime_brx_xd_dynamic" />
+        </item>
+        <item language="brx-Latn" resource_id="@xml/ime_brx_xa" default_variant="qwerty" />
+        <item language="bs" default_variant="serbian_qwertz">
+            <def resource_id="@xml/ime_bs_handwriting" />
+            <def resource_id="@xml/ime_bs" />
+        </item>
+        <item language="bto-PH" resource_id="@xml/ime_bto_ph" default_variant="qwerty" />
+        <item language="bts-ID" resource_id="@xml/ime_bts_id" default_variant="qwerty" />
+        <item language="btx-ID" resource_id="@xml/ime_btx_id" default_variant="qwerty" />
+        <item language="btz-ID" resource_id="@xml/ime_btz_id" default_variant="qwerty" />
+        <item language="bug-ID" resource_id="@xml/ime_bug_id" default_variant="buginese" />
+        <item language="bum-CM" resource_id="@xml/ime_bum_cm" default_variant="bulu_bene" />
+        <item language="bxk-KE" resource_id="@xml/ime_bxk_ke" default_variant="qwerty" />
+        <item language="bxm-MN" resource_id="@xml/ime_bxm_mn" default_variant="buryat_mongolia" />
+        <item language="bxr-RU" resource_id="@xml/ime_bxr_ru" default_variant="buryat_russia" />
+        <item language="ca" default_variant="spanish">
+            <def resource_id="@xml/ime_ca_handwriting" />
+            <def resource_id="@xml/ime_ca" />
+        </item>
+        <item language="cbk-PH" resource_id="@xml/ime_cbk_ph" default_variant="chavacano" />
+        <item language="cdo-CN" resource_id="@xml/ime_cdo_cn" default_variant="eastern_min" />
+        <item language="ce-RU" resource_id="@xml/ime_ce_ru" default_variant="chechen" />
+        <item language="ceb" default_variant="spanish">
+            <def resource_id="@xml/ime_ceb_handwriting" />
+            <def resource_id="@xml/ime_ceb" />
+        </item>
+        <item language="cgg-UG" resource_id="@xml/ime_cgg_ug" default_variant="qwerty" />
+        <item language="ch-GU" resource_id="@xml/ime_ch_gu" default_variant="chamorro" />
+        <item language="cho-US" resource_id="@xml/ime_cho_us" default_variant="choctaw" />
+        <item language="chr-US" resource_id="@xml/ime_chr" default_variant="cherokee" />
+        <item language="cjk-AO" resource_id="@xml/ime_cjk_ao" default_variant="qwerty" />
+        <item language="co" default_variant="azerty">
+            <def resource_id="@xml/ime_co_handwriting" />
+            <def resource_id="@xml/ime_co" />
+        </item>
+        <item language="cps-PH" resource_id="@xml/ime_cps_ph" default_variant="qwerty" />
+        <item language="cr-Cans-CA" resource_id="@xml/ime_cr_ca_dynamic" default_variant="cree_syllabics" />
+        <item language="cr-Latn-CA" resource_id="@xml/ime_cr_xa" default_variant="cree_latin" />
+        <item language="crh-Latn" resource_id="@xml/ime_crh_xa" default_variant="turkish_q" />
+        <item language="crs-SC" resource_id="@xml/ime_crs_sc" default_variant="qwerty" />
+        <item language="cs" default_variant="qwertz">
+            <def resource_id="@xml/ime_cs_handwriting" />
+            <def resource_id="@xml/ime_cs" />
+        </item>
+        <item language="csb-PL" resource_id="@xml/ime_csb_pl" default_variant="qwerty" />
+        <item language="ctg-BD" default_variant="chittagonian">
+            <def resource_id="@xml/ime_ctg_bd_dynamic" />
+        </item>
+        <item language="cu-RU" resource_id="@xml/ime_cu_ru" default_variant="church_slavonic" />
+        <item language="cv-RU" resource_id="@xml/ime_cv_ru" default_variant="chuvash" />
+        <item language="cy" default_variant="welsh">
+            <def resource_id="@xml/ime_cy_handwriting" />
+            <def resource_id="@xml/ime_cy" />
+        </item>
+        <item language="da" default_variant="nordic">
+            <def resource_id="@xml/ime_da_handwriting" />
+            <def resource_id="@xml/ime_da" />
+        </item>
+        <item language="dag-GH" resource_id="@xml/ime_dag_gh" default_variant="dagbani" />
+        <item language="dar-RU" resource_id="@xml/ime_dar_ru" default_variant="dargwa" />
+        <item language="dcc-IN" default_variant="dakhini">
+            <def resource_id="@xml/ime_dcc_in" />
+            <def resource_id="@xml/ime_dcc_arab_transliteration" />
+        </item>
+        <item language="de-DE" default_variant="qwertz">
+            <def resource_id="@xml/ime_de_handwriting" />
+            <def resource_id="@xml/ime_de" />
+        </item>
+        <item language="de-AT" resource_id="@xml/ime_de_at" default_variant="qwertz" />
+        <item language="de-BE" resource_id="@xml/ime_de_be" default_variant="german" />
+        <item language="de-CH" default_variant="swiss">
+            <def resource_id="@xml/ime_de_handwriting" />
+            <def resource_id="@xml/ime_de_ch" />
+        </item>
+        <item language="de-LU" resource_id="@xml/ime_de_lu" default_variant="german" />
+        <item language="dga-GH" resource_id="@xml/ime_dga_gh" default_variant="dagaare" />
+        <item language="dhd-IN" default_variant="dhundhari_dynamic">
+            <def resource_id="@xml/ime_dhd_in_dynamic" />
+        </item>
+        <item language="diq-TR" resource_id="@xml/ime_diq_tr" default_variant="qwerty" />
+        <item language="dng-KG" resource_id="@xml/ime_dng_kg" default_variant="dungan" />
+        <item language="doi-Arab" default_variant="qwerty">
+            <def resource_id="@xml/ime_doi_arab_transliteration" />
+            <def resource_id="@xml/ime_doi_xc" />
+        </item>
+        <item language="doi-Deva" default_variant="qwerty">
+            <def resource_id="@xml/ime_doi_deva_transliteration" />
+            <def resource_id="@xml/ime_doi_xd_dynamic" />
+        </item>
+        <item language="doi-Latn" resource_id="@xml/ime_doi_xa" default_variant="qwerty" />
+        <item language="dsb-DE" resource_id="@xml/ime_dsb_de" default_variant="qwertz" />
+        <item language="dtp-MY" resource_id="@xml/ime_dtp_my" default_variant="qwerty" />
+        <item language="dty-NP" default_variant="dotyali">
+            <def resource_id="@xml/ime_dty_np_dynamic" />
+        </item>
+        <item language="dv-MV" resource_id="@xml/ime_dv_mv" default_variant="dhivehi" />
+        <item language="dz" resource_id="@xml/ime_dz" default_variant="dzongkha" />
+        <item language="ee" resource_id="@xml/ime_ee" default_variant="ewe" />
+        <item language="egl-IT" resource_id="@xml/ime_egl_it" default_variant="emilian" />
+        <item language="el-GR" default_variant="greek">
+            <def resource_id="@xml/ime_el_transliteration" />
+            <def resource_id="@xml/ime_el_handwriting" />
+            <def resource_id="@xml/ime_el" />
+        </item>
+        <item language="el-CY" resource_id="@xml/ime_el_cy" default_variant="greek" />
+        <item language="en-AU" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_au" />
+        </item>
+        <item language="en-CA" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_ca" />
+        </item>
+        <item language="en-GB" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_gb" />
+        </item>
+        <item language="en-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_in" />
+        </item>
+        <item language="en-KE" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_ke" />
+        </item>
+        <item language="en-NG" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_ng" />
+        </item>
+        <item language="en-PH" default_variant="english_philippines">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_ph" />
+        </item>
+        <item language="en-ZA" default_variant="qwerty">
+            <def resource_id="@xml/ime_en_handwriting" />
+            <def resource_id="@xml/ime_en_za" />
+        </item>
+        <item language="eo" default_variant="esperanto">
+            <def resource_id="@xml/ime_eo_handwriting" />
+            <def resource_id="@xml/ime_eo" />
+        </item>
+        <item language="es-419" default_variant="spanish">
+            <def resource_id="@xml/ime_es_handwriting" />
+            <def resource_id="@xml/ime_es_419" />
+        </item>
+        <item language="es-AR" default_variant="spanish">
+            <def resource_id="@xml/ime_es_handwriting" />
+            <def resource_id="@xml/ime_es_ar" />
+        </item>
+        <item language="es-ES" default_variant="spanish">
+            <def resource_id="@xml/ime_es_handwriting" />
+            <def resource_id="@xml/ime_es_es" />
+        </item>
+        <item language="es-MX" default_variant="spanish">
+            <def resource_id="@xml/ime_es_handwriting" />
+            <def resource_id="@xml/ime_es_mx" />
+        </item>
+        <item language="es-US" default_variant="spanish">
+            <def resource_id="@xml/ime_es_handwriting" />
+            <def resource_id="@xml/ime_es_us" />
+        </item>
+        <item language="et-EE" default_variant="estonian">
+            <def resource_id="@xml/ime_et_handwriting" />
+            <def resource_id="@xml/ime_et_ee" />
+        </item>
+        <item language="eu-ES" default_variant="spanish">
+            <def resource_id="@xml/ime_eu_handwriting" />
+            <def resource_id="@xml/ime_eu_es" />
+        </item>
+        <item language="ext-ES" resource_id="@xml/ime_ext_es" default_variant="spanish" />
+        <item language="fa" default_variant="persian">
+            <def resource_id="@xml/ime_fa_handwriting" />
+            <def resource_id="@xml/ime_fa" />
+        </item>
+        <item language="fan-GQ" resource_id="@xml/ime_fan_gq" default_variant="qwerty" />
+        <item language="fat-GH" resource_id="@xml/ime_fat_gh" default_variant="fantse" />
+        <item language="ff-Adlm" resource_id="@xml/ime_ff_xf" default_variant="fula_adlam" />
+        <item language="ff-Latn" resource_id="@xml/ime_ff" default_variant="fula" />
+        <item language="fi" default_variant="nordic">
+            <def resource_id="@xml/ime_fi_handwriting" />
+            <def resource_id="@xml/ime_fi" />
+        </item>
+        <item language="fj-FJ" resource_id="@xml/ime_fj_fj" default_variant="qwerty" />
+        <item language="fo-FO" resource_id="@xml/ime_fo_fo" default_variant="faroese" />
+        <item language="fr-FR" default_variant="azerty">
+            <def resource_id="@xml/ime_fr_handwriting" />
+            <def resource_id="@xml/ime_fr" />
+            <condition bool_phenotype="@bool/enable_presto_key" />
+        </item>
+        <item language="fr-002" default_variant="azerty">
+            <def resource_id="@xml/ime_fr_handwriting" />
+            <def resource_id="@xml/ime_fr_002" />
+        </item>
+        <item language="fr-BE" default_variant="azerty">
+            <def resource_id="@xml/ime_fr_handwriting" />
+            <def resource_id="@xml/ime_fr_be" />
+        </item>
+        <item language="fr-CA" default_variant="qwerty">
+            <def resource_id="@xml/ime_fr_handwriting" />
+            <def resource_id="@xml/ime_fr_ca" />
+        </item>
+        <item language="fr-CH" default_variant="swiss">
+            <def resource_id="@xml/ime_fr_handwriting" />
+            <def resource_id="@xml/ime_fr_ch" />
+        </item>
+        <item language="fur-IT" resource_id="@xml/ime_fur_it" default_variant="friulian" />
+        <item language="fy" default_variant="qwerty">
+            <def resource_id="@xml/ime_fy_handwriting" />
+            <def resource_id="@xml/ime_fy" />
+        </item>
+        <item language="ga" default_variant="qwerty">
+            <def resource_id="@xml/ime_ga_handwriting" />
+            <def resource_id="@xml/ime_ga" />
+        </item>
+        <item language="gag-Cyrl" resource_id="@xml/ime_gag_xb" default_variant="russian_jcuken" />
+        <item language="gag-MD" resource_id="@xml/ime_gag_md" default_variant="qwerty" />
+        <item language="gay-ID" resource_id="@xml/ime_gay_id" default_variant="qwerty" />
+        <item language="gbm-IN" default_variant="garhwali">
+            <def resource_id="@xml/ime_gbm_in_dynamic" />
+            <def resource_id="@xml/ime_gbm_transliteration" />
+        </item>
+        <item language="gcf-GP" resource_id="@xml/ime_gcf_gp" default_variant="azerty" />
+        <item language="gcr-GF" resource_id="@xml/ime_gcr_gf" default_variant="azerty" />
+        <item language="gd-GB" default_variant="qwerty">
+            <def resource_id="@xml/ime_gd_handwriting" />
+            <def resource_id="@xml/ime_gd_gb" />
+        </item>
+        <item language="gdx-IN" default_variant="godwari">
+            <def resource_id="@xml/ime_gdx_in_dynamic" />
+        </item>
+        <item language="gez" resource_id="@xml/ime_gez_dynamic" default_variant="geez_dynamic" />
+        <item language="gju-Deva" default_variant="gujari">
+            <def resource_id="@xml/ime_gju_xd_dynamic" />
+        </item>
+        <item language="gju-PK" default_variant="gujari">
+            <def resource_id="@xml/ime_gju_pk" />
+        </item>
+        <item language="gl-ES" default_variant="spanish">
+            <def resource_id="@xml/ime_gl_handwriting" />
+            <def resource_id="@xml/ime_gl_es" />
+        </item>
+        <item language="glk-IR" resource_id="@xml/ime_glk_ir" default_variant="gilaki" />
+        <item language="gn" resource_id="@xml/ime_gn" default_variant="spanish" />
+        <item language="gno-IN" default_variant="gondi">
+            <def resource_id="@xml/ime_gno_in_dynamic" />
+        </item>
+        <item language="gno-Telu" default_variant="gondi_telugu">
+            <def resource_id="@xml/ime_gno_xf_dynamic" />
+        </item>
+        <item language="gog-TZ" resource_id="@xml/ime_gog_tz" default_variant="qwerty" />
+        <item language="gor-ID" resource_id="@xml/ime_gor_id" default_variant="qwerty_with_apostrophe" />
+        <item language="grt-Beng" resource_id="@xml/ime_grt_xe_dynamic" default_variant="garo" />
+        <item language="grt-Latn" resource_id="@xml/ime_grt_xa" default_variant="garo" />
+        <item language="gsw-CH" resource_id="@xml/ime_gsw_ch" default_variant="swiss" />
+        <item language="gu-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_gu_transliteration" />
+            <def resource_id="@xml/ime_gu_dynamic" />
+            <def resource_id="@xml/ime_gu_handwriting" />
+        </item>
+        <item language="gu-Latn" resource_id="@xml/ime_gu_xa" default_variant="qwerty" />
+        <item language="guc-CO" resource_id="@xml/ime_guc_co" default_variant="wayuu" />
+        <item language="guz-KE" resource_id="@xml/ime_guz_ke" default_variant="qwerty" />
+        <item language="gv" resource_id="@xml/ime_gv" default_variant="manx" />
+        <item language="gyn" resource_id="@xml/ime_gyn" default_variant="qwerty" />
+        <item language="ha-NG" resource_id="@xml/ime_ha" default_variant="hausa" />
+        <item language="ha-GH" resource_id="@xml/ime_ha_gh" default_variant="hausa" />
+        <item language="hac-IR" resource_id="@xml/ime_hac_ir" default_variant="gorani" />
+        <item language="hae-ET" resource_id="@xml/ime_hae_et" default_variant="qwerty" />
+        <item language="hak-CN" resource_id="@xml/ime_hak_cn" default_variant="hakka" />
+        <item language="haq-TZ" resource_id="@xml/ime_haq_tz" default_variant="qwerty_with_apostrophe" />
+        <item language="haw" default_variant="hawaiian">
+            <def resource_id="@xml/ime_haw_handwriting" />
+            <def resource_id="@xml/ime_haw" />
+        </item>
+        <item language="hay-TZ" resource_id="@xml/ime_hay_tz" default_variant="qwerty" /> preprocess_target="[dev][fishfood][experimental]"/>
+<item language="hea-CN" resource_id="@xml/ime_hea_cn" default_variant="qwerty" />
+        <item language="heh-TZ" resource_id="@xml/ime_heh_tz" default_variant="qwerty" />
+        <item language="hi-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_hi_transliteration" />
+            <def resource_id="@xml/ime_hi_dynamic" />
+            <def resource_id="@xml/ime_hi_handwriting" />
+            <def resource_id="@xml/ime_hi_compact" />
+        </item>
+        <item language="hi-Latn" default_variant="qwerty">
+            <def resource_id="@xml/ime_hi_xa" />
+        </item>
+        <item language="hif-Deva" resource_id="@xml/ime_hif_xd_dynamic" default_variant="fiji_hindi_devanagari_dynamic" />
+        <item language="hif-Latn" resource_id="@xml/ime_hif_xa" default_variant="qwerty" />
+        <item language="hil-PH" resource_id="@xml/ime_hil_ph" default_variant="hiligaynon" />
+        <item language="hlb-IN" default_variant="halbi">
+            <def resource_id="@xml/ime_hlb_in_dynamic" />
+        </item>
+        <item language="hlb-Orya" default_variant="halbi">
+            <def resource_id="@xml/ime_hlb_xf_dynamic" />
+        </item>
+        <item language="hmn" default_variant="qwerty">
+            <def resource_id="@xml/ime_hmn_handwriting" />
+            <def resource_id="@xml/ime_hmn" />
+        </item>
+        <item language="hnd-PK" default_variant="hindko">
+            <def resource_id="@xml/ime_hnd_pk" />
+        </item>
+        <item language="hne-IN" default_variant="chhattisgarhi_dynamic">
+            <def resource_id="@xml/ime_hne_in_dynamic" />
+            <def resource_id="@xml/ime_hne_transliteration" />
+        </item>
+        <item language="hni-CN" resource_id="@xml/ime_hni_cn" default_variant="hani" />
+        <item language="hno-PK" default_variant="hindko">
+            <def resource_id="@xml/ime_hno_pk" />
+        </item>
+        <item language="ho-PG" resource_id="@xml/ime_ho_pg" default_variant="qwerty" />
+        <item language="hoj-IN" default_variant="harauti">
+            <def resource_id="@xml/ime_hoj_in_dynamic" />
+        </item>
+        <item language="hr" default_variant="croatian">
+            <def resource_id="@xml/ime_hr_handwriting" />
+            <def resource_id="@xml/ime_hr" />
+        </item>
+        <item language="hrx-BR" resource_id="@xml/ime_hrx_br" default_variant="portuguese" />
+        <item language="hsb-DE" resource_id="@xml/ime_hsb_de" default_variant="qwertz" />
+        <item language="ht" default_variant="qwerty">
+            <def resource_id="@xml/ime_ht_handwriting" />
+            <def resource_id="@xml/ime_ht" />
+        </item>
+        <item language="hu" default_variant="qwertz">
+            <def resource_id="@xml/ime_hu_handwriting" />
+            <def resource_id="@xml/ime_hu" />
+        </item>
+        <item language="hwc-US" resource_id="@xml/ime_hwc_us" default_variant="qwerty_with_modifier_turned_comma" />
+        <item language="hy-AM" default_variant="armenian_armenia_phonetic">
+            <def resource_id="@xml/ime_hy_transliteration" />
+            <def resource_id="@xml/ime_hy_handwriting" />
+            <def resource_id="@xml/ime_hy_am" />
+        </item>
+        <item language="ia" resource_id="@xml/ime_ia" default_variant="qwerty" />
+        <item language="iba-MY" resource_id="@xml/ime_iba_my" default_variant="qwerty" />
+        <item language="ibb-NG" resource_id="@xml/ime_ibb_ng_dynamic" default_variant="ibibio" />
+        <item language="ig" resource_id="@xml/ime_ig" default_variant="spanish" />
+        <item language="igb-NG" resource_id="@xml/ime_igb_ng" default_variant="qwerty" />
+        <item language="ilo-PH" resource_id="@xml/ime_ilo_ph" default_variant="qwerty" />
+        <item language="in" default_variant="qwerty">
+            <def resource_id="@xml/ime_id_handwriting" />
+            <def resource_id="@xml/ime_in" />
+        </item>
+        <item language="inh-RU" resource_id="@xml/ime_inh_ru" default_variant="ingush" />
+        <item language="is" default_variant="icelandic">
+            <def resource_id="@xml/ime_is_handwriting" />
+            <def resource_id="@xml/ime_is" />
+        </item>
+        <item language="iso-NG" resource_id="@xml/ime_iso_ng" default_variant="isoko" />
+        <item language="it-IT" default_variant="qwerty">
+            <def resource_id="@xml/ime_it_handwriting" />
+            <def resource_id="@xml/ime_it" />
+        </item>
+        <item language="it-CH" default_variant="swiss">
+            <def resource_id="@xml/ime_it_handwriting" />
+            <def resource_id="@xml/ime_it_ch" />
+        </item>
+        <item language="iu-Cans-CA" resource_id="@xml/ime_iu_ca_dynamic" default_variant="inuktitut_dynamic" />
+        <item language="iu-Latn-CA" resource_id="@xml/ime_iu_xa" default_variant="inuktitut_latin" />
+        <item language="ium-CN" resource_id="@xml/ime_ium_cn" default_variant="qwerty_with_circumflex" />
+        <item language="iw-IL" default_variant="hebrew">
+            <def resource_id="@xml/ime_iw_handwriting" />
+            <def resource_id="@xml/ime_iw" />
+        </item>
+        <item language="ja-JP" default_variant="japanese_12keys_toggleflick" flag_id="@bool/enable_japanese_ime_list_item">
+            <def resource_id="@xml/ime_ja_12keys_toggleflick_hiragana_alphabet" />
+            <def resource_id="@xml/ime_ja_qwerty_hiragana" />
+            <def resource_id="@xml/ime_ja_handwriting" />
+            <def resource_id="@xml/ime_ja_godan" />
+            <condition bool_phenotype="@bool/enable_emoticon_multipage_ja_jp" />
+        </item>
+        <item language="jam-JM" resource_id="@xml/ime_jam_jm" default_variant="qwerty" />
+        <item language="jax-ID" resource_id="@xml/ime_jax_id" default_variant="qwerty" />
+        <item language="jbo" resource_id="@xml/ime_jbo" default_variant="lojban" />
+        <item language="ji" default_variant="yiddish">
+            <def resource_id="@xml/ime_ji" />
+        </item>
+        <item language="jv-Latn" default_variant="qwerty">
+            <def resource_id="@xml/ime_jv_handwriting" />
+            <def resource_id="@xml/ime_jv" />
+        </item>
+        <item language="jv-x-bms" resource_id="@xml/ime_jv_xa" default_variant="qwerty" />
+        <item language="ka-GE" default_variant="georgian_qwerty">
+            <def resource_id="@xml/ime_ka_handwriting" />
+            <def resource_id="@xml/ime_ka_ge" />
+            <def resource_id="@xml/ime_ka_qwerty" />
+        </item>
+        <item language="kaa-Cyrl" resource_id="@xml/ime_kaa_xb" default_variant="karakalpak" />
+        <item language="kaa-UZ" resource_id="@xml/ime_kaa_uz" default_variant="karakalpak" />
+        <item language="kac-MM" resource_id="@xml/ime_kac_mm" default_variant="qwerty" />
+        <item language="kam-KE" resource_id="@xml/ime_kam_ke" default_variant="kamba" />
+        <item language="kbd-RU" resource_id="@xml/ime_kbd_ru" default_variant="kabardian" />
+        <item language="kde-TZ" resource_id="@xml/ime_kde_tz" default_variant="qwerty_with_apostrophe" />
+        <item language="kek-GT" resource_id="@xml/ime_kek_gt" default_variant="qwerty_with_apostrophe" />
+        <item language="kfq-IN" default_variant="korku">
+            <def resource_id="@xml/ime_kfq_in_dynamic" />
+        </item>
+        <item language="kfr-IN" resource_id="@xml/ime_kfr_in_dynamic" default_variant="kutchi" />
+        <item language="kfy-IN" default_variant="kumaoni_dynamic">
+            <def resource_id="@xml/ime_kfy_in_dynamic" />
+            <def resource_id="@xml/ime_kfy_deva_transliteration" />
+        </item>
+        <item language="kg-AO" resource_id="@xml/ime_kg_ao" default_variant="qwerty" />
+        <item language="kha-IN" resource_id="@xml/ime_kha_in" default_variant="qwerty" />
+        <item language="khw" resource_id="@xml/ime_khw" default_variant="khowar" />
+        <item language="ki-KE" resource_id="@xml/ime_ki_ke" default_variant="kikuyu" />
+        <item language="kiu-TR" resource_id="@xml/ime_kiu_tr" default_variant="kirmanjki" />
+        <item language="kj" resource_id="@xml/ime_kj" default_variant="qwerty" />
+        <item language="kk" default_variant="kazakh">
+            <def resource_id="@xml/ime_kk_handwriting" />
+            <def resource_id="@xml/ime_kk" />
+        </item>
+        <item language="kl" resource_id="@xml/ime_kl" default_variant="nordic" />
+        <item language="km-KH" default_variant="khmer_cambodia">
+            <def resource_id="@xml/ime_km_handwriting" />
+            <def resource_id="@xml/ime_km_kh" />
+            <def resource_id="@xml/ime_km_kh_native" />
+        </item>
+        <item language="kmb-AO" resource_id="@xml/ime_kmb_ao" default_variant="qwerty_with_apostrophe" />
+        <item language="kmz-Arab" resource_id="@xml/ime_kmz_xc" default_variant="khorasani_turkic_arabic" />
+        <item language="kmz-Latn" resource_id="@xml/ime_kmz_xa" default_variant="turkish_q" />
+        <item language="kn-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_kn_transliteration" />
+            <def resource_id="@xml/ime_kn_in" />
+            <def resource_id="@xml/ime_kn_in_handwriting" />
+        </item>
+        <item language="kn-Latn" resource_id="@xml/ime_kn_xa" default_variant="qwerty" />
+        <item language="knn-IN" default_variant="konkani_devanagari">
+            <def resource_id="@xml/ime_knn_in_dynamic" />
+        </item>
+        <item language="ko" default_variant="korean_two_bulsik">
+            <def resource_id="@xml/ime_ko_two_bulsik" />
+            <def resource_id="@xml/ime_ko_single_vowel" />
+            <def resource_id="@xml/ime_ko_10key" />
+            <def resource_id="@xml/ime_ko_handwriting" />
+        </item>
+        <item language="koi-RU" resource_id="@xml/ime_koi_ru" default_variant="komi_permyak" />
+        <item language="kok-Deva" default_variant="qwerty">
+            <def resource_id="@xml/ime_kok_deva_transliteration" />
+            <def resource_id="@xml/ime_kok_xd_dynamic" />
+        </item>
+        <item language="kok-Knda" default_variant="konkani_kannada">
+            <def resource_id="@xml/ime_kok_xf_dynamic" />
+        </item>
+        <item language="kok-Latn" resource_id="@xml/ime_kok_xa" default_variant="qwerty" />
+        <item language="koo-UG" resource_id="@xml/ime_koo_ug" default_variant="qwerty_with_apostrophe" />
+        <item language="kr-NG" resource_id="@xml/ime_kr_ng" default_variant="kanuri" />
+        <item language="krc-RU" resource_id="@xml/ime_krc_ru" default_variant="karachay_balkar" />
+        <item language="kri-SL" resource_id="@xml/ime_kri_sl" default_variant="krio" />
+        <item language="krj-PH" resource_id="@xml/ime_krj_ph" default_variant="qwerty_with_hyphen" />
+        <item language="krl-RU" resource_id="@xml/ime_krl_ru" default_variant="karelian" />
+        <item language="kru-IN" default_variant="kurukh">
+            <def resource_id="@xml/ime_kru_in_dynamic" />
+        </item>
+        <item language="ks-Arab" default_variant="qwerty">
+            <def resource_id="@xml/ime_ks_arab_transliteration" />
+            <def resource_id="@xml/ime_ks_xc" />
+        </item>
+        <item language="ks-Deva" default_variant="qwerty">
+            <def resource_id="@xml/ime_ks_deva_transliteration" />
+            <def resource_id="@xml/ime_ks_xd_dynamic" />
+        </item>
+        <item language="ks-Latn" resource_id="@xml/ime_ks_xa" default_variant="qwerty" />
+        <item language="ksh-DE" resource_id="@xml/ime_ksh_de" default_variant="kolsch" />
+        <item language="ktu-CD" resource_id="@xml/ime_ktu_cd" default_variant="qwerty" />
+        <item language="ku" default_variant="kurdish_latin">
+            <def resource_id="@xml/ime_ku_handwriting" />
+            <def resource_id="@xml/ime_ku" />
+        </item>
+        <item language="ku-IQ" default_variant="kurdish">
+            <def resource_id="@xml/ime_ku_iq" />
+        </item>
+        <item language="ku-IR" default_variant="kurdish">
+            <def resource_id="@xml/ime_ku_ir" />
+        </item>
+        <item language="kum-RU" resource_id="@xml/ime_kum_ru" default_variant="kumyk" />
+        <item language="kv-RU" resource_id="@xml/ime_kv_ru" default_variant="komi" />
+        <item language="kw-GB" resource_id="@xml/ime_kw_gb" default_variant="qwerty" />
+        <item language="ky" default_variant="kyrgyz">
+            <def resource_id="@xml/ime_ky_handwriting" />
+            <def resource_id="@xml/ime_ky" />
+        </item>
+        <item language="la" default_variant="spanish">
+            <def resource_id="@xml/ime_la_handwriting" />
+            <def resource_id="@xml/ime_la" />
+        </item>
+        <item language="lad-BA" resource_id="@xml/ime_lad_ba" default_variant="ladino" />
+        <item language="laj-UG" resource_id="@xml/ime_laj_ug" default_variant="lango" />
+        <item language="lb" default_variant="luxembourgish">
+            <def resource_id="@xml/ime_lb_handwriting" />
+            <def resource_id="@xml/ime_lb" />
+        </item>
+        <item language="lbe-RU" resource_id="@xml/ime_lbe_ru" default_variant="lak" />
+        <item language="lez-AZ" resource_id="@xml/ime_lez_az" default_variant="lezgian" />
+        <item language="lez-RU" resource_id="@xml/ime_lez_ru" default_variant="lezgian" />
+        <item language="lg-UG" resource_id="@xml/ime_lg_ug" default_variant="luganda" />
+        <item language="lgg-UG" resource_id="@xml/ime_lgg_ug" default_variant="qwerty_with_apostrophe" />
+        <item language="li-NL" resource_id="@xml/ime_li_nl" default_variant="limburgish" />
+        <item language="lif-Deva" resource_id="@xml/ime_lif_xd_dynamic" default_variant="limbu" />
+        <item language="lij-IT" resource_id="@xml/ime_lij_it" default_variant="ligurian" />
+        <item language="ljp-ID" resource_id="@xml/ime_ljp_id" default_variant="qwerty" />
+        <item language="lkt-US" resource_id="@xml/ime_lkt_us" default_variant="lakota" />
+        <item language="lmn-Deva" default_variant="lambadi_devanagari">
+            <def resource_id="@xml/ime_lmn_xd_dynamic" />
+        </item>
+        <item language="lmn-Knda" default_variant="lambadi_kannada">
+            <def resource_id="@xml/ime_lmn_xf_dynamic" />
+            <def resource_id="@xml/ime_lmn_knda_transliteration" />
+        </item>
+        <item language="lmn-Telu" default_variant="lambadi_telugu">
+            <def resource_id="@xml/ime_lmn_xg_dynamic" />
+        </item>
+        <item language="lmo-IT" resource_id="@xml/ime_lmo_it" default_variant="qwerty" />
+        <item language="ln-CD" resource_id="@xml/ime_ln" default_variant="lingala" />
+        <item language="ln-AO" resource_id="@xml/ime_ln_ao" default_variant="lingala" />
+        <item language="lo-LA" default_variant="lao">
+            <def resource_id="@xml/ime_lo_handwriting" />
+            <def resource_id="@xml/ime_lo_la" />
+        </item>
+        <item language="lrc-IR" resource_id="@xml/ime_lrc_ir" default_variant="northern_luri" />
+        <item language="lt" default_variant="qwerty">
+            <def resource_id="@xml/ime_lt_handwriting" />
+            <def resource_id="@xml/ime_lt" />
+        </item>
+        <item language="ltg-LV" resource_id="@xml/ime_ltg_lv" default_variant="qwerty" />
+        <item language="luo-KE" resource_id="@xml/ime_luo_ke" default_variant="qwerty" />
+        <item language="lus-IN" resource_id="@xml/ime_lus_in" default_variant="qwerty" />
+        <item language="luz-IR" resource_id="@xml/ime_luz_ir" default_variant="southern_luri" />
+        <item language="lv" default_variant="qwerty">
+            <def resource_id="@xml/ime_lv_handwriting" />
+            <def resource_id="@xml/ime_lv" />
+        </item>
+        <item language="mad-ID" resource_id="@xml/ime_mad_id" default_variant="madurese" />
+        <item language="mag-IN" default_variant="magahi">
+            <def resource_id="@xml/ime_mag_in_dynamic" />
+        </item>
+        <item language="mag-NP" resource_id="@xml/ime_mag_np_dynamic" default_variant="magahi" />
+        <item language="mai-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_mai_transliteration" />
+            <def resource_id="@xml/ime_mai_dynamic" />
+        </item>
+        <item language="mai-Latn" resource_id="@xml/ime_mai_xa" default_variant="qwerty" />
+        <item language="mak-ID" resource_id="@xml/ime_mak_id" default_variant="qwerty_with_apostrophe" />
+        <item language="mas-KE" resource_id="@xml/ime_mas_ke" default_variant="qwerty" />
+        <item language="max-ID" resource_id="@xml/ime_max_id" default_variant="qwerty" />
+        <item language="mdf-RU" resource_id="@xml/ime_mdf_ru" default_variant="moksha" />
+        <item language="mdh-PH" resource_id="@xml/ime_mdh_ph" default_variant="qwerty" />
+        <item language="meo-MY" resource_id="@xml/ime_meo_my" default_variant="qwerty" />
+        <item language="mer-KE" resource_id="@xml/ime_mer_ke" default_variant="meru" />
+        <item language="mfa-TH" resource_id="@xml/ime_mfa_th" default_variant="malay" />
+        <item language="mg" default_variant="azerty">
+            <def resource_id="@xml/ime_mg_handwriting" />
+            <def resource_id="@xml/ime_mg" />
+        </item>
+        <item language="mhr-RU" resource_id="@xml/ime_mhr_ru" default_variant="meadow_mari" />
+        <item language="mhy-ID" resource_id="@xml/ime_mhy_id" default_variant="qwerty" />
+        <item language="mi" default_variant="maori">
+            <def resource_id="@xml/ime_mi_handwriting" />
+            <def resource_id="@xml/ime_mi" />
+        </item>
+        <item language="min-ID" resource_id="@xml/ime_min_id" default_variant="minangkabau" />
+        <item language="mjl-IN" resource_id="@xml/ime_mjl_in_dynamic" default_variant="mandeali_dynamic" />
+        <item language="mk" default_variant="macedonian">
+            <def resource_id="@xml/ime_mk_handwriting" />
+            <def resource_id="@xml/ime_mk" />
+        </item>
+        <item language="ml-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_ml_transliteration" />
+            <def resource_id="@xml/ime_ml_in_dynamic" />
+            <def resource_id="@xml/ime_ml_in_handwriting" />
+        </item>
+        <item language="ml-Latn" resource_id="@xml/ime_ml_xa" default_variant="qwerty" />
+        <item language="mn-MN" default_variant="mongolian">
+            <def resource_id="@xml/ime_mn_handwriting" />
+            <def resource_id="@xml/ime_mn_mn" />
+        </item>
+        <item language="mni-Beng" default_variant="qwerty">
+            <def resource_id="@xml/ime_mni_beng_transliteration" />
+            <def resource_id="@xml/ime_mni_xe_dynamic" />
+        </item>
+        <item language="mni-Latn" resource_id="@xml/ime_mni_xa" default_variant="qwerty" />
+        <item language="mni-Mtei" default_variant="qwerty">
+            <def resource_id="@xml/ime_mni_mtei_transliteration" />
+            <def resource_id="@xml/ime_mni_xf_dynamic" />
+        </item>
+        <item language="mnk-Latn" resource_id="@xml/ime_mnk_xa" default_variant="qwerty" />
+        <item language="mos-BF" resource_id="@xml/ime_mos_bf" default_variant="mossi" />
+        <item language="mr-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_mr_transliteration" />
+            <def resource_id="@xml/ime_mr_in_dynamic" />
+            <def resource_id="@xml/ime_mr_in_handwriting" />
+        </item>
+        <item language="mr-Latn" resource_id="@xml/ime_mr_xa" default_variant="qwerty" />
+        <item language="mrj-RU" resource_id="@xml/ime_mrj_ru" default_variant="hill_mari" />
+        <item language="mrw-PH" resource_id="@xml/ime_mrw_ph" default_variant="qwerty" />
+        <item language="ms-Arab-BN" resource_id="@xml/ime_ms_xf" default_variant="malay" />
+        <item language="ms-Arab-MY" resource_id="@xml/ime_ms_xc" default_variant="malay" />
+        <item language="ms-BN" resource_id="@xml/ime_ms_bn" default_variant="qwerty" />
+        <item language="ms-MY" default_variant="qwerty">
+            <def resource_id="@xml/ime_ms_handwriting" />
+            <def resource_id="@xml/ime_ms_my" />
+        </item>
+        <item language="ms-SG" resource_id="@xml/ime_ms_sg" default_variant="qwerty" />
+        <item language="msi-MY" resource_id="@xml/ime_msi_my" default_variant="qwerty" />
+        <item language="mt" default_variant="maltese">
+            <def resource_id="@xml/ime_mt_handwriting" />
+            <def resource_id="@xml/ime_mt" />
+        </item>
+        <item language="mtq-VN" resource_id="@xml/ime_mtq_vn" default_variant="qwerty" />
+        <item language="mtr-IN" default_variant="mewari">
+            <def resource_id="@xml/ime_mtr_in_dynamic" />
+        </item>
+        <item language="mui-ID" resource_id="@xml/ime_mui_id" default_variant="qwerty" />
+        <item language="mup-IN" default_variant="malvi">
+            <def resource_id="@xml/ime_mup_in_dynamic" />
+        </item>
+        <item language="mve-PK" default_variant="marwari_arabic">
+            <def resource_id="@xml/ime_mve_pk" />
+        </item>
+        <item language="mww-CN" resource_id="@xml/ime_mww_cn" default_variant="qwerty" />
+        <item language="my" default_variant="burmese">
+            <def resource_id="@xml/ime_my_handwriting" />
+            <def resource_id="@xml/ime_my" />
+            <condition special_condition="@string/special_env_burmese_zawgyi" />
+        </item>
+        <item language="myv-RU" resource_id="@xml/ime_myv_ru" default_variant="erzya" />
+        <item language="myx-UG" resource_id="@xml/ime_myx_ug" default_variant="qwerty" />
+        <item language="mzn-IR" resource_id="@xml/ime_mzn_ir" default_variant="mazanderani" />
+        <item language="nah" resource_id="@xml/ime_nah" default_variant="qwerty" />
+        <item language="nan-Latn" resource_id="@xml/ime_nan_xa" default_variant="southern_min" />
+        <item language="nap-IT" resource_id="@xml/ime_nap_it" default_variant="qwerty" />
+        <item language="nb" default_variant="nordic">
+            <def resource_id="@xml/ime_no_handwriting" />
+            <def resource_id="@xml/ime_nb" />
+        </item>
+        <item language="ndc-ZW" resource_id="@xml/ime_ndc_zw" default_variant="qwerty" />
+        <item language="nds-DE" resource_id="@xml/ime_nds_de" default_variant="low_saxon" />
+        <item language="ne-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_ne_transliteration" />
+            <def resource_id="@xml/ime_ne_in_dynamic" />
+            <def resource_id="@xml/ime_ne_in_handwriting" />
+        </item>
+        <item language="ne-Latn" resource_id="@xml/ime_ne_xa" default_variant="qwerty" />
+        <item language="ne-NP" default_variant="nepali_nepal_romanized">
+            <def resource_id="@xml/ime_ne_transliteration" />
+            <def resource_id="@xml/ime_ne_np_handwriting" />
+            <def resource_id="@xml/ime_ne_np_romanized" />
+            <def resource_id="@xml/ime_ne_np_traditional" />
+            <def resource_id="@xml/ime_ne_np_dynamic" />
+        </item>
+        <item language="new-NP" resource_id="@xml/ime_new_np_dynamic" default_variant="newari" />
+        <item language="ng-NA" resource_id="@xml/ime_ng_na" default_variant="qwerty" />
+        <item language="nij-ID" resource_id="@xml/ime_nij_id" default_variant="qwerty" />
+        <item language="niq-KE" resource_id="@xml/ime_niq_ke" default_variant="qwerty_with_apostrophe" />
+        <item language="nl-NL" default_variant="qwerty">
+            <def resource_id="@xml/ime_nl_handwriting" />
+            <def resource_id="@xml/ime_nl" />
+        </item>
+        <item language="nl-BE" default_variant="azerty">
+            <def resource_id="@xml/ime_nl_handwriting" />
+            <def resource_id="@xml/ime_nl_be" />
+        </item>
+        <item language="nn-NO" default_variant="nordic">
+            <def resource_id="@xml/ime_no_handwriting" />
+            <def resource_id="@xml/ime_nn_no" />
+        </item>
+        <item language="nnb-CD" resource_id="@xml/ime_nnb_cd" default_variant="nande" />
+        <item language="noe-IN" default_variant="nimadi">
+            <def resource_id="@xml/ime_noe_in_dynamic" />
+        </item>
+        <item language="nr-ZA" resource_id="@xml/ime_nr_za" default_variant="qwerty" />
+        <item language="nso" resource_id="@xml/ime_nso" default_variant="northern_sotho" />
+        <item language="nv-US" resource_id="@xml/ime_nv_us" default_variant="navajo" />
+        <item language="ny" default_variant="nyanja">
+            <def resource_id="@xml/ime_ny_handwriting" />
+            <def resource_id="@xml/ime_ny" />
+        </item>
+        <item language="nyf-KE" resource_id="@xml/ime_nyf_ke" default_variant="qwerty" />
+        <item language="nym-TZ" resource_id="@xml/ime_nym_tz" default_variant="qwerty" />
+        <item language="nyn-UG" resource_id="@xml/ime_nyn_ug" default_variant="qwerty" />
+        <item language="nyo-UG" resource_id="@xml/ime_nyo_ug" default_variant="qwerty" />
+        <item language="nyy-TZ" resource_id="@xml/ime_nyy_tz" default_variant="nyakyusa" />
+        <item language="oc-FR" resource_id="@xml/ime_oc_fr" default_variant="azerty" />
+        <item language="olo-RU" resource_id="@xml/ime_olo_ru" default_variant="livvi_karelian" />
+        <item language="om" resource_id="@xml/ime_om" default_variant="qwerty_with_apostrophe" />
+        <item language="or-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_or_transliteration" />
+            <def resource_id="@xml/ime_or_dynamic" />
+            <def resource_id="@xml/ime_or_handwriting" />
+        </item>
+        <item language="or-Latn" resource_id="@xml/ime_or_xa" default_variant="qwerty" />
+        <item language="os-RU" resource_id="@xml/ime_os_ru" default_variant="ossetian" />
+        <item language="pa-Guru" default_variant="qwerty">
+            <def resource_id="@xml/ime_pa_guru_transliteration" />
+            <def resource_id="@xml/ime_pa_xf_dynamic" />
+            <def resource_id="@xml/ime_pa_xf_handwriting" />
+        </item>
+        <item language="pa-Latn" resource_id="@xml/ime_pa_xa" default_variant="qwerty" />
+        <item language="pa-PK" default_variant="punjabi_pakistan">
+            <def resource_id="@xml/ime_pa_pk" />
+            <def resource_id="@xml/ime_pa_arab_transliteration" />
+        </item>
+        <item language="pag-PH" resource_id="@xml/ime_pag_ph" default_variant="qwerty" />
+        <item language="pam-PH" resource_id="@xml/ime_pam_ph" default_variant="kapampangan" />
+        <item language="pap" resource_id="@xml/ime_pap" default_variant="qwerty" />
+        <item language="pcc-CN" resource_id="@xml/ime_pcc_cn" default_variant="qwerty" />
+        <item language="pcd-BE" resource_id="@xml/ime_pcd_be" default_variant="azerty" />
+        <item language="pcm-NG" resource_id="@xml/ime_pcm_ng" default_variant="qwerty" />
+        <item language="pfl-DE" resource_id="@xml/ime_pfl_de" default_variant="palatine_german" />
+        <item language="pko-KE" resource_id="@xml/ime_pko_ke" default_variant="pokot" />
+        <item language="pl" default_variant="qwerty">
+            <def resource_id="@xml/ime_pl_handwriting" />
+            <def resource_id="@xml/ime_pl" />
+        </item>
+        <item language="pms-IT" resource_id="@xml/ime_pms_it" default_variant="piedmontese" />
+        <item language="pnt-GR" resource_id="@xml/ime_pnt_gr" default_variant="pontic" />
+        <item language="pov-GW" resource_id="@xml/ime_pov_gw" default_variant="qwerty" />
+        <item language="prs-AF" resource_id="@xml/ime_fa_af" default_variant="dari_afghanistan" />
+        <item language="ps" default_variant="pashto">
+            <def resource_id="@xml/ime_ps" />
+        </item>
+        <item language="pse-ID" resource_id="@xml/ime_pse_id" default_variant="qwerty" />
+        <item language="pt-002" default_variant="qwerty">
+            <def resource_id="@xml/ime_pt_handwriting" />
+            <def resource_id="@xml/ime_pt_002" />
+        </item>
+        <item language="pt-AO" resource_id="@xml/ime_pt_ao" default_variant="qwerty" />
+        <item language="pt-BR" default_variant="qwerty">
+            <def resource_id="@xml/ime_pt_handwriting" />
+            <def resource_id="@xml/ime_pt_br" />
+        </item>
+        <item language="pt-MO" resource_id="@xml/ime_pt_mo" default_variant="qwerty" />
+        <item language="pt-PT" default_variant="qwerty">
+            <def resource_id="@xml/ime_pt_handwriting" />
+            <def resource_id="@xml/ime_pt_pt" />
+        </item>
+        <item language="qu-PE" resource_id="@xml/ime_qu_pe" default_variant="quechua" />
+        <item language="quc" resource_id="@xml/ime_quc" default_variant="kiche" />
+        <item language="qug-EC" resource_id="@xml/ime_qug_ec" default_variant="chimborazo_highland_kichwa" />
+        <item language="quy-PE" resource_id="@xml/ime_quy_pe" default_variant="qwerty_with_n_with_tilde" />
+        <item language="quz-PE" resource_id="@xml/ime_quz_pe" default_variant="quechua" />
+        <item language="qxq-IR" resource_id="@xml/ime_qxq_ir" default_variant="qashqai" />
+        <item language="rim-TZ" resource_id="@xml/ime_rim_tz" default_variant="nyaturu" />
+        <item language="rkt-Beng" resource_id="@xml/ime_rkt_xe_dynamic" default_variant="rangpuri" />
+        <item language="rkt-IN" default_variant="rangpuri">
+            <def resource_id="@xml/ime_rkt_deva_transliteration" process_target="[dev][fishfood][experimental]" />
+            <def resource_id="@xml/ime_rkt_in_dynamic" />
+        </item>
+        <item language="rm-CH" resource_id="@xml/ime_rm_ch" default_variant="qwertz" />
+        <item language="rmn-BG" resource_id="@xml/ime_rmn_bg" default_variant="bulgarian" />
+        <item language="rmn-MK" resource_id="@xml/ime_rmn_mk" default_variant="romani" />
+        <item language="rmy-AL" resource_id="@xml/ime_rmy_al" default_variant="romani" />
+        <item language="rmy-RO" resource_id="@xml/ime_rmy_ro" default_variant="romanian" />
+        <item language="rn-BI" resource_id="@xml/ime_rn_bi" default_variant="rundi" />
+        <item language="ro-RO" default_variant="qwerty">
+            <def resource_id="@xml/ime_ro_handwriting" />
+            <def resource_id="@xml/ime_ro" />
+        </item>
+        <item language="ro-MD" default_variant="qwerty">
+            <def resource_id="@xml/ime_ro_handwriting" />
+            <def resource_id="@xml/ime_ro_md" />
+        </item>
+        <item language="ru-RU" default_variant="russian">
+            <def resource_id="@xml/ime_ru_handwriting" />
+            <def resource_id="@xml/ime_ru" />
+        </item>
+        <item language="ru-BY" resource_id="@xml/ime_ru_by" default_variant="russian" />
+        <item language="ru-KG" resource_id="@xml/ime_ru_kg" default_variant="russian" />
+        <item language="rue-UA" resource_id="@xml/ime_rue_ua" default_variant="rusyn" />
+        <item language="rw" resource_id="@xml/ime_rw" default_variant="kinyarwanda" />
+        <item language="rwr-IN" default_variant="marwari">
+            <def resource_id="@xml/ime_rwr_in_dynamic" />
+            <def resource_id="@xml/ime_rwr_transliteration" />
+        </item>
+        <item language="sa-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_sa_transliteration" />
+            <def resource_id="@xml/ime_sa_dynamic" />
+        </item>
+        <item language="sa-Latn" resource_id="@xml/ime_sa_xa" default_variant="qwerty" />
+        <item language="sah-RU" resource_id="@xml/ime_sah_ru" default_variant="sakha" />
+        <item language="sas-ID" resource_id="@xml/ime_sas_id" default_variant="qwerty" />
+        <item language="sat-Beng" default_variant="santali_bengali">
+            <def resource_id="@xml/ime_sat_xe_dynamic" />
+        </item>
+        <item language="sat-Deva" default_variant="santali_devanagari">
+            <def resource_id="@xml/ime_sat_xd_dynamic" />
+        </item>
+        <item language="sat-Latn" resource_id="@xml/ime_sat_xa" default_variant="qwerty" />
+        <item language="sat-Olck" default_variant="qwerty">
+            <def resource_id="@xml/ime_sat_olck_transliteration" />
+            <def resource_id="@xml/ime_sat_xf" />
+        </item>
+        <item language="sc-IT" resource_id="@xml/ime_sc_it" default_variant="qwerty" />
+        <item language="sck-IN" default_variant="sadri_dynamic">
+            <def resource_id="@xml/ime_sck_in_dynamic" />
+            <def resource_id="@xml/ime_sck_deva_transliteration" />
+        </item>
+        <item language="scn-IT" resource_id="@xml/ime_scn_it" default_variant="qwerty" />
+        <item language="sco-GB" resource_id="@xml/ime_sco_gb" default_variant="qwerty" />
+        <item language="sd-Arab" default_variant="qwerty">
+            <def resource_id="@xml/ime_sd_arab_transliteration" />
+            <def resource_id="@xml/ime_sd_xc" />
+        </item>
+        <item language="sd-Deva" default_variant="qwerty">
+            <def resource_id="@xml/ime_sd_deva_transliteration" />
+            <def resource_id="@xml/ime_sd_xd_dynamic" />
+        </item>
+        <item language="sd-Latn" resource_id="@xml/ime_sd_xa" default_variant="qwerty" />
+        <item language="sdc-IT" resource_id="@xml/ime_sdc_it" default_variant="qwerty" />
+        <item language="sdh-IR" resource_id="@xml/ime_sdh_ir" default_variant="southern_kurdish" />
+        <item language="se-NO" resource_id="@xml/ime_se_no" default_variant="northern_sami" />
+        <item language="sg-CF" resource_id="@xml/ime_sg_cf" default_variant="sango" />
+        <item language="sgc-KE" resource_id="@xml/ime_sgc_ke" default_variant="qwerty" />
+        <item language="sgs-LT" resource_id="@xml/ime_sgs_lt" default_variant="qwerty" />
+        <item language="si-LK" default_variant="sinhala">
+            <def resource_id="@xml/ime_si_handwriting" />
+            <def resource_id="@xml/ime_si_lk_dynamic" />
+        </item>
+        <item language="sjp-IN" default_variant="surjapuri">
+            <def resource_id="@xml/ime_sjp_in_dynamic" />
+        </item>
+        <item language="sk" default_variant="qwerty">
+            <def resource_id="@xml/ime_sk_handwriting" />
+            <def resource_id="@xml/ime_sk" />
+        </item>
+        <item language="sl" default_variant="qwerty">
+            <def resource_id="@xml/ime_sl_handwriting" />
+            <def resource_id="@xml/ime_sl" />
+        </item>
+        <item language="sm" default_variant="samoan">
+            <def resource_id="@xml/ime_sm_handwriting" />
+            <def resource_id="@xml/ime_sm" />
+        </item>
+        <item language="sn" default_variant="qwerty">
+            <def resource_id="@xml/ime_sn_handwriting" />
+            <def resource_id="@xml/ime_sn" />
+        </item>
+        <item language="so" default_variant="somali">
+            <def resource_id="@xml/ime_so_handwriting" />
+            <def resource_id="@xml/ime_so" />
+        </item>
+        <item language="sop-CD" resource_id="@xml/ime_sop_cd" default_variant="qwerty" />
+        <item language="sq-x-gheg" resource_id="@xml/ime_aln_rs" default_variant="albanian" />
+        <item language="sq-x-standard" default_variant="albanian">
+            <def resource_id="@xml/ime_sq_handwriting" />
+            <def resource_id="@xml/ime_sq" />
+        </item>
+        <item language="sq-x-tosk" resource_id="@xml/ime_als_al" default_variant="albanian" />
+        <item language="sr-Cyrl-RS" default_variant="serbian">
+            <def resource_id="@xml/ime_sr_handwriting" />
+            <def resource_id="@xml/ime_sr" />
+        </item>
+        <item language="sr-Latn-RS" default_variant="serbian_qwertz">
+            <def resource_id="@xml/ime_sr_zz" />
+        </item>
+        <item language="srn" resource_id="@xml/ime_srn" default_variant="qwerty" />
+        <item language="srp-Cyrl-ME" resource_id="@xml/ime_sr_xb" default_variant="serbian" />
+        <item language="srp-Latn-ME" resource_id="@xml/ime_sr_xa" default_variant="serbian_qwertz" />
+        <item language="ss-SZ" resource_id="@xml/ime_ss_sz" default_variant="qwerty" />
+        <item language="st" resource_id="@xml/ime_st" default_variant="qwerty" />
+        <item language="sty-RU" resource_id="@xml/ime_sty_ru" default_variant="siberian_tatar" />
+        <item language="su-Arab" resource_id="@xml/ime_su_xc" default_variant="sundanese" />
+        <item language="su-Latn" default_variant="sundanese">
+            <def resource_id="@xml/ime_su_handwriting" />
+            <def resource_id="@xml/ime_su" />
+        </item>
+        <item language="su-Sund" resource_id="@xml/ime_su_xf_dynamic" default_variant="sundanese" />
+        <item language="sv-SE" default_variant="nordic">
+            <def resource_id="@xml/ime_sv_handwriting" />
+            <def resource_id="@xml/ime_sv" />
+        </item>
+        <item language="sv-FI" resource_id="@xml/ime_sv_fi" default_variant="nordic" />
+        <item language="sw" default_variant="qwerty">
+            <def resource_id="@xml/ime_sw_handwriting" />
+            <def resource_id="@xml/ime_sw" />
+        </item>
+        <item language="swv-IN" default_variant="shekhawati">
+            <def resource_id="@xml/ime_swv_in_dynamic" />
+        </item>
+        <item language="sxu-DE" resource_id="@xml/ime_sxu_de" default_variant="upper_saxon" />
+        <item language="syl-Beng" resource_id="@xml/ime_syl_bd_dynamic" default_variant="sylheti" />
+        <item language="syl-Latn" resource_id="@xml/ime_syl_xa" default_variant="qwerty" />
+        <item language="szl-PL" resource_id="@xml/ime_szl_pl" default_variant="qwerty" />
+        <item language="ta-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_ta_in_transliteration" />
+            <def resource_id="@xml/ime_ta_in_dynamic" />
+            <def resource_id="@xml/ime_ta_handwriting" />
+        </item>
+        <item language="ta-Latn" resource_id="@xml/ime_ta_xa" default_variant="qwerty" />
+        <item language="ta-LK" default_variant="tamil">
+            <def resource_id="@xml/ime_ta_in_transliteration" />
+            <def resource_id="@xml/ime_ta_handwriting" />
+            <def resource_id="@xml/ime_ta_lk_dynamic" />
+        </item>
+        <item language="ta-SG" default_variant="tamil">
+            <def resource_id="@xml/ime_ta_in_transliteration" />
+            <def resource_id="@xml/ime_ta_handwriting" />
+            <def resource_id="@xml/ime_ta_sg_dynamic" />
+        </item>
+        <item language="tab-RU" resource_id="@xml/ime_tab_ru" default_variant="tabasaran" />
+        <item language="taj-NP" default_variant="tamang">
+            <def resource_id="@xml/ime_taj_np_dynamic" />
+        </item>
+        <item language="tcy-IN" default_variant="tulu_india">
+            <def resource_id="@xml/ime_tcy_in_dynamic" />
+            <def resource_id="@xml/ime_tcy_knda_transliteration" />
+        </item>
+        <item language="te-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_te_transliteration" />
+            <def resource_id="@xml/ime_te_in_dynamic" />
+            <def resource_id="@xml/ime_te_in_handwriting" />
+        </item>
+        <item language="te-Latn" resource_id="@xml/ime_te_xa" default_variant="qwerty" />
+        <item language="teo-UG" resource_id="@xml/ime_teo_ug" default_variant="qwerty" />
+        <item language="tet-TL" resource_id="@xml/ime_tet_tl" default_variant="tetum" />
+        <item language="tg" default_variant="tajik">
+            <def resource_id="@xml/ime_tg_handwriting" />
+            <def resource_id="@xml/ime_tg" />
+        </item>
+        <item language="th-TH" default_variant="thai">
+            <def resource_id="@xml/ime_th_handwriting" />
+            <def resource_id="@xml/ime_th" />
+        </item>
+        <item language="ti" default_variant="tigrinya">
+            <def resource_id="@xml/ime_ti_handwriting" />
+            <def resource_id="@xml/ime_ti_dynamic" />
+        </item>
+        <item language="tiv-NG" resource_id="@xml/ime_tiv_ng" default_variant="qwerty" />
+        <item language="tk" resource_id="@xml/ime_tk" default_variant="turkmen" />
+        <item language="tl" resource_id="@xml/ime_tl" default_variant="spanish" />
+        <item language="tly-AZ" resource_id="@xml/ime_tly_az" default_variant="talysh" />
+        <item language="tly-IR" resource_id="@xml/ime_tly_ir" default_variant="talysh" />
+        <item language="tly-RU" resource_id="@xml/ime_tly_ru" default_variant="talysh" />
+        <item language="tn-BW" resource_id="@xml/ime_tn_bw" default_variant="tswana" />
+        <item language="to-TO" resource_id="@xml/ime_to_to" default_variant="tongan" />
+        <item language="tpi" resource_id="@xml/ime_tpi" default_variant="qwerty" />
+        <item language="tr-TR" default_variant="qwerty">
+            <def resource_id="@xml/ime_tr_handwriting" />
+            <def resource_id="@xml/ime_tr" />
+        </item>
+        <item language="tr-CY" resource_id="@xml/ime_tr_cy" default_variant="turkish_q" />
+        <item language="trf-TT" resource_id="@xml/ime_trf_tt" default_variant="qwerty" />
+        <item language="trw" resource_id="@xml/ime_trw" default_variant="torwali" />
+        <item language="ts" resource_id="@xml/ime_ts" default_variant="qwerty" />
+        <item language="tsg-PH" resource_id="@xml/ime_tsg_ph" default_variant="tausug" />
+        <item language="tt" resource_id="@xml/ime_tt" default_variant="tatar" />
+        <item language="ttj-UG" resource_id="@xml/ime_ttj_ug" default_variant="qwerty" />
+        <item language="tuv-KE" resource_id="@xml/ime_tuv_ke" default_variant="qwerty_with_apostrophe" />
+        <item language="ty-PF" resource_id="@xml/ime_ty_pf" default_variant="azerty" />
+        <item language="tyv-RU" resource_id="@xml/ime_tyv_ru" default_variant="tuvan" />
+        <item language="udm-RU" resource_id="@xml/ime_udm_ru" default_variant="udmurt" />
+        <item language="ug" resource_id="@xml/ime_ug" default_variant="uyghur" />
+        <item language="uk" default_variant="ukrainian">
+            <def resource_id="@xml/ime_uk_handwriting" />
+            <def resource_id="@xml/ime_uk" />
+        </item>
+        <item language="umb-AO" resource_id="@xml/ime_umb_ao" default_variant="qwerty" />
+        <item language="unr-Beng" default_variant="mundari_bengali">
+            <def resource_id="@xml/ime_unr_xe_dynamic" />
+        </item>
+        <item language="ur-IN" default_variant="qwerty">
+            <def resource_id="@xml/ime_ur_transliteration" />
+            <def resource_id="@xml/ime_ur_in" />
+            <def resource_id="@xml/ime_ur_in_handwriting" />
+        </item>
+        <item language="ur-Latn" resource_id="@xml/ime_ur_xa" default_variant="qwerty" />
+        <item language="ur-PK" default_variant="urdu_pakistan">
+            <def resource_id="@xml/ime_ur_transliteration" />
+            <def resource_id="@xml/ime_ur_pk_handwriting" />
+            <def resource_id="@xml/ime_ur_pk" />
+        </item>
+        <item language="uum-GE" resource_id="@xml/ime_uum_ge" default_variant="urum" />
+        <item language="uz-Latn" default_variant="uzbek">
+            <def resource_id="@xml/ime_uz_handwriting" />
+            <def resource_id="@xml/ime_uz" />
+        </item>
+        <item language="uz-Cyrl" resource_id="@xml/ime_uz_xb" default_variant="uzbek" />
+        <item language="vas-IN" default_variant="vasavi">
+            <def resource_id="@xml/ime_vas_in_dynamic" />
+        </item>
+        <item language="ve-ZA" resource_id="@xml/ime_ve_za" default_variant="qwerty" />
+        <item language="vec-IT" resource_id="@xml/ime_vec_it" default_variant="venetian" />
+        <item language="vep-RU" resource_id="@xml/ime_vep_ru" default_variant="veps" />
+        <item language="vi" default_variant="qwerty">
+            <def resource_id="@xml/ime_vi_handwriting" />
+            <def resource_id="@xml/ime_vi" />
+        </item>
+        <item language="vls-BE" resource_id="@xml/ime_vls_be" default_variant="azerty" />
+        <item language="vmf-DE" resource_id="@xml/ime_vmf_de" default_variant="east_franconian_german" />
+        <item language="vro-EE" resource_id="@xml/ime_vro_ee" default_variant="voro" />
+        <item language="wa-BE" resource_id="@xml/ime_wa_be" default_variant="azerty" />
+        <item language="war" resource_id="@xml/ime_war" default_variant="spanish" />
+        <item language="wbr-IN" default_variant="wagdi">
+            <def resource_id="@xml/ime_wbr_in_dynamic" />
+        </item>
+        <item language="wes-CM" resource_id="@xml/ime_wes_cm" default_variant="qwerty" />
+        <item language="wo" resource_id="@xml/ime_wo" default_variant="wolof" />
+        <item language="wry-IN" default_variant="merwari">
+            <def resource_id="@xml/ime_wry_in_dynamic" />
+        </item>
+        <item language="xal-RU" resource_id="@xml/ime_xal_ru" default_variant="kalmyk_oirat" />
+        <item language="xh" default_variant="qwerty">
+            <def resource_id="@xml/ime_xh_handwriting" />
+            <def resource_id="@xml/ime_xh_za" />
+        </item>
+        <item language="xmf-GE" resource_id="@xml/ime_xmf_ge" default_variant="mingrelian" />
+        <item language="xmm-ID" resource_id="@xml/ime_xmm_id" default_variant="qwerty" />
+        <item language="xnr-IN" default_variant="kangri_dynamic">
+            <def resource_id="@xml/ime_xnr_in_dynamic" />
+        </item>
+        <item language="xog-UG" resource_id="@xml/ime_xog_ug" default_variant="soga" />
+        <item language="xon-GH" resource_id="@xml/ime_xon_gh" default_variant="konkomba" />
+        <item language="ymm-SO" resource_id="@xml/ime_ymm_so" default_variant="qwerty" />
+        <item language="yo" resource_id="@xml/ime_yo" default_variant="qwerty" />
+        <item language="yua-MX" resource_id="@xml/ime_yua_mx" default_variant="qwerty_with_apostrophe" />
+        <item language="za-CN" resource_id="@xml/ime_za_cn" default_variant="qwerty" />
+        <item language="zea-NL" resource_id="@xml/ime_zea_nl" default_variant="qwerty" />
+        <item language="zh-CN" default_variant="qwerty">
+            <def resource_id="@xml/ime_zh_cn" />
+            <def resource_id="@xml/ime_zh_cn_9key" />
+            <def resource_id="@xml/ime_zh_cn_handwriting" flag_id="@bool/enable_handwriting_zh_cn" />
+            <def resource_id="@xml/ime_zh_cn_stroke" />
+        </item>
+        <item language="zh-HK" default_variant="cangjie">
+            <def resource_id="@xml/ime_zh_hk_handwriting" flag_id="@bool/enable_handwriting_zh_hk" />
+            <def resource_id="@xml/ime_zh_hk_cangjie" />
+            <def resource_id="@xml/ime_zh_hk_quick" />
+            <def resource_id="@xml/ime_zh_hk" />
+            <def resource_id="@xml/ime_zh_hk_stroke" />
+        </item>
+        <item language="zh-TW" default_variant="zhuyin">
+            <def resource_id="@xml/ime_zh_tw_zhuyin" />
+            <def resource_id="@xml/ime_zh_tw_handwriting" flag_id="@bool/enable_handwriting_zh_tw" />
+            <def resource_id="@xml/ime_zh_tw_cangjie" />
+            <def resource_id="@xml/ime_zh_tw_quick" />
+            <def resource_id="@xml/ime_zh_tw" />
+        </item>
+        <item language="zu" default_variant="qwerty">
+            <def resource_id="@xml/ime_zu_handwriting" />
+            <def resource_id="@xml/ime_zu" />
+        </item>
+        <item language="zyb-CN" resource_id="@xml/ime_zyb_cn" default_variant="qwerty" />
+        <item language="zz" resource_id="@xml/ime_zz" default_variant="qwerty" />
+        <alias language="es-419" alias="es" />
+        <alias language="tl" alias="fil" />
+        <alias language="jv-Latn" alias="jv" />
+        <alias language="ar-EG" alias="ar" />
+        <alias language="as-IN" alias="as" />
+        <alias language="fr-FR" alias="fr" />
+        <alias language="ha-NG" alias="ha" />
+        <alias language="hi-IN" alias="hi" />
+        <alias language="de-DE" alias="de" />
+        <alias language="el-GR" alias="el" />
+        <alias language="gu-IN" alias="gu" />
+        <alias language="it-IT" alias="it" />
+        <alias language="iw-IL" alias="iw" />
+        <alias language="ka-GE" alias="ka" />
+        <alias language="ln-CD" alias="ln" />
+        <alias language="mai-IN" alias="mai" />
+        <alias language="mai-IN" alias="bh" />
+        <alias language="nl-NL" alias="nl" />
+        <alias language="or-IN" alias="or" />
+        <alias language="ro-RO" alias="ro" />
+        <alias language="ru-RU" alias="ru" />
+        <alias language="sa-IN" alias="sa" />
+        <alias language="sv-SE" alias="sv" />
+        <alias language="tr-TR" alias="tr" />
+        <alias language="th-TH" alias="th" />
+        <alias language="sq-x-gheg" alias="aln-RS" />
+        <alias language="sq-x-standard" alias="sq" />
+        <alias language="su-Latn" alias="su" />
+        <alias language="pa-Guru" alias="pa" />
+    </ime_list>
+</framework>

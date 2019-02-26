@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_apostrophe" press_data="'" long_press_data="&quot;,׳,״" />
+            <softkey id="@id/softkey_hyphen_minus" press_data="-" long_press_data="־" />
+            <softkey id="@id/softkey_hebrew_letter_qof" press_data="ק" long_press_data="ָ,ֳ,ֻ" />
+            <softkey id="@id/softkey_hebrew_letter_resh" press_data="ר" long_press_data="ֿ" />
+            <softkey id="@id/softkey_hebrew_letter_vav" press_data="ו" long_press_data="וּ,וֹ" />
+            <softkey id="@id/softkey_hebrew_letter_pe" press_data="פ" long_press_data="ַ,ֲ" />
+            <softkey id="@id/softkey_hebrew_letter_shin" press_data="ש" long_press_data="ְ,שׂ,שׁ" />
+            <softkey id="@id/softkey_hebrew_letter_dalet" press_data="ד" long_press_data="ּ" />
+            <softkey id="@id/softkey_hebrew_letter_gimel" press_data="ג" long_press_data="ג׳" />
+            <softkey id="@id/softkey_hebrew_letter_ayin" press_data="ע" long_press_data="֫" />
+            <softkey id="@id/softkey_hebrew_letter_yod" press_data="י" long_press_data="ײַ" />
+            <softkey id="@id/softkey_hebrew_letter_het" press_data="ח" long_press_data="ח׳,ִ,ֹ" />
+            <softkey id="@id/softkey_hebrew_letter_zayin" press_data="ז" long_press_data="ז׳" />
+            <softkey id="@id/softkey_hebrew_letter_samekh" press_data="ס" long_press_data="ֶ,ֱ" />
+            <softkey id="@id/softkey_hebrew_letter_tsadi" press_data="צ" long_press_data="צ׳,ֵ" />
+            <softkey id="@id/softkey_hebrew_letter_tav" press_data="ת" long_press_data="ת׳" />
+            <softkey id="@id/softkey_hebrew_letter_final_tsadi" press_data="ץ" long_press_data="ץ׳" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_no_popup_simple">
+            <softkey id="@id/softkey_low_line" press_data="_" />
+            <softkey id="@id/softkey_hebrew_letter_alef" press_data="א" />
+            <softkey id="@id/softkey_hebrew_letter_tet" press_data="ט" />
+            <softkey id="@id/softkey_hebrew_letter_final_nun" press_data="ן" />
+            <softkey id="@id/softkey_hebrew_letter_final_mem" press_data="ם" />
+            <softkey id="@id/softkey_hebrew_letter_kaf" press_data="כ" />
+            <softkey id="@id/softkey_hebrew_letter_lamed" press_data="ל" />
+            <softkey id="@id/softkey_hebrew_letter_final_kaf" press_data="ך" />
+            <softkey id="@id/softkey_hebrew_letter_final_pe" press_data="ף" />
+            <softkey id="@id/softkey_hebrew_letter_bet" press_data="ב" />
+            <softkey id="@id/softkey_hebrew_letter_he" press_data="ה" />
+            <softkey id="@id/softkey_hebrew_letter_nun" press_data="נ" />
+            <softkey id="@id/softkey_hebrew_letter_mem" press_data="מ" />
+        </softkey_list>
+    </softkeys>
+</framework>

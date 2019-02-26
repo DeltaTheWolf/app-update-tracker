@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/softkey_close_textediting" layout="@layout/softkey_function_key_icon" content_description="@string/close_text_editing" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="prime" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+        <softkey id="@id/softkey_close_textediting_rtl" layout="@layout/softkey_access_points_back_rtl_icon" content_description="@string/close_text_editing" alpha="@attr/IconAlphaOpaque">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="prime" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_arrow_back_white_24" />
+        </softkey>
+    </softkeys>
+</framework>

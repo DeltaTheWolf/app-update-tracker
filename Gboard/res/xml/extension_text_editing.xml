@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module id="@string/id_access_point_textediting" class="com.google.android.apps.inputmethod.libs.textediting.TextEditingExtension" icon="@attr/IconAccessPointTextEditing" label="@string/label_text_editing_access_point" content_description="@string/text_editing_access_point_content_desc">
+        <initialization_deps>
+            <system_property value="@string/system_property_enable_text_editing" />
+        </initialization_deps>
+        <keyboard_types>
+            <keyboard type="@string/keyboard_type_textediting" />
+        </keyboard_types>
+        <extra_values>
+            <item id="@id/extra_value_default_keyboard_in_access_points" value="@string/keyboard_type_textediting" />
+        </extra_values>
+    </module>
+</framework>

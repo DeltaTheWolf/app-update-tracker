@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/softkey_open_search_keyboard" layout="@layout/softkey_icon_no_theme" content_description="@string/gboard_universal_media_search_content_desc">
+            <action type="PRESS" keycode="OPEN_EXTENSION_INTERNAL" data="com.google.android.apps.inputmethod.libs.search.IUniversalMediaExtension" />
+            <icon location="@id/icon" value="@drawable/ic_google_search_trim" />
+        </softkey>
+        <softkey id="@id/softkey_clear_and_open_search_no_theme" layout="@layout/softkey_icon_no_theme_with_padding" content_description="@string/gboard_universal_media_search_content_desc">
+            <action type="PRESS" keycode="OPEN_EXTENSION_AND_CLEAR_QUERY" data="com.google.android.apps.inputmethod.libs.search.IUniversalMediaExtension" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_cancel_black_24" />
+        </softkey>
+    </softkeys>
+</framework>

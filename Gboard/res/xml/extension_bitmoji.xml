@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module class="com.google.android.apps.inputmethod.libs.search.sticker.BitmojiExtension">
+        <initialization_deps>
+            <components value="GIMS_UserUnlocked,UserSetupComplete,UnicodeIme" />
+        </initialization_deps>
+        <keyboard_types>
+            <keyboard type="@string/keyboard_type_bitmoji_search_result" />
+        </keyboard_types>
+        <extra_values>
+            <item id="@id/extra_value_default_keyboard" value="@string/keyboard_type_bitmoji_search_result" />
+            <item id="@id/extra_value_default_keyboard_in_access_points" value="@string/keyboard_type_bitmoji_search_result" />
+            <item id="@id/extra_value_is_expression_extension" value="true" />
+        </extra_values>
+    </module>
+</framework>

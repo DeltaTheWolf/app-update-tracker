@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_thai" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="th" auto_capital="false" display_app_completions="true" announce_auto_selected_candidate="true">
+        <keyboard_group variant="thai" variant_label="@string/variant_thai" layout_theme="@style/KeyboardLayoutTheme.4LetterRows">
+            <keyboard type="prime" def="@xml/keyboard_th" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+    </ime>
+</framework>

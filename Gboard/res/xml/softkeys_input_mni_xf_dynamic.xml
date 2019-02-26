@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple_dynamic">
+            <softkey id="@id/softkey_meetei_mayek_letter_atiya" press_data="ꯑ" />
+            <softkey id="@id/softkey_meetei_mayek_vowel_sign_anap" press_data="ꯥ" long_press_data="ꫭ,ꫮ,ꫯ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_i" press_data="ꯏ" long_press_data="ꯤ,ꯢ,ꫫ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_un" press_data="ꯎ" long_press_data="ꯨ,ꫬ" />
+            <softkey id="@id/softkey_meetei_mayek_vowel_sign_cheinap" press_data="ꯩ" long_press_data="ꯦ" />
+            <softkey id="@id/softkey_meetei_mayek_vowel_sign_sounap" press_data="ꯧ" long_press_data="ꯣ" />
+            <softkey id="@id/softkey_meetei_mayek_vowel_sign_nung" press_data="ꯪ" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_no_popup_simple">
+            <softkey id="@id/softkey_meetei_mayek_letter_khou" press_data="ꯈ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_gok" press_data="ꯒ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_ghou" press_data="ꯘ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_chil" press_data="ꯆ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_jil" press_data="ꯖ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_jham" press_data="ꯓ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_thou" press_data="ꯊ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_dil" press_data="ꯗ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_dhou" press_data="ꯙ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_pham" press_data="ꯐ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_ba" press_data="ꯕ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_bham" press_data="ꯚ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_yang" press_data="ꯌ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_rai" press_data="ꯔ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_wai" press_data="ꯋ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_ssa" press_data="ꫪ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_sam" press_data="ꯁ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_huk" press_data="ꯍ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_kok_lonsum" press_data="ꯛ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_ngou_lonsum" press_data="ꯡ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_til_lonsum" press_data="ꯠ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_na_lonsum" press_data="ꯟ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_pa_lonsum" press_data="ꯞ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_mit_lonsum" press_data="ꯝ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_lai_lonsum" press_data="ꯜ" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_meetei_mayek_letter_kok" press_data="ꯀ" long_press_data="ꯛ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_ngou" press_data="ꯉ" long_press_data="ꯡ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_til" press_data="ꯇ" long_press_data="ꯠ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_na" press_data="ꯅ" long_press_data="ꯟ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_pa" press_data="ꯄ" long_press_data="ꯞ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_mit" press_data="ꯃ" long_press_data="ꯝ" />
+            <softkey id="@id/softkey_meetei_mayek_letter_lai" press_data="ꯂ" long_press_data="ꯜ" />
+        </softkey_list>
+    </softkeys>
+</framework>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/softkey_ja_back_to_hiragana_alphabet" layout="@layout/softkey_function_key_label_auto_text_size" content_description="@string/letter_keyboard_key_content_desc">
+            <action type="PRESS" keycode="SWITCH_TO_KEYBOARD_IN_PREF" data="@string/pref_key_japanese_last_used_hiragana_alphabet_keyboard_type" />
+            <label location="@id/label" value="@string/label_back_to_japanese_prime" />
+        </softkey>
+    </softkeys>
+</framework>

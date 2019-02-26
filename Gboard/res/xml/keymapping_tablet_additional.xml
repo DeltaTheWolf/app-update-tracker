@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys href="@xml/softkeys_latin_symbols" />
+    <key_mapping>
+        <if language="blk-MM">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_myanmar_letter_ya" />
+        </if>
+        <if language="ban-Bali">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_balinese_panti" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_balinese_pasalinan" />
+        </if>
+        <if language="bm-Nkoo">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_nko_exclamation_mark" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_arabic_question_mark" />
+        </if>
+        <if language="dv-MV">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_thaana_letter_laamu" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_arabic_question_mark" />
+        </if>
+        <if language="hy-AM">
+            <mapping view_id="@id/key_pos_1_10" key_id="@id/softkey_armenian_small_letter_xeh" />
+            <mapping view_id="@id/key_pos_2_9" key_id="@id/softkey_armenian_small_letter_sha" />
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_armenian_phonetic_exclamation_mark" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_armenian_phonetic_question_mark" />
+        </if>
+        <if language="ii-Latn                   |khb-CN">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_fullwidth_exclamation_mark" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_fullwidth_question_mark" />
+        </if>
+        <if language="ksw-MM">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_myanmar_letter_ya" />
+        </if>
+        <if language="kxm-TH                   |nod-Thai                   |sou-TH                   |th                   |tts-TH">
+            <mapping view_id="@id/key_pos_1_12" key_id="@id/softkey_thai_character_kho_khuat" />
+            <mapping view_id="@id/key_pos_2_11" key_id="@id/softkey_empty" />
+        </if>
+        <if language="my">
+            <mapping view_id="@id/key_pos_1_10" key_id="@id/softkey_myanmar_letter_nga_myanmar_sign_asat_myanmar_sign_virama" />
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_myanmar_letter_ya" />
+        </if>
+        <if language="nv-US">
+            <mapping view_id="@id/key_pos_1_11" key_id="@id/softkey_apostrophe" />
+            <mapping view_id="@id/key_pos_2_10" key_id="@id/softkey_latin_small_letter_n_with_acute" />
+        </if>
+    </key_mapping>
+    <key_mapping state="SHIFT">
+        <if language="blk-MM">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_myanmar_letter_e" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_exclamation_mark" />
+        </if>
+        <if language="hy-AM">
+            <mapping view_id="@id/key_pos_1_10" key_id="@id/softkey_armenian_capital_letter_xeh" />
+            <mapping view_id="@id/key_pos_2_9" key_id="@id/softkey_armenian_capital_letter_sha" />
+        </if>
+        <if language="ksw-MM">
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_myanmar_symbol_genitive" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_exclamation_mark" />
+        </if>
+        <if language="my">
+            <mapping view_id="@id/key_pos_1_10" key_id="@id/softkey_myanmar_letter_tta_myanmar_sign_virama_myanmar_letter_ttha" />
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_myanmar_letter_e" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_exclamation_mark" />
+        </if>
+        <if language="kxm-TH                   |nod-Thai                   |sou-TH                   |th                   |tts-TH">
+            <mapping view_id="@id/key_pos_1_12" key_id="@id/softkey_thai_character_kho_khon" />
+            <mapping view_id="@id/key_pos_input_symbol_1" key_id="@id/softkey_empty" />
+            <mapping view_id="@id/key_pos_input_symbol_2" key_id="@id/softkey_empty" />
+        </if>
+        <if language="nv-US">
+            <mapping view_id="@id/key_pos_2_10" key_id="@id/softkey_latin_capital_letter_n_with_acute" />
+        </if>
+    </key_mapping>
+</framework>

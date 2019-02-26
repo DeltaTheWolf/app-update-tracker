@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/setting_search" android:key="@string/setting_search_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:persistent="true" android:title="@string/setting_enable_conv2query" android:key="@string/pref_key_enable_conv2query" android:summary="@string/setting_enable_conv2query_summary" android:defaultValue="@bool/pref_def_value_enable_conv2query" />
+    <SwitchPreference android:persistent="true" android:title="@string/setting_show_one_tap_to_search_icon" android:key="@string/pref_key_enable_one_tap_to_search" android:summary="@string/setting_show_one_tap_to_search_icon_summary" />
+</PreferenceScreen>

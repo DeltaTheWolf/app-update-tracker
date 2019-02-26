@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_gujari_arabic" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="gju-PK" auto_capital="false" display_app_completions="true" announce_auto_selected_candidate="true">
+        <keyboard_group variant="gujari" variant_label="@string/variant_gujari" layout_theme="@style/KeyboardLayoutTheme.4LetterRows">
+            <keyboard type="prime" def="@xml/keyboard_gju_pk" />
+            <include href="@xml/keyboards_non_prime_ascii_with_extended_arabic_indic_digits" />
+        </keyboard_group>
+    </ime>
+</framework>

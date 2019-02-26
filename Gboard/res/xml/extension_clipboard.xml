@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module id="@string/id_access_point_clipboard" class="com.google.android.apps.inputmethod.libs.clipboard.ClipboardExtension" icon="@attr/IconAccessPointClipboard" label="@string/label_clipboard_access_point" content_description="@string/clipboard_access_point_content_desc">
+        <initialization_deps>
+            <system_property value="@string/system_property_enable_clipboard" />
+            <phenotype_id value="@bool/enable_clipboard" />
+        </initialization_deps>
+        <keyboard_types>
+            <keyboard type="@string/keyboard_type_clipboard" />
+        </keyboard_types>
+        <extra_values>
+            <item id="@id/extra_value_default_keyboard_in_access_points" value="@string/keyboard_type_clipboard" />
+        </extra_values>
+    </module>
+</framework>

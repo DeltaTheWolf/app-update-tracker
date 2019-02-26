@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <keyboard id="@id/keyboard_non_prime_smiley" class=".libs.search.emoji.EmojiBrowsingKeyboard" initial_states="LOCK_KEYBOARD+SUB_CATEGORY_2" persistent_states="@string/smiley_keyboard_persist_states" persistent_states_pref_key="@string/smiley_keyboard_persist_states_pref_key" remember_recent_key="ALL_ACTIONS" recent_key_type="smiley" recent_key_layout="@layout/softkey_label_emoji" recent_key_popup_layout="@layout/popup_bubble_rectangular_label_small_material_keep_order">
+        <view layout="@layout/keyboard_emoji_browsing_header" scalable="false" direction="locale" type="header">
+            <softkeys href="@xml/softkeys_search_header" />
+            <softkeys href="@xml/softkeys_emoji_header" />
+            <include href="@xml/keymapping_emoji_default_header" />
+            <include href="@xml/keymapping_emoji_search_result_header" />
+        </view>
+        <view layout="@layout/keyboard_non_prime_smiley_body" type="body">
+            <motion_event_handler class=".libs.framework.keyboard.handler.BasicMotionEventHandler" />
+            <motion_event_handler class=".libs.framework.keyboard.handler.ScrubMoveMotionEventHandler" reverse_preference="false" preference_key="@string/pref_key_enable_scrub_move" />
+            <softkeys href="@xml/softkeys_non_prime_smiley_sub_category" />
+            <include href="@xml/keymapping_header_smiley" />
+            <include href="@xml/softkeys_body_smiley" />
+            <softkeys href="@xml/softkeys_function" />
+            <softkeys href="@xml/softkeys_non_prime_category" />
+            <softkeys href="@xml/softkeys_non_prime_category_tablet" />
+            <softkeys href="@xml/softkeys_input_non_prime_bottom_symbol" />
+            <softkeys href="@xml/softkeys_back_to_prime_language_specific" />
+            <softkeys href="@xml/softkeys_card_viewer_bottom" />
+            <include href="@xml/keymapping_body_smiley" />
+            <include href="@xml/keymapping_bottom_smiley_with_gif" />
+            <include href="@xml/keymapping_card_viewer_bottom_in_extension" />
+            <include href="@xml/keymapping_fragment_back_to_prime_language_specific" />
+        </view>
+    </keyboard>
+</framework>

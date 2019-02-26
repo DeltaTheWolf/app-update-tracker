@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple_dynamic">
+            <softkey id="@id/softkey_sinhala_letter_uyanna" press_data="උ" long_press_data="‌ු" />
+            <softkey id="@id/softkey_sinhala_letter_ayanna" press_data="අ" />
+            <softkey id="@id/softkey_sinhala_letter_aeyanna" press_data="ඇ" long_press_data="ැ" />
+            <softkey id="@id/softkey_sinhala_letter_oyanna" press_data="ඔ" long_press_data="ො,ඕ,ෝ" />
+            <softkey id="@id/softkey_sinhala_letter_uuyanna" press_data="ඌ" long_press_data="ූ" />
+            <softkey id="@id/softkey_sinhala_letter_aayanna" press_data="ආ" long_press_data="ා" />
+            <softkey id="@id/softkey_sinhala_letter_aeeyanna" press_data="ඈ" long_press_data="ෑ" />
+            <softkey id="@id/softkey_sinhala_letter_eyanna" press_data="එ" long_press_data="ෙ,ඒ,ේ" />
+            <softkey id="@id/softkey_sinhala_sign_al_lakuna" press_data="්" />
+            <softkey id="@id/softkey_sinhala_letter_iyanna" press_data="ඉ" long_press_data="ි" />
+            <softkey id="@id/softkey_sinhala_letter_iruyanna" press_data="ඍ" long_press_data="ෘ,ඎ,ෲ,ඏ,ෟ,ඐ,ෳ" />
+            <softkey id="@id/softkey_sinhala_sign_al_lakuna_zero_width_joiner_sinhala_letter_rayanna" press_data="්‍ර" />
+            <softkey id="@id/softkey_sinhala_sign_anusvaraya" press_data="ං" long_press_data="ඃ" />
+            <softkey id="@id/softkey_sinhala_letter_iiyanna" press_data="ඊ" long_press_data="ී" />
+            <softkey id="@id/softkey_sinhala_letter_auyanna" press_data="ඖ" long_press_data="ෞ" />
+            <softkey id="@id/softkey_sinhala_sign_al_lakuna_zero_width_joiner_sinhala_letter_yayanna" press_data="්‍ය" />
+            <softkey id="@id/softkey_sinhala_letter_aiyanna" press_data="ඓ" long_press_data="ෛ" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_sinhala_letter_rayanna" press_data="ර" />
+            <softkey id="@id/softkey_sinhala_letter_hayanna" press_data="හ" />
+            <softkey id="@id/softkey_sinhala_letter_mayanna" press_data="ම" />
+            <softkey id="@id/softkey_sinhala_letter_dantaja_sayanna" press_data="ස" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_dayanna" press_data="ද" long_press_data="ඳ" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_cayanna" press_data="ච" long_press_data="ඡ" />
+            <softkey id="@id/softkey_sinhala_letter_fayanna" press_data="ෆ" />
+            <softkey id="@id/softkey_sinhala_letter_taaluja_sayanna" press_data="ශ" />
+            <softkey id="@id/softkey_sinhala_letter_amba_bayanna" press_data="ඹ" />
+            <softkey id="@id/softkey_sinhala_letter_muurdhaja_sayanna" press_data="ෂ" />
+            <softkey id="@id/softkey_sinhala_letter_mahaapraana_dayanna" press_data="ධ" />
+            <softkey id="@id/softkey_sinhala_letter_taaluja_naasikyaya" press_data="ඤ" long_press_data="ඥ,ඞ" />
+            <softkey id="@id/softkey_sinhala_letter_yayanna" press_data="ය" />
+            <softkey id="@id/softkey_sinhala_letter_vayanna" press_data="ව" />
+            <softkey id="@id/softkey_sinhala_letter_dantaja_nayanna" press_data="න" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_kayanna" press_data="ක" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_tayanna" press_data="ත" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_ttayanna" press_data="ට" />
+            <softkey id="@id/softkey_sinhala_letter_muurdhaja_layanna_sinhala_vowel_sign_ketti_paa_pilla" press_data="ළු" />
+            <softkey id="@id/softkey_sinhala_letter_muurdhaja_nayanna" press_data="ණ" />
+            <softkey id="@id/softkey_sinhala_letter_mahaapraana_kayanna" press_data="ඛ" />
+            <softkey id="@id/softkey_sinhala_letter_mahaapraana_tayanna" press_data="ථ" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_gayanna" press_data="ග" long_press_data="ඝ,ඟ" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_jayanna" press_data="ජ" long_press_data="ඣ,ඦ" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_ddayanna" press_data="ඩ" long_press_data="ඪ,ඬ" />
+            <softkey id="@id/softkey_sinhala_letter_mahaapraana_ttayanna" press_data="ඨ" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_bayanna" press_data="බ" />
+            <softkey id="@id/softkey_sinhala_letter_mahaapraana_bayanna" press_data="භ" />
+            <softkey id="@id/softkey_sinhala_letter_alpapraana_payanna" press_data="ප" long_press_data="ඵ" />
+            <softkey id="@id/softkey_sinhala_letter_dantaja_layanna" press_data="ල" />
+            <softkey id="@id/softkey_sinhala_letter_muurdhaja_layanna" press_data="ළ" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press">
+            <softkey id="@id/softkey_sinhala_letter_rayanna_sinhala_sign_al_lakuna_zero_width_joiner" press_data="ර්‍" press_label="◌ර්‍" />
+        </softkey_list>
+    </softkeys>
+</framework>

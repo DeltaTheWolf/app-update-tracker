@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_zh_tw_handwriting" class="com.google.android.apps.inputmethod.libs.chinese.ime.AsyncChineseProcessorBasedIme" language="zh-TW" auto_capital="false" always_show_suggestions="true" display_app_completions="true" use_ascii_password_keyboard="true" language_specific_settings="@xml/zh_tw_language_settings" supports_one_handed_mode="false">
+        <keyboard_group variant="handwriting" variant_label="@string/variant_handwriting" layout_specific_settings="@xml/zh_hw_layout_settings">
+            <keyboard type="prime" def="@xml/keyboard_handwriting_cj" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+        <extra_values>
+            <item id="@id/extra_value_has_more_candidates_view" value="true" />
+            <item id="@id/extra_value_space_label" value="@string/label_space_handwriting_zh_tw" />
+            <item id="@id/extra_value_metrics_processors" value="hmm" />
+        </extra_values>
+        <processors>
+            <processor id="@id/ime_decode_processor" class="com.google.android.apps.inputmethod.latin.LatinZhuyinHandwritingDecodeProcessor" />
+            <processor id="@id/ime_double_space_processor" class="com.google.android.apps.inputmethod.libs.chinese.ime.hmm.ChineseDoubleSpaceProcessor" />
+            <processor id="@id/ime_scrub_move_processor" class="com.google.android.apps.inputmethod.libs.framework.ime.ScrubMoveProcessor" />
+            <processor id="@id/ime_output_processor" class="com.google.android.apps.inputmethod.libs.framework.ime.OutputProcessor" />
+        </processors>
+    </ime>
+</framework>

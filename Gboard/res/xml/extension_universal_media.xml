@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module id="@string/id_access_point_universal_media" class="com.google.android.apps.inputmethod.libs.search.universalmedia.UniversalMediaExtension" label="@string/label_access_point_universal_media" icon="@attr/IconTabUniversalMedia" access_point_enabled="@bool/enable_universal_media_access_point" access_point_locales="@string/enabled_universal_media_access_point_locales" content_description="@string/universal_media_keyboard_key_content_desc">
+        <keyboard_types>
+            <keyboard type="@string/keyboard_type_universal_media_search_result" />
+        </keyboard_types>
+        <initialization_deps>
+            <components value="UnicodeIme" />
+        </initialization_deps>
+        <extra_values>
+            <item id="@id/extra_value_default_keyboard" value="@string/keyboard_type_universal_media_search_result" />
+            <item id="@id/extra_value_default_keyboard_in_access_points" value="@string/keyboard_type_universal_media_search_result" />
+            <item id="@id/extra_value_is_expression_extension" value="true" />
+        </extra_values>
+    </module>
+</framework>

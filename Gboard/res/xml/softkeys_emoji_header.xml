@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <softkeys>
+        <softkey id="@id/softkey_fake_open_search_keyboard" layout="@layout/softkey_query_candidate" content_description="@string/gboard_emoji_search_content_desc">
+            <action type="PRESS" keycode="OPEN_EXTENSION_INTERNAL" data="com.google.android.apps.inputmethod.libs.search.IEmojiSearchExtension" />
+        </softkey>
+        <softkey id="@id/softkey_open_search_keyboard" layout="@layout/softkey_icon_no_theme" content_description="@string/gboard_emoji_search_content_desc">
+            <action type="PRESS" keycode="OPEN_EXTENSION_INTERNAL" data="com.google.android.apps.inputmethod.libs.search.IEmojiSearchExtension" />
+            <icon location="@id/icon" value="@drawable/ic_google_search_trim" />
+        </softkey>
+        <softkey id="@id/softkey_open_emojihandwriting" layout="@layout/softkey_icon_automirror_no_theme_with_padding" content_description="@string/gboard_emojihandwriting_content_desc">
+            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/keyboard_type_emoji_handwriting" />
+            <icon location="@id/icon" value="@drawable/ic_emojihandwriting_v2_black_32dp_inset" />
+        </softkey>
+        <softkey id="@id/softkey_clear_query_and_switch_to_search_no_theme" layout="@layout/softkey_icon_no_theme_with_padding" content_description="@string/gboard_cancel_query_content_desc">
+            <action type="PRESS" keycode="OPEN_EXTENSION_AND_CLEAR_QUERY" data="com.google.android.apps.inputmethod.libs.search.IEmojiSearchExtension" />
+            <icon location="@id/icon" value="@drawable/quantum_ic_cancel_black_24" />
+        </softkey>
+    </softkeys>
+</framework>
