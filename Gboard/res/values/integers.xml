@@ -18,6 +18,7 @@
     <integer name="art_keyboard_content_area_weight">750</integer>
     <integer name="art_keyboard_sub_category_row_weight">208</integer>
     <integer name="art_keyboard_sub_category_row_weight_more_letter_rows">158</integer>
+    <integer name="autocorrection_disabled_candidate_type_bitmask">0</integer>
     <integer name="browse_min_sticker_pack_per_row">3</integer>
     <integer name="c2q_pill_popup_max_rate_limit_ms">86400000</integer>
     <integer name="c2q_pill_popup_rate_limit_ms">10000</integer>
@@ -42,7 +43,7 @@
     <integer name="clipboard_item_checker_layout_angle">0</integer>
     <integer name="clipboard_max_items_to_show">100</integer>
     <integer name="clipboard_max_items_to_store">120</integer>
-    <integer name="clipboard_tooltip_show_duration">2000</integer>
+    <integer name="clipboard_tooltip_show_duration">6000</integer>
     <integer name="clipboard_tooltip_view_shown_times">2</integer>
     <integer name="clipboard_tooltip_x_offset">1</integer>
     <integer name="clipboard_tooltip_y_offset">10</integer>
@@ -58,10 +59,9 @@
     <integer name="contextual_rate_us_max_allowable_attempts">5</integer>
     <integer name="contextual_rate_us_max_allowable_times">2</integer>
     <integer name="conv_2_query_crash_detection_max_crashes">2</integer>
-    <integer name="data_flush_delay_seconds">60</integer>
     <integer name="decoder_crash_detection_max_crashes">2</integer>
     <integer name="delay_to_wait_for_suggestions_before_commit_ms">100</integer>
-    <integer name="delight_latest_metadata_version">20181214</integer>
+    <integer name="delight_latest_metadata_version">20190203</integer>
     <integer name="delight_latest_overrides_metadata_version">-1</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="design_tab_indicator_anim_duration_ms">300</integer>
@@ -78,13 +78,12 @@
     <integer name="emoji_cache_size">500</integer>
     <integer name="emoji_handwriting_fadeout_millis">1000000</integer>
     <integer name="emoji_num_vocabulary_predictions">5</integer>
-    <integer name="emoji_predictor_manifest_version">20181115</integer>
-    <integer name="emoji_predictor_min_supported_version">20181115</integer>
+    <integer name="emoji_predictor_manifest_version">20190205</integer>
+    <integer name="emoji_predictor_min_supported_version">20190205</integer>
     <integer name="emoji_superpacks_manifest_version">3</integer>
     <integer name="emojipickerv2_columns">7</integer>
     <integer name="emojipickerv2_rows_x10">39</integer>
     <integer name="emoticon_keyboard_grid_span_count">4</integer>
-    <integer name="enable_always_default_art_corpus_to_universal_media_timestamp">1545292860</integer>
     <integer name="enable_language_notice_timeout_millis">120000</integer>
     <integer name="expand_access_point_item_weight">250</integer>
     <integer name="expression_ui_transition_animation_duration_ms">200</integer>
@@ -112,24 +111,27 @@
     <integer name="gesture_completion_cost_adaptation_type">0</integer>
     <integer name="gif_keyboard_grid_span_count">4</integer>
     <integer name="gif_keyboard_staggered_span_count">2</integer>
-    <integer name="gif_max_size_in_bytes">4194304</integer>
+    <integer name="gif_max_size_in_bytes">1048576</integer>
     <integer name="gif_racy_filter_level">7</integer>
+    <integer name="gif_revamp_gif_keyboard_grid_span_count">3</integer>
     <integer name="glide_array_pool_size_bytes">-1</integer>
     <integer name="globe_key_ignore_time_interval">0</integer>
+    <integer name="glow_g_tooltip_animation_duration_ms">200</integer>
     <integer name="glow_g_tooltip_display_delay_ms">500</integer>
     <integer name="glow_g_tooltip_minimum_display_duration_ms">3000</integer>
     <integer name="google_btn_anim_delay_ms">100</integer>
     <integer name="google_btn_anim_duration_ms">100</integer>
     <integer name="google_keyboard_hotwater_faucet_interval">1</integer>
-    <integer name="google_play_services_version">15337000</integer>
+    <integer name="google_play_services_version">16187000</integer>
     <integer name="handwriting_fadeout_millis">1000</integer>
     <integer name="handwriting_scrollout_delay">400</integer>
     <integer name="handwriting_scrollout_millis">300</integer>
-    <integer name="handwriting_superpacks_manifest_version">5</integer>
+    <integer name="handwriting_superpacks_manifest_version">8</integer>
     <integer name="header_height_multiplier_for_theme">1</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="hmm_superpacks_manifest_version">2018060605</integer>
     <integer name="http_client_cache_expiration_time_in_seconds">0</integer>
+    <integer name="http_client_max_requests_per_host">1</integer>
     <integer name="http_file_downloader_connection_timeout_ms">10000</integer>
     <integer name="incognito_mode_min_sdk_level">17</integer>
     <integer name="input_context_for_debug_cache_size">3</integer>
@@ -201,7 +203,7 @@
     <integer name="lstm_training_retrain_limit">0</integer>
     <integer name="make_a_gif_framerate">15</integer>
     <integer name="make_a_gif_max_dimension">480</integer>
-    <integer name="make_a_gif_superpacks_manifest_version">16</integer>
+    <integer name="make_a_gif_superpacks_manifest_version">18</integer>
     <integer name="material_hide_long_press_popup_animation_duration">20</integer>
     <integer name="material_show_long_press_popup_animation_duration">40</integer>
     <integer name="max_candidates_displayed_count">3</integer>
@@ -221,6 +223,8 @@
     <integer name="mozc_superpacks_japanese_phonetic_reading_version">2018042700</integer>
     <integer name="mtrl_btn_anim_delay_ms">100</integer>
     <integer name="mtrl_btn_anim_duration_ms">100</integer>
+    <integer name="mtrl_card_anim_delay_ms">75</integer>
+    <integer name="mtrl_card_anim_duration_ms">120</integer>
     <integer name="mtrl_chip_anim_duration">100</integer>
     <integer name="mtrl_tab_indicator_anim_duration_ms">250</integer>
     <integer name="native_language_hint_show_notice_max_times">3</integer>
@@ -229,11 +233,15 @@
     <integer name="number_keyboard_row_weight">250</integer>
     <integer name="number_of_native_languages_IN">22</integer>
     <integer name="nwp_cache_size">500</integer>
-    <integer name="nwp_manifest_version">20180920</integer>
-    <integer name="nwp_min_supported_version">20180920</integer>
+    <integer name="nwp_manifest_version">20190205</integer>
+    <integer name="nwp_min_supported_version">20190205</integer>
     <integer name="nwp_num_vocabulary_predictions">5</integer>
     <integer name="offscreen_page_limit">2</integer>
     <integer name="one_handed_max_pageable_candidates_per_row">4</integer>
+    <integer name="optin_first_page_content_icon_weight">20</integer>
+    <integer name="optin_first_page_content_text_header_weight">50</integer>
+    <integer name="optin_first_page_content_text_message_weight">50</integer>
+    <integer name="optin_first_page_content_text_weight">80</integer>
     <integer name="personal_dictionary_max_word_length">100</integer>
     <integer name="phenotype_maximum_configuration_age_minutes">720</integer>
     <integer name="popup_bubble_rectangular_label_small_max_item_per_row">8</integer>
@@ -265,6 +273,9 @@
     <integer name="setting_long_press_delay_max_progress_for_a11y">55</integer>
     <integer name="setting_long_press_delay_min_value_for_a11y">500</integer>
     <integer name="setting_long_press_delay_value_interval_for_a11y">100</integer>
+    <integer name="sharing_notice_interval_time">86400000</integer>
+    <integer name="sharing_notice_max_display_times">3</integer>
+    <integer name="sharing_notice_timeout">600000</integer>
     <integer name="short_string_max_lines_fixed">2</integer>
     <integer name="short_string_max_lines_responsive">2</integer>
     <integer name="show_password_duration">200</integer>
@@ -317,13 +328,13 @@
     <integer name="tooltip_min_display_duration_ms">750</integer>
     <integer name="tooltip_min_time_between_display_ms">259200000</integer>
     <integer name="trending_queries_version">1</integer>
-    <integer name="trio_manifest_version">20181221</integer>
-    <integer name="trio_min_supported_version">20181221</integer>
+    <integer name="trio_manifest_version">20190204</integer>
+    <integer name="trio_min_supported_version">20190204</integer>
     <integer name="typing_pain_level_bad">50</integer>
     <integer name="typing_pain_level_terrible">100</integer>
     <integer name="typing_pain_level_unusable">300</integer>
-    <integer name="undo_delete_popup_hide_animation_duration">300</integer>
-    <integer name="undo_delete_popup_show_animation_duration">300</integer>
+    <integer name="undo_popup_hide_animation_duration">300</integer>
+    <integer name="undo_popup_show_animation_duration">300</integer>
     <integer name="unified_ime_timeout">5000</integer>
     <integer name="unintentional_event_threshold_ms">500</integer>
     <integer name="universal_media_keyboard_span_count">2</integer>
@@ -344,60 +355,49 @@
     <integer name="word_delete_repeat_count_interval">3</integer>
     <integer name="word_delete_start_character_threshold">10</integer>
     <item type="integer" name="APKTOOL_DUMMY_e">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_13">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_15">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_14">false</item>
     <item type="integer" name="APKTOOL_DUMMY_16">false</item>
     <item type="integer" name="APKTOOL_DUMMY_17">false</item>
     <item type="integer" name="APKTOOL_DUMMY_18">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_26">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_41">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_19">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_27">false</item>
     <item type="integer" name="APKTOOL_DUMMY_42">false</item>
     <item type="integer" name="APKTOOL_DUMMY_43">false</item>
     <item type="integer" name="APKTOOL_DUMMY_44">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_61">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_45">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_60">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_64">false</item>
     <item type="integer" name="APKTOOL_DUMMY_65">false</item>
     <item type="integer" name="APKTOOL_DUMMY_66">false</item>
     <item type="integer" name="APKTOOL_DUMMY_67">false</item>
     <item type="integer" name="APKTOOL_DUMMY_68">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_69">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_85">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_95">false</item>
     <item type="integer" name="APKTOOL_DUMMY_96">false</item>
     <item type="integer" name="APKTOOL_DUMMY_97">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_9d">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_98">false</item>
     <item type="integer" name="APKTOOL_DUMMY_9e">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_ab">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_9f">false</item>
     <item type="integer" name="APKTOOL_DUMMY_ac">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_c1">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_ad">false</item>
     <item type="integer" name="APKTOOL_DUMMY_c2">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_ca">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_d6">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_dc">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_c3">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_cb">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_d7">false</item>
     <item type="integer" name="APKTOOL_DUMMY_dd">false</item>
     <item type="integer" name="APKTOOL_DUMMY_de">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_e6">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_e8">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_f5">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_f7">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_112">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_123">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_128">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_135">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_136">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_137">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_139">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_13b">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_df">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_e7">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_e9">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_f6">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_f8">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_119">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_12a">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_12f">false</item>
     <item type="integer" name="APKTOOL_DUMMY_13f">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_147">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_148">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_140">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_141">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_143">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_145">false</item>
     <item type="integer" name="APKTOOL_DUMMY_149">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_14a">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_14b">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_14c">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_14d">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_14e">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_14f">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_150">false</item>
     <item type="integer" name="APKTOOL_DUMMY_151">false</item>
     <item type="integer" name="APKTOOL_DUMMY_152">false</item>
     <item type="integer" name="APKTOOL_DUMMY_153">false</item>
@@ -405,21 +405,31 @@
     <item type="integer" name="APKTOOL_DUMMY_155">false</item>
     <item type="integer" name="APKTOOL_DUMMY_156">false</item>
     <item type="integer" name="APKTOOL_DUMMY_157">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_158">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_159">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_15a">false</item>
     <item type="integer" name="APKTOOL_DUMMY_15b">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_15c">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_15d">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_15e">false</item>
     <item type="integer" name="APKTOOL_DUMMY_15f">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_16b">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_180">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_19a">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_19b">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_19c">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_19d">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_19e">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_19f">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_1a0">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_1a1">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_1a2">false</item>
-    <item type="integer" name="APKTOOL_DUMMY_1a3">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_160">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_161">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_165">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_169">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_175">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_18a">false</item>
     <item type="integer" name="APKTOOL_DUMMY_1a4">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1a5">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1a6">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1a7">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1a8">false</item>
     <item type="integer" name="APKTOOL_DUMMY_1a9">false</item>
     <item type="integer" name="APKTOOL_DUMMY_1aa">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1ab">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1ac">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1ad">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1ae">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1b3">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_1b4">false</item>
 </resources>

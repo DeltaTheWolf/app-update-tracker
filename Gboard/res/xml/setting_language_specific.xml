@@ -3,6 +3,6 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.google.android.apps.inputmethod.latin.preference.LatinKeyboardLayoutListPreference android:layout="@layout/setting_language_preference_layout_with_bg" android:key="@string/setting_language_layout_key" />
     <com.google.android.apps.inputmethod.libs.framework.preference.widget.PreferenceCategoryHeader android:title="@string/setting_language_specific_category_title" android:key="@string/setting_language_specific_category_key">
-        <com.google.android.apps.inputmethod.libs.framework.preference.widget.MultilingualSettingPreference android:layout="@layout/setting_language_preference_layout" android:key="@string/settings_multilingual_key" android:widgetLayout="@layout/setting_multilingual" />
+        <com.google.android.apps.inputmethod.libs.languageselection.preference.MultilingualSettingPreference android:layout="@layout/setting_language_preference_layout" android:key="@string/settings_multilingual_key" android:widgetLayout="@layout/setting_multilingual" />
     </com.google.android.apps.inputmethod.libs.framework.preference.widget.PreferenceCategoryHeader>
 </PreferenceScreen>

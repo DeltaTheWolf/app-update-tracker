@@ -13,6 +13,9 @@
             <softkey id="@id/softkey_fragment_bottom_danda_popup_syloti_nagri" long_press_data=", . ? ! ॥ # / ( ) ' @ : ; - &quot; + &amp; ꠨ ꠩ ꠪ ꠫" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_double_danda_popup_limbu" long_press_data=", . ᥅ ᥄ ? ! &quot; ᤹ ᥀ ᤺ ᤻ # ) ( / ' @ : ; - +" long_press_label=", . ᥅ ᥄ ? ! &quot; ◌᤹ ᥀ ◌᤺ ◌᤻ # ) ( / ' @ : ; - +" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
             <softkey id="@id/softkey_fragment_bottom_hebrew_patah_popup" long_press_data="ֶ ָ ֵ ֿ ִ ּ ֱ ֳ ְ ֲ ֹ ֻ" long_press_label="◌ֶ ◌ָ ◌ֵ ◌ֿ ◌ִ ◌ּ ◌ֱ ◌ֳ ◌ְ ◌ֲ ◌ֹ ◌ֻ" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
@@ -23,6 +26,9 @@
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
             <softkey id="@id/softkey_fragment_bottom_kayah_li_sign_shya_popup" long_press_data=", . ? ! ꤮ # ) ( / ' @ : ; - &quot; +" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_ta_rol_popup" long_press_data="᰼ ᰽ ᰾ ᰿" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
             <softkey id="@id/softkey_fragment_bottom_period_popup" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; + % &amp;" />
@@ -43,6 +49,9 @@
             <softkey id="@id/softkey_fragment_bottom_period_popup_batak" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; + % &amp; ᯲ ᯼ ᯽ ᯾ ᯿" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_canadian_syllabics" long_press_data=", ? ! . ᐀ # ) ( / ; ' @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
             <softkey id="@id/softkey_fragment_bottom_period_popup_catalan" long_press_data=", ? ! · # ) ( / ' @ : ; - &quot; + &amp;" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
@@ -61,10 +70,19 @@
             <softkey id="@id/softkey_fragment_bottom_period_popup_ethiopic_legacy" param_layout="@layout/softkey_label_medium_bottom" long_press_data="፤ ፥ ፦ ፧ ፨ ፠ , ? ! # ) ( / ; ' @ : - &quot; + % &amp;" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_gujarati_translit" param_layout="@layout/softkey_label_medium_bottom" long_press_data=", ! ? । ઽ ૐ લ ' # ) ( / ; @ : - &quot; + % &amp; *" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
             <softkey id="@id/softkey_fragment_bottom_period_popup_hani" long_press_data=", ? ! # ) ( / ; ` @ : - &quot; + % &amp;" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
             <softkey id="@id/softkey_fragment_bottom_period_popup_hebrew" long_press_data=", ? ! # ( ) / ; ' @ : - &quot; + % &amp;" long_press_label=", ? ! # ) ( / ; ' @ : - &quot; + % &amp;" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_diacritic_popup_ipa" long_press_data="̰ ͡ ̥ ͜ ̪ ʲ ˁ ̃ ˞ ̤ ̬ ̊ ͆ ˠ" long_press_label="◌̰ ◌͡◌ ◌̥ ◌͜◌ ◌̪ ◌ʲ ◌ˁ ◌̃ ◌˞ ◌̤ ◌̬ ◌̊ ◌͆ ◌ˠ" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_ipa" long_press_data="/ ˌ ] [ } { ⸩ ⸨ ː ˈ ˑ ̆ ‖ | ) (" long_press_label="/ ˌ ] [ } { ⸩ ⸨ ː ˈ ˑ ◌̆ ‖ | ) (" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
             <softkey id="@id/softkey_fragment_bottom_period_popup_kalam_kohistani" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,ِ,ّ,ُ,ٔ,ٓ,َ,ً,ٰ,ْ,ـ,ٞ,ٛ" long_press_label="؟,!,ِ◌,ّ◌,ُ◌,ٔ◌,ٓ◌,َ◌,ً◌,ٰ◌,ْ◌,ــ,ٞ◌,ٛ◌" hint_label="ِ◌" />
@@ -77,6 +95,9 @@
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
             <softkey id="@id/softkey_fragment_bottom_period_popup_luri" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,ٙ,ٛ,َ,ُ,ِ,ْ,ً,ٌ,ٍ,ٔ,ّ,ٰ,ٓ,ـ" long_press_label="؟,!,ٙ◌,ٛ◌,َ◌,ُ◌,ِ◌,ْ◌,ً◌,ٌ◌,ٍ◌,ٔ◌,ّ◌,ٰ◌,ٓ◌,ــ" hint_label="ُ◌" />
+        </softkey_list>
+        <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
+            <softkey id="@id/softkey_fragment_bottom_period_popup_myanmar_shan" long_press_data="၊ , . ? ! ႟ # / ( ) ' &quot; : ; - @" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
             <softkey id="@id/softkey_fragment_bottom_period_popup_nko" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,߹,߸,ߑ,ߺ,ߴ,߯,߫,߲,߳,߭,߱,߮,ߵ,߰,߬" long_press_label="؟,߹,߸,ߑ,ߺ,ߴ,߯,߫,߲,߳,߭,߱,߮,ߵ,߰,߬" hint_label="؟" />
@@ -91,7 +112,7 @@
             <softkey id="@id/softkey_fragment_bottom_period_popup_rejang" long_press_data=", ? ! # ) ( / ; ' @ : - &quot; % &amp; ꥟" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup" splitter=",">
-            <softkey id="@id/softkey_fragment_bottom_period_popup_shina" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,،,َ,ُ,ْ,ِ,ّ,ً,ٍ,ٌ,ٰ,ٔ,ٕ,ٙ,ٓ,ۡ,٘,ٜ,ٞ,ـ" long_press_label="؟,!,،,َ◌,ُ◌,ْ◌,ِ◌,ّ◌,ً◌,ٍ◌,ٌ◌,ٰ◌,ٔ◌,ٕ◌,ٙ◌,ٓ◌,ۡ◌,٘◌,ٜ◌,ٞ,ـ" hint_label="َ◌" />
+            <softkey id="@id/softkey_fragment_bottom_period_popup_shina" param_layout="@layout/softkey_label_medium_bottom_label_top" long_press_data="؟,!,،,َ,ُ,ْ,ِ,ّ,ً,ٍ,ٌ,ٰ,ٔ,ٕ,ٙ,ٓ,ۡ,٘,ٜ,ٞ,ـ" long_press_label="؟,!,،,َ◌,ُ◌,ْ◌,ِ◌,ّ◌,ً◌,ٍ◌,ٌ◌,ٰ◌,ٔ◌,ٕ◌,ٙ◌,ٓ◌,ۡ◌,٘◌,ٜ◌,ٞ◌,ـ" hint_label="َ◌" />
         </softkey_list>
         <softkey_list template_id="@id/softkey_fragment_template_bottom_line_punctuation_bottom_popup_simple" splitter=" ">
             <softkey id="@id/softkey_fragment_bottom_period_popup_spanish" long_press_data=", ? ! # ) ( / ; ' ¿ ¡ - &quot; @ &amp; :" />

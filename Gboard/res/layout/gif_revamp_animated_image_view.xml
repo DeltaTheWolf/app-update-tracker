@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_gravity="center_vertical" android:id="@id/animated_image_view_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GifCardViewWrapper">
+        <com.google.android.apps.inputmethod.libs.search.widget.VariableHeightAnimatedImageView android:id="@id/animated_image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@string/gboard_gif_image_content_desc" />
+        <include layout="@layout/animated_image_view_overlay" />
+        <include layout="@layout/animated_image_view_footer" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/image_delete_button" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/delete_button_m2" android:contentDescription="@string/makeagif_delete_gif_content_desc" />
+    </androidx.cardview.widget.CardView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/animated_image_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+</FrameLayout>

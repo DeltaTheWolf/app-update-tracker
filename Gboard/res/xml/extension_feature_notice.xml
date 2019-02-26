@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
-    <module class="com.google.android.apps.inputmethod.libs.search.nativecard.FeatureCardNoticeExtension" start_strategy="AUTO" />
+    <module class="com.google.android.apps.inputmethod.libs.search.nativecard.FeatureCardNoticeExtension" start_strategy="AUTO">
+        <initialization_deps>
+            <components value="GIMS_UserUnlocked,UnicodeIme" />
+        </initialization_deps>
+    </module>
 </framework>

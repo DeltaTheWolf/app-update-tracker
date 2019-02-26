@@ -2,6 +2,7 @@
 <LinearLayout style="@style/ClipboardBodyInner"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <include layout="@layout/keyboard_incognito_overlay_body" />
+    <include layout="@layout/keyboard_clipboard_body_opt_in_first_page" />
     <include layout="@layout/keyboard_clipboard_body_default_empty" />
     <android.support.v7.widget.RecyclerView android:id="@id/clip_items_scan_view" style="@style/ClipboardRecyclerView" />
 </LinearLayout>

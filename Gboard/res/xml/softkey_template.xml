@@ -40,6 +40,11 @@
                 <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
                 <label location="@id/label" value="$press_data$" />
             </softkey_template>
+            <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_auto_centered_simple" layout="@layout/softkey_qwerty_label_character" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_data$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredLayout" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularAutoCenteredLayout" />
+                <label location="@id/label" value="$press_data$" />
+            </softkey_template>
             <softkey_template id="@+id/softkey_template_multi_popup_on_long_press_simple_dynamic" layout="@layout/softkey_one_label_latin_key_dynamic" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
                 <action type="PRESS" data="$press_data$" keycode="ALPHABET" intention="$press_intent=DECODE$" popup_label="$press_data$" />
                 <action type="LONG_PRESS" data="$long_press_data$" keycode="ALPHABET" intention="$long_press_intention=DECODE$" merge_insertion_index="$merge_index=0$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
@@ -56,6 +61,24 @@
                 <label location="@id/label" value="$press_label$" />
                 <label location="@id/label_header" value="$hint_label$" />
             </softkey_template>
+            <softkey_template id="@+id/softkey_template_label_header_downshifted" layout="@layout/softkey_qwerty_label_character_label_header_downshifted" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_label$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_label_header_dynamic" layout="@layout/softkey_latin_header_dynamic" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_label$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_label_header_downshifted_dynamic" layout="@layout/softkey_latin_header_dynamic_downshifted" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_label$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_label$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
             <softkey_template id="@+id/softkey_template_label_header_large" layout="@layout/softkey_qwerty_label_character_label_header_large" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
                 <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_label$" />
                 <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_label$" popup_layout="@attr/PopupBubbleRectangularLayout" />
@@ -63,6 +86,12 @@
                 <label location="@id/label_header" value="$hint_label$" />
             </softkey_template>
             <softkey_template id="@+id/softkey_template_label_header_simple" layout="@layout/softkey_qwerty_label_character_label_header" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
+                <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_data$" />
+                <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
+                <label location="@id/label" value="$press_data$" />
+                <label location="@id/label_header" value="$hint_label$" />
+            </softkey_template>
+            <softkey_template id="@+id/softkey_template_label_header_downshifted_simple" layout="@layout/softkey_qwerty_label_character_label_header_downshifted" popup_timing="@string/qwerty_popup_timing" slide_sensitivity="NORMAL" multi_touch="false" content_description="$desc$">
                 <action type="PRESS" data="$press_data$" intention="DECODE" keycode="ALPHABET" popup_label="$press_data$" />
                 <action type="LONG_PRESS" data="$long_press_data$" keycode="PLAIN_TEXT" intention="$long_press_intention=C,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D$" popup_label="$long_press_data$" popup_layout="@attr/PopupBubbleRectangularLayout" />
                 <label location="@id/label" value="$press_data$" />

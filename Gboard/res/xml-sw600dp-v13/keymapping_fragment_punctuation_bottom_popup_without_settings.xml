@@ -5,7 +5,7 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_with_danda" />
         </merge_key_mapping>
     </if>
-    <else_if language="aii-IQ">
+    <else_if language="aii">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_syriac" />
         </merge_key_mapping>
@@ -85,10 +85,28 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_balinese" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="bft-PK">
+    <else_if language="bcc-PK" variant="balochi">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_urdu" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bcc-PK" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bft-PK" variant="balti">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_urdu" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bft-PK" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
         </merge_key_mapping>
     </else_if>
     <else_if language="bfy-IN">
@@ -96,9 +114,38 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="bfz-IN">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="bgc-IN">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bgn-PK" variant="balochi">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_urdu" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bgn-PK" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bgp-Arab" variant="balochi">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_urdu" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bgp-Arab" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
         </merge_key_mapping>
     </else_if>
     <else_if language="bgq-IN">
@@ -119,6 +166,11 @@
     <else_if language="bhb-Deva">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bhb-Gujr" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_gujarati_translit" />
         </merge_key_mapping>
     </else_if>
     <else_if language="bho-IN">
@@ -189,6 +241,11 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_coptic" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="cr-Cans-CA">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_canadian_syllabics" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="ctg-BD">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
@@ -254,15 +311,16 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_spanish" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="fa">
+    <else_if language="fa" variant="handwriting|persian">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="prs-AF">
+    <else_if language="fa" variant="qwerty">
         <merge_key_mapping>
-            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
         </merge_key_mapping>
     </else_if>
     <else_if language="ff-Adlm">
@@ -336,6 +394,11 @@
     <else_if language="guc-CO">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_spanish" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="gvr-NP">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
         </merge_key_mapping>
     </else_if>
     <else_if language="gwc-PK">
@@ -461,10 +524,16 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_chinese" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="khw">
+    <else_if language="khw" variant="khowar">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_urdu" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="khw" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
         </merge_key_mapping>
     </else_if>
     <else_if language="kmz-Arab">
@@ -510,9 +579,25 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="ktb-Ethi">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_ethiopic" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="ku-IQ|ku-IR">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="kvx-PK">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="kxu-IN">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
         </merge_key_mapping>
     </else_if>
     <else_if language="kyu-MM">
@@ -520,9 +605,20 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_kayah_li_sign_shya_popup" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="lep-IN">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_fragment_bottom_ta_rol_popup" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="lif-Deva">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="lif-Limb">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_double_danda_popup_limbu" />
         </merge_key_mapping>
     </else_if>
     <else_if language="lki-IR">
@@ -540,6 +636,12 @@
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_luri" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="lrl-IR">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic" />
         </merge_key_mapping>
     </else_if>
     <else_if language="luz-IR">
@@ -595,6 +697,12 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="mul-x-ipa">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_ipa" />
+            <merge view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_fragment_bottom_diacritic_popup_ipa" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="mup-IN">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
@@ -610,6 +718,12 @@
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="mvy-PK">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_urdu" />
         </merge_key_mapping>
     </else_if>
     <else_if language="mzn-IR">
@@ -641,6 +755,11 @@
     <else_if language="noe-IN">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="oj-Cans">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_canadian_syllabics" />
         </merge_key_mapping>
     </else_if>
     <else_if language="or-IN">
@@ -675,6 +794,17 @@
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="plk-PK">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_shina" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="prs-AF">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic" />
         </merge_key_mapping>
     </else_if>
     <else_if language="ps" variant="pashto">
@@ -765,10 +895,16 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="scl-PK">
+    <else_if language="scl-PK" variant="shina">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_shina" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="scl-PK" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_fragment_bottom_comma_popup_arabic" />
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic_translit" />
         </merge_key_mapping>
     </else_if>
     <else_if language="sd-Arab" variant="sindhi_arabic">
@@ -797,6 +933,11 @@
     <else_if language="sgw-ET">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_ethiopic" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="shn-MM">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_myanmar_shan" />
         </merge_key_mapping>
     </else_if>
     <else_if language="sjp-IN">
@@ -902,7 +1043,7 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_arabic" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="unr-Beng">
+    <else_if language="unr-Beng|unr-Orya">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_danda_popup" />
         </merge_key_mapping>
@@ -922,6 +1063,11 @@
     <else_if language="vai-LR">
         <merge_key_mapping>
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_vai" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="vas-Gujr" variant="qwerty">
+        <merge_key_mapping>
+            <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_gujarati_translit" />
         </merge_key_mapping>
     </else_if>
     <else_if language="vas-IN">
@@ -966,7 +1112,7 @@
             <merge view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_fragment_bottom_period_popup_chinese" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="cr-Cans-CA|dz|hy-AM" />
+    <else_if language="dz|hy-AM" />
     <else_if language="gu-IN" variant="gujarati" />
     <else>
         <merge_key_mapping>

@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
     <keyboard class="com.google.android.apps.inputmethod.libs.search.emoji.SearchableEmojiPickerKeyboard" id="@id/keyboard_non_prime_smiley" initial_states="LOCK_KEYBOARD+SUB_CATEGORY_2" persistent_states="@string/smiley_keyboard_persist_states" persistent_states_pref_key="@string/smiley_keyboard_persist_states_pref_key" recent_key_layout="@layout/softkey_label_emoji" recent_key_popup_layout="@layout/popup_bubble_rectangular_label_small_material_keep_order" recent_key_type="smiley" remember_recent_key="ALL_ACTIONS">
-        <if product_type="GBOARD_DEFAULT">
-            <if language="my" burmese_zawgyi="true">
-                <view layout="@layout/keyboard_non_prime_header_sub_category" scalable="false" type="header">
-                    <softkeys href="@xml/softkeys_function" />
-                    <softkeys href="@xml/softkeys_non_prime_smiley_sub_category" />
-                    <include href="@xml/keymapping_header_smiley" />
-                </view>
-            </if>
-            <else>
-                <view direction="locale" layout="@layout/keyboard_expression_header" scalable="false" type="header" />
-            </else>
-        </if>
-        <else>
-            <view layout="@layout/keyboard_non_prime_header_sub_category" scalable="false" type="header">
-                <softkeys href="@xml/softkeys_function" />
-                <softkeys href="@xml/softkeys_non_prime_smiley_sub_category" />
-                <include href="@xml/keymapping_header_smiley" />
-            </view>
-        </else>
-        <view layout="@layout/keyboard_non_prime_smiley_body_emojipickerv15_m2" type="body">
+        <view direction="locale" layout="@layout/keyboard_expression_header" scalable="false" type="header" />
+        <view layout="@layout/keyboard_non_prime_smiley_body_emojipickerv15_m2" type="body" direction="locale">
             <motion_event_handler class=".libs.framework.keyboard.handler.BasicMotionEventHandler" />
             <motion_event_handler class=".libs.framework.keyboard.handler.ScrubMoveMotionEventHandler" preference_key="@string/pref_key_enable_scrub_move" reverse_preference="false" />
             <if product_type="GBOARD_DEFAULT">

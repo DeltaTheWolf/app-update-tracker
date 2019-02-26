@@ -5,7 +5,7 @@
     <keyboard id="@id/keyboard_aii_iq">
         <view layout="@layout/keyboard_latin_tablet_12_12_12_no_shift_body" type="body">
             <softkeys href="@xml/softkeys_input_aii_iq" />
-            <softkeys href="@xml/softkeys_latin_fragment_secondary_digits_ar" />
+            <softkeys href="@xml/softkeys_latin_fragment_secondary_digits" />
             <include href="@xml/keymapping_aii_iq" />
             <include href="@xml/keymapping_latin_fragment_secondary_digits" />
             <include href="@xml/keymapping_arabic_question_mark_tablet_additional" />

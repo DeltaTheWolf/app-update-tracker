@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
-    <module class="com.google.android.apps.inputmethod.libs.search.gif.TenorCategoryDataExtensionImpl" start_strategy="AUTO_ASYNC_BACKGROUND" />
+    <module class="com.google.android.apps.inputmethod.libs.search.gif.TenorCategoryDataExtensionImpl" start_strategy="AUTO_ASYNC_BACKGROUND">
+        <initialization_deps>
+            <components value="GIMS_UserUnlocked" />
+        </initialization_deps>
+    </module>
 </framework>

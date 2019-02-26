@@ -80,6 +80,11 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="bfz-IN">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="bgc-IN" variant="qwerty">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
@@ -90,7 +95,17 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="bgx-TR">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_turkish_lira" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="bhb-Deva">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bhb-Gujr">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
         </merge_key_mapping>
@@ -195,6 +210,11 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_dong" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="cnr-Latn-ME|cnr-Cyrl-ME">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="co">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
@@ -213,6 +233,11 @@
     <else_if language="cy">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_currency_pound" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="cyo-PH">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_peso_sign" />
         </merge_key_mapping>
     </else_if>
     <else_if language="dag-GH">
@@ -425,6 +450,11 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_cedi_sign" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="grt">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="gu-IN" variant="qwerty">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
@@ -438,6 +468,11 @@
     <else_if language="gv">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_currency_pound" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="gvr-NP" variant="qwerty">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_nepalese_rupee" />
         </merge_key_mapping>
     </else_if>
     <else_if language="ha-GH">
@@ -545,6 +580,11 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="itv-PH">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_peso_sign" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="ium-CN">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_yen_sign" />
@@ -593,6 +633,11 @@
     <else_if language="kn-IN|kn-Latn">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="kne-PH">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_peso_sign" />
         </merge_key_mapping>
     </else_if>
     <else_if language="knn-IN">
@@ -685,6 +730,11 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="lif-Deva" variant="qwerty">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_nepalese_rupee" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="lij-IT">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
@@ -730,6 +780,11 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_rial" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="lrl-IR">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_rial" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="lt">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
@@ -758,6 +813,11 @@
     <else_if language="mag-IN" variant="qwerty">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="mag-NP" variant="qwerty">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_nepalese_rupee" />
         </merge_key_mapping>
     </else_if>
     <else_if language="mai-IN" variant="qwerty">
@@ -1085,11 +1145,6 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="srp-Latn-ME|srp-Cyrl-ME">
-        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
-            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
-        </merge_key_mapping>
-    </else_if>
     <else_if language="sv-FI">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
@@ -1200,12 +1255,17 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_euro" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="tyz-VN">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_dong" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="uk">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_hryvnia" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="unr-Beng">
+    <else_if language="unr">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
         </merge_key_mapping>
@@ -1220,7 +1280,7 @@
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="vas-IN" variant="qwerty">
+    <else_if language="vas">
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_indian_rupee" />
         </merge_key_mapping>

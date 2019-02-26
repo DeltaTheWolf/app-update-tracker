@@ -21,6 +21,7 @@
     <header android:id="@id/settings_header_search" android:title="@string/setting_search" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
         <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_search" />
     </header>
+    <header android:id="@id/sharing_settings_id" android:title="@string/setting_sharing" />
     <header android:id="@id/settings_header_advanced" android:title="@string/setting_advanced" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
         <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_advanced" />
     </header>

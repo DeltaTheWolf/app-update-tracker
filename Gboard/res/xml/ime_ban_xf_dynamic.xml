@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <ime string_id="ime_balinese_bali_dynamic" class="com.google.android.apps.inputmethod.libs.latin5.LatinIme" language="ban-XF" auto_capital="false" display_app_completions="true" announce_auto_selected_candidate="true">
+        <keyboard_group variant="balinese" variant_label="@string/variant_balinese" layout_theme="@style/KeyboardLayoutTheme.5LetterRows">
+            <keyboard type="prime" def="@xml/keyboard_ban_xf_dynamic" />
+            <include href="@xml/keyboards_non_prime_latin" />
+        </keyboard_group>
+    </ime>
+</framework>

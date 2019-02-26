@@ -63,6 +63,18 @@
             <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
             <label location="@id/label" value="\?೧೨೩" />
         </softkey>
+        <softkey id="@id/softkey_switch_to_non_prime_keyboard_ipa" layout="@layout/softkey_function_key_label" content_description="@string/symbol_keyboard_key_content_desc">
+            <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
+            <label location="@id/label" value="/ [ {" />
+        </softkey> >
+<softkey id="@id/softkey_switch_to_non_prime_keyboard_lepcha" layout="@layout/softkey_function_key_label" content_description="@string/symbol_keyboard_key_content_desc">
+            <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
+            <label location="@id/label" value="\?᱁᱂᱃" />
+        </softkey>
+        <softkey id="@id/softkey_switch_to_non_prime_keyboard_limbu" layout="@layout/softkey_function_key_label" content_description="@string/symbol_keyboard_key_content_desc">
+            <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
+            <label location="@id/label" value="᥅᥇᥈᥉" />
+        </softkey>
         <softkey id="@id/softkey_switch_to_non_prime_keyboard_meetei_mayek" layout="@layout/softkey_function_key_label" content_description="@string/symbol_keyboard_key_content_desc">
             <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
             <label location="@id/label" value="\?꯱꯲꯳" />
@@ -70,6 +82,10 @@
         <softkey id="@id/softkey_switch_to_non_prime_keyboard_myanmar" layout="@layout/softkey_function_key_label" content_description="@string/symbol_keyboard_key_content_desc">
             <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
             <label location="@id/label" value="\?၁၂၃" />
+        </softkey>
+        <softkey id="@id/softkey_switch_to_non_prime_keyboard_myanmar_shan" layout="@layout/softkey_function_key_label" content_description="@string/symbol_keyboard_key_content_desc">
+            <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
+            <label location="@id/label" value="\?႑႒႓" />
         </softkey>
         <softkey id="@id/softkey_switch_to_non_prime_keyboard_new_tai_lue" layout="@layout/softkey_function_key_label" content_description="@string/symbol_keyboard_key_content_desc">
             <action type="PRESS" keycode="SWITCH_TO_NON_PRIME_KEYBOARD" data="symbol" action_on_down="true" />
@@ -115,10 +131,18 @@
             <action type="PRESS" keycode="LAUNCH_PREFERENCE_ACTIVITY" />
             <icon location="@id/icon" value="@attr/IconSetting" />
         </softkey>
-        <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_function_key_icon" content_description="@string/emoji_button_content_desc" alpha="@attr/IconAlphaOpaque">
-            <action type="PRESS" keycode="OPEN_EXTENSION" data="com.google.android.apps.inputmethod.libs.search.IEmojiOrGifExtension" />
-            <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
-        </softkey>
+        <if enable_emoji_icon_action_color="true">
+            <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_action_color_emoji_key" content_description="@string/emoji_button_content_desc" alpha="@attr/IconAlphaOpaque">
+                <action type="PRESS" keycode="OPEN_EXTENSION" data="com.google.android.apps.inputmethod.libs.search.IEmojiOrGifExtension" />
+                <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
+            </softkey>
+        </if>
+        <else>
+            <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_function_key_icon" content_description="@string/emoji_button_content_desc" alpha="@attr/IconAlphaOpaque">
+                <action type="PRESS" keycode="OPEN_EXTENSION" data="com.google.android.apps.inputmethod.libs.search.IEmojiOrGifExtension" />
+                <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
+            </softkey>
+        </else>
         <softkey id="@id/softkey_switch_to_emoticon" layout="@layout/softkey_function_key_icon" content_description="@string/emoticon_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
             <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/keyboard_type_emoticon" />
             <icon location="@id/icon" value="@attr/IconSwitchToEmoticon" />

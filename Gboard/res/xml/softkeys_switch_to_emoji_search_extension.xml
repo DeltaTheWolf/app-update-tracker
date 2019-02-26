@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
     <softkeys>
-        <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_function_key_icon" content_description="@string/emoji_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
-            <action type="PRESS" keycode="OPEN_EXTENSION" data="com.google.android.apps.inputmethod.libs.search.IEmojiOrGifExtension" />
-            <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
-        </softkey>
+        <if enable_emoji_icon_action_color="true">
+            <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_action_color_emoji_key" content_description="@string/emoji_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
+                <action type="PRESS" keycode="OPEN_EXTENSION" data="com.google.android.apps.inputmethod.libs.search.IEmojiOrGifExtension" />
+                <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
+            </softkey>
+        </if>
+        <else>
+            <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_function_key_icon" content_description="@string/emoji_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
+                <action type="PRESS" keycode="OPEN_EXTENSION" data="com.google.android.apps.inputmethod.libs.search.IEmojiOrGifExtension" />
+                <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
+            </softkey>
+        </else>
         <softkey id="@id/softkey_switch_to_emoji_disabled" layout="@layout/softkey_function_key_icon" content_description="" alpha="@attr/IconDisabledAlpha">
             <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
         </softkey>

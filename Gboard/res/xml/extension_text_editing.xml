@@ -2,6 +2,7 @@
 <framework>
     <module id="@string/id_access_point_textediting" class="com.google.android.apps.inputmethod.libs.textediting.TextEditingExtension" icon="@attr/IconAccessPointTextEditing" label="@string/label_text_editing_access_point" content_description="@string/text_editing_access_point_content_desc">
         <initialization_deps>
+            <components value="GIMS_UserUnlocked" />
             <system_property value="@string/system_property_enable_text_editing" />
         </initialization_deps>
         <keyboard_types>

@@ -74,10 +74,18 @@
             <action type="PRESS" keycode="LAUNCH_PREFERENCE_ACTIVITY" data="" />
             <icon location="@id/icon" value="@attr/IconSetting" />
         </softkey>
-        <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_function_key_icon" content_description="@string/emoji_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
-            <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/action_key_popup_emoji_data" />
-            <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
-        </softkey>
+        <if enable_emoji_icon_action_color="true">
+            <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_action_color_emoji_key" content_description="@string/emoji_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
+                <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/action_key_popup_emoji_data" />
+                <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
+            </softkey>
+        </if>
+        <else>
+            <softkey id="@id/softkey_switch_to_emoji" layout="@layout/softkey_function_key_icon" content_description="@string/emoji_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
+                <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/action_key_popup_emoji_data" />
+                <icon location="@id/icon" value="@attr/IconSwitchToSmiley" />
+            </softkey>
+        </else>
         <softkey id="@id/softkey_switch_to_emoticon" layout="@layout/softkey_function_key_icon" content_description="@string/emoticon_keyboard_key_content_desc" alpha="@attr/IconAlphaOpaque">
             <action type="PRESS" keycode="SWITCH_KEYBOARD" data="@string/action_key_popup_emoticon_data" />
             <icon location="@id/icon" value="@attr/IconSwitchToEmoticon" />

@@ -67,6 +67,7 @@
     <item type="id" name="bug_description_comment_message" />
     <item type="id" name="bug_description_title" />
     <item type="id" name="bug_description_title_message" />
+    <item type="id" name="button_barrier" />
     <item type="id" name="button_open_search_keyboard" />
     <item type="id" name="button_open_search_keyboard_cleared" />
     <item type="id" name="candidate_morse_hint" />
@@ -82,14 +83,22 @@
     <item type="id" name="card_viewer_query_text" />
     <item type="id" name="category_holder_view" />
     <item type="id" name="category_text_label" />
+    <item type="id" name="clip_item" />
     <item type="id" name="clip_item_bookmark" />
     <item type="id" name="clip_item_content" />
     <item type="id" name="clip_item_content_checker" />
     <item type="id" name="clip_item_content_checker_layout" />
+    <item type="id" name="clip_item_icon" />
+    <item type="id" name="clip_item_icon_wrapper" />
     <item type="id" name="clip_item_separator" />
     <item type="id" name="clip_items_scan_view" />
     <item type="id" name="clipboard_body" />
     <item type="id" name="clipboard_body_default_view_if_empty" />
+    <item type="id" name="clipboard_body_opt_in_first_page" />
+    <item type="id" name="clipboard_body_opt_in_first_page_icon" />
+    <item type="id" name="clipboard_body_opt_in_first_page_negative_button" />
+    <item type="id" name="clipboard_body_opt_in_first_page_positive_button" />
+    <item type="id" name="clipboard_body_opt_in_first_page_subhead" />
     <item type="id" name="clipboard_header" />
     <item type="id" name="clipboard_header_select_hint" />
     <item type="id" name="common_card_view" />
@@ -128,6 +137,7 @@
     <item type="id" name="expression_search_box" />
     <item type="id" name="expression_search_box_hint_text" />
     <item type="id" name="expression_search_box_icon" />
+    <item type="id" name="expression_view_pager" />
     <item type="id" name="extension_view_holder" />
     <item type="id" name="extra_json_update_url" />
     <item type="id" name="extra_omaha_client_id" />
@@ -188,6 +198,9 @@
     <item type="id" name="feature_page_theme_selector_launcher_view" />
     <item type="id" name="file_to_export" />
     <item type="id" name="file_to_import" />
+    <item type="id" name="first_run_content" />
+    <item type="id" name="first_run_done_page_header" />
+    <item type="id" name="first_run_done_page_title" />
     <item type="id" name="first_run_page_footer" />
     <item type="id" name="first_run_page_permission_label" />
     <item type="id" name="first_run_page_setup_button" />
@@ -197,6 +210,10 @@
     <item type="id" name="first_run_page_setup_step_title" />
     <item type="id" name="first_run_page_show_features_button" />
     <item type="id" name="first_run_pager" />
+    <item type="id" name="first_run_separator_bottom" />
+    <item type="id" name="first_run_separator_top" />
+    <item type="id" name="first_run_sharing_content" />
+    <item type="id" name="first_run_sharing_list" />
     <item type="id" name="floating_candidates_view_holder" />
     <item type="id" name="floating_keyboard_background_shadow" />
     <item type="id" name="floating_keyboard_dock_hint" />
@@ -206,11 +223,36 @@
     <item type="id" name="fullscreen_handwriting_body" />
     <item type="id" name="fullscreen_handwriting_panel" />
     <item type="id" name="gboard_gif_keyboard_main_body" />
+    <item type="id" name="gboard_link_receiving_activity" />
+    <item type="id" name="gboard_link_receiving_content" />
+    <item type="id" name="gboard_link_receiving_description" />
+    <item type="id" name="gboard_link_receiving_header" />
+    <item type="id" name="gboard_link_receiving_list" />
+    <item type="id" name="gboard_link_receiving_negative_button" />
+    <item type="id" name="gboard_link_receiving_positive_button" />
+    <item type="id" name="gboard_link_receiving_select_language_label" />
+    <item type="id" name="gboard_link_receiving_separator" />
+    <item type="id" name="gboard_link_receiving_separator_bottom" />
+    <item type="id" name="gboard_link_receiving_separator_top" />
+    <item type="id" name="gboard_link_receiving_share_activity" />
+    <item type="id" name="gboard_link_receiving_share_text" />
+    <item type="id" name="gboard_link_receiving_title_text" />
+    <item type="id" name="gboard_sharing_content" />
+    <item type="id" name="gboard_sharing_content_left" />
+    <item type="id" name="gboard_sharing_content_right" />
+    <item type="id" name="gboard_sharing_description" />
+    <item type="id" name="gboard_sharing_list" />
+    <item type="id" name="gboard_sharing_negative_button" />
+    <item type="id" name="gboard_sharing_positive_button" />
+    <item type="id" name="gboard_sharing_separator_bottom" />
+    <item type="id" name="gboard_sharing_separator_top" />
+    <item type="id" name="gboard_sharing_title" />
     <item type="id" name="gboard_sticker_keyboard_main_body" />
     <item type="id" name="gboard_sticker_keyboard_selector_container" />
     <item type="id" name="gboard_universal_media_keyboard_main_body" />
     <item type="id" name="get_started_button" />
     <item type="id" name="ghost_view" />
+    <item type="id" name="gif_category_tag" />
     <item type="id" name="gif_edit_text_search_box" />
     <item type="id" name="gif_error_card_no_results" />
     <item type="id" name="glide_custom_view_target_tag" />
@@ -234,6 +276,7 @@
     <item type="id" name="image_footer" />
     <item type="id" name="image_footer_button_open_external" />
     <item type="id" name="image_footer_text_attribution" />
+    <item type="id" name="image_overlay_text" />
     <item type="id" name="images_native_card_container" />
     <item type="id" name="ime_app_completions_processor" />
     <item type="id" name="ime_auto_space_processor" />
@@ -404,7 +447,6 @@
     <item type="id" name="key_pos_emoji_handwriting_launcher" />
     <item type="id" name="key_pos_empty" />
     <item type="id" name="key_pos_eraser" />
-    <item type="id" name="key_pos_excalmatory" />
     <item type="id" name="key_pos_exit" />
     <item type="id" name="key_pos_function_key_on_candidates_view" />
     <item type="id" name="key_pos_gboard_close" />
@@ -522,16 +564,6 @@
     <item type="id" name="key_pos_punctuation_6" />
     <item type="id" name="key_pos_punctuation_7" />
     <item type="id" name="key_pos_punctuation_8" />
-    <item type="id" name="key_pos_punctuation_tablet_1" />
-    <item type="id" name="key_pos_punctuation_tablet_2" />
-    <item type="id" name="key_pos_punctuation_tablet_3" />
-    <item type="id" name="key_pos_punctuation_tablet_4" />
-    <item type="id" name="key_pos_punctuation_tablet_5" />
-    <item type="id" name="key_pos_punctuation_tablet_6" />
-    <item type="id" name="key_pos_punctuation_tablet_7" />
-    <item type="id" name="key_pos_punctuation_tablet_8" />
-    <item type="id" name="key_pos_punctuation_tablet_9" />
-    <item type="id" name="key_pos_question" />
     <item type="id" name="key_pos_qwerty_a" />
     <item type="id" name="key_pos_qwerty_b" />
     <item type="id" name="key_pos_qwerty_c" />
@@ -575,7 +607,6 @@
     <item type="id" name="key_pos_shift_right" />
     <item type="id" name="key_pos_show_more_apps" />
     <item type="id" name="key_pos_show_more_candidates" />
-    <item type="id" name="key_pos_smiley" />
     <item type="id" name="key_pos_space" />
     <item type="id" name="key_pos_switch_hiragana_alphabet" />
     <item type="id" name="key_pos_switch_to_digit" />
@@ -602,6 +633,7 @@
     <item type="id" name="keyboard_af" />
     <item type="id" name="keyboard_ahr_in_dynamic" />
     <item type="id" name="keyboard_aii_iq" />
+    <item type="id" name="keyboard_aii_sy" />
     <item type="id" name="keyboard_ak_gh" />
     <item type="id" name="keyboard_ak_xf" />
     <item type="id" name="keyboard_ak_xg" />
@@ -643,6 +675,7 @@
     <item type="id" name="keyboard_bar_at" />
     <item type="id" name="keyboard_bas_cm" />
     <item type="id" name="keyboard_bas_cm_dynamic" />
+    <item type="id" name="keyboard_bcc_pk" />
     <item type="id" name="keyboard_bci_ci" />
     <item type="id" name="keyboard_bcl_ph" />
     <item type="id" name="keyboard_bcq_et" />
@@ -656,8 +689,12 @@
     <item type="id" name="keyboard_bg" />
     <item type="id" name="keyboard_bg_bds" />
     <item type="id" name="keyboard_bgc_in_dynamic" />
+    <item type="id" name="keyboard_bgn_pk" />
+    <item type="id" name="keyboard_bgp_xc" />
     <item type="id" name="keyboard_bgq_in_dynamic" />
     <item type="id" name="keyboard_bgq_pk" />
+    <item type="id" name="keyboard_bgx_tr" />
+    <item type="id" name="keyboard_bgx_tr_q_f" />
     <item type="id" name="keyboard_bhb_xd_dynamic" />
     <item type="id" name="keyboard_bhb_xf_dynamic" />
     <item type="id" name="keyboard_bho_in_dynamic" />
@@ -698,6 +735,7 @@
     <item type="id" name="keyboard_bxk_ke" />
     <item type="id" name="keyboard_bxm_mn" />
     <item type="id" name="keyboard_bxr_ru" />
+    <item type="id" name="keyboard_bzc_mg" />
     <item type="id" name="keyboard_ca" />
     <item type="id" name="keyboard_ca_xq" />
     <item type="id" name="keyboard_cbk_ph" />
@@ -803,6 +841,7 @@
     <item type="id" name="keyboard_expression_navigation_corpus_selectors" />
     <item type="id" name="keyboard_ext_es" />
     <item type="id" name="keyboard_fa" />
+    <item type="id" name="keyboard_fa_af" />
     <item type="id" name="keyboard_fan_gq" />
     <item type="id" name="keyboard_fat_gh" />
     <item type="id" name="keyboard_ff" />
@@ -818,6 +857,8 @@
     <item type="id" name="keyboard_fr_ca" />
     <item type="id" name="keyboard_fr_ch" />
     <item type="id" name="keyboard_fr_qwerty" />
+    <item type="id" name="keyboard_fub_cm" />
+    <item type="id" name="keyboard_fuc_sn" />
     <item type="id" name="keyboard_fur_it" />
     <item type="id" name="keyboard_fy" />
     <item type="id" name="keyboard_ga" />
@@ -827,6 +868,7 @@
     <item type="id" name="keyboard_gag_xb_jcuken" />
     <item type="id" name="keyboard_gay_id" />
     <item type="id" name="keyboard_gbm_in_dynamic" />
+    <item type="id" name="keyboard_gbo_lr" />
     <item type="id" name="keyboard_gcf_gp" />
     <item type="id" name="keyboard_gcr_gf" />
     <item type="id" name="keyboard_gd_gb" />
@@ -890,6 +932,7 @@
     <item type="id" name="keyboard_incognito_overlay_body_content" />
     <item type="id" name="keyboard_incognito_overlay_header" />
     <item type="id" name="keyboard_inh_ru" />
+    <item type="id" name="keyboard_ipa" />
     <item type="id" name="keyboard_is" />
     <item type="id" name="keyboard_iso_ng" />
     <item type="id" name="keyboard_it" />
@@ -960,14 +1003,17 @@
     <item type="id" name="keyboard_ks_xd_dynamic" />
     <item type="id" name="keyboard_ksh_de" />
     <item type="id" name="keyboard_ksw_mm" />
+    <item type="id" name="keyboard_ktb_xf_dynamic" />
     <item type="id" name="keyboard_ktu_cd" />
     <item type="id" name="keyboard_ku" />
     <item type="id" name="keyboard_ku_iq" />
     <item type="id" name="keyboard_ku_ir" />
     <item type="id" name="keyboard_kum_ru" />
     <item type="id" name="keyboard_kv_ru" />
+    <item type="id" name="keyboard_kvx_pk" />
     <item type="id" name="keyboard_kw_gb" />
     <item type="id" name="keyboard_kxm_th" />
+    <item type="id" name="keyboard_kxu_in_dynamic" />
     <item type="id" name="keyboard_ky" />
     <item type="id" name="keyboard_kyu_mm" />
     <item type="id" name="keyboard_la" />
@@ -976,15 +1022,18 @@
     <item type="id" name="keyboard_lad_q" />
     <item type="id" name="keyboard_laj_ug" />
     <item type="id" name="keyboard_laj_ug_with_open_e_and_open_o" />
+    <item type="id" name="keyboard_las_tg" />
     <item type="id" name="keyboard_lb" />
     <item type="id" name="keyboard_lbe_ru" />
     <item type="id" name="keyboard_led_cd" />
     <item type="id" name="keyboard_left_frame" />
+    <item type="id" name="keyboard_lep_in_dynamic" />
     <item type="id" name="keyboard_lez_az" />
     <item type="id" name="keyboard_lez_ru" />
     <item type="id" name="keyboard_lg_ug" />
     <item type="id" name="keyboard_li_nl" />
     <item type="id" name="keyboard_lif_xd_dynamic" />
+    <item type="id" name="keyboard_lif_xf_dynamic" />
     <item type="id" name="keyboard_lij_it" />
     <item type="id" name="keyboard_lis_xf" />
     <item type="id" name="keyboard_liv_lv" />
@@ -999,6 +1048,7 @@
     <item type="id" name="keyboard_lo_la" />
     <item type="id" name="keyboard_lon_mw" />
     <item type="id" name="keyboard_lrc_ir" />
+    <item type="id" name="keyboard_lrl_ir" />
     <item type="id" name="keyboard_lt" />
     <item type="id" name="keyboard_ltg_lv" />
     <item type="id" name="keyboard_lua_cd" />
@@ -1016,6 +1066,7 @@
     <item type="id" name="keyboard_mer_ke" />
     <item type="id" name="keyboard_mfa_th" />
     <item type="id" name="keyboard_mfb_id" />
+    <item type="id" name="keyboard_mfq_tg" />
     <item type="id" name="keyboard_mg" />
     <item type="id" name="keyboard_mhr_ru" />
     <item type="id" name="keyboard_mi" />
@@ -1047,6 +1098,7 @@
     <item type="id" name="keyboard_mui_id" />
     <item type="id" name="keyboard_mup_in_dynamic" />
     <item type="id" name="keyboard_mve_pk" />
+    <item type="id" name="keyboard_mvy_pk" />
     <item type="id" name="keyboard_my" />
     <item type="id" name="keyboard_myv_ru" />
     <item type="id" name="keyboard_mzn_ir" />
@@ -1085,6 +1137,7 @@
     <item type="id" name="keyboard_non_prime_symbol_ascii_with_arabic_indic_digits" />
     <item type="id" name="keyboard_non_prime_symbol_ascii_with_extended_arabic_indic_digits" />
     <item type="id" name="keyboard_non_prime_symbol_extended_arabic" />
+    <item type="id" name="keyboard_non_prime_symbol_ipa" />
     <item type="id" name="keyboard_nrf_xg" />
     <item type="id" name="keyboard_nso" />
     <item type="id" name="keyboard_number" />
@@ -1098,6 +1151,7 @@
     <item type="id" name="keyboard_ocr" />
     <item type="id" name="keyboard_ocr_result" />
     <item type="id" name="keyboard_oj_xa" />
+    <item type="id" name="keyboard_oj_xf_dynamic" />
     <item type="id" name="keyboard_olo_ru" />
     <item type="id" name="keyboard_om" />
     <item type="id" name="keyboard_or_dynamic" />
@@ -1117,9 +1171,12 @@
     <item type="id" name="keyboard_phr_pk" />
     <item type="id" name="keyboard_pko_ke" />
     <item type="id" name="keyboard_pl" />
+    <item type="id" name="keyboard_plk_pk" />
+    <item type="id" name="keyboard_plt_mg" />
     <item type="id" name="keyboard_pms_it" />
     <item type="id" name="keyboard_pnt_gr" />
     <item type="id" name="keyboard_pov_gw" />
+    <item type="id" name="keyboard_prk_mm" />
     <item type="id" name="keyboard_ps" />
     <item type="id" name="keyboard_pt" />
     <item type="id" name="keyboard_pt_ao" />
@@ -1167,6 +1224,7 @@
     <item type="id" name="keyboard_sat_xe_dynamic" />
     <item type="id" name="keyboard_sat_xf" />
     <item type="id" name="keyboard_saz_in_dynamic" />
+    <item type="id" name="keyboard_sba_td" />
     <item type="id" name="keyboard_sc_it" />
     <item type="id" name="keyboard_sck_in_dynamic" />
     <item type="id" name="keyboard_scl_pk" />
@@ -1185,6 +1243,7 @@
     <item type="id" name="keyboard_sg_cf" />
     <item type="id" name="keyboard_sgs_lt" />
     <item type="id" name="keyboard_sgw_et_dynamic" />
+    <item type="id" name="keyboard_shn_mm" />
     <item type="id" name="keyboard_si_lk_dynamic" />
     <item type="id" name="keyboard_sjp_in_dynamic" />
     <item type="id" name="keyboard_sk" />
@@ -1198,6 +1257,7 @@
     <item type="id" name="keyboard_so" />
     <item type="id" name="keyboard_sop_cd" />
     <item type="id" name="keyboard_sou_th" />
+    <item type="id" name="keyboard_spp_ml" />
     <item type="id" name="keyboard_sq" />
     <item type="id" name="keyboard_sr" />
     <item type="id" name="keyboard_sr_xa" />
@@ -1258,12 +1318,15 @@
     <item type="id" name="keyboard_twd_nl" />
     <item type="id" name="keyboard_ty_pf" />
     <item type="id" name="keyboard_tyv_ru" />
+    <item type="id" name="keyboard_tyz_vn" />
     <item type="id" name="keyboard_udm_ru" />
     <item type="id" name="keyboard_ug" />
     <item type="id" name="keyboard_uk" />
     <item type="id" name="keyboard_umb_ao" />
     <item type="id" name="keyboard_universal_media" />
+    <item type="id" name="keyboard_unr_xa" />
     <item type="id" name="keyboard_unr_xe_dynamic" />
+    <item type="id" name="keyboard_unr_xf_dynamic" />
     <item type="id" name="keyboard_ur_in" />
     <item type="id" name="keyboard_ur_pk" />
     <item type="id" name="keyboard_uum_ge" />
@@ -1281,6 +1344,7 @@
     <item type="id" name="keyboard_vmf_de" />
     <item type="id" name="keyboard_vro_ee" />
     <item type="id" name="keyboard_wa_be" />
+    <item type="id" name="keyboard_wal_et" />
     <item type="id" name="keyboard_wbr_in_dynamic" />
     <item type="id" name="keyboard_wes_cm" />
     <item type="id" name="keyboard_wne_pk" />
@@ -1341,6 +1405,7 @@
     <item type="id" name="morse_keyboard_mini_body" />
     <item type="id" name="motion_stills_not_installed" />
     <item type="id" name="move_keyboard" />
+    <item type="id" name="mtrl_card_checked_layer_id" />
     <item type="id" name="mtrl_child_content_container" />
     <item type="id" name="mtrl_internal_children_alpha_tag" />
     <item type="id" name="multilingual_apply_button" />
@@ -1370,6 +1435,8 @@
     <item type="id" name="ocr_loading_spinner" />
     <item type="id" name="ocr_tooltip" />
     <item type="id" name="ocr_tooltip_dismisser" />
+    <item type="id" name="off_overlay_content" />
+    <item type="id" name="off_overlay_title" />
     <item type="id" name="page_activation" />
     <item type="id" name="page_indicator" />
     <item type="id" name="page_indicator_area" />
@@ -1413,9 +1480,8 @@
     <item type="id" name="right_arrow" />
     <item type="id" name="right_most_arrow" />
     <item type="id" name="ring_g_background" />
-    <item type="id" name="save_image_matrix" />
     <item type="id" name="save_non_transition_alpha" />
-    <item type="id" name="save_scale_type" />
+    <item type="id" name="save_overlay_view" />
     <item type="id" name="search_add_language" />
     <item type="id" name="search_candidate_auto_fill_icon" />
     <item type="id" name="search_candidate_list_holder" />
@@ -1450,6 +1516,9 @@
     <item type="id" name="settings_header_unified_ime" />
     <item type="id" name="share_card_image_button" />
     <item type="id" name="share_image_overlay" />
+    <item type="id" name="sharing_header_keyboard" />
+    <item type="id" name="sharing_list_entry_checkbox" />
+    <item type="id" name="sharing_settings_id" />
     <item type="id" name="sign_in_card" />
     <item type="id" name="sign_in_confirm_button" />
     <item type="id" name="sign_in_description" />
@@ -2004,6 +2073,7 @@
     <item type="id" name="softkey_bottom_danda" />
     <item type="id" name="softkey_bottom_danda_saurashtra" />
     <item type="id" name="softkey_bottom_danda_with_avagraha" />
+    <item type="id" name="softkey_bottom_double_danda" />
     <item type="id" name="softkey_bottom_ethiopic_wordspace" />
     <item type="id" name="softkey_bottom_hebrew_geresh" />
     <item type="id" name="softkey_bottom_hebrew_patah" />
@@ -2011,12 +2081,14 @@
     <item type="id" name="softkey_bottom_javanese_pada_lingsa" />
     <item type="id" name="softkey_bottom_javanese_pada_lungsi" />
     <item type="id" name="softkey_bottom_kayah_li_sign_shya" />
+    <item type="id" name="softkey_bottom_modifier_letter_small_h" />
+    <item type="id" name="softkey_bottom_modifier_letter_vertical_line" />
     <item type="id" name="softkey_bottom_period" />
     <item type="id" name="softkey_bottom_period_armenian_phonetic" />
     <item type="id" name="softkey_bottom_period_balinese" />
+    <item type="id" name="softkey_bottom_period_canadian_syllabics" />
     <item type="id" name="softkey_bottom_period_cham" />
     <item type="id" name="softkey_bottom_period_chinese" />
-    <item type="id" name="softkey_bottom_period_cree" />
     <item type="id" name="softkey_bottom_period_ethiopic" />
     <item type="id" name="softkey_bottom_period_gujarati" />
     <item type="id" name="softkey_bottom_period_lisu" />
@@ -2037,6 +2109,7 @@
     <item type="id" name="softkey_bottom_shad_tibetan" />
     <item type="id" name="softkey_bottom_slash" />
     <item type="id" name="softkey_bottom_slash_popup_settings" />
+    <item type="id" name="softkey_bottom_ta_rol" />
     <item type="id" name="softkey_bottom_tsheg_tibetan" />
     <item type="id" name="softkey_bottom_underscore" />
     <item type="id" name="softkey_bottom_vai_syllable_lengthener" />
@@ -2073,7 +2146,6 @@
     <item type="id" name="softkey_buginese_vowel_sign_o" />
     <item type="id" name="softkey_buginese_vowel_sign_u" />
     <item type="id" name="softkey_bullet" />
-    <item type="id" name="softkey_caesura" />
     <item type="id" name="softkey_canadian_syllabics_a" />
     <item type="id" name="softkey_canadian_syllabics_aa" />
     <item type="id" name="softkey_canadian_syllabics_aai" />
@@ -2109,6 +2181,7 @@
     <item type="id" name="softkey_canadian_syllabics_nunavik_h" />
     <item type="id" name="softkey_canadian_syllabics_nunavut_h" />
     <item type="id" name="softkey_canadian_syllabics_o" />
+    <item type="id" name="softkey_canadian_syllabics_ojibway_p" />
     <item type="id" name="softkey_canadian_syllabics_oo" />
     <item type="id" name="softkey_canadian_syllabics_p" />
     <item type="id" name="softkey_canadian_syllabics_pe" />
@@ -2295,30 +2368,47 @@
     <item type="id" name="softkey_colon_zh" />
     <item type="id" name="softkey_colon_zh_left_panel" />
     <item type="id" name="softkey_combining_acute_accent" />
+    <item type="id" name="softkey_combining_breve" />
     <item type="id" name="softkey_combining_breve_below" />
+    <item type="id" name="softkey_combining_bridge_below" />
     <item type="id" name="softkey_combining_caron" />
+    <item type="id" name="softkey_combining_caron_below" />
     <item type="id" name="softkey_combining_circumflex_accent" />
     <item type="id" name="softkey_combining_diaeresis" />
+    <item type="id" name="softkey_combining_diaeresis_below" />
     <item type="id" name="softkey_combining_dot_above_right" />
     <item type="id" name="softkey_combining_dot_below" />
     <item type="id" name="softkey_combining_double_acute_accent" />
+    <item type="id" name="softkey_combining_double_breve_below" />
+    <item type="id" name="softkey_combining_double_inverted_breve" />
     <item type="id" name="softkey_combining_grave_accent" />
+    <item type="id" name="softkey_combining_inverted_breve_below" />
+    <item type="id" name="softkey_combining_left_angle_above" />
+    <item type="id" name="softkey_combining_left_tack_below" />
     <item type="id" name="softkey_combining_macron" />
     <item type="id" name="softkey_combining_macron_above" />
+    <item type="id" name="softkey_combining_plus_sign_below" />
+    <item type="id" name="softkey_combining_right_half_ring_below" />
+    <item type="id" name="softkey_combining_ring_below" />
     <item type="id" name="softkey_combining_tilde" />
     <item type="id" name="softkey_combining_tilde_below" />
+    <item type="id" name="softkey_combining_up_tack_below" />
+    <item type="id" name="softkey_combining_vertical_line_below" />
     <item type="id" name="softkey_comma" />
     <item type="id" name="softkey_commercial_at" />
     <item type="id" name="softkey_coptic_capital_letter_alfa" />
     <item type="id" name="softkey_coptic_capital_letter_dalda" />
+    <item type="id" name="softkey_coptic_capital_letter_dei" />
     <item type="id" name="softkey_coptic_capital_letter_eie" />
     <item type="id" name="softkey_coptic_capital_letter_fei" />
     <item type="id" name="softkey_coptic_capital_letter_fi" />
     <item type="id" name="softkey_coptic_capital_letter_gamma" />
+    <item type="id" name="softkey_coptic_capital_letter_gangia" />
     <item type="id" name="softkey_coptic_capital_letter_hate" />
     <item type="id" name="softkey_coptic_capital_letter_hori" />
     <item type="id" name="softkey_coptic_capital_letter_iauda" />
     <item type="id" name="softkey_coptic_capital_letter_kapa" />
+    <item type="id" name="softkey_coptic_capital_letter_khei" />
     <item type="id" name="softkey_coptic_capital_letter_khi" />
     <item type="id" name="softkey_coptic_capital_letter_ksi" />
     <item type="id" name="softkey_coptic_capital_letter_laula" />
@@ -2329,7 +2419,10 @@
     <item type="id" name="softkey_coptic_capital_letter_pi" />
     <item type="id" name="softkey_coptic_capital_letter_psi" />
     <item type="id" name="softkey_coptic_capital_letter_ro" />
+    <item type="id" name="softkey_coptic_capital_letter_shei" />
+    <item type="id" name="softkey_coptic_capital_letter_shima" />
     <item type="id" name="softkey_coptic_capital_letter_sima" />
+    <item type="id" name="softkey_coptic_capital_letter_sou" />
     <item type="id" name="softkey_coptic_capital_letter_tau" />
     <item type="id" name="softkey_coptic_capital_letter_thethe" />
     <item type="id" name="softkey_coptic_capital_letter_ua" />
@@ -2337,14 +2430,17 @@
     <item type="id" name="softkey_coptic_capital_letter_zata" />
     <item type="id" name="softkey_coptic_small_letter_alfa" />
     <item type="id" name="softkey_coptic_small_letter_dalda" />
+    <item type="id" name="softkey_coptic_small_letter_dei" />
     <item type="id" name="softkey_coptic_small_letter_eie" />
     <item type="id" name="softkey_coptic_small_letter_fei" />
     <item type="id" name="softkey_coptic_small_letter_fi" />
     <item type="id" name="softkey_coptic_small_letter_gamma" />
+    <item type="id" name="softkey_coptic_small_letter_gangia" />
     <item type="id" name="softkey_coptic_small_letter_hate" />
     <item type="id" name="softkey_coptic_small_letter_hori" />
     <item type="id" name="softkey_coptic_small_letter_iauda" />
     <item type="id" name="softkey_coptic_small_letter_kapa" />
+    <item type="id" name="softkey_coptic_small_letter_khei" />
     <item type="id" name="softkey_coptic_small_letter_khi" />
     <item type="id" name="softkey_coptic_small_letter_ksi" />
     <item type="id" name="softkey_coptic_small_letter_laula" />
@@ -2355,7 +2451,10 @@
     <item type="id" name="softkey_coptic_small_letter_pi" />
     <item type="id" name="softkey_coptic_small_letter_psi" />
     <item type="id" name="softkey_coptic_small_letter_ro" />
+    <item type="id" name="softkey_coptic_small_letter_shei" />
+    <item type="id" name="softkey_coptic_small_letter_shima" />
     <item type="id" name="softkey_coptic_small_letter_sima" />
+    <item type="id" name="softkey_coptic_small_letter_sou" />
     <item type="id" name="softkey_coptic_small_letter_tau" />
     <item type="id" name="softkey_coptic_small_letter_thethe" />
     <item type="id" name="softkey_coptic_small_letter_ua" />
@@ -2886,12 +2985,19 @@
     <item type="id" name="softkey_dollar_long_press_russian_ruble_georgian_lari" />
     <item type="id" name="softkey_dollar_sign" />
     <item type="id" name="softkey_dong" />
+    <item type="id" name="softkey_dotted_circle_combining_ring_below" />
+    <item type="id" name="softkey_dotted_circle_combining_tilde_modifier_letter_glottal_stop" />
+    <item type="id" name="softkey_dotted_circle_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_dotted_circle_modifier_letter_glottal_stop" />
     <item type="id" name="softkey_double_consonants" />
+    <item type="id" name="softkey_double_vertical_line" />
     <item type="id" name="softkey_down_arrow" />
     <item type="id" name="softkey_down_arrow_inactive" />
     <item type="id" name="softkey_east_slavic_apostrophe" />
     <item type="id" name="softkey_east_slavic_quot" />
     <item type="id" name="softkey_edit" />
+    <item type="id" name="softkey_edit_inactive_reason_opt_in_disabled" />
+    <item type="id" name="softkey_edit_inactive_reason_optin_first_page" />
     <item type="id" name="softkey_ellipsis" />
     <item type="id" name="softkey_ellipsis_zh" />
     <item type="id" name="softkey_ellipsis_zh_left_panel" />
@@ -3098,6 +3204,8 @@
     <item type="id" name="softkey_fragment_bottom_danda_popup_saurashtra" />
     <item type="id" name="softkey_fragment_bottom_danda_popup_syloti_nagri" />
     <item type="id" name="softkey_fragment_bottom_danda_popup_with_avagraha" />
+    <item type="id" name="softkey_fragment_bottom_diacritic_popup_ipa" />
+    <item type="id" name="softkey_fragment_bottom_double_danda_popup_limbu" />
     <item type="id" name="softkey_fragment_bottom_hebrew_geresh_translit_popup" />
     <item type="id" name="softkey_fragment_bottom_hebrew_patah_popup" />
     <item type="id" name="softkey_fragment_bottom_icon_emoji" />
@@ -3110,6 +3218,7 @@
     <item type="id" name="softkey_fragment_bottom_period_popup_arabic_translit" />
     <item type="id" name="softkey_fragment_bottom_period_popup_balinese" />
     <item type="id" name="softkey_fragment_bottom_period_popup_batak" />
+    <item type="id" name="softkey_fragment_bottom_period_popup_canadian_syllabics" />
     <item type="id" name="softkey_fragment_bottom_period_popup_catalan" />
     <item type="id" name="softkey_fragment_bottom_period_popup_chinese" />
     <item type="id" name="softkey_fragment_bottom_period_popup_church_slavonic" />
@@ -3117,12 +3226,15 @@
     <item type="id" name="softkey_fragment_bottom_period_popup_dot_com" />
     <item type="id" name="softkey_fragment_bottom_period_popup_ethiopic" />
     <item type="id" name="softkey_fragment_bottom_period_popup_ethiopic_legacy" />
+    <item type="id" name="softkey_fragment_bottom_period_popup_gujarati_translit" />
     <item type="id" name="softkey_fragment_bottom_period_popup_hani" />
     <item type="id" name="softkey_fragment_bottom_period_popup_hebrew" />
+    <item type="id" name="softkey_fragment_bottom_period_popup_ipa" />
     <item type="id" name="softkey_fragment_bottom_period_popup_kalam_kohistani" />
     <item type="id" name="softkey_fragment_bottom_period_popup_kashmiri" />
     <item type="id" name="softkey_fragment_bottom_period_popup_khorasani_turkic" />
     <item type="id" name="softkey_fragment_bottom_period_popup_luri" />
+    <item type="id" name="softkey_fragment_bottom_period_popup_myanmar_shan" />
     <item type="id" name="softkey_fragment_bottom_period_popup_nko" />
     <item type="id" name="softkey_fragment_bottom_period_popup_pashto" />
     <item type="id" name="softkey_fragment_bottom_period_popup_rejang" />
@@ -3142,6 +3254,7 @@
     <item type="id" name="softkey_fragment_bottom_popup_switch_to_emoji_with_symbols" />
     <item type="id" name="softkey_fragment_bottom_popup_switch_to_emoticon" />
     <item type="id" name="softkey_fragment_bottom_popup_switch_to_emoticon_with_symbols" />
+    <item type="id" name="softkey_fragment_bottom_ta_rol_popup" />
     <item type="id" name="softkey_fragment_buginese_back_key" />
     <item type="id" name="softkey_fragment_canadian_syllabics_cree_back_key" />
     <item type="id" name="softkey_fragment_canadian_syllabics_inuktitut_back_key" />
@@ -3167,6 +3280,9 @@
     <item type="id" name="softkey_fragment_gurmukhi_more_symbols_flip" />
     <item type="id" name="softkey_fragment_hebrew_back_key" />
     <item type="id" name="softkey_fragment_indic_more_symbols_flip" />
+    <item type="id" name="softkey_fragment_ipa_back_key" />
+    <item type="id" name="softkey_fragment_ipa_more_symbols_flip" />
+    <item type="id" name="softkey_fragment_ipa_symbols_flip" />
     <item type="id" name="softkey_fragment_japanese_back_key" />
     <item type="id" name="softkey_fragment_javanese_back_key" />
     <item type="id" name="softkey_fragment_javanese_more_symbols_flip" />
@@ -3177,6 +3293,10 @@
     <item type="id" name="softkey_fragment_khmer_back_key" />
     <item type="id" name="softkey_fragment_korean_back_key" />
     <item type="id" name="softkey_fragment_lao_back_key" />
+    <item type="id" name="softkey_fragment_lepcha_back_key" />
+    <item type="id" name="softkey_fragment_lepcha_more_symbols_flip" />
+    <item type="id" name="softkey_fragment_limbu_back_key" />
+    <item type="id" name="softkey_fragment_limbu_more_symbols_flip" />
     <item type="id" name="softkey_fragment_lisu_back_key" />
     <item type="id" name="softkey_fragment_malayalam_back_key" />
     <item type="id" name="softkey_fragment_meetei_mayek_back_key" />
@@ -3185,6 +3305,8 @@
     <item type="id" name="softkey_fragment_morse_space" />
     <item type="id" name="softkey_fragment_myanmar_back_key" />
     <item type="id" name="softkey_fragment_myanmar_more_symbols_flip" />
+    <item type="id" name="softkey_fragment_myanmar_shan_back_key" />
+    <item type="id" name="softkey_fragment_myanmar_shan_more_symbols_flip" />
     <item type="id" name="softkey_fragment_new_tai_lue_back_key" />
     <item type="id" name="softkey_fragment_new_tai_lue_more_symbols_flip" />
     <item type="id" name="softkey_fragment_nko_back_key" />
@@ -3316,6 +3438,16 @@
     <item type="id" name="softkey_fragment_superscript_fullwidth_tilde" />
     <item type="id" name="softkey_fragment_superscript_grave_accent" />
     <item type="id" name="softkey_fragment_superscript_guarani_sign" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_eight" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_five" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_four" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_nine" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_one" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_seven" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_six" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_three" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_two" />
+    <item type="id" name="softkey_fragment_superscript_gujarati_digit_zero" />
     <item type="id" name="softkey_fragment_superscript_hryvnia" />
     <item type="id" name="softkey_fragment_superscript_hyphen_minus" />
     <item type="id" name="softkey_fragment_superscript_ideographic_comma" />
@@ -3346,11 +3478,42 @@
     <item type="id" name="softkey_fragment_superscript_left_double_quotation_mask" />
     <item type="id" name="softkey_fragment_superscript_left_parenthesis" />
     <item type="id" name="softkey_fragment_superscript_left_square_bracket" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_eight" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_five" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_four" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_nine" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_one" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_seven" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_six" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_three" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_two" />
+    <item type="id" name="softkey_fragment_superscript_lepcha_digit_zero" />
     <item type="id" name="softkey_fragment_superscript_less_than" />
     <item type="id" name="softkey_fragment_superscript_lira_sign" />
     <item type="id" name="softkey_fragment_superscript_low_line" />
     <item type="id" name="softkey_fragment_superscript_manat_sign" />
     <item type="id" name="softkey_fragment_superscript_more_than" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_eight" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_five" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_four" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_nine" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_one" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_seven" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_six" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_three" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_two" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_digit_zero" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_eight" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_five" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_four" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_nine" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_one" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_seven" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_six" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_three" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_two" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_shan_digit_zero" />
+    <item type="id" name="softkey_fragment_superscript_myanmar_symbol_shan_exclamation" />
     <item type="id" name="softkey_fragment_superscript_naira" />
     <item type="id" name="softkey_fragment_superscript_nepalese_rupee" />
     <item type="id" name="softkey_fragment_superscript_new_sheqel" />
@@ -3425,7 +3588,6 @@
     <item type="id" name="softkey_fragment_yi_back_key" />
     <item type="id" name="softkey_french_franc_sign" />
     <item type="id" name="softkey_full_stop" />
-    <item type="id" name="softkey_fullscreen_handwriting_space" />
     <item type="id" name="softkey_fullwidth_colon" />
     <item type="id" name="softkey_fullwidth_comma" />
     <item type="id" name="softkey_fullwidth_exclamation_mark" />
@@ -3568,6 +3730,7 @@
     <item type="id" name="softkey_greek_small_letter_alpha" />
     <item type="id" name="softkey_greek_small_letter_beta" />
     <item type="id" name="softkey_greek_small_letter_chi" />
+    <item type="id" name="softkey_greek_small_letter_chi_modifier_letter_apostrophe" />
     <item type="id" name="softkey_greek_small_letter_delta" />
     <item type="id" name="softkey_greek_small_letter_epsilon" />
     <item type="id" name="softkey_greek_small_letter_eta" />
@@ -3587,6 +3750,7 @@
     <item type="id" name="softkey_greek_small_letter_sigma" />
     <item type="id" name="softkey_greek_small_letter_tau" />
     <item type="id" name="softkey_greek_small_letter_theta" />
+    <item type="id" name="softkey_greek_small_letter_theta_modifier_letter_apostrophe" />
     <item type="id" name="softkey_greek_small_letter_upsilon" />
     <item type="id" name="softkey_greek_small_letter_xi" />
     <item type="id" name="softkey_greek_small_letter_zeta" />
@@ -3837,8 +4001,6 @@
     <item type="id" name="softkey_gurmukhi_vowel_sign_oo" />
     <item type="id" name="softkey_gurmukhi_vowel_sign_u" />
     <item type="id" name="softkey_gurmukhi_vowel_sign_uu" />
-    <item type="id" name="softkey_handwriting_move_cursor" />
-    <item type="id" name="softkey_handwriting_switch_to_non_prime" />
     <item type="id" name="softkey_hangul_letter_a" />
     <item type="id" name="softkey_hangul_letter_ae" />
     <item type="id" name="softkey_hangul_letter_araea" />
@@ -4627,6 +4789,38 @@
     <item type="id" name="softkey_latin_capital_letter_z" />
     <item type="id" name="softkey_latin_capital_letter_z_with_caron" />
     <item type="id" name="softkey_latin_capital_letter_z_with_dot_above" />
+    <item type="id" name="softkey_latin_letter_alveolar_click" />
+    <item type="id" name="softkey_latin_letter_alveolar_click_combining_caron_below" />
+    <item type="id" name="softkey_latin_letter_alveolar_click_combining_tilde" />
+    <item type="id" name="softkey_latin_letter_bilabial_click" />
+    <item type="id" name="softkey_latin_letter_bilabial_click_combining_caron_below" />
+    <item type="id" name="softkey_latin_letter_bilabial_click_combining_tilde" />
+    <item type="id" name="softkey_latin_letter_dental_click" />
+    <item type="id" name="softkey_latin_letter_dental_click_combining_caron_below" />
+    <item type="id" name="softkey_latin_letter_dental_click_combining_tilde" />
+    <item type="id" name="softkey_latin_letter_glottal_stop" />
+    <item type="id" name="softkey_latin_letter_glottal_stop_with_stroke_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_letter_lateral_click" />
+    <item type="id" name="softkey_latin_letter_lateral_click_combining_caron_below" />
+    <item type="id" name="softkey_latin_letter_lateral_click_combining_tilde" />
+    <item type="id" name="softkey_latin_letter_pharyngeal_voiced_fricative" />
+    <item type="id" name="softkey_latin_letter_retroflex_click" />
+    <item type="id" name="softkey_latin_letter_retroflex_click_combining_caron_below" />
+    <item type="id" name="softkey_latin_letter_retroflex_click_combining_caron_below_modifier_letter_rhotic_hook" />
+    <item type="id" name="softkey_latin_letter_retroflex_click_combining_tilde" />
+    <item type="id" name="softkey_latin_letter_retroflex_click_combining_tilde_modifier_letter_rhotic_hook" />
+    <item type="id" name="softkey_latin_letter_retroflex_click_modifier_letter_rhotic_hook" />
+    <item type="id" name="softkey_latin_letter_small_capital_b" />
+    <item type="id" name="softkey_latin_letter_small_capital_g" />
+    <item type="id" name="softkey_latin_letter_small_capital_g_with_hook" />
+    <item type="id" name="softkey_latin_letter_small_capital_g_with_hook_combining_ring_below" />
+    <item type="id" name="softkey_latin_letter_small_capital_i" />
+    <item type="id" name="softkey_latin_letter_small_capital_i_combining_diaeresis" />
+    <item type="id" name="softkey_latin_letter_small_capital_inverted_r" />
+    <item type="id" name="softkey_latin_letter_small_capital_n" />
+    <item type="id" name="softkey_latin_letter_small_capital_oe" />
+    <item type="id" name="softkey_latin_letter_small_capital_r" />
+    <item type="id" name="softkey_latin_letter_small_capital_y" />
     <item type="id" name="softkey_latin_small_letter_a" />
     <item type="id" name="softkey_latin_small_letter_a_with_acute" />
     <item type="id" name="softkey_latin_small_letter_a_with_breve" />
@@ -4641,21 +4835,34 @@
     <item type="id" name="softkey_latin_small_letter_a_with_ring_above" />
     <item type="id" name="softkey_latin_small_letter_a_with_tilde" />
     <item type="id" name="softkey_latin_small_letter_ae" />
+    <item type="id" name="softkey_latin_small_letter_alpha" />
     <item type="id" name="softkey_latin_small_letter_b" />
     <item type="id" name="softkey_latin_small_letter_b_with_hook" />
+    <item type="id" name="softkey_latin_small_letter_b_with_hook_combining_ring_below" />
+    <item type="id" name="softkey_latin_small_letter_barred_o" />
     <item type="id" name="softkey_latin_small_letter_c" />
     <item type="id" name="softkey_latin_small_letter_c_latin_small_letter_h" />
+    <item type="id" name="softkey_latin_small_letter_c_latin_small_letter_turned_y_combining_up_tack_below_combining_ring_above_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_small_letter_c_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_c_with_acute" />
     <item type="id" name="softkey_latin_small_letter_c_with_caron" />
     <item type="id" name="softkey_latin_small_letter_c_with_cedilla" />
     <item type="id" name="softkey_latin_small_letter_c_with_circumflex" />
+    <item type="id" name="softkey_latin_small_letter_c_with_curl_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_c_with_dot_above" />
+    <item type="id" name="softkey_latin_small_letter_closed_reversed_open_e" />
     <item type="id" name="softkey_latin_small_letter_d" />
     <item type="id" name="softkey_latin_small_letter_d_with_dot_below" />
     <item type="id" name="softkey_latin_small_letter_d_with_hook" />
+    <item type="id" name="softkey_latin_small_letter_d_with_hook_and_tail" />
+    <item type="id" name="softkey_latin_small_letter_d_with_hook_and_tail_combining_ring_below" />
+    <item type="id" name="softkey_latin_small_letter_d_with_hook_combining_ring_below" />
     <item type="id" name="softkey_latin_small_letter_d_with_stroke" />
     <item type="id" name="softkey_latin_small_letter_d_with_tail" />
     <item type="id" name="softkey_latin_small_letter_dotless_i" />
+    <item type="id" name="softkey_latin_small_letter_dotless_j_with_stroke" />
+    <item type="id" name="softkey_latin_small_letter_dotless_j_with_stroke_and_hook" />
+    <item type="id" name="softkey_latin_small_letter_dotless_j_with_stroke_and_hook_combining_ring_above" />
     <item type="id" name="softkey_latin_small_letter_e" />
     <item type="id" name="softkey_latin_small_letter_e_with_acute" />
     <item type="id" name="softkey_latin_small_letter_e_with_circumflex" />
@@ -4668,8 +4875,12 @@
     <item type="id" name="softkey_latin_small_letter_e_with_ogonek" />
     <item type="id" name="softkey_latin_small_letter_e_with_ogonek_combining_acute_accent" />
     <item type="id" name="softkey_latin_small_letter_eng" />
+    <item type="id" name="softkey_latin_small_letter_esh" />
+    <item type="id" name="softkey_latin_small_letter_esh_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_eth" />
+    <item type="id" name="softkey_latin_small_letter_ezh" />
     <item type="id" name="softkey_latin_small_letter_f" />
+    <item type="id" name="softkey_latin_small_letter_f_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_f_with_hook" />
     <item type="id" name="softkey_latin_small_letter_g" />
     <item type="id" name="softkey_latin_small_letter_g_latin_small_letter_h" />
@@ -4678,10 +4889,13 @@
     <item type="id" name="softkey_latin_small_letter_g_with_caron" />
     <item type="id" name="softkey_latin_small_letter_g_with_circumflex" />
     <item type="id" name="softkey_latin_small_letter_g_with_dot_above" />
+    <item type="id" name="softkey_latin_small_letter_g_with_hook" />
+    <item type="id" name="softkey_latin_small_letter_g_with_hook_combining_ring_above" />
     <item type="id" name="softkey_latin_small_letter_gamma" />
     <item type="id" name="softkey_latin_small_letter_h" />
     <item type="id" name="softkey_latin_small_letter_h_with_caron" />
     <item type="id" name="softkey_latin_small_letter_h_with_dot_below" />
+    <item type="id" name="softkey_latin_small_letter_h_with_hook" />
     <item type="id" name="softkey_latin_small_letter_h_with_stroke" />
     <item type="id" name="softkey_latin_small_letter_i" />
     <item type="id" name="softkey_latin_small_letter_i_with_acute" />
@@ -4696,15 +4910,24 @@
     <item type="id" name="softkey_latin_small_letter_iota" />
     <item type="id" name="softkey_latin_small_letter_j" />
     <item type="id" name="softkey_latin_small_letter_j_with_circumflex" />
+    <item type="id" name="softkey_latin_small_letter_j_with_crossed_tail" />
     <item type="id" name="softkey_latin_small_letter_k" />
+    <item type="id" name="softkey_latin_small_letter_k_latin_letter_small_capital_l_combining_up_tack_below_combining_ring_above_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_small_letter_k_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_l" />
+    <item type="id" name="softkey_latin_small_letter_l_with_belt" />
+    <item type="id" name="softkey_latin_small_letter_l_with_belt_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_small_letter_l_with_retroflex_hook" />
     <item type="id" name="softkey_latin_small_letter_l_with_stroke" />
+    <item type="id" name="softkey_latin_small_letter_lezh" />
     <item type="id" name="softkey_latin_small_letter_m" />
+    <item type="id" name="softkey_latin_small_letter_m_with_hook" />
     <item type="id" name="softkey_latin_small_letter_n" />
     <item type="id" name="softkey_latin_small_letter_n_latin_small_letter_g" />
     <item type="id" name="softkey_latin_small_letter_n_with_acute" />
     <item type="id" name="softkey_latin_small_letter_n_with_caron" />
     <item type="id" name="softkey_latin_small_letter_n_with_left_hook" />
+    <item type="id" name="softkey_latin_small_letter_n_with_retroflex_hook" />
     <item type="id" name="softkey_latin_small_letter_n_with_tilde" />
     <item type="id" name="softkey_latin_small_letter_o" />
     <item type="id" name="softkey_latin_small_letter_o_modifier_letter_turned_comma" />
@@ -4722,23 +4945,52 @@
     <item type="id" name="softkey_latin_small_letter_open_e" />
     <item type="id" name="softkey_latin_small_letter_open_o" />
     <item type="id" name="softkey_latin_small_letter_p" />
+    <item type="id" name="softkey_latin_small_letter_p_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_small_letter_phi" />
+    <item type="id" name="softkey_latin_small_letter_phi_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_q" />
+    <item type="id" name="softkey_latin_small_letter_q_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_r" />
+    <item type="id" name="softkey_latin_small_letter_r_with_tail" />
+    <item type="id" name="softkey_latin_small_letter_rams_horn" />
+    <item type="id" name="softkey_latin_small_letter_reversed_e" />
+    <item type="id" name="softkey_latin_small_letter_reversed_open_e" />
     <item type="id" name="softkey_latin_small_letter_s" />
+    <item type="id" name="softkey_latin_small_letter_s_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_s_with_caron" />
     <item type="id" name="softkey_latin_small_letter_s_with_cedilla" />
     <item type="id" name="softkey_latin_small_letter_s_with_circumflex" />
     <item type="id" name="softkey_latin_small_letter_s_with_comma_below" />
+    <item type="id" name="softkey_latin_small_letter_s_with_hook" />
+    <item type="id" name="softkey_latin_small_letter_s_with_hook_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_schwa" />
+    <item type="id" name="softkey_latin_small_letter_script_g" />
     <item type="id" name="softkey_latin_small_letter_sharp_s" />
     <item type="id" name="softkey_latin_small_letter_t" />
+    <item type="id" name="softkey_latin_small_letter_t_combining_minus_sign_below_latin_small_letter_esh_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_t_latin_small_letter_l_latin_small_letter_h" />
+    <item type="id" name="softkey_latin_small_letter_t_latin_small_letter_l_with_belt_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_small_letter_t_latin_small_letter_s_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_small_letter_t_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_t_with_comma_below" />
     <item type="id" name="softkey_latin_small_letter_t_with_dot_below" />
+    <item type="id" name="softkey_latin_small_letter_t_with_retroflex_hook" />
+    <item type="id" name="softkey_latin_small_letter_t_with_retroflex_hook_latin_small_letter_s_with_hook_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_latin_small_letter_t_with_retroflex_hook_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_t_with_stroke" />
     <item type="id" name="softkey_latin_small_letter_thorn" />
+    <item type="id" name="softkey_latin_small_letter_turned_a" />
+    <item type="id" name="softkey_latin_small_letter_turned_alpha" />
+    <item type="id" name="softkey_latin_small_letter_turned_alpha_combining_diaeresis" />
     <item type="id" name="softkey_latin_small_letter_turned_e" />
+    <item type="id" name="softkey_latin_small_letter_turned_h" />
+    <item type="id" name="softkey_latin_small_letter_turned_m" />
+    <item type="id" name="softkey_latin_small_letter_turned_m_combining_x_above" />
+    <item type="id" name="softkey_latin_small_letter_turned_m_with_long_leg" />
+    <item type="id" name="softkey_latin_small_letter_turned_r" />
+    <item type="id" name="softkey_latin_small_letter_turned_r_with_hook" />
     <item type="id" name="softkey_latin_small_letter_turned_v" />
+    <item type="id" name="softkey_latin_small_letter_turned_y" />
     <item type="id" name="softkey_latin_small_letter_u" />
     <item type="id" name="softkey_latin_small_letter_u_bar" />
     <item type="id" name="softkey_latin_small_letter_u_with_breve" />
@@ -4749,23 +5001,28 @@
     <item type="id" name="softkey_latin_small_letter_u_with_ring_above" />
     <item type="id" name="softkey_latin_small_letter_u_with_tilde" />
     <item type="id" name="softkey_latin_small_letter_upsilon" />
+    <item type="id" name="softkey_latin_small_letter_upsilon_combining_diaeresis" />
     <item type="id" name="softkey_latin_small_letter_v" />
     <item type="id" name="softkey_latin_small_letter_v_with_hook" />
     <item type="id" name="softkey_latin_small_letter_w" />
     <item type="id" name="softkey_latin_small_letter_w_with_circumflex" />
     <item type="id" name="softkey_latin_small_letter_x" />
+    <item type="id" name="softkey_latin_small_letter_x_modifier_letter_apostrophe" />
     <item type="id" name="softkey_latin_small_letter_y" />
     <item type="id" name="softkey_latin_small_letter_y_with_acute" />
     <item type="id" name="softkey_latin_small_letter_y_with_circumflex" />
     <item type="id" name="softkey_latin_small_letter_z" />
     <item type="id" name="softkey_latin_small_letter_z_with_caron" />
     <item type="id" name="softkey_latin_small_letter_z_with_dot_above" />
+    <item type="id" name="softkey_latin_small_letter_z_with_retroflex_hook" />
+    <item type="id" name="softkey_latin_small_ligature_oe" />
     <item type="id" name="softkey_left_arrow" />
     <item type="id" name="softkey_left_arrow_inactive" />
     <item type="id" name="softkey_left_bracket" />
     <item type="id" name="softkey_left_corner_bracket" />
     <item type="id" name="softkey_left_curley_bracket" />
     <item type="id" name="softkey_left_curly_bracket" />
+    <item type="id" name="softkey_left_double_parenthesis" />
     <item type="id" name="softkey_left_double_quotation" />
     <item type="id" name="softkey_left_double_quotation_mark" />
     <item type="id" name="softkey_left_double_quotation_mask" />
@@ -4774,6 +5031,80 @@
     <item type="id" name="softkey_left_parenthesis" />
     <item type="id" name="softkey_left_single_quotation_mask" />
     <item type="id" name="softkey_left_square_bracket" />
+    <item type="id" name="softkey_lepcha_consonant_sign_k" />
+    <item type="id" name="softkey_lepcha_consonant_sign_kang" />
+    <item type="id" name="softkey_lepcha_consonant_sign_l" />
+    <item type="id" name="softkey_lepcha_consonant_sign_m" />
+    <item type="id" name="softkey_lepcha_consonant_sign_n" />
+    <item type="id" name="softkey_lepcha_consonant_sign_nyin_do" />
+    <item type="id" name="softkey_lepcha_consonant_sign_p" />
+    <item type="id" name="softkey_lepcha_consonant_sign_r" />
+    <item type="id" name="softkey_lepcha_consonant_sign_t" />
+    <item type="id" name="softkey_lepcha_digit_eight" />
+    <item type="id" name="softkey_lepcha_digit_five" />
+    <item type="id" name="softkey_lepcha_digit_four" />
+    <item type="id" name="softkey_lepcha_digit_nine" />
+    <item type="id" name="softkey_lepcha_digit_one" />
+    <item type="id" name="softkey_lepcha_digit_seven" />
+    <item type="id" name="softkey_lepcha_digit_six" />
+    <item type="id" name="softkey_lepcha_digit_three" />
+    <item type="id" name="softkey_lepcha_digit_two" />
+    <item type="id" name="softkey_lepcha_digit_zero" />
+    <item type="id" name="softkey_lepcha_letter_a" />
+    <item type="id" name="softkey_lepcha_letter_ba" />
+    <item type="id" name="softkey_lepcha_letter_bla" />
+    <item type="id" name="softkey_lepcha_letter_ca" />
+    <item type="id" name="softkey_lepcha_letter_cha" />
+    <item type="id" name="softkey_lepcha_letter_da" />
+    <item type="id" name="softkey_lepcha_letter_dda" />
+    <item type="id" name="softkey_lepcha_letter_dza" />
+    <item type="id" name="softkey_lepcha_letter_fa" />
+    <item type="id" name="softkey_lepcha_letter_fla" />
+    <item type="id" name="softkey_lepcha_letter_ga" />
+    <item type="id" name="softkey_lepcha_letter_gla" />
+    <item type="id" name="softkey_lepcha_letter_ha" />
+    <item type="id" name="softkey_lepcha_letter_hla" />
+    <item type="id" name="softkey_lepcha_letter_ja" />
+    <item type="id" name="softkey_lepcha_letter_ka" />
+    <item type="id" name="softkey_lepcha_letter_kha" />
+    <item type="id" name="softkey_lepcha_letter_kla" />
+    <item type="id" name="softkey_lepcha_letter_la" />
+    <item type="id" name="softkey_lepcha_letter_ma" />
+    <item type="id" name="softkey_lepcha_letter_mla" />
+    <item type="id" name="softkey_lepcha_letter_na" />
+    <item type="id" name="softkey_lepcha_letter_nga" />
+    <item type="id" name="softkey_lepcha_letter_nya" />
+    <item type="id" name="softkey_lepcha_letter_pa" />
+    <item type="id" name="softkey_lepcha_letter_pha" />
+    <item type="id" name="softkey_lepcha_letter_pla" />
+    <item type="id" name="softkey_lepcha_letter_ra" />
+    <item type="id" name="softkey_lepcha_letter_sa" />
+    <item type="id" name="softkey_lepcha_letter_sha" />
+    <item type="id" name="softkey_lepcha_letter_ta" />
+    <item type="id" name="softkey_lepcha_letter_tha" />
+    <item type="id" name="softkey_lepcha_letter_tsa" />
+    <item type="id" name="softkey_lepcha_letter_tsha" />
+    <item type="id" name="softkey_lepcha_letter_tta" />
+    <item type="id" name="softkey_lepcha_letter_ttha" />
+    <item type="id" name="softkey_lepcha_letter_va" />
+    <item type="id" name="softkey_lepcha_letter_wa" />
+    <item type="id" name="softkey_lepcha_letter_ya" />
+    <item type="id" name="softkey_lepcha_punctuation_cer_wa" />
+    <item type="id" name="softkey_lepcha_punctuation_nyet_thyoom_ta_rol" />
+    <item type="id" name="softkey_lepcha_punctuation_ta_rol" />
+    <item type="id" name="softkey_lepcha_punctuation_tshook" />
+    <item type="id" name="softkey_lepcha_punctuation_tshook_cer_wa" />
+    <item type="id" name="softkey_lepcha_sign_nukta" />
+    <item type="id" name="softkey_lepcha_sign_ran" />
+    <item type="id" name="softkey_lepcha_subjoined_letter_ra" />
+    <item type="id" name="softkey_lepcha_subjoined_letter_ya" />
+    <item type="id" name="softkey_lepcha_vowel_sign_aa" />
+    <item type="id" name="softkey_lepcha_vowel_sign_e" />
+    <item type="id" name="softkey_lepcha_vowel_sign_i" />
+    <item type="id" name="softkey_lepcha_vowel_sign_o" />
+    <item type="id" name="softkey_lepcha_vowel_sign_oo" />
+    <item type="id" name="softkey_lepcha_vowel_sign_u" />
+    <item type="id" name="softkey_lepcha_vowel_sign_uu" />
     <item type="id" name="softkey_less_than" />
     <item type="id" name="softkey_less_than_or_equal_to" />
     <item type="id" name="softkey_light_and" />
@@ -4786,6 +5117,65 @@
     <item type="id" name="softkey_light_pound" />
     <item type="id" name="softkey_light_right_bracket" />
     <item type="id" name="softkey_light_star" />
+    <item type="id" name="softkey_limbu_digit_eight" />
+    <item type="id" name="softkey_limbu_digit_five" />
+    <item type="id" name="softkey_limbu_digit_four" />
+    <item type="id" name="softkey_limbu_digit_nine" />
+    <item type="id" name="softkey_limbu_digit_one" />
+    <item type="id" name="softkey_limbu_digit_seven" />
+    <item type="id" name="softkey_limbu_digit_six" />
+    <item type="id" name="softkey_limbu_digit_three" />
+    <item type="id" name="softkey_limbu_digit_two" />
+    <item type="id" name="softkey_limbu_digit_zero" />
+    <item type="id" name="softkey_limbu_letter_ba" />
+    <item type="id" name="softkey_limbu_letter_bha" />
+    <item type="id" name="softkey_limbu_letter_ca" />
+    <item type="id" name="softkey_limbu_letter_cha" />
+    <item type="id" name="softkey_limbu_letter_da" />
+    <item type="id" name="softkey_limbu_letter_dha" />
+    <item type="id" name="softkey_limbu_letter_ga" />
+    <item type="id" name="softkey_limbu_letter_gha" />
+    <item type="id" name="softkey_limbu_letter_ha" />
+    <item type="id" name="softkey_limbu_letter_ja" />
+    <item type="id" name="softkey_limbu_letter_ka" />
+    <item type="id" name="softkey_limbu_letter_kha" />
+    <item type="id" name="softkey_limbu_letter_la" />
+    <item type="id" name="softkey_limbu_letter_ma" />
+    <item type="id" name="softkey_limbu_letter_na" />
+    <item type="id" name="softkey_limbu_letter_nga" />
+    <item type="id" name="softkey_limbu_letter_pa" />
+    <item type="id" name="softkey_limbu_letter_pha" />
+    <item type="id" name="softkey_limbu_letter_ra" />
+    <item type="id" name="softkey_limbu_letter_sa" />
+    <item type="id" name="softkey_limbu_letter_sha" />
+    <item type="id" name="softkey_limbu_letter_ta" />
+    <item type="id" name="softkey_limbu_letter_tha" />
+    <item type="id" name="softkey_limbu_letter_wa" />
+    <item type="id" name="softkey_limbu_letter_ya" />
+    <item type="id" name="softkey_limbu_punctuation_exclamation_mark" />
+    <item type="id" name="softkey_limbu_punctuation_question_mark" />
+    <item type="id" name="softkey_limbu_small_letter_anusvara" />
+    <item type="id" name="softkey_limbu_small_letter_ka" />
+    <item type="id" name="softkey_limbu_small_letter_la" />
+    <item type="id" name="softkey_limbu_small_letter_ma" />
+    <item type="id" name="softkey_limbu_small_letter_na" />
+    <item type="id" name="softkey_limbu_small_letter_nga" />
+    <item type="id" name="softkey_limbu_small_letter_pa" />
+    <item type="id" name="softkey_limbu_small_letter_ra" />
+    <item type="id" name="softkey_limbu_small_letter_ta" />
+    <item type="id" name="softkey_limbu_subjoined_letter_ra" />
+    <item type="id" name="softkey_limbu_subjoined_letter_wa" />
+    <item type="id" name="softkey_limbu_subjoined_letter_ya" />
+    <item type="id" name="softkey_limbu_vowel_carrier_letter" />
+    <item type="id" name="softkey_limbu_vowel_sign_a" />
+    <item type="id" name="softkey_limbu_vowel_sign_ai" />
+    <item type="id" name="softkey_limbu_vowel_sign_au" />
+    <item type="id" name="softkey_limbu_vowel_sign_e" />
+    <item type="id" name="softkey_limbu_vowel_sign_ee" />
+    <item type="id" name="softkey_limbu_vowel_sign_i" />
+    <item type="id" name="softkey_limbu_vowel_sign_o" />
+    <item type="id" name="softkey_limbu_vowel_sign_oo" />
+    <item type="id" name="softkey_limbu_vowel_sign_u" />
     <item type="id" name="softkey_lira_sign" />
     <item type="id" name="softkey_lisu_letter_a" />
     <item type="id" name="softkey_lisu_letter_ae" />
@@ -4981,8 +5371,32 @@
     <item type="id" name="softkey_middle_dot" />
     <item type="id" name="softkey_minus" />
     <item type="id" name="softkey_modifier_letter_apostrophe" />
+    <item type="id" name="softkey_modifier_letter_extra_high_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_extra_high_tone_bar_modifier_letter_extra_low_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_extra_low_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_extra_low_tone_bar_modifier_letter_extra_high_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_extra_low_tone_bar_modifier_letter_low_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_half_triangular_colon" />
+    <item type="id" name="softkey_modifier_letter_high_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_high_tone_bar_modifier_letter_extra_high_tone_bar" />
     <item type="id" name="softkey_modifier_letter_low_macron" />
+    <item type="id" name="softkey_modifier_letter_low_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_low_vertical_line" />
+    <item type="id" name="softkey_modifier_letter_mid_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_mid_tone_bar_modifier_letter_high_tone_bar_modifier_letter_mid_tone_bar" />
+    <item type="id" name="softkey_modifier_letter_reversed_glottal_stop" />
+    <item type="id" name="softkey_modifier_letter_rhotic_hook" />
+    <item type="id" name="softkey_modifier_letter_small_gamma" />
+    <item type="id" name="softkey_modifier_letter_small_h" />
+    <item type="id" name="softkey_modifier_letter_small_j" />
+    <item type="id" name="softkey_modifier_letter_small_l" />
+    <item type="id" name="softkey_modifier_letter_small_schwa" />
+    <item type="id" name="softkey_modifier_letter_small_theta" />
+    <item type="id" name="softkey_modifier_letter_small_w" />
+    <item type="id" name="softkey_modifier_letter_small_x" />
+    <item type="id" name="softkey_modifier_letter_triangular_colon" />
     <item type="id" name="softkey_modifier_letter_turned_comma" />
+    <item type="id" name="softkey_modifier_letter_vertical_line" />
     <item type="id" name="softkey_more_candidates_background_default" />
     <item type="id" name="softkey_more_candidates_background_scrolled_enough" />
     <item type="id" name="softkey_more_symbols_flip" />
@@ -5003,6 +5417,8 @@
     <item type="id" name="softkey_myanmar_consonant_sign_medial_wa" />
     <item type="id" name="softkey_myanmar_consonant_sign_medial_ya" />
     <item type="id" name="softkey_myanmar_consonant_sign_mon_medial_la" />
+    <item type="id" name="softkey_myanmar_consonant_sign_shan_medial_wa" />
+    <item type="id" name="softkey_myanmar_consonant_sign_shan_medial_wa_myanmar_sign_asat" />
     <item type="id" name="softkey_myanmar_digit_eight" />
     <item type="id" name="softkey_myanmar_digit_five" />
     <item type="id" name="softkey_myanmar_digit_four" />
@@ -5020,10 +5436,14 @@
     <item type="id" name="softkey_myanmar_letter_ca" />
     <item type="id" name="softkey_myanmar_letter_cha" />
     <item type="id" name="softkey_myanmar_letter_da" />
+    <item type="id" name="softkey_myanmar_letter_da_myanmar_sign_asat" />
+    <item type="id" name="softkey_myanmar_letter_da_myanmar_vowel_sign_ii_myanmar_sign_visarga" />
     <item type="id" name="softkey_myanmar_letter_dda" />
     <item type="id" name="softkey_myanmar_letter_ddha" />
     <item type="id" name="softkey_myanmar_letter_dha" />
     <item type="id" name="softkey_myanmar_letter_e" />
+    <item type="id" name="softkey_myanmar_letter_e_myanmar_vowel_sign_i_myanmar_vowel_sign_sgaw_karen_eu_myanmar_sign_asat" />
+    <item type="id" name="softkey_myanmar_letter_e_myanmar_vowel_sign_tall_aa" />
     <item type="id" name="softkey_myanmar_letter_ga" />
     <item type="id" name="softkey_myanmar_letter_gha" />
     <item type="id" name="softkey_myanmar_letter_great_sa" />
@@ -5035,9 +5455,18 @@
     <item type="id" name="softkey_myanmar_letter_ka" />
     <item type="id" name="softkey_myanmar_letter_ka_myanmar_consonant_sign_medial_ya_myanmar_letter_pa_myanmar_sign_asat" />
     <item type="id" name="softkey_myanmar_letter_kha" />
+    <item type="id" name="softkey_myanmar_letter_khamti_ca" />
+    <item type="id" name="softkey_myanmar_letter_khamti_dha" />
+    <item type="id" name="softkey_myanmar_letter_khamti_hha" />
     <item type="id" name="softkey_myanmar_letter_la" />
+    <item type="id" name="softkey_myanmar_letter_la_myanmar_vowel_sign_ai_myanmar_tone_mark_sgaw_karen_hathi_myanmar_sign_asat" />
+    <item type="id" name="softkey_myanmar_letter_la_myanmar_vowel_sign_ii_myanmar_tone_mark_sgaw_karen_ke_pho" />
+    <item type="id" name="softkey_myanmar_letter_la_myanmar_vowel_sign_sgaw_karen_eu" />
     <item type="id" name="softkey_myanmar_letter_lla" />
     <item type="id" name="softkey_myanmar_letter_ma" />
+    <item type="id" name="softkey_myanmar_letter_ma_myanmar_sign_asat" />
+    <item type="id" name="softkey_myanmar_letter_ma_myanmar_sign_dot_below_myanmar_vowel_sign_sgaw_karen_eu_myanmar_sign_asat" />
+    <item type="id" name="softkey_myanmar_letter_ma_myanmar_sign_visarga" />
     <item type="id" name="softkey_myanmar_letter_na" />
     <item type="id" name="softkey_myanmar_letter_nga" />
     <item type="id" name="softkey_myanmar_letter_nga_myanmar_sign_asat_myanmar_sign_virama" />
@@ -5052,6 +5481,23 @@
     <item type="id" name="softkey_myanmar_letter_ra" />
     <item type="id" name="softkey_myanmar_letter_sa" />
     <item type="id" name="softkey_myanmar_letter_sgaw_karen_sha" />
+    <item type="id" name="softkey_myanmar_letter_shan_a" />
+    <item type="id" name="softkey_myanmar_letter_shan_ba" />
+    <item type="id" name="softkey_myanmar_letter_shan_bha" />
+    <item type="id" name="softkey_myanmar_letter_shan_ca" />
+    <item type="id" name="softkey_myanmar_letter_shan_da" />
+    <item type="id" name="softkey_myanmar_letter_shan_fa" />
+    <item type="id" name="softkey_myanmar_letter_shan_ga" />
+    <item type="id" name="softkey_myanmar_letter_shan_gha" />
+    <item type="id" name="softkey_myanmar_letter_shan_ha" />
+    <item type="id" name="softkey_myanmar_letter_shan_jha" />
+    <item type="id" name="softkey_myanmar_letter_shan_ka" />
+    <item type="id" name="softkey_myanmar_letter_shan_kha" />
+    <item type="id" name="softkey_myanmar_letter_shan_na" />
+    <item type="id" name="softkey_myanmar_letter_shan_nna" />
+    <item type="id" name="softkey_myanmar_letter_shan_nya" />
+    <item type="id" name="softkey_myanmar_letter_shan_pha" />
+    <item type="id" name="softkey_myanmar_letter_shan_tha" />
     <item type="id" name="softkey_myanmar_letter_ta" />
     <item type="id" name="softkey_myanmar_letter_tha" />
     <item type="id" name="softkey_myanmar_letter_tta" />
@@ -5063,17 +5509,35 @@
     <item type="id" name="softkey_myanmar_letter_western_pwo_karen_pwa" />
     <item type="id" name="softkey_myanmar_letter_western_pwo_karen_tha" />
     <item type="id" name="softkey_myanmar_letter_ya" />
+    <item type="id" name="softkey_myanmar_shan_digit_eight" />
+    <item type="id" name="softkey_myanmar_shan_digit_five" />
+    <item type="id" name="softkey_myanmar_shan_digit_four" />
+    <item type="id" name="softkey_myanmar_shan_digit_nine" />
+    <item type="id" name="softkey_myanmar_shan_digit_one" />
+    <item type="id" name="softkey_myanmar_shan_digit_seven" />
+    <item type="id" name="softkey_myanmar_shan_digit_six" />
+    <item type="id" name="softkey_myanmar_shan_digit_three" />
+    <item type="id" name="softkey_myanmar_shan_digit_two" />
+    <item type="id" name="softkey_myanmar_shan_digit_zero" />
     <item type="id" name="softkey_myanmar_sign_anusvara" />
     <item type="id" name="softkey_myanmar_sign_asat" />
     <item type="id" name="softkey_myanmar_sign_dot_below" />
+    <item type="id" name="softkey_myanmar_sign_little_section" />
     <item type="id" name="softkey_myanmar_sign_pao_karen_tone" />
     <item type="id" name="softkey_myanmar_sign_rumai_palaung_tone_5" />
+    <item type="id" name="softkey_myanmar_sign_section" />
+    <item type="id" name="softkey_myanmar_sign_shan_tone_2" />
+    <item type="id" name="softkey_myanmar_sign_shan_tone_3" />
+    <item type="id" name="softkey_myanmar_sign_shan_tone_5" />
+    <item type="id" name="softkey_myanmar_sign_shan_tone_6" />
     <item type="id" name="softkey_myanmar_sign_virama" />
     <item type="id" name="softkey_myanmar_sign_visarga" />
     <item type="id" name="softkey_myanmar_symbol_aforementioned_myanmar_letter_nga_myanmar_sign_asat_myanmar_sign_visarga" />
     <item type="id" name="softkey_myanmar_symbol_completed" />
     <item type="id" name="softkey_myanmar_symbol_genitive" />
     <item type="id" name="softkey_myanmar_symbol_locative" />
+    <item type="id" name="softkey_myanmar_symbol_shan_exclamation" />
+    <item type="id" name="softkey_myanmar_symbol_shan_one" />
     <item type="id" name="softkey_myanmar_tone_mark_sgaw_karen_hathi" />
     <item type="id" name="softkey_myanmar_tone_mark_sgaw_karen_hathi_myanmar_sign_asat" />
     <item type="id" name="softkey_myanmar_tone_mark_sgaw_karen_ke_pho" />
@@ -5081,12 +5545,17 @@
     <item type="id" name="softkey_myanmar_vowel_sign_aa_myanmar_sign_asat" />
     <item type="id" name="softkey_myanmar_vowel_sign_ai" />
     <item type="id" name="softkey_myanmar_vowel_sign_e" />
+    <item type="id" name="softkey_myanmar_vowel_sign_e_above" />
     <item type="id" name="softkey_myanmar_vowel_sign_e_myanmar_vowel_sign_aa" />
     <item type="id" name="softkey_myanmar_vowel_sign_i" />
     <item type="id" name="softkey_myanmar_vowel_sign_ii" />
     <item type="id" name="softkey_myanmar_vowel_sign_sgaw_karen_eu" />
     <item type="id" name="softkey_myanmar_vowel_sign_sgaw_karen_eu_myanmar_sign_asat" />
     <item type="id" name="softkey_myanmar_vowel_sign_sgaw_karen_eu_myanmar_tone_mark_sgaw_karen_ke_pho" />
+    <item type="id" name="softkey_myanmar_vowel_sign_shan_aa" />
+    <item type="id" name="softkey_myanmar_vowel_sign_shan_e" />
+    <item type="id" name="softkey_myanmar_vowel_sign_shan_e_above" />
+    <item type="id" name="softkey_myanmar_vowel_sign_shan_final_y" />
     <item type="id" name="softkey_myanmar_vowel_sign_tall_aa" />
     <item type="id" name="softkey_myanmar_vowel_sign_u" />
     <item type="id" name="softkey_myanmar_vowel_sign_u_myanmar_sign_anusvara" />
@@ -5249,10 +5718,14 @@
     <item type="id" name="softkey_non_prime_main_category_symbol_gujarati" />
     <item type="id" name="softkey_non_prime_main_category_symbol_gurmukhi" />
     <item type="id" name="softkey_non_prime_main_category_symbol_indic" />
+    <item type="id" name="softkey_non_prime_main_category_symbol_ipa" />
     <item type="id" name="softkey_non_prime_main_category_symbol_javanese" />
     <item type="id" name="softkey_non_prime_main_category_symbol_kannada" />
     <item type="id" name="softkey_non_prime_main_category_symbol_kayah_li" />
+    <item type="id" name="softkey_non_prime_main_category_symbol_lepcha" />
+    <item type="id" name="softkey_non_prime_main_category_symbol_limbu" />
     <item type="id" name="softkey_non_prime_main_category_symbol_myanmar" />
+    <item type="id" name="softkey_non_prime_main_category_symbol_myanmar_shan" />
     <item type="id" name="softkey_non_prime_main_category_symbol_new_tai_lue" />
     <item type="id" name="softkey_non_prime_main_category_symbol_nko" />
     <item type="id" name="softkey_non_prime_main_category_symbol_odia" />
@@ -5367,6 +5840,9 @@
     <item type="id" name="softkey_open_emojihandwriting_in_search_keyboard_m2" />
     <item type="id" name="softkey_open_search_keyboard" />
     <item type="id" name="softkey_open_search_keyboard_disabled" />
+    <item type="id" name="softkey_optin_disabled" />
+    <item type="id" name="softkey_optin_disabled_inactive" />
+    <item type="id" name="softkey_optin_enabled" />
     <item type="id" name="softkey_oriya_digit_eight" />
     <item type="id" name="softkey_oriya_digit_five" />
     <item type="id" name="softkey_oriya_digit_four" />
@@ -5523,6 +5999,7 @@
     <item type="id" name="softkey_oriya_sign_anusvara" />
     <item type="id" name="softkey_oriya_sign_nukta" />
     <item type="id" name="softkey_oriya_sign_virama" />
+    <item type="id" name="softkey_oriya_sign_visarga" />
     <item type="id" name="softkey_osage_capital_letter_a" />
     <item type="id" name="softkey_osage_capital_letter_ah" />
     <item type="id" name="softkey_osage_capital_letter_bra" />
@@ -5626,7 +6103,6 @@
     <item type="id" name="softkey_question_mark" />
     <item type="id" name="softkey_question_zh" />
     <item type="id" name="softkey_question_zh_left_panel" />
-    <item type="id" name="softkey_quoatation" />
     <item type="id" name="softkey_quot" />
     <item type="id" name="softkey_quote" />
     <item type="id" name="softkey_registered" />
@@ -5677,6 +6153,7 @@
     <item type="id" name="softkey_right_corner_bracket" />
     <item type="id" name="softkey_right_curley_bracket" />
     <item type="id" name="softkey_right_curly_bracket" />
+    <item type="id" name="softkey_right_double_parenthesis" />
     <item type="id" name="softkey_right_double_quotation" />
     <item type="id" name="softkey_right_double_quotation_mark" />
     <item type="id" name="softkey_right_double_quotation_mask" />
@@ -5685,6 +6162,7 @@
     <item type="id" name="softkey_right_parenthesis" />
     <item type="id" name="softkey_right_single_quotation_mask" />
     <item type="id" name="softkey_right_square_bracket" />
+    <item type="id" name="softkey_rightwards_arrow" />
     <item type="id" name="softkey_rmb" />
     <item type="id" name="softkey_roman_apostrophe" />
     <item type="id" name="softkey_roman_quot" />
@@ -5762,6 +6240,7 @@
     <item type="id" name="softkey_sentence_am_pm" />
     <item type="id" name="softkey_settings_key" />
     <item type="id" name="softkey_settings_key_on_header" />
+    <item type="id" name="softkey_shan_exclamation" />
     <item type="id" name="softkey_shift" />
     <item type="id" name="softkey_shift_flip" />
     <item type="id" name="softkey_shift_locked" />
@@ -5900,6 +6379,7 @@
     <item type="id" name="softkey_sundanese_sign_panglayar" />
     <item type="id" name="softkey_sundanese_sign_pangwisad" />
     <item type="id" name="softkey_sundanese_sign_panyecek" />
+    <item type="id" name="softkey_superscript_latin_small_letter_n" />
     <item type="id" name="softkey_swedish_apostrophe" />
     <item type="id" name="softkey_swedish_quot" />
     <item type="id" name="softkey_switch_to_alphabet" />
@@ -5924,11 +6404,15 @@
     <item type="id" name="softkey_switch_to_non_prime_keyboard_gujarati" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_gurmukhi" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_indic" />
+    <item type="id" name="softkey_switch_to_non_prime_keyboard_ipa" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_javanese" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_kannada" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_kayah_li" />
+    <item type="id" name="softkey_switch_to_non_prime_keyboard_lepcha" />
+    <item type="id" name="softkey_switch_to_non_prime_keyboard_limbu" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_meetei_mayek" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_myanmar" />
+    <item type="id" name="softkey_switch_to_non_prime_keyboard_myanmar_shan" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_new_tai_lue" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_nko" />
     <item type="id" name="softkey_switch_to_non_prime_keyboard_odia" />
@@ -6507,6 +6991,7 @@
     <item type="id" name="softkey_turn_on_digit_mode" />
     <item type="id" name="softkey_turn_on_single_character_candidate" />
     <item type="id" name="softkey_tutorial" />
+    <item type="id" name="softkey_undertie" />
     <item type="id" name="softkey_undo" />
     <item type="id" name="softkey_up_arrow" />
     <item type="id" name="softkey_up_arrow_inactive" />
@@ -6875,8 +7360,8 @@
     <item type="id" name="tutorial_select_item_num_label" />
     <item type="id" name="tutorial_select_languages_button" />
     <item type="id" name="tutorial_selected_languages_label" />
-    <item type="id" name="undo_delete_popup_label" />
-    <item type="id" name="undo_delete_popup_undo_button" />
+    <item type="id" name="undo_popup_label" />
+    <item type="id" name="undo_popup_undo_button" />
     <item type="id" name="universal_media_category_header" />
     <item type="id" name="universal_media_emoji_holder_view" />
     <item type="id" name="universal_media_emoji_holder_view_container" />
@@ -7099,6 +7584,7 @@
     <item type="id" name="card_flight_departure_code" />
     <item type="id" name="card_flight_ratio_bar" />
     <item type="id" name="card_flight_arrival_code" />
+    <item type="id" name="gboard_gif_keyboard_soft_body" />
     <item type="id" name="tooltip_body" />
     <item type="id" name="tooltip_text" />
     <item type="id" name="card_image_host" />
@@ -7120,7 +7606,6 @@
     <item type="id" name="key_combo_preference_reset_button" />
     <item type="id" name="key_combo_preference_key_list" />
     <item type="id" name="emoji_browsing_keyboard_empty_header" />
-    <item type="id" name="gboard_gif_keyboard_soft_body" />
     <item type="id" name="icon_bar" />
     <item type="id" name="card_kg_host" />
     <item type="id" name="card_kg_profile" />
@@ -7228,7 +7713,6 @@
     <item type="id" name="tutorial_text" />
     <item type="id" name="text_word" />
     <item type="id" name="text_shortcut" />
-    <item type="id" name="text_read_only" />
     <item type="id" name="dropzone_layout" />
     <item type="id" name="dropzone_text" />
     <item type="id" name="dropzone_view" />
@@ -7368,11 +7852,16 @@
     <item type="id" name="softkey_template_multi_popup_on_long_press_auto_centered_small_dynamic" />
     <item type="id" name="softkey_template_multi_popup_on_long_press_dynamic" />
     <item type="id" name="softkey_template_multi_popup_on_long_press_simple" />
+    <item type="id" name="softkey_template_multi_popup_on_long_press_auto_centered_simple" />
     <item type="id" name="softkey_template_multi_popup_on_long_press_simple_dynamic" />
     <item type="id" name="softkey_template_symbol_multi_popup_on_long_press_simple" />
     <item type="id" name="softkey_template_label_header" />
+    <item type="id" name="softkey_template_label_header_downshifted" />
+    <item type="id" name="softkey_template_label_header_dynamic" />
+    <item type="id" name="softkey_template_label_header_downshifted_dynamic" />
     <item type="id" name="softkey_template_label_header_large" />
     <item type="id" name="softkey_template_label_header_simple" />
+    <item type="id" name="softkey_template_label_header_downshifted_simple" />
     <item type="id" name="softkey_template_fix_order" />
     <item type="id" name="softkey_template_fix_order_simple" />
     <item type="id" name="softkey_template_bottom_line_punctuation_bottom_popup_label_small" />
@@ -7390,6 +7879,7 @@
     <item type="id" name="softkey_template_merge_header_simple" />
     <item type="id" name="softkey_template_merge_header_with_burmese_unicode" />
     <item type="id" name="softkey_template_merge_header_simple_with_burmese_unicode" />
+    <item type="id" name="softkey_template_symbols_flip" />
     <item type="id" name="softkey_template_more_symbols_flip" />
     <item type="id" name="softkey_template_password" />
     <item type="id" name="softkey_template_en_qwerty" />
@@ -7433,5 +7923,6 @@
     <item type="id" name="save" />
     <item type="id" name="action_delete_word" />
     <item type="id" name="action_add_word" />
+    <item type="id" name="action_export" />
     <item type="id" name="action_search" />
 </resources>

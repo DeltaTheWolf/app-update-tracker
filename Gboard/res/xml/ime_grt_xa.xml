@@ -40,7 +40,7 @@
             </keyboard_group>
         </if>
         <else>
-            <keyboard_group variant="minangkabau" variant_label="@string/variant_minangkabau" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
+            <keyboard_group variant="garo" variant_label="@string/variant_garo" layout_theme="@style/KeyboardLayoutTheme.WithNumberRow">
                 <keyboard type="prime" def="@xml/keyboard_fragment_grt_xa">
                     <merge def="@xml/keyboard_latin_qwerty_with_middle_dot" />
                     <merge def="@xml/keyboard_latin_fragment_numbers_10_10_10_9" />

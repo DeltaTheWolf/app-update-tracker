@@ -268,6 +268,12 @@
             <mapping view_id="@id/key_pos_2_3" key_id="@id/softkey_east_slavic_apostrophe" />
         </key_mapping>
     </if>
+    <if language="lif-Limb">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_2_6" key_id="@id/softkey_limbu_punctuation_exclamation_mark" />
+            <mapping view_id="@id/key_pos_2_7" key_id="@id/softkey_limbu_punctuation_question_mark" />
+        </key_mapping>
+    </if>
     <if language="lt">
         <key_mapping>
             <mapping view_id="@id/key_pos_2_2" key_id="@id/softkey_east_slavic_quot" />
@@ -390,6 +396,11 @@
     <if language="se-NO">
         <key_mapping>
             <mapping view_id="@id/key_pos_2_3" key_id="@id/softkey_sami_apostrophe" />
+        </key_mapping>
+    </if>
+    <if language="shn-MM">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_2_6" key_id="@id/softkey_myanmar_symbol_shan_exclamation" />
         </key_mapping>
     </if>
     <if language="sk">

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <if language="doi-Arab                 |ks-Arab                 |pa-PK                 |ps                 |sd-Arab">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_0" key_id="@id/softkey_fragment_superscript_commercial_at" />
+            <merge view_id="@id/key_pos_1_1" key_id="@id/softkey_fragment_superscript_number_sign" />
+            <merge view_id="@id/key_pos_1_3" key_id="@id/softkey_fragment_superscript_low_line" />
+            <merge view_id="@id/key_pos_1_4" key_id="@id/softkey_fragment_superscript_amp" />
+            <merge view_id="@id/key_pos_1_5" key_id="@id/softkey_fragment_superscript_hyphen_minus" />
+            <merge view_id="@id/key_pos_1_6" key_id="@id/softkey_fragment_superscript_plus_sign" />
+            <merge view_id="@id/key_pos_1_7" key_id="@id/softkey_fragment_superscript_arabic_left_parenthesis" />
+            <merge view_id="@id/key_pos_1_8" key_id="@id/softkey_fragment_superscript_arabic_right_parenthesis" />
+            <merge view_id="@id/key_pos_2_1" key_id="@id/softkey_fragment_superscript_reverse_solidus" />
+            <merge view_id="@id/key_pos_2_2" key_id="@id/softkey_fragment_superscript_arabic_percent_sign" />
+            <merge view_id="@id/key_pos_2_3" key_id="@id/softkey_fragment_superscript_arabic_decimal_separator" />
+            <merge view_id="@id/key_pos_2_4" key_id="@id/softkey_fragment_superscript_arabic_left_pointing_double_angle_bracket" />
+            <merge view_id="@id/key_pos_2_5" key_id="@id/softkey_fragment_superscript_arabic_right_pointing_double_angle_bracket" />
+            <merge view_id="@id/key_pos_2_6" key_id="@id/softkey_fragment_superscript_colon" />
+            <merge view_id="@id/key_pos_2_7" key_id="@id/softkey_fragment_superscript_arabic_semicolon" />
+        </merge_key_mapping>
+    </if>
+    <else_if language="ur-IN|ur-PK">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_0" key_id="@id/softkey_fragment_superscript_commercial_at" />
+            <merge view_id="@id/key_pos_1_1" key_id="@id/softkey_fragment_superscript_number_sign" />
+            <merge view_id="@id/key_pos_1_3" key_id="@id/softkey_fragment_superscript_low_line" />
+            <merge view_id="@id/key_pos_1_4" key_id="@id/softkey_fragment_superscript_amp" />
+            <merge view_id="@id/key_pos_1_5" key_id="@id/softkey_fragment_superscript_hyphen_minus" />
+            <merge view_id="@id/key_pos_1_6" key_id="@id/softkey_fragment_superscript_plus_sign" />
+            <merge view_id="@id/key_pos_1_7" key_id="@id/softkey_fragment_superscript_arabic_left_parenthesis" />
+            <merge view_id="@id/key_pos_1_8" key_id="@id/softkey_fragment_superscript_arabic_right_parenthesis" />
+            <merge view_id="@id/key_pos_2_1" key_id="@id/softkey_fragment_superscript_reverse_solidus" />
+            <merge view_id="@id/key_pos_2_2" key_id="@id/softkey_fragment_superscript_arabic_percent_sign" />
+            <merge view_id="@id/key_pos_2_3" key_id="@id/softkey_fragment_superscript_arabic_decimal_separator" />
+            <merge view_id="@id/key_pos_2_4" key_id="@id/softkey_fragment_superscript_quot" />
+            <merge view_id="@id/key_pos_2_5" key_id="@id/softkey_fragment_superscript_apostrophe" />
+            <merge view_id="@id/key_pos_2_6" key_id="@id/softkey_fragment_superscript_colon" />
+            <merge view_id="@id/key_pos_2_7" key_id="@id/softkey_fragment_superscript_arabic_semicolon" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="ar-EG                      |fa">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_0" key_id="@id/softkey_fragment_superscript_commercial_at" />
+            <merge view_id="@id/key_pos_1_1" key_id="@id/softkey_fragment_superscript_number_sign" />
+            <merge view_id="@id/key_pos_1_3" key_id="@id/softkey_fragment_superscript_low_line" />
+            <merge view_id="@id/key_pos_1_4" key_id="@id/softkey_fragment_superscript_amp" />
+            <merge view_id="@id/key_pos_1_5" key_id="@id/softkey_fragment_superscript_hyphen_minus" />
+            <merge view_id="@id/key_pos_1_6" key_id="@id/softkey_fragment_superscript_plus_sign" />
+            <merge view_id="@id/key_pos_1_7" key_id="@id/softkey_fragment_superscript_arabic_left_parenthesis" />
+            <merge view_id="@id/key_pos_1_8" key_id="@id/softkey_fragment_superscript_arabic_right_parenthesis" />
+            <merge view_id="@id/key_pos_2_1" key_id="@id/softkey_fragment_superscript_reverse_solidus" />
+            <merge view_id="@id/key_pos_2_2" key_id="@id/softkey_fragment_superscript_arabic_percent_sign" />
+            <merge view_id="@id/key_pos_2_3" key_id="@id/softkey_fragment_superscript_asterisk" />
+            <merge view_id="@id/key_pos_2_4" key_id="@id/softkey_fragment_superscript_quot" />
+            <merge view_id="@id/key_pos_2_5" key_id="@id/softkey_fragment_superscript_apostrophe" />
+            <merge view_id="@id/key_pos_2_6" key_id="@id/softkey_fragment_superscript_colon" />
+            <merge view_id="@id/key_pos_2_7" key_id="@id/softkey_fragment_superscript_arabic_semicolon" />
+        </merge_key_mapping>
+    </else_if>
+    <else>
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_1_0" key_id="@id/softkey_fragment_superscript_commercial_at" />
+            <merge view_id="@id/key_pos_1_1" key_id="@id/softkey_fragment_superscript_number_sign" />
+            <merge view_id="@id/key_pos_1_3" key_id="@id/softkey_fragment_superscript_low_line" />
+            <merge view_id="@id/key_pos_1_4" key_id="@id/softkey_fragment_superscript_amp" />
+            <merge view_id="@id/key_pos_1_5" key_id="@id/softkey_fragment_superscript_hyphen_minus" />
+            <merge view_id="@id/key_pos_1_6" key_id="@id/softkey_fragment_superscript_plus_sign" />
+            <merge view_id="@id/key_pos_1_7" key_id="@id/softkey_fragment_superscript_arabic_left_parenthesis" />
+            <merge view_id="@id/key_pos_1_8" key_id="@id/softkey_fragment_superscript_arabic_right_parenthesis" />
+            <merge view_id="@id/key_pos_2_1" key_id="@id/softkey_fragment_superscript_reverse_solidus" />
+            <merge view_id="@id/key_pos_2_2" key_id="@id/softkey_fragment_superscript_percent_sign" />
+            <merge view_id="@id/key_pos_2_3" key_id="@id/softkey_fragment_superscript_asterisk" />
+            <merge view_id="@id/key_pos_2_4" key_id="@id/softkey_fragment_superscript_quot" />
+            <merge view_id="@id/key_pos_2_5" key_id="@id/softkey_fragment_superscript_apostrophe" />
+            <merge view_id="@id/key_pos_2_6" key_id="@id/softkey_fragment_superscript_colon" />
+            <merge view_id="@id/key_pos_2_7" key_id="@id/softkey_fragment_superscript_arabic_semicolon" />
+        </merge_key_mapping>
+    </else>
+    <include href="@xml/keymapping_fragment_secondary_symbols_currency_language_specific" />
+</framework>

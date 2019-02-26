@@ -40,7 +40,7 @@
             <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_digit_zero_with_arabic_indic_longpress" />
         </key_mapping>
     </if>
-    <if language="bal-PK                 |brh-Arab                 |gju-PK                 |hnd-PK                 |hno-PK                 |mve-PK                 |phr-PK                 |scl-PK                 |skr-x-sindhi">
+    <if language="bal-PK                 |bcc-PK                 |bgp-Arab                 |bft-PK                 |bgn-PK                 |brh-Arab                 |gju-PK                 |hnd-PK                 |hno-PK                 |khw                 |mve-PK                 |phr-PK                 |scl-PK                 |skr">
         <key_mapping>
             <mapping view_id="@id/key_pos_number_0" key_id="@id/softkey_digit_one_with_extended_arabic_indic_longpress" />
             <mapping view_id="@id/key_pos_number_1" key_id="@id/softkey_digit_two_with_extended_arabic_indic_longpress" />
@@ -54,7 +54,7 @@
             <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_digit_zero_with_extended_arabic_indic_longpress" />
         </key_mapping>
     </if>
-    <if language="aii-IQ                 |ku-IQ                 |mfa-TH                 |ms-Arab-BN|ms-Arab-MY                 |su-Arab                 |syc-IQ">
+    <if language="aii                 |ku-IQ                 |mfa-TH                 |ms-Arab-BN|ms-Arab-MY                 |su-Arab                 |syc-IQ">
         <key_mapping>
             <mapping view_id="@id/key_pos_number_0" key_id="@id/softkey_arabic_indic_digit_one" />
             <mapping view_id="@id/key_pos_number_1" key_id="@id/softkey_arabic_indic_digit_two" />
@@ -82,7 +82,7 @@
             <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_arabic_indic_digit_zero" />
         </key_mapping>
     </if>
-    <if language="bpy-IN                 |ctg-BD                 |sat-Beng                 |syl-Sylo                 |unr-Beng">
+    <if language="bpy-IN                 |ctg-BD                 |grt-Beng                 |sat-Beng                 |syl-Sylo                 |unr-Beng">
         <key_mapping>
             <mapping view_id="@id/key_pos_number_0" key_id="@id/softkey_bengali_digit_one" />
             <mapping view_id="@id/key_pos_number_1" key_id="@id/softkey_bengali_digit_two" />
@@ -110,7 +110,7 @@
             <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_devanagari_digit_zero" />
         </key_mapping>
     </if>
-    <if language="ahr-IN                 |anp-IN                 |bhb                 |bjj-IN                 |dhd-IN                 |dty-NP                 |gdx-IN                 |gju-Deva                 |gno-IN                 |hlb-IN                 |kfq-IN                 |knn-IN                 |kru-IN                 |mup-IN                 |rkt-IN                 |sjp-IN                 |swv-IN                 |taj-NP                 |vas-IN                 |wbr-IN                 |wry-IN                 |xnr-IN">
+    <if language="ahr-IN                 |anp-IN                 |bfz-IN                 |bhb                 |bjj-IN                 |dhd-IN                 |dty-NP                 |gdx-IN                 |gju-Deva                 |gno-IN                 |gvr-NP                 |hlb-IN                 |kfq-IN                 |knn-IN                 |kru-IN                 |lif-Deva                 |mag                 |mup-IN                 |rkt-IN                 |sjp-IN                 |swv-IN                 |taj-NP                 |vas-IN                 |wbr-IN                 |wry-IN                 |xnr-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_number_0" key_id="@id/softkey_devanagari_digit_one" />
             <mapping view_id="@id/key_pos_number_1" key_id="@id/softkey_devanagari_digit_two" />
@@ -124,7 +124,7 @@
             <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_devanagari_digit_zero" />
         </key_mapping>
     </if>
-    <if language="bqi-IR                 |fa                 |ku-IR                 |hac-IR                 |kmz-Arab                 |lki-IR                 |lrc-IR                 |luz-IR                 |mzn-IR                 |prs-AF                 |ps                 |qxq-IR                 |sdh-IR                 |tks-IR                 |tly-IR">
+    <if language="bqi-IR                 |fa                 |ku-IR                 |hac-IR                 |kmz-Arab                 |lki-IR                 |lrc-IR                 |lrl-IR                 |luz-IR                 |mzn-IR                 |prs-AF                 |ps                 |qxq-IR                 |sdh-IR                 |tks-IR                 |tly-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_number_0" key_id="@id/softkey_extended_arabic_indic_digit_one" />
             <mapping view_id="@id/key_pos_number_1" key_id="@id/softkey_extended_arabic_indic_digit_two" />
@@ -136,6 +136,20 @@
             <mapping view_id="@id/key_pos_number_7" key_id="@id/softkey_extended_arabic_indic_digit_eight" />
             <mapping view_id="@id/key_pos_number_8" key_id="@id/softkey_extended_arabic_indic_digit_nine" />
             <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_extended_arabic_indic_digit_zero" />
+        </key_mapping>
+    </if>
+    <if language="bhb-Gujr                 |vas-Gujr">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_number_0" key_id="@id/softkey_gujarati_digit_one" />
+            <mapping view_id="@id/key_pos_number_1" key_id="@id/softkey_gujarati_digit_two" />
+            <mapping view_id="@id/key_pos_number_2" key_id="@id/softkey_gujarati_digit_three" />
+            <mapping view_id="@id/key_pos_number_3" key_id="@id/softkey_gujarati_digit_four" />
+            <mapping view_id="@id/key_pos_number_4" key_id="@id/softkey_gujarati_digit_five" />
+            <mapping view_id="@id/key_pos_number_5" key_id="@id/softkey_gujarati_digit_six" />
+            <mapping view_id="@id/key_pos_number_6" key_id="@id/softkey_gujarati_digit_seven" />
+            <mapping view_id="@id/key_pos_number_7" key_id="@id/softkey_gujarati_digit_eight" />
+            <mapping view_id="@id/key_pos_number_8" key_id="@id/softkey_gujarati_digit_nine" />
+            <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_gujarati_digit_zero" />
         </key_mapping>
     </if>
     <if language="kok-Knda">
@@ -164,6 +178,20 @@
             <mapping view_id="@id/key_pos_number_7" key_id="@id/softkey_kayah_li_digit_eight" />
             <mapping view_id="@id/key_pos_number_8" key_id="@id/softkey_kayah_li_digit_nine" />
             <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_kayah_li_digit_zero" />
+        </key_mapping>
+    </if>
+    <if language="ksw-MM">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_number_0" key_id="@id/softkey_myanmar_digit_one" />
+            <mapping view_id="@id/key_pos_number_1" key_id="@id/softkey_myanmar_digit_two" />
+            <mapping view_id="@id/key_pos_number_2" key_id="@id/softkey_myanmar_digit_three" />
+            <mapping view_id="@id/key_pos_number_3" key_id="@id/softkey_myanmar_digit_four" />
+            <mapping view_id="@id/key_pos_number_4" key_id="@id/softkey_myanmar_digit_five" />
+            <mapping view_id="@id/key_pos_number_5" key_id="@id/softkey_myanmar_digit_six" />
+            <mapping view_id="@id/key_pos_number_6" key_id="@id/softkey_myanmar_digit_seven" />
+            <mapping view_id="@id/key_pos_number_7" key_id="@id/softkey_myanmar_digit_eight" />
+            <mapping view_id="@id/key_pos_number_8" key_id="@id/softkey_myanmar_digit_nine" />
+            <mapping view_id="@id/key_pos_number_9" key_id="@id/softkey_myanmar_digit_zero" />
         </key_mapping>
     </if>
     <if language="khb-CN">

@@ -3,10 +3,17 @@
     <key_mapping>
         <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma" />
         <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period" />
+        <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_empty" />
     </key_mapping>
-    <if language="aii-IQ">
+    <if language="ahr-IN" variant="ahirani">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="aii">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="am">
@@ -29,6 +36,7 @@
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
             <mapping view_id="@id/key_pos_bottom_symbol_3" key_id="@id/softkey_bottom_bengali_sign_virama" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="as-IN" variant="qwerty">
@@ -44,6 +52,7 @@
     <if language="az-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="bal-PK">
@@ -52,10 +61,26 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
         </key_mapping>
     </if>
+    <if language="bal-PK" variant="balochi">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="ban-Bali">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_balinese" />
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_balinese" />
+        </key_mapping>
+    </if>
+    <if language="bcc-PK">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+        </key_mapping>
+    </if>
+    <if language="bcc-PK" variant="balochi">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="bft-PK">
@@ -69,9 +94,31 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="bfz-IN">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
     <if language="bgc-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="bgn-PK">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+        </key_mapping>
+    </if>
+    <if language="bgn-PK" variant="balochi">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="bgp-Arab">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
         </key_mapping>
     </if>
     <if language="bgq-IN">
@@ -89,10 +136,11 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
-    <if language="bhb-Gujr">
+    <if language="bhb-Gujr" variant="bhili">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_virama_gujarati" />
             <mapping view_id="@id/key_pos_bottom_symbol_3" key_id="@id/softkey_bottom_period_gujarati" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="bho-IN">
@@ -114,6 +162,11 @@
     <if language="bm-Nkoo">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_nko" />
+        </key_mapping>
+    </if>
+    <if language="bn" variant="bengali_bangladesh|bengali_india|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="bn-IN|bn-BD">
@@ -140,6 +193,7 @@
     <if language="bqi-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="brh-Arab">
@@ -153,6 +207,11 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="brx-Beng|brx-Deva" variant="bodo_bengali_dynamic|bodo_devanagari_dynamic">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="cjm-VN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_cham" />
@@ -160,12 +219,17 @@
     </if>
     <if language="cr-Cans-CA">
         <key_mapping>
-            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_cree" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_canadian_syllabics" />
         </key_mapping>
     </if>
     <if language="ctg-BD">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="ctg-BD" variant="chittagonian">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="cu-RU">
@@ -177,6 +241,11 @@
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+        </key_mapping>
+    </if>
+    <if language="dcc-IN" variant="dakhini">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="dhd-IN">
@@ -197,6 +266,11 @@
     <if language="dty-NP">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="dty-NP" variant="dotyali">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="dv-MV">
@@ -221,9 +295,14 @@
             <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_bottom_semicolon" />
         </key_mapping>
     </if>
-    <if language="fa|prs-AF">
+    <if language="fa">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+        </key_mapping>
+    </if>
+    <if language="fa" variant="persian">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="fil-Tglg">
@@ -242,9 +321,19 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="gbm-IN" variant="garhwali">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="gdx-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="gdx-IN" variant="godwari">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="gez">
@@ -268,6 +357,7 @@
     <if language="glk-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="gno-IN">
@@ -275,15 +365,35 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="gno-Telu" variant="gondi_telugu">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="grt-Beng">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="grt-Beng" variant="garo">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="gu-IN" variant="gujarati|handwriting">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_virama_gujarati" />
             <mapping view_id="@id/key_pos_bottom_symbol_3" key_id="@id/softkey_bottom_period_gujarati" />
+        </key_mapping>
+    </if>
+    <if language="gu-IN" variant="gujarati">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="gvr-NP">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
     <if language="gwc-PK">
@@ -295,16 +405,23 @@
     <if language="hac-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="haz-AF">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="hi-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="hi-IN" variant="hindi|hindi_compact|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="hif-Deva">
@@ -323,15 +440,30 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
         </key_mapping>
     </if>
+    <if language="hnd-PK" variant="hindko">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="hne-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="hne-IN" variant="chhattisgarhi_dynamic">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="hno-PK">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+        </key_mapping>
+    </if>
+    <if language="hno-PK" variant="hindko">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="hoj-IN">
@@ -371,10 +503,16 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="kfq-IN" variant="korku">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="kfr-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_virama_gujarati" />
             <mapping view_id="@id/key_pos_bottom_symbol_3" key_id="@id/softkey_bottom_period_gujarati" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="kfy-IN">
@@ -397,6 +535,17 @@
     <if language="kmz-Arab">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="kn-IN" variant="kannada_india|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="knn-IN" variant="konkani_devanagari">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="kok-Deva">
@@ -404,9 +553,19 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="kok-Deva" variant="konkani_devanagari">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="kru-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="kru-IN" variant="kurukh">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="ks-Arab">
@@ -425,9 +584,25 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_myanmar" />
         </key_mapping>
     </if>
+    <if language="ktb-Ethi">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_ethiopic" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_ethiopic" />
+        </key_mapping>
+    </if>
     <if language="ku-IQ|ku-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+        </key_mapping>
+    </if>
+    <if language="kvx-PK">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+        </key_mapping>
+    </if>
+    <if language="kxu-IN">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
     <if language="kyu-MM">
@@ -435,9 +610,19 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_kayah_li_sign_shya" />
         </key_mapping>
     </if>
+    <if language="lep-IN">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_bottom_ta_rol" />
+        </key_mapping>
+    </if>
     <if language="lif-Deva">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="lif-Limb">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_double_danda" />
         </key_mapping>
     </if>
     <if language="lis-Lisu">
@@ -449,6 +634,7 @@
     <if language="lki-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="lmn-Deva">
@@ -456,14 +642,27 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="lmn-Knda|lmn-Telu" variant="lambadi_kannada|lambadi_telugu">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="lrc-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="lrl-IR">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="luz-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="mag-IN|mag-NP">
@@ -476,9 +675,15 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="mai-IN" variant="maithili">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="mfa-TH">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="mjl-IN">
@@ -496,9 +701,15 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="mni-Beng" variant="manipuri_bengali">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="mni-Mtei" variant="manipuri_meitei">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_meetei_mayek" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="mni-Mtei" variant="qwerty">
@@ -507,14 +718,26 @@
             <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_bottom_comma_meetei_mayek" />
         </key_mapping>
     </if>
+    <if language="mr-IN" variant="marathi_india|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="ms-Arab-BN|ms-Arab-MY">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="mtr-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="mul-x-ipa">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_modifier_letter_vertical_line" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_bottom_modifier_letter_small_h" />
         </key_mapping>
     </if>
     <if language="mup-IN">
@@ -527,6 +750,12 @@
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
         </key_mapping>
     </if>
+    <if language="mvy-PK">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+        </key_mapping>
+    </if>
     <if language="my">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_myanmar" />
@@ -536,21 +765,38 @@
     <if language="mzn-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
-    <if language="ne-NP|ne-IN">
+    <if language="ne-IN|ne-NP">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="ne-IN|ne-NP" variant="nepali_devanagari_dynamic|nepali_nepal_romanized|nepali_nepal_traditional|nepali_nepal_dynamic|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="new-NP">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="noe-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="oj-Cans">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_canadian_syllabics" />
+        </key_mapping>
+    </if>
+    <if language="or" variant="odia|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="or-IN">
@@ -568,10 +814,33 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="pa-Guru" variant="punjabi_gurmukhi|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="phr-PK">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+        </key_mapping>
+    </if>
+    <if language="phr-PK" variant="pahari_pothwari">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="plk-PK">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="prs-AF">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="ps">
@@ -579,9 +848,15 @@
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
         </key_mapping>
     </if>
+    <if language="ps" variant="pashto">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="qxq-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="rkt">
@@ -589,9 +864,19 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="rkt" variant="rangpuri">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="rwr-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="rwr-IN" variant="marwari">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="sa-IN">
@@ -599,9 +884,19 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="sa-IN" variant="sanskrit">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="sat-Deva|sat-Beng">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="sat-Deva|sat-Olck" variant="santali_devanagari|santali_ol_chiki">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="saz-IN">
@@ -614,10 +909,20 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="sck-IN" variant="sadri_dynamic">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="scl-PK">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
+        </key_mapping>
+    </if>
+    <if language="scl-PK" variant="shina">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="sd-Arab">
@@ -630,15 +935,27 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="sd-Deva" variant="sindhi_devanagari_dynamic">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="sdh-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="sgw-ET">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_ethiopic" />
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_ethiopic" />
+        </key_mapping>
+    </if>
+    <if language="shn-MM">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_myanmar" />
+            <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_myanmar" />
         </key_mapping>
     </if>
     <if language="sjp-IN">
@@ -657,6 +974,12 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
         </key_mapping>
     </if>
+    <if language="su-Arab">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="swv-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
@@ -665,6 +988,7 @@
     <if language="syc-IQ">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="syl-Beng|syl-Sylo">
@@ -672,14 +996,39 @@
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
+    <if language="syl-Beng|syl-Sylo" variant="sylheti|sylheti_syloti_nagri_dynamic">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="ta" variant="tamil|handwriting">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_tamil_sign_visarga" />
         </key_mapping>
     </if>
+    <if language="ta-IN" variant="tamil|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
     <if language="taj-NP">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+        </key_mapping>
+    </if>
+    <if language="taj-NP" variant="tamang">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="tcy-IN" variant="tulu_india">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="te-IN" variant="telugu_india|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="th" variant="qwerty">
@@ -697,16 +1046,19 @@
     <if language="tks-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="tly-IR">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="trp-IN">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="trw">
@@ -718,14 +1070,20 @@
     <if language="ug">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
-    <if language="unr-Beng">
+    <if language="unr-Beng|unr-Orya">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_danda" />
         </key_mapping>
     </if>
-    <if language="ur-PK|ur-IN">
+    <if language="ur-IN" variant="urdu_in|handwriting">
+        <key_mapping>
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
+        </key_mapping>
+    </if>
+    <if language="ur-IN|ur-PK">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_1" key_id="@id/softkey_bottom_comma_arabic" />
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_period_urdu" />
@@ -736,10 +1094,11 @@
             <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_bottom_vai_syllable_lengthener" />
         </key_mapping>
     </if>
-    <if language="vas-Gujr">
+    <if language="vas-Gujr" variant="vasavi">
         <key_mapping>
             <mapping view_id="@id/key_pos_bottom_symbol_2" key_id="@id/softkey_bottom_virama_gujarati" />
             <mapping view_id="@id/key_pos_bottom_symbol_3" key_id="@id/softkey_bottom_period_gujarati" />
+            <mapping view_id="@id/key_pos_zwnj_with_zwj" key_id="@id/softkey_zwnj" />
         </key_mapping>
     </if>
     <if language="vas-IN">

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/PopupUndo">
+        <TextView android:id="@id/undo_popup_label" style="@style/PopupUndoLabel" />
+        <TextView android:id="@id/undo_popup_undo_button" style="@style/PopupUndoButton" />
+    </RelativeLayout>
+</FrameLayout>

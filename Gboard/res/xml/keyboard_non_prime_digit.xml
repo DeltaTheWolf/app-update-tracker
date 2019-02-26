@@ -3,9 +3,6 @@
     <keyboard id="@id/keyboard_non_prime_digit" class=".latin.keyboard.LatinDigitsKeyboard" initial_states="LOCK_KEYBOARD">
         <view layout="@layout/keyboard_non_prime_digit_header" scalable="false" type="header" />
         <view layout="@layout/keyboard_non_prime_digit_body" type="body">
-            <motion_event_handler class=".libs.framework.keyboard.handler.BasicMotionEventHandler" />
-            <motion_event_handler class=".libs.framework.keyboard.handler.ScrubDeleteMotionEventHandler" reverse_preference="false" preference_key="@string/pref_key_enable_scrub_delete" />
-            <motion_event_handler class=".libs.framework.keyboard.handler.ScrubMoveMotionEventHandler" reverse_preference="false" preference_key="@string/pref_key_enable_scrub_move" />
             <softkeys href="@xml/softkeys_input_digit" />
             <softkeys href="@xml/softkeys_punctuation_digit_left_panel" />
             <softkeys href="@xml/softkeys_punctuation_digit_right_panel" />

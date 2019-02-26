@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <include href="@xml/softkey_template" />
+    <softkeys>
+        <softkey_list splitter="," template_id="@id/softkey_template_multi_popup_on_long_press_simple">
+            <softkey id="@id/softkey_coptic_small_letter_oou" press_data="ⲱ" long_press_data="ⳣ" />
+            <softkey id="@id/softkey_coptic_capital_letter_oou" press_data="Ⲱ" long_press_data="Ⳣ" />
+            <softkey id="@id/softkey_coptic_small_letter_tau" press_data="ⲧ" long_press_data="⳨" />
+            <softkey id="@id/softkey_coptic_capital_letter_tau" press_data="Ⲧ" long_press_data="⳨" />
+            <softkey id="@id/softkey_coptic_small_letter_pi" press_data="ⲡ" long_press_data="⳦" />
+            <softkey id="@id/softkey_coptic_capital_letter_pi" press_data="Ⲡ" long_press_data="⳦" />
+            <softkey id="@id/softkey_coptic_small_letter_shei" press_data="ϣ" long_press_data="ⳃ" />
+            <softkey id="@id/softkey_coptic_capital_letter_shei" press_data="Ϣ" long_press_data="Ⳃ" />
+            <softkey id="@id/softkey_coptic_small_letter_shima" press_data="ϭ" long_press_data="⳪,ⳝ" />
+            <softkey id="@id/softkey_coptic_capital_letter_shima" press_data="Ϭ" long_press_data="⳪,Ⳝ" />x
+<softkey id="@id/softkey_coptic_small_letter_kapa" press_data="ⲕ" long_press_data="ⳤ" />
+            <softkey id="@id/softkey_coptic_capital_letter_kapa" press_data="Ⲕ" long_press_data="ⳤ" />
+            <softkey id="@id/softkey_coptic_small_letter_khei" press_data="ϧ" long_press_data="ⳉ,ⳳ" />
+            <softkey id="@id/softkey_coptic_capital_letter_khei" press_data="Ϧ" long_press_data="Ⳉ,Ⳳ" />
+            <softkey id="@id/softkey_coptic_small_letter_khi" press_data="ⲭ" long_press_data="⳩" />
+            <softkey id="@id/softkey_coptic_capital_letter_khi" press_data="Ⲭ" long_press_data="⳩" />
+            <softkey id="@id/softkey_coptic_small_letter_sima" press_data="ⲥ" long_press_data="⳧" />
+            <softkey id="@id/softkey_coptic_capital_letter_sima" press_data="Ⲥ" long_press_data="⳧" />
+            <softkey id="@id/softkey_coptic_small_letter_ni" press_data="ⲛ" long_press_data="ⳡ,ⳟ" />
+            <softkey id="@id/softkey_coptic_capital_letter_ni" press_data="Ⲛ" long_press_data="Ⳡ,Ⳟ" />
+            <softkey id="@id/softkey_coptic_small_letter_mi" press_data="ⲙ" long_press_data="⳥" />
+            <softkey id="@id/softkey_coptic_capital_letter_mi" press_data="Ⲙ" long_press_data="⳥" />
+        </softkey_list>
+        <softkey_list splitter="," template_id="@id/softkey_template_no_popup_simple">
+            <softkey id="@id/softkey_coptic_small_letter_thethe" press_data="ⲑ" />
+            <softkey id="@id/softkey_coptic_capital_letter_thethe" press_data="Ⲑ" />
+            <softkey id="@id/softkey_coptic_small_letter_eie" press_data="ⲉ" />
+            <softkey id="@id/softkey_coptic_capital_letter_eie" press_data="Ⲉ" />
+            <softkey id="@id/softkey_coptic_small_letter_ro" press_data="ⲣ" />
+            <softkey id="@id/softkey_coptic_capital_letter_ro" press_data="Ⲣ" />
+            <softkey id="@id/softkey_coptic_small_letter_psi" press_data="ⲯ" />
+            <softkey id="@id/softkey_coptic_capital_letter_psi" press_data="Ⲯ" />
+            <softkey id="@id/softkey_coptic_small_letter_ua" press_data="ⲩ" />
+            <softkey id="@id/softkey_coptic_capital_letter_ua" press_data="Ⲩ" />
+            <softkey id="@id/softkey_coptic_small_letter_iauda" press_data="ⲓ" />
+            <softkey id="@id/softkey_coptic_capital_letter_iauda" press_data="Ⲓ" />
+            <softkey id="@id/softkey_coptic_small_letter_o" press_data="ⲟ" />
+            <softkey id="@id/softkey_coptic_capital_letter_o" press_data="Ⲟ" />
+            <softkey id="@id/softkey_coptic_small_letter_ksi" press_data="ⲝ" />
+            <softkey id="@id/softkey_coptic_capital_letter_ksi" press_data="Ⲝ" />
+            <softkey id="@id/softkey_coptic_small_letter_alfa" press_data="ⲁ" />
+            <softkey id="@id/softkey_coptic_capital_letter_alfa" press_data="Ⲁ" />
+            <softkey id="@id/softkey_coptic_small_letter_dalda" press_data="ⲇ" />
+            <softkey id="@id/softkey_coptic_capital_letter_dalda" press_data="Ⲇ" />
+            <softkey id="@id/softkey_coptic_small_letter_fei" press_data="ϥ" />
+            <softkey id="@id/softkey_coptic_capital_letter_fei" press_data="Ϥ" />
+            <softkey id="@id/softkey_coptic_small_letter_gamma" press_data="ⲅ" />
+            <softkey id="@id/softkey_coptic_capital_letter_gamma" press_data="Ⲅ" />
+            <softkey id="@id/softkey_coptic_small_letter_hate" press_data="ⲏ" />
+            <softkey id="@id/softkey_coptic_capital_letter_hate" press_data="Ⲏ" />
+            <softkey id="@id/softkey_coptic_small_letter_gangia" press_data="ϫ" />
+            <softkey id="@id/softkey_coptic_capital_letter_gangia" press_data="Ϫ" />
+            <softkey id="@id/softkey_coptic_small_letter_laula" press_data="ⲗ" />
+            <softkey id="@id/softkey_coptic_capital_letter_laula" press_data="Ⲗ" />
+            <softkey id="@id/softkey_coptic_small_letter_dei" press_data="ϯ" />
+            <softkey id="@id/softkey_coptic_capital_letter_dei" press_data="Ϯ" />
+            <softkey id="@id/softkey_coptic_small_letter_hori" press_data="ϩ" />
+            <softkey id="@id/softkey_coptic_capital_letter_hori" press_data="Ϩ" />
+            <softkey id="@id/softkey_coptic_small_letter_zata" press_data="ⲍ" />
+            <softkey id="@id/softkey_coptic_capital_letter_zata" press_data="Ⲍ" />
+            <softkey id="@id/softkey_coptic_small_letter_fi" press_data="ⲫ" />
+            <softkey id="@id/softkey_coptic_capital_letter_fi" press_data="Ⲫ" />
+            <softkey id="@id/softkey_coptic_small_letter_vida" press_data="ⲃ" />
+            <softkey id="@id/softkey_coptic_capital_letter_vida" press_data="Ⲃ" />
+            <softkey id="@id/softkey_coptic_small_letter_sou" press_data="ⲋ" />
+            <softkey id="@id/softkey_coptic_capital_letter_sou" press_data="Ⲋ" />
+        </softkey_list>
+        <softkey_list splitter=" " template_id="@id/softkey_template_multi_popup_on_long_press">
+            <softkey id="@id/softkey_combining_grave_accent" press_data="̀" press_label="◌̀" long_press_data="́ ̈ ̂ ̑ ̿ ̅ ̄ ⳯ ︥ ︦ ︤ ͡ ⳱ ⳰ ̣ ̇" long_press_label="◌́ ◌̈ ◌̂ ◌̑ ◌̿ ◌̅ ◌̄ ⳯ ◌︥ ◌︦ ◌︤ ◌͡◌ ⳱ ⳰ ◌̣ ◌̇" />
+        </softkey_list>
+    </softkeys>
+</framework>

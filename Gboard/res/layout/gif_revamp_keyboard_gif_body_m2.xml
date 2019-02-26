@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.inputmethod.libs.search.widget.VariableHeightSoftKeyboardView android:id="@id/gboard_gif_keyboard_soft_body" style="@style/Body.NonPrime" allow_mock_action_down="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyboard_incognito_overlay_body" />
+    <LinearLayout style="@style/ExpressionInnerBody">
+        <FrameLayout android:id="@id/animated_image_holder_view_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="?KeyboardInputAreaWeight">
+            <com.google.android.apps.inputmethod.libs.search.widget.GifRevampAnimatedTrendingCategoryHolderView android:id="@id/animated_image_holder_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/keyboard_expression_header_horizontal_margin_portrait" android:paddingEnd="@dimen/keyboard_expression_header_horizontal_margin_portrait" image_view_layout="@layout/gif_revamp_animated_image_view" supported_image_types="image/gif" metrics_tag="gif_keyboard" staggered_span_count="@integer/gif_keyboard_staggered_span_count" grid_span_count="@integer/gif_revamp_gif_keyboard_grid_span_count" my_gifs_grid_span_count="@integer/gif_keyboard_grid_span_count" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/animated_image_holder_view_loading_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/search_result_error_card_container" />
+        </FrameLayout>
+        <include layout="@layout/keyboard_expression_navigation_row" />
+    </LinearLayout>
+</com.google.android.apps.inputmethod.libs.search.widget.VariableHeightSoftKeyboardView>

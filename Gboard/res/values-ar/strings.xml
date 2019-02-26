@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="a11y_gif_recording_complete">‏اكتمل تسجيل ملف Gif</string>
-    <string name="a11y_keep_suggestion_fmt">‏الاحتفاظ بالاقتراح \"%s\"</string>
+    <string name="a11y_keep_suggestion_fmt">الاحتفاظ بالاقتراح \"%s\"</string>
     <string name="a11y_keep_suggestion_picked">تم الاحتفاظ بالاقتراح.</string>
-    <string name="a11y_remove_suggestion_fmt">‏إزالة الاقتراح \"%s\"</string>
+    <string name="a11y_remove_suggestion_fmt">إزالة الاقتراح \"%s\"</string>
     <string name="a11y_remove_suggestion_picked">تمت إزالة الاقتراح.</string>
     <string name="a11y_showing_camera_preview_content_desc">عرض معاينة الكاميرا</string>
     <string name="abc_action_bar_up_description">التنقل إلى أعلى</string>
@@ -39,7 +39,7 @@
     <string name="add_clip_item_dialog_shown">تم إظهار مربع حوار لإضافة عنصر المقطع.</string>
     <string name="add_clip_item_dialog_title">إضافة عنصر جديد</string>
     <string name="add_item_dialog_no_text_input_toast">يُرجى إدخال نص ما قبل الحفظ.</string>
-    <string name="add_language_group_preference_content_description">‏%1$s: %2$d من التنوعات المتاحة.</string>
+    <string name="add_language_group_preference_content_description">%1$s: تتوفر صيغ %2$d.</string>
     <string name="android_account_authenticating">جارٍ المصادقة، يُرجى الانتظار…</string>
     <string name="android_account_failed">تعذّرت المصادقة. يُرجى إعادة المحاولة.</string>
     <string name="android_account_title">مصادقة الحساب</string>
@@ -110,6 +110,7 @@
     <string name="avatar_promo_text">المُلصقات المُخصَّصة المستندة إلى صورتك</string>
     <string name="avatar_promo_title">صورك المُصغّرة</string>
     <string name="avatar_stickers_emoji_style_title">صور مصغّرة للرموز التعبيرية</string>
+    <string name="bad_card_type_unknown_error">خطأ غير معروف</string>
     <string name="battery_saver_mode_on_error">وضع توفير شحن البطارية قيد التفعيل</string>
     <string name="bitmoji_battery_saver_error_message">‏يرجى إيقافه لاستخدام Bitmoji في Gboard.</string>
     <string name="bitmoji_battery_saver_toast_message">‏تم تفعيل توفير شحن البطارية، لذا ستكون وظائف Bitmoji محدودة.</string>
@@ -126,7 +127,7 @@
     <string name="bug_report_dialog_existing_bug_id_message">يُرجى إدخال معرّف الخطأ الحالي الذي تريد تحديثه. (على سبيل المثال، 109743611)</string>
     <string name="bug_report_dialog_report_to_buganizer_option_message">‏هل تريد الإبلاغ عن هذا على Buganizer؟ (سيؤدي إلغاء تحديد هذا الخيار إلى استمرارية تحميل السجل إلى الخادم.)</string>
     <string name="bug_report_dialog_span_selection_message">‏يُرجى إلغاء تحديد أي نص لا تريد مشاركته مع Google.</string>
-    <string name="bug_report_intro_dialog_message">‏هذه أداة تقرير خطأ داخلية متوفرة فقط لمستخدمي Google. وهي تُشارك ما تكتبه والكيفية التي كتبتَه بها مع فريق Gboard. ويتبع الاحتفاظ بالبيانات <a href="https://support.google.com/analytics/answer/7667196?hl=en">سياسة Google</a>"، ويكون متوافقًا مع مسح البيانات. 
+    <string name="bug_report_intro_dialog_message">‏هذه \"أداة تقرير خطأ\" داخلية متوفرة فقط لمستخدمي Google. وهي تُشارك ما تكتبه والطريقة المعتمدة للكتابة مع فريق Gboard. ويتبع الاحتفاظ بالبيانات <a href="https://support.google.com/analytics/answer/7667196?hl=en">سياسة Google</a>"، ويكون متوافقًا مع مسح البيانات. 
 نشكرك على المساعدة في تحسين Gboard!"</string>
     <string name="bug_report_intro_message">‏هذه أداة داخلية لتحسين جودة إدخال النص. &lt;b>&lt;linkable>مزيد من المعلومات.&lt;/linkable>&lt;/b></string>
     <string name="bug_report_notification_channel_name">تقرير الأخطاء</string>
@@ -134,7 +135,7 @@
     <string name="cangjie_ime_label">‏لوحة مفاتيح Cangjie</string>
     <string name="cangjie_version_3">الإصدار 3</string>
     <string name="cangjie_version_5">الإصدار 5</string>
-    <string name="cantonese_pinyin_qwerty_ime_label">‏لوحة مفاتيح pinyin باللغة الكانتونية</string>
+    <string name="cantonese_pinyin_qwerty_ime_label">‏لوحة مفاتيح Pinyin للغة الكانتونية</string>
     <string name="capslock_enabled_mode_content_desc">‏تم تفعيل Caps lock</string>
     <string name="care_of_key_content_desc">جهة تسليم الرسالة إلى المستلم</string>
     <string name="cd_avatar_creation_back_arrow">رجوع</string>
@@ -224,15 +225,31 @@
     <string name="clipboard_edit_content_desc">فتح قائمة التعديل</string>
     <string name="clipboard_header_name">الحافظة</string>
     <string name="clipboard_header_select_label_default_hint">تحديد عناصر</string>
-    <string name="clipboard_header_select_label_selected_number_hint">‏تم تحديد %1$d</string>
+    <string name="clipboard_header_select_label_selected_number_hint">تم تحديد %d</string>
     <string name="clipboard_inactive_empty_reason">غير مفعّل لأن الحافظة فارغة</string>
+    <string name="clipboard_inactive_opt_in_disabled">تم الإيقاف بسبب إيقاف التمكين</string>
+    <string name="clipboard_inactive_opt_in_first_page_is_shown">تم الإيقاف لأن بطاقة التمكين موضّحة أدناه.</string>
+    <string name="clipboard_off_overlay_content">لن يُحفظ النص الذي تنسخه هنا بعد الآن. يمكنك تشغيله في أي وقت باستخدام الزر %s.</string>
+    <string name="clipboard_off_overlay_title">‏حافظة Gboard قيد الإيقاف.</string>
+    <string name="clipboard_off_toggle_button_in_text_desc">toggle</string>
+    <string name="clipboard_opt_in_first_page_message">‏سيُحفظ أي نص تنسخه في حافظة Gboard لساعة واحدة. يمكنك أيضًا تثبيت النص لحفظه لمدة أطول.</string>
+    <string name="clipboard_opt_in_first_page_negative_button">لا، شكرًا</string>
+    <string name="clipboard_opt_in_first_page_positive_button">تشغيل الحافظة</string>
+    <string name="clipboard_opt_in_first_page_subhead">يمكنك إيقاف هذا الإعداد مؤقتًا في أي وقت.</string>
+    <string name="clipboard_opt_in_first_page_title">‏هل تريد تشغيل حافظة Gboard؟</string>
+    <string name="clipboard_optin_disabled_content_desc">شغّل الحافظة.</string>
+    <string name="clipboard_optin_enabled_content_desc">إيقاف تشغيل الحافظة</string>
     <string name="clipboard_pinned_separator">تمّ التثبيت</string>
-    <string name="clipboard_tooltip_hint_click">اضغط على مقطع للّصقه.</string>
-    <string name="clipboard_tooltip_hint_long_click">اضغط مع الاستمرار على مقطع لتثبيته أو حذفه.</string>
-    <string name="clipboard_tooltip_text">‏تم نسخ النص إلى Gboard</string>
+    <string name="clipboard_tips_separator">نصائح</string>
+    <string name="clipboard_tooltip_hint_edit">استخدم رمز \"التعديل\" لتثبيت المقاطع أو إضافتها أو حذفها.</string>
+    <string name="clipboard_tooltip_hint_paste">انقر على مقطع للصقه في مربع النص.</string>
+    <string name="clipboard_tooltip_hint_pin">المس مقطعًا مع الاستمرار لتثبيته. ستُحذف المقاطع التي تمت إزالة تثبيتها بعد ساعة واحدة.</string>
+    <string name="clipboard_tooltip_hint_toggle">‏مرحبًا بك في حافظة Gboard، سيُحفظ أي نص تنسخه هنا.</string>
+    <string name="clipboard_tooltip_text">‏احفظ ما نسخته لوقت لاحق باستخدام حافظة Gboard. شغّلها الآن.</string>
     <string name="clipboard_unpinned_recent_separator">الأخيرة</string>
     <string name="close_access_points_content_desc">إغلاق الميزات</string>
     <string name="close_access_points_menu_content_desc">إغلاق قائمة الميزات</string>
+    <string name="close_activities_or_extensions">إغلاق %s</string>
     <string name="close_makeagif_content_desc">الخروج من وضع الالتقاط في الكاميرا</string>
     <string name="close_popup_content_desc">تم رفض البدائل</string>
     <string name="close_text_editing">إغلاق تعديل النصوص</string>
@@ -257,7 +274,7 @@
     <string name="common_signin_button_text_long">‏تسجيل الدخول عبر Google</string>
     <string name="confirmation_number_field_content_desc">حقل إدخال رقم التأكيد</string>
     <string name="content_description_no_results_found">لم يتم العثور على أي نتائج.</string>
-    <string name="content_description_number_of_results_found">‏تم العثور على %d من النتائج.</string>
+    <string name="content_description_number_of_results_found">تم العثور على %d من النتائج.</string>
     <string name="contextual_rate_us_prompt_notice">‏هل تستمتع بـ Gboard؟ يُرجى إعلامنا.</string>
     <string name="create_bug_message">إنشاء تقرير خطأ جديد</string>
     <string name="critical_error_dialog_file_system_text">‏يتعذر على Gboard الوصول إلى نظام الملف.</string>
@@ -327,7 +344,7 @@
     <string name="down_arrow_key_content_desc">سهم لأسفل</string>
     <string name="downloadable_theme_index_locale_suffix">-ar</string>
     <string name="draw_an_emoji_here">رسم هنا للبحث عن رمز تعبيري</string>
-    <string name="duration_milliseconds">‏%1$s مللي ثانية</string>
+    <string name="duration_milliseconds">%1$s مللي ثانية</string>
     <string name="edit_keyboard_desc">تغيير حجم لوحة المفاتيح أو موضعها</string>
     <string name="ellipsis_key_content_desc">علامة حذف</string>
     <string name="emoji_button_content_desc">زر الرموز التعبيرية</string>
@@ -387,12 +404,12 @@
     <string name="emoticon_keyboard_key_content_desc">لوحة مفاتيح الرموز المعبّرة</string>
     <string name="emoticon_keyboard_label">لوحة مفاتيح الرموز المعبّرة</string>
     <string name="empty_favorites_message">ستظهر الملصقات المفضّلة هنا.</string>
-    <string name="enable_digit_mode">فعِّل وضع الأرقام</string>
+    <string name="enable_digit_mode">فعِّل وضع الأرقام</string>
     <string name="engine_reload_complete_toast_message">‏تم تحديث بيانات الإدخال باللغة اليابانية في Google</string>
     <string name="english_qwerty_ime_label">لوحة مفاتيح اللغة الإنجليزية</string>
     <string name="enter_key_content_desc">Enter</string>
     <string name="equals_key_content_desc">علامة يساوي</string>
-    <string name="error_card_announcement">"‏عرض بطاقة الخطأ لـ '%s'."</string>
+    <string name="error_card_announcement">"جارٍ عرض بطاقة الخطأ لـ '%s'."</string>
     <string name="exclamation_key_content_desc">علامة تعجب</string>
     <string name="exit_editing_keyboard_content_desc">الانتهاء من تغيير حجم لوحة المفاتيح وموضعها</string>
     <string name="exiting_floating_keyboard">الخروج من لوحة المفاتيح العائمة</string>
@@ -407,22 +424,23 @@
     <string name="expand_keyboard_button_right_top_content_desc">تغيير حجم لوحة المفاتيح في الركن العلوي الأيسر</string>
     <string name="expand_keyboard_content_desc">الخروج من وضع اليد الواحدة</string>
     <string name="favorites_prompt_message">قد تعجبك هذه الملصقات. ستظهر هنا الملصقات الجديدة التي تضيفها إلى قائمة الملصقات المفضّلة لديك.</string>
-    <string name="feature_card_asr_description">‏يتيح لك Gboard الآن الكتابة بالصوت بلُغتك. ما عليك سوى النقر على رمز الميكروفون والتحدّث.</string>
-    <string name="feature_card_asr_title">جرّب الكتابة بالصوت بلُغتك</string>
+    <string name="feature_card_clipboard_description">يمكنك الآن نسخ أجزاء متعددة من النص إلى الحافظة حتى تتمكن من لصقها فيما بعد.</string>
+    <string name="feature_card_clipboard_title">النسخ واللصق مع الحافظة</string>
     <string name="feature_card_rate_us_description">‏امنحنا تقييمًا في متجر Play، أو قدّم إلينا ملاحظات حول كيفية تحقيقنا للأفضل.</string>
     <string name="feature_card_rate_us_title">‏هل تجد Gboard ممتعًا؟</string>
     <string name="find_a_face_prompt">العثور على وجه</string>
-    <string name="first_run_enable_description">‏حدد &lt;b>%s&lt;/b> من إعدادات اللغة والإدخال</string>
+    <string name="first_run_enable_description">‏حدّد &lt;b>%s&lt;/b> في إعدادات اللغة والإدخال</string>
     <string name="first_run_enable_hint">تفعيل أسلوب الإدخال في الإعدادات</string>
     <string name="first_run_notification_channel_name">معالج الإعداد</string>
     <string name="first_run_notification_text">إتمام إعداد لوحة المفاتيح</string>
     <string name="first_run_page_permissions_description">‏للحصول على اقتراحات أفضل حول الكتابة، يُرجى منح الأذونات التالية إلى &lt;b>%1$s&lt;/b>:</string>
     <string name="first_run_page_select_language">‏يمكنك تعيين&lt;b>&lt;linkable> لغات إضافية&lt;/linkable>&lt;/b></string>
-    <string name="first_run_page_user_metrics">‏إرسال إحصاءات استخدام مجهولة الهوية للمساعدة في تحسين &lt;b>%s&lt;/b></string>
-    <string name="first_run_select_input_method_description">‏حدد &lt;b>%s&lt;/b> ليكون أسلوب الإدخال التلقائي</string>
+    <string name="first_run_page_user_metrics_message">‏إرسال \"إحصاءات استخدام\" مجهولة الهوية للمساعدة في تحسين &lt;b>%s&lt;/b></string>
+    <string name="first_run_select_input_method_description">‏حدّد &lt;b>%s&lt;/b> ليكون أسلوب الإدخال التلقائي</string>
     <string name="first_run_select_input_method_hint">تحديد أسلوب الإدخال</string>
     <string name="first_run_set_permissions_hint">تعيين الأذونات</string>
     <string name="first_run_setup_done_hint">تم.</string>
+    <string name="first_run_sharing_description">تفعيل هذه اللغات التي تمت مشاركتها معك</string>
     <string name="flexing_emoticon_description_angry_flex">رمز استعراض عضلات غاضب</string>
     <string name="flexing_emoticon_description_disapproval_flexing_face">وجه يستعرض عضلاته يعبّر عن عدم الرضا</string>
     <string name="flexing_emoticon_description_donger_flex">‏رموز donger لاستعراض العضلات</string>
@@ -455,36 +473,46 @@
     <string name="gboard_add_more_stickers_content_desc">إضافة ملصقات</string>
     <string name="gboard_bitmoji_search_content_desc">‏البحث عن ملصقات Bitmoji</string>
     <string name="gboard_cancel_query_content_desc">إلغاء طلب البحث الحالي</string>
-    <string name="gboard_client_network_error_message">"حدث خطأ ما.
+    <string name="gboard_client_network_error_message">"‏حدث خطأ ما.
 يُرجى الانتظار لفترة وجيزة ثم إعادة المحاولة."</string>
     <string name="gboard_close_extension_and_back_to_letter_keyboard_desc">العودة إلى لوحة مفاتيح الحروف</string>
     <string name="gboard_emoji_label">الرموز التعبيرية</string>
-    <string name="gboard_emoji_search_content_desc">"البحث عن رموز  تعبيرية"</string>
+    <string name="gboard_emoji_search_content_desc">البحث عن رموز تعبيرية</string>
     <string name="gboard_emojihandwriting_content_desc">رسم الرموز التعبيرية</string>
     <string name="gboard_error_card_close_content_desc">إغلاق بطاقة خطأ</string>
     <string name="gboard_gif_image_content_desc">‏ملف GIF متحرك</string>
     <string name="gboard_gif_search_content_desc">‏البحث عن ملفات GIF</string>
     <string name="gboard_gifs_label">‏ملفات GIF</string>
     <string name="gboard_insertion_arrow_content_desc">سهم الإدراج</string>
-    <string name="gboard_local_category_content_desc">‏عرض %s</string>
+    <string name="gboard_link_receiving_continue_button_label">متابعة</string>
+    <string name="gboard_link_receiving_positive_button_label">تم</string>
+    <string name="gboard_link_receiving_select_language_text">‏&lt;b>&lt;linkable>إضافة المزيد من اللغات&lt;/linkable>&lt;/b></string>
+    <string name="gboard_link_receiving_share">هل تريد المشاركة مع الآخرين؟</string>
+    <string name="gboard_link_receiving_title">‏فعِّل اللغات التي تمت مشاركتها معك في Gboard:</string>
+    <string name="gboard_local_category_content_desc">إظهار %s</string>
     <string name="gboard_no_connection_button">إعادة المحاولة</string>
     <string name="gboard_no_connection_message">لست متصلاً بالإنترنت</string>
     <string name="gboard_no_gms_button">تحديث</string>
     <string name="gboard_no_gms_header">‏خدمات Google Play</string>
     <string name="gboard_no_gms_subheader">‏لاستخدام بحث Google، يجب تحديث خدمات Google Play</string>
     <string name="gboard_recently_used_stickers_content_desc">الملصقات المستخدمة مؤخرًا</string>
-    <string name="gboard_remote_network_error_message">"حدث خطأ ما.
+    <string name="gboard_remote_network_error_message">"‏حدث خطأ ما.
 يُرجى الانتظار قليلاً ثم إعادة المحاولة."</string>
-    <string name="gboard_search_category_content_desc">‏بحث %1$s</string>
+    <string name="gboard_search_category_content_desc">البحث عن %s</string>
     <string name="gboard_search_keyboard_label">لوحة مفاتيح البحث</string>
+    <string name="gboard_sharing_description_source">شارك هذه اللغات لكي يمكنهم الكتابة بهذه اللغات:</string>
+    <string name="gboard_sharing_negative_button_label">إلغاء</string>
+    <string name="gboard_sharing_positive_button_label">مشاركة</string>
+    <string name="gboard_sharing_subject">Type in your language with Gboard</string>
+    <string name="gboard_sharing_title_source">‏مشاركة Gboard للآخرين</string>
     <string name="gboard_showing_bitmoji_no_context_content_desc">‏عرض Bitmoji</string>
-    <string name="gboard_showing_emojis_content_desc">‏جارٍ عرض %s رمز تعبيري</string>
-    <string name="gboard_showing_gifs_content_desc">‏يتم عرض ملفات GIF من النوع %s</string>
+    <string name="gboard_showing_emojis_content_desc">جارٍ إظهار الرمز التعبيري %s</string>
+    <string name="gboard_showing_gifs_content_desc">‏جارٍ إظهار %s من ملفات GIF</string>
     <string name="gboard_showing_gifs_no_context_content_desc">‏عرض ملفات GIF</string>
     <string name="gboard_showing_my_gifs_content_desc">لي</string>
-    <string name="gboard_showing_stickers_content_desc">‏عرض ملصقات %s</string>
+    <string name="gboard_showing_stickers_content_desc">جارٍ عرض ملصقات %s</string>
     <string name="gboard_showing_stickers_no_context_content_desc">عرض الملصقات</string>
-    <string name="gboard_showing_universal_media_content_desc">‏عرض %s من الوسائط</string>
+    <string name="gboard_showing_universal_media_content_desc">جارٍ عرض وسائط %s</string>
     <string name="gboard_showing_universal_media_no_context_content_desc">عرض الوسائط</string>
     <string name="gboard_sticker_image_content_desc">ملصق</string>
     <string name="gboard_sticker_pack_image_content_desc">مجموعة الملصقات</string>
@@ -517,6 +545,7 @@
     <string name="gif_category_string_kittens">قطط</string>
     <string name="gif_category_string_loser">خاسر</string>
     <string name="gif_category_string_make_a_gif">‏إنشاء ملف GIF</string>
+    <string name="gif_category_string_make_a_gif_m2">‏إنشاء ملف GIF</string>
     <string name="gif_category_string_mic_drop">إسقاط ميكروفون</string>
     <string name="gif_category_string_miss_you">أفتقدك</string>
     <string name="gif_category_string_my_gifs">تصميماتي</string>
@@ -535,6 +564,7 @@
     <string name="gif_category_string_stop">إيقاف</string>
     <string name="gif_category_string_thank_you">شكرًا</string>
     <string name="gif_category_string_thumbs_up">موافقة</string>
+    <string name="gif_category_string_trending_categories">شائع</string>
     <string name="gif_category_string_waiting">انتظار</string>
     <string name="gif_category_string_what">ماذا</string>
     <string name="gif_category_string_wink">غمزة</string>
@@ -550,9 +580,9 @@
     <string name="gif_keyboard_default_candidate_1">صباح الخير</string>
     <string name="gif_keyboard_default_candidate_2">عيد ميلاد سعيد</string>
     <string name="gif_keyboard_key_content_desc">‏لوحة مفاتيح GIF</string>
-    <string name="gif_plural_suffix">" ‏ملفات gif"</string>
+    <string name="gif_plural_suffix">‏ ملفات gif</string>
     <string name="gif_search_results_hint">‏البحث في ملفات GIF</string>
-    <string name="gif_singular_suffix">" ‏ملف gif"</string>
+    <string name="gif_singular_suffix">gif</string>
     <string name="glow_g_tooltip_text">انقر هنا</string>
     <string name="go_key_content_desc">انتقال</string>
     <string name="google_account_not_supported">‏حساب Google ليس متوافقًا مع هذا الجهاز.</string>
@@ -603,14 +633,14 @@
     <string name="hugging_emoticon_description_star_eyed_hug">عناق بعيون على شكل نجمة</string>
     <string name="hugging_emoticon_description_two_Denkos_hugging">اثنان من الدينكو يتعانقان</string>
     <string name="icon_content_description">رمز مربع الحوار</string>
-    <string name="image_disabled_for_app_toast_message">‏لا يدعم %s إدراج الصور هنا</string>
+    <string name="image_disabled_for_app_toast_message">لا يدعم %s إدراج الصور هنا</string>
     <string name="image_disabled_toast_message">لا يدعم هذا التطبيق إدراج الصور</string>
     <string name="ink_color_black_content_desc">أسود</string>
     <string name="ink_color_blue_content_desc">أزرق</string>
     <string name="ink_color_green_content_desc">أخضر</string>
     <string name="ink_color_purple_content_desc">أرجواني</string>
     <string name="ink_color_red_content_desc">أحمر</string>
-    <string name="ink_color_selected_a11y">‏تم اختيار %s</string>
+    <string name="ink_color_selected_a11y">تم تحديد %s</string>
     <string name="ink_color_white_content_desc">أبيض</string>
     <string name="ink_color_yellow_content_desc">أصفر</string>
     <string name="input_nonexistent_file">الملف غير موجود.</string>
@@ -646,8 +676,8 @@
     <string name="kb_theme_material_light">مظهر متعدد الأبعاد فاتح</string>
     <string name="key_combo_preference_instructions">يمكنك الضغط على مجموعة مفاتيح تحويل لإضافتها إلى القائمة أو إزالتها منها</string>
     <string name="key_combo_preference_reset_button">محو تعيين المفاتيح</string>
-    <string name="keyboard_hidden">‏%s مخفية</string>
-    <string name="keyboard_with_suffix_hidden">‏لوحة مفاتيح %s مخفية</string>
+    <string name="keyboard_hidden">تم إخفاء %s</string>
+    <string name="keyboard_with_suffix_hidden">لوحة المفاتيح %s مخفية</string>
     <string name="korean_2_bulsik_ime_label">‏‎2 Bulsik كوري</string>
     <string name="label_access_point_gif">‏ملف GIF</string>
     <string name="label_access_point_sticker">ملصق</string>
@@ -669,6 +699,7 @@
     <string name="label_remove_suggestion">إزالة الاقتراح</string>
     <string name="label_search_access_point">بحث</string>
     <string name="label_settings_access_point">الإعدادات</string>
+    <string name="label_sharing_access_point">مشاركة</string>
     <string name="label_space_ja">日本語</string>
     <string name="label_text_editing">تعديل النصوص</string>
     <string name="label_text_editing_access_point">تعديل النصوص</string>
@@ -677,6 +708,7 @@
     <string name="label_translate_access_point">ترجمة</string>
     <string name="label_wait_key">انتظار</string>
     <string name="language_pack_not_downloaded_yet_toast_message">لم يتم تنزيل حزمة اللغة اليابانية حتى الآن</string>
+    <string name="language_tag_aii">الآشورية</string>
     <string name="language_tag_ar">العربية</string>
     <string name="language_tag_ban">باليني</string>
     <string name="language_tag_ber">الأمازيغية</string>
@@ -702,8 +734,10 @@
     <string name="language_tag_kmz">الخراسانية التركية</string>
     <string name="language_tag_kok">الكونكانية</string>
     <string name="language_tag_lez">ليزجيان</string>
+    <string name="language_tag_lif">الليمبو</string>
     <string name="language_tag_lmn">اللامبادية</string>
     <string name="language_tag_mni">المانيبورية</string>
+    <string name="language_tag_oj">الأوجيبوية</string>
     <string name="language_tag_rkt">الرانغبورية</string>
     <string name="language_tag_rmn">الرومانية البلقانية</string>
     <string name="language_tag_rmy">فلاكس روماني</string>
@@ -712,13 +746,15 @@
     <string name="language_tag_syl">السيلهيتية</string>
     <string name="language_tag_tly">الطاليشية</string>
     <string name="language_tag_trp">كوك بوروك</string>
+    <string name="language_tag_unr">منداري</string>
     <string name="language_tag_uz">الأوزبكية</string>
     <string name="language_tag_vas">الفازافية</string>
     <string name="language_tag_zh_CN">الصينية (المبسطة)</string>
     <string name="language_tag_zh_HK">الكانتونية</string>
     <string name="language_tag_zh_TW">الصينية (التقليدية)</string>
     <string name="language_tag_zz">الأبجدية</string>
-    <string name="learn_more_dialog_message">‏ستجمع Google أجزاءً مما تكتبه في تطبيقات Google وكيفية كتابته لتحسين الكتابة بالتمرير من دون رفع الإصبع ودقة التصحيح التلقائي. لن يتم إقران البيانات التي يتم تجميعها بحسابك في Google وسيتم الاحتفاظ بها وفقًا <a href="https://www.google.com/policies/privacy/"> لسياسة خصوصية Google</a>. يمكنك تغيير هذا الإعداد في أي وقت في إعدادات لوحة مفاتيح Gboard.</string>
+    <string name="launch_activities_or_extensions">فتح %s</string>
+    <string name="learn_more_dialog_message">‏ستجمع Google أجزاءً مما تكتبه في تطبيقات Google ومن الطريقة التي تعتمدها في الكتابة، وذلك لتحسين الكتابة بالتمرير ودقة التصحيح التلقائي. لن يتم ربط البيانات التي يتم جمعها بحسابك على Google وسيتم ضبطها وفقًا لـ <a href="https://www.google.com/policies/privacy/">سياسة خصوصية Google</a>. يمكنك تغيير هذا الإعداد في أي وقت من إعدادات لوحة مفاتيح Gboard.</string>
     <string name="left_arrow_content_desc">المؤشر لليسار</string>
     <string name="left_arrow_key_content_desc">سهم لليسار</string>
     <string name="left_black_square_bracket_key_content_desc">قوس مربع أسود أيسر</string>
@@ -777,7 +813,7 @@
     <string name="low_storage_available_error">مساحة تخزين منخفضة متوفرة على الجهاز</string>
     <string name="mail_dot_key_content_desc">mail.‎</string>
     <string name="make_a_gif_alternate_sidebar_record">‏تسجيل ملف GIF</string>
-    <string name="make_a_gif_singular_suffix">" ‏ملف gif 🎥"</string>
+    <string name="make_a_gif_singular_suffix">‏ ملف gif 📷</string>
     <string name="makeagif_a11y_deleted_text">نص محذوف</string>
     <string name="makeagif_a11y_edited_text">‏تم إدراج نص تم تحريره في ملف GIF</string>
     <string name="makeagif_a11y_editing_mode">وضع التحرير</string>
@@ -828,8 +864,9 @@
     <string name="move_keyboard_content_desc">نقل موضع لوحة المفاتيح</string>
     <string name="native_card_keyboard_default_candidate_0">أخبار</string>
     <string name="native_card_keyboard_default_candidate_1">الطقس</string>
+    <string name="native_card_keyboard_default_candidate_2">@string/gif_category_string_thank_you</string>
     <string name="native_card_search_results_hint">بحث</string>
-    <string name="native_language_hint_more_languages">‏و%d من اللغات الأخرى</string>
+    <string name="native_language_hint_more_languages">و%d من اللغات الأخرى</string>
     <string name="native_language_hint_title">يمكنك إضافة لغتك الأم</string>
     <string name="navigate_next_key_content_desc">التالي</string>
     <string name="navigate_previous_key_content_desc">السابق</string>
@@ -855,6 +892,7 @@
     <string name="nervous_emoticon_description_wide_eyed_and_sweating">عيون واسعة وتعرّق</string>
     <string name="nervous_emoticon_description_zany_face">وجه أبله</string>
     <string name="network_not_available_error">الشبكة غير متاحة</string>
+    <string name="new_sign_in_button_text">Sign in</string>
     <string name="news_dot_key_content_desc">news.‎</string>
     <string name="next_language_key_content_desc">اللغة التالية</string>
     <string name="no_emoji_message">لم يتم العثور على رموز تعبيرية</string>
@@ -865,9 +903,9 @@
     <string name="nonprime_recent_content_desc">العناصر الأخيرة</string>
     <string name="notice_add_native_language">انقر هنا للكتابة باللغة الهندية:</string>
     <string name="notice_battery_saver_theme">‏لوحة المفاتيح Gboard معتمة لتوفير طاقة البطارية. انقر للوصول إلى الإعدادات.</string>
-    <string name="notice_personalize_sms">هل ترغب في تحسين اقتراحاتك؟ انقر للحصول على معلومات.</string>
+    <string name="notice_share_gboard">هل تستمتع بالكتابة باللغة %1$s؟ شاركها مع الآخرين.</string>
     <string name="notice_suggest_contacts">انقر لتفعيل اقتراحات جهات الاتصال.</string>
-    <string name="num_search_results">‏نتائج %d</string>
+    <string name="num_search_results">%d نتائج</string>
     <string name="number_ime_label">لوحة مفاتيح الأعداد</string>
     <string name="number_password_ime_label">لوحة مفاتيح كلمة المرور الرقمية</string>
     <string name="on_page_1">في الصفحة 1</string>
@@ -887,17 +925,18 @@
     <string name="password_toggle_content_description">عرض كلمة المرور</string>
     <string name="percentage_format_string">%1$d%%</string>
     <string name="personal_dictionary_preference_item_all_languages">جميع اللغات</string>
-    <string name="personal_dictionary_read_only_annotation">للقراءة فقط</string>
+    <string name="personal_dictionary_preference_title_export">Export</string>
     <string name="personal_dictionary_settings_add_shortcut_hint">اختصار اختياري</string>
     <string name="personal_dictionary_settings_add_shortcut_option_name">الاختصار:</string>
     <string name="personal_dictionary_settings_add_word_hint">اكتب كلمة</string>
+    <string name="personal_dictionary_tutorial_text">لا تتوفر أي كلمات في المعجم الشخصي. لإضافة كلمة، انقر على زر الإضافة (+).</string>
     <string name="phone_icon_content_desc">الهاتف</string>
     <string name="phone_keyboard_key_content_desc">لوحة مفاتيح الاتصال</string>
     <string name="phone_number_ime_label">لوحة مفاتيح الاتصال</string>
     <string name="pinyin_ime_label">‏لوحة مفاتيح Pinyin</string>
     <string name="pinyin_qwerty_ime_label">‏لوحة مفاتيح Pinyin</string>
     <string name="pinyin_standard_cantonese_pinyin">‏اللغة الكانتونية بنظام الكتابة Pinyin</string>
-    <string name="pinyin_standard_jyutping">Jyutping</string>
+    <string name="pinyin_standard_jyutping">يُتبنغ</string>
     <string name="pinyin_standard_yale">Yale</string>
     <string name="play_icon_content_desc">تشغيل</string>
     <string name="play_store_link_msg">المزيد</string>
@@ -909,7 +948,7 @@
     <string name="pref_key_morse_dot_key_assignment_summary">تحكّم في لوحة مفاتيح مورس باستخدام مفاتيح تحويل خارجية. هذا هو المكان الذي يمكنك فيه تعيين مفاتيح تحويل لوظيفة مفتاح النقطة</string>
     <string name="pref_key_morse_dot_key_assignment_title">الوصول عبر مفتاح تحويل النقطة</string>
     <string name="preferences_license_title">تراخيص البرامج المفتوحة المصدر</string>
-    <string name="quanpin_scheme">بن يين كامل</string>
+    <string name="quanpin_scheme">‏نظام Pinyin الكامل</string>
     <string name="question_mark_key_content_desc">علامة استفهام</string>
     <string name="rate_us_card_content">‏امنحنا تقييمًا في متجر Play، أو قدّم إلينا ملاحظات حول كيفية تحقيقنا للأفضل</string>
     <string name="rate_us_card_title">‏هل Gboard ممتع؟</string>
@@ -932,19 +971,24 @@
     <string name="save">حفظ</string>
     <string name="saving_customization_error_msg">تعذّر حفظ التخصيص.</string>
     <string name="search_access_point_content_desc">بحث</string>
-    <string name="search_add_language_no_results_title">‏تعذر العثور على لغة تطابق \"%1$s\".</string>
+    <string name="search_add_language_no_results_title">تعذر الحصول على لغة تطابق \"%1$s\".</string>
     <string name="search_add_language_title">البحث عن لغة</string>
     <string name="search_key_content_desc">بحث</string>
     <string name="search_keyboard_key_content_desc">لوحة مفاتيح البحث</string>
     <string name="search_no_result_text">لم يتم العثور على نتائج للنص %1$s</string>
     <string name="search_query_feature_cards_1">‏ما الجديد في Gboard؟</string>
     <string name="search_query_hint">البحث عن ملصقات...</string>
-    <string name="select_pinyin_letter">‏تحديد pinyin %1$s</string>
-    <string name="select_zhuyin_letter">‏تحديد zhuyin %s</string>
+    <string name="select_pinyin_letter">‏تحديد %1$s pinyin</string>
+    <string name="select_zhuyin_letter_message">‏تحديد %s zhuyin</string>
     <string name="semicolon_key_content_desc">فاصلة منقوطة</string>
     <string name="send_key_content_desc">إرسال</string>
     <string name="separator_key_content_desc">فاصل</string>
     <string name="setting_about_language_models_empty">لم يتم تحميل أي نموذج.</string>
+    <string name="setting_about_lm_source_apk">‏المصدر = APK</string>
+    <string name="setting_about_lm_source_download">المصدر = تنزيل</string>
+    <string name="setting_about_lm_source_oem">المصدر = المصنّع الأصلي للجهاز</string>
+    <string name="setting_about_lm_title">الرئيسي(%s)</string>
+    <string name="setting_about_lm_version">الإصدار = %d</string>
     <string name="setting_about_title">معلومات عن</string>
     <string name="setting_about_version_title">الإصدار الحالي</string>
     <string name="setting_accounts_switcher_summary">يتم حاليًا استخدام %1$s.</string>
@@ -970,10 +1014,10 @@
     <string name="setting_chinese_digits_mixed_input_summary">‏اقتراح الأرقام عند الإدخال باستخدام أسلوب Pinyin</string>
     <string name="setting_chinese_digits_mixed_input_title">اقتراح الأرقام</string>
     <string name="setting_chinese_english_mixed_input_summary">‏اقتراح الكلمات الإنجليزية الشائعة عند الإدخال باستخدام أسلوب Pinyin</string>
-    <string name="setting_chinese_english_mixed_input_summary_zhuyin">‏اقتراح الكلمات الإنجليزية الشائعة عند الإدخال باستخدام أسلوب Zhuyin وPinyin</string>
+    <string name="setting_chinese_english_mixed_input_summary_zhuyin">‏اقتراح الكلمات الإنجليزية الشائعة عند الإدخال باستخدام أسلوبَي Zhuyin وPinyin</string>
     <string name="setting_chinese_english_mixed_input_title">اقتراح الكلمات الإنجليزية</string>
     <string name="setting_clear_error">تعذّر المحو</string>
-    <string name="setting_clear_ongoing">جارٍ محو الكلمات التي تم تعلُّمها…</string>
+    <string name="setting_clear_ongoing">جارٍ محو الكلمات التي تم تعلُّمها…</string>
     <string name="setting_clear_success">تم المحو</string>
     <string name="setting_correction">تصحيح النص</string>
     <string name="setting_corrections_category_title">التصحيحات</string>
@@ -983,8 +1027,8 @@
     <string name="setting_dialog_import_message">يُرجى تحديد ملف لاستيراده:</string>
     <string name="setting_dialog_import_select_file_message">تحديد…</string>
     <string name="setting_dialog_import_user_dictionary_title">استيراد قاموس المستخدم</string>
-    <string name="setting_dialog_sync_clear_message">سيتم محو الكلمات التي تم تعلُّمها، علمًا بأن هذه العملية لا يُمكن التراجع عنها. لتأكيد الحذف، أدخل الرقم التالي للمتابعة.</string>
-    <string name="setting_dialog_sync_clear_summary">محو الكلمات التي تم تعلُّمها من هذا الجهاز ومن النُسخ الاحتياطية</string>
+    <string name="setting_dialog_sync_clear_message">سيتم محو الكلمات التي تم تعلُّمها، علمًا بأن هذه العملية لا يُمكن التراجع عنها. لتأكيد الحذف، أدخل الرقم التالي للمتابعة.</string>
+    <string name="setting_dialog_sync_clear_summary">لمحو الكلمات التي تم تعلُّمها من هذا الجهاز</string>
     <string name="setting_dialog_sync_clear_title">ملاحظة</string>
     <string name="setting_dialog_sync_now_message">هل تريد إجراء المزامنة الآن؟</string>
     <string name="setting_dialog_sync_now_title">تأكيد</string>
@@ -1002,8 +1046,8 @@
     <string name="setting_enable_symbol_alt_physical_key_title">رموز تعبيرية مع لوحة المفاتيح الفعلية</string>
     <string name="setting_enable_user_metrics_title">مشاركة إحصاءات الاستخدام</string>
     <string name="setting_enable_voice_input_title">استخدام الكتابة بالصوت</string>
-    <string name="setting_fuzzy_pinyin_detail_title">إعدادات تطابق بن يين الجزئي</string>
-    <string name="setting_fuzzy_pinyin_title">تطابق بن يين الجزئي</string>
+    <string name="setting_fuzzy_pinyin_detail_title">‏إعدادات Fuzzy Pinyin</string>
+    <string name="setting_fuzzy_pinyin_title">Fuzzy Pinyin</string>
     <string name="setting_fuzzy_pinyin_title_zh_hk">التطابق الجزئي</string>
     <string name="setting_gesture">الكتابة بالتمرير من دون رفع الإصبع</string>
     <string name="setting_gesture_auto_commit_summary">التنفيذ التلقائي للنص الجاري إنشاؤه حاليًا قبل الإدخال التالي بالتمرير من دون رفع الإصبع</string>
@@ -1013,7 +1057,6 @@
     <string name="setting_gesture_input_summary">إدخال كلمة من خلال التمرير على الأحرف</string>
     <string name="setting_gesture_input_title">تفعيل الكتابة بالتمرير من دون رفع الإصبع</string>
     <string name="setting_gesture_preview_trail_title">عرض مسار الإيماءة</string>
-    <string name="setting_handwriting_input">الكتابة اليدوية</string>
     <string name="setting_handwriting_stroke_width_seekbar_text_left">رقيق</string>
     <string name="setting_handwriting_stroke_width_seekbar_text_right">سميك</string>
     <string name="setting_handwriting_stroke_width_title">عرض الخط في الكتابة اليدوية</string>
@@ -1083,7 +1126,7 @@
     <string name="setting_morse_word_commit_timeout_title">مهلة الكلمة</string>
     <string name="setting_morse_word_timeout_text_left">0.25 ثانية</string>
     <string name="setting_morse_word_timeout_text_right">5 ثوانٍ</string>
-    <string name="setting_multilingual_alert_text">‏يمكن تفعيل %d لغة (لغات) في الكتابة متعددة اللغات</string>
+    <string name="setting_multilingual_alert_text">في الغالب، يمكن تفعيل %d من اللغات في الكتابة المتعددة اللغات</string>
     <string name="setting_multilingual_not_available_summary">ينطبق فقط إذا تم تفعيل لغات متعددة</string>
     <string name="setting_multilingual_on_summary">يمكنك عرض اقتراحات الكلمات تلقائيًا أثناء كتابتك باستخدام:</string>
     <string name="setting_multilingual_title">الكتابة بلغات متعددة</string>
@@ -1091,7 +1134,7 @@
     <string name="setting_next_word_prediction_title">اقتراحات الكلمة التالية</string>
     <string name="setting_one_handed_mode_title">وضع \"الكتابة بيد واحدة\"</string>
     <string name="setting_personal_dictionary_title">المعجم الشخصي</string>
-    <string name="setting_pinyin_scheme_title">مخطط بن يين</string>
+    <string name="setting_pinyin_scheme_title">‏نظام Pinyin</string>
     <string name="setting_pinyin_title">‏إعدادات Pinyin</string>
     <string name="setting_popup_on_keypress_title">ظهور علامة منبثقة عند الضغط على مفتاح</string>
     <string name="setting_preferences">التفضيلات</string>
@@ -1114,6 +1157,7 @@
     <string name="setting_scrub_move_title">تفعيل التحكم في المؤشر بالإشارة</string>
     <string name="setting_search">البحث</string>
     <string name="setting_share_snippets_summary">‏يمكنك مشاركة مقتطفات تلقائيًا مما تكتبه في تطبيقات Google وكيفية الكتابة، وذلك لتحسين %s</string>
+    <string name="setting_sharing">‏مشاركة Gboard</string>
     <string name="setting_show_canonical_romanization_summary">إظهار الأحرف اللاتينية المتعارف عليها عند الضغط على حرف مرشح معين</string>
     <string name="setting_show_canonical_romanization_title">الإظهار بالأحرف اللاتينية المتعارف عليها</string>
     <string name="setting_show_emoji_suggestion_title">عرض اقتراحات الرموز التعبيرية</string>
@@ -1132,37 +1176,47 @@
     <string name="setting_sound_on_keypress_title">إصدار صوت عند الضغط على مفتاح</string>
     <string name="setting_sound_volume_of_keypress">مستوى الصوت عند الضغط على مفتاح</string>
     <string name="setting_suggestions_category_title">الاقتراحات</string>
-    <string name="setting_sync_clear_title">حذف الكلمات التي تم تعلُّمها</string>
-    <string name="setting_sync_enabled_off_summary">حفظ الكلمات التي تم تعلُّمها لاستخدامها على جميع الأجهزة</string>
-    <string name="setting_sync_enabled_title">مزامنة الكلمات التي تم تعلُّمها</string>
+    <string name="setting_sync_clear_title">حذف الكلمات التي تم تعلُّمها</string>
+    <string name="setting_sync_enabled_off_summary">حفظ الكلمات التي تم تعلُّمها لاستخدامها على جميع الأجهزة</string>
+    <string name="setting_sync_enabled_title">مزامنة الكلمات التي تم تعلُّمها</string>
     <string name="setting_sync_error">تعذّرت المزامنة</string>
     <string name="setting_sync_now_title">المزامنة الآن</string>
     <string name="setting_sync_ongoing">جارٍ المزامنة…</string>
-    <string name="setting_sync_time">"آخر مزامنة: "</string>
-    <string name="setting_sync_user_dictionary_message">‏سيتم إرسال الكلمات التي تم تعلُّمها إلى Google، حتى يتسنى لك استخدامها على جميع الأجهزة. ويمكن أن نستخدم معلومات إحصائية مثل معدل تكرار الكلمات في معجمك للمساعدة في تحسين منتجاتنا. ولن يتم تجميع هذه المعلومات واستخدامها إلا بما يتفق مع <a href="https://www.google.com/policies/privacy/">سياسة خصوصية Google</a>.</string>
+    <string name="setting_sync_time">آخر مزامنة:</string>
+    <string name="setting_sync_user_dictionary_message">‏سيتم إرسال الكلمات التي تعلّمتها إلى Google، حتى تتمكن من استخدامها على جميع الأجهزة. قد نستخدم المعلومات الإحصائية مثل تكرار الكلمات في معجمك للمساعدة في تحسين منتجاتنا. لن يتم تجميع هذه المعلومات واستخدامها إلا بما يتفق مع <a href="https://www.google.com/policies/privacy/">سياسة خصوصية Google</a>.</string>
     <string name="setting_sync_user_dictionary_title">‏مزامنة الكلمات التي تعلمتها مع Google</string>
     <string name="setting_theme">المظهر</string>
     <string name="setting_title">الإعدادات</string>
     <string name="setting_title_default">‏إعدادات الإدخال من Google</string>
     <string name="setting_tos_title">بنود الخدمة</string>
     <string name="setting_tradition_title">الصينية التقليدية</string>
-    <string name="setting_user_history_category_title">تعلُّم الكلمات</string>
+    <string name="setting_user_history_category_title">تعلُّم الكلمات</string>
     <string name="setting_vibrate_on_keypress_title">إصدار اهتزاز عند الضغط على مفتاح</string>
     <string name="setting_vibration_strength_on_keypress_title">قوة الاهتزاز عند الضغط على المفتاح</string>
     <string name="setting_voice_account_no_account_summary">‏استخدام الكتابة بالصوت على Gboard من دون حساب</string>
+    <string name="setting_voice_account_title">Google Account</string>
     <string name="setting_voice_account_with_account_summary">‏استخدام %s للكتابة بالصوت على Gboard</string>
+    <string name="setting_voice_activity_link_text">Audio history will be saved to your account, under \"Voice &amp; Audio activity\". &lt;b>&lt;linkable>Manage&lt;/linkable>&lt;/b></string>
     <string name="setting_voice_input_title">مفتاح الإدخال الصوتي</string>
     <string name="setting_voice_typing">الكتابة بالصوت</string>
+    <string name="setting_voice_without_sign_in_text">Audio history will not be recorded.</string>
     <string name="setting_zhuyin_pinyin_title">‏إعدادت Zhuyin/Pinyin</string>
     <string name="settings_access_point_content_desc">الإعدادات</string>
     <string name="settings_content_desc">إعدادات</string>
     <string name="settings_system_default">الإعداد التلقائي للنظام</string>
     <string name="settings_system_default_disabled">الضبط التلقائي للنظام (غير مفعّل)</string>
     <string name="setup_done_page_title">انتهى الإعداد.</string>
-    <string name="setup_step_page_title">‏الخطوة %d</string>
+    <string name="setup_step_page_title">الخطوة %d</string>
     <string name="share_external_icon_content_desc">العرض خارجيًا</string>
     <string name="share_footer_message">‏تم الإرسال بواسطة Gboard</string>
     <string name="share_image_overlay_announcement">ظهور زر مشاركة صورة بطاقة</string>
+    <string name="sharing_app_chooser_dialog_title">مشاركة عبر</string>
+    <string name="sharing_content">‏أستخدم Gboard للكتابة. يمكنك تجربته على:</string>
+    <string name="sharing_content_all_enabled">"You're already using Gboard."</string>
+    <string name="sharing_content_all_enabled_variant_1">"You're already using Gboard in %1$s."</string>
+    <string name="sharing_content_all_enabled_variant_2">"You're already using Gboard in %1$s and %2$s."</string>
+    <string name="sharing_content_variant_1">‏أستخدم Gboard للكتابة باللغة %1$s. يمكنك تجربته على:</string>
+    <string name="sharing_content_variant_2">‏أستخدم Gboard للكتابة باللغتين %1$s و%2$s. يمكنك تجربته على:</string>
     <string name="sharing_snippets_learn_more">مزيد من المعلومات</string>
     <string name="sharing_snippets_privacy_notice_content">‏بهدف تحسين %s، يمكنك تلقائيًا مشاركة بعض المقتطفات عمّا تكتبه في تطبيقات Google وكيفية كتابته، وذلك بدون الكشف عن هويّتك.</string>
     <string name="sharing_snippets_privacy_notice_title">المساعدة في ابتكار لوحة مفاتيح أفضل</string>
@@ -1170,22 +1224,28 @@
     <string name="shift_enabled_mode_content_desc">‏تم تفعيل Shift</string>
     <string name="shift_flip_content_desc">المزيد من الرموز</string>
     <string name="shift_locked_flip_content_desc">الرموز</string>
+    <string name="show_popup_for_account_selector">Showing account selector page</string>
     <string name="show_popup_for_item_board">عرض معلومات تفصيلية لعنصر مقطع.</string>
+    <string name="show_popup_for_off_overlay">اعرض الحافظة التي تم إيقافها.</string>
+    <string name="show_popup_for_sign_in">Showing sign in page</string>
     <string name="show_popup_for_undo_delete">تم إظهار عرض التراجع عن الحذف.</string>
     <string name="showing_floating_keyboard">عرض لوحة المفاتيح العائمة</string>
-    <string name="showing_keyboard">‏عرض %s</string>
+    <string name="showing_keyboard">جارٍ عرض %s</string>
     <string name="showing_keyboard_editing_view">إظهار عرض تحرير لوحة المفاتيح</string>
-    <string name="showing_keyboard_with_suffix">‏جارٍ إظهار لوحة مفاتيح %s</string>
+    <string name="showing_keyboard_with_suffix">جارٍ إظهار لوحة مفاتيح %s</string>
     <string name="showing_left_handed_keyboard">يتم عرض لوحة مفاتيح اليد اليسرى</string>
     <string name="showing_right_handed_keyboard">يتم عرض لوحة مفاتيح اليد اليمنى</string>
     <string name="showing_text_keyboard">إظهار لوحة المفاتيح النصية</string>
     <string name="shruggie_emoticon_description">يهزّ كتفيه</string>
-    <string name="shuangpin_abc_scheme">‏بن يين مزدوج - ABC ذكي</string>
-    <string name="shuangpin_flypy_scheme">‏بين ين مزدوج - flyPY</string>
-    <string name="shuangpin_jiajia_scheme">‏بن يين مزدوج - بن يين PlusPlus</string>
-    <string name="shuangpin_ms_scheme">‏بن يين مزدوج - Microsoft</string>
-    <string name="shuangpin_ziguang_scheme">‏بن يين مزدوج - Unispim</string>
-    <string name="shuangpin_ziranma_scheme">‏بن يين مزدوج - Ziranma</string>
+    <string name="shuangpin_abc_scheme">‏نظام Pinyin المزدوج - أداة ABC الذكية</string>
+    <string name="shuangpin_flypy_scheme">‏نظام Pinyin المزدوج - flyPY</string>
+    <string name="shuangpin_jiajia_scheme">‏نظام Pinyin المزدوج - Pinyin PlusPlus</string>
+    <string name="shuangpin_ms_scheme">‏نظام Pinyin مزدوج - Microsoft</string>
+    <string name="shuangpin_ziguang_scheme">‏Pinyin مزدوج - Unispim</string>
+    <string name="shuangpin_ziranma_scheme">‏Pinyin مزدوج - Ziranma</string>
+    <string name="sign_in_continue_button_text">Continue as %s</string>
+    <string name="sign_in_icon_content_description">Sign in icon</string>
+    <string name="sign_in_title">Sign in to %s</string>
     <string name="single_left_book_title_key_content_desc">علامة عنوان كتاب مفردة يسرى</string>
     <string name="single_right_book_title_key_content_desc">علامة عنوان كتاب مفردة يمنى</string>
     <string name="slight_pause_mark_key_content_desc">علامة إيقاف مؤقت</string>
@@ -1252,7 +1312,7 @@
     <string name="sticker_low_storage_error_title">مساحة جهازك منخفضة</string>
     <string name="sticker_open_gallery_button_text">فتح المعرض</string>
     <string name="sticker_pack_load_failed_content_desc">عنصر نائب لرمز حزمة الملصقات التي تعذّر تحميله</string>
-    <string name="sticker_promo_tooltip_text">"ملصقات
+    <string name="sticker_promo_tooltip_text">"‏ملصقات
 جديدة!"</string>
     <string name="sticker_something_went_wrong_error">حدث خطأ ما</string>
     <string name="sticker_something_went_wrong_message">عذرًا، حدث خطأ ما!</string>
@@ -1268,7 +1328,7 @@
     <string name="stickers_search_hint">بحث عن الملصقات</string>
     <string name="stroke_dian_key_content_desc">نقطة</string>
     <string name="stroke_heng_key_content_desc">أفقي</string>
-    <string name="stroke_pie_key_content_desc">منحدر من اليسار</string>
+    <string name="stroke_pie_key_content_desc">منحدرة من اليسار</string>
     <string name="stroke_shu_key_content_desc">عمودي</string>
     <string name="stroke_wildcard_key_content_desc">حرف بدل</string>
     <string name="stroke_zhe_key_content_desc">تحويل</string>
@@ -1277,24 +1337,26 @@
     <string name="subtype_locale_aa">الأفار</string>
     <string name="subtype_locale_ab_GE">‏لوحة المفاتيح Abkhaz</string>
     <string name="subtype_locale_abr_GH">الأبرون</string>
-    <string name="subtype_locale_ace_ID">الأتشيهية (إندونيسيا)</string>
+    <string name="subtype_locale_abs_ID">الملايوية الأمبونية</string>
+    <string name="subtype_locale_ace_ID">الآتشيهية</string>
     <string name="subtype_locale_acf_LC">الفرنسية الكريولية في سانت لوسيا</string>
-    <string name="subtype_locale_ach_UG">الأشولية (أوغندا)</string>
-    <string name="subtype_locale_act_NL">أكترهوكس (هولندا)</string>
-    <string name="subtype_locale_ada_GH">الدانغمي (غانا)</string>
+    <string name="subtype_locale_ach_UG">الأشولية</string>
+    <string name="subtype_locale_act_NL">أكترهوكس</string>
+    <string name="subtype_locale_ada_GH">الدانغمي</string>
     <string name="subtype_locale_ady_RU">الأديغية</string>
-    <string name="subtype_locale_ahr_IN">الأهيرانية (الهند)</string>
-    <string name="subtype_locale_aii_IQ">الآشورية</string>
-    <string name="subtype_locale_ak_GH">أكان (غانا)</string>
-    <string name="subtype_locale_ak_XF">أكوابام (غانا)</string>
-    <string name="subtype_locale_ak_XG">أسانتي (غانا)</string>
+    <string name="subtype_locale_ahr_IN">الأهيرانية</string>
+    <string name="subtype_locale_aii_IQ">الآشورية (العراق)</string>
+    <string name="subtype_locale_aii_SY">الآشورية (سوريا)</string>
+    <string name="subtype_locale_ak_GH">الأكانية</string>
+    <string name="subtype_locale_ak_XF">أكوابام</string>
+    <string name="subtype_locale_ak_XG">أشانتي</string>
     <string name="subtype_locale_aln_RS">غج الألبانية</string>
     <string name="subtype_locale_als_AL">الألبانية التوسكية</string>
     <string name="subtype_locale_alz_CD">ألور</string>
-    <string name="subtype_locale_ami_TW">الآميسية (تايوان)</string>
-    <string name="subtype_locale_an_ES">الأراغونية (إسبانيا)</string>
+    <string name="subtype_locale_ami_TW">الآميسية</string>
+    <string name="subtype_locale_an_ES">الأراغونية</string>
     <string name="subtype_locale_anp_IN">الأنجيكية</string>
-    <string name="subtype_locale_anw_NG">الأنانغ (نيجيريا)</string>
+    <string name="subtype_locale_anw_NG">الأنانغ</string>
     <string name="subtype_locale_ar_AE">العربية (الخليج)</string>
     <string name="subtype_locale_ar_BH">العربية (البحرين)</string>
     <string name="subtype_locale_ar_DJ">العربية (التعزية-العدنية)</string>
@@ -1306,7 +1368,7 @@
     <string name="subtype_locale_ar_SA">العربية (الحجاز)</string>
     <string name="subtype_locale_ar_SD">العربية (السودان)</string>
     <string name="subtype_locale_ar_TN">العربية (تونس)</string>
-    <string name="subtype_locale_arn_CL">المابوتشية (تشيلي)</string>
+    <string name="subtype_locale_arn_CL">المابوتشية</string>
     <string name="subtype_locale_as_XA">الأساميزية (اللاتينية)</string>
     <string name="subtype_locale_ast_ES">الأستورية (إسبانيا)</string>
     <string name="subtype_locale_av_RU">آفار</string>
@@ -1318,26 +1380,31 @@
     <string name="subtype_locale_ban_ID">الباليّة (اللاتينية)</string>
     <string name="subtype_locale_ban_XF">باليني</string>
     <string name="subtype_locale_bar_AT">النمساوية البافارية</string>
-    <string name="subtype_locale_bas_CM">باساء (الكاميرون)</string>
-    <string name="subtype_locale_bbc_ID">باتاك توبا (إندونيسيا)</string>
-    <string name="subtype_locale_bci_CI">الباولية (كوت ديفوار)</string>
+    <string name="subtype_locale_bas_CM">الباسا</string>
+    <string name="subtype_locale_bbc_ID">باتاك توبا</string>
+    <string name="subtype_locale_bcc_PK">البالوشية الجنوبية</string>
+    <string name="subtype_locale_bci_CI">الباولية</string>
     <string name="subtype_locale_bcl_PH">بيكول المركزية</string>
-    <string name="subtype_locale_bcq_ET">بنش (إثيوبيا)</string>
+    <string name="subtype_locale_bcq_ET">بنش</string>
     <string name="subtype_locale_ber_XA">الأمازيغية (اللاتينية)</string>
     <string name="subtype_locale_ber_XG">الأمازيغية (التيفيناغ)</string>
-    <string name="subtype_locale_bew_ID">بيتاوي (إندونيسيا)</string>
+    <string name="subtype_locale_bew_ID">بتاوي</string>
     <string name="subtype_locale_bft_PK">البَلتية</string>
-    <string name="subtype_locale_bfy_IN">الباغيلية (الهند)</string>
-    <string name="subtype_locale_bgc_IN">الهاريانفية (الهند)</string>
+    <string name="subtype_locale_bfy_IN">الباغيلية</string>
+    <string name="subtype_locale_bfz_IN">ماهازو باهاري</string>
+    <string name="subtype_locale_bgc_IN">الهاريانفية</string>
+    <string name="subtype_locale_bgn_PK">البالوشية الغربية</string>
+    <string name="subtype_locale_bgp_XC">البالوشية الشرقية</string>
     <string name="subtype_locale_bgq_IN">البغرية (الهند)</string>
     <string name="subtype_locale_bgq_PK">بجرية (باكستان)</string>
+    <string name="subtype_locale_bgx_TR">التركية البلقانية الغاغاوزية</string>
     <string name="subtype_locale_bgz_ID">بانغاي</string>
     <string name="subtype_locale_bhb_XD">بهيلي (ديفاناغاري)</string>
     <string name="subtype_locale_bhb_XF">بهيلي (الغوجاراتية)</string>
-    <string name="subtype_locale_bho_IN">البوجبورية (الهند)</string>
-    <string name="subtype_locale_bi_VU">بيسلاما (فانواتو)</string>
-    <string name="subtype_locale_bjj_IN">كانوجي (الهند)</string>
-    <string name="subtype_locale_bjn_ID">بنجار (إندونيسيا)</string>
+    <string name="subtype_locale_bho_IN">البوجبورية</string>
+    <string name="subtype_locale_bi_VU">البيسلامية</string>
+    <string name="subtype_locale_bjj_IN">كانوجي</string>
+    <string name="subtype_locale_bjn_ID">البنجارية</string>
     <string name="subtype_locale_blk_MM">بآو كارين</string>
     <string name="subtype_locale_blt_VN">الدام التايلاندية (التايلاندية الفيتنامية)</string>
     <string name="subtype_locale_blt_XA">الدام التايلاندية (اللاتينية)</string>
@@ -1347,40 +1414,41 @@
     <string name="subtype_locale_bn_BD">البنغالية (بنغلاديش)</string>
     <string name="subtype_locale_bn_IN">البنغالية (الهند)</string>
     <string name="subtype_locale_bn_XA">البنغالية (اللاتينية)</string>
-    <string name="subtype_locale_bns_IN">البونديلية (الهند)</string>
+    <string name="subtype_locale_bns_IN">البونديلية</string>
     <string name="subtype_locale_bo_CN">التيبتية</string>
-    <string name="subtype_locale_bom_NG">بيروم (نيجيريا)</string>
+    <string name="subtype_locale_bom_NG">بيروم</string>
     <string name="subtype_locale_bpr_PH">كورونادال بلان</string>
-    <string name="subtype_locale_bpy_IN">بيشنوبريا (الهند)</string>
+    <string name="subtype_locale_bpy_IN">بيشنوبريا</string>
     <string name="subtype_locale_bqi_IR">البختيارية</string>
-    <string name="subtype_locale_br_FR">البريتونية (فرنسا)</string>
+    <string name="subtype_locale_br_FR">البريتانية</string>
     <string name="subtype_locale_brh_PK">البراهوية (اللاتينية)</string>
     <string name="subtype_locale_brh_XC">البراهوية (العربية)</string>
     <string name="subtype_locale_brx_XA">بودو (اللاتينية)</string>
     <string name="subtype_locale_brx_XD">بودو (الديفاناغارية)</string>
     <string name="subtype_locale_brx_XE">بودو (البنغالية)</string>
     <string name="subtype_locale_bs_XB">البوسنية (السيريلية)</string>
-    <string name="subtype_locale_bss_CM">أكوس (الكاميرون)</string>
+    <string name="subtype_locale_bss_CM">أكوس</string>
     <string name="subtype_locale_btm_XF">باتاك ماندايلينغ</string>
     <string name="subtype_locale_bto_PH">رينكونادا بيكول</string>
-    <string name="subtype_locale_bts_ID">السيمالونغونية (إندونيسيا)</string>
-    <string name="subtype_locale_btx_ID">كارو (إندونيسيا)</string>
-    <string name="subtype_locale_btz_ID">آلاس (إندونيسيا)</string>
+    <string name="subtype_locale_bts_ID">السيمالونغونية</string>
+    <string name="subtype_locale_btx_ID">الكارو</string>
+    <string name="subtype_locale_btz_ID">آلاس</string>
     <string name="subtype_locale_bud_TG">انتشام</string>
     <string name="subtype_locale_bug_ID">البوقسية (اللاتينية)</string>
     <string name="subtype_locale_bug_XF">البوقسية (لونتارا)</string>
-    <string name="subtype_locale_bum_CM">بولو بيني (الكاميرون)</string>
-    <string name="subtype_locale_bxk_KE">بوكوسو (كينيا)</string>
+    <string name="subtype_locale_bum_CM">بولو بيني</string>
+    <string name="subtype_locale_bxk_KE">البوكوسو</string>
     <string name="subtype_locale_bxm_MN">بوريات (منغوليا)</string>
     <string name="subtype_locale_bxr_RU">بوريات (روسيا)</string>
+    <string name="subtype_locale_bzc_MG">Southern Betsimisaraka Malagasy</string>
     <string name="subtype_locale_ca_XQ">البلنسية</string>
     <string name="subtype_locale_cbk_PH">تشاباكانو</string>
     <string name="subtype_locale_cdo_CN">مين الشرقية</string>
     <string name="subtype_locale_ce_RU">الشيشانية</string>
     <string name="subtype_locale_ceb">السيبيوانية</string>
-    <string name="subtype_locale_cgg_UG">كيغا (أوغندا)</string>
+    <string name="subtype_locale_cgg_UG">كيغا</string>
     <string name="subtype_locale_ch_GU">الچامورُّو (غوام)</string>
-    <string name="subtype_locale_cho_US">الشوكتو (الولايات المتحدة)</string>
+    <string name="subtype_locale_cho_US">الشوكتو</string>
     <string name="subtype_locale_chr">الشيروكية (حالة فردية)</string>
     <string name="subtype_locale_chr_XG">الشيروكية (حالة مزدوجة)</string>
     <string name="subtype_locale_cjk_AO">تشوكوي (أنغولا)</string>
@@ -1388,21 +1456,23 @@
     <string name="subtype_locale_cjm_VN">شام الشرقية (شام)</string>
     <string name="subtype_locale_cjm_XA">شام الشرقية (اللاتينية)</string>
     <string name="subtype_locale_cnh_MM">هاكا تشين</string>
+    <string name="subtype_locale_cnr">Montenegrin</string>
     <string name="subtype_locale_cop_EG">القبطية</string>
-    <string name="subtype_locale_cps_PH">كابيزنون (الفلبين)</string>
+    <string name="subtype_locale_cps_PH">كابيزنون</string>
     <string name="subtype_locale_cr_CA">الكري (المقاطع)</string>
     <string name="subtype_locale_cr_XA">الكري (اللاتينية)</string>
     <string name="subtype_locale_crh_XA">التتارية القرمية (اللاتينية)</string>
     <string name="subtype_locale_crh_XB">التتارية القرمية (السيريلية)</string>
     <string name="subtype_locale_crs_SC">الكريولية السيشيلية</string>
-    <string name="subtype_locale_csb_PL">كاشوبيان (بولندا)</string>
+    <string name="subtype_locale_csb_PL">الكاشوبية</string>
     <string name="subtype_locale_ctg_BD">شيتاجونيان</string>
     <string name="subtype_locale_cu_RU">السلافونية الكنسية</string>
-    <string name="subtype_locale_cv_RU">تشوفاش (روسيا)</string>
-    <string name="subtype_locale_dag_GH">داغباني (غانا)</string>
-    <string name="subtype_locale_dcc_IN">داخيني (الهند)</string>
+    <string name="subtype_locale_cv_RU">تشوفاش</string>
+    <string name="subtype_locale_cyo_PH">كيونون</string>
+    <string name="subtype_locale_dag_GH">داغباني</string>
+    <string name="subtype_locale_dcc_IN">داخيني</string>
     <string name="subtype_locale_dga_GH">داغاري</string>
-    <string name="subtype_locale_dhd_IN">الدوندارية (الهند)</string>
+    <string name="subtype_locale_dhd_IN">الدوندارية</string>
     <string name="subtype_locale_din">الدينكا</string>
     <string name="subtype_locale_diq_TR">الزازاكية</string>
     <string name="subtype_locale_dng_KG">دونغان</string>
@@ -1410,96 +1480,102 @@
     <string name="subtype_locale_doi_XA">الدوغرية (اللاتينية)</string>
     <string name="subtype_locale_doi_XC">الدوغرية (العربية)</string>
     <string name="subtype_locale_doi_XD">الدوغرية (الديفاناغارية)</string>
-    <string name="subtype_locale_drs_ET">جيديو (إثيوبيا)</string>
-    <string name="subtype_locale_drt_NL">درينتس (هولندا)</string>
-    <string name="subtype_locale_dsb_DE">الصوربية السفلى (ألمانيا)</string>
-    <string name="subtype_locale_dtp_MY">كادازاندوسون (ماليزيا)</string>
-    <string name="subtype_locale_dty_NP">دوتيالي (نيبال)</string>
+    <string name="subtype_locale_drs_ET">جيديو</string>
+    <string name="subtype_locale_drt_NL">درينتس</string>
+    <string name="subtype_locale_dsb_DE">الصُربية السفلى</string>
+    <string name="subtype_locale_dtp_MY">كادازاندوسون</string>
+    <string name="subtype_locale_dty_NP">دوتيالي</string>
     <string name="subtype_locale_dv_MV">الديفيهية</string>
     <string name="subtype_locale_dyu_XF">جولا</string>
     <string name="subtype_locale_efi_NG">الإفيك</string>
-    <string name="subtype_locale_egl_IT">الإميليانية (إيطاليا)</string>
+    <string name="subtype_locale_egl_IT">الإميليانو</string>
     <string name="subtype_locale_en_GB">الإنجليزية (المملكة المتحدة)</string>
     <string name="subtype_locale_en_US">الإنجليزية (الولايات المتحدة)</string>
     <string name="subtype_locale_es_US">الإسبانية (الولايات المتحدة)</string>
     <string name="subtype_locale_eu_ES">الباسك</string>
-    <string name="subtype_locale_ewo_CM">الإيوندو (الكاميرون)</string>
-    <string name="subtype_locale_ext_ES">إكستريمادوران (إسبانيا)</string>
+    <string name="subtype_locale_ewo_CM">الإيوندو</string>
+    <string name="subtype_locale_ext_ES">الإكستريمادورية</string>
+    <string name="subtype_locale_fa">الفارسية</string>
     <string name="subtype_locale_fa_AF">الدارية</string>
     <string name="subtype_locale_fan_GQ">فانج</string>
-    <string name="subtype_locale_fat_GH">الفانتسي (غانا)</string>
+    <string name="subtype_locale_fat_GH">الفانتسي</string>
     <string name="subtype_locale_ff">فولا (اللاتينية)</string>
     <string name="subtype_locale_ff_XF">فولا (أدلام)</string>
     <string name="subtype_locale_fil_XF">الفلبينية (بايباين)</string>
     <string name="subtype_locale_fon_BJ">الفون</string>
-    <string name="subtype_locale_fur_IT">فريوليان (إيطاليا)</string>
+    <string name="subtype_locale_fub_CM">Adamawa Fulfulde</string>
+    <string name="subtype_locale_fuc_SN">Pulaar</string>
+    <string name="subtype_locale_fur_IT">الفريولية</string>
     <string name="subtype_locale_gag_MD">الغاغاوزية (اللاتينية)</string>
     <string name="subtype_locale_gag_XB">الغاغاوزية (السيريلية)</string>
     <string name="subtype_locale_gax_ET">أورومو الجنوبية</string>
-    <string name="subtype_locale_gay_ID">الغايو (إندونيسيا)</string>
-    <string name="subtype_locale_gbm_IN">الغاروالية (الهند)</string>
+    <string name="subtype_locale_gay_ID">الغايو</string>
+    <string name="subtype_locale_gbm_IN">الغاروالية</string>
+    <string name="subtype_locale_gbo_LR">الغريبو الشمالية</string>
     <string name="subtype_locale_gcf_GP">الكريولية الغواديلوبية</string>
     <string name="subtype_locale_gcr_GF">غويان كريول</string>
-    <string name="subtype_locale_gd_GB">الاسكتلندية الغالية (المملكة المتحدة)</string>
-    <string name="subtype_locale_gdx_IN">الغودوارية (الهند)</string>
+    <string name="subtype_locale_gd_GB">الغيلية الاسكتلندية</string>
+    <string name="subtype_locale_gdx_IN">الغودوارية</string>
     <string name="subtype_locale_gez">الجِعِـزّية</string>
     <string name="subtype_locale_gil_KI">كيريباتي</string>
     <string name="subtype_locale_gju_PK">الغوجرية (باكستان)</string>
     <string name="subtype_locale_gju_XD">الغودجارية (الهند)</string>
-    <string name="subtype_locale_glk_IR">جيلاكي (إيران)</string>
+    <string name="subtype_locale_glk_IR">جيلاكي</string>
     <string name="subtype_locale_gno_IN">غوندي (الديفاناغارية)</string>
     <string name="subtype_locale_gno_XF">غوندي (التيلوغوية)</string>
-    <string name="subtype_locale_gog_TZ">جوجو (تنزانيا)</string>
-    <string name="subtype_locale_gor_ID">غورونتالو (إندونيسيا)</string>
-    <string name="subtype_locale_gos_NL">جرونينجز (هولندا)</string>
+    <string name="subtype_locale_gog_TZ">غوغو</string>
+    <string name="subtype_locale_gor_ID">غورونتالو</string>
+    <string name="subtype_locale_gos_NL">غرونينغز</string>
     <string name="subtype_locale_gpe_GH">الغانيّة المبسّطة</string>
     <string name="subtype_locale_grt_XA">جارو (اللاتينية)</string>
     <string name="subtype_locale_grt_XE">جارو (البنغالية)</string>
-    <string name="subtype_locale_gsw_CH">الألمانية السويسرية (سويسرا)</string>
+    <string name="subtype_locale_gsw_CH">الألمانية السويسرية</string>
     <string name="subtype_locale_gu_XA">الغوجاراتية (اللاتينية)</string>
     <string name="subtype_locale_guc_CO">الواييوية</string>
     <string name="subtype_locale_gux_BF">غورمانشي</string>
-    <string name="subtype_locale_guz_KE">غوساي (كينيا)</string>
+    <string name="subtype_locale_guz_KE">غوساي</string>
     <string name="subtype_locale_gv">المانكس</string>
+    <string name="subtype_locale_gvr_NP">غورونغ</string>
     <string name="subtype_locale_gwc_PK">كالام كوهيستاني</string>
     <string name="subtype_locale_gyn">غويانيز كريول</string>
     <string name="subtype_locale_ha_GH">الهاوسا (غانا)</string>
     <string name="subtype_locale_hac_IR">الغورانية</string>
     <string name="subtype_locale_hae_ET">أورومو الشرقية</string>
     <string name="subtype_locale_hak_CN">هاكا</string>
-    <string name="subtype_locale_haq_TZ">لغة الها (تنزانيا)</string>
+    <string name="subtype_locale_haq_TZ">لغة الها</string>
     <string name="subtype_locale_haw">لغة هاواي</string>
-    <string name="subtype_locale_hay_TZ">هايا (تنزانيا)</string>
+    <string name="subtype_locale_hay_TZ">هايا</string>
     <string name="subtype_locale_haz_AF">الآزارَجية</string>
-    <string name="subtype_locale_hdy_XA">هاديا (اللاتينية)</string>
-    <string name="subtype_locale_hea_CN">الهمو (الصين)</string>
-    <string name="subtype_locale_heh_TZ">الهيهي (تنزانيا)</string>
+    <string name="subtype_locale_hdy_XA">هاديا</string>
+    <string name="subtype_locale_hea_CN">الهمو</string>
+    <string name="subtype_locale_heh_TZ">الهيهي</string>
     <string name="subtype_locale_hi_XA">الهنجليزية</string>
-    <string name="subtype_locale_hif_XA">فيجي الهندية (فيجي)</string>
+    <string name="subtype_locale_hif_XA">هندية فيجي (اللاتينية)</string>
     <string name="subtype_locale_hif_XD">فيجي الهندية (ديفاناغاري)</string>
-    <string name="subtype_locale_hil_PH">هليغاينون (الفلبين)</string>
+    <string name="subtype_locale_hil_PH">الهيليغاينونية</string>
     <string name="subtype_locale_hlb_IN">هلبي (الديفاناغارية)</string>
     <string name="subtype_locale_hlb_XF">هالبي (أوديا)</string>
     <string name="subtype_locale_hmn">الهمونجية</string>
     <string name="subtype_locale_hnd_PK">هندكو الجنوبية</string>
-    <string name="subtype_locale_hne_IN">التشاتيسغارهية (الهند)</string>
+    <string name="subtype_locale_hne_IN">التشاتيسغارهية</string>
     <string name="subtype_locale_hni_CN">الهاني</string>
     <string name="subtype_locale_hno_PK">هندكو الشمالية</string>
     <string name="subtype_locale_ho_PG">الهيري موتو</string>
-    <string name="subtype_locale_hoj_IN">هاروتي (الهند)</string>
-    <string name="subtype_locale_hrx_BR">هانسريك الألمانية (البرازيل)</string>
-    <string name="subtype_locale_hsb_DE">السوربية العليا (ألمانيا)</string>
+    <string name="subtype_locale_hoj_IN">هاروتي</string>
+    <string name="subtype_locale_hrx_BR">ألمانية الهانسريك</string>
+    <string name="subtype_locale_hsb_DE">الصُربية العليا</string>
     <string name="subtype_locale_ht">الكريولية الهايتية</string>
     <string name="subtype_locale_hvn_ID">هاوو</string>
-    <string name="subtype_locale_hwc_US">الهاوايية المبسّطة (الولايات المتحدة)</string>
+    <string name="subtype_locale_hwc_US">الهاوايية المبسّطة</string>
     <string name="subtype_locale_iba_MY">الايبان</string>
-    <string name="subtype_locale_ibb_NG">الإيبيبيو (نيجيريا)</string>
-    <string name="subtype_locale_igb_NG">إيبيرا (نيجيريا)</string>
+    <string name="subtype_locale_ibb_NG">الإيبيبيو</string>
+    <string name="subtype_locale_igb_NG">الإيبيرا</string>
     <string name="subtype_locale_ii_CN">نوسو (يي)</string>
     <string name="subtype_locale_ii_XA">نوسو (اللاتينية)</string>
-    <string name="subtype_locale_ilo_PH">الإيلوكانو (الفلبين)</string>
+    <string name="subtype_locale_ilo_PH">الإيلوكانو</string>
     <string name="subtype_locale_inh_RU">الإنغوشية</string>
-    <string name="subtype_locale_iso_NG">الإيزوكو (نيجيريا)</string>
+    <string name="subtype_locale_iso_NG">الإيزوكو</string>
+    <string name="subtype_locale_itv_PH">إيتاويت</string>
     <string name="subtype_locale_iu_CA">الإنكتيتوتية (المقاطع)</string>
     <string name="subtype_locale_iu_XA">الإنكتيتوتية (اللاتينية)</string>
     <string name="subtype_locale_ium_CN">يو ميان</string>
@@ -1512,7 +1588,7 @@
     <string name="subtype_locale_jv_XA">البانيومازانية</string>
     <string name="subtype_locale_jv_XF">الجاوية (أكسارا جاوا)</string>
     <string name="subtype_locale_ka_XG">الجورجية (الخوتسورية)</string>
-    <string name="subtype_locale_kaa_UZ">القرقلباغية</string>
+    <string name="subtype_locale_kaa_UZ">القرقلباغيّة (اللاتينية)</string>
     <string name="subtype_locale_kaa_XB">القرقلباغية (السيريلية)</string>
     <string name="subtype_locale_kac_MM">جينكبو</string>
     <string name="subtype_locale_kam_KE">الكامبا</string>
@@ -1521,96 +1597,108 @@
     <string name="subtype_locale_kde_TZ">الماكوندي</string>
     <string name="subtype_locale_kea_CV">كريولية الرأس الأخضر</string>
     <string name="subtype_locale_kek_GT">الكيكتشي</string>
-    <string name="subtype_locale_kfq_IN">الكوركو (الهند)</string>
-    <string name="subtype_locale_kfr_IN">كوتشي (الهند)</string>
-    <string name="subtype_locale_kfy_IN">الكومَؤونية (الهند)</string>
+    <string name="subtype_locale_kfq_IN">الكوركو</string>
+    <string name="subtype_locale_kfr_IN">كوتشي</string>
+    <string name="subtype_locale_kfy_IN">الكومَؤونية</string>
     <string name="subtype_locale_kg_AO">كونغو</string>
-    <string name="subtype_locale_kge_ID">كومرينغ (إندونيسيا)</string>
+    <string name="subtype_locale_kge_ID">كومرينغ</string>
     <string name="subtype_locale_kha_IN">الخاسية</string>
     <string name="subtype_locale_khb_CN">تاي ليو (تاي ليو الجديدة)</string>
     <string name="subtype_locale_khw">كهووار</string>
     <string name="subtype_locale_ki_KE">الكيكويو</string>
-    <string name="subtype_locale_kiu_TR">الكرمانجية (تركيا)</string>
+    <string name="subtype_locale_kiu_TR">الكرمانجية</string>
     <string name="subtype_locale_kj">كوانياما</string>
     <string name="subtype_locale_kl">الكالاليسوت</string>
-    <string name="subtype_locale_kmb_AO">الكيمبوندو (أنغولا)</string>
+    <string name="subtype_locale_kmb_AO">الكيمبوندو</string>
     <string name="subtype_locale_kmz_XA">الخراساني التركي (لاتيني)</string>
     <string name="subtype_locale_kmz_XC">الخراسانية التركية (العربية)</string>
     <string name="subtype_locale_kn_XA">الكنّادية (اللاتينية)</string>
-    <string name="subtype_locale_knn_IN">ماهاراشترايانين كونكانية (الهند)</string>
-    <string name="subtype_locale_koi_RU">كومي بيرمياك (روسيا)</string>
+    <string name="subtype_locale_kne_PH">كانكاناي</string>
+    <string name="subtype_locale_knn_IN">الكونكانية الماهاراشترية</string>
+    <string name="subtype_locale_koi_RU">كومي بيرمياك</string>
     <string name="subtype_locale_kok_XA">الكونكانية (اللاتينية)</string>
     <string name="subtype_locale_kok_XD">الكونكانية (الديفاناغارية)</string>
     <string name="subtype_locale_kok_XF">الكونكانية (الكنادية)</string>
     <string name="subtype_locale_koo_UG">كونزو</string>
-    <string name="subtype_locale_kpv_RU">كومي زيريان (روسيا)</string>
+    <string name="subtype_locale_kpv_RU">كومي زيريان</string>
     <string name="subtype_locale_kr_NG">الكانورية</string>
     <string name="subtype_locale_krc_RU">القراشاي بلقار</string>
-    <string name="subtype_locale_kri_SL">الكريو (سيراليون)</string>
-    <string name="subtype_locale_krj_PH">كاراي إيه (الفلبين)</string>
+    <string name="subtype_locale_kri_SL">كريو</string>
+    <string name="subtype_locale_krj_PH">كاراي إيه</string>
     <string name="subtype_locale_krl_RU">الكاريلية</string>
     <string name="subtype_locale_kru_IN">كوروخ</string>
     <string name="subtype_locale_ks_XA">الكشميرية (اللاتينية)</string>
     <string name="subtype_locale_ks_XC">الكشميرية (العربية)</string>
     <string name="subtype_locale_ks_XD">الكشميرية (الديفاناغارية)</string>
-    <string name="subtype_locale_ksh_DE">كولش (ألمانيا)</string>
+    <string name="subtype_locale_ksh_DE">كولش</string>
     <string name="subtype_locale_ksw_MM">سغاو كارين</string>
-    <string name="subtype_locale_ktb_XA">كامباتا</string>
+    <string name="subtype_locale_ktb_XA">الكامباتا (اللاتينية)</string>
+    <string name="subtype_locale_ktb_XF">كامباتا (الجعزية)</string>
     <string name="subtype_locale_ktu_CD">كيكونغو-كيتوبا</string>
     <string name="subtype_locale_kum_RU">الكُميكية</string>
-    <string name="subtype_locale_kv_RU">كومي (روسيا)</string>
-    <string name="subtype_locale_kw_GB">الكورنية (المملكة المتحدة)</string>
+    <string name="subtype_locale_kv_RU">كومي</string>
+    <string name="subtype_locale_kvx_PK">باركري كولي</string>
+    <string name="subtype_locale_kw_GB">الكورنية</string>
     <string name="subtype_locale_kxm_TH">خميرية سورين</string>
+    <string name="subtype_locale_kxu_IN">كوي</string>
     <string name="subtype_locale_kyu_MM">كايا الغربية (كايا لي)</string>
     <string name="subtype_locale_lad_BA">اللادينو</string>
     <string name="subtype_locale_lad_IL">لادينو (إسرائيل)</string>
     <string name="subtype_locale_laj_UG">لانغو (أوغندا)</string>
+    <string name="subtype_locale_las_TG">Lama</string>
     <string name="subtype_locale_lbe_RU">اللاكية</string>
     <string name="subtype_locale_led_CD">ليندو</string>
+    <string name="subtype_locale_lep_IN">الليبتشا</string>
     <string name="subtype_locale_lew_ID">ليدو كايلي</string>
     <string name="subtype_locale_lez_AZ">ليزجيان (أذربيجان)</string>
     <string name="subtype_locale_lez_RU">ليزجيان (روسيا)</string>
-    <string name="subtype_locale_lg_UG">لوغاندا (أوغندا)</string>
+    <string name="subtype_locale_lg_UG">اللوغندية</string>
     <string name="subtype_locale_lgg_UG">اللوغبارا</string>
-    <string name="subtype_locale_li_NL">الليمبورغية (هولندا)</string>
-    <string name="subtype_locale_lif_XD">الليمبو</string>
-    <string name="subtype_locale_lij_IT">ليغوريان (إيطاليا)</string>
+    <string name="subtype_locale_li_NL">الليمبورغية</string>
+    <string name="subtype_locale_lif_XD">الليمبو (الديفانغارية)</string>
+    <string name="subtype_locale_lif_XF">الليمبو</string>
+    <string name="subtype_locale_lij_IT">الليغورية</string>
     <string name="subtype_locale_lis_XF">الليسوية</string>
-    <string name="subtype_locale_liv_LV">الليفونية (لاتفيا)</string>
-    <string name="subtype_locale_ljp_ID">لامبونغ آبي (إندونيسيا)</string>
+    <string name="subtype_locale_liv_LV">الليفونية</string>
+    <string name="subtype_locale_ljp_ID">لامبونغ آبي</string>
     <string name="subtype_locale_lki_IR">لاكي</string>
     <string name="subtype_locale_lkt_US">لاكوتا</string>
     <string name="subtype_locale_lmn_XD">اللامبادية (الديفنغارية)</string>
     <string name="subtype_locale_lmn_XF">اللامبادية (الكنادية)</string>
     <string name="subtype_locale_lmn_XG">اللامبادية (التيلوغوية)</string>
     <string name="subtype_locale_lmo_IT">اللومباردية</string>
-    <string name="subtype_locale_lon_MW">إلهوموي (مالاوي)</string>
-    <string name="subtype_locale_lrc_IR">اللورية الشمالية (إيران)</string>
+    <string name="subtype_locale_lon_MW">إلهوموي</string>
+    <string name="subtype_locale_lrc_IR">اللورية الشمالية</string>
+    <string name="subtype_locale_lrl_IR">العجمية</string>
     <string name="subtype_locale_ltg_LV">لاتغاليان (لاتفيا)</string>
-    <string name="subtype_locale_lua_CD">لوبا كاساي (جمهورية الكونغو الديموقراطية)</string>
+    <string name="subtype_locale_lua_CD">لوبا كاساي</string>
     <string name="subtype_locale_luo_KE">ليو</string>
     <string name="subtype_locale_lus_IN">ميزو</string>
-    <string name="subtype_locale_luz_IR">اللورية الجنوبية (إيران)</string>
-    <string name="subtype_locale_mad_ID">المادورية (إندونيسيا)</string>
-    <string name="subtype_locale_mag_IN">ماجادهي (الهند)</string>
+    <string name="subtype_locale_luz_IR">اللورية الجنوبية</string>
+    <string name="subtype_locale_mad_ID">المادورية</string>
+    <string name="subtype_locale_mag_IN">الماغاهية</string>
     <string name="subtype_locale_mai">المايثلية</string>
     <string name="subtype_locale_mai_XA">المايثيلية (اللاتينية)</string>
-    <string name="subtype_locale_mak_ID">الماكاسارية (إندونيسيا)</string>
-    <string name="subtype_locale_mas_KE">الماساي (كينيا)</string>
-    <string name="subtype_locale_max_ID">شمال مولوكان مالاي (إندونيسيا)</string>
-    <string name="subtype_locale_mdf_RU">لغة الموكشا (روسيا)</string>
-    <string name="subtype_locale_mdh_PH">ماجوينداناو (الفلبين)</string>
-    <string name="subtype_locale_mdr_ID">ماندار (إندونيسيا)</string>
+    <string name="subtype_locale_mak_ID">الماكاسارية</string>
+    <string name="subtype_locale_mas_KE">الماساي</string>
+    <string name="subtype_locale_max_ID">ملايوية مولوكان الشمالية</string>
+    <string name="subtype_locale_mdf_RU">الموكشا</string>
+    <string name="subtype_locale_mdh_PH">ماغينداناو</string>
+    <string name="subtype_locale_mdr_ID">ماندار</string>
+    <string name="subtype_locale_mel_MY">ميلانو</string>
     <string name="subtype_locale_men_SL">المندية (سيراليون)</string>
     <string name="subtype_locale_meo_MY">الماليزية القداحية</string>
     <string name="subtype_locale_mer_KE">ميرو (كينيا)</string>
     <string name="subtype_locale_mfa_TH">الملايوية الكيلانتية البطاوية (العربية)</string>
-    <string name="subtype_locale_mfb_ID">ملايوية بانغكا (إندونيسيا)</string>
+    <string name="subtype_locale_mfb_ID">ملايوية بانغكا</string>
+    <string name="subtype_locale_mfp_ID">ملايوية ماکاسار</string>
+    <string name="subtype_locale_mfq_TG">موبا</string>
     <string name="subtype_locale_mhr_RU">ميدو ماري</string>
-    <string name="subtype_locale_mhy_ID">مآنيان (إندونيسيا)</string>
-    <string name="subtype_locale_min_ID">المينانغكاباو (إندونيسيا)</string>
-    <string name="subtype_locale_mjl_IN">مانديالي (الهند)</string>
+    <string name="subtype_locale_mhy_ID">المعينية</string>
+    <string name="subtype_locale_min_ID">المينانغكاباو</string>
+    <string name="subtype_locale_mjl_IN">مانديالي</string>
     <string name="subtype_locale_ml_XA">الملايلامية (اللاتينية)</string>
+    <string name="subtype_locale_mnb_ID">مونا</string>
     <string name="subtype_locale_mni_XA">المانيبورية (اللاتينية)</string>
     <string name="subtype_locale_mni_XE">المانيبورية (البنغالية)</string>
     <string name="subtype_locale_mni_XF">المانيبورية (مايتاي)</string>
@@ -1618,57 +1706,61 @@
     <string name="subtype_locale_mnp_CN">مين الشمالية</string>
     <string name="subtype_locale_mos_BF">الموسية</string>
     <string name="subtype_locale_mqj_ID">ماماسا</string>
-    <string name="subtype_locale_mqy_ID">المانغاراي (إندونيسيا)</string>
+    <string name="subtype_locale_mqy_ID">المانغاراي</string>
     <string name="subtype_locale_mr_XA">الماراثية (اللاتينية)</string>
     <string name="subtype_locale_mrj_RU">لوحة مفاتيح بلغة هيل ماري</string>
-    <string name="subtype_locale_mrw_PH">ماراناو (الفلبين)</string>
+    <string name="subtype_locale_mrw_PH">ماراناو</string>
     <string name="subtype_locale_ms_BN">الملايو (اللاتينية) (بروناي)</string>
     <string name="subtype_locale_ms_MY">الماليزية (اللاتينية) (ماليزيا)</string>
     <string name="subtype_locale_ms_SG">الملايوية (اللاتينية) (سنغافورة)</string>
     <string name="subtype_locale_ms_XC">الماليزية (العربية) (ماليزيا)</string>
     <string name="subtype_locale_ms_XF">الماليزية (العربية) (بروناي)</string>
     <string name="subtype_locale_msi_MY">الماليزية الصباحية</string>
-    <string name="subtype_locale_mtq_VN">ميونغ (فيتنام)</string>
-    <string name="subtype_locale_mtr_IN">الميوارية (الهند)</string>
+    <string name="subtype_locale_mtq_VN">ميونغ</string>
+    <string name="subtype_locale_mtr_IN">الميوارية</string>
     <string name="subtype_locale_mua_TD">موندانغ</string>
-    <string name="subtype_locale_mui_ID">الموسية (إندونيسيا)</string>
-    <string name="subtype_locale_mup_IN">مالفي (الهند)</string>
+    <string name="subtype_locale_mui_ID">الموسية</string>
+    <string name="subtype_locale_mul_XI">الأبجدية الصوتية الدولية</string>
+    <string name="subtype_locale_mup_IN">مالفي</string>
     <string name="subtype_locale_mve_PK">مارواري (باكستان)</string>
+    <string name="subtype_locale_mvp_ID">الدوري</string>
+    <string name="subtype_locale_mvy_PK">الكوهيستانية الهندوسية</string>
     <string name="subtype_locale_mww_CN">همونغ (الصين)</string>
-    <string name="subtype_locale_myv_RU">الإرزية (روسيا)</string>
-    <string name="subtype_locale_myx_UG">ماسابا (أوغندا)</string>
-    <string name="subtype_locale_mzn_IR">المازندرانیة (إيران)</string>
+    <string name="subtype_locale_myv_RU">الإرزية</string>
+    <string name="subtype_locale_myx_UG">الماسابا</string>
+    <string name="subtype_locale_mzn_IR">المازندرانیة</string>
     <string name="subtype_locale_na_NR">الناوروية</string>
     <string name="subtype_locale_nah">الناواتل</string>
     <string name="subtype_locale_nan_XA">مين الجنوبية</string>
-    <string name="subtype_locale_nap_IT">النابولية (إيطاليا)</string>
+    <string name="subtype_locale_nap_IT">النابولية</string>
     <string name="subtype_locale_ndc_ZW">نداو</string>
     <string name="subtype_locale_nde_ZW">انديبيلي الشمالية</string>
     <string name="subtype_locale_nds_DE">لو ساكسون</string>
     <string name="subtype_locale_ne_XA">النيبالية (اللاتينية)</string>
-    <string name="subtype_locale_new_NP">النيواري (نيبال)</string>
+    <string name="subtype_locale_new_NP">النيوارية</string>
     <string name="subtype_locale_ng_NA">الندونغا</string>
-    <string name="subtype_locale_nga_CD">انغباكا اغبايا (جمهورية الكونغو الديموقراطية)</string>
-    <string name="subtype_locale_ngl_MZ">لومويه (موزمبيق)</string>
-    <string name="subtype_locale_nia_ID">نياس (إندونيسيا)</string>
-    <string name="subtype_locale_nij_ID">نغاجو (إندونيسيا)</string>
-    <string name="subtype_locale_niq_KE">الناندي (كينيا)</string>
+    <string name="subtype_locale_nga_CD">انغباكا اغبايا</string>
+    <string name="subtype_locale_ngl_MZ">لومويه</string>
+    <string name="subtype_locale_nia_ID">نياس</string>
+    <string name="subtype_locale_nij_ID">انغاجو</string>
+    <string name="subtype_locale_niq_KE">الناندي</string>
     <string name="subtype_locale_niu_NU">النيوي</string>
     <string name="subtype_locale_nn_NO">النرويجية الجديدة</string>
     <string name="subtype_locale_nnb_CD">الناندي</string>
     <string name="subtype_locale_nod_XF">التايلاندية الشمالية</string>
-    <string name="subtype_locale_noe_IN">نيمادي (الهند)</string>
+    <string name="subtype_locale_noe_IN">نيمادي</string>
     <string name="subtype_locale_nr_ZA">انديبيلي الجنوبية</string>
-    <string name="subtype_locale_nrf_XG">غالو (فرنسا)</string>
+    <string name="subtype_locale_nrf_XG">غالو</string>
     <string name="subtype_locale_nso">لغة سوتو الشمالية</string>
-    <string name="subtype_locale_nup_NG">نوبي (نيجيريا)</string>
+    <string name="subtype_locale_nup_NG">نوبي</string>
     <string name="subtype_locale_nv_US">النافاجو</string>
-    <string name="subtype_locale_nyf_KE">جرياما (كينيا)</string>
-    <string name="subtype_locale_nym_TZ">نيامويزي (تنزانيا)</string>
-    <string name="subtype_locale_nyn_UG">إنكوري (أوغندا)</string>
-    <string name="subtype_locale_nyo_UG">نيورو (أوغندا)</string>
+    <string name="subtype_locale_nyf_KE">جرياما</string>
+    <string name="subtype_locale_nym_TZ">نيامويزي</string>
+    <string name="subtype_locale_nyn_UG">انكوري</string>
+    <string name="subtype_locale_nyo_UG">النيورو</string>
     <string name="subtype_locale_nyy_TZ">نياكيوزا</string>
     <string name="subtype_locale_oj_XA">الأوجيبوية (اللاتينية)</string>
+    <string name="subtype_locale_oj_XF">الأوجيبوية (المقاطع)</string>
     <string name="subtype_locale_olo_RU">الليفي-كاريليانية</string>
     <string name="subtype_locale_or">الأودية</string>
     <string name="subtype_locale_or_XA">الأودية (اللاتينية)</string>
@@ -1677,102 +1769,109 @@
     <string name="subtype_locale_pa_PK">البنجابية (العربية)</string>
     <string name="subtype_locale_pa_XA">البنجابية (اللاتينية)</string>
     <string name="subtype_locale_pa_XF">البنجابية (الغورموخية)</string>
-    <string name="subtype_locale_pag_PH">البانغاسينانية (الفلبين)</string>
-    <string name="subtype_locale_pam_PH">الكابامبانجانية (الفلبين)</string>
+    <string name="subtype_locale_pag_PH">البانغاسينية</string>
+    <string name="subtype_locale_pam_PH">الكابامبانغانية</string>
     <string name="subtype_locale_pap">البابيامينتو</string>
     <string name="subtype_locale_pcc_CN">البويي</string>
     <string name="subtype_locale_pcd_BE">بيكار</string>
     <string name="subtype_locale_pcm_NG">بدجنية نيجيرية</string>
     <string name="subtype_locale_pdc_US">هولندية بنسلفانيا</string>
-    <string name="subtype_locale_pfl_DE">بالاتين الألمانية (ألمانيا)</string>
+    <string name="subtype_locale_pfl_DE">الألمانية البلطية</string>
     <string name="subtype_locale_phr_PK">باهاري بوثواري</string>
     <string name="subtype_locale_pko_KE">البوكوت</string>
+    <string name="subtype_locale_plk_PK">شينا الكوهيستانية</string>
+    <string name="subtype_locale_plt_MG">ملغاشية بلاتو</string>
     <string name="subtype_locale_pmf_ID">بامونا</string>
-    <string name="subtype_locale_pms_IT">البييمونتية (إيطاليا)</string>
-    <string name="subtype_locale_pmy_ID">الملايوية البابوية (إندونيسيا)</string>
-    <string name="subtype_locale_pnt_GR">اليونانية البنطية (اليونان)</string>
+    <string name="subtype_locale_pms_IT">البيدمونتية</string>
+    <string name="subtype_locale_pmy_ID">الملايوية البابوية</string>
+    <string name="subtype_locale_pnt_GR">اليونانية البنطية</string>
     <string name="subtype_locale_pov_GW">اللغة الكريولية بغينيا بيساو</string>
-    <string name="subtype_locale_pse_ID">الماليزية الوسطى (إندونيسيا)</string>
+    <string name="subtype_locale_prk_MM">باراوك وا</string>
+    <string name="subtype_locale_pse_ID">الملايوية المركزية</string>
     <string name="subtype_locale_qu_PE">الكويتشوا</string>
     <string name="subtype_locale_quc">"K'iche'"</string>
     <string name="subtype_locale_qug_EC">كيتشوا هضبة شيمبورازو</string>
     <string name="subtype_locale_quh_BO">كيتشوا جنوب بوليفيا</string>
     <string name="subtype_locale_quy_PE">أياكوتشو كويتشوا</string>
     <string name="subtype_locale_quz_PE">كوسكو الكويتشوا</string>
-    <string name="subtype_locale_qxq_IR">القاشقاي (إيران)</string>
+    <string name="subtype_locale_qxq_IR">قاشقاي</string>
     <string name="subtype_locale_rcf_RE">كريولية جزيرة ريونيون</string>
     <string name="subtype_locale_rej_XF">الريجانغ</string>
-    <string name="subtype_locale_rim_TZ">نياتورو (تنزانيا)</string>
+    <string name="subtype_locale_rim_TZ">نياتورو</string>
     <string name="subtype_locale_rkt_IN">الرانغبورية (الديفانغارية)</string>
     <string name="subtype_locale_rkt_XE">الرانغبورية (البنغالية)</string>
     <string name="subtype_locale_rmn_BG">الرومانية البلقانية (بلغاريا)</string>
     <string name="subtype_locale_rmn_MK">الرومانية البلقانية (مقدونيا)</string>
     <string name="subtype_locale_rmy_AL">فلاكس روماني</string>
     <string name="subtype_locale_rmy_RO">فلاكس روماني (رومانيا)</string>
-    <string name="subtype_locale_rn_BI">الروندية (بوروندي)</string>
+    <string name="subtype_locale_rn_BI">الروندية</string>
     <string name="subtype_locale_rue_UA">الروسينية</string>
-    <string name="subtype_locale_rwr_IN">الماروارية (الهند)</string>
+    <string name="subtype_locale_rwr_IN">الماروارية</string>
     <string name="subtype_locale_sa_XA">السنسكريتية (اللاتينية)</string>
     <string name="subtype_locale_sah_RU">الساخا</string>
-    <string name="subtype_locale_sas_ID">الساساك (إندونيسيا)</string>
+    <string name="subtype_locale_sas_ID">الساساك</string>
     <string name="subtype_locale_sat_XA">السنتالية (اللاتينية)</string>
     <string name="subtype_locale_sat_XD">السنتالية (الديفاناغارية)</string>
     <string name="subtype_locale_sat_XE">السنتالية (البنغالية)</string>
     <string name="subtype_locale_sat_XF">السنتالية (أول تشيكي)</string>
     <string name="subtype_locale_saz_IN">سوراشترا</string>
-    <string name="subtype_locale_sc_IT">السردانية (إيطاليا)</string>
+    <string name="subtype_locale_sba_TD">نغامباي</string>
+    <string name="subtype_locale_sc_IT">السردينية</string>
     <string name="subtype_locale_sck_IN">السادرية</string>
     <string name="subtype_locale_scl_PK">الشينا (باكستان)</string>
-    <string name="subtype_locale_scn_IT">الصقلية (إيطاليا)</string>
-    <string name="subtype_locale_sco_GB">الاسكتلندية (المملكة المتحدة)</string>
+    <string name="subtype_locale_scn_IT">الصقلية</string>
+    <string name="subtype_locale_sco_GB">الاسكتلندية</string>
     <string name="subtype_locale_sd_XA">السندية (اللاتينية)</string>
     <string name="subtype_locale_sd_XC">السندية (العربية)</string>
     <string name="subtype_locale_sd_XD">السندية (الديفاناغارية)</string>
-    <string name="subtype_locale_sdc_IT">ساساريس (إيطاليا)</string>
+    <string name="subtype_locale_sda_ID">توراجا-سأدان</string>
+    <string name="subtype_locale_sdc_IT">الساسارية</string>
     <string name="subtype_locale_sdh_IR">الكُردية الجنوبية</string>
     <string name="subtype_locale_se_NO">سامي الشمالية</string>
-    <string name="subtype_locale_sef_CI">سيبارا سينوفو (كوت ديفوار)</string>
+    <string name="subtype_locale_sef_CI">سيبارا سينوفو</string>
     <string name="subtype_locale_seh_MZ">سينا (موزمبيق)</string>
     <string name="subtype_locale_sg_CF">السانغو</string>
-    <string name="subtype_locale_sgc_KE">كيبسيجييس (كينيا)</string>
-    <string name="subtype_locale_sgs_LT">الساموغيتية (ليتوانيا)</string>
-    <string name="subtype_locale_sgw_ET">سِبات بِت غوراجي (إثيوبيا)</string>
-    <string name="subtype_locale_sjp_IN">سورجابوري (الهند)</string>
+    <string name="subtype_locale_sgc_KE">كيبسيجيس</string>
+    <string name="subtype_locale_sgs_LT">الساموغيتية</string>
+    <string name="subtype_locale_sgw_ET">سِبات بِت غوراجي</string>
+    <string name="subtype_locale_shn_MM">Shan</string>
+    <string name="subtype_locale_sjp_IN">سورجابوري</string>
     <string name="subtype_locale_skg_MG">ملغاشية ساكالافا</string>
     <string name="subtype_locale_skr_XR">السرائيكية (الأردية العربية)</string>
     <string name="subtype_locale_skr_XS">السرائيكية (السندية العربية)</string>
     <string name="subtype_locale_snk_ML">السونينكي</string>
-    <string name="subtype_locale_sop_CD">السونجي (جمهورية الكونغو الديمقراطية)</string>
+    <string name="subtype_locale_sop_CD">السونجي</string>
     <string name="subtype_locale_sou_TH">التايلندية الجنوبية</string>
+    <string name="subtype_locale_spp_ML">سوبيير</string>
     <string name="subtype_locale_sr">الصربية (السيريلية)</string>
     <string name="subtype_locale_sr_XA">لغة الجبل الأسود (اللاتينية)</string>
     <string name="subtype_locale_sr_XB">لغة الجبل الأسود (السيريلية)</string>
     <string name="subtype_locale_sr_ZZ">الصربية (اللاتينية)</string>
     <string name="subtype_locale_srn">لغة السرانان</string>
-    <string name="subtype_locale_srp">لغة الجبل الأسود</string>
-    <string name="subtype_locale_ss_SZ">السوازية</string>
+    <string name="subtype_locale_ss_SZ">السوازيلاندية (سوازيلاند)</string>
     <string name="subtype_locale_ss_ZA">السوازيلاندية (جنوب أفريقيا)</string>
     <string name="subtype_locale_st_LS">السيسوتو (ليسوتو)</string>
+    <string name="subtype_locale_stv_XA">"Silt'e"</string>
     <string name="subtype_locale_sty_RU">التتارية السيبيرية</string>
     <string name="subtype_locale_su">السندانية (اللاتينية)</string>
     <string name="subtype_locale_su_XC">السندانية (العربية)</string>
     <string name="subtype_locale_su_XF">السندانية (أكسارا سوندا)</string>
-    <string name="subtype_locale_swv_IN">شيخاواتي (الهند)</string>
-    <string name="subtype_locale_sxu_DE">ساكسونيا العليا (ألمانيا)</string>
+    <string name="subtype_locale_swv_IN">شيخاواتي</string>
+    <string name="subtype_locale_sxu_DE">الساكسونية العليا</string>
     <string name="subtype_locale_syc_IQ">السريانية الكلاسيكية</string>
     <string name="subtype_locale_syl_BD">السيلهيتية (البنغالية)</string>
     <string name="subtype_locale_syl_XA">السيلهيتية (اللاتينية)</string>
     <string name="subtype_locale_syl_XF">السيلهيتية (سيلوتي ناغري)</string>
     <string name="subtype_locale_szl_PL">السيليزية</string>
     <string name="subtype_locale_ta_XA">التاميلية (اللاتينية)</string>
-    <string name="subtype_locale_tab_RU">التباسرانية (روسيا)</string>
-    <string name="subtype_locale_taj_NP">التامانغ الشرقية (نيبال)</string>
-    <string name="subtype_locale_tcy_IN">تولو (الهند)</string>
+    <string name="subtype_locale_tab_RU">التباسرانية</string>
+    <string name="subtype_locale_taj_NP">التامانغ الشرقية</string>
+    <string name="subtype_locale_tcy_IN">تولو</string>
     <string name="subtype_locale_te_XA">التيلوغوية (اللاتينية)</string>
-    <string name="subtype_locale_tem_SL">التيمنية (سيراليون)</string>
+    <string name="subtype_locale_tem_SL">التيمنية</string>
     <string name="subtype_locale_teo_UG">التيسو</string>
-    <string name="subtype_locale_tet_TL">التيتومية (تيمور الشرقية)</string>
-    <string name="subtype_locale_tiv_NG">التيف (نيجيريا)</string>
+    <string name="subtype_locale_tet_TL">التيتوم</string>
+    <string name="subtype_locale_tiv_NG">التيف</string>
     <string name="subtype_locale_tkl_TK">التوكيلاوان</string>
     <string name="subtype_locale_tks_IR">تاتي</string>
     <string name="subtype_locale_tl">الفلبينية</string>
@@ -1781,22 +1880,25 @@
     <string name="subtype_locale_tly_IR">الطاليشية (إيران)</string>
     <string name="subtype_locale_tly_RU">الطاليشية (روسيا)</string>
     <string name="subtype_locale_tn_BW">التسوانا</string>
-    <string name="subtype_locale_to_TO">تونغا (تونغا)</string>
+    <string name="subtype_locale_to_TO">التونغية</string>
     <string name="subtype_locale_tpi">التوك بيسين</string>
     <string name="subtype_locale_trf_TT">الكريولية الترينيدادية الإنجليزية</string>
     <string name="subtype_locale_trp_IN">كوك بوروك (البنغالية)</string>
     <string name="subtype_locale_trp_XA">كوك بوروك (اللاتينية)</string>
     <string name="subtype_locale_trw">التُروالية</string>
     <string name="subtype_locale_tsg_PH">تايسوج</string>
-    <string name="subtype_locale_ttj_UG">تورو (أوغندا)</string>
-    <string name="subtype_locale_tts_TH">إيزان (تايلاند)</string>
+    <string name="subtype_locale_ttj_UG">تورو</string>
+    <string name="subtype_locale_tts_TH">إيزان</string>
     <string name="subtype_locale_tum_MW">التامبوكا</string>
-    <string name="subtype_locale_tuv_KE">توركانا (كينيا)</string>
-    <string name="subtype_locale_twd_NL">تويانتس (هولندا)</string>
-    <string name="subtype_locale_tyv_RU">التوفان (روسيا)</string>
-    <string name="subtype_locale_udm_RU">الأدمورتية (روسيا)</string>
-    <string name="subtype_locale_umb_AO">الأومبوندو (أنغولا)</string>
+    <string name="subtype_locale_tuv_KE">توركانا</string>
+    <string name="subtype_locale_twd_NL">تويانتس</string>
+    <string name="subtype_locale_tyv_RU">التوفان</string>
+    <string name="subtype_locale_tyz_VN">Tay</string>
+    <string name="subtype_locale_udm_RU">الأدمرت</string>
+    <string name="subtype_locale_umb_AO">الأومبوندو</string>
+    <string name="subtype_locale_unr_XA">منداري (اللاتينية)</string>
     <string name="subtype_locale_unr_XE">منداري (بنغالي)</string>
+    <string name="subtype_locale_unr_XF">منداري (الأودية)</string>
     <string name="subtype_locale_ur_XA">الأُردية (اللاتينية)</string>
     <string name="subtype_locale_uum_GE">أورُم</string>
     <string name="subtype_locale_uz">الأوزبكية (اللاتينية)</string>
@@ -1804,35 +1906,36 @@
     <string name="subtype_locale_vai_LR">فاي</string>
     <string name="subtype_locale_vas_IN">الفازافية (الديفانغارية)</string>
     <string name="subtype_locale_vas_XF">الفازافية (الغوجاراتية)</string>
-    <string name="subtype_locale_ve_ZA">لغة الفندا (جنوب أفريقيا)</string>
-    <string name="subtype_locale_vec_IT">الفينيسية (إيطاليا)</string>
-    <string name="subtype_locale_vel_NL">فيلواس (هولندا)</string>
-    <string name="subtype_locale_vep_RU">الفيبسية (روسيا)</string>
-    <string name="subtype_locale_vkt_ID">مالايوية كوتاي (إندونيسيا)</string>
-    <string name="subtype_locale_vls_BE">الفلمنكية الغربية (بلجيكا)</string>
-    <string name="subtype_locale_vmf_DE">الفرانكونية الشرقية (ألمانيا)</string>
+    <string name="subtype_locale_ve_ZA">الفندا</string>
+    <string name="subtype_locale_vec_IT">الفينيسية</string>
+    <string name="subtype_locale_vel_NL">فيلواس</string>
+    <string name="subtype_locale_vep_RU">الفيبس</string>
+    <string name="subtype_locale_vkt_ID">مالايوية كوتاي</string>
+    <string name="subtype_locale_vls_BE">الفلمنية الغربية</string>
+    <string name="subtype_locale_vmf_DE">الفرانكونية الشرقية</string>
     <string name="subtype_locale_vro_EE">فورو (إستونيا)</string>
-    <string name="subtype_locale_wa_BE">والون (بلجيكا)</string>
+    <string name="subtype_locale_wa_BE">لغة الوالون</string>
+    <string name="subtype_locale_wal_ET">الولاياتية</string>
     <string name="subtype_locale_war">الواراي</string>
-    <string name="subtype_locale_wbr_IN">واجدي (الهند)</string>
+    <string name="subtype_locale_wbr_IN">واغدي</string>
     <string name="subtype_locale_wes_CM">بدجنية كاميرونية</string>
     <string name="subtype_locale_wne_PK">وانتسي</string>
-    <string name="subtype_locale_wry_IN">الماروارية (الهند)</string>
-    <string name="subtype_locale_xal_RU">القلميقية الأويراتية (روسيا)</string>
+    <string name="subtype_locale_wry_IN">المروارية</string>
+    <string name="subtype_locale_xal_RU">القلميقية الأويراتية</string>
     <string name="subtype_locale_xmf_GE">Mingrelian</string>
-    <string name="subtype_locale_xmm_ID">ملايوية مانادو (إندونيسيا)</string>
-    <string name="subtype_locale_xnr_IN">الكانغرية (الهند)</string>
-    <string name="subtype_locale_xog_UG">سوغا (أوغندا)</string>
+    <string name="subtype_locale_xmm_ID">ملايوية مانادو</string>
+    <string name="subtype_locale_xnr_IN">الكانغرية</string>
+    <string name="subtype_locale_xog_UG">سوغا</string>
     <string name="subtype_locale_xon_GH">كونكومبا</string>
     <string name="subtype_locale_yaf_CD">ياكا</string>
     <string name="subtype_locale_yao_MW">ياو</string>
     <string name="subtype_locale_ydd_IL">اليديشية (إسرائيل)</string>
-    <string name="subtype_locale_ymm_SO">ماي ماي (الصومال)</string>
-    <string name="subtype_locale_yua_MX">المايا اليوكاتية (المكسيك)</string>
-    <string name="subtype_locale_za_CN">زهوانغ (الصين)</string>
-    <string name="subtype_locale_zea_NL">زيلاندك (هولندا)</string>
-    <string name="subtype_locale_zyb_CN">يونغبي زوانغ (الصين)</string>
-    <string name="subtype_locale_zyj_CN">يوجيانغ زوانغ (الصين)</string>
+    <string name="subtype_locale_ymm_SO">ماي ماي</string>
+    <string name="subtype_locale_yua_MX">المايا اليوكاتية</string>
+    <string name="subtype_locale_za_CN">الزهوانغ</string>
+    <string name="subtype_locale_zea_NL">الزيلندية</string>
+    <string name="subtype_locale_zyb_CN">يونغبي زوانغ</string>
+    <string name="subtype_locale_zyj_CN">يوجيانغ زوانغ</string>
     <string name="suggested_punctuations">"!؟؛،:\"(|))|('-/@_"</string>
     <string name="suggested_queries_available_content_desc">تتوفر طلبات البحث المقترحة</string>
     <string name="suggested_query_content_desc">%1$s: %2$s</string>
@@ -1990,44 +2093,49 @@
     <string name="translate_network_status_message">الشبكة غير متاحة</string>
     <string name="translate_query_editbox_hint">إدخال نص لترجمته</string>
     <string name="translate_query_editbox_label">لوحة الترجمة.</string>
-    <string name="translate_source_language_content_desc">‏اللغة المصدر الحالية للترجمة هي %s. حرر إصبعك لتغييرها في قائمة اللغات المنبثقة.</string>
+    <string name="translate_source_language_content_desc">اللغة المصدر الحالية للترجمة هي %s. حرر إصبعك لتغييرها في قائمة اللغات المنبثقة.</string>
     <string name="translate_source_language_drop_down_content_desc">انقر لتوسيع قائمة اللغة المصدر.</string>
     <string name="translate_swap_language_content_desc">تبديل اللغة المصدر واللغة المستهدفة للترجمة.</string>
-    <string name="translate_target_language_content_desc">‏اللغة المستهدفة الحالية للترجمة هي %s. حرر إصبعك لتغييرها في قائمة اللغات المنبثقة.</string>
+    <string name="translate_target_language_content_desc">اللغة المستهدفة الحالية للترجمة هي %s. حرّر إصبعك لتغييرها في قائمة اللغات المنبثقة.</string>
     <string name="translate_target_language_drop_down_content_desc">انقر لتوسيع قائمة اللغة المستهدفة.</string>
-    <string name="translate_term_dialog_text">‏سيتم إرسال النص الذي تكتبه في مربع الترجمة إلى Google للترجمة. <a href="https://support.google.com/translate">تعرّف على المزيد</a>.</string>
+    <string name="translate_term_dialog_text">‏سيتم إرسال النص الذي تكتبه في مربع الترجمة إلى Google للترجمة. <a href="https://support.google.com/translate">مزيد من المعلومات</a></string>
     <string name="translate_term_dialog_title">‏استخدام ترجمة Google</string>
     <string name="turn_off_single_character_candidate_key_content_desc">عرض كل الحروف المرشحة</string>
-    <string name="turn_on_single_character_candidate_key_content_desc">عرض الحروف المرشحة الفردية فقط</string>
-    <string name="turn_page">‏صفحة %s</string>
+    <string name="turn_on_single_character_candidate_key_content_desc">إظهار فقط الحروف المرشحة الفردية</string>
+    <string name="turn_page">الصفحة %s</string>
     <string name="tutorial_done">تم</string>
-    <string name="undo_delete_popup_button_label">تراجع</string>
-    <string name="undo_delete_popup_label">‏تم حذف ٪d من العناصر.</string>
+    <string name="undo_delete_popup_label">تم حذف %d من العناصر.</string>
     <string name="undo_delete_popup_label_for_single_item">تم حذف عنصر واحد.</string>
+    <string name="undo_popup_button_label">تراجع</string>
     <string name="universal_media_emoji_header_text">الرموز التعبيرية</string>
     <string name="universal_media_gifs_header_text">‏ملفات GIF</string>
     <string name="universal_media_keyboard_key_content_desc">لوحة مفاتيح الوسائط العامة</string>
-    <string name="universal_media_plural_suffix">" ‏ملفات gif"</string>
+    <string name="universal_media_plural_suffix">‏ ملفات gif</string>
     <string name="universal_media_search_hint">البحث في جميع الوسائط</string>
-    <string name="universal_media_singular_suffix">" ‏ملف gif"</string>
+    <string name="universal_media_singular_suffix">gif</string>
     <string name="universal_media_sticker_header_text">الملصقات</string>
     <string name="universal_media_sticker_more_results">المزيد</string>
     <string name="universal_media_sticker_more_results_content_desc">فتح المزيد من نتائج الملصقات</string>
     <string name="up_arrow_key_content_desc">سهم لأعلى</string>
     <string name="update_bug_message">تحديث تقرير خطأ حالي</string>
-    <string name="upper_case_content_desc">‏%1$s كبير</string>
+    <string name="upper_case_content_desc">%1$s كبير</string>
+    <string name="use_another_account_text">Use another account</string>
+    <string name="use_without_account_text">Use %s without an account</string>
     <string name="user_theme_name_format">المظهر رقم (%1$d) تم إنشاؤه في %2$s</string>
     <string name="variant_9key">‏نظام الكتابة 9key</string>
     <string name="variant_abkhaz">الأبخازية</string>
+    <string name="variant_abron">الأبرون</string>
     <string name="variant_adyghe">الأديغية</string>
     <string name="variant_ahirani">الأهيرانية</string>
     <string name="variant_akan">الأكانية</string>
+    <string name="variant_akoose">أكوس</string>
     <string name="variant_albanian">الألبانية</string>
     <string name="variant_amharic">الأمهرية</string>
     <string name="variant_arabic">العربية</string>
     <string name="variant_armenian_armenia_phonetic">الأرمينية</string>
     <string name="variant_assamese">الأساميزية</string>
     <string name="variant_assyrian">الآشورية</string>
+    <string name="variant_avar">آفار</string>
     <string name="variant_awadhi_dynamic">الأوادية</string>
     <string name="variant_aymara">الأيمارا</string>
     <string name="variant_azerbaijani">الأذربيجانية</string>
@@ -2035,10 +2143,13 @@
     <string name="variant_bagheli">الباغيلية</string>
     <string name="variant_bagri">البغرية</string>
     <string name="variant_bahamian_creole">باهامى</string>
+    <string name="variant_balinese">باليني</string>
     <string name="variant_balochi">البلوشية</string>
     <string name="variant_bambara">البامبارا</string>
     <string name="variant_baoule">الباولية</string>
+    <string name="variant_basaa">باساء</string>
     <string name="variant_bashkir">الباشكيرية</string>
+    <string name="variant_batak_mandailing">باتاك ماندايلينغ</string>
     <string name="variant_bavarian">النمساوية البافارية</string>
     <string name="variant_belarusian_belarus">البيلاروسية</string>
     <string name="variant_belarusian_belarus_with_apostrophe">"البيلاروسية (')"</string>
@@ -2060,6 +2171,7 @@
     <string name="variant_buryat_russia">بورات</string>
     <string name="variant_cangjie">‏نظام الكتابة Cangjie</string>
     <string name="variant_catalan">الكتالانية</string>
+    <string name="variant_cebaara_senoufo">سيبارا سينوفو</string>
     <string name="variant_chamorro">تشامورو</string>
     <string name="variant_chechen">الشيشانية</string>
     <string name="variant_cherokee">الشيروكية</string>
@@ -2069,11 +2181,14 @@
     <string name="variant_choctaw">الشوكتو</string>
     <string name="variant_church_slavonic">السلافونية الكنسية</string>
     <string name="variant_chuvash">التشوفاشي</string>
+    <string name="variant_coptic">القبطية</string>
     <string name="variant_cree">الكري</string>
+    <string name="variant_crimean_tatar">التتارية القرمية</string>
     <string name="variant_croatian">الكرواتية</string>
     <string name="variant_dagaare">داغاري</string>
     <string name="variant_dagbani">داغباني</string>
     <string name="variant_dakhini">داخيني</string>
+    <string name="variant_dangme">الدانغمي</string>
     <string name="variant_danish">الدانماركية</string>
     <string name="variant_dargwa">الدراغينية</string>
     <string name="variant_dari_afghanistan">الدارية</string>
@@ -2087,15 +2202,18 @@
     <string name="variant_dzongkha">الدزونغا</string>
     <string name="variant_east_franconian_german">الفرانكونية الشرقية</string>
     <string name="variant_eastern_min">مين الشرقية</string>
+    <string name="variant_efik">الإفيك</string>
     <string name="variant_emilian">الإميليانية</string>
     <string name="variant_erzya">الإرزية</string>
     <string name="variant_esperanto">الإسبرانتو</string>
     <string name="variant_estonian">الإستونية</string>
     <string name="variant_ewe">الإيوي</string>
+    <string name="variant_ewondo">الإيوندو</string>
     <string name="variant_fantse">الفانتسي</string>
     <string name="variant_faroese">الفياروسية</string>
     <string name="variant_fiji_hindi_devanagari_dynamic">فيجي الهندية</string>
     <string name="variant_finnish">الفنلندية</string>
+    <string name="variant_fon">الفون</string>
     <string name="variant_friulian">الفريولية</string>
     <string name="variant_fula">فولانية</string>
     <string name="variant_fula_adlam">أدلام</string>
@@ -2104,6 +2222,7 @@
     <string name="variant_garo">جارو</string>
     <string name="variant_geez_dynamic">الجِعِـزّية</string>
     <string name="variant_georgian_georgia">آلة كاتبة</string>
+    <string name="variant_georgian_khutsuri">الخوتسورية</string>
     <string name="variant_georgian_qwerty">الجورجية</string>
     <string name="variant_german">الألمانية</string>
     <string name="variant_gilaki">جيلاكي</string>
@@ -2135,9 +2254,11 @@
     <string name="variant_inuktitut_latin">الإنكتيتوتية</string>
     <string name="variant_isoko">الإيزوكو</string>
     <string name="variant_japanese_12keys_toggleflick">12 مفتاحًا</string>
+    <string name="variant_javanese">الجاوية</string>
     <string name="variant_jyutping">يُتبنغ</string>
     <string name="variant_kabardian">القبردينية</string>
     <string name="variant_kalaallisut">الكالاليسوت</string>
+    <string name="variant_kalam_kohistani">كالامي</string>
     <string name="variant_kalmyk_oirat">القلميقية الأويراتية</string>
     <string name="variant_kamba">الكامبا</string>
     <string name="variant_kangri_dynamic">الكانغرية</string>
@@ -2157,9 +2278,11 @@
     <string name="variant_kikuyu">الكيكويو</string>
     <string name="variant_kinyarwanda">الكينيارواندية</string>
     <string name="variant_kirmanjki">الكرمانجية</string>
+    <string name="variant_kok_borok">كوك بوروك</string>
     <string name="variant_kolsch">كولش</string>
     <string name="variant_komi">كومي</string>
     <string name="variant_komi_permyak">كومي بيرمياك</string>
+    <string name="variant_komi_zyrian">كومي زيريان</string>
     <string name="variant_konkani">الكونكانية</string>
     <string name="variant_konkomba">كونكومبا</string>
     <string name="variant_korean_10key">‏نظام الكتابة 10 key</string>
@@ -2175,6 +2298,7 @@
     <string name="variant_kutchi">كوتشي</string>
     <string name="variant_kyrgyz">القيرغيزية</string>
     <string name="variant_lak">اللاكية</string>
+    <string name="variant_laki">لاكي</string>
     <string name="variant_lakota">لاكوتا</string>
     <string name="variant_lambadi">اللامبادية</string>
     <string name="variant_lango">لانغو</string>
@@ -2207,6 +2331,7 @@
     <string name="variant_marwari">الماورية</string>
     <string name="variant_mazanderani">المازندرانیة</string>
     <string name="variant_meadow_mari">ميدو ماري</string>
+    <string name="variant_mende">المندية</string>
     <string name="variant_meru">ميرو</string>
     <string name="variant_merwari">الماروارية</string>
     <string name="variant_mewari">الميوارية</string>
@@ -2226,17 +2351,21 @@
     <string name="variant_nepali_nepal_romanized">بالأحرف الرومانية</string>
     <string name="variant_nepali_nepal_traditional">التقليدية</string>
     <string name="variant_newari">النيواري</string>
+    <string name="variant_nias">نياس</string>
     <string name="variant_nimadi">نيمادي</string>
     <string name="variant_northern_luri">اللورية الشمالية</string>
+    <string name="variant_northern_min">مين الشمالية</string>
     <string name="variant_northern_sami">سامي الشمالية</string>
     <string name="variant_northern_sotho">لغة سوتو الشمالية</string>
     <string name="variant_norwegian_bokmal">البوكمالية</string>
+    <string name="variant_nupe">نوبي</string>
     <string name="variant_nyakyusa">نياكيوزا</string>
     <string name="variant_nyanja">النيانجا</string>
     <string name="variant_nyaturu">نياتورو</string>
     <string name="variant_nynorsk">نينورسك</string>
     <string name="variant_odia">الأودية</string>
     <string name="variant_ossetian">الأوسيتيانية</string>
+    <string name="variant_pahari_pothwari">باهاري بوثواري</string>
     <string name="variant_palatine_german">بالاتين الألمانية</string>
     <string name="variant_pashto">الباشتو</string>
     <string name="variant_persian">الفارسية</string>
@@ -2261,8 +2390,10 @@
     <string name="variant_sango">السانغو</string>
     <string name="variant_sanskrit">السنسكريتية</string>
     <string name="variant_santali">السنتالية</string>
+    <string name="variant_saraiki">السرائيكية</string>
     <string name="variant_serbian">الصربية</string>
     <string name="variant_shekhawati">شيخاواتي</string>
+    <string name="variant_shina">الشينا</string>
     <string name="variant_siberian_tatar">التتارية السيبيرية</string>
     <string name="variant_sindhi">السندية</string>
     <string name="variant_sinhala">السنهالية</string>
@@ -2289,8 +2420,10 @@
     <string name="variant_tamazight_tifinagh_amazigh">‏الأمازيغية بدون Shift</string>
     <string name="variant_tamil">التاميلية</string>
     <string name="variant_tatar">التتارية</string>
+    <string name="variant_tati">تاتي</string>
     <string name="variant_tausug">تايسوج</string>
     <string name="variant_telugu_india">التيلوغوية</string>
+    <string name="variant_temne">التيمنية</string>
     <string name="variant_tetum">التيتوم</string>
     <string name="variant_thai">التايلاندية</string>
     <string name="variant_tibetan">التيبتية</string>

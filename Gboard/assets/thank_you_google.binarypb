@@ -1,0 +1,9 @@
+
+›VideoSyncWithAlphaSubgraphCAMERA:input_videoRESET:reset_signal"#VIDEO_ALPHA:synced_video_with_alpha*FILENAME:input_video_path*GPU_SHARED:gpu_shared
+YImageResizeGpuCalculatorinput_video"resized_camera*GPU_SHARED:gpu_shared:	š”íšÀ
+—AIMatterSegmentationCalculatorresized_camera"
+mask_video*GPU_SHARED:gpu_shared*ASSET_BASE:aimatter_models_dir:"ªù‘‡
+seg-video_170419_front.eaf
+PInvertRGBGpuCalculator
+mask_video"inverted_mask_video*GPU_SHARED:gpu_shared
+“MaskedOverlayCalculatorBASE:input_videoOVERLAY:synced_video_with_alpha OVERLAY_MASK:inverted_mask_video"output_video*GPU_SHARED:gpu_sharedRinput_videoRreset_signal

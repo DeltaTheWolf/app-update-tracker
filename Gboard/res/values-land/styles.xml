@@ -7,6 +7,11 @@
         <item name="android:layout_height">0.0dip</item>
         <item name="android:layout_weight">200.0</item>
     </style>
+    <style name="OptInFirstPageIcon">
+        <item name="android:layout_marginTop">@dimen/opt_in_first_page_icon_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/opt_in_first_page_icon_margin_bottom</item>
+        <item name="android:layout_marginEnd">@dimen/opt_in_first_page_positive_button_margin_end</item>
+    </style>
     <style name="PermissionNoticeContentText">
         <item name="android:textSize">@dimen/permission_notice_content_text_size</item>
         <item name="android:textColor">#8a000000</item>

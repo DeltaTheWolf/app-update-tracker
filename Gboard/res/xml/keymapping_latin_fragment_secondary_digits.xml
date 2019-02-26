@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
-    <if language="su-Arab">
+    <if language="aii                 |su-Arab">
         <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
             <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_arabic_indic_digit_one" />
             <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_arabic_indic_digit_two" />
@@ -14,7 +14,7 @@
             <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_arabic_indic_digit_zero" />
         </merge_key_mapping>
     </if>
-    <else_if language="bal-PK                      |bft-PK                      |brh-Arab                      |gju-PK                      |gwc-PK                      |hnd-PK                      |hno-PK                      |mve-PK                      |phr-PK                      |scl-PK                      |skr">
+    <else_if language="bal-PK                      |bcc-PK                      |bft-PK                      |bgn-PK                      |bgp-Arab                      |brh-Arab                      |gju-PK                      |gwc-PK                      |hnd-PK                      |hno-PK                      |khw                      |kvx-PK                      |mve-PK                      |mvy-PK                      |phr-PK                      |plk-PK                      |scl-PK                      |skr">
         <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
             <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_digit_one_with_extended_arabic_indic" />
             <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_digit_two_with_extended_arabic_indic" />
@@ -42,7 +42,7 @@
             <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_digit_zero_with_telugu" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="ctg-BD                      |sat-Beng                      |syl-Sylo                      |unr-Beng">
+    <else_if language="ctg-BD                      |grt-Beng                      |sat-Beng                      |syl-Sylo                      |unr-Beng">
         <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
             <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_bengali_digit_one" />
             <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_bengali_digit_two" />
@@ -56,7 +56,7 @@
             <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_bengali_digit_zero" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="ahr-IN                      |anp-IN                      |bhb                      |bjj-IN                      |dhd-IN                      |dty-NP                      |gdx-IN                      |gju-Deva                      |gno-IN                      |hlb-IN                      |kfq-IN                      |knn-IN                      |kru-IN                      |mup-IN                      |rkt-IN                      |sjp-IN                      |swv-IN                      |taj-NP                      |vas-IN                      |wbr-IN                      |wry-IN                      |xnr-IN">
+    <else_if language="ahr-IN                      |anp-IN                      |bhb-Deva                      |bjj-IN                      |bfz-IN                      |dhd-IN                      |dty-NP                      |gdx-IN                      |gju-Deva                      |gno-IN                      |gvr-NP                      |hlb-IN                      |kfq-IN                      |knn-IN                      |kru-IN                      |lif-Deva                      |mag                      |mup-IN                      |rkt-IN                      |sjp-IN                      |swv-IN                      |taj-NP                      |vas-IN                      |wbr-IN                      |wry-IN                      |xnr-IN">
         <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
             <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_devanagari_digit_one" />
             <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_devanagari_digit_two" />
@@ -70,7 +70,7 @@
             <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_devanagari_digit_zero" />
         </merge_key_mapping>
     </else_if>
-    <else_if language="haz-AF                      |lki-IR                      |ps                      |sdh-IR                      |tks-IR                      |wne-PK">
+    <else_if language="fa                      |haz-AF                      |lki-IR                      |lrl-IR                      |ps                      |prs                      |sdh-IR                      |tks-IR                      |wne-PK">
         <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
             <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_extended_arabic_indic_digit_one" />
             <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_extended_arabic_indic_digit_two" />
@@ -82,6 +82,20 @@
             <merge view_id="@id/key_pos_0_7" key_id="@id/softkey_fragment_superscript_extended_arabic_indic_digit_eight" />
             <merge view_id="@id/key_pos_0_8" key_id="@id/softkey_fragment_superscript_extended_arabic_indic_digit_nine" />
             <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_extended_arabic_indic_digit_zero" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="bhb-Gujr                      |vas-Gujr">
+        <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
+            <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_gujarati_digit_one" />
+            <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_gujarati_digit_two" />
+            <merge view_id="@id/key_pos_0_2" key_id="@id/softkey_fragment_superscript_gujarati_digit_three" />
+            <merge view_id="@id/key_pos_0_3" key_id="@id/softkey_fragment_superscript_gujarati_digit_four" />
+            <merge view_id="@id/key_pos_0_4" key_id="@id/softkey_fragment_superscript_gujarati_digit_five" />
+            <merge view_id="@id/key_pos_0_5" key_id="@id/softkey_fragment_superscript_gujarati_digit_six" />
+            <merge view_id="@id/key_pos_0_6" key_id="@id/softkey_fragment_superscript_gujarati_digit_seven" />
+            <merge view_id="@id/key_pos_0_7" key_id="@id/softkey_fragment_superscript_gujarati_digit_eight" />
+            <merge view_id="@id/key_pos_0_8" key_id="@id/softkey_fragment_superscript_gujarati_digit_nine" />
+            <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_gujarati_digit_zero" />
         </merge_key_mapping>
     </else_if>
     <else_if language="kok-Knda">
@@ -112,6 +126,62 @@
             <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_kayah_li_digit_zero" />
         </merge_key_mapping>
     </else_if>
+    <else_if language="lep-IN">
+        <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
+            <merge view_id="@id/key_pos_1_0" key_id="@id/softkey_fragment_superscript_lepcha_digit_one" />
+            <merge view_id="@id/key_pos_1_1" key_id="@id/softkey_fragment_superscript_lepcha_digit_two" />
+            <merge view_id="@id/key_pos_1_2" key_id="@id/softkey_fragment_superscript_lepcha_digit_three" />
+            <merge view_id="@id/key_pos_1_3" key_id="@id/softkey_fragment_superscript_lepcha_digit_four" />
+            <merge view_id="@id/key_pos_1_4" key_id="@id/softkey_fragment_superscript_lepcha_digit_five" />
+            <merge view_id="@id/key_pos_1_5" key_id="@id/softkey_fragment_superscript_lepcha_digit_six" />
+            <merge view_id="@id/key_pos_1_6" key_id="@id/softkey_fragment_superscript_lepcha_digit_seven" />
+            <merge view_id="@id/key_pos_1_7" key_id="@id/softkey_fragment_superscript_lepcha_digit_eight" />
+            <merge view_id="@id/key_pos_1_8" key_id="@id/softkey_fragment_superscript_lepcha_digit_nine" />
+            <merge view_id="@id/key_pos_1_9" key_id="@id/softkey_fragment_superscript_lepcha_digit_zero" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="ksw-MM">
+        <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
+            <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_myanmar_digit_one" />
+            <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_myanmar_digit_two" />
+            <merge view_id="@id/key_pos_0_2" key_id="@id/softkey_fragment_superscript_myanmar_digit_three" />
+            <merge view_id="@id/key_pos_0_3" key_id="@id/softkey_fragment_superscript_myanmar_digit_four" />
+            <merge view_id="@id/key_pos_0_4" key_id="@id/softkey_fragment_superscript_myanmar_digit_five" />
+            <merge view_id="@id/key_pos_0_5" key_id="@id/softkey_fragment_superscript_myanmar_digit_six" />
+            <merge view_id="@id/key_pos_0_6" key_id="@id/softkey_fragment_superscript_myanmar_digit_seven" />
+            <merge view_id="@id/key_pos_0_7" key_id="@id/softkey_fragment_superscript_myanmar_digit_eight" />
+            <merge view_id="@id/key_pos_0_8" key_id="@id/softkey_fragment_superscript_myanmar_digit_nine" />
+            <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_myanmar_digit_zero" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="shn-MM">
+        <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
+            <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_one" />
+            <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_two" />
+            <merge view_id="@id/key_pos_0_2" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_three" />
+            <merge view_id="@id/key_pos_0_3" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_four" />
+            <merge view_id="@id/key_pos_0_4" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_five" />
+            <merge view_id="@id/key_pos_0_5" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_six" />
+            <merge view_id="@id/key_pos_0_6" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_seven" />
+            <merge view_id="@id/key_pos_0_7" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_eight" />
+            <merge view_id="@id/key_pos_0_8" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_nine" />
+            <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_myanmar_shan_digit_zero" />
+        </merge_key_mapping>
+    </else_if>
+    <else_if language="khb-CN">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS" exclude_state="HAS_NUMBER_ROW">
+            <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_one" />
+            <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_two" />
+            <merge view_id="@id/key_pos_0_2" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_three" />
+            <merge view_id="@id/key_pos_0_3" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_four" />
+            <merge view_id="@id/key_pos_0_4" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_five" />
+            <merge view_id="@id/key_pos_0_5" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_six" />
+            <merge view_id="@id/key_pos_0_6" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_seven" />
+            <merge view_id="@id/key_pos_0_7" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_eight" />
+            <merge view_id="@id/key_pos_0_8" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_nine" />
+            <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_zero" />
+        </merge_key_mapping>
+    </else_if>
     <else_if language="hlb-Orya">
         <merge_key_mapping exclude_state="HAS_NUMBER_ROW">
             <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_oriya_digit_one" />
@@ -138,20 +208,6 @@
             <merge view_id="@id/key_pos_0_7" key_id="@id/softkey_fragment_superscript_tibetan_digit_eight" />
             <merge view_id="@id/key_pos_0_8" key_id="@id/softkey_fragment_superscript_tibetan_digit_nine" />
             <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_tibetan_digit_zero" />
-        </merge_key_mapping>
-    </else_if>
-    <else_if language="khb-CN">
-        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS" exclude_state="HAS_NUMBER_ROW">
-            <merge view_id="@id/key_pos_0_0" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_one" />
-            <merge view_id="@id/key_pos_0_1" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_two" />
-            <merge view_id="@id/key_pos_0_2" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_three" />
-            <merge view_id="@id/key_pos_0_3" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_four" />
-            <merge view_id="@id/key_pos_0_4" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_five" />
-            <merge view_id="@id/key_pos_0_5" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_six" />
-            <merge view_id="@id/key_pos_0_6" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_seven" />
-            <merge view_id="@id/key_pos_0_7" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_eight" />
-            <merge view_id="@id/key_pos_0_8" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_nine" />
-            <merge view_id="@id/key_pos_0_9" key_id="@id/softkey_fragment_superscript_new_tai_lue_digit_zero" />
         </merge_key_mapping>
     </else_if>
     <else>

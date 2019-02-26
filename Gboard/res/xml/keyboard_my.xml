@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
     <include href="@xml/keyboard_base" />
-    <keyboard id="@id/keyboard_my">
+    <keyboard id="@id/keyboard_my" popup="@attr/PopupBubbleAutoSizedLayout">
         <view layout="@layout/keyboard_latin_4x10_body" type="body" override="motion_event_handler">
             <if enable_joystick_delete="true">
                 <motion_event_handler class=".libs.framework.keyboard.handler.JoystickDeleteMotionEventHandler" />

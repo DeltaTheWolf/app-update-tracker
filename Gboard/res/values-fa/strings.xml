@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="a11y_gif_recording_complete">‏ضبط Gif کامل شد</string>
-    <string name="a11y_keep_suggestion_fmt">‏حفظ پیشنهاد «%s»</string>
+    <string name="a11y_keep_suggestion_fmt">حفظ پیشنهاد «%s»</string>
     <string name="a11y_keep_suggestion_picked">پیشنهاد حفظ شد.</string>
-    <string name="a11y_remove_suggestion_fmt">‏حذف پیشنهاد «%s»</string>
+    <string name="a11y_remove_suggestion_fmt">حذف پیشنهاد «%s»</string>
     <string name="a11y_remove_suggestion_picked">پیشنهاد حذف شد.</string>
     <string name="a11y_showing_camera_preview_content_desc">درحال نمایش پیش‌نمایش دوربین</string>
     <string name="abc_action_bar_up_description">پیمایش به بالا</string>
@@ -39,7 +39,7 @@
     <string name="add_clip_item_dialog_shown">نمایش کادر گفتگو برای افزودن مورد کلیپ.</string>
     <string name="add_clip_item_dialog_title">افزودن موردی جدید</string>
     <string name="add_item_dialog_no_text_input_toast">لطفاً قبل از ذخیره کردن، نوشتاری وارد کنید.</string>
-    <string name="add_language_group_preference_content_description">‏انواع زبان‌های %1$s: %2$d در دسترس است.</string>
+    <string name="add_language_group_preference_content_description">%1$s: انواع زبان‌های %2$d دردسترس است.</string>
     <string name="android_account_authenticating">در حال احراز هویت، لطفاً صبر کنید…</string>
     <string name="android_account_failed">احراز هویت انجام نشد. لطفاً دوباره امتحان کنید.</string>
     <string name="android_account_title">احراز هویت حساب</string>
@@ -110,6 +110,7 @@
     <string name="avatar_promo_text">برچسب‌ها متناسب با شما سفارشی‌سازی شدند</string>
     <string name="avatar_promo_title">چهره‌نمای کوچک شما</string>
     <string name="avatar_stickers_emoji_style_title">چهره‌نمای کوچک اموجی</string>
+    <string name="bad_card_type_unknown_error">خطای ناشناس</string>
     <string name="battery_saver_mode_on_error">حالت بهینه‌سازی باتری روشن است</string>
     <string name="bitmoji_battery_saver_error_message">‏لطفاً آن را خاموش کنید تا بتوانید در Gboard از Bitmoji استفاده کنید.</string>
     <string name="bitmoji_battery_saver_toast_message">‏بهینه‌سازی باتری فعال است، بنابراین عملکرد Bitmoji محدود شده است.</string>
@@ -126,7 +127,7 @@
     <string name="bug_report_dialog_existing_bug_id_message">لطفاً شناسه اشکال موجودی را که می‌خواهید به‌روزرسانی شود وارد کنید. (برای نمونه 109743611)</string>
     <string name="bug_report_dialog_report_to_buganizer_option_message">‏می‌خواهید این مورد را در Buganizer گزارش دهید؟ (با لغو انتخاب این گزینه، گزارش همچنان در سرور بارگذاری می‌شود.)</string>
     <string name="bug_report_dialog_span_selection_message">‏لطفاً بخش‌هایی را از نوشتار که نمی‌خواهید با Google هم‌رسانی شود لغو انتخاب کنید.</string>
-    <string name="bug_report_intro_dialog_message">‏این ابزار گزارش اشکال داخلی است که فقط برای کارمندان Google دردسترس است. آنچه تایپ می‌کنید و نحوه تایپ کردن آن را با تیم Gboard هم‌رسانی می‌کند. حفظ داده‌ها از <a href="https://support.google.com/analytics/answer/7667196?hl=en">خط‌مشی Google</a>" پیروی می‌کند و با پاکسازی مطابقت دارد. 
+    <string name="bug_report_intro_dialog_message">‏این ابزار گزارش اشکال داخلی است که فقط برای کارمندان Google دردسترس است. آنچه تایپ می‌کنید و نحوه تایپ کردن آن را با تیم Gboard هم‌رسانی می‌کند. حفظ داده‌ها از <a href="https://support.google.com/analytics/answer/7667196?hl=en">خط‌مشی Google</a>" پیروی می‌کند و با پاکسازی مطابقت دارد.
 از اینکه به بهبود Gboard کمک کردید سپاسگزاریم!"</string>
     <string name="bug_report_intro_message">‏این ابزاری داخلی برای بهبود کیفیت وروی نوشتار است. &lt;b>&lt;linkable>بیشتر بدانید.&lt;/linkable>&lt;/b></string>
     <string name="bug_report_notification_channel_name">گزارش اشکال</string>
@@ -224,16 +225,31 @@
     <string name="clipboard_edit_content_desc">باز کردن منوی ویرایش</string>
     <string name="clipboard_header_name">بریده‌دان</string>
     <string name="clipboard_header_select_label_default_hint">انتخاب موارد</string>
-    <string name="clipboard_header_select_label_selected_number_hint">‏%1$d انتخاب شد</string>
+    <string name="clipboard_header_select_label_selected_number_hint">%d مورد انتخاب شد</string>
     <string name="clipboard_inactive_empty_reason">غیرفعال شد چون بریده‌دان خالی است</string>
+    <string name="clipboard_inactive_opt_in_disabled">به‌دلیل غیرفعال شدن شرکت کردن، غیرفعال شد.</string>
+    <string name="clipboard_inactive_opt_in_first_page_is_shown">به‌دلیل نمایش کارت شرکت کردن در زیر، غیرفعال شد.</string>
+    <string name="clipboard_off_overlay_content">نوشتاری را که کپی کردید دیگر در اینجا ذخیره نمی‌شود. هرزمان بخواهید، می‌توانید با دکمه %s آن را خاموش کنید.</string>
+    <string name="clipboard_off_overlay_title">‏بریده‌دان Gboard خاموش است.</string>
+    <string name="clipboard_off_toggle_button_in_text_desc">toggle</string>
+    <string name="clipboard_opt_in_first_page_message">‏هر نوشتاری که کپی کنید، ۱ ساعت در بریده‌دان Gboard ذخیره می‌شود. برای ذخیره طولانی‌تر نوشتار، می‌توانید آن را پین هم بکنید.</string>
+    <string name="clipboard_opt_in_first_page_negative_button">نه متشکرم</string>
+    <string name="clipboard_opt_in_first_page_positive_button">روشن کردن بریده‌دان</string>
+    <string name="clipboard_opt_in_first_page_subhead">هرزمان می‌توانید این تنظیم را موقتاً متوقف کنید.</string>
+    <string name="clipboard_opt_in_first_page_title">‏بریده‌دان Gboard روشن شود؟</string>
+    <string name="clipboard_optin_disabled_content_desc">روشن کردن بریده‌دان.</string>
+    <string name="clipboard_optin_enabled_content_desc">خاموش کردن بریده‌دان</string>
     <string name="clipboard_pinned_separator">پین‌شده</string>
-    <string name="clipboard_tooltip_hint_click">برای جای‌گذاری کلیپی، روی آن ضربه بزنید.</string>
-    <string name="clipboard_tooltip_hint_long_click">برای پین کردن یا حذف کردن کلیپی، روی آن فشار طولانی دهید.</string>
-    <string name="clipboard_tooltip_text">‏نوشتار در Gboard کپی شد</string>
+    <string name="clipboard_tips_separator">نکته‌ها</string>
+    <string name="clipboard_tooltip_hint_edit">برای پین کردن، افزودن، یا حذف کلیپ‌ها، از نماد ویرایش استفاده کنید.</string>
+    <string name="clipboard_tooltip_hint_paste">برای جای‌گذاری کلیپ در کادر نوشتار، روی آن ضربه بزنید.</string>
+    <string name="clipboard_tooltip_hint_pin">برای پین کردن کلیپ، آن را لمس کنید و نگه دارید. کلیپ‌هایی که از پین برداشته می‌شوند، پس از ۱ ساعت حذف می‌شوند.</string>
+    <string name="clipboard_tooltip_hint_toggle">‏به بریده‌دان Gboard خوش آمدید. هر نوشتاری که کپی کنید در اینجا ذخیره می‌شود.</string>
+    <string name="clipboard_tooltip_text">‏ذخیره مواردی که برای بعد کپی می‌کنید بااستفاده از بریده‌دان Gboard. اکنون آن را روشن کنید.</string>
     <string name="clipboard_unpinned_recent_separator">اخیر</string>
     <string name="close_access_points_content_desc">بستن ویژگی‌ها</string>
     <string name="close_access_points_menu_content_desc">بستن منوی قابلیت‌ها</string>
-    <string name="close_activities_or_extensions">‏بستن ‎%s</string>
+    <string name="close_activities_or_extensions">بستن %s</string>
     <string name="close_makeagif_content_desc">خروج از حالت ضبط دوربین</string>
     <string name="close_popup_content_desc">جایگزین‌ها پذیرفته نشدند</string>
     <string name="close_text_editing">بستن ویرایش نوشتار</string>
@@ -258,7 +274,7 @@
     <string name="common_signin_button_text_long">‏ورود به سیستم با Google‎</string>
     <string name="confirmation_number_field_content_desc">فیلد وارد کردن شماره تأیید</string>
     <string name="content_description_no_results_found">نتیجه‌ای پیدا نشد.</string>
-    <string name="content_description_number_of_results_found">‏%d نتیجه پیدا شد.</string>
+    <string name="content_description_number_of_results_found">%d نتیجه پیدا شد.</string>
     <string name="contextual_rate_us_prompt_notice">‏از Gboard لذت می‌برید؟ به ما اطلاع دهید.</string>
     <string name="create_bug_message">ایجاد گزارش اشکال جدید</string>
     <string name="critical_error_dialog_file_system_text">‏Gboard نمی‌تواند به سیستم فایل دسترسی پیدا کند.</string>
@@ -328,7 +344,7 @@
     <string name="down_arrow_key_content_desc">پیکان پایین</string>
     <string name="downloadable_theme_index_locale_suffix">-fa</string>
     <string name="draw_an_emoji_here">برای جستجوی صورتک، اینجا طراحی کنید</string>
-    <string name="duration_milliseconds">‏%1$s میلی‌ثانیه</string>
+    <string name="duration_milliseconds">%1$s میلی‌ثانیه</string>
     <string name="edit_keyboard_desc">تغییر اندازه یا موقعیت صفحه‌کلید</string>
     <string name="ellipsis_key_content_desc">سه‌نقطه</string>
     <string name="emoji_button_content_desc">دکمه صورتک</string>
@@ -393,7 +409,7 @@
     <string name="english_qwerty_ime_label">صفحه‌کلید انگلیسی</string>
     <string name="enter_key_content_desc">Enter</string>
     <string name="equals_key_content_desc">مساوی</string>
-    <string name="error_card_announcement">"‏درحال نمایش کارت خطا برای '%s'."</string>
+    <string name="error_card_announcement">درحال نمایش کارت خطا برای «%s».</string>
     <string name="exclamation_key_content_desc">علامت تعجب</string>
     <string name="exit_editing_keyboard_content_desc">پایان تغییر اندازه و موقعیت صفحه‌کلید</string>
     <string name="exiting_floating_keyboard">درحال خارج شدن از صفحه‌کلید شناور</string>
@@ -408,8 +424,8 @@
     <string name="expand_keyboard_button_right_top_content_desc">تغییر اندازه صفحه‌کلید در گوشه بالا راست</string>
     <string name="expand_keyboard_content_desc">خروج از حالت یک‌دستی</string>
     <string name="favorites_prompt_message">شاید این‌ها را بپسندید. برچسب‌های جدید را به‌عنوان موارد دلخواه اضافه کنید تا این برچسب‌ها در اینجا نشان داده شوند.</string>
-    <string name="feature_card_asr_description">‏Gboard جدید به شما امکان می‌دهد با صدا به زبان خودتان تایپ کنید. کافی است روی نماد میکروفون ضربه بزنید و صحبت کنید.</string>
-    <string name="feature_card_asr_title">تایپ صدا را در زبان خودتان امتحان کنید</string>
+    <string name="feature_card_clipboard_description">اکنون می‌توانید چند بخش از نوشتار را در بریده‌دان خود کپی کنید تا بتوانید در فرصتی دیگر آن‌ها را جای‌گذاری کنید.</string>
+    <string name="feature_card_clipboard_title">کپی کردن و جای‌گذاری با بریده‌دان</string>
     <string name="feature_card_rate_us_description">‏در «فروشگاه Play» به ما رتبه بدهید یا با ارائه بازخورد بگویید چطور می‌توانیم بهتر باشیم.</string>
     <string name="feature_card_rate_us_title">‏کار با Gboard لذت‌بخش است؟</string>
     <string name="find_a_face_prompt">چهره‌ای را پیدا کنید</string>
@@ -419,11 +435,12 @@
     <string name="first_run_notification_text">پایان راه‌اندازی صفحه‌کلید</string>
     <string name="first_run_page_permissions_description">‏برای پیشنهادهای تایپ بهتر، لطفاً به &lt;b>%1$s&lt;/b> مجوزهای زیر را بدهید:</string>
     <string name="first_run_page_select_language">‏می‌توانید &lt;b>&lt;linkable>زبان‌های بیشتری&lt;/linkable>&lt;/b> تنظیم کنید</string>
-    <string name="first_run_page_user_metrics">‏ارسال آمار کاربرد ناشناس برای بهبود &lt;b>%s&lt;/b></string>
+    <string name="first_run_page_user_metrics_message">‏ارسال آمار کاربرد ناشناس برای بهبود &lt;b>%s&lt;/b></string>
     <string name="first_run_select_input_method_description">‏&lt;b>%s&lt;/b> را به‌عنوان روش ورودی پیش‌فرضتان تنظیم کنید</string>
     <string name="first_run_select_input_method_hint">انتخاب روش ورودی</string>
     <string name="first_run_set_permissions_hint">تنظیم مجوزها</string>
     <string name="first_run_setup_done_hint">تمام!</string>
+    <string name="first_run_sharing_description">این زبان‌هایی را که با شما هم‌رسانی شده است فعال کنید</string>
     <string name="flexing_emoticon_description_angry_flex">قدرت‌نمایی خشمگین</string>
     <string name="flexing_emoticon_description_disapproval_flexing_face">چهره درهم از سر نارضایی</string>
     <string name="flexing_emoticon_description_donger_flex">قدرت‌نمایی دانگر</string>
@@ -456,7 +473,7 @@
     <string name="gboard_add_more_stickers_content_desc">افزودن برچسب</string>
     <string name="gboard_bitmoji_search_content_desc">‏جستجوی برچسب‌های Bitmoji</string>
     <string name="gboard_cancel_query_content_desc">لغو کردن عبارت جستجوی فعلی</string>
-    <string name="gboard_client_network_error_message">"مشکلی رخ داد.
+    <string name="gboard_client_network_error_message">"‏مشکلی رخ داد.
 لطفاً کمی صبر کنید و دوباره امتحان کنید."</string>
     <string name="gboard_close_extension_and_back_to_letter_keyboard_desc">برگشتن به صفحه‌کلید حرفی</string>
     <string name="gboard_emoji_label">صورتک</string>
@@ -467,25 +484,35 @@
     <string name="gboard_gif_search_content_desc">‏جستجوی تصاویر GIF</string>
     <string name="gboard_gifs_label">‏فایل‌های GIF</string>
     <string name="gboard_insertion_arrow_content_desc">پیکان درج</string>
-    <string name="gboard_local_category_content_desc">‏نمایش %s</string>
+    <string name="gboard_link_receiving_continue_button_label">ادامه</string>
+    <string name="gboard_link_receiving_positive_button_label">تمام</string>
+    <string name="gboard_link_receiving_select_language_text">‏&lt;b>&lt;linkable>افزودن زبان‌های بیشتر&lt;/linkable>&lt;/b></string>
+    <string name="gboard_link_receiving_share">می‌خواهید با دیگران هم‌رسانی کنید؟</string>
+    <string name="gboard_link_receiving_title">‏فعال کردن زبان‌هایی که در Gboard با شما هم‌رسانی شده است:</string>
+    <string name="gboard_local_category_content_desc">نمایش %s</string>
     <string name="gboard_no_connection_button">امتحان مجدد</string>
     <string name="gboard_no_connection_message">به اینترنت متصل نیستید</string>
     <string name="gboard_no_gms_button">به‌روزرسانی</string>
     <string name="gboard_no_gms_header">‏خدمات Google Play</string>
     <string name="gboard_no_gms_subheader">‏جهت استفاده از جستجوی Google، خدمات Google Play را به‌روز کنید</string>
     <string name="gboard_recently_used_stickers_content_desc">برچسب‌های اخیراً استفاده‌شده</string>
-    <string name="gboard_remote_network_error_message">"مشکلی رخ داد.
+    <string name="gboard_remote_network_error_message">"‏مشکلی رخ داد.
 لطفاً کمی صبر کنید و دوباره امتحان کنید."</string>
-    <string name="gboard_search_category_content_desc">‏جستجوی %s</string>
+    <string name="gboard_search_category_content_desc">جستجوی %s</string>
     <string name="gboard_search_keyboard_label">جستجوی صفحه‌کلید</string>
+    <string name="gboard_sharing_description_source">به اشتراک گذاشتن این زبان‌ها، طوری‌که بتوانند به این زبان‌ها تایپ کنند:</string>
+    <string name="gboard_sharing_negative_button_label">لغو</string>
+    <string name="gboard_sharing_positive_button_label">اشتراک‌گذاری</string>
+    <string name="gboard_sharing_subject">Type in your language with Gboard</string>
+    <string name="gboard_sharing_title_source">‏اشتراک‌گذاری Gboard با دیگران</string>
     <string name="gboard_showing_bitmoji_no_context_content_desc">‏درحال نمایش Bitmoji</string>
-    <string name="gboard_showing_emojis_content_desc">‏نمایش صورتک %s</string>
-    <string name="gboard_showing_gifs_content_desc">‏نمایش تصاویرGIF‏ %s</string>
+    <string name="gboard_showing_emojis_content_desc">نمایش اموجی %s</string>
+    <string name="gboard_showing_gifs_content_desc">‏درحال نمایش فایل‌های GIF %s</string>
     <string name="gboard_showing_gifs_no_context_content_desc">‏درحال نمایش فایل‌های GIF</string>
     <string name="gboard_showing_my_gifs_content_desc">من</string>
-    <string name="gboard_showing_stickers_content_desc">‏درحال نمایش برچسب‌های %s</string>
+    <string name="gboard_showing_stickers_content_desc">درحال نمایش برچسب‌های %s</string>
     <string name="gboard_showing_stickers_no_context_content_desc">درحال نمایش برچسب‌ها</string>
-    <string name="gboard_showing_universal_media_content_desc">‏درحال نمایش رسانه %s</string>
+    <string name="gboard_showing_universal_media_content_desc">درحال نمایش رسانه %s</string>
     <string name="gboard_showing_universal_media_no_context_content_desc">درحال نمایش رسانه</string>
     <string name="gboard_sticker_image_content_desc">برچسب</string>
     <string name="gboard_sticker_pack_image_content_desc">بسته برچسب</string>
@@ -518,13 +545,14 @@
     <string name="gif_category_string_kittens">بچه گربه‌</string>
     <string name="gif_category_string_loser">بازنده</string>
     <string name="gif_category_string_make_a_gif">‏ایجاد GIF</string>
+    <string name="gif_category_string_make_a_gif_m2">‏ایجاد GIF</string>
     <string name="gif_category_string_mic_drop">انداختن میکروفون</string>
     <string name="gif_category_string_miss_you">دلتنگی</string>
     <string name="gif_category_string_my_gifs">‏فایل‌های GIF من</string>
     <string name="gif_category_string_nervous">عصبی</string>
     <string name="gif_category_string_no">خیر</string>
     <string name="gif_category_string_omg">آه خدای من</string>
-    <string name="gif_category_string_oops">وای متأسفم</string>
+    <string name="gif_category_string_oops">وای متأسفم</string>
     <string name="gif_category_string_party">مهمانی</string>
     <string name="gif_category_string_please">لطفاً</string>
     <string name="gif_category_string_puppies">توله سگ‌</string>
@@ -536,6 +564,7 @@
     <string name="gif_category_string_stop">توقف</string>
     <string name="gif_category_string_thank_you">متشکرم</string>
     <string name="gif_category_string_thumbs_up">رأی مثبت</string>
+    <string name="gif_category_string_trending_categories">پرطرفدار</string>
     <string name="gif_category_string_waiting">در انتظار</string>
     <string name="gif_category_string_what">چیست</string>
     <string name="gif_category_string_wink">چشمک</string>
@@ -551,9 +580,9 @@
     <string name="gif_keyboard_default_candidate_1">صبح بخیر</string>
     <string name="gif_keyboard_default_candidate_2">تبریک تولد</string>
     <string name="gif_keyboard_key_content_desc">‏صفحه‌کلید GIF</string>
-    <string name="gif_plural_suffix">" ‏فایل‌های GIF"</string>
+    <string name="gif_plural_suffix">‏ فایل‌های GIF</string>
     <string name="gif_search_results_hint">‏جستجوی فایل‌های GIF</string>
-    <string name="gif_singular_suffix">" GIF"</string>
+    <string name="gif_singular_suffix">GIF</string>
     <string name="glow_g_tooltip_text">در اینجا ضربه بزنید</string>
     <string name="go_key_content_desc">رفتن</string>
     <string name="google_account_not_supported">‏حساب Google در این دستگاه پشتیبانی نمی‌شود.</string>
@@ -604,14 +633,14 @@
     <string name="hugging_emoticon_description_star_eyed_hug">در آغوش گرفتن با چشمان ستاره‌شکل</string>
     <string name="hugging_emoticon_description_two_Denkos_hugging">دو دنکو در آغوش هم</string>
     <string name="icon_content_description">نماد کادر گفتگو</string>
-    <string name="image_disabled_for_app_toast_message">‏%s از درج تصویر در اینجا پشتیبانی نمی‌کند</string>
+    <string name="image_disabled_for_app_toast_message">%s از درج تصویر در اینجا پشتیبانی نمی‌کند</string>
     <string name="image_disabled_toast_message">این برنامه از درج تصویر پشتیبانی نمی‌کند.</string>
     <string name="ink_color_black_content_desc">سیاه</string>
     <string name="ink_color_blue_content_desc">آبی</string>
     <string name="ink_color_green_content_desc">سبز</string>
     <string name="ink_color_purple_content_desc">بنفش</string>
     <string name="ink_color_red_content_desc">قرمز</string>
-    <string name="ink_color_selected_a11y">‏%s انتخاب شد</string>
+    <string name="ink_color_selected_a11y">%s مورد انتخاب شد</string>
     <string name="ink_color_white_content_desc">سفید</string>
     <string name="ink_color_yellow_content_desc">زرد</string>
     <string name="input_nonexistent_file">فایل وجود ندارد.</string>
@@ -647,8 +676,8 @@
     <string name="kb_theme_material_light">طرح زمینه روشن سه‌بعدی</string>
     <string name="key_combo_preference_instructions">ترکیب سوئیچی را فشار دهید تا به فهرست اضافه شود یا از آن برداشته شود</string>
     <string name="key_combo_preference_reset_button">پاک کردن اختصاص کلید</string>
-    <string name="keyboard_hidden">‏%s پنهان است</string>
-    <string name="keyboard_with_suffix_hidden">‏%s صفحه‌کلید پنهان است</string>
+    <string name="keyboard_hidden">%s پنهان شده است</string>
+    <string name="keyboard_with_suffix_hidden">صفحه‌کلید %s پنهان شد</string>
     <string name="korean_2_bulsik_ime_label">‏کره‌ای ‎2 Bulsik</string>
     <string name="label_access_point_gif">GIF</string>
     <string name="label_access_point_sticker">برچسب</string>
@@ -670,6 +699,7 @@
     <string name="label_remove_suggestion">حذف پیشنهاد</string>
     <string name="label_search_access_point">جستجو</string>
     <string name="label_settings_access_point">تنظیمات</string>
+    <string name="label_sharing_access_point">هم‌رسانی</string>
     <string name="label_space_ja">日本語</string>
     <string name="label_text_editing">ویرایش نوشتار</string>
     <string name="label_text_editing_access_point">ویرایش نوشتار</string>
@@ -678,6 +708,7 @@
     <string name="label_translate_access_point">ترجمه</string>
     <string name="label_wait_key">انتظار</string>
     <string name="language_pack_not_downloaded_yet_toast_message">بسته زبان ژاپنی هنوز بارگیری نشده است</string>
+    <string name="language_tag_aii">آشوری</string>
     <string name="language_tag_ar">عربی</string>
     <string name="language_tag_ban">بالیایی</string>
     <string name="language_tag_ber">آمازیغی</string>
@@ -703,8 +734,10 @@
     <string name="language_tag_kmz">ترکی خراسانی</string>
     <string name="language_tag_kok">کونکانی</string>
     <string name="language_tag_lez">لزگی</string>
+    <string name="language_tag_lif">لیمبو</string>
     <string name="language_tag_lmn">بانجاری</string>
     <string name="language_tag_mni">مانیپوری</string>
+    <string name="language_tag_oj">اوجیبوی</string>
     <string name="language_tag_rkt">رنگپوری</string>
     <string name="language_tag_rmn">رومانی بالکان</string>
     <string name="language_tag_rmy">ویلاکس رومانی</string>
@@ -713,14 +746,15 @@
     <string name="language_tag_syl">سیلهتی</string>
     <string name="language_tag_tly">تالشی</string>
     <string name="language_tag_trp">کُک بُرُک</string>
+    <string name="language_tag_unr">مانداری</string>
     <string name="language_tag_uz">ازبکی</string>
     <string name="language_tag_vas">واساوی</string>
     <string name="language_tag_zh_CN">چینی (ساده‌شده)</string>
     <string name="language_tag_zh_HK">کانتونی</string>
     <string name="language_tag_zh_TW">چینی (سنتی)</string>
     <string name="language_tag_zz">الفبا</string>
-    <string name="launch_activities_or_extensions">‏باز کردن ‎%s</string>
-    <string name="learn_more_dialog_message">‏Google به منظور بهبود تایپ سراندنی (Glide) و دقت تصحیح خودکار، بخش‌هایی از آنچه در برنامه‌های Google تایپ می‌کنید و نحوه تایپ آن‌ها را جمع‌آوری می‌کند. داده‌های جمع‌آوری شده با حساب Google شما مرتبط نخواهند شد و طبق <a href="https://www.google.com/policies/privacy/">خط‌مشی رازداری Google</a> نگهداری می‌شوند. هرزمان خواستید می‌توانید این تنظیم را در تنظیمات صفحه‌کلید Gboard تغییر دهید.</string>
+    <string name="launch_activities_or_extensions">باز کردن %s</string>
+    <string name="learn_more_dialog_message">‏Google به‌منظور بهبود تایپ لغزشی و دقت تصحیح خودکار، بخش‌هایی از آنچه در برنامه‌های Google تایپ می‌کنید و نحوه تایپ آن‌ها را جمع‌آوری می‌کند. داده‌های جمع‌آوری‌شده با حساب Google شما مرتبط نخواهند شد و طبق <a href="https://www.google.com/policies/privacy/">خط‌مشی رازداری Google</a> نگه‌داری می‌شوند. هروقت خواستید می‌توانید این تنظیم را در تنظیمات صفحه‌کلید Gboard تغییر دهید.</string>
     <string name="left_arrow_content_desc">نشانگر چپ</string>
     <string name="left_arrow_key_content_desc">پیکان چپ</string>
     <string name="left_black_square_bracket_key_content_desc">قلاب سمت چپ سیاه</string>
@@ -779,7 +813,7 @@
     <string name="low_storage_available_error">حافظه دستگاه کم است</string>
     <string name="mail_dot_key_content_desc">mail dot</string>
     <string name="make_a_gif_alternate_sidebar_record">‏ضبط فایل GIF</string>
-    <string name="make_a_gif_singular_suffix">" gif 📷‎"</string>
+    <string name="make_a_gif_singular_suffix">gif 📷‎</string>
     <string name="makeagif_a11y_deleted_text">نوشتار حذف شد</string>
     <string name="makeagif_a11y_edited_text">‏نوشتار ویرایش‌شده در GIF درج شد</string>
     <string name="makeagif_a11y_editing_mode">حالت ویرایش</string>
@@ -830,8 +864,9 @@
     <string name="move_keyboard_content_desc">جابه‌جا کردن موقعیت صفحه‌کلید</string>
     <string name="native_card_keyboard_default_candidate_0">اخبار</string>
     <string name="native_card_keyboard_default_candidate_1">آب‌وهوا</string>
+    <string name="native_card_keyboard_default_candidate_2">@string/gif_category_string_thank_you</string>
     <string name="native_card_search_results_hint">جستجو</string>
-    <string name="native_language_hint_more_languages">‏و %d زبان دیگر</string>
+    <string name="native_language_hint_more_languages">و %d زبان دیگر</string>
     <string name="native_language_hint_title">می‌توانید زبان بومی‌تان را اضافه کنید</string>
     <string name="navigate_next_key_content_desc">بعدی</string>
     <string name="navigate_previous_key_content_desc">قبلی</string>
@@ -857,6 +892,7 @@
     <string name="nervous_emoticon_description_wide_eyed_and_sweating">چشم‌های گشاد و عرق‌ریز</string>
     <string name="nervous_emoticon_description_zany_face">چهره لوده</string>
     <string name="network_not_available_error">شبکه در دسترس نیست</string>
+    <string name="new_sign_in_button_text">Sign in</string>
     <string name="news_dot_key_content_desc">news dot</string>
     <string name="next_language_key_content_desc">زبان بعدی</string>
     <string name="no_emoji_message">صورتکی پیدا نشد</string>
@@ -867,8 +903,9 @@
     <string name="nonprime_recent_content_desc">موارد اخیر</string>
     <string name="notice_add_native_language">برای تایپ کردن به زبان هندی، اینجا ضربه بزنید:</string>
     <string name="notice_battery_saver_theme">‏برای صرفه‌جویی در مصرف باتری، Gboard تار شده است. برای تنظیمات ضربه بزنید.</string>
-    <string name="notice_personalize_sms">پیشنهادهایتان بهبود یابد؟ برای اطلاعات ضربه بزنید.</string>
+    <string name="notice_share_gboard">از تایپ کردن به زبان %1$s لذت می‌برید؟ نظرتان را با دیگران درمیان بگذارید.</string>
     <string name="notice_suggest_contacts">برای فعال کردن پیشنهادهای مخاطب ضربه بزنید.</string>
+    <string name="num_search_results">%d نتایج</string>
     <string name="number_ime_label">صفحه‌کلید عددی</string>
     <string name="number_password_ime_label">صفحه‌کلید گذرواژه عددی</string>
     <string name="on_page_1">در صفحه ۱</string>
@@ -886,19 +923,20 @@
     <string name="page_up_key_content_desc">صفحه بالا</string>
     <string name="password_ime_label">صفحه‌کلید گذرواژه</string>
     <string name="password_toggle_content_description">نمایش گذرواژه</string>
-    <string name="percentage_format_string">%1$d%%</string>
+    <string name="percentage_format_string">%1$d٪٪</string>
     <string name="personal_dictionary_preference_item_all_languages">همه زبان‌ها</string>
-    <string name="personal_dictionary_read_only_annotation">فقط خواندنی</string>
+    <string name="personal_dictionary_preference_title_export">Export</string>
     <string name="personal_dictionary_settings_add_shortcut_hint">میان‌بر اختیاری</string>
     <string name="personal_dictionary_settings_add_shortcut_option_name">میان‌بر:</string>
     <string name="personal_dictionary_settings_add_word_hint">کلمه‌ای تایپ کنید</string>
+    <string name="personal_dictionary_tutorial_text">هیچ کلمه‌ای در فرهنگ لغت شخصی ندارید. برای اضافه کردن کلمه، روی دکمه افزودن (+) ضربه بزنید.</string>
     <string name="phone_icon_content_desc">تلفن</string>
     <string name="phone_keyboard_key_content_desc">صفحه‌کلید شماره‌گیری</string>
     <string name="phone_number_ime_label">صفحه‌کلید شماره‌گیری</string>
     <string name="pinyin_ime_label">صفحه‌کلید پین‌یین</string>
     <string name="pinyin_qwerty_ime_label">صفحه‌کلید پین‌یین</string>
     <string name="pinyin_standard_cantonese_pinyin">پین‌یین کانتونی</string>
-    <string name="pinyin_standard_jyutping">جی‌یوتپینگ</string>
+    <string name="pinyin_standard_jyutping">جوتپینگ</string>
     <string name="pinyin_standard_yale">ییل</string>
     <string name="play_icon_content_desc">پخش</string>
     <string name="play_store_link_msg">بیشتر</string>
@@ -933,19 +971,24 @@
     <string name="save">ذخیره</string>
     <string name="saving_customization_error_msg">موارد سفارشی‌شده ذخیره نشد.</string>
     <string name="search_access_point_content_desc">جستجو</string>
-    <string name="search_add_language_no_results_title">‏هیچ زبانی منطبق با «%1$s» پیدا نشد.</string>
+    <string name="search_add_language_no_results_title">هیچ زبانی منطبق با «%1$s» پیدا نشد.</string>
     <string name="search_add_language_title">جستجوی زبان</string>
     <string name="search_key_content_desc">جستجو</string>
     <string name="search_keyboard_key_content_desc">جستجوی صفحه‌کلید</string>
     <string name="search_no_result_text">هیچ نتیجه‌ای برای «%1$s» پیدا نشد</string>
     <string name="search_query_feature_cards_1">‏قابلیت‌های جدید Gboard چیست؟</string>
     <string name="search_query_hint">جستجوی برچسب‌…</string>
-    <string name="select_pinyin_letter">"‏انتخاب پین‌یین  %1$s"</string>
-    <string name="select_zhuyin_letter">‏انتخاب ژویین %s</string>
+    <string name="select_pinyin_letter">پین‌یین %1$s را انتخاب کنید</string>
+    <string name="select_zhuyin_letter_message">انتخاب ژوئین %s</string>
     <string name="semicolon_key_content_desc">نقطه ویرگول</string>
     <string name="send_key_content_desc">ارسال</string>
     <string name="separator_key_content_desc">جداساز</string>
     <string name="setting_about_language_models_empty">چیزی بار نشده است.</string>
+    <string name="setting_about_lm_source_apk">‏منبع = APK</string>
+    <string name="setting_about_lm_source_download">منبع = بارگیری</string>
+    <string name="setting_about_lm_source_oem">‏منبع = OEM</string>
+    <string name="setting_about_lm_title">اصلی (%s)</string>
+    <string name="setting_about_lm_version">نسخه = %d</string>
     <string name="setting_about_title">درباره</string>
     <string name="setting_about_version_title">نسخه کنونی</string>
     <string name="setting_accounts_switcher_summary">در حال حاضر از %1$s استفاده می‌شود</string>
@@ -985,7 +1028,7 @@
     <string name="setting_dialog_import_select_file_message">انتخاب…</string>
     <string name="setting_dialog_import_user_dictionary_title">وارد کردن واژه‌نامه کاربر</string>
     <string name="setting_dialog_sync_clear_message">کلمات یاد گرفته‌شده پاک خواهد شد. این اقدام قابل واگرد نیست. برای تأیید حذف، شماره زیر را وارد کنید و ادامه دهید.</string>
-    <string name="setting_dialog_sync_clear_summary">کلمات یاد گرفته‌شده را از این دستگاه و پشتیبان‌ها پاک می‌کند</string>
+    <string name="setting_dialog_sync_clear_summary">واژگان یادگرفته‌شده را از این دستگاه پاک می‌کند</string>
     <string name="setting_dialog_sync_clear_title">یادداشت</string>
     <string name="setting_dialog_sync_now_message">اکنون همگام‌سازی شود؟</string>
     <string name="setting_dialog_sync_now_title">تأیید</string>
@@ -1014,7 +1057,6 @@
     <string name="setting_gesture_input_summary">با لغزاندن انگشت روی حروف کلمه وارد کنید</string>
     <string name="setting_gesture_input_title">فعال کردن تایپ اشاره‌ای</string>
     <string name="setting_gesture_preview_trail_title">نمایش مسیر اشاره</string>
-    <string name="setting_handwriting_input">دست‌‌نویسی</string>
     <string name="setting_handwriting_stroke_width_seekbar_text_left">باریک</string>
     <string name="setting_handwriting_stroke_width_seekbar_text_right">ضخیم</string>
     <string name="setting_handwriting_stroke_width_title">پهنای ضربه دست‌نویسی</string>
@@ -1084,7 +1126,7 @@
     <string name="setting_morse_word_commit_timeout_title">وقفه کلمه</string>
     <string name="setting_morse_word_timeout_text_left">۰٫۲۵ ثانیه</string>
     <string name="setting_morse_word_timeout_text_right">۵ ثانیه</string>
-    <string name="setting_multilingual_alert_text">‏حداکثر %d از زبان(‌ها) را می‌توان در تایپ چندزبانه فعال کرد</string>
+    <string name="setting_multilingual_alert_text">حداکثر %d زبان(‌ها) را می‌توان در تایپ چندزبانه فعال کرد</string>
     <string name="setting_multilingual_not_available_summary">تنها درصورت فعال بودن چند زبان، کاربرد دارد</string>
     <string name="setting_multilingual_on_summary">نمایش خودکار پیشنهادهای کلمه وقتی به این زبان‌ها تایپ می‌کنید:</string>
     <string name="setting_multilingual_title">تایپ چندزبانه</string>
@@ -1115,6 +1157,7 @@
     <string name="setting_scrub_move_title">فعال کردن کنترل نشانگر اشاره‌ای</string>
     <string name="setting_search">جستجو</string>
     <string name="setting_share_snippets_summary">‏به‌منظور بهبود %s، پاره‌کدهای آنچه که در برنامه‌های Google تایپ می‌کنید و نحوه تایپتان به‌صورت خودکار اشتراک‌گذاری می‌شود.</string>
+    <string name="setting_sharing">‏هم‌رسانی Gboard</string>
     <string name="setting_show_canonical_romanization_summary">نمایش لاتین استاندارد هنگام فشار دادن پیشنهادی خاص</string>
     <string name="setting_show_canonical_romanization_title">نمایش لاتین استاندارد</string>
     <string name="setting_show_emoji_suggestion_title">نمایش پیشنهادهای صورتک</string>
@@ -1139,7 +1182,7 @@
     <string name="setting_sync_error">همگام‌سازی نشد</string>
     <string name="setting_sync_now_title">همگام‌سازی در این لحظه</string>
     <string name="setting_sync_ongoing">در حال همگام‌سازی...</string>
-    <string name="setting_sync_time">"آخرین همگام‌سازی: "</string>
+    <string name="setting_sync_time">آخرین همگام‌سازی:</string>
     <string name="setting_sync_user_dictionary_message">‏واژه‌های یاد گرفته‌شده شما به Google ارسال می‌شود تا بتوانید در دستگاه‌های مختلف از آن‌ها استفاده کنید. ممکن است برای کمک به بهبود محصولاتمان، از اطلاعات آماری (مانند فراوانی واژه‌ها در واژه‌نامه شما) استفاده کنیم. هرگونه جمع‌آوری و استفاده از چنین اطلاعاتی مطابق با <a href="https://www.google.com/policies/privacy/">خط‌مشی رازداری Google‏</a> خواهد بود.</string>
     <string name="setting_sync_user_dictionary_title">‏کلمات یادگرفته‌شده شما در Google همگام‌سازی شود</string>
     <string name="setting_theme">طرح زمینه</string>
@@ -1151,19 +1194,29 @@
     <string name="setting_vibrate_on_keypress_title">لرزش هنگام فشار کلید</string>
     <string name="setting_vibration_strength_on_keypress_title">قدرت لرزش با فشردن کلید</string>
     <string name="setting_voice_account_no_account_summary">‏درحال استفاده از تایپ صدای Gboard بدون حساب</string>
+    <string name="setting_voice_account_title">Google Account</string>
     <string name="setting_voice_account_with_account_summary">‏درحال استفاده از %s برای تایپ صدای Gboard</string>
+    <string name="setting_voice_activity_link_text">Audio history will be saved to your account, under \"Voice &amp; Audio activity\". &lt;b>&lt;linkable>Manage&lt;/linkable>&lt;/b></string>
     <string name="setting_voice_input_title">کلید ورودی صوتی</string>
     <string name="setting_voice_typing">تایپ صدا</string>
+    <string name="setting_voice_without_sign_in_text">Audio history will not be recorded.</string>
     <string name="setting_zhuyin_pinyin_title">تنظیمات ژویین/پین‌یین</string>
     <string name="settings_access_point_content_desc">تنظیمات</string>
     <string name="settings_content_desc">تنظیمات</string>
     <string name="settings_system_default">پیش‌فرض سیستم</string>
     <string name="settings_system_default_disabled">پیش‌فرض سیستم (غیرفعال)</string>
     <string name="setup_done_page_title">آماده‌اید!</string>
-    <string name="setup_step_page_title">‏مرحله %d</string>
+    <string name="setup_step_page_title">مرحله %d</string>
     <string name="share_external_icon_content_desc">مشاهده به‌صورت خارجی</string>
     <string name="share_footer_message">‏ارسال‌شده توسط Gboard</string>
     <string name="share_image_overlay_announcement">دکمه هم‌رسانی تصویر کارت نشان داده شده است</string>
+    <string name="sharing_app_chooser_dialog_title">هم‌رسانی ازطریق</string>
+    <string name="sharing_content">‏برای تایپ کردن از Gboard استفاده می‌کنم. می‌توانید آن را اینجا امتحان کنید:</string>
+    <string name="sharing_content_all_enabled">"You're already using Gboard."</string>
+    <string name="sharing_content_all_enabled_variant_1">"You're already using Gboard in %1$s."</string>
+    <string name="sharing_content_all_enabled_variant_2">"You're already using Gboard in %1$s and %2$s."</string>
+    <string name="sharing_content_variant_1">‏برای تایپ به زبان %1$s از Gboard استفاده می‌کنم. می‌توانید آن را اینجا امتحان کنید:</string>
+    <string name="sharing_content_variant_2">‏برای تایپ به زبان %1$s و %2$s از Gboard استفاده می‌کنم. می‌توانید آن را اینجا امتحان کنید:</string>
     <string name="sharing_snippets_learn_more">بیشتر بدانید</string>
     <string name="sharing_snippets_privacy_notice_content">‏برای بهبود %s، برخی از پاره‌کدهای ناشناس را از آنچه در برنامه‌های Google تایپ می‌کنید و نحوه تایپتان به‌طور خودکار به اشتراک بگذارید.</string>
     <string name="sharing_snippets_privacy_notice_title">کمک به ساخت صفحه‌کلیدی بهتر</string>
@@ -1171,12 +1224,15 @@
     <string name="shift_enabled_mode_content_desc">‏Shift فعال شد</string>
     <string name="shift_flip_content_desc">نمادهای بیشتر</string>
     <string name="shift_locked_flip_content_desc">نمادها</string>
+    <string name="show_popup_for_account_selector">Showing account selector page</string>
     <string name="show_popup_for_item_board">نمایش اطلاعات دقیق‌تر برای یک مورد کلیپ.</string>
+    <string name="show_popup_for_off_overlay">نمایش بریده‌دان غیرفعال.</string>
+    <string name="show_popup_for_sign_in">Showing sign in page</string>
     <string name="show_popup_for_undo_delete">نمایش نمای حذف واگرد.</string>
     <string name="showing_floating_keyboard">درحال نمایش صفحه‌کلید شناور</string>
-    <string name="showing_keyboard">‏نمایش %s</string>
+    <string name="showing_keyboard">نمایش %s</string>
     <string name="showing_keyboard_editing_view">درحال نمایش نمای ویرایش صفحه‌کلید</string>
-    <string name="showing_keyboard_with_suffix">‏نمایش صفحه‌کلید %s</string>
+    <string name="showing_keyboard_with_suffix">در حال نمایش صفحه‌کلید %s</string>
     <string name="showing_left_handed_keyboard">درحال نمایش صفحه‌کلید چپ دست</string>
     <string name="showing_right_handed_keyboard">درحال نمایش صفحه‌کلید راست دست</string>
     <string name="showing_text_keyboard">نمایش صفحه‌کلید نوشتار</string>
@@ -1185,8 +1241,11 @@
     <string name="shuangpin_flypy_scheme">‏پین‌یین دوتایی - flyPY</string>
     <string name="shuangpin_jiajia_scheme">پین‌یین دونویسه‌ای - پین‌یین پلاس پلاس</string>
     <string name="shuangpin_ms_scheme">‏پین‌یین دونویسه‌ای - Microsoft</string>
-    <string name="shuangpin_ziguang_scheme">‏پین‌یین دونویسه‌ای - Unispim</string>
+    <string name="shuangpin_ziguang_scheme">‏پین‌یین دوتایی - Unispim</string>
     <string name="shuangpin_ziranma_scheme">‏پین‌یین دونویسه‌ای - Ziranma</string>
+    <string name="sign_in_continue_button_text">Continue as %s</string>
+    <string name="sign_in_icon_content_description">Sign in icon</string>
+    <string name="sign_in_title">Sign in to %s</string>
     <string name="single_left_book_title_key_content_desc">علامت عنوان کتاب تکی سمت چپ</string>
     <string name="single_right_book_title_key_content_desc">علامت عنوان کتاب تکی سمت راست</string>
     <string name="slight_pause_mark_key_content_desc">علامت مکث جزئی</string>
@@ -1253,7 +1312,7 @@
     <string name="sticker_low_storage_error_title">فضای ذخیره‌سازی دستگاهتان کم است</string>
     <string name="sticker_open_gallery_button_text">باز کردن گالری</string>
     <string name="sticker_pack_load_failed_content_desc">خطا در نمایش جای‌بان به‌جای بسته برچسب</string>
-    <string name="sticker_promo_tooltip_text">"برچسب‌های
+    <string name="sticker_promo_tooltip_text">"‏برچسب‌های
 جدید!"</string>
     <string name="sticker_something_went_wrong_error">مشکلی پیش آمد</string>
     <string name="sticker_something_went_wrong_message">اوه، مشکلی رخ داده است!</string>
@@ -1278,24 +1337,26 @@
     <string name="subtype_locale_aa">عفار</string>
     <string name="subtype_locale_ab_GE">آبخاز</string>
     <string name="subtype_locale_abr_GH">اِبران</string>
-    <string name="subtype_locale_ace_ID">آچه‌ای (اندونزی)</string>
+    <string name="subtype_locale_abs_ID">مالایی آمبونسی</string>
+    <string name="subtype_locale_ace_ID">آچه‌ای</string>
     <string name="subtype_locale_acf_LC">فرانسوی کریول سنت لوسیا</string>
-    <string name="subtype_locale_ach_UG">آکولی (اوگاندا)</string>
-    <string name="subtype_locale_act_NL">آخترهوکی (هلند)</string>
-    <string name="subtype_locale_ada_GH">دانگمه (غنا)</string>
+    <string name="subtype_locale_ach_UG">آکولی</string>
+    <string name="subtype_locale_act_NL">آخترهوکی</string>
+    <string name="subtype_locale_ada_GH">دانگمه</string>
     <string name="subtype_locale_ady_RU">آدیغی</string>
-    <string name="subtype_locale_ahr_IN">خاندیشی (هند)</string>
-    <string name="subtype_locale_aii_IQ">آشوری</string>
-    <string name="subtype_locale_ak_GH">اکانی (غنا)</string>
-    <string name="subtype_locale_ak_XF">اکواپم (غنا)</string>
-    <string name="subtype_locale_ak_XG">آسانته (غنا)</string>
+    <string name="subtype_locale_ahr_IN">خاندیشی</string>
+    <string name="subtype_locale_aii_IQ">آشوری (عراق)</string>
+    <string name="subtype_locale_aii_SY">أشوری (سوریه)</string>
+    <string name="subtype_locale_ak_GH">آکان</string>
+    <string name="subtype_locale_ak_XF">اکواپم</string>
+    <string name="subtype_locale_ak_XG">آسانته</string>
     <string name="subtype_locale_aln_RS">گگ آلبانیایی</string>
     <string name="subtype_locale_als_AL">توسک آلبانیایی</string>
     <string name="subtype_locale_alz_CD">آلور</string>
-    <string name="subtype_locale_ami_TW">آمیس (تایوان)</string>
-    <string name="subtype_locale_an_ES">آراگونی (اسپانیا)</string>
+    <string name="subtype_locale_ami_TW">آمیس</string>
+    <string name="subtype_locale_an_ES">آراگونی</string>
     <string name="subtype_locale_anp_IN">آنگیکا</string>
-    <string name="subtype_locale_anw_NG">آنانگ (نیجریه)</string>
+    <string name="subtype_locale_anw_NG">آنانگ</string>
     <string name="subtype_locale_ar_AE">عربی (خلیج)</string>
     <string name="subtype_locale_ar_BH">عربی (بحرین)</string>
     <string name="subtype_locale_ar_DJ">عربی (تعزیه-عدنیه)</string>
@@ -1307,7 +1368,7 @@
     <string name="subtype_locale_ar_SA">عربی (حجازی)</string>
     <string name="subtype_locale_ar_SD">عربی (سودان)</string>
     <string name="subtype_locale_ar_TN">عربی (تونس)</string>
-    <string name="subtype_locale_arn_CL">ماپوچه‌ای (شیلی)</string>
+    <string name="subtype_locale_arn_CL">ماپوچه‌ای</string>
     <string name="subtype_locale_as_XA">آسامی (لاتین)</string>
     <string name="subtype_locale_ast_ES">آستوری (اسپانیا)</string>
     <string name="subtype_locale_av_RU">آواری</string>
@@ -1319,26 +1380,31 @@
     <string name="subtype_locale_ban_ID">بالیایی (لاتین)</string>
     <string name="subtype_locale_ban_XF">بالیایی</string>
     <string name="subtype_locale_bar_AT">اتریشی-باواریایی</string>
-    <string name="subtype_locale_bas_CM">باسا (کامرون)</string>
-    <string name="subtype_locale_bbc_ID">باتک توبا (اندونزی)</string>
-    <string name="subtype_locale_bci_CI">بائوله (ساحل عاج)</string>
+    <string name="subtype_locale_bas_CM">باسائی</string>
+    <string name="subtype_locale_bbc_ID">باتاک توبا</string>
+    <string name="subtype_locale_bcc_PK">بلوچی جنوبی</string>
+    <string name="subtype_locale_bci_CI">بائوله</string>
     <string name="subtype_locale_bcl_PH">بیکول مرکزی</string>
-    <string name="subtype_locale_bcq_ET">بنچ (اتیوپی)</string>
+    <string name="subtype_locale_bcq_ET">بنچ</string>
     <string name="subtype_locale_ber_XA">تامازیغ (لاتین)</string>
     <string name="subtype_locale_ber_XG">آمازیغی (تیفیناق)</string>
-    <string name="subtype_locale_bew_ID">بتاوی (اندونزی)</string>
+    <string name="subtype_locale_bew_ID">بتاوی</string>
     <string name="subtype_locale_bft_PK">بالتی</string>
-    <string name="subtype_locale_bfy_IN">بگهلی (هند)</string>
-    <string name="subtype_locale_bgc_IN">هریانوی (هند)</string>
+    <string name="subtype_locale_bfy_IN">بگهلی</string>
+    <string name="subtype_locale_bfz_IN">ماهاسو پاهاری</string>
+    <string name="subtype_locale_bgc_IN">هریانوی</string>
+    <string name="subtype_locale_bgn_PK">بلوچی غربی</string>
+    <string name="subtype_locale_bgp_XC">بلوچی شرقی</string>
     <string name="subtype_locale_bgq_IN">بگری (هند)</string>
     <string name="subtype_locale_bgq_PK">باگری (پاکستان)</string>
+    <string name="subtype_locale_bgx_TR">ترکی گاگائوز بالکان</string>
     <string name="subtype_locale_bgz_ID">بنگائی</string>
     <string name="subtype_locale_bhb_XD">بهیلی (دیواناگری)</string>
     <string name="subtype_locale_bhb_XF">بهیلی (گجراتی)</string>
-    <string name="subtype_locale_bho_IN">بوجپوری (هند)</string>
-    <string name="subtype_locale_bi_VU">بیسلاما (وانواتو)</string>
-    <string name="subtype_locale_bjj_IN">کنوجی (هند)</string>
-    <string name="subtype_locale_bjn_ID">بانجاری (اندونزی)</string>
+    <string name="subtype_locale_bho_IN">بوجپوری</string>
+    <string name="subtype_locale_bi_VU">بیسلاما</string>
+    <string name="subtype_locale_bjj_IN">کنوجی</string>
+    <string name="subtype_locale_bjn_ID">بانجاری</string>
     <string name="subtype_locale_blk_MM">پائو کارن</string>
     <string name="subtype_locale_blt_VN">تای دام (تای ویِت)</string>
     <string name="subtype_locale_blt_XA">تای دام (لاتین)</string>
@@ -1348,40 +1414,41 @@
     <string name="subtype_locale_bn_BD">بنگلا (بنگلادش)</string>
     <string name="subtype_locale_bn_IN">بنگلا (هند)</string>
     <string name="subtype_locale_bn_XA">بنگالی (لاتین)</string>
-    <string name="subtype_locale_bns_IN">بوندلی (هند)</string>
+    <string name="subtype_locale_bns_IN">بوندلی</string>
     <string name="subtype_locale_bo_CN">تبتی</string>
-    <string name="subtype_locale_bom_NG">بروم (نیجریه)</string>
+    <string name="subtype_locale_bom_NG">بِروم</string>
     <string name="subtype_locale_bpr_PH">کورونادال بلان</string>
-    <string name="subtype_locale_bpy_IN">بیشنوپریا (هند)</string>
+    <string name="subtype_locale_bpy_IN">بیشنوپریا</string>
     <string name="subtype_locale_bqi_IR">بختیاری</string>
-    <string name="subtype_locale_br_FR">برتون (فرانسه)</string>
+    <string name="subtype_locale_br_FR">برتون</string>
     <string name="subtype_locale_brh_PK">براهویی (لاتین)</string>
     <string name="subtype_locale_brh_XC">براهویی (عربی)</string>
     <string name="subtype_locale_brx_XA">بودو (لاتین)</string>
     <string name="subtype_locale_brx_XD">بودو (دوناگری)</string>
     <string name="subtype_locale_brx_XE">بودو (بنگالی)</string>
     <string name="subtype_locale_bs_XB">بوسنیایی (سیریلیک)</string>
-    <string name="subtype_locale_bss_CM">آکوس (کامرون)</string>
+    <string name="subtype_locale_bss_CM">آکوس</string>
     <string name="subtype_locale_btm_XF">ماندایلینگ باتاک</string>
     <string name="subtype_locale_bto_PH">رینکونادا بیکول</string>
-    <string name="subtype_locale_bts_ID">سیمالانگان (اندونزی)</string>
-    <string name="subtype_locale_btx_ID">کارو (اندونزی)</string>
-    <string name="subtype_locale_btz_ID">آلاس (اندونزی)</string>
+    <string name="subtype_locale_bts_ID">سیمالانگان</string>
+    <string name="subtype_locale_btx_ID">کارو</string>
+    <string name="subtype_locale_btz_ID">آلاس</string>
     <string name="subtype_locale_bud_TG">ان‌شام</string>
     <string name="subtype_locale_bug_ID">باسایوگی (لاتین)</string>
     <string name="subtype_locale_bug_XF">باسایوگی (لانتارا)</string>
-    <string name="subtype_locale_bum_CM">بولو-بنه (کامرون)</string>
-    <string name="subtype_locale_bxk_KE">بوکوسو (کنیا)</string>
+    <string name="subtype_locale_bum_CM">بولو-بنه</string>
+    <string name="subtype_locale_bxk_KE">بوکوسو</string>
     <string name="subtype_locale_bxm_MN">بوریاتی (مغولستان)</string>
     <string name="subtype_locale_bxr_RU">بوریاتی (روسیه)</string>
+    <string name="subtype_locale_bzc_MG">Southern Betsimisaraka Malagasy</string>
     <string name="subtype_locale_ca_XQ">والنسیایی</string>
     <string name="subtype_locale_cbk_PH">چاباکانو</string>
     <string name="subtype_locale_cdo_CN">مین شرقی</string>
     <string name="subtype_locale_ce_RU">چچنی</string>
     <string name="subtype_locale_ceb">سِبوانو</string>
-    <string name="subtype_locale_cgg_UG">چیگا (اوگاندا)</string>
+    <string name="subtype_locale_cgg_UG">کیگا</string>
     <string name="subtype_locale_ch_GU">چامورو (گوآم)</string>
-    <string name="subtype_locale_cho_US">چاکتاو (ایالات متحده)</string>
+    <string name="subtype_locale_cho_US">چاکتاو</string>
     <string name="subtype_locale_chr">چروکی (حروف بزرگ)</string>
     <string name="subtype_locale_chr_XG">چروکی (حروف بزرگ و کوچک)</string>
     <string name="subtype_locale_cjk_AO">چاکوی (آنگولا)</string>
@@ -1389,21 +1456,23 @@
     <string name="subtype_locale_cjm_VN">چامی شرقی (چام)</string>
     <string name="subtype_locale_cjm_XA">چامی شرقی (لاتین)</string>
     <string name="subtype_locale_cnh_MM">هاکا چن</string>
+    <string name="subtype_locale_cnr">Montenegrin</string>
     <string name="subtype_locale_cop_EG">قبطی</string>
-    <string name="subtype_locale_cps_PH">کاپیزنون (فلیپین)</string>
+    <string name="subtype_locale_cps_PH">کاپیزنون</string>
     <string name="subtype_locale_cr_CA">کری (هجایی)</string>
     <string name="subtype_locale_cr_XA">کری (لاتین)</string>
     <string name="subtype_locale_crh_XA">تاتاری کریمه (لاتین)</string>
     <string name="subtype_locale_crh_XB">تاتاری کریمه (سیریلیک)</string>
     <string name="subtype_locale_crs_SC">کریول سیشل</string>
-    <string name="subtype_locale_csb_PL">کاشوبی (لهستان)</string>
+    <string name="subtype_locale_csb_PL">کاشوبی</string>
     <string name="subtype_locale_ctg_BD">چیتاگونی</string>
     <string name="subtype_locale_cu_RU">اسلاوی کلیسایی</string>
-    <string name="subtype_locale_cv_RU">چوواشی (روسیه)</string>
-    <string name="subtype_locale_dag_GH">داگبانی (غنا)</string>
-    <string name="subtype_locale_dcc_IN">دکنی (هند)</string>
+    <string name="subtype_locale_cv_RU">چوواشی</string>
+    <string name="subtype_locale_cyo_PH">کویونون</string>
+    <string name="subtype_locale_dag_GH">داگانی</string>
+    <string name="subtype_locale_dcc_IN">دکنی</string>
     <string name="subtype_locale_dga_GH">داگاری</string>
-    <string name="subtype_locale_dhd_IN">جیپوری (هندوستان)</string>
+    <string name="subtype_locale_dhd_IN">جیپوری</string>
     <string name="subtype_locale_din">دینکا</string>
     <string name="subtype_locale_diq_TR">زازا</string>
     <string name="subtype_locale_dng_KG">دونگوان</string>
@@ -1411,96 +1480,102 @@
     <string name="subtype_locale_doi_XA">دوگری (لاتین)</string>
     <string name="subtype_locale_doi_XC">دوگری (عربی)</string>
     <string name="subtype_locale_doi_XD">دوگری (دوناگری)</string>
-    <string name="subtype_locale_drs_ET">گدئو (اتیوپی)</string>
-    <string name="subtype_locale_drt_NL">درنتی (هلند)</string>
-    <string name="subtype_locale_dsb_DE">سوربی پایینی (آلمان)</string>
-    <string name="subtype_locale_dtp_MY">کادازان‌دوسون (مالزی)</string>
-    <string name="subtype_locale_dty_NP">دوتلی (نپال)</string>
+    <string name="subtype_locale_drs_ET">گدئو</string>
+    <string name="subtype_locale_drt_NL">درنتی</string>
+    <string name="subtype_locale_dsb_DE">سوربی پایینی</string>
+    <string name="subtype_locale_dtp_MY">کادازان‌دوسون</string>
+    <string name="subtype_locale_dty_NP">دوتلی</string>
     <string name="subtype_locale_dv_MV">دیوهی</string>
     <string name="subtype_locale_dyu_XF">دیولا</string>
     <string name="subtype_locale_efi_NG">افیک</string>
-    <string name="subtype_locale_egl_IT">امیلیان (ایتالیا)</string>
+    <string name="subtype_locale_egl_IT">امیلیان</string>
     <string name="subtype_locale_en_GB">‫انگلیسی (بریتانیا)‏</string>
     <string name="subtype_locale_en_US">‫انگلیسی (آمریکا)‏</string>
-    <string name="subtype_locale_es_US">اسپانیایی (آمریکا)</string>
+    <string name="subtype_locale_es_US">اسپانیایی (ایالات متحده)</string>
     <string name="subtype_locale_eu_ES">باسکی</string>
-    <string name="subtype_locale_ewo_CM">اِوُندو (کامرون)</string>
-    <string name="subtype_locale_ext_ES">اکسترمادورایی (اسپانیا)</string>
+    <string name="subtype_locale_ewo_CM">اِوُندو</string>
+    <string name="subtype_locale_ext_ES">اکسترمادورایی</string>
+    <string name="subtype_locale_fa">فارسی</string>
     <string name="subtype_locale_fa_AF">دری</string>
     <string name="subtype_locale_fan_GQ">فنگ</string>
-    <string name="subtype_locale_fat_GH">فانته (غنا)</string>
+    <string name="subtype_locale_fat_GH">فانته</string>
     <string name="subtype_locale_ff">فولانی (لاتین)</string>
     <string name="subtype_locale_ff_XF">فولانی (آدلام)</string>
     <string name="subtype_locale_fil_XF">فیلیپینی (بای‌بایین)</string>
     <string name="subtype_locale_fon_BJ">فون</string>
-    <string name="subtype_locale_fur_IT">فریولی (ایتالیا)</string>
+    <string name="subtype_locale_fub_CM">Adamawa Fulfulde</string>
+    <string name="subtype_locale_fuc_SN">Pulaar</string>
+    <string name="subtype_locale_fur_IT">فریولی</string>
     <string name="subtype_locale_gag_MD">گاگائوز (لاتین)</string>
     <string name="subtype_locale_gag_XB">گاگائوز (سیریلیک)</string>
     <string name="subtype_locale_gax_ET">اوروموی جنوبی</string>
-    <string name="subtype_locale_gay_ID">گایو (اندونزی)</string>
-    <string name="subtype_locale_gbm_IN">گرهوالی (هند)</string>
+    <string name="subtype_locale_gay_ID">گایو</string>
+    <string name="subtype_locale_gbm_IN">گرهوالی</string>
+    <string name="subtype_locale_gbo_LR">گربو شمالی</string>
     <string name="subtype_locale_gcf_GP">کریول گوادلوپ</string>
     <string name="subtype_locale_gcr_GF">کریول گویان</string>
-    <string name="subtype_locale_gd_GB">گیلیک اسکاتلندی (بریتانیا)</string>
-    <string name="subtype_locale_gdx_IN">گودواری (هند)</string>
+    <string name="subtype_locale_gd_GB">گالیک اسکاتلندی</string>
+    <string name="subtype_locale_gdx_IN">گودواری</string>
     <string name="subtype_locale_gez">گعز</string>
     <string name="subtype_locale_gil_KI">کریباتی</string>
     <string name="subtype_locale_gju_PK">گوجری (پاکستان)</string>
     <string name="subtype_locale_gju_XD">گوجری (هند)</string>
-    <string name="subtype_locale_glk_IR">گیلکی (ایران)</string>
+    <string name="subtype_locale_glk_IR">گیلکی</string>
     <string name="subtype_locale_gno_IN">گُندی (دیواناگری)</string>
     <string name="subtype_locale_gno_XF">گُندی (تلوگو)</string>
-    <string name="subtype_locale_gog_TZ">گوگو (تانزانیا)</string>
-    <string name="subtype_locale_gor_ID">گورونتالو (اندونزی)</string>
-    <string name="subtype_locale_gos_NL">خرونینگنی (هلند)</string>
+    <string name="subtype_locale_gog_TZ">گوگو</string>
+    <string name="subtype_locale_gor_ID">گورونتالو</string>
+    <string name="subtype_locale_gos_NL">خرونینگنی</string>
     <string name="subtype_locale_gpe_GH">پی‌جین غنائی</string>
     <string name="subtype_locale_grt_XA">گارو (لاتین)</string>
     <string name="subtype_locale_grt_XE">گارو (بنگالی)</string>
-    <string name="subtype_locale_gsw_CH">آلمانی سوئيسی (سوئیس)</string>
+    <string name="subtype_locale_gsw_CH">آلمانی سوئیسی</string>
     <string name="subtype_locale_gu_XA">گجراتی (لاتین)</string>
     <string name="subtype_locale_guc_CO">وایو</string>
     <string name="subtype_locale_gux_BF">گورمانی</string>
-    <string name="subtype_locale_guz_KE">گوسی (کنیا)</string>
+    <string name="subtype_locale_guz_KE">گاسی</string>
     <string name="subtype_locale_gv">مانکس</string>
+    <string name="subtype_locale_gvr_NP">گورونگ</string>
     <string name="subtype_locale_gwc_PK">کالام کوهستانی</string>
     <string name="subtype_locale_gyn">کریول گویان</string>
     <string name="subtype_locale_ha_GH">هوسه (غنا)</string>
     <string name="subtype_locale_hac_IR">گورانی</string>
     <string name="subtype_locale_hae_ET">اوروموی شرقی</string>
     <string name="subtype_locale_hak_CN">هاکا</string>
-    <string name="subtype_locale_haq_TZ">ها (تانزانیا)</string>
+    <string name="subtype_locale_haq_TZ">هآ</string>
     <string name="subtype_locale_haw">هاوایی</string>
-    <string name="subtype_locale_hay_TZ">هایا (تانزانیا)</string>
+    <string name="subtype_locale_hay_TZ">هایا</string>
     <string name="subtype_locale_haz_AF">هزارگی</string>
-    <string name="subtype_locale_hdy_XA">هادیا (لاتین)</string>
-    <string name="subtype_locale_hea_CN">هوم (چین)</string>
-    <string name="subtype_locale_heh_TZ">هه‌هه (تانزانیا)</string>
+    <string name="subtype_locale_hdy_XA">هادیا</string>
+    <string name="subtype_locale_hea_CN">همو</string>
+    <string name="subtype_locale_heh_TZ">هیهی</string>
     <string name="subtype_locale_hi_XA">هندی-انگلیسی</string>
-    <string name="subtype_locale_hif_XA">فیجی هندی (فیجی)</string>
+    <string name="subtype_locale_hif_XA">فیجی هندی (لاتین)</string>
     <string name="subtype_locale_hif_XD">هندی فیچی (دیواناگری)</string>
-    <string name="subtype_locale_hil_PH">هیلیگاینون (فیلیپین)</string>
+    <string name="subtype_locale_hil_PH">هیلیگاینون</string>
     <string name="subtype_locale_hlb_IN">هالبی (دیوانگاری)</string>
     <string name="subtype_locale_hlb_XF">هالبی (اوریه)</string>
     <string name="subtype_locale_hmn">همونگ</string>
     <string name="subtype_locale_hnd_PK">هندکو جنوبی</string>
-    <string name="subtype_locale_hne_IN">چتیسگری (هند)</string>
+    <string name="subtype_locale_hne_IN">چتیسگری</string>
     <string name="subtype_locale_hni_CN">هانی</string>
     <string name="subtype_locale_hno_PK">هندکو شمالی</string>
     <string name="subtype_locale_ho_PG">هیری موتو</string>
-    <string name="subtype_locale_hoj_IN">هاروتی (هند)</string>
-    <string name="subtype_locale_hrx_BR">آلمانی هنسریک (برزیل)</string>
-    <string name="subtype_locale_hsb_DE">سوربی بالایی (آلمان)</string>
+    <string name="subtype_locale_hoj_IN">هاروتی</string>
+    <string name="subtype_locale_hrx_BR">آلمانی هنسریک</string>
+    <string name="subtype_locale_hsb_DE">سوربی بالایی</string>
     <string name="subtype_locale_ht">کرئول هائیتی</string>
     <string name="subtype_locale_hvn_ID">هاوو</string>
-    <string name="subtype_locale_hwc_US">پی‌جین هاوایی (ایالات متحده)</string>
+    <string name="subtype_locale_hwc_US">پی‌جین هاوایی</string>
     <string name="subtype_locale_iba_MY">ایبان</string>
-    <string name="subtype_locale_ibb_NG">ایبی‌بیو (نیجریه)</string>
-    <string name="subtype_locale_igb_NG">ابیرا (نیجریه)</string>
+    <string name="subtype_locale_ibb_NG">ایبی‌بیو</string>
+    <string name="subtype_locale_igb_NG">اِبیرا</string>
     <string name="subtype_locale_ii_CN">نوسو (یی)</string>
     <string name="subtype_locale_ii_XA">نوسو (لاتین)</string>
-    <string name="subtype_locale_ilo_PH">ایلوکانو (فیلیپین)</string>
+    <string name="subtype_locale_ilo_PH">ایلوکانو</string>
     <string name="subtype_locale_inh_RU">اینگوشی</string>
-    <string name="subtype_locale_iso_NG">آیزوکو (نیجریه)</string>
+    <string name="subtype_locale_iso_NG">آیزوکو</string>
+    <string name="subtype_locale_itv_PH">ایتاویت</string>
     <string name="subtype_locale_iu_CA">اینوکتیتوت (هجایی)</string>
     <string name="subtype_locale_iu_XA">اینوکتیتوت (لاتین)</string>
     <string name="subtype_locale_ium_CN">لومی‌ین</string>
@@ -1513,7 +1588,7 @@
     <string name="subtype_locale_jv_XA">بانیوماسان</string>
     <string name="subtype_locale_jv_XF">جاوه‌ای (آکسارا جوا)</string>
     <string name="subtype_locale_ka_XG">گرجی (کاتسوری)</string>
-    <string name="subtype_locale_kaa_UZ">قره‌قالپاقی</string>
+    <string name="subtype_locale_kaa_UZ">قره‌قالپاقی (لاتین)</string>
     <string name="subtype_locale_kaa_XB">قره‌قالپاقی (سیریلیک)</string>
     <string name="subtype_locale_kac_MM">جینگ‌فو</string>
     <string name="subtype_locale_kam_KE">کامبا</string>
@@ -1522,96 +1597,108 @@
     <string name="subtype_locale_kde_TZ">ماکانده</string>
     <string name="subtype_locale_kea_CV">کریول کیبپ ورد</string>
     <string name="subtype_locale_kek_GT">ککچی</string>
-    <string name="subtype_locale_kfq_IN">کورکو (هند)</string>
-    <string name="subtype_locale_kfr_IN">کچی (هند)</string>
-    <string name="subtype_locale_kfy_IN">کومائونی (هند)</string>
+    <string name="subtype_locale_kfq_IN">کورکو</string>
+    <string name="subtype_locale_kfr_IN">کچی</string>
+    <string name="subtype_locale_kfy_IN">کومائونی</string>
     <string name="subtype_locale_kg_AO">کنگو</string>
-    <string name="subtype_locale_kge_ID">کومرینگ (اندونزی)</string>
+    <string name="subtype_locale_kge_ID">کومرینگ</string>
     <string name="subtype_locale_kha_IN">خاسی</string>
     <string name="subtype_locale_khb_CN">تای‌لو (تای‌لو جدید)</string>
     <string name="subtype_locale_khw">کهوار</string>
     <string name="subtype_locale_ki_KE">کیکویو</string>
-    <string name="subtype_locale_kiu_TR">کرمانجکی (ترکیه)</string>
+    <string name="subtype_locale_kiu_TR">کرمانجکی</string>
     <string name="subtype_locale_kj">کوانیاما</string>
     <string name="subtype_locale_kl">کالالیسوت</string>
-    <string name="subtype_locale_kmb_AO">کیمبوندو (آنگولا)</string>
+    <string name="subtype_locale_kmb_AO">کیمبوندو</string>
     <string name="subtype_locale_kmz_XA">ترکی خراسانی (لاتین)</string>
     <string name="subtype_locale_kmz_XC">ترکی خراسانی (عربی)</string>
     <string name="subtype_locale_kn_XA">کانارا (لاتین)</string>
-    <string name="subtype_locale_knn_IN">کونکانی مهاراشترا (هندوستان)</string>
-    <string name="subtype_locale_koi_RU">کومی-پرمیاکی (روسیه)</string>
+    <string name="subtype_locale_kne_PH">کانکانائری</string>
+    <string name="subtype_locale_knn_IN">کونکانی مهاراشترا</string>
+    <string name="subtype_locale_koi_RU">کومی-پرمیاکی</string>
     <string name="subtype_locale_kok_XA">کنکانی (لاتین)</string>
     <string name="subtype_locale_kok_XD">کنکانی (دوناگری)</string>
     <string name="subtype_locale_kok_XF">کونکانی (کانارا)</string>
     <string name="subtype_locale_koo_UG">کونزو</string>
-    <string name="subtype_locale_kpv_RU">کومی زیریان (روسیه)</string>
+    <string name="subtype_locale_kpv_RU">کومی زیریان</string>
     <string name="subtype_locale_kr_NG">کنوری</string>
     <string name="subtype_locale_krc_RU">کاراچایی-بالکاری</string>
-    <string name="subtype_locale_kri_SL">کرایو (سیرالئون)</string>
-    <string name="subtype_locale_krj_PH">کاراییه (فیلیپین)</string>
+    <string name="subtype_locale_kri_SL">کریو</string>
+    <string name="subtype_locale_krj_PH">کارایا</string>
     <string name="subtype_locale_krl_RU">کارلیایی</string>
     <string name="subtype_locale_kru_IN">کورخ</string>
     <string name="subtype_locale_ks_XA">کشمیری (لاتین)</string>
     <string name="subtype_locale_ks_XC">کشمیری (عربی)</string>
     <string name="subtype_locale_ks_XD">کشمیری (دوناگری)</string>
-    <string name="subtype_locale_ksh_DE">کولش (آلمان)</string>
+    <string name="subtype_locale_ksh_DE">کولش</string>
     <string name="subtype_locale_ksw_MM">سگاو کارن</string>
-    <string name="subtype_locale_ktb_XA">کامباتا</string>
+    <string name="subtype_locale_ktb_XA">کامباتا (لاتین)</string>
+    <string name="subtype_locale_ktb_XF">کامباتا (گعز)</string>
     <string name="subtype_locale_ktu_CD">کیکنگو-کیتوبا</string>
     <string name="subtype_locale_kum_RU">قموقی</string>
-    <string name="subtype_locale_kv_RU">کومی (روسیه)</string>
-    <string name="subtype_locale_kw_GB">کورنی (بریتانیا)</string>
+    <string name="subtype_locale_kv_RU">کومی</string>
+    <string name="subtype_locale_kvx_PK">پارکری کولی</string>
+    <string name="subtype_locale_kw_GB">کورنی</string>
     <string name="subtype_locale_kxm_TH">خمر سورین</string>
+    <string name="subtype_locale_kxu_IN">کوی</string>
     <string name="subtype_locale_kyu_MM">کایای غربی (کایالی)</string>
     <string name="subtype_locale_lad_BA">لادینو</string>
     <string name="subtype_locale_lad_IL">لادینو (اسرائیل)</string>
     <string name="subtype_locale_laj_UG">لانگو (اوگاندا)</string>
+    <string name="subtype_locale_las_TG">Lama</string>
     <string name="subtype_locale_lbe_RU">لاکی</string>
     <string name="subtype_locale_led_CD">لندو</string>
+    <string name="subtype_locale_lep_IN">لپچا</string>
     <string name="subtype_locale_lew_ID">لدو کایلی</string>
     <string name="subtype_locale_lez_AZ">لزگی (آذربایجان)</string>
     <string name="subtype_locale_lez_RU">لزگی (روسیه)</string>
-    <string name="subtype_locale_lg_UG">لوگاندا (اوگاندا)</string>
+    <string name="subtype_locale_lg_UG">لوگاندا</string>
     <string name="subtype_locale_lgg_UG">لوگبارا</string>
-    <string name="subtype_locale_li_NL">لیمبورخی (هلند)</string>
-    <string name="subtype_locale_lif_XD">لیمبو</string>
-    <string name="subtype_locale_lij_IT">لیگوری (ایتالیا)</string>
+    <string name="subtype_locale_li_NL">لیمبورخی</string>
+    <string name="subtype_locale_lif_XD">لیمبو (دیواناگاری)</string>
+    <string name="subtype_locale_lif_XF">لیمبو</string>
+    <string name="subtype_locale_lij_IT">لیگوریایی</string>
     <string name="subtype_locale_lis_XF">لیسو</string>
-    <string name="subtype_locale_liv_LV">لیوونیایی (لتونی)</string>
-    <string name="subtype_locale_ljp_ID">لامپونگ آپی (اندونزی)</string>
+    <string name="subtype_locale_liv_LV">لیوونیایی</string>
+    <string name="subtype_locale_ljp_ID">‏Lampung Apiلامپونگ آپی</string>
     <string name="subtype_locale_lki_IR">لکی</string>
     <string name="subtype_locale_lkt_US">لاکوتایی</string>
     <string name="subtype_locale_lmn_XD">لامبادی (دیواناگری)</string>
     <string name="subtype_locale_lmn_XF">لامبادی (کانارا)</string>
     <string name="subtype_locale_lmn_XG">بانجاری (تلوگو)</string>
     <string name="subtype_locale_lmo_IT">لومبارد</string>
-    <string name="subtype_locale_lon_MW">الهوم‌وی (مالاوی)</string>
-    <string name="subtype_locale_lrc_IR">لری شمالی (ایران)</string>
+    <string name="subtype_locale_lon_MW">الهوم‌وی</string>
+    <string name="subtype_locale_lrc_IR">لری شمالی</string>
+    <string name="subtype_locale_lrl_IR">اَچُمی</string>
     <string name="subtype_locale_ltg_LV">لاتگالی (لتونی)</string>
-    <string name="subtype_locale_lua_CD">لوبا-کاسای (جمهوری کنگو)</string>
+    <string name="subtype_locale_lua_CD">لوبا-کاسای</string>
     <string name="subtype_locale_luo_KE">لو</string>
     <string name="subtype_locale_lus_IN">میزو</string>
-    <string name="subtype_locale_luz_IR">لری جنوبی (ایران)</string>
-    <string name="subtype_locale_mad_ID">مادورسی (اندونزی)</string>
-    <string name="subtype_locale_mag_IN">ماگهی (هند)</string>
+    <string name="subtype_locale_luz_IR">لری جنوبی</string>
+    <string name="subtype_locale_mad_ID">مادورس</string>
+    <string name="subtype_locale_mag_IN">ماگهی</string>
     <string name="subtype_locale_mai">میتهیلی</string>
     <string name="subtype_locale_mai_XA">میتهیلی (لاتین)</string>
-    <string name="subtype_locale_mak_ID">ماکاساری (اندونزی)</string>
-    <string name="subtype_locale_mas_KE">ماسای (کنیا)</string>
-    <string name="subtype_locale_max_ID">مالایی مولوکان شمال (اندونزی)</string>
-    <string name="subtype_locale_mdf_RU">موکشا (روسیه)</string>
-    <string name="subtype_locale_mdh_PH">ماگوئیندانائو (فیلیپین)</string>
-    <string name="subtype_locale_mdr_ID">ماندار (اندونزی)</string>
+    <string name="subtype_locale_mak_ID">ماکاساری</string>
+    <string name="subtype_locale_mas_KE">ماسای</string>
+    <string name="subtype_locale_max_ID">مالایی مولوکان شمالی</string>
+    <string name="subtype_locale_mdf_RU">موکشا</string>
+    <string name="subtype_locale_mdh_PH">ماگیندانائو</string>
+    <string name="subtype_locale_mdr_ID">ماندار</string>
+    <string name="subtype_locale_mel_MY">ملانائو</string>
     <string name="subtype_locale_men_SL">منده (سیرالئون)</string>
     <string name="subtype_locale_meo_MY">مالایی کداح</string>
     <string name="subtype_locale_mer_KE">مرو (کنیا)</string>
     <string name="subtype_locale_mfa_TH">کلانتان-پاتانی مالایی (عربی)</string>
-    <string name="subtype_locale_mfb_ID">بانگکا مالایی (اندونزی)</string>
+    <string name="subtype_locale_mfb_ID">مالایی بانگکا</string>
+    <string name="subtype_locale_mfp_ID">ماکاسار مالای</string>
+    <string name="subtype_locale_mfq_TG">موبا</string>
     <string name="subtype_locale_mhr_RU">ماری شرقی</string>
-    <string name="subtype_locale_mhy_ID">ما آنیان (اندونزی)</string>
-    <string name="subtype_locale_min_ID">مینغکاباو (اندونزی)</string>
-    <string name="subtype_locale_mjl_IN">ماندالی (هند)</string>
+    <string name="subtype_locale_mhy_ID">مانیانی</string>
+    <string name="subtype_locale_min_ID">مینانگ‌کابائو</string>
+    <string name="subtype_locale_mjl_IN">ماندالی</string>
     <string name="subtype_locale_ml_XA">مالایالم (لاتین)</string>
+    <string name="subtype_locale_mnb_ID">مونا</string>
     <string name="subtype_locale_mni_XA">مانیپوری (لاتین)</string>
     <string name="subtype_locale_mni_XE">مانیپوری (بنگالی)</string>
     <string name="subtype_locale_mni_XF">مانیپوری (میتی)</string>
@@ -1619,57 +1706,61 @@
     <string name="subtype_locale_mnp_CN">مین شمالی</string>
     <string name="subtype_locale_mos_BF">مُسی</string>
     <string name="subtype_locale_mqj_ID">ماماسا</string>
-    <string name="subtype_locale_mqy_ID">مانگارای (اندونزی)</string>
+    <string name="subtype_locale_mqy_ID">مانگارای</string>
     <string name="subtype_locale_mr_XA">مراتی (لاتین)</string>
     <string name="subtype_locale_mrj_RU">هیل ماری</string>
-    <string name="subtype_locale_mrw_PH">مارانائو (فیلیپین)</string>
+    <string name="subtype_locale_mrw_PH">مارانائو</string>
     <string name="subtype_locale_ms_BN">مالایی (لاتین) (برونئی)</string>
     <string name="subtype_locale_ms_MY">مالایی (لاتین) (مالزی)</string>
     <string name="subtype_locale_ms_SG">مالایی (لاتین) (سنگاپور)</string>
     <string name="subtype_locale_ms_XC">مالایی (عربی) (مالزی)</string>
     <string name="subtype_locale_ms_XF">مالایی (عربی) (برونئی)</string>
     <string name="subtype_locale_msi_MY">مالایی صباح</string>
-    <string name="subtype_locale_mtq_VN">موانگ (ویتنام)</string>
-    <string name="subtype_locale_mtr_IN">مواری (هند)</string>
+    <string name="subtype_locale_mtq_VN">موانگ</string>
+    <string name="subtype_locale_mtr_IN">مواری</string>
     <string name="subtype_locale_mua_TD">موندانگ</string>
-    <string name="subtype_locale_mui_ID">موسی (اندونزی)</string>
-    <string name="subtype_locale_mup_IN">مالوی (هند)</string>
+    <string name="subtype_locale_mui_ID">میوزی</string>
+    <string name="subtype_locale_mul_XI">الفبای آوایی بین‌المللی</string>
+    <string name="subtype_locale_mup_IN">مالوْی</string>
     <string name="subtype_locale_mve_PK">مارواری (پاکستان)</string>
+    <string name="subtype_locale_mvp_ID">دوری</string>
+    <string name="subtype_locale_mvy_PK">کوهستانی ایندوس</string>
     <string name="subtype_locale_mww_CN">مونگ (چین)</string>
-    <string name="subtype_locale_myv_RU">ارزیا (روسیه)</string>
-    <string name="subtype_locale_myx_UG">ماسابا (اوگاندا)</string>
-    <string name="subtype_locale_mzn_IR">مازندرانی (ایران)</string>
+    <string name="subtype_locale_myv_RU">ارزیا</string>
+    <string name="subtype_locale_myx_UG">ماسابا</string>
+    <string name="subtype_locale_mzn_IR">مازندرانی</string>
     <string name="subtype_locale_na_NR">نائورویی</string>
     <string name="subtype_locale_nah">ناهواتل</string>
     <string name="subtype_locale_nan_XA">مین جنوبی</string>
-    <string name="subtype_locale_nap_IT">ناپولیتن (ایتالیا)</string>
+    <string name="subtype_locale_nap_IT">ناپولی</string>
     <string name="subtype_locale_ndc_ZW">چیندائو</string>
     <string name="subtype_locale_nde_ZW">اندبل شمالی</string>
     <string name="subtype_locale_nds_DE">ساکسونی سفلی</string>
     <string name="subtype_locale_ne_XA">نپالی (لاتین)</string>
-    <string name="subtype_locale_new_NP">نِواری (نپال)</string>
+    <string name="subtype_locale_new_NP">نِواری</string>
     <string name="subtype_locale_ng_NA">اندونگا</string>
-    <string name="subtype_locale_nga_CD">‏نگباگا گبایا (DRC)</string>
-    <string name="subtype_locale_ngl_MZ">لوموه (موزامبیک)</string>
-    <string name="subtype_locale_nia_ID">نیاس (اندونزی)</string>
-    <string name="subtype_locale_nij_ID">انگاجو (اندونزی)</string>
-    <string name="subtype_locale_niq_KE">ناندی (کنیا)</string>
+    <string name="subtype_locale_nga_CD">نِگباکا گِبایا</string>
+    <string name="subtype_locale_ngl_MZ">لوموه</string>
+    <string name="subtype_locale_nia_ID">نیاس</string>
+    <string name="subtype_locale_nij_ID">اِنگاجو</string>
+    <string name="subtype_locale_niq_KE">ناندی</string>
     <string name="subtype_locale_niu_NU">نیوئن</string>
     <string name="subtype_locale_nn_NO">نروژی نینورسک</string>
     <string name="subtype_locale_nnb_CD">نانده</string>
     <string name="subtype_locale_nod_XF">تایلندی (تایلند شمالی)</string>
-    <string name="subtype_locale_noe_IN">نیمادی (هند)</string>
+    <string name="subtype_locale_noe_IN">نیمادی</string>
     <string name="subtype_locale_nr_ZA">ندیبل جنوبی</string>
-    <string name="subtype_locale_nrf_XG">گالو (فرانسه)</string>
+    <string name="subtype_locale_nrf_XG">گالو</string>
     <string name="subtype_locale_nso">سوتوی شمالی</string>
-    <string name="subtype_locale_nup_NG">نوپ (نیجریه)</string>
+    <string name="subtype_locale_nup_NG">نوپ</string>
     <string name="subtype_locale_nv_US">ناواجو</string>
-    <string name="subtype_locale_nyf_KE">گیریاما (کنیا)</string>
-    <string name="subtype_locale_nym_TZ">نیاموِزی (تانزانیا)</string>
-    <string name="subtype_locale_nyn_UG">نکوره (اوگاندا)</string>
-    <string name="subtype_locale_nyo_UG">نیورو (اوگاندا)</string>
+    <string name="subtype_locale_nyf_KE">گیریاما</string>
+    <string name="subtype_locale_nym_TZ">نیامْوِزی</string>
+    <string name="subtype_locale_nyn_UG">نِکوره</string>
+    <string name="subtype_locale_nyo_UG">نیورو</string>
     <string name="subtype_locale_nyy_TZ">نیاکیوسا</string>
     <string name="subtype_locale_oj_XA">اوجیبو (لاتین)</string>
+    <string name="subtype_locale_oj_XF">اوجیبوی (هجایی)</string>
     <string name="subtype_locale_olo_RU">لیوی-کارلیان</string>
     <string name="subtype_locale_or">اودیا</string>
     <string name="subtype_locale_or_XA">اوریه (لاتین)</string>
@@ -1678,102 +1769,109 @@
     <string name="subtype_locale_pa_PK">پنجابی (عربی)</string>
     <string name="subtype_locale_pa_XA">پنجابی (لاتین)</string>
     <string name="subtype_locale_pa_XF">پنجابی (گورموخی)</string>
-    <string name="subtype_locale_pag_PH">پانگاسینانی (فیلیپین)</string>
-    <string name="subtype_locale_pam_PH">کاپامپانگان (فیلیپین)</string>
+    <string name="subtype_locale_pag_PH">پانگاسینانی</string>
+    <string name="subtype_locale_pam_PH">کاپامپانگان</string>
     <string name="subtype_locale_pap">پاپیامنتو</string>
     <string name="subtype_locale_pcc_CN">بوئی</string>
     <string name="subtype_locale_pcd_BE">پیکاردی</string>
     <string name="subtype_locale_pcm_NG">پیجین نیجریه</string>
     <string name="subtype_locale_pdc_US">هلندی پنسیلوانیا</string>
-    <string name="subtype_locale_pfl_DE">آلمانی پالاتن (آلمان)</string>
+    <string name="subtype_locale_pfl_DE">آلمانی پالاتن</string>
     <string name="subtype_locale_phr_PK">پاهاری پوتواری</string>
     <string name="subtype_locale_pko_KE">پوکوت</string>
+    <string name="subtype_locale_plk_PK">شینای کوهستانی</string>
+    <string name="subtype_locale_plt_MG">مالاگاسی فلاتی</string>
     <string name="subtype_locale_pmf_ID">پامونا</string>
-    <string name="subtype_locale_pms_IT">پیدمونتی (ایتالیا)</string>
-    <string name="subtype_locale_pmy_ID">مالایی پاپوآن (اندونزی)</string>
-    <string name="subtype_locale_pnt_GR">یونانی پنتوس (یونان)</string>
+    <string name="subtype_locale_pms_IT">پیدمونتی</string>
+    <string name="subtype_locale_pmy_ID">مالایی پاپوآن</string>
+    <string name="subtype_locale_pnt_GR">یونانی پنتوس</string>
     <string name="subtype_locale_pov_GW">کریول گینه بیسائو</string>
-    <string name="subtype_locale_pse_ID">مالایی مرکزی (اندونزی)</string>
+    <string name="subtype_locale_prk_MM">پاراک وا</string>
+    <string name="subtype_locale_pse_ID">مالایی مرکزی</string>
     <string name="subtype_locale_qu_PE">کچوآ</string>
     <string name="subtype_locale_quc">مایا کیشه</string>
     <string name="subtype_locale_qug_EC">کیچوایی هایلند چیمبورازو</string>
     <string name="subtype_locale_quh_BO">کچوآی بلیویایی جنوبی</string>
     <string name="subtype_locale_quy_PE">آشا کوچو</string>
     <string name="subtype_locale_quz_PE">کاسکو کچوآ</string>
-    <string name="subtype_locale_qxq_IR">قشقایی (ایران)</string>
+    <string name="subtype_locale_qxq_IR">قشقایی</string>
     <string name="subtype_locale_rcf_RE">کریول رییونیون</string>
     <string name="subtype_locale_rej_XF">رجانگ</string>
-    <string name="subtype_locale_rim_TZ">نیاتورو (تانزانیا)</string>
+    <string name="subtype_locale_rim_TZ">نیاتورو</string>
     <string name="subtype_locale_rkt_IN">رنگپوری (دیوانگاری)</string>
     <string name="subtype_locale_rkt_XE">رنگپوری (بنگالی)</string>
     <string name="subtype_locale_rmn_BG">رومانی بالکان (بلغارستان)</string>
     <string name="subtype_locale_rmn_MK">رومانی بالکان (مقدونیه)</string>
     <string name="subtype_locale_rmy_AL">ویلاکس رومانی</string>
     <string name="subtype_locale_rmy_RO">ویلاکس رومانی (رومانی)</string>
-    <string name="subtype_locale_rn_BI">روندی (بوروندی)</string>
+    <string name="subtype_locale_rn_BI">روندی</string>
     <string name="subtype_locale_rue_UA">روسینی</string>
-    <string name="subtype_locale_rwr_IN">مارواری (هند)</string>
+    <string name="subtype_locale_rwr_IN">مارواری</string>
     <string name="subtype_locale_sa_XA">سانسکریت (لاتین)</string>
     <string name="subtype_locale_sah_RU">ساخا</string>
-    <string name="subtype_locale_sas_ID">ساساک (اندونزی)</string>
+    <string name="subtype_locale_sas_ID">ساساکی</string>
     <string name="subtype_locale_sat_XA">سانتالی (لاتین)</string>
     <string name="subtype_locale_sat_XD">سانتالی (دیواناگری)</string>
     <string name="subtype_locale_sat_XE">سنتالی (بنگالی)</string>
     <string name="subtype_locale_sat_XF">سانتالی (اُل چیکی)</string>
     <string name="subtype_locale_saz_IN">سواراشترا</string>
-    <string name="subtype_locale_sc_IT">ساردنیایی (ایتالیا)</string>
+    <string name="subtype_locale_sba_TD">گامبای</string>
+    <string name="subtype_locale_sc_IT">ساردنیایی</string>
     <string name="subtype_locale_sck_IN">سادری</string>
     <string name="subtype_locale_scl_PK">شینا (پاکستان)</string>
-    <string name="subtype_locale_scn_IT">سیسیلیان (ایتالیا)</string>
-    <string name="subtype_locale_sco_GB">اسکاتس (بریتانیا)</string>
+    <string name="subtype_locale_scn_IT">سیسیلی</string>
+    <string name="subtype_locale_sco_GB">اسکاتس</string>
     <string name="subtype_locale_sd_XA">سندی (لاتین)</string>
     <string name="subtype_locale_sd_XC">سندی (عربی)</string>
     <string name="subtype_locale_sd_XD">سندی (دوناگری)</string>
-    <string name="subtype_locale_sdc_IT">ساساری (ایتالیا)</string>
+    <string name="subtype_locale_sda_ID">توراجا-سادان</string>
+    <string name="subtype_locale_sdc_IT">ساساری</string>
     <string name="subtype_locale_sdh_IR">کردی جنوبی</string>
     <string name="subtype_locale_se_NO">سامی شمالی</string>
-    <string name="subtype_locale_sef_CI">سبآرا سنوفو (ساحل عاج)</string>
+    <string name="subtype_locale_sef_CI">کِبارا سِنوفو</string>
     <string name="subtype_locale_seh_MZ">سنا (موزامبیک)</string>
     <string name="subtype_locale_sg_CF">سانگو</string>
-    <string name="subtype_locale_sgc_KE">کیپسیجیس (کنیا)</string>
-    <string name="subtype_locale_sgs_LT">ساموگیتی (لیتوانی)</string>
-    <string name="subtype_locale_sgw_ET">سبات به گوریج (اتیوپی)</string>
-    <string name="subtype_locale_sjp_IN">سوجاپوری (هند)</string>
+    <string name="subtype_locale_sgc_KE">کیپسی‌جیس</string>
+    <string name="subtype_locale_sgs_LT">ساموگیتی</string>
+    <string name="subtype_locale_sgw_ET">سبات بت گوراگی</string>
+    <string name="subtype_locale_shn_MM">Shan</string>
+    <string name="subtype_locale_sjp_IN">سورجاپوری</string>
     <string name="subtype_locale_skg_MG">مالاگاسی ساکالاوا</string>
     <string name="subtype_locale_skr_XR">سرائیکی (عربی اردو)</string>
     <string name="subtype_locale_skr_XS">سرائیکی (عربی سندی)</string>
     <string name="subtype_locale_snk_ML">سونینکه</string>
-    <string name="subtype_locale_sop_CD">سونگه (جمهوری کنگو)</string>
+    <string name="subtype_locale_sop_CD">سونگه</string>
     <string name="subtype_locale_sou_TH">تایلندی (تایلند جنوبی)</string>
+    <string name="subtype_locale_spp_ML">سوپایر</string>
     <string name="subtype_locale_sr">صربی (سیریلیک)</string>
     <string name="subtype_locale_sr_XA">مونته‌نگرو (لاتین)</string>
     <string name="subtype_locale_sr_XB">مونته‌نگرو (سیریلیک)</string>
     <string name="subtype_locale_sr_ZZ">صربی (لاتین)</string>
     <string name="subtype_locale_srn">اسرانان</string>
-    <string name="subtype_locale_srp">مونته‌نگروئی</string>
-    <string name="subtype_locale_ss_SZ">سوازی</string>
+    <string name="subtype_locale_ss_SZ">سوازی (سوازیلند)</string>
     <string name="subtype_locale_ss_ZA">سوازی (آفریقای جنوبی)</string>
     <string name="subtype_locale_st_LS">سوتو (لسوتو)</string>
+    <string name="subtype_locale_stv_XA">"Silt'e"</string>
     <string name="subtype_locale_sty_RU">تاتاری سیبری</string>
     <string name="subtype_locale_su">سوندایی (لاتین)</string>
     <string name="subtype_locale_su_XC">سوندایی (عربی)</string>
     <string name="subtype_locale_su_XF">سوندایی (آکسارا سوندا)</string>
-    <string name="subtype_locale_swv_IN">شخاواتی (هندی)</string>
-    <string name="subtype_locale_sxu_DE">ساکسون بالا (آلمان)</string>
+    <string name="subtype_locale_swv_IN">شخاواتی</string>
+    <string name="subtype_locale_sxu_DE">ساکسون علیا</string>
     <string name="subtype_locale_syc_IQ">سریانی کلاسیک</string>
     <string name="subtype_locale_syl_BD">سیلهتی (بنگالی)</string>
     <string name="subtype_locale_syl_XA">سیلهتی (لاتین)</string>
     <string name="subtype_locale_syl_XF">سیلهتی (سیلوتی ناگری)</string>
     <string name="subtype_locale_szl_PL">سیلسیایی</string>
     <string name="subtype_locale_ta_XA">تامیل (لاتین)</string>
-    <string name="subtype_locale_tab_RU">تبرسرانی (روسیه)</string>
-    <string name="subtype_locale_taj_NP">تامانگ شرقی (نپال)</string>
-    <string name="subtype_locale_tcy_IN">تولو (هند)</string>
+    <string name="subtype_locale_tab_RU">تبرسرانی</string>
+    <string name="subtype_locale_taj_NP">تامانگ شرقی</string>
+    <string name="subtype_locale_tcy_IN">تولو</string>
     <string name="subtype_locale_te_XA">تلوگو (لاتین)</string>
-    <string name="subtype_locale_tem_SL">تمنه (سیرالئون)</string>
+    <string name="subtype_locale_tem_SL">تِمنه</string>
     <string name="subtype_locale_teo_UG">تسو</string>
-    <string name="subtype_locale_tet_TL">تتومی (تیمور شرقی)</string>
-    <string name="subtype_locale_tiv_NG">تیو (نیجریه)</string>
+    <string name="subtype_locale_tet_TL">تتوم</string>
+    <string name="subtype_locale_tiv_NG">تیوْ</string>
     <string name="subtype_locale_tkl_TK">توکلائویی</string>
     <string name="subtype_locale_tks_IR">تاتی</string>
     <string name="subtype_locale_tl">فیلیپینی</string>
@@ -1782,22 +1880,25 @@
     <string name="subtype_locale_tly_IR">تالشی (ایران)</string>
     <string name="subtype_locale_tly_RU">تالشی (روسیه)</string>
     <string name="subtype_locale_tn_BW">تسوانا</string>
-    <string name="subtype_locale_to_TO">تونگایی (تونگا)</string>
+    <string name="subtype_locale_to_TO">تونگایی</string>
     <string name="subtype_locale_tpi">توک پیسین</string>
     <string name="subtype_locale_trf_TT">ترینیداد کریول انگلیسی</string>
     <string name="subtype_locale_trp_IN">کُک بُرُک (بنگالی)</string>
     <string name="subtype_locale_trp_XA">کوک بروک (لاتین)</string>
     <string name="subtype_locale_trw">توروالی</string>
     <string name="subtype_locale_tsg_PH">تائوسوگ</string>
-    <string name="subtype_locale_ttj_UG">تورو (اوگاندا)</string>
-    <string name="subtype_locale_tts_TH">ایسانی (تایلند)</string>
+    <string name="subtype_locale_ttj_UG">تورو</string>
+    <string name="subtype_locale_tts_TH">ایسان</string>
     <string name="subtype_locale_tum_MW">تومبوکایی</string>
-    <string name="subtype_locale_tuv_KE">تورکانا (کنیا)</string>
-    <string name="subtype_locale_twd_NL">توینتی (هلند)</string>
-    <string name="subtype_locale_tyv_RU">تووان (روسیه)</string>
-    <string name="subtype_locale_udm_RU">اودمورت (روسیه)</string>
-    <string name="subtype_locale_umb_AO">آمباندو (آنگولا)</string>
+    <string name="subtype_locale_tuv_KE">تورکانا</string>
+    <string name="subtype_locale_twd_NL">توینتی</string>
+    <string name="subtype_locale_tyv_RU">تووان</string>
+    <string name="subtype_locale_tyz_VN">Tay</string>
+    <string name="subtype_locale_udm_RU">اودمورت</string>
+    <string name="subtype_locale_umb_AO">آمباندو</string>
+    <string name="subtype_locale_unr_XA">مانداری (لاتین)</string>
     <string name="subtype_locale_unr_XE">مانداری (بنگالی)</string>
+    <string name="subtype_locale_unr_XF">مانداری (اُدیا)</string>
     <string name="subtype_locale_ur_XA">اردو (لاتین)</string>
     <string name="subtype_locale_uum_GE">اوروم</string>
     <string name="subtype_locale_uz">ازبکی (لاتین)</string>
@@ -1805,38 +1906,39 @@
     <string name="subtype_locale_vai_LR">وای</string>
     <string name="subtype_locale_vas_IN">واساوی (دیوانگاری)</string>
     <string name="subtype_locale_vas_XF">واساوی (گجراتی)</string>
-    <string name="subtype_locale_ve_ZA">وندا (آفریقای جنوبی)</string>
-    <string name="subtype_locale_vec_IT">ونیزی (ایتالیا)</string>
-    <string name="subtype_locale_vel_NL">فلووه‌ای (هلند)</string>
-    <string name="subtype_locale_vep_RU">وپس (روسیه)</string>
-    <string name="subtype_locale_vkt_ID">کوتای مالای (اندونزی)</string>
-    <string name="subtype_locale_vls_BE">فلاندری غربی (بلژیک)</string>
-    <string name="subtype_locale_vmf_DE">فراکونیایی شرقی (آلمان)</string>
+    <string name="subtype_locale_ve_ZA">وندا</string>
+    <string name="subtype_locale_vec_IT">ونیزی</string>
+    <string name="subtype_locale_vel_NL">فلووه‌ای</string>
+    <string name="subtype_locale_vep_RU">وپس</string>
+    <string name="subtype_locale_vkt_ID">مالایی کوتای</string>
+    <string name="subtype_locale_vls_BE">فلامان غربی</string>
+    <string name="subtype_locale_vmf_DE">فراکونیایی شرقی</string>
     <string name="subtype_locale_vro_EE">وورو (استونی)</string>
-    <string name="subtype_locale_wa_BE">والون (بلژیک)</string>
+    <string name="subtype_locale_wa_BE">والون</string>
+    <string name="subtype_locale_wal_ET">ولیتا</string>
     <string name="subtype_locale_war">وینارایی</string>
-    <string name="subtype_locale_wbr_IN">وگدی (هندوستان)</string>
+    <string name="subtype_locale_wbr_IN">وگدی</string>
     <string name="subtype_locale_wes_CM">پیدگین کامرون</string>
     <string name="subtype_locale_wne_PK">وانستی</string>
-    <string name="subtype_locale_wry_IN">مارواری (هند)</string>
-    <string name="subtype_locale_xal_RU">قالمیق (روسیه)</string>
+    <string name="subtype_locale_wry_IN">مارواری</string>
+    <string name="subtype_locale_xal_RU">قالمیق</string>
     <string name="subtype_locale_xmf_GE">مگرلی</string>
-    <string name="subtype_locale_xmm_ID">مانادو مالای (اندونزی)</string>
-    <string name="subtype_locale_xnr_IN">کنگری (هندوستان)</string>
-    <string name="subtype_locale_xog_UG">سوگا (اوگاندا)</string>
+    <string name="subtype_locale_xmm_ID">مالایی مانادو</string>
+    <string name="subtype_locale_xnr_IN">کنگری</string>
+    <string name="subtype_locale_xog_UG">سوگا</string>
     <string name="subtype_locale_xon_GH">کونکومبا</string>
     <string name="subtype_locale_yaf_CD">آکا</string>
     <string name="subtype_locale_yao_MW">یائو</string>
     <string name="subtype_locale_ydd_IL">ییدیش (اسرائیلی)</string>
-    <string name="subtype_locale_ymm_SO">مای مای (سومالی)</string>
-    <string name="subtype_locale_yua_MX">مایای یوکاتکی (مکزیک)</string>
-    <string name="subtype_locale_za_CN">جوانگ (چین)</string>
-    <string name="subtype_locale_zea_NL">زیلاندی (هلند)</string>
-    <string name="subtype_locale_zyb_CN">یانگبی ژوانگ (چین)</string>
-    <string name="subtype_locale_zyj_CN">یوجیانگ ژوانگ (چین)</string>
+    <string name="subtype_locale_ymm_SO">مای مای</string>
+    <string name="subtype_locale_yua_MX">مایای یوکاتکی</string>
+    <string name="subtype_locale_za_CN">ژوانگ</string>
+    <string name="subtype_locale_zea_NL">زیلاندی</string>
+    <string name="subtype_locale_zyb_CN">یونگبی ژوانگ</string>
+    <string name="subtype_locale_zyj_CN">یوجیانگ ژوانگ</string>
     <string name="suggested_punctuations">"!؟؛،:\"(|))|('-/@_"</string>
     <string name="suggested_queries_available_content_desc">پُرسمان‌های پیشنهادی دردسترس هستند</string>
-    <string name="suggested_query_content_desc">‏%1$s:‏ %2$s</string>
+    <string name="suggested_query_content_desc">%1$s: %2$s</string>
     <string name="superpacks_notification_channel_name">بارگیری‌ها</string>
     <string name="superpacks_notification_content_text">به‌روزرسانی تجربه تایپ کردن</string>
     <string name="surprise_emoticon_description_bashful_face">چهره شرم‌زده</string>
@@ -1991,44 +2093,49 @@
     <string name="translate_network_status_message">شبکه دردسترس نیست</string>
     <string name="translate_query_editbox_hint">نوشتار را برای ترجمه شدن وارد کنید</string>
     <string name="translate_query_editbox_label">صفحه ترجمه.</string>
-    <string name="translate_source_language_content_desc">‏زبان مبدأ فعلی برای ترجمه %s است. برای تغییر آن در فهرست زبان بازشو، انگشتتان را رها کنید.</string>
+    <string name="translate_source_language_content_desc">زبان مبدأ فعلی برای ترجمه %s است. برای تغییر آن در فهرست زبان بالاپر، انگشتتان را رها کنید.</string>
     <string name="translate_source_language_drop_down_content_desc">برای بزرگ کردن فهرست زبان مبدأ ضربه بزنید.</string>
     <string name="translate_swap_language_content_desc">تغییر زبان‌های مبدأ و هدف برای ترجمه.</string>
-    <string name="translate_target_language_content_desc">‏زبان هدف کنونی برای ترجمه %s است. برای تغییر آن در فهرست زبان بازشو، انگشتتان را رها کنید.</string>
+    <string name="translate_target_language_content_desc">زبان هدف کنونی برای ترجمه %s است. برای تغییر آن در فهرست زبان بالاپر، انگشتتان را رها کنید.</string>
     <string name="translate_target_language_drop_down_content_desc">برای بزرگ کردن فهرست زبان هدف ضربه بزنید.</string>
     <string name="translate_term_dialog_text">‏نوشتاری که در کادر ترجمه تایپ می‌کنید برای ترجمه شدن به Google ارسال می‌شود. <a href="https://support.google.com/translate">بیشتر بدانید.</a></string>
     <string name="translate_term_dialog_title">‏استفاده از «مترجم Google»</string>
     <string name="turn_off_single_character_candidate_key_content_desc">نمایش همه پیشنهادات</string>
-    <string name="turn_on_single_character_candidate_key_content_desc">فقط پیشنهادات تک نویسه‌ای نشان داده شوند</string>
-    <string name="turn_page">‏صفحه ‎%s</string>
+    <string name="turn_on_single_character_candidate_key_content_desc">فقط نمایش پیشنهادات تک نویسه‌ای</string>
+    <string name="turn_page">صفحه %s</string>
     <string name="tutorial_done">تمام</string>
-    <string name="undo_delete_popup_button_label">واگرد</string>
-    <string name="undo_delete_popup_label">‏%d مورد حذف شد.</string>
+    <string name="undo_delete_popup_label">%d مورد حذف شد.</string>
     <string name="undo_delete_popup_label_for_single_item">۱ مورد حذف شد.</string>
+    <string name="undo_popup_button_label">واگرد</string>
     <string name="universal_media_emoji_header_text">اموجی</string>
     <string name="universal_media_gifs_header_text">GIF</string>
     <string name="universal_media_keyboard_key_content_desc">صفحه‌کلید رسانه جهانی</string>
-    <string name="universal_media_plural_suffix">" ‏فایل‌های GIF"</string>
+    <string name="universal_media_plural_suffix">‏ فایل‌های GIF</string>
     <string name="universal_media_search_hint">جستجوی همه رسانه‌ها</string>
-    <string name="universal_media_singular_suffix">" gif"</string>
+    <string name="universal_media_singular_suffix">gif</string>
     <string name="universal_media_sticker_header_text">برچسب</string>
     <string name="universal_media_sticker_more_results">بیشتر</string>
     <string name="universal_media_sticker_more_results_content_desc">باز کردن نتایج برچسب بیشتر</string>
     <string name="up_arrow_key_content_desc">پیکان بالا</string>
     <string name="update_bug_message">به‌روزرسانی گزارش اشکال موجود</string>
-    <string name="upper_case_content_desc">‏%1$s بزرگ</string>
+    <string name="upper_case_content_desc">حرف بزرگ%1$s</string>
+    <string name="use_another_account_text">Use another account</string>
+    <string name="use_without_account_text">Use %s without an account</string>
     <string name="user_theme_name_format">طرح زمینه (%1$d) ایجادشده در %2$s</string>
     <string name="variant_9key">۹ کلیدی</string>
     <string name="variant_abkhaz">آبخاز</string>
+    <string name="variant_abron">اِبران</string>
     <string name="variant_adyghe">آدیغی</string>
     <string name="variant_ahirani">خاندیشی</string>
     <string name="variant_akan">آکان</string>
+    <string name="variant_akoose">آکوس</string>
     <string name="variant_albanian">آلبانیایی</string>
     <string name="variant_amharic">امهری</string>
     <string name="variant_arabic">عربی</string>
     <string name="variant_armenian_armenia_phonetic">ارمنی</string>
     <string name="variant_assamese">آسامی</string>
     <string name="variant_assyrian">آشوری</string>
+    <string name="variant_avar">آواری</string>
     <string name="variant_awadhi_dynamic">اودهی</string>
     <string name="variant_aymara">آیمارا</string>
     <string name="variant_azerbaijani">آذربایجانی</string>
@@ -2036,10 +2143,13 @@
     <string name="variant_bagheli">بگهلی</string>
     <string name="variant_bagri">بگری</string>
     <string name="variant_bahamian_creole">باهاما</string>
+    <string name="variant_balinese">بالیایی</string>
     <string name="variant_balochi">بلوچی</string>
     <string name="variant_bambara">بامبارا</string>
     <string name="variant_baoule">بائوله</string>
+    <string name="variant_basaa">بسا</string>
     <string name="variant_bashkir">باشقیر</string>
+    <string name="variant_batak_mandailing">ماندایلینگ باتاک</string>
     <string name="variant_bavarian">اتریشی-باواریایی</string>
     <string name="variant_belarusian_belarus">بلاروسی</string>
     <string name="variant_belarusian_belarus_with_apostrophe">"بلاروسی (')"</string>
@@ -2061,6 +2171,7 @@
     <string name="variant_buryat_russia">بوریاتی</string>
     <string name="variant_cangjie">کانجی</string>
     <string name="variant_catalan">کاتالان</string>
+    <string name="variant_cebaara_senoufo">سبآرا سنوفو</string>
     <string name="variant_chamorro">چامورو</string>
     <string name="variant_chechen">چچنی</string>
     <string name="variant_cherokee">چروکی</string>
@@ -2070,11 +2181,14 @@
     <string name="variant_choctaw">چاکتاو</string>
     <string name="variant_church_slavonic">اسلاوی کلیسایی</string>
     <string name="variant_chuvash">چوواشی</string>
+    <string name="variant_coptic">قبطی</string>
     <string name="variant_cree">کری</string>
+    <string name="variant_crimean_tatar">تاتاری کریمه</string>
     <string name="variant_croatian">کرواتی</string>
     <string name="variant_dagaare">داگاری</string>
     <string name="variant_dagbani">داگانی</string>
     <string name="variant_dakhini">دکنی</string>
+    <string name="variant_dangme">دانگمه</string>
     <string name="variant_danish">دانمارکی</string>
     <string name="variant_dargwa">دارگوا</string>
     <string name="variant_dari_afghanistan">دری</string>
@@ -2088,15 +2202,18 @@
     <string name="variant_dzongkha">دزونگخا</string>
     <string name="variant_east_franconian_german">فراکونیایی شرقی</string>
     <string name="variant_eastern_min">مین شرقی</string>
+    <string name="variant_efik">افیک</string>
     <string name="variant_emilian">امیلیان</string>
     <string name="variant_erzya">ارزیا</string>
     <string name="variant_esperanto">اسپرانتو</string>
     <string name="variant_estonian">استونیایی</string>
     <string name="variant_ewe">اوه‌ای</string>
+    <string name="variant_ewondo">اِوُندو</string>
     <string name="variant_fantse">فانته</string>
     <string name="variant_faroese">فاروس</string>
     <string name="variant_fiji_hindi_devanagari_dynamic">فیجی هندی</string>
     <string name="variant_finnish">فنلاندی</string>
+    <string name="variant_fon">فون</string>
     <string name="variant_friulian">فریولی</string>
     <string name="variant_fula">فولانی</string>
     <string name="variant_fula_adlam">آدلام</string>
@@ -2105,6 +2222,7 @@
     <string name="variant_garo">گارو</string>
     <string name="variant_geez_dynamic">گعز</string>
     <string name="variant_georgian_georgia">ماشین تحریر</string>
+    <string name="variant_georgian_khutsuri">کاتسوری</string>
     <string name="variant_georgian_qwerty">گرجی</string>
     <string name="variant_german">آلمانی</string>
     <string name="variant_gilaki">گیلکی</string>
@@ -2136,9 +2254,11 @@
     <string name="variant_inuktitut_latin">اینوکتیتوت</string>
     <string name="variant_isoko">آیزوکو</string>
     <string name="variant_japanese_12keys_toggleflick">۱۲ کلیدی</string>
+    <string name="variant_javanese">جاوایی</string>
     <string name="variant_jyutping">جوتپینگ</string>
     <string name="variant_kabardian">کاباردی</string>
     <string name="variant_kalaallisut">کالالیسوت</string>
+    <string name="variant_kalam_kohistani">کالامی</string>
     <string name="variant_kalmyk_oirat">قالمیق</string>
     <string name="variant_kamba">کامبا</string>
     <string name="variant_kangri_dynamic">کنگری</string>
@@ -2158,9 +2278,11 @@
     <string name="variant_kikuyu">کیکویو</string>
     <string name="variant_kinyarwanda">کنیارواندا</string>
     <string name="variant_kirmanjki">کرمانجکی</string>
+    <string name="variant_kok_borok">کُک بُرُک</string>
     <string name="variant_kolsch">کولش</string>
     <string name="variant_komi">کومی</string>
     <string name="variant_komi_permyak">کومی-پرمیاکی</string>
+    <string name="variant_komi_zyrian">کومی زیریان</string>
     <string name="variant_konkani">کونکانی</string>
     <string name="variant_konkomba">کونکومبا</string>
     <string name="variant_korean_10key">۱۰ کلیدی</string>
@@ -2176,6 +2298,7 @@
     <string name="variant_kutchi">کچی</string>
     <string name="variant_kyrgyz">قرقیزی</string>
     <string name="variant_lak">لاکی</string>
+    <string name="variant_laki">لکی</string>
     <string name="variant_lakota">لاکوتایی</string>
     <string name="variant_lambadi">بانجاری</string>
     <string name="variant_lango">لانگو</string>
@@ -2208,6 +2331,7 @@
     <string name="variant_marwari">مارواری</string>
     <string name="variant_mazanderani">مازندرانی</string>
     <string name="variant_meadow_mari">ماری شرقی</string>
+    <string name="variant_mende">منده</string>
     <string name="variant_meru">مرو</string>
     <string name="variant_merwari">مارواری</string>
     <string name="variant_mewari">مواری</string>
@@ -2227,17 +2351,21 @@
     <string name="variant_nepali_nepal_romanized">حروف لاتین</string>
     <string name="variant_nepali_nepal_traditional">سنتی</string>
     <string name="variant_newari">نِواری</string>
+    <string name="variant_nias">نیاس</string>
     <string name="variant_nimadi">نیمادی</string>
     <string name="variant_northern_luri">لری شمالی</string>
+    <string name="variant_northern_min">مین شمالی</string>
     <string name="variant_northern_sami">سامی شمالی</string>
     <string name="variant_northern_sotho">سوتوی شمالی</string>
     <string name="variant_norwegian_bokmal">بوکمل</string>
+    <string name="variant_nupe">نوپ</string>
     <string name="variant_nyakyusa">نیاکیوسا</string>
     <string name="variant_nyanja">نیانجا</string>
     <string name="variant_nyaturu">نیاتورو</string>
     <string name="variant_nynorsk">نینورسک</string>
     <string name="variant_odia">اوریه</string>
     <string name="variant_ossetian">آسی</string>
+    <string name="variant_pahari_pothwari">پاهاری پوتواری</string>
     <string name="variant_palatine_german">آلمانی پالاتن</string>
     <string name="variant_pashto">پشتو</string>
     <string name="variant_persian">فارسی</string>
@@ -2262,8 +2390,10 @@
     <string name="variant_sango">سانگو</string>
     <string name="variant_sanskrit">سانسکریت</string>
     <string name="variant_santali">سنتالی</string>
+    <string name="variant_saraiki">سرائیکی</string>
     <string name="variant_serbian">صربی</string>
     <string name="variant_shekhawati">شخاواتی</string>
+    <string name="variant_shina">شینا</string>
     <string name="variant_siberian_tatar">تاتاری سیبری</string>
     <string name="variant_sindhi">سندی</string>
     <string name="variant_sinhala">سینهالی</string>
@@ -2290,8 +2420,10 @@
     <string name="variant_tamazight_tifinagh_amazigh">‏Tamazight کلید Shift ندارد</string>
     <string name="variant_tamil">تامیل</string>
     <string name="variant_tatar">تاتار</string>
+    <string name="variant_tati">تاتی</string>
     <string name="variant_tausug">تائوسوگ</string>
     <string name="variant_telugu_india">تلوگو</string>
+    <string name="variant_temne">تمنه</string>
     <string name="variant_tetum">تتوم</string>
     <string name="variant_thai">تایلندی</string>
     <string name="variant_tibetan">تبتی</string>

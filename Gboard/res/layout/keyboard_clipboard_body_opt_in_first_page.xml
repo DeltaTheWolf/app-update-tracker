@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/clipboard_body_opt_in_first_page" style="@style/OptInFirstPageWrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@integer/optin_first_page_content_text_weight" android:paddingStart="@dimen/opt_in_first_page_text_content_padding_start">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@integer/optin_first_page_content_text_header_weight">
+                <TextView android:text="@string/clipboard_opt_in_first_page_title" android:layout_above="@id/clipboard_body_opt_in_first_page_subhead" style="@style/OptInFirstPageTitle" />
+                <TextView android:id="@id/clipboard_body_opt_in_first_page_subhead" android:text="@string/clipboard_opt_in_first_page_subhead" style="@style/OptInFirstPageSubhead" />
+            </RelativeLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/clipboard_opt_in_first_page_message" android:layout_weight="@integer/optin_first_page_content_text_message_weight" style="@style/OptInFirstPageMessage" />
+        </LinearLayout>
+        <ImageView android:id="@id/clipboard_body_opt_in_first_page_icon" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/clipboard_opt_in_first_page_icon_bitmap" android:layout_weight="@integer/optin_first_page_content_icon_weight" style="@style/OptInFirstPageIcon" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/opt_in_first_page_button_wrapper_height">
+        <Button android:id="@id/clipboard_body_opt_in_first_page_negative_button" android:layout_toStartOf="@id/clipboard_body_opt_in_first_page_positive_button" style="@style/OptInFirstPageNegativeButton" />
+        <Button android:id="@id/clipboard_body_opt_in_first_page_positive_button" style="@style/OptInFirstPagePositiveButton" />
+    </RelativeLayout>
+</LinearLayout>

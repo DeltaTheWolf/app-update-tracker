@@ -10,5 +10,5 @@
     <Preference android:persistent="false" android:title="@string/setting_license_title" android:summary="@string/setting_license_summary">
         <extra android:name="START_ACTIVITY" android:value="com.google.android.libraries.social.licenses.UnquantumLicenseMenuActivity" />
     </Preference>
-    <com.google.android.apps.inputmethod.libs.framework.preference.LongSummaryPreference android:persistent="false" android:enabled="false" android:title="@string/setting_about_version_title" android:selectable="false" android:key="@string/setting_about_key" style="?android:preferenceInformationStyle" />
+    <com.google.android.apps.inputmethod.libs.framework.preference.widget.LongSummaryPreference android:persistent="false" android:enabled="false" android:title="@string/setting_about_version_title" android:selectable="false" android:key="@string/setting_about_key" style="?android:preferenceInformationStyle" />
 </PreferenceScreen>

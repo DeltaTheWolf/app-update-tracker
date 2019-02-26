@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
     <module class="com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension" start_strategy="AUTO_ASYNC_BACKGROUND">
+        <initialization_deps>
+            <components value="GIMS_UserUnlocked" />
+        </initialization_deps>
         <keyboard_types>
             <keyboard type="@string/keyboard_type_emoji" />
             <keyboard type="@string/keyboard_type_emoji_search_result" />

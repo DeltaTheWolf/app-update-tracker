@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <framework>
     <if burmese_zawgyi="true">
-        <ime auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.ZawgyiWrappedLatinIme" display_app_completions="true" language="my" string_id="ime_burmese" announce_auto_selected_candidate="true" is_unicode="false">
+        <ime auto_capital="false" class="com.google.android.apps.inputmethod.libs.latin5.ZawgyiWrappedLatinIme" display_app_completions="true" language="my" string_id="ime_burmese" announce_auto_selected_candidate="true" is_unicode="false" localization_language="my-ZG">
             <keyboard_group variant="burmese" variant_label="@string/variant_burmese" layout_theme="@style/KeyboardLayoutTheme.4LetterRows">
                 <keyboard def="@xml/keyboard_my_with_burmese_unicode" type="prime" />
                 <include href="@xml/keyboards_non_prime_latin" />

@@ -11,7 +11,7 @@
     <header android:id="@id/settings_header_correction" android:title="@string/setting_correction" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
         <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_correction" />
     </header>
-    <header android:id="@id/settings_header_gesture" android:title="@string/setting_gesture" android:fragment="com.google.android.apps.inputmethod.libs.framework.preference.CommonPreferenceFragment">
+    <header android:id="@id/settings_header_gesture" android:title="@string/setting_gesture" android:fragment="com.google.android.apps.inputmethod.latin.preference.GesturePreferenceSettingsFragment">
         <extra android:name="PREFERENCE_FRAGMENT" android:value="setting_gesture" />
     </header>
     <header android:id="@id/settings_header_unified_ime" android:title="@string/setting_voice_typing" android:fragment="com.google.android.apps.inputmethod.latin.preference.UnifiedImeSettingsFragment" />

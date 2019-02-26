@@ -12,7 +12,6 @@
         <merge view_id="@id/key_pos_2_1" key_id="@id/softkey_fragment_superscript_asterisk" />
         <merge view_id="@id/key_pos_2_3" key_id="@id/softkey_fragment_superscript_apostrophe" />
         <merge view_id="@id/key_pos_2_4" key_id="@id/softkey_fragment_superscript_colon" />
-        <merge view_id="@id/key_pos_2_6" key_id="@id/softkey_fragment_superscript_exclamation_mark" />
         <merge view_id="@id/key_pos_2_9" key_id="@id/softkey_fragment_superscript_percent_sign" />
         <merge view_id="@id/key_pos_2_10" key_id="@id/softkey_fragment_superscript_circumflex_accent" />
     </merge_key_mapping>
@@ -49,6 +48,16 @@
     <else>
         <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
             <merge view_id="@id/key_pos_2_2" key_id="@id/softkey_fragment_superscript_quot" />
+        </merge_key_mapping>
+    </else>
+    <if language="shn-MM">
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_2_6" key_id="@id/softkey_fragment_superscript_myanmar_symbol_shan_exclamation" />
+        </merge_key_mapping>
+    </if>
+    <else>
+        <merge_key_mapping state="ENABLE_SECONDARY_SYMBOLS">
+            <merge view_id="@id/key_pos_2_6" key_id="@id/softkey_fragment_superscript_exclamation_mark" />
         </merge_key_mapping>
     </else>
     <if language="fo-FO" />

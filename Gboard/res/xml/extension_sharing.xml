@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+    <module id="@string/id_access_point_sharing" class="com.google.android.apps.inputmethod.libs.sharing.SharingExtension" start_strategy="ON_DEMAND" icon="@drawable/quantum_ic_share_grey600_18" label="@string/label_sharing_access_point" access_point_enabled="@bool/enable_sharing" access_point_locales="@string/enabled_sharing_access_point_locales" content_description="@string/label_sharing_access_point">
+        <initialization_deps>
+            <components value="GIMS_UserUnlocked" />
+            <phenotype_id value="@bool/enable_sharing" />
+        </initialization_deps>
+    </module>
+</framework>

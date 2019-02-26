@@ -5,7 +5,7 @@
             <keyboard type="@string/keyboard_type_universal_media_search_result" />
         </keyboard_types>
         <initialization_deps>
-            <components value="UnicodeIme" />
+            <components value="GIMS_UserUnlocked,UnicodeIme" />
         </initialization_deps>
         <extra_values>
             <item id="@id/extra_value_default_keyboard" value="@string/keyboard_type_universal_media_search_result" />
