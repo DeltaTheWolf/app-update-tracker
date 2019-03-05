@@ -96,6 +96,14 @@ message KinEnabledElement {
     bool kin_enabled = 1;
 }
 
+// Either or not Kin group feature is enabled
+message KinGroupFeatureEnabledElement {
+
+    bool public_group_admin_tipping_enabled = 1;
+
+    bool public_group_message_tipping_enabled = 2;
+}
+
 // Contains the rating details for an entity.
 message RatingSummary {
     double average_rating = 1 [(kik.validation.field_validation) = {

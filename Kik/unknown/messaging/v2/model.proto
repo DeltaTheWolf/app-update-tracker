@@ -260,7 +260,7 @@ message Pointer {
         mandatory: true
     }];
 
-    common.v2.PersonaId persona = 3 [(kik.validation.field_validation) = {
+    common.v2.PersonaId persona_id = 3 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 

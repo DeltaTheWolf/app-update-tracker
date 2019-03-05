@@ -6,6 +6,13 @@ option java_package = "com.kik.gen.push.v2";
 option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/push/v2;push";
 option objc_class_prefix = "KPBCommonPushV2";
 
+import "google/protobuf/timestamp.proto";
+
+import "blob/v2/model.proto";
+import "chats/v2/chat_info.proto";
+import "common/v2/model.proto";
+import "messaging/v2/model.proto";
+import "persona/v2/persona_common.proto";
 import "protobuf_validation.proto";
 
 message PushToken {
@@ -22,8 +29,7 @@ message PushToken {
     }
 
     message IosPushToken {
-
-        // iOS systems returns this token to us in bytes, so we'll encode it in a URL-safe base64 string. 
+        // iOS systems returns this token to us in bytes, so we'll encode it in a URL-safe base64 string.
         string token = 1 [(kik.validation.field_validation) = {
             mandatory: true
             max_byte_length: 1024
@@ -35,6 +41,58 @@ message PushToken {
             APPSTORE_SANDBOX = 1;
             ENTERPRISE_PRODUCTION = 2;
             ENTERPRISE_SANDBOX = 3;
+        }
+    }
+}
+
+message AndroidNotification {
+    oneof kind {
+        Chat chat = 1;
+    }
+
+    message Chat {
+        common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
+            mandatory: true
+        }];
+
+        messaging.v2.Message.Id message_id = 2 [(kik.validation.field_validation) = {
+            mandatory: true
+        }];
+
+        common.v2.PersonaId sender = 3 [(kik.validation.field_validation) = {
+            mandatory: false
+        }];
+
+        // Currently (Dec 2018) Android sets the timestamp for notification based on client sent time, in the future we may want
+        // it to simply be the time that the notification was received
+        google.protobuf.Timestamp client_sent_timestamp = 4 [(kik.validation.field_validation) = {
+            mandatory: false
+        }];
+
+        // For 1:1 chats, this should be the sender display name. For group chats this should be the group name.
+        // This will be populated by server on a best effort basis.
+        // Clients should attempt to fill this in, either looking up values locally or using some default.
+        chats.v2.DisplayName notification_title = 5 [(kik.validation.field_validation) = {
+            mandatory: false
+        }];
+
+        // This is _not_ set in 1:1 chats since it will be the same as notification_title.
+        // This will be populated by server on a best effort basis.
+        persona.v2.DisplayName sender_display_name = 6 [(kik.validation.field_validation) = {
+            mandatory: false
+        }];
+
+        // This will be the group photo for group chats, otherwise it is the persona photo of the sender for 1:1 chats.
+        // This will be populated by server on a best effort basis.
+        blob.v2.BlobReference chat_display_image = 7 [(kik.validation.field_validation) = {
+            mandatory: false
+        }];
+
+        oneof body {
+            messaging.v2.RenderableText text = 8;
+
+            // Gallery or camera upload
+            blob.v2.BlobReference picture = 9;
         }
     }
 }

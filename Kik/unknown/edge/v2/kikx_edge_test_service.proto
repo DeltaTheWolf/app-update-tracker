@@ -1,0 +1,84 @@
+syntax = "proto3";
+
+package mobile.edge.v2;
+option java_package = "com.kik.gen.edge.v2";
+option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/edge/v2;edge";
+
+import "common_rpc.proto";
+import "protobuf_validation.proto";
+import "google/protobuf/duration.proto";
+
+// KikxEdgeTest is a testing service for the Kik X edge layer.
+service KikxEdgeTest {
+    // Ping returns the message and the set of received proto headers
+    rpc Ping (PingRequest) returns (PingResponse) {}
+
+    // RequestError triggers the service to return with the specified status code
+    // and description
+    rpc RequestError (ErrorRequest) returns (common.VoidResponse) {}
+
+    // Timeout sleeps for the specified duration to test DEADLINE_EXCEEDED cases
+    rpc Timeout (TimeoutRequest) returns (common.VoidResponse) {}
+
+    // InfiniteStream creates an infinite server-side stream that sends messages
+    // at the desired time interval
+    rpc InfiniteStream(InfiniteStreamRequest) returns (stream InfiniteStreamResponse) {}
+}
+
+message PingRequest {
+    string message = 1 [(kik.validation.field_validation) = {
+        max_byte_length: 1024
+    }];
+}
+
+message PingResponse {
+    string message = 1 [(kik.validation.field_validation) = {
+        max_byte_length: 1024
+    }];
+
+    // The set of observered root proto headers.
+    map<string, bytes> root_headers = 2;
+
+    // The set of observered propagating proto headers.
+    map<string, bytes> propagating_headers = 3;
+
+    // The set of observered default/legacy proto headers.
+    map<string, bytes> default_headers = 4;
+}
+
+
+message ErrorRequest {
+    uint32 status_code = 1 [(kik.validation.field_validation) = {
+        max_val: 16
+    }];
+    string description = 2 [(kik.validation.field_validation) = {
+        max_byte_length: 1024
+    }];
+}
+
+
+message TimeoutRequest {
+    google.protobuf.Duration sleep_duration = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message InfiniteStreamRequest {
+    google.protobuf.Duration interval = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    // A bounding parameter to limit the number of messages sent on the "infinite"
+    // stream. This is a small workaround where gRPC java service implementations
+    // don't seem to pick up request cancellations, causing the stream service-side
+    // to live forever. This should be fine since all we care about testing is
+    // whether the default deadline for infinite methods is overriden.
+    //
+    // TODO: At some point we should investigate further and find the root cause.
+    uint32 max_messages = 2;
+}
+
+message InfiniteStreamResponse {
+    uint32 message_num = 1;
+}
+

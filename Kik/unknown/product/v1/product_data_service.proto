@@ -166,5 +166,6 @@ message ProductJwtRejectionReason {
         UNKNOWN = 0;
         REJECTED_PRODUCT_JWT_INVALID = 1;
         REJECTED_PRODUCT_JWT_EXPIRED = 2;
+        REJECTED_REQUEST_JWT_MISMATCH = 3;
     }
 }

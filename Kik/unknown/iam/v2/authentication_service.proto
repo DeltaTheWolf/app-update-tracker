@@ -62,11 +62,31 @@ message AuthenticateRequest {
     }
 }
 
+// Note Re: result codes
+//
+// We have introduced failure responses that contain context about what the failure was.  This context is generally
+// considered to be a bad security practice, and we are only introducing it to allow Kik X to match Classic as closely
+// as possible.
+//
+// At some future date we intend to discontinue providing specific failure responses, and only provide the general "FAILED"
+// response to clients.  As such, it is recommended that all clients gracefully handle the "FAILED" code, even if they do
+// other specialized actions based on the more specific FAILED_* results.
 message AuthenticateResponse {
     Result result = 1;
     enum Result {
+        // Authentication succeeded.
         OK = 0;
+        // General error response which intentionally does not indicate what portion of the login was invalid.
+        // Note that clients should handle the lack of specific error context gracefully, in case this becomes an active
+        // security concern.
         FAILED = 1;
+        // Authentication failed due to an invalid principal (i.e. unknown username or email, whichever was provided.)
+        // Note that this is BAD PRACTICE according to OWASP
+        // see: https://www.owasp.org/index.php/Authentication_Cheat_Sheet#Authentication_and_Error_Messages
+        FAILED_UNKNOWN_PRINCIPAL = 2;
+        // Authentication failed due to the passkey being incorrect.
+        // Note that this is also BAD PRACTICE according to OWASP (same link as above)
+        FAILED_INVALID_PASSKEY = 3;
     }
 
     // Clients should use this session token in a header to authenticate subsequent

@@ -114,6 +114,12 @@ message ChatInterestListItem {
     // Optional and only returned when used internally
     // via GetAllChatInterests rpc
     string localized_ice_breaker = 3; 
+
+    // This is a unicode emoji string used by clients to display emojis related to this chat interest
+    // There could be 0 or more emojis in this string
+    // The emojis (if present) will be in javascript format \uXXX
+    // see: https://unicode.org/emoji/charts/full-emoji-list.html
+    string interest_emoji = 4;
 }
 
 // GetAllUserInterestIdsRequest is empty for now, but might include fields in the future

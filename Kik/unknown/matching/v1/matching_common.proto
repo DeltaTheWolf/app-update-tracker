@@ -26,12 +26,16 @@ message AnonMatchingSessionKey {
 }
 
 enum ChatSessionState {
-        // Participants can chat, end chat, vote early
+        // Participants can chat, end chat, make friends
         CHAT_ACTIVE = 0;
-        // Chatting with this session will fail, voting on friending can occur
-        // *** VOTING NOT SUPPORTED YET ***
-        // VOTING = 1;
+
         // Chatting and voting is closed, session is considered marked for cleanup at this state
         // If users end the chat early, chat sessions are transitioned to EXPIRY with no voting period
         EXPIRED = 2;
+
+        // Session is considered ended, but users have opted to upgrade the conversation to a real jid conversation
+        // No more messages should be allowed through to the chat participants, though the end session status message
+        // May need to be allowed through an upgraded session, and messages to an upgraded chat session may need forwarding
+        // to the real participants to resolve some race conditions surrounding upgrades.
+        UPGRADED = 3;
 }

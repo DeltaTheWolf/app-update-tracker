@@ -319,7 +319,7 @@ Shop"</string>
     <string name="code_download_website">http://kik.me/%s #kik #kikme</string>
     <string name="collection_not_found_message_body">Themes cannot be displayed at this time. Please try again later.</string>
     <string name="collection_not_found_title">"Couldn't Load Theme"</string>
-    <string name="com.crashlytics.android.build_id">004dd8d7-0a00-4484-956c-ebb90226bb67</string>
+    <string name="com.crashlytics.android.build_id">771ae2bb-eacd-4850-aec1-197edea28f80</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -943,12 +943,19 @@ FFmpeg
  13. The Free Software Foundation may publish revised and/or new versions of the Lesser General Public License from time to time."</string>
     <string name="kik_messenger_was_reset__next_time_you_open_the_app__you_ll_need_to_login_again_or_register_with_a_new_account">"Kik was reset. You'll need to log in again"</string>
     <string name="kik_username">Username</string>
+    <string name="kin_chat_challenge_description">Complete the daily chat challenge to earn %1$s Kin. Complete %2$s in a week to earn a Big Prize.</string>
     <string name="kin_daily_limit_spent">%1$d/%2$d Daily limit spent</string>
+    <string name="kin_earn_opportunities_description">For more earn opportunities, please visit the marketplace</string>
     <string name="kin_insufficient_balance">Insufficient Kin</string>
     <string name="kin_marketplace_native_spend_chat_themes_description">Personalize your chats</string>
     <string name="kin_marketplace_native_spend_chat_themes_title">Chat Themes</string>
     <string name="kin_marketplace_title">Kin Marketplace Beta</string>
     <string name="kin_price_format">%s Kin</string>
+    <string name="kin_reward_dialog_claim_kin_button_text">Claim %1$s Kin</string>
+    <string name="kin_reward_dialog_earn_and_spend_body">Earn Kin by completing daily challenges and spend it on chats, themes and more!</string>
+    <string name="kin_reward_dialog_earn_and_spend_header">Use Kin to Buy Chats</string>
+    <string name="kin_reward_dialog_spend_only_body">Spend Kin to buy more chats!</string>
+    <string name="kin_reward_dialog_spend_only_header">Spend Kin to Buy Chats</string>
     <string name="kin_single_tip_limit">A single tip cannot exceed %1$d Kin</string>
     <string name="kin_verified_bot">Kin verified bot</string>
     <string name="kinecosystem_complete_tasks_and_earn_kin">Complete tasks and earn KIN</string>
@@ -1781,6 +1788,7 @@ Photo"</string>
     <string name="tipping_unavailable_dialog_first_message">Admin tipping is temporarily unavailable. Please come back later and try again!</string>
     <string name="tipping_unavailable_dialog_title">Tipping Unavailable</string>
     <string name="title_accept">Accept</string>
+    <string name="title_activity">Activity</string>
     <string name="title_add">Add</string>
     <string name="title_add_friend">Add Friend</string>
     <string name="title_add_people">Add People</string>
@@ -1793,6 +1801,7 @@ Photo"</string>
     <string name="title_are_you_sure">Are You Sure?</string>
     <string name="title_ask_remove_content">Remove Content?</string>
     <string name="title_ask_replace_content">Replace Content?</string>
+    <string name="title_balance">Balance</string>
     <string name="title_ban">Ban</string>
     <string name="title_ban_user">Ban %1$s?</string>
     <string name="title_be_nice">Be Safe</string>
@@ -1809,6 +1818,7 @@ Photo"</string>
     <string name="title_chat">Chat</string>
     <string name="title_chat_anonymously">Chat Anonymously</string>
     <string name="title_chat_by_interests">Chat by Interests</string>
+    <string name="title_chat_challenge">Chat Challenge</string>
     <string name="title_chat_limit_reached">Chat Limit Reached</string>
     <string name="title_chat_settings">Chat Settings</string>
     <string name="title_chat_with">Talk To</string>
@@ -1816,6 +1826,7 @@ Photo"</string>
     <string name="title_clear">Clear</string>
     <string name="title_clear_chat_history">Clear Chat History</string>
     <string name="title_clear_filters">CLEAR FILTERS</string>
+    <string name="title_clear_filters_capitalized">Clear Filters</string>
     <string name="title_community_guidelines">Community Standards</string>
     <string name="title_confirm_download">Confirm Download</string>
     <string name="title_confirmation">Confirmation</string>
@@ -1827,6 +1838,7 @@ Photo"</string>
     <string name="title_copy">Copy</string>
     <string name="title_copyright">Legal</string>
     <string name="title_corrupted_video">Corrupted Video</string>
+    <string name="title_daily_challenge">Daily Challenge</string>
     <string name="title_delete">Delete</string>
     <string name="title_delete_all_messages">Clear All Chats</string>
     <string name="title_delete_contact">Remove From List</string>
@@ -1862,6 +1874,7 @@ Photo"</string>
     <string name="title_forward">Forward</string>
     <string name="title_free">Free</string>
     <string name="title_full_name">Name (eg. John Smith)</string>
+    <string name="title_go_to_marketplace">GO TO MARKETPLACE</string>
     <string name="title_got_it">Got It</string>
     <string name="title_group_already_exists">Group Already Exists</string>
     <string name="title_group_full">Group Full</string>
@@ -1878,6 +1891,7 @@ Photo"</string>
     <string name="title_im_sure">"I'm Sure"</string>
     <string name="title_in_app_alerts">In-app Alerts</string>
     <string name="title_info">Info</string>
+    <string name="title_initiating_transaction">Initiating Transaction</string>
     <string name="title_install_app">Install %s</string>
     <string name="title_invalid_group_hashtag">Group Hashtag Unavailable</string>
     <string name="title_invalid_group_name">Invalid Group Name</string>
@@ -1911,6 +1925,7 @@ Photo"</string>
     <string name="title_make_friends">Make Friends</string>
     <string name="title_meet_new_people">Meet New People</string>
     <string name="title_meet_someone_new">MEET SOMEONE NEW</string>
+    <string name="title_meet_someone_new_capitalized">Meet Someone New</string>
     <string name="title_message_sent">Message Sent</string>
     <string name="title_messages">Messages</string>
     <string name="title_microphone_no_access">Microphone Required</string>
@@ -1945,6 +1960,7 @@ Photo"</string>
     <string name="title_open_in_chrome">Open in Chrome</string>
     <string name="title_page_load_failed">"Looks like this page can't be found"</string>
     <string name="title_password">Password</string>
+    <string name="title_pending_transactions">Pending Transactions</string>
     <string name="title_phone_verification_unavailable">Phone Verification Unavailable</string>
     <string name="title_phonecall_error">Phone Call In Progress</string>
     <string name="title_photo">Photo</string>

@@ -27,8 +27,14 @@ message BlobReference {
         }];
     }
 
+    // Note: The set of BlobUrl's doesn't have a strict min validation
+    // since some generators of BlobReferences don't have the authority
+    // or information to generate the set of BlobUrls. The ingestion
+    // services will fill the BlobUrl's out. However, when being
+    // passed to clients that are expecting to resolve a BlobReference,
+    // at least one BlobUrl should set.
     repeated BlobUrl urls = 2 [(kik.validation.field_validation) = {
-        min_repetitions: 1
+        min_repetitions: 0
         max_repetitions: 32
     }];
 }
@@ -43,8 +49,9 @@ message BlobUrl {
     // the various amounts of internal / staging domains that exist.
     // Implementations should do further validation on domains if necessary.
     string url = 1 [(kik.validation.field_validation) = {
-        regex: "^(http|https)://"
+        mandatory: true
         max_byte_length: 256
+        regex: "^(http|https)://"
     }];
 
     BlobType blob_type = 2;

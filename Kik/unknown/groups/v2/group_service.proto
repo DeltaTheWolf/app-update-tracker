@@ -75,7 +75,7 @@ message GetGroupInfoShortRequest {
     }];
 
     // Persona with the necessary permissions in the group chat to view short group chat info.
-    common.v2.PersonaId requestor_persona_id = 2 [(kik.validation.field_validation) = {
+    common.v2.PersonaId requestor = 2 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 }
@@ -99,7 +99,7 @@ message GetGroupInfoFullRequest {
     }];
 
     // Persona with the necessary permissions in the group chat to view full group chat info.
-    common.v2.PersonaId requestor_persona_id = 2 [(kik.validation.field_validation) = {
+    common.v2.PersonaId requestor  = 2 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 }
@@ -123,7 +123,7 @@ message GetBannedGroupMembersStreamRequest {
     }];
 
     // Persona with the necessary permissions in the group chat to view banned members.
-    common.v2.PersonaId requestor_persona_id = 2 [(kik.validation.field_validation) = {
+    common.v2.PersonaId requestor = 2 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 }
@@ -154,7 +154,7 @@ message BannedGroupMember {
 
 message CreateGroupRequest {
     // Creator of the group.
-    common.v2.PersonaId creator_id = 1 [(kik.validation.field_validation) = {
+    common.v2.PersonaId creator = 1 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 
@@ -219,7 +219,7 @@ message LeaveGroupRequest {
     }];
 
     // Persona leaving group.
-    common.v2.PersonaId leaver_id = 2 [(kik.validation.field_validation) = {
+    common.v2.PersonaId leaver = 2 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 }
@@ -240,12 +240,12 @@ message AddToGroupRequest {
     // Persona adding members to the group.
     // This persona must be a member of the group and have the necessary permissions
     // to add other personas to the group.
-    common.v2.PersonaId adder_id = 2 [(kik.validation.field_validation) = {
+    common.v2.PersonaId adder = 2 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 
     // Persona ids to add to the group.
-    repeated common.v2.PersonaId new_member_ids = 3 [(kik.validation.field_validation) = {
+    repeated common.v2.PersonaId new_members = 3 [(kik.validation.field_validation) = {
         mandatory: true
         min_repetitions: 1
         max_repetitions: 100
@@ -292,12 +292,12 @@ message RemoveFromGroupRequest {
     }];
 
     // Persona removing others from the group.
-    common.v2.PersonaId remover_id = 2 [(kik.validation.field_validation) = {
+    common.v2.PersonaId remover = 2 [(kik.validation.field_validation) = {
         mandatory: true
     }];
 
     // Personas to remove.
-    repeated common.v2.PersonaId removee_ids = 3 [(kik.validation.field_validation) = {
+    repeated common.v2.PersonaId removees = 3 [(kik.validation.field_validation) = {
         mandatory: true
         min_repetitions: 1
         max_repetitions: 100

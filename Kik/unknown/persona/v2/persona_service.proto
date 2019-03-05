@@ -9,6 +9,7 @@ option objc_class_prefix = "KPBMobilePersonaV2";
 import "protobuf_validation.proto";
 
 import "common/v2/model.proto";
+import "persona/v2/persona_common.proto";
 
 service Persona {
     // Change the first and/or last name for the specified Persona.
@@ -18,6 +19,10 @@ service Persona {
     // The specified PersonaId cannot be a wrapper for an AliasJid; the only way to change the display info for an
     // AliasJid is to change the info for the Genesis Persona directly that the AliasJid maps to.
     rpc SetDisplayName(SetDisplayNameRequest) returns (SetDisplayNameResponse) {}
+
+    rpc SetEmojiStatus(SetEmojiStatusRequest) returns (SetEmojiStatusResponse) {}
+
+    rpc SetBio(SetBioRequest) returns (SetBioResponse) {}
 }
 
 message SetDisplayNameRequest {
@@ -57,12 +62,54 @@ message SetDisplayNameResponse {
         // modified directly because they just map back to the Genesis Persona. Instead the
         // Genesis Persona should be modified directly via its PersonaId.
         NOT_MODIFIABLE = 2;
-        // I don't think we need these codes for now because the only name validation done currently
-        // is extra length checking in AccountUtils.isNameValid and the byte length restrictions in
-        // here are already more restrictive. However I could see us doing more validation in the
-        // future; in fact I'm surprised we don't already check against banned words/phrases or
-        // reject URLs
+        // First and last name are individually checked to see if they're too long
         FIRST_NAME_INVALID = 3;
         LAST_NAME_INVALID = 4;
+        // The complete display name (first + space + last) is checked against a regex for
+        // restricted phrases/patterns
+        DISPLAY_NAME_RESTRICTED = 5;
+    }
+}
+
+message SetEmojiStatusRequest {
+    common.v2.PersonaId persona_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    // If SetEmojiStatus is called without this field, the existing value will be unset
+    common.persona.v2.EmojiStatus emoji_status = 2;
+}
+
+message SetEmojiStatusResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+        NOT_FOUND = 1;
+        // Some Personas cannot be changed even by their owner, e.g. AliasJid Personas cannot be
+        // modified directly because they just map back to the Genesis Persona. Instead the
+        // Genesis Persona should be modified directly via its PersonaId.
+        NOT_PERMITTED = 2;
+    }
+}
+
+message SetBioRequest {
+    common.v2.PersonaId persona_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    // If SetBio is called without this field, the existing value will be unset
+    common.persona.v2.Bio bio = 2;
+}
+
+message SetBioResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+        NOT_FOUND = 1;
+        // Some Personas cannot be changed even by their owner, e.g. AliasJid Personas cannot be
+        // modified directly because they just map back to the Genesis Persona. Instead the
+        // Genesis Persona should be modified directly via its PersonaId.
+        NOT_PERMITTED = 2;
+        REJECTED_BIO_BY_MODERATION = 3;
     }
 }

@@ -25,6 +25,9 @@ message PaymentInfo {
 enum Feature {
     UNKNOWN = 0;
     PUBLIC_GROUP_ADMIN_TIP = 1;
+
+    // for offers that are made available by Anonymous Matching Service
+    ANON_MATCHING = 2;
 }
 
 message FeatureData {
@@ -39,4 +42,20 @@ message PublicGroupAdminTipData {
 
 message KinAmount {
     double amount = 1;
+}
+
+
+// TransactionType defines what type of transaction should be processed for the offer
+// Clients should display and handle each transaction types differently.
+enum TransactionType {
+    UNKNOWN_TYPE = 0;
+
+    // Transactions where user will earn Kin
+    EARN = 1;
+
+    // Transaction that users will spend Kin
+    SPEND = 2;
+
+    // Transaction that transfer Kin between users
+    PAY_TO_USER = 3;
 }

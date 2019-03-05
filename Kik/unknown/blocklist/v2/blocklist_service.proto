@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package mobile.blocklist.v2;
+option java_package = "com.kik.gen.blocklist.rpc";
+option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/blocklist/v2;blocklist";
+
+import "protobuf_validation.proto";
+import "common/v2/model.proto";
+
+service Blocklist {
+    rpc Block (BlockRequest) returns (BlockResponse);
+    rpc Unblock (UnblockRequest) returns (UnblockResponse);
+    rpc IsBlocked (IsBlockedRequest) returns (IsBlockedResponse);
+    rpc GetBlocklistStream (GetBlocklistStreamRequest) returns (stream GetBlocklistStreamResponse);
+}
+
+message BlockRequest {
+    common.v2.PersonaId blockee = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message BlockResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+    }
+}
+
+message UnblockRequest {
+    common.v2.PersonaId blockee = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message UnblockResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+    }
+}
+
+message IsBlockedRequest {
+    common.v2.PersonaId blockee = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+// Returns true if the given blocker has blocked the given blockee.
+message IsBlockedResponse {
+    bool is_blocked = 1;
+}
+
+// Request a stream of all blocked PersonaIds for a given user
+message GetBlocklistStreamRequest {
+}
+
+// Contains a page of a blocklist. Clients should accumulate a list of blockees from the stream to receive the
+// entire blocklist.
+message GetBlocklistStreamResponse {
+    // Page of blockees
+    repeated common.v2.PersonaId blockees = 1 [(kik.validation.field_validation) = {
+        min_repetitions: 0
+        max_repetitions: 250
+    }];
+}

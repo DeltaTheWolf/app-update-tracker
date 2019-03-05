@@ -84,8 +84,12 @@ message EntityGroup {
     // Maximum Group Size
     common.entity.v1.MaxGroupSizeElement max_group_size_element = 103;
 
-    // Is KIN enabled
-    common.entity.v1.KinEnabledElement kin_enabled_element = 104;
+    // Is public group admin tipping enabled for a group
+    // DEPRECATED TODO Will be made redundant/removed after all clients switch to kin_group_feature_enabled_element
+    common.entity.v1.KinEnabledElement kin_enabled_element = 104 [deprecated = true];
+
+    // Are one or more Kin group features enabled for a group
+    common.entity.v1.KinGroupFeatureEnabledElement kin_group_feature_enabled_element = 105;
 }
 
 message EntityUser {

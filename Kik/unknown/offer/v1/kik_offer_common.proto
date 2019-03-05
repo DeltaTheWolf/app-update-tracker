@@ -1,0 +1,84 @@
+syntax = "proto3";
+
+package common.offer.v1;
+
+option java_package = "com.kik.offer.model";
+option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/offer/v1;offer";
+
+import "protobuf_validation.proto";
+import "google/protobuf/timestamp.proto";
+import "kin/payment/v1/payment_common.proto";
+
+// KikOfferId uniquely defines an offer. This id will always be present for all offers
+// Here are some example of an offer id (actual ids might be different):
+// - `theme_id`: when an offer is an opporunity to buy a theme
+// - `anon_completed_ten_chats`: an offer which is available after completing ten chats
+// - `anon_received_five_thumbs_up`: an offer which is available after receiving five thumbs up 
+// - `anon_five_chats`: an offer to spend Kin to receive five anonymous chats
+// 
+// There is also a KikUserOfferId, which is present when the offer has an associated user. If the offer is not 
+// yet associated to a user, client can use KikOfferId to generate KikUserOfferId.
+message KikOfferId {
+    string id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        max_byte_length: 256
+    }];
+}
+
+// When an offer has an associated user, KikUserOfferId will contain a unique id that represents the user offer.
+// Typically, "Spend" offers will not have KikUserOfferId present. When a user agrees to claim the offer 
+// (i.e buy a theme, or spend Kin to earn chats), a KikUserOfferId is generated for that offer. 
+message KikUserOfferId {
+    string id = 1 [(kik.validation.field_validation) = { 
+        mandatory: true
+        max_byte_length: 256 
+    }];
+}
+
+
+message KikOfferIdOrUserOfferId {
+    oneof id {
+        KikOfferId kik_offer_id = 1;
+        KikUserOfferId kik_user_offer_id = 2;
+    }
+}
+
+
+// KikOffer is sent to the mobile clients. It encapsulates all the information
+// that client needs to process an offer
+message KikOffer {
+
+    // Feature ID for the offer. This is used to group the offers
+    common.kin.payment.v1.Feature feature_id = 1;
+
+    // An id that uniquely identifies the offer. 
+    KikOfferId kik_offer_id = 2 [(kik.validation.field_validation) = { mandatory: true }];
+
+    // An id which is present when an offer has associated user. 
+    // Presence of this id indicates that this offer is available to the user and is ready to be claimed.
+    // For public offers, this id might not be set until user claims the offer. 
+    // For example, public offers like "buy a theme", or "spend Kin to earn chats", KikUserOfferId will be generated 
+    // when the user claims the offer. 
+    KikUserOfferId kik_user_offer_id = 3; 
+
+    // Amount of Kin for the transaction. For certain offers, this field will not have a value. 
+    // For example: an group admin tipping offer (PAY_TO_USER) will not have `amount` set. The user will decide the amount.
+    //
+    // An offer where KikUserOfferId is present must have a value for this field.
+    common.kin.payment.v1.KinAmount amount = 4;
+
+    // Transaction type e.g. earn, spend, pay_2_user
+    common.kin.payment.v1.TransactionType transaction_type = 5;
+
+    // Title for the offer. This could be displayed by the clients to the end users
+    string title = 6 [(kik.validation.field_validation) = { max_byte_length: 256 }];
+
+    // Description for the offer. This could be displayed by the clients to the end users
+    string description = 7 [(kik.validation.field_validation) = { max_byte_length: 1024 }];
+
+    // Optional end date for the offer
+    google.protobuf.Timestamp end_date = 8;
+
+    // If this is set to true, clients should claim the offer wihtout user intervention
+    bool claim_silently = 9;
+}

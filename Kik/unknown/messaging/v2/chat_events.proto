@@ -18,7 +18,7 @@ import "contactlist/v2/contact_list_common.proto";
 // NOTE: ChatEvent metadata may only be provided by a server-generated message.  Messages created by clients
 //       which contain a ChatEvent are considered invalid and should be treated as such.
 //
-// Clients that receive this a message containing a ChatEvent and are familiar with the ChatEvent kind 
+// Clients that receive this a message containing a ChatEvent and are familiar with the ChatEvent kind
 // should generate their own localized text in the chat rather than using the 'content' field of the message.
 // "Legacy" clients (clients NOT familiar with the event type) should use the message 'content' field as a
 // fallback, which will be a simple english description of the event.
@@ -38,7 +38,7 @@ message ChatEvent {
         GroupUnban group_unban = 7;
         GroupMemberPromote group_promote = 8;
         GroupMemberDemote group_demote = 9;
-        
+
         // 1000-1999: Events for any kind of chat.
         // ChatInfoChange is used for any chat-specific settings change.  eg: display name, ppic, theme, etc.
         ChatInfoChange chat_info_change = 1000;
@@ -54,11 +54,22 @@ message ChatEvent {
         common.v2.PersonaId creator = 1 [(kik.validation.field_validation) = {
             mandatory: true
         }];
+
         // All other members of the group, not including the creator.
+        // Note: Max repetitions should match the value found in mobile group service's create request.
         repeated common.v2.PersonaId initial_members = 2 [(kik.validation.field_validation) = {
             mandatory: true
-            max_repetitions: 100
+            max_repetitions: 1024
         }];
+
+        // The ChatId that this group is being upgraded from,
+        // which is expected to be one-to-one chat.
+        //
+        // If present, clients should try and copy the contents
+        // of the chat specified by upgraded_chat_id from local
+        // storage into Chat the this event came in through.
+        // Server will not clone the logs.
+        common.v2.ChatId upgraded_chat_id = 3;
     }
 
     message GroupMemberAdd {
@@ -157,7 +168,7 @@ message ChatEvent {
         // acting_member is the participant (admin) that initiated the change.
         common.v2.PersonaId acting_member = 1 [(kik.validation.field_validation) = {
             mandatory: true
-        }];    
+        }];
         repeated ChangedFeature features = 2 [(kik.validation.field_validation) = {
             mandatory: true
             min_repetitions: 1
@@ -173,7 +184,7 @@ message ChatEvent {
 	            THEME = 3;
 	            // TODO: other features?
 	        }
-        }		
+        }
     }
 
     // Indication of a friend add from the server which happens when user A adds user B to their contact list.
