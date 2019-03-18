@@ -45,6 +45,8 @@ interface IGroupTippingButtonViewModel : IViewModel {
         DAILY_LIMIT_REACHED,
         NO_KIN_ERROR,
         NO_ERROR,
-        CLICKED
+        CLICKED,
+        NO_TIPPABLE_ADMINS,
+        UNKNOWN
     }
 }

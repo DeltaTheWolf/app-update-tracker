@@ -69,6 +69,7 @@ class AnonymousChatMenuViewModel(val jid: BareJid) : IAnonymousChatMenuViewModel
                                     .builder()
                                     .setChatSessionTime(CommonTypes.ChatSessionTime(it.toInt()))
                                     .setEndChatOrigin(AnonymouschatEndchatTapped.EndChatOrigin.threeDotMenu())
+                                    .setSessionId(CommonTypes.Uuid(chat.getAnonChatUUID().toString()))
                                     .build())
                             lifecycleSubscription.add(
                                     matchingService
@@ -92,7 +93,14 @@ class AnonymousChatMenuViewModel(val jid: BareJid) : IAnonymousChatMenuViewModel
     }
 
     private fun reportChatClicked() {
-        metricsService.track(AnonymouschatReportTapped.builder().build())
+        val conversationInfoHolder = conversation.getConversation(jid.toString())
+        val sessionId = conversationInfoHolder.getMetaInfo().getAnonChatUUID()
+        val uuid: CommonTypes.Uuid? = if (sessionId != null) CommonTypes.Uuid(sessionId.toString()) else null
+
+        metricsService.track(AnonymouschatReportTapped
+                .builder()
+                .setSessionId(uuid)
+                .build())
 
         val contact = profile.getContact(jid.toString(), false)
 

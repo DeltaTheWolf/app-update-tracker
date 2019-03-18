@@ -8,6 +8,8 @@ option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go
 import "protobuf_validation.proto";
 import "common_model.proto";
 
+// DEPRECATED
+// TODO Remove after KikX hard switch
 // Contains information related to a specific payment
 message PaymentInfo {
     // The feature a payment is associated with
@@ -22,20 +24,23 @@ message PaymentInfo {
     }];
 }
 
+// DEPRECATED
+// TODO Remove after KikX hard switch
 enum Feature {
     UNKNOWN = 0;
     PUBLIC_GROUP_ADMIN_TIP = 1;
-
-    // for offers that are made available by Anonymous Matching Service
-    ANON_MATCHING = 2;
 }
 
+// DEPRECATED
+// TODO Remove after KikX hard switch
 message FeatureData {
     oneof kind {
         PublicGroupAdminTipData public_group_admin_tip_data = 1;
     }
 }
 
+// DEPRECATED
+// TODO Remove after KikX hard switch
 message PublicGroupAdminTipData {
     common.XiGroupJid group = 1 [(kik.validation.field_validation) = {mandatory : true}];
 }

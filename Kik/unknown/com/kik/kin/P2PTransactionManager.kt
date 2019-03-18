@@ -90,6 +90,10 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
                 }
     }
 
+    override fun completeTransaction(offer: P2PPayment) {
+        _transactionStateMap.advanceToSuccessState(offer, P2PTransactionStatus.COMPLETE)
+    }
+
     override fun initialTransactionStatus() = P2PTransactionStatus.initialValue()
 
     override fun updateTransactionStatusStorage(transaction: ITransaction<P2PPayment, P2PTransactionStatus>) {

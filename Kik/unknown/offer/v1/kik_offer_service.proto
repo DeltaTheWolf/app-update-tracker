@@ -34,11 +34,15 @@ import "kin/payment/v1/payment_common.proto";
 service KikOffer {
 
     // Retrieves all unclaimed offers available to the user for the provided feature id
-    rpc GetKikOffersByFeature (GetKikOffersByFeatureRequest) returns (GetKikOffersByFeatureResponse) {}
+    rpc GetKikOffersByFeature (GetKikOffersByFeatureRequest) returns (GetKikOffersByFeatureResponse);
 }
 
 message GetKikOffersByFeatureRequest {
-    common.kin.payment.v1.Feature feature_id = 1;
+    // Feature group
+    common.offer.v1.FeatureGroup feature_group = 1;
+
+    // Can be used to filter offers by transaction types
+    common.kin.payment.v1.TransactionType transaction_type = 2;
 }
 
 message GetKikOffersByFeatureResponse {
@@ -48,7 +52,7 @@ message GetKikOffersByFeatureResponse {
     }
 
     repeated common.offer.v1.KikOffer offers = 2 [(kik.validation.field_validation) = {
-        min_repetitions: 0
+        mandatory: false
         max_repetitions: 100
     }];
 

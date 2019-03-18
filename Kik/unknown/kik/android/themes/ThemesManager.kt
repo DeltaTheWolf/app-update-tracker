@@ -334,11 +334,13 @@ class ThemesManager<in KeyType> constructor(private val themesRepository: ITheme
                     .subscribe()
         }
 
+        /**
+         * Refreshes the theme after it has been purchased.
+         */
         private fun refreshTheme(themeId: UUID) =
                 themesRepository.invalidate(themeId)
                         .doOnCompleted {
-                            themePurchaseStateMap.advanceSuccessState(themeId)
-                            themePurchaseStateMap.resetState(themeId)
+                            themePurchaseStateMap.advanceToSuccessState(themeId, ThemeTransactionStatus.COMPLETE)
                         }
                         .doOnError { themePurchaseStateMap.advanceErrorState(themeId) }
                         .subscribe()
@@ -353,7 +355,8 @@ class ThemesManager<in KeyType> constructor(private val themesRepository: ITheme
                                 ProductTransactionStatus.KIN_PURCHASE_ERROR -> ThemeTransactionStatus.KIN_PURCHASE_ERROR
                                 ProductTransactionStatus.PENDING_UNLOCK_PRODUCT -> ThemeTransactionStatus.PENDING_UNLOCK_PRODUCT
                                 ProductTransactionStatus.UNLOCK_PRODUCT_ERROR -> ThemeTransactionStatus.UNLOCK_PRODUCT_ERROR
-                                ProductTransactionStatus.COMPLETE -> ThemeTransactionStatus.PENDING_REFRESH_THEME
+                                ProductTransactionStatus.UNLOCKED -> ThemeTransactionStatus.PENDING_REFRESH_THEME
+                                ProductTransactionStatus.COMPLETE -> ThemeTransactionStatus.COMPLETE
                             }
                         }
 

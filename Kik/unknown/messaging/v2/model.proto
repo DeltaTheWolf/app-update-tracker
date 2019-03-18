@@ -181,9 +181,11 @@ message Message {
     message Content {
         oneof kind {
             Text text = 1;
-            GalleryPhoto gallery = 2;
-            CameraPhoto camera = 3;
+            GalleryPhoto gallery_photo = 2;
+            CameraPhoto camera_photo = 3;
             Platform platform = 4;
+            GalleryVideo gallery_video = 5;
+            CameraVideo camera_video = 6;
         }
 
         // A pure-text message including smiley rendering, links, etc.
@@ -203,6 +205,20 @@ message Message {
         // A photo taken from the sending user's camera, with the associated
         // photo upload
         message CameraPhoto {
+            ImagePreview preview = 1 [(kik.validation.field_validation) = { mandatory: true }];
+            common.blob.v2.BlobReference blob = 2 [(kik.validation.field_validation) = { mandatory: true }];
+        }
+
+        // A video selecting from the sender user's gallery, with the
+        // associated video upload
+        message GalleryVideo {
+            ImagePreview preview = 1 [(kik.validation.field_validation) = { mandatory: true }];
+            common.blob.v2.BlobReference video = 2 [(kik.validation.field_validation) = { mandatory: true }];
+        }
+
+        // A video taken from the sending user's camera, with the associated
+        // video upload
+        message CameraVideo {
             ImagePreview preview = 1 [(kik.validation.field_validation) = { mandatory: true }];
             common.blob.v2.BlobReference blob = 2 [(kik.validation.field_validation) = { mandatory: true }];
         }

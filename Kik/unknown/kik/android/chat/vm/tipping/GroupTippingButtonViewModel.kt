@@ -1,7 +1,6 @@
 package kik.android.chat.vm.tipping
 
 import android.content.Context
-import android.content.res.Resources
 import com.kik.cards.web.NetworkState
 import com.kik.components.CoreComponent
 import com.kik.core.network.xmpp.jid.BareJid
@@ -9,21 +8,11 @@ import com.kik.kin.IKinAccountsManager
 import com.kik.kin.IKinStellarSDKController
 import com.kik.kin.IP2PTransactionManager
 import com.kik.kin.KinMarketplaceViewModel
-import com.kik.metrics.events.ChatDialogshownBase
-import com.kik.metrics.events.ChatKinbuttonTapped
-import com.kik.metrics.events.ChatNokindialogShown
-import com.kik.metrics.events.ChatNotippableadminsdialogShown
-import com.kik.metrics.events.ChatNotippingdialogShown
-import com.kik.metrics.events.CommonTypes
-import com.kik.metrics.events.NokindialogCancelTapped
-import com.kik.metrics.events.NokindialogGotokinmarketplaceTapped
+import com.kik.metrics.events.*
 import com.kik.metrics.service.MetricsService
 import com.kik.util.AndroidImmediateScheduler
 import kik.android.R
-import kik.android.chat.vm.AbstractViewModel
-import kik.android.chat.vm.IGroupTippingProgressViewModel
-import kik.android.chat.vm.INavigator
-import kik.android.chat.vm.TwoMessageDialogViewModel
+import kik.android.chat.vm.*
 import kik.core.abtesting.AbManager
 import kik.core.datatypes.KikGroup
 import kik.core.interfaces.IAbManager
@@ -35,9 +24,10 @@ import org.slf4j.LoggerFactory
 import rx.Observable
 import rx.schedulers.Schedulers
 import rx.subjects.BehaviorSubject
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
-class GroupTippingButtonViewModel(private val group: KikGroup, val context: Context) : IGroupTippingButtonViewModel, AbstractViewModel() {
+class GroupTippingButtonViewModel(private val group: KikGroup, val context: Context) : IGroupTippingButtonViewModel, AbstractResourceViewModel() {
     @Inject
     lateinit var metricsService: MetricsService
     @Inject
@@ -46,8 +36,6 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     lateinit var oneTimeUseRecordManager: IOneTimeUseRecordManager
     @Inject
     lateinit var kinStellarSDKController: IKinStellarSDKController
-    @Inject
-    lateinit var resources: Resources
     @Inject
     lateinit var p2pTransactionManager: IP2PTransactionManager
     @Inject
@@ -60,13 +48,15 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
 
     private var firstTimeViewed = BehaviorSubject.create<Boolean>(true)
     private var withTappedAction = BehaviorSubject.create<Boolean>(false)
-    private var adminWalletCheckError = BehaviorSubject.create(true)
-    private var buttonState = BehaviorSubject.create(IGroupTippingButtonViewModel.TipButtonState.GENERAL_ERROR)
+    private var canAdminsBeTipped = BehaviorSubject.create<Boolean>()
+    private var buttonState = BehaviorSubject.create(IGroupTippingButtonViewModel.TipButtonState.UNKNOWN)
     private lateinit var noKinDialog: TwoMessageDialogViewModel
     private lateinit var generalErrorDialog: TwoMessageDialogViewModel
     private lateinit var dailyLimitDialog: TwoMessageDialogViewModel
+    private lateinit var noTippableAdminsDialog: TwoMessageDialogViewModel
+    private lateinit var tippingNotReadyDialog: DialogViewModel
 
-    private var cachedTipButtonState = IGroupTippingButtonViewModel.TipButtonState.NO_ERROR
+    private var cachedTipButtonState = IGroupTippingButtonViewModel.TipButtonState.UNKNOWN
 
     companion object {
         private val LOG = LoggerFactory.getLogger(GroupTippingButtonViewModel::class.java.simpleName)
@@ -88,7 +78,9 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 .subscribe {
                     when (it) {
                         false -> {
-                            buttonState.onNext(cachedTipButtonState)
+                            if (cachedTipButtonState != IGroupTippingButtonViewModel.TipButtonState.UNKNOWN) {
+                                buttonState.onNext(cachedTipButtonState)
+                            }
                         }
                         true -> {
                             buttonState.onNext(IGroupTippingButtonViewModel.TipButtonState.CLICKED)
@@ -100,24 +92,28 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
         lifecycleSubscription.add(Observable.combineLatest(kinStellarSDKController.balance.map { it.intValueExact() },
                 p2pTransactionManager.retrieveSpendTransactionLimits(PaymentType.ADMIN_TIP).map { it.remainingDailyLimit.toInt() == 0 }.startWith(true),
                 KikObservable.fromEvent(networkState.eventNetworkAvailable()).startWith(networkState.isNetworkAvailable),
-                kinStellarSDKController.isSDKStarted, adminWalletCheckError) { balance, limitReached, network, kinSdk, walletCheckError ->
+                kinStellarSDKController.isSDKStarted, canAdminsBeTipped)
+        { balance, limitReached, network, kinSdk, adminsTippable ->
 
             if (limitReached) {
                 return@combineLatest IGroupTippingButtonViewModel.TipButtonState.DAILY_LIMIT_REACHED
             }
-            if (!network || !kinSdk || walletCheckError) {
+            if (!network || !kinSdk) {
                 return@combineLatest IGroupTippingButtonViewModel.TipButtonState.GENERAL_ERROR
             }
+
             if (balance == 0) {
                 return@combineLatest IGroupTippingButtonViewModel.TipButtonState.NO_KIN_ERROR
             }
+
+            if (!adminsTippable) {
+                return@combineLatest IGroupTippingButtonViewModel.TipButtonState.NO_TIPPABLE_ADMINS
+            }
+
             return@combineLatest IGroupTippingButtonViewModel.TipButtonState.NO_ERROR
-        }.subscribeOn(Schedulers.io())
+        }
                 .observeOn(AndroidImmediateScheduler.mainThread())
                 .subscribe({ result ->
-                    if (result == IGroupTippingButtonViewModel.TipButtonState.NO_ERROR && buttonState.value != IGroupTippingButtonViewModel.TipButtonState.NO_ERROR) {
-                        checkAdminWallets()
-                    }
                     if (buttonState.value != IGroupTippingButtonViewModel.TipButtonState.CLICKED) {
                         buttonState.onNext(result)
                     } else {
@@ -128,6 +124,8 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
         createGeneralErrorDialog(coreComponent)
         createNoKinDialog(coreComponent)
         createDailyLimitDialog(coreComponent)
+        createNoTippableAdminsDialog(coreComponent)
+        createTippingNotReadyDialog()
     }
 
     override fun detach() {
@@ -137,16 +135,23 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     }
 
     private fun checkAdminWallets() {
-        Observable.from(group.superAdmins.plus(group.regularAdmins))
-                .map { BareJid.fromString(it) }
-                .subscribeOn(Schedulers.computation())
-                .flatMap { kinAccountsManager.canAdminBeTipped(it).first() }
-                .subscribeOn(Schedulers.io())
-                .toList()
-                .map { list -> list.any { hasAccount -> hasAccount } }
-                .subscribe({ adminWalletCheckError.onNext(!it) }, {
-                    adminWalletCheckError.onNext(true)
-                })
+        lifecycleSubscription.add(
+                Observable.from(group.superAdmins.plus(group.regularAdmins))
+                        .map { BareJid.fromString(it) }
+                        .subscribeOn(Schedulers.computation())
+                        .flatMap {
+                            kinAccountsManager.canAdminBeTipped(it)
+                                    .timeout(3, TimeUnit.SECONDS, Observable.just(false))
+                        }
+                        .observeOn(Schedulers.io())
+                        .toList()
+                        .map { list -> list.any { it } }
+                        .distinctUntilChanged()
+                        .subscribe({ canAdminsBeTipped.onNext(it) })
+                        {
+                            canAdminsBeTipped.onNext(false)
+                        }
+        )
     }
 
     override fun tapped() {
@@ -160,12 +165,19 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 navigator.showTwoMessageDialog(generalErrorDialog)
             }
             IGroupTippingButtonViewModel.TipButtonState.DAILY_LIMIT_REACHED -> navigator.showTwoMessageDialog(dailyLimitDialog)
+            IGroupTippingButtonViewModel.TipButtonState.NO_TIPPABLE_ADMINS -> {
+                navigator.showTwoMessageDialog(noTippableAdminsDialog)
+                noTippableAdminsDialogShownMetric()
+            }
             IGroupTippingButtonViewModel.TipButtonState.NO_KIN_ERROR -> {
                 noKinDialogShownMetric()
                 navigator.showTwoMessageDialog(noKinDialog)
             }
             IGroupTippingButtonViewModel.TipButtonState.NO_ERROR -> {
                 navigator.navigateTo(GroupTippingViewModel(group.identifier))
+            }
+            IGroupTippingButtonViewModel.TipButtonState.UNKNOWN -> {
+                navigator.showDialog(tippingNotReadyDialog)
             }
         }
     }
@@ -195,9 +207,20 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
         dialog.dismiss.run()
     }
 
+    private fun createTippingNotReadyDialog() {
+        tippingNotReadyDialog = with(DialogViewModel.Builder<DialogViewModel.Builder<*>>()) {
+            title(getString(R.string.deep_link_breadcrumb_dialog_title))
+            message(getString(R.string.tipping_not_ready_kin_dialog_message))
+            confirmAction(getString(R.string.title_got_it)) {}
+            image(getDrawable(R.drawable.img_hourglass))
+            style(DialogViewModel.DialogStyle.IMAGE)
+            build()
+        }
+    }
+
     private fun createNoKinDialog(coreComponent: CoreComponent) {
         with(TwoMessageDialogViewModel.Builder()) {
-            confirmAction(resources.getString(R.string.go_to_marketplace_button_text)) {
+            confirmAction(getString(R.string.go_to_marketplace_button_text)) {
                 onGoToKinMarketplaceConfirmedMetric()
                 goToMarketplace(coreComponent, noKinDialog)
             }
@@ -206,27 +229,27 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 onGoToKinMarketplaceCancelledMetric()
             })
 
-            title(resources.getString(R.string.tipping_earn_kin_dialog_title))
-            image(resources.getDrawable(R.drawable.img_kin_present))
+            title(getString(R.string.tipping_earn_kin_dialog_title))
+            image(getDrawable(R.drawable.img_kin_present))
 
-            firstMessage(resources.getString(R.string.tipping_earn_kin_dialog_body))
-            secondMessage(resources.getString(R.string.visit_marketplace_kin_message))
+            firstMessage(getString(R.string.tipping_earn_kin_dialog_body))
+            secondMessage(getString(R.string.visit_marketplace_kin_message))
 
             when (abManager.getAssignedVariantForExperimentName(AbManager.NO_KIN_DIALOG)) {
                 AbManager.NO_KIN_DIALOG_LONGER_BLURB -> {
-                    firstMessage(resources.getString(R.string.tipping_no_kin_longer_blurb_dialog))
+                    firstMessage(getString(R.string.tipping_no_kin_longer_blurb_dialog))
                 }
                 AbManager.NO_KIN_DIALOG_TWO_CHOICES -> {
-                    firstMessage(resources.getString(R.string.tipping_no_kin_two_choices_first_dialog))
-                    secondMessage(resources.getString(R.string.tipping_no_kin_two_choices_second_dialog))
+                    firstMessage(getString(R.string.tipping_no_kin_two_choices_first_dialog))
+                    secondMessage(getString(R.string.tipping_no_kin_two_choices_second_dialog))
                 }
                 AbManager.NO_KIN_DIALOG_CLAIM_KIN -> {
-                    firstMessage(resources.getString(R.string.tipping_no_kin_tip_admins_first_dialog))
-                    secondMessage(resources.getString(R.string.tipping_no_kin_claim_kin_second_dialog))
+                    firstMessage(getString(R.string.tipping_no_kin_tip_admins_first_dialog))
+                    secondMessage(getString(R.string.tipping_no_kin_claim_kin_second_dialog))
                 }
                 AbManager.NO_KIN_DIALOG_SHORT_TUTORIAL -> {
-                    firstMessage(resources.getString(R.string.tipping_no_kin_tip_admins_first_dialog))
-                    secondMessage(resources.getString(R.string.tipping_no_kin_short_tutorial_second_dialog))
+                    firstMessage(getString(R.string.tipping_no_kin_tip_admins_first_dialog))
+                    secondMessage(getString(R.string.tipping_no_kin_short_tutorial_second_dialog))
                 }
                 AbManager.NO_KIN_DIALOG_ORIGINAL -> {
                     // Keep original
@@ -242,23 +265,35 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
 
     private fun createGeneralErrorDialog(coreComponent: CoreComponent) {
         generalErrorDialog = TwoMessageDialogViewModel.Builder()
-                .confirmAction(resources.getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, generalErrorDialog) }
-                .firstMessage(resources.getString(R.string.tipping_unavailable_dialog_first_message))
-                .secondMessage(resources.getString(R.string.daily_limit_dialog_second_message))
-                .title(resources.getString(R.string.tipping_unavailable_dialog_title))
-                .image(resources.getDrawable(R.drawable.img_errorload))
+                .confirmAction(getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, generalErrorDialog) }
+                .firstMessage(getString(R.string.tipping_unavailable_dialog_first_message))
+                .secondMessage(getString(R.string.daily_limit_dialog_second_message))
+                .title(getString(R.string.tipping_unavailable_dialog_title))
+                .image(getDrawable(R.drawable.img_errorload))
                 .build()
     }
 
     private fun createDailyLimitDialog(coreComponent: CoreComponent) {
-        val firstMessage = resources.getString(R.string.daily_limit_dialog_first_message, 500)
+        val firstMessage = getString(R.string.daily_limit_dialog_first_message, 500)
         dailyLimitDialog = TwoMessageDialogViewModel.Builder()
-                .confirmAction(resources.getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, dailyLimitDialog) }
+                .confirmAction(getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, dailyLimitDialog) }
                 .firstMessage(firstMessage)
-                .secondMessage(resources.getString(R.string.daily_limit_dialog_second_message))
-                .title(resources.getString(R.string.daily_limit_dialog_title))
-                .image(resources.getDrawable(R.drawable.img_errorload))
+                .secondMessage(getString(R.string.daily_limit_dialog_second_message))
+                .title(getString(R.string.daily_limit_dialog_title))
+                .image(getDrawable(R.drawable.img_errorload))
                 .build()
+    }
+
+
+    private fun createNoTippableAdminsDialog(coreComponent: CoreComponent) {
+        noTippableAdminsDialog = with(TwoMessageDialogViewModel.Builder()) {
+            title(getString(R.string.tipping_unavailable_dialog_title))
+            firstMessage(getString(R.string.no_eligible_admins_dialog_first_message))
+            secondMessage(getString(R.string.daily_limit_dialog_second_message))
+            confirmAction(getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, dailyLimitDialog) }
+            image(getDrawable(R.drawable.img_errorload))
+            build()
+        }
     }
 
     private fun noKinDialogShownMetric() {
@@ -269,7 +304,8 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                             .setGroupJid(CommonTypes.GroupJid(group.jid.node))
                             .setAdminStatus(getAdminStatus(group))
                             .setKinBalance(CommonTypes.KinBalance(it.toDouble()))
-                            .setVariant(ChatDialogshownBase.Variant(abManager.getAssignedVariantForExperimentName(AbManager.NO_KIN_DIALOG) ?: DIALOG_TYPE))
+                            .setVariant(ChatDialogshownBase.Variant(abManager.getAssignedVariantForExperimentName(AbManager.NO_KIN_DIALOG)
+                                    ?: DIALOG_TYPE))
                             .build())
                 }, {
                     LOG.error(it.message)
@@ -291,7 +327,6 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 }))
     }
 
-    // TODO call this when no tippable admin dialog implemented
     private fun noTippableAdminsDialogShownMetric() {
         lifecycleSubscription.add(kinStellarSDKController.balance
                 .take(1)

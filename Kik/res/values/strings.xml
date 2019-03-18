@@ -319,7 +319,7 @@ Shop"</string>
     <string name="code_download_website">http://kik.me/%s #kik #kikme</string>
     <string name="collection_not_found_message_body">Themes cannot be displayed at this time. Please try again later.</string>
     <string name="collection_not_found_title">"Couldn't Load Theme"</string>
-    <string name="com.crashlytics.android.build_id">771ae2bb-eacd-4850-aec1-197edea28f80</string>
+    <string name="com.crashlytics.android.build_id">8b74c5dd-791f-4798-a7fa-0e6ac8956d75</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -957,6 +957,8 @@ FFmpeg
     <string name="kin_reward_dialog_spend_only_body">Spend Kin to buy more chats!</string>
     <string name="kin_reward_dialog_spend_only_header">Spend Kin to Buy Chats</string>
     <string name="kin_single_tip_limit">A single tip cannot exceed %1$d Kin</string>
+    <string name="kin_skip_the_wait_description">Skip the wait by buying more chats using Kin</string>
+    <string name="kin_transaction_failed_description">Your purchase could not be completed. Please try again, or cancel to discard the transaction.</string>
     <string name="kin_verified_bot">Kin verified bot</string>
     <string name="kinecosystem_complete_tasks_and_earn_kin">Complete tasks and earn KIN</string>
     <string name="kinecosystem_confirm">Confirm</string>
@@ -1114,6 +1116,9 @@ Please go to Settings > Privacy > Contacts to grant Kik access."</string>
     <string name="message_discard_theme_change">This will discard any changes you have made to your background theme</string>
     <string name="message_history_summary">Securely store messages, when you log in you can pick up where you left off</string>
     <string name="message_list_read_receipts_disabled_reminder">"%1$s won't see that you've read their messages until you tap chat"</string>
+    <string name="message_tipping_unsupported_device_dialog_first_message">This group member is using an unsupported device and is unable to recieve Kin.</string>
+    <string name="message_tipping_unsupported_device_dialog_second_message">Look for +kplusbutton+ to tip a supported group member.</string>
+    <string name="message_tipping_unsupported_device_dialog_title">Unsupported Device</string>
     <string name="messages_failed_to_send_notification">Your message was not sent</string>
     <string name="minute_abbreviation">m</string>
     <string name="minutes">%1$s minutes</string>
@@ -1781,6 +1786,7 @@ Photo"</string>
     <string name="tipping_no_kin_tip_admins_first_dialog">You can now tip admins with Kin!</string>
     <string name="tipping_no_kin_two_choices_first_dialog">Show your admins you care with Kin!</string>
     <string name="tipping_no_kin_two_choices_second_dialog">To get started, complete the tutorial or survey in the Kin Marketplace.</string>
+    <string name="tipping_not_ready_kin_dialog_message">Tipping is taking a moment to load, it should be available in just a few seconds!</string>
     <string name="tipping_notification_admin_overflow_count">+ %1$d</string>
     <string name="tipping_notification_subtext">Explore the Kin Marketplace to view your wallet</string>
     <string name="tipping_notification_tipped_value_string">"You've Been Tipped @kinlogo@ *%1$d*!"</string>
@@ -1822,6 +1828,7 @@ Photo"</string>
     <string name="title_chat_limit_reached">Chat Limit Reached</string>
     <string name="title_chat_settings">Chat Settings</string>
     <string name="title_chat_with">Talk To</string>
+    <string name="title_chats">Chats</string>
     <string name="title_choose_existing">Choose Existing</string>
     <string name="title_clear">Clear</string>
     <string name="title_clear_chat_history">Clear Chat History</string>
@@ -1833,6 +1840,7 @@ Photo"</string>
     <string name="title_contact_info">Info</string>
     <string name="title_contacts">Contacts</string>
     <string name="title_continue">Continue</string>
+    <string name="title_continue_chatting_in">Continue chatting in</string>
     <string name="title_conversation_info">Chat Info</string>
     <string name="title_copied_to_clipboard">Copied to Clipboard</string>
     <string name="title_copy">Copy</string>
@@ -1958,6 +1966,7 @@ Photo"</string>
     <string name="title_open_app">Open %s</string>
     <string name="title_open_in">Open in %s</string>
     <string name="title_open_in_chrome">Open in Chrome</string>
+    <string name="title_out_of_chats">Out of Chats!</string>
     <string name="title_page_load_failed">"Looks like this page can't be found"</string>
     <string name="title_password">Password</string>
     <string name="title_pending_transactions">Pending Transactions</string>
@@ -2086,6 +2095,7 @@ Photo"</string>
     <string name="title_you">You</string>
     <string name="title_you_have_no_chats_yet">You have no chats yet</string>
     <string name="title_your_account_info">Your Account</string>
+    <string name="title_your_balance">Your Balance:</string>
     <string name="title_your_stickers">Your Stickers</string>
     <string name="title_your_web_history">Your Web History</string>
     <string name="toast_unable_to_select_another_person">Only 1 person can be selected</string>

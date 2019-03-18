@@ -21,14 +21,15 @@ import javax.inject.Singleton
 import dagger.Module
 import dagger.Provides
 import kik.android.config.IConfigurations
-import kik.android.config.KikConfigurations
 import kik.android.util.DeviceUtils
 import kik.android.util.ISharedPrefProvider
 import kik.core.CoreModule
 import kik.core.chat.profile.IContactProfileRepository
 import kik.core.interfaces.*
+import kik.core.xiphias.IPaymentService
 import kik.core.xiphias.IP2PPaymentService
 import kik.core.xiphias.IProductDataService
+import kik.core.xiphias.XiphiasPaymentService
 import kik.core.xiphias.XiphiasP2PPaymentService
 import rx.schedulers.Schedulers
 
@@ -92,6 +93,12 @@ class KinModule(private val _applicationContext: Context, private val _configura
     @Singleton
     internal fun providesP2PPaymentService(communicator: ICommunication, storage: IStorage): IP2PPaymentService {
         return XiphiasP2PPaymentService(communicator, storage)
+    }
+
+    @Provides
+    @Singleton
+    internal fun providesFeaturePaymentService(communicator: ICommunication, storage: IStorage): IPaymentService {
+        return XiphiasPaymentService(communicator, storage)
     }
 
     @Provides

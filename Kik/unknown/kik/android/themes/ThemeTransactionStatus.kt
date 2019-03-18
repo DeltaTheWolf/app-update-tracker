@@ -77,7 +77,7 @@ enum class ThemeTransactionStatus(val id: Int) : StatefulEnum<ThemeTransactionSt
     },
     PENDING_REFRESH_THEME(5000) {
         override fun advance(): ThemeTransactionStatus {
-            return COMPLETE
+            return REFRESHED
         }
 
         override fun error(): ThemeTransactionStatus {
@@ -93,7 +93,15 @@ enum class ThemeTransactionStatus(val id: Int) : StatefulEnum<ThemeTransactionSt
             return PENDING_REFRESH_THEME
         }
     },
-    COMPLETE(6000) {
+    REFRESHED(6000) {
+        override fun advance(): ThemeTransactionStatus {
+            return COMPLETE
+        }
+        override fun isErrorState(): Boolean {
+            return false
+        }
+    },
+    COMPLETE(7000) {
         override fun isErrorState(): Boolean {
             return false
         }

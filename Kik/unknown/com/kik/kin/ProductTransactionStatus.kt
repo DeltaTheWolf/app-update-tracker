@@ -4,7 +4,7 @@ import com.kik.fsm.StatefulEnum
 
 /**
  * The happy path of a ProductTransactionStatus is:
- * PENDING_PRODUCT_JWT_FETCH -> PENDING_KIN_PURCHASE -> PENDING_UNLOCK_PRODUCT -> COMPLETE
+ * PENDING_PRODUCT_JWT_FETCH -> PENDING_KIN_PURCHASE -> PENDING_UNLOCK_PRODUCT -> UNLOCKED --> COMPLETE
  */
 enum class ProductTransactionStatus(val id: Int) : StatefulEnum<ProductTransactionStatus> {
     PENDING_PRODUCT_JWT_FETCH(1000) {
@@ -52,7 +52,7 @@ enum class ProductTransactionStatus(val id: Int) : StatefulEnum<ProductTransacti
     },
     PENDING_UNLOCK_PRODUCT(3000) {
         override fun advance(): ProductTransactionStatus {
-            return COMPLETE
+            return UNLOCKED
         }
 
         override fun error(): ProductTransactionStatus {
@@ -68,7 +68,16 @@ enum class ProductTransactionStatus(val id: Int) : StatefulEnum<ProductTransacti
             return PENDING_UNLOCK_PRODUCT
         }
     },
-    COMPLETE(4000) {
+    UNLOCKED(4000) {
+        override fun advance(): ProductTransactionStatus {
+            return COMPLETE
+        }
+
+        override fun isErrorState(): Boolean {
+            return false
+        }
+    },
+    COMPLETE(5000) {
         override fun isErrorState(): Boolean {
             return false
         }
