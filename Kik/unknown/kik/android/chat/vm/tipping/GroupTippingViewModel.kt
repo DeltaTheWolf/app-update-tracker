@@ -26,6 +26,7 @@ import kik.core.interfaces.IProfile
 import org.slf4j.LoggerFactory
 import rx.Observable
 import rx.subjects.BehaviorSubject
+import java.math.BigDecimal
 import javax.inject.Inject
 
 class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewModel, AbstractViewModel() {
@@ -36,7 +37,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
 
     private data class TippingMetricsInformation(val kinUserId: KinUserId, val adminSelected: Boolean,
                                                  val adminStatus: CommonTypes.AdminStatus, val groupJid: Jid,
-                                                 val kinValue: Double, val kinBalance: Double, val limitRemaining: Double = 0.0)
+                                                 val kinValue: BigDecimal, val kinBalance: BigDecimal, val limitRemaining: BigDecimal = BigDecimal.ZERO)
 
     @Inject
     lateinit var profile: IProfile
@@ -133,7 +134,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                 Observable.combineLatest(
                         adminsViewModel.selectedAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                         inputViewModel.kinBalance.first())
-                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble()) }
+                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance) }
                         .subscribe ({
                             metricsService.track(
                                     TipadminpageAdminTapped.builder()
@@ -141,8 +142,8 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                             .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                             .setAdminStatus(it.adminStatus)
                                             .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                            .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
+                                            .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
                                             .build())
                         }, {
                             LOG.error(it.message)
@@ -154,7 +155,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                 Observable.combineLatest(
                         adminsViewModel.untippableAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                         inputViewModel.kinBalance.first())
-                { profile, balance -> TippingMetricsInformation(profile.kinUserId, false, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble()) }
+                { profile, balance -> TippingMetricsInformation(profile.kinUserId, false, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance) }
                         .subscribe ({
                             metricsService.track(
                                     TipadminpageUntipadminTapped.builder()
@@ -162,8 +163,8 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                             .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                             .setAdminStatus(it.adminStatus)
                                             .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                            .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
+                                            .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
                                             .build())
                         }, {
                             LOG.error(it.message)
@@ -176,7 +177,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                         adminsViewModel.selectedAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                         inputViewModel.kinBalance,
                         inputViewModel.limitRemaining)
-                { profile, balance, limit -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble(), limit) }
+                { profile, balance, limit -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance, limit) }
                         .filter { it.kinValue >= it.limitRemaining }
                         .subscribe ({
                             metricsService.track(
@@ -185,9 +186,9 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                             .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                             .setAdminStatus(it.adminStatus)
                                             .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                            .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
-                                            .setLimitRemaining(CommonTypes.KinValue(it.limitRemaining))
+                                            .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
+                                            .setLimitRemaining(CommonTypes.KinValue(it.limitRemaining.toDouble()))
                                             .build())
                         }, {
                             LOG.error(it.message)
@@ -199,7 +200,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                 Observable.combineLatest(
                         adminsViewModel.selectedAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                         inputViewModel.kinBalance)
-                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble()) }
+                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance) }
                         .take(1)
                         .subscribe ({
                             metricsService.track(
@@ -208,8 +209,8 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                             .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                             .setAdminStatus(it.adminStatus)
                                             .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                            .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
+                                            .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
                                             .build())
                         }, {
                             LOG.error(it.message)
@@ -221,7 +222,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                 Observable.combineLatest(
                         adminsViewModel.selectedAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                         inputViewModel.kinBalance)
-                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble()) }
+                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance) }
                         .take(1)
                         .subscribe ({
                             metricsService.track(
@@ -230,8 +231,8 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                             .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                             .setAdminStatus(it.adminStatus)
                                             .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                            .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
+                                            .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
                                             .build())
                         }, {
                             LOG.error(it.message)
@@ -243,7 +244,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                 Observable.combineLatest(
                         adminsViewModel.selectedAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                         inputViewModel.kinBalance)
-                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble()) }
+                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance) }
                         .take(1)
                         .subscribe ({
                             metricsService.track(
@@ -252,8 +253,8 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                             .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                             .setAdminStatus(it.adminStatus)
                                             .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                            .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
+                                            .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
                                             .build())
                         }, {
                             LOG.error(it.message)
@@ -266,7 +267,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                     Observable.combineLatest(
                             adminsViewModel.selectedAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                             inputViewModel.kinBalance)
-                    { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble()) }
+                    { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance) }
                             .take(1)
                             .subscribe ({
                                 metricsService.track(
@@ -275,8 +276,8 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                                 .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                                 .setAdminStatus(it.adminStatus)
                                                 .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                                .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                                .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
+                                                .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                                .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
                                                 .build())
                             }, {
                                 LOG.error(it.message)
@@ -289,7 +290,7 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                 Observable.combineLatest(
                         adminsViewModel.selectedAdminBareJid.flatMap { contactProfileRepository.profileForJid(it) },
                         inputViewModel.kinBalance)
-                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped().toDouble(), balance.toDouble()) }
+                { profile, balance -> TippingMetricsInformation(profile.kinUserId, true, getAdminStatus(group), group.jid, inputViewModel.getAmountTipped(), balance) }
                         .take(1)
                         .subscribe ({
                             metricsService.track(
@@ -298,8 +299,8 @@ class GroupTippingViewModel(override val groupJid: String): IGroupTippingViewMod
                                             .setAdminSelected(TipadminpageBase.AdminSelected(it.adminSelected))
                                             .setAdminStatus(it.adminStatus)
                                             .setGroupJid(CommonTypes.GroupJid(it.groupJid.node))
-                                            .setKinValue(CommonTypes.KinValue(it.kinValue))
-                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance))
+                                            .setKinValue(CommonTypes.KinValue(it.kinValue.toDouble()))
+                                            .setKinBalance(CommonTypes.KinBalance(it.kinBalance.toDouble()))
                                             .build())
                         }, {
                             LOG.error(it.message)

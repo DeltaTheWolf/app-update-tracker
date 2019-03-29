@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/kin_icon" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_kin_kikblue" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="6.0dip" android:minWidth="8.0dip" android:minHeight="8.0dip">
+        <ImageView android:id="@id/tipping_checkmark" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/icn_checkmark" android:scaleType="centerCrop" />
+        <ProgressBar android:id="@id/tipping_loading_progress" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/ic_kin_kikblue" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/plus_icon" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/ic_tip_plus_blue" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/exclamation_icon" android:visibility="gone" android:layout_width="3.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_exclamation_white" android:scaleType="centerCrop" />
+        <kik.android.widget.RobotoTextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tip_amount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </FrameLayout>
+</merge>

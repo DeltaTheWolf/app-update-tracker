@@ -50,8 +50,8 @@ message GetKikOfferJwtRequest {
     // personalized offer that's available for that user only.
     common.offer.v1.KikOfferIdOrUserOfferId offer_id = 1 [(kik.validation.field_validation) = { mandatory: true }];
 
-    // Any feature offer data that could be included (Ex. group jid for group_tipping)
-    common.offer.v1.FeatureData feature_data = 2;
+    // Any user offer offer data that could be included (Ex. group jid for group_tipping)
+    common.offer.v1.UserOfferData user_offer_data = 2;
 
     // User or alias jid of the receiving user. This will only be included for PAY_TO_USER type of offers.
     // Will be one-way hashed before being included in the JWT.

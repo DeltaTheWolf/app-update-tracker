@@ -9,6 +9,7 @@ import kik.core.kin.SpendLimits
 import rx.Completable
 import rx.Observable
 import rx.Single
+import java.math.BigDecimal
 
 class P2PStubTransactionManager : IP2PTransactionManager {
     override fun getTransaction(offer: P2PPayment?, offerJWT: String?) = Single.just("")
@@ -25,10 +26,10 @@ class P2PStubTransactionManager : IP2PTransactionManager {
 
     override fun pendingTransactionCount() = Observable.just(0)
 
-    override fun retrieveSpendTransactionLimits(paymentType: PaymentType) = Observable.just(SpendLimits(0.0, 0.0, 0.0))
+    override fun retrieveSpendTransactionLimits(paymentType: PaymentType) = Observable.just(SpendLimits(BigDecimal.ZERO, BigDecimal.ZERO, BigDecimal.ZERO))
 
     override fun retrieveAllTransactions(): List<ITransaction<P2PPayment, P2PTransactionStatus>> = emptyList()
 
     override fun onTransactionMapChanged() = Observable.just(Pair(P2PPayment(BareJid.fromString("null@null"), KinUserId(""),
-            0, PaymentType.DEFAULT, AdminTippingMetaData(BareJid.fromString("null@null"))), P2PTransactionStatus.COMPLETE))
+            BigDecimal.ZERO, PaymentType.DEFAULT, AdminTippingMetaData(BareJid.fromString("null@null"))), P2PTransactionStatus.COMPLETE))
 }

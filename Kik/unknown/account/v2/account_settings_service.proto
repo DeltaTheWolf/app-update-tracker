@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package mobile.account.v2;
+
+option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/account/v2;account";
+option java_package = "com.kik.gen.account.v2";
+option objc_class_prefix = "KPBMobileAccountV2";
+
+import "common_rpc.proto";
+import "protobuf_validation.proto";
+import "common/v2/model.proto";
+
+service AccountSettings {
+    // Caller can only ever change their own email address
+    rpc ChangeEmailAddress(ChangeEmailAddressRequest) returns (ChangeEmailAddressResponse) {}
+
+    // Caller can only ever get their own account info
+    rpc GetAccountInfo(common.VoidRequest) returns (AccountInfo) {}
+}
+
+message AccountInfo {
+    common.v2.Email email = 2;
+}
+
+message ChangeEmailAddressRequest {
+    common.v2.Email new_email = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+    
+    // The email-derived passkey as described in https://github.com/kikinteractive/kik-product/wiki/Passkeys
+    bytes new_derived_passkey = 2 [(kik.validation.field_validation) = {
+        mandatory: true
+        max_byte_length: 1024
+    }];
+}
+
+message ChangeEmailAddressResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+        EMAIL_ADDRESS_INVALID = 1; // This result is also returned if the email address is already in use or has been blacklisted
+        EMAIL_DERIVED_PASSKEY_INVALID = 2; 
+    }
+}

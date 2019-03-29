@@ -129,7 +129,13 @@ message RegisterRequest {
         max_byte_length: 1024
     }];
 
-    // TODO: further fields regarding Captcha, Phone, or other forms of Verification (?)
+    // TODO: further fields regarding Phone, or other forms of Verification (?)
+
+    // Solution to captcha that was previously issued via captcha_url in response.
+    string captcha_solution = 11 [(kik.validation.field_validation) = {
+        mandatory: false
+        max_byte_length: 2048
+    }];
 }
 
 message RegisterResponse {
@@ -191,7 +197,17 @@ message RegisterResponse {
         EMAIL_PASSKEY = 11;
     }
 
-    // TOOD: further fields regarding Captcha, Phone, or other forms of Verification
+    // TOOD: further fields regarding Phone, or other forms of Verification
+
+    // Client must use this URL to solve captcha if present.
+    // Present only when result is VERIFICATION_REQUIRED or ERROR_VERIFICATION_FAILED.
+    // If result is ERROR_VERIFICATION_FAILED then either a new URL will be provided or the old one is returned.
+    string captcha_url = 4 [(kik.validation.field_validation) = {
+        mandatory: false
+        min_byte_length: 1
+        max_byte_length: 2048
+    }];
+
 }
 
 //----------------------------------------------------------------------------

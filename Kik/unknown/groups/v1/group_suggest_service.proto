@@ -22,8 +22,8 @@ service GroupSuggest {
     //   provided.  While unlikely, the order may appear different from one request to the next.
     // * Response size: This method will return as many as 100 suggestions.  If the list is too large for display,
     //   the client is expected to arbitrarily (or randomly) select a subset from this list.
-    // * Rate Limiting: This method will be rate limited.  The expectation is no more than 1 call per minute
-    //   per active client.
+    // * Rate Limiting: This method may be rate limited. The expectation is that no more than 1 call
+    //   will be made per minute per client.
     //
     rpc GetSuggestedGroupSearchTerms(GetSuggestedGroupSearchTermsRequest) returns (GetSuggestedGroupSearchTermsResponse) {}
 }
@@ -39,6 +39,7 @@ message GetSuggestedGroupSearchTermsResponse {
     Result result = 1;
     enum Result {
         OK = 0;
+        // Request denied due to rate limiting. See method description for expected rate limits.
         RATE_LIMIT_EXCEEDED = 1;
     }
 

@@ -9,6 +9,7 @@ option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go
 import "protobuf_validation.proto";
 import "common/v1/model.proto";
 import "kin/payment/v1/payment_common.proto";
+import "offer/v1/kik_offer_common.proto";
 
 // TransactionDetailsAttachment is meant to be attached to status messages related to feature payments
 // It contains the intended target of the status message as well as the tip amount
@@ -27,4 +28,6 @@ message TransactionDetailsAttachment {
     common.v1.XiBareUserJidOrAliasJid sender_jid = 3;
 
     common.v1.XiBareUserJidOrAliasJid recipient_jid = 4;
+
+    common.offer.v1.UserOfferData user_offer_data = 5;
 }

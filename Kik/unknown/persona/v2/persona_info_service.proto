@@ -7,6 +7,7 @@ option java_package = "com.kik.gen.persona.v2";
 option objc_class_prefix = "KPBMobilePersonaV2";
 
 import "protobuf_validation.proto";
+import "common_rpc.proto";
 
 import "common/v2/model.proto";
 import "persona/v2/persona_common.proto";
@@ -19,6 +20,8 @@ service PersonaInfo {
     rpc GetPersonaFull(GetPersonaFullRequest) returns (GetPersonaFullResponse) {}
 
     rpc GetPersonaFullByUsername(GetPersonaFullByUsernameRequest) returns (GetPersonaFullByUsernameResponse) {}
+
+    rpc GetSelectableInterests(common.VoidRequest) returns (GetSelectableInterestsResponse) {}
 }
 
 message GetPersonaShortRequest {
@@ -104,4 +107,19 @@ message GetPersonaFullByUsernameResponse {
 
     // persona is only returned if result == OK
     common.persona.v2.PersonaFull persona = 2;
+}
+
+message GetSelectableInterestsResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+    }
+
+    // The whitelist of interests for the user to choose from when updating their profile
+    repeated common.persona.v2.Interests.InterestItem interests = 2 [(kik.validation.field_validation) = {
+        max_repetitions: 100
+    }];
+
+    // The maximum number of interests allowed in one profile
+    uint32 max_user_interests = 3;
 }

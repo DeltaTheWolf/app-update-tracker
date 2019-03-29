@@ -15,7 +15,6 @@ import kik.core.interfaces.IImageRequester
 import kik.core.interfaces.IProfileImageProvider
 import rx.Observable
 import javax.inject.Inject
-import kotlin.math.roundToInt
 
 class TippingStatusMessageViewModel(message: Message,
                                     conversationId: String,
@@ -28,7 +27,7 @@ class TippingStatusMessageViewModel(message: Message,
 
     companion object {
         @JvmStatic
-        fun supports(checkMessage: Message) = checkMessage.isTippingStatusMessage && checkMessage.transactionDetails.hasRecipientJid() && checkMessage.transactionDetails.hasSenderJid() && checkMessage.transactionDetails.hasAmount()
+        fun supports(checkMessage: Message) = checkMessage.hasTransactionDetails() && checkMessage.transactionDetails.hasRecipientJid() && checkMessage.transactionDetails.hasSenderJid() && checkMessage.transactionDetails.hasAmount()
     }
 
     @Inject
@@ -64,7 +63,7 @@ class TippingStatusMessageViewModel(message: Message,
         if (!transactionDetails.hasAmount()) {
             return Observable.just("")
         }
-        return Observable.just("" + transactionDetails.amount.amount.roundToInt())
+        return Observable.just("${transactionDetails.amount.amountDouble.toInt()}")
     }
 
     override fun senderImage(): Observable<IImageRequester<Bitmap>> = getImageRequesterObservable(senderUser)

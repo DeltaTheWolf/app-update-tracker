@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:tag="layout/kin_message_tip_button_disabled_0" android:background="@drawable/rounded_rectangle_grey_border" android:fadingEdgeLength="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="34.0dip" android:minHeight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/kin_icon" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_kin_grey" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/plus_icon" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_tip_plus_grey" android:scaleType="centerCrop" />
+</LinearLayout>

@@ -29,6 +29,7 @@ import rx.Observable
 import rx.android.schedulers.AndroidSchedulers
 import rx.subjects.BehaviorSubject
 import rx.subjects.PublishSubject
+import java.math.BigDecimal
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 import javax.inject.Inject
@@ -138,7 +139,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
         var adminTipStatusConcat = Observable.empty<Pair<User, Boolean>>()
         newUsers.forEach { user ->
             if (user != null) {
-                adminTipStatusConcat = adminTipStatusConcat.concatWith(kinAccountsManager.canAdminBeTipped(user.bareJid)
+                adminTipStatusConcat = adminTipStatusConcat.concatWith(kinAccountsManager.canUserBeTipped(user.bareJid).first()
                         .timeout(1000, TimeUnit.MILLISECONDS)
                         .retryWhen { errors ->
                             return@retryWhen errors.zipWith(Observable.range(0, 3)
@@ -207,7 +208,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
     }
 
     override fun onAdminSelected(jid: BareJid) {
-        lifecycleSubscription.add(kinAccountsManager.canAdminBeTipped(jid)
+        lifecycleSubscription.add(kinAccountsManager.canUserBeTipped(jid)
                 .map {
                     if (!it) {
                         untippableAdminTapped.onNext(jid)
@@ -262,7 +263,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
 
     override fun selectAnimationShown(isShown: Boolean) = inAnimation.onNext(isShown)
 
-    override fun doTip(amount: Int) {
+    override fun doTip(amount: BigDecimal) {
         lifecycleSubscription.add(
                 selectedAdminBareJid
                         .first()

@@ -5,6 +5,6 @@ import rx.Observable
 
 class StubKinAccountsManager : IKinAccountsManager {
 
-    override fun canAdminBeTipped(jid: BareJid) = Observable.just(false)
+    override fun canUserBeTipped(jid: BareJid) = Observable.just(false)
 
 }

@@ -1,7 +1,6 @@
 package com.kik.modules
 
 import android.content.Context
-
 import com.kik.abtesting.StubKinStellarSDKController
 import com.kik.abtesting.StubProductPaymentManager
 import com.kik.core.domain.kin.KinController
@@ -12,12 +11,6 @@ import com.kik.storage.KinProductTransactionEntrySqlStorage
 import com.kik.storage.P2PTransactionEntrySqlStorage
 import com.kik.storage.StubKinProductTransactionEntrySqlStorage
 import com.kik.storage.StubP2PTransactionEntrySqlStorage
-
-import java.util.UUID
-import java.util.concurrent.Executors
-
-import javax.inject.Singleton
-
 import dagger.Module
 import dagger.Provides
 import kik.android.config.IConfigurations
@@ -25,15 +18,16 @@ import kik.android.util.DeviceUtils
 import kik.android.util.ISharedPrefProvider
 import kik.core.CoreModule
 import kik.core.chat.profile.IContactProfileRepository
-import kik.core.interfaces.*
-import kik.core.xiphias.IPaymentService
-import kik.core.xiphias.IP2PPaymentService
-import kik.core.xiphias.IProductDataService
-import kik.core.xiphias.XiphiasPaymentService
-import kik.core.xiphias.XiphiasP2PPaymentService
+import kik.core.interfaces.ICommunication
+import kik.core.interfaces.IStorage
+import kik.core.interfaces.IUserProfile
+import kik.core.xiphias.*
 import rx.schedulers.Schedulers
+import java.util.*
+import java.util.concurrent.Executors
+import javax.inject.Singleton
 
-@Module(includes = arrayOf(CoreModule::class, SharedPrefProviderModule::class, UserJWTAuthModule::class, MetricsServiceModule::class))
+@Module(includes = arrayOf(CoreModule::class, SharedPrefProviderModule::class, UserJWTAuthModule::class, MetricsServiceModule::class, GroupProfileModule::class))
 class KinModule(private val _applicationContext: Context, private val _configurations: IConfigurations, private val _storage: IStorage) {
 
     // Kin Ether SDK -----
@@ -126,18 +120,23 @@ class KinModule(private val _applicationContext: Context, private val _configura
     @Provides
     @Singleton
     internal fun providesAdminKinAccountRepository(kinStellarSDKController: IKinStellarSDKController,
-                                                   contactProfileRepository: IContactProfileRepository): IAdminKinAccountRepository {
+                                                   contactProfileRepository: IContactProfileRepository): IKinAccountRepository {
         return if (DeviceUtils.kinSupportedDevice()) {
-            AdminKinAccountRepository(kinStellarSDKController, contactProfileRepository)
-        } else StubAdminKinAccountRepository()
+            KinAccountRepository(kinStellarSDKController, contactProfileRepository)
+        } else StubKinAccountRepository()
     }
 
     @Provides
     @Singleton
-    internal fun providesKinAccountsManager(adminKinAccountRepository: IAdminKinAccountRepository) =
+    internal fun providesKinAccountsManager(kinAccountRepository: IKinAccountRepository) =
             if (DeviceUtils.kinSupportedDevice()) {
-                KinAccountsManager(adminKinAccountRepository)
+                KinAccountsManager(kinAccountRepository)
             } else StubKinAccountsManager()
+
+    @Provides
+    @Singleton
+    internal fun providesGroupKinAccessManager(groupProfileRepository: GroupProfileRepository): IGroupKinAccessManager =
+            GroupKinAccessManager(groupProfileRepository)
 
     @Provides
     @Singleton

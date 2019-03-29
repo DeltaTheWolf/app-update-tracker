@@ -5,6 +5,7 @@ import com.kik.core.network.xmpp.jid.BareJid
 import kik.android.chat.vm.IListViewModel
 import kik.core.interfaces.IImageRequester
 import rx.Observable
+import java.math.BigDecimal
 
 interface IAdminsGroupTippingViewModel : IListViewModel<ITippingContactItemViewModel> {
     /**
@@ -73,5 +74,5 @@ interface IAdminsGroupTippingViewModel : IListViewModel<ITippingContactItemViewM
     /**
      * attempts to send a tip for the amount to the currently selected admin
      */
-    fun doTip(amount: Int)
+    fun doTip(amount: BigDecimal)
 }

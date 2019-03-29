@@ -140,7 +140,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                         .map { BareJid.fromString(it) }
                         .subscribeOn(Schedulers.computation())
                         .flatMap {
-                            kinAccountsManager.canAdminBeTipped(it)
+                            kinAccountsManager.canUserBeTipped(it)
                                     .timeout(3, TimeUnit.SECONDS, Observable.just(false))
                         }
                         .observeOn(Schedulers.io())
@@ -225,14 +225,15 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 goToMarketplace(coreComponent, noKinDialog)
             }
 
-            cancelAction(Runnable {
+            cancelAction(getString(R.string.title_cancel)) {
                 onGoToKinMarketplaceCancelledMetric()
-            })
+            }
 
             title(getString(R.string.tipping_earn_kin_dialog_title))
             image(getDrawable(R.drawable.img_kin_present))
 
             firstMessage(getString(R.string.tipping_earn_kin_dialog_body))
+            firstMessageKinDrawableSize(10f)
             secondMessage(getString(R.string.visit_marketplace_kin_message))
 
             when (abManager.getAssignedVariantForExperimentName(AbManager.NO_KIN_DIALOG)) {
@@ -266,7 +267,9 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
     private fun createGeneralErrorDialog(coreComponent: CoreComponent) {
         generalErrorDialog = TwoMessageDialogViewModel.Builder()
                 .confirmAction(getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, generalErrorDialog) }
+                .cancelAction(getString(R.string.title_cancel)) { }
                 .firstMessage(getString(R.string.tipping_unavailable_dialog_first_message))
+                .firstMessageKinDrawableSize(10f)
                 .secondMessage(getString(R.string.daily_limit_dialog_second_message))
                 .title(getString(R.string.tipping_unavailable_dialog_title))
                 .image(getDrawable(R.drawable.img_errorload))
@@ -277,7 +280,9 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
         val firstMessage = getString(R.string.daily_limit_dialog_first_message, 500)
         dailyLimitDialog = TwoMessageDialogViewModel.Builder()
                 .confirmAction(getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, dailyLimitDialog) }
+                .cancelAction(getString(R.string.title_cancel)) { }
                 .firstMessage(firstMessage)
+                .firstMessageKinDrawableSize(10f)
                 .secondMessage(getString(R.string.daily_limit_dialog_second_message))
                 .title(getString(R.string.daily_limit_dialog_title))
                 .image(getDrawable(R.drawable.img_errorload))
@@ -291,6 +296,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
             firstMessage(getString(R.string.no_eligible_admins_dialog_first_message))
             secondMessage(getString(R.string.daily_limit_dialog_second_message))
             confirmAction(getString(R.string.go_to_marketplace_button_text)) { goToMarketplace(coreComponent, dailyLimitDialog) }
+            cancelAction(getString(R.string.title_cancel)) { }
             image(getDrawable(R.drawable.img_errorload))
             build()
         }

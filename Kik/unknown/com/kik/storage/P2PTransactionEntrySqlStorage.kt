@@ -17,6 +17,7 @@ import kik.core.kin.AdminTippingMetaData
 import kik.core.kin.EmptyMetaData
 import kik.core.kin.PaymentMetaData
 import kik.core.kin.PaymentType
+import java.math.BigDecimal
 import java.util.*
 
 class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
@@ -45,7 +46,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
                 P2PTransactionEntryCursor::class.java,
                 P2PTransactionEntryStorageHelper.P2P_TRANSACTION_ENTRY_TABLE_NAME)
         resultsCursor.callForEach({ cursor: P2PTransactionEntryCursor ->
-            val payment = P2PPayment(cursor.user.toBareJid(), cursor.kinUserId, cursor.amount, cursor.type, cursor.metaData, cursor.id)
+            val payment = P2PPayment(cursor.user.toBareJid(), cursor.kinUserId, BigDecimal(cursor.amount), cursor.type, cursor.metaData, cursor.id)
             payment.confirmationJwt = cursor.confirmationJwt
             payment.paymentJwt = cursor.paymentJwt
             entries.add(P2PTransaction(payment, cursor.status))
@@ -76,7 +77,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
                     P2PTransactionEntryStorageHelper.P2P_TRANSACTION_ENTRY_TABLE_NAME,
                     whereStatement, arrayOf(entry.id.toString()))
             resultsCursor.callForEach({ cursor: P2PTransactionEntryCursor ->
-                val payment = P2PPayment(cursor.user.toBareJid(), cursor.kinUserId, cursor.amount, cursor.type, cursor.metaData, cursor.id)
+                val payment = P2PPayment(cursor.user.toBareJid(), cursor.kinUserId, BigDecimal(cursor.amount), cursor.type, cursor.metaData, cursor.id)
                 payment.confirmationJwt = cursor.confirmationJwt
                 payment.paymentJwt = cursor.paymentJwt
                 entries.add(P2PTransaction(payment, cursor.status))
@@ -97,7 +98,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
             makeVarcharColumnIfNotExists(c, db, P2P_TRANSACTION_ENTRY_TABLE_NAME, P2PTransactionEntryCursor.PAYMENT_JWT)
             makeVarcharColumnIfNotExists(c, db, P2P_TRANSACTION_ENTRY_TABLE_NAME, P2PTransactionEntryCursor.CONFIRMATION_JWT)
             makeIntColumnIfNotExists(c, db, P2P_TRANSACTION_ENTRY_TABLE_NAME, P2PTransactionEntryCursor.STATUS)
-            makeIntColumnIfNotExists(c, db, P2P_TRANSACTION_ENTRY_TABLE_NAME, P2PTransactionEntryCursor.AMOUNT)
+            makeRealColumnIfNotExists(c, db, P2P_TRANSACTION_ENTRY_TABLE_NAME, P2PTransactionEntryCursor.AMOUNT)
             makeIntColumnIfNotExists(c, db, P2P_TRANSACTION_ENTRY_TABLE_NAME, P2PTransactionEntryCursor.TYPE)
             makeVarcharColumnIfNotExists(c, db, P2P_TRANSACTION_ENTRY_TABLE_NAME, P2PTransactionEntryCursor.METADATA)
             c.close()
@@ -110,7 +111,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
                     "${P2PTransactionEntryCursor.KIN_USER_ID} TEXT, " +
                     "${P2PTransactionEntryCursor.PAYMENT_JWT} TEXT, " +
                     "${P2PTransactionEntryCursor.CONFIRMATION_JWT} TEXT, " +
-                    "${P2PTransactionEntryCursor.AMOUNT} INT, " +
+                    "${P2PTransactionEntryCursor.AMOUNT} REAL, " +
                     "${P2PTransactionEntryCursor.STATUS} INT, " +
                     "${P2PTransactionEntryCursor.TYPE} INT, " +
                     "${P2PTransactionEntryCursor.METADATA} TEXT);")
@@ -150,8 +151,8 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
             get() = P2PTransactionStatus.fromId(getInt(STATUS))
                     ?: P2PTransactionStatus.initialValue()
 
-        val amount: Int
-            get() = getInt(AMOUNT)
+        val amount: Double
+            get() = getDouble(AMOUNT)
 
         val type: PaymentType
             get() = PaymentType.fromId(getInt(TYPE))
@@ -184,7 +185,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
                 contentValues.put(PAYMENT_JWT, offer.paymentJwt)
                 contentValues.put(CONFIRMATION_JWT, offer.confirmationJwt)
                 contentValues.put(STATUS, status.id)
-                contentValues.put(AMOUNT, offer.amount)
+                contentValues.put(AMOUNT, offer.amount.toDouble())
                 contentValues.put(TYPE, offer.type.id)
                 contentValues.put(METADATA, offer.metaData.getString())
 

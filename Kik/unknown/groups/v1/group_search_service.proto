@@ -138,7 +138,7 @@ message FindGroupsResponse {
 //
 message LimitedGroupDetails {
     // ID of the group.
-    // NOTE: This is being kept as Optional, as the group join token may render
+    // NOTE: This is being kept as optional, as the group join token may render
     //       it obsolete.
     common.XiGroupJid jid = 1 [(kik.validation.field_validation) = {
         mandatory: false

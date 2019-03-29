@@ -50,6 +50,11 @@ service AnonMatching {
 
     // Users call this to submit a new interest
     rpc SubmitUserGeneratedInterest(SubmitUserGeneratedInterestRequest) returns (SubmitUserGeneratedInterestResponse);
+
+    // clients call this to get a progress update on the weekly EARN offer
+    // returns the number of completed daily challenges for the current week and
+    // the total number of completed daily challenges required to finish the weekly challenge
+    rpc GetWeeklyEarnOfferStatus(GetWeeklyEarnOfferStatusRequest) returns (GetWeeklyEarnOfferStatusResponse);
 }
 
 // If the user already has an ongoing search in the queue, it will be updated
@@ -246,6 +251,21 @@ message SubmitUserGeneratedInterestResponse {
         OK = 0;
         RATE_LIMITED = 1;
     }
+}
+
+message GetWeeklyEarnOfferStatusRequest {
+    
+}
+
+message GetWeeklyEarnOfferStatusResponse {
+    // the number of daily challenges succesfully completed for the current week
+    int32 completed_daily_challenges = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+    // the total number of completed daily challenges required finish the weekly challenge
+    int32 required_daily_challenges = 2 [(kik.validation.field_validation) = {
+        mandatory:true
+    }];
 }
 
 // Represents a chat interest that the user optionally selects for chat matching

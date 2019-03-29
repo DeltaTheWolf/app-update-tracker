@@ -46,8 +46,8 @@ message RenderableText {
         }
 
         message Smiley {
+            // resource_id is expected to be empty for default emojis e.g. ":)"
             string resource_id = 1 [(kik.validation.field_validation) = {
-                mandatory: true
                 regex: "^[A-Za-z_0-9]*$"
                 max_byte_length: 32
             }];
@@ -138,7 +138,11 @@ message Message {
     // results in a log copy, which (intentionally) retains the IDs.
     Id id = 1;
     message Id {
-        bytes raw_value = 1;
+        bytes raw_value = 1 [(kik.validation.field_validation) = {
+            mandatory: true
+            min_byte_length: 1
+            max_byte_length: 128
+        }];
     }
 
     common.v2.ChatId chat_id = 2 [(kik.validation.field_validation) = {
@@ -186,6 +190,8 @@ message Message {
             Platform platform = 4;
             GalleryVideo gallery_video = 5;
             CameraVideo camera_video = 6;
+
+            IsTyping is_typing = 10;
         }
 
         // A pure-text message including smiley rendering, links, etc.
@@ -250,6 +256,14 @@ message Message {
                 // todo: total map size validation?
                 max_byte_length: 512 // This restriction currently enforces key size.
             }];
+        }
+
+        // A transient notification indicating that the sender is, is still, or stopped typing a message.
+        // Messages with IsTyping content should _never_ be persisted anywhere. Additionally, receivers
+        // are _not_ expected to receive messages with IsTyping content, instead signal(s) will
+        // indicate a chat participant is typing.
+        message IsTyping {
+            bool is_typing = 1;
         }
     }
 

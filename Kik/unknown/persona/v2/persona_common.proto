@@ -174,7 +174,10 @@ message Interests {
         // possible interests comes from the server via FeatureConfigService.
         // For details see
         // https://github.com/kikinteractive/xiphias-service-feature-config/blob/970dc4932506c6a176b5ad07df553988d596bbc7/feature-config-service/src/main/java/com/kik/featureconfig/rpc/impl/FeatureConfigServiceImpl.java#L153
-        string id = 1 [(kik.validation.field_validation) = { max_byte_length: 5000 }];
+        string id = 1 [(kik.validation.field_validation) = {
+            mandatory: true
+            max_byte_length: 5000
+        }];
 
         // The localized (if possible) name to display for this Interest
         string localized_verbiage = 2 [(kik.validation.field_validation) = { max_byte_length: 5000 }];

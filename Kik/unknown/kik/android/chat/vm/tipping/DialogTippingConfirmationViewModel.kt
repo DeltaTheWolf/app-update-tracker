@@ -8,6 +8,7 @@ import kik.android.chat.vm.DialogViewModel
 import kik.android.chat.vm.INavigator
 import kik.core.interfaces.IImageRequester
 import rx.Observable
+import java.math.BigDecimal
 import javax.inject.Inject
 
 class DialogTippingConfirmationViewModel : IDialogTippingConfirmationViewModel, DialogViewModel() {
@@ -69,16 +70,16 @@ class DialogTippingConfirmationViewModel : IDialogTippingConfirmationViewModel, 
             return this
         }
 
-        fun tippedAmount(tippedAmount: Int): Builder {
+        fun tippedAmount(tippedAmount: BigDecimal): Builder {
             with(_viewModel as DialogTippingConfirmationViewModel) {
-                this.tippedAmount = tippedAmount.toString()
+                this.tippedAmount = tippedAmount.intValueExact().toString()
             }
             return this
         }
 
-        fun kinBalance(kinBalance: Observable<Int>): Builder {
+        fun kinBalance(kinBalance: Observable<BigDecimal>): Builder {
             with(_viewModel as DialogTippingConfirmationViewModel) {
-                this.kinBalance = kinBalance.map { it.toString() }
+                this.kinBalance = kinBalance.map { it.intValueExact().toString() }
             }
             return this
         }

@@ -36,7 +36,6 @@ message KikUserOfferId {
     }];
 }
 
-
 // An id that uniquely identifies the offer
 // The presence of KikOfferId indicates that this offer is public (available to all users)
 // The presence of KikUserOfferIdd indicates that this offer is available to the user only and is ready to be claimed
@@ -46,7 +45,6 @@ message KikOfferIdOrUserOfferId {
         KikUserOfferId kik_user_offer_id = 2;
     }
 }
-
 
 // KikOffer is sent to the mobile clients. It encapsulates all the information
 // that client needs to process an offer
@@ -69,13 +67,13 @@ message KikOffer {
 
     // Title for the offer. This could be displayed by the clients to the end users
     string title = 5 [(kik.validation.field_validation) = {
-        mandatory: false
+        mandatory: true
         max_byte_length: 256
     }];
 
     // Description for the offer. This could be displayed by the clients to the end users
     string description = 6 [(kik.validation.field_validation) = {
-        mandatory: false
+        mandatory: true
         max_byte_length: 1024
     }];
 
@@ -84,6 +82,9 @@ message KikOffer {
 
     // If this is set to true, clients should claim the offer without user explicit input
     bool claim_silently = 8;
+
+    // Any extra data associated with the offer
+    KikOfferData kik_offer_data = 9;
 }
 
 // FeatureGroup defines a logical grouping of offers into a group based on context and functionality
@@ -98,9 +99,9 @@ enum FeatureGroup {
     ANON_MATCHING = 2;
 }
 
-// Feature data define any extra pieces of information that should be included in offer requests by clients
-// Feature data are used to validate client request and are included in transaction records
-message FeatureData {
+// User offer data define any extra pieces of information that should be included in offer requests by clients
+// User offer data are used to validate client request and are included in transaction records
+message UserOfferData {
     oneof kind {
         GroupTipping group_tipping_data = 1;
     }
@@ -108,4 +109,36 @@ message FeatureData {
 
 message GroupTipping {
     common.XiGroupJid group_jid = 1 [(kik.validation.field_validation) = {mandatory : true}];
+
+    MessageData message_data = 2;
+}
+
+message MessageData {
+    common.XiUuid id = 1 [(kik.validation.field_validation) = { mandatory: true }];
+
+    Type type = 2;
+    enum Type {
+        UNKNOWN = 0;
+        TEXT = 1;
+        WEB_PAGE = 2;
+        IMAGE_GALLERY = 3;
+        IMAGE_CAMERA = 4;
+        GIF = 5;
+        VIDEO_GALLERY = 6;
+        VIDEO_CAMERA = 7;
+    }
+}
+
+// Kik offer data defines any extra data that is related to the kik offer
+// This data can be used by clients to display certain details about the offer 
+// that is specific to that offer
+message KikOfferData {
+    oneof kind {
+        AnonMatchingBuyChatData anon_matching_buy_chat_data = 1;
+    }
+}
+
+// Extra kik offer data for anonymous matching buy chat offers
+message AnonMatchingBuyChatData {
+    uint32 number_of_chats = 1;
 }

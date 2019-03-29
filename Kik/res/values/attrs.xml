@@ -139,6 +139,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="canTipUser" format="reference" />
     <attr name="chainUseRtl" format="boolean" />
     <attr name="checkboxStyle" format="reference" />
     <attr name="checkedTextViewStyle" format="reference" />
@@ -241,6 +242,7 @@
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
+    <attr name="duration" format="integer" />
     <attr name="editTextBackground" format="reference" />
     <attr name="editTextColor" format="reference|color" />
     <attr name="editTextStyle" format="reference" />
@@ -416,8 +418,8 @@
     <attr name="item_margin_vertical" format="dimension" />
     <attr name="item_position" format="integer" />
     <attr name="keylines" format="reference" />
-    <attr name="kinIconOffset" format="integer" />
-    <attr name="kinIconSize" format="float" />
+    <attr name="kinDrawableHeight" format="float" />
+    <attr name="kinDrawableOffset" format="integer" />
     <attr name="kinecosysem_text" format="string" />
     <attr name="kinecosystem_indicatorVisibility" format="boolean" />
     <attr name="kinecosystem_src" format="reference" />
@@ -980,6 +982,8 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="tipped" format="reference" />
+    <attr name="tippingStatus" format="reference" />
     <attr name="title" format="string" />
     <attr name="titleEnabled" format="boolean" />
     <attr name="titleMargin" format="dimension" />

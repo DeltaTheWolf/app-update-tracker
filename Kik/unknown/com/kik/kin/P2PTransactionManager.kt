@@ -13,6 +13,7 @@ import rx.Single
 import rx.schedulers.Schedulers
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
+import com.kik.kin.P2PTransaction
 
 class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKController,
                             private val p2pPaymentService: IP2PPaymentService,
@@ -64,7 +65,7 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
     override fun doRequestConfirmationJwt(payment: P2PPayment) =
             kinStellarSDKController.getOrderConfirmation(payment.paymentJwt)
 
-    override fun doKinTransaction(payment: P2PPayment, jwt: String) = kinStellarSDKController.payTo(jwt)
+    override fun doKinTransaction(payment: P2PPayment, jwt: String) = kinStellarSDKController.payTo(payment.id.toString(), jwt, payment.recipient.toString())
             .observeOn(scheduler)
             .timeout(30, TimeUnit.SECONDS)
             .retryWhen { errors ->
@@ -152,7 +153,9 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
     private fun recoverPendingTransaction(transaction: P2PPayment, status: P2PTransactionStatus) {
         when (status) {
             P2PTransactionStatus.PENDING_P2P_PAYMENT_JWT_FETCH -> getOfferAndDoTransaction(transaction)
-            P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT -> getTransaction(transaction, transaction.paymentJwt).toCompletable().onErrorComplete().subscribe()
+            P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT -> getTransaction(transaction, transaction.paymentJwt).flatMapCompletable { confirmTransaction(transaction, it) }
+                    .onErrorComplete()
+                    .subscribe()
             P2PTransactionStatus.PENDING_P2P_PAYMENT_CONFIRM, P2PTransactionStatus.P2P_PAYMENT_CONFIRM_ERROR ->
                 // in this case the payment might have been successful, so we need to force a retry
                 retryConfirmTransaction(transaction)

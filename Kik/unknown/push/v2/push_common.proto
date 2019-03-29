@@ -91,8 +91,11 @@ message AndroidNotification {
         oneof body {
             messaging.v2.RenderableText text = 8;
 
-            // Gallery or camera upload
+            // Gallery or camera picture upload
             blob.v2.BlobReference picture = 9;
+
+            // Gallery or camera video upload
+            blob.v2.BlobReference video = 10;
         }
     }
 }

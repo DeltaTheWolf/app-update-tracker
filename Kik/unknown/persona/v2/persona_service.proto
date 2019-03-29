@@ -23,6 +23,8 @@ service Persona {
     rpc SetEmojiStatus(SetEmojiStatusRequest) returns (SetEmojiStatusResponse) {}
 
     rpc SetBio(SetBioRequest) returns (SetBioResponse) {}
+
+    rpc SetInterests(SetInterestsRequest) returns (SetInterestsResponse) {}
 }
 
 message SetDisplayNameRequest {
@@ -111,5 +113,29 @@ message SetBioResponse {
         // Genesis Persona should be modified directly via its PersonaId.
         NOT_PERMITTED = 2;
         REJECTED_BIO_BY_MODERATION = 3;
+    }
+}
+
+message SetInterestsRequest {
+    common.v2.PersonaId persona_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    // Any localized verbiage set here will be ignored by the server. The only important fields
+    // are the interest id's.
+    // If SetInterests is called without this field, all interests will be removed from the
+    // persona.
+    common.persona.v2.Interests interests = 2;
+}
+
+message SetInterestsResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+        NOT_FOUND = 1;
+        // Some Personas cannot be changed even by their owner, e.g. AliasJid Personas cannot be
+        // modified directly because they just map back to the Genesis Persona. Instead the
+        // Genesis Persona should be modified directly via its PersonaId.
+        NOT_PERMITTED = 2;
     }
 }

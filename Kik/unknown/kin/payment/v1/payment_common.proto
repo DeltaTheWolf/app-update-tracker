@@ -7,6 +7,7 @@ option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go
 
 import "protobuf_validation.proto";
 import "common_model.proto";
+import "common/v2/model.proto";
 
 // DEPRECATED
 // TODO Remove after KikX hard switch
@@ -29,6 +30,7 @@ message PaymentInfo {
 enum Feature {
     UNKNOWN = 0;
     PUBLIC_GROUP_ADMIN_TIP = 1;
+    PUBLIC_GROUP_MESSAGE_TIP = 2;
 }
 
 // DEPRECATED
@@ -36,6 +38,7 @@ enum Feature {
 message FeatureData {
     oneof kind {
         PublicGroupAdminTipData public_group_admin_tip_data = 1;
+        PublicGroupMessageTipData public_group_message_tip_data = 2;
     }
 }
 
@@ -45,22 +48,39 @@ message PublicGroupAdminTipData {
     common.XiGroupJid group = 1 [(kik.validation.field_validation) = {mandatory : true}];
 }
 
-message KinAmount {
-    double amount = 1;
+// DEPRECATED
+message PublicGroupMessageTipData {
+    common.XiGroupJid group_jid = 1 [(kik.validation.field_validation) = {mandatory : true}];
+
+    common.XiUuid message_id = 2 [(kik.validation.field_validation) = { mandatory: true }];
+
+    MessageType message_type = 3;
+    enum MessageType {
+        UNKNOWN = 0;
+        TEXT = 1;
+        WEB_PAGE = 2;
+        IMAGE_GALLERY = 3;
+        IMAGE_CAMERA = 4;
+        GIF = 5;
+        VIDEO_GALLERY = 6;
+        VIDEO_CAMERA = 7;
+    }
 }
 
+message KinAmount {
+    double amount_double = 1 [deprecated = true];
+
+    common.v2.BigDecimal amount = 2;
+}
 
 // TransactionType defines what type of transaction should be processed for the offer
 // Clients should display and handle each transaction types differently.
 enum TransactionType {
     UNKNOWN_TYPE = 0;
-
     // Transactions where user will earn Kin
     EARN = 1;
-
     // Transaction that users will spend Kin
     SPEND = 2;
-
     // Transaction that transfer Kin between users
     PAY_TO_USER = 3;
 }

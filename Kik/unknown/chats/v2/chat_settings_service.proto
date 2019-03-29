@@ -10,6 +10,7 @@ import "protobuf_validation.proto";
 import "google/protobuf/timestamp.proto";
 
 import "common/v2/model.proto";
+import "chats/v2/model.proto";
 
 service ChatSettings {
     // Mute a specified chat.  Optionally also specify a period after which the mute status expires.
@@ -18,8 +19,10 @@ service ChatSettings {
 
     // Explicitly un-mute a specified chat.
     rpc UnmuteChat(UnmuteChatRequest) returns (UnmuteChatResponse) {}
-}
 
+    // Set the category for a provided ChatId
+    rpc SetChatCategory(SetChatCategoryRequest) returns (SetChatCategoryResponse) {}
+}
 
 message MuteChatRequest {
     // Chat which is to be muted
@@ -50,6 +53,27 @@ message UnmuteChatRequest {
 }
 
 message UnmuteChatResponse {
+    Result result = 1;
+    enum Result {
+        // The request was successfully processed.
+        OK = 0;
+    }
+}
+
+message SetChatCategoryRequest {
+    // Chat whose category is to be changed
+    // If the caller is not a member of this chat, a gRPC-level INVALID_ARGUMENT will be generated.
+    common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    // Category the chat should be set to. For now (05-03-19) clients should never "downgrade" categories from FRIENDLY to NEW
+    common.chats.v2.ChatCategory new_category = 2 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+}
+
+message SetChatCategoryResponse {
     Result result = 1;
     enum Result {
         // The request was successfully processed.

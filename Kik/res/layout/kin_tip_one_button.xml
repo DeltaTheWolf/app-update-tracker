@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TIP" android:includeFontPadding="false" android:layout_weight="1.0" app:font_type="light" />
+    <ImageView android:layout_gravity="center" android:layout_width="8.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_kin_white" />
+    <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="1" android:includeFontPadding="false" android:layout_alignParentRight="true" app:font_type="light" />
+</merge>

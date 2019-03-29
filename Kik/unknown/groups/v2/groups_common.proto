@@ -24,12 +24,35 @@ message Hashtag {
     }];
 }
 
-// Name of a group.
-// Note that this should be used only for updating a group's name.
+// Name of a group. Cannot have leading or trailing whitespace, or
+// be only whitespace.
+// Note that this should be used only for setting a group's name.
 // For retrieving a group's name see DisplayName in chats/v2/chat_info.proto
 message GroupName {
     string group_name = 1 [(kik.validation.field_validation) = {
         mandatory: true
+        regex: "^\\S(?:.*\\S)?$"
         max_codepoints: 250
+    }];
+}
+
+message GroupInviteCode {
+    // This is a 160-bit random number encoded into a URL-safe base64 string.
+    // 160/6 ~ 27 base64 characters, allowing more to be safe.
+    string code = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_byte_length: 1
+        max_byte_length: 50
+    }];
+}
+
+// This is an encrypted token generated during group searches.
+// It contains details that can be used to verify the joining user account and
+// associated group being joined are the same as those searched for.
+message PublicGroupJoinToken {
+    bytes token = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_byte_length: 1
+        max_byte_length: 5120 // 5 KiB (sanity bound)
     }];
 }

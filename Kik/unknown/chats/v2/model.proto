@@ -38,6 +38,10 @@ message Chat {
     // whether or not the _caller_ has muted the chat. Multiple members of a chat might
     // see different mute statuses here.
     MuteStatus mute_status = 5;
+
+    // Default category of this chat. NEW signifies that this chat should be placed
+    // in the New Chats bucket on clients.
+    ChatCategory chat_category = 6;
 }
 
 // Theme id of a chat. Chats like OneToOne and Group chats can have chat themes which are products
@@ -64,4 +68,13 @@ message MuteStatus {
     // If status == MUTED and this is _not_ set, then this mute will not expire until
     // the mute status is explicitly set to NOT_MUTED.
     google.protobuf.Timestamp expiry = 2;
+}
+
+message ChatCategory {
+    Category category = 1;
+    enum Category {
+        UNKNOWN = 0;
+        NEW = 1;
+        FRIENDLY = 2;
+    }
 }
