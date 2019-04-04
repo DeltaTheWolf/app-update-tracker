@@ -55,7 +55,7 @@ class KinMessageTippingLayout @JvmOverloads constructor(context: Context, attrs:
     private var animatorSet: AnimatorSet? = null
 
     fun setHeightParameters(height: Int, marginTop: Int, marginBottom: Int, paddingTop: Int, paddingBottom: Int) =
-            height?.run {
+            height.run {
                 viewHeight = (height.toFloat() * dipScaling).toInt()
                 viewMarginTop = (marginTop.toFloat() * dipScaling).toInt()
                 viewMarginBottom = (marginBottom.toFloat() * dipScaling).toInt()

@@ -22,7 +22,6 @@ import kik.core.datatypes.messageExtensions.ContentMessage
 import kik.core.datatypes.messageExtensions.MessageAttachment
 import kik.core.datatypes.messageExtensions.MessageBody
 import kik.core.interfaces.IConversation
-import kik.core.interfaces.INetworkConnectivity
 import rx.Observable
 import javax.inject.Inject
 
@@ -41,7 +40,6 @@ class MessageTippingButtonViewModel(private val convoId: ConvoId,
     lateinit var kinStellarSDKController: IKinStellarSDKController
     @Inject
     lateinit var metricsService: MetricsService
-    lateinit var networkConnectivity: INetworkConnectivity
     @Inject
     lateinit var converastionManager: IConversation
 
@@ -110,11 +108,25 @@ class MessageTippingButtonViewModel(private val convoId: ConvoId,
 
     override val canTipUser: Observable<Boolean>
         get() {
-            return Observable.combineLatest(kinStellarSDKController.isSDKStarted,
-                    kinAccountsManager.canUserBeTipped(BareJid.fromString(message.correspondentId)))
-            { sdkStarted, canTipUser ->
-                return@combineLatest sdkStarted && canTipUser
+            if (convoId.jidType != ConvoId.JidType.GROUP_JID) {
+                return Observable.just(false)
             }
+
+            val messageShouldShow = Observable.combineLatest(isBot(),
+                    groupKinAccessManager.getGroupKinAccessDetails(convoId.jids[0]))
+            { isBot, groupKinAccessDetails ->
+                !isBot && groupKinAccessDetails.pgMessageTippingEnabled
+            }
+
+
+            return messageShouldShow.filter { it }
+                    .flatMap {
+                        return@flatMap Observable.combineLatest(kinStellarSDKController.isSDKStarted,
+                                kinAccountsManager.canUserBeTipped(BareJid.fromString(message.correspondentId)))
+                        { sdkStarted, canTipUser ->
+                            return@combineLatest sdkStarted && canTipUser
+                        }
+                    }
         }
 
     private fun isLastMessage(): Observable<Boolean> = nextMessage.map { it == null }
