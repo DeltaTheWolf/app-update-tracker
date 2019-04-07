@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:background="@drawable/white_rounded_corner_background" android:layout_width="fill_parent" android:layout_height="@dimen/map_host_carousel_card_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.avatar.AvatarView android:id="@id/friend_bitmoji" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="@dimen/default_gap_half" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.snap.ui.view.SnapFontTextView android:id="@id/friend_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" app:scFontWeight="bold" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_timestamp" android:textColor="#ffb9c0c7" android:id="@id/friend_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

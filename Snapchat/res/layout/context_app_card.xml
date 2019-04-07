@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/app_card_min_height" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.views.RoundedImageView android:id="@id/app_card_icon" android:layout_width="@dimen/app_card_primary_icon_size" android:layout_height="@dimen/app_card_primary_icon_size" android:layout_margin="@dimen/app_card_primary_icon_margin" />
+    <LinearLayout android:orientation="vertical" android:id="@id/app_card_headline_subtext_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/app_card_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/CardStyleTitle1" />
+        <TextView android:id="@id/app_card_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/CardStyleAppList" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/app_card_tertiary_quaternary_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/app_card_tertiary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/CardStyleAppList" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_card_quaternary_margin_top">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/app_card_quaternary_info_icon" android:layout_width="@dimen/app_card_quaternary_info_icon_size" android:layout_height="@dimen/app_card_quaternary_info_icon_size" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/app_card_quaternary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/CardStyleAppListSurgeStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|center" android:id="@id/app_card_overflow_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/context_expand_collapse_carrot" android:paddingStart="@dimen/app_card_overflow_icon_margin_left_right" android:paddingEnd="@dimen/app_card_overflow_icon_margin_left_right" />
+</LinearLayout>

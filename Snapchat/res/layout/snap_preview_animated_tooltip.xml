@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/snap_preview_animated_tooltip_caption_font_size" android:textColor="@color/white" android:id="@id/snap_preview_animated_tooltip_caption_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/caption_onboarding_tooltip_text" />
+    <ImageView android:id="@id/snap_preview_animated_tooltip_caption_selected" android:layout_width="@dimen/snap_preview_animated_tooltip_button_size" android:layout_height="@dimen/snap_preview_animated_tooltip_button_size" android:src="@drawable/caption_tool_selected" android:alpha="0.0" />
+    <ImageView android:id="@id/snap_preview_animated_tooltip_sticker_emoji" android:layout_width="@dimen/snap_preview_animated_tooltip_emoji_size" android:layout_height="@dimen/snap_preview_animated_tooltip_emoji_size" android:src="@drawable/e1f61c" android:alpha="0.0" />
+    <ImageView android:id="@id/snap_preview_animated_tooltip_sticker_selected" android:layout_width="@dimen/snap_preview_animated_tooltip_button_size" android:layout_height="@dimen/snap_preview_animated_tooltip_button_size" android:src="@drawable/sticker_tool_selected" android:alpha="0.0" />
+    <ImageView android:id="@id/snap_preview_animated_tooltip_draw_face" android:background="@drawable/animated_tooltip_drawing" android:layout_width="@dimen/snap_preview_animated_tooltip_drawing_face_size" android:layout_height="@dimen/snap_preview_animated_tooltip_drawing_face_size" />
+    <ImageView android:id="@id/snap_preview_animated_tooltip_draw_selected" android:layout_width="@dimen/snap_preview_animated_tooltip_button_size" android:layout_height="@dimen/snap_preview_animated_tooltip_button_size" android:src="@drawable/draw_tool_selected" android:alpha="0.0" />
+    <ImageView android:id="@id/face_craft_animated_tooltip" android:background="@drawable/animated_dog_face" android:layout_width="45.0dip" android:layout_height="45.0dip" android:alpha="0.0" />
+    <ImageView android:id="@id/face_craft_animated_tooltip_btn_selected" android:layout_width="@dimen/snap_preview_animated_tooltip_button_size" android:layout_height="@dimen/snap_preview_animated_tooltip_button_size" android:src="@drawable/lens_on_preview_icon_selected" android:alpha="0.0" />
+</FrameLayout>

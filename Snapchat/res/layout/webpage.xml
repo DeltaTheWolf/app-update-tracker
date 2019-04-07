@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/webpage_frame_layout" android:background="@color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.web.core.lib.webview.WebTopNavigationBar android:layout_gravity="top" android:id="@id/webpage_top_nav_bar" android:layout_width="fill_parent" android:layout_height="@dimen/web_page_url_bar_height" />
+    <com.snapchat.android.framework.ui.views.openlayout.OpenLayout android:id="@id/webview_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.snapchat.android.framework.ui.views.openlayout.OpenLayout>
+    <com.snap.web.core.lib.webview.WebBottomNavigationControlView android:layout_gravity="bottom" android:id="@id/webpage_bottom_nav" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_navigation_control_height" android:layout_marginBottom="@dimen/bottom_navigation_control_bottom_margin" />
+</FrameLayout>

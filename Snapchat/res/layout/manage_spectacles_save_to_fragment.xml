@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/spectacles_save_to_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/spectacles_save_to" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/spectacles_save_to_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:text="@string/spectacles_save_to_description" android:maxLines="3" android:drawablePadding="@dimen/default_gap" android:textAlignment="center" android:layout_marginStart="@dimen/spectacles_save_to_description_horizontal_margin" android:layout_marginEnd="@dimen/spectacles_save_to_description_horizontal_margin" style="@style/new_settings_item_text" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/save_to_memories_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/new_settings_item_outer">
+                <com.snap.ui.view.SnapFontTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/spectacles_save_to_memories" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+                <CheckBox android:id="@id/save_to_memories_checkbox" android:clickable="false" android:layout_width="@dimen/checkbox_size" android:layout_height="@dimen/checkbox_size" android:checked="true" style="@style/new_settings_checkbox" />
+            </LinearLayout>
+            <include layout="@layout/list_separator" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/save_to_memories_and_camera_roll_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/new_settings_item_outer">
+                <com.snap.ui.view.SnapFontTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/spectacles_save_to_memories_and_camera_roll" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+                <CheckBox android:id="@id/save_to_memories_and_camera_roll_checkbox" android:clickable="false" android:layout_width="@dimen/checkbox_size" android:layout_height="@dimen/checkbox_size" android:checked="false" style="@style/new_settings_checkbox" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/spectacles_save_to_formats_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0">
+                <com.snap.ui.view.SnapFontTextView android:background="@color/section_header_background_color" android:paddingTop="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/spectacles_save_to_camera_roll_title" android:textAllCaps="true" style="@style/new_settings_section_header" />
+                <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_white_background_view" custom:exportFormat="white_background" custom:formatChecked="true" style="@style/SpectaclesSaveToExportFormatStyle" />
+                <include layout="@layout/list_separator" />
+                <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_black_background_view" custom:exportFormat="black_background" style="@style/SpectaclesSaveToExportFormatStyle" />
+                <include layout="@layout/list_separator" />
+                <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_square_view" custom:exportFormat="square" style="@style/SpectaclesSaveToExportFormatStyle" />
+                <include layout="@layout/list_separator" />
+                <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_horizontal_view" custom:exportFormat="horizontal" style="@style/SpectaclesSaveToExportFormatStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

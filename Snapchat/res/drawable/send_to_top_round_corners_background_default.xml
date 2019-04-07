@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/sendto_item_divider" />
+            <corners android:topLeftRadius="@dimen/send_to_card_radius" android:topRightRadius="@dimen/send_to_card_radius" android:bottomLeftRadius="@dimen/send_to_card_no_radius" android:bottomRightRadius="@dimen/send_to_card_no_radius" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/send_to_item_divider_width">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/sendto_card_background" />
+            <corners android:topLeftRadius="@dimen/send_to_card_radius" android:topRightRadius="@dimen/send_to_card_radius" android:bottomLeftRadius="@dimen/send_to_card_no_radius" android:bottomRightRadius="@dimen/send_to_card_no_radius" />
+        </shape>
+    </item>
+</layer-list>

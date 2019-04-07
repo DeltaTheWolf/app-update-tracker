@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/settings_tfa_settings_header" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:id="@id/verify_code_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" style="@style/IdentitySettingsCopyText" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontEditText android:layout_gravity="start" android:id="@id/verify_code" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:layout_marginTop="@dimen/default_gap" android:hint="@string/settings_mobile_number_verification_code_hint" android:maxLength="6" android:inputType="number" style="@android:style/Widget.Holo.EditText" />
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/wrong_verify_code_cleaner" android:visibility="invisible" style="@style/IdentityErrorRedX" />
+            </FrameLayout>
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/error_red" android:id="@id/verify_code_err_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:minLines="1" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap" />
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:id="@id/verify_help" android:paddingTop="@dimen/default_gap_2x" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/locked_help_unlock" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap" style="@style/IdentityFinePrintText" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.ui.settings.shared.SettingsPhoneButton android:layout_gravity="bottom|center" android:id="@id/continue_button" android:layout_width="fill_parent" android:layout_height="@dimen/registration_continue_button_height" />
+</LinearLayout>

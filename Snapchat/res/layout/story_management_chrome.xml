@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/story_gradient_top" android:layout_width="fill_parent" android:layout_height="@dimen/story_management_chrome_gradient_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/story_management_header" />
+    <View android:background="@drawable/story_gradient_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/story_management_chrome_gradient_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/story_management_view_count_container" android:background="@drawable/story_view_count_background" android:padding="@dimen/seven_dp_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap" android:layout_marginStart="@dimen/default_gap_1_5x" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/story_view_count" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

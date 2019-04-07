@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/selection_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/green_check" android:layout_centerVertical="true" />
+    <com.snap.ui.view.SnapFontTextView android:ellipsize="end" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/selection_image_view" style="@style/settings_item_name_linear" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="12.0sp" android:textColor="@color/regular_charcoal" android:id="@id/subtitle_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title_text_view" android:layout_marginStart="@dimen/default_gap" android:layout_toEndOf="@id/selection_image_view" />
+    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:id="@id/setting_saving_spinner" android:visibility="gone" android:layout_width="@dimen/ghost_mode_saving_spinner_size" android:layout_height="@dimen/ghost_mode_saving_spinner_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/ghost_mode_saving_spinner_end_margin" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="@integer/countdown_state_scale_duration" android:startOffset="0" android:valueFrom="@integer/countdown_state_scale_smaller" android:valueTo="@integer/countdown_state_scale_no_scale" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/countdown_state_scale_duration" android:startOffset="0" android:valueFrom="@integer/countdown_state_scale_smaller" android:valueTo="@integer/countdown_state_scale_no_scale" android:propertyName="scaleY" />
+    <objectAnimator android:duration="@integer/countdown_state_scale_duration" android:startOffset="600" android:valueFrom="@integer/countdown_state_scale_no_scale" android:valueTo="@integer/countdown_state_scale_smaller" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/countdown_state_scale_duration" android:startOffset="600" android:valueFrom="@integer/countdown_state_scale_no_scale" android:valueTo="@integer/countdown_state_scale_smaller" android:propertyName="scaleY" />
+    <objectAnimator android:duration="@integer/countdown_state_alpha_duration" android:startOffset="0" android:valueFrom="@integer/countdown_state_alpha_transparent" android:valueTo="@integer/countdown_state_alpha_opaque" android:propertyName="alpha" />
+    <objectAnimator android:duration="@integer/countdown_state_alpha_duration" android:startOffset="1000" android:valueFrom="@integer/countdown_state_alpha_opaque" android:valueTo="@integer/countdown_state_alpha_transparent" android:propertyName="alpha" />
+</set>

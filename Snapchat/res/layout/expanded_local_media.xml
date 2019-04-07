@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:id="@id/expanded_local_media_white_background" android:background="@drawable/expanded_local_media_white_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/expanded_background_gradient_height" android:alpha="0.0" />
+    <View android:layout_gravity="bottom" android:id="@id/expanded_local_media_black_background" android:background="@drawable/expanded_local_media_black_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/expanded_background_gradient_height" android:alpha="0.0" />
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/not_dismissible_elm_area" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/expanded_local_media_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/expanded_local_media_size" android:layout_height="@dimen/expanded_local_media_size" android:layout_marginBottom="@dimen/expanded_local_media_vertical_margin" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/expanded_local_media_size" android:layout_toStartOf="@id/expanded_local_media_container">
+            <ImageView android:id="@id/expanded_local_media_swap_camera_button" android:layout_width="@dimen/expanded_accessory_button_size" android:layout_height="@dimen/expanded_accessory_button_size" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/expanded_local_media_mute_button" android:layout_width="@dimen/expanded_accessory_button_size" android:layout_height="@dimen/expanded_accessory_button_size" android:layout_marginTop="@dimen/expanded_accessory_button_margin_top" android:src="@drawable/mute_off" android:layout_below="@id/expanded_local_media_swap_camera_button" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/expanded_local_media_size" android:layout_toEndOf="@id/expanded_local_media_container">
+            <ImageView android:layout_gravity="center" android:id="@id/expanded_local_media_close_button" android:layout_width="@dimen/expanded_accessory_button_size" android:layout_height="@dimen/expanded_accessory_button_size" android:src="@drawable/video_chat_down_arrow" android:scaleType="center" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/expanded_local_media_lenses_container" android:paddingBottom="@dimen/expanded_lenses_container_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/expanded_local_media_container" />
+    </RelativeLayout>
+</merge>

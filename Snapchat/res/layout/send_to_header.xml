@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.StackingLayout android:orientation="horizontal" android:id="@id/item" android:layout_width="fill_parent" android:layout_height="@dimen/send_to_header_height">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/send_to_header_primary_text_size" android:textColor="@color/white" android:id="@id/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:layout_affinity="startHorizontal" app:layout_gravity="center_vertical" app:scFontWeight="bolder" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/send_to_header_secondary_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/secondary" android:layout_width="wrap_content" android:layout_height="fill_parent" android:includeFontPadding="false" android:drawablePadding="3.0dip" android:drawableStart="@drawable/send_to_stories_section_header_new_story_plus" app:layout_affinity="endHorizontal" app:scFontWeight="bold" />
+    </com.snap.ui.view.StackingLayout>
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/white" android:id="@id/send_to_header_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip" android:layout_marginBottom="4.0dip" />
+</LinearLayout>

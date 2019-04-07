@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/settings_menu_item_pressed" />
+    <item>
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/white" />
+            <corners android:radius="@dimen/s2r_feature_icon_radius" />
+            <stroke android:width="@dimen/s2r_feature_issue_width" android:color="@color/s2r_black_six_opacity" />
+        </shape>
+    </item>
+</selector>

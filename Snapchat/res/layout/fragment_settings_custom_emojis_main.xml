@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_custom_emojis_layout" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/settings_custom_emojis_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/settings_custom_emojis_title" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/friendmoji_item_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

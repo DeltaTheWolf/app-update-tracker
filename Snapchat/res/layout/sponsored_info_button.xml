@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:background="@color/black_forty_opacity" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_radius="@dimen/sponsored_slug_button_corner_radius"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/sponsored_slug_button_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/sponsored_slug_info_icon" android:layout_width="@dimen/sponsored_slug_button_info_icon_width" android:layout_height="@dimen/sponsored_slug_button_info_icon_height" android:layout_marginTop="@dimen/sponsored_slug_button_top_padding" android:layout_marginBottom="@dimen/sponsored_slug_button_bottom_padding" android:src="@drawable/sponsored_slug_info_icon" />
+            <TextView android:textSize="@dimen/sponsored_slug_button_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/sponsored_slug_info_text" android:paddingLeft="@dimen/sponsored_slug_button_horizontal_padding" android:paddingRight="@dimen/sponsored_slug_button_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sponsored_slug_button_top_padding" android:layout_marginBottom="@dimen/sponsored_slug_button_bottom_padding" android:lineSpacingMultiplier="@dimen/sponsored_slug_button_line_spacing_multiplier" />
+        </LinearLayout>
+    </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+</FrameLayout>

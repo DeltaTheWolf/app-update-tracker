@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/chat_retention_rules_card_corner_width" />
+    <stroke android:width="@dimen/chat_media_card_border_width" android:color="@color/black_ten_opacity" />
+</shape>

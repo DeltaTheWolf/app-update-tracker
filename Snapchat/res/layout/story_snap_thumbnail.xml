@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.RoundedFrameLayout android:layout_width="@dimen/story_tile_container_width" android:layout_height="@dimen/story_tile_container_height" app:corner_radius="@dimen/story_tile_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/image_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/gradient_top" android:background="@drawable/story_gradient_top" android:layout_width="fill_parent" android:layout_height="@dimen/story_snap_thumbnail_gradient_height" />
+    <View android:layout_gravity="bottom" android:id="@id/gradient_bottom" android:background="@drawable/story_gradient_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/story_snap_thumbnail_gradient_height" />
+</com.snapchat.android.framework.ui.views.RoundedFrameLayout>

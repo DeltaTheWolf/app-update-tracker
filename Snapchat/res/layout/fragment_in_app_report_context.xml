@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/fragment_title_in_app_report" custom:showBackArrow="true" custom:showBottomBorder="true">
+        <ImageView android:layout_gravity="end|center" android:id="@id/in_app_report_context_x_button" android:background="@drawable/green_x_mark" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/default_gap" />
+    </com.snap.ui.view.ScHeaderView>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontTextView android:textColor="@color/regular_charcoal" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:text="@string/fragment_context_context_header" android:textAlignment="center" />
+            <EditText android:gravity="start|center|top" android:id="@id/in_app_report_context_text_box" android:background="@android:color/white" android:padding="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="@dimen/report_context_box_height" android:hint="@string/fragment_context_context_hint" android:maxLength="@integer/report_context_max_character_length" android:inputType="textMultiLine" android:textCursorDrawable="@drawable/text_cursor_red" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap_2x">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.inappreporting.core.ui.shared.SubmitReportButton android:layout_gravity="center_horizontal" android:id="@id/in_app_report_context_submit_button" android:layout_width="@dimen/report_submission_button_width" android:layout_height="@dimen/report_submission_button_height" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/regular_green" android:layout_gravity="center" android:id="@id/in_app_report_context_snap_id_helper_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fragment_show_snap_id" style="@style/sc_alert_dialog_button" />
+        </LinearLayout>
+        <TextView android:textColor="@color/regular_charcoal" android:layout_gravity="end|bottom|center" android:id="@id/in_app_report_context_word_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" />
+    </FrameLayout>
+</LinearLayout>

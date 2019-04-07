@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/refresh_container" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/refresh_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_refresh_button" />
+    <TextView android:textSize="@dimen/filter_update_message_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/refresh_message" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/filter_refresh_hint" android:textAlignment="center" />
+</LinearLayout>

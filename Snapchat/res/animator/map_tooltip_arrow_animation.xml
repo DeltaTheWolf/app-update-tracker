@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="1000" android:repeatCount="infinite" android:valueFrom="1" android:valueTo="0" android:propertyName="alpha" />
+    <objectAnimator android:duration="1000" android:repeatCount="infinite" android:valueFrom="0" android:valueTo="30.0dip" android:propertyName="translationY" />
+</set>

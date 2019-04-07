@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/snapcode_full_screen_page" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/snapcode_page_background" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_6x" android:layout_marginEnd="@dimen/default_gap_6x">
+        <FrameLayout android:layout_gravity="center" android:id="@id/snapcode_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_snapcode_page_image_margin_top">
+            <View android:layout_gravity="center" android:id="@id/snapcode_background" android:background="@color/white" android:layout_width="@dimen/profile_snapcode_page_code_background_size" android:layout_height="@dimen/profile_snapcode_page_code_background_size" />
+            <com.caverock.androidsvg.SVGImageView android:layout_gravity="center" android:id="@id/snapcode_svg" android:layout_width="@dimen/profile_snapcode_page_svg_size" android:layout_height="@dimen/profile_snapcode_page_svg_size" />
+            <com.snap.ui.avatar.AvatarView android:layout_gravity="center" android:id="@id/user_avatar_view" android:layout_width="@dimen/profile_snapcode_page_avatar_size" android:layout_height="@dimen/profile_snapcode_page_avatar_size" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_snapcode_share_view_username_size" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/snapcode_page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_snapcode_page_subtitle_font_size" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/snapcode_page_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/snapcode_page_option_panel" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/lenses_camera_touch_view_stub" android:inflatedId="@id/lenses_touch_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center" android:id="@id/lenses_camera_hint_view_stub" android:inflatedId="@id/lenses_camera_hint_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/lens_camera_hint_view_size_margin" android:layout_marginEnd="@dimen/lens_camera_hint_view_size_margin" />
+    <ViewStub android:id="@id/lenses_camera_tooltip_view_stub" android:inflatedId="@id/lenses_camera_tooltip_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_carousel_tooltip_view_stub" android:inflatedId="@id/lenses_camera_carousel_tooltip_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_capture_tooltip_view_stub" android:inflatedId="@id/lenses_camera_capture_tooltip_view_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_carousel_view_stub" android:inflatedId="@id/lenses_camera_carousel_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_lensbutton_view_stub" android:inflatedId="@id/lenses_camera_lensbutton_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_debug_view_stub" android:inflatedId="@id/lenses_camera_debug_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_slug_view_stub" android:inflatedId="@id/lenses_camera_slug_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center|left|top" android:id="@id/lenses_camera_text_input_view_stub" android:inflatedId="@id/lenses_camera_text_input_view" android:layout_width="0.0dip" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/lenses_camera_upcoming_view_stub" android:inflatedId="@id/lenses_camera_upcoming_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/lenses_camera_confidential_view_stub" android:inflatedId="@id/lenses_camera_confidential_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lens_confidential_label_margin" />
+    <ViewStub android:id="@id/lenses_single_lens_icon_view_stub" android:inflatedId="@id/lenses_camera_carousel_single_lens_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_explorer_view_stub" android:inflatedId="@id/lenses_camera_explorer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lenses_camera_snappables_view_stub" android:inflatedId="@id/lenses_camera_snappables_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.debug.DefaultDebugView android:orientation="vertical" android:id="@id/lenses_camera_debug_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:background="@color/lenses_camera_debug_view_bg" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="@dimen/lens_camera_debug_table_optimal_width" android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_lens_processing" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:gravity="start" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_ms" />
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="start" android:id="@id/processing_time_average_value" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:gravity="start" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_sd" />
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="start" android:id="@id/processing_time_sd_value" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:gravity="start" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_fps" />
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="start" android:id="@id/processing_time_average_fps_value" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_camera" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:gravity="start" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_ms" />
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="start" android:id="@id/camera_average_ms_value" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:gravity="start" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_fps" />
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="start" android:id="@id/camera_average_fps_value" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/lens_camera_debug_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="start" android:paddingLeft="@dimen/lens_camera_debug_table_row_item_padding" android:paddingTop="@dimen/lens_camera_debug_table_row_item_padding" android:paddingRight="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_debug_label_qa_profiling" />
+            <Switch android:layout_gravity="end" android:id="@id/camera_qa_profiling_switch" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:id="@id/camera_qa_profiling_table" android:background="@color/lenses_camera_debug_view_bg" android:padding="@dimen/lens_camera_debug_table_row_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.snap.lenses.camera.debug.DefaultDebugView>

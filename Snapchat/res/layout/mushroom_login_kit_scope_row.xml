@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="@dimen/login_kit_scope_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scope_icon" android:layout_width="@dimen/login_kit_scope_row_icon_size" android:layout_height="@dimen/login_kit_scope_row_icon_size" android:layout_marginLeft="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap_1_5x" />
+    <ImageView android:id="@id/bitmoji_scope_icon" android:visibility="gone" android:layout_width="@dimen/login_kit_bitmoji_scope_profile_size" android:layout_height="@dimen/login_kit_bitmoji_scope_profile_size" android:layout_marginLeft="@dimen/default_gap_half" android:layout_marginRight="@dimen/default_gap" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:id="@id/scope_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <CheckBox android:layout_gravity="end|center" android:id="@id/scope_toggle" android:background="@drawable/settings_button_selector" android:layout_width="@dimen/checkbox_size" android:layout_height="@dimen/checkbox_size" android:layout_marginLeft="@dimen/default_gap_half" android:layout_marginRight="@dimen/default_gap" android:button="@null" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container">
+        <include layout="@layout/chat_message_timestamp" />
+        <include layout="@layout/chat_message_color_bar" />
+        <com.snap.messaging.chat.ui.view.ReplyLayout android:id="@id/reply_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/chat_media_margin">
+            <LinearLayout android:orientation="horizontal" android:id="@id/chat_snap_content" android:background="@drawable/media_card_cell_background" android:layout_width="fill_parent" android:layout_height="@dimen/chat_media_card_small_height">
+                <com.snap.ui.animation.FrivolousAnimationView android:layout_gravity="center_vertical" android:id="@id/chat_snap_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="@dimen/default_gap_half" android:layout_marginBottom="@dimen/default_gap_half" android:layout_marginStart="@dimen/chat_media_card_snap_margin" android:layout_marginEnd="@dimen/chat_media_card_snap_margin" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_message_text_size" android:textColor="@color/regular_charcoal" android:layout_gravity="center_vertical" android:id="@id/chat_message_status_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_half" android:layout_marginBottom="@dimen/default_gap_half" android:paddingStart="@dimen/default_gap_half" android:paddingEnd="@dimen/default_gap_half" />
+            </LinearLayout>
+        </com.snap.messaging.chat.ui.view.ReplyLayout>
+    </LinearLayout>
+    <com.snap.ui.view.SnapFontTextView android:id="@id/chat_snap_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/chat_in_screen_message_text" />
+</com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

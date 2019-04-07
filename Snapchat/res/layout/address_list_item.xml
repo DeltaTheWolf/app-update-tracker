@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/payments_white_grey_selector" android:padding="@dimen/default_gap" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_default" android:id="@id/shipping_cell_full_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/shipping_cell_full_address" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/shipping_cell_full_name" android:layout_toStartOf="@id/payments_cell_checkmark" />
+    <ImageView android:id="@id/shipping_cell_exclamation_error" android:visibility="gone" android:layout_width="@dimen/default_gap_3x" android:layout_height="@dimen/default_gap_3x" android:src="@drawable/exclamation_error" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/payments_cell_checkmark" android:visibility="gone" android:layout_width="@dimen/default_gap_2_25x" android:layout_height="@dimen/default_gap_2_25x" android:src="@drawable/green_check_mark" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" />
+</RelativeLayout>

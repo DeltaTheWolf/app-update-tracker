@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/finite_timer_cell" android:layout_width="fill_parent" android:layout_height="@dimen/new_timer_selector_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/timer_value" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:scFontWeight="bold" />
+</FrameLayout>

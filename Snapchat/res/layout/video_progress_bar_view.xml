@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.opera.view.media.VideoProgressBarViewV1 android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:background="@drawable/video_progress_bar_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/video_progress_bar_gradient_height" />
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/video_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/video_progress_bar_min_height" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/text_size_very_small" android:textColor="@color/video_progress_bar_label_text_color" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/video_progress_bar_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/video_progress_bar_with_label_max_height" android:maxLines="1" android:fontFamily="@string/typeface_avenir_next_bold" />
+</com.snap.opera.view.media.VideoProgressBarViewV1>

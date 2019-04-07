@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="bottom" android:id="@id/chat_discover_bar_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chat_discover_bar_purple" android:background="@drawable/discover_bar_fullscreen_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/chat_discover_bar_height">
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/chat_discover_bar_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/chat_discover_bar_default_margin" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/chat_discover_bar" android:background="@drawable/discover_bar_inline_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/chat_discover_bar_height">
+        <ImageView android:id="@id/chat_discover_bar_icon" android:visibility="gone" android:layout_width="@dimen/chat_discover_bar_icon_size" android:layout_height="@dimen/chat_discover_bar_icon_size" android:layout_marginRight="@dimen/chat_discover_bar_default_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/chat_discover_bar_default_margin" android:layout_alignParentEnd="true" />
+        <RelativeLayout android:id="@id/chat_discover_bar_icon_placeholder" android:background="@drawable/discover_bar_placeholder_background" android:layout_width="@dimen/chat_discover_bar_icon_size" android:layout_height="@dimen/chat_discover_bar_icon_size" android:layout_marginRight="@dimen/chat_discover_bar_default_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/chat_discover_bar_default_margin" android:layout_alignParentEnd="true">
+            <ProgressBar android:id="@id/chat_discover_bar_progress_bar" android:layout_width="@dimen/half_chat_discover_bar_icon_size" android:layout_height="@dimen/half_chat_discover_bar_icon_size" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

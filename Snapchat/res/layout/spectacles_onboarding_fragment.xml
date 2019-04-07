@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:ellipsize="end" android:gravity="center" android:id="@id/onboarding_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/laguna_onboarding_title_margin" android:layout_marginRight="@dimen/laguna_onboarding_title_margin" android:text="@string/take_snap_title" android:lines="2" custom:autoFit="true" style="@style/SpectaclesOnboardingTitleText" />
+        <View android:layout_gravity="center" android:id="@id/divider_line" android:background="@color/black_twenty_opacity" android:layout_width="120.0dip" android:layout_height="1.0dip" android:layout_margin="@dimen/laguna_onboarding_divider_margin" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:ellipsize="end" android:gravity="center" android:id="@id/onboarding_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/laguna_onboarding_description_margin" android:layout_marginRight="@dimen/laguna_onboarding_description_margin" android:text="@string/take_snap_description" android:maxLines="3" android:minLines="2" custom:autoFit="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_default" android:gravity="center" android:id="@id/onboarding_next_button" android:layout_width="fill_parent" android:layout_height="@dimen/alert_dialog_button_height" android:layout_margin="@dimen/laguna_onboarding_button_margin" android:text="@string/next" />
+    <Button android:layout_gravity="center" android:id="@id/onboarding_done_button" android:visibility="gone" android:layout_margin="@dimen/laguna_onboarding_button_margin" android:text="@string/done" style="@style/SpectaclesRedButton" />
+</LinearLayout>

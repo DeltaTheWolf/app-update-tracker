@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.TouchInterceptorFrameLayout android:id="@id/story_management_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/image_background" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="@color/black_fifty_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/story_management_header" />
+        <android.support.v7.widget.RecyclerView android:id="@id/snap_list" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_gap" android:layout_marginStart="@dimen/default_gap_1_25x" android:layout_marginEnd="@dimen/default_gap_1_25x" layout="@layout/story_management_viewers_list" />
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/story_management_bottom_bar" />
+</com.snap.ui.view.TouchInterceptorFrameLayout>

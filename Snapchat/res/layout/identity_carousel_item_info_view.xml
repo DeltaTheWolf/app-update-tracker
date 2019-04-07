@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/unified_profile_identity_carousel_footer_view" android:paddingTop="@dimen/profile_story_avatar_cell_footer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/profile_identity_carousel_icon" android:layout_width="@dimen/profile_footer_icon_size" android:layout_height="@dimen/profile_footer_icon_size" android:scaleType="centerInside" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/identity_carousel_item_description_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap_half" android:paddingEnd="@dimen/default_gap_half" />
+</LinearLayout>

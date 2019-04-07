@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/neon_header_layout" style="@style/neon_header_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.hova.HovaAvatarContainerView android:id="@id/neon_header_avatar_container" style="@style/hova_avatar_container_view" />
+    <ImageView android:id="@id/neon_header_search" android:src="@drawable/neon_header_search_icon" style="@style/hova_header_icon.search_icon" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/neon_header_title" android:text="@string/memories_title" style="@style/hova_header_text" />
+    <ViewStub android:layout_gravity="center" android:id="@id/spectacles_icon_view_stub" android:inflatedId="@id/spectacles_icon_view" android:layout_width="wrap_content" android:layout_height="@dimen/spectacles_icon_size" android:layout_marginEnd="@dimen/spectacles_icon_end_margin" />
+</LinearLayout>

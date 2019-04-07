@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.RoundedCornerAspectRatioFrameLayout android:id="@id/story_frameable_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" app:aspect_ratio="7:4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/story_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/story_action_menu_button" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/action_menu_dots" android:scaleType="centerCrop" android:layout_marginEnd="7.0dip" />
+    <View android:background="@drawable/memories_story_cell_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="start|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+        <com.snap.ui.view.SnapFontTextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="start|bottom|center" android:id="@id/story_title" android:layout_width="fill_parent" android:layout_height="35.0dip" app:autoFit="true" app:autoSizeMinTextSize="16.0sp" app:scFontWeight="bold" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="12.0sp" android:textColor="@color/gallery_ultra_secure_bubble_background" android:id="@id/story_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.snap.ui.view.RoundedCornerAspectRatioFrameLayout>

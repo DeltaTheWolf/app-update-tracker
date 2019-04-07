@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.ui.profile.unifiedprofile.snapcode.SnapcodeShareView android:orientation="vertical" android:background="@color/black" android:padding="@dimen/profile_snapcode_share_view_padding" android:layout_width="@dimen/profile_snapcode_share_view_width" android:layout_height="@dimen/profile_snapcode_share_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_snapcode_share_view_username_size" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/snapcode_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_snapcode_share_view_text_margin_top" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_snapcode_share_view_description_size" android:textColor="@color/light_charcoal" android:layout_gravity="center" android:id="@id/snapcode_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/snapcode_share_view_description" />
+</com.snap.identity.ui.profile.unifiedprofile.snapcode.SnapcodeShareView>

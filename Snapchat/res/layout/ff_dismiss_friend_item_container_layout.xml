@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/dismiss_friend_item_container" android:layout_width="@dimen/ff_quick_add_item_dismiss_button_width" android:layout_height="@dimen/ff_friend_control_button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/dismiss_friend_progress_bar" android:visibility="gone" android:layout_width="@dimen/ff_quick_add_item_dismiss_spinner_size" android:layout_height="@dimen/ff_quick_add_item_dismiss_spinner_size" />
+    <View android:layout_gravity="center" android:id="@id/dismiss_friend_item_button" android:background="@drawable/ff_quick_add_hide" android:layout_width="@dimen/ff_quick_add_item_dismiss_image_size" android:layout_height="@dimen/ff_quick_add_item_dismiss_image_size" />
+</FrameLayout>

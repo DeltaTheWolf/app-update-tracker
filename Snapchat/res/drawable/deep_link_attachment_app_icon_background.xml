@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/deep_link_attachment_app_icon_size" android:width="@dimen/deep_link_attachment_app_icon_size" />
+    <corners android:radius="@dimen/deep_link_attachment_app_icon_corner_radius" />
+    <solid android:color="@color/white" />
+</shape>

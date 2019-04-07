@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.SoftNavAwareFrameLayout android:id="@id/friend_story_teaching" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/ff_story_teaching_background" android:padding="@dimen/ff_barracuda_stories_button_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ff_barracuda_stories_button_layout_margin">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ff_barracuda_stories_button_thumbnail_margin_left">
+            <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:background="@drawable/ff_story_teaching_thumbnail_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_radius="@dimen/ff_barracuda_stories_button_corner">
+                    <com.snap.imageloading.view.SnapImageView android:id="@id/first_thumbnail" android:layout_width="@dimen/ff_barracuda_stories_button_thumbnail_width" android:layout_height="@dimen/ff_barracuda_stories_button_thumbnail_height" android:scaleType="centerCrop" />
+                </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+            </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+            <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:background="@drawable/ff_story_teaching_thumbnail_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ff_barracuda_stories_button_second_thumbnail_margin" android:layout_marginTop="@dimen/ff_barracuda_stories_button_second_thumbnail_margin">
+                <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_radius="@dimen/ff_barracuda_stories_button_corner">
+                    <com.snap.imageloading.view.SnapImageView android:id="@id/second_thumbnail" android:layout_width="@dimen/ff_barracuda_stories_button_thumbnail_width" android:layout_height="@dimen/ff_barracuda_stories_button_thumbnail_height" android:scaleType="centerCrop" />
+                </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+            </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ff_barracuda_stories_button_text_margin">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/ff_barracuda_stories_button_main_text_size" android:textColor="@color/white" android:id="@id/main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ff_new_friend_stories" android:includeFontPadding="false" app:scFontWeight="bolder" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/ff_barracuda_stories_button_friend_text_size" android:textColor="@color/white" android:ellipsize="middle" android:id="@id/friend_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ff_barracuda_stories_button_arrow_margin" android:maxWidth="@dimen/ff_barracuda_stories_button_friend_text_width" android:singleLine="true" android:includeFontPadding="false" app:scFontWeight="bold" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ff_barracuda_stories_button_arrow_margin" android:src="@drawable/feed_button_right_arrow" />
+    </LinearLayout>
+</com.snapchat.android.framework.ui.views.SoftNavAwareFrameLayout>

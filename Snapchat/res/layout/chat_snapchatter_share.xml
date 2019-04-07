@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container">
+        <include layout="@layout/chat_message_timestamp" />
+        <include layout="@layout/chat_message_color_bar" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content_view" android:background="@drawable/media_card_cell_background" android:layout_width="fill_parent" android:layout_height="@dimen/chat_media_card_height" android:layout_marginTop="@dimen/chat_media_card_border_margin" android:layout_marginBottom="@dimen/chat_media_card_border_margin" android:layout_marginStart="@dimen/chat_media_card_margin_left" android:layout_marginEnd="@dimen/chat_media_card_margin_right">
+            <com.snap.ui.avatar.AvatarView android:id="@id/profile_image" android:layout_width="@dimen/chat_snapchatter_avatar_size" android:layout_height="@dimen/chat_snapchatter_avatar_size" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/chat_snapchatter_avatar_margin" android:layout_alignParentStart="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/profile_image">
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_snapchatter_primary_text" android:textColor="@color/off_black" android:ellipsize="end" android:id="@id/display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_snapchatter_secondary_text" android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <com.snap.ui.view.LoadingSpinnerButtonView android:id="@id/add_friend_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" app:checked_background_color="@color/regular_purple" app:checked_text_color="@color/white" app:unchecked_background_color="@color/white" app:unchecked_background_stroke_color="@color/regular_purple_thirty_opacity" app:unchecked_text_color="@color/regular_purple" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

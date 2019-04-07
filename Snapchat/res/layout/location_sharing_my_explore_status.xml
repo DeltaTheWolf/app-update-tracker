@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/map_explore_status" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/map_anchor" android:layout_width="fill_parent" android:layout_height="@dimen/map_my_status_card_height" />
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/map_status_container" android:background="@drawable/explore_bottom_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="start|center" android:orientation="vertical" android:id="@id/map_status_wrapper" android:paddingTop="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_gap">
+            <com.snap.ui.view.SnapFontTextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/map_status_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="4.0" android:paddingStart="@dimen/default_gap_6x" android:paddingEnd="@dimen/default_gap_6x" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="10.0sp" android:textColor="@color/light_grey" android:ellipsize="end" android:id="@id/map_status_subtext" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:maxLines="1" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="4.0" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/view_count_container" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/map_status_view_count_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/explore_view_count_white" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/map_status_view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="4.0" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center" android:id="@id/map_status_view_count_caret" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:src="@drawable/neon_header_forward_white" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/profile_single_card_item_background" android:padding="@dimen/default_gap_half" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="@dimen/default_gap_half" android:layout_marginBottom="@dimen/default_gap_half" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/card_icon" android:layout_width="@dimen/profile_single_card_icon_size" android:layout_height="@dimen/profile_single_card_icon_size" android:scaleType="fitCenter" android:layout_marginStart="@dimen/default_gap" />
+    <com.snap.ui.view.SnapCircularNotificationBadge android:id="@id/circular_notification_badge" android:visibility="gone" android:layout_width="@dimen/profile_single_card_icon_size" android:layout_height="@dimen/profile_single_card_icon_size" android:scaleType="fitCenter" android:layout_marginStart="@dimen/default_gap" />
+    <LinearLayout android:orientation="vertical" android:id="@id/profile_v3_text_labels" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_identity_item_primary_text_size" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/item_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_2x" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_identity_item_secondary_text_size" android:textColor="@color/regular_charcoal" android:id="@id/item_secondary_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/default_gap_2x" />
+    </LinearLayout>
+</LinearLayout>

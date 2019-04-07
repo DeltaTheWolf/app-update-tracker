@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/subscribe_footer" android:layout_width="fill_parent" android:layout_height="@dimen/subscribe_article_footer_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left" android:id="@id/subscribe_footer_icon" android:layout_width="wrap_content" android:layout_height="@dimen/subscribe_article_footer_image_height" android:layout_marginLeft="@dimen/subscribe_article_footer_icon_margin_left" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="@dimen/subscribe_article_icon_footer_icon_max_width" />
+    <com.snap.opera.view.subscriptions.SubscribeButtonView android:layout_gravity="center|right" android:id="@id/subscribe_footer_button" android:layout_width="@dimen/subscribe_button_width_article_end" android:layout_height="@dimen/subscribe_button_height_article_end" android:layout_marginRight="@dimen/subscribe_article_footer_button_margin_right" android:scaleType="fitCenter" />
+</FrameLayout>

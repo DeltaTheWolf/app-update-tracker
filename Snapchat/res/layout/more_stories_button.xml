@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button" android:background="@drawable/more_stories_button_white_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="33.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iconView" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/stories_morestoriesbutton_icon" android:layout_marginStart="20.0dip" android:layout_marginEnd="9.0dip" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="15.0sp" android:textColor="@color/regular_purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_more" android:layout_marginEnd="20.0dip" />
+</LinearLayout>

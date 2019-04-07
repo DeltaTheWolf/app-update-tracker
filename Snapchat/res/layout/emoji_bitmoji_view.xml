@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.RoundedFrameLayout android:visibility="gone" android:layout_width="@dimen/stories_card_circle_size_v2" android:layout_height="@dimen/stories_card_circle_size_v2" app:isCircular="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.emoji.SnapEmojiTextView android:textSize="@dimen/df_story_card_circle_emoji_text_size_v2" android:gravity="center" android:layout_gravity="center" android:id="@id/emoji_circle" android:background="@drawable/sc_story_card_emoji_circle" android:visibility="gone" android:layout_width="@dimen/stories_card_circle_size_v2" android:layout_height="@dimen/stories_card_circle_size_v2" />
+    <com.snap.imageloading.view.SnapImageView android:id="@id/bitmoji_circle" android:visibility="gone" android:layout_width="@dimen/stories_card_circle_size_v2" android:layout_height="@dimen/stories_card_circle_size_v2" android:layout_marginTop="@dimen/stories_card_circle_margin_top_v2" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/business_profile_logo" android:layout_width="@dimen/stories_card_circle_size_v2" android:layout_height="@dimen/stories_card_circle_size_v2">
+        <com.snapchat.android.framework.ui.views.OptimizedImageView android:layout_gravity="center" android:id="@id/business_profile_logo_image_view" android:layout_width="@dimen/stories_card_circle_size_v2" android:layout_height="@dimen/stories_card_circle_size_v2" android:scaleType="centerCrop" />
+        <View android:layout_gravity="center" android:id="@id/impala_profile_round" android:background="@drawable/logo_border" android:layout_width="@dimen/stories_card_circle_size_v2" android:layout_height="@dimen/stories_card_circle_size_v2" />
+    </FrameLayout>
+</com.snapchat.android.framework.ui.views.RoundedFrameLayout>

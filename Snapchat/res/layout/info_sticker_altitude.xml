@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/gauge_layout_stub" android:layout="@layout/info_sticker_altitude_gauge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center" android:id="@id/alphanumeric_altitude_layout_stub" android:layout="@layout/info_sticker_altitude_alphanumeric" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

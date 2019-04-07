@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/checkbox" android:layout_alignParentStart="true">
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/off_black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap_2x" android:maxLines="1" android:layout_marginStart="@dimen/default_gap_2x" style="@android:style/TextAppearance.Medium" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/secondary_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginTop="-4.0dip" android:layout_marginStart="@dimen/default_gap_2x">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/subtext_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.snap.ui.view.SnapFontTextView android:textColor="@color/dark_grey" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/subtext" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap_half" android:maxLines="1" android:layout_marginStart="@dimen/default_gap_half" style="@android:style/TextAppearance.Small" />
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:id="@id/checkbox" android:background="@drawable/send_to_story_checkbox" android:layout_width="@dimen/checkbox_size" android:layout_height="@dimen/checkbox_size" android:layout_marginLeft="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap_2x" android:button="@null" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap_2x" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/off_white" />
+            <corners android:bottomLeftRadius="@dimen/group_member_border_radius" android:bottomRightRadius="@dimen/group_member_border_radius" />
+        </shape>
+    </item>
+    <item android:top="@dimen/section_card_border_padding">
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:bottomLeftRadius="@dimen/group_member_border_radius" android:bottomRightRadius="@dimen/group_member_border_radius" />
+        </shape>
+    </item>
+    <item android:left="@dimen/section_card_border_padding" android:top="@dimen/section_card_border_padding" android:right="@dimen/section_card_border_padding" android:bottom="@dimen/group_member_border_radius">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

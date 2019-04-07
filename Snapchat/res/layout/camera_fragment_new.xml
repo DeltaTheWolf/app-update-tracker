@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/camera_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.camera.view.CameraGestureDetectionView android:id="@id/gesture_detection_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/batch_capture_animation_view_stub" android:layout="@layout/batch_capture_animation_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/lenses_feature_container" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/camera_hold_to_scan_stub" android:layout="@layout/mushroom_camera_hold_to_scan_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/camera_particle_view_stub" android:layout="@layout/camera_particle_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/autofocus_tapspot_stub" android:layout="@layout/mushroom_autofocus_tapspot_layout" android:layout_width="@dimen/autofocus_crosshair_square_size" android:layout_height="@dimen/autofocus_crosshair_square_size" />
+    <ViewStub android:id="@id/multi_snap_thumbnail_stub" android:layout="@layout/multi_snap_thumbnail_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/grid_level_canvas_stub" android:layout="@layout/grid_level_canvas_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/face_detection_box_stub" android:layout="@layout/face_detection_box_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/mushroom_creative_kit_clear_camera_stub" android:layout="@layout/mushroom_creative_kit_clear_camera_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/cretitve_kit_camera_tooltip_stub" android:visibility="gone" android:layout="@layout/creative_kit_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/caption_text_stub" android:layout="@layout/mushroom_camera_caption_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/creative_kit_camera_sticker_stub" android:layout="@layout/creative_kit_camera_sticker_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/tooltip_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/hands_free_recording_tooltip_layout" />
+    <ViewStub android:id="@id/map_pulldown_tooltip_foreground" android:layout="@layout/map_pulldown_tooltip_foreground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

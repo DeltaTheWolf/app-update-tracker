@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:angle="270.0" android:color="@color/progress_bar_background_color" />
+        </shape>
+    </item>
+    <item>
+        <clip>
+            <shape>
+                <solid android:angle="270.0" android:color="@color/progress_bar_progress_color" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

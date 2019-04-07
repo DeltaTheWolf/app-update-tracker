@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container">
+        <include layout="@layout/chat_message_timestamp" />
+        <include layout="@layout/chat_message_color_bar" />
+        <com.snap.messaging.chat.ui.view.ReplyLayout android:id="@id/reply_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/chat_media_margin">
+            <com.snap.imageloading.view.SnapImageView android:id="@id/sticker1" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginEnd="5.0dip" />
+            <com.snap.imageloading.view.SnapImageView android:id="@id/sticker2" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginEnd="5.0dip" />
+            <com.snap.imageloading.view.SnapImageView android:id="@id/sticker3" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        </com.snap.messaging.chat.ui.view.ReplyLayout>
+    </LinearLayout>
+</com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

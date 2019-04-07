@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/context_iconrow_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/iconrow_min_height" android:layoutDirection="locale" android:paddingStart="@dimen/iconrow_image_margin_left" android:paddingEnd="@dimen/iconrow_image_margin_left" style="@style/CardFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.views.RoundedImageView android:id="@id/iconrow_image" android:visibility="visible" android:layout_width="@dimen/iconrow_image_size" android:layout_height="@dimen/iconrow_image_size" android:layout_marginEnd="@dimen/iconrow_image_margin_right" />
+    <TextView android:id="@id/iconrow_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CardStyleTitle2" />
+    <ImageView android:id="@id/iconrow_expand_collapse_image" android:visibility="gone" android:layout_width="@dimen/iconrow_expand_collapse_carrot_size" android:layout_height="@dimen/iconrow_expand_collapse_carrot_size" android:src="@drawable/context_expand_collapse_carrot" android:layout_marginStart="@dimen/iconrow_expand_collapse_carrot_margin_left" />
+</LinearLayout>

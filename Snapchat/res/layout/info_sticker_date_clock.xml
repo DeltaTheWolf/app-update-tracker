@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/clock_view_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/clockHourDigit1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_1" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/clockHourDigit2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_1" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/clockColon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_colon" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/clockMinuteDigit1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_1" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/clockMinuteDigit2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_1" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/am_pm_designator_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_pm" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

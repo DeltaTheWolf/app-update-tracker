@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap">
+        <com.snap.ui.view.SnapFontTextView android:id="@id/tfa_settings_forget_devices_item_name" style="@style/IdentitySettingsItemName" />
+        <com.snap.ui.view.SnapFontTextView android:id="@id/tfa_settings_forget_devices_item_subtext" style="@style/IdentitySettingsItemSubtext" />
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/error_red" android:id="@id/tfa_settings_forget_devices_item_error_message" style="@style/IdentitySettingsItemSubtext" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|center" android:id="@id/tfa_settings_forget_devices_item_forget_button" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:src="@drawable/grey_x_mark" android:layout_marginEnd="@dimen/default_gap" />
+    <ProgressBar android:layout_gravity="end|center" android:id="@id/tfa_settings_forget_devices_item_forget_progress" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginEnd="@dimen/default_gap" />
+</FrameLayout>

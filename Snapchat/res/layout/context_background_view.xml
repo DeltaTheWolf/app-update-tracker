@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/context_dim_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/context_background_lower_gradient" android:background="@drawable/context_background_lower_gradient" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/context_background_bottom_pane" android:background="@color/black_fifty_opacity" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</merge>

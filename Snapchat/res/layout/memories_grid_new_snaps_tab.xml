@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/memories_grid_new_snaps_tab_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/memories_snaps_tab_spectacles_status_bar_stub" android:layout="@layout/memories_grid_spectacles_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/seven_dp_gap" android:layout_marginRight="@dimen/seven_dp_gap" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/memories_grid_empty_or_loading" />
+        <com.snap.memories.lib.grid.view.MemoriesGridPageRecyclerView android:id="@id/memories_page_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:splitMotionEvents="false" />
+        <com.snap.ui.view.scrollbar.SnapScrollBar android:gravity="bottom" android:layout_gravity="end" android:id="@id/memories_grid_page_scroll_bar" android:paddingTop="@dimen/memories_scroll_bar_track_padding_top" android:paddingBottom="@dimen/memories_scroll_bar_track_padding_top" android:visibility="invisible" android:clickable="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

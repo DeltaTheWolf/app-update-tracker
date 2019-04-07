@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/song_history_loading_container_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/song_history_loading_icon_size" android:layout_height="@dimen/song_history_loading_icon_size" android:layout_margin="@dimen/default_gap" android:src="@drawable/shazam_song_history_icon" android:scaleType="fitCenter" />
+    <TextView android:textColor="@color/dark_purple" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shazam_song_history_loading" />
+</LinearLayout>

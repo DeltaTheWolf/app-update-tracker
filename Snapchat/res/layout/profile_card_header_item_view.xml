@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.StackingLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_section_header_text_size" android:textColor="@color/dark_charcoal" android:layout_gravity="bottom" android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" custom:layout_affinity="startHorizontal" custom:scFontWeight="bolder" />
+    <ViewStub android:id="@id/side_button_view_stub" android:layout="@layout/profile_section_header_button_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" custom:layout_affinity="endHorizontal" custom:layout_gravity="center_vertical" />
+</com.snap.ui.view.StackingLayout>

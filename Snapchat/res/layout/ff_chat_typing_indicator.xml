@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.friendsfeed.ui.view.TypingIndicatorView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ff_typing_bubble" android:background="@drawable/ff_chat_typing_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="center" android:paddingTop="@dimen/default_gap_half" android:paddingBottom="@dimen/default_gap_half" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/ff_typing_dot_one" android:background="@drawable/ff_chat_typing_dot" android:layout_width="@dimen/ff_typing_dot_size" android:layout_height="@dimen/ff_typing_dot_size" />
+        <View android:id="@id/ff_typing_dot_two" android:background="@drawable/ff_chat_typing_dot" android:layout_width="@dimen/ff_typing_dot_size" android:layout_height="@dimen/ff_typing_dot_size" android:layout_marginStart="@dimen/default_gap_quarter" />
+        <View android:id="@id/ff_typing_dot_three" android:background="@drawable/ff_chat_typing_dot" android:layout_width="@dimen/ff_typing_dot_size" android:layout_height="@dimen/ff_typing_dot_size" android:layout_marginStart="@dimen/default_gap_quarter" />
+    </LinearLayout>
+</com.snap.messaging.friendsfeed.ui.view.TypingIndicatorView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@color/transparent" />
+    <item android:state_checked="true" android:drawable="@drawable/settings_black_check" />
+    <item android:state_checked="false" android:drawable="@drawable/empty_grey_box_settings" />
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/in_app_report_reason_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/in_app_report_reason_item_check_mark" android:background="@drawable/green_check_mark" android:layout_width="@dimen/report_reason_item_check_mark_width" android:layout_height="@dimen/report_reason_item_check_mark_height" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" />
+    <com.snap.ui.view.SnapFontTextView android:layout_gravity="start|center" android:id="@id/in_app_report_reason_item_reason_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="3" android:layout_weight="1.0" style="@style/in_app_report_reason_item_text" />
+    <ImageView android:layout_gravity="center" android:id="@id/in_app_report_reason_item_next_arrow" android:background="@drawable/grey_right_arrow" android:layout_width="@dimen/report_reason_item_right_arrow_width" android:layout_height="@dimen/report_reason_item_right_arrow_height" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" />
+</LinearLayout>

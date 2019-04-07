@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/default_gap_half" android:paddingBottom="@dimen/default_gap_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/header_button_icon" style="@style/profile_header_button_icon" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/header_button_text" app:scFontWeight="bold" style="@style/profile_header_button_text" />
+</LinearLayout>

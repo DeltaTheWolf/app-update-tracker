@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/my_friends_page" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/add_friend_gradient_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textDirection="locale" android:layoutDirection="locale">
+        <FrameLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="@dimen/add_friends_header">
+            <include layout="@layout/header_container_view" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/recycler_view_content" android:background="@color/add_friends_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_container">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap_1_75x" />
+        </RelativeLayout>
+        <include android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" android:layout_below="@id/header_container" layout="@layout/search_bar_layout" />
+        <include android:id="@id/section_header_container" layout="@layout/section_header_view" />
+        <com.snap.identity.api.sharedui.AlphabeticScrollbar android:id="@id/my_friend_scroll_bar_viewstub" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/my_friends_scroll_bar_top_margin" android:layout_marginBottom="@dimen/my_friends_scroll_bar_bottom_margin" android:layout_alignParentEnd="true" custom:iconPadding="1.5dip" custom:scrollbarInternalLayout="@id/alphabetic_scroll_bar_layout" custom:scrollbarLayout="@layout/my_friends_scroll_bar_layout" />
+    </RelativeLayout>
+    <com.snap.identity.api.sharedui.ProgressButton android:id="@id/action_button" android:visibility="gone" android:layout_width="@dimen/my_friends_action_button_width" android:layout_height="@dimen/my_friends_action_button_height" android:layout_marginBottom="@dimen/default_gap_4_5x" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

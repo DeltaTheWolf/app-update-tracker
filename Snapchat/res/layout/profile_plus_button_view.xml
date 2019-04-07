@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/profile_plus_button_background" android:paddingTop="@dimen/default_gap_three_quarters" android:paddingBottom="@dimen/default_gap_three_quarters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap_3x" android:paddingEnd="@dimen/default_gap_3x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/profile_button_plus_icon" style="@style/profile_button_plus_icon" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/profile_button_text_view" style="@style/profile_button_text_view" />
+</LinearLayout>

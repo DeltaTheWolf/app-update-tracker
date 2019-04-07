@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.chat.ui.view.BackButtonInterceptingLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/fullscreen_chat_bottom_gradient_upper_half" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+        </LinearLayout>
+        <View android:id="@id/chat_message_input_divider" android:layout_width="0.0px" android:layout_height="0.0px" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.messaging.chatitem.AudioNoteRecordingView android:id="@id/chat_audio_note_recording_view" android:visibility="gone" android:layout_width="@dimen/chat_audio_note_recording_preview_with_ring_diameter" android:layout_height="@dimen/chat_audio_note_recording_preview_with_ring_diameter" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/chat_input_bar" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/chat_drawer_or_keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/chat_drawer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/keyboard_placeholder" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </FrameLayout>
+    <View android:id="@id/navbar_inset" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</com.snap.messaging.chat.ui.view.BackButtonInterceptingLinearLayout>

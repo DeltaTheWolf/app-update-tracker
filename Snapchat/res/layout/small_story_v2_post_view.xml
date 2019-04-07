@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/post_view" android:background="@color/discover_feed_card_post_view_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider_line" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/replay_icon_size" android:layout_height="@dimen/replay_icon_size" android:src="@drawable/post_view_replay" />
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:gravity="center" android:layout_gravity="center" android:id="@id/post_view_primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/stories_card_margin" android:layout_marginEnd="@dimen/stories_card_margin" app:scFontWeight="bolder" style="@style/replay_text" />
+    </LinearLayout>
+    <View android:id="@id/divider_line" android:background="#80aeb6bd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/more_episodes_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider_line" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/post_view_secondary_image" android:layout_width="@dimen/replay_icon_size" android:layout_height="@dimen/replay_icon_size" />
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:gravity="center" android:layout_gravity="center" android:id="@id/post_view_secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/post_view_icon_offset" app:scFontWeight="bolder" style="@style/replay_text" />
+    </LinearLayout>
+</RelativeLayout>

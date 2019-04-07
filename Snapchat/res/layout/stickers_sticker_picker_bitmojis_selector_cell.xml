@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/bitmoji_selector_cell_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/selector_image_view" android:layout_width="@dimen/stickers_picker_category_icon_height_chat" android:layout_height="@dimen/stickers_picker_category_icon_height_chat" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/subcategory_selector_view" android:background="@drawable/bitmoji_subcategory_selector_icon" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="-16.0dip" android:layout_marginBottom="-8.0dip" android:layout_below="@id/selector_image_view" android:layout_centerInParent="true" />
+</RelativeLayout>

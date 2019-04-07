@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gallery_private_radio_button" />
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="7.0dip" android:color="@color/transparent" />
+            <solid android:color="@color/regular_red" />
+        </shape>
+    </item>
+</layer-list>

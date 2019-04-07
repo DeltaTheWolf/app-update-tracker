@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/transparent" />
+    <stroke android:width="1.0dip" android:color="@color/dark_grey" />
+    <corners android:radius="50.0dip" />
+    <padding android:left="@dimen/suggested_username_pill_left_padding" android:top="@dimen/suggested_username_pill_top_padding" android:right="@dimen/suggested_username_pill_right_padding" android:bottom="@dimen/suggested_username_pill_bottom_padding" />
+</shape>

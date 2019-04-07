@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/send_to_preview_short" android:background="@drawable/send_to_all_round_corners_background_dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/send_to_preview_default_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_gap_1_5x" android:layout_marginStart="@dimen/chat_snapchatter_profile_image_left_margin" android:layout_marginEnd="@dimen/chat_snapchatter_profile_image_left_margin" layout="@layout/mushroom_send_to_share_username_card_view" />
+    <com.snap.ui.view.SnapFontEditText android:layout_gravity="bottom" android:id="@id/send_to_preview_text" style="@style/sendto_attachment_edittext" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/prompt_content_background_blue" />
+    <padding android:left="@dimen/promo_prompt_gap" android:top="@dimen/promo_prompt_gap" android:right="@dimen/promo_prompt_gap" android:bottom="@dimen/promo_prompt_gap" />
+    <corners android:topLeftRadius="@dimen/promo_prompt_gap" android:topRightRadius="@dimen/promo_prompt_gap" android:bottomLeftRadius="@dimen/prompt_bottom_corner_no_radius" android:bottomRightRadius="@dimen/prompt_bottom_corner_no_radius" />
+</shape>

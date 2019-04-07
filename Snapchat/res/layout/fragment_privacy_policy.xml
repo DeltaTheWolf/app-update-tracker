@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top_right_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <ImageView android:textSize="@dimen/text_size_default" android:gravity="center" android:id="@id/close_button" android:padding="15.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navigation_x" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:id="@id/accept_button" android:text="@string/privacy_policy_ok" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/LegalTermsOfUseContinueButton" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/accept_button" android:layout_below="@id/top_right_button_container" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/illustration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/tos_quarterheight_illustration" android:adjustViewBounds="true" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" />
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:id="@id/title" android:text="@string/privacy_policy_gdpr_title" style="@style/LegalTermsOfUseTitleText" />
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:id="@id/description" android:text="@string/privacy_policy_gdp_description" style="@style/LegalTermsOfUseBodyText" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

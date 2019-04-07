@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/post_view" android:background="@color/discover_feed_card_post_view_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/friend_story_replay_icon_size" android:layout_height="@dimen/friend_story_replay_icon_size" android:src="@drawable/post_view_replay" />
+                <com.snap.ui.view.emoji.SnapEmojiTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/post_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/replay_icon_margin_top" android:layout_marginStart="@dimen/stories_card_margin" android:layout_marginEnd="@dimen/stories_card_margin" app:scFontWeight="bolder" style="@style/sc_story_card_primary_text_v2.small" />
+            </FrameLayout>
+        </FrameLayout>
+        <View android:layout_gravity="center" android:id="@id/post_view_divider" android:background="#80aeb6bd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/post_view_secondary_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/post_view_action_icon" android:background="@drawable/post_view_chat" android:layout_width="@dimen/friend_story_replay_icon_size" android:layout_height="@dimen/friend_story_replay_icon_size" />
+                <com.snap.ui.view.emoji.SnapEmojiTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/post_view_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/replay_icon_margin_top" android:text="@string/tap_to_chat_short" app:scFontWeight="bolder" style="@style/replay_text.small" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/subscribed_nux_text" android:gravity="center" android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="16.0dip" android:text="@string/tab_empty_state_msg_subscribed" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/subscribedtab_emptystate_placeholder" android:scaleType="centerInside" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/get_started_button" android:background="@drawable/round_purple_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="72.0dip" android:text="@string/tab_empty_state_button_text" />
+    </FrameLayout>
+</LinearLayout>

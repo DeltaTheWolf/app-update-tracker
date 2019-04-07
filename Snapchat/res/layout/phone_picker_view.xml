@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/dark_blue" android:id="@id/phone_country_code_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.snap.ui.view.SnapFontEditText android:id="@id/phone_form_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="0.0dip" android:layout_weight="1.0" android:inputType="phone" android:textDirection="ltr" style="@style/IdentityField" />
+</merge>

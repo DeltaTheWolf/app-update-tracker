@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black_five_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/shazam_history_loading_spinner" android:layout_width="@dimen/song_history_loading_spinner_size" android:layout_height="@dimen/song_history_loading_spinner_size" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/shazam_history_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/song_history_empty_page_image_size" android:layout_height="@dimen/song_history_empty_page_image_size" android:src="@drawable/ghost_sing_icon" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/song_history_empty_page_description_font_size" android:textColor="@color/dark_purple" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap_4x" android:layout_marginTop="@dimen/song_history_empty_page_description_top_margin" android:layout_marginRight="@dimen/default_gap_4x" android:text="@string/shazam_song_history_empty_page_description" android:lineSpacingExtra="@dimen/default_gap_half" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/shazam_history_table" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

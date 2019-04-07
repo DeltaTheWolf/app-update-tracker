@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_memories_saving_destination_page" android:background="@color/section_header_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="@dimen/default_gap_quarter" android:layout_margin="@dimen/default_gap_2x" android:text="@string/save_button_settings_description" style="@style/new_settings_item_text" />
+    <RadioGroup android:id="@id/page_option_menu" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/settings_selectable_item_container">
+        <RadioButton android:id="@id/save_to_memories_option" android:layout_width="fill_parent" android:layout_height="@dimen/memories_settings_button_height" android:button="@null" android:text="@string/memories" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" style="@style/settings_selectable_item_checkmark" />
+        <RadioButton android:id="@id/save_to_memories_and_camera_roll_option" android:layout_width="fill_parent" android:layout_height="@dimen/memories_settings_button_height" android:button="@null" android:text="@string/memories_and_camera_roll" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" style="@style/settings_selectable_item_checkmark" />
+        <RadioButton android:id="@id/save_to_camera_roll_option" android:layout_width="fill_parent" android:layout_height="@dimen/memories_settings_button_height" android:button="@null" android:text="@string/save_to_camera_roll_only" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" style="@style/settings_selectable_item_checkmark" />
+    </RadioGroup>
+</LinearLayout>

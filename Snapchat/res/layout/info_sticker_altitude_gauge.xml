@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/gauge_view_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/gauge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_altitude_gauge" android:layout_centerInParent="true" />
+        <com.snap.stickers.ui.views.infosticker.GaugeNeedleView android:id="@id/hundreds_needle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_altitude_hundreds_needle" />
+        <com.snap.stickers.ui.views.infosticker.GaugeNeedleView android:id="@id/thousands_needle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_altitude_thousands_needle" />
+        <com.snap.stickers.ui.views.infosticker.GaugeNeedleView android:id="@id/tenthousands_needle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_altitude_tenthousands_needle" />
+        <TextView android:textSize="@dimen/gauge_view_title_font_size" android:textColor="@color/white" android:id="@id/altitude_filter_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gauge_view_altitude_title" />
+        <TextView android:textSize="@dimen/gauge_view_font_size" android:textColor="@color/white" android:id="@id/altitude_filter_meters_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/gauge_view_font_size" android:textColor="@color/white" android:id="@id/altitude_filter_feet_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/product_info_images_carousel_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+        <FrameLayout android:id="@id/product_info_images_wrapper" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="60.0">
+            <android.support.v4.view.ViewPager android:id="@id/product_info_images_vp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@drawable/product_info_fragment_top_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/product_info_top_shadow_height" />
+            <com.snap.commerce.lib.views.CarouselIndicator android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/product_info_image_carousel_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap_4x" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@drawable/product_info_fragment_bottom_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/product_info_bottom_shadow_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

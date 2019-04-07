@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chat_action_menu" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/chat_container" android:background="@drawable/chat_action_menu_background_round_corner" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_gap_1_75x">
+            <com.snap.ui.view.SnapFontTextView android:layout_gravity="start" android:id="@id/chat_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chat_sender_text" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_action_menu_timestamp_text_size" android:textColor="@color/medium_grey" android:layout_gravity="end" android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.snap.messaging.chat.features.actionmenu.ActionMenuChatItemContainer android:id="@id/chat_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_action_menu_option_subtext_size" android:textColor="@color/medium_grey" android:id="@id/chat_viewers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap" />
+    </LinearLayout>
+</LinearLayout>

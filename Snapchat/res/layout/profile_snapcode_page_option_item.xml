@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/snapcode_page_button_background" android:layout_width="fill_parent" android:layout_height="@dimen/profile_snapcode_page_option_item_height" android:layout_marginTop="@dimen/default_gap_1_25x" android:layout_marginBottom="@dimen/default_gap_1_25x" android:layout_marginStart="@dimen/default_gap_4x" android:layout_marginEnd="@dimen/default_gap_4x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/profile_snapcode_page_option_font_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/option_string" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+</FrameLayout>

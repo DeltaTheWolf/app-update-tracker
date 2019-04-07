@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end|center|top" android:padding="@dimen/sc_search_thumbnail_radius" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/bug_button" android:visibility="gone" android:layout_width="@dimen/search_bug_button_image_size" android:layout_height="@dimen/search_bug_button_image_size" android:layout_marginBottom="@dimen/sc_search_thumbnail_radius" android:src="@drawable/bug" android:scaleType="fitCenter" android:alpha="0.5" android:layout_marginStart="@dimen/sc_search_thumbnail_radius" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/grid_frameable_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.RoundedCornerFrameLayout android:id="@id/rounded_frame_layout" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/camera_roll_video_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </com.snap.ui.view.RoundedCornerFrameLayout>
+    <View android:id="@id/camera_roll_video_gradient" android:background="@drawable/camera_roll_item_video_gradient" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="@id/rounded_frame_layout" app:layout_constraintStart_toStartOf="@id/rounded_frame_layout" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/camera_roll_video_duration_text_size" android:textColor="@color/white" android:id="@id/camera_roll_video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" app:layout_constraintBottom_toBottomOf="@id/rounded_frame_layout" app:layout_constraintEnd_toEndOf="@id/rounded_frame_layout" />
+</android.support.constraint.ConstraintLayout>

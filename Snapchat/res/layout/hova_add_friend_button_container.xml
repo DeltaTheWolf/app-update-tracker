@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/neon_add_friend_button_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/neon_header_add_friend_button" android:layout_width="@dimen/hova_nav_add_friend_button_size" android:layout_height="@dimen/hova_nav_add_friend_button_size" android:layout_marginTop="@dimen/hova_nav_add_friend_button_margin_top" android:src="@drawable/profile_v3_add_friends_icon" />
+    <ViewStub android:id="@id/hova_nav_add_friend_button_notification_badge_stub" android:layout="@layout/hova_avatar_notification_badge" android:inflatedId="@id/hova_nav_add_friend_button_notification_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hova_nav_add_friend_button_badge_margin_top" android:layout_marginStart="@dimen/hova_nav_add_friend_button_badge_margin_left" />
+</merge>

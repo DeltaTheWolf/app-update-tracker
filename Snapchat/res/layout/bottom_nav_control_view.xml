@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/bottom_navigation_control_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="left" android:id="@id/webpage_back_button" android:padding="5.0dip" android:visibility="gone" android:layout_width="@dimen/navigation_button_size" android:layout_height="@dimen/navigation_button_size" android:layout_marginLeft="@dimen/navigation_back_button_margin_left" android:src="@drawable/opera_webview_back_button" android:scaleType="fitXY" android:cropToPadding="true" />
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="left" android:id="@id/webpage_forward_button" android:padding="5.0dip" android:visibility="gone" android:layout_width="@dimen/navigation_button_size" android:layout_height="@dimen/navigation_button_size" android:layout_marginLeft="@dimen/navigation_forward_button_margin_left" android:src="@drawable/opera_webview_forward_button" android:scaleType="fitXY" android:cropToPadding="true" />
+</FrameLayout>

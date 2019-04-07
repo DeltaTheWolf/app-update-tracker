@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/brush_selector_carousel_item_view_container" android:paddingLeft="@dimen/brush_button_height_size_border_radius" android:paddingTop="@dimen/brush_button_height_size_border_radius" android:paddingRight="@dimen/brush_button_height_size_border_radius" android:paddingBottom="@dimen/brush_button_height_size_border_radius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/brush_button_top_margin" android:layout_marginRight="@dimen/brush_button_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:gravity="center" android:layout_gravity="center" android:id="@id/brush_selector_carousel_item" android:layout_width="@dimen/brush_button_width_size" android:layout_height="@dimen/brush_button_height_size" />
+</FrameLayout>

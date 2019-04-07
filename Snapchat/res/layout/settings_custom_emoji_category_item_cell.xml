@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/settings_custom_emoji_item_name_only"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:gravity="center" android:id="@id/friendmoji" android:layout_width="@dimen/settings_emoji_category_item_size" android:layout_height="@dimen/settings_emoji_category_item_size" android:layout_marginLeft="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/friendmoji_legend_text_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/default_gap_3x" android:layout_toRightOf="@id/friendmoji" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0dip" android:textColor="@color/off_black" android:ellipsize="end" android:id="@id/friendmoji_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" custom:scFontWeight="lighter" style="@android:style/TextAppearance.Medium" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/friendmoji_description" android:paddingTop="5.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:scFontWeight="lighter" style="@android:style/TextAppearance.Small" />
+    </LinearLayout>
+</RelativeLayout>

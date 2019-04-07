@@ -1,0 +1,34 @@
+[
+  {
+    "id": "5205765477195776",
+    "code": "pear_face",
+    "icon_link": "pear_face",
+    "hint_id": "",
+    "lensContext": {
+      "cameraContexts": [
+        "FRONT_FACING",
+        "REAR_FACING"
+      ],
+      "applicableContexts": [
+        "LIVE_CAMERA",
+        "VIDEO_CHAT",
+        "REPLY_CAMERA"
+      ]
+    },
+    "categories": [
+      {
+        "id": "LENS_CATEGORY_SELFIE",
+        "activator": "SELFIE"
+      },
+      {
+        "id": "LENS_CATEGORY_SKY",
+        "activator": "GYRO"
+      },
+      {
+        "id": "LENS_CATEGORY_GROUND",
+        "activator": "GROUND"
+      }
+    ],
+    "enabled": true
+  }
+]

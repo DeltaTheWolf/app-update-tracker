@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gallery_enter_passcode_container" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout android:id="@id/top_panel" android:layout_marginBottom="@dimen/default_gap_2x" custom:topPaddingStatusBar="true" style="@style/MemoriesPageHeader">
+        <ImageView android:id="@id/top_panel_back_button" android:src="@drawable/gallery_red_back_arrow" style="@style/GalleryPanelBackButton" />
+        <TextView android:id="@id/top_panel_title" android:text="@string/gallery_enter_current_passcode" style="@style/GalleryPanelTitleWithBackButton" />
+    </com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout>
+    <TextView android:textColor="@color/gallery_grey_text" android:gravity="center" android:id="@id/gallery_private_enter_passcode_desc" android:layout_marginBottom="@dimen/default_gap" android:text="@string/gallery_enter_passcode_desc" android:layout_below="@id/top_panel" style="@style/GalleryPrivateTextBlock" />
+    <com.snap.memories.lib.grid.view.MemoriesMyEyesOnlyKeypad android:id="@id/gallery_passcode_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/gallery_private_enter_passcode_desc" />
+</RelativeLayout>

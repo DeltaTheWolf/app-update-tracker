@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/crash_header" android:background="@color/s2r_grey" android:padding="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="16.0sp" android:id="@id/send" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Send Email" android:layout_weight="1.0" />
+            <Button android:textSize="16.0sp" android:id="@id/s2r" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Send S2R" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttons" android:layout_alignParentTop="true">
+            <TextView android:textSize="12.0sp" android:id="@id/crash_text" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

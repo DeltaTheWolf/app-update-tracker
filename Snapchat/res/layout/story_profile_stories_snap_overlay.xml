@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.RoundedFrameLayout android:background="@color/white_forty_opacity" android:layout_width="@dimen/story_tile_container_width" android:layout_height="@dimen/story_tile_container_height" app:corner_radius="@dimen/story_tile_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.ui.view.LoadingSpinnerView android:id="@id/profile_stories_snap_thumbnail_loading_indicator" android:layout_width="@dimen/story_profile_stories_overlay_icon_size" android:layout_height="@dimen/story_profile_stories_overlay_icon_size" app:loading_spinner_color="@color/white" />
+        <com.snap.imageloading.view.SnapImageView android:id="@id/profile_stories_snap_thumbnail_retry_icon" android:visibility="gone" android:layout_width="@dimen/story_profile_stories_overlay_icon_size" android:layout_height="@dimen/story_profile_stories_overlay_icon_size" android:src="@drawable/story_retry_icon" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/white" android:gravity="center" android:id="@id/profile_stories_snap_thumbnail_overlay_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_quarter" android:text="@string/story_profile_stories_adding" android:layout_marginStart="@dimen/default_gap_quarter" android:layout_marginEnd="@dimen/default_gap_quarter" />
+    </LinearLayout>
+</com.snapchat.android.framework.ui.views.RoundedFrameLayout>

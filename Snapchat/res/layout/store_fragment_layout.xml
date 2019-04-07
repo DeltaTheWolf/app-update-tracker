@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/store_fragment" android:background="@color/off_white_fifty_opacity" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/store_title_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/store_title_height" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/product_info_fragment_close_view_tap_target" android:layout_width="@dimen/checkout_corner_btn_side_length" android:layout_height="@dimen/checkout_corner_btn_side_length" android:layout_marginTop="@dimen/seven_dp_gap" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@id/product_info_fragment_close_view" android:layout_width="@dimen/store_close_image_side_length" android:layout_height="@dimen/store_close_image_side_length" android:src="@drawable/marco_polo_store_close" />
+        </FrameLayout>
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small_medium" android:ellipsize="end" android:gravity="center" android:id="@id/store_title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerInParent="true" android:layout_toStartOf="@id/store_ui_checkout_bag_btn" android:layout_toEndOf="@id/product_info_fragment_close_view_tap_target" />
+        <com.snap.commerce.lib.views.CartButton android:id="@id/store_ui_checkout_bag_btn" android:layout_width="@dimen/checkout_corner_btn_side_length" android:layout_height="@dimen/checkout_corner_btn_side_length" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.snap.commerce.lib.views.StoreMainTabView android:orientation="vertical" android:id="@id/marco_polo_store_main_categories" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/legacy_nav_bar" android:layout_below="@id/store_title_layout" />
+    <com.snap.commerce.lib.views.CartCheckoutReview android:id="@id/store_fragment_checkout_cart_review_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/legacy_nav_bar" />
+    <FrameLayout android:id="@id/legacy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/dummy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

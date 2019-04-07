@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:customAttr="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/s2r_report_technical_issue_header" android:background="@color/regular_green" android:padding="@dimen/default_gap_quarter" android:layout_width="fill_parent" android:layout_height="wrap_content" customAttr:headerColorScheme="@color/white" customAttr:headerTitle="@string/s2r_report_a_technical_issue_label" customAttr:includeStatusBarHeight="true" customAttr:showBackArrow="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/s2r_reporting_scroll_view_top_margin" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_quarter">
+        <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/s2r_report_page_description_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="6.0">
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/s2r_feature_description_text_size" android:textColor="@color/dark_grey" android:gravity="center_vertical" android:id="@id/s2r_report_page_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/s2r_report_technical_issue_top_description" android:layout_weight="4.0" android:textAlignment="center" customAttr:scFontWeight="regular" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_below="@id/s2r_report_page_description_container" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

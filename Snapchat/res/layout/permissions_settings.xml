@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_gap_2x" android:text="@string/permissions_info" android:lineSpacingMultiplier="1.2" android:fontFamily="@string/typeface_avenir_next_regular" />
+    <View android:id="@id/info_divider" android:background="@color/regular_green" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/permissions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

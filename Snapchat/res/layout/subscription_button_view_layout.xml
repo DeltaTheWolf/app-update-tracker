@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end|center|top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/subscribe_clickable" android:background="@drawable/transparent_button_white_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subscribe_top_level_margin_height" android:layout_marginEnd="@dimen/subscribe_top_level_margin_right">
+        <ImageView android:id="@id/subscribe_button_icon_view" android:layout_width="@dimen/action_menu_icon_size" android:layout_height="@dimen/action_menu_icon_size" android:scaleType="centerCrop" android:layout_marginStart="@dimen/action_menu_icon_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/subscribe_text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.snap.ui.view.SnapFontTextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/subscribe_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subscribe" android:paddingStart="0.0dip" android:paddingEnd="@dimen/action_menu_subscribe_text_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/subscribe_button_icon_view" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

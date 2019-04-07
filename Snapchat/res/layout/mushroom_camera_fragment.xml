@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.gesture.OpenGestureView android:id="@id/camera_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/camera_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/chrome" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.ui.view.TakeSnapButton android:id="@id/camera_capture_button" android:focusable="true" android:clickable="true" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/camera_tools_margin" android:layout_alignParentEnd="true">
+            <ImageButton android:id="@id/camera_flash_button" android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_flash_off" android:scaleType="fitCenter" android:contentDescription="@string/camera_flash_switch" android:layout_marginEnd="@dimen/camera_header_button_end_margin" />
+            <ImageButton android:id="@id/camera_flip_button" android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_flip_front" android:scaleType="fitCenter" android:soundEffectsEnabled="false" android:contentDescription="@string/flip_camera" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.snap.ui.gesture.OpenGestureView>

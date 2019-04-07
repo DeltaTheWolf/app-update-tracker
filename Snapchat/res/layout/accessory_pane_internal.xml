@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/start_audio" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="@dimen/accessory_pane_accessory_margin">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/accessory_button_icon_size" android:layout_height="@dimen/accessory_button_icon_size" android:src="@drawable/start_audiocall" android:tint="@color/white" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/start_video" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/accessory_pane_accessory_margin">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/accessory_button_icon_size" android:layout_height="@dimen/accessory_button_icon_size" android:src="@drawable/start_videocall" android:tint="@color/white" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/join_call" android:background="@drawable/accessory_button_bg" android:paddingLeft="@dimen/accessory_button_left_padding" android:paddingRight="@dimen/accessory_button_right_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/accessory_button_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/join_call_media_type" android:layout_width="@dimen/accessory_button_join_icon_size" android:layout_height="@dimen/accessory_button_join_icon_size" android:src="@drawable/start_videocall" android:tint="@color/dark_charcoal" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/accessory_button_text_size" android:textColor="@color/dark_charcoal" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/accessory_button_join_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/talk_call_prompt_join" custom:scFontWeight="bold" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/end_call_button" />
+</merge>

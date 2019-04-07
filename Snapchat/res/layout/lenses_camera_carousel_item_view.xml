@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.carousel.DefaultCarouselItemView android:id="@id/lenses_camera_carousel_item_view" android:layout_width="@dimen/lens_camera_carousel_item_size" android:layout_height="@dimen/lens_camera_carousel_item_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/item_image" android:layout_width="@dimen/lens_camera_carousel_item_size" android:layout_height="@dimen/lens_camera_carousel_item_size" android:contentDescription="@null" />
+    <View android:id="@id/lens_fade_overlay" android:background="@drawable/lens_fade_overlay" android:visibility="gone" android:layout_width="@dimen/lens_camera_carousel_item_size" android:layout_height="@dimen/lens_camera_carousel_item_size" />
+    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" app:loading_spinner_color="@android:color/white" />
+    <View android:layout_gravity="end|center|top" android:id="@id/badge" android:background="@drawable/lenses_carousel_item_badge_bg" android:layout_width="@dimen/lens_camera_carousel_item_badge_size" android:layout_height="@dimen/lens_camera_carousel_item_badge_size" android:layout_marginTop="@dimen/lens_camera_carousel_item_badge_margin" android:layout_marginEnd="@dimen/lens_camera_carousel_item_badge_margin" />
+</com.snap.lenses.camera.carousel.DefaultCarouselItemView>

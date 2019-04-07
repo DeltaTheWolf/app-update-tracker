@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/saving_destination_menu_item_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/memories_saving_destination_dialog_menu_item_wrapper_separator_top" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:id="@id/memories_saving_destination_dialog_menu_item" style="@style/saving_destination_menu_item">
+        <com.snap.ui.view.SnapFontTextView android:id="@id/memories_saving_destination_dialog_menu_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/saving_destination_menu_item_text" />
+        <CheckBox android:id="@id/memories_saving_destination_dialog_menu_item_checkbox" style="@style/saving_destination_menu_item_checkbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/item" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/send_to_item_height" android:baselineAligned="false" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="1.0dip" android:layout_marginEnd="2.0dip" layout="@layout/send_to_two_stories_pane" />
+    <include android:id="@id/right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="1.0dip" layout="@layout/send_to_two_stories_pane" />
+</LinearLayout>

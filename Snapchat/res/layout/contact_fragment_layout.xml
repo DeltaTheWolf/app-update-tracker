@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/contact_fragment" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/contact_details_nav_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/marco_polo_nav_bar" />
+        <include layout="@layout/payments_nav_bar_layout" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/contact_details_form" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/contact_details_nav_bar" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap">
+        <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_contact_info_add_email_edit_text" android:layout_width="fill_parent" style="@style/marco_polo_float_label_text_field">
+            <EditText android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/marco_polo_contact_info_email_address" android:maxLines="2" android:inputType="textEmailAddress" android:layout_marginEnd="@dimen/default_gap" />
+        </com.snap.payments.lib.views.FloatLabelLayout>
+        <View android:id="@id/view" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/marco_polo_contact_info_add_email_edit_text" />
+        <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_contact_info_add_phone_edit_text" android:layout_width="fill_parent" android:layout_below="@id/view" style="@style/marco_polo_float_label_text_field">
+            <EditText android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/marco_polo_contact_info_phone_number" android:maxLength="20" android:inputType="number" />
+        </com.snap.payments.lib.views.FloatLabelLayout>
+        <View android:id="@id/view2" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/marco_polo_contact_info_add_phone_edit_text" />
+    </RelativeLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/error_red" android:gravity="center" android:id="@id/marco_polo_contact_info_error_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:minLines="1" android:layout_below="@id/contact_details_form" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap" />
+    <FrameLayout android:id="@id/contact_info_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/legacy_nav_bar">
+        <include layout="@layout/legal_notice_layout" />
+    </FrameLayout>
+    <include layout="@layout/payments_loading_bar" />
+    <FrameLayout android:id="@id/legacy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/dummy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

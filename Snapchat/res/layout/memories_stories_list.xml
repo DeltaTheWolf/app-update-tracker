@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/memories_page_stories" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.memories.lib.grid.view.MemoriesGridPageRecyclerView android:id="@id/memories_stories_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:splitMotionEvents="false" />
+    <com.snap.ui.view.scrollbar.SnapScrollBar android:gravity="bottom" android:layout_gravity="end" android:id="@id/memories_grid_page_scroll_bar" android:paddingTop="@dimen/memories_scroll_bar_track_padding_top" android:paddingBottom="@dimen/memories_scroll_bar_track_padding_top" android:visibility="invisible" android:clickable="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</FrameLayout>

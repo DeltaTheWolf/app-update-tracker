@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/signup_set_phone_page" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/dark_grey" android:gravity="end" android:layout_gravity="end|center|top" android:id="@id/skip_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/signup_skip_find_friends" android:layout_marginEnd="@dimen/default_gap_2x" />
+        <FrameLayout android:layout_gravity="start|center|top" android:id="@id/back_button" android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <ImageView android:layout_gravity="start|center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:src="@drawable/medium_grey_mirrorable_navigation_back_arrow" android:layout_marginStart="@dimen/default_gap" />
+        </FrameLayout>
+    </FrameLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_gap_5x" android:layout_marginEnd="@dimen/default_gap_5x">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/phone_form_title" android:text="@string/signup_phone_prompt" style="@style/LoginSignupPageTitle" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/signup_with_email_instead" android:text="@string/signup_with_email" style="@style/IdentityLinkText" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/phone_form_hint" android:text="@string/signup_phone_hint" style="@style/IdentityFieldHint" />
+            <com.snap.identity.ui.shared.phonenumber.PhonePickerView android:id="@id/phone_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.snap.ui.view.SnapFontTextView android:textColor="@color/black" android:id="@id/send_sms_explanation" android:text="@string/signup_we_will_send_notice" android:textAllCaps="false" style="@style/IdentityFieldSubtext" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/phone_error_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/IdentityFieldError" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.api.sharedui.ProgressButton android:layout_gravity="center_horizontal" android:id="@id/continue_button" style="@style/LoginSignupButton" />
+</LinearLayout>

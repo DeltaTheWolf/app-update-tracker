@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/CommerceSelectorTheme" android:orientation="vertical" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:ellipsize="end" android:id="@id/shipping_option_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toStartOf="@id/shipping_option_selected" />
+    <ImageView android:id="@id/shipping_option_selected" android:visibility="gone" android:layout_width="@dimen/default_gap_2_25x" android:layout_height="@dimen/default_gap_2_25x" android:src="@drawable/black_check_mark" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" />
+</RelativeLayout>

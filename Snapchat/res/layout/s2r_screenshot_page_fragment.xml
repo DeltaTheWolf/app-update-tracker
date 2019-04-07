@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/s2r_screenshot_fragment_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/s2r_screenshot_fragment_background_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snap.shake2report.ui.screenshotpage.ScreenshotDrawingView android:id="@id/s2r_screenshot_fragment_drawing_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/s2r_screenshot_fragment_editor_overlay_frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="top" android:id="@id/s2r_screenshot_page_header_relative_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/default_gap_10x">
+            <ImageButton android:id="@id/s2r_screenshot_page_back_discard_image_button" android:layout_marginLeft="@dimen/default_gap_1_5x" android:src="@drawable/preview_discard" android:layout_marginStart="@dimen/default_gap_1_5x" style="@style/s2r_preview_top_panel_image_button" />
+            <ImageButton android:id="@id/s2r_screenshot_page_edit_image_button" android:layout_marginRight="@dimen/default_gap_1_5x" android:src="@drawable/s2r_screenshot_page_edit_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/default_gap_1_5x" style="@style/s2r_preview_top_panel_image_button" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="bottom" android:id="@id/s2r_screenshot_page_footer_relative_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/s2r_screenshot_page_trash_image_button" android:src="@drawable/preview_trash" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/default_gap_1_5x" android:layout_marginEnd="@dimen/default_gap_1_5x" style="@style/s2r_preview_bottom_panel_image_button" />
+            <ImageButton android:id="@id/s2r_screenshot_page_save_image_button" android:layout_marginRight="@dimen/default_gap_1_5x" android:src="@drawable/preview_save_check" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/default_gap_1_5x" style="@style/s2r_preview_bottom_panel_image_button" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/memories_loading_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gallery_empty_background" android:scaleType="fitXY" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/memories_migration_loading_text_bottom_margin">
+        <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/snap_view_loading_screen_progress_bar" android:layout_width="@dimen/memories_spinner_size" android:layout_height="@dimen/memories_spinner_size" app:loading_spinner_color="@color/white" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/memories_loading" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/memories_sync_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/memories_sync_progress_bar_size" android:max="100" android:progress="0" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/gallery_sync_progress_bar" />
+</FrameLayout>

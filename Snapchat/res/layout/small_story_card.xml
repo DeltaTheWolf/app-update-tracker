@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.RoundedFrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="@dimen/sc_story_card_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/image_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/text_gradient" android:background="@drawable/sc_story_card_gradient_foreground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/logo_gradient" android:background="@drawable/df_story_card_logo_gradient_top" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/small_show_card_inner_padding" android:layout_marginStart="@dimen/small_show_card_inner_padding" android:layout_marginEnd="@dimen/small_show_card_inner_padding">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.snap.imageloading.view.SnapImageView android:layout_gravity="center_horizontal" android:id="@id/logo_image" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="@dimen/stories_card_logo_top_margin" android:layout_marginRight="7.0dip" />
+        </FrameLayout>
+        <ViewStub android:id="@id/small_badge_stub" android:layout="@layout/small_story_small_show_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/emoji_bitmoji_view_stub" android:layout="@layout/emoji_bitmoji_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:textSize="@dimen/small_show_card_episode_subtitle_text_size" android:textStyle="bold" android:textColor="@color/white" android:id="@id/episode_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" app:scFontWeight="bolder" />
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" app:scFontWeight="bolder" style="@style/small_story_card_primary_text.alignment" />
+        <ViewStub android:id="@id/large_badge_stub" android:layout="@layout/small_story_large_show_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.snap.discoverfeed.ui.feature.shows.ShowProgressBar android:layout_gravity="bottom|center" android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/show_card_progress_bar_height" android:layout_marginBottom="@dimen/show_card_progress_bar_bottom_margin" android:layout_marginStart="@dimen/small_card_inner_side_margin" android:layout_marginEnd="@dimen/small_card_inner_side_margin" app:corner_radius="@dimen/show_card_progress_bar_corners" />
+    <FrameLayout android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/story_bookmark_stub" android:layout="@layout/story_bookmark_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <View android:background="@drawable/card_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/post_view_stub" android:layout="@layout/small_story_v2_post_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/debug_df_prefetch_stub" />
+</com.snapchat.android.framework.ui.views.RoundedFrameLayout>

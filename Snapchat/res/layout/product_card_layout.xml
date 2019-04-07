@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:customAttr="http://schemas.android.com/apk/res-auto">
+    <com.snap.commerce.lib.views.ProductCardView android:id="@id/cart_details_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" customAttr:shownImmediately="true" customAttr:showsBlackOverlay="false" />
+    <com.snap.commerce.lib.views.ProductVariantPickerView android:id="@id/item_picker_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

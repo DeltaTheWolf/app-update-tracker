@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.getStr=function(r,t,e){var n=(r||{})[t];if(typeof n==="string"){return n}if(e){return e}return""};exports.getObj=function(r,t){var e=(r||{})[t];return typeof e==="object"?e:{}};exports.getArray=function(r,t){var e=(r||{})[t];return Array.isArray(e)?e:[]};

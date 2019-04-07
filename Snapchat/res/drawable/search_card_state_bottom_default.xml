@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/search_card_background_grey" />
+    <padding android:left="@dimen/search_card_padding" android:top="@dimen/search_card_padding" android:right="@dimen/search_card_padding" android:bottom="@dimen/search_card_padding" />
+    <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="@dimen/search_card_radius" android:bottomRightRadius="@dimen/search_card_radius" />
+</shape>

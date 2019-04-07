@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/neon_header_avatar_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.avatar.AvatarView android:id="@id/neon_header_avatar" style="@style/hova_avatar_view" />
+    <ViewStub android:id="@id/hova_nav_avatar_notification_badge_stub" android:layout="@layout/hova_avatar_notification_badge" android:inflatedId="@id/hova_nav_avatar_notification_badge" style="@style/hova_avatar_notification_badge" />
+</merge>

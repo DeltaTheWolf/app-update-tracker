@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/playerOptions" android:visibility="gone" style="@style/BrightcovePlayerOptions"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/audioTracksTitle" android:visibility="gone" android:text="@string/brightcove_controls_audio_tracks_tv" style="@style/BrightcovePlayerOptionsTitle" />
+    <RadioGroup android:id="@id/audioTracksGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/captionsTitle" android:visibility="gone" android:text="@string/brightcove_controls_captions_tv" style="@style/BrightcovePlayerOptionsTitle" />
+    <RadioGroup android:id="@id/captionsGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

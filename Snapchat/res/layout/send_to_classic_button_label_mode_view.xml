@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/sent_to_button_label_mode_view" android:background="@drawable/feed_white_rounded_box" android:padding="@dimen/default_gap_half" android:layout_width="wrap_content" android:layout_height="@dimen/label_mode_create_chat_button_height" android:minWidth="@dimen/label_mode_create_chat_button_container_min_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/medium_blue" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap_half" android:text="@string/send" android:layout_marginStart="@dimen/default_gap_half" />
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/label_mode_create_chat_button_icon_size" android:layout_height="@dimen/label_mode_create_chat_button_icon_size" android:src="@drawable/neon_feed_icon_sent_unopened_blue" android:scaleType="fitCenter" />
+</LinearLayout>

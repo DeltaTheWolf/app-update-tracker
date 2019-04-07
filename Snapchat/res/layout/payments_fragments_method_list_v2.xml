@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/payments_fragment_method_list_page" android:background="@color/white" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/payments_list_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/marco_polo_nav_bar" />
+        <include android:visibility="gone" layout="@layout/payments_nav_bar_layout" />
+    </FrameLayout>
+    <ScrollView android:id="@id/payments_settings_scrollview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/legacy_nav_bar" android:layout_below="@id/payments_list_nav_bar" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x">
+        <LinearLayout android:orientation="vertical" android:id="@id/payments_settings_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/payments_payment_method_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.snap.ui.view.SnapFontTextView android:textColor="@color/dark_green" android:id="@id/payments_payment_method_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_payment_method" style="@style/settings_section_header" />
+                <include android:id="@id/payment_settings_header_separator" layout="@layout/settings_header_separator" />
+                <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/payments_method_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/error_red" android:gravity="center" android:id="@id/payments_error_empty_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/payments_other_options" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/transaction_history_entry" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.snap.ui.view.SnapFontTextView android:textColor="@color/dark_green" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_transaction_history" style="@style/settings_section_header" />
+                    <include layout="@layout/settings_header_separator" />
+                    <android.support.v7.widget.RecyclerView android:id="@id/recent_orders" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:ellipsize="end" android:id="@id/payments_order_information_option" android:background="@drawable/payments_white_grey_selector" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_other_purchases" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/default_gap_1_5x" />
+                </LinearLayout>
+                <com.snap.ui.view.SnapFontTextView android:textColor="@color/dark_green" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_order_information" style="@style/settings_section_header" />
+                <include layout="@layout/settings_header_separator" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:ellipsize="end" android:id="@id/payments_shipping_address_option" android:background="@drawable/payments_white_grey_selector" android:paddingTop="@dimen/default_gap_2x" android:paddingBottom="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_shipping_address" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/default_gap_1_5x" android:paddingEnd="@dimen/default_gap_1_5x" />
+                <ImageView android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:ellipsize="end" android:id="@id/payments_contact_info_option" android:background="@drawable/payments_white_grey_selector" android:paddingTop="@dimen/default_gap_2x" android:paddingBottom="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_contact_information" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/default_gap_1_5x" android:paddingEnd="@dimen/default_gap_1_5x" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/payments_loading_bar" />
+    <ViewStub android:id="@id/legacy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/default_gap_quarter" android:right="@dimen/default_gap_quarter">
+        <shape android:shape="oval">
+            <solid android:color="@color/snapchat_yellow" />
+            <size android:height="@dimen/neon_header_circular_notification_background_size" android:width="@dimen/neon_header_circular_notification_background_size" />
+        </shape>
+    </item>
+</layer-list>

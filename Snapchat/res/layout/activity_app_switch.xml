@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/app_switch_text_size" android:id="@id/switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_switch_body_text" android:layout_centerInParent="true" android:textAlignment="center" android:paddingStart="@dimen/app_switch_body_horizontal_padding" android:paddingEnd="@dimen/app_switch_body_horizontal_padding" />
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/app_switch_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+        <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center_horizontal" android:layout_width="@dimen/app_switch_loading_spinner_size" android:layout_height="@dimen/app_switch_loading_spinner_size" app:loading_spinner_color="@color/black" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/app_switch_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_switch_loading_spinner_text" android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>

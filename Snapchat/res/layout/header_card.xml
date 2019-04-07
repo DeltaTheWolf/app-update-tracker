@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:textSize="@dimen/header_text_size" android:textColor="@color/charcoal_gray" android:ellipsize="end" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/header_margin_start_end" android:layout_alignParentStart="true" app:autoFit="true" app:scFontWeight="bolder" />
+        <com.snap.imageloading.view.SnapImageView android:id="@id/side_icon" android:background="@drawable/cell_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_marginStart="@dimen/df_quick_add_side_icon_margin_start" android:layout_toEndOf="@id/header_text" style="@style/FlippableImage" />
+    </RelativeLayout>
+    <ImageView android:gravity="center" android:id="@id/view_all_button" android:background="@drawable/cell_arrow" android:visibility="gone" android:layout_width="@dimen/channel_pivot_arrow_width" android:layout_height="@dimen/channel_pivot_arrow_width" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_toEndOf="@id/header_text_container" />
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/medium_grey" android:gravity="center" android:id="@id/hide_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/hide_section" android:layout_centerVertical="true" android:paddingStart="@dimen/header_margin_start_end" android:paddingEnd="@dimen/header_margin_start_end" android:layout_alignParentEnd="true" app:autoFit="true" app:scFontWeight="bolder" />
+</RelativeLayout>

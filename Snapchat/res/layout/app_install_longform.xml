@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/app_install_icon_view" android:layout_width="@dimen/app_install_icon_dimen" android:layout_height="@dimen/app_install_icon_dimen" android:layout_marginTop="@dimen/app_install_icon_margin_top" />
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/app_install_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_install_title_margin_top" style="@style/AppInstallAppTitle" />
+</FrameLayout>

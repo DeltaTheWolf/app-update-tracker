@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:id="@id/call_prompt_lower_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/call_prompt_dismiss_button" android:layout_width="wrap_content" android:layout_height="@dimen/call_prompt_button_height" android:layout_marginRight="@dimen/call_prompt_buttons_spacing">
+        <ImageView android:layout_gravity="center|top" android:paddingTop="@dimen/call_prompt_dismiss_button_top_padding" android:layout_width="@dimen/call_prompt_dismiss_button_size" android:layout_height="@dimen/call_prompt_dismiss_button_size" android:src="@drawable/call_prompt_dismiss_button_selector" style="@style/call_prompt_btn" />
+        <TextView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dismiss" style="@style/call_prompt_btn_label" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/call_prompt_join_button_container" android:layout_width="wrap_content" android:layout_height="@dimen/call_prompt_button_height" style="@style/call_prompt_btn">
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/call_prompt_join_button_media_type_marker" android:visibility="gone" android:layout_width="@dimen/call_prompt_local_media_marker_size" android:layout_height="@dimen/call_prompt_local_media_marker_size" android:layout_marginBottom="@dimen/call_prompt_local_media_marker_offset" />
+        <TextView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/talk_call_prompt_join" style="@style/call_prompt_btn_label" />
+    </FrameLayout>
+</merge>

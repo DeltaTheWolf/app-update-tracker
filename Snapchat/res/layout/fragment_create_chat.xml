@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.StackingLayout android:id="@id/content_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statusbar_inset" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:layout_affinity="top" />
+    <View android:id="@id/navbar_inset" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:layout_affinity="bottom" />
+    <com.snap.messaging.createchat.ui.view.CreateChatBottomPanelView android:id="@id/bottom_panel" android:background="@color/regular_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/create_chat_bottom_panel_height" android:layout_marginBottom="0.0dip" custom:layout_affinity="bottom" />
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/neon_header_height" custom:layout_affinity="top">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/regular_blue" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_chat" />
+        <ImageButton android:layout_gravity="end|center" android:id="@id/dismiss_chat_creation_btn" android:background="@null" android:layout_width="@dimen/neon_header_height" android:layout_height="@dimen/neon_header_height" android:src="@drawable/chat_creation_dismiss_icon" android:scaleType="centerInside" />
+    </FrameLayout>
+    <View android:id="@id/create_mischief_divider" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="@dimen/recipient_bar_divider_width" custom:layout_affinity="top" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/create_chat_recipient_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/recipient_bar_start_margin" custom:layout_affinity="top">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/recipient_bar_to_text_size" android:textColor="@color/light_charcoal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/recipient_bar_to_height" android:layout_marginTop="@dimen/recipient_bar_to_top_margin" android:text="@string/to_bar" android:layout_marginEnd="@dimen/recipient_bar_to_end_margin" />
+        <com.snap.ui.view.ScrollViewWithMaxHeight android:paddingTop="@dimen/recipient_bar_pill_list_margins" android:paddingBottom="@dimen/recipient_bar_pill_list_margins" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:maxHeight="@dimen/recipient_bar_max_height">
+            <com.snap.messaging.createchat.ui.view.CreateChatRecipientBarView android:id="@id/create_chat_recipients" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/recipient_bar_pill_list_margins" />
+        </com.snap.ui.view.ScrollViewWithMaxHeight>
+    </LinearLayout>
+    <View android:id="@id/below_recipient_bar_divider" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="@dimen/recipient_bar_divider_width" custom:layout_affinity="top" />
+    <View android:id="@id/keyboard_placeholder" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:layout_affinity="bottom" />
+    <TextView android:textSize="@dimen/create_chat_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/create_chat_button" android:background="@color/regular_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/create_chat_button_height" android:text="@string/create_chat" android:includeFontPadding="false" custom:layout_affinity="bottom" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" custom:layout_affinity="top">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="@dimen/default_gap_2_5x"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller android:layout_gravity="end" android:id="@id/fast_scroller" android:background="@color/white" android:layout_width="24.0dip" android:layout_height="fill_parent" android:paddingEnd="@dimen/default_gap_half" custom:rfs_barColor="@color/off_white" custom:rfs_handleColor="@color/regular_blue" />
+    </FrameLayout>
+</com.snap.ui.view.StackingLayout>

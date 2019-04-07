@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontEditText android:textSize="@dimen/text_size_small_medium" android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/country_code_filter_hint" android:inputType="textFilter" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

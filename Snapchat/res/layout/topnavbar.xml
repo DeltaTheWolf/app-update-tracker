@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/web_page_url_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.imageloading.view.SnapImageView android:layout_gravity="center_vertical" android:id="@id/nav_bar_x_close_button" android:paddingLeft="@dimen/default_gap" android:paddingRight="@dimen/default_gap" android:layout_width="@dimen/exit_button_width" android:layout_height="fill_parent" android:src="@drawable/video_close_button" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/https_view" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.snap.imageloading.view.SnapImageView android:id="@id/nav_bar_https_lock" android:layout_width="@dimen/https_icon_size" android:layout_height="@dimen/https_icon_size" android:layout_marginLeft="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap" android:src="@drawable/https_padlock" android:alpha="0.4" />
+            <View android:id="@id/nav_bar_https_divider" android:background="@color/white" android:layout_width="@dimen/https_icon_divider_width" android:layout_height="@dimen/https_icon_divider_height" android:alpha="0.4" />
+        </LinearLayout>
+        <com.snap.imageloading.view.SnapImageView android:id="@id/nav_bar_favicon" android:padding="@dimen/default_gap_half" android:layout_width="@dimen/favicon_size" android:layout_height="@dimen/favicon_size" android:layout_marginLeft="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap" android:src="@drawable/default_favicon" />
+        <com.facebook.shimmer.ShimmerFrameLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/nav_bar_shimmer" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" shimmer:duration="2000">
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/nav_bar_url_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/web_url_text_max_width" android:maxLines="1" android:fontFamily="@string/typeface_avenir_next_bold" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center|top" android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/progress_bar_height" style="?android:progressBarStyleHorizontal" />
+</FrameLayout>

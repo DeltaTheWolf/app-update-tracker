@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/status_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/snap_kit_connected_apps_title" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <FrameLayout android:background="@color/black_five_opacity" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ViewStub android:id="@id/snap_kit_settings_privacy_explainer_stub" android:layout="@layout/mushroom_snap_kit_privacy_explainer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/snap_kit_settings_connected_apps_view_stub" android:layout="@layout/settings_connected_apps_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/snap_kit_settings_spinner" android:layout_width="@dimen/settings_connected_app_list_loading_spinner_size" android:layout_height="@dimen/settings_connected_app_list_loading_spinner_size" android:scaleType="fitCenter" custom:loading_spinner_color="@color/light_grey" />
+    </FrameLayout>
+    <View android:id="@id/navbar_inset" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</LinearLayout>

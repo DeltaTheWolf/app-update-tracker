@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/memories_grid_page_meo_unlock_passphrase" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:src="@drawable/private_gallery_key_icon_large" android:alpha="0.1" style="@style/GalleryPrivateUltraSecureUnlockScreenLargeIcon" />
+    <TextView android:id="@id/memories_grid_page_meo_unlock_passphrase_input" android:layout_marginLeft="@dimen/gallery_passphrase_container_margin_horizontal" android:layout_marginTop="@dimen/gallery_passphrase_container_margin_top" android:layout_marginRight="@dimen/gallery_passphrase_container_margin_horizontal" android:text="@string/gallery_passphrase" style="@style/GalleryPrivateLightText" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gallery_passphrase_container_margin_horizontal" android:layout_marginTop="@dimen/gallery_passphrase_input_margin" android:layout_marginRight="@dimen/gallery_passphrase_container_margin_horizontal" layout="@layout/gallery_ultra_secure_passphrase_view" />
+</FrameLayout>

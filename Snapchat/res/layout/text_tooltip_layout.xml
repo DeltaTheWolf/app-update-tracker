@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tooltip_text" android:padding="@dimen/default_gap_2x" android:paddingTop="@dimen/text_tooltip_vertical_padding" android:paddingBottom="@dimen/text_tooltip_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tooltip_top" android:paddingStart="@dimen/text_tooltip_horizontal_padding" android:paddingEnd="@dimen/text_tooltip_horizontal_padding" />
+    <com.snapchat.android.framework.ui.views.RoundedTriangleView android:id="@id/tooltip_top" android:layout_width="@dimen/text_tooltip_triangle_width" android:layout_height="@dimen/text_tooltip_triangle_height" android:layout_centerHorizontal="true" custom:baseRadius="@dimen/text_tooltip_triangle_base_corner_radius" custom:tipRadius="0.0dip" />
+    <com.snapchat.android.framework.ui.views.RoundedTriangleView android:id="@id/tooltip_bottom" android:layout_width="@dimen/text_tooltip_triangle_width" android:layout_height="@dimen/text_tooltip_triangle_height" android:layout_below="@id/tooltip_text" android:layout_centerHorizontal="true" android:rotation="180.0" custom:baseRadius="@dimen/text_tooltip_triangle_base_corner_radius" custom:tipRadius="0.0dip" />
+</merge>

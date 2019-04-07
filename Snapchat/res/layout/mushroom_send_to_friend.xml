@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.StackingLayout android:orientation="horizontal" android:id="@id/item" android:background="@drawable/send_to_item_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/create_chat_item_height" android:paddingStart="10.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/selector" android:visibility="gone" android:layout_width="@dimen/create_chat_icon_size" android:layout_height="@dimen/create_chat_icon_size" android:src="@drawable/create_chat_check" android:scaleType="centerInside" android:layout_centerVertical="true" app:layout_affinity="startHorizontal" app:layout_gravity="center_vertical" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/friendmoji" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="6.0dip" app:layout_affinity="endHorizontal" app:layout_gravity="center_vertical" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="10.0dip" app:layout_affinity="top" app:layout_gravity="start">
+        <com.snap.ui.view.SnapFontTextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@android:color/black" android:gravity="left" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <com.snap.ui.view.SnapFontTextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@color/dark_grey" android:gravity="left" android:id="@id/subtext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+</com.snap.ui.view.StackingLayout>

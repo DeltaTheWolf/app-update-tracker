@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gallery_reconfirm_passcode_container" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout android:id="@id/top_panel" custom:topPaddingStatusBar="true" style="@style/MemoriesPageHeader">
+        <ImageView android:id="@id/top_panel_back_button" android:src="@drawable/gallery_red_back_arrow" style="@style/GalleryPanelBackButton" />
+        <TextView android:id="@id/top_panel_title" android:text="@string/gallery_confirm_passcode" style="@style/GalleryPanelTitleWithBackButton" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/gallery_private_help_icon" android:layout_width="@dimen/gallery_private_help_icon_size" android:layout_height="@dimen/gallery_private_help_icon_size" android:layout_marginRight="@dimen/default_gap_1_5x" android:src="@drawable/profile_question_mark_icon_pressed" android:layout_marginEnd="@dimen/default_gap_1_5x" />
+    </com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout>
+    <TextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/gallery_grey_text" android:gravity="center" android:text="@string/gallery_private_passcode_confirm_header" style="@style/GalleryPrivateTextBlock" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/gallery_private_passcode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery_passcode" style="@style/GalleryPrivateLightText" />
+        <TextView android:textSize="@dimen/gallery_private_passcode_text_size" android:textStyle="bold" android:gravity="center" android:id="@id/gallery_private_passcode_text" style="@style/GalleryPrivateTextBlock" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/confirm_passcode_radio_button" android:layout_marginBottom="@dimen/gallery_passphrase_confirm_radio_bottom" style="@style/GalleryRadioButtonBlock">
+        <ImageView style="@style/GalleryRadioButtonCircle" />
+        <TextView android:text="@string/gallery_private_passcode_confirm_text" style="@style/GalleryRadioButtonText" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/gallery_passcode_continue_button_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gallery_red_button_bottom_position">
+        <Button android:enabled="false" android:layout_gravity="center" android:id="@id/gallery_passcode_continue_button" android:layout_marginTop="0.0dip" android:text="@string/memories_button_continue_text" style="@style/GalleryRedButton" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/gallery_passcode_progress_bar" android:visibility="gone" android:layout_width="@dimen/alert_dialog_button_height" android:layout_height="@dimen/alert_dialog_button_height" />
+    </FrameLayout>
+</LinearLayout>

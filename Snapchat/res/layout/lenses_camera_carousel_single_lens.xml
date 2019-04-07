@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.carousel.SingleLensCarouselView android:id="@id/lenses_camera_carousel_single_lens_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="bottom|center" android:layout_width="@dimen/lens_camera_carousel_single_lens_mode_size" android:layout_height="@dimen/lens_camera_carousel_single_lens_mode_size" android:layout_margin="@dimen/lens_camera_carousel_single_lens_mode_item_margin" layout="@layout/lenses_camera_carousel_item_view" />
+    <TextView android:textSize="@dimen/lens_loading_overlay_text_size" android:textColor="@color/lens_loading_overlay_text" android:gravity="center" android:id="@id/lens_loading_overlay_view" android:background="@color/lens_loading_overlay_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lens_loading" />
+</com.snap.lenses.camera.carousel.SingleLensCarouselView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/title_underline" android:background="@color/light_grey" android:layout_width="@dimen/memories_saving_destination_dialog_title_underline" android:layout_height="@dimen/single_dp" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery_description" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery_saving_options_description_save_space" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/selection_menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="center" android:id="@id/lenses_bitmoji_create_button_spinner_stub" android:layout="@layout/lenses_bitmoji_create_button_spinner" android:inflatedId="@id/lenses_bitmoji_create_button_spinner" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/lenses_bitmoji_popup_button_text" android:gravity="center" android:layout_gravity="center" android:id="@id/lenses_bitmoji_create_button_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bitmoji_create" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+</merge>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/signup_verify_phone_page" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.identity.loginsignup.ui.view.ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout style="@style/LoginSignupPageContainer">
+                <com.snap.ui.view.SnapFontTextView android:text="@string/signup_verify_phone_title" style="@style/LoginSignupPageTitle" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityPageDescription" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/alt_text" android:text="@string/signup_phone_alt_code_over_call" style="@style/IdentityLinkText" />
+                <com.snap.ui.view.SnapFontTextView android:text="@string/signup_verify_phone_hint" style="@style/IdentityFieldHint" />
+                <com.snap.identity.api.sharedui.VerificationCodeEditTextView android:textSize="@dimen/text_size_title" android:textColor="@color/transparent" android:id="@id/code_field" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:cursorVisible="false" android:maxLines="1" android:maxLength="6" android:inputType="number" android:layout_marginStart="@dimen/default_gap" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/error_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityFieldError" />
+            </LinearLayout>
+        </com.snap.identity.loginsignup.ui.view.ScrollView>
+        <com.snap.identity.api.sharedui.SubmitResendButton android:id="@id/continue_button" style="@style/LoginSignupButton" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="start|center|top" android:id="@id/back_button" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <ImageView android:layout_gravity="start|center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:src="@drawable/medium_grey_mirrorable_navigation_back_arrow" android:layout_marginStart="@dimen/default_gap" />
+    </FrameLayout>
+</FrameLayout>

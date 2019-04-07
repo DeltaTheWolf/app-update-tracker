@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/discount_code_fragment" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/marco_polo_nav_title_bar" layout="@layout/marco_polo_nav_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/discount_code_form" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider_off_white" android:layout_below="@id/marco_polo_nav_title_bar" android:showDividers="middle" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap">
+        <com.snap.payments.lib.views.FloatLabelLayout android:layout_width="fill_parent" style="@style/marco_polo_float_label_text_field">
+            <EditText android:textSize="@dimen/text_size_small" android:id="@id/marco_polo_discount_edit_text" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:hint="@string/marco_polo_checkout_discount_code" android:maxLines="1" android:inputType="text" />
+        </com.snap.payments.lib.views.FloatLabelLayout>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/error_red" android:gravity="center" android:id="@id/discount_code_remove_button" android:paddingTop="@dimen/default_gap_half" android:paddingBottom="@dimen/default_gap_half" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:text="@string/marco_polo_remove_discount_code" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/error_red" android:gravity="center" android:id="@id/marco_polo_discount_code_error_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:minLines="1" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap" />
+    </LinearLayout>
+    <include layout="@layout/payments_loading_bar" />
+</RelativeLayout>

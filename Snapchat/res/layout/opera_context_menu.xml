@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/opera_context_menu_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/opera_context_menu_header" android:layout_width="fill_parent" android:layout_height="@dimen/context_menu_header_height" android:paddingStart="@dimen/opera_context_menu_default_margin" android:paddingEnd="@dimen/opera_context_menu_default_margin"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/opera_context_menu_search_icon_view" android:layout_width="19.0dip" android:layout_height="30.0dip" android:src="@drawable/opera_search_display_icon" android:scaleType="centerCrop" android:layout_marginEnd="6.0dip" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:id="@id/opera_context_menu_header_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opera_context_menu_header_title_primary_text" />
+            <com.snap.ui.view.emoji.SnapEmojiTextView android:textSize="@dimen/text_size_default" android:id="@id/opera_context_menu_header_emoji" android:paddingLeft="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@id/opera_context_menu_header_secondary_text" android:text="" style="@style/opera_context_menu_header_title_secondary_text" />
+    </LinearLayout>
+</FrameLayout>

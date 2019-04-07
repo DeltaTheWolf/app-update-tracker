@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/map_pulldown_tooltip_foreground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/map_pulldown_tooltip_text" android:textAlignment="center" custom:scFontWeight="bolder" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="12.0sp" android:textColor="@color/white_fifty_opacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/map_pulldown_tooltip_subtext" android:textAlignment="center" custom:scFontWeight="bolder" />
+    <FrameLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/map_tooltip_height">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/map_pulldown_tooltip_arrow" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/map_pulldown_tooltip_arrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/map_pulldown_tooltip_arrow" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/map_pulldown_tooltip_arrow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/map_pulldown_tooltip_arrow" />
+    </FrameLayout>
+</LinearLayout>

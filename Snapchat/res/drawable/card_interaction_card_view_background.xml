@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <stroke android:width="@dimen/default_gap_quarter" android:color="@android:color/white" />
+    <padding android:left="@dimen/default_gap_quarter" android:top="@dimen/default_gap_quarter" android:right="@dimen/default_gap_quarter" android:bottom="@dimen/default_gap_quarter" />
+    <corners android:topLeftRadius="@dimen/default_gap" android:topRightRadius="@dimen/default_gap" android:bottomLeftRadius="@dimen/default_gap" android:bottomRightRadius="@dimen/default_gap" />
+</shape>

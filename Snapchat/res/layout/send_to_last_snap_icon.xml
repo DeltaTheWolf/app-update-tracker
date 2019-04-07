@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.messaging.sendto.internal.ui.view.AnimatedRoundedImageView android:id="@id/last_snap_button_icon" android:layout_width="@dimen/send_to_bf_avatar_size" android:layout_height="@dimen/send_to_bf_avatar_size" android:src="@drawable/send_to_last_recipients_button_icon" android:scaleType="centerCrop" android:layout_marginStart="4.0dip" app:isCircular="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.snap.messaging.sendto.internal.ui.view.AnimatedRoundedImageView android:id="@id/selected_icon" android:visibility="gone" android:layout_width="@dimen/send_to_stories_thumbnail_icon_size" android:layout_height="@dimen/send_to_stories_thumbnail_icon_size" android:src="@drawable/send_to_stories_cell_indicator_checkmark" android:scaleType="centerCrop" app:isCircular="true" app:layout_constraintEnd_toEndOf="@id/last_snap_button_icon" app:layout_constraintTop_toTopOf="@id/last_snap_button_icon" />
+</android.support.constraint.ConstraintLayout>

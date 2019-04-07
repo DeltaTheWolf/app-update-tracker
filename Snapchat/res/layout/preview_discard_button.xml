@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center|left|top" android:id="@id/preview_back_discard_button" android:background="@android:color/transparent" android:paddingLeft="@dimen/snap_preview_discard_button_padding_start" android:paddingTop="@dimen/snap_preview_discard_button_padding_start" android:paddingRight="@dimen/snap_preview_discard_button_padding_start" android:paddingBottom="@dimen/snap_preview_discard_button_padding_start" android:layout_width="@dimen/discard_button_image_size" android:layout_height="@dimen/discard_button_image_size" android:src="@drawable/preview_discard" android:scaleType="fitCenter" />
+    <ViewStub android:layout_gravity="center|left|top" android:id="@id/preview_from_gallery_back_button_stub" android:layout="@layout/preview_from_gallery_back_button_layout" android:inflatedId="@id/preview_from_gallery_back_button" android:layout_width="wrap_content" android:layout_height="@dimen/snap_preview_discard_button_size" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale" style="@style/CardFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/CardStyleError" android:id="@id/error_message_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/context_error_message" />
+    <TextView android:textAppearance="@style/CardStyleError" android:gravity="center" android:id="@id/retry_message_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/context_retry_message" android:drawablePadding="10.0dip" android:textAllCaps="true" android:drawableStart="@drawable/retry_arrow" />
+</LinearLayout>

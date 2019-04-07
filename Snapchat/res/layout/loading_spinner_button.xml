@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/loading_spinner_button_min_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/loading_spinner_button_spinner_stub" android:layout="@layout/loading_spinner_button_spinner_layout" style="@style/loading_spinner_button_inner_icon" />
+    <ViewStub android:id="@id/loading_spinner_button_checked_state_icon_stub" android:layout="@layout/loading_spinner_button_checked_icon_layout" style="@style/loading_spinner_button_inner_icon" />
+    <ImageView android:id="@id/loading_spinner_button_unchecked_state_icon" style="@style/loading_spinner_button_inner_icon" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/loading_spinner_button_text" style="@style/loading_spinner_button_inner_button" />
+</LinearLayout>

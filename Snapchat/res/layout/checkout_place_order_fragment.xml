@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7" />
+    <ImageView android:id="@id/place_order_animation" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/marco_polo_place_order_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_3x" android:layout_marginEnd="@dimen/default_gap_3x" layout="@layout/marco_polo_checkout_success_dialog" />
+</RelativeLayout>

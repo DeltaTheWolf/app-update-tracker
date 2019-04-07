@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/page_loading_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/stickers_sticker_picker_sticker_progressbar" />
+    </FrameLayout>
+    <com.snap.stickers.ui.views.StickersRecyclerView android:id="@id/stickers_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

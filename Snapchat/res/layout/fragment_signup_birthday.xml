@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/birthday_page" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.identity.loginsignup.ui.view.ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout style="@style/LoginSignupPageContainer">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/birthday_form_title" android:text="@string/signup_birthday_prompt" style="@style/LoginSignupPageTitle" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/birthday_form_hint" android:text="@string/signup_birthday_hint" style="@style/IdentityFieldHint" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/birthday_form_field" android:focusable="false" style="@style/IdentityField" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/signup_error_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityFieldError" />
+            </LinearLayout>
+        </com.snap.identity.loginsignup.ui.view.ScrollView>
+        <com.snap.identity.api.sharedui.ProgressButton android:id="@id/continue_button" style="@style/LoginSignupButton" />
+        <DatePicker android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/birthday_date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minDate="01/01/1900" android:maxDate="12/31/2100" android:calendarViewShown="false" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="start|center|top" android:id="@id/back_button" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <ImageView android:layout_gravity="start|center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:src="@drawable/medium_grey_mirrorable_navigation_back_arrow" android:layout_marginStart="@dimen/default_gap" />
+    </FrameLayout>
+</FrameLayout>

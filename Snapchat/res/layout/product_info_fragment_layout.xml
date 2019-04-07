@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:focusable="true" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.commerce.lib.views.ProductInfoImagesView android:id="@id/product_info_images_view" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/product_info_fragment_close_view" android:paddingBottom="@dimen/default_gap_8x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/default_gap_8x">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/checkout_close_image_side_length" android:layout_height="@dimen/checkout_close_image_side_length" android:layout_marginTop="@dimen/default_gap_3_5x" android:src="@drawable/marco_polo_close" android:layout_marginStart="@dimen/default_gap_2_5x" />
+    </RelativeLayout>
+    <com.snap.commerce.lib.views.CartButton android:id="@id/checkout_bag_btn" android:layout_width="@dimen/checkout_corner_btn_side_length" android:layout_height="@dimen/checkout_corner_btn_side_length" android:layout_marginTop="@dimen/default_gap" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <com.snap.commerce.lib.views.ProductCardLayout android:id="@id/product_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.snap.commerce.lib.views.CartCheckoutReview android:id="@id/checkout_cart_review_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/item_details_view_pager_fragment_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</RelativeLayout>

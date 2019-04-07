@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/detailcardview" android:paddingTop="@dimen/context_story_vertical_padding" android:paddingBottom="@dimen/context_story_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/context_story_min_height" android:layoutDirection="locale" android:paddingStart="@dimen/context_story_horizontal_padding" android:paddingEnd="@dimen/context_story_horizontal_padding" style="@style/CardFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.views.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/card_image_view" android:visibility="visible" android:layout_width="@dimen/context_story_thumbnail_size" android:layout_height="@dimen/context_story_thumbnail_size" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/context_story_horizontal_padding" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/detailcard_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" style="@style/CardStyleCategory" />
+        <TextView android:ellipsize="end" android:id="@id/detailcard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:includeFontPadding="false" style="@style/CardStyleDetailPrimaryText" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ratings_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

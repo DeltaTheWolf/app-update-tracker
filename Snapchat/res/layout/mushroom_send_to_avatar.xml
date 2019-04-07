@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.avatar.AvatarView android:id="@id/thumbnail" android:layout_width="@dimen/send_to_avatar_size" android:layout_height="@dimen/send_to_avatar_size" />
+    <ViewStub android:id="@id/selected_icon_view_stub" android:visibility="gone" android:layout="@layout/selected_icon" android:inflatedId="@id/selected_icon" android:layout_width="@dimen/send_to_stories_thumbnail_icon_size" android:layout_height="@dimen/send_to_stories_thumbnail_icon_size" />
+</android.support.constraint.ConstraintLayout>

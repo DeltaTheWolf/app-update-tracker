@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/marco_polo_nav_title_bar" layout="@layout/marco_polo_nav_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:layout_below="@id/marco_polo_nav_title_bar">
+        <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/shipping_options_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.snap.ui.view.SnapFontTextView android:id="@id/shipping_options_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/marco_polo_nav_title_bar" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/legacy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/dummy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

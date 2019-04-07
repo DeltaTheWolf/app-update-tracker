@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/find_friends_splash" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/dark_grey" android:gravity="end" android:layout_gravity="end|center|top" android:id="@id/skip_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/signup_skip_find_friends" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x" />
+    <com.snap.identity.loginsignup.ui.view.ScrollView android:id="@id/scrollable_content_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout style="@style/LoginSignupPageContainer">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="@dimen/ui_element_unit" android:layout_height="@dimen/ui_element_unit" android:scaleType="fitCenter" />
+                <com.snap.ui.view.SnapFontTextView android:textColor="@color/dark_grey" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_friends_loading_tips" />
+            </LinearLayout>
+            <com.snap.ui.view.SnapFontTextView android:id="@id/find_friends_splash_title" android:text="@string/signup_find_your_friends" style="@style/LoginSignupPageTitle" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/regular_charcoal" android:id="@id/add_friends_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_find_your_friends_description" style="@style/IdentityPageDescription" />
+            <ImageView android:layout_gravity="center" android:id="@id/find_friends_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:src="@drawable/reg_add_friends_illustration" />
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:id="@id/learn_about_pp" android:paddingTop="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_find_your_friends_pp_exp" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" style="@style/IdentityPageDescription" />
+        </LinearLayout>
+    </com.snap.identity.loginsignup.ui.view.ScrollView>
+    <com.snap.identity.api.sharedui.ProgressButton android:id="@id/continue_button" style="@style/LoginSignupButton" />
+</LinearLayout>

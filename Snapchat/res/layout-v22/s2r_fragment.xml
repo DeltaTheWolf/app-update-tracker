@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/s2r_header" android:background="@color/regular_green" android:padding="@dimen/default_gap_quarter" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/white" custom:headerTitle="@string/s2r_title" custom:includeStatusBarHeight="true" custom:showBackArrow="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/s2r_description_and_attachment_height" android:layout_margin="@dimen/default_gap">
+                <EditText android:gravity="start|center|top" android:id="@id/s2r_description" android:background="@drawable/s2r_description_background" android:padding="@dimen/default_gap" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/s2r_description_hint" android:maxLength="1000" android:layout_weight="0.7" android:inputType="textMultiLine" android:textCursorDrawable="@drawable/s2r_cursor_green" android:layout_marginEnd="@dimen/default_gap" android:importantForAutofill="no" />
+                <FrameLayout android:id="@id/s2r_attachment_view_frame_layout" android:background="@drawable/s2r_description_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.3">
+                    <com.snap.shake2report.ui.attachmentview.AttachmentView android:id="@id/s2r_attachment_view_layout" android:padding="@dimen/default_gap_three_quarters" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <android.support.v4.view.ViewPager android:id="@id/s2r_fragment_attachments_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </com.snap.shake2report.ui.attachmentview.AttachmentView>
+                </FrameLayout>
+            </LinearLayout>
+            <com.snap.shake2report.ui.featureselector.S2RAdditionalInfoView android:id="@id/s2r_additional_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap">
+                <include layout="@layout/s2r_internal_info_collector_view" />
+                <include layout="@layout/s2r_external_info_collector_view" />
+            </com.snap.shake2report.ui.featureselector.S2RAdditionalInfoView>
+            <View android:id="@id/bug_report_fragment_bottom_separator_view" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/s2r_separator_height" android:layout_marginTop="@dimen/default_gap_three_quarters" />
+            <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/s2r_submit_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/s2r_submit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_1_5x" android:text="@string/s2r_submit" custom:layout_constraintHorizontal_chainStyle="packed" custom:layout_constraintLeft_toLeftOf="parent" custom:layout_constraintRight_toRightOf="parent" style="@style/s2r_submit_button_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

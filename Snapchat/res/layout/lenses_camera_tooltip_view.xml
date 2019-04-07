@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.onboarding.tooltip.camera.DefaultTooltipView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/lens_camera_onboarding_tooltip_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/lenses_tooltip_text_view" android:background="@drawable/lenses_onboarding_tooltip_black_background" android:padding="@dimen/lens_camera_onboarding_tooltip_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.snap.lenses.camera.onboarding.tooltip.camera.DefaultTooltipView>

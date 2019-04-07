@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/snap_kit_settings_connected_app_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="fill_parent" android:layout_height="@dimen/snap_kit_connected_app_item_height" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_1_5x"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/connected_app_icon" android:layout_width="@dimen/connected_app_icon_size" android:layout_height="@dimen/connected_app_icon_size" android:layout_marginStart="@dimen/default_gap_three_quarters" android:layout_marginEnd="@dimen/default_gap_three_quarters" custom:corner_radius="@dimen/snap_kit_connected_app_icon_corner_radius" />
+        <TextView android:id="@id/connected_app_title_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_gap_three_quarters" android:layout_marginEnd="@dimen/default_gap_three_quarters" style="@style/new_settings_item_name" />
+        <ImageView android:id="@id/connected_app_specific_settings_arrow" android:layout_width="@dimen/snap_kit_connected_app_selector_arrow_width" android:layout_height="@dimen/snap_kit_connected_app_selector_arrow_height" android:src="@drawable/snapcode_manager_list_right_arrow" android:layout_marginStart="@dimen/default_gap_three_quarters" android:layout_marginEnd="@dimen/default_gap" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/report_technical_issue_item" android:padding="@dimen/s2r_feature_container_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textDirection="locale" android:layoutDirection="locale" android:layout_marginEnd="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:customAttr="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/feature_icon" android:layout_width="60.0dip" android:layout_height="100.0dip" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentStart="true" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/text_views" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" android:layout_toEndOf="@id/feature_icon">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/s2r_feature_title_text_size" android:textColor="@color/off_black" android:ellipsize="end" android:id="@id/feature_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentStart="true" customAttr:scFontWeight="regular" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/s2r_feature_description_text_size" android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/feature_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_below="@id/feature_heading" android:layout_centerVertical="true" customAttr:scFontWeight="regular" />
+    </RelativeLayout>
+</RelativeLayout>

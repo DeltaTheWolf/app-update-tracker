@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/send_to_preview_layout" android:background="@drawable/send_to_all_round_corners_background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@id/send_to_preview_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/send_to_preview_default_media_width" android:layout_height="@dimen/send_to_preview_default_media_height" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/default_gap" android:layout_alignParentStart="true">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/send_to_preview_image_view" android:background="@color/regular_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/send_to_preview_loading_spinner" android:visibility="gone" android:layout_width="@dimen/send_to_attachment_loading_spinner_size" android:layout_height="@dimen/send_to_attachment_loading_spinner_size" />
+            <ImageView android:id="@id/laguna_background_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/chat_laguna_video_mask_dark" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontEditText android:id="@id/send_to_preview_text" android:layout_marginStart="@dimen/default_gap_2x" android:layout_toEndOf="@id/send_to_preview_content" android:importantForAutofill="no" style="@style/sendto_attachment_edittext" />
+</RelativeLayout>

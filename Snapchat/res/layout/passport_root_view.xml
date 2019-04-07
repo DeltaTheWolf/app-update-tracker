@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/location_sharing_settings_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomView android:layout_width="fill_parent" android:layout_height="0.0dip" custom:scFixedHeight="0.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/composerParent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14.0dip" />
+        <com.snap.ui.view.ScHeaderView android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerArrowColorScheme="@color/regular_blue" custom:headerColorScheme="@color/passport_header_gray" custom:showBackArrow="true" />
+    </FrameLayout>
+    <com.snapchat.android.framework.ui.views.SoftNavAwareFrameLayout android:layout_gravity="bottom" android:id="@id/navbar_underlay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="1.0" />
+</LinearLayout>

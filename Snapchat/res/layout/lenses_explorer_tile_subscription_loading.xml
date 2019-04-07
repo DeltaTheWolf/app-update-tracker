@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:clickable="true" android:layout_width="@dimen/tile_subscription_lens_loading_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/lens_name" app:layout_constraintDimensionRatio="@string/tile_size_alignment" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/settings_birthday_party" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/sync_contacts_title" android:text="@string/sync_contacts" style="@style/IdentitySettingsItemName" />
+            <com.snap.ui.view.SnapFontTextView android:textColor="@color/off_black" android:id="@id/sync_contacts_description" android:layout_height="wrap_content" android:text="@string/manage_sync_contacts_description" android:paddingEnd="20.0dip" style="@style/IdentitySettingsItemText" />
+        </LinearLayout>
+        <CheckBox android:id="@id/sync_contacts_checkmark" style="@style/IdentitySettingsCheckbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/view_contacts_button" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight">
+        <com.snap.ui.view.SnapFontTextView android:id="@id/view_contacts_button_title" android:text="@string/view_contacts" style="@style/IdentitySettingsItemName" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/dark_blue" android:id="@id/delete_contacts_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage_contacts_delete" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/item" android:background="@drawable/background_bottom_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_friends_elevation" android:layout_marginRight="@dimen/add_friends_elevation" android:elevation="@dimen/add_friends_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/ff_view_more_font_size" android:textColor="@color/item_subtitle_color" android:layout_gravity="center" android:paddingTop="@dimen/ff_view_more_top_margin" android:paddingBottom="@dimen/ff_view_more_top_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_more" android:fontFamily="@string/typeface_avenir_next_demi_bold" />
+</FrameLayout>

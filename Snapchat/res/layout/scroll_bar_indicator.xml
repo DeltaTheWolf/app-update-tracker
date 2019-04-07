@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scroll_bar_indicator_thumb" android:layout_width="@dimen/scroll_bar_indicator_width" android:layout_height="@dimen/scroll_bar_indicator_height" android:src="@drawable/scroll_bar_indicator_background" android:layout_alignEnd="@id/scroll_bar_indicator_text" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/scroll_bar_indicator_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/scroll_bar_indicator_text" android:background="@drawable/scroll_bar_indicator_text_background" android:visibility="invisible" android:layout_width="@dimen/scroll_bar_indicator_text_width_long" android:layout_height="@dimen/scroll_bar_indicator_height" android:maxLines="1" android:textAllCaps="true" android:textDirection="locale" android:paddingStart="@dimen/scroll_bar_indicator_text_padding" android:paddingEnd="@dimen/scroll_bar_indicator_text_padding" />
+</RelativeLayout>

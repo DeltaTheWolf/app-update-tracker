@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_enable_displaying_notifications_view" android:visibility="gone" style="@style/checkbox_setting_container">
+        <com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notification_settings_enable_displaying_notifications_textview" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/settings_notification_system_enable_yes_button" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+        <CheckBox android:id="@id/notification_settings_enable_displaying_notifications_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include android:id="@id/notification_settings_enable_displaying_notifications_view_separator" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_friend_story_view" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_friend_story_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_stories_header" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_friend_story_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_stories_body" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_friend_story_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_friend_suggestion_view" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_friend_suggestion_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_friend_suggestion_header" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_friend_suggestion_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_friend_suggestion_body" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_friend_suggestion_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include android:id="@id/notification_settings_user_tagging_view_separator" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_user_tagging_view" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_user_tagging_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_user_tagging" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_user_tagging_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_user_tagging_description" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_user_tagging_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_memories_view" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_memories_text_view" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_memories_header" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_memories_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_memories_body" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_memories_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_friends_birthday_view" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_friends_birthday_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_friends_birthday_header" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_friends_birthday_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_friends_birthday_body" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_friends_birthday_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_message_reminder_view" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_message_reminder_text_view" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_message_reminder_header" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_message_reminder_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_message_reminder_body" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_message_reminder_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_creative_tools_view" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_creative_tools_text_view" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_creative_tools_header" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_creative_tools_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_creative_tools_body" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_creative_tools_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include android:id="@id/notification_settings_wake_screen_view_separator" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_wake_screen_view" android:visibility="gone" style="@style/checkbox_setting_container">
+        <com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notification_settings_wake_screen_textview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_notification_wake_screen" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+        <CheckBox android:id="@id/notification_settings_wake_screen_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include android:id="@id/notification_settings_led_view_separator" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_led_view" android:visibility="gone" style="@style/checkbox_setting_container">
+        <com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notification_settings_led_textview" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/settings_notification_led" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+        <CheckBox android:id="@id/notification_settings_led_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include android:id="@id/notification_settings_vibration_view_separator" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_vibration_view" android:visibility="gone" style="@style/checkbox_setting_container">
+        <com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notification_settings_vibration_textview" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/settings_notification_vibration" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+        <CheckBox android:id="@id/notification_settings_vibration_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include android:id="@id/notification_settings_sound_view_separator" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_sound_view" android:visibility="gone" style="@style/checkbox_setting_container">
+        <com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notification_settings_sound_textview" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/settings_notification_sound" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+        <CheckBox android:id="@id/notification_settings_sound_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include android:id="@id/notification_settings_ring_view_separator" android:visibility="gone" layout="@layout/list_separator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_settings_ring_view" android:visibility="gone" style="@style/checkbox_setting_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_ring_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_ring" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/notification_settings_ring_description_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="@string/settings_notification_ring_description" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <CheckBox android:id="@id/notification_settings_ring_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <include layout="@layout/list_separator" />
+    <LinearLayout android:orientation="vertical" android:id="@id/notifications_settings_story_notifications" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:id="@id/stories_i_follow_header" android:text="@string/settings_notification_stories_i_follow_header" style="@style/settings_section_header" />
+        <include layout="@layout/settings_header_separator" />
+        <com.snap.ui.view.SnapFontTextView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/manage_story_notifications_textview" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_height="0.0dip" android:text="@string/settings_notification_stories_manage_notifications" android:layout_weight="1.0" style="@style/new_settings_item_outer" />
+    </LinearLayout>
+</LinearLayout>

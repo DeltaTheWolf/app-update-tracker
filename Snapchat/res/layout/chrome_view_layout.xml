@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/chrome_view_name_and_emoji_root" android:padding="@dimen/action_menu_button_width" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/chrome_close_button_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/chrome_down_button" android:layout_width="@dimen/down_button_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/down_button_margin" android:layout_marginRight="@dimen/down_button_margin" android:src="@drawable/down_button" />
+        <View android:layout_gravity="center_vertical" android:id="@id/chrome_down_button_separator" android:background="@color/white" android:layout_width="@dimen/down_button_line_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/down_button_vertical_margin_large" android:layout_marginBottom="@dimen/down_button_vertical_margin_normal" android:alpha="@dimen/down_button_separator_opacity" android:layout_marginEnd="@dimen/down_button_line_margin" />
+    </LinearLayout>
+    <com.snapchat.android.framework.ui.views.openlayout.OpenLayout android:layout_gravity="center_vertical" android:id="@id/chrome_icon_container" android:background="@drawable/loading_background_circle" android:layout_width="@dimen/chrome_icon_size" android:layout_height="@dimen/chrome_icon_size" android:layout_marginRight="@dimen/default_gap_half">
+        <ImageView android:id="@id/chrome_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/chrome_icon_progress_bar" android:layout_width="@dimen/chrome_progress_icon_size" android:layout_height="@dimen/chrome_progress_icon_size" />
+    </com.snapchat.android.framework.ui.views.openlayout.OpenLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="start|center" android:id="@id/chrome_view_name_and_emoji" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_half" android:layout_marginEnd="@dimen/default_gap_6x">
+            <ImageView android:id="@id/chrome_search_icon_view" android:layout_width="14.0dip" android:layout_height="22.0dip" android:src="@drawable/opera_search_display_icon" android:scaleType="centerCrop" android:layout_marginStart="@dimen/default_gap_half" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:ellipsize="end" android:id="@id/chrome_view_display_name" android:maxLines="1" android:paddingStart="@dimen/default_gap_half" android:paddingEnd="@dimen/default_gap" style="@style/chrome_text" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:id="@id/chrome_view_emoji" style="@style/chrome_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/chrome_subtitle_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/chrome_subtitle_icon" android:layout_width="@dimen/chrome_subtitle_icon_size" android:layout_height="@dimen/chrome_subtitle_icon_size" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="-5.0dip" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_timestamp" android:ellipsize="end" android:id="@id/chrome_view_subtitle" android:paddingLeft="@dimen/default_gap" android:paddingRight="@dimen/default_gap" android:layout_marginTop="@dimen/chrome_secondary_text_top_margin" android:maxLines="1" android:includeFontPadding="false" style="@style/chrome_subtext" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/context_menu_chrome" android:paddingLeft="@dimen/default_gap" android:paddingRight="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/chrome_secondary_text_top_margin">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_timestamp" android:id="@id/chrome_view_location" android:includeFontPadding="false" android:drawablePadding="@dimen/default_gap_half" style="@style/chrome_text" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_timestamp" android:id="@id/chrome_view_timestamp" android:includeFontPadding="false" android:drawablePadding="@dimen/default_gap_half" style="@style/chrome_subtext" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

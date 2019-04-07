@@ -1,0 +1,30 @@
+<DependencyGraph DependencyGraph.HasBuiltInBlur="False">
+    <FaceDetectorStage Output="Faces" Frame.SrcImageId="-1"/>
+    
+    <TrackingStage Output="FaceLandmarks68Unblurred" Frame.SrcImageId="-1" TrackingSession.DstShapeId="0" DependsOn="Faces" RegressorPath="FaceLandmarks68Regressor.bin" ConfidenceThreshold="0.49" InitializeAsync="True" />
+    
+    <ShapeMotionBlurStage TrackingSession.SrcShapeId="3" TrackingSession.DstShapeId="0" Output="FaceLandmarks68BlurredAU" DependsOn="FaceLandmarks68Unblurred" Units="ActionUnit">
+        <QuadRegExpMovingAverage Alpha="0.45" Beta="3.5"/>
+    </ShapeMotionBlurStage>
+    
+    <ShapeMotionBlurStage TrackingSession.SrcShapeId="0" TrackingSession.DstShapeId="0" Output="FaceLandmarks68BlurredAUContour" DependsOn="FaceLandmarks68BlurredAU" BlurLandmarks="0 - 17">
+        <QuadRegExpMovingAverage Alpha="0.4" Beta="5.0"/>
+    </ShapeMotionBlurStage>
+    
+    <ShapeMotionBlurStage TrackingSession.SrcShapeId="0" TrackingSession.DstShapeId="0" Output="FaceLandmarks68" DependsOn="FaceLandmarks68BlurredAUContour" Units="LogScale|Angle" InitializeAsync="True" >
+        <LinRegExpMovingAverage Alpha="0.75"/>
+    </ShapeMotionBlurStage>
+    
+    <TrackingStage Output="EyeLandmarks" Frame.SrcImageId="-1" TrackingSession.SrcShapeId="0" TrackingSession.DstShapeId="0" DependsOn="FaceLandmarks68" RegressorPath="EyesRegressor.bin" InitializeAsync="True" />
+    <TrackingStage Output="Candide" Frame.SrcImageId="-1" TrackingSession.DstShapeId="1" DependsOn="FaceLandmarks68" RegressorPath="CandideRegressor.bin" InitializeAsync="True" />
+    <TrackingStage Output="CandidePerspective" Frame.SrcImageId="-1" TrackingSession.DstShapeId="2" DependsOn="FaceLandmarks68" RegressorPath="CandidePerspectiveRegressor.bin" InitializeAsync="True" />
+    
+    <PipelineStage Output="FaceLandmarks68Unblurred" />
+    <PipelineStage Output="FaceLandmarks68" />
+    <PipelineStage Output="FaceLandmarks98" />
+    <PipelineStage Output="EyeLandmarks" />
+    <PipelineStage Output="Candide" />
+    <PipelineStage Output="CandidePerspective" />
+    <PipelineStage Output="FaceMesh" />
+</DependencyGraph>
+

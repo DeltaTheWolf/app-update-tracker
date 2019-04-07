@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/hova_page" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/camera_touch_receiver" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/camera_front_facing_flash" android:background="#ccffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/neon_header_layout" android:paddingTop="@dimen/vertical_container_padding_top" style="@style/hova_header_vertical_container">
+        <ImageView android:id="@id/camera_flip_button" android:src="@drawable/camera_flip_icon" android:contentDescription="@string/flip_camera" style="@style/hova_header_icon_vertical_base.normal_margin" />
+        <ImageView android:id="@id/camera_flash_button" android:src="@drawable/camera_flash_drawable" android:contentDescription="@string/camera_flash_switch" style="@style/hova_header_icon_vertical_base.normal_margin" />
+        <ViewStub android:id="@id/camera_night_mode_button_stub" android:layout="@layout/camera_night_mode_button_layout" style="@style/hova_header_icon_vertical_base.normal_margin" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/capture_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/portrait_mode_hint_view_stub" android:layout="@layout/portrait_mode_hint_layout" android:inflatedId="@id/portrait_mode_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/portrait_mode_hint_margin_bottom" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/countdown_animation_view_stub" android:layout="@layout/countdown_animation_layout" android:inflatedId="@id/countdown_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/countdown_timer_stacked_camera_margin_bottom" />
+        <com.snap.ui.view.TakeSnapButton android:layout_gravity="bottom|center" android:id="@id/camera_capture_button" android:padding="@dimen/hova_nav_default_camera_button_padding" android:focusable="true" android:clickable="true" android:layout_width="@dimen/hova_nav_default_camera_button_size" android:layout_height="@dimen/hova_nav_default_camera_button_size" android:layout_marginTop="@dimen/hova_nav_default_camera_button_margin_top" android:layout_marginBottom="@dimen/hova_nav_stacked_camera_button_margin_bottom" />
+        <ViewStub android:id="@id/start_button_view_stub" android:visibility="gone" android:inflatedId="@id/start_button" android:layout_marginBottom="@dimen/hova_nav_start_button_stacked_margin_bottom" style="@style/hova_start_button" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/camera_hands_free_recording_lock" android:layout="@layout/hands_free_recording_layout" android:inflatedId="@id/camera_hands_free_recording_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/batch_capture_review_edit_button_stub" android:layout="@layout/batch_capture_review_edit_button_layout" android:inflatedId="@id/batch_capture_review_edit_button" android:layout_width="wrap_content" android:layout_height="@dimen/camera_mode_batch_capture_review_edit_button_height" android:layout_marginBottom="@dimen/camera_mode_batch_capture_review_edit_button_margin_bottom" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/camera_left_back_button" android:visibility="gone" style="@style/neon_header_back.white.camera" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/camera_right_back_button" android:visibility="gone" android:rotationY="180.0" style="@style/neon_header_back.white.camera" />
+</FrameLayout>

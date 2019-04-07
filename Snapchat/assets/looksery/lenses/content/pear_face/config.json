@@ -1,0 +1,112 @@
+{
+	"coreFilters": [{
+					"coreFilterId": "Stretch",
+					"parameters": [{
+									"id": "Feature0",
+									"value": "1"
+									},
+									{
+									"id": "morphingImageAddress",
+									"value": "/"
+									},
+									{
+									"id": "deformationName",
+									"value": "Stretch0"
+									},
+									{
+									"id": "stepSize",
+									"value": "16"
+									},
+									{
+									"id": "morphingIntensity",
+									"value": "0"
+									},
+									{
+									"id": "useFloatTextureForShifts",
+									"value": "1"
+									},
+									{
+									"id": "useCPUForShifts",
+									"value": "1"
+									},
+									{
+									"id": "faceIndex",
+									"value": "0"
+									},
+									{
+									"id": "animationValues",
+									"value": "/scale"
+									}]
+					},
+					{
+					"coreFilterId": "SoftSkin",
+					"parameters": [{
+									"id": "step",
+									"value": "6"
+									},
+									{
+									"id": "radius",
+									"value": "3"
+									},
+									{
+									"id": "intensity",
+									"value": "0.05"
+									},
+									{
+									"id": "addNoise",
+									"value": "1"
+									},
+									{
+									"id": "applyToWholeImage",
+									"value": "0"
+									},
+									{
+									"id": "faceIndex",
+									"value": "0"
+									},
+									{
+									"id": "animationValues",
+									"value": "/transparency"
+									}]
+					},
+					{
+					"coreFilterId": "CustomShader",
+					"parameters": [{
+									"id": "m2",
+									"value": "vec2(0.5, 0)"
+									},
+									{
+									"id": "liqPower",
+									"value": "2"
+									},
+									{
+									"id": "radius",
+									"value": "1.12"
+									},
+									{
+									"id": "dfactor",
+									"value": "771"
+									},
+									{
+									"id": "sfactor",
+									"value": "770"
+									},
+									{
+									"id": "useBlend",
+									"value": "0"
+									},
+									{
+									"id": "shaderPath",
+									"value": "newLiquify.glsl"
+									},
+									{
+									"id": "m1",
+									"value": "vec2(0.5, 0.5)"
+									},
+									{
+									"id": "faceIndex",
+									"value": "0"
+									}]
+					}]
+}
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/section_header_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/subpage_description_text_size" android:textColor="@color/dark_charcoal" android:gravity="center" android:background="@color/transparent" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_me_page_description" android:paddingStart="@dimen/subpage_description_padding_horizontal" android:paddingEnd="@dimen/subpage_description_padding_horizontal" />
+    <RadioGroup android:id="@id/page_option_menu" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/settings_selectable_item_container">
+        <RadioButton android:id="@id/contact_me_everyone" android:layout_width="fill_parent" android:layout_height="@dimen/subpage_item_height" android:button="@null" android:text="@string/settings_everyone" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" style="@style/settings_selectable_item_checkmark" />
+        <RadioButton android:id="@id/contact_me_my_friend" android:layout_width="fill_parent" android:layout_height="@dimen/subpage_item_height" android:button="@null" android:text="@string/settings_my_friend" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" style="@style/settings_selectable_item_checkmark" />
+    </RadioGroup>
+</LinearLayout>

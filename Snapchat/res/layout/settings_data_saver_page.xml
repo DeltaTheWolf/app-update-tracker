@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/data_saver_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/data_saver_textview" android:paddingTop="@dimen/default_gap_quarter" android:paddingBottom="@dimen/default_gap_quarter" android:text="@string/settings_data_saver_header" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/new_settings_item_name" />
+    <TextView android:id="@id/data_saver_description_textview" android:paddingTop="@dimen/default_gap_quarter" android:paddingBottom="@dimen/default_gap_quarter" android:layout_width="0.0dip" android:text="@string/settings_data_saver_sub_header" android:paddingEnd="@dimen/default_gap" app:layout_constraintEnd_toStartOf="@id/data_saver_checkbox" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/data_saver_textview" style="@style/new_settings_item_text" />
+    <CheckBox android:id="@id/data_saver_checkbox" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/data_saver_description_textview" app:layout_constraintTop_toTopOf="parent" style="@style/new_settings_checkbox" />
+</android.support.constraint.ConstraintLayout>

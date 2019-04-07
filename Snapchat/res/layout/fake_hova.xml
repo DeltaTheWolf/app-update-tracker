@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/map_nueva_nav_camera_layout" android:visibility="gone" android:clipChildren="false" android:layout_width="95.0dip" android:layout_height="95.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.TakeSnapButton android:layout_gravity="center" android:id="@id/map_nueva_nav_default_camera_button" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleX="0.7" android:scaleY="0.7" />
+</FrameLayout>

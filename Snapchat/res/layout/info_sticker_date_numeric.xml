@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/numeric_date_filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/info_sticker_numeric_font_size" android:textColor="@color/white" android:id="@id/numeric_date_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" custom:scFontWeight="regular" />
+</FrameLayout>

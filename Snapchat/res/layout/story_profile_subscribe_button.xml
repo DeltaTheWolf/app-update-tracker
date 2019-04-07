@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.button.ScButton android:layout_gravity="center" android:id="@id/story_profile_subscribe_button_view" android:padding="@dimen/default_gap_half" android:layout_width="wrap_content" android:layout_height="@dimen/story_profile_subscribe_button_height" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:minWidth="@dimen/story_profile_subscribe_button_width" custom:scButtonText="@string/subscribe" custom:scButtonTextColor="@color/white" />
+</FrameLayout>

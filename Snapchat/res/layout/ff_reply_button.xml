@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_vertical" android:background="@color/ff_light_grey" android:layout_width="1.0dip" android:layout_height="36.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap_2_25x">
+        <ImageView android:layout_width="@dimen/ff_reply_icon_size" android:layout_height="@dimen/ff_reply_icon_size" android:src="@drawable/ff_feed_reply_button" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="12.0sp" android:textColor="@color/ff_dark_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ff_feed_reply" custom:scFontWeight="bold" />
+    </LinearLayout>
+</LinearLayout>

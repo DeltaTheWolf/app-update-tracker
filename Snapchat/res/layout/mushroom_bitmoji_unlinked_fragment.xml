@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bitmoji_unlinked_page" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navbar_inset">
+        <com.snap.ui.view.ScHeaderView android:id="@id/unlinked_bitmoji_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/bitmoji" custom:showBackArrow="true" custom:showBottomBorder="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/bitmoji_unlinked_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/default_gap">
+                        <TextView android:gravity="center_horizontal" android:id="@id/bitmoji_unlinked_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/bitmoji_intro" android:layout_alignParentTop="true" style="@style/BitmojiExplanationText" />
+                        <ImageView android:id="@id/bitmoji_unlinked_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_gap_4x" android:src="@drawable/settings_bitmoji_link_graphic" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/bitmoji_unlinked_button" android:layout_below="@id/bitmoji_unlinked_explanation" />
+                        <com.snap.bitmoji.ui.settings.view.CreateBitmojiButton android:id="@id/bitmoji_unlinked_button" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="@dimen/default_gap_2x" android:minWidth="@dimen/bitmoji_button_min_width" android:layout_above="@id/bitmoji_unlink_alert" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/text_size_small" android:gravity="center_horizontal" android:id="@id/bitmoji_unlink_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:text="@string/bitmoji_taken_to_bitmoji_app" android:layout_alignParentBottom="true" style="@style/new_settings_item_text" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/bitmoji_unlinked_loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+                    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/bitmoji_link_result_image_loading_spinner" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/default_gap_10x" android:layout_marginBottom="@dimen/default_gap_6x" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/navbar_inset" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

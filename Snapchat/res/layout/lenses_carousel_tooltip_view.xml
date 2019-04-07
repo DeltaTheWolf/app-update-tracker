@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.onboarding.tooltip.carousel.DefaultCarouselTooltipView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tooltip_container_view" layout="@layout/lenses_tooltip_box_view" />
+    <View android:layout_gravity="bottom|center" android:id="@id/swipe_lens_tooltip_anchor_view" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginBottom="110.0dip" android:layout_marginStart="100.0dip" />
+    <View android:layout_gravity="bottom|center" android:id="@id/capture_snap_tooltip_anchor_view" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginBottom="120.0dip" />
+</com.snap.lenses.camera.onboarding.tooltip.carousel.DefaultCarouselTooltipView>

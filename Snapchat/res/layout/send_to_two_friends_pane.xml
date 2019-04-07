@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.view.StackingLayout android:background="@color/sendto_card_background" android:layout_width="fill_parent" android:layout_height="@dimen/send_to_item_height" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingTop="8.0dip" android:clipToPadding="false" android:layout_width="@dimen/send_to_bf_avatar_size" android:layout_height="fill_parent" android:layout_marginStart="4.0dip" app:layout_affinity="startHorizontal"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView android:id="@id/thumbnail" android:layout_width="@dimen/send_to_bf_avatar_size" android:layout_height="@dimen/send_to_bf_avatar_size" />
+        <ViewStub android:layout_gravity="end|center|top" android:id="@id/selected_icon_view_stub" android:visibility="gone" android:layout="@layout/selected_icon" android:inflatedId="@id/selected_icon" android:layout_width="@dimen/send_to_stories_thumbnail_icon_size" android:layout_height="@dimen/send_to_stories_thumbnail_icon_size" android:layout_marginTop="-4.0dip" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/send_to_bestfriend_text_size" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:layout_affinity="top" app:layout_gravity="start" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/send_to_bestfriend_friendmoji_size" android:id="@id/friendmoji" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:layout_affinity="top" app:layout_gravity="start" />
+</com.snap.ui.view.StackingLayout>

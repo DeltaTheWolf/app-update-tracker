@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/store_products_error_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.carousel.DefaultCarouselItemView android:layout_width="@dimen/lens_camera_carousel_item_size_for_talk" android:layout_height="@dimen/lens_camera_carousel_item_size_for_talk"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/item_image" android:layout_width="@dimen/lens_camera_carousel_item_size_for_talk" android:layout_height="@dimen/lens_camera_carousel_item_size_for_talk" android:contentDescription="@null" />
+    <View android:id="@id/lens_fade_overlay" android:background="@drawable/lens_fade_overlay" android:visibility="gone" android:layout_width="@dimen/lens_camera_carousel_item_size_for_talk" android:layout_height="@dimen/lens_camera_carousel_item_size_for_talk" />
+    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="@dimen/lens_chat_item_loading_spinner_size" android:layout_height="@dimen/lens_chat_item_loading_spinner_size" app:loading_spinner_color="@android:color/white" />
+</com.snap.lenses.camera.carousel.DefaultCarouselItemView>

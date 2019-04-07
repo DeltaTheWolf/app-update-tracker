@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/badge" android:visibility="gone" android:layout_width="@dimen/tab_badge_diameter" android:layout_height="@dimen/tab_badge_container_height" android:layout_marginEnd="@dimen/tab_badge_gap_width">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/tab_badge_diameter" android:layout_height="@dimen/tab_badge_diameter" android:src="@drawable/tab_badging_background" android:scaleType="fitCenter" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/tab_badge_text_size" android:textColor="@color/black" android:gravity="center" android:id="@id/badge_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" custom:scFontWeight="bold" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" custom:scFontWeight="bolder" />
+</LinearLayout>

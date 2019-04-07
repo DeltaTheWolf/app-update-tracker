@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/crop_tool_buttons" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/crop_scale_type_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/crop_tools_crop_scale_switch_button_margin_bottom" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/crop_tools_crop_scale_switch_button_margin_start" />
+    <ImageButton android:id="@id/crop_rotate_button" android:background="@drawable/snap_crop_rotate" android:padding="@dimen/default_gap_quarter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/crop_scale_type_switch_button" android:layout_marginStart="@dimen/crop_tools_crop_rotate_button_margin_start" android:layout_toEndOf="@id/crop_scale_type_switch_button" />
+    <ImageButton android:id="@id/finish_button" android:background="@drawable/snap_crop_circle_blur_check_mark" android:layout_width="@dimen/crop_tools_crop_finish_button_width" android:layout_height="@dimen/crop_tools_crop_finish_button_height" android:layout_marginBottom="@dimen/crop_tools_crop_finish_button_margin_bottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

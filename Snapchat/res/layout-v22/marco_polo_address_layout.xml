@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider_off_white" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.payments.lib.views.FloatLabelLayout android:layout_gravity="start" android:id="@id/marco_polo_address_first_name" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/marco_polo_float_label_text_field">
+            <EditText android:id="@id/address_first_name_edit_text" android:background="@android:color/transparent" android:nextFocusDown="@id/address_last_name_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/marco_polo_first_name_text" android:maxLines="1" android:inputType="textPersonName|textCapWords" android:textAllCaps="true" android:autofillHints="name" />
+        </com.snap.payments.lib.views.FloatLabelLayout>
+        <View android:layout_gravity="center_vertical" android:background="@color/off_white" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_address_last_name" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/marco_polo_float_label_text_field">
+            <EditText android:id="@id/address_last_name_edit_text" android:background="@android:color/transparent" android:nextFocusDown="@id/address_street_address_1_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/marco_polo_last_name_text" android:maxLines="1" android:inputType="textPersonName|textCapWords" android:autofillHints="address" />
+        </com.snap.payments.lib.views.FloatLabelLayout>
+    </LinearLayout>
+    <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_street_address_1" android:layout_width="fill_parent" style="@style/marco_polo_float_label_text_field">
+        <EditText android:id="@id/address_street_address_1_edit_text" android:background="@android:color/transparent" android:nextFocusDown="@id/address_street_address_2_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/marco_polo_street_address_text" android:maxLines="1" android:inputType="textPostalAddress|textCapWords" android:autofillHints="address" />
+    </com.snap.payments.lib.views.FloatLabelLayout>
+    <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_street_address_2" android:layout_width="fill_parent" style="@style/marco_polo_float_label_text_field">
+        <EditText android:id="@id/address_street_address_2_edit_text" android:background="@android:color/transparent" android:nextFocusDown="@id/address_city_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/marco_polo_street_apt_text" android:maxLines="1" android:inputType="textPostalAddress|textCapWords" android:autofillHints="address" />
+    </com.snap.payments.lib.views.FloatLabelLayout>
+    <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_address_city" android:layout_width="fill_parent" style="@style/marco_polo_float_label_text_field">
+        <EditText android:id="@id/address_city_edit_text" android:background="@android:color/transparent" android:nextFocusDown="@id/address_state_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/marco_polo_city_text" android:maxLines="1" android:inputType="textCapWords" android:autofillHints="address" />
+    </com.snap.payments.lib.views.FloatLabelLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/state_city_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="@drawable/list_horizontal_divider_off_white" android:showDividers="middle">
+        <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_address_state" android:layout_width="wrap_content" style="@style/marco_polo_float_label_text_field">
+            <EditText android:id="@id/address_state_edit_text" android:background="@android:color/transparent" android:nextFocusDown="@id/address_zip_edit_text" android:layout_width="140.0dip" android:layout_height="wrap_content" android:hint="@string/marco_polo_address_state_text" android:maxLines="1" android:maxLength="2" android:inputType="textCapCharacters" android:textAllCaps="true" android:autofillHints="address" />
+        </com.snap.payments.lib.views.FloatLabelLayout>
+        <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/marco_polo_zip_float_label" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/marco_polo_float_label_text_field">
+            <EditText android:layout_gravity="bottom|center" android:id="@id/address_zip_edit_text" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/payments_zip_code" android:maxLength="5" android:digits="\ 0123456789" android:inputType="number" android:autofillHints="address" />
+        </com.snap.payments.lib.views.FloatLabelLayout>
+    </LinearLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:id="@id/shipping_address_country" android:background="@color/transparent" android:layout_width="fill_parent" android:hint="@string/marco_polo_united_states" android:maxLines="1" android:alpha="@integer/unchangeable_text_field_alpha" style="@style/marco_polo_float_label_text_field" />
+    <TextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/dark_red" android:gravity="center" android:id="@id/marco_polo_address_error" android:padding="@dimen/default_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

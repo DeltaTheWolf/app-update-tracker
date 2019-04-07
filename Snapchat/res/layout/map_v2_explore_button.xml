@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/map_v2_explore_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/map_status_icon" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/explore_pin" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/unread_dot" android:layout_width="@dimen/explore_my_status_badge_size" android:layout_height="@dimen/explore_my_status_badge_size" android:layout_margin="2.0dip" android:src="@drawable/explore_my_status_badge" android:layout_alignParentEnd="true" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_explore" android:layout_below="@id/map_status_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

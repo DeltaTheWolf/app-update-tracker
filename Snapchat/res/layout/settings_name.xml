@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_name_layout" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/settings_display_name_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/display_name" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:id="@id/display_name_settings_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:minHeight="@dimen/default_gap_10x" android:text="@string/display_name_info" style="@style/IdentitySettingsCopyText" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontEditText android:id="@id/display_name_settings_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:layout_marginTop="@dimen/default_gap" android:hint="@string/displayName_field_hint" android:maxLength="30" android:inputType="textCapWords|textNoSuggestions" style="@android:style/Widget.Holo.EditText" />
+                <ImageView android:id="@id/display_name_settings_error_red_x" style="@style/IdentityErrorRedX" />
+            </LinearLayout>
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/error_red" android:id="@id/display_name_settings_error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="1" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/dark_blue" android:layout_gravity="center" android:id="@id/remove_display_name_text" android:paddingTop="@dimen/default_gap_2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_remove_displayName" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/remove_display_name_progressbar" android:visibility="gone" android:layout_width="@dimen/ui_element_unit" android:layout_height="@dimen/ui_element_unit" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <com.snap.ui.view.SnapFontTextView android:id="@id/display_name_settings_save_button" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/registration_continue_button_height" android:text="@string/settings_save" style="@style/IdentitySettingsContinueButton" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/display_settings_save_progressbar" android:visibility="gone" android:layout_width="@dimen/ui_element_unit" android:layout_height="@dimen/ui_element_unit" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/find_friends" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/dark_grey" android:gravity="end" android:id="@id/skip_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/signup_skip_find_friends" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x" android:layout_alignParentEnd="true" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/add_friends_splash_title" android:text="@string/signup_add_friends_title" android:layout_below="@id/skip_button" style="@style/LoginSignupPageTitle" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/regular_charcoal" android:id="@id/add_friends_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_find_your_friends_description" android:layout_below="@id/add_friends_splash_title" style="@style/IdentityPageDescription" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="70.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/add_friends_description"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.snap.identity.api.sharedui.ProgressButton android:id="@id/continue_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/LoginSignupButton" />
+</RelativeLayout>

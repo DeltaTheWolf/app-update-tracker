@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/black_forty_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="19.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/filters_turn_on_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap" android:text="@string/filter_location_enable" />
+    <View android:id="@id/filters_divider" android:background="@color/off_white" android:layout_width="108.0dip" android:layout_height="0.5dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/filters_turn_on_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/location_prompt_filter_body" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/filters_yes_view" android:background="@drawable/button_white_border" android:layout_width="183.0dip" android:layout_height="44.0dip" android:layout_marginTop="@dimen/default_gap_2_5x" android:text="@string/location_prompt_filter_button" />
+</LinearLayout>

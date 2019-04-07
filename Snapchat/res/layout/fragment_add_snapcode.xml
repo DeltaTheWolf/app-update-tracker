@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="16.0sp" android:textColor="@color/my_friends_color" android:gravity="center_horizontal" android:id="@id/add_snapcode_header" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scan_snapcode_tip" android:maxLines="2" android:fontFamily="@string/typeface_avenir_next_demi_bold" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <android.support.v7.widget.RecyclerView android:id="@id/add_snapcode_recycler_view" android:background="@android:color/white" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navbar_inset" android:layout_below="@id/add_snapcode_header" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap" />
+    <View android:id="@id/navbar_inset" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

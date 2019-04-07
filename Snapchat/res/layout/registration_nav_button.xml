@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/registration_nav_container" android:background="@drawable/blue_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/default_gap_6x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:id="@id/progress_bar" style="@style/registration_progress_bar" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/button_text" style="@style/registration_nav_button_text" />
+</LinearLayout>

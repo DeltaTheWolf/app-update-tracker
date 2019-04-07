@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.RoundedFrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="@dimen/sc_story_card_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/image_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="@drawable/card_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/text_gradient" android:background="@drawable/sc_story_card_gradient_foreground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_card_bottom_margin" android:layout_marginStart="@dimen/small_card_inner_side_margin" android:layout_marginEnd="@dimen/small_card_inner_side_margin">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/featured_pill" android:background="@drawable/featured_pill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/feature_badge_margin" android:layout_above="@id/primary_text" android:paddingStart="@dimen/feature_badge_margin" android:paddingEnd="@dimen/feature_badge_margin">
+            <ImageView android:id="@id/live_icon" android:background="@drawable/live_streaming_icon_white" android:layout_width="@dimen/feature_badge_live_icon_size" android:layout_height="@dimen/feature_badge_live_icon_size" android:layout_marginEnd="@dimen/half_default_gap" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/feature_badge_text_size" android:textColor="@color/white" android:id="@id/featured_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:scFontWeight="bolder" />
+        </LinearLayout>
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_alignParentBottom="true" app:scFontWeight="bolder" style="@style/small_story_card_primary_text.alignment" />
+    </RelativeLayout>
+    <include layout="@layout/debug_card_button_layout_stub" />
+</com.snapchat.android.framework.ui.views.RoundedFrameLayout>

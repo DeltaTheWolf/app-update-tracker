@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/in_app_report_webview_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/fragment_title_in_app_report" custom:showBackArrow="true" custom:showBottomBorder="true">
+        <ImageView android:layout_gravity="end|center" android:id="@id/in_app_report_webview_x_button" android:background="@drawable/green_x_mark" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/default_gap" />
+    </com.snap.ui.view.ScHeaderView>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/in_app_report_webview_webview" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/in_app_report_webview_progress_bar" android:background="@color/white_eighty_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+            <com.snap.ui.view.SnapFontTextView android:textAppearance="?android:textAppearanceSmall" android:paddingTop="@dimen/default_gap_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/raw_string_loading" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

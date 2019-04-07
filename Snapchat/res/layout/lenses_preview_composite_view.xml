@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/lenses_preview_touch_view_stub" android:inflatedId="@id/lenses_touch_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/drawing_tools_stub" android:inflatedId="@id/drawing_tools" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

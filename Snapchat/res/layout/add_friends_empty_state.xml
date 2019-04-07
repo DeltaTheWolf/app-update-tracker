@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/friends_footer_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/identity_empty_state_height" android:layout_marginTop="@dimen/default_gap_4x" android:weightSum="1.0" android:textDirection="locale" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small_medium" android:textColor="@color/regular_charcoal" android:gravity="center_horizontal" android:id="@id/footer_button_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identity_empty_add_friends_label" />
+    <ImageView android:id="@id/bitmoji_image" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/reg_add_friends_illustration" android:layout_weight="1.0" android:contentDescription="@string/identity_empty_image_description" />
+    <Button android:textColor="@color/white" android:id="@id/empty_state_add_friends_button" android:background="@drawable/footer_background" android:text="@string/identity_empty_find_friends_button" style="@style/IdentityAlertDialogButton" />
+</LinearLayout>

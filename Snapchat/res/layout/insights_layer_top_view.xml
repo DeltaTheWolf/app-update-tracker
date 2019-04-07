@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/black_twenty_seven_opacity" android:padding="@dimen/snap_pro_insights_bar_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.snap.imageloading.view.SnapImageView android:id="@id/delete_business_snap" android:layout_width="@dimen/snap_pro_insights_icon_size" android:layout_height="@dimen/snap_pro_insights_icon_size" android:src="@drawable/action_menu_delete_icon" android:tint="#ffffffff" android:layout_marginEnd="@dimen/snap_pro_insights_start_end_padding" />
+    </LinearLayout>
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="bottom|center" android:padding="@dimen/snap_pro_insights_bar_padding" android:layout_width="@dimen/snap_pro_insights_icon_size" android:layout_height="@dimen/snap_pro_insights_icon_size" android:layout_marginBottom="@dimen/snap_pro_insights_bar_padding" android:src="@drawable/cta_up_arrow" />
+</FrameLayout>

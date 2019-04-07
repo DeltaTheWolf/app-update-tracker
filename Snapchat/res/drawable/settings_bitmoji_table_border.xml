@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:layout_width="fill_parent" android:layout_height="fill_parent" android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <corners android:radius="@dimen/bitmoji_settings_table_corner_radius" />
+    <stroke android:width="@dimen/bitmoji_settings_table_stroke_width" android:color="@color/regular_grey" />
+</shape>

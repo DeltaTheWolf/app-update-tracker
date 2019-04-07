@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="#ff0eadff" />
+            <corners android:radius="100.0dip" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="fill" android:src="@drawable/explore_compass" />
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_friend_on_map" android:background="@color/transparent" android:padding="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="66.0dip" android:baselineAligned="false" android:textDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="start|center" android:id="@id/map_search_list_item_left_thumbnail" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <com.snap.ui.avatar.AvatarView android:id="@id/avatar_view" android:layout_width="@dimen/map_search_profile_picture_size" android:layout_height="@dimen/map_search_profile_picture_size"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/story_thumbnail_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@drawable/thumbnail_circle" android:layout_width="@dimen/map_search_profile_picture_size" android:layout_height="@dimen/map_search_profile_picture_size" />
+            <ImageView android:layout_gravity="center" android:id="@id/story_thumbnail" android:layout_width="@dimen/map_search_profile_picture_size_inner_thumb" android:layout_height="@dimen/map_search_profile_picture_size_inner_thumb" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/map_search_list_item_center_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap_half">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/map_search_title_size" android:textColor="@color/white" android:ellipsize="end" android:id="@id/map_search_list_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" custom:scFontWeight="regular" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/map_search_subtitle_size" android:textColor="@color/map_search_subtext_color" android:ellipsize="end" android:id="@id/map_search_list_item_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" custom:scFontWeight="regular" />
+    </LinearLayout>
+</LinearLayout>

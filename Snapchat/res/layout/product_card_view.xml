@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:customAttr="http://schemas.android.com/apk/res-auto">
+    <com.snap.commerce.lib.views.ProductDetailsRecyclerView android:id="@id/product_details_scroll_view" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/product_card_button_panel" android:background="@drawable/rounded_corners_top_only_white_rectangle_with_shadow" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/product_info_bottom_bar_container_height" android:layout_alignParentBottom="true">
+        <com.snap.ui.view.button.RegistrationNavButton android:layout_gravity="center" android:id="@id/cart_add_to_bag_btn" android:layout_width="fill_parent" android:layout_height="@dimen/product_checkout_button_height" android:layout_marginTop="@dimen/product_info_bottom_bar_margin_top" android:text="@string/marco_polo_add_to_bag" android:paddingStart="@dimen/default_gap_3x" android:paddingEnd="@dimen/default_gap_3x" customAttr:container_background_resource="@drawable/action_bottom_button_states" />
+        <com.snap.ui.view.button.RegistrationNavButton android:layout_gravity="center" android:id="@id/cart_add_to_bag_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/product_checkout_button_height" android:layout_marginTop="@dimen/product_info_bottom_bar_margin_top" android:paddingStart="@dimen/default_gap_3x" android:paddingEnd="@dimen/default_gap_3x" customAttr:container_background_resource="@drawable/action_bottom_button_error_states" />
+    </FrameLayout>
+</RelativeLayout>

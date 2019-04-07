@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/media_card_cell_background" android:layout_width="fill_parent" android:layout_height="@dimen/chat_media_card_height" android:layout_marginTop="@dimen/chat_media_card_border_margin" android:layout_marginBottom="@dimen/chat_media_card_border_margin" android:layout_marginStart="@dimen/chat_media_card_margin_left" android:layout_marginEnd="@dimen/chat_media_card_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/chat_media_card_width" android:layout_height="@dimen/chat_media_card_height">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/media_card_image_view" android:padding="@dimen/chat_media_card_border_width" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/media_card_default_icon_view" android:layout_width="@dimen/chat_media_card_default_map_icon_width" android:layout_height="@dimen/chat_media_card_default_map_icon_height" android:src="@drawable/chat_media_location_icon" />
+        <ImageView android:id="@id/media_card_icon_mask" android:background="@drawable/media_card_icon_saved_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:background="@drawable/media_card_icon_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_message_text_size" android:textColor="@color/off_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/media_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/default_gap_1_5x" />
+</LinearLayout>

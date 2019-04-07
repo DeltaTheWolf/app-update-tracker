@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:id="@id/friend_story_notification_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/friend_story_notification_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="1.0dip" android:minHeight="1.0dip" android:layout_alignParentTop="true" android:layout_marginStart="10.0dip" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/friend_story_notification_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toStartOf="@id/friend_story_notification_icon" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="@style/TextAppearance.Compat.Notification.Title" android:layout_gravity="start|center|top" android:id="@id/friend_story_notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="@style/TextAppearance.Compat.Notification.Info" android:ellipsize="end" android:id="@id/friend_story_notification_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

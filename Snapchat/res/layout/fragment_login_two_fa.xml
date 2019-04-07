@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.identity.loginsignup.ui.view.ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout style="@style/LoginSignupPageContainer">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_form_title" android:text="@string/twofa_new_device_verification_title" style="@style/LoginSignupPageTitle" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_form_otp_description" android:layout_marginBottom="@dimen/default_gap" android:text="@string/twofa_new_device_otp_verification_explanation" style="@style/IdentityPageDescription" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_form_sms_description" android:visibility="gone" android:layout_marginBottom="@dimen/default_gap" style="@style/IdentityPageDescription" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_send_sms_instead" android:text="@string/twofa_new_device_otp_verification_send_sms" style="@style/IdentityLinkText" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_code_description" android:text="@string/signup_verify_phone_hint" style="@style/IdentityFieldHint" />
+                <com.snap.ui.view.SnapFontEditText android:id="@id/two_factor_code_field" android:inputType="number" android:imeOptions="actionNext" style="@style/IdentityField" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/error_red" android:layout_gravity="start" android:id="@id/two_factor_code_error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:minLines="1" android:paddingStart="@dimen/default_gap" />
+                <RelativeLayout android:id="@id/two_factor_allow_remember_device_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:id="@id/two_factor_allow_remember_device_checkbox" android:layout_marginTop="@dimen/default_gap" android:layout_centerVertical="true" style="@style/LoginSignupCheckbox" />
+                    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/black" android:id="@id/two_factor_allow_remember_device_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/two_fa_allow_remember_device" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_half" android:layout_toStartOf="@id/two_factor_allow_remember_device_checkbox" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.snap.identity.loginsignup.ui.view.ScrollView>
+        <com.snap.identity.api.sharedui.SubmitResendButton android:id="@id/verify_button" custom:resendText="@string/signup_verify_phone_resend_sms" custom:submitText="@string/continue_next" custom:waitingText="@string/signup_verify_phone_resend_sms_waiting" style="@style/LoginSignupButton" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="start|center|top" android:id="@id/back_button" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <ImageView android:layout_gravity="start|center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:src="@drawable/medium_grey_mirrorable_navigation_back_arrow" android:layout_marginStart="@dimen/default_gap" />
+    </FrameLayout>
+</FrameLayout>

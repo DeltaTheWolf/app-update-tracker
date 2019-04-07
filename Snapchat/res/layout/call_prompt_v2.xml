@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/light_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/call_prompt_shadow_height" android:layout_marginTop="-5.0dip" android:src="@drawable/call_prompt_shadow_light" android:layout_alignParentTop="true" android:alpha="1.0" />
+    <ImageView android:id="@id/dark_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/call_prompt_shadow_height" android:layout_marginTop="-5.0dip" android:src="@drawable/call_prompt_shadow_dark" android:layout_alignParentTop="true" android:alpha="0.0" />
+    <ImageView android:id="@id/call_prompt_top" android:layout_width="fill_parent" android:layout_height="@dimen/call_prompt_shadow_height" android:src="@drawable/call_prompt_rounded_corners" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/outgoing_local_media_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/call_outgoing_local_media_size" android:layout_height="@dimen/call_outgoing_local_media_size" android:layout_marginTop="-35.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <Space android:id="@id/active_local_media_space" android:layout_width="@dimen/call_active_local_media_size" android:layout_height="@dimen/call_active_local_media_size" android:layout_marginLeft="@dimen/call_prompt_default_spacing" android:layout_marginTop="@dimen/call_prompt_top_offset" android:layout_below="@id/call_prompt_top" />
+    <FrameLayout android:id="@id/section_container" android:background="@color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_below="@id/call_prompt_top">
+        <ViewStub android:id="@id/outgoing_section_stub" android:visibility="gone" android:layout="@layout/call_prompt_outgoing_section" android:inflatedId="@id/outgoing_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/call_ended_section_stub" android:visibility="gone" android:layout="@layout/call_prompt_call_ended_section" android:inflatedId="@id/call_ended_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/incoming_section_stub" android:visibility="gone" android:layout="@layout/call_prompt_incoming_section" android:inflatedId="@id/incoming_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/active_section_stub" android:visibility="gone" android:layout="@layout/call_prompt_active_section" android:inflatedId="@id/active_section" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="-1.0dip" android:layout_alignBottom="@id/section_container" />
+</merge>

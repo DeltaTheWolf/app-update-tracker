@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/speedometer_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/speedDigit1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_1" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/speedComma" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_comma" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/speedDigit2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_2" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/speedDigit3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_3" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/speedDigit4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_4" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/speedPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_point" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/speedDigit5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_5" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/speedMph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speed_mph" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

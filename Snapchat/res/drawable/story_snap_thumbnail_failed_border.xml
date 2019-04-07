@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/story_snap_thumbnail_failed_border_width" android:color="@color/regular_red" />
+    <corners android:topLeftRadius="@dimen/story_tile_corner_radius" android:topRightRadius="@dimen/story_tile_corner_radius" android:bottomLeftRadius="@dimen/story_tile_corner_radius" android:bottomRightRadius="@dimen/story_tile_corner_radius" />
+</shape>

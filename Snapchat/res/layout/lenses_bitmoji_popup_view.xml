@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.carousel.bitmoji.DefaultBitmojiPopupView android:orientation="vertical" android:id="@id/lenses_bitmoji_popup_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:background="@drawable/lenses_carousel_imagepicker_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.snapchat.android.framework.ui.views.TriangleView android:layout_gravity="center" android:id="@id/lenses_carousel_imagepicker_lower_triangle" android:layout_width="@dimen/lenses_carousel_imagepicker_triangle_width" android:layout_height="@dimen/lenses_carousel_imagepicker_triangle_height" android:layout_marginTop="-1.0dip" android:rotation="180.0" />
+</com.snap.lenses.camera.carousel.bitmoji.DefaultBitmojiPopupView>

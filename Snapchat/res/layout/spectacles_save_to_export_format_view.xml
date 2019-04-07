@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatIconView android:id="@id/save_to_export_format_icon" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/save_to_export_format_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spectacles_save_to_icon_margin_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/new_settings_item_name" />
+    <CheckBox android:id="@id/save_to_export_format_checkbox" android:clickable="false" android:layout_width="@dimen/checkbox_size" android:layout_height="@dimen/checkbox_size" android:checked="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/new_settings_checkbox" />
+</merge>

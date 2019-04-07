@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_email_layout" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/settings_email" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:id="@id/email_settings_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:minHeight="@dimen/default_gap_10x" style="@style/IdentitySettingsCopyText" />
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontEditText android:id="@id/email_settings_email_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:layout_marginTop="@dimen/default_gap" android:hint="@string/email_field_hint" android:maxLength="60" android:inputType="textEmailAddress" style="@android:style/Widget.Holo.EditText" />
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/email_settings_error_red_x" android:visibility="gone" style="@style/IdentityErrorRedX" />
+            </FrameLayout>
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/error_red" android:id="@id/email_settings_error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="1" android:layout_marginStart="@dimen/default_gap" />
+            <com.snap.ui.view.SnapFontTextView android:gravity="start" android:id="@id/email_settings_subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityFinePrintText" />
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/dark_blue" android:gravity="center" android:id="@id/settings_email_resend" android:paddingTop="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/email_resend_verification" />
+            <ProgressBar android:gravity="center" android:id="@id/settings_email_sent_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <com.snap.identity.ui.settings.shared.SettingsStatefulButton android:id="@id/email_settings_continue_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/registration_continue_button_height" style="@style/IdentitySettingsContinueButton" />
+    </FrameLayout>
+</LinearLayout>

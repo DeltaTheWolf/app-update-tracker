@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.PullToRefreshLayout android:id="@id/ptr_container" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:ptr_innerView="@id/recycler_view" custom:ptr_releaseThreshold="@dimen/neon_header_release_threshold"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/mushroom_ptr" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/colored_overlay" android:background="@color/medium_grey" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/floating_affordance_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/new_stories_bottom_margin" />
+    <View android:id="@id/neon_header_top_gradient" android:background="@drawable/neon_top_gradient_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/neon_header_gradient_height" />
+    <View android:layout_gravity="bottom" android:id="@id/navbar_inset" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</com.snapchat.android.framework.ui.views.PullToRefreshLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/auth_container" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.identity.loginsignup.ui.view.ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout style="@style/LoginSignupPageContainer">
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_medium" android:id="@id/login_title" android:text="@string/login_title" style="@style/LoginSignupPageTitle" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/username_label" android:layout_marginTop="@dimen/default_gap" android:text="@string/login_username_hint" style="@style/IdentityFieldHint" />
+                <com.snap.ui.view.SnapFontEditText android:id="@id/username_or_email_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:maxLines="1" android:maxLength="60" android:inputType="textEmailAddress" style="@style/IdentityField" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/password_label" android:text="@string/login_password_hint" style="@style/IdentityFieldHint" />
+                <com.snap.ui.view.SnapFontEditText android:id="@id/password_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:layout_marginTop="-4.0dip" android:inputType="textPassword" style="@style/IdentityField" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/login_error_message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityFieldError" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/dark_blue" android:gravity="center" android:id="@id/forgot_password_button" android:paddingTop="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/forgot_password" />
+            </LinearLayout>
+        </com.snap.identity.loginsignup.ui.view.ScrollView>
+        <com.snap.identity.api.sharedui.ProgressButton android:id="@id/nav_button" custom:buttonText="@string/log_in_button_text" custom:pendingText="@string/landing_page_logging_in" style="@style/LoginSignupButton" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="start|center|top" android:id="@id/back_button" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <ImageView android:layout_gravity="start|center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:src="@drawable/medium_grey_mirrorable_navigation_back_arrow" android:layout_marginStart="@dimen/default_gap" />
+    </FrameLayout>
+</FrameLayout>

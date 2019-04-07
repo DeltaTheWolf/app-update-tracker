@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/map_screen_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/map_content" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/v2_btm_bg_gradient" android:background="@drawable/neon_header_gradient" android:layout="@layout/v2_btm_bg_gradient" android:layout_width="fill_parent" android:layout_height="150.0dip" android:rotationX="-180.0" />
+    <RelativeLayout android:id="@id/map_features_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/status_bubble_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/map_zoom_slider" android:layout="@layout/map_zoom_slider" android:layout_width="140.0dip" android:layout_height="fill_parent" android:layout_marginBottom="72.0dip" android:layout_alignParentRight="true" />
+        <ViewStub android:id="@id/map_compass" android:layout="@layout/map_compass" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="16.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <ViewStub android:id="@id/v2_map_compass" android:layout="@layout/v2_map_compass" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginBottom="86.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ViewStub android:orientation="vertical" android:id="@id/map_status_container_stub" android:layout="@layout/map_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentBottom="true" />
+        <ViewStub android:id="@id/map_metadata" android:visibility="gone" android:layout="@layout/map_metadata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+        <ViewStub android:id="@id/map_explore_button" android:layout="@layout/map_explore_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ViewStub android:id="@id/map_v2_explore_button" android:layout="@layout/map_v2_explore_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/map_carousel_root" android:layout="@layout/map_carousel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/map_group" android:layout="@layout/map_group" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/map_explore" android:layout="@layout/map_explore" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/map_search_bar" android:layout="@layout/map_search_bar" android:layout_width="fill_parent" android:layout_height="@dimen/neon_header_gradient_height" android:layoutDirection="locale" />
+    <ViewStub android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/v2_title_text_view" android:layout="@layout/v2_title_text_view" android:layout_width="wrap_content" android:layout_height="@dimen/neon_header_height" android:layout_marginTop="25.0dip" />
+    <ViewStub android:layout_gravity="end" android:id="@id/map_notification_box" android:layout="@layout/map_notification_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_5x" android:layout_marginStart="@dimen/default_gap" />
+    <FrameLayout android:id="@id/overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/nyc_child_fragment_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom" android:id="@id/map_softnav_bar_underlay" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="1.0" />
+</FrameLayout>

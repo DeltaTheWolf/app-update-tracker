@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ad_info_page" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/ad_info_page_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/ad_info_page_header_text" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x">
+        <RelativeLayout android:id="@id/ad_info_page_report_ad_container" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" style="@style/ad_info_item">
+            <ImageView android:id="@id/ad_info_page_report_ad_next_arrow" android:layout_width="@dimen/ad_info_next_arrow_icon_width" android:layout_height="@dimen/ad_info_next_arrow_icon_width" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" />
+            <TextView android:id="@id/ad_info_page_report_ad_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ad_info_report_ad_title" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" android:layout_toStartOf="@id/ad_info_page_report_ad_next_arrow" style="@style/ad_info_item_text" />
+        </RelativeLayout>
+        <include layout="@layout/list_separator" />
+        <RelativeLayout android:id="@id/ad_info_page_about_ad_container" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" style="@style/ad_info_item">
+            <ImageView android:id="@id/ad_info_page_ad_info_next_arrow" android:layout_width="@dimen/ad_info_next_arrow_icon_width" android:layout_height="@dimen/ad_info_next_arrow_icon_width" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" />
+            <TextView android:id="@id/ad_info_page_ad_info_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ad_info_about_ads_title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap" android:layout_toStartOf="@id/ad_info_page_ad_info_next_arrow" style="@style/ad_info_item_text" />
+        </RelativeLayout>
+        <include layout="@layout/list_separator" />
+    </LinearLayout>
+</LinearLayout>

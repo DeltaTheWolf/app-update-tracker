@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/send_to_all_round_corners_background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/send_to_preview_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/send_to_preview_default_media_width" android:layout_height="@dimen/send_to_preview_default_media_width" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:layout_marginStart="@dimen/default_gap">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/send_to_preview_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/chat_v2_media_margin" android:layout_marginBottom="@dimen/chat_v2_media_margin" android:scaleType="centerCrop" android:layout_marginStart="@dimen/chat_v2_content_left_margin" />
+        <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/send_to_preview_loading_spinner" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </FrameLayout>
+    <EditText android:id="@id/send_to_preview_text" android:layout_marginStart="@dimen/default_gap_2x" android:layout_toEndOf="@id/send_to_preview_content" android:importantForAutofill="no" style="@style/sendto_attachment_edittext" />
+</RelativeLayout>

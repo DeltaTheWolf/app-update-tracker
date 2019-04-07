@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/context_char_card_height" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/context_chat_card_fragment" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/context_chat_card_placeholder" android:background="@color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/payments_white_grey_selector" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/payments_method_payments_icon" android:layout_width="@dimen/default_gap_5x" android:layout_height="@dimen/default_gap_3x" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_1_25x" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:ellipsize="end" android:id="@id/payments_method_last_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_1_5x" android:layout_toEndOf="@id/payments_method_payments_icon" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:ellipsize="end" android:id="@id/payments_card_expiry_edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_2_5x" android:layout_toEndOf="@id/payments_method_last_four" />
+        <ImageView android:id="@id/payments_cell_checkmark" android:visibility="gone" android:layout_width="@dimen/default_gap_2_25x" android:layout_height="@dimen/default_gap_2_25x" android:src="@drawable/green_check_mark" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/payments_cell_exclamation_mark" android:visibility="gone" android:layout_width="@dimen/default_gap_3x" android:layout_height="@dimen/default_gap_3x" android:src="@drawable/exclamation_error" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/payments_border" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" />
+</LinearLayout>

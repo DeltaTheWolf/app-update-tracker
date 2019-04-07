@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.chat.features.actionmenu.ChatActionMenuOptionView android:orientation="horizontal" android:id="@id/action_menu_option" android:background="@drawable/chat_action_menu_option_background_color" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/chat_action_menu_option_height" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/action_menu_option_icon" android:layout_width="@dimen/chat_action_menu_option_icon_size" android:layout_height="@dimen/chat_action_menu_option_icon_size" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_action_menu_option_text_size" android:textColor="@drawable/chat_action_menu_option_text_color" android:id="@id/action_menu_option_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:autoFit="true" app:scFontWeight="regular" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_action_menu_option_subtext_size" android:textColor="@drawable/chat_action_menu_option_subtext_color" android:id="@id/action_menu_option_subtext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:autoFit="true" app:scFontWeight="regular" />
+    </LinearLayout>
+</com.snap.messaging.chat.features.actionmenu.ChatActionMenuOptionView>

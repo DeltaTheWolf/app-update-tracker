@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/spectacles_edit_name_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="Name" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:id="@id/spectacles_edit_name_layout_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:id="@id/display_name_settings_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:text="@string/laguna_name_intro" android:layout_alignParentTop="true" style="@style/RegistrationCopyText" />
+            <EditText android:id="@id/display_name_settings_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:layout_marginTop="@dimen/default_gap" android:hint="@string/displayName_field_hint" android:maxLength="30" android:layout_below="@id/display_name_settings_explanation" android:inputType="textCapWords|textNoSuggestions" android:importantForAutofill="no" style="@android:style/Widget.Holo.EditText" />
+            <ImageView android:id="@id/display_name_settings_error_red_x" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_alignRight="@id/display_name_settings_field" android:layout_alignBottom="@id/display_name_settings_field" style="@style/ErrorRedX" />
+            <TextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/error_red" android:id="@id/display_name_settings_error_message" android:paddingLeft="@dimen/default_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="1" android:layout_below="@id/display_name_settings_field" android:layout_alignLeft="@id/display_name_settings_field" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/display_name_settings_error_message">
+                <TextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/dark_blue" android:layout_gravity="center" android:id="@id/remove_display_name_text" android:paddingTop="@dimen/default_gap_2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_remove_displayName" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/remove_display_name_progressbar" android:visibility="gone" android:layout_width="@dimen/ui_element_unit" android:layout_height="@dimen/ui_element_unit" />
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:id="@id/display_name_settings_save_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/registration_continue_button_height" android:text="@string/settings_save" style="@style/RegistrationContinueButton" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/display_settings_save_progressbar" android:visibility="gone" android:layout_width="@dimen/ui_element_unit" android:layout_height="@dimen/ui_element_unit" />
+    </FrameLayout>
+</LinearLayout>

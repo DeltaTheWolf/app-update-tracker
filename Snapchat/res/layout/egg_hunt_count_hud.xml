@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/egg_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="50.0dip" android:src="@drawable/egg_score" android:scaleType="fitCenter" />
+    <com.snap.ui.view.ScStrokeFontTextView android:textSize="24.0sp" android:textColor="@color/map_black" android:layout_gravity="bottom|center" android:id="@id/egg_count_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" custom:scFontWeight="bolder" custom:strokeColor="@color/map_white" custom:strokeJoinStyle="miter" custom:strokeWidth="1.0dip" />
+</merge>

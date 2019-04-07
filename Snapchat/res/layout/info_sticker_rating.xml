@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/rating_items_container" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/rating_item_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/unfilled_rating_item_one" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+            <ImageView android:id="@id/filled_rating_item_one" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/rating_item_two" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/unfilled_rating_item_two" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+            <ImageView android:id="@id/filled_rating_item_two" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/rating_item_three" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/unfilled_rating_item_three" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+            <ImageView android:id="@id/filled_rating_item_three" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/rating_item_four" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/unfilled_rating_item_four" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+            <ImageView android:id="@id/filled_rating_item_four" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/rating_item_five" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/unfilled_rating_item_five" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+            <ImageView android:id="@id/filled_rating_item_five" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_item_height" android:layout_height="@dimen/rating_sticker_item_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_item_height" />
+        </FrameLayout>
+        <ImageView android:id="@id/switcher_button" android:background="@drawable/rating_switcher" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rating_sticker_switcher_button_height" android:layout_height="@dimen/rating_sticker_switcher_button_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="@dimen/rating_sticker_switcher_button_height" />
+    </LinearLayout>
+</FrameLayout>

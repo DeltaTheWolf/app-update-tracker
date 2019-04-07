@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/gallery_sync_progress_bar_background_progress_color" />
+        </shape>
+    </item>
+    <item>
+        <clip>
+            <shape>
+                <solid android:color="@color/gallery_sync_progress_bar_progress_color" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

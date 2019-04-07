@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/scan_fragment_container" android:background="@color/black_fifty_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/empty_card_view" android:background="@drawable/scan_content_card" android:layout_width="fill_parent" android:layout_height="@dimen/scan_content_card_base_height" android:layout_margin="@dimen/default_gap_2_5x" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap">
+        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/card_loading_view" android:layout_width="@dimen/scan_empty_card_spinner_size" android:layout_height="@dimen/scan_empty_card_spinner_size" />
+    </FrameLayout>
+    <android.support.design.widget.CoordinatorLayout android:id="@id/cards_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.scan.ui.view.CardsView android:id="@id/all_cards" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

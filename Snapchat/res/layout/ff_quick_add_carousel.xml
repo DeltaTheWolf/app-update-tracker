@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="@dimen/ff_feed_quick_add_carousel_padding" android:layout_width="fill_parent" android:layout_height="@dimen/ff_feed_quick_add_header_height" android:paddingStart="@dimen/ff_feed_quick_add_carousel_side_padding" android:paddingEnd="@dimen/ff_feed_quick_add_carousel_side_padding">
+        <RelativeLayout android:id="@id/quick_add_header_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/ff_quick_add_header_text_size" android:id="@id/quick_add_header" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ff_quick_add" android:layout_alignParentStart="true" custom:scFontWeight="bold" />
+            <com.snap.imageloading.view.SnapImageView android:id="@id/side_icon" android:background="@drawable/cell_arrow" android:layout_width="@dimen/profile_simple_card_side_icon_size" android:layout_height="@dimen/profile_simple_card_side_icon_size" android:scaleType="fitCenter" android:layout_marginStart="@dimen/ff_quick_add_side_icon_margin_start" android:layout_toEndOf="@id/quick_add_header" style="@style/FlippableImage" />
+        </RelativeLayout>
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/medium_grey" android:id="@id/hide_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ff_hide_friend_button" android:layout_alignParentEnd="true" custom:scFontWeight="bold" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/quickadd_carousel" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

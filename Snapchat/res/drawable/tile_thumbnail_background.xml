@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/faded_black" />
+            <stroke android:width="@dimen/tile_thumbnail_border_width" android:color="@color/tile_border_color" />
+            <corners android:radius="@dimen/tile_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

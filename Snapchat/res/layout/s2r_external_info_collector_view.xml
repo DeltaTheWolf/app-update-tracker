@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.shake2report.ui.featureselector.BetaAdditionalInfoCollector android:id="@id/s2r_beta_additional_info_collector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/s2r_beta_top_separator_feature_frame_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_half" android:layout_marginBottom="@dimen/default_gap_half">
+        <View android:layout_gravity="center_vertical" android:background="@color/black_eight_opacity" android:layout_width="fill_parent" android:layout_height="@dimen/s2r_separator_height" />
+        <TextView android:textColor="@color/regular_green" android:layout_gravity="center" android:id="@id/s2r_beta_feature_header_text_view" android:background="@color/white" android:paddingLeft="@dimen/default_gap" android:paddingRight="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s2r_choose_feature" style="@style/s2r_separator_header_text_style" />
+    </FrameLayout>
+    <Spinner android:id="@id/s2r_beta_feature_dropdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_1_5x" />
+</com.snap.shake2report.ui.featureselector.BetaAdditionalInfoCollector>

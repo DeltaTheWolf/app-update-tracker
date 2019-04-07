@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/my_story_privacy_settings" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/radio_group_description_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_gap_2x" android:text="@string/story_settings_my_story_desc" style="@style/new_settings_item_text" />
+    <RadioGroup android:id="@id/privacy_options_radio_group" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/settings_selectable_item_container">
+        <RadioButton android:id="@id/everyone_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="@dimen/story_settings_item_min_height" android:text="@string/story_settings_privacy_everyone" style="@style/settings_selectable_item_checkmark" />
+        <RadioButton android:id="@id/friends_only_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="@dimen/story_settings_item_min_height" android:text="@string/story_settings_privacy_friends_only" style="@style/settings_selectable_item_checkmark" />
+        <RadioButton android:id="@id/custom_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="@dimen/story_settings_item_min_height" android:text="@string/story_settings_privacy_custom" style="@style/settings_selectable_item_checkmark" />
+    </RadioGroup>
+</LinearLayout>

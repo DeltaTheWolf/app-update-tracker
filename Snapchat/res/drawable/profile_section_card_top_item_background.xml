@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/white" />
+            <corners android:topLeftRadius="@dimen/group_member_border_radius" android:topRightRadius="@dimen/group_member_border_radius" />
+            <stroke android:width="@dimen/single_dp" android:color="@color/charcoal_grey" />
+        </shape>
+    </item>
+    <item android:left="@dimen/section_card_border_padding" android:top="@dimen/group_member_border_radius" android:right="@dimen/section_card_border_padding">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

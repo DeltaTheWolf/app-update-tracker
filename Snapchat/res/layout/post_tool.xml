@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/post_story_recipient_recycler_view" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="@dimen/post_recipient_recycler_view_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.snap.preview.shared.ui.SendToBottomPanelView android:id="@id/post_bottom_panel" android:background="@color/regular_blue" android:layout_width="0.0dip" android:layout_height="@dimen/send_to_bottom_panel_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/post_story_recipient_recycler_view" />
+</android.support.constraint.ConstraintLayout>

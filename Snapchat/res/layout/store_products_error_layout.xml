@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/default_gap_2_5x" android:paddingBottom="@dimen/default_gap_2_5x" android:layout_width="fill_parent" android:layout_height="@dimen/store_products_error_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/store_products_error_message_text_size" android:textColor="@color/store_products_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/commerce_error_loading_products_line_one" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/store_products_error_message_text_size" android:textColor="@color/store_products_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap" android:text="@string/commerce_error_loading_products_line_two" />
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/retry_button" android:background="@drawable/store_products_error_retry_button" android:layout_width="wrap_content" android:layout_height="@dimen/default_gap_3_5x" android:text="@string/commerce_error_loading_products_retry" android:drawablePadding="@dimen/default_gap" android:drawableStart="@drawable/store_retry_button_icon_scaled" android:paddingStart="@dimen/default_gap_1_5x" android:paddingEnd="@dimen/default_gap_1_5x" />
+</LinearLayout>

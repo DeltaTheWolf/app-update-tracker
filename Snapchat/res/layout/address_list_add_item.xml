@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/payments_white_grey_selector" android:padding="@dimen/default_gap" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/shipping_add_address_icon" android:background="@drawable/green_plus_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap" />
+    <TextView android:textSize="@dimen/text_size_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payments_new_shipping_address" />
+</LinearLayout>

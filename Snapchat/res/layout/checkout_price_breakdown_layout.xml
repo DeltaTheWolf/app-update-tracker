@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/checkout_price_breakdown_list" android:background="@color/white" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/list_separator" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_checkout_subtotal" android:layout_marginStart="@dimen/default_gap_2x" android:layout_alignParentStart="true" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:id="@id/checkout_subtotal_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/checkout_discount_cell" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_checkout_discount" android:layout_marginStart="@dimen/default_gap_2x" android:layout_alignParentStart="true" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:id="@id/checkout_discount_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_checkout_shipping" android:layout_marginStart="@dimen/default_gap_2x" android:layout_alignParentStart="true" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:id="@id/checkout_shipping_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_checkout_tax" android:layout_marginStart="@dimen/default_gap_2x" android:layout_alignParentStart="true" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:id="@id/checkout_tax_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/default_gap_3x" android:layout_marginTop="@dimen/default_gap_half">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/payments_text_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_checkout_total" android:layout_marginStart="@dimen/default_gap_2x" android:layout_alignParentStart="true" custom:scFontWeight="bold" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/payments_text_medium" android:id="@id/checkout_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_2x" android:layout_alignParentEnd="true" custom:scFontWeight="bold" />
+    </RelativeLayout>
+</LinearLayout>

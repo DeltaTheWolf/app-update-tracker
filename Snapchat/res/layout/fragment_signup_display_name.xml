@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.loginsignup.ui.view.BasicLoginSignupLayout android:orientation="vertical" android:id="@id/display_name_page" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:buttonText="@string/display_name_continue_button"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:id="@id/display_name_title" android:text="@string/display_name_title" style="@style/LoginSignupPageTitle" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/first_name_label" android:text="@string/display_name_first_name_label" style="@style/IdentityFieldHint" />
+    <com.snap.ui.view.SnapFontEditText android:id="@id/display_name_first_name_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:maxLines="1" android:inputType="textPersonName|textCapWords" style="@style/IdentityField" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/last_name_label" android:text="@string/display_name_last_name_label" style="@style/IdentityFieldHint" />
+    <com.snap.ui.view.SnapFontEditText android:id="@id/display_name_last_name_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:layout_marginTop="-4.0dip" android:maxLines="1" android:inputType="textPersonName|textCapWords" style="@style/IdentityField" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/display_name_error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityFieldError" />
+    <com.snap.ui.view.SnapLinkFriendlyTextView android:id="@id/tos_pp" android:paddingTop="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_agreement" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap" style="@style/IdentityFinePrintText" />
+</com.snap.identity.loginsignup.ui.view.BasicLoginSignupLayout>

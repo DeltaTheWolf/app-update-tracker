@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/neon_header_layout" style="@style/neon_header_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.hova.HovaAvatarContainerView android:id="@id/neon_header_avatar_container" style="@style/hova_avatar_container_view" />
+    <ImageView android:id="@id/neon_header_search" android:src="@drawable/neon_header_search_icon" android:contentDescription="@string/feed_title" style="@style/hova_header_icon.search_icon" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/neon_header_title" android:text="@string/feed_title" style="@style/hova_header_text" />
+    <com.snap.ui.view.LazyIconView android:layout_gravity="center_vertical" android:id="@id/feed_debug_icon" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginEnd="8.0dip" app:layout_affinity="endHorizontal" app:src="@drawable/hova_header_debug" />
+    <com.snap.hova.HovaAddFriendsButtonContainerView android:id="@id/neon_add_friend_button_container" style="@style/hova_add_friend_button_style" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/feed_new_chat" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/create_new_chat" android:scaleType="fitXY" android:layout_marginEnd="10.0dip" />
+</LinearLayout>

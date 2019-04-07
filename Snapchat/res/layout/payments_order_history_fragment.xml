@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/order_history_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/marco_polo_nav_bar" />
+        <include android:visibility="gone" layout="@layout/payments_nav_bar_layout" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/order_containter" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:layout_above="@id/legacy_nav_bar" android:layout_below="@id/order_history_nav_bar" android:layout_centerHorizontal="true">
+        <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/order_history_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textColor="@color/light_grey" android:gravity="center" android:id="@id/order_history_empty_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <include layout="@layout/payments_loading_bar" />
+    <ViewStub android:id="@id/legacy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

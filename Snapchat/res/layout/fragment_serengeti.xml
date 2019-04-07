@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/serengeti_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/serengeti_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:id="@id/serengeti_webview_loading" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:loading_spinner_color="@color/serengeti_webview_loading_color" />
+    <RelativeLayout android:id="@id/serengeti_error_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/serengeti_error_loading_fade" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/serengeti_error_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/serengeti_close_x" android:layout_marginStart="16.0dip" android:layout_alignParentStart="true" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="17.0sp" android:textColor="@color/serengeti_webview_loading_color" android:id="@id/serengeti_error_loading_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/serengeti_webview_error_loading" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_below="@id/serengeti_error_close" android:layout_centerHorizontal="true" android:textAlignment="center" android:layout_marginStart="50.0dip" android:layout_marginEnd="50.0dip" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/serengeti_generic_error" android:scaleType="fitCenter" android:layout_below="@id/serengeti_error_loading_message" android:layout_centerHorizontal="true" android:layout_marginStart="70.0dip" android:layout_marginEnd="70.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

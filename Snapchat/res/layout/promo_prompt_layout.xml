@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/promo_prompt_blue_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/auto_fill_prompt_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:id="@id/auto_fill_prompt_title" android:paddingLeft="@dimen/promo_prompt_gap" android:paddingRight="@dimen/promo_prompt_gap" style="@style/promo_prompt_chrome_text" />
+        <View android:id="@id/title_underline" android:background="@color/white_fifty_opacity" android:layout_width="@dimen/prompt_title_underline_width" android:layout_height="@dimen/prompt_title_underline_height" android:layout_marginTop="@dimen/promo_prompt_gap" android:layout_below="@id/auto_fill_prompt_title" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_description" android:id="@id/auto_fill_prompt_description" android:paddingLeft="@dimen/promo_prompt_gap" android:paddingRight="@dimen/promo_prompt_gap" android:layout_marginTop="@dimen/promo_prompt_gap" android:layout_below="@id/title_underline" style="@style/promo_prompt_chrome_text" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/auto_fill_prompt_button_layoutlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/auto_fill_prompt_text_layout" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:id="@id/auto_fill_prompt_no_btn" style="@style/sc_remote_web_prompt_no_button" />
+        <Button android:id="@id/auto_fill_prompt_yes_btn" android:layout_toRightOf="@id/auto_fill_prompt_no_btn" style="@style/sc_remote_web_prompt_yes_button" />
+    </RelativeLayout>
+</RelativeLayout>

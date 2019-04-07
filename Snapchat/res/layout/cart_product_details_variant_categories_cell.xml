@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/marco_polo_text_medium" android:id="@id/product_details_variant_category_header" android:background="@drawable/product_info_section_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/marco_polo_text_medium" android:textColor="@color/marco_polo_nav_bar_right_btn" android:id="@id/product_details_variant_category_option" android:background="@drawable/product_info_section_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_select" android:layout_centerVertical="true" android:layout_alignParentEnd="true" custom:scFontWeight="bold" />
+    <View android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

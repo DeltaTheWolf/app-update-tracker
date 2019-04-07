@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checkout_bag_btn_iv" android:visibility="visible" android:layout_width="@dimen/checkout_bag_image_side_length" android:layout_height="@dimen/checkout_bag_image_side_length" android:src="@drawable/marco_polo_bag_full" android:layout_centerInParent="true" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_fine_print" android:gravity="center" android:id="@id/checkout_bag_btn_counter" android:paddingTop="@dimen/single_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="@dimen/checkout_button_quantity_padding_start" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/negative_chat_media_card_corner_width" android:top="@dimen/negative_chat_media_card_corner_width" android:right="@dimen/negative_chat_media_card_corner_width" android:bottom="@dimen/negative_chat_media_card_corner_width">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/chat_media_card_border_radius" android:color="@color/faded_white" />
+            <corners android:topLeftRadius="@dimen/chat_media_card_corner_width_2x" android:bottomLeftRadius="@dimen/chat_media_card_corner_width_2x" />
+        </shape>
+    </item>
+</layer-list>

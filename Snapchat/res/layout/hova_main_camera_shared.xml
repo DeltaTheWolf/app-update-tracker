@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/camera_touch_receiver" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/camera_front_facing_flash" android:background="#ccffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/neon_header_layout" android:clipChildren="false" style="@style/neon_header_container">
+        <com.snap.hova.HovaAvatarContainerView android:id="@id/neon_header_avatar_container" style="@style/hova_avatar_container_view" />
+        <ImageView android:id="@id/neon_header_search" android:src="@drawable/neon_header_search_stroked_icon" android:contentDescription="@string/camera_title" style="@style/hova_header_icon.search_icon" />
+        <com.snap.ui.view.SnapFontTextView android:id="@id/neon_header_title" android:text="@string/camera_title" style="@style/hova_header_text.camera" />
+        <com.snap.hova.HovaAddFriendsButtonContainerView android:id="@id/neon_add_friend_button_container" custom:icon_background_drawable="@drawable/add_friends_header_camera" style="@style/hova_add_friend_button_style.camera_page" />
+    </LinearLayout>
+    <View android:id="@id/camera_mode_dropdown_overlay" style="@style/camera_mode_dropdown_overlay" />
+    <LinearLayout android:id="@id/vertical_container" android:paddingTop="@dimen/vertical_container_padding_top" android:layoutDirection="ltr" style="@style/hova_header_vertical_container">
+        <ImageView android:id="@id/camera_flip_button" android:src="@drawable/camera_flip_icon" android:contentDescription="@string/flip_camera" style="@style/hova_header_icon_vertical_base.normal_margin" />
+        <ImageView android:id="@id/camera_flash_button" android:src="@drawable/camera_flash_drawable" android:contentDescription="@string/camera_flash_switch" style="@style/hova_header_icon_vertical_base.normal_margin" />
+        <ViewStub android:id="@id/camera_night_mode_button_stub" android:layout="@layout/camera_night_mode_button_layout" style="@style/hova_header_icon_vertical_base.normal_margin" />
+        <LinearLayout android:id="@id/camera_mode_vertical_container" style="@style/hova_header_vertical_container">
+            <ViewStub android:id="@id/camera_mode_divider_one_stub" android:layout="@layout/camera_mode_divider" android:inflatedId="@id/camera_mode_divider_one" style="@style/hova_header_icon_vertical_base.divider" />
+            <ViewStub android:id="@id/camera_mode_batch_capture_stub" android:layout="@layout/camera_mode_batch_capture_icon_layout" android:inflatedId="@id/camera_mode_batch_capture_icon" style="@style/hova_header_icon_vertical_base.normal_margin.horizontal_container" />
+            <ViewStub android:id="@id/camera_mode_timer_stub" android:layout="@layout/camera_mode_timer_layout" android:inflatedId="@id/camera_mode_timer" style="@style/hova_header_icon_vertical_base.normal_margin.horizontal_container" />
+            <ViewStub android:id="@id/camera_mode_portrait_stub" android:layout="@layout/camera_mode_portrait_icon_layout" android:inflatedId="@id/camera_mode_portrait_icon" style="@style/hova_header_icon_vertical_base.normal_margin.horizontal_container" />
+            <ViewStub android:id="@id/camera_mode_grid_level_stub" android:layout="@layout/camera_mode_grid_level_button_layout" android:inflatedId="@id/camera_mode_grid_level_button" style="@style/hova_header_icon_vertical_base.normal_margin.horizontal_container" />
+            <ViewStub android:id="@id/camera_mode_dropdown_stub" android:layout="@layout/camera_mode_dropdown_layout" style="@style/hova_header_icon_vertical_base.dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/portrait_mode_hint_view_stub" android:layout="@layout/portrait_mode_hint_layout" android:inflatedId="@id/portrait_mode_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/portrait_mode_hint_margin_bottom" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/countdown_animation_view_stub" android:layout="@layout/countdown_animation_layout" android:inflatedId="@id/countdown_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/countdown_timer_margin_bottom" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/camera_hands_free_recording_lock" android:layout="@layout/hands_free_recording_layout" android:inflatedId="@id/camera_hands_free_recording_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/batch_capture_review_edit_button_stub" android:layout="@layout/batch_capture_review_edit_button_layout" android:inflatedId="@id/batch_capture_review_edit_button" android:layout_width="wrap_content" android:layout_height="@dimen/camera_mode_batch_capture_review_edit_button_height" android:layout_marginBottom="@dimen/camera_mode_batch_capture_review_edit_button_margin_bottom" />
+</merge>

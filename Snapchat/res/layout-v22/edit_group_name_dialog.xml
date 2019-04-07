@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/edit_name_bar_container" android:background="@drawable/edit_group_name_background" android:layout_width="fill_parent" android:layout_height="@dimen/chat_header_height">
+        <EditText android:textSize="@dimen/chat_name_group_text_size" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/edit_name" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="5.0dip" android:singleLine="true" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/edit_group_name_cursor" android:importantForAutofill="no" />
+    </FrameLayout>
+</FrameLayout>

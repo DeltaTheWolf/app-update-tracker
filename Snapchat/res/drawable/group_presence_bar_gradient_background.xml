@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:gravity="bottom" android:shape="rectangle" android:bottom="@dimen/group_presence_bar_white_background_height">
+            <size android:height="@dimen/group_presence_bar_gradient_background_height" />
+            <gradient android:startColor="#ffffffff" android:endColor="#00ffffff" android:angle="90.0" android:type="linear" android:centerY="66.0%" android:centerColor="#ccffffff" />
+        </shape>
+    </item>
+</layer-list>

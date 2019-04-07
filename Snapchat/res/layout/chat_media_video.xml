@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/chat_video_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.messaging.chat.ui.view.CroppingTextureVideoView android:id="@id/chat_video_media" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <com.snap.imageloading.view.SnapImageView android:id="@id/chat_video_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

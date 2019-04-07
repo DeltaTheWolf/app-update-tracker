@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gallery_create_passphrase_container" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout android:id="@id/top_panel" android:layout_weight="0.0" custom:topPaddingStatusBar="true" style="@style/MemoriesPageHeader">
+            <ImageView android:id="@id/top_panel_back_button" android:src="@drawable/gallery_red_back_arrow" style="@style/GalleryPanelBackButton" />
+            <TextView android:id="@id/top_panel_title" android:text="@string/gallery_create_passphrase" style="@style/GalleryPanelTitleWithBackButton" />
+        </com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout>
+        <com.snap.ui.view.SnapFontTextView android:textColor="@color/gallery_grey_text" android:gravity="center" android:layout_gravity="center_horizontal" android:text="@string/gallery_private_passphrase_requirements" android:layout_weight="0.0" style="@style/GalleryPrivateTextBlock" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gallery_passphrase_container_margin_horizontal" android:layout_marginRight="@dimen/gallery_passphrase_container_margin_horizontal" layout="@layout/gallery_ultra_secure_passphrase_view" />
+        </FrameLayout>
+        <Button android:enabled="false" android:id="@id/gallery_passphrase_continue_button" android:layout_marginBottom="@dimen/gallery_passphrase_submit_button_margin_bottom" android:text="@string/memories_button_continue_text" android:layout_weight="0.0" style="@style/GalleryRedButtonBottom" />
+        <LinearLayout android:layout_gravity="bottom|center" android:id="@id/gallery_private_ultra_secure_disable_button" android:visibility="gone" android:layout_marginBottom="@dimen/default_gap_4x" android:layout_weight="0.0" style="@style/GalleryRadioButton">
+            <ImageView style="@style/GalleryRadioButtonCircle" />
+            <TextView android:id="@id/gallery_private_ultra_secure_disable_text" style="@style/GalleryRadioButtonText" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

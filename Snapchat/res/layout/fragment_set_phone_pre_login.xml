@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/forgot_password_set_phone" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.identity.loginsignup.ui.view.ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout style="@style/LoginSignupPageContainer">
+            <com.snap.ui.view.SnapFontTextView android:id="@id/phone_form_title" android:text="@string/signup_phone_prompt" style="@style/LoginSignupPageTitle" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/phone_form_hint" android:text="@string/signup_phone_hint" style="@style/IdentityFieldHint" />
+            <com.snap.identity.ui.shared.phonenumber.PhonePickerView android:id="@id/phone_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/phone_error_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/IdentityFieldError" />
+        </LinearLayout>
+    </com.snap.identity.loginsignup.ui.view.ScrollView>
+    <com.snap.identity.api.sharedui.ProgressButton android:id="@id/continue_button" custom:buttonText="@string/continue_next" custom:pendingText="@string/sending" style="@style/LoginSignupButton" />
+</LinearLayout>

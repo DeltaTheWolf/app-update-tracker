@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/neon_header_height" android:width="@dimen/hova_nav_search_icon_width" />
+    <item android:left="@dimen/hova_nav_search_icon_padding_left" android:right="@dimen/hova_nav_search_icon_padding_right">
+        <bitmap android:src="@drawable/neon_header_search" />
+    </item>
+</layer-list>

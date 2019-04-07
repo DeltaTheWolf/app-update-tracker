@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/hova_header_icon_vertical_base.normal_margin.horizontal_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.ShadowTextView android:id="@id/camera_mode_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_mode_timer" style="@style/camera_mode_text" />
+    <ImageView android:id="@id/camera_mode_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_mode_timer" />
+</LinearLayout>

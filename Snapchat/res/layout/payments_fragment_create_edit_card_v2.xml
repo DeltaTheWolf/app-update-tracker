@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/payments_edit_create_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/marco_polo_nav_bar" />
+        <include android:visibility="gone" layout="@layout/payments_nav_bar_layout" />
+    </FrameLayout>
+    <ScrollView android:id="@id/payments_create_edit_card_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/legacy_nav_bar" android:layout_below="@id/payments_edit_create_nav_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/payments_edit_create_form" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider_off_white" android:showDividers="middle" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap">
+            <RelativeLayout android:id="@id/payments_card_number_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_1_5x">
+                <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/payments_card_number_float_label" android:layout_width="fill_parent" style="@style/marco_polo_float_label_text_field">
+                    <com.snap.payments.lib.views.PaymentsCardNumberEditText android:layout_gravity="bottom" android:id="@id/payments_card_number_edit_text" android:background="@color/transparent" android:nextFocusDown="@id/payments_card_expiry_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/payments_credit_card" />
+                </com.snap.payments.lib.views.FloatLabelLayout>
+                <ImageView android:id="@id/payments_card_number_icon" android:layout_width="@dimen/card_icon_width" android:layout_height="@dimen/card_icon_height" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/payments_edit_create_table" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/payments_card_expiry_float_label" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/marco_polo_float_label_text_field">
+                    <com.snap.payments.lib.views.PaymentsCardExpiryEditText android:layout_gravity="bottom|center" android:id="@id/payments_card_expiry_edit_text" android:background="@color/transparent" android:nextFocusDown="@id/payments_card_cvv_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/payments_expiry_format" />
+                </com.snap.payments.lib.views.FloatLabelLayout>
+                <com.snap.payments.lib.views.FloatLabelLayout android:id="@id/payments_card_cvv_float_label" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/marco_polo_float_label_text_field">
+                    <com.snap.payments.lib.views.PaymentsCVVEditText android:layout_gravity="bottom|center" android:id="@id/payments_card_cvv_edit_text" android:background="@color/transparent" android:nextFocusDown="@id/address_first_name_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/payments_cvv" />
+                </com.snap.payments.lib.views.FloatLabelLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/dark_red" android:gravity="center" android:id="@id/payments_card_error" android:padding="@dimen/default_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/payments_payments_billing_title_container" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap">
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/regular_green" android:id="@id/payments_billing_address_title" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_payment_billing_address_title" />
+                <RelativeLayout android:id="@id/using_billing_address_checkbox_container" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_default" android:id="@id/using_billing_address_checkbox_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payments_using_shipping_address" android:maxLines="2" android:layout_toStartOf="@id/using_billing_address_checkbox" android:layout_alignParentStart="true" />
+                    <CheckBox android:id="@id/using_billing_address_checkbox" android:layout_alignParentEnd="true" style="@style/settings_checkbox" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.snap.payments.lib.views.AddressView android:id="@id/billing_address_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/error_red" android:gravity="center" android:id="@id/payments_creation_error_label" android:padding="@dimen/default_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/error_red" android:gravity="center" android:id="@id/payments_remove_button" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payments_method_detail_remove_payment_method" />
+            <FrameLayout android:id="@id/payments_method_legal_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/legal_notice_layout" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/payments_loading_bar" />
+    <FrameLayout android:id="@id/legacy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/dummy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

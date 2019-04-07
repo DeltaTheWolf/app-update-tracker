@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/shipping_address_page" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/shipping_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/marco_polo_nav_bar" />
+        <include android:visibility="gone" layout="@layout/payments_nav_bar_layout" />
+    </FrameLayout>
+    <ScrollView android:id="@id/shipping_address_scroll_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/legacy_nav_bar" android:layout_below="@id/shipping_nav_bar" android:paddingStart="@dimen/default_gap" android:paddingEnd="@dimen/default_gap">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider_off_white" android:showDividers="middle">
+            <com.snap.payments.lib.views.AddressView android:id="@id/shipping_address_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/error_red" android:gravity="center" android:id="@id/payments_remove_button" android:paddingTop="@dimen/default_gap_half" android:paddingBottom="@dimen/default_gap_half" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:text="@string/marco_polo_checkout_remove_shipping_address" />
+            <FrameLayout android:id="@id/legal_notice_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/legal_notice_layout" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/legacy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/dummy_nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include layout="@layout/payments_loading_bar" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:id="@id/elm_white_background" android:background="@drawable/elm_white_background_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/expanded_background_gradient_height" android:alpha="0.0" />
+    <View android:id="@id/call_chat_overlay" android:background="@color/black_forty_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+</merge>

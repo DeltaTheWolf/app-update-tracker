@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/rounded_corners_bottom_white" android:padding="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/map_search_subtitle_size" android:textColor="@color/white" android:gravity="center" android:id="@id/map_search_view_more_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nyc_view_more_button_text" custom:scFontWeight="bold" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/sc_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/settings_snapchat_alpha_settings_title" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:layout_constraintBottom_toTopOf="@id/mushroom_opt_in" custom:layout_constraintTop_toBottomOf="@id/sc_header_view">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap">
+            <View android:id="@id/stub_view1" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/dark_charcoal" android:gravity="center" android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_snapchat_alpha_settings_header" android:lineSpacingExtra="@dimen/seven_dp_gap" android:fontFamily="@font/avenir_next_demi_bold" />
+            <View android:id="@id/stub_view2" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/smile_ghost" android:layout_width="@dimen/smile_ghost_width" android:layout_height="@dimen/smile_ghost_height" android:src="@drawable/alpha_ghost_smile" />
+            <View android:id="@id/stub_view3" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/dark_charcoal" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_snapchat_alpha_settings_body" android:lineSpacingExtra="@dimen/five_dp_gap" android:fontFamily="@font/avenir_next_medium" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/mushroom_opt_in" android:background="@color/regular_green" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/settings_snapchat_alpha_settings_opt_in" android:layout_alignParentBottom="true" android:textAllCaps="true" custom:fontKerning="0.084" custom:layout_constraintBottom_toTopOf="@id/black_rectangle" custom:scFontWeight="bold" />
+    <com.snapchat.android.core.ui.SnapchatSoftNavigationBar android:id="@id/black_rectangle" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="1.0" custom:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

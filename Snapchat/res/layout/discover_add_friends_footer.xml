@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/discover_add_friends_footer_controller" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/grey" android:gravity="center_horizontal" android:id="@id/helper_text" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/find_friends_stories_description" app:scFontWeight="bold" />
+    <com.snapchat.android.framework.ui.views.ScFontButton android:textSize="@dimen/text_size_default" android:textColor="@color/white" android:gravity="center" android:id="@id/cta_button" android:background="@drawable/sync_friends_cta_button_purple" android:paddingLeft="@dimen/default_gap" android:paddingRight="@dimen/default_gap" android:layout_width="@dimen/add_contacts_button_width" android:layout_height="@dimen/alert_dialog_button_height" android:layout_marginTop="@dimen/default_gap" android:text="@string/add_friends_button_title" />
+    <View android:id="@id/friends_section_done_loading_ptr" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_page" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/settings_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerColorScheme="@color/regular_green" app:headerTitle="@string/settings_title" app:showBackArrow="true" app:showBottomBorder="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/general_settings_scrollview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/settings_items_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false" />
+        </ScrollView>
+        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/settings_main_page_flag_loading_view" android:visibility="gone" android:layout_width="@dimen/settings_loading_spinner_size" android:layout_height="@dimen/settings_loading_spinner_size" app:loading_spinner_color="@color/dark_green" />
+    </FrameLayout>
+</LinearLayout>

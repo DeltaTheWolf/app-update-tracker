@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/subscribe_longform_text_size" android:id="@id/opt_in_notif_longform_display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subscribe_longform_text_margin_top" />
+    <com.snap.discover.playback.ui.views.SubscribedAnimationView android:id="@id/opt_in_notif_longform_animation_view" android:layout_width="@dimen/subscribe_longform_gif_width" android:layout_height="@dimen/subscribe_longform_gif_height" />
+    <TextView android:textSize="@dimen/subscribe_longform_text_size" android:id="@id/opt_in_notif_longform_notif_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/subscribe_longform_text_margin_top" />
+</LinearLayout>

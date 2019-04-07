@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/unified_profile_cell_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/unified_profile_carousel_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/unified_profile_cell_content_view" android:layout_width="@dimen/profile_identity_recycler_carousel_width" android:layout_height="@dimen/profile_identity_carousel_height" />
+        <com.snap.profile.sharedui.pageindicator.DotPageIndicator android:layout_gravity="center" android:id="@id/page_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" custom:piSize1="@dimen/default_gap" custom:piSize2="@dimen/default_gap_three_quarters" />
+    </LinearLayout>
+</FrameLayout>

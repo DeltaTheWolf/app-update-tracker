@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.framework.ui.views.RoundedFrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="@dimen/sc_story_card_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:id="@id/image_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="@drawable/card_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@drawable/sc_story_card_gradient_foreground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="11.0sp" android:textColor="@color/light_grey" android:layout_gravity="start|center|top" android:id="@id/corner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:includeFontPadding="false" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:layout_marginStart="@dimen/stories_card_margin" android:layout_marginEnd="@dimen/stories_card_margin" app:scFontWeight="bold" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/stories_card_text_primary" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/story_featured_banner_bar" android:background="@color/regular_red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="featured" android:maxLines="1" android:textAllCaps="true" />
+        <ImageView android:layout_gravity="end" android:id="@id/story_bookmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookmark" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/stories_card_margin_v2">
+        <com.snap.ui.view.emoji.SnapEmojiTextView android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/stories_card_margin_standard_v2" android:layout_marginEnd="@dimen/stories_card_margin_standard_v2" app:scFontWeight="bolder" style="@style/sc_story_card_primary_text_v2.alignment" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/stories_card_text_second" android:textColor="@color/white" android:ellipsize="end" android:id="@id/second_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/stories_card_margin_standard_v2" android:layout_marginEnd="@dimen/stories_card_margin_standard_v2" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/emoji_view" android:visibility="visible" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/stories_card_margin_standard_v2" android:layout_marginEnd="@dimen/stories_card_margin_standard_v2">
+            <ImageView android:layout_gravity="start|center" android:id="@id/icon_image_view" android:visibility="gone" android:layout_width="@dimen/stories_card_icon_size_v2" android:layout_height="@dimen/stories_card_icon_size_v2" android:alpha="0.7" android:layout_marginEnd="@dimen/stories_card_margin_between" />
+            <com.snap.ui.view.SnapFontTextView android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/category" android:layout_width="wrap_content" android:layout_height="wrap_content" app:scFontWeight="bold" style="@style/story_card_secondary_text_v2" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/barracuda_no_subscribe_post_view" />
+    <include layout="@layout/debug_card_button_layout_stub" />
+    <include layout="@layout/debug_df_prefetch_stub" />
+</com.snapchat.android.framework.ui.views.RoundedFrameLayout>

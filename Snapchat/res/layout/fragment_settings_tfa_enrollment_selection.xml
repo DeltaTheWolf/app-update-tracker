@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tfa_enrollment_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/settings_tfa_settings_header" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:text="@string/settings_tfa_enrollment_selection_instruction" style="@style/IdentitySettingsCopyText" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/tfa_enrollment_selection_sms_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip">
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/default_gap_quarter" android:paddingBottom="@dimen/default_gap_quarter" android:text="@string/settings_tfa_settings_sms" style="@style/IdentitySettingsItemName" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/tfa_enrollment_selection_sms_subtext" android:paddingTop="@dimen/default_gap_quarter" android:paddingBottom="@dimen/default_gap_quarter" style="@style/IdentitySettingsItemSubtext" />
+            </LinearLayout>
+            <include layout="@layout/list_separator" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/tfa_enrollment_selection_otp_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip">
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/default_gap_quarter" android:paddingBottom="@dimen/default_gap_quarter" android:text="@string/settings_tfa_settings_otp" style="@style/IdentitySettingsItemName" />
+                <com.snap.ui.view.SnapFontTextView android:paddingTop="@dimen/default_gap_quarter" android:paddingBottom="@dimen/default_gap_quarter" android:text="@string/settings_tfa_settings_otp_explanation" style="@style/IdentitySettingsItemSubtext" />
+            </LinearLayout>
+            <include layout="@layout/list_separator" />
+            <com.snap.ui.view.SnapFontTextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:text="@string/settings_tfa_enrollment_selection_explanation" style="@style/IdentitySettingsCopyText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

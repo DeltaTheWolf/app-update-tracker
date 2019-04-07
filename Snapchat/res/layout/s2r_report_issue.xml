@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:customAttr="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="vertical" android:id="@id/s2r_report_issue_outage_banner_frame_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/s2r_report_issue_outage_banner_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/s2r_outage_banner_icon" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/s2r_outage_banner_text_size" android:textColor="@color/s2r_outage_banner_text_color" android:id="@id/s2r_report_issue_outage_banner_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_1_5x" android:text="@string/s2r_outage_banner_text" android:textAlignment="center" android:layout_marginStart="@dimen/default_gap_2_5x" android:layout_marginEnd="@dimen/default_gap_2_5x" customAttr:scFontWeight="bold" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/s2r_report_issue_contact_us_report_technical_issue_frame_layout" android:background="@drawable/settings_menu_item_selector" android:padding="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/settings_selectable_item_container">
+                <TextView android:id="@id/s2r_report_a_technical_issue_label" android:text="@string/s2r_report_a_technical_issue_label" style="@style/new_settings_item_name" />
+            </FrameLayout>
+            <include android:id="@id/section_separator_1" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" layout="@layout/list_separator" />
+            <FrameLayout android:id="@id/s2r_report_issue_contact_us_suggest_improvement_frame_layout" android:background="@drawable/settings_menu_item_selector" android:padding="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/settings_selectable_item_container">
+                <TextView android:id="@id/s2r_suggest_an_improvement_label" android:text="@string/s2r_suggest_an_improvement_label" style="@style/new_settings_item_name" />
+            </FrameLayout>
+            <include android:id="@id/section_separator_2" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" layout="@layout/list_separator" />
+            <FrameLayout android:id="@id/s2r_report_issue_contact_us_report_safety_concern_frame_layout" android:background="@drawable/settings_menu_item_selector" android:padding="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/settings_selectable_item_container">
+                <TextView android:id="@id/s2r_report_a_safety_concern" android:text="@string/s2r_report_a_safety_concern_label" style="@style/new_settings_item_name" />
+            </FrameLayout>
+            <include android:id="@id/section_separator_3" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" layout="@layout/list_separator" />
+            <FrameLayout android:id="@id/s2r_report_issue_privacy_question_frame_layout" android:background="@drawable/settings_menu_item_selector" android:padding="@dimen/default_gap_2x" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/settings_selectable_item_container">
+                <TextView android:id="@id/s2r_privacy_question" android:text="@string/s2r_privacy_question_label" style="@style/new_settings_item_name" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/s2r_feature_description_text_size" android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/s2r_settings_report_issue_information_collection_string" android:padding="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerVertical="true" customAttr:scFontWeight="regular" />
+</RelativeLayout>

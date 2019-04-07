@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/all_friends_section" layout="@layout/location_sharing_audience_row" />
+    <include layout="@layout/merge_list_separator" />
+    <include android:id="@id/blacklist_friends_section" layout="@layout/location_sharing_audience_row" />
+    <include layout="@layout/merge_list_separator" />
+    <include android:id="@id/custom_friends_section" layout="@layout/location_sharing_audience_row" />
+    <include layout="@layout/merge_list_separator" />
+</LinearLayout>

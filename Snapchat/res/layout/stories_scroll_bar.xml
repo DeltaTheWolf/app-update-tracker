@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="@dimen/stories_scroll_bar_view_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|right|top" android:id="@id/stories_scroll_bar_elements" android:paddingTop="@dimen/stories_slider_top_padding" android:paddingRight="@dimen/stories_slider_right_padding" android:paddingBottom="@dimen/stories_slider_bottom_padding" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/stories_scroll_bar_background" android:layout_width="@dimen/stories_scroll_bar_thickness" android:layout_height="fill_parent" android:src="@drawable/stories_slider_background" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/stories_scroll_bar_position_indicator" android:background="@drawable/stories_slider_position_indicator" android:layout_width="@dimen/stories_slider_position_indicator_view_width" android:layout_height="@dimen/stories_slider_position_indicator_view_height" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/stories_slider_right_padding">
+        <TextView android:textSize="@dimen/stories_slider_text_box_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center|right|top" android:id="@id/stories_scroll_bar_letter" android:background="@drawable/stories_slider_description_background" android:paddingLeft="@dimen/stories_slider_text_box_padding_left" android:visibility="invisible" android:layout_width="@dimen/stories_slider_text_box_width" android:layout_height="@dimen/stories_slider_text_box_height" android:maxLength="16" />
+    </FrameLayout>
+</merge>

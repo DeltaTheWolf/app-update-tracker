@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap" android:layout_alignParentStart="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_explore_view_eye" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="10.0sp" android:textColor="@color/regular_blue" android:id="@id/explore_my_status_view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/explore_my_status_action_caret" android:padding="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/explore_up_caret" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/explore_my_status_action_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/explore_trash" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" />
+    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:id="@id/deleting_spinner" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginEnd="@dimen/default_gap" android:layout_alignParentEnd="true" custom:loading_spinner_color="@color/regular_grey" />
+    <View android:gravity="center" android:id="@id/bottom_spacer" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

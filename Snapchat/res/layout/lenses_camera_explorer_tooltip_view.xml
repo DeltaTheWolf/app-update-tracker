@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.camera.explorer.tooltip.DefaultExplorerTooltipView android:id="@id/lenses_camera_explorer_tooltip_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tooltip_container_view" layout="@layout/lenses_tooltip_box_view" />
+    <View android:layout_gravity="bottom|center" android:id="@id/lenses_explorer_tooltip_anchor_view" android:layout_width="@dimen/lens_camera_explorerbutton_view_size" android:layout_height="@dimen/lens_camera_explorerbutton_view_size" android:layout_marginTop="@dimen/lens_camera_explorerbutton_view_top_margin" android:layout_marginStart="@dimen/lens_camera_explorerbutton_view_left_margin" />
+</com.snap.lenses.camera.explorer.tooltip.DefaultExplorerTooltipView>

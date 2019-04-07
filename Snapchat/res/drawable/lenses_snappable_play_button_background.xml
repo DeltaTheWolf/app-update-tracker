@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="16.0dip" android:insetRight="16.0dip" android:insetTop="16.0dip" android:insetBottom="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item android:state_enabled="true" android:drawable="@drawable/lenses_snappable_play_button_background_enabled" />
+        <item android:state_enabled="false" android:drawable="@drawable/lenses_snappable_play_button_background_disabled" />
+        <item android:drawable="@drawable/lenses_snappable_play_button_background_disabled" />
+    </selector>
+</inset>

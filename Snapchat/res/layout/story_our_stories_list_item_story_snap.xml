@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/our_stories_list_item_story_snap" android:background="@drawable/story_list_item_logbook_snap_selectable_background" android:layout_width="fill_parent" android:layout_height="@dimen/story_our_stories_cell_height" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/stories_list_item_story_snap_pressed_background" android:background="@color/black_five_opacity" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snapchat.android.framework.ui.animations.ArcView android:id="@id/stories_list_item_thumbnail_layout_loading_view" android:layout_width="@dimen/story_list_item_thumbnail_size" android:layout_height="@dimen/story_list_item_thumbnail_size" android:layout_centerVertical="true" android:alpha="0.0" android:layout_marginStart="@dimen/default_gap_2_5x" android:layout_marginEnd="@dimen/default_gap_2_5x" android:layout_alignParentStart="true" />
+    <com.snap.imageloading.view.SnapImageView android:id="@id/stories_list_item_thumbnail_layout_image_view" android:layout_width="@dimen/story_list_item_thumbnail_size" android:layout_height="@dimen/story_list_item_thumbnail_size" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_2_5x" android:layout_marginEnd="@dimen/default_gap_2_5x" android:layout_alignParentStart="true" />
+    <include android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/stories_list_item_story_snap_stats_and_failed_buttons_container" android:layout_toEndOf="@id/stories_list_item_thumbnail_layout_image_view" layout="@layout/story_list_item_text_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/stories_list_item_story_snap_stats_and_failed_buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/stories_list_item_story_snap_action_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_1_25x" android:layout_marginEnd="@dimen/default_gap_1_25x">
+            <FrameLayout android:paddingRight="@dimen/story_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatImageView android:id="@id/stories_list_item_story_snap_delete_button" android:layout_width="@dimen/story_icon_size" android:layout_height="@dimen/story_icon_size" android:src="@drawable/story_management_delete_icon" android:scaleType="fitXY" android:tint="@color/regular_grey" app:background="@drawable/story_management_touch_selector" />
+                <ProgressBar android:id="@id/stories_list_item_story_snap_delete_progress_bar" android:padding="@dimen/story_icon_padding" android:visibility="invisible" android:layout_width="@dimen/story_icon_size" android:layout_height="@dimen/story_icon_size" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatImageView android:id="@id/stories_list_item_story_snap_save_button" android:layout_width="@dimen/story_icon_size" android:layout_height="@dimen/story_icon_size" android:src="@drawable/story_management_save_icon" android:scaleType="fitXY" android:tint="@color/regular_grey" app:background="@drawable/story_management_touch_selector" />
+                <ProgressBar android:id="@id/stories_list_item_story_snap_save_progress_bar" android:padding="@dimen/story_icon_padding" android:visibility="invisible" android:layout_width="@dimen/story_icon_size" android:layout_height="@dimen/story_icon_size" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/attachment_card_dialogue_container" android:background="@drawable/attachment_permission_background" android:layout_width="fill_parent" android:layout_height="@dimen/attachment_card_web_content_dialog_item_height" android:layout_marginLeft="@dimen/attachment_card_web_content_horizontal_margin" android:layout_marginRight="@dimen/attachment_card_web_content_horizontal_margin" android:layout_marginStart="@dimen/attachment_card_web_content_horizontal_margin" android:layout_marginEnd="@dimen/attachment_card_web_content_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:gravity="center" android:id="@id/attachment_card_dialogue_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/attachment_show_links_copied_dialogue" android:maxLines="2" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/attachment_card_dialogue_prompt_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap" android:text="@string/attachment_show_links_copied_dialogue_explanation" android:maxLines="2" />
+    <Space android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <com.snap.ui.view.button.SnapFontButton android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:gravity="center" android:id="@id/show_clipboard_no_button" android:background="@drawable/attachment_permission_button_background_grey_outline" android:layout_width="@dimen/attachment_clipboard_dialog_button_width" android:layout_height="@dimen/attachment_clipboard_dialog_button_height" android:text="@string/not_now" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <com.snap.ui.view.button.SnapFontButton android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:gravity="center" android:id="@id/show_clipboard_yes_button" android:background="@drawable/attachment_permission_button_blue_background" android:layout_width="@dimen/attachment_clipboard_dialog_button_width" android:layout_height="@dimen/attachment_clipboard_dialog_button_height" android:minWidth="80.0dip" android:text="@string/give_access" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Space android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

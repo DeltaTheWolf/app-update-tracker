@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snapchat.android.talkv3.fullscreen.FullscreenTouchPane android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/fullscreen_background_stub" android:visibility="gone" android:layout="@layout/fullscreen_background" android:inflatedId="@id/fullscreen_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="end" android:id="@id/down_caret" android:background="@drawable/transparent_circle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_chat_down_arrow" />
+</com.snapchat.android.talkv3.fullscreen.FullscreenTouchPane>

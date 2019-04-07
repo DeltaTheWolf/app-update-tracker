@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.SafeViewPager android:id="@id/sticker_picker_horizontal_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/sticker_picker_category_selector_container" />
+    <com.snap.stickers.ui.views.CategorySelector android:id="@id/sticker_picker_category_selector_container" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true" />
+    <FrameLayout android:layout_gravity="center" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/press_and_hold_tooltip" android:visibility="gone" android:layout="@layout/stickers_snap_preview_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/bitmoji_friend_picker_stub" android:visibility="gone" android:layout="@layout/stickers_bitmoji_friend_picker_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/emoji_skin_tone_picker_stub" android:visibility="gone" android:layout="@layout/stickers_emoji_skin_tone_picker_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

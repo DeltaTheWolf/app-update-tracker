@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/alphabetic_scroll_bar_layout" android:background="@drawable/scroll_bar_background_color_selector" android:paddingTop="@dimen/single_dp" android:paddingBottom="@dimen/single_dp" android:layout_width="@dimen/send_to_scroll_bar_icon_size" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/alphabetic_scroll_bar_search_icon" android:tag="SEARCH" android:src="@drawable/scroll_bar_search_icon_selector" style="@style/sendto_scrollbar_v2_imageview" />
+    <ImageView android:id="@id/alphabetic_scroll_bar_best_friends_icon" android:tag="BEST_FRIENDS" android:src="@drawable/scroll_bar_best_friends_icon_selector" style="@style/sendto_scrollbar_v2_imageview" />
+    <ImageView android:id="@id/alphabetic_scroll_bar_recents_icon" android:tag="RECENTS" android:src="@drawable/scroll_bar_recents_icon_selector" style="@style/sendto_scrollbar_v2_imageview" />
+    <ImageView android:id="@id/alphabetic_scroll_bar_group_icon" android:tag="GROUPS" android:src="@drawable/scroll_bar_groups_icon_selector" style="@style/sendto_scrollbar_v2_imageview" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/alphabetic_scroll_bar_alphabetic_icons" android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ" custom:scFontWeight="bold" style="@style/sendto_scrollbar_v2_textview" />
+    <ImageView android:id="@id/alphabetic_scroll_bar_hash_tag_icon" android:tag="HASH_TAGS" android:src="@drawable/scroll_bar_hash_tag_selector" style="@style/sendto_scrollbar_v2_imageview" />
+</LinearLayout>

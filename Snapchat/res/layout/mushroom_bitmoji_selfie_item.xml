@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/bitmoji_selfie_container" android:background="@drawable/bitmoji_selfie_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.layout.CircleLinearLayout android:orientation="vertical" android:id="@id/bitmoji_selfie_wrapper" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="100.0">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="20.0" />
+        <com.snap.imageloading.view.SnapImageView android:layout_gravity="bottom" android:id="@id/bitmoji_selfie_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="80.0" />
+    </com.snapchat.android.framework.ui.layout.CircleLinearLayout>
+    <View android:id="@id/bitmoji_selfie_selected_circle" android:background="@drawable/bitmoji_selfie_selected_circle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignTop="@id/bitmoji_selfie_wrapper" android:layout_alignBottom="@id/bitmoji_selfie_wrapper" />
+    <View android:id="@id/bitmoji_selfie_selected_icon" android:background="@drawable/bitmoji_selfie_selected_indicator" android:visibility="gone" android:layout_width="@dimen/bitmoji_selfie_selected_indicator_size" android:layout_height="@dimen/bitmoji_selfie_selected_indicator_size" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/single_dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/send_to_action_bar_create_group_button" android:layout_width="@dimen/send_to_action_bar_button_width" android:layout_height="@dimen/neon_header_button_size" android:src="@drawable/send_to_new_group" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    <ViewStub android:id="@id/send_to_action_bar_group_label_stub" android:layout="@layout/send_to_create_group_label" android:inflatedId="@id/send_to_action_bar_create_group_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15.0sp" />
+</LinearLayout>

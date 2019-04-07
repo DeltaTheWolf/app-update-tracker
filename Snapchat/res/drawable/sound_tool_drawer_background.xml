@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/sound_tool_drawer_background_padding" android:right="@dimen/sound_tool_drawer_background_padding">
+        <shape>
+            <solid android:color="@color/black_thirty_opacity" />
+            <corners android:topLeftRadius="@dimen/sound_tool_drawer_corner_radius" android:topRightRadius="@dimen/sound_tool_drawer_corner_radius" android:bottomLeftRadius="@dimen/sound_tool_drawer_corner_radius" android:bottomRightRadius="@dimen/sound_tool_drawer_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.lenses.explorer.LensExplorerView android:theme="@style/LensExplorerTheme" android:id="@id/lenses_explorer_view" android:background="@drawable/page_spinner_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <android.support.design.widget.CollapsingToolbarLayout android:paddingTop="@dimen/neon_header_height" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/page_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontTextView android:id="@id/lenses_explorer_subscription_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap_quarter" android:text="@string/subscription_section_title" style="@style/header" />
+                <com.snap.lenses.explorer.subscription.DefaultSubscriptionListView android:id="@id/lenses_explorer_subscriptions_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/lenses_explorer_community_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_quarter" android:text="@string/feed_section_title" style="@style/header" />
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <com.snap.lenses.explorer.community.DefaultCommunityLensListView android:id="@id/lenses_explorer_community_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-6.0dip" app:layout_behavior="@string/scrolling_behavior" />
+    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/lenses_explorer_loading_spinner" android:layout_width="@dimen/lens_explorer_loading_spinner_size" android:layout_height="@dimen/lens_explorer_loading_spinner_size" />
+</com.snap.lenses.explorer.LensExplorerView>

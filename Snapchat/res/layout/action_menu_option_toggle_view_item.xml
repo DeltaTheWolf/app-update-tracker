@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/action_menu_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/action_menu_text_size" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="@dimen/action_menu_item_height" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" />
+    <android.support.v7.widget.SwitchCompat android:theme="@style/switch_compat" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_marginEnd="@dimen/default_gap_1_5x" app:showText="false" />
+</FrameLayout>

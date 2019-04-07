@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textAppearance="@android:style/TextAppearance.Medium" android:gravity="center" android:id="@id/empty_message_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_blocked_snapchatters" android:drawableBottom="@drawable/no_blocked_snapchatters" android:drawablePadding="@dimen/default_gap_2x" />
+</RelativeLayout>

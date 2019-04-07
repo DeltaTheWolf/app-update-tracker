@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/map_explore_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.emoji.SnapEmojiTextView android:textSize="@dimen/text_size_small_medium" android:gravity="center" android:id="@id/map_explorer_emoji_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/explore_button_size" android:layout_margin="2.0dip" android:paddingStart="10.0dip" android:paddingEnd="@dimen/default_gap_half" />
+    <ImageView android:id="@id/map_explorer_button" android:visibility="gone" android:layout_width="@dimen/explore_button_size" android:layout_height="@dimen/explore_button_size" android:layout_margin="2.0dip" android:src="@drawable/explore_compass" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/map_explorer_button_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="2.0dip" android:layout_marginEnd="@dimen/default_gap_1_5x" app:scFontWeight="bold" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="10.0sp" android:textColor="@color/error_red" android:id="@id/map_explorer_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:includeFontPadding="false" android:textAllCaps="true" android:layout_marginStart="2.0dip" android:layout_marginEnd="@dimen/default_gap_1_5x" app:scFontWeight="bold" />
+    </LinearLayout>
+</LinearLayout>

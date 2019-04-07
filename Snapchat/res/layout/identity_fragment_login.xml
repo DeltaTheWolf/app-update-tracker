@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/log_in_button">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_5x" android:layout_marginEnd="@dimen/default_gap_5x">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_title_size" android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@id/login_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_5x" android:layout_marginBottom="@dimen/default_gap_3x" android:text="@string/login_title" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/dark_grey" android:id="@id/username_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/login_username_hint" android:textAllCaps="true" />
+            <com.snap.ui.view.SnapFontEditText android:id="@id/login_username_email_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:maxLength="60" android:inputType="textEmailAddress" style="@style/IdentityField" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/dark_grey" android:id="@id/password_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_password_hint" android:textAllCaps="true" />
+            <com.snap.ui.view.SnapFontEditText android:id="@id/login_password_field" android:background="@drawable/holo_edit_text_black_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ui_element_unit" android:layout_marginTop="-4.0dip" android:inputType="textPassword" style="@style/IdentityField" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/login_error_message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/IdentityFieldError" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/dark_blue" android:gravity="center" android:id="@id/forgot_password_button" android:paddingTop="@dimen/default_gap_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/forgot_password" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.identity.ui.LogInButton android:id="@id/log_in_button" android:layout_width="@dimen/registration_continue_button_width" android:layout_height="@dimen/registration_continue_button_height" android:layout_marginBottom="@dimen/default_gap_2x" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

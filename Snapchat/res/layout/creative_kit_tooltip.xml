@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.ui.tooltip.SnapTooltipView android:id="@id/creative_kit_camera_tooltip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snapchat.android.framework.ui.views.TriangleView android:id="@id/snap_tooltip_upper_triangle" android:visibility="gone" android:layout_width="@dimen/default_gap_2x" android:layout_height="@dimen/default_gap" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="14.0sp" android:textColor="@color/off_black" android:ellipsize="none" android:gravity="center" android:id="@id/snap_tooltip_text" android:background="@drawable/creative_kit_tooltip_bg" android:padding="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:scrollHorizontally="false" android:layout_below="@id/snap_tooltip_upper_triangle" android:layout_marginStart="@dimen/default_gap_half" custom:scFontWeight="bold" />
+    <com.snapchat.android.framework.ui.views.TriangleView android:id="@id/snap_tooltip_right_triangle" android:layout_width="@dimen/default_gap_2x" android:layout_height="@dimen/default_gap" android:layout_centerVertical="true" android:rotation="-90.0" android:layout_marginEnd="-5.0dip" android:layout_toStartOf="@id/snap_tooltip_text" />
+    <com.snapchat.android.framework.ui.views.TriangleView android:id="@id/snap_tooltip_lower_triangle" android:layout_width="@dimen/default_gap_2x" android:layout_height="@dimen/default_gap" android:layout_below="@id/snap_tooltip_text" android:rotation="180.0" />
+</com.snap.ui.tooltip.SnapTooltipView>

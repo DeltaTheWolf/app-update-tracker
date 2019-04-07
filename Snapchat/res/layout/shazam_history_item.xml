@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/song_history_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/song_history_item_swipeable_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:padding="@dimen/default_gap" android:layout_width="@dimen/song_history_item_height" android:layout_height="@dimen/song_history_item_height">
+            <com.snap.imageloading.view.SnapImageView android:id="@id/song_history_item_artist_image" android:background="@drawable/shazam_song_history_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/default_gap_1_25x" android:paddingBottom="@dimen/default_gap_1_25x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/default_gap">
+            <TextView android:textSize="@dimen/song_history_item_title_text_size" android:textColor="@color/black" android:ellipsize="end" android:gravity="start" android:id="@id/song_history_item_song_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/song_history_item_submessage_text_size" android:textColor="@color/medium_grey" android:ellipsize="end" android:id="@id/song_history_item_song_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/song_history_item_submessage_text_size" android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/song_history_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

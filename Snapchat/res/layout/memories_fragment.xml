@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:theme="@style/AppCompatTheme" android:id="@id/memories_grid" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/blocking_progress_view" android:layout="@layout/memories_blocking_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snap.memories.lib.grid.view.MemoriesAllPagesRecyclerView android:id="@id/memories_grid_pages" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <android.support.design.widget.AppBarLayout android:id="@id/memories_grid_header" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <android.support.constraint.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll|snap">
+            <View android:id="@id/memories_grid_neon_header" android:background="@color/regular_red" android:visibility="invisible" style="@style/MemoriesPageHeader" />
+            <View android:id="@id/memories_grid_tab_container_background_left" android:background="@color/regular_red" android:visibility="invisible" android:layout_width="@dimen/memories_grid_tab_round_corner_radius" android:layout_height="@dimen/memories_grid_tab_round_corner_radius" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/memories_grid_neon_header" />
+            <View android:id="@id/memories_grid_tab_container_background_right" android:background="@color/regular_red" android:visibility="invisible" android:layout_width="@dimen/memories_grid_tab_round_corner_radius" android:layout_height="@dimen/memories_grid_tab_round_corner_radius" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/memories_grid_neon_header" />
+            <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:corner_radiusTopLeft="@dimen/memories_grid_tab_round_corner_radius" app:corner_radiusTopRight="@dimen/memories_grid_tab_round_corner_radius" app:layout_constraintTop_toBottomOf="@id/memories_grid_neon_header">
+                <com.snap.ui.view.viewpagerindicator.PagerSlidingTabContainer android:id="@id/memories_grid_tab_container" android:layout_width="fill_parent" android:layout_height="@dimen/memories_grid_tab_container_height" />
+            </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

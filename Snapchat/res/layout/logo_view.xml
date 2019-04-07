@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/logo_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/logo_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/logo_view_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loading_screen_progress_bar" android:layout_width="@dimen/icon_size_larger" android:layout_height="@dimen/icon_size_larger" android:layout_marginTop="@dimen/default_gap_8x" android:layout_below="@id/logo_view_horizontal" android:layout_centerHorizontal="true" app:loading_spinner_color="@color/white" />
+    </RelativeLayout>
+</FrameLayout>

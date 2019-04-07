@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.emoji.SnapEmojiTextView android:textSize="@dimen/empty_section_text_size" android:textColor="@color/grey" android:ellipsize="end" android:layout_gravity="center" android:id="@id/empty_section_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/empty_section_margin_start_end" android:layout_marginEnd="@dimen/empty_section_margin_start_end" app:autoFit="true" app:scFontWeight="bold" />
+</FrameLayout>

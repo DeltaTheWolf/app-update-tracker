@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background" android:background="@color/black_thirty_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:alpha="0.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/motion_filter_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:alpha="0.0" />
+</FrameLayout>

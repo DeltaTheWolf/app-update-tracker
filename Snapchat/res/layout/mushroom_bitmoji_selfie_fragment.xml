@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/bitmoji_selfie_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/bitmoji_selfie_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.ui.view.ScHeaderView android:id="@id/bitmoji_selfie_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/bitmoji_selfie_choose_title" custom:showBackArrow="true" custom:showBottomBorder="true" />
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@id/bitmoji_selfie_recyler_view" android:paddingBottom="@dimen/bitmoji_selfie_page_bottom_spacing" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/bitmoji_selfie_fragment_recyclerview_margin" android:layout_marginRight="@dimen/bitmoji_selfie_fragment_recyclerview_margin" android:layout_above="@id/navbar_inset" android:layout_below="@id/bitmoji_selfie_sc_header" />
+        <com.snap.bitmoji.ui.settings.view.SaveBitmojiSelfieButton android:textSize="20.0sp" android:id="@id/bitmoji_selfie_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bitmoji_selfie_button_height" android:layout_marginRight="@dimen/bitmoji_selfie_button_right_margin" android:layout_marginBottom="@dimen/bitmoji_selfie_button_bottom_margin" android:layout_above="@id/navbar_inset" android:layout_centerHorizontal="true" />
+        <View android:id="@id/navbar_inset" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

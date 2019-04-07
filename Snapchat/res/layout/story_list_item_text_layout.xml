@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/stories_list_item_text" android:paddingRight="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/default_gap" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/story_list_item_primary_text_size" android:textColor="@color/off_black" android:ellipsize="end" android:id="@id/stories_list_item_text_layout_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap_quarter" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/stories_list_item_text_layout_secondary_text_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_gap_three_quarters" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/stories_list_item_text_layout_secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" custom:scFontWeight="lighter" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/profile_snapcode_item" android:layout_width="@dimen/profile_identity_carousel_item_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/snapcode_background" android:background="@color/white" android:layout_width="@dimen/profile_snapcode_background_size" android:layout_height="@dimen/profile_snapcode_background_size" />
+    <com.caverock.androidsvg.SVGImageView android:layout_gravity="center" android:id="@id/snapcode_svg" android:layout_width="@dimen/profile_snapcode_item_size" android:layout_height="@dimen/profile_snapcode_item_size" />
+    <com.snap.ui.avatar.AvatarView android:layout_gravity="center" android:id="@id/user_avatar_view" android:layout_width="@dimen/profile_snapcode_avatar_size" android:layout_height="@dimen/profile_snapcode_avatar_size" android:scaleType="fitCenter" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/snapcode_placeholder" android:background="@drawable/profile_snapcode_placeholder_border" android:padding="@dimen/default_gap_quarter" android:visibility="gone" android:layout_width="@dimen/profile_snapcode_item_size" android:layout_height="@dimen/profile_snapcode_item_size">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/snapcode_placeholder_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

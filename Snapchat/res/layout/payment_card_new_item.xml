@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/payments_white_grey_selector" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/add_card_icon" android:layout_width="@dimen/default_gap_5x" android:layout_height="@dimen/default_gap_3x" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_1_25x" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payments_create_card_title_v2" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_1_5x" android:layout_toEndOf="@id/add_card_icon" />
+    </RelativeLayout>
+</LinearLayout>

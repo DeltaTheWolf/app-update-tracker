@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:layout_gravity="center" android:id="@id/story_profile_image_view_container" android:visibility="gone" android:layout_width="@dimen/story_profile_avatar_cell_size" android:layout_height="@dimen/story_profile_avatar_cell_size" app:isCircular="true">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/story_profile_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:background="@drawable/story_profile_logo_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+    <com.snap.ui.avatar.AvatarView android:layout_gravity="center" android:id="@id/story_profile_avatar_view" android:background="@drawable/story_avatar_cell_background_grey" android:padding="@dimen/default_gap_half" android:visibility="gone" android:layout_width="@dimen/story_profile_avatar_cell_size" android:layout_height="@dimen/story_profile_avatar_cell_size" />
+</FrameLayout>

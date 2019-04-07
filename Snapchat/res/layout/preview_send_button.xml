@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/send_btn" android:background="@color/transparent" android:layout_width="@dimen/snap_preview_button_send_button_size" android:layout_height="@dimen/snap_preview_button_send_button_size" android:src="@drawable/preview_send" android:scaleType="centerInside" />
+    <com.snap.ui.view.SnapFontTextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/send_btn_hint_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/send_button_hint_label_top_margin" android:layout_marginBottom="@dimen/send_button_hint_label_bottom_margin" android:text="@string/send_button_hint_label_text" />
+</LinearLayout>

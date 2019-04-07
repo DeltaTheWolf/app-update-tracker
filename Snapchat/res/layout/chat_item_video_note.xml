@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container">
+        <include layout="@layout/chat_message_timestamp" />
+        <include layout="@layout/chat_message_color_bar" />
+        <com.snap.messaging.chat.ui.view.ReplyLayout android:id="@id/reply_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/video_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.snap.opera.shared.view.TextureVideoView android:id="@id/chat_media_video_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/chat_media_margin" />
+                <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="@dimen/chat_item_loading_spinner_size" android:layout_height="@dimen/chat_item_loading_spinner_size" />
+            </FrameLayout>
+        </com.snap.messaging.chat.ui.view.ReplyLayout>
+    </LinearLayout>
+    <com.snap.ui.view.SnapFontTextView android:id="@id/story_reply_text" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="The above video is a reply to your story. Support coming soon!" />
+</com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

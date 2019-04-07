@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/camera_hands_free_recording_release_tooltip_view" android:layout="@layout/hands_free_release_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/camera_hands_free_second_tooltip_initial_bottom_margin" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/camera_hands_free_recording_drag_left_tooltip_view" android:layout="@layout/hands_free_drag_left_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/camera_hands_free_first_tooltip_initial_bottom_margin" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/camera_hands_free_recording_tap_tooltip_view" android:layout="@layout/hands_free_tap_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/camera_hands_free_first_tooltip_initial_bottom_margin" />
+</merge>

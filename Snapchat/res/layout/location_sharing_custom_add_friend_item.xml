@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/friend_item_root" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="48.0dip" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/friend_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/default_gap_2x" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="end|center" android:id="@id/friend_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap_1_5x" android:paddingEnd="@dimen/default_gap_1_5x" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/friend_sharing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_friends_pin" android:paddingStart="@dimen/default_gap_1_5x" android:paddingEnd="@dimen/default_gap_1_5x" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layoutDirection="locale" android:layout_marginEnd="@dimen/default_gap_2x" android:layout_toEndOf="@id/friend_item_icon">
+        <com.snap.ui.view.SnapFontTextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/friend_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="12.0sp" android:textColor="@color/settings_subtext_grey" android:ellipsize="end" android:id="@id/friend_username" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

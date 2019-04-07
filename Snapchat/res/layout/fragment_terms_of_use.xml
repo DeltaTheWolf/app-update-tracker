@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top_right_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/grey" android:gravity="center" android:id="@id/close_button" android:padding="15.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tos_logout" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:id="@id/accept_button" android:text="@string/tos_accept" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/LegalTermsOfUseContinueRoundButton" />
+    <com.snap.ui.view.SnapLinkFriendlyTextView android:textSize="@dimen/text_size_fine_print" android:gravity="center" android:id="@id/accept_description" android:visibility="visible" android:text="@string/tou_v7_action_description" android:layout_above="@id/accept_button" style="@style/LegalTermsOfUseText" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/accept_description" android:layout_below="@id/top_right_button_container" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:id="@id/title" style="@style/LegalTermsOfUseTitleText" />
+            <com.snap.ui.view.SnapLinkFriendlyTextView android:text="@string/tou_v7_content_intro" style="@style/LegalTermsOfUseBodyText" />
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow>
+                    <com.snap.ui.view.SnapFontTextView android:gravity="end" android:layout_width="wrap_content" android:text="•" android:singleLine="false" android:paddingEnd="0.0dip" style="@style/LegalTermsOfUseBodyText" />
+                    <com.snap.ui.view.SnapFontTextView android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tou_v7_bullet_one" android:singleLine="false" android:layout_weight="1.0" android:paddingStart="@dimen/default_gap" style="@style/LegalTermsOfUseBodyText" />
+                </TableRow>
+                <TableRow>
+                    <com.snap.ui.view.SnapFontTextView android:gravity="end" android:layout_width="wrap_content" android:text="•" android:singleLine="false" android:paddingEnd="0.0dip" style="@style/LegalTermsOfUseBodyText" />
+                    <com.snap.ui.view.SnapFontTextView android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tou_v7_bullet_two" android:singleLine="false" android:layout_weight="1.0" android:paddingStart="@dimen/default_gap" style="@style/LegalTermsOfUseBodyText" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

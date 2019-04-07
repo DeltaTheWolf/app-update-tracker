@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingTop="@dimen/ff_feed_quick_add_carousel_item_margin" android:paddingBottom="@dimen/ff_feed_quick_add_carousel_item_margin" android:layout_width="fill_parent" android:layout_height="@dimen/add_friends_header_height" android:layout_marginTop="@dimen/ff_feed_quick_add_carousel_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:customAttr="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/add_friends_header_text_size" android:textColor="@color/my_friends_color" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toStartOf="@id/second_header_container" android:layout_alignParentStart="true" customAttr:scFontWeight="bolder" />
+    <ViewStub android:id="@id/second_header_container" android:layout="@layout/second_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+</RelativeLayout>

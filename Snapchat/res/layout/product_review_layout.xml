@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/product_review_layout" android:background="@drawable/product_info_details_card_view" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:customAttr="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/review_card_header" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/checkout_review_fragment_close_view" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginStart="@dimen/default_gap">
+            <ImageView android:layout_gravity="center" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/marco_polo_store_close" />
+        </FrameLayout>
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small_medium" android:gravity="center" android:layout_gravity="center" android:id="@id/product_review_order_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_review_order" android:textAlignment="center" customAttr:scFontWeight="bold" />
+    </FrameLayout>
+    <View android:id="@id/product_review_nav_bar_separator" android:background="@color/review_card_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" android:layout_below="@id/review_card_header" />
+    <FrameLayout android:id="@id/cart_review_empty_cart_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/product_review_nav_bar_separator">
+        <include layout="@layout/cart_review_empty_cart" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/cart_review_non_empty" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/product_review_nav_bar_separator">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/payments_merchant_info_cell" />
+        </FrameLayout>
+        <View android:id="@id/product_review_header_border" android:background="@color/review_card_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" />
+        <android.support.v7.widget.RecyclerView android:id="@id/product_review_list_scroll_view" android:layout_width="fill_parent" android:layout_height="@dimen/cart_review_items_max_height" android:fillViewport="true" android:isScrollContainer="true" android:fadeScrollbars="false" />
+        <View android:background="@color/review_card_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/marco_polo_text_medium" android:layout_gravity="start|center" android:id="@id/checkout_review_subtotal_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/marco_polo_checkout_subtotal" android:layout_marginStart="@dimen/default_gap_2x" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/marco_polo_text_medium" android:layout_gravity="end|center" android:id="@id/subtotal_costs" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/default_gap_2x" customAttr:scFontWeight="bold" />
+            </FrameLayout>
+            <View android:background="@color/review_card_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" />
+            <FrameLayout android:id="@id/checkout_review_returns" android:background="@drawable/payments_white_grey_selector" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/marco_polo_text_medium" android:textColor="@color/black" android:layout_gravity="start|center" android:id="@id/checkout_review_returns_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/marco_polo_review_returns" android:layout_marginStart="@dimen/default_gap_2x" />
+                <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/marco_polo_text_medium" android:textColor="@color/marco_polo_nav_bar_right_btn" android:layout_gravity="end|center" android:id="@id/see_returns_policy_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/marco_polo_review_returns_policy" android:layout_marginEnd="@dimen/default_gap_2x" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:background="@drawable/rounded_corners_top_only_white_rectangle_with_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/product_info_bottom_bar_container_height">
+            <com.snap.ui.view.button.RegistrationNavButton android:layout_gravity="center" android:id="@id/checkout_btn" android:layout_width="fill_parent" android:layout_height="@dimen/product_checkout_button_height" android:layout_marginTop="@dimen/product_info_bottom_bar_margin_top" android:paddingStart="@dimen/default_gap_3x" android:paddingEnd="@dimen/default_gap_3x" customAttr:container_background_resource="@drawable/action_bottom_button_states" />
+            <com.snap.ui.view.button.RegistrationNavButton android:layout_gravity="center" android:id="@id/cart_add_to_bag_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/product_checkout_button_height" android:layout_marginTop="@dimen/product_info_bottom_bar_margin_top" android:paddingStart="@dimen/default_gap_3x" android:paddingEnd="@dimen/default_gap_3x" customAttr:container_background_resource="@drawable/action_bottom_button_error_states" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@id/transparent_view" android:background="@color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/review_card_header" android:layout_alignBottom="@id/cart_review_non_empty" />
+</RelativeLayout>

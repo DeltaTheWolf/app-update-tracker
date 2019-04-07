@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/subscribe_checkbox_inner_container" android:background="@drawable/subscribe_cell_checkbox_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/stories_subscribe_control_button_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/subscribe_checkbox_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/stories_subscribe_icon_margin_end">
+        <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:id="@id/subscribe_action_loading_progress_bar" android:visibility="gone" android:layout_width="@dimen/icon_size_extra_extra_smaller" android:layout_height="@dimen/icon_size_extra_extra_smaller" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/subscribe_checkbox_checked_icon" android:visibility="gone" android:layout_width="@dimen/icon_size_extra_extra_smaller" android:layout_height="@dimen/icon_size_extra_extra_smaller" android:src="@drawable/stories_subscribe_flag" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/subscribe_checkbox_unchecked_icon" android:layout_width="@dimen/icon_size_extra_extra_smaller" android:layout_height="@dimen/icon_size_extra_extra_smaller" android:src="@drawable/stories_subscribe_flag" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/regular_purple" android:gravity="center" android:id="@id/subscribe_checkbox_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subscribe_button_subscribe_text" android:includeFontPadding="false" android:layout_toRightOf="@id/subscribe_checkbox_icon_container" android:layout_centerVertical="true" app:scFontWeight="bold" />
+</RelativeLayout>

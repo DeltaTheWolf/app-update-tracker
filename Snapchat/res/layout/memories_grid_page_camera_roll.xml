@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/memories_grid_tab_camera_roll_sub_header_text_size" android:textColor="@color/half_black" android:gravity="center" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/camera_roll_tab_sub_title" android:includeFontPadding="false" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/memories_page_camera_roll_empty_stub" android:layout="@layout/camera_roll_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.snap.memories.lib.grid.view.MemoriesGridPageRecyclerView android:id="@id/memories_page_grid" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:splitMotionEvents="false" />
+        <com.snap.ui.view.scrollbar.SnapScrollBar android:gravity="bottom" android:layout_gravity="end" android:id="@id/memories_grid_page_scroll_bar" android:paddingTop="@dimen/memories_scroll_bar_track_padding_top" android:paddingBottom="@dimen/memories_scroll_bar_track_padding_top" android:visibility="invisible" android:clickable="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

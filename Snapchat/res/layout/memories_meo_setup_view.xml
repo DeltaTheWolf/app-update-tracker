@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gallery_private_setup_container" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout android:id="@id/top_panel" custom:topPaddingStatusBar="true" style="@style/MemoriesPageHeader">
+        <ImageView android:id="@id/top_panel_back_button" android:src="@drawable/gallery_red_back_arrow" style="@style/GalleryPanelBackButton" />
+        <TextView android:id="@id/top_panel_title" android:text="@string/gallery_my_eyes_only" style="@style/GalleryPanelTitleWithBackButton" />
+    </com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout>
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/off_black" android:gravity="center_horizontal" android:id="@id/gallery_private_setup_text" android:paddingBottom="@dimen/gallery_private_large_text_margin" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" android:text="@string/gallery_private_desc" android:layout_above="@id/gallery_private_setup_button" style="@style/GalleryPrivateTextBlock" />
+    <FrameLayout android:id="@id/gallery_private_setup_image_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/gallery_private_setup_text" android:layout_below="@id/top_panel">
+        <ImageView android:layout_gravity="center" android:id="@id/gallery_private_ghost" android:src="@drawable/private_gallery_ghost_large" style="@style/GalleryPrivateLargeImage" />
+    </FrameLayout>
+    <Button android:id="@id/gallery_private_setup_button" android:text="@string/gallery_private_quick_setup" style="@style/GalleryRedButtonBottom" />
+    <Button android:id="@id/gallery_private_learn_more" android:paddingBottom="@dimen/gallery_private_light_text_margin" android:visibility="gone" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="@string/gallery_private_learn_more" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/GalleryPrivateEdgeLightText" />
+</RelativeLayout>

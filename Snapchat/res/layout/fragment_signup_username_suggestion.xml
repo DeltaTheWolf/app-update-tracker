@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.identity.loginsignup.ui.view.BasicLoginSignupLayout android:orientation="vertical" android:id="@id/username_suggestion_page" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:text="@string/username_suggestion_title" style="@style/LoginSignupPageTitle" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/username_suggestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/change_username_link" android:text="@string/username_suggestion_change_username" style="@style/IdentityLinkText" />
+</com.snap.identity.loginsignup.ui.view.BasicLoginSignupLayout>

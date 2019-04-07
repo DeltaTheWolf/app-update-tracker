@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/item" android:layout_width="fill_parent" android:layout_height="@dimen/search_friend_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.RoundedImageView android:id="@id/thumbnail_image" android:background="@color/search_loading_view_grey" android:layout_width="@dimen/search_friend_item_avatar_size" android:layout_height="@dimen/search_friend_item_avatar_size" android:layout_marginStart="@dimen/search_friend_item_start_margin" app:isCircular="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_loading_bar_margin" android:layout_marginBottom="@dimen/search_loading_bar_margin" android:layout_marginStart="@dimen/search_loading_bar_margin" android:layout_marginEnd="@dimen/search_loading_bar_right_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/thumbnail_image" app:layout_constraintTop_toTopOf="parent">
+        <com.snap.search.ui.loading.LoadingBar android:gravity="start" android:id="@id/primary_loading_bar" android:layout_width="@dimen/search_loading_long_primary_text_width" android:layout_height="@dimen/search_loading_text_height" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/search_loading_text_padding" />
+        <com.snap.search.ui.loading.LoadingBar android:id="@id/secondary_loading_bar" android:layout_width="@dimen/search_loading_long_secondary_text_width" android:layout_height="@dimen/search_loading_text_height" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

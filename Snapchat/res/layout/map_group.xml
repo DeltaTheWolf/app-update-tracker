@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:id="@id/map_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/map_group_top_spring" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:behavior_spring_orientation="top" app:layout_behavior="com.snapchat.map.util.OverScrollerSpringBehavior" />
+    <com.snapchat.map.feature.carousel.MapCardsRecyclerView android:layout_gravity="bottom|center" android:id="@id/map_group_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    <FrameLayout android:id="@id/map_group_bottom_spring" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:behavior_spring_damping="0.1" app:behavior_spring_orientation="bottom" app:layout_behavior="com.snapchat.map.util.OverScrollerSpringBehavior" />
+</android.support.design.widget.CoordinatorLayout>

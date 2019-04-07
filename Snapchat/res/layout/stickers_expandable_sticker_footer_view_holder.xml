@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/expandable_sticker_picker_expand_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/stickers_expandable_sticker_expand_text_view_size" android:textColor="@color/stickers_expandable_pack_save_button_text_color" android:id="@id/stickers_expandable_sticker_picker_view_more_text_view" android:paddingTop="@dimen/stickers_expandable_sticker_picker_footer_padding" android:paddingBottom="@dimen/stickers_expandable_sticker_picker_footer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="@string/typeface_avenir_next_demi_bold" android:textAlignment="center" custom:scFontWeight="bold" />
+</RelativeLayout>

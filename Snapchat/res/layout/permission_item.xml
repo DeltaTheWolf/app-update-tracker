@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/permission_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/new_settings_item_outer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:id="@id/permission_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/typeface_avenir_next_regular" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/new_settings_item_name" />
+    <com.snap.ui.view.SnapLinkFriendlyTextView android:id="@id/permission_description" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/permission_name" style="@style/new_settings_item_text" />
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/medium_red" android:id="@id/modify_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permission_settings_tap_to_enable" android:fontFamily="@string/typeface_avenir_next_regular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/new_settings_item_text" />
+</android.support.constraint.ConstraintLayout>

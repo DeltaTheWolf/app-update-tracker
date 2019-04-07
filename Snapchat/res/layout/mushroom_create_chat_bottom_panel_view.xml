@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/send_to_bottom_panel_send_button_container" android:paddingLeft="@dimen/default_gap_half" android:paddingRight="@dimen/default_gap_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap_half" android:paddingEnd="@dimen/default_gap_half" custom:layout_affinity="endHorizontal" custom:layout_gravity="center_vertical">
+        <ImageView android:layout_gravity="center" android:id="@id/create_chat_bottom_panel_send_button" android:layout_width="@dimen/normal_create_chat_bottom_panel_button_width" android:layout_height="wrap_content" android:src="@drawable/create_chat_send" />
+        <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/create_chat_bottom_panel_loading_spinner" android:visibility="gone" android:layout_width="@dimen/create_chat_spinner_height" android:layout_height="@dimen/create_chat_spinner_height" />
+        <include android:visibility="gone" layout="@layout/send_to_classic_button_label_mode_view" />
+    </FrameLayout>
+    <HorizontalScrollView android:id="@id/create_chat_bottom_panel_scroller" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:layout_affinity="startHorizontal" style="@style/BottomPanelScrollView">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/create_chat_bottom_panel_text_container" android:paddingLeft="@dimen/default_gap_2x" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/default_gap_2x">
+            <com.snap.ui.view.SnapFontTextView android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/create_chat_bottom_panel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" custom:scFontWeight="bold" style="@android:style/TextAppearance.Medium" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/create_chat_help_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/create_chat_bottom_panel_help_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_add_more" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</merge>

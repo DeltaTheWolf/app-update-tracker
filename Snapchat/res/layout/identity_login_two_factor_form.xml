@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_form_title" android:text="@string/twofa_new_device_verification_title" style="@style/IdentityPageTitle" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_form_description" android:layout_marginBottom="@dimen/default_gap" android:text="@string/twofa_new_device_otp_verification_explanation" android:layout_below="@id/two_factor_form_title" style="@style/IdentityPageDescription" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_send_sms_instead" android:text="@string/twofa_new_device_otp_verification_send_sms" android:layout_below="@id/two_factor_form_description" style="@style/IdentityLinkText" />
+    <com.snap.ui.view.SnapFontTextView android:id="@id/two_factor_code_description" android:text="@string/signup_verify_phone_hint" android:layout_below="@id/two_factor_send_sms_instead" style="@style/IdentityFieldHint" />
+    <com.snap.ui.view.SnapFontEditText android:id="@id/two_factor_code_field" android:layout_below="@id/two_factor_code_description" android:inputType="number" android:imeOptions="actionNext" style="@style/IdentityField" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/registration_error_message_text_size" android:textColor="@color/error_red" android:id="@id/two_factor_code_error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:minLines="1" android:layout_below="@id/two_factor_code_field" android:paddingStart="@dimen/default_gap" android:layout_alignStart="@id/two_factor_code_field" />
+    <RelativeLayout android:id="@id/two_factor_allow_remember_device_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/two_factor_code_error_message">
+        <CheckBox android:id="@id/two_factor_allow_remember_device_checkbox" android:layout_marginTop="@dimen/default_gap" android:layout_centerVertical="true" style="@style/IdentitySettingsCheckbox" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/black" android:id="@id/two_factor_allow_remember_device_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:text="@string/two_fa_allow_remember_device" android:layout_centerVertical="true" android:layout_marginStart="@dimen/default_gap_half" android:layout_toStartOf="@id/two_factor_allow_remember_device_checkbox" />
+    </RelativeLayout>
+</RelativeLayout>

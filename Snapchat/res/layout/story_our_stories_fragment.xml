@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/setting_our_stories_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="18.0dip" android:text="@string/story_settings_account_actions_our_story_snaps_desc" style="@style/new_settings_item_text" />
+    <TextView android:gravity="center" android:id="@id/our_stories_status_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" style="@style/new_settings_item_text" />
+    <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/our_stories_recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" android:divider="@null" android:layout_weight="1.0" />
+</LinearLayout>

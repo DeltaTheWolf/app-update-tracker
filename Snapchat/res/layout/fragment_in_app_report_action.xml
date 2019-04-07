@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/in_app_report_fragment" android:background="@color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/in_app_report_understand_button_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.imageloading.view.SnapImageView android:layout_gravity="center_horizontal" android:id="@id/in_app_report_ghost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/report_ghost" style="@style/InAppReportGhostImage" />
+            <com.snap.ui.view.SnapFontTextView android:gravity="center" android:id="@id/report_timeout_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/in_app_report_title_timeout" android:lineSpacingMultiplier="1.0" android:alpha="0.8" custom:scFontWeight="bold" style="@style/InAppReportTimeOutText" />
+            <com.snap.ui.view.SnapFontTextView android:id="@id/report_message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" android:alpha="0.8" style="@style/InAppReportMessageText" />
+        </LinearLayout>
+    </ScrollView>
+    <com.snap.ui.view.SnapFontTextView android:layout_gravity="bottom" android:id="@id/report_understand_button" style="@style/InAppReportUnderstandButton" />
+</FrameLayout>

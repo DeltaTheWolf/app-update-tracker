@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/country_code_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small_medium" android:id="@id/display_name" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_gap_2x" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_small_medium" android:id="@id/number_code" android:paddingTop="@dimen/default_gap" android:paddingBottom="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap_2x" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/off_white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

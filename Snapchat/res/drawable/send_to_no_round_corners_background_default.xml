@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/sendto_item_divider" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/send_to_item_divider_width">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/sendto_card_background" />
+        </shape>
+    </item>
+</layer-list>

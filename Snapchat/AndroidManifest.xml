@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:installLocation="auto" package="com.snapchat.android" platformBuildVersionCode="1915" platformBuildVersionName="10.53.0.0">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <permission android:name="com.snapchat.android.permission.UPDATE_STICKER_INDEX" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.snapchat.android.permission.UPDATE_STICKER_INDEX"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:fullBackupContent="false" android:hardwareAccelerated="true" android:icon="@mipmap/icon_v5" android:label="@string/app_name" android:largeHeap="true" android:name="com.snap.snapchat.shell.MushroomAppShell" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/SnapchatTheme.MainTheme" android:vmSafeMode="false">
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="a61483ac008f419ff5c6094ccbfe3b5e12bb9237"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.snap.stuffing.lib.DynamicLaunchActivity" android:theme="@style/SnapchatTheme.MainTheme"/>
+        <activity-alias android:name="com.snapchat.android.LandingPageActivity" android:targetActivity="com.snap.stuffing.lib.DynamicLaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="snapchat"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="snapchat.com"/>
+                <data android:host="www.snapchat.com"/>
+                <data android:pathPrefix="/add"/>
+                <data android:pathPrefix="/unlock"/>
+                <data android:pathPattern="/commerce/..*"/>
+                <data android:pathPrefix="/discover"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/mp4"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/mp4"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.android.support.REMOTE_ACTION"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="preview" android:mimeType="snapvideo/*" android:scheme="snapchat"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="preview" android:mimeType="snapvideo/*" android:scheme="snapchat"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="preview" android:mimeType="image/*" android:scheme="snapchat"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="preview" android:mimeType="image/*" android:scheme="snapchat"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="camera" android:mimeType="*/*" android:scheme="snapchat"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:launchMode="singleTask" android:name="com.snap.mushroom.MainActivity" android:screenOrientation="portrait" android:theme="@style/MushroomTheme.BootTheme">
+            <meta-data android:name="com.samsung.android.support.REMOTE_ACTION" android:resource="@xml/remote_action_mapping"/>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="snapchat.com"/>
+                <data android:host="www.snapchat.com"/>
+                <data android:pathPrefix="/add"/>
+                <data android:pathPattern="/commerce/..*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+            <meta-data android:name="mainForAppFamilies" android:value="mushroom"/>
+        </activity>
+        <service android:exported="false" android:name="com.snap.core.durablejob.DurableJobService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.snap.framework.startup.BackgroundService"/>
+        <service android:exported="false" android:name="com.snapchat.android.talk.mushroom.BackgroundCallService"/>
+        <meta-data android:name="com.snap.imageloading.setup.SnapGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <provider android:authorities="com.snapchat.android.media.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.snap.media.provider.MediaPackageFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/media_package_file_provider_paths"/>
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </provider>
+        <service android:exported="false" android:name="com.snap.media.rendering.MediaExportService">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </service>
+        <activity android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.snap.stuffing.lib.AppSwitchActivity" android:process=":stuffing" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.snap.stuffing.lib.StateTrackingService">
+            <meta-data android:name="appFamilies" android:value="sentinel"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.snap.unstuffing.lib.DataMigrationActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.snap.identity.loginsignup.ui.LoginSignupActivity" android:screenOrientation="portrait" android:theme="@style/LoginSignupTheme" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="appFamilies" android:value="snapchat,mushroom"/>
+        </activity>
+        <receiver android:enabled="true" android:exported="true" android:name="com.snap.identity.loginsignup.analytics.InstallReferrerBroadcastReceiver">
+            <meta-data android:name="appFamilies" android:value="snapchat,mushroom"/>
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.snap.identity.service.ForcedLogoutService">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </service>
+        <receiver android:exported="false" android:name="com.snap.identity.service.ForcedLogoutBroadcastReceiver">
+            <intent-filter>
+                <action android:name="snap.intent.action.FORCE_LOG_OUT"/>
+            </intent-filter>
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </receiver>
+        <activity android:configChanges="keyboardHidden" android:exported="false" android:name="com.snap.shake2report.ui.Shake2ReportActivity" android:screenOrientation="portrait" android:theme="@style/s2r_theme" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </activity>
+        <activity android:name="com.snap.shake2report.ui.CrashViewerActivity" android:process=":crash" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="snap.intent.action.VIEW_CRASH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </activity>
+        <receiver android:exported="true" android:name="com.snap.notification.service.NotificationReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.snap.mushroom"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.snap.notification.service.LoginNotificationReceiver">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+            <intent-filter>
+                <action android:name="snap.intent.action.LOGIN_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.snap.notification.service.MyInstanceIDListenerService">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.snap.notification.service.RegistrationIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </service>
+        <service android:exported="false" android:name="com.snap.notification.service.NotificationService">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </service>
+        <service android:exported="false" android:name="com.snap.notification.service.ClearNotificationIntentService">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.snapchat.messaging.chat.sccp.service.SecureChatServiceImpl">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </service>
+        <service android:name="com.snap.messaging.foregroundService.ScForegroundService"/>
+        <activity android:exported="false" android:name="com.snap.identity.ui.legal.LegalAgreementActivity" android:screenOrientation="portrait" android:theme="@style/SnapchatTheme.SolidNavigation" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="snap.intent.action.REQUEST_LEGAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </activity>
+        <activity android:name="com.snap.identity.ui.LoginActivity" android:screenOrientation="portrait" android:theme="@style/SnapchatTheme.SolidNavigation" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.mapbox.services.android.telemetry.service.TelemetryService"/>
+        <activity android:excludeFromRecents="true" android:name="com.snapchat.android.talk.lockscreen.LockScreenActivity" android:screenOrientation="portrait" android:showOnLockScreen="true" android:showWhenLocked="true" android:taskAffinity="talk.lockscreen" android:theme="@style/Theme.LockScreen" android:turnScreenOn="true"/>
+        <service android:exported="false" android:name="com.snap.core.durablejob.schedulers.direct.FirebasePeriodicWakeUpService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+            <meta-data android:name="appFamilies" android:value="snapchat,mushroom"/>
+        </service>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <meta-data android:name="appFamilies" android:value="mushroom"/>
+        </service>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="face,barcode"/>
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <provider android:authorities="com.snapchat.android.provider" android:exported="false" android:name="com.snap.content.SnapContentProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/geo_api_key"/>
+        <service android:exported="true" android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.snapchat.android.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <activity android:name="com.brightcove.player.captioning.BrightcoveCaptionPropertiesActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.google.ar.core.InstallActivity" android:theme="@android:style/Theme.Material.Light.Dialog.Alert"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="180226000"/>
+        <activity android:name="com.braintreepayments.api.AndroidPayActivity" android:theme="@style/bt_transparent_activity"/>
+        <activity android:name="com.braintreepayments.api.GooglePaymentActivity" android:theme="@style/bt_transparent_activity"/>
+        <activity android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"/>
+        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService"/>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity"/>
+        <activity android:name="net.hockeyapp.android.PaintActivity"/>
+        <activity android:name="net.hockeyapp.android.LoginActivity"/>
+        <activity android:name="net.hockeyapp.android.ExpiryInfoActivity"/>
+        <service android:enabled="true" android:name="com.snap.spectacles.base.service.SpectaclesService"/>
+        <provider android:authorities="com.snapchat.android.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

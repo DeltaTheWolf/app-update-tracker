@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/spectacles_release_note_item_view" android:background="@drawable/settings_menu_item_selector" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightLarge" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center_vertical" android:id="@id/spectacles_release_note_thumbnail" android:layout_width="@dimen/laguna_release_note_thumbnail_size" android:layout_height="@dimen/laguna_release_note_thumbnail_size" />
+    <FrameLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_gap_2x">
+            <com.snap.ui.view.SnapFontTextView android:ellipsize="end" android:id="@id/spectacles_release_note_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" style="@style/new_settings_item_name" />
+            <com.snap.ui.view.SnapFontTextView android:textColor="@color/regular_charcoal" android:id="@id/spectacles_release_note_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap_4x" app:autoFit="true" style="@style/new_settings_item_text" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/spectacles_update_star" android:visibility="gone" android:layout_width="@dimen/laguna_release_note_update_star_size" android:layout_height="fill_parent" android:src="@drawable/update_star_settings" android:layout_marginEnd="@dimen/laguna_release_note_update_star_margin" />
+    </FrameLayout>
+</LinearLayout>

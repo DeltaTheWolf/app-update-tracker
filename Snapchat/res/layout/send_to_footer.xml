@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/send_to_footer_container" android:background="@android:color/transparent" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="fill_parent" android:layout_height="@dimen/add_contacts_footer_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/helper_text" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_friends_label_few_friends" />
+    <Button android:textColor="@color/white" android:id="@id/cta_button" android:background="@drawable/sync_friends_cta_button_blue" android:text="@string/find_friends_button_title" style="@style/sc_alert_dialog_button" />
+</LinearLayout>

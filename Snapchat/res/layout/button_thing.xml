@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/button_spinner_stub" android:layout="@layout/button_spinner" android:inflatedId="@id/button_spinner" android:layout_width="@dimen/icon_size_extra_smaller" android:layout_height="@dimen/icon_size_extra_smaller" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/text_size_default" android:textColor="@color/white" android:gravity="center" android:id="@id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/button_text_padding" android:paddingEnd="@dimen/button_text_padding" />
+</merge>

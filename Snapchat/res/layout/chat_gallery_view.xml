@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/gallery_recycler_view" android:background="@android:color/white" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:splitMotionEvents="false" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/chat_gallery_send_to_bar" android:background="@color/regular_blue" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/chat_gallery_bottom_bar_height">
+        <ImageButton android:layout_gravity="start|center" android:id="@id/chat_gallery_edit" android:background="@null" android:padding="@dimen/default_gap_1_75x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_media_drawer_edit" android:minWidth="0.0dip" />
+        <ImageButton android:layout_gravity="end|center" android:id="@id/chat_gallery_send" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_media_drawer_send_with_memories" android:layout_marginStart="@dimen/chat_gallery_send_button_margin" android:layout_marginEnd="@dimen/chat_gallery_send_button_margin" />
+    </FrameLayout>
+</FrameLayout>

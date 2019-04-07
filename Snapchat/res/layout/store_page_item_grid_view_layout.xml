@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/store_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/marco_polo_store_grid_recycler_view" android:background="@color/store_background" android:padding="@dimen/default_gap_half" android:visibility="visible" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/medium_grey" android:gravity="center" android:id="@id/marco_polo_store_empty_text_view" android:paddingBottom="@dimen/default_gap_10x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/marco_polo_empty_store" android:layout_centerInParent="true" />
+</RelativeLayout>

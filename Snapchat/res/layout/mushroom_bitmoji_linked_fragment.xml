@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bitmoji_linked_page" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navbar_inset">
+        <com.snap.ui.view.ScHeaderView android:id="@id/linked_bitmoji_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/bitmoji" custom:showBackArrow="true" custom:showBottomBorder="true" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/bitmoji_selfie_settings_other_margin" android:layout_marginTop="@dimen/bitmoji_selfie_settings_top_margin" android:layout_marginRight="@dimen/bitmoji_selfie_settings_other_margin" android:layout_marginBottom="@dimen/default_gap">
+                <FrameLayout android:id="@id/bitmoji_linked_container" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginBottom="@dimen/bitmoji_selfie_settings_other_margin" android:layout_weight="1.0">
+                    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:id="@id/bitmoji_linked_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                    <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/bitmoji_linked_spinner" android:layout_width="@dimen/default_gap_5x" android:layout_height="@dimen/default_gap_5x" />
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/bitmoji_unlinked_operation_table" android:background="@drawable/settings_bitmoji_table_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/bitmoji_linked_edit_layout" android:background="@drawable/settings_menu_item_selector" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall">
+                        <TextView android:id="@id/bitmoji_linked_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bitmoji_selfie_settings_text_start_margin" android:text="@string/bitmoji_edit_mine" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+                        <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:id="@id/bitmoji_linked_edit_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size_larger" android:layout_height="@dimen/icon_size_larger" android:layout_marginRight="@dimen/default_gap" />
+                    </LinearLayout>
+                    <include layout="@layout/list_separator" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/bitmoji_linked_change_selfie_layout" android:background="@drawable/settings_menu_item_selector" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall">
+                        <TextView android:id="@id/bitmoji_linked_change_selfie" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bitmoji_selfie_settings_text_start_margin" android:text="@string/bitmoji_selfie_choose_title" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+                        <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:id="@id/bitmoji_linked_change_selfie_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size_larger" android:layout_height="@dimen/icon_size_larger" android:layout_marginRight="@dimen/default_gap" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/bitmoji_unlinked_button_table" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_gap_2x">
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/bitmoji_linked_unlink_layout" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall">
+                        <TextView android:textColor="@color/regular_red" android:gravity="center_horizontal" android:id="@id/bitmoji_linked_unlink" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bitmoji_unlink_mine" android:layout_weight="1.0" style="@style/new_settings_item_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/navbar_inset" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

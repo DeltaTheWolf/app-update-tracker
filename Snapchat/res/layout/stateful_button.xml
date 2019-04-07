@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@drawable/stateful_button_border_shape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.framework.ui.views.LoadingSpinnerView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/stateful_button_loading_spinner" android:visibility="gone" android:layout_width="@dimen/button_icon_width" android:layout_height="@dimen/button_icon_height" />
+    <TextView android:textSize="@dimen/button_text_size" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/stateful_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

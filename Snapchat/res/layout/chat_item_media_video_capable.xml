@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/chat_message_timestamp" />
+    <include layout="@layout/chat_message_color_bar" />
+    <com.snap.messaging.chat.ui.view.ReplyLayout android:id="@id/reply_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/chat_media_margin">
+        <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:id="@id/chat_media_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_time_text_size" android:textColor="@color/light_charcoal" android:id="@id/tap_to_load" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_load" android:layout_centerInParent="true" custom:scFontWeight="lighter" />
+            <com.snap.ui.view.LoadingSpinnerView android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="@dimen/chat_item_loading_spinner_size" android:layout_height="@dimen/chat_item_loading_spinner_size" android:layout_centerInParent="true" />
+            <include layout="@layout/chat_media_discover_mask_stub" />
+        </com.snap.messaging.chat.ui.view.VideoCapableThumbnailView>
+    </com.snap.messaging.chat.ui.view.ReplyLayout>
+</com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

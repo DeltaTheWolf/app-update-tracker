@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sc_header_back_arrow" android:paddingTop="@dimen/neon_header_back_button_vertical_padding" android:paddingBottom="@dimen/neon_header_back_button_vertical_padding" android:visibility="gone" android:layout_width="@dimen/neon_header_back_button_width" android:layout_height="@dimen/neon_header_button_size" android:src="@drawable/sc_header_back_arrow_tinting_only" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/neon_header_text_size" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/sc_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <ImageView android:layout_gravity="end" android:id="@id/sc_header_right_image" android:paddingTop="@dimen/neon_header_back_button_vertical_padding" android:paddingBottom="@dimen/neon_header_back_button_vertical_padding" android:visibility="gone" android:layout_width="@dimen/neon_header_back_button_width" android:layout_height="@dimen/neon_header_button_size" android:src="@drawable/sc_header_back_arrow_tinting_only" android:layout_marginEnd="@dimen/neon_header_button_padding" />
+    <View android:layout_gravity="bottom" android:id="@id/sc_header_bottom_border" android:background="@color/off_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</merge>

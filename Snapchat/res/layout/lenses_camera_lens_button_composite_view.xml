@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/lenses_camera_lens_button_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/lenses_button_tooltip_view_stub" android:inflatedId="@id/lenses_button_tooltip_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/lenses_camera_button_view_stub" android:inflatedId="@id/lenses_camera_button_view" android:layout_width="@dimen/lens_camera_lensbutton_view_size" android:layout_height="@dimen/lens_camera_lensbutton_view_size" android:layout_marginBottom="@dimen/lens_camera_lensbutton_bottom_margin" android:layout_marginStart="@dimen/lens_camera_lensbutton_left_margin" />
+</FrameLayout>

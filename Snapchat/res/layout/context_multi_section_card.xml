@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/context_card_margin_bottom" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snapchat.android.app.feature.context.internal.view.RoundedCornerLinearLayout android:orientation="vertical" android:id="@id/cards_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

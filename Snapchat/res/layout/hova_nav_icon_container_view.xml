@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/hova_nav_icon_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/hova_nav_icon_and_badge_container" android:layout_width="@dimen/hova_icon_container_size" android:layout_height="@dimen/hova_icon_container_size">
+        <ImageView android:layout_gravity="center|top" android:id="@id/hova_icon" android:layout_width="@dimen/hova_icon_size" android:layout_height="@dimen/hova_icon_size" />
+        <ViewStub android:layout_gravity="center|right|top" android:id="@id/hova_notification_badge" android:layout="@layout/hova_nav_icon_badge" android:layout_width="@dimen/hova_nav_notification_badge_size" android:layout_height="@dimen/hova_nav_notification_badge_size" android:layout_marginTop="@dimen/hova_nav_badge_top_margin_default" android:layout_marginRight="@dimen/hova_nav_badge_right_margin_default" />
+    </FrameLayout>
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/hova_icon_name" android:layout="@layout/hova_nav_icon_container_view_label" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

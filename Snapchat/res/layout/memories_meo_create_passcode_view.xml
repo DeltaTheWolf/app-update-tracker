@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gallery_create_passcode_container" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout android:id="@id/top_panel" custom:topPaddingStatusBar="true" style="@style/MemoriesPageHeader">
+        <ImageView android:id="@id/top_panel_back_button" android:src="@drawable/gallery_red_back_arrow" style="@style/GalleryPanelBackButton" />
+        <TextView android:id="@id/top_panel_title" android:text="@string/gallery_create_passcode" style="@style/GalleryPanelTitleWithBackButton" />
+    </com.snapchat.android.framework.ui.views.statusbar.StatusBarCustomFrameLayout>
+    <TextView android:textSize="@dimen/text_size_fine_print" android:textColor="@color/gallery_grey_text" android:gravity="center" android:id="@id/gallery_create_passcode_reminder" android:layout_marginBottom="@dimen/default_gap_three_quarters" android:text="@string/gallery_private_passcode_help" android:layout_below="@id/top_panel" style="@style/GalleryPrivateTextBlock" />
+    <LinearLayout android:id="@id/gallery_private_ultra_secure_enable_button" android:visibility="invisible" android:layout_marginBottom="@dimen/default_gap_4x" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/GalleryRadioButton">
+        <ImageView style="@style/GalleryRadioButtonCircle" />
+        <TextView android:id="@id/gallery_private_ultra_secure_enable_text" style="@style/GalleryRadioButtonText" />
+    </LinearLayout>
+    <com.snap.memories.lib.grid.view.MemoriesMyEyesOnlyKeypad android:id="@id/gallery_passcode_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/gallery_private_ultra_secure_enable_button" android:layout_below="@id/gallery_create_passcode_reminder" />
+</RelativeLayout>

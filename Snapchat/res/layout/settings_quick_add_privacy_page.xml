@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/section_header_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/subpage_description_text_size" android:textColor="@color/dark_charcoal" android:gravity="center" android:background="@color/transparent" android:paddingTop="@dimen/default_gap_1_5x" android:paddingBottom="@dimen/default_gap_1_5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_me_quick_add_page_description" android:paddingStart="@dimen/quick_add_description_padding_horizontal" android:paddingEnd="@dimen/quick_add_description_padding_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/settings_quick_add_sub_page_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/subpage_item_height" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x">
+        <TextView android:textSize="@dimen/section_primary_text_size" android:textColor="@color/black" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/see_me_quick_add_item" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/settings_quick_add_checkbox" style="@style/new_settings_checkbox" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/subpage_description_text_size" android:textColor="@color/link_color_blue" android:layout_gravity="center" android:id="@id/see_me_in_quick_add_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_1_5x" android:text="@string/learn_more" />
+</LinearLayout>

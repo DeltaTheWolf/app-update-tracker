@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="center" android:id="@id/clock_layout_stub" android:layout="@layout/info_sticker_date_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center" android:id="@id/numeric_date_filter_layout_stub" android:layout="@layout/info_sticker_date_numeric" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center" android:id="@id/alphanumeric_date_filter_layout_stub" android:layout="@layout/info_sticker_date_alphanumeric" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

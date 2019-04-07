@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/gallery_ultra_secure_passphrase_view" android:background="@drawable/gallery_passphrase_input" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.ui.view.SnapFontEditText android:textColor="@color/black" android:textColorHint="@color/dark_grey" android:gravity="center" android:id="@id/gallery_ultra_secure_input" android:background="@color/transparent" android:padding="@dimen/gallery_passphrase_input_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="32" android:inputType="textPassword" android:autofillHints="" />
+    <View android:layout_gravity="right" android:id="@id/gallery_ultra_secure_clear_button" android:background="@drawable/grey_x_mark" android:visibility="gone" android:layout_width="@dimen/passphrase_clear_button_size" android:layout_height="@dimen/passphrase_clear_button_size" />
+</FrameLayout>
