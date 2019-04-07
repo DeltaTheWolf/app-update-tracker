@@ -4,13 +4,14 @@
     <View android:layout_gravity="bottom" android:id="@id/dial_ar_effect_picker_background" android:layout_width="fill_parent" android:layout_height="0.0dip" />
     <include layout="@layout/layout_camera_buttons_shutter_button_container" />
     <ViewStub android:layout_gravity="bottom" android:id="@id/dial_ar_effect_picker_container_stub" android:layout="@layout/dial_ar_effect_picker_container" android:layout_width="fill_parent" android:layout_height="0.0dip" />
-    <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/dial_ar_effect_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/quick_capture_format_picker_height" android:maxLines="1" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/dial_ar_effect_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip" android:maxLines="1" app:capitalize="false" />
     <View android:layout_gravity="bottom|center" android:id="@id/start_iglive_button" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/quick_capture_shutter_button_inner_size" android:contentDescription="@string/start_live_video_button_label" />
     <include layout="@layout/capture_format_picker" />
-    <FrameLayout android:layout_gravity="start|center" android:id="@id/dial_ar_effect_picker_switch_gallery_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="8.0dip">
+    <FrameLayout android:layout_gravity="start|center" android:id="@id/dial_ar_effect_picker_left_side_button_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="8.0dip">
         <include layout="@layout/layout_camera_capture_controls_gallery_button" />
+        <ViewStub android:id="@id/interactivity_question_bottom_button_stub" android:layout="@layout/layout_iglive_interactivity_qa_button" style="@style/PreCaptureButtonTopAligned" />
     </FrameLayout>
-    <FrameLayout android:layout_gravity="end|center" android:id="@id/dial_ar_effect_picker_switch_camera_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip">
+    <FrameLayout android:layout_gravity="end|center" android:id="@id/dial_ar_effect_picker_right_side_button_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip">
         <include layout="@layout/layout_camera_capture_controls_camera_switch_button" />
     </FrameLayout>
 </FrameLayout>

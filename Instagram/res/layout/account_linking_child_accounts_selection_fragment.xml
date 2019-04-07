@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/title_container" android:background="@color/grey_0" android:paddingLeft="@dimen/container_padding" android:paddingRight="@dimen/container_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
         <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/avatar_imageview" android:layout_width="@dimen/main_account_title_avatar_size" android:layout_height="@dimen/main_account_title_avatar_size" />
@@ -13,4 +13,4 @@
         <include layout="@layout/row_divider" />
         <com.instagram.ui.widget.progressbutton.ProgressButton android:layout_gravity="center" android:id="@id/next_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/next_button_height" android:layout_margin="@dimen/button_container_padding" android:text="@string/account_linking_next" app:progressBarTint="@color/blue_5" />
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

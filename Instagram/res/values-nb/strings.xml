@@ -210,6 +210,10 @@
     <string name="address_book_contacts_screen_title">Inviter kontakter</string>
     <string name="address_book_contacts_screen_title_with_context_1">Velg kontakter</string>
     <string name="address_book_contacts_screen_title_with_context_2">Velg kontakter du vil invitere</string>
+    <string name="address_level_1">Delstat/fylke</string>
+    <string name="address_level_2">By</string>
+    <string name="address_line_1">Adresse</string>
+    <string name="address_line_2">Rom/leilighet (valgfritt)</string>
     <string name="adjust">Juster</string>
     <string name="admin_contact_info">Administrators kontaktinformasjon</string>
     <string name="ads_body">Se annonsene du kjører for øyeblikket.</string>
@@ -450,7 +454,7 @@
     <string name="bugreporter_load_external_screenshot_wait">Laster inn bilde …</string>
     <string name="bugreporter_low_memory_screenshot_error">\"Beklager, men det er ikke nok minne til å ta skjermbilde!\"</string>
     <string name="bugreporter_not_now">Ikke nå</string>
-    <string name="bugreporter_rageshake_hint">Forklar kort hva som skjedde</string>
+    <string name="bugreporter_rageshake_hint">Hva gikk galt?</string>
     <string name="bugreporter_rageshake_video_quality_hint">Forklar kort hvordan video- eller lydkvaliteten avviker fra forventningene dine.</string>
     <string name="bugreporter_save_annotated_screenshot_error">Kan ikke lagre skjermbildet. Prøv på nytt.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">Lagrer …</string>
@@ -482,6 +486,7 @@
     <string name="business_profile">Bedriftsprofil</string>
     <string name="business_profile_linked_to_pages">Bedriftsprofiler på Instagram er koblet til Facebook-sider og er underlagt deres %1$s.</string>
     <string name="business_settings_redesign">Bedrift</string>
+    <string name="business_signup_account_option_title">Registrer deg for en bedriftskonto</string>
     <string name="business_signup_address_hint">Forretningsadresse</string>
     <string name="business_signup_change_username">Endre brukernavn</string>
     <string name="business_signup_choose_username_desc">Velg et brukernavn for bedriftskontoen din. Du kan når som helst endre dette senere.</string>
@@ -626,6 +631,10 @@
     <string name="change_username_title">Endre brukernavn</string>
     <string name="changes_saved">Endringer lagret</string>
     <string name="check_connection_and_try_again">Kontroller tilkoblingen din, og prøv på nytt.</string>
+    <string name="checkout_module_merchant_card_action_text">Butikk</string>
+    <string name="checkout_module_nux_message">Nå kan du handle hos enkelte merker uten å forlate Instagram.</string>
+    <string name="checkout_module_nux_title">Prøv betaling på Instagram.</string>
+    <string name="checkout_module_title">Betal på Instagram</string>
     <string name="choose_app_verify_flow">Bekreft automatisk</string>
     <string name="choose_category">Velg kategorier for bedriftsprofilen din</string>
     <string name="choose_category_for_profile">Velg en kategori for profilen din</string>
@@ -721,7 +730,13 @@
     <string name="comment_ellipsis_less">mindre</string>
     <string name="comment_hint">Legg til en kommentar …</string>
     <string name="comment_offensive_alert_message">Er du sikker på at du vil publisere dette?</string>
+    <string name="comment_offensive_alert_message_new">Andre kan oppfatte den som støtende.</string>
     <string name="comment_undo_button">Angre</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">gi oss beskjed</string>
+    <string name="comment_warning_bottom_sheet_para1">Vi ber folk om å revurdere kommentarer som ligner andre som har blitt rapportert.</string>
+    <string name="comment_warning_bottom_sheet_para2">Hvis vi har gjort en feil, kan du</string>
+    <string name="comment_warning_bottom_sheet_title">Slik bevarer vi Instagram som et støttende sted</string>
+    <string name="comment_warning_bottom_sheet_toast">Tilbakemelding sendt</string>
     <string name="commenting_disabled_hint">Kommentarer til dette innlegget er begrenset.</string>
     <string name="commenting_limited_to_followers">Det er bare følgerne dine som kan legge til kommentarer. Kommentarer er synlige for alle.</string>
     <string name="commenting_limited_to_followers_and_following">Det er bare følgerne dine og personer du følger som kan legge til kommentarer. Kommentarer er synlige for alle.</string>
@@ -792,6 +807,7 @@
     <string name="connect_fb_and_agree">Ved å trykke på knappen over og åpne innsikt, samtykker du i våre %1$s.</string>
     <string name="connect_fb_get_insights">Bli kjent med følgerne dine, og se hvordan innleggene dine gjør det. Vi publiserer ikke noe på Facebook uten din tillatelse.</string>
     <string name="connect_ig_to_fb_page_explain">Knytt Instagram Business-kontoen din til en Facebook-side, slik at det blir enklere for folk å finne deg. Bedriftskontoer på Instagram tilknyttes Facebook-sider og er underlagt deres %1$s.</string>
+    <string name="connect_or_create">Tilknytt eller opprett</string>
     <string name="connect_page_for_biz_tools">Kontoer som bruker Instagrams bedriftsverktøy, kan knyttes til en Facebook-side. Hvis du vil opprette annonser, må kontoen din være tilknyttet en side. Hvis du allerede har en side, kopierer vi informasjonen din fra siden, slik at du kan redigere den.</string>
     <string name="connect_page_for_power_tools">Kontoer som bruker Instagram Power Tools, kan knyttes til en Facebook-side. Hvis du vil opprette annonser, må kontoen din være tilknyttet en side. Hvis du allerede har en side, kopierer vi informasjonen din fra siden, slik at du kan redigere den.</string>
     <string name="connect_page_for_pro_tools">Kontoer som bruker Instagram Professional Tools, kan knyttes til en Facebook-side. Hvis du vil opprette annonser, må kontoen din være tilknyttet en side. Hvis du allerede har en side, kopierer vi informasjonen din fra siden, slik at du kan redigere den.</string>
@@ -1047,6 +1063,9 @@
     <string name="delta_login_review_was_me">Det var meg</string>
     <string name="delta_login_review_was_not_me">Det var ikke meg</string>
     <string name="delta_password_change_confirm_new_password_hint">Bekreft nytt passord</string>
+    <string name="delta_password_change_error_match_failure">Pass på at de to passordene samsvarer.</string>
+    <string name="delta_password_change_error_required_field_native">Du må fylle ut begge feltene.</string>
+    <string name="delta_password_change_error_required_field_react_native">Dette feltet er påkrevd.</string>
     <string name="delta_password_change_footer">Vi anbefaler at du bruker et passord som er unikt for Instagram, og at det inneholder minst ett tall og ett spesialtegn.</string>
     <string name="delta_password_change_new_password_hint">Nytt passord</string>
     <string name="delta_password_change_submit">Send inn</string>
@@ -1057,6 +1076,7 @@
     <string name="dial_element_capture_format_handsfree">Håndfri</string>
     <string name="dial_element_capture_format_music">Musikk</string>
     <string name="dial_element_capture_format_reverse">Baklengsvisning</string>
+    <string name="dialog_always_share_to_facebook">Del alltid på Facebook</string>
     <string name="dialog_block_user_button">Blokker</string>
     <string name="dialog_block_user_message">Denne personen vil ikke kunne finne profilen din, innleggene dine eller historien din på Instagram. Instagram gir ikke vedkommende beskjed om at du har blokkert ham/henne.</string>
     <string name="dialog_block_user_title">Blokkere %1$s?</string>
@@ -1105,7 +1125,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Flytte til forespørsler?</string>
     <string name="direct_block_account">Blokker konto</string>
     <string name="direct_block_choices_block_account">Blokker konto</string>
-    <string name="direct_block_choices_block_messages">Blokker meldinger</string>
+    <string name="direct_block_choices_ignore">Ignorer</string>
     <string name="direct_block_user">Blokker bruker</string>
     <string name="direct_blocked">Blokkert</string>
     <string name="direct_button_change_group_name">Ferdig</string>
@@ -1117,6 +1137,7 @@
     <string name="direct_details_error">Kan ikke laste inn samtaledetaljer. Prøv på nytt.</string>
     <string name="direct_digest_active_today">Aktiv i dag</string>
     <string name="direct_digest_active_yesterday">Aktiv i går</string>
+    <string name="direct_digest_are_active_now">%1$d andre er aktive nå</string>
     <string name="direct_digest_is_active_now">Aktiv nå</string>
     <string name="direct_digest_mentioned_you_story">Nevnte deg i en historie</string>
     <string name="direct_digest_no_author_shared_product">Har delt et produkt</string>
@@ -1145,6 +1166,7 @@
     <string name="direct_digest_shared_post">Har delt et innlegg</string>
     <string name="direct_digest_shared_your_countdown">Har delt din nedtelling i historien sin</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">Har tagget deg som forretningspartner</string>
+    <string name="direct_digest_user_is_active_now">%1$s er aktiv nå</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s har sendt en Direct-appinvitasjon</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">Har sendt en Direct-appinvitasjon</string>
     <string name="direct_digest_user_sent_gif">%1$s har sendt en GIF</string>
@@ -1353,6 +1375,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">Har tagget deg som forretningspartner</string>
     <string name="direct_reel_mention_sender_info">Du nevnte %1$s i historien din</string>
     <string name="direct_reel_mention_sender_info_branded_content">Du har tagget %1$s som forretningspartner</string>
+    <string name="direct_reel_question_response_creator_info">Har svart på spørsmålet ditt</string>
+    <string name="direct_reel_question_response_sender_info">Du har svart på vedkommendes spørsmål</string>
     <string name="direct_reel_reaction_recipient_info">Har reagert på historien din med %1$s</string>
     <string name="direct_reel_reaction_sender_info">Du har reagert med %1$s på vedkommendes historie</string>
     <string name="direct_reel_reply_receiver_highlight_info">Har svart på historiehøydepunktet ditt</string>
@@ -1533,7 +1557,7 @@
     <string name="disconnect_contacts_dialog_title">Vil du koble fra kontakter?</string>
     <string name="disconnect_failed">Kunne ikke koble fra.</string>
     <string name="discover_people">Finn folk</string>
-    <string name="discovery_item_post_live_label">Ble direktesendt</string>
+    <string name="discovery_item_post_live_label">SENDTE DIREKTE</string>
     <string name="discovery_surface_button_description">Oppdag effekter</string>
     <string name="dismiss">Avvis</string>
     <string name="dismiss_button_hint">Lukk</string>
@@ -1584,22 +1608,26 @@
     <string name="editable_profile_review_title">Gå gjennom kontaktopplysningene dine</string>
     <string name="edited">Redigert</string>
     <string name="edits_not_saved">Endringene dine ble ikke lagret. Prøv på nytt.</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> fra %2$s</string>
-    <string name="effect_by_format">fra %1$s</string>
-    <string name="effect_by_format_with_title">%1$s fra %2$s</string>
     <string name="effect_created_by_format">opprettet av &lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">Mer</string>
+    <string name="effect_detail_save_to_camera_button_label">Lagre på kamera</string>
+    <string name="effect_detail_saved_to_camera_button_label">Lagret på kamera</string>
+    <string name="effect_detail_share_button_label">Send til …</string>
+    <string name="effect_detail_view_try_it_button_label">Prøv det</string>
+    <string name="effect_details_view_created_from_format">fra &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> fra %2$s</string>
+    <string name="effect_from_format">fra %1$s</string>
+    <string name="effect_from_format_with_title">%1$s fra %2$s</string>
     <string name="eight_hours">8 timer</string>
     <string name="ellipsis_more">… mer</string>
-    <string name="email">E-post</string>
+    <string name="email">E-postadresse</string>
     <string name="emailAddress">E-postadresse</string>
     <string name="email_hint">E-post</string>
     <string name="email_invalid">E-postadressen er ugyldig</string>
     <string name="email_not_available">Denne e-postadressen blir brukt av en annen konto.</string>
     <string name="email_not_valid">Skriv inn en gyldig e-postadresse.</string>
-    <string name="email_register">Skriv inn e-postadressen din</string>
     <string name="email_sent">Det er sendt en e-postmelding til brukerkontoens e-postadresse. Sjekk e-posten for å fortsette. Hvis du fortsatt har problemer, kan du besøke %1$s.</string>
     <string name="email_sent_short">E-post er sendt</string>
-    <string name="email_signup">Registrer deg med e-postadressen din</string>
     <string name="email_sms_notification_settings">SMS- og e-postvarsler</string>
     <string name="emails">E-poster</string>
     <string name="emoji_not_allowed">Passordet inneholder emoji-tegn. Velg noe annet.</string>
@@ -1633,6 +1661,7 @@
     <string name="expired_link_dialog_title">Utgått lenke</string>
     <string name="explore_contextual_title">Utforsk</string>
     <string name="explore_description">Søk og utforsk</string>
+    <string name="explore_effects">Utforsk effekter</string>
     <string name="explore_places">Steder</string>
     <string name="explore_places_request_fail">Kunne ikke laste inn steder. Prøv på nytt.</string>
     <string name="explore_topical_going_to_next">GÅR TIL NESTE</string>
@@ -1679,6 +1708,7 @@
     <string name="failed_to_load_highlight_message">Innlasting av høydepunkt mislyktes</string>
     <string name="failed_to_load_photo_toast">Beklager, dette bildet kan ikke lastes inn.</string>
     <string name="failed_to_load_video_toast">Beklager, denne videoen kan ikke lastes inn.</string>
+    <string name="family_name">Etternavn</string>
     <string name="favorites_tab_title">Nære venner</string>
     <string name="fb_connect_card_button_text">Koble til</string>
     <string name="fb_connect_card_main_text">Koble til Facebook</string>
@@ -1699,6 +1729,7 @@
     <string name="feed_controls_message_replies_setting_following">Personer du følger</string>
     <string name="feed_controls_message_replies_setting_off">Av</string>
     <string name="feed_controls_settings_title">Innstillinger for oppdateringen</string>
+    <string name="feed_emoji_see_more_button_label">Trykk for å se flere emojier</string>
     <string name="feed_item_page_title">Annonse</string>
     <string name="feed_product_pivots_view_shop_button">Vis butikk</string>
     <string name="feed_refereshed">Innhold oppdatert</string>
@@ -1841,10 +1872,13 @@
     <string name="full_name_and_password_title">Navn og passord</string>
     <string name="full_terms_rw">Fullstendige betingelser</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">Fortsett</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">Bidragsbeløp kan ikke være på mer enn %1$s</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">Bidragsbeløp må være på minst %1$s</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">Bidragsbeløp</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">Annet</string>
     <string name="fundraiser_sticker_default_title">%1$s sin innsamlingsaksjon</string>
     <string name="fundraiser_sticker_donate_button_text">Gi et bidrag</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">Har gitt</string>
     <string name="fundraiser_sticker_search_following_section_title">Følger</string>
     <string name="fundraiser_sticker_search_suggested_section_title">Foreslått</string>
     <string name="fundraiser_sticker_subtitle">Støtter %1$s</string>
@@ -1853,6 +1887,8 @@
     <string name="gallery">Galleri</string>
     <string name="gallery_album_thumbnail">Albumets miniatyrbilde</string>
     <string name="gallery_description">Galleri</string>
+    <string name="gallery_empty_state_description">Når du har bilder og videoer på enheten din, kan du dele dem på Instagram.</string>
+    <string name="gallery_empty_state_title">Dine bilder og videoer</string>
     <string name="gallery_photo_thumbnail">Miniatyrbilde</string>
     <string name="gallery_sticker_description">Etikettgalleri</string>
     <string name="gallery_sticker_grid_empty">INGEN BILDER ELLER VIDEOER</string>
@@ -1865,7 +1901,7 @@
     <string name="gdpr_account_privacy">Kontopersonvern</string>
     <string name="gdpr_activity_status">Aktivitetsstatus</string>
     <string name="gdpr_blocked_accounts">Blokkerte kontoer</string>
-    <string name="gdpr_business_signup_option_title">Opprett en bedriftsprofil</string>
+    <string name="gdpr_business_signup_option_title">Legg til en bedriftskonto</string>
     <string name="gdpr_close_friends_title">Nære venner</string>
     <string name="gdpr_contacts_syncing_option_title">Kontaktsynkronisering</string>
     <string name="gdpr_data_download">Datanedlasting</string>
@@ -1893,6 +1929,7 @@
     <string name="get_started">Kom i gang</string>
     <string name="gif_sticker_description">GIF-etikett</string>
     <string name="gifs_description">GIF-er</string>
+    <string name="given_name">Fornavn</string>
     <string name="go_live_button">Send direkte</string>
     <string name="go_live_suggestion">Start din egen direktesendte video for å dele hva du driver med.</string>
     <string name="go_to_profile">Gå til profil</string>
@@ -1991,8 +2028,6 @@
     <string name="ig_time_picker_pm">p.m.</string>
     <string name="igds_reply_button_label">Svar</string>
     <string name="igds_view_reply_button_label">Se svar</string>
-    <string name="iglive_caption_hint">Legg til en tittel for seerne ...</string>
-    <string name="iglive_captioned_notification">%1$s sender direkte: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">Du var med i den direktesendte videoen til %1$s.</string>
     <string name="iglive_cobroadcast_end_title">Takk for at du ble med!</string>
     <string name="iglive_discard">Forkast</string>
@@ -2338,11 +2373,6 @@
     <string name="live_qa_label">Spørrerunde</string>
     <string name="live_ssi_tooltip">Se ressursene når som helst for å få hjelp.</string>
     <string name="live_starting_live">Du sender direkte!</string>
-    <string name="live_subscribe_button">Slå på</string>
-    <string name="live_subscribe_request_failed_to_send">Abonnementet ditt mislyktes.</string>
-    <string name="live_subscribe_request_sent">Slått på</string>
-    <string name="live_subscribe_sent_system_comment">Du kan når som helst slå av dette på vedkommendes profil.</string>
-    <string name="live_subscribe_system_comment">Få varsler for hver direktesendte video fra %1$s.</string>
     <string name="live_title">Direkte</string>
     <string name="live_unpin_comment">Løsne kommentar</string>
     <string name="live_video_call_cannot_start_description">Du kan ikke starte en direktesendt video mens du bruker videochat.</string>
@@ -2426,6 +2456,7 @@
     <string name="lookup_subtitle">Angi Instagram-brukernavnet ditt eller e-postadressen eller telefonnummeret som er knyttet til kontoen din.</string>
     <string name="lookup_title">Finn kontoen din</string>
     <string name="made_with_boomerang">Laget med &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">Hovedkonto</string>
     <string name="main_feed_hide_recommended_post_msg">Fra nå av viser vi ikke innlegg fra %1$s.</string>
     <string name="main_feed_unfollow_from_post_msg">Du kommer ikke til å se flere innlegg fra vedkommende etter at du har oppdatert.</string>
     <string name="main_feed_unfollow_from_post_title">Sluttet å følge %1$s</string>
@@ -2442,6 +2473,8 @@
     <string name="manage_saved_login">Lagret innloggingsinformasjon</string>
     <string name="managing_photos_of_you">Administrere bilder av deg</string>
     <string name="managing_your_account">Administrere kontoen din</string>
+    <string name="map_data_legal_notices_label">Juridiske merknader for kartdata</string>
+    <string name="map_information_title">Kartinformasjon</string>
     <string name="map_label">Kart</string>
     <string name="maps_open_map_reporter">Åpne</string>
     <string name="maps_report_button">Rapporter</string>
@@ -2519,6 +2552,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">Du kan ikke legge til en sang i en historie du har delt fra en annen app.</string>
     <string name="music_overlay_cant_save_story_alert">Historier med sanger kan ikke lagres</string>
     <string name="music_overlay_cant_share_to_fb_alert">Historier med sanger kan ikke deles på Facebook</string>
+    <string name="music_overlay_no_lyrics_available_toast">Ingen sangtekster er tilgjengelig</string>
     <string name="music_overlay_question_text_response_description">Det er ingen tilgjengelige sanger som matcher søket ditt. Trykk ovenfor for å sende søket ditt som et tekstsvar.</string>
     <string name="music_overlay_sticker_description">Overleggsetikett for musikk</string>
     <string name="music_overlay_story_attribution_from_username">Fra historien til %1$s</string>
@@ -2713,13 +2747,8 @@
     <string name="nux_main_feed_empty_subtitle_active">Følg folk for å begynne å se bilder og videoer de deler.</string>
     <string name="nux_main_feed_empty_title">Velkommen til Instagram</string>
     <string name="nux_one_tap_login_card_remove_icon_description">Fjern</string>
-    <string name="nux_one_tap_upsell_detail_save">Vi lagrer innloggingsinformasjonen din. Du trenger ikke å oppgi den på nytt når du logger inn på denne enheten i fremtiden.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">Når du logger deg inn på denne telefonen, trykker du bare på profilbildet ditt i stedet for å skrive inn innloggingsinformasjonen din.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">Neste gang du logger deg inn på denne telefonen, trykker du bare på profilbildet ditt i stedet for å skrive inn innloggingsinformasjonen din.</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">Lagre</string>
-    <string name="nux_one_tap_upsell_title_save">Lagre innloggingsinformasjon</string>
-    <string name="nux_one_tap_upsell_title_variant1">Logg inn enklere neste gang</string>
-    <string name="nux_one_tap_upsell_title_variant2">Husk passord</string>
+    <string name="nux_one_tap_upsell_detail">Neste gang du logger deg inn på denne telefonen, trykker du bare på profilbildet ditt i stedet for å skrive inn innloggingsinformasjonen din.</string>
+    <string name="nux_one_tap_upsell_title">Husk passord</string>
     <string name="nux_pinch_to_zoom">Før to fingre fra hverandre for å zoome</string>
     <string name="nux_silent_audio_text">Denne videoen er uten lyd</string>
     <string name="off">Av</string>
@@ -2737,7 +2766,6 @@
     <string name="one_hour">1 time</string>
     <string name="one_tap_login_landing_edit_accounts">Rediger kontoer</string>
     <string name="one_tap_login_text_link_text">Logg inn med en annen konto</string>
-    <string name="one_tap_logo">Innlogging med ett trykk</string>
     <string name="one_tap_new_footer_log_in">&lt;b>Logg inn.&lt;/b></string>
     <string name="one_tap_new_footer_one_button">Er du ny på Instagram? &lt;b>Registrer deg.&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>Bytt konto&lt;/b> eller</string>
@@ -2757,7 +2785,6 @@
     <string name="open_map_error">Vi kunne dessverre ikke åpne kartet.</string>
     <string name="open_phone_error">Vi kunne dessverre ikke gjennomføre anropet.</string>
     <string name="open_source_libraries">Biblioteker for åpen kildekode</string>
-    <string name="openstreetmap_copyright_text">© OpenStreetMap-bidragsytere</string>
     <string name="opt_into_all_ad_content_label">Se videre</string>
     <string name="opt_into_entire_dynamic_ad_label">Vis %1$d mer</string>
     <string name="or">eller</string>
@@ -2858,8 +2885,6 @@
     <string name="phone_number_toast_number_required">Telefonnummer er obligatorisk</string>
     <string name="phone_permission_request_message">Vi fyller ut telefonnummeret ditt automatisk og bekrefter det for deg, slik at det blir lettere for deg å gjenopprette kontoen din hvis du blir utestengt.</string>
     <string name="phone_permission_request_title">Foreta og administrere telefonanrop</string>
-    <string name="phone_register">Skriv inn telefonnummeret ditt</string>
-    <string name="phone_signup">Registrer deg med telefonnummer</string>
     <string name="photo">Bilde</string>
     <string name="photo_edit_error_message">Beklager, det oppstod et problem med redigering av bildet ditt. Det har blitt sendt en rapport til Instagram.</string>
     <string name="photo_edit_error_title">Kan ikke fortsette å redigere</string>
@@ -2911,6 +2936,7 @@
     <string name="post_to_your_story_label">Legg til innlegg i historien din</string>
     <string name="post_to_your_story_label_igtv">Legg til video i historien din</string>
     <string name="post_you_were_tagged_in">Innlegg som du er tagget i</string>
+    <string name="postal_code">Postnummer</string>
     <string name="posted_comment">Kommentaren er publisert</string>
     <string name="posting_failed">Videoen din ble ikke delt.</string>
     <string name="posting_message">Publiserer ...</string>
@@ -2922,7 +2948,6 @@
     <string name="posts_tab_title">Innlegg</string>
     <string name="posts_you_liked">Innlegg du liker</string>
     <string name="preferences_label">Preferanser</string>
-    <string name="preparing_to_scan">Forbereder skanning ...</string>
     <string name="presence_permission_explanation">Tillat at kontoer du følger, og alle du sender melding til, ser når du sist var aktiv på Instagram-apper. Når dette er slått av, kan du ikke se aktivitetsstatusen for andre kontoer.</string>
     <string name="presence_permission_name">Vis aktivitetsstatus</string>
     <string name="preview_hint_text">Trykk for å se bildet eller videoen i denne historien</string>
@@ -2985,6 +3010,7 @@
     <string name="product_share_sticker_default_question">Bør jeg kjøpe dette?</string>
     <string name="product_share_sticker_from">Fra %1$s</string>
     <string name="product_source">Produktkilde</string>
+    <string name="product_source_different_catalog">Bruk en annen katalog</string>
     <string name="product_source_learn_more">Finn ut mer</string>
     <string name="product_source_learn_more_text">Hvis du ikke ser produktkatalogen du vil legge til her, kan du kontakte en sideadministrator eller sjekke tillatelsene dine i Business Manager for å kontrollere at du har tillatelse. %1$s</string>
     <string name="product_source_load_more">Last inn flere kataloger</string>
@@ -3065,7 +3091,18 @@
     <string name="profile_visits">Profilbesøk</string>
     <string name="promote">Promoter</string>
     <string name="promote_again">Promoter på nytt</string>
+    <string name="promote_audience_header">Velg målpublikum</string>
+    <string name="promote_budget_duration_header">Det totale forbruket ditt er %1$s i løpet av %2$d dager</string>
+    <string name="promote_budget_duration_screen_title">Budsjett og varighet</string>
+    <string name="promote_create_new_audience_subtitle">Oppgi målrettingsalternativene manuelt</string>
+    <string name="promote_create_new_audience_title">Opprett ditt eget</string>
+    <string name="promote_destination_direct_message_option">Dine direktemeldinger</string>
+    <string name="promote_destination_header">Velg hvor du vil sende folk</string>
+    <string name="promote_destination_profile_option">Profilen din</string>
     <string name="promote_destination_screen_title">Mål</string>
+    <string name="promote_destination_website_edit_title">Nettsted</string>
+    <string name="promote_destination_website_option">Nettstedet ditt</string>
+    <string name="promote_edit">rediger</string>
     <string name="promote_error_claim_page_label">Gjør krav på side</string>
     <string name="promote_error_description_network_error">Vi har problemer og kan ikke promotere innlegget ditt akkurat nå. Prøv på nytt senere.</string>
     <string name="promote_error_page_legal_info">Facebook-sider er underlagt følgende %1$s.</string>
@@ -3128,11 +3165,12 @@
     <string name="quick_replies">Hurtigsvar</string>
     <string name="quick_reply_description">Hurtigsvar</string>
     <string name="quiz_responder_subtitle_text">svarte %1$s</string>
-    <string name="quiz_sticker_first_answer_hint">Alternativ 1</string>
+    <string name="quiz_sticker_add_option_hint">Legg til</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">Legg til minst to alternativer.</string>
     <string name="quiz_sticker_question_hint">GJETT FAVORITTEN MIN ...</string>
     <string name="quiz_sticker_response_composer_privacy_nux">Trykk for å starte quizen. %1$s får se svaret ditt.</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">Send inn svar</string>
-    <string name="quiz_sticker_second_answer_hint">Alternativ 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">Velg et gyldig alternativ</string>
     <string name="quiz_sticker_tray_description">Quizetikett</string>
     <string name="rageshake_bug_report_option">Det er noe som ikke fungerer</string>
     <string name="rageshake_disable_option">Deaktiver risting</string>
@@ -3178,7 +3216,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">Det ser ut til at det allerede finnes en konto for denne e-posten. Vi kan forsøke å logge deg inn ved å bruke informasjonen for Google-kontoen din. .</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">Det ser ut til at dette brukernavnet er tilknyttet en Gmail-adresse. Vi kan forsøke å logge deg inn ved å bruke informasjonen for Google-kontoen din. </string>
     <string name="recovery_known_account_login_dialog_message_one_tap">Det ser ut til at du allerede har lagret innloggingsinformasjonen for denne kontoen.</string>
-    <string name="reel_ad4ad_privacy_subtitle">Bare du kan se denne forhåndsvisningen</string>
+    <string name="reel_ad4ad_privacy_subtitle">Bare du kan se dette</string>
     <string name="reel_bakeoff_thank_you_subtitle">Vi bruker svarene dine til å forbedre Instagram.</string>
     <string name="reel_bakeoff_thank_you_title">Takk for at du ga oss beskjed.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">Åpne kamera</string>
@@ -3215,6 +3253,7 @@
     <string name="reel_poll_voters_list_title">Velgere</string>
     <string name="reel_question_responses_list_title">Svar</string>
     <string name="reel_quick_reactions">Hurtigreaksjoner</string>
+    <string name="reel_quiz_responders_list_title">Besvart</string>
     <string name="reel_reaction_composer_sent_confirmation">Reaksjonen er sendt til %1$s</string>
     <string name="reel_reshared_from_archive_label">Fra arkivet</string>
     <string name="reel_reshares_empty_state_title">Det er ingen offentlige videredelinger av dette innlegget akkurat nå</string>
@@ -3364,6 +3403,7 @@
     <string name="reply_to">Svar %1$s ...</string>
     <string name="replying_to_user_format">Svarer %1$1s</string>
     <string name="report">Rapporter</string>
+    <string name="report_a_problem_label">Rapporter et problem</string>
     <string name="report_accounts_are_inappropriate">Kontoer er upassende</string>
     <string name="report_ad">Rapporter annonse</string>
     <string name="report_as_ip_violation">Vil du rapportere det som brudd på åndsverksrettigheter?</string>
@@ -3593,7 +3633,7 @@
     <string name="set_daily_reminder_subtitle">Vi sender deg en påminnelse når du har brukt tidsperioden du har angitt.</string>
     <string name="set_daily_reminder_title">Konfigurer daglig påminnelse</string>
     <string name="set_main_account">Velg hovedkonto</string>
-    <string name="set_up_business_profile">Konfigurer bedriftsprofilen din</string>
+    <string name="set_up_business_account">Konfigurer bedriftskontoen din</string>
     <string name="settings">Innstillinger</string>
     <string name="settings_viewers_choose_locations_feature_off">Av</string>
     <string name="settings_viewers_choose_locations_title">Velg steder</string>
@@ -3653,6 +3693,7 @@
     <string name="shop_nux_text">BUTIKK</string>
     <string name="shop_on_profile_row_continue_shopping">Fortsett å handle</string>
     <string name="shop_this_post">HANDLE FRA DETTE INNLEGGET</string>
+    <string name="shopping_checkout_destination_title">Handle nå og betal</string>
     <string name="shopping_destination_title">Handle</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">Dette fjerner produktetiketten fra historien.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">Fjern etikett</string>
@@ -3823,7 +3864,6 @@
     <string name="suggested">Foreslått</string>
     <string name="suggested_accounts_header">Foreslått</string>
     <string name="suggested_categories">Foreslått</string>
-    <string name="suggested_for_you">Foreslått for deg</string>
     <string name="suggested_hashtags">Foreslått</string>
     <string name="suggested_hashtags_header">Forslag</string>
     <string name="suggested_highlight_delete_option_text">Fjern forslaget</string>
@@ -3831,7 +3871,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">Forkast</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">Behold</string>
     <string name="suggested_highlight_discard_changes_dialog_title">Vil du forkaste høydepunktet?</string>
-    <string name="suggested_live_and_post_live_videos">Se neste</string>
     <string name="suggested_live_videos">Direkte nå</string>
     <string name="suggested_recipients">Foreslått</string>
     <string name="suggested_username_allcaps_title">VELKOMMEN TIL INSTAGRAM,</string>
@@ -3919,6 +3958,7 @@
     <string name="tap_to_view_product_items">TRYKK FOR Å VISE PRODUKTER</string>
     <string name="tap_to_watch_video_description">Trykk for å se videoen</string>
     <string name="tap_to_watch_video_nux">SE HELE IGTV-VIDEOEN</string>
+    <string name="tel">Telefonnummer</string>
     <string name="tell_us_approval_reason">Fortell oss hvorfor annonsen din burde bli godkjent. Hvis vi har gjort en feil, godkjenner vi annonsen så snart som mulig.</string>
     <string name="terms">Betingelser</string>
     <string name="terms_and_data_policy">Betingelser og retningslinjer for data</string>
@@ -4078,6 +4118,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">Skriv inn den 6-sifrede koden vi sendte til nummeret ditt som slutter på %1$s, for å fullføre konfigurasjonen av totrinnsverifisering.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">Oppgi den 6-sifrede koden som ble generert av godkjenningsappen din.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">Oppgi kode</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">Vi kommer ikke til å be om en kode neste gang du logger inn</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">Stol på denne enheten</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">Endre telefonnummer</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">Send koden på nytt</string>
     <string name="two_fac_confirmation_code_invalid">Ugyldig kode</string>
@@ -4245,6 +4287,7 @@
     <string name="username_cannot_be_empty">Brukernavnet kan ikke stå tomt</string>
     <string name="username_hint_access">Brukernavn, e-postadresse eller telefonnummer</string>
     <string name="username_hint_login">Telefonnummer, e-postadresse eller brukernavn</string>
+    <string name="username_lock_help_text">Det gamle brukernavnet ditt blir låst i 14 dager. Du kan endre det tilbake innen denne tidsperioden. Etter det vil brukernavnet bli tilgjengelig for bruk av alle.</string>
     <string name="username_not_available">Brukernavnet er ikke tilgjengelig</string>
     <string name="username_placeholder">brukernavn</string>
     <string name="valid_address_to_map">Legg til en gyldig adresse, slik at folk kan finne frem til deg på kart.</string>

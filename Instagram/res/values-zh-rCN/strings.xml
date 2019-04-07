@@ -4,7 +4,7 @@
     <string name="APPIRATER_MESSAGE">如果你喜欢使用%1$s，能请你花点时间给它打分吗？整个过程不会超过 1 分钟。谢谢你的支持！</string>
     <string name="APPIRATER_MESSAGE_TITLE">为%1$s评分</string>
     <string name="APPIRATER_RATE_BUTTON">为%1$s评分</string>
-    <string name="APPIRATER_RATE_LATER">稍后提醒我</string>
+    <string name="APPIRATER_RATE_LATER">稍后提醒</string>
     <string name="NEW_APPIRATER_RATE_LATER">以后再说</string>
     <string name="__external__browser_add_platform_extension_description">添加平台扩展</string>
     <string name="__external__browser_add_to_collection_confirmation">已加入</string>
@@ -211,6 +211,10 @@
     <string name="address_book_contacts_screen_title">邀请联系人</string>
     <string name="address_book_contacts_screen_title_with_context_1">选择联系人</string>
     <string name="address_book_contacts_screen_title_with_context_2">选择想邀请的联系人</string>
+    <string name="address_level_1">州/省</string>
+    <string name="address_level_2">城市</string>
+    <string name="address_line_1">地址</string>
+    <string name="address_line_2">房间号/门牌号（非必填）</string>
     <string name="adjust">调整</string>
     <string name="admin_contact_info">管理员联系方式</string>
     <string name="ads_body">查看你目前投放的广告。</string>
@@ -455,7 +459,7 @@
     <string name="bugreporter_load_external_screenshot_wait">正在加载图片...</string>
     <string name="bugreporter_low_memory_screenshot_error">“空间不足，无法捕捉截图。抱歉！”</string>
     <string name="bugreporter_not_now">以后再说</string>
-    <string name="bugreporter_rageshake_hint">简单地说明下发生了什么</string>
+    <string name="bugreporter_rageshake_hint">出了什么问题？</string>
     <string name="bugreporter_rageshake_video_quality_hint">简要说明视频质量或音频质量与预期的差别。</string>
     <string name="bugreporter_save_annotated_screenshot_error">无法保存截图，请重试。</string>
     <string name="bugreporter_save_annotated_screenshot_wait">正在保存……</string>
@@ -487,6 +491,7 @@
     <string name="business_profile">商家主页</string>
     <string name="business_profile_linked_to_pages">Instagram 商家主页与 Facebook 公共主页绑定，受%1$s约束。</string>
     <string name="business_settings_redesign">商家</string>
+    <string name="business_signup_account_option_title">注册业务帐户</string>
     <string name="business_signup_address_hint">商家地址</string>
     <string name="business_signup_change_username">更改帐号</string>
     <string name="business_signup_choose_username_desc">请为你的业务帐户挑选帐号。你可以随时更改帐号。</string>
@@ -634,6 +639,10 @@
     <string name="change_username_title">更改帐号</string>
     <string name="changes_saved">更改已保存</string>
     <string name="check_connection_and_try_again">请在检查网络连接后重试。</string>
+    <string name="checkout_module_merchant_card_action_text">购物</string>
+    <string name="checkout_module_nux_message">你可以直接在 Instagram 选购某些品牌的商品啦。</string>
+    <string name="checkout_module_nux_title">试试在 Instagram 结账</string>
+    <string name="checkout_module_title">在 Instagram 结账</string>
     <string name="choose_app_verify_flow">自动确认</string>
     <string name="choose_category">选择商家主页类别</string>
     <string name="choose_category_for_profile">选择主页类型</string>
@@ -728,7 +737,13 @@
     <string name="comment_ellipsis_less">收起</string>
     <string name="comment_hint">添加评论...</string>
     <string name="comment_offensive_alert_message">确定发布吗？</string>
+    <string name="comment_offensive_alert_message_new">其他用户可能会认为这条评论具冒犯性。</string>
     <string name="comment_undo_button">撤销</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">告诉我们</string>
+    <string name="comment_warning_bottom_sheet_para1">如果用户发布的评论与被举报的评论相似，我们会要求他们重新考虑</string>
+    <string name="comment_warning_bottom_sheet_para2">如果是系统误判，</string>
+    <string name="comment_warning_bottom_sheet_title">保持 Instagram 的和谐友爱氛围</string>
+    <string name="comment_warning_bottom_sheet_toast">反馈已发送</string>
     <string name="commenting_disabled_hint">这篇帖子限制评论了。</string>
     <string name="commenting_limited_to_followers">只有你的粉丝能够评论。所有人都能看到评论。</string>
     <string name="commenting_limited_to_followers_and_following">只有你的粉丝和关注对象能够评论。所有人都能看到评论。</string>
@@ -800,6 +815,7 @@
     <string name="connect_fb_and_agree">轻触上方按钮并访问成效分析，即表示你同意接受我们的%1$s。</string>
     <string name="connect_fb_get_insights">了解你的粉丝，查看帖子的表现。未经你允许，我们不会在 Facebook 发布任何内容。</string>
     <string name="connect_ig_to_fb_page_explain">把你的 Instagram 业务帐户和 Facebook 公共主页绑定，方便用户找到你。Instagram 业务帐户与 Facebook 公共主页绑定，受%1$s约束。</string>
+    <string name="connect_or_create">绑定或创建</string>
     <string name="connect_page_for_biz_tools">使用 Instagram 业务工具的帐户可绑定到 Facebook 公共主页。如要创建广告，必须绑定主页。如果你已有主页，我们会将你的信息复制过来，你再根据需要编辑。</string>
     <string name="connect_page_for_power_tools">使用 Instagram 高效工具的帐户可绑定到 Facebook 公共主页。如要创建广告，必须绑定主页。如果你已有主页，我们会将你的信息复制过来，你再根据需要编辑。</string>
     <string name="connect_page_for_pro_tools">使用 Instagram 专业工具的帐户可绑定到 Facebook 公共主页。如要创建广告，必须绑定主页。如果你已有主页，我们会将你的信息复制过来，你再根据需要编辑。</string>
@@ -1056,6 +1072,9 @@
     <string name="delta_login_review_was_me">这是我</string>
     <string name="delta_login_review_was_not_me">这不是我</string>
     <string name="delta_password_change_confirm_new_password_hint">再次输入新密码</string>
+    <string name="delta_password_change_error_match_failure">请确保两次密码输入一致。</string>
+    <string name="delta_password_change_error_required_field_native">两空都是必填项。</string>
+    <string name="delta_password_change_error_required_field_react_native">这是必填项。</string>
     <string name="delta_password_change_footer">我们建议你为 Instagram 设置独特的专用密码，其中包含至少一个数字和一个特殊字符。</string>
     <string name="delta_password_change_new_password_hint">新密码</string>
     <string name="delta_password_change_submit">提交</string>
@@ -1067,6 +1086,7 @@
     <string name="dial_element_capture_format_music">音乐</string>
     <string name="dial_element_capture_format_reverse">倒播</string>
     <string name="dial_element_capture_format_superzoom">推镜</string>
+    <string name="dialog_always_share_to_facebook">始终分享到 Facebook</string>
     <string name="dialog_block_user_button">拉黑</string>
     <string name="dialog_block_user_message">对方将无法在 Instagram 找到你的个人主页、帖子或快拍。对方不会收到自己被拉黑的通知。</string>
     <string name="dialog_block_user_title">拉黑%1$s？</string>
@@ -1115,7 +1135,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">移到陌生消息？</string>
     <string name="direct_block_account">拉黑帐户</string>
     <string name="direct_block_choices_block_account">拉黑帐户</string>
-    <string name="direct_block_choices_block_messages">屏蔽消息</string>
+    <string name="direct_block_choices_ignore">忽略</string>
     <string name="direct_block_user">拉黑用户</string>
     <string name="direct_blocked">已拉黑</string>
     <string name="direct_button_change_group_name">完成</string>
@@ -1128,6 +1148,7 @@
     <string name="direct_details_error">无法加载对话详情，请重试。</string>
     <string name="direct_digest_active_today">今天在线</string>
     <string name="direct_digest_active_yesterday">昨天在线</string>
+    <string name="direct_digest_are_active_now">%1$d位用户目前在线</string>
     <string name="direct_digest_is_active_now">在线</string>
     <string name="direct_digest_mentioned_you_story">在快拍中提及你</string>
     <string name="direct_digest_no_author_shared_product">分享了一件商品</string>
@@ -1156,6 +1177,7 @@
     <string name="direct_digest_shared_post">分享了帖子</string>
     <string name="direct_digest_shared_your_countdown">已把你的倒计时贴图分享到自己的快拍</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">把你标记为合作伙伴</string>
+    <string name="direct_digest_user_is_active_now">%1$s目前在线</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s发送了 Direct 应用邀请</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">发送了 Direct 应用邀请</string>
     <string name="direct_digest_user_sent_gif">%1$s发送了一张动图</string>
@@ -1368,6 +1390,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">把你标记为合作伙伴</string>
     <string name="direct_reel_mention_sender_info">你在快拍中提及%1$s</string>
     <string name="direct_reel_mention_sender_info_branded_content">你已把%1$s标记为合作伙伴</string>
+    <string name="direct_reel_question_response_creator_info">回答了你的问题</string>
+    <string name="direct_reel_question_response_sender_info">你回答了 TA 的问题</string>
     <string name="direct_reel_reaction_recipient_info">给你的快拍留下心情%1$s</string>
     <string name="direct_reel_reaction_sender_info">你给 TA 的快拍留下心情%1$s</string>
     <string name="direct_reel_reply_receiver_highlight_info">回复了你的快拍精选</string>
@@ -1601,10 +1625,16 @@
     <string name="editable_profile_review_title">检查你的联系方式</string>
     <string name="edited">已编辑</string>
     <string name="edits_not_saved">编辑未保存，请重试。</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b>，创作者：%2$s</string>
-    <string name="effect_by_format">发布者：%1$s</string>
-    <string name="effect_by_format_with_title">%1$s，创建者：%2$s</string>
     <string name="effect_created_by_format">创建者：&lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">更多</string>
+    <string name="effect_detail_save_to_camera_button_label">保存到相机</string>
+    <string name="effect_detail_saved_to_camera_button_label">已保存到相机</string>
+    <string name="effect_detail_share_button_label">发给…</string>
+    <string name="effect_detail_view_try_it_button_label">试试看</string>
+    <string name="effect_details_view_created_from_format">制作者：&lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b>，制作者：%2$s</string>
+    <string name="effect_from_format">制作者：%1$s</string>
+    <string name="effect_from_format_with_title">%1$s，制作者：%2$s</string>
     <string name="eight_hours">8 小时</string>
     <string name="ellipsis_more">...更多</string>
     <string name="email">邮箱</string>
@@ -1613,10 +1643,8 @@
     <string name="email_invalid">邮箱无效</string>
     <string name="email_not_available">这个邮箱已经注册其他帐户</string>
     <string name="email_not_valid">请输入有效的邮箱。</string>
-    <string name="email_register">输入你的邮箱</string>
     <string name="email_sent">系统已发送邮件到你的帐户邮箱，请注意查收。如果仍有问题，请访问%1$s。</string>
     <string name="email_sent_short">邮件已发送</string>
-    <string name="email_signup">使用邮箱注册</string>
     <string name="email_sms_notification_settings">邮件和短信通知</string>
     <string name="emails">邮件数量</string>
     <string name="emoji_not_allowed">密码包含表情符号。请选择其他内容。</string>
@@ -1651,6 +1679,7 @@
     <string name="expired_link_dialog_title">过期链接</string>
     <string name="explore_contextual_title">发现</string>
     <string name="explore_description">搜索发现</string>
+    <string name="explore_effects">发现特效</string>
     <string name="explore_places">地点</string>
     <string name="explore_places_request_fail">无法加载地点。请重试。</string>
     <string name="explore_topical_going_to_next">即将前往下一页</string>
@@ -1697,6 +1726,7 @@
     <string name="failed_to_load_highlight_message">无法加载快拍精选</string>
     <string name="failed_to_load_photo_toast">很抱歉，无法加载这张照片。</string>
     <string name="failed_to_load_video_toast">很抱歉，无法加载这个视频。</string>
+    <string name="family_name">姓</string>
     <string name="favorites_tab_title">密友</string>
     <string name="fb_connect_card_button_text">关联</string>
     <string name="fb_connect_card_main_text">关联 Facebook</string>
@@ -1717,6 +1747,7 @@
     <string name="feed_controls_message_replies_setting_following">你关注的用户</string>
     <string name="feed_controls_message_replies_setting_off">关</string>
     <string name="feed_controls_settings_title">动态控制</string>
+    <string name="feed_emoji_see_more_button_label">轻触查看更多表情</string>
     <string name="feed_item_page_title">广告</string>
     <string name="feed_product_pivots_view_shop_button">查看店铺</string>
     <string name="feed_refereshed">内容已刷新</string>
@@ -1861,10 +1892,13 @@
     <string name="full_single_line_address">%1$s, %2$s%3$s</string>
     <string name="full_terms_rw">完整条款</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">继续</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">捐款金额不能超过%1$s</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">捐款金额不能低于%1$s</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">捐款金额</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">其他</string>
     <string name="fundraiser_sticker_default_title">%1$s的筹款活动</string>
     <string name="fundraiser_sticker_donate_button_text">捐款</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">已捐款</string>
     <string name="fundraiser_sticker_search_following_section_title">已关注</string>
     <string name="fundraiser_sticker_search_suggested_section_title">推荐</string>
     <string name="fundraiser_sticker_subtitle">支持%1$s</string>
@@ -1873,6 +1907,8 @@
     <string name="gallery">图库</string>
     <string name="gallery_album_thumbnail">相册缩略图</string>
     <string name="gallery_description">图库</string>
+    <string name="gallery_empty_state_description">如果你的设备上有照片和视频，你可以把它们分享到 Instagram。</string>
+    <string name="gallery_empty_state_title">你的照片和视频</string>
     <string name="gallery_photo_thumbnail">照片缩略图</string>
     <string name="gallery_sticker_description">图库贴图</string>
     <string name="gallery_sticker_grid_empty">没有照片或视频</string>
@@ -1885,7 +1921,7 @@
     <string name="gdpr_account_privacy">帐户隐私设置</string>
     <string name="gdpr_activity_status">活动状态</string>
     <string name="gdpr_blocked_accounts">黑名单帐户</string>
-    <string name="gdpr_business_signup_option_title">注册商家主页</string>
+    <string name="gdpr_business_signup_option_title">添加业务帐户</string>
     <string name="gdpr_close_friends_title">密友</string>
     <string name="gdpr_contacts_syncing_option_title">联系人同步</string>
     <string name="gdpr_data_download">数据下载</string>
@@ -1914,6 +1950,7 @@
     <string name="get_started">开始</string>
     <string name="gif_sticker_description">动图</string>
     <string name="gifs_description">动图</string>
+    <string name="given_name">名</string>
     <string name="go_live_button">开始直播</string>
     <string name="go_live_suggestion">发起直播，分享你的当前活动。</string>
     <string name="go_to_profile">前往商家主页</string>
@@ -2012,8 +2049,6 @@
     <string name="ig_time_picker_pm">下午</string>
     <string name="igds_reply_button_label">回复</string>
     <string name="igds_view_reply_button_label">查看回复</string>
-    <string name="iglive_caption_hint">为观众添加标题…</string>
-    <string name="iglive_captioned_notification">%1$s正在直播：%2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">你是%1$s的直播嘉宾。</string>
     <string name="iglive_cobroadcast_end_title">感谢你的加入！</string>
     <string name="iglive_discard">放弃</string>
@@ -2152,7 +2187,7 @@
     <string name="in_app_browser_menu_item_share_link">分享到...</string>
     <string name="in_app_browser_share_link_title">分享</string>
     <string name="in_app_signup_catalog_selection_inline_subtitle">如要在 Instagram 标记商品，你需要关联商品目录。选择一个商品来源可了解具体方法。</string>
-    <string name="in_app_signup_catalog_selection_inline_title">关联目录</string>
+    <string name="in_app_signup_catalog_selection_inline_title">绑定目录</string>
     <string name="in_app_signup_value_prop_title">购物功能注册</string>
     <string name="in_review">审核中</string>
     <string name="inbox_folder_general">通用</string>
@@ -2364,11 +2399,6 @@
     <string name="live_qa_label">问答</string>
     <string name="live_ssi_tooltip">随时查看资源并寻求支持。</string>
     <string name="live_starting_live">你开始直播啦！</string>
-    <string name="live_subscribe_button">打开</string>
-    <string name="live_subscribe_request_failed_to_send">订阅失败。</string>
-    <string name="live_subscribe_request_sent">已打开</string>
-    <string name="live_subscribe_sent_system_comment">你可以随时前往他们的个人主页取消订阅。</string>
-    <string name="live_subscribe_system_comment">接收%1$s的所有直播视频通知。</string>
     <string name="live_title">直播</string>
     <string name="live_unpin_comment">取消置顶</string>
     <string name="live_video_call_cannot_start_description">视频聊天时无法发起直播。</string>
@@ -2451,6 +2481,7 @@
     <string name="lookup_subtitle">请输入你的 Instagram 帐号，或你的 帐户绑定邮箱或手机。</string>
     <string name="lookup_title">找回帐户</string>
     <string name="made_with_boomerang">用&lt;b>Boomerang&lt;/b>制作</string>
+    <string name="main_account">主要帐户</string>
     <string name="main_feed_hide_recommended_post_msg">我们不会再展示%1$s的帖子了。</string>
     <string name="main_feed_unfollow_from_post_msg">刷新页面后，你就看不到 TA 的更多帖子了。</string>
     <string name="main_feed_unfollow_from_post_title">已停止关注%1$s</string>
@@ -2467,6 +2498,8 @@
     <string name="manage_saved_login">已保存的登录信息</string>
     <string name="managing_photos_of_you">管理有你的照片</string>
     <string name="managing_your_account">管理帐户</string>
+    <string name="map_data_legal_notices_label">地图数据法律声明</string>
+    <string name="map_information_title">地图信息</string>
     <string name="map_label">地图</string>
     <string name="maps_open_map_reporter">打开</string>
     <string name="maps_report_button">报错</string>
@@ -2544,6 +2577,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">无法向快拍添加你分享自其他应用的歌曲。</string>
     <string name="music_overlay_cant_save_story_alert">无法保存附带歌曲的快拍</string>
     <string name="music_overlay_cant_share_to_fb_alert">无法把附带歌曲的快拍分享到 Facebook</string>
+    <string name="music_overlay_no_lyrics_available_toast">无歌词可显示</string>
     <string name="music_overlay_question_text_response_description">没有与你的搜索条件匹配的歌曲。轻触上方即可将搜索结果以文字回复的形式发送。</string>
     <string name="music_overlay_sticker_description">音乐符号贴图</string>
     <string name="music_overlay_story_attribution_from_username">来自%1$s的快拍</string>
@@ -2674,7 +2708,7 @@
     <string name="no_posts_yet">还没有帖子</string>
     <string name="no_posts_yet_subtitle">%1$s发布的照片和视频会显示在这里。</string>
     <string name="no_product_source_selected">无</string>
-    <string name="no_product_source_selected_connect_a_catalog">关联目录</string>
+    <string name="no_product_source_selected_connect_a_catalog">绑定目录</string>
     <string name="no_products_found">找不到商品</string>
     <string name="no_reel_views">0 次浏览</string>
     <string name="no_results_found">找不到结果</string>
@@ -2738,14 +2772,9 @@
     <string name="nux_main_feed_empty_subtitle_active">关注用户即可查看他们分享的照片和视频。</string>
     <string name="nux_main_feed_empty_title">欢迎使用 Instagram</string>
     <string name="nux_one_tap_login_card_remove_icon_description">移除</string>
-    <string name="nux_one_tap_upsell_detail_save">我们会保存你的登录信息，下次你在这台设备登录就不需要输入密码了。</string>
-    <string name="nux_one_tap_upsell_detail_variant1">以后只需轻触头像即可登录本机，无需输入所有登录信息。</string>
-    <string name="nux_one_tap_upsell_detail_variant2">下次只需轻触头像即可登录本机，无需输入所有登录信息。</string>
+    <string name="nux_one_tap_upsell_detail">下次只需轻触头像即可登录本机，无需输入所有登录信息。</string>
     <string name="nux_one_tap_upsell_enroll_button_ok">确定</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">保存</string>
-    <string name="nux_one_tap_upsell_title_save">保存登录信息</string>
-    <string name="nux_one_tap_upsell_title_variant1">下次登录更便捷</string>
-    <string name="nux_one_tap_upsell_title_variant2">记住密码</string>
+    <string name="nux_one_tap_upsell_title">记住密码</string>
     <string name="nux_pinch_to_zoom">捏拉缩放</string>
     <string name="nux_silent_audio_text">视频无声音</string>
     <string name="off">关</string>
@@ -2764,7 +2793,6 @@
     <string name="one_hour">1 小时</string>
     <string name="one_tap_login_landing_edit_accounts">编辑帐户</string>
     <string name="one_tap_login_text_link_text">用其他帐户登录</string>
-    <string name="one_tap_logo">一键登录徽标</string>
     <string name="one_tap_new_footer_log_in">&lt;b>登录。&lt;/b></string>
     <string name="one_tap_new_footer_one_button">初识 Instagram？马上&lt;b>注册&lt;/b>吧！</string>
     <string name="one_tap_new_footer_switch_account">&lt;b>切换帐户&lt;/b>或</string>
@@ -2884,8 +2912,6 @@
     <string name="phone_number_toast_number_required">手机号为必填</string>
     <string name="phone_permission_request_message">我们会为你自动填写和验证手机号，你在无法登录帐户时能更轻松地找回帐户。</string>
     <string name="phone_permission_request_title">发起和管理手机通话</string>
-    <string name="phone_register">输入你的手机号</string>
-    <string name="phone_signup">使用手机号注册</string>
     <string name="photo">照片</string>
     <string name="photo_edit_error_message">很抱歉，编辑照片时出错。Instagram 将收到错误报告。</string>
     <string name="photo_edit_error_title">无法继续编辑</string>
@@ -2937,6 +2963,7 @@
     <string name="post_to_your_story_label">发布到快拍</string>
     <string name="post_to_your_story_label_igtv">把视频发布到快拍</string>
     <string name="post_you_were_tagged_in">标记你的帖子</string>
+    <string name="postal_code">邮编</string>
     <string name="posted_comment">评论已发布</string>
     <string name="posting_failed">视频分享失败了。</string>
     <string name="posting_message">正在发布…</string>
@@ -2948,7 +2975,6 @@
     <string name="posts_tab_title">帖子</string>
     <string name="posts_you_liked">你赞过的内容</string>
     <string name="preferences_label">偏好设置</string>
-    <string name="preparing_to_scan">正在准备扫描...</string>
     <string name="presence_permission_explanation">允许你关注的用户和消息联系人看到你上次使用 Instagram 应用的时间。关闭以后，你就不能再看到其他用户的活动状态。</string>
     <string name="presence_permission_name">显示活动状态</string>
     <string name="preview_hint_text">轻触查看快拍中的照片或视频</string>
@@ -3011,6 +3037,7 @@
     <string name="product_share_sticker_default_question">我该不该剁手呢？</string>
     <string name="product_share_sticker_from">商家：%1$s</string>
     <string name="product_source">商品来源</string>
+    <string name="product_source_different_catalog">使用其他目录</string>
     <string name="product_source_learn_more">详细了解</string>
     <string name="product_source_learn_more_text">如果找不到想要添加的商品目录，请联系主页管理员，或查看你在商务管理平台中是否有相关权限。%1$s</string>
     <string name="product_source_load_more">加载更多目录</string>
@@ -3091,7 +3118,18 @@
     <string name="profile_visits">商家主页访问量</string>
     <string name="promote">推广</string>
     <string name="promote_again">再次推广</string>
+    <string name="promote_audience_header">选择目标受众</string>
+    <string name="promote_budget_duration_header">%2$d天的总花费%1$s</string>
+    <string name="promote_budget_duration_screen_title">预算和投放期</string>
+    <string name="promote_create_new_audience_subtitle">手动输入定位选项</string>
+    <string name="promote_create_new_audience_title">创建自定义受众</string>
+    <string name="promote_destination_direct_message_option">你的 Direct 消息</string>
+    <string name="promote_destination_header">选择用户将前往的位置</string>
+    <string name="promote_destination_profile_option">你的个人主页</string>
     <string name="promote_destination_screen_title">目标位置</string>
+    <string name="promote_destination_website_edit_title">网站</string>
+    <string name="promote_destination_website_option">你的网站</string>
+    <string name="promote_edit">编辑</string>
     <string name="promote_error_claim_page_label">认领主页</string>
     <string name="promote_error_description_network_error">系统出现问题，暂时无法推广你的帖子。请稍后重试。</string>
     <string name="promote_error_page_legal_info">Facebook 公共主页必须遵守这些%1$s。</string>
@@ -3155,11 +3193,12 @@
     <string name="quick_replies">快速回复</string>
     <string name="quick_reply_description">快速回复</string>
     <string name="quiz_responder_subtitle_text">答案：%1$s</string>
-    <string name="quiz_sticker_first_answer_hint">选项 1</string>
+    <string name="quiz_sticker_add_option_hint">添加</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">请添加至少两个选项</string>
     <string name="quiz_sticker_question_hint">猜我最爱...</string>
     <string name="quiz_sticker_response_composer_privacy_nux">轻触开始测验。%1$s将能看到你的答案。</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">提交回答</string>
-    <string name="quiz_sticker_second_answer_hint">选项 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">请选择有效选项</string>
     <string name="quiz_sticker_tray_description">测验贴图</string>
     <string name="quiz_sticker_tray_label">测验</string>
     <string name="rageshake_bug_report_option">出错了</string>
@@ -3206,7 +3245,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">这个邮箱好像已有相应帐户。我们可以尝试使用你的 Google 帐户 信息登录。</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">这个帐号好像已绑定 Gmail 邮箱。我们可以尝试使用你的 Google 帐户 信息登录。</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">你好像已保存这个帐户的登录信息。</string>
-    <string name="reel_ad4ad_privacy_subtitle">只有你能看到预览效果</string>
+    <string name="reel_ad4ad_privacy_subtitle">此内容只对你可见</string>
     <string name="reel_bakeoff_thank_you_subtitle">我们将用你的回复帮助改善 Instagram。</string>
     <string name="reel_bakeoff_thank_you_title">感谢告知。</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">打开相机</string>
@@ -3243,6 +3282,7 @@
     <string name="reel_poll_voters_list_title">投票者</string>
     <string name="reel_question_responses_list_title">回复</string>
     <string name="reel_quick_reactions">快速留下心情</string>
+    <string name="reel_quiz_responders_list_title">已回答</string>
     <string name="reel_reaction_composer_sent_confirmation">心情已发给%1$s</string>
     <string name="reel_reshared_from_archive_label">来自私人影集</string>
     <string name="reel_reshares_empty_state_title">这篇帖子目前没有任何公开转发</string>
@@ -3393,6 +3433,7 @@
     <string name="reply_to">回复%1$s...</string>
     <string name="replying_to_user_format">正在回复%1$1s</string>
     <string name="report">举报</string>
+    <string name="report_a_problem_label">报告问题</string>
     <string name="report_accounts_are_inappropriate">帐户内容不当</string>
     <string name="report_ad">举报广告</string>
     <string name="report_as_ip_violation">举报知识产权侵犯行为？</string>
@@ -3624,7 +3665,7 @@
     <string name="set_daily_reminder_subtitle">到了你设定的时间后，我们将发送一条提醒。</string>
     <string name="set_daily_reminder_title">设置每日提醒</string>
     <string name="set_main_account">设置主要帐户</string>
-    <string name="set_up_business_profile">设置商家主页</string>
+    <string name="set_up_business_account">设置业务帐户</string>
     <string name="settings">设置</string>
     <string name="settings_viewers_choose_locations_feature_off">关</string>
     <string name="settings_viewers_choose_locations_title">选择地区</string>
@@ -3685,6 +3726,7 @@
     <string name="shop_on_profile_row_continue_shopping">继续购物</string>
     <string name="shop_this_post">购买帖子中的商品</string>
     <string name="shopping">购物</string>
+    <string name="shopping_checkout_destination_title">立即购买并结账</string>
     <string name="shopping_destination_title">购物</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">这将从这条快拍移除商品贴图。</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">移除贴图</string>
@@ -3854,7 +3896,6 @@
     <string name="suggested">推荐</string>
     <string name="suggested_accounts_header">推荐</string>
     <string name="suggested_categories">推荐</string>
-    <string name="suggested_for_you">推荐用户</string>
     <string name="suggested_hashtags">推荐</string>
     <string name="suggested_hashtags_header">推荐</string>
     <string name="suggested_highlight_delete_option_text">移除推荐</string>
@@ -3862,7 +3903,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">放弃</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">保留</string>
     <string name="suggested_highlight_discard_changes_dialog_title">放弃精选？</string>
-    <string name="suggested_live_and_post_live_videos">接着观看</string>
     <string name="suggested_live_videos">正在直播</string>
     <string name="suggested_recipients">推荐</string>
     <string name="suggested_username_allcaps_title">欢迎使用 INSTAGRAM，</string>
@@ -3932,7 +3972,7 @@
     <string name="tag_your_fb_friends">标记还未加入 Instagram 的好友并和他们分享内容。</string>
     <string name="tagged_tab_title">被标记的</string>
     <string name="tagging_drag_to_move">拖动可移动或轻点删除。</string>
-    <string name="tagging_limitation_explanation">你不能在同一篇帖子中标记用户和商品。</string>
+    <string name="tagging_limitation_explanation">你无法在一篇帖子中同时标记用户和商品。</string>
     <string name="tagging_only_you_can_see_fb_friends">只有你可以看到你标记的 Facebook 好友。</string>
     <string name="tagging_swipe_to_see_more">滑动查看更多。</string>
     <string name="tagging_upsell_dialog_cancel_button_text">仍要分享</string>
@@ -3950,6 +3990,7 @@
     <string name="tap_to_view_product_items">轻触查看商品</string>
     <string name="tap_to_watch_video_description">轻触观看视频</string>
     <string name="tap_to_watch_video_nux">观看完整的 IGTV 视频</string>
+    <string name="tel">电话</string>
     <string name="tell_us_approval_reason">请说明广告应当获得批准的原因。如果是系统误判，我们会尽快批准你的广告投放。</string>
     <string name="terms">条款</string>
     <string name="terms_and_data_policy">条款和数据使用政策</string>
@@ -4111,6 +4152,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">请输入尾号为%1$s的手机号收到的 6 位数验证码，完成双重验证设置。</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">输入由身份验证应用生成的 6 位数验证码。</string>
     <string name="two_fac_confirm_phone_number_fragment_title">输入验证码</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">下次登录无需提供验证码</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">信任这台设备</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">更改手机号</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">重发验证码</string>
     <string name="two_fac_confirmation_code_invalid">验证码无效</string>
@@ -4278,6 +4321,7 @@
     <string name="username_cannot_be_empty">帐号一定要填哦</string>
     <string name="username_hint_access">帐号、邮箱或手机号</string>
     <string name="username_hint_login">手机号、邮箱或帐号</string>
+    <string name="username_lock_help_text">旧帐号将被锁定 14 天。你可以在这一期间改回旧帐号。14 天后，这一帐号可供任何人使用。</string>
     <string name="username_not_available">帐号不可用</string>
     <string name="username_placeholder">帐号</string>
     <string name="valid_address_to_map">请添加有效地址，方便用户在地图中找到你的位置。</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:id="@id/landing_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:id="@id/one_tap_login_landing_redesign_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/one_tap_login_landing_redesign_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
         <ImageView android:layout_gravity="center_horizontal" android:id="@id/login_landing_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?nuxLogoDrawable" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.125" />
         <com.instagram.common.ui.widget.reboundviewpager.ReboundViewPager android:layout_gravity="center_horizontal" android:id="@id/one_tap_account_view_pager" android:paddingTop="@dimen/hscroll_one_tap_login_pager_padding" android:paddingBottom="@dimen/hscroll_one_tap_login_pager_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5" />
         <TextView android:textSize="@dimen/font_medium" android:textColor="@color/one_tap_login_edit_accounts_color" android:ellipsize="end" android:gravity="center" android:id="@id/one_tap_login_edit_accounts" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_tap_login_landing_edit_accounts" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.85" />
@@ -11,5 +11,5 @@
             </LinearLayout>
             <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/one_tap_edit_account_dismiss_button" android:background="@color/one_tap_login_card_remove_dismiss_button_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/one_tap_login_card_editing_account_dismiss_button_height" android:text="@string/edit_account_dismiss_button_label" />
         </FrameLayout>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

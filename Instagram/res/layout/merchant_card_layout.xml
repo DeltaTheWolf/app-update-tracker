@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/merchant_card_background" android:padding="@dimen/checkout_module_merchant_card_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/merchant_avatar" style="@style/Avatar.Medium.Redesign" />
+    <TextView android:textSize="@dimen/font_medium" android:ellipsize="end" android:id="@id/merchant_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_smaller" android:textColor="?textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/checkout_module_merchant_card_action_text_bottom_padding" android:text="@string/checkout_module_merchant_card_action_text" android:maxLines="1" app:capitalize="false" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/product_thumbnail_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

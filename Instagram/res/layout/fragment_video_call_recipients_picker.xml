@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/new_video_call_fragment_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/new_video_call_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/new_video_call_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight">
         <ViewStub android:id="@id/recipients_bar_stub" android:layout="@layout/direct_user_search_bar" android:inflatedId="@id/recipients_bar_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
         <include android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/recipients_bar_stub" layout="@layout/layout_listview" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <include android:id="@id/action_bar_container" layout="@layout/action_bar" />
 </com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

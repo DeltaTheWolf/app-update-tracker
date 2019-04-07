@@ -210,6 +210,10 @@
     <string name="address_book_contacts_screen_title">เชิญผู้ติดต่อ</string>
     <string name="address_book_contacts_screen_title_with_context_1">เลือกผู้ติดต่อ</string>
     <string name="address_book_contacts_screen_title_with_context_2">เลือกผู้ติดต่อที่จะเชิญ</string>
+    <string name="address_level_1">รัฐ</string>
+    <string name="address_level_2">เมือง</string>
+    <string name="address_line_1">ที่อยู่</string>
+    <string name="address_line_2">อพาร์ตเมนท์/ห้องชุด (ไม่บังคับ)</string>
     <string name="adjust">ปรับ</string>
     <string name="admin_contact_info">ข้อมูลติดต่อของผู้ดูแล</string>
     <string name="ads_body">ดูโฆษณาที่คุณกำลังแสดงอยู่ในขณะนี้</string>
@@ -455,7 +459,7 @@
     <string name="bugreporter_load_external_screenshot_wait">กำลังโหลดรูปภาพ...</string>
     <string name="bugreporter_low_memory_screenshot_error">\"หน่วยความจำไม่เพียงพอสำหรับการจับภาพหน้าจอ ขออภัย!\"</string>
     <string name="bugreporter_not_now">ไม่ใช่ตอนนี้</string>
-    <string name="bugreporter_rageshake_hint">อธิบายสิ่งที่เกิดขึ้นพอสังเขป</string>
+    <string name="bugreporter_rageshake_hint">มีสิ่งใดทำงานผิดปกติ</string>
     <string name="bugreporter_rageshake_video_quality_hint">อธิบายสั้นๆ ว่าคุณภาพวิดีโอหรือคุณภาพเสียงแตกต่างจากที่คุณคาดหวังไว้เพียงใด</string>
     <string name="bugreporter_save_annotated_screenshot_error">ไม่สามารถบันทึกภาพหน้าจอ โปรดลองอีกครั้ง</string>
     <string name="bugreporter_save_annotated_screenshot_wait">กำลังบันทึก…</string>
@@ -487,6 +491,7 @@
     <string name="business_profile">โปรไฟล์ธุรกิจ</string>
     <string name="business_profile_linked_to_pages">โปรไฟล์ธุรกิจบน Instagram เชื่อมโยงกับเพจ Facebook และอยู่ภายใต้%1$s</string>
     <string name="business_settings_redesign">ธุรกิจ</string>
+    <string name="business_signup_account_option_title">สมัครใช้งานบัญชีผู้ใช้ธุรกิจ</string>
     <string name="business_signup_address_hint">ที่อยู่ของธุรกิจ</string>
     <string name="business_signup_change_username">เปลี่ยนชื่อผู้ใช้</string>
     <string name="business_signup_choose_username_desc">เลือกชื่อผู้ใช้สำหรับบัญชีผู้ใช้ธุรกิจ คุณสามารถเปลี่ยนในภายหลังได้ทุกเมื่อ</string>
@@ -634,6 +639,10 @@
     <string name="change_username_title">เปลี่ยนชื่อผู้ใช้</string>
     <string name="changes_saved">การเปลี่ยนแปลงถูกบันทึก</string>
     <string name="check_connection_and_try_again">โปรดตรวจสอบการเชื่อมต่อของคุณและลองอีกครั้ง</string>
+    <string name="checkout_module_merchant_card_action_text">ร้านค้า</string>
+    <string name="checkout_module_nux_message">ตอนนี้คุณสามารถซื้อสินค้าจากบางแบรนด์ได้โดยที่ไม่ต้องออกจาก Instagram</string>
+    <string name="checkout_module_nux_title">ลองชำระเงินบน Instagram</string>
+    <string name="checkout_module_title">ชำระเงินบน Instagram</string>
     <string name="choose_app_verify_flow">ยืนยันโดยอัตโนมัติ</string>
     <string name="choose_category">เลือกหมวดหมู่สำหรับโปรไฟล์ธุรกิจของคุณ</string>
     <string name="choose_category_for_profile">เลือกหมวดหมู่สำหรับโปรไฟล์ของคุณ</string>
@@ -730,7 +739,13 @@
     <string name="comment_ellipsis_less">น้อยลง</string>
     <string name="comment_hint">เพิ่มความคิดเห็น...</string>
     <string name="comment_offensive_alert_message">คุณแน่ใจหรือไม่ว่าคุณต้องการโพสต์สิ่งนี้</string>
+    <string name="comment_offensive_alert_message_new">อาจมีคนพบว่าสิ่งนี้ไม่เหมาะสม</string>
     <string name="comment_undo_button">เลิกทำ</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">แจ้งให้เราทราบ</string>
+    <string name="comment_warning_bottom_sheet_para1">เราจะขอให้ผู้คนลองพิจารณาอีกครั้งว่าความคิดเห็นนั้นคล้ายกับความคิดเห็นอื่นๆ ที่ถูกรายงานหรือไม่</string>
+    <string name="comment_warning_bottom_sheet_para2">หากเป็นความผิดพลาดจากทางเรา</string>
+    <string name="comment_warning_bottom_sheet_title">ดูแลให้ Instagram เป็นที่ๆ เต็มไปด้วยการสนับสนุนกัน</string>
+    <string name="comment_warning_bottom_sheet_toast">ส่งคำติชมแล้ว</string>
     <string name="commenting_disabled_hint">ความคิดเห็นบนโพสต์นี้ถูกจำกัด</string>
     <string name="commenting_limited_to_followers">เฉพาะผู้ติดตามของคุณเท่านั้นที่สามารถเพิ่มความคิดเห็นได้ ความคิดเห็นจะปรากฏต่อทุกคน</string>
     <string name="commenting_limited_to_followers_and_following">เฉพาะผู้ติดตามของคุณและคนที่คุณติดตามเท่านั้นที่สามารถเพิ่มความคิดเห็นได้ ความคิดเห็นจะปรากฏต่อทุกคน</string>
@@ -802,6 +817,7 @@
     <string name="connect_fb_and_agree">การแตะที่ปุ่มด้านบนและเข้าถึงข้อมูลเชิงลึก แสดงว่าคุณยินยอมตาม %1$s ของเรา</string>
     <string name="connect_fb_get_insights">เรียนรู้เกี่ยวกับผู้ติดตามของคุณและดูวิธีดำเนินการกับโพสต์ของคุณ เราจะไม่โพสต์สิ่งใดๆ ไปยัง Facebook โดยไม่ได้รับอนุญาตจากคุณ</string>
     <string name="connect_ig_to_fb_page_explain">เชื่อมต่อบัญชีผู้ใช้ Instagram Business กับเพจบน Facebook เพื่อทำให้ผู้คนค้นพบคุณได้ง่ายขึ้น บัญชีผู้ใช้ธุรกิจบน Instagram จะเชื่อมโยงกับเพจบน Facebook และอยู่ภายใต้%1$sของเพจบน Facebook</string>
+    <string name="connect_or_create">เชื่อมต่อหรือสร้าง</string>
     <string name="connect_page_for_biz_tools">บัญชีผู้ใช้ที่ใช้เครื่องมือธุรกิจ Instagram สามารถเชื่อมต่อกับเพจบน Facebook ได้ การเชื่อมต่อกับเพจจำเป็นสำหรับการสร้างโฆษณา หากคุณมีเพจอยู่แล้ว เราจะคัดลอกข้อมูลของคุณเพื่อให้คุณแก้ไขได้</string>
     <string name="connect_page_for_power_tools">บัญชีผู้ใช้ที่ใช้เครื่องมือ Instagram Power สามารถเชื่อมต่อกับเพจบน Facebook ได้ การเชื่อมต่อกับเพจจำเป็นสำหรับการสร้างโฆษณา หากคุณมีเพจอยู่แล้ว เราจะคัดลอกข้อมูลของคุณเพื่อให้คุณแก้ไขได้</string>
     <string name="connect_page_for_pro_tools">บัญชีผู้ใช้ที่ใช้เครื่องมือ Instagram Professional สามารถเชื่อมต่อกับเพจบน Facebook ได้ การเชื่อมต่อกับเพจจำเป็นสำหรับการสร้างโฆษณา หากคุณมีเพจอยู่แล้ว เราจะคัดลอกข้อมูลของคุณเพื่อให้คุณแก้ไขได้</string>
@@ -1056,6 +1072,9 @@
     <string name="delta_login_review_was_me">นี่คือฉันเอง</string>
     <string name="delta_login_review_was_not_me">นั่นไม่ใช่ฉัน</string>
     <string name="delta_password_change_confirm_new_password_hint">ยืนยันรหัสผ่านใหม่</string>
+    <string name="delta_password_change_error_match_failure">โปรดตรวจสอบให้แน่ใจว่ารหัสผ่านทั้งสองช่องตรงกัน</string>
+    <string name="delta_password_change_error_required_field_native">ต้องระบุทั้งสองช่อง</string>
+    <string name="delta_password_change_error_required_field_react_native">ต้องกรอกข้อมูลในช่องนี้</string>
     <string name="delta_password_change_footer">เราแนะนำให้คุณตั้งรหัสผ่านเฉพาะสำหรับ Instagram โดยให้มีอย่างน้อยตัวเลขหนึ่งตัวและอักขระพิเศษหนึ่งตัว</string>
     <string name="delta_password_change_new_password_hint">รหัสผ่านใหม่</string>
     <string name="delta_password_change_submit">ส่ง</string>
@@ -1067,6 +1086,7 @@
     <string name="dial_element_capture_format_music">เพลง</string>
     <string name="dial_element_capture_format_reverse">รีไวนด์</string>
     <string name="dial_element_capture_format_superzoom">ซูเปอร์ซูม</string>
+    <string name="dialog_always_share_to_facebook">แชร์ไปยัง Facebook ทุกครั้ง</string>
     <string name="dialog_block_user_button">บล็อก</string>
     <string name="dialog_block_user_message">พวกเขาจะไม่สามารถค้นหาโปรไฟล์ โพสต์ หรือสตอรี่ของคุณบน Instagram โดย Instagram จะไม่แจ้งให้พวกเขาทราบว่าคุณเลิกบล็อกพวกเขาแล้ว</string>
     <string name="dialog_block_user_title">บล็อก %1$s หรือไม่</string>
@@ -1115,7 +1135,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">ย้ายไปที่คำขอหรือไม่</string>
     <string name="direct_block_account">บล็อกบัญชีผู้ใช้</string>
     <string name="direct_block_choices_block_account">บล็อกบัญชีผู้ใช้</string>
-    <string name="direct_block_choices_block_messages">บล็อกข้อความ</string>
+    <string name="direct_block_choices_ignore">ไม่สนใจ</string>
     <string name="direct_block_user">บล็อกผู้ใช้</string>
     <string name="direct_blocked">ถูกบล็อก</string>
     <string name="direct_button_change_group_name">เรียบร้อย</string>
@@ -1128,6 +1148,7 @@
     <string name="direct_details_error">ไม่สามารถโหลดรายละเอียดเกี่ยวกับการสนทนาได้ ลองอีกครั้ง</string>
     <string name="direct_digest_active_today">ใช้งานวันนี้</string>
     <string name="direct_digest_active_yesterday">ใช้งานเมื่อวานนี้</string>
+    <string name="direct_digest_are_active_now">คนอื่นๆ อีก %1$d คนกำลังใช้งาน</string>
     <string name="direct_digest_is_active_now">กำลังใช้งานอยู่</string>
     <string name="direct_digest_mentioned_you_story">ได้กล่าวถึงคุณในสตอรี่</string>
     <string name="direct_digest_no_author_shared_product">แชร์สินค้า</string>
@@ -1156,6 +1177,7 @@
     <string name="direct_digest_shared_post">แชร์โพสต์</string>
     <string name="direct_digest_shared_your_countdown">แชร์เคาท์ดาวน์ของคุณไปที่สตอรี่ของพวกเขาแล้ว</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">แท็กคุณเป็นพาร์ทเนอร์ธุรกิจแล้ว</string>
+    <string name="direct_digest_user_is_active_now">%1$s กำลังใช้งาน</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s ส่งคำเชิญให้ใช้แอพ Direct</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">ส่งคำเชิญให้ใช้แอพ Direct</string>
     <string name="direct_digest_user_sent_gif">%1$s ได้ส่ง GIF</string>
@@ -1367,6 +1389,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">ได้แท็กคุณเป็นพาร์ทเนอร์ธุรกิจ</string>
     <string name="direct_reel_mention_sender_info">คุณได้กล่าวถึง %1$s ในสตอรี่ของคุณ</string>
     <string name="direct_reel_mention_sender_info_branded_content">คุณแท็ก %1$s เป็นพาร์ทเนอร์ทางธุรกิจ</string>
+    <string name="direct_reel_question_response_creator_info">ตอบคำถามของคุณแล้ว</string>
+    <string name="direct_reel_question_response_sender_info">คุณได้ตอบคำถามของพวกเขาแล้ว</string>
     <string name="direct_reel_reaction_recipient_info">แสดงความรู้สึกต่อสตอรี่ของคุณ %1$s</string>
     <string name="direct_reel_reaction_sender_info">คุณได้แสดงความรู้สึกต่อสตอรี่ของเขา %1$s</string>
     <string name="direct_reel_reply_receiver_highlight_info">ได้ตอบกลับสตอรี่ไฮไลท์ของคุณ</string>
@@ -1548,7 +1572,7 @@
     <string name="disconnect_contacts_dialog_title">ยกเลิกการเชื่อมต่อรายชื่อผู้ติดต่อ</string>
     <string name="disconnect_failed">ยกเลิกการเชื่อมต่อล้มเหลว</string>
     <string name="discover_people">ค้นหาบุคคล</string>
-    <string name="discovery_item_post_live_label">ได้ถ่ายทอดสดไปแล้ว</string>
+    <string name="discovery_item_post_live_label">ถ่ายทอดสดไปแล้ว</string>
     <string name="discovery_surface_button_description">เปิด Effect Discovery Surface</string>
     <string name="dismiss">ปิด</string>
     <string name="dismiss_button_hint">ปิด</string>
@@ -1599,10 +1623,16 @@
     <string name="editable_profile_review_title">ตรวจสอบข้อมูลติดต่อของคุณ</string>
     <string name="edited">มีการแก้ไข</string>
     <string name="edits_not_saved">การแก้ไขของคุณไม่ได้รับการบันทึก โปรดลองอีกครั้ง</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> โดย %2$s</string>
-    <string name="effect_by_format">โดย %1$s</string>
-    <string name="effect_by_format_with_title">%1$s โดย %2$s</string>
     <string name="effect_created_by_format">สร้างโดย &lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">เพิ่มเติม</string>
+    <string name="effect_detail_save_to_camera_button_label">บันทึกลงในม้วนฟิล์ม</string>
+    <string name="effect_detail_saved_to_camera_button_label">บันทึกลงในม้วนฟิล์มแล้ว</string>
+    <string name="effect_detail_share_button_label">ส่งให้…</string>
+    <string name="effect_detail_view_try_it_button_label">ลองใช้ดู</string>
+    <string name="effect_details_view_created_from_format">จาก &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> จาก %2$s</string>
+    <string name="effect_from_format">จาก %1$s</string>
+    <string name="effect_from_format_with_title">%1$s จาก %2$s</string>
     <string name="eight_hours">8 ชั่วโมง</string>
     <string name="ellipsis_more">… เพิ่มเติม</string>
     <string name="email">อีเมล</string>
@@ -1611,10 +1641,8 @@
     <string name="email_invalid">อีเมลไม่ถูกต้อง</string>
     <string name="email_not_available">อีเมลนี้มีบัญชีผู้ใช้อื่นใช้อยู่แล้ว</string>
     <string name="email_not_valid">โปรดระบุอีเมลที่ถูกต้อง</string>
-    <string name="email_register">ป้อนอีเมลของคุณ</string>
     <string name="email_sent">อีเมลถูกส่งไปยังที่อยู่อีเมลของบัญชีผู้ใช้ของคุณแล้ว โปรดตรวจสอบอีเมลเพื่อดำเนินการต่อ หากยังมีปัญหาอยู่ โปรดไปที่ %1$s</string>
     <string name="email_sent_short">ส่งอีเมลแล้ว</string>
-    <string name="email_signup">สมัครใช้งานด้วยอีเมล</string>
     <string name="email_sms_notification_settings">การแจ้งเตือนอีเมลและ SMS</string>
     <string name="emails">อีเมล</string>
     <string name="emoji_not_allowed">รหัสผ่านมีอีโมจิ โปรดเลือกอักขระอื่น</string>
@@ -1649,6 +1677,7 @@
     <string name="expired_link_dialog_title">ลิงก์ที่หมดอายุ</string>
     <string name="explore_contextual_title">สำรวจ</string>
     <string name="explore_description">ค้นหาและสำรวจ</string>
+    <string name="explore_effects">สำรวจเอ็ฟเฟ็กต์ใหม่</string>
     <string name="explore_places">สถานที่</string>
     <string name="explore_places_request_fail">ไม่สามารถโหลดสถานที่ได้ โปรดลองอีกครั้งภายหลัง</string>
     <string name="explore_topical_going_to_next">กำลังไปที่โพสต์ถัดไป</string>
@@ -1695,6 +1724,7 @@
     <string name="failed_to_load_highlight_message">โหลดไฮไลท์ไม่สำเร็จ</string>
     <string name="failed_to_load_photo_toast">ขออภัย ไม่สามารถโหลดรูปภาพนี้</string>
     <string name="failed_to_load_video_toast">ขออภัย ไม่สามารถโหลดวิดีโอนี้ได้</string>
+    <string name="family_name">นามสกุล</string>
     <string name="favorites_tab_title">เพื่อนสนิท</string>
     <string name="fb_connect_card_button_text">เชื่อมต่อ</string>
     <string name="fb_connect_card_main_text">เชื่อมต่อ Facebook</string>
@@ -1715,6 +1745,7 @@
     <string name="feed_controls_message_replies_setting_following">คนที่คุณติดตาม</string>
     <string name="feed_controls_message_replies_setting_off">ปิด</string>
     <string name="feed_controls_settings_title">การควบคุมฟีด</string>
+    <string name="feed_emoji_see_more_button_label">แตะเพื่อดูอีโมจิเพิ่มเติม</string>
     <string name="feed_item_page_title">โฆษณา</string>
     <string name="feed_product_pivots_view_shop_button">ดูร้านค้า</string>
     <string name="feed_refereshed">รีเฟรชเนื้อหาแล้ว</string>
@@ -1858,10 +1889,13 @@
     <string name="full_name_and_password_title">ชื่อและรหัสผ่าน</string>
     <string name="full_terms_rw">ข้อกำหนดฉบับเต็ม</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">ดำเนินการต่อ</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">เงินบริจาคต้องมีจำนวนไม่เกิน %1$s</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">เงินบริจาคจะต้องมีอย่างน้อย %1$s</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">จำนวนเงินบริจาค</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">อื่นๆ</string>
     <string name="fundraiser_sticker_default_title">โครงการระดมทุนของ %1$s</string>
     <string name="fundraiser_sticker_donate_button_text">บริจาค</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">บริจาคแล้ว</string>
     <string name="fundraiser_sticker_search_following_section_title">กำลังติดตาม</string>
     <string name="fundraiser_sticker_search_suggested_section_title">แนะนำ</string>
     <string name="fundraiser_sticker_subtitle">เป็นผู้สนับสนุน %1$s</string>
@@ -1870,6 +1904,8 @@
     <string name="gallery">แกลเลอรี</string>
     <string name="gallery_album_thumbnail">ภาพขนาดย่ออัลบั้ม</string>
     <string name="gallery_description">แกลเลอรี</string>
+    <string name="gallery_empty_state_description">เมื่อคุณมีรูปภาพและวิดีโอบนอุปกรณ์ คุณสามารถแชร์รูปภาพและวิดีโอเหล่านี้บน Instagram ได้</string>
+    <string name="gallery_empty_state_title">รูปภาพและวิดีโอของคุณ</string>
     <string name="gallery_photo_thumbnail">รูปภาพขนาดย่อ</string>
     <string name="gallery_sticker_description">สติกเกอร์แกลเลอรี</string>
     <string name="gallery_sticker_grid_empty">ไม่มีรูปภาพหรือวิดีโอ</string>
@@ -1882,7 +1918,7 @@
     <string name="gdpr_account_privacy">ความเป็นส่วนตัวของบัญชีผู้ใช้</string>
     <string name="gdpr_activity_status">สถานะการใช้งาน</string>
     <string name="gdpr_blocked_accounts">บัญชีผู้ใช้ที่ถูกบล็อก</string>
-    <string name="gdpr_business_signup_option_title">สมัครใช้งานโปรไฟล์ธุรกิจ</string>
+    <string name="gdpr_business_signup_option_title">เพิ่มบัญชีผู้ใช้ธุรกิจ</string>
     <string name="gdpr_close_friends_title">เพื่อนสนิท</string>
     <string name="gdpr_contacts_syncing_option_title">การซิงค์รายชื่อผู้ติดต่อ</string>
     <string name="gdpr_data_download">การดาวน์โหลดข้อมูล</string>
@@ -1911,6 +1947,7 @@
     <string name="get_started">เริ่มต้น</string>
     <string name="gif_sticker_description">สติกเกอร์ GIF</string>
     <string name="gifs_description">GIF</string>
+    <string name="given_name">ชื่อ</string>
     <string name="go_live_button">ถ่ายทอดสด</string>
     <string name="go_live_suggestion">เริ่มวิดีโอถ่ายทอดสดเพื่อแชร์ว่าคุณทำอะไรอยู่</string>
     <string name="go_to_profile">ไปยังโปรไฟล์</string>
@@ -2009,8 +2046,6 @@
     <string name="ig_time_picker_pm">น.</string>
     <string name="igds_reply_button_label">ตอบกลับ</string>
     <string name="igds_view_reply_button_label">ดูการตอบกลับ</string>
-    <string name="iglive_caption_hint">เพิ่มชื่อให้ผู้ชมของคุณ...</string>
-    <string name="iglive_captioned_notification">%1$s กำลังถ่ายทอดสด: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">คุณเพิ่งปรากฏในวิดีโอถ่ายทอดสดของ %1$s</string>
     <string name="iglive_cobroadcast_end_title">ขอขอบคุณที่เข้าร่วม!</string>
     <string name="iglive_discard">ทิ้ง</string>
@@ -2361,11 +2396,6 @@
     <string name="live_qa_label">ถามตอบ</string>
     <string name="live_ssi_tooltip">ดูแหล่งข้อมูลได้ทุกเมื่อเพื่อรับความช่วยเหลือ</string>
     <string name="live_starting_live">คุณกำลังถ่ายทอดสดอยู่!</string>
-    <string name="live_subscribe_button">เปิด</string>
-    <string name="live_subscribe_request_failed_to_send">การสมัครรับข้อมูลของคุณไม่สำเร็จ</string>
-    <string name="live_subscribe_request_sent">เปิดอยู่</string>
-    <string name="live_subscribe_sent_system_comment">คุณสามารถปิดการสมัครนี้ได้ทุกเมื่อจากโปรไฟล์ของผู้แพร่ภาพ</string>
-    <string name="live_subscribe_system_comment">รับการแจ้งเตือนเกี่ยวกับวิดีโอถ่ายทอดสดทั้งหมดจาก %1$s</string>
     <string name="live_title">ถ่ายทอดสด</string>
     <string name="live_unpin_comment">เลิกปักหมุดความคิดเห็น</string>
     <string name="live_video_call_cannot_start_description">คุณไม่สามารถเริ่มวิดีโอถ่ายทอดสดได้ในขณะที่คุณกำลังใช้วิดีโอแชท</string>
@@ -2450,6 +2480,7 @@
     <string name="lookup_title">ค้นหาบัญชีผู้ใช้ของคุณ</string>
     <string name="lux">ความเข้มแสง</string>
     <string name="made_with_boomerang">สร้างด้วย &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">บัญชีผู้ใช้หลัก</string>
     <string name="main_feed_hide_recommended_post_msg">เราจะไม่แสดงโพสต์จาก %1$s อีกต่อไป</string>
     <string name="main_feed_unfollow_from_post_msg">หลังจากที่คุณรีเฟรช คุณจะไม่เห็นโพสต์จากพวกเขาอีก</string>
     <string name="main_feed_unfollow_from_post_title">เลิกติดตาม %1$s แล้ว</string>
@@ -2466,6 +2497,8 @@
     <string name="manage_saved_login">ข้อมูลการเข้าสู่ระบบที่บันทึกไว้</string>
     <string name="managing_photos_of_you">การจัดการรูปภาพที่มีคุณ</string>
     <string name="managing_your_account">การจัดการบัญชีผู้ใช้ของคุณ</string>
+    <string name="map_data_legal_notices_label">ประกาศแจ้งด้านกฎหมายเกี่ยวกับข้อมูลแผนที่</string>
+    <string name="map_information_title">ข้อมูลแผนที่</string>
     <string name="map_label">แผนที่</string>
     <string name="maps_open_map_reporter">เปิด</string>
     <string name="maps_report_button">รายงานปัญหา</string>
@@ -2541,6 +2574,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">คุณไม่สามารถเพิ่มเพลงลงในสตอรี่ที่คุณแชร์มาจากแอพอื่นได้</string>
     <string name="music_overlay_cant_save_story_alert">ไม่สามารถบันทึกสตอรี่ที่มีเพลงได้</string>
     <string name="music_overlay_cant_share_to_fb_alert">ไม่สามารถแชร์สตอรี่ที่มีเพลงไปยัง Facebook ได้</string>
+    <string name="music_overlay_no_lyrics_available_toast">ไม่มีเนื้อเพลง</string>
     <string name="music_overlay_question_text_response_description">ไม่พบเพลงที่ตรงกับการค้นหาของคุณ แตะด้านบนเพื่อส่งการค้นหาเป็นการตอบกลับข้อความ</string>
     <string name="music_overlay_sticker_description">สติกเกอร์โอเวอร์เลย์ดนตรี</string>
     <string name="music_overlay_story_attribution_from_username">จากสตอรี่ของ %1$s</string>
@@ -2735,14 +2769,9 @@
     <string name="nux_main_feed_empty_subtitle_active">ติดตามผู้คนเพื่อเริ่มดูรูปภาพและวิดีโอที่พวกเขาแชร์</string>
     <string name="nux_main_feed_empty_title">ขอต้อนรับสู่ Instagram</string>
     <string name="nux_one_tap_login_card_remove_icon_description">ลบ</string>
-    <string name="nux_one_tap_upsell_detail_save">เราจะบันทึกข้อมูลการเข้าสู่ระบบไว้ให้คุณ คุณไม่จำเป็นต้องป้อนข้อมูลนี้อีกเมื่อเข้าสู่ระบบบนอุปกรณ์เครื่องนี้</string>
-    <string name="nux_one_tap_upsell_detail_variant1">เพียงแตะที่รูปโปรไฟล์ของคุณแทนการพิมพ์รหัสผ่าน เมื่อคุณเข้าสู่ระบบโดยใช้โทรศัพท์เครื่องนี้</string>
-    <string name="nux_one_tap_upsell_detail_variant2">เพียงแตะที่รูปโปรไฟล์ของคุณแทนการพิมพ์รหัสผ่านในครั้งถัดไปที่คุณเข้าสู่ระบบโดยใช้โทรศัพท์เครื่องนี้</string>
+    <string name="nux_one_tap_upsell_detail">เพียงแตะที่รูปโปรไฟล์ของคุณแทนการพิมพ์รหัสผ่านในครั้งถัดไปที่คุณเข้าสู่ระบบโดยใช้โทรศัพท์เครื่องนี้</string>
     <string name="nux_one_tap_upsell_enroll_button_ok">ตกลง</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">บันทึก</string>
-    <string name="nux_one_tap_upsell_title_save">บันทึกข้อมูลการเข้าสู่ระบบ</string>
-    <string name="nux_one_tap_upsell_title_variant1">เข้าสู่ระบบได้ง่ายขึ้นในครั้งถัดไป</string>
-    <string name="nux_one_tap_upsell_title_variant2">จำรหัสผ่าน</string>
+    <string name="nux_one_tap_upsell_title">จำรหัสผ่าน</string>
     <string name="nux_pinch_to_zoom">บีบนิ้วเพื่อซูม</string>
     <string name="nux_silent_audio_text">วิดีโอนี้ไม่มีเสียง</string>
     <string name="off">ปิด</string>
@@ -2761,7 +2790,6 @@
     <string name="one_hour">1 ชั่วโมง</string>
     <string name="one_tap_login_landing_edit_accounts">แก้ไขบัญชีผู้ใช้</string>
     <string name="one_tap_login_text_link_text">เข้าสู่ระบบด้วยบัญชีผู้ใช้อื่น</string>
-    <string name="one_tap_logo">โลโก้แตะครั้งเดียว</string>
     <string name="one_tap_new_footer_log_in">&lt;b>เข้าสู่ระบบ&lt;/b></string>
     <string name="one_tap_new_footer_one_button">ยังไม่เคยใช้ Instagram ใช่หรือไม่ &lt;b>สมัครใช้งานเลย&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>สลับบัญชีผู้ใช้&lt;/b> หรือ</string>
@@ -2881,8 +2909,6 @@
     <string name="phone_number_toast_number_required">ต้องระบุหมายเลขโทรศัพท์</string>
     <string name="phone_permission_request_message">เราจะกรอกและยืนยันหมายเลขโทรศัพท์มือถือให้คุณ ทำให้คุณกู้คืนบัญชีผู้ใช้ได้ง่ายขึ้นหากคุณบัญชีผู้ใช้ของคุณถูกล็อก</string>
     <string name="phone_permission_request_title">โทรและจัดการการโทร</string>
-    <string name="phone_register">ป้อนหมายเลขโทรศัพท์มือถือของคุณ</string>
-    <string name="phone_signup">สมัครใช้งานด้วยหมายเลขโทรศัพท์มือถือ</string>
     <string name="photo">รูปภาพ</string>
     <string name="photo_edit_error_message">ขออภัย มีปัญหาเกิดขึ้นในการแก้ไขรูปภาพของคุณ ได้มีการส่งรายงานปัญหาให้ Instagram แล้ว</string>
     <string name="photo_edit_error_title">ไม่สามารถแก้ไขต่อไปได้</string>
@@ -2934,6 +2960,7 @@
     <string name="post_to_your_story_label">เพิ่มโพสต์ลงในสตอรี่ของคุณ</string>
     <string name="post_to_your_story_label_igtv">เพิ่มวิดีโอลงในสตอรี่ของคุณ</string>
     <string name="post_you_were_tagged_in">โพสต์ที่คุณถูกแท็ก</string>
+    <string name="postal_code">รหัสไปรษณีย์</string>
     <string name="posted_comment">โพสต์ความคิดเห็นแล้ว</string>
     <string name="posting_failed">วิดีโอของคุณไม่ได้ถูกแชร์</string>
     <string name="posting_message">กำลังโพสต์…</string>
@@ -2945,7 +2972,6 @@
     <string name="posts_tab_title">โพสต์</string>
     <string name="posts_you_liked">โพสต์ที่คุณถูกใจ</string>
     <string name="preferences_label">การตั้งค่าที่ต้องการ</string>
-    <string name="preparing_to_scan">กำลังเตรียมสแกน...</string>
     <string name="presence_permission_explanation">อนุญาตให้บัญชีผู้ใช้ที่คุณติดตามและผู้ที่คุณส่งข้อความถึงเห็นได้ว่าคุณใช้งานแอพ Instagram ครั้งล่าสุดเมื่อใด ถ้าปิดการตั้งค่านี้ คุณจะไม่สามารถเห็นสถานะการใช้งานของบัญชีผู้ใช้อื่นเช่นกัน</string>
     <string name="presence_permission_name">แสดงสถานะกิจกรรม</string>
     <string name="preview_hint_text">แตะเพื่อดูรูปภาพหรือวิดีโอในสตอรี่นี้</string>
@@ -3008,6 +3034,7 @@
     <string name="product_share_sticker_default_question">ฉันควรซื้อสินค้าชิ้นนี้หรือไม่</string>
     <string name="product_share_sticker_from">จาก %1$s</string>
     <string name="product_source">แหล่งที่มาของสินค้า</string>
+    <string name="product_source_different_catalog">ใช้แค็ตตาล็อกอื่น</string>
     <string name="product_source_learn_more">เรียนรู้เพิ่มเติม</string>
     <string name="product_source_learn_more_text">หากคุณไม่เห็นแค็ตตาล็อกสินค้าที่ต้องการเพิ่มที่นี่ โปรดติดต่อผู้ดูแลเพจ หรือตรวจสอบสิทธิ์การอนุญาตของคุณใน \"ตัวจัดการธุรกิจ\" เพื่อให้แน่ใจว่าคุณมีสิทธิ์การอนุญาต %1$s</string>
     <string name="product_source_load_more">โหลดแค็ตตาล็อกอีก</string>
@@ -3088,7 +3115,18 @@
     <string name="profile_visits">จำนวนการเยี่ยมชมโปรไฟล์</string>
     <string name="promote">โปรโมท</string>
     <string name="promote_again">โปรโมทอีกครั้ง</string>
+    <string name="promote_audience_header">เลือกกลุ่มเป้าหมาย</string>
+    <string name="promote_budget_duration_header">ยอดใช้จ่ายทั้งหมดของคุณคือ %1$s ตลอด %2$d วัน</string>
+    <string name="promote_budget_duration_screen_title">งบประมาณและระยะเวลา</string>
+    <string name="promote_create_new_audience_subtitle">ป้อนตัวเลือกการกำหนดเป้าหมายของคุณด้วยตนเอง</string>
+    <string name="promote_create_new_audience_title">สร้างกลุ่มเป้าหมายของคุณเอง</string>
+    <string name="promote_destination_direct_message_option">ข้อความ Direct ของคุณ</string>
+    <string name="promote_destination_header">เลือกว่าจะส่งผู้คนไปที่ไหน</string>
+    <string name="promote_destination_profile_option">โปรไฟล์ของคุณ</string>
     <string name="promote_destination_screen_title">ปลายทาง</string>
+    <string name="promote_destination_website_edit_title">เว็บไซต์</string>
+    <string name="promote_destination_website_option">เว็บไซต์ของคุณ</string>
+    <string name="promote_edit">แก้ไข</string>
     <string name="promote_error_claim_page_label">ขอรับสิทธิ์ในเพจ</string>
     <string name="promote_error_description_network_error">มีปัญหาเกิดขึ้นกับระบบของเราซึ่งทำให้เราไม่สามารถโปรโมทโพสต์ของคุณได้ในขณะนี้ โปรดลองอีกครั้งในภายหลัง</string>
     <string name="promote_error_page_legal_info">เพจบน Facebook อยู่ภายใต้%1$sเหล่านี้</string>
@@ -3152,11 +3190,12 @@
     <string name="quick_replies">ข้อความด่วน</string>
     <string name="quick_reply_description">ข้อความด่วน</string>
     <string name="quiz_responder_subtitle_text">ตอบว่า %1$s</string>
-    <string name="quiz_sticker_first_answer_hint">ตัวเลือก 1</string>
+    <string name="quiz_sticker_add_option_hint">เพิ่ม</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">เพิ่มอย่างน้อยสองตัวเลือก</string>
     <string name="quiz_sticker_question_hint">เดาสิว่าฉันชอบอะไรที่สุด...</string>
     <string name="quiz_sticker_response_composer_privacy_nux">แตะเพื่อเริ่มทำแบบทดสอบ %1$s จะเห็นคำตอบของคุณ</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">ส่งคำตอบ</string>
-    <string name="quiz_sticker_second_answer_hint">ตัวเลือก 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">เลือกตัวเลือกที่ถูกต้อง</string>
     <string name="quiz_sticker_tray_description">สติกเกอร์แบบสอบถาม</string>
     <string name="quiz_sticker_tray_label">แบบสอบถาม</string>
     <string name="rageshake_bug_report_option">มีบางอย่างไม่ทำงาน</string>
@@ -3203,7 +3242,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">ดูเหมือนว่ามีบัญชีผู้ใช้อีเมลนี้แล้ว เราอาจลองนำคุณเข้าสู่ระบบโดยใช้ข้อมูลบัญชีผู้ใช้ Google ของคุณได้</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">ดูเหมือนว่าบัญชีผู้ใช้นี้เชื่อมต่อกับ Gmail แล้ว เราอาจนำคุณเข้าสู่ระบบโดยใช้ข้อมูลบัญชีผู้ใช้ Google ของคุณได้</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">ดูเหมือนว่าคุณได้บันทึกข้อมูลการเข้าสู่ระบบสำหรับบัญชีผู้ใช้นี้แล้ว</string>
-    <string name="reel_ad4ad_privacy_subtitle">เฉพาะคุณเท่านั้นที่สามารถเห็นตัวอย่างนี้ได้</string>
+    <string name="reel_ad4ad_privacy_subtitle">เฉพาะคุณเท่านั้นที่เห็น</string>
     <string name="reel_bakeoff_thank_you_subtitle">เราจะใช้คำตอบของคุณเพื่อช่วยปรับปรุง Instagram</string>
     <string name="reel_bakeoff_thank_you_title">ขอบคุณที่แจ้งให้เราทราบ</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">เปิดกล้อง</string>
@@ -3240,6 +3279,7 @@
     <string name="reel_poll_voters_list_title">ผู้โหวต</string>
     <string name="reel_question_responses_list_title">การตอบกลับ</string>
     <string name="reel_quick_reactions">แสดงความรู้สึกด่วน</string>
+    <string name="reel_quiz_responders_list_title">ตอบแล้ว</string>
     <string name="reel_reaction_composer_sent_confirmation">ส่งความรู้สึกไปให้ %1$s แล้ว</string>
     <string name="reel_reshared_from_archive_label">จากคลัง</string>
     <string name="reel_reshares_empty_state_title">ไม่มีการแชร์โพสต์นี้ต่อแบบสาธารณะในขณะนี้</string>
@@ -3390,6 +3430,7 @@
     <string name="reply_to">ตอบกลับ %1$s…</string>
     <string name="replying_to_user_format">กำลังตอบกลับ %1$1s</string>
     <string name="report">รายงาน</string>
+    <string name="report_a_problem_label">รายงานปัญหา</string>
     <string name="report_accounts_are_inappropriate">บัญชีผู้ใช้ไม่เหมาะสม</string>
     <string name="report_ad">รายงานโฆษณา</string>
     <string name="report_as_ip_violation">รายงานว่าเป็นการละเมิดทรัพย์สินทางปัญญาหรือไม่</string>
@@ -3621,7 +3662,7 @@
     <string name="set_daily_reminder_subtitle">เราจะเตือนคุณเมื่อคุณใช้งานถึงกำหนดที่คุณได้ตั้งเอาไว้</string>
     <string name="set_daily_reminder_title">ตั้งเตือนรายวัน</string>
     <string name="set_main_account">ตั้งค่าบัญชีผู้ใช้หลัก</string>
-    <string name="set_up_business_profile">ตั้งค่าโปรไฟล์ของธุรกิจของคุณ</string>
+    <string name="set_up_business_account">ตั้งค่าบัญชีผู้ใช้ธุรกิจของคุณ</string>
     <string name="settings">การตั้งค่า</string>
     <string name="settings_viewers_choose_locations_feature_off">ปิด</string>
     <string name="settings_viewers_choose_locations_title">เลือกตำแหน่งที่ตั้ง</string>
@@ -3682,6 +3723,7 @@
     <string name="shop_on_profile_row_continue_shopping">เลือกซื้อต่อ</string>
     <string name="shop_this_post">เลือกซื้อจากโพสต์นี้</string>
     <string name="shopping">ช้อปปิ้ง</string>
+    <string name="shopping_checkout_destination_title">เลือกซื้อตอนนี้พร้อมชำระเงิน</string>
     <string name="shopping_destination_title">เลือกซื้อ</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">การดำเนินการนี้จะลบสติกเกอร์สินค้าออกจากสตอรี่นี้</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">ลบสติกเกอร์ออก</string>
@@ -3846,7 +3888,6 @@
     <string name="suggested">แนะนำ</string>
     <string name="suggested_accounts_header">แนะนำ</string>
     <string name="suggested_categories">แนะนำ</string>
-    <string name="suggested_for_you">แนะนำสำหรับคุณ</string>
     <string name="suggested_hashtags">ที่แนะนำ</string>
     <string name="suggested_hashtags_header">แนะนำ</string>
     <string name="suggested_highlight_delete_option_text">ลบรายการที่แนะนำออก</string>
@@ -3854,7 +3895,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">ทิ้ง</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">เก็บไว้</string>
     <string name="suggested_highlight_discard_changes_dialog_title">ต้องการทิ้งไฮไลท์ใช่ไหม</string>
-    <string name="suggested_live_and_post_live_videos">รับชมเป็นลำดับถัดไป</string>
     <string name="suggested_live_videos">กำลังถ่ายทอดสด</string>
     <string name="suggested_recipients">แนะนำ</string>
     <string name="suggested_username_allcaps_title">ยินดีต้อนรับสู่ INSTAGRAM</string>
@@ -3942,6 +3982,7 @@
     <string name="tap_to_view_product_items">แตะเพื่อดูสินค้า</string>
     <string name="tap_to_watch_video_description">แตะเพื่อรับชมวิดีโอ</string>
     <string name="tap_to_watch_video_nux">รับชมวิดีโอ IGTV แบบเต็ม</string>
+    <string name="tel">โทรศัพท์</string>
     <string name="tell_us_approval_reason">โปรดบอกเหตุผลว่าทำไมเราจึงควรอนุมัติโฆษณาของคุณ หากเราทำผิดพลาด เราจะอนุมัติโฆษณาของคุณโดยเร็วที่สุด</string>
     <string name="terms">ข้อกำหนด</string>
     <string name="terms_and_data_policy">ข้อกำหนดและนโยบายข้อมูล</string>
@@ -4102,6 +4143,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">ป้อนรหัส 6 หลักที่เราส่งไปยังหมายเลขที่ลงท้ายด้วย %1$s เพื่อตั้งค่าการยืนยันตัวตนแบบสองชั้นให้เสร็จ</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">ป้อนรหัสตัวเลข 6 หลักที่สร้างโดยแอพการยืนยันตัวตน</string>
     <string name="two_fac_confirm_phone_number_fragment_title">ป้อนรหัส</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">เราจะไม่ถามรหัสเมื่อคุณเข้าสู่ระบบครั้งถัดไป</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">เชื่อถืออุปกรณ์นี้</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">เปลี่ยนหมายเลขโทรศัพท์</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">ส่งรหัสอีกครั้ง</string>
     <string name="two_fac_confirmation_code_invalid">รหัสไม่ถูกต้อง</string>
@@ -4268,6 +4311,7 @@
     <string name="username_cannot_be_empty">ต้องระบุชื่อผู้ใช้</string>
     <string name="username_hint_access">ชื่อผู้ใช้ อีเมลหรือโทรศัพท์</string>
     <string name="username_hint_login">หมายเลขโทรศัพท์ อีเมล หรือชื่อผู้ใช้</string>
+    <string name="username_lock_help_text">ชื่อผู้ใช้เก่าของคุณจะถูกล็อกเป็นเวลา 14 วัน คุณยังสามารถเปลี่ยนแปลงได้ในช่วงเวลานี้ หลังจากนั้นบุคคลอื่นจะสามารถใช้ชื่อผู้ใช้ของคุณได้</string>
     <string name="username_not_available">ไม่สามารถเลือกชื่อผู้ใช้นี้</string>
     <string name="username_placeholder">ชื่อผู้ใช้</string>
     <string name="valid_address_to_map">โปรดเพิ่มที่อยู่ที่ถูกต้องเพื่อให้ผู้คนสามารถไปยังตำแหน่งที่ตั้งของคุณในแผนที่ได้</string>

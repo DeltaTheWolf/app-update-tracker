@@ -213,6 +213,10 @@
     <string name="address_book_contacts_screen_title">دعوت از مخاطبین</string>
     <string name="address_book_contacts_screen_title_with_context_1">انتخاب مخاطبین</string>
     <string name="address_book_contacts_screen_title_with_context_2">انتخاب مخاطبین برای دعوت کردن</string>
+    <string name="address_level_1">ایالت</string>
+    <string name="address_level_2">شهر</string>
+    <string name="address_line_1">نشانی</string>
+    <string name="address_line_2">آپارتمان/سوئیت (اختیاری)</string>
     <string name="adjust">تنظیم</string>
     <string name="admin_contact_info">اطلاعات تماس سرپرست</string>
     <string name="ads_body">آگهی‌هایی را که درحال‌حاضر اجرا می‌کنید، ببینید.</string>
@@ -456,7 +460,7 @@
     <string name="bugreporter_load_external_screenshot_wait">درحال بارگیری…</string>
     <string name="bugreporter_low_memory_screenshot_error">«برای گرفتن عکس از صفحه حافظه کافی ندارید. متأسفیم!»</string>
     <string name="bugreporter_not_now">اکنون نه</string>
-    <string name="bugreporter_rageshake_hint">درباره اتفاقی که افتاده است، توضیح کوتاهی بدهید</string>
+    <string name="bugreporter_rageshake_hint">چه مشکلی پیش آمده است؟</string>
     <string name="bugreporter_rageshake_video_quality_hint">به‌صورت مختصر توضیح دهید کیفیت صدا یا تصویر با کیفیت موردنظر چه تفاوتی دارد.</string>
     <string name="bugreporter_save_annotated_screenshot_error">عکس از صفحه ذخیره نشد. لطفاً دوباره امتحان کنید.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">درحال ذخیره کردن…</string>
@@ -488,6 +492,7 @@
     <string name="business_profile">نمایه کسب و کار</string>
     <string name="business_profile_linked_to_pages">نمایه‌های کسب و کار در Instagram به صفحه‌های فیس‌بوک مرتبط می‌شوند و مشمول %1$s خود هستند.</string>
     <string name="business_settings_redesign">کسب‌وکار</string>
+    <string name="business_signup_account_option_title">نام‌نویسی برای حساب کسب‌وکار</string>
     <string name="business_signup_address_hint">نشانی کسب‌وکار</string>
     <string name="business_signup_change_username">تغییر نام کاربری</string>
     <string name="business_signup_choose_username_desc">نام کاربری برای حساب کسب‌وکارتان انتخاب کنید. بعداً همیشه می‌توانید آن را تغییر دهید.</string>
@@ -634,6 +639,10 @@
     <string name="change_username_title">تغییر نام کاربری</string>
     <string name="changes_saved">تغییرات ذخیره شد</string>
     <string name="check_connection_and_try_again">لطفاً‌ اتصالتان را بررسی کنید و دوباره امتحان کنید.</string>
+    <string name="checkout_module_merchant_card_action_text">خرید</string>
+    <string name="checkout_module_nux_message">اکنون می‌توانید از بدون خارج شدن از Instagram، از برخی برندها خرید کنید.</string>
+    <string name="checkout_module_nux_title">تسویه‌حساب در Instagram را امتحان کنید</string>
+    <string name="checkout_module_title">تسویه‌حساب در Instagram</string>
     <string name="choose_app_verify_flow">تأیید به‌صورت خودکار</string>
     <string name="choose_category">دسته‌هایی را برای نمایه کسب‌وکارتان انتخاب کنید</string>
     <string name="choose_category_for_profile">دسته‌ای برای نمایه‌تان انتخاب کنید</string>
@@ -728,7 +737,13 @@
     <string name="comment_ellipsis_less">کمتر</string>
     <string name="comment_hint">افزودن نظر…</string>
     <string name="comment_offensive_alert_message">مطمئنید اکنون می‌خواهید این را پست کنید؟</string>
+    <string name="comment_offensive_alert_message_new">ممکن است به نظر دیگران توهین‌آمیز باشد.</string>
     <string name="comment_undo_button">واگرد</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">به ما اطلاع دهید</string>
+    <string name="comment_warning_bottom_sheet_para1">از افراد می‌خواهیم به نظراتی که شبیه نظراتی هستند که گزارش شدند، دوباره فکر کنند.</string>
+    <string name="comment_warning_bottom_sheet_para2">اگر اشتباه کردیم،</string>
+    <string name="comment_warning_bottom_sheet_title">حفظ Instagram به‌عنوان مکانی حامی و پشتیبان</string>
+    <string name="comment_warning_bottom_sheet_toast">بازخورد ارسال شد</string>
     <string name="commenting_disabled_hint">نظرات روی این پست محدود شدند.</string>
     <string name="commenting_limited_to_followers">فقط دنبال‌کننده‌هایتان می‌توانند نظر اضافه کنند. نظرها برای همه قابل مشاهده است.</string>
     <string name="commenting_limited_to_followers_and_following">فقط دنبال‌کنندگان شما و افرادی که دنبال می‌کنید می‌توانند نظرات را اضافه کند. نظرات برای همه قابل مشاهده هستند.</string>
@@ -800,6 +815,7 @@
     <string name="connect_fb_and_agree">با ضربه زدن روی دکمه بالا و دسترسی به اطلاعات آماری، با %1$s ما موافقت می‌کنید.</string>
     <string name="connect_fb_get_insights">درباره دنبال‌کنندگانتان اطلاعات به‌ دست آورید و عملکرد پست‌هایتان را ببینید. ما چیزی را بدون اجازه شما در فیس‌بوک پست نمی‌کنیم.</string>
     <string name="connect_ig_to_fb_page_explain">حساب کسب‌وکار Instagram خود را به صفحه فیس‌بوکتان وصل کنید تا دیگران بتوانند راحت‌تر شما را پیدا کنند. حساب‌های کسب‌وکار در Instagram به «صفحه‌های فیس‌بوک» مرتبط و تابع %1$s آن‌ها هستند.</string>
+    <string name="connect_or_create">اتصال یا ایجاد</string>
     <string name="connect_page_for_biz_tools">حساب‌هایی را که از «ابزارهای کسب‌وکار Instagram» استفاده می‌کنند می‌توان به یک «صفحه فیس‌بوک» متصل کرد. برای ایجاد آگهی به اتصال صفحه نیاز است. اگر درحال‌حاضر صفحه‌ای دارید، اطلاعات شما را رونویسی می‌کنیم تا بتوانید آن‌ها را ویرایش کنید.</string>
     <string name="connect_page_for_pro_tools">حساب‌هایی را که از Instagram Professional Tools استفاده می‌کنند می‌توان به یک «صفحه فیس‌بوک» متصل کرد. برای ایجاد آگهی به اتصال صفحه نیاز است. اگر درحال‌حاضر صفحه‌ای دارید، اطلاعات شما را رونویسی می‌کنیم تا بتوانید آن‌ها را ویرایش کنید.</string>
     <string name="connect_page_term_for_biz_tools">حساب‌هایی را که از Instagram Business Tools استفاده می‌کنند می‌توان به صفحه‌های فیس‌بوک پیوند داد، دراین‌صورت این حساب‌ها مشمول %1$s این صفحه‌ها می‌شوند.</string>
@@ -1056,6 +1072,9 @@
     <string name="delta_login_review_was_me">من بودم</string>
     <string name="delta_login_review_was_not_me">من نبودم</string>
     <string name="delta_password_change_confirm_new_password_hint">تأیید گذرواژه جدید</string>
+    <string name="delta_password_change_error_match_failure">لطفاً از مطابقت هر دو گذرواژه مطمئن شوید.</string>
+    <string name="delta_password_change_error_required_field_native">هردو فیلد ضروری هستند.</string>
+    <string name="delta_password_change_error_required_field_react_native">این فیلد ضروری است.</string>
     <string name="delta_password_change_footer">توصیه می‌کنیم گذرواژه غیرتکراری را برای Instagram تنظیم کنید و حداقل از یک عدد و یک نویسه خاص در آن استفاده کنید.</string>
     <string name="delta_password_change_new_password_hint">گذرواژه جدید</string>
     <string name="delta_password_change_submit">ارسال</string>
@@ -1067,6 +1086,7 @@
     <string name="dial_element_capture_format_music">موسیقی</string>
     <string name="dial_element_capture_format_reverse">پخش معکوس</string>
     <string name="dial_element_capture_format_superzoom">سوپرزوم</string>
+    <string name="dialog_always_share_to_facebook">همیشه اشتراک‌گذاری در فیس‌بوک</string>
     <string name="dialog_block_user_button">مسدود کردن</string>
     <string name="dialog_block_user_message">او نمی‌تواند نمایه‌تان، پست‌ها یا داستانتان را در Instagram پیدا کند. Instagram به او اطلاع نمی‌دهد که او را مسدود کردید.</string>
     <string name="dialog_block_user_title">%1$s مسدود شود؟</string>
@@ -1116,7 +1136,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">به «درخواست‌ها» منتقل شود؟</string>
     <string name="direct_block_account">مسدود کردن حساب</string>
     <string name="direct_block_choices_block_account">مسدود کردن حساب</string>
-    <string name="direct_block_choices_block_messages">مسدود کردن پیام‌ها</string>
+    <string name="direct_block_choices_ignore">نادیده گرفتن</string>
     <string name="direct_block_user">مسدود کردن کاربر</string>
     <string name="direct_blocked">مسدود شده است</string>
     <string name="direct_button_change_group_name">انجام شد</string>
@@ -1129,6 +1149,7 @@
     <string name="direct_details_error">جزئیات مکالمه بارگیری نشد. دوباره امتحان کنید.</string>
     <string name="direct_digest_active_today">امروز فعال بوده است</string>
     <string name="direct_digest_active_yesterday">دیروز فعال بوده است</string>
+    <string name="direct_digest_are_active_now">%1$d نفر دیگر اکنون فعال هستند</string>
     <string name="direct_digest_is_active_now">اکنون فعال</string>
     <string name="direct_digest_mentioned_you_story">از شما در داستانی نام برد</string>
     <string name="direct_digest_no_author_shared_product">محصولی به اشتراک گذاشت</string>
@@ -1157,6 +1178,7 @@
     <string name="direct_digest_shared_post">پستی به اشتراک گذاشت</string>
     <string name="direct_digest_shared_your_countdown">شمارش معکوس شما را در داستانش به اشتراک گذاشت</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">شما را به‌عنوان شریک کسب‌وکار نشان کرد</string>
+    <string name="direct_digest_user_is_active_now">%1$s کنون فعال است</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s دعوتی برای نصب برنامه Direct فرستاد</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">دعوت به برنامه Direct فرستاده شد</string>
     <string name="direct_digest_user_sent_gif">%1$s یک GIF فرستاد</string>
@@ -1369,6 +1391,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">شما را به‌عنوان شریک کسب‌وکار نشان کرد</string>
     <string name="direct_reel_mention_sender_info">شما از %1$s در داستانتان نام بردید</string>
     <string name="direct_reel_mention_sender_info_branded_content">%1$s را به‌عنوان شریک کسب‌وکار نشان کردید</string>
+    <string name="direct_reel_question_response_creator_info">به سؤالتان پاسخ داد</string>
+    <string name="direct_reel_question_response_sender_info">به سؤالتان پاسخ داد</string>
     <string name="direct_reel_reaction_recipient_info">به داستان شما واکنش %1$s نشان داد</string>
     <string name="direct_reel_reaction_sender_info">به این داستان او واکنش %1$s نشان دادید</string>
     <string name="direct_reel_reply_receiver_highlight_info">به برگزیده داستان شما پاسخ داد</string>
@@ -1603,10 +1627,16 @@
     <string name="editable_profile_review_title">مرور اطلاعات تماس شما</string>
     <string name="edited">ویرایش شد</string>
     <string name="edits_not_saved">ویرایش‌های شما ذخیره نشد. لطفاً دوباره امتحان کنید.</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> توسط %2$s</string>
-    <string name="effect_by_format">از %1$s</string>
-    <string name="effect_by_format_with_title">%1$s توسط %2$s</string>
     <string name="effect_created_by_format">توسط &lt;b>%1$s&lt;/b> ایجاد شده است</string>
+    <string name="effect_detail_more_button_label">بیشتر</string>
+    <string name="effect_detail_save_to_camera_button_label">ذخیره دوربین</string>
+    <string name="effect_detail_saved_to_camera_button_label">در دوربین ذخیره شد</string>
+    <string name="effect_detail_share_button_label">ارسال به…</string>
+    <string name="effect_detail_view_try_it_button_label">امتحان کنید</string>
+    <string name="effect_details_view_created_from_format">از &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> از %2$s</string>
+    <string name="effect_from_format">از %1$s</string>
+    <string name="effect_from_format_with_title">%1$s از %2$s</string>
     <string name="eight_hours">۸ ساعت</string>
     <string name="ellipses">...</string>
     <string name="ellipsis_more">...بیشتر</string>
@@ -1616,10 +1646,8 @@
     <string name="email_invalid">ایمیل نامعتبر است</string>
     <string name="email_not_available">حساب دیگری از این ایمیل استفاده می‌کند.</string>
     <string name="email_not_valid">لطفاً ایمیل معتبری وارد کنید.</string>
-    <string name="email_register">آدرس ایمیلتان را وارد کنید</string>
     <string name="email_sent">ایمیلی به آدرس ایمیل حساب شما ارسال شده است. لطفاً برای ادامه ایمیلتان را بررسی کنید. اگر همچنان مشکل دارید، لطفاً از %1$s دیدن کنید.</string>
     <string name="email_sent_short">ایمیل ارسال شد</string>
-    <string name="email_signup">نام‌نویسی با نشانی ایمیل</string>
     <string name="email_sms_notification_settings">اعلان‌های ایمیلی و پیامکی</string>
     <string name="emails">ایمیل‌ها</string>
     <string name="emoji_not_allowed">گذرواژه حاوی نویسه‌های اموجی است. لطفاً چیز دیگری انتخاب کنید.</string>
@@ -1654,6 +1682,7 @@
     <string name="expired_link_dialog_title">پیوند منقضی‌شده</string>
     <string name="explore_contextual_title">کاوش کردن</string>
     <string name="explore_description">جستجو و کاوش</string>
+    <string name="explore_effects">کاوش جلوه‌ها</string>
     <string name="explore_places">مکان‌ها</string>
     <string name="explore_places_request_fail">مکان‌ها بارگیری نشدند. دوباره امتحان کنید.</string>
     <string name="explore_topical_going_to_next">رفتن به بعدی</string>
@@ -1702,6 +1731,7 @@
     <string name="failed_to_load_highlight_message">مورد برگزیده بارگیری نشد</string>
     <string name="failed_to_load_photo_toast">متأسفیم، این عکس قابل بارگیری نیست.</string>
     <string name="failed_to_load_video_toast">متأسفیم این ویدیو بارگیری نشد.</string>
+    <string name="family_name">نام خانوادگی</string>
     <string name="favorites_tab_title">دوستان صمیمی</string>
     <string name="fb_connect_card_button_text">اتصال</string>
     <string name="fb_connect_card_main_text">اتصال به فیس‌بوک</string>
@@ -1722,6 +1752,7 @@
     <string name="feed_controls_message_replies_setting_following">افرادی که دنبال می‌کنید</string>
     <string name="feed_controls_message_replies_setting_off">خاموش</string>
     <string name="feed_controls_settings_title">کنترل‌های فید</string>
+    <string name="feed_emoji_see_more_button_label">برای دیدن اموجی‌های بیشتر ضربه بزنید</string>
     <string name="feed_item_page_title">آگهی</string>
     <string name="feed_product_pivots_view_shop_button">مشاهده فروشگاه</string>
     <string name="feed_refereshed">محتوا تازه‌سازی شد</string>
@@ -1865,10 +1896,13 @@
     <string name="full_single_line_address">%1$s، %2$s %3$s</string>
     <string name="full_terms_rw">شرایط کامل</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">ادامه</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">کمک‌ مالی نمی‌تواند بیش از %1$s باشد</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">کمک مالی باید حداقل %1$s باشد</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">مبلغ کمک مالی</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">موارد دیگر</string>
     <string name="fundraiser_sticker_default_title">جمع‌آوری کمک مالی %1$s</string>
     <string name="fundraiser_sticker_donate_button_text">کمک مالی</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">کمک مالی کردید</string>
     <string name="fundraiser_sticker_search_following_section_title">دنبال می‌کنید</string>
     <string name="fundraiser_sticker_search_suggested_section_title">پیشنهادی</string>
     <string name="fundraiser_sticker_subtitle">پشتیبانی از %1$s</string>
@@ -1877,6 +1911,8 @@
     <string name="gallery">گالری</string>
     <string name="gallery_album_thumbnail">تصویر کوچک آلبوم</string>
     <string name="gallery_description">گالری</string>
+    <string name="gallery_empty_state_description">اگر عکس‌ها و ویدیوهایی در دستگاهتان دارید، می‌توانید آن‌ها را در Instagram به اشتراک بگذارید.</string>
+    <string name="gallery_empty_state_title">عکس‌ها و ویدیوهای شما</string>
     <string name="gallery_photo_thumbnail">تصویر کوچک عکس</string>
     <string name="gallery_sticker_description">برچسب گالری</string>
     <string name="gallery_sticker_grid_empty">عکس یا ویدیویی وجود ندارد</string>
@@ -1889,7 +1925,7 @@
     <string name="gdpr_account_privacy">خط‌مشی حساب</string>
     <string name="gdpr_activity_status">وضعیت فعالیت</string>
     <string name="gdpr_blocked_accounts">حساب‌های مسدودشده</string>
-    <string name="gdpr_business_signup_option_title">نام‌نویسی برای نمایه کسب‌وکار</string>
+    <string name="gdpr_business_signup_option_title">افزودن حساب کسب‌وکار</string>
     <string name="gdpr_close_friends_title">دوستان صمیمی</string>
     <string name="gdpr_contacts_syncing_option_title">همگام‌سازی مخاطبین</string>
     <string name="gdpr_data_download">دانلود داده</string>
@@ -1918,6 +1954,7 @@
     <string name="get_started">شروع کنید</string>
     <string name="gif_sticker_description">برچسب Gif</string>
     <string name="gifs_description">هدیه‌ها</string>
+    <string name="given_name">نام</string>
     <string name="go_live_button">پخش زنده</string>
     <string name="go_live_suggestion">برای اشتراک‌‌گذاری کاری که به آن مشغول هستید، ویدیوی زنده‌تان را شروع کنید.</string>
     <string name="go_to_profile">رفتن به نمایه</string>
@@ -2016,8 +2053,6 @@
     <string name="ig_time_picker_pm">ب.ظ.</string>
     <string name="igds_reply_button_label">پاسخ</string>
     <string name="igds_view_reply_button_label">مشاهده پاسخ</string>
-    <string name="iglive_caption_hint">افزودن عنوان برای بازدیدکنندگانتان…</string>
-    <string name="iglive_captioned_notification">%1$s پخش زنده است: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">شما در ویدیوی زنده %1$s بودید</string>
     <string name="iglive_cobroadcast_end_title">بابت پیوستن شما سپاسگزاریم!</string>
     <string name="iglive_discard">صرف‌نظر کردن</string>
@@ -2368,11 +2403,6 @@
     <string name="live_qa_label">سؤال و پاسخ</string>
     <string name="live_ssi_tooltip">هروقت خواستید برای دریافت پشتیبانی به منابع مراجعه کنید.</string>
     <string name="live_starting_live">اکنون پخش جریانی زنده دارید!</string>
-    <string name="live_subscribe_button">روشن کردن</string>
-    <string name="live_subscribe_request_failed_to_send">اشتراکتان موفق نبود.</string>
-    <string name="live_subscribe_request_sent">روشن شد</string>
-    <string name="live_subscribe_sent_system_comment">هروقت خواستید می‌توانید از نمایه‌تان این را خاموش کنید.</string>
-    <string name="live_subscribe_system_comment">دریافت اعلان برای هر ویدیوی زنده از %1$s</string>
     <string name="live_title">زنده</string>
     <string name="live_unpin_comment">برداشتن پین نظر</string>
     <string name="live_video_call_cannot_start_description">هنگام استفاده از گپ ویدیویی، نمی‌توانید ویدیوی زنده‌ای شروع کنید.</string>
@@ -2457,6 +2487,7 @@
     <string name="lookup_title">حسابتان را پیدا کنید</string>
     <string name="lux">لوکس</string>
     <string name="made_with_boomerang">ایجادشده با &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">حساب اصلی</string>
     <string name="main_feed_hide_recommended_post_msg">از این به بعد پست‌های %1$s را نشان نخواهیم داد.</string>
     <string name="main_feed_unfollow_from_post_msg">پس از تازه‌سازی صفحه، دیگر پست‌هایی از این قبیل نخواهید دید.</string>
     <string name="main_feed_unfollow_from_post_title">دیگر %1$s دنبال نمی‌کنید</string>
@@ -2473,6 +2504,8 @@
     <string name="manage_saved_login">اطلاعات ورود به سیستم ذخیره شدند</string>
     <string name="managing_photos_of_you">مدیریت عکس‌های شما</string>
     <string name="managing_your_account">مدیریت حسابتان</string>
+    <string name="map_data_legal_notices_label">اعلامیه‌های حقوقی داده‌های نقشه</string>
+    <string name="map_information_title">اطلاعات نقشه</string>
     <string name="map_label">نقشه</string>
     <string name="maps_open_map_reporter">باز کردن</string>
     <string name="maps_report_button">گزارش</string>
@@ -2550,6 +2583,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">نمی‌توانید به داستانی که از برنامه دیگری به اشتراک گذاشتید، آهنگی اضافه کنید.</string>
     <string name="music_overlay_cant_save_story_alert">ذخیره‌سازی داستان‌های دارای آهنگ امکان‌پذیر نیست</string>
     <string name="music_overlay_cant_share_to_fb_alert">اشتراک‌گذاری داستان‌های دارای آهنگ در فیس‌بوک امکان‌پذیر نیست</string>
+    <string name="music_overlay_no_lyrics_available_toast">ترانه‌ای دردسترس نیست</string>
     <string name="music_overlay_sticker_description">برچسب هم‌پوشانی موسیقی</string>
     <string name="music_overlay_story_attribution_from_username">از داستان %1$s</string>
     <string name="music_overlay_story_attribution_header_info">برای شروع ایجاد داستان موسیقی‌تان، آهنگی انتخاب کنید.</string>
@@ -2745,14 +2779,9 @@
     <string name="nux_main_feed_empty_subtitle_active">برای شروع مشاهده عکس‌ها و ویدیویی که به اشتراک می‌گذارید، افراد را دنبال کنید.</string>
     <string name="nux_main_feed_empty_title">به Instagram خوش آمدید</string>
     <string name="nux_one_tap_login_card_remove_icon_description">برداشتن</string>
-    <string name="nux_one_tap_upsell_detail_save">اطلاعات ورود به سیستم شما را برایتان ذخیره خواهیم کرد. دفعه دیگر که دوباره در این دستگاه به سیستم وارد می‌شوید، لازم نیست این اطلاعات را وارد کنید.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">وقتی با استفاده از این تلفن به سیستم وارد می‌شوید، به‌جای تایپ کردن همه اطلاعات ورود به سیستم، تنها کافی است روی عکس نمایه‌تان ضربه بزنید.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">دفعه بعد که با استفاده از این تلفن به سیستم وارد شوید، به‌جای تایپ کردن همه اطلاعات ورود به سیستم، تنها کافی است روی عکس نمایه‌تان ضربه بزنید.</string>
+    <string name="nux_one_tap_upsell_detail">دفعه بعد که با استفاده از این تلفن به سیستم وارد شوید، به‌جای تایپ کردن همه اطلاعات ورود به سیستم، تنها کافی است روی عکس نمایه‌تان ضربه بزنید.</string>
     <string name="nux_one_tap_upsell_enroll_button_ok">تأیید</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">ذخیره</string>
-    <string name="nux_one_tap_upsell_title_save">ذخیره اطلاعات ورود به سیستم</string>
-    <string name="nux_one_tap_upsell_title_variant1">ورود به سیستم آسان‌تر در دفعه دیگر</string>
-    <string name="nux_one_tap_upsell_title_variant2">به خاطر سپردن گذرواژه</string>
+    <string name="nux_one_tap_upsell_title">به خاطر سپردن گذرواژه</string>
     <string name="nux_pinch_to_zoom">نزدیک یا دور کردن انگشتان برای بزرگ‌نمایی</string>
     <string name="nux_silent_audio_text">این ویدیو صدا ندارد</string>
     <string name="off">خاموش</string>
@@ -2771,7 +2800,6 @@
     <string name="one_hour">۱ ساعت</string>
     <string name="one_tap_login_landing_edit_accounts">ویرایش حساب‌ها</string>
     <string name="one_tap_login_text_link_text">با حساب دیگری به سیستم وارد شوید</string>
-    <string name="one_tap_logo">نشان‌واره تک‌ضربی</string>
     <string name="one_tap_new_footer_log_in">&lt;b>ورود به سیستم&lt;/b>.</string>
     <string name="one_tap_new_footer_one_button">تازه با Instagram آشنا شدید؟ &lt;b> نام‌نویسی کنید.&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>جابه‌جایی بین حساب‌ها&lt;/b> یا</string>
@@ -2791,7 +2819,6 @@
     <string name="open_map_error">متأسفانه نتوانستیم نقشه را باز کنیم.</string>
     <string name="open_phone_error">متأسفانه نتوانستیم تماس برقرار کنیم.</string>
     <string name="open_source_libraries">باز کردن کتابخانه‌های منبع</string>
-    <string name="openstreetmap_copyright_text">همیاران © OpenStreetMap</string>
     <string name="opt_into_all_ad_content_label">ادامه تماشا</string>
     <string name="opt_into_entire_dynamic_ad_label">مشاهده حالت %1$d</string>
     <string name="or">یا</string>
@@ -2892,8 +2919,6 @@
     <string name="phone_number_toast_number_required">شماره تلفن لازم است</string>
     <string name="phone_permission_request_message">شماره تلفنتان را به‌صورت خودکار تکمیل و تأیید می‌کنیم، به‌این‌ترتیب اگر دسترسی‌تان را به حسابتان از دست بدهید آسان‌تر می‌توانید آن را بازیابی کنید.</string>
     <string name="phone_permission_request_title">برقراری تماس‌های تلفنی و مدیریت آن‌ها</string>
-    <string name="phone_register">شماره تلفنتان را وارد کنید</string>
-    <string name="phone_signup">با شماره تلفن نام‌نویسی کنید</string>
     <string name="photo">عکس</string>
     <string name="photo_edit_error_message">متأسفم هنگام ویرایش عکستان مشکلی رخ داد. گزارشی به Instagram ارسال شد.</string>
     <string name="photo_edit_error_title">نمی‌توانید ویرایش را ادامه دهید.</string>
@@ -2945,6 +2970,7 @@
     <string name="post_to_your_story_label">افزودن پست به داستانتان</string>
     <string name="post_to_your_story_label_igtv">افزودن ویدیو به داستانتان</string>
     <string name="post_you_were_tagged_in">پستی که در آن نشان‌گذاری‌ شدید</string>
+    <string name="postal_code">کد پستی</string>
     <string name="posted_comment">نظر پست شد</string>
     <string name="posting_failed">ویدیویتان به اشتراک گذاشته نشد.</string>
     <string name="posting_message">درحال پست کردن…</string>
@@ -2956,7 +2982,6 @@
     <string name="posts_tab_title">پست‌ها</string>
     <string name="posts_you_liked">پست‌هایی که پسندید</string>
     <string name="preferences_label">اولویت‌ها</string>
-    <string name="preparing_to_scan">درحال آماده‌سازی برای اسکن…</string>
     <string name="presence_permission_explanation">به حساب‌هایی که دنبال می‌کنید و افرادی که برایشان پیام ارسال می‌کنید اجازه دهید ببینند آخرین بار چه زمانی در برنامه‌های Instagram فعال بوده‌اید. وقتی این گزینه خاموش باشد، نمی‌توانید وضعیت فعالیت سایر حساب‌ها را ببینید.</string>
     <string name="presence_permission_name">نمایش وضعیت فعالیت</string>
     <string name="preview_hint_text">برای دیدن عکس یا ویدیو در این داستان، ضربه بزنید.</string>
@@ -3019,6 +3044,7 @@
     <string name="product_share_sticker_default_question">باید این را دریافت کنم؟</string>
     <string name="product_share_sticker_from">از %1$s</string>
     <string name="product_source">منبع محصول</string>
+    <string name="product_source_different_catalog">استفاده از کاتالوگ دیگری</string>
     <string name="product_source_learn_more">بیشتر بدانید</string>
     <string name="product_source_learn_more_text">اگر کاتالوگ محصولی را که می‌خواهید در اینجا اضافه کنید نمی‌بینید، با «سرپرست صفحه» تماس بگیرید یا مجوزهایتان را در «مدیر کسب‌وکار» بررسی کنید تا مطمئن شوید مجوز دارید. %1$s</string>
     <string name="product_source_load_more">بارگیری کاتالوگ‌های بیشتر</string>
@@ -3099,7 +3125,18 @@
     <string name="profile_visits">بازدیدهای نمایه</string>
     <string name="promote">تبلیغ</string>
     <string name="promote_again">تبلیغ مجدد</string>
+    <string name="promote_audience_header">انتخاب مخاطب هدف</string>
+    <string name="promote_budget_duration_header">هزینه کلی شما %1$s در %2$d روز است</string>
+    <string name="promote_budget_duration_screen_title">بودجه و طول مدت</string>
+    <string name="promote_create_new_audience_subtitle">گزینه‌های هدف‌یابی را به‌صورت دستی وارد کنید</string>
+    <string name="promote_create_new_audience_title">مخاطبین خودتان را ایجاد کنید</string>
+    <string name="promote_destination_direct_message_option">پیام‌های Direct شما</string>
+    <string name="promote_destination_header">انتخاب کنید افراد به کجا فرستاده شوند</string>
+    <string name="promote_destination_profile_option">نمایه شما</string>
     <string name="promote_destination_screen_title">مقصد</string>
+    <string name="promote_destination_website_edit_title">وب‌سایت</string>
+    <string name="promote_destination_website_option">وب‌‌سایت شما</string>
+    <string name="promote_edit">ویرایش</string>
     <string name="promote_error_claim_page_label">ادعای مالکیت صفحه</string>
     <string name="promote_error_description_network_error">مشکلی در سمت ما ایجاد شده است و درحال‌حاضر نمی‌توانیم پستتان را ارتقا دهیم. لطفاً بعداً دوباره امتحان کنید.</string>
     <string name="promote_error_page_legal_info">صفحه‌های فیس‌بوک مشمول این %1$s می‌شوند.</string>
@@ -3163,11 +3200,12 @@
     <string name="quick_replies">پاسخ‌های سریع</string>
     <string name="quick_reply_description">پاسخ سریع</string>
     <string name="quiz_responder_subtitle_text">%1$s پاسخ داده شد</string>
-    <string name="quiz_sticker_first_answer_hint">گزینه ۱</string>
+    <string name="quiz_sticker_add_option_hint">افزودن</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">حداقل دو گزینه اضافه کنید</string>
     <string name="quiz_sticker_question_hint">موارد دلخواه من را حدس بزن…</string>
     <string name="quiz_sticker_response_composer_privacy_nux">برای شروع آزمونک، ضربه بزنید. %1$s پاسختان را خواهد دید.</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">ارائه پاسخ</string>
-    <string name="quiz_sticker_second_answer_hint">گزینه ۲</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">گزینه معتبری انتخاب کنید</string>
     <string name="quiz_sticker_tray_description">برچسب آزمون</string>
     <string name="quiz_sticker_tray_label">آزمون</string>
     <string name="rageshake_bug_report_option">مشکلی پیش آمده‌ است</string>
@@ -3214,7 +3252,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">ظاهراً حسابی درحال حاضر برای این ایمیل وجود دارد. می‌توانیم با استفاده از اطلاعات حساب Google شما برای ورود به سیستم به شما کمک کنیم.</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">ظاهراً این نام کاربری به یک نشانی Gmail پیوند شده است. می‌توانید با استفاده از اطلاعات حساب Google شما به شما در ورود به سیستم کمک کنیم.</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">ظاهراً قبلاً اطلاعات را برای این حساب ذخیره کرده‌اید.</string>
-    <string name="reel_ad4ad_privacy_subtitle">فقط شما می‌توانید این پیش‌نمایش را ببینید</string>
+    <string name="reel_ad4ad_privacy_subtitle">فقط شما می توانید این را ببنید</string>
     <string name="reel_bakeoff_thank_you_subtitle">از پاسخ‌های شما برای بهبود Instagram استفاده خواهیم کرد.</string>
     <string name="reel_bakeoff_thank_you_title">از اینکه به ما اطلاع دادید، سپاسگزاریم.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">باز کردن دوربین</string>
@@ -3250,6 +3288,7 @@
     <string name="reel_poll_voters_list_title">رای‌دهندگان</string>
     <string name="reel_question_responses_list_title">پاسخ‌ها</string>
     <string name="reel_quick_reactions">واکنش‌های سریع</string>
+    <string name="reel_quiz_responders_list_title">پاسخ داده شده</string>
     <string name="reel_reaction_composer_sent_confirmation">واکنش به %1$s ارسال شد</string>
     <string name="reel_reshared_from_archive_label">از بایگانی</string>
     <string name="reel_reshares_empty_state_title">درحال‌حاضر هیچ مورد اشتراک‌گذاری مجدد عمومی برای این پست پیدا نشد</string>
@@ -3400,6 +3439,7 @@
     <string name="reply_to">پاسخ به %1$s…</string>
     <string name="replying_to_user_format">پاسخ به %1$1s</string>
     <string name="report">گزارش</string>
+    <string name="report_a_problem_label">گزارش مشکل</string>
     <string name="report_accounts_are_inappropriate">حساب‌ها نامناسب هستند</string>
     <string name="report_ad">گزارش آگهی</string>
     <string name="report_as_ip_violation">به‌عنوان نقض مالکیت معنوی گزارش می‌کنید؟</string>
@@ -3632,7 +3672,7 @@
     <string name="set_daily_reminder_subtitle">پس از اینکه به زمانی که برای خودتان تنظیم کردید رسیدید، اعلانی برایتان ارسال خواهیم کرد.</string>
     <string name="set_daily_reminder_title">تنظیم یادآوری روزانه</string>
     <string name="set_main_account">تنظیم حساب اصلی</string>
-    <string name="set_up_business_profile">نمایه کسب و کارتان را تنظیم کنید</string>
+    <string name="set_up_business_account">تنظیم حساب کسب‌وکار شما</string>
     <string name="settings">تنظیمات</string>
     <string name="settings_viewers_choose_locations_feature_off">خاموش</string>
     <string name="settings_viewers_choose_locations_title">انتخاب مکان‌ها</string>
@@ -3693,6 +3733,7 @@
     <string name="shop_on_profile_row_continue_shopping">ادامه خرید</string>
     <string name="shop_this_post">خرید این پست</string>
     <string name="shopping">خرید</string>
+    <string name="shopping_checkout_destination_title">اکنون با «تسویه‌حساب» خرید کنید</string>
     <string name="shopping_destination_title">خرید</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">با این کار برچسب محصول از این داستان برداشته می‌شود.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">برداشتن برچسب</string>
@@ -3862,7 +3903,6 @@
     <string name="suggested">پیشنهادی</string>
     <string name="suggested_accounts_header">پیشنهادی</string>
     <string name="suggested_categories">پیشنهادی</string>
-    <string name="suggested_for_you">پیشنهادی برای شما</string>
     <string name="suggested_hashtags">پیشنهادی</string>
     <string name="suggested_hashtags_header">پیشنهادها</string>
     <string name="suggested_highlight_delete_option_text">برداشتن پیشنهاد</string>
@@ -3870,7 +3910,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">صرف‌نظر کردن</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">حفظ</string>
     <string name="suggested_highlight_discard_changes_dialog_title">از مورد برگزیده صرف‌نظر می‌کنید؟</string>
-    <string name="suggested_live_and_post_live_videos">تماشای مورد بعدی</string>
     <string name="suggested_live_videos">اکنون پخش مستقیم</string>
     <string name="suggested_recipients">پیشنهادی</string>
     <string name="suggested_username_allcaps_title">به Instagram خوش آمدید،</string>
@@ -3959,6 +3998,7 @@
     <string name="tap_to_view_product_items">برای دیدن محصولات ضربه بزنید</string>
     <string name="tap_to_watch_video_description">برای تماشای ویدیو ضربه بزنید</string>
     <string name="tap_to_watch_video_nux">تماشای ویدیوی کامل IGTV</string>
+    <string name="tel">تلفن</string>
     <string name="tell_us_approval_reason">به ما بگویید چرا آگهی‌تان باید تأیید شود. اگر اشتباهی کردیم، دراسرع‌وقت آگهی‌تان را تأیید می‌کنیم.</string>
     <string name="terms">شرایط</string>
     <string name="terms_and_data_policy">شرایط و خط‌مشی داده‌ها</string>
@@ -4120,6 +4160,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">برای پایان تنظیم احراز هویت دوعاملی، کد ۶ رقمی ارسال‌شده به شماره منتهی به %1$s را وارد کنید.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">کد ۶ رقمی ایجاد‌شده با برنامه احراز هویتتان را وارد کنید</string>
     <string name="two_fac_confirm_phone_number_fragment_title">کد را وارد کنید</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">در ورود به سیستم بعدی، از شما کدی درخواست نخواهد شد</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">اعتماد به این دستگاه</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">تغییر شماره تلفن</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">ارسال مجدد کد</string>
     <string name="two_fac_confirmation_code_invalid">کد نامعتبر</string>
@@ -4287,6 +4329,7 @@
     <string name="username_cannot_be_empty">نام کاربری نمی‌تواند خالی باشد</string>
     <string name="username_hint_access">نام کاربری، ایمیل یا تلفن</string>
     <string name="username_hint_login">شماره تلفن، ایمیل یا نام کاربری</string>
+    <string name="username_lock_help_text">نام کاربری قدیمی شما به‌مدت ۱۴ روز قفل خواهد شد. می‌توانید ظرف این مدت دوباره آن را تغیر دهید. بعد از این مدت نام کاربری برای استفاده در اختیار همگان قرار می‌گیرد.</string>
     <string name="username_not_available">نام کاربری دردسترس نیست</string>
     <string name="username_placeholder">نام کاربری</string>
     <string name="valid_address_to_map">لطفاً آدرس معتبری اضافه کنید تا افراد بتوانند به مکان شما در نقشه‌ها دست پیدا کنند.</string>

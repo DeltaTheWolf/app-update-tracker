@@ -9,4 +9,5 @@
         <com.instagram.ui.widget.imageview.BlinkingImageView android:id="@id/playback_icon" android:background="@drawable/channel_play_container_dark_transparent_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_play" />
         <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </LinearLayout>
+    <ViewStub android:id="@id/layout_container_secondary" android:layout="@layout/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </com.instagram.discovery.ui.FixedAspectRatioVideoLayout>

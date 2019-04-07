@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/two_fac_button_margin_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.instagram.common.ui.text.TitleTextView android:id="@id/two_fac_trusted_device_login_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/two_fac_confirm_phone_number_fragment_trusted_device_title" style="@style/BodyEmphasized" />
+        <TextView android:id="@id/two_fac_trusted_device_login_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/two_fac_confirm_phone_number_fragment_trusted_device_subtitle" android:maxLines="1" style="@style/FootNoteDetail" />
+    </LinearLayout>
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.instagram.ui.widget.checkbox.IgCheckBox android:layout_gravity="center_vertical" android:id="@id/two_fac_trusted_device_checkbox" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

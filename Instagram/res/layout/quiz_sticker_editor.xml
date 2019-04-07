@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/quiz_sticker" style="@style/QuizSticker"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <EditText android:id="@id/quiz_sticker_question" style="@style/QuizStickerQuestion" />
-    <LinearLayout android:id="@id/quiz_sticker_answer_list" app:layout_constraintTop_toBottomOf="@id/quiz_sticker_question" style="@style/QuizStickerAnswerList" />
-</android.support.constraint.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/quiz_sticker" style="@style/QuizSticker">
+        <EditText android:id="@id/quiz_sticker_question" style="@style/QuizStickerQuestion" />
+        <LinearLayout android:id="@id/quiz_sticker_answer_list" app:layout_constraintTop_toBottomOf="@id/quiz_sticker_question" style="@style/QuizStickerAnswerList" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:gravity="center" android:id="@id/incomplete_error_view" android:padding="@dimen/quiz_sticker_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

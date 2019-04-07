@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
         <TextureView android:id="@id/selfie_camera_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="H,3:4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_max="@dimen/selfie_camera_max_height" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_max="@dimen/selfie_camera_max_width" app:layout_constraintWidth_percent="0.48" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <com.instagram.arlink.ui.CameraMaskOverlay android:id="@id/camera_mask_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
     <TextView android:textSize="@dimen/font_medium_xxlarge" android:textStyle="bold" android:textColor="@color/grey_9" android:gravity="center" android:layout_gravity="start|center|top" android:id="@id/cancel_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/top_button_size" android:layout_marginLeft="@dimen/top_button_margin" android:text="@string/cancel" android:layout_marginStart="@dimen/top_button_margin" />
     <ImageView android:id="@id/selfie_sticker_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />

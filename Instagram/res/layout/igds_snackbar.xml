@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:id="@id/snackbar_container" android:background="@color/default_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/snackbar_container" android:background="@color/default_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <FrameLayout android:id="@id/image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/igds_snackbar_margin_horizontal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
             <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/circular_image" android:visibility="gone" android:layout_width="@dimen/igds_snackbar_image_size" android:layout_height="@dimen/igds_snackbar_image_size" />
             <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/square_image" android:visibility="gone" android:layout_width="@dimen/igds_snackbar_image_size" android:layout_height="@dimen/igds_snackbar_image_size" android:scaleType="centerCrop" />
@@ -9,5 +9,5 @@
         </FrameLayout>
         <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/snackbar_message" android:paddingTop="@dimen/igds_snackbar_message_padding_vertical" android:paddingBottom="@dimen/igds_snackbar_message_padding_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/igds_snackbar_message_height" android:layout_marginStart="@dimen/igds_snackbar_message_margin_horizontal" android:layout_marginEnd="@dimen/igds_snackbar_message_margin_horizontal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/snackbar_button" app:layout_constraintStart_toEndOf="@id/image_container" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/igds_snackbar_margin_horizontal" app:layout_goneMarginStart="@dimen/igds_snackbar_margin_horizontal" />
         <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/snackbar_button" android:padding="@dimen/igds_snackbar_button_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/igds_snackbar_button_margin_end" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/snackbar_message" app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </merge>

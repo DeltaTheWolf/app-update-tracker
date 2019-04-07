@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:paddingTop="@dimen/row_padding_medium" android:paddingBottom="@dimen/row_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content"
+<FrameLayout android:paddingBottom="@dimen/row_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerLinearLayout android:orientation="horizontal" android:id="@id/cta_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" app:edgeRadius="@dimen/profile_header_cta_image_corner_radius" app:strokeColour="@color/grey_2" app:strokeRadius="@dimen/button_border_stroke">
         <com.instagram.common.ui.widget.imageview.IgImageView android:gravity="start" android:id="@id/cta_icon" android:layout_width="@dimen/profile_header_cta_image_size" android:layout_height="@dimen/profile_header_cta_image_size" android:scaleType="fitXY" app:radius="@dimen/profile_header_cta_image_corner_radius" />

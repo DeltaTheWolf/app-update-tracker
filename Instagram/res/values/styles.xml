@@ -195,10 +195,6 @@
         <item name="android:layout_width">@dimen/avatar_size_icon</item>
         <item name="android:layout_height">@dimen/avatar_size_icon</item>
     </style>
-    <style name="AvatarReel.OnColoredBackground.Small" parent="@style/AvatarReel.OnColoredBackground">
-        <item name="android:layout_width">@dimen/avatar_size_small</item>
-        <item name="android:layout_height">@dimen/avatar_size_small</item>
-    </style>
     <style name="AvatarReel.OnColoredBackground.XLarge" parent="@style/AvatarReel.OnColoredBackground">
         <item name="android:layout_width">@dimen/avatar_size_xlarge</item>
         <item name="android:layout_height">@dimen/avatar_size_xlarge</item>
@@ -583,7 +579,7 @@
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="tooltipForegroundColor">@color/foreground_material_light</item>
         <item name="tooltipFrameBackground">@drawable/tooltip_frame_light</item>
-        <item name="viewInflaterClass">android.support.v7.app.AppCompatViewInflater</item>
+        <item name="viewInflaterClass">androidx.appcompat.app.AppCompatViewInflater</item>
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
         <item name="windowActionModeOverlay">false</item>
@@ -704,7 +700,7 @@
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="tooltipForegroundColor">@color/foreground_material_dark</item>
         <item name="tooltipFrameBackground">@drawable/tooltip_frame_dark</item>
-        <item name="viewInflaterClass">android.support.v7.app.AppCompatViewInflater</item>
+        <item name="viewInflaterClass">androidx.appcompat.app.AppCompatViewInflater</item>
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
         <item name="windowActionModeOverlay">false</item>
@@ -1604,10 +1600,11 @@
     </style>
     <style name="FundraiserStickerCurrencyAmountSelector.InputField" parent="@style/FundraiserStickerCurrencyAmountSelector">
         <item name="android:textSize">@dimen/fundraiser_sticker_currency_amount_selector_input_field_text_size</item>
-        <item name="android:paddingTop">@dimen/fundraiser_sticker_currency_amount_selector_input_field_vertical_padding</item>
-        <item name="android:paddingBottom">@dimen/fundraiser_sticker_currency_amount_selector_input_field_vertical_padding</item>
-        <item name="android:visibility">gone</item>
-        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">start</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingTop">@dimen/fundraiser_sticker_currency_amount_selector_input_field_top_padding</item>
+        <item name="android:paddingBottom">@dimen/fundraiser_sticker_currency_amount_selector_input_field_bottom_padding</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/fundraiser_sticker_currency_amount_selector_input_field_margin_top</item>
         <item name="android:hint">@string/fundraiser_sticker_currency_amount_selector_input_field_hint</item>
         <item name="android:inputType">number</item>
@@ -1707,6 +1704,9 @@
         <item name="android:textColor">@color/grey_9</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:lineSpacingMultiplier">0.92</item>
+    </style>
+    <style name="HideComments">
+        <item name="shouldHideAllComments">true</item>
     </style>
     <style name="HighlightTitleEditText">
         <item name="android:hint">@string/highlights_name_hint</item>
@@ -2493,7 +2493,7 @@
         <item name="android:paddingEnd">@dimen/profile_header_user_actions_button_horizontal_margin</item>
     </style>
     <style name="ProfileHeaderScoreboardCount">
-        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textSize">@dimen/font_medium_xlarge</item>
         <item name="android:textStyle">bold</item>
         <item name="android:ellipsize">end</item>
         <item name="android:layout_gravity">center|top</item>
@@ -3018,7 +3018,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingStart">@dimen/stories_gallery_section_header_icon_edge_padding</item>
         <item name="android:paddingEnd">@dimen/stories_gallery_section_header_icon_edge_padding</item>
-        <item name="normal">@color/white</item>
+        <item name="active">@color/white</item>
+        <item name="normal">@color/grey_7</item>
     </style>
     <style name="StoryShortcutButtonV0Text" parent="@style/Widget.TextView.Capture.Shadow.Small">
         <item name="android:gravity">center</item>
@@ -3278,6 +3279,8 @@
         <item name="creationVignetteDrawable">@drawable/tool_vignette_whiteout</item>
         <item name="creationWarmthDrawable">@drawable/tool_warmth_whiteout</item>
         <item name="cropHighlightBackground">@color/grey_5</item>
+        <item name="ctaBackgroundColorNormal">@color/white</item>
+        <item name="ctaMetadataTextNormal">@color/grey_3</item>
         <item name="customToastViewStyle">@style/CustomToast.Red</item>
         <item name="defaultActionBarBackIcon">@drawable/instagram_arrow_back_24</item>
         <item name="defaultActionBarBackground">@color/grey_0</item>
@@ -3487,7 +3490,20 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:drawablePadding">@dimen/token_text_view_padding_horizontal</item>
     </style>
+    <style name="TokenTextViewPill" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_medium_xlarge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/token_text_view_background_pill</item>
+        <item name="android:paddingLeft">@dimen/token_text_view_pill_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/token_text_view_padding_top</item>
+        <item name="android:paddingRight">@dimen/token_text_view_pill_padding_horizontal</item>
+        <item name="android:paddingBottom">@dimen/token_text_view_padding_bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/token_text_view_padding_horizontal</item>
+    </style>
     <style name="TokenTextViewWrapper">
+        <item name="TokenTextViewPillStyle">@style/TokenTextViewPill</item>
         <item name="TokenTextViewStyle">@style/TokenTextView</item>
     </style>
     <style name="TopicClusterDialogTitleText" parent="@style/DialogTitleText">
@@ -3579,7 +3595,6 @@
         <item name="gradientColor4">?directRingGradientColor4</item>
         <item name="gradientColor5">?directRingGradientColor5</item>
     </style>
-    <style name="VideoCallAppCompatTheme" parent="@style/Theme.AppCompat" />
     <style name="VideoCallAvatar">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_width">@dimen/videocall_avatar_size</item>
@@ -3597,6 +3612,8 @@
     <style name="VideoOptimizedDarkFeed">
         <item name="backgroundColorPrimary">@color/grey_9</item>
         <item name="backgroundColorSecondary">@color/grey_9</item>
+        <item name="ctaBackgroundColorNormal">@color/grey_9</item>
+        <item name="ctaMetadataTextNormal">@color/blue_5</item>
         <item name="feedSaveActiveColor">@color/grey_3</item>
         <item name="glyphColorPrimary">@color/grey_3</item>
         <item name="glyphColorSecondary">@color/grey_3</item>
@@ -3755,24 +3772,6 @@
         <item name="android:visibility">gone</item>
         <item name="android:layout_width">0.0dip</item>
         <item name="android:layout_height">0.0dip</item>
-    </style>
-    <style name="Widget.MaterialComponents.Button" parent="@style/Widget.AppCompat.Button">
-        <item name="android:textAppearance">?textAppearanceButton</item>
-        <item name="android:textColor">@color/mtrl_btn_text_color_selector</item>
-        <item name="android:paddingLeft">@dimen/mtrl_btn_padding_left</item>
-        <item name="android:paddingTop">@dimen/mtrl_btn_padding_top</item>
-        <item name="android:paddingRight">@dimen/mtrl_btn_padding_right</item>
-        <item name="android:paddingBottom">@dimen/mtrl_btn_padding_bottom</item>
-        <item name="android:insetLeft">0.0dip</item>
-        <item name="android:insetRight">0.0dip</item>
-        <item name="android:insetTop">@dimen/mtrl_btn_inset</item>
-        <item name="android:insetBottom">@dimen/mtrl_btn_inset</item>
-        <item name="backgroundTint">@color/mtrl_btn_bg_color_selector</item>
-        <item name="cornerRadius">@dimen/mtrl_btn_corner_radius</item>
-        <item name="enforceTextAppearance">true</item>
-        <item name="iconPadding">@dimen/mtrl_btn_icon_padding</item>
-        <item name="iconTint">@color/mtrl_btn_text_color_selector</item>
-        <item name="rippleColor">@color/mtrl_btn_ripple_color</item>
     </style>
     <style name="Widget.MediaPickerItem.Whiteout" parent="">
         <item name="placeholderColor">@color/grey_3</item>

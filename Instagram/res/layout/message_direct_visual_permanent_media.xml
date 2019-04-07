@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.instagram.feed.widget.IgProgressImageView android:id="@id/image" android:layout_width="88.0dip" android:layout_height="140.0dip" android:scaleType="centerCrop" />
     <ViewStub android:id="@id/direct_expired_tombstone_text_stub" android:layout="@layout/direct_expired_tombstone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/image" app:layout_constraintEnd_toEndOf="@id/image" app:layout_constraintStart_toStartOf="@id/image" app:layout_constraintTop_toTopOf="@id/image" />
@@ -8,4 +8,4 @@
     <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/image" app:layout_constraintTop_toBottomOf="@id/image" />
     <Space android:id="@id/direct_visual_message_forward_constraint_space" android:layout_width="19.0dip" android:layout_height="20.0dip" app:layout_constraintBottom_toBottomOf="@id/image" app:layout_constraintEnd_toEndOf="@id/image" />
     <ViewStub android:id="@id/message_direct_visual_permanent_media_forwarding_view_stub" android:layout="@layout/direct_visual_message_forwarding_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/direct_visual_message_forward_constraint_space" app:layout_constraintTop_toTopOf="@id/direct_visual_message_forward_constraint_space" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

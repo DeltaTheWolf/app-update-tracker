@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/profile_header_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/profile_header_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <ViewStub android:id="@id/pulse_emitter_stub" android:layout="@layout/layout_pulse_emitter" android:layout_width="@dimen/profile_header_avatar_size" android:layout_height="@dimen/profile_header_avatar_size" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
     <ViewStub android:id="@id/pulsing_image_view_stub" android:layout="@layout/layout_pulsing_image_view" android:layout_width="@dimen/profile_header_pulsing_avatar_size" android:layout_height="@dimen/profile_header_pulsing_avatar_size" android:contentDescription="@string/profile_photo_description" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
@@ -9,4 +9,4 @@
     <ViewStub android:id="@id/live_badge_margin_spacer_stub" android:layout="@layout/profile_header_avatar_live_badge_space_anchor" android:inflatedId="@id/live_badge_margin_spacer" android:layout_width="0.0dip" android:layout_height="4.5dip" app:layout_constraintEnd_toEndOf="@id/reel_ring" app:layout_constraintStart_toStartOf="@id/reel_ring" app:layout_constraintTop_toBottomOf="@id/reel_ring" />
     <ViewStub android:id="@id/live_badge_view_stub" android:layout="@layout/layout_reel_live_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/live_badge_margin_spacer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
     <ViewStub android:id="@id/play_badge_view_stub" android:layout="@layout/layout_reel_replay_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/live_badge_margin_spacer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

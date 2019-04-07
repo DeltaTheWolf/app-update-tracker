@@ -6,6 +6,7 @@
     <TextView android:id="@id/two_fac_confirm_phone_number_body" android:layout_marginBottom="@dimen/two_fac_margin_xlarge" style="@style/TwoFacParagraphStyle" />
     <com.instagram.ui.widget.edittext.ConfirmationCodeEditText android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/edit_text" android:layout_width="@dimen/two_fac_confirmation_code_edit_text_width" android:layout_height="@dimen/two_fac_confirmation_code_edit_text_height" app:codeLength="6" app:codeSize="@dimen/font_xlarge_xxlarge" app:showMiddleSpace="true" />
     <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:id="@id/two_fac_trusted_device_login_checkbox" android:visibility="gone" layout="@layout/two_fac_trusted_devices_login_checkbox" />
     <include android:id="@id/row_divider" layout="@layout/row_divider" />
     <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" android:layout_marginBottom="@dimen/two_fac_button_margin_small" android:text="@string/two_fac_enter_phone_number_button" style="@style/StickyButtonStyle" />
     <TextView android:textSize="@dimen/font_small" android:id="@id/footer" android:layout_marginBottom="@dimen/two_fac_button_margin_small" style="@style/TwoFacLinkStyle" />

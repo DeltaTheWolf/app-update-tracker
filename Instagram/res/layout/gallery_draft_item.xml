@@ -2,6 +2,8 @@
 <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@id/gallery_draft_item_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <View android:id="@id/gallery_draft_item_selection_overlay" android:background="@color/black_50_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <View android:layout_gravity="bottom" android:background="@drawable/stories_gallery_draft_item_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/captured_drafts_item_gradient_height" />
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/gallery_draft_item_selection_circle" android:padding="@dimen/quick_capture_gallery_grid_item_selection_circle_padding" android:visibility="gone" android:layout_width="@dimen/quick_capture_gallery_grid_item_selection_circle_size" android:layout_height="@dimen/quick_capture_gallery_grid_item_selection_circle_size" android:scaleType="fitCenter" />
     <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/gallery_draft_item_lifespan" android:paddingBottom="@dimen/captured_drafts_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="0.5" android:shadowRadius="40.0" android:fontFamily="sans-serif-medium" />
 </FrameLayout>

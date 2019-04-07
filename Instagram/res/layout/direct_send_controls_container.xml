@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/capture_controls_send_button_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/capture_controls_send_button_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:id="@id/direct_reply_avatar_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/direct_send" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
         <ViewStub android:id="@id/direct_reply_avatar_button_stub" android:layout_width="@dimen/quick_capture_shutter_button_inner_size" android:layout_height="@dimen/quick_capture_shutter_button_inner_size" android:layout_marginBottom="4.0dip" />
@@ -7,4 +7,4 @@
     </LinearLayout>
     <ViewStub android:id="@id/direct_audience_upgrade_button_container_stub" android:layout="@layout/direct_audience_upgrade_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/direct_reply_avatar_button_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/direct_reply_avatar_button_container" />
     <ViewStub android:id="@id/recipient_view_mode_picker_stub" android:layout="@layout/recipient_view_mode_picker" android:layout_width="wrap_content" android:layout_height="@dimen/direct_reply_view_mode_picker_height" app:layout_constraintTop_toBottomOf="@id/direct_reply_avatar_button_container" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

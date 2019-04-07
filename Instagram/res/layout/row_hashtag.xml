@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/row_hashtag_container" android:background="@drawable/bg_simple_row" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:layout_width="fill_parent" android:layout_height="?searchRowHeight" android:minHeight="?searchRowHeight" android:paddingStart="?searchRowPadding"
+<FrameLayout android:id="@id/row_hashtag_container" android:background="@drawable/bg_simple_row" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:layout_width="fill_parent" android:layout_height="?searchRowHeight" android:minHeight="?searchRowHeight" android:paddingStart="?searchRowPadding" android:paddingEnd="?searchRowPadding"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <include layout="@layout/search_profile_image" />

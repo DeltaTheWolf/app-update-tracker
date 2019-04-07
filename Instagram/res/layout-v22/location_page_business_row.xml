@@ -8,6 +8,6 @@
             <TextView android:textSize="@dimen/font_small" android:ellipsize="end" android:id="@id/subtitle" android:paddingLeft="@dimen/row_button_padding" android:paddingRight="@dimen/row_button_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/row_button_padding" android:paddingEnd="@dimen/row_button_padding" />
         </LinearLayout>
     </LinearLayout>
-    <include android:id="@id/follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" layout="@layout/follow_button_medium" />
+    <include android:layout_gravity="center" android:id="@id/follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" layout="@layout/follow_button_medium" />
     <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_vertical" android:id="@id/view_profile" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" style="?wrappedSecondaryButtonStyle" />
 </LinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/container_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4">
         <ImageView android:layout_gravity="center_horizontal" android:id="@id/group_facepile_imageview" android:paddingLeft="@dimen/logo_image_horizontal_padding" android:paddingRight="@dimen/logo_image_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_linking_upsell_logo" android:scaleType="fitCenter" android:adjustViewBounds="true" />
@@ -7,4 +7,4 @@
         <TextView android:paddingLeft="@dimen/detail_text_horizontal_padding" android:paddingRight="@dimen/detail_text_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_linking_main_account_set_body" android:textAlignment="center" style="@style/BodyDetail" />
         <com.instagram.ui.widget.progressbutton.ProgressButton android:layout_gravity="center" android:id="@id/next_button" android:background="?nuxActionButtonBackground" android:layout_width="300.0dip" android:layout_height="@dimen/next_button_height" android:layout_marginTop="36.0dip" android:text="@string/done" app:progressBarTint="@color/blue_5" />
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

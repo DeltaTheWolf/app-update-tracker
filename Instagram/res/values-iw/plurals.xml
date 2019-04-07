@@ -158,6 +158,10 @@
         <item quantity="other">%1$d ימים</item>
         <item quantity="one">יום</item>
     </plurals>
+    <plurals name="like_count">
+        <item quantity="other">%1$d לייקים</item>
+        <item quantity="one">לייק אחד</item>
+    </plurals>
     <plurals name="live_broadcast_total_views">
         <item quantity="other">%1$s צופים</item>
         <item quantity="one">צופה אחד</item>
@@ -280,6 +284,9 @@
         <item quantity="other">הפוסטים הוסרו</item>
         <item quantity="one">הפוסט הוסר</item>
     </plurals>
+    <plurals name="stories_gallery_drafts_delete_confirmation">
+        <item quantity="other">מחק/י %1$d פריטים</item>
+    </plurals>
     <plurals name="thread_title_x_y_and_n_others">
         <item quantity="other">%1$s, %2$s ו-%3$s נוספים</item>
         <item quantity="one">%1$s, %2$s ואחד נוסף</item>
@@ -291,6 +298,10 @@
     <plurals name="unseen_posts">
         <item quantity="other">%1$d פוסטים חדשים</item>
         <item quantity="one">פוסט חדש אחד</item>
+    </plurals>
+    <plurals name="view_count">
+        <item quantity="other">%1$d צפיות</item>
+        <item quantity="one">צפייה אחת</item>
     </plurals>
     <plurals name="x_and_n_others">
         <item quantity="other">%1$s ו-&lt;b>%2$s נוספים&lt;/b></item>
@@ -321,7 +332,6 @@
     </plurals>
     <plurals name="x_hours">
         <item quantity="other">%1$s שעות</item>
-        <item quantity="one">שעה %1$s</item>
     </plurals>
     <plurals name="x_hours_ago">
         <item quantity="other">לפני %1$s שעות</item>
@@ -358,7 +368,8 @@
     </plurals>
     <plurals name="x_weeks">
         <item quantity="other">%1$s שבועות</item>
-        <item quantity="one">שבוע %1$s</item>
+        <item quantity="one">שבוע</item>
+        <item quantity="two">שבועיים</item>
     </plurals>
     <plurals name="x_weeks_ago">
         <item quantity="other">לפני %1$s שבועות</item>

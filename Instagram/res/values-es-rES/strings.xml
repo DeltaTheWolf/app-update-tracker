@@ -66,8 +66,8 @@
     <string name="add_location">Añadir ubicación</string>
     <string name="add_partner">Añadir socio</string>
     <string name="add_partner_account">Añadir socio</string>
-    <string name="add_partner_post_description">Cuando etiquetes a un socio comercial en una publicación, se añadirán la etiqueta \"Patrocinado por\" y su nombre. Los socios comerciales pueden ver los resultados en esta publicación. %1$s.</string>
-    <string name="add_partner_story_description">Cuando etiquetes a un socio comercial en una historia, se añadirán la etiqueta \"Patrocinado por\" y su nombre. Los socios comerciales pueden ver los resultados en esta historia. %1$s.</string>
+    <string name="add_partner_post_description">Cuando etiquetes a un socio comercial en una publicación, se añadirán la etiqueta \"Colaboración pagada con\" y su nombre. Los socios comerciales pueden ver los resultados en esta publicación. %1$s.</string>
+    <string name="add_partner_story_description">Cuando etiquetes a un socio comercial en una historia, se añadirán la etiqueta \"Colaboración pagada con\" y su nombre. Los socios comerciales pueden ver los resultados en esta historia. %1$s.</string>
     <string name="add_phone_email_web_and_location">Añade un número de teléfono, un correo electrónico o una ubicación para que los clientes puedan ponerse en contacto contigo directamente desde un botón de tu perfil.</string>
     <string name="add_phone_number">Introduce tu número de teléfono</string>
     <string name="add_power_tools">Añadir Instagram Power Tools</string>
@@ -95,6 +95,7 @@
     <string name="address_book_contacts_invite_options_label_with_context_2">Elige los contactos que quieres invitar</string>
     <string name="address_book_contacts_loading_error">Se ha producido un problema al invitar a los contactos. Inténtalo de nuevo más tarde.</string>
     <string name="address_book_contacts_screen_title_with_context_1">Elegir contactos</string>
+    <string name="address_line_2">Apartamento u oficina (opcional)</string>
     <string name="ads_body">Consulta los anuncios que tienes en circulación.</string>
     <string name="ads_manager_null_state_subtitle">No tienes ninguna promoción activa ni finalizada.</string>
     <string name="ads_setting_view_body">Ver los anuncios que tienes en circulación en este momento en un solo lugar ayuda a las personas a obtener más información sobre tu cuenta.</string>
@@ -212,7 +213,7 @@
     <string name="bugreporter_load_external_screenshot_error">No se ha podido cargar la imagen.</string>
     <string name="bugreporter_low_memory_screenshot_error">\"Lo sentimos, pero no hay memoria suficiente para hacer una captura de pantalla.\"</string>
     <string name="bugreporter_not_now">Ahora no</string>
-    <string name="bugreporter_rageshake_hint">Explica brevemente lo que ha sucedido.</string>
+    <string name="bugreporter_rageshake_hint">¿Cuál ha sido el problema?</string>
     <string name="bugreporter_rageshake_video_quality_hint">Explica brevemente por qué la calidad del vídeo o el audio no es la que esperabas.</string>
     <string name="bugreporter_save_annotated_screenshot_error">No se ha podido guardar la captura de pantalla. Vuelve a intentarlo.</string>
     <string name="bugreporter_send_success">Error de %1$s enviado</string>
@@ -222,6 +223,7 @@
     <string name="bugreporter_wait">Preparando el informe de errores...</string>
     <string name="business_account_splash_subtitle">Una cuenta de empresa gratuita te ofrece más herramientas para hacer crecer tu negocio.</string>
     <string name="business_account_splash_title">Obtener una cuenta empresarial de Instagram</string>
+    <string name="business_address_optional">Dirección comercial (opcional)</string>
     <string name="business_attribute_sync_toggle_label">Usar esta información en la página de Facebook</string>
     <string name="business_email_consent">Añade la dirección de correo electrónico donde quieres recibir los mensajes que se envíen a tu empresa. Aparecerá un botón de correo electrónico de contacto en tu perfil.</string>
     <string name="business_is_not_on_instagram">Esta empresa aún no está en Instagram. ¿Quieres verla en Facebook?</string>
@@ -229,8 +231,11 @@
     <string name="business_phone_consent">Añade el número de teléfono donde quieres recibir las llamadas que se hagan a tu empresa. Este número no debe estar vinculado con una cuenta de Instagram existente.</string>
     <string name="business_profile_linked_to_pages">Los perfiles de empresa en Instagram están vinculados a las páginas de Facebook y están sujetos a sus %1$s.</string>
     <string name="business_settings_redesign">Empresa</string>
+    <string name="business_signup_account_option_title">Regístrate para obtener una cuenta empresarial</string>
+    <string name="business_signup_address_hint">Dirección comercial</string>
     <string name="business_signup_choose_username_desc">Elige un nombre de usuario para tu cuenta empresarial. Lo puedes cambiar en cualquier momento.</string>
     <string name="business_signup_continue_stealing_phone_number">Seguir</string>
+    <string name="business_signup_email_hint">Dirección de correo electrónico de la empresa</string>
     <string name="business_signup_name_password_subtitle">Añade el nombre de tu empresa para que las personas puedan encontrarte. Este nombre aparecerá en tu perfil.</string>
     <string name="business_signup_password_description">Introduce una combinación de al menos seis caracteres. Será la contraseña de tu cuenta empresarial.</string>
     <string name="business_signup_splash_title">Crear cuenta empresarial</string>
@@ -318,7 +323,10 @@
     <string name="color_picker_nux">Toca de nuevo para ajustar la intensidad</string>
     <string name="comment">Comentario</string>
     <string name="comment_hint">Añade un comentario...</string>
+    <string name="comment_offensive_alert_message_new">Es posible que los demás lo encuentren ofensivo.</string>
     <string name="comment_undo_button">Deshacer</string>
+    <string name="comment_warning_bottom_sheet_para1">Estamos pidiendo a las personas que reconsideren los comentarios que parecen similares a otros que se han denunciado</string>
+    <string name="comment_warning_bottom_sheet_para2">Si hemos cometido un error,</string>
     <string name="commenting_disabled_hint">Se han limitado los comentarios en esta publicación.</string>
     <string name="commenting_limited_to_followers">Solo tus seguidores pueden añadir comentarios. Todo el mundo puede ver los comentarios.</string>
     <string name="commenting_limited_to_followers_and_following">Solo tus seguidores y las personas a las que siguen pueden añadir comentarios. Todo el mundo puede ver los comentarios.</string>
@@ -425,7 +433,6 @@
     <string name="creator_description_title_profile">Controles de perfiles flexibles</string>
     <string name="credit_card_expires">Caducidad: %1$s/%2$s</string>
     <string name="crop_video_subtext">Recorta tu vídeo</string>
-    <string name="cta_section_checkout_label">Pagar en Instagram</string>
     <string name="daily_quota_exceeded_dialog_body">Has programado un recordatorio de %1$s. Hoy ya has usado Instagram durante %2$s, así que recibirás el recordatorio a partir de mañana.</string>
     <string name="daily_quota_reached_dialog_title">Ya has pasado %1$s en Instagram hoy</string>
     <string name="daily_reminder_set_daily_usage_exceeded_body">El recordatorio diario se ha programado para %1$s. Ya has superado este tiempo hoy, por lo que recibirás un recordatorio mañana.</string>
@@ -462,6 +469,7 @@
     <string name="delta_password_change_subtitle">Es posible que alguien tenga tu contraseña, así que cerraremos todas las sesiones. Cualquier persona que intente iniciar sesión en tu cuenta dejará de tener acceso.</string>
     <string name="delta_password_change_title">Cambia tu contraseña para proteger tu cuenta</string>
     <string name="dial_element_capture_format_reverse">Retroceder</string>
+    <string name="dialog_always_share_to_facebook">Compartir siempre en Facebook</string>
     <string name="dialog_block_user_message">No podrá encontrar tu perfil, tus publicaciones ni tu historia en Instagram. La plataforma no le enviará ninguna notificación a esta persona para informarle de que la has desbloqueado.</string>
     <string name="dialog_share_to_your_facebook_story_content">A partir de ahora, las fotos y los vídeos que compartas en tu historia también aparecerán en tu historia de Facebook. Puedes actualizar esta configuración cuando quieras.</string>
     <string name="dialog_turn_on_facebook_sharing_content">A partir de ahora, las fotos y los vídeos que publiques o añadas a tu historia en Instagram se compartirán en tu cuenta de Facebook. Puedes actualizar esta configuración cuando quieras.</string>
@@ -484,7 +492,6 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_confirm_button">Mover a las solicitudes</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_message">Este mensaje se moverá a la bandeja de solicitudes. Puedes volver a moverlo a la bandeja de entrada cuando quieras.</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_title">¿Mover a la bandeja de solicitudes?</string>
-    <string name="direct_chat">Chatear</string>
     <string name="direct_create_chat_shortcut">Añadir acceso directo a la pantalla de inicio</string>
     <string name="direct_details_error">No se han podido cargar los detalles de la conversación. Vuelve a intentarlo.</string>
     <string name="direct_digest_mentioned_you_story">Te ha mencionado en una historia</string>
@@ -627,6 +634,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">Se te ha etiquetado como socio comercial</string>
     <string name="direct_reel_mention_sender_info">Has mencionado a %1$s en tu historia</string>
     <string name="direct_reel_mention_sender_info_branded_content">Has etiquetado a %1$s como socio comercial</string>
+    <string name="direct_reel_question_response_creator_info">Ha respondido a tu pregunta</string>
+    <string name="direct_reel_question_response_sender_info">Has respondido a su pregunta</string>
     <string name="direct_reel_reaction_recipient_info">Ha reaccionado a la reacción %1$s de tu historia</string>
     <string name="direct_reel_reaction_sender_info">Has reaccionado a la reacción %1$s de su historia</string>
     <string name="direct_reel_reply_receiver_highlight_info">Ha respondido a tu historia destacada</string>
@@ -722,7 +731,7 @@
     <string name="disconnect_contacts">Desconectar los contactos</string>
     <string name="disconnect_contacts_dialog_title">¿Quieres desconectar los contactos?</string>
     <string name="discover_people">Descubrir personas</string>
-    <string name="discovery_item_post_live_label">Transmitido en directo</string>
+    <string name="discovery_item_post_live_label">HA TRANSMITIDO EN DIRECTO</string>
     <string name="discovery_surface_button_description">Abrir superficie de sugerencias de efectos</string>
     <string name="dismiss_user">Rechazar usuario</string>
     <string name="dont_ask_again">No volver a preguntarme</string>
@@ -738,10 +747,10 @@
     <string name="edit_your_close_friends_button_continue">Editar lista de mejores amigos</string>
     <string name="edits_not_saved">No se han guardado los cambios. Vuelve a intentarlo.</string>
     <string name="ellipsis_more">…más</string>
+    <string name="email">Dirección de correo electrónico</string>
     <string name="email_hint">Dirección de correo electrónico</string>
     <string name="email_invalid">La dirección de correo electrónico no es válida</string>
     <string name="email_not_valid">Introduce un correo electrónico válido.</string>
-    <string name="email_register">Introduce tu dirección de correo electrónico</string>
     <string name="email_sent">Hemos enviado un correo a la dirección de correo electrónico de tu cuenta. Consúltalo para continuar. Si sigues teniendo problemas, consulta el siguiente artículo: %1$s.</string>
     <string name="email_sent_short">Mensaje enviado</string>
     <string name="emoji_section_title">Emoticonos</string>
@@ -780,6 +789,7 @@
     <string name="failed_to_detect_location">No se encuentra el lugar</string>
     <string name="failed_to_load_highlight_message">No se ha podido cargar el elemento destacado</string>
     <string name="failed_to_load_video_toast">Este vídeo no se ha podido cargar.</string>
+    <string name="family_name">Apellidos</string>
     <string name="fb_data_policy">Restricciones del uso de datos</string>
     <string name="fb_friend_tag_tooltip_text">Etiqueta a tus amigos de Facebook para invitarles a ver esta publicación</string>
     <string name="feed_auto_xpost_to_fb_explanation">Comparte automáticamente tus publicaciones con fotos y vídeos en Facebook.</string>
@@ -787,6 +797,7 @@
     <string name="feed_comment_undo_button">Deshacer</string>
     <string name="feed_controls_allow_message_replies_description">Elige quién puede responder a tus publicaciones de forma privada.</string>
     <string name="feed_controls_settings_title">Controles de la sección de noticias</string>
+    <string name="feed_emoji_see_more_button_label">Toca para ver más emoticonos</string>
     <string name="feed_refereshed">Se ha actualizado el contenido</string>
     <string name="feed_settings_viewers_choose_locations_description">Puedes seleccionar países específicos en los que se podrá ver tu publicación.</string>
     <string name="feed_tagging_upsell_dialog_message">Parece una publicación de contenido de marca. ¿Quieres añadir una etiqueta para ayudar a nuestra comunidad a comprender qué publicaciones son asociaciones entre empresas y creadores?</string>
@@ -842,9 +853,13 @@
     <string name="friend_list_recently_added">Te han añadido recientemente</string>
     <string name="friends_sticker_already_added_message">Ya has añadido este sticker.</string>
     <string name="friends_sticker_instructions">Cuando añades este sticker a una historia, eliges quién puede verla.</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">Las donaciones no pueden superar los %1$s</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">Importe de la donación</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">Has hecho una donación</string>
     <string name="fundraiser_sticker_search_following_section_title">Siguiendo</string>
     <string name="fundraiser_sticker_subtitle">Colaborando con %1$s</string>
+    <string name="gallery_empty_state_description">Si tienes fotos y vídeos en tu dispositivo, puedes compartirlos en Instagram.</string>
+    <string name="gallery_empty_state_title">Tus fotos y vídeos</string>
     <string name="gallery_photo_thumbnail">Miniatura de foto</string>
     <string name="gallery_sticker_description">Sticker en la galería</string>
     <string name="gallery_sticker_grid_empty">NO HAY FOTOS NI VÍDEOS</string>
@@ -852,6 +867,7 @@
     <string name="gallery_video_thumbnail">Miniatura de vídeo</string>
     <string name="gating_grid_photo_label">Miniatura de foto oculta en la fila %1$d y la columna %2$d</string>
     <string name="gating_grid_video_label">Miniatura de vídeo oculta en la fila %1$d y la columna %2$d</string>
+    <string name="gdpr_business_signup_option_title">Añade una cuenta empresarial</string>
     <string name="gdpr_download_your_data">Descarga tus datos</string>
     <string name="gdpr_photos_and_videos_of_you">Fotos y vídeos en los que apareces</string>
     <string name="gdpr_switch_to_business_account">Cambio a cuenta comercial</string>
@@ -900,8 +916,6 @@
     <string name="hours">Horas</string>
     <string name="how_would_you_like_to_be_reached">¿Cómo quieres que las personas se pongan en contacto contigo?</string>
     <string name="ig_time_picker_am">a.m.</string>
-    <string name="iglive_caption_hint">Añade un título para los espectadores...</string>
-    <string name="iglive_captioned_notification">%1$s está en directo: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">Has participado en el vídeo en directo de %1$s.</string>
     <string name="iglive_cobroadcast_end_title">¡Gracias por unirte!</string>
     <string name="iglive_livewith_notification">%1$s está en directo con %2$s.</string>
@@ -970,6 +984,7 @@
     <string name="impressions_explanation">Número total de veces que se ha visto la publicación.</string>
     <string name="improve">¿Qué deseas que mejoremos?</string>
     <string name="in_app_signup_value_prop_title">Regístrate para usar las compras en Instagram</string>
+    <string name="inbox_folder_move_to_general">Mover a \"General\"</string>
     <string name="inline_add_highlight_title">Añadir a las historias destacadas</string>
     <string name="inline_added_notif_title">Se ha añadido a %1$s</string>
     <string name="inline_removed_notif_title">Se ha eliminado de %1$s</string>
@@ -1050,9 +1065,6 @@
     <string name="live_nux_title">En directo en Instagram</string>
     <string name="live_qa_label">Sesión de preguntas y respuestas</string>
     <string name="live_starting_live">¡Estás transmitiendo en directo!</string>
-    <string name="live_subscribe_request_failed_to_send">La suscripción no se ha realizado correctamente.</string>
-    <string name="live_subscribe_sent_system_comment">Puedes desactivar esta opción cuando quieras desde su perfil.</string>
-    <string name="live_subscribe_system_comment">Recibe notificaciones para cada vídeo en directo de %1$s.</string>
     <string name="live_title">En directo</string>
     <string name="live_unpin_comment">Desmarcar comentario</string>
     <string name="live_video_call_cannot_start_description">No puedes iniciar un vídeo en directo mientras estás en un chat de vídeo.</string>
@@ -1199,11 +1211,7 @@
     <string name="nux_invite_preview">&lt;b>%1$s&lt;/b> te ha invitado a unirte a Instagram.</string>
     <string name="nux_main_feed_empty_subtitle">Cuando sigas a alguien, podrás ver las fotos y los vídeos que publica aquí.</string>
     <string name="nux_main_feed_empty_subtitle_active">Sigue a personas para empezar a ver las fotos y los vídeos que comparten.</string>
-    <string name="nux_one_tap_upsell_detail_save">Guardaremos tu información de inicio de sesión para que no tengas que escribirla cuando vuelvas a entrar en este dispositivo.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">Cuando entres con este teléfono, simplemente toca tu foto del perfil en lugar de escribir toda la información de inicio de sesión.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">La próxima vez que entres con este teléfono, simplemente toca tu foto del perfil en lugar de escribir toda la información de inicio de sesión.</string>
-    <string name="nux_one_tap_upsell_title_save">Guardar información de inicio de sesión</string>
-    <string name="nux_one_tap_upsell_title_variant1">Entra de forma más sencilla la próxima vez</string>
+    <string name="nux_one_tap_upsell_detail">La próxima vez que entres con este teléfono, simplemente toca tu foto del perfil en lugar de escribir toda la información de inicio de sesión.</string>
     <string name="nux_silent_audio_text">Este vídeo no tiene sonido</string>
     <string name="offline_comment_nux">No estás conectado. Los comentarios se añadirán cuando te conectes.</string>
     <string name="offline_follow_nux_title">Seguirás a %1$s cuando vuelvas a estar conectado.</string>
@@ -1218,7 +1226,6 @@
     <string name="one_tap_user_row_login">Entrar</string>
     <string name="only_author_can_see_like_count">Solo %1$s puede ver cuántas personas han indicado que les gusta esta publicación.</string>
     <string name="only_you_can_see_like_and_view_count">Solo tú puedes ver el número total de Me gusta y reproducciones de tu vídeo.</string>
-    <string name="only_you_can_see_like_count">Solo tú puedes ver el número total de Me gusta de tu publicación.</string>
     <string name="open_appstore_error">No hemos podido abrir la aplicación en Google Play.</string>
     <string name="open_link_generic_error">Se ha producido un error.</string>
     <string name="open_map_error">No se ha podido abrir el mapa.</string>
@@ -1264,7 +1271,6 @@
     <string name="phone_number_dialog_body">Para activarla, debes añadir un número de teléfono a la cuenta.</string>
     <string name="phone_number_dialog_confirm_button_text">Añadir número</string>
     <string name="phone_number_toast_number_required">Se requiere un número de teléfono</string>
-    <string name="phone_register">Introduce tu número de teléfono</string>
     <string name="photo_edit_error_message">Ha habido un problema al editar la foto. Se ha enviado un informe a Instagram.</string>
     <string name="photo_thumbnail">Miniatura de foto</string>
     <string name="photos_and_videos_of_you">Fotos y vídeos en los que apareces</string>
@@ -1340,6 +1346,10 @@
     <string name="profile_photo_added_title">Se ha añadido la foto del perfil</string>
     <string name="profile_picture_changed">Ha cambiado tu foto del perfil.</string>
     <string name="profile_picture_download_failed">Error al descargar la foto del perfil</string>
+    <string name="promote_audience_header">Selecciona la audiencia objetivo</string>
+    <string name="promote_budget_duration_header">Tu gasto total es de %1$s durante %2$d días</string>
+    <string name="promote_create_new_audience_subtitle">Introduce manualmente tus opciones de segmentación</string>
+    <string name="promote_create_new_audience_title">Crea la tuya</string>
     <string name="promote_error_claim_page_label">Solicitar página</string>
     <string name="promote_error_description_network_error">Hay un problema en nuestro sistema que nos impide promocionar la publicación en este momento. Vuelve a intentarlo más tarde.</string>
     <string name="promote_error_title_network_error">Se ha producido un error</string>
@@ -1364,6 +1374,8 @@
     <string name="question_sticker_question_music_prompt_last_listened">¿Cuál ha sido la última canción que has escuchado?</string>
     <string name="question_sticker_tray_description">Sticker de pregunta</string>
     <string name="quiz_responder_subtitle_text">ha respondido \"%1$s\"</string>
+    <string name="quiz_sticker_add_option_hint">Añadir</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">Añade dos opciones como mínimo</string>
     <string name="rageshake_disable_option">Desactivar \"Sacudida\"</string>
     <string name="rageshake_title">Informar de un problema</string>
     <string name="rageshake_video_quality_issue">Problema con la calidad del vídeo</string>
@@ -1382,7 +1394,6 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">Parece que ya existe una cuenta con esta dirección de correo electrónico. Podemos intentar que accedas a ella con la información de tu cuenta de Google  .</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">Parece que este nombre de usuario está vinculado a una dirección de Gmail. Podemos intentar que accedas a ella con la información de tu cuenta de Google  .</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">Parece que ya has guardado información de inicio de sesión para esta cuenta.</string>
-    <string name="reel_ad4ad_privacy_subtitle">Solo tú tienes acceso a esta vista previa</string>
     <string name="reel_bakeoff_thank_you_title">Gracias por informarnos.</string>
     <string name="reel_dashboard_add_to_story_entry_point_label">Añade contenido a tu historia</string>
     <string name="reel_dashboard_cta_add_to_highlight">Añádela a las historias destacadas</string>
@@ -1396,6 +1407,7 @@
     <string name="reel_dashboard_viewers_section_title">ESPECTADORES</string>
     <string name="reel_media_added_to_close_friends">Se ha añadido a \"Mejores amigos\"</string>
     <string name="reel_media_added_to_story">Se ha añadido a la historia</string>
+    <string name="reel_quiz_responders_list_title">Han respondido</string>
     <string name="reel_reshares_empty_state_title">Esta publicación aún no se ha vuelto a compartir públicamente</string>
     <string name="reel_reshares_viewer_title">Contenido público actual que se ha vuelto a compartir</string>
     <string name="reel_save_story_success">Vídeo guardado</string>
@@ -1455,6 +1467,7 @@
     <string name="removing_from_highlights_progress">Eliminando de las historias destacadas...</string>
     <string name="reply_hint">Añade una respuesta...</string>
     <string name="report">Denunciar</string>
+    <string name="report_a_problem_label">Informar de un problema</string>
     <string name="report_ad">Denunciar anuncio</string>
     <string name="report_as_ip_violation">¿Denunciar como infracción de la propiedad intelectual?</string>
     <string name="report_business">Denunciar empresa</string>
@@ -1549,13 +1562,13 @@
     <string name="see_why">Ver causa</string>
     <string name="seen_users_header">Registrado</string>
     <string name="select_a_location">Selecciona una ubicación</string>
-    <string name="select_category">Selecciona una categoría</string>
     <string name="selected_highlights_tab">Seleccionado</string>
     <string name="selected_max_items">El límite es de %1$d fotos o vídeos.</string>
     <string name="self_profile_empty_body">Cuando compartas fotos y vídeos, aparecerán en tu perfil.</string>
     <string name="self_profile_empty_cta">¡Comparte tu primera foto o vídeo!</string>
     <string name="set_daily_reminder_subtitle">Te enviaremos un recordatorio cuando haya pasado el tiempo que has configurado.</string>
     <string name="set_main_account">Definir cuenta principal</string>
+    <string name="set_up_business_account">Configura tu cuenta empresarial</string>
     <string name="settings_viewers_choose_locations_feature_off">Desactivada</string>
     <string name="setup_your_close_friends_button_continue">Añadir a la lista</string>
     <string name="setup_your_close_friends_text">Comparte publicaciones e historias con tus mejores amigos. Añade personas a tu lista para compartir contenido solo con ellas.</string>
@@ -1589,6 +1602,7 @@
     <string name="shop_on_profile_row_continue_shopping">Continuar comprando</string>
     <string name="shop_this_post">COMPRAR ESTOS PRODUCTOS</string>
     <string name="shopping">Compras</string>
+    <string name="shopping_checkout_destination_title">Comprar con la función \"Pagar\"</string>
     <string name="shopping_destination_title">Tienda</string>
     <string name="shopping_merchant_remove_tag_dialog_message">Se eliminará la etiqueta de producto de la publicación. Esta ya no podrá verse en la tienda de tu perfil.</string>
     <string name="shopping_on_profile_null_state_message">En este momento, solo tú puedes verlo. Cuando crees una publicación con productos etiquetados, las personas la verán aquí.</string>
@@ -1645,7 +1659,6 @@
     <string name="structure">Textura</string>
     <string name="subtitle_default_people_facebook">Seguir a tus amigos</string>
     <string name="suggest_business_title">Conecta con la comunidad</string>
-    <string name="suggested_live_and_post_live_videos">Ver siguiente</string>
     <string name="suggested_live_videos">En directo ahora</string>
     <string name="suggested_username_allcaps_title_get_started_as">EMPIEZA EN INSTAGRAM COMO</string>
     <string name="suggested_username_subtitle">Busca personas a las que seguir y empieza a compartir fotos. Puedes cambiar tu nombre de usuario cuando quieras.</string>
@@ -1758,6 +1771,7 @@
     <string name="two_fac_confirm_phone_number_fragment_body">Introduce el código de seis dígitos que hemos enviado al número terminado en %1$s para acabar de configurar la autenticación en dos pasos.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">Introduce el código de seis dígitos que ha generado la aplicación de autenticación.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">Introduce el código</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">La próxima vez que entres no te pediremos el código</string>
     <string name="two_fac_contact_form_additional_details_hint">Añade cualquier detalle que nos ayude a resolver este problema más rápidamente.</string>
     <string name="two_fac_contact_form_signup_email_hint">Correo electrónico registrado</string>
     <string name="two_fac_contact_form_submitted_dialog_title">Se ha enviado la solicitud de asistencia</string>
@@ -1830,6 +1844,7 @@
     <string name="user_signup_message">¿No tienes una cuenta? &lt;b>Regístrate&lt;/b>.</string>
     <string name="username_hint_access">Nombre de usuario, correo electrónico o número de teléfono</string>
     <string name="username_hint_login">Número de teléfono, correo electrónico o nombre de usuario</string>
+    <string name="username_lock_help_text">Se bloqueará tu nombre de usuario antiguo durante 14 días, en los que podrás volver a cambiarlo. Después de este período, cualquier persona podrá usarlo.</string>
     <string name="username_placeholder">nombre de usuario</string>
     <string name="valid_address_to_map">Añade una dirección válida para que las personas puedan navegar hasta tu ubicación en el mapa.</string>
     <string name="verification_code_instructions">Introduce el código de confirmación de seis dígitos que hemos enviado al %1$s. Si no lo has recibido, podemos &lt;b>volver a enviarlo&lt;/b>.</string>
@@ -1926,7 +1941,6 @@
     <string name="x_and_others">%1$s y otras personas</string>
     <string name="x_and_others_bold">%1$s y &lt;b>otras personas&lt;/b></string>
     <string name="x_problems">Parece que %1$s está experimentando ciertos problemas. Vuelve a intentarlo en unos instantes.</string>
-    <string name="x_y_and_others">%1$s, %2$s y otros</string>
     <string name="x_y_and_others_bold">%1$s, %2$s y &lt;b>otras personas&lt;/b></string>
     <string name="x_y_z_and_others">%1$s, %2$s, %3$s y otras personas</string>
     <string name="your_business_profile_message">Añade botones \"Contactar\" para que los clientes puedan enviarte un correo electrónico o llamarte por teléfono directamente desde tu perfil.</string>

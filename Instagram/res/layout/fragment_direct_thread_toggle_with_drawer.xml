@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout android:id="@id/direct_app_tabbed_navigation_root_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/direct_app_tabbed_navigation_root_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <include layout="@layout/fragment_direct_thread_toggle" />
     <FrameLayout android:layout_gravity="end" android:id="@id/direct_thread_drawer_fragment_container" android:background="?android:windowBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/direct_thread_drawer_fragment_container_margin" />
-</android.support.v4.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <include android:id="@id/direct_media_picker_tab_header" layout="@layout/direct_media_picker_header" />
     <include android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/direct_media_picker_tab_header" layout="@layout/layout_refreshablelistview" />
     <ImageView android:id="@id/direct_media_picker_retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@drawable/loadmore_icon_refresh" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/direct_media_picker_tab_header" />
     <com.instagram.ui.widget.spinner.SpinnerImageView android:id="@id/direct_media_picker_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@drawable/spinner_large" android:scaleType="centerCrop" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/direct_media_picker_tab_header" />
     <ViewStub android:id="@id/direct_media_picker_no_saved_collections" android:layout="@layout/media_picker_empty_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="30.0dip" app:layout_constraintTop_toBottomOf="@id/direct_media_picker_tab_header" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

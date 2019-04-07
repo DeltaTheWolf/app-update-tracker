@@ -206,6 +206,10 @@
     <string name="address_book_contacts_screen_title">संपर्कों को आमंत्रित करें</string>
     <string name="address_book_contacts_screen_title_with_context_1">संपर्क चुनें</string>
     <string name="address_book_contacts_screen_title_with_context_2">आमंत्रित करने के लिए संपर्क चुनें</string>
+    <string name="address_level_1">राज्य</string>
+    <string name="address_level_2">शहर</string>
+    <string name="address_line_1">पता</string>
+    <string name="address_line_2">अपार्टमेंट/सुइट (वैकल्पिक)</string>
     <string name="adjust">एडजस्ट करें</string>
     <string name="admin_contact_info">व्यवस्थापक की संपर्क जानकारी</string>
     <string name="ads_body">वे विज्ञापन देखें, जो आप अभी चला रहे हैं.</string>
@@ -452,7 +456,7 @@
     <string name="bugreporter_load_external_screenshot_wait">चित्र लोड हो रहा है…</string>
     <string name="bugreporter_low_memory_screenshot_error">\"एक स्क्रीनशॉट कैप्चर करने के लिए अपर्याप्त मेमोरी. क्षमा करें!\"</string>
     <string name="bugreporter_not_now">अभी नहीं</string>
-    <string name="bugreporter_rageshake_hint">संक्षेप में बताएँ कि क्या हुआ</string>
+    <string name="bugreporter_rageshake_hint">क्या गड़बड़ी हुई?</string>
     <string name="bugreporter_rageshake_video_quality_hint">संक्षेप में बताएँ कि वीडियो की गुणवत्ता या ऑडियो की गुणवत्ता आपकी अपेक्षा से कैसे अलग है.</string>
     <string name="bugreporter_save_annotated_screenshot_error">स्क्रीनशॉट सहेज नहीं सके. कृपया फिर से कोशिश करें.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">सहेजा जा रहा है...</string>
@@ -484,6 +488,7 @@
     <string name="business_profile">व्यावसायिक प्रोफ़ाइल</string>
     <string name="business_profile_linked_to_pages">Instagram पर व्यावसायिक प्रोफ़ाइल, Facebook पेज से लिंक होती हैं और उनकी %1$s के अधीन होती हैं.</string>
     <string name="business_settings_redesign">व्यापार</string>
+    <string name="business_signup_account_option_title">किसी व्यावसायिक खाते के लिए साइन अप करें</string>
     <string name="business_signup_address_hint">व्यावसायिक पता</string>
     <string name="business_signup_change_username">उपयोगकर्ता नाम बदलें</string>
     <string name="business_signup_choose_username_desc">अपने व्यवसाय खाते के लिए उपयोगकर्ता चुनें. आप इसे बाद में कभी भी बदल सकते हैं.</string>
@@ -634,6 +639,10 @@
     <string name="change_username_title">उपयोगकर्ता नाम बदलें</string>
     <string name="changes_saved">परिवर्तन सहेजे गए</string>
     <string name="check_connection_and_try_again">कृपया अपना कनेक्शन जाँचें और फिर से कोशिश करें.</string>
+    <string name="checkout_module_merchant_card_action_text">शॉप</string>
+    <string name="checkout_module_nux_message">अब आप Instagram से बाहर निकले बिना कुछ ब्रांड से खरीदारी कर सकते हैं.</string>
+    <string name="checkout_module_nux_title">Instagram पर चेकआउट आज़माएँ</string>
+    <string name="checkout_module_title">Instagram पर चेकआउट करें</string>
     <string name="choose_app_verify_flow">अपने आप कन्फ़र्म करें</string>
     <string name="choose_category">अपनी व्यावसायिक प्रोफ़ाइल के लिए श्रेणियाँ चुनें</string>
     <string name="choose_category_for_profile">अपनी प्रोफ़ाइल के लिए श्रेणी चुनें</string>
@@ -730,7 +739,13 @@
     <string name="comment_ellipsis_less">कम</string>
     <string name="comment_hint">एक टिप्पणी जोड़ें...</string>
     <string name="comment_offensive_alert_message">क्या आप वाकई इसे पोस्ट करना चाहते हैं?</string>
+    <string name="comment_offensive_alert_message_new">अन्य लोगों को यह आपत्तिजनक लग सकती है.</string>
     <string name="comment_undo_button">पहले जैसा करें</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">तो हमें बताएँ</string>
+    <string name="comment_warning_bottom_sheet_para1">हम लोगों को उन टिप्पणियों पर फिर से विचार करने के लिए कह रहे हैं, जो अन्य लोगों द्वारा रिपोर्ट की गईं टिप्पणियों से मिलती-जुलती लगती हैं</string>
+    <string name="comment_warning_bottom_sheet_para2">अगर हमसे कोई गलती हुई है,</string>
+    <string name="comment_warning_bottom_sheet_title">Instagram को एक सहायक स्थान बनाए रखना</string>
+    <string name="comment_warning_bottom_sheet_toast">फ़ीडबैक भेजा गया</string>
     <string name="commenting_disabled_hint">इस पोस्ट पर टिप्पणियाँ सीमित कर दी गई हैं.</string>
     <string name="commenting_limited_to_followers">केवल आपके फ़ॉलोअर ही टिप्पणियाँ जोड़ सकते हैं. टिप्पणियों को सभी लोग देख सकते हैं.</string>
     <string name="commenting_limited_to_followers_and_following">केवल आपके फ़ॉलोअर और आपके द्वारा फ़ॉलो किए जाने वाले लोग ही टिप्पणियाँ जोड़ सकते हैं. टिप्पणियों को सभी लोग देख सकते हैं.</string>
@@ -802,6 +817,7 @@
     <string name="connect_fb_and_agree">उपरोक्त बटन पर टैप करके और इनसाइट एक्सेस करके, आप हमारी %1$s के प्रति सहमति देते हैं.</string>
     <string name="connect_fb_get_insights">अपने फ़ॉलोअर के बारे में जानें और देखें कि आपकी पोस्ट कैसा प्रदर्शन कर रही हैं. हम आपकी अनुमति के बिना Facebook पर कुछ भी पोस्ट नहीं करेंगे.</string>
     <string name="connect_ig_to_fb_page_explain">लोगों के लिए आपको ढूँढना आसान बनाने के लिए अपने Instagram व्यवसाय खाते को किसी Facebook पेज से कनेक्ट करें. Instagram पर व्यावसायिक खातों को Facebook पेज से लिंक किया गया है और उन पर उनकी %1$s लागू हैं.</string>
+    <string name="connect_or_create">कनेक्ट करें या बनाएँ</string>
     <string name="connect_page_for_biz_tools">Instagram Business टूल का उपयोग करने वाले खाते किसी Facebook पेज से कनेक्ट हो सकते हैं. विज्ञापन बनाने के लिए पेज कनेक्शन आवश्यक होता है. अगर आपका पहले से कोई पेज है, तो हम आपकी जानकारी कॉपी कर देंगे, ताकि आप उसे संपादित कर सकें.</string>
     <string name="connect_page_for_power_tools">Instagram पावर टूल का उपयोग करने वाले खाते किसी Facebook पेज से कनेक्ट हो सकते हैं. विज्ञापन बनाने के लिए पेज कनेक्शन आवश्यक होता है. अगर आपका पहले से कोई पेज है, तो हम आपकी जानकारी कॉपी कर देंगे, ताकि आप उसे संपादित कर सकें.</string>
     <string name="connect_page_for_pro_tools">Instagram पेशेवर टूल का उपयोग करने वाले खाते किसी Facebook पेज से कनेक्ट हो सकते हैं. विज्ञापन बनाने के लिए पेज कनेक्शन आवश्यक होता है. अगर आपका पहले से कोई पेज है, तो हम आपकी जानकारी कॉपी कर देंगे, ताकि आप उसे संपादित कर सकें.</string>
@@ -1057,6 +1073,9 @@
     <string name="delta_login_review_was_me">यह मैं था</string>
     <string name="delta_login_review_was_not_me">ये मैं नहीं था</string>
     <string name="delta_password_change_confirm_new_password_hint">नया पासवर्ड कन्फ़र्म करें</string>
+    <string name="delta_password_change_error_match_failure">कृपया सुनिश्चित करें कि दोनों पासवर्ड एक से हों.</string>
+    <string name="delta_password_change_error_required_field_native">दोनों फ़ील्ड आवश्यक हैं.</string>
+    <string name="delta_password_change_error_required_field_react_native">यह फ़ील्ड आवश्यक है.</string>
     <string name="delta_password_change_footer">हमारा सुझाव है कि आप Instagram के लिए अपना अद्वितीय पासवर्ड बनाएँ और कम से कम एक नंबर और एक विशेष वर्ण शामिल करें.</string>
     <string name="delta_password_change_new_password_hint">नया पासवर्ड</string>
     <string name="delta_password_change_submit">सबमिट करें</string>
@@ -1068,6 +1087,7 @@
     <string name="dial_element_capture_format_music">संगीत</string>
     <string name="dial_element_capture_format_reverse">रिवाइंड करें</string>
     <string name="dial_element_capture_format_superzoom">सुपरज़ूम</string>
+    <string name="dialog_always_share_to_facebook">हमेशा Facebook से साझा करें</string>
     <string name="dialog_block_user_button">ब्लॉक करें</string>
     <string name="dialog_block_user_message">वे Instagram पर आपकी प्रोफ़ाइल, पोस्ट या कहानी को नहीं ढूँढ पाएँगे. Instagram उन्हें नहीं बताएगा कि आपने उन्हें ब्लॉक कर दिया है.</string>
     <string name="dialog_block_user_title">%1$s को ब्लॉक करें?</string>
@@ -1117,7 +1137,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">अनुरोधों में ले जाएँ?</string>
     <string name="direct_block_account">खाता ब्लॉक करें</string>
     <string name="direct_block_choices_block_account">खाता ब्लॉक करें</string>
-    <string name="direct_block_choices_block_messages">संदेशों को ब्लॉक करें</string>
+    <string name="direct_block_choices_ignore">अनदेखा करें</string>
     <string name="direct_block_user">उपयोगकर्ता को ब्लॉक करें</string>
     <string name="direct_blocked">ब्लॉक किया गया</string>
     <string name="direct_button_change_group_name">पूर्ण</string>
@@ -1130,6 +1150,7 @@
     <string name="direct_details_error">वार्तालाप विवरण लोड करने में असमर्थ. फिर से कोशिश करें.</string>
     <string name="direct_digest_active_today">आज सक्रिय है</string>
     <string name="direct_digest_active_yesterday">कल सक्रिय था</string>
+    <string name="direct_digest_are_active_now">%1$d अन्य लोग अभी सक्रिय हैं</string>
     <string name="direct_digest_is_active_now">अभी सक्रिय है</string>
     <string name="direct_digest_mentioned_you_story">कहानी में आपका उल्लेख किया</string>
     <string name="direct_digest_no_author_shared_product">एक उत्पाद साझा किया</string>
@@ -1158,6 +1179,7 @@
     <string name="direct_digest_shared_post">एक पोस्ट साझा की</string>
     <string name="direct_digest_shared_your_countdown">उनकी कहानी में आपका काउंटडाउन शेयर किया</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">आपको एक व्यावसायिक साझेदार के रूप में टैग किया गया</string>
+    <string name="direct_digest_user_is_active_now">%1$s अभी सक्रिय है</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s ने Direct एप्लिकेशन आमंत्रण भेजा है</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">Direct एप्लिकेशन आमंत्रण भेजा गया</string>
     <string name="direct_digest_user_sent_gif">%1$s ने एक GIF भेजा.</string>
@@ -1369,6 +1391,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">आपको एक व्यावसायिक साझेदार के रूप में टैग किया गया</string>
     <string name="direct_reel_mention_sender_info">आपने अपनी कहानी में %1$s का उल्लेख किया</string>
     <string name="direct_reel_mention_sender_info_branded_content">आपने %1$s को एक व्यावसायिक साझेदार के रूप में टैग किया</string>
+    <string name="direct_reel_question_response_creator_info">आपके प्रश्न का उत्तर दिया</string>
+    <string name="direct_reel_question_response_sender_info">आपने उनके प्रश्न का उत्तर दिया</string>
     <string name="direct_reel_reaction_recipient_info">आपकी कहानी पर प्रतिक्रिया दी %1$s</string>
     <string name="direct_reel_reaction_sender_info">आपने उनकी कहानी पर %1$s प्रतिक्रिया दी</string>
     <string name="direct_reel_reply_receiver_highlight_info">आपकी कहानी हाइलाइट का जवाब दिया</string>
@@ -1601,10 +1625,16 @@
     <string name="editable_profile_review_title">अपनी संपर्क जानकारी की समीक्षा करें</string>
     <string name="edited">संपादित</string>
     <string name="edits_not_saved">आपके संपादन सहेजे नहीं गए थे. कृपया फिर से कोशिश करें.</string>
-    <string name="effect_by_author">%2$s द्वारा &lt;b>%1$s&lt;/b></string>
-    <string name="effect_by_format">%1$s द्वारा</string>
-    <string name="effect_by_format_with_title">%2$s द्वारा %1$s</string>
     <string name="effect_created_by_format">&lt;b>%1$s&lt;/b> द्वारा बनाया गया</string>
+    <string name="effect_detail_more_button_label">और</string>
+    <string name="effect_detail_save_to_camera_button_label">कैमरे में सहेजे</string>
+    <string name="effect_detail_saved_to_camera_button_label">कैमरे में सहेजा गया</string>
+    <string name="effect_detail_share_button_label">इन्हें भेजें...</string>
+    <string name="effect_detail_view_try_it_button_label">इसे आज़माएँ</string>
+    <string name="effect_details_view_created_from_format">&lt;b>%1$s&lt;/b> से</string>
+    <string name="effect_from_author">%2$s की ओर से &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_format">%1$s से</string>
+    <string name="effect_from_format_with_title">%2$s से %1$s</string>
     <string name="eight_hours">8 घंटे</string>
     <string name="ellipsis_more">… और</string>
     <string name="email">ईमेल</string>
@@ -1613,10 +1643,8 @@
     <string name="email_invalid">ईमेल अमान्य है</string>
     <string name="email_not_available">यह ईमेल किसी अन्य खाते द्वारा ले लिया गया है.</string>
     <string name="email_not_valid">तृपया एक मान्य ईमेल डालें.</string>
-    <string name="email_register">अपना ईमेल पता डालें</string>
     <string name="email_sent">आपके खाते के ईमेल पते पर एक ईमेल भेजा गया है. जारी रखने के लिए कृपया अपना ईमेल जाँचें. अगर आपको अभी भी समस्याएँ हो रही हैं, तो कृपया %1$s पर जाएँ.</string>
     <string name="email_sent_short">ईमेल भेज दिया गया</string>
-    <string name="email_signup">ईमेल पते से साइन अप करें</string>
     <string name="email_sms_notification_settings">ईमेल और SMS सूचनाएँ</string>
     <string name="emails">ईमेल</string>
     <string name="emoji_not_allowed">पासवर्ड में इमोजी वर्ण शामिल हैं. कृपया कुछ और चुनें.</string>
@@ -1651,6 +1679,7 @@
     <string name="expired_link_dialog_title">वे लिंक जिनकी समय सीमा समाप्त हो चुकी है</string>
     <string name="explore_contextual_title">एक्सप्लोर करें</string>
     <string name="explore_description">खोजें और एक्सप्लोर करें</string>
+    <string name="explore_effects">प्रभाव एक्सप्लोर करें</string>
     <string name="explore_places">स्थान</string>
     <string name="explore_places_request_fail">स्थान लोड नहीं कर सके. फिर से कोशिश करें.</string>
     <string name="explore_topical_going_to_next">अगले पर जा रहे हैं</string>
@@ -1697,6 +1726,7 @@
     <string name="failed_to_load_highlight_message">हाइलाइट को लोड करने में विफल रहे</string>
     <string name="failed_to_load_photo_toast">क्षमा करें, इस फ़ोटो को लोड नहीं किया जा सकता.</string>
     <string name="failed_to_load_video_toast">क्षमा करें, यह वीडियो लोड नहीं किया जा सकता.</string>
+    <string name="family_name">उपनाम</string>
     <string name="favorites_tab_title">करीबी दोस्त</string>
     <string name="fb_connect_card_button_text">कनेक्ट करें</string>
     <string name="fb_connect_card_main_text">Facebook से जुड़ें</string>
@@ -1717,6 +1747,7 @@
     <string name="feed_controls_message_replies_setting_following">वे लोग जिन्हें आप फ़ॉलो करते हैं</string>
     <string name="feed_controls_message_replies_setting_off">बंद</string>
     <string name="feed_controls_settings_title">फ़ीड नियंत्रण</string>
+    <string name="feed_emoji_see_more_button_label">और इमोजी देखने के लिए टैप करें</string>
     <string name="feed_item_page_title">विज्ञापन</string>
     <string name="feed_product_pivots_view_shop_button">शॉप देखें</string>
     <string name="feed_refereshed">सामग्री रीफ़्रेश की गई</string>
@@ -1860,10 +1891,13 @@
     <string name="full_name_and_password_title">नाम और पासवर्ड</string>
     <string name="full_terms_rw">पूरी शर्तें</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">जारी रखें</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">दान, %1$s से ज़्यादा नहीं हो सकते</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">दान की राशि कम से कम %1$s होनी चाहिए</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">दान की राशि</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">अन्य</string>
     <string name="fundraiser_sticker_default_title">%1$s का अनुदान संचय</string>
     <string name="fundraiser_sticker_donate_button_text">दान करें</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">दान किया</string>
     <string name="fundraiser_sticker_search_following_section_title">फ़ॉलो कर रहे हैं</string>
     <string name="fundraiser_sticker_search_suggested_section_title">सुझाया गया</string>
     <string name="fundraiser_sticker_subtitle">%1$s की सहायता करना</string>
@@ -1886,7 +1920,7 @@
     <string name="gdpr_account_privacy">खाते की गोपनीयता</string>
     <string name="gdpr_activity_status">गतिविधि की स्थिति</string>
     <string name="gdpr_blocked_accounts">ब्लॉक किए गए खाते</string>
-    <string name="gdpr_business_signup_option_title">व्यावसायिक प्रोफ़ाइल के लिए साइन अप करें</string>
+    <string name="gdpr_business_signup_option_title">व्यावसायिक खाता जोड़ें</string>
     <string name="gdpr_close_friends_title">करीबी मित्र</string>
     <string name="gdpr_contacts_syncing_option_title">संपर्क सिंक करना</string>
     <string name="gdpr_data_download">डेटा डाउनलोड</string>
@@ -1915,6 +1949,7 @@
     <string name="get_started">शुरुआत करें</string>
     <string name="gif_sticker_description">Gif स्टिकर</string>
     <string name="gifs_description">GIF</string>
+    <string name="given_name">नाम</string>
     <string name="go_live_button">लाइव हों</string>
     <string name="go_live_suggestion">यह साझा करने के लिए अपना लाइव वीडियो शुरू करें कि आप क्या करने वाले हैं.</string>
     <string name="go_to_profile">प्रोफ़ाइल पर जाएँ</string>
@@ -2013,8 +2048,6 @@
     <string name="ig_time_picker_pm">दोपहर</string>
     <string name="igds_reply_button_label">जवाब दें</string>
     <string name="igds_view_reply_button_label">जवाब देखें</string>
-    <string name="iglive_caption_hint">अपने दर्शकों के लिए शीर्षक जोड़ें...</string>
-    <string name="iglive_captioned_notification">%1$s लाइव हैं: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">आप %1$s के लाइव वीडियो में थे.</string>
     <string name="iglive_cobroadcast_end_title">शामिल होने के लिए धन्यवाद!</string>
     <string name="iglive_discard">छोड़ें</string>
@@ -2365,11 +2398,6 @@
     <string name="live_qa_label">प्रश्नोत्तर</string>
     <string name="live_ssi_tooltip">सहायता पाने के लिए किसी भी समय संसाधन देखें.</string>
     <string name="live_starting_live">अब आप लाइव हैं!</string>
-    <string name="live_subscribe_button">चालू करें</string>
-    <string name="live_subscribe_request_failed_to_send">आपकी सदस्यता असफल रही.</string>
-    <string name="live_subscribe_request_sent">चालू किया गया.</string>
-    <string name="live_subscribe_sent_system_comment">आप इसे उनकी प्रोफ़ाइल से किसी भी समय बंद कर सकते हैं.</string>
-    <string name="live_subscribe_system_comment">%1$s से हर लाइव वीडियो के लिए सूचनाएँ पाएँ.</string>
     <string name="live_title">लाइव</string>
     <string name="live_unpin_comment">टिप्पणी से पिन हटाएँ</string>
     <string name="live_video_call_cannot_start_description">वीडियो चैट का उपयोग करने के दौरान आप कोई लाइव वीडियो शुरू नहीं कर सकते.</string>
@@ -2453,6 +2481,7 @@
     <string name="lookup_subtitle">अपने खाते से लिंक किया गया अपना Instagram उपयोगकर्ता नाम या ईमेल या फ़ोन नंबर डालें.</string>
     <string name="lookup_title">अपना खाता ढूँढें</string>
     <string name="made_with_boomerang">&lt;b>Boomerang&lt;/b> से बनाया गया</string>
+    <string name="main_account">मुख्य खाता</string>
     <string name="main_feed_hide_recommended_post_msg">हम अब से %1$s की पोस्ट नहीं दिखाएँगे.</string>
     <string name="main_feed_unfollow_from_post_msg">आपको रीफ़्रेश करने के बाद उनकी और पोस्ट दिखाई नहीं देंगी.</string>
     <string name="main_feed_unfollow_from_post_title">%1$s को फ़ॉलो करना बंद किया</string>
@@ -2469,6 +2498,8 @@
     <string name="manage_saved_login">सहेजी गई लॉग इन जानकारी</string>
     <string name="managing_photos_of_you">आपकी फ़ोटो प्रबंधित करना</string>
     <string name="managing_your_account">अपना खाता प्रबंधित करना</string>
+    <string name="map_data_legal_notices_label">नक्शा डेटा कानूनी सूचनाएँ</string>
+    <string name="map_information_title">नक्शे से संबंधित जानकारी</string>
     <string name="map_label">नक्शा</string>
     <string name="maps_open_map_reporter">खोलें</string>
     <string name="maps_report_button">रिपोर्ट</string>
@@ -2546,6 +2577,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">आप किसी अन्य एप्लिकेशन से साझा की गई किसी कहानी में गाना नहीं जोड़ सकते.</string>
     <string name="music_overlay_cant_save_story_alert">गाने के साथ वाली कहानियों के लिए सहेजना उपलब्ध नहीं है</string>
     <string name="music_overlay_cant_share_to_fb_alert">गाने के साथ वाली कहानियों के लिए Facebook पर साझा करने का विकल्प उपलब्ध नहीं है</string>
+    <string name="music_overlay_no_lyrics_available_toast">कोई बोल उपलब्ध नहीं है</string>
     <string name="music_overlay_question_text_response_description">आपकी खोज से मेल खाता कोई भी गाना उपलब्ध नहीं है. अपनी खोज को पाठ जवाब के रूप में भेजने के लिए ऊपर टैप करें.</string>
     <string name="music_overlay_sticker_description">संगीत ओवरले स्टिकर</string>
     <string name="music_overlay_story_attribution_from_username">%1$s की कहानी से</string>
@@ -2740,14 +2772,9 @@
     <string name="nux_main_feed_empty_subtitle_active">लोगों के द्वारा साझा की जाने वाली फ़ोटो और वीडियो को देखना शुरू करने के लिए उन्हें फ़ॉलो करें.</string>
     <string name="nux_main_feed_empty_title">Instagram में आपका स्वागत है</string>
     <string name="nux_one_tap_login_card_remove_icon_description">निकालें</string>
-    <string name="nux_one_tap_upsell_detail_save">हम आपके लिए आपकी लॉग इन जानकारी सहेजकर रखेंगे. इस डिवाइस पर फिर से लॉग इन करते समय आपको उसे नहीं डालना पड़ेगा.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">जब आप इस फ़ोन का उपयोग करके लॉग इन करें, तो अपनी पूरी लॉग इन जानकारी लिखने के बजाय बस अपनी प्रोफ़ाइल फ़ोटो पर टैप करें.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">जब आप इस फ़ोन पर अगली बार लॉग इन करें, तो अपनी पूरी लॉग इन जानकारी लिखने के बजाय बस अपनी प्रोफ़ाइल फ़ोटो पर टैप करें.</string>
+    <string name="nux_one_tap_upsell_detail">जब आप इस फ़ोन पर अगली बार लॉग इन करें, तो अपनी पूरी लॉग इन जानकारी लिखने के बजाय बस अपनी प्रोफ़ाइल फ़ोटो पर टैप करें.</string>
     <string name="nux_one_tap_upsell_enroll_button_ok">ठीक</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">सहेजें</string>
-    <string name="nux_one_tap_upsell_title_save">लॉग इन जानकारी सहेजें</string>
-    <string name="nux_one_tap_upsell_title_variant1">अगली बार आसानी से लॉग इन करें</string>
-    <string name="nux_one_tap_upsell_title_variant2">पासवर्ड याद रखें</string>
+    <string name="nux_one_tap_upsell_title">पासवर्ड याद रखें</string>
     <string name="nux_pinch_to_zoom">ज़ूम करने के लिए पिंच करें</string>
     <string name="nux_silent_audio_text">इस वीडियो में ध्वनि नहीं है</string>
     <string name="off">बंद करें</string>
@@ -2766,7 +2793,6 @@
     <string name="one_hour">1 घंटा</string>
     <string name="one_tap_login_landing_edit_accounts">खाते संपादित करें</string>
     <string name="one_tap_login_text_link_text">किसी अन्य खाते से लॉग इन करें</string>
-    <string name="one_tap_logo">एक टैप वाला लोगो</string>
     <string name="one_tap_new_footer_log_in">&lt;b>लॉग इन करें.&lt;/b></string>
     <string name="one_tap_new_footer_one_button">Instagram में नए हैं? &lt;b> साइन अप करें.&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>खाते स्विच करें&lt;/b> या</string>
@@ -2786,7 +2812,6 @@
     <string name="open_map_error">क्षमा करें, हम नक्शा नहीं खोल पाए थे.</string>
     <string name="open_phone_error">क्षमा करें, हम कॉल नहीं कर पाए.</string>
     <string name="open_source_libraries">ओपन सोर्स लाइब्रेरी</string>
-    <string name="openstreetmap_copyright_text">© OpenStreetMap योगदानकर्ता</string>
     <string name="opt_into_all_ad_content_label">लगातार देखते रहें</string>
     <string name="opt_into_entire_dynamic_ad_label">%1$d और देखें</string>
     <string name="or">या</string>
@@ -2887,8 +2912,6 @@
     <string name="phone_number_toast_number_required">फ़ोन नंबर आवश्यक है</string>
     <string name="phone_permission_request_message">हम आपके लिए आपका फ़ोन नंबर स्वतः भरेंगे और उसे कन्फ़र्म करेंगे, जिससे अगर आप लॉक हो जाएँ, तो अपना खाता रिकवर करना आसान हो जाता है.</string>
     <string name="phone_permission_request_title">फ़ोन कॉल करें और प्रबंधित करें</string>
-    <string name="phone_register">अपना फ़ोन नंबर डालें</string>
-    <string name="phone_signup">फ़ोन नंबर से साइन अप करें</string>
     <string name="photo">फ़ोटो</string>
     <string name="photo_edit_error_message">क्षमा करें, आपकी फ़ोटो संपादित करते समय एक समस्या हुई. Instagram को रिपोर्ट भेज दी गई है.</string>
     <string name="photo_edit_error_title">संपादित करना जारी नहीं कर सकते</string>
@@ -2940,6 +2963,7 @@
     <string name="post_to_your_story_label">अपनी कहानी में पोस्ट जोड़ें</string>
     <string name="post_to_your_story_label_igtv">अपनी कहानी में वीडियो जोड़ें</string>
     <string name="post_you_were_tagged_in">वह पोस्ट जिसमें आपको टैग किया गया था</string>
+    <string name="postal_code">ज़िप कोड</string>
     <string name="posted_comment">पोस्ट की गई टिप्पणी</string>
     <string name="posting_failed">आपका वीडियो साझा नहीं किया गया.</string>
     <string name="posting_message">पोस्ट की जा रही है…</string>
@@ -2951,7 +2975,6 @@
     <string name="posts_tab_title">पोस्ट</string>
     <string name="posts_you_liked">वे पोस्ट जो आपको पसंद हैं</string>
     <string name="preferences_label">प्राथमिकताएँ</string>
-    <string name="preparing_to_scan">स्कैन के लिए तैयार हो रहा है...</string>
     <string name="presence_permission_explanation">आपके द्वारा फ़ॉलो किए जाने वाले खातों और उन सभी लोगों को जिन्हें आप संदेश भेजते हैं, उन्हें देखने दें कि आप Instagram एप्लिकेशन पर पिछली बार कब सक्रिय थे. जब यह बंद होगा, तो आप अन्य खातों की गतिविधि स्थिति नहीं देख पाएँगे.</string>
     <string name="presence_permission_name">गतिविधि स्थिति दिखाएँ</string>
     <string name="preview_hint_text">इस कहानी में फ़ोटो या वीडियो देखने के लिए टैप करें</string>
@@ -3014,6 +3037,7 @@
     <string name="product_share_sticker_default_question">क्या मुझे यह मिलना चाहिए?</string>
     <string name="product_share_sticker_from">%1$s से</string>
     <string name="product_source">उत्पाद स्रोत</string>
+    <string name="product_source_different_catalog">किसी अन्य कैटलॉग का उपयोग करें</string>
     <string name="product_source_learn_more">और जानें</string>
     <string name="product_source_learn_more_text">अगर आपको वह उत्पाद कैटलॉग दिखाई नहीं देता है, जिसे आप यहाँ जोड़ना चाहते हैं, तो फिर पेज व्यवस्थापक से संपर्क करें या यह सुनिश्चित करने के लिए व्यवसाय प्रबंधक में अपनी अनुमतियाँ जाँचें कि आपके पास अनुमति है. %1$s</string>
     <string name="product_source_load_more">और कैटलॉग लोड करें</string>
@@ -3094,7 +3118,18 @@
     <string name="profile_visits">प्रोफ़ाइल विज़िट</string>
     <string name="promote">प्रचार करें</string>
     <string name="promote_again">फिर से प्रचार करें</string>
+    <string name="promote_audience_header">टार्गेट ऑडियंस का चयन करें</string>
+    <string name="promote_budget_duration_header">%2$d दिनों में आपका कुल खर्च %1$s है</string>
+    <string name="promote_budget_duration_screen_title">बजट और अवधि</string>
+    <string name="promote_create_new_audience_subtitle">अपने टार्गेटिंग विकल्प मैन्युअल रूप से डालें</string>
+    <string name="promote_create_new_audience_title">अपनी ऑडियंस बनाएँ</string>
+    <string name="promote_destination_direct_message_option">आपके Direct संदेश</string>
+    <string name="promote_destination_header">चयन करें कि लोगों को कहाँ भेजें</string>
+    <string name="promote_destination_profile_option">आपकी प्रोफ़ाइल</string>
     <string name="promote_destination_screen_title">गंतव्य</string>
+    <string name="promote_destination_website_edit_title">वेबसाइट</string>
+    <string name="promote_destination_website_option">आपकी वेबसाइट</string>
+    <string name="promote_edit">संपादित करें</string>
     <string name="promote_error_claim_page_label">पेज पर दावा करें</string>
     <string name="promote_error_description_network_error">हमारी ओर से कोई समस्या हुई है और हम अभी आपकी पोस्ट का प्रचार नहीं कर सकते. कृपया बाद में फिर से कोशिश करें.</string>
     <string name="promote_error_page_legal_info">Facebook पेज इन %1$s के अधीन होते हैं.</string>
@@ -3158,11 +3193,12 @@
     <string name="quick_replies">त्वरित जवाब</string>
     <string name="quick_reply_description">त्वरित जवाब</string>
     <string name="quiz_responder_subtitle_text">%1$s उत्तर दिया</string>
-    <string name="quiz_sticker_first_answer_hint">विकल्प 1</string>
+    <string name="quiz_sticker_add_option_hint">जोड़ें</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">कम से कम दो विकल्प जोड़ें</string>
     <string name="quiz_sticker_question_hint">मेरे पसंदीदा का अंदाज़ा लगाएँ...</string>
     <string name="quiz_sticker_response_composer_privacy_nux">प्रश्नोत्तरी शुरू करने के लिए टैप करें, %1$s को आपका उत्तर दिखाई देगा.</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">उत्तर सबमिट करें</string>
-    <string name="quiz_sticker_second_answer_hint">विकल्प 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">मान्य विकल्प का चयन करें</string>
     <string name="quiz_sticker_tray_description">प्रश्नोत्तरी स्टिकर</string>
     <string name="quiz_sticker_tray_label">प्रश्नोत्तरी</string>
     <string name="rageshake_bug_report_option">कुछ काम नहीं कर रहा है</string>
@@ -3209,7 +3245,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">ऐसा लगता है कि आपका इस ईमेल के लिए पहले से एक खाता है. हम आपके Google खाते की जानकारी का उपयोग करके आपको लॉग इन करने की कोशिश कर सकते हैं.</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">ऐसा लगता है कि यह उपयोगकर्ता नाम किसी Gmail पते से लिंक है. हम आपके Google खाते की जानकारी का उपयोग करके, आपको लॉग इन करने की कोशिश कर सकते हैं.</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">ऐसा लगता है कि आपने इस खाते के लिए लॉग इन जानकारी को पहले ही सहेज लिया है.</string>
-    <string name="reel_ad4ad_privacy_subtitle">केवल आप ही इस पूर्वावलोकन को देख सकते हैं</string>
+    <string name="reel_ad4ad_privacy_subtitle">केवल आप इसे देख सकते हैं</string>
     <string name="reel_bakeoff_thank_you_subtitle">हम आपके जवाबों का उपयोग Instagram को बेहतर बनाने में मदद करने के लिए करेंगे.</string>
     <string name="reel_bakeoff_thank_you_title">हमें बताने के लिए धन्यवाद.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">कैमरा खोलें</string>
@@ -3246,6 +3282,7 @@
     <string name="reel_poll_voters_list_title">वोटर</string>
     <string name="reel_question_responses_list_title">प्रतिक्रियाएँ</string>
     <string name="reel_quick_reactions">त्वरित प्रतिक्रियाएँ</string>
+    <string name="reel_quiz_responders_list_title">उत्तर दिया गया</string>
     <string name="reel_reaction_composer_sent_confirmation">%1$s को प्रतिक्रिया भेजी गई</string>
     <string name="reel_reshared_from_archive_label">संग्रह से</string>
     <string name="reel_reshares_empty_state_title">अभी इस पोस्ट का कोई भी सार्वजनिक पुनः साझाकरण नहीं है</string>
@@ -3396,6 +3433,7 @@
     <string name="reply_to">%1$s को जवाब दें...</string>
     <string name="replying_to_user_format">%1$1s को जवाब दे रहा है</string>
     <string name="report">रिपोर्ट करें</string>
+    <string name="report_a_problem_label">समस्या की रिपोर्ट करें</string>
     <string name="report_accounts_are_inappropriate">खाते अनुचित हैं</string>
     <string name="report_ad">विज्ञापन की रिपोर्ट करें</string>
     <string name="report_as_ip_violation">बौद्धिक संपदा के उल्लंघन के रूप में रिपोर्ट करें?</string>
@@ -3627,7 +3665,7 @@
     <string name="set_daily_reminder_subtitle">जब आप अपने द्वारा सेट किए गए समय तक पहुँच जाएँगे तो हम आपको रिमाइंडर भेजेंगे.</string>
     <string name="set_daily_reminder_title">दैनिक रिमाइंडर सेट करें</string>
     <string name="set_main_account">मुख्य खाता सेट करें</string>
-    <string name="set_up_business_profile">अपनी व्यावसायिक प्रोफ़ाइल सेट करें</string>
+    <string name="set_up_business_account">अपना व्यावसायिक खाता सेट करें</string>
     <string name="settings">सेटिंग</string>
     <string name="settings_viewers_choose_locations_feature_off">बंद</string>
     <string name="settings_viewers_choose_locations_title">स्थान चुनें</string>
@@ -3688,6 +3726,7 @@
     <string name="shop_on_profile_row_continue_shopping">खरीदारी जारी रखें</string>
     <string name="shop_this_post">यह पोस्ट खरीदें</string>
     <string name="shopping">खरीदारी</string>
+    <string name="shopping_checkout_destination_title">चेकआउट के साथ अभी खरीदें</string>
     <string name="shopping_destination_title">शॉप</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">ऐसा करने से इस कहानी से उत्पाद स्टिकर को निकाल दिया जाएगा.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">स्टिकर निकालें</string>
@@ -3858,7 +3897,6 @@
     <string name="suggested">सुझाया गया</string>
     <string name="suggested_accounts_header">सुझाए गए</string>
     <string name="suggested_categories">सुझाए गए</string>
-    <string name="suggested_for_you">आपके लिए सुझाया गया</string>
     <string name="suggested_hashtags">सुझाए गए</string>
     <string name="suggested_hashtags_header">सुझाव</string>
     <string name="suggested_highlight_delete_option_text">सुझाव हटाएँ</string>
@@ -3866,7 +3904,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">छोड़ें</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">रखें</string>
     <string name="suggested_highlight_discard_changes_dialog_title">हाइलाइट छोड़ें?</string>
-    <string name="suggested_live_and_post_live_videos">अगला देखें</string>
     <string name="suggested_live_videos">अभी लाइव है</string>
     <string name="suggested_recipients">सुझाए गए</string>
     <string name="suggested_username_allcaps_title">Instagram में आपका स्वागत है,</string>
@@ -3954,6 +3991,7 @@
     <string name="tap_to_view_product_items">उत्पाद देखने के लिए टैप करें</string>
     <string name="tap_to_watch_video_description">वीडियो देखने के लिए टैप करें</string>
     <string name="tap_to_watch_video_nux">पूरा IGTV वीडियो देखें</string>
+    <string name="tel">टेलीफ़ोन</string>
     <string name="tell_us_approval_reason">हमें बताएँ कि आपके विज्ञापन को क्यों स्वीकृति मिलनी चाहिए. अगर हमने कोई गलती की है, तो हम आपका विज्ञापन जल्दी से जल्दी स्वीकार कर देंगे.</string>
     <string name="terms">शर्तें</string>
     <string name="terms_and_data_policy">शर्तें और डेटा नीति</string>
@@ -4114,6 +4152,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">दो चरणों वाला प्रमाणीकरण का सेट करना पूर्ण करने के लिए हमारे द्वारा %1$s पर खत्म होने वाले आपके नंबर पर भेजा गया 6-डिजिट का कोड डालें.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">आपके प्रमाणीकरण एप्लिकेशन द्वारा जेनरेट किया गया 6 अंक का कोड डालें.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">कोड डालें</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">जब आप अगली बार लॉग इन करेंगे, तो हम आपसे कोड नहीं पूछेंगे</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">इस डिवाइस पर विश्वास करें</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">फ़ोन नंबर बदलें</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">कोड फिर से भेजें</string>
     <string name="two_fac_confirmation_code_invalid">अमान्य कोड</string>
@@ -4280,6 +4320,7 @@
     <string name="username_cannot_be_empty">उपयोगकर्ता नाम खाली नहीं हो सकता</string>
     <string name="username_hint_access">उपयोगकर्ता नाम, ईमेल या फ़ोन</string>
     <string name="username_hint_login">फ़ोन नंबर, ईमेल या उपयोगकर्ता नाम</string>
+    <string name="username_lock_help_text">आपका पुराना उपयोगकर्ता नाम 14 दिनों के लिए लॉक हो जाएगा. आप इस समयावधि में इसे वापस बदल सकते हैं. उसके बाद, उपयोगकर्ता नाम सभी लोग उपयोग कर पाएँगे.</string>
     <string name="username_not_available">उपयोगकर्ता नाम उपलब्ध नहीं है</string>
     <string name="username_placeholder">उपयोगकर्ता नाम</string>
     <string name="valid_address_to_map">कृपया मान्य पता जोड़ें, ताकि लोग नक्शे में आपके स्थान तक नेविगेट कर सकें.</string>

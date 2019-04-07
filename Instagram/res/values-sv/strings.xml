@@ -213,6 +213,8 @@
     <string name="address_book_contacts_screen_title">Bjud in kontakter</string>
     <string name="address_book_contacts_screen_title_with_context_1">Välj kontakter</string>
     <string name="address_book_contacts_screen_title_with_context_2">Välj kontakter att bjuda in</string>
+    <string name="address_level_2">Ort</string>
+    <string name="address_line_1">Adress</string>
     <string name="adjust">Justera</string>
     <string name="admin_contact_info">Administratörens kontaktinfo</string>
     <string name="ads_body">Visa de annonser som du kör just nu.</string>
@@ -435,7 +437,7 @@
     <string name="bugreporter_load_external_screenshot_wait">Läser in bild ...</string>
     <string name="bugreporter_low_memory_screenshot_error">Det finns inte tillräckligt med minne för att ta en skärmbild.</string>
     <string name="bugreporter_not_now">Inte nu</string>
-    <string name="bugreporter_rageshake_hint">Förklara kort vad som hände</string>
+    <string name="bugreporter_rageshake_hint">Vad gick fel?</string>
     <string name="bugreporter_rageshake_video_quality_hint">Förklara kort hur videokvaliteten eller ljudkvaliteten skiljer sig från vad du förväntar dig.</string>
     <string name="bugreporter_save_annotated_screenshot_error">Det gick inte att spara skärmbilden. Försök igen.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">Sparar...</string>
@@ -465,6 +467,7 @@
     <string name="business_profile">Företagsprofil</string>
     <string name="business_profile_linked_to_pages">Företagsprofiler på Instagram är kopplade till Facebook-sidor och omfattas av samma %1$s.</string>
     <string name="business_settings_redesign">Företag</string>
+    <string name="business_signup_account_option_title">Registrera dig för ett företagskonto</string>
     <string name="business_signup_address_hint">Företagsadress</string>
     <string name="business_signup_change_username">Byt användarnamn</string>
     <string name="business_signup_choose_username_desc">Välj ett användarnamn för ditt företagskonto. Du kan ändra detta senare.</string>
@@ -604,6 +607,8 @@
     <string name="change_username_title">Byt användarnamn</string>
     <string name="changes_saved">Ändringarna har sparats</string>
     <string name="check_connection_and_try_again">Kontrollera anslutningen och försök igen.</string>
+    <string name="checkout_module_merchant_card_action_text">Handla</string>
+    <string name="checkout_module_nux_title">Prova betalning på Instagram.</string>
     <string name="choose_app_verify_flow">Bekräfta automatiskt</string>
     <string name="choose_category">Välj kategorier för din företagsprofil</string>
     <string name="choose_category_for_profile">Välj kategori för din profil</string>
@@ -698,7 +703,13 @@
     <string name="comment_ellipsis_less">mindre</string>
     <string name="comment_hint">Lägg till en kommentar ...</string>
     <string name="comment_offensive_alert_message">Är du säker på att du vill publicera det här?</string>
+    <string name="comment_offensive_alert_message_new">Andra personer kan tycka att detta är stötande.</string>
     <string name="comment_undo_button">Ångra</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">meddela oss</string>
+    <string name="comment_warning_bottom_sheet_para1">Vi ber personer att omformulera kommentarer som liknar andras som blivit anmälda.</string>
+    <string name="comment_warning_bottom_sheet_para2">Om vi har gjort ett misstag,</string>
+    <string name="comment_warning_bottom_sheet_title">Låta Instagram vara en stödjande plats</string>
+    <string name="comment_warning_bottom_sheet_toast">Din feedback har skickats</string>
     <string name="commenting_disabled_hint">Kommentarerna för det här inlägget har begränsats.</string>
     <string name="commenting_limited_to_followers">Det är enbart dina följare som kan lägga till kommentarer. Kommentarer är synliga för alla.</string>
     <string name="commenting_limited_to_followers_and_following">Det är bara dina följare och personer du följer som kan lägga till kommentarer. Kommentarer är synliga för alla.</string>
@@ -769,6 +780,7 @@
     <string name="connect_fb_and_agree">Genom att trycka på knappen ovan och få tillgång till statistiken godkänner du vår %1$s.</string>
     <string name="connect_fb_get_insights">Läs mer om dina följare och se resultaten för dina inlägg. Vi publicerar inget på Facebook utan ditt godkännande.</string>
     <string name="connect_ig_to_fb_page_explain">Länka till Instagram Business-konto till en Facebook-sida för att göra det lättare för andra att hitta dig. Företagskonton på Instagram är länkade till Facebook-sidor och omfattas av samma %1$s.</string>
+    <string name="connect_or_create">Anslut eller skapa</string>
     <string name="connect_page_for_biz_tools">Konton som använder Instagrams företagsverktyg kan anslutas till en Facebook-sida. Anslutning till en sida krävs för att skapa annonser. Om du redan har en sida kopierar vi över din information så att du kan redigera den.</string>
     <string name="connect_page_for_power_tools">Konton som använder Instagrams power-verktyg kan anslutas till en Facebook-sida. Anslutning till en sida krävs för att skapa annonser. Om du redan har en sida kopierar vi över din information så att du kan redigera den.</string>
     <string name="connect_page_for_pro_tools">Konton som använder Instagram Professional-verktyg kan anslutas till en Facebook-sida. Anslutning till en sida krävs för att skapa annonser. Om du redan har en sida kopierar vi över din information så att du kan redigera den.</string>
@@ -1018,6 +1030,9 @@
     <string name="delta_login_review_was_me">Det var jag</string>
     <string name="delta_login_review_was_not_me">Det var inte jag</string>
     <string name="delta_password_change_confirm_new_password_hint">Bekräfta nytt lösenord</string>
+    <string name="delta_password_change_error_match_failure">Se till att båda lösenorden matchar.</string>
+    <string name="delta_password_change_error_required_field_native">Båda fälten krävs.</string>
+    <string name="delta_password_change_error_required_field_react_native">Detta fält är obligatoriskt.</string>
     <string name="delta_password_change_footer">Vi rekommenderar att du skapar ett unikt lösenord för Instagram som innehåller minst en siffra och ett specialtecken.</string>
     <string name="delta_password_change_new_password_hint">Nytt lösenord</string>
     <string name="delta_password_change_submit">Skicka</string>
@@ -1028,6 +1043,7 @@
     <string name="dial_element_capture_format_handsfree">Handsfree</string>
     <string name="dial_element_capture_format_music">Musik</string>
     <string name="dial_element_capture_format_reverse">Baklängesvisning</string>
+    <string name="dialog_always_share_to_facebook">Dela alltid på Facebook</string>
     <string name="dialog_block_user_button">Blockera</string>
     <string name="dialog_block_user_message">Den här personen kommer inte att hitta din profil, dina inlägg eller din händelse på Instagram. Instagram informerar inte om att du har blockerat den här personen.</string>
     <string name="dialog_block_user_title">Vill du blockera %1$s?</string>
@@ -1074,7 +1090,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Flytta till förfrågningar?</string>
     <string name="direct_block_account">Blockera konto</string>
     <string name="direct_block_choices_block_account">Blockera konto</string>
-    <string name="direct_block_choices_block_messages">Blockera meddelanden</string>
+    <string name="direct_block_choices_ignore">Ignorera</string>
     <string name="direct_block_user">Blockera användare</string>
     <string name="direct_blocked">Blockerad</string>
     <string name="direct_button_change_group_name">Klar</string>
@@ -1087,6 +1103,7 @@
     <string name="direct_details_error">Det gick inte att läsa in konversationen. Försök igen.</string>
     <string name="direct_digest_active_today">Aktiv idag</string>
     <string name="direct_digest_active_yesterday">Aktiv igår</string>
+    <string name="direct_digest_are_active_now">%1$d andra är aktiva nu</string>
     <string name="direct_digest_is_active_now">Aktiv nu</string>
     <string name="direct_digest_mentioned_you_story">Har nämnt dig i en händelse</string>
     <string name="direct_digest_no_author_shared_product">Har delat en produkt</string>
@@ -1115,6 +1132,7 @@
     <string name="direct_digest_shared_post">Har delat ett inlägg</string>
     <string name="direct_digest_shared_your_countdown">Har delat din nedräkning i sin händelse</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">Har taggat dig som affärspartner</string>
+    <string name="direct_digest_user_is_active_now">%1$s är aktiv nu</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s har skickat en inbjudan till appen Direct</string>
     <string name="direct_digest_user_sent_gif">%1$s har skickat en GIF</string>
     <string name="direct_digest_user_sent_message">%1$s har skickat ett meddelande</string>
@@ -1312,6 +1330,7 @@
     <string name="direct_reel_mention_recipient_info_brand_content">Har taggat dig som affärspartner</string>
     <string name="direct_reel_mention_sender_info">Du har nämnt %1$s i din händelse</string>
     <string name="direct_reel_mention_sender_info_branded_content">Du har taggat %1$s som affärspartner</string>
+    <string name="direct_reel_question_response_sender_info">Du har svarat på hens fråga</string>
     <string name="direct_reel_reaction_recipient_info">Har reagerat på din händelse %1$s</string>
     <string name="direct_reel_reaction_sender_info">Du har reagerat på hens händelse %1$s</string>
     <string name="direct_reel_reply_receiver_highlight_info">Har svarat på din händelsehöjdpunkt</string>
@@ -1493,7 +1512,6 @@
     <string name="disconnect_contacts_dialog_title">Vill du koppla bort kontakter?</string>
     <string name="disconnect_failed">Bortkoppling misslyckades.</string>
     <string name="discover_people">Upptäck personer</string>
-    <string name="discovery_item_post_live_label">Har sänt live</string>
     <string name="discovery_surface_button_description">Öppna effekter</string>
     <string name="dismiss">Stäng</string>
     <string name="dismiss_button_hint">Stäng</string>
@@ -1543,9 +1561,11 @@
     <string name="editable_profile_review_title">Gå igenom dina kontaktuppgifter</string>
     <string name="edited">Har redigerats</string>
     <string name="edits_not_saved">Dina ändringar har inte sparats. Försök igen.</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> av %2$s</string>
-    <string name="effect_by_format">av %1$s</string>
-    <string name="effect_by_format_with_title">%1$s av %2$s</string>
+    <string name="effect_detail_save_to_camera_button_label">Spara på kamera</string>
+    <string name="effect_detail_saved_to_camera_button_label">Sparat på kameran</string>
+    <string name="effect_detail_share_button_label">Skicka till ...</string>
+    <string name="effect_details_view_created_from_format">från &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> från %2$s</string>
     <string name="eight_hours">8 timmar</string>
     <string name="ellipsis_more">... mer</string>
     <string name="email">E-post</string>
@@ -1554,10 +1574,8 @@
     <string name="email_invalid">Ogiltig e-postadress</string>
     <string name="email_not_available">Den här e-postadressen används av ett annat konto.</string>
     <string name="email_not_valid">Ange en giltig e-postadress.</string>
-    <string name="email_register">Ange din e-postadress</string>
     <string name="email_sent">Ett e-postmeddelande har skickats till kontots e-postadress. Kontrollera e-posten för att kunna fortsätta. Om du fortfarande har problem besöker du %1$s.</string>
     <string name="email_sent_short">E-postmeddelandet har skickats</string>
-    <string name="email_signup">Registrera dig med e-postadress</string>
     <string name="email_sms_notification_settings">Aviseringar via e-post och sms</string>
     <string name="emails">E-post</string>
     <string name="emoji_not_allowed">Lösenordet innehåller emoji-symboler. Välj något annat.</string>
@@ -1655,6 +1673,7 @@
     <string name="feed_controls_message_replies_setting_following">Personer du följer</string>
     <string name="feed_controls_message_replies_setting_off">Av</string>
     <string name="feed_controls_settings_title">Flödeskontroller</string>
+    <string name="feed_emoji_see_more_button_label">Tryck för att visa fler emojis</string>
     <string name="feed_item_page_title">Annons</string>
     <string name="feed_product_pivots_view_shop_button">Visa butik</string>
     <string name="feed_refereshed">Innehållet har uppdaterats</string>
@@ -1792,10 +1811,12 @@
     <string name="full_single_line_address">%1$s, %3$s %2$s</string>
     <string name="full_terms_rw">Fullständiga villkor</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">Fortsätt</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">Gåvor måste vara minst %1$s</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">Gåvobelopp</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">Annat</string>
     <string name="fundraiser_sticker_default_title">%1$ss insamling</string>
     <string name="fundraiser_sticker_donate_button_text">Skänk en gåva</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">Skänkt gåva</string>
     <string name="fundraiser_sticker_search_following_section_title">Följer</string>
     <string name="fundraiser_sticker_search_suggested_section_title">Förslag</string>
     <string name="fundraiser_sticker_subtitle">Stöder %1$s</string>
@@ -1815,7 +1836,7 @@
     <string name="gdpr_account_privacy">Kontosekretess</string>
     <string name="gdpr_activity_status">Aktivitetsstatus</string>
     <string name="gdpr_blocked_accounts">Blockerade konton</string>
-    <string name="gdpr_business_signup_option_title">Registrera dig för en företagsprofil</string>
+    <string name="gdpr_business_signup_option_title">Lägg till ett företagskonto</string>
     <string name="gdpr_close_friends_title">Nära vänner</string>
     <string name="gdpr_contacts_syncing_option_title">Kontaktsynkning</string>
     <string name="gdpr_data_download">Datanedladdning</string>
@@ -1843,6 +1864,7 @@
     <string name="get_started">Kom igång</string>
     <string name="gif_sticker_description">GIF-dekal</string>
     <string name="gifs_description">Gif-bilder</string>
+    <string name="given_name">Förnamn</string>
     <string name="go_live_button">Sänd live</string>
     <string name="go_live_suggestion">Starta en egen livevideo för att berätta vad du gör just nu.</string>
     <string name="go_to_profile">Gå till profil</string>
@@ -1937,7 +1959,6 @@
     <string name="ig_browser_chrome_title_loading_text">Laddar ...</string>
     <string name="igds_reply_button_label">Svara</string>
     <string name="igds_view_reply_button_label">Visa svar</string>
-    <string name="iglive_captioned_notification">%1$s sänder live: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">Du har varit med i %1$ss livevideo.</string>
     <string name="iglive_cobroadcast_end_title">Tack för att du var med!</string>
     <string name="iglive_discard">Släng</string>
@@ -2276,11 +2297,6 @@
     <string name="live_qa_label">Frågor</string>
     <string name="live_ssi_tooltip">Se vart du kan vända dig för att få hjälp när du vill.</string>
     <string name="live_starting_live">Nu sänder du live!</string>
-    <string name="live_subscribe_button">Aktivera</string>
-    <string name="live_subscribe_request_failed_to_send">Din prenumeration misslyckades.</string>
-    <string name="live_subscribe_request_sent">Aktiverad</string>
-    <string name="live_subscribe_sent_system_comment">Du kan stänga av detta när som helst via personens profil.</string>
-    <string name="live_subscribe_system_comment">Ta emot aviseringar för varje livevideo från %1$s.</string>
     <string name="live_unpin_comment">Lossa kommentar</string>
     <string name="live_video_call_cannot_start_description">Du kan inte starta en livevideo medan du videochattar.</string>
     <string name="live_video_call_cannot_start_title">Det går inte att starta livevideon</string>
@@ -2354,6 +2370,7 @@
     <string name="lookup_subtitle">Ange ditt användarnamn på Instagram, eller e-postadressen eller telefonnumret som är kopplat till ditt konto.</string>
     <string name="lookup_title">Hitta ditt konto</string>
     <string name="made_with_boomerang">Skapat med &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">Huvudkonto</string>
     <string name="main_feed_hide_recommended_post_msg">Vi visar inte inlägg från %1$s från och med nu.</string>
     <string name="main_feed_unfollow_from_post_msg">Du kommer inte att se fler av hens inlägg när du har uppdaterat.</string>
     <string name="main_feed_unfollow_from_post_title">Du har slutat följa %1$s</string>
@@ -2370,6 +2387,7 @@
     <string name="manage_saved_login">Sparade inloggningsuppgifter</string>
     <string name="managing_photos_of_you">Hantera foton på dig</string>
     <string name="managing_your_account">Hantera ditt konto</string>
+    <string name="map_data_legal_notices_label">Juridiska meddelanden för kartdata</string>
     <string name="map_label">Karta</string>
     <string name="maps_open_map_reporter">Öppna</string>
     <string name="maps_report_button">Anmäl</string>
@@ -2443,6 +2461,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">Du kan inte lägga till en låt i en händelse som du delat från en annan app.</string>
     <string name="music_overlay_cant_save_story_alert">Det går inte att spara händelser med låtar</string>
     <string name="music_overlay_cant_share_to_fb_alert">Det går inte att dela händelser med låtar på Facebook</string>
+    <string name="music_overlay_no_lyrics_available_toast">Ingen text tillgänglig</string>
     <string name="music_overlay_sticker_description">Musikdekal</string>
     <string name="music_overlay_story_attribution_from_username">Från %1$ss händelse</string>
     <string name="music_overlay_story_attribution_header_info">Välj en låt för att börja skapa en egen musikhändelse.</string>
@@ -2628,13 +2647,8 @@
     <string name="nux_main_feed_empty_subtitle_active">Följ personer för att börja visa de foton och videoklipp som de delar.</string>
     <string name="nux_main_feed_empty_title">Välkommen till Instagram</string>
     <string name="nux_one_tap_login_card_remove_icon_description">Ta bort</string>
-    <string name="nux_one_tap_upsell_detail_save">Vi sparar dina inloggningsuppgifter åt dig. Du behöver inte ange dem när du loggar in igen på den här enheten.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">Nästa gång du loggar in med den här telefonen är det bara att trycka på profilbilden istället för att ange alla inloggningsuppgifter.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">Nästa gång du loggar in med den här telefonen är det bara att trycka på profilbilden istället för att ange alla inloggningsuppgifter.</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">Spara</string>
-    <string name="nux_one_tap_upsell_title_save">Spara inloggningsuppgifterna</string>
-    <string name="nux_one_tap_upsell_title_variant1">Logga in enklare nästa gång</string>
-    <string name="nux_one_tap_upsell_title_variant2">Kom ihåg lösenord</string>
+    <string name="nux_one_tap_upsell_detail">Nästa gång du loggar in med den här telefonen är det bara att trycka på profilbilden istället för att ange alla inloggningsuppgifter.</string>
+    <string name="nux_one_tap_upsell_title">Kom ihåg lösenord</string>
     <string name="nux_pinch_to_zoom">Zooma genom att nypa ihop</string>
     <string name="nux_silent_audio_text">Den här videon har inget ljud</string>
     <string name="off">Av</string>
@@ -2651,7 +2665,6 @@
     <string name="one_hour">1 timme</string>
     <string name="one_tap_login_landing_edit_accounts">Redigera konton</string>
     <string name="one_tap_login_text_link_text">Logga in med ett annat konto</string>
-    <string name="one_tap_logo">Ett tryck</string>
     <string name="one_tap_new_footer_log_in">&lt;b>Logga in.&lt;/b></string>
     <string name="one_tap_new_footer_one_button">Ny på Instagram? &lt;b> Registrera dig.&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>Byt konto&lt;/b> eller</string>
@@ -2671,7 +2684,6 @@
     <string name="open_map_error">Det gick inte att öppna kartan.</string>
     <string name="open_phone_error">Det gick inte att ringa samtalet.</string>
     <string name="open_source_libraries">Bibliotek med öppen programvara</string>
-    <string name="openstreetmap_copyright_text">© OpenStreetMap-medskapare</string>
     <string name="opt_into_all_ad_content_label">Fortsätt titta</string>
     <string name="opt_into_entire_dynamic_ad_label">Visa %1$d fler</string>
     <string name="or">eller</string>
@@ -2771,8 +2783,6 @@
     <string name="phone_number_toast_number_required">Telefonnummer krävs</string>
     <string name="phone_permission_request_message">Vi autokompletterar och bekräftar ditt telefonnummer åt dig så att det blir enklare att återställa ditt konto om du blir utelåst.</string>
     <string name="phone_permission_request_title">Ring och hantera telefonsamtal</string>
-    <string name="phone_register">Ange ditt telefonnummer</string>
-    <string name="phone_signup">Registrera dig med telefonnummer</string>
     <string name="photo">Foto</string>
     <string name="photo_edit_error_message">Ett problem uppstod när ditt foto skulle redigeras. En rapport har skickats till Instagram.</string>
     <string name="photo_edit_error_title">Det går inte att fortsätta redigera</string>
@@ -2834,7 +2844,6 @@
     <string name="posts_tab_title">Inlägg</string>
     <string name="posts_you_liked">Inlägg som du gillar</string>
     <string name="preferences_label">Inställningar</string>
-    <string name="preparing_to_scan">Förbereder skanning ...</string>
     <string name="presence_permission_explanation">Tillåt att de konton du följer och alla som du skickar meddelanden till kan se när du senast var aktiv på Instagram-apparna. När detta är inaktiverat kan du inte se aktivitetsstatus för andra konton.</string>
     <string name="presence_permission_name">Visa aktivitetsstatus</string>
     <string name="preview_hint_text">Tryck för att visa fotot eller videoklippet i den här händelsen.</string>
@@ -2889,6 +2898,7 @@
     <string name="product_rejected_dialog_title">Produkten har inte blivit godkänd</string>
     <string name="product_share_sticker_default_question">Borde jag köpa den här?</string>
     <string name="product_share_sticker_from">Från %1$s</string>
+    <string name="product_source_different_catalog">Använd en annan katalog</string>
     <string name="product_source_learn_more">Läs mer</string>
     <string name="product_source_learn_more_text">Om du inte ser den produkttagg som du vill lägga till här kan du kontakta en sidadministratör, eller kontrollera behörigheterna i Business Manager för att säkerställa att du har behörighet. %1$s</string>
     <string name="product_source_load_more">Läs in fler kataloger</string>
@@ -2960,7 +2970,18 @@
     <string name="profile_visits">Profilbesök</string>
     <string name="promote">Marknadsför</string>
     <string name="promote_again">Marknadsför igen</string>
+    <string name="promote_audience_header">Välj målgrupp</string>
+    <string name="promote_budget_duration_header">Den totala kostnaden är %1$s för %2$d dagar</string>
+    <string name="promote_budget_duration_screen_title">Budget och längd</string>
+    <string name="promote_create_new_audience_subtitle">Ange dina målgruppsalternativ manuellt</string>
+    <string name="promote_create_new_audience_title">Skapa en egen</string>
+    <string name="promote_destination_direct_message_option">Dina direktmeddelanden</string>
+    <string name="promote_destination_header">Välj vart du vill skicka andra</string>
+    <string name="promote_destination_profile_option">Din profil</string>
     <string name="promote_destination_screen_title">Mål</string>
+    <string name="promote_destination_website_edit_title">Webbplats</string>
+    <string name="promote_destination_website_option">Din webbplats</string>
+    <string name="promote_edit">redigera</string>
     <string name="promote_error_claim_page_label">Gör anspråk på sida</string>
     <string name="promote_error_description_network_error">Vi har problem just nu och kan inte marknadsföra ditt inlägg. Försök igen senare.</string>
     <string name="promote_error_page_legal_info">Facebook-sidor omfattas av dessa %1$s</string>
@@ -3016,8 +3037,8 @@
     <string name="quick_replies">Snabbsvar</string>
     <string name="quick_reply_description">Snabbsvar</string>
     <string name="quiz_responder_subtitle_text">har svarat på %1$s</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">Lägg till minst två alternativ</string>
     <string name="quiz_sticker_response_composer_privacy_nux">Tryck för att starta frågesporten. %1$s kommer att se dina svar.</string>
-    <string name="quiz_sticker_second_answer_hint">Alternativ 2</string>
     <string name="quiz_sticker_tray_description">Frågesportdekal</string>
     <string name="quiz_sticker_tray_label">FRÅGESPORT</string>
     <string name="rageshake_bug_report_option">Det är något som inte fungerar</string>
@@ -3062,6 +3083,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">Det verkar redan finnas ett konto för den här e-postadressen. Vi kan försöka logga in dig med informationen från ditt Google-konto.</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">Det här användarnamnet verkar vara länkat till en Gmail-adress. Vi kan försöka logga in dig med informationen från ditt Google-konto.</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">Du verkar redan ha sparat inloggningsuppgifterna för det här kontot.</string>
+    <string name="reel_ad4ad_privacy_subtitle">Bara du kan se detta</string>
     <string name="reel_bakeoff_thank_you_subtitle">Vi använder dina svar för att göra Instagram bättre.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">Öppna kameran</string>
     <string name="reel_dashboard_add_to_story_entry_point_label">Lägg till i din händelse</string>
@@ -3091,6 +3113,7 @@
     <string name="reel_poll_voters_list_title">Röstande</string>
     <string name="reel_question_responses_list_title">Svar</string>
     <string name="reel_quick_reactions">Snabbreaktioner</string>
+    <string name="reel_quiz_responders_list_title">Besvarat</string>
     <string name="reel_reaction_composer_sent_confirmation">Reaktion har skickats till %1$s</string>
     <string name="reel_reshared_from_archive_label">Från arkivet</string>
     <string name="reel_reshares_empty_state_title">Det finns inga offentliga återdelningar av det här inägget just nu</string>
@@ -3460,7 +3483,7 @@
     <string name="set_daily_reminder_subtitle">Vi skickar en påminnelse när du har uppnått den tid du angett.</string>
     <string name="set_daily_reminder_title">Skapa daglig påminnelse</string>
     <string name="set_main_account">Ange huvudkonto</string>
-    <string name="set_up_business_profile">Skapa en företagsprofil</string>
+    <string name="set_up_business_account">Konfigurera ditt företagskonto</string>
     <string name="settings">Inställningar</string>
     <string name="settings_viewers_choose_locations_feature_off">Av</string>
     <string name="settings_viewers_choose_locations_title">Välj platser</string>
@@ -3683,7 +3706,6 @@
     <string name="suggested">Förslag</string>
     <string name="suggested_accounts_header">Föreslagna</string>
     <string name="suggested_categories">Förslag</string>
-    <string name="suggested_for_you">Föreslås för dig</string>
     <string name="suggested_hashtags">Föreslagna</string>
     <string name="suggested_hashtags_header">Förslag</string>
     <string name="suggested_highlight_delete_option_text">Ta bort förslag</string>
@@ -3691,7 +3713,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">Släng</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">Behåll</string>
     <string name="suggested_highlight_discard_changes_dialog_title">Vill du slänga höjdpunkten?</string>
-    <string name="suggested_live_and_post_live_videos">Visa som nästa</string>
     <string name="suggested_live_videos">Live nu</string>
     <string name="suggested_recipients">Föreslagna</string>
     <string name="suggested_username_allcaps_title">VÄLKOMMEN TILL INSTAGRAM</string>
@@ -3933,6 +3954,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">Ange den sexsiffriga koden som vi skickat till ditt nummer som slutar på %1$s för att slutföra konfigurationen av tvåfaktorsautentiseringen.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">Ange den sexsiffriga kod som genererats i din autentiseringsapp.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">Ange koden</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">Vi kommer inte att be om en kod nästa gång du loggar in</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">Lita på den här enheten</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">Byt telefonnummer</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">Skicka koden igen</string>
     <string name="two_fac_confirmation_code_invalid">Ogiltig kod</string>
@@ -4094,6 +4117,7 @@
     <string name="username_cannot_be_empty">Användarnamnet får inte lämnas tomt</string>
     <string name="username_hint_access">Användarnamn, e-post eller telefon</string>
     <string name="username_hint_login">Telefonnummer, e-post eller användarnamn</string>
+    <string name="username_lock_help_text">Ditt gamla användarnamn kommer att vara låst i 14 dagar. Du kan ändra tillbaka till det inom denna tidsperiod. Efter det blir användarnamnet tillgängligt för alla att använda.</string>
     <string name="username_not_available">Användarnamnet är inte tillgängligt</string>
     <string name="username_placeholder">användarnamn</string>
     <string name="valid_address_to_map">Lägg till en giltig adress så att andra kan navigera till din plats på kartor.</string>

@@ -214,6 +214,10 @@
     <string name="address_book_contacts_screen_title">Contacten uitnodigen</string>
     <string name="address_book_contacts_screen_title_with_context_1">Contacten kiezen</string>
     <string name="address_book_contacts_screen_title_with_context_2">Contacten kiezen om uit te nodigen</string>
+    <string name="address_level_1">Staat</string>
+    <string name="address_level_2">Plaats</string>
+    <string name="address_line_1">Adres</string>
+    <string name="address_line_2">Appartement/kantoor (optioneel)</string>
     <string name="adjust">Aanpassen</string>
     <string name="admin_contact_info">Contactgegevens beheerder</string>
     <string name="ads_body">Bekijk de advertenties die je momenteel uitvoert.</string>
@@ -454,7 +458,7 @@
     <string name="bugreporter_load_external_screenshot_wait">Afbeelding laden...</string>
     <string name="bugreporter_low_memory_screenshot_error">Onvoldoende geheugen om schermafbeelding te maken.</string>
     <string name="bugreporter_not_now">Niet nu</string>
-    <string name="bugreporter_rageshake_hint">Leg kort uit wat er is gebeurd</string>
+    <string name="bugreporter_rageshake_hint">Wat is er fout gegaan?</string>
     <string name="bugreporter_rageshake_video_quality_hint">Leg kort uit hoe de videokwaliteit of audiokwaliteit anders is dan je had verwacht.</string>
     <string name="bugreporter_save_annotated_screenshot_error">Schermafbeelding kan niet worden opgeslagen. Probeer het opnieuw.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">Opslaan…</string>
@@ -486,6 +490,7 @@
     <string name="business_profile">Bedrijfsprofiel</string>
     <string name="business_profile_linked_to_pages">"Bedrijfsprofielen op Instagram zijn gekoppeld aan Facebook-pagina's en vallen onder de %1$s voor Facebook-pagina's."</string>
     <string name="business_settings_redesign">Bedrijf</string>
+    <string name="business_signup_account_option_title">Registreren voor een bedrijfsaccount</string>
     <string name="business_signup_address_hint">Zakelijk adres</string>
     <string name="business_signup_change_username">Gebruikersnaam wijzigen</string>
     <string name="business_signup_choose_username_desc">Kies een gebruikersnaam voor je bedrijfsaccount. Je kunt deze op elk moment wijzigen.</string>
@@ -624,6 +629,10 @@
     <string name="change_username_title">Gebruikersnaam wijzigen</string>
     <string name="changes_saved">Wijzigingen opgeslagen</string>
     <string name="check_connection_and_try_again">Controleer je verbinding en probeer het opnieuw.</string>
+    <string name="checkout_module_merchant_card_action_text">Shoppen</string>
+    <string name="checkout_module_nux_message">Je kunt nu iets kopen bij je merken zonder Instagram te verlaten.</string>
+    <string name="checkout_module_nux_title">Betalen via Instagram proberen</string>
+    <string name="checkout_module_title">Betalen via Instagram</string>
     <string name="choose_app_verify_flow">Automatisch bevestigen</string>
     <string name="choose_category">Categorieën voor je bedrijfsprofiel kiezen</string>
     <string name="choose_category_for_profile">Een categorie voor je profiel kiezen</string>
@@ -720,7 +729,13 @@
     <string name="comment_ellipsis_less">minder</string>
     <string name="comment_hint">Een reactie toevoegen...</string>
     <string name="comment_offensive_alert_message">Weet je zeker dat je je opmerking wilt plaatsen?</string>
+    <string name="comment_offensive_alert_message_new">Anderen vinden deze opmerking mogelijk aanstootgevend.</string>
     <string name="comment_undo_button">Ongedaan maken</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">laat het ons weten</string>
+    <string name="comment_warning_bottom_sheet_para1">We vragen mensen twee keer na te denken over opmerkingen die vergelijkbaar zijn met andere opmerkingen die zijn gerapporteerd</string>
+    <string name="comment_warning_bottom_sheet_para2">Als we een fout hebben gemaakt,</string>
+    <string name="comment_warning_bottom_sheet_title">Zorgen dat Instagram een ondersteunende plek blijft</string>
+    <string name="comment_warning_bottom_sheet_toast">Feedback verzonden</string>
     <string name="commenting_disabled_hint">Opmerkingen bij dit bericht zijn beperkt.</string>
     <string name="commenting_limited_to_followers">Alleen je volgers kunnen opmerkingen toevoegen. Opmerkingen zijn zichtbaar voor iedereen.</string>
     <string name="commenting_limited_to_followers_and_following">Alleen je volgers en mensen die je volgt kunnen opmerkingen toevoegen. Opmerkingen zijn zichtbaar voor iedereen.</string>
@@ -791,6 +806,7 @@
     <string name="connect_fb_and_agree">Door op de knop hierboven te tikken en de statistieken te openen, ga je akkoord met ons %1$s.</string>
     <string name="connect_fb_get_insights">Kom meer te weten over je volgers en ontdek hoe je berichten presteren. We plaatsen niets op Facebook zonder jouw toestemming.</string>
     <string name="connect_ig_to_fb_page_explain">"Koppel je Instagram Business-account aan een Facebook-pagina, zodat mensen je eenvoudiger kunnen vinden. Zakelijke accounts op Instagram zijn gekoppeld aan Facebook-pagina's en zijn onderhevig aan de bijbehorende %1$s."</string>
+    <string name="connect_or_create">Koppelen of maken</string>
     <string name="connect_page_for_biz_tools">Accounts die gebruikmaken van Instagram Business Tools kunnen aan een Facebook-pagina worden gekoppeld. Er is een koppeling met een pagina vereist om advertenties te maken. Als je al een pagina hebt, kopiëren we je gegevens zodat je deze kunt bewerken.</string>
     <string name="connect_page_for_power_tools">Accounts die gebruikmaken van Instagram Power Tools kunnen aan een Facebook-pagina worden gekoppeld. Er is een koppeling met een pagina vereist om advertenties te maken. Als je al een pagina hebt, kopiëren we je gegevens zodat je deze kunt bewerken.</string>
     <string name="connect_page_for_pro_tools">Accounts die gebruikmaken van Instagram Professional Tools kunnen aan een Facebook-pagina worden gekoppeld. Er is een koppeling met een pagina vereist om advertenties te maken. Als je al een pagina hebt, kopiëren we je gegevens zodat je deze kunt bewerken.</string>
@@ -1037,13 +1053,16 @@
     <string name="delete_videos_failed">"Je video/video's is/zijn niet verwijderd. Probeer het opnieuw."</string>
     <string name="deleting_comments">Opmerkingen verwijderen</string>
     <string name="deleting_media">Verwijderen...</string>
-    <string name="delivery_info">Leveringsinformatie</string>
+    <string name="delivery_info">Bezorginformatie</string>
     <string name="delta_login_review_body">Laat ons weten of jij dit was zodat we je account kunnen beveiligen.</string>
     <string name="delta_login_review_status">Verdachte aanmeldpoging</string>
     <string name="delta_login_review_title">We hebben een ongebruikelijke aanmeldpoging gedetecteerd</string>
     <string name="delta_login_review_was_me">Dit was ik</string>
     <string name="delta_login_review_was_not_me">Dit was ik niet</string>
     <string name="delta_password_change_confirm_new_password_hint">Bevestig nieuw wachtwoord</string>
+    <string name="delta_password_change_error_match_failure">Zorg ervoor dat beide wachtwoorden overeenkomen.</string>
+    <string name="delta_password_change_error_required_field_native">Beide velden zijn verplicht.</string>
+    <string name="delta_password_change_error_required_field_react_native">Dit veld is verplicht.</string>
     <string name="delta_password_change_footer">We raden je aan een uniek wachtwoord te gebruiken voor Instagram dat ten minste één cijfer en één speciaal teken bevat.</string>
     <string name="delta_password_change_new_password_hint">Nieuw wachtwoord</string>
     <string name="delta_password_change_submit">Verzenden</string>
@@ -1053,6 +1072,7 @@
     <string name="dial_element_capture_format_handsfree">Handsfree</string>
     <string name="dial_element_capture_format_music">Muziek</string>
     <string name="dial_element_capture_format_reverse">Terugspeelvideo</string>
+    <string name="dialog_always_share_to_facebook">Altijd op Facebook delen</string>
     <string name="dialog_block_user_button">Blokkeren</string>
     <string name="dialog_block_user_message">Deze gebruiker kan je profiel, berichten of verhalen op Instagram niet vinden. Instagram laat deze persoon niet weten dat je hem/haar hebt geblokkeerd.</string>
     <string name="dialog_block_user_title">%1$s blokkeren?</string>
@@ -1101,7 +1121,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Verplaatsen naar Verzoeken?</string>
     <string name="direct_block_account">Account blokkeren</string>
     <string name="direct_block_choices_block_account">Account blokkeren</string>
-    <string name="direct_block_choices_block_messages">Chatberichten blokkeren</string>
+    <string name="direct_block_choices_ignore">Negeren</string>
     <string name="direct_block_user">Gebruiker blokkeren</string>
     <string name="direct_blocked">Geblokkeerd</string>
     <string name="direct_button_change_group_name">Klaar</string>
@@ -1113,6 +1133,7 @@
     <string name="direct_details_error">Gespreksdetails kunnen niet worden geladen. Probeer het opnieuw.</string>
     <string name="direct_digest_active_today">Vandaag actief</string>
     <string name="direct_digest_active_yesterday">Gisteren actief</string>
+    <string name="direct_digest_are_active_now">%1$d anderen zijn nu actief</string>
     <string name="direct_digest_is_active_now">Nu actief</string>
     <string name="direct_digest_mentioned_you_story">Heeft je genoemd in een verhaal</string>
     <string name="direct_digest_no_author_shared_product">Heeft een product gedeeld</string>
@@ -1141,6 +1162,7 @@
     <string name="direct_digest_shared_post">Heeft een bericht gedeeld</string>
     <string name="direct_digest_shared_your_countdown">Heeft je teller gedeeld in zijn/haar verhaal</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">Heeft je getagd als zakenpartner</string>
+    <string name="direct_digest_user_is_active_now">%1$s is nu actief</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s heeft je uitgenodigd voor de Direct-app.</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">Stuur een uitnodiging voor Direct-app</string>
     <string name="direct_digest_user_sent_gif">%1$s heeft een GIF verstuurd</string>
@@ -1353,6 +1375,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">Heeft je getagd als zakenpartner</string>
     <string name="direct_reel_mention_sender_info">Je hebt %1$s genoemd in je verhaal</string>
     <string name="direct_reel_mention_sender_info_branded_content">Je hebt %1$s getagd als zakelijke partner</string>
+    <string name="direct_reel_question_response_creator_info">Heeft je vraag beantwoord</string>
+    <string name="direct_reel_question_response_sender_info">Je hebt zijn/haar vraag beantwoord</string>
     <string name="direct_reel_reaction_recipient_info">Heeft op je verhaal gereageerd met %1$s</string>
     <string name="direct_reel_reaction_sender_info">Je hebt op zijn/haar verhaal gereageerd met %1$s</string>
     <string name="direct_reel_reply_receiver_highlight_info">Heeft geantwoord op je hoogtepunt</string>
@@ -1535,7 +1559,6 @@
     <string name="disconnect_contacts_dialog_title">Verbinding contacten verbreken?</string>
     <string name="disconnect_failed">Verbinding verbreken is mislukt.</string>
     <string name="discover_people">Personen ontdekken</string>
-    <string name="discovery_item_post_live_label">Was live</string>
     <string name="discovery_surface_button_description">Effecten ontdekken openen</string>
     <string name="dismiss">Negeren</string>
     <string name="dismiss_button_hint">Sluiten</string>
@@ -1586,22 +1609,26 @@
     <string name="editable_profile_review_title">Je contactgegevens controleren</string>
     <string name="edited">Bewerkt</string>
     <string name="edits_not_saved">Je bewerkingen zijn niet opgeslagen. Probeer het opnieuw.</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> door %2$s</string>
-    <string name="effect_by_format">van %1$s</string>
-    <string name="effect_by_format_with_title">%1$s door %2$s</string>
     <string name="effect_created_by_format">gemaakt door &lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">Meer</string>
+    <string name="effect_detail_save_to_camera_button_label">Opslaan in camera</string>
+    <string name="effect_detail_saved_to_camera_button_label">Opgeslagen op filmrol</string>
+    <string name="effect_detail_share_button_label">Versturen naar…</string>
+    <string name="effect_detail_view_try_it_button_label">Uitproberen</string>
+    <string name="effect_details_view_created_from_format">van &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> van %2$s</string>
+    <string name="effect_from_format">van %1$s</string>
+    <string name="effect_from_format_with_title">%1$s van %2$s</string>
     <string name="eight_hours">8 uur</string>
     <string name="ellipsis_more">...meer</string>
-    <string name="email">E-mailadres</string>
+    <string name="email">E-mail</string>
     <string name="emailAddress">E-mailadres</string>
     <string name="email_hint">E-mailadres</string>
     <string name="email_invalid">E-mailadres is ongeldig</string>
     <string name="email_not_available">Dit e-mailadres wordt al gebruikt door een ander account.</string>
     <string name="email_not_valid">Voer een geldig e-mailadres in.</string>
-    <string name="email_register">Voer je e-mailadres in</string>
     <string name="email_sent">Er is een e-mail verzonden naar het e-mailadres dat is gekoppeld aan je account. Controleer je mail om verder te gaan. Raadpleeg het %1$s als je nog steeds problemen hebt.</string>
     <string name="email_sent_short">E-mail verzonden</string>
-    <string name="email_signup">Registreren via e-mailadres</string>
     <string name="email_sms_notification_settings">Meldingen per e-mail en sms</string>
     <string name="emails">E-mails</string>
     <string name="emoji_not_allowed">"Wachtwoord bevat emoji's. Kies een ander wachtwoord."</string>
@@ -1636,6 +1663,7 @@
     <string name="expired_link_dialog_title">Link verlopen</string>
     <string name="explore_contextual_title">Verkennen</string>
     <string name="explore_description">Zoeken en ontdekken</string>
+    <string name="explore_effects">Effecten ontdekken</string>
     <string name="explore_places">Plaatsen</string>
     <string name="explore_places_request_fail">Kan plaatsen niet laden. Probeer het opnieuw.</string>
     <string name="explore_topical_going_to_next">NAAR VOLGENDE</string>
@@ -1682,6 +1710,7 @@
     <string name="failed_to_load_highlight_message">Hoogtepunt laden is mislukt</string>
     <string name="failed_to_load_photo_toast">Kan deze foto niet laden.</string>
     <string name="failed_to_load_video_toast">Kan deze video niet laden.</string>
+    <string name="family_name">Achternaam</string>
     <string name="favorites_tab_title">Beste vrienden</string>
     <string name="fb_connect_card_button_text">Verbinden</string>
     <string name="fb_connect_card_main_text">Verbinden met Facebook</string>
@@ -1702,6 +1731,7 @@
     <string name="feed_controls_message_replies_setting_following">Mensen die je volgt</string>
     <string name="feed_controls_message_replies_setting_off">Uit</string>
     <string name="feed_controls_settings_title">Overzichtsbeheer</string>
+    <string name="feed_emoji_see_more_button_label">"Tik om meer emoji's weer te geven"</string>
     <string name="feed_item_page_title">Advertentie</string>
     <string name="feed_product_pivots_view_shop_button">Winkel weergeven</string>
     <string name="feed_refereshed">Inhoud vernieuwd</string>
@@ -1843,10 +1873,13 @@
     <string name="full_single_line_address">%1$s, %3$s %2$s</string>
     <string name="full_terms_rw">Volledige voorwaarden</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">Doorgaan</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">Donaties mogen niet hoger zijn dan %1$s</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">Donaties moeten ten minste %1$s zijn</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">Donatiebedrag</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">Andere valuta</string>
     <string name="fundraiser_sticker_default_title">Inzamelingsactie van %1$s</string>
     <string name="fundraiser_sticker_donate_button_text">Doneren</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">Gedoneerd</string>
     <string name="fundraiser_sticker_search_following_section_title">Volgend</string>
     <string name="fundraiser_sticker_search_suggested_section_title">Voorgesteld</string>
     <string name="fundraiser_sticker_subtitle">Steunt %1$s</string>
@@ -1869,7 +1902,7 @@
     <string name="gdpr_account_privacy">Accountprivacy</string>
     <string name="gdpr_activity_status">Activiteitsstatus</string>
     <string name="gdpr_blocked_accounts">Geblokkeerde accounts</string>
-    <string name="gdpr_business_signup_option_title">Registreren voor een bedrijfsprofiel</string>
+    <string name="gdpr_business_signup_option_title">Een bedrijfsaccount toevoegen</string>
     <string name="gdpr_close_friends_title">Beste vrienden</string>
     <string name="gdpr_contacts_syncing_option_title">Contacten synchroniseren</string>
     <string name="gdpr_data_download">Gegevensdownload</string>
@@ -1898,6 +1931,7 @@
     <string name="get_started">Aan de slag</string>
     <string name="gif_sticker_description">GIF-sticker</string>
     <string name="gifs_description">"GIF's"</string>
+    <string name="given_name">Voornaam</string>
     <string name="go_live_button">Live gaan</string>
     <string name="go_live_suggestion">Start je eigen livevideo om te delen wat je aan het doen bent.</string>
     <string name="go_to_profile">Naar profiel</string>
@@ -1993,7 +2027,6 @@
     <string name="ig_time_picker_pm">p.m.</string>
     <string name="igds_reply_button_label">Beantwoorden</string>
     <string name="igds_view_reply_button_label">Antwoord bekijken</string>
-    <string name="iglive_caption_hint">Voeg een titel toe voor je kijkers...</string>
     <string name="iglive_cobroadcast_end_subtitle">Je was te zien in de livevideo van %1$s.</string>
     <string name="iglive_cobroadcast_end_title">Bedankt dat je er was</string>
     <string name="iglive_discard">Verwijderen</string>
@@ -2337,11 +2370,6 @@
     <string name="live_qa_label">Vraag en antwoord</string>
     <string name="live_ssi_tooltip">Bekijk bronnen wanneer je wilt voor hulp.</string>
     <string name="live_starting_live">Je zendt nu live uit!</string>
-    <string name="live_subscribe_button">Inschakelen</string>
-    <string name="live_subscribe_request_failed_to_send">Je abonnement is niet gelukt.</string>
-    <string name="live_subscribe_request_sent">Ingeschakeld</string>
-    <string name="live_subscribe_sent_system_comment">Je kunt dit op elk gewenst moment uitschakelen via het profiel.</string>
-    <string name="live_subscribe_system_comment">Ontvang meldingen over elke livevideo van %1$s.</string>
     <string name="live_unpin_comment">Opmerking losmaken</string>
     <string name="live_video_call_cannot_start_description">Je kunt geen livevideo starten terwijl je videochat gebruikt.</string>
     <string name="live_video_call_cannot_start_title">Livevideo kan niet worden gestart</string>
@@ -2424,6 +2452,7 @@
     <string name="lookup_subtitle">Voer je Instagram-gebruikersnaam of het e-mailadres of telefoonnummer dat in dat is gekoppeld aan je account.</string>
     <string name="lookup_title">Je account zoeken</string>
     <string name="made_with_boomerang">Gemaakt met &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">Primair account</string>
     <string name="main_feed_hide_recommended_post_msg">We tonen vanaf nu geen berichten van %1$s meer.</string>
     <string name="main_feed_unfollow_from_post_msg">Je zult geen berichten van deze persoon meer zien nadat je de pagina opnieuw hebt geladen.</string>
     <string name="main_feed_unfollow_from_post_title">%1$s wordt niet meer gevolgd</string>
@@ -2440,6 +2469,8 @@
     <string name="manage_saved_login">Opgeslagen aanmeldgegevens</string>
     <string name="managing_photos_of_you">"Foto's van jou beheren"</string>
     <string name="managing_your_account">Je account beheren</string>
+    <string name="map_data_legal_notices_label">Juridische kennisgevingen inzake kaartgegevens</string>
+    <string name="map_information_title">Kaartgegevens</string>
     <string name="map_label">Kaart</string>
     <string name="maps_open_map_reporter">Openen</string>
     <string name="maps_report_button">Rapporteren</string>
@@ -2517,6 +2548,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">Je kunt geen nummer toevoegen aan een verhaal dat je hebt gedeeld via een andere app.</string>
     <string name="music_overlay_cant_save_story_alert">Opslaan is niet beschikbaar voor verhalen met nummers</string>
     <string name="music_overlay_cant_share_to_fb_alert">Delen met Facebook is niet beschikbaar voor verhalen met nummers</string>
+    <string name="music_overlay_no_lyrics_available_toast">Geen songtekst beschikbaar</string>
     <string name="music_overlay_question_text_response_description">Er zijn geen nummers beschikbaar die voldoen aan je zoekopdracht. Tik hierboven om je zoekopdracht als tekstantwoord te sturen.</string>
     <string name="music_overlay_sticker_description">Sticker muziekoverlay</string>
     <string name="music_overlay_story_attribution_from_username">Uit het verhaal van %1$s</string>
@@ -2708,13 +2740,8 @@
     <string name="nux_main_feed_empty_subtitle_active">"Volg mensen om de foto's en video's te zien die ze delen."</string>
     <string name="nux_main_feed_empty_title">Welkom bij Instagram</string>
     <string name="nux_one_tap_login_card_remove_icon_description">Verwijderen</string>
-    <string name="nux_one_tap_upsell_detail_save">We slaan je aanmeldgegevens voor je op. Je hoeft deze dan niet meer in te voeren als je je weer met dit apparaat aanmeldt.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">Wanneer je je aanmeldt op deze telefoon, kun je simpelweg op je profielfoto tikken in plaats van je aanmeldgegevens te hoeven typen.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">De volgende keer dat je je aanmeldt op deze telefoon, kun je simpelweg op je profielfoto tikken in plaats van je aanmeldgegevens te hoeven typen.</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">Opslaan</string>
-    <string name="nux_one_tap_upsell_title_save">Aanmeldgegevens opslaan</string>
-    <string name="nux_one_tap_upsell_title_variant1">De volgende keer eenvoudiger aanmelden</string>
-    <string name="nux_one_tap_upsell_title_variant2">Wachtwoord onthouden</string>
+    <string name="nux_one_tap_upsell_detail">De volgende keer dat je je aanmeldt op deze telefoon, kun je simpelweg op je profielfoto tikken in plaats van je aanmeldgegevens te hoeven typen.</string>
+    <string name="nux_one_tap_upsell_title">Wachtwoord onthouden</string>
     <string name="nux_pinch_to_zoom">Knijp samen om in te zoomen</string>
     <string name="nux_silent_audio_text">Deze video heeft geen geluid</string>
     <string name="off">Uit</string>
@@ -2732,7 +2759,6 @@
     <string name="one_hour">1 uur</string>
     <string name="one_tap_login_landing_edit_accounts">Accounts bewerken</string>
     <string name="one_tap_login_text_link_text">Aanmelden met een ander account</string>
-    <string name="one_tap_logo">Eéntikslogo</string>
     <string name="one_tap_new_footer_log_in">&lt;b>Aanmelden.&lt;/b></string>
     <string name="one_tap_new_footer_one_button">Nieuw bij Instagram? &lt;b>Registreer je vandaag nog.&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>Van account wisselen&lt;/b> of</string>
@@ -2752,7 +2778,6 @@
     <string name="open_map_error">De kaart kan niet worden geopend.</string>
     <string name="open_phone_error">Het is niet mogelijk om te bellen.</string>
     <string name="open_source_libraries">Open-sourcebibliotheken</string>
-    <string name="openstreetmap_copyright_text">© OpenStreetMap-bijdragers</string>
     <string name="opt_into_all_ad_content_label">Blijven kijken</string>
     <string name="opt_into_entire_dynamic_ad_label">Nog %1$d weergeven</string>
     <string name="or">of</string>
@@ -2852,8 +2877,6 @@
     <string name="phone_number_toast_number_required">Telefoonnummer vereist</string>
     <string name="phone_permission_request_message">We vullen je telefoonnummer automatisch in en bevestigen dit voor je. Hierdoor kun je eenvoudiger je account herstellen als je er geen toegang meer toe hebt.</string>
     <string name="phone_permission_request_title">Telefoongesprekken voeren en beheren</string>
-    <string name="phone_register">Voer je telefoonnummer in</string>
-    <string name="phone_signup">Registreren via telefoonnummer</string>
     <string name="photo">Foto</string>
     <string name="photo_edit_error_message">Er is een probleem opgetreden bij het bewerken van je foto. Er is een rapport verzonden aan Instagram.</string>
     <string name="photo_edit_error_title">Kan niet doorgaan met bewerken</string>
@@ -2904,6 +2927,7 @@
     <string name="post_to_your_story_label">Bericht toevoegen aan je verhaal</string>
     <string name="post_to_your_story_label_igtv">Video toevoegen aan je verhaal</string>
     <string name="post_you_were_tagged_in">Bericht waarin je bent getagd</string>
+    <string name="postal_code">Postcode</string>
     <string name="posted_comment">Opmerking geplaatst</string>
     <string name="posting_failed">Je video is niet gedeeld.</string>
     <string name="posting_message">Plaatsen...</string>
@@ -2915,7 +2939,6 @@
     <string name="posts_tab_title">Berichten</string>
     <string name="posts_you_liked">Berichten die je leuk vindt</string>
     <string name="preferences_label">Voorkeuren</string>
-    <string name="preparing_to_scan">Voorbereiden op scan...</string>
     <string name="presence_permission_explanation">Toestaan dat accounts je kunnen volgen en dat iedereen die jij een chatbericht stuurt, kan zien wanneer je voor het laatst actief bent geweest in Instagram-apps. Als deze functie is uitgeschakeld, kun je de activiteitsstatus van andere accounts niet zien.</string>
     <string name="presence_permission_name">Activiteitsstatus weergeven</string>
     <string name="preview_hint_text">Tik om de foto of video in dit verhaal te bekijken</string>
@@ -2977,6 +3000,7 @@
     <string name="product_share_sticker_default_question">Zal ik dit kopen?</string>
     <string name="product_share_sticker_from">Van %1$s</string>
     <string name="product_source">Productbron</string>
+    <string name="product_source_different_catalog">Een andere catalogus gebruiken</string>
     <string name="product_source_learn_more">Meer informatie</string>
     <string name="product_source_learn_more_text">Als je de productcatalogus die je hier wilt toevoegen niet ziet, neem je contact op met een paginabeheerder of controleer je je toestemmingen in Bedrijfsmanager om te zien of je toestemming hebt. %1$s</string>
     <string name="product_source_load_more">Meer catalogi laden</string>
@@ -3054,7 +3078,17 @@
     <string name="profile_visits">Profielbezoeken</string>
     <string name="promote">Promoten</string>
     <string name="promote_again">Opnieuw promoten</string>
+    <string name="promote_audience_header">Doelgroep selecteren</string>
+    <string name="promote_budget_duration_header">Je hebt in totaal %1$s uitgegeven verspreid over %2$d dagen</string>
+    <string name="promote_budget_duration_screen_title">Budget en looptijd</string>
+    <string name="promote_create_new_audience_subtitle">Voer je targetingopties handmatig in</string>
+    <string name="promote_create_new_audience_title">Je eigen doelgroep maken</string>
+    <string name="promote_destination_direct_message_option">Je privéberichten</string>
+    <string name="promote_destination_header">Selecteren waarnaar je mensen wilt sturen</string>
+    <string name="promote_destination_profile_option">Je profiel</string>
     <string name="promote_destination_screen_title">Bestemming</string>
+    <string name="promote_destination_website_option">Je website</string>
+    <string name="promote_edit">bewerken</string>
     <string name="promote_error_claim_page_label">Pagina claimen</string>
     <string name="promote_error_description_network_error">Er is een probleem bij ons opgetreden en we kunnen je bericht momenteel niet promoten. Probeer het later opnieuw.</string>
     <string name="promote_error_page_legal_info">"Facebook-pagina's zijn onderhevig aan deze %1$s."</string>
@@ -3117,11 +3151,12 @@
     <string name="quick_replies">Snelle antwoorden</string>
     <string name="quick_reply_description">Snel antwoord</string>
     <string name="quiz_responder_subtitle_text">antwoord %1$s</string>
-    <string name="quiz_sticker_first_answer_hint">Optie 1</string>
+    <string name="quiz_sticker_add_option_hint">Toevoegen</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">Voeg minimaal twee opties toe</string>
     <string name="quiz_sticker_question_hint">RAAD MIJN FAVORIET...</string>
     <string name="quiz_sticker_response_composer_privacy_nux">Tik om de quiz te starten. %1$s krijgt je antwoord te zien.</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">Antwoord verzenden</string>
-    <string name="quiz_sticker_second_answer_hint">Optie 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">Selecteer een geldige optie</string>
     <string name="quiz_sticker_tray_description">Quizsticker</string>
     <string name="rageshake_bug_report_option">Er werkt iets niet</string>
     <string name="rageshake_disable_option">Schudden uitschakelen</string>
@@ -3164,7 +3199,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">Het lijkt erop dat er al een account bestaat voor dit e-mailadres. We kunnen proberen je aan te melden via je Google -accountgegevens.</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">Het lijkt erop dat deze gebruikersnaam aan een Gmail-adres is gekoppeld. We kunnen je proberen aan te melden via je Google -accountgegevens.</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">Het lijkt erop dat je al aanmeldgegevens hebt opgeslagen voor dit account.</string>
-    <string name="reel_ad4ad_privacy_subtitle">Alleen jij kunt dit voorbeeld zien</string>
+    <string name="reel_ad4ad_privacy_subtitle">Alleen jij kunt dit zien</string>
     <string name="reel_bakeoff_thank_you_subtitle">We gebruiken jouw antwoorden om Instagram te verbeteren.</string>
     <string name="reel_bakeoff_thank_you_title">Bedankt voor je bericht.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">Camera openen</string>
@@ -3201,6 +3236,7 @@
     <string name="reel_poll_voters_list_title">Stemmers</string>
     <string name="reel_question_responses_list_title">Reacties</string>
     <string name="reel_quick_reactions">Snelle reacties</string>
+    <string name="reel_quiz_responders_list_title">Beantwoord</string>
     <string name="reel_reaction_composer_sent_confirmation">Reactie gestuurd naar %1$s</string>
     <string name="reel_reshared_from_archive_label">Van archief</string>
     <string name="reel_reshares_empty_state_title">Er zijn momenteel geen openbaar gedeelde versies van dit bericht</string>
@@ -3350,6 +3386,7 @@
     <string name="reply_to">Antwoord op %1$s...</string>
     <string name="replying_to_user_format">Je antwoordt op %1$1s</string>
     <string name="report">Rapporteren</string>
+    <string name="report_a_problem_label">Een probleem rapporteren</string>
     <string name="report_accounts_are_inappropriate">Accounts zijn niet geschikt</string>
     <string name="report_ad">Advertentie rapporteren</string>
     <string name="report_as_ip_violation">Rapporteren als een schending van intellectuele-eigendomsrechten?</string>
@@ -3579,7 +3616,7 @@
     <string name="set_daily_reminder_subtitle">We sturen je een herinnering wanneer je de tijd hebt bereikt die je voor jezelf hebt ingesteld.</string>
     <string name="set_daily_reminder_title">Dagelijkse herinnering instellen</string>
     <string name="set_main_account">Primair account instellen</string>
-    <string name="set_up_business_profile">Je bedrijfsprofiel instellen</string>
+    <string name="set_up_business_account">Je bedrijfsaccount instellen</string>
     <string name="settings">Instellingen</string>
     <string name="settings_viewers_choose_locations_feature_off">Uit</string>
     <string name="settings_viewers_choose_locations_title">Locaties kiezen</string>
@@ -3639,6 +3676,7 @@
     <string name="shop_on_profile_row_continue_shopping">Verder winkelen</string>
     <string name="shop_this_post">SHOP VIA DIT BERICHT</string>
     <string name="shopping">Winkelen</string>
+    <string name="shopping_checkout_destination_title">Nu shoppen en afrekenen</string>
     <string name="shopping_destination_title">Shoppen</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">Hiermee wordt de productsticker uit dit verhaal verwijderd.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">Sticker verwijderen</string>
@@ -3807,7 +3845,6 @@
     <string name="suggested">Voorgesteld</string>
     <string name="suggested_accounts_header">Voorgesteld</string>
     <string name="suggested_categories">Suggesties</string>
-    <string name="suggested_for_you">Voorgesteld voor jou</string>
     <string name="suggested_hashtags">Voorgesteld</string>
     <string name="suggested_hashtags_header">Suggesties</string>
     <string name="suggested_highlight_delete_option_text">Suggestie verwijderen</string>
@@ -3815,7 +3852,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">Verwijderen</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">Behouden</string>
     <string name="suggested_highlight_discard_changes_dialog_title">Hoogtepunt verwijderen?</string>
-    <string name="suggested_live_and_post_live_videos">Volgende bekijken</string>
     <string name="suggested_live_videos">Nu live</string>
     <string name="suggested_recipients">Voorgesteld</string>
     <string name="suggested_username_allcaps_title">WELKOM BIJ INSTAGRAM,</string>
@@ -3900,6 +3936,7 @@
     <string name="tap_to_view_product_items">TIK OM PRODUCTEN TE BEKIJKEN</string>
     <string name="tap_to_watch_video_description">Tik om video te bekijken</string>
     <string name="tap_to_watch_video_nux">VOLLEDIGE IGTV-VIDEO KIJKEN</string>
+    <string name="tel">Telefoon</string>
     <string name="tell_us_approval_reason">Laat ons weten waarom je advertentie moet worden goedgekeurd. Als we een foutje hebben gemaakt, zullen we je advertentie zo snel mogelijk goedkeuren.</string>
     <string name="terms">Voorwaarden</string>
     <string name="terms_and_data_policy">Voorwaarden en gegevensbeleid</string>
@@ -4056,6 +4093,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">Voer de zescijferige code in die naar je telefoonnummer eindigend op %1$s is gestuurd om de configuratie van tweestapsverificatie af te ronden.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">Voer de door je verificatieapp gegenereerde zescijferige code in.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">Code invoeren</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">We vragen je niet om een code wanneer je je opnieuw aanmeldt</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">Dit apparaat vertrouwen</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">Telefoonnummer wijzigen</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">Code opnieuw sturen</string>
     <string name="two_fac_confirmation_code_invalid">Ongeldige code</string>
@@ -4222,6 +4261,7 @@
     <string name="username_cannot_be_empty">Gebruikersnaam mag niet leeg zijn</string>
     <string name="username_hint_access">Gebruikersnaam, e-mailadres of telefoonnummer</string>
     <string name="username_hint_login">Telefoonnummer, e-mailadres of gebruikersnaam</string>
+    <string name="username_lock_help_text">Je oude gebruikersnaam wordt 14 dagen vergrendeld. Je kunt deze naam binnen deze periode weer herstellen. Na deze periode wordt de gebruikersnaam beschikbaar gemaakt voor iedereen.</string>
     <string name="username_not_available">Gebruikersnaam niet beschikbaar</string>
     <string name="username_placeholder">gebruikersnaam</string>
     <string name="valid_address_to_map">Voeg een geldig adres toe zodat mensen naar je locatie kunnen navigeren op de kaart.</string>

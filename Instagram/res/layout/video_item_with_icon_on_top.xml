@@ -8,4 +8,5 @@
         <TextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:ellipsize="end" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="sans-serif" />
         <TextView android:textSize="@dimen/video_item_overlay_title_font_large" android:textColor="@color/white" android:ellipsize="end" android:gravity="bottom" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
     </LinearLayout>
+    <ViewStub android:id="@id/layout_container_secondary" android:layout="@layout/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </com.instagram.discovery.ui.FixedAspectRatioVideoLayout>

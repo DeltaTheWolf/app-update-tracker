@@ -221,6 +221,10 @@
     <string name="address_book_contacts_screen_title">Invite Contacts</string>
     <string name="address_book_contacts_screen_title_with_context_1">Choose Contacts</string>
     <string name="address_book_contacts_screen_title_with_context_2">Choose Contacts to Invite</string>
+    <string name="address_level_1">State</string>
+    <string name="address_level_2">City</string>
+    <string name="address_line_1">Address</string>
+    <string name="address_line_2">Apt/Ste (Optional)</string>
     <string name="adjust">Adjust</string>
     <string name="adjustable_description">Adjustable</string>
     <string name="admin_contact_info">Admin Contact Info</string>
@@ -482,7 +486,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="bugreporter_load_external_screenshot_wait">Loading image…</string>
     <string name="bugreporter_low_memory_screenshot_error">Insufficient memory to capture a screenshot. Sorry!</string>
     <string name="bugreporter_not_now">Not Now</string>
-    <string name="bugreporter_rageshake_hint">Briefly explain what happened</string>
+    <string name="bugreporter_rageshake_hint">What went wrong?</string>
     <string name="bugreporter_rageshake_video_quality_hint">Briefly explain how the video quality or audio quality is different from what you expect.</string>
     <string name="bugreporter_save_annotated_screenshot_error">Could not save the screenshot. Please try again.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">Saving…</string>
@@ -514,6 +518,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="business_profile">Business Profile</string>
     <string name="business_profile_linked_to_pages">Business profiles on Instagram are linked to Facebook Pages and are subject to their %1$s.</string>
     <string name="business_settings_redesign">Business</string>
+    <string name="business_signup_account_option_title">Sign up for a Business Account</string>
     <string name="business_signup_address_hint">Business address</string>
     <string name="business_signup_change_username">Change Username</string>
     <string name="business_signup_choose_username_desc">Pick a username for your business account. You can always change this later.</string>
@@ -669,6 +674,10 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
     <string name="check_connection_and_try_again">Please check your connection and try again.</string>
+    <string name="checkout_module_merchant_card_action_text">Shop</string>
+    <string name="checkout_module_nux_message">Now you can buy from some brands without leaving Instagram.</string>
+    <string name="checkout_module_nux_title">Try Checkout on Instagram</string>
+    <string name="checkout_module_title">Checkout on Instagram</string>
     <string name="choose_app_verify_flow">Confirm Automatically</string>
     <string name="choose_category">Choose categories for your business profile</string>
     <string name="choose_category_for_profile">Choose category for your profile</string>
@@ -767,7 +776,13 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="comment_ellipsis_less">　less</string>
     <string name="comment_hint">Add a comment…</string>
     <string name="comment_offensive_alert_message">Are you sure you want to post this?</string>
+    <string name="comment_offensive_alert_message_new">Other people may find the offensive.</string>
     <string name="comment_undo_button">Undo</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">let us know</string>
+    <string name="comment_warning_bottom_sheet_para1">"We're asking people to rethink comments that seem similar to others that have been reported"</string>
+    <string name="comment_warning_bottom_sheet_para2">If we made a mistake,</string>
+    <string name="comment_warning_bottom_sheet_title">Keeping Instagram a Supportive Place</string>
+    <string name="comment_warning_bottom_sheet_toast">Feedback sent</string>
     <string name="commenting_disabled_hint">Comments on this post have been limited.</string>
     <string name="commenting_limited_to_followers">Only your followers can add comments. Comments are visible to everyone.</string>
     <string name="commenting_limited_to_followers_and_following">Only your followers and people you follow can add comments. Comments are visible to everyone.</string>
@@ -842,6 +857,7 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="connect_fb_and_agree">By tapping the button above and accessing insights, you agree to our %1$s.</string>
     <string name="connect_fb_get_insights">"Learn about your followers and see how your posts are performing. We won't post anything to Facebook without your permission."</string>
     <string name="connect_ig_to_fb_page_explain">Connect your Instagram Business account to a Facebook Page to make it easier for people to find you. Business accounts on Instagram are linked to Facebook Pages and are subject to their %1$s.</string>
+    <string name="connect_or_create">Connect or Create</string>
     <string name="connect_page_for_biz_tools">"Accounts that use Instagram Business Tools can be connected to a Facebook Page. A Page connection is required to create ads. If you already have a Page, we'll copy over your info so you can edit it."</string>
     <string name="connect_page_for_power_tools">"Accounts that use Instagram Power Tools can be connected to a Facebook Page. A Page connection is required to create ads. If you already have a Page, we'll copy over your info so you can edit it."</string>
     <string name="connect_page_for_pro_tools">"Accounts that use Instagram Professional Tools can be connected to a Facebook Page. A Page connection is required to create ads. If you already have a Page, we'll copy over your info so you can edit it."</string>
@@ -962,6 +978,10 @@ If your promotion is approved from this appeal, it will become active right away
     <string name="country_name_or_code">Country name or code</string>
     <string name="cover">Cover</string>
     <string name="cowatch_content_sheet_suggested_section_header">Suggested</string>
+    <string name="cowatch_debug_move_backward">-</string>
+    <string name="cowatch_debug_move_forward">+</string>
+    <string name="cowatch_debug_pause">Pause</string>
+    <string name="cowatch_debug_play">Play</string>
     <string name="create_a_business_account">Create a Business Account</string>
     <string name="create_a_new_page">Create a New Facebook Page</string>
     <string name="create_a_personal_account">Create a Personal Account</string>
@@ -1121,6 +1141,9 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="delta_login_review_was_me">This Was Me</string>
     <string name="delta_login_review_was_not_me">"This Wasn't Me"</string>
     <string name="delta_password_change_confirm_new_password_hint">Confirm new password</string>
+    <string name="delta_password_change_error_match_failure">Please make sure both passwords match.</string>
+    <string name="delta_password_change_error_required_field_native">Both fields are required.</string>
+    <string name="delta_password_change_error_required_field_react_native">This field is required.</string>
     <string name="delta_password_change_footer">We recommend you make your password unique to Instagram and include at least one number and one special character.</string>
     <string name="delta_password_change_new_password_hint">New password</string>
     <string name="delta_password_change_submit">Submit</string>
@@ -1224,6 +1247,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="dial_element_capture_format_music">Music</string>
     <string name="dial_element_capture_format_reverse">Rewind</string>
     <string name="dial_element_capture_format_superzoom">Superzoom</string>
+    <string name="dialog_always_share_to_facebook">Always Share to Facebook</string>
     <string name="dialog_block_user_button">Block</string>
     <string name="dialog_block_user_message">"They won't be able to find your profile, posts or story on Instagram. Instagram won't let them know you blocked them."</string>
     <string name="dialog_block_user_title">Block %1$s?</string>
@@ -1273,7 +1297,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Move to Requests?</string>
     <string name="direct_block_account">Block Account</string>
     <string name="direct_block_choices_block_account">Block Account</string>
-    <string name="direct_block_choices_block_messages">Block Messages</string>
+    <string name="direct_block_choices_ignore">Ignore</string>
     <string name="direct_block_user">Block User</string>
     <string name="direct_blocked">Blocked</string>
     <string name="direct_button_change_group_name">Done</string>
@@ -1286,6 +1310,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="direct_details_error">Unable to load conversation details. Try again.</string>
     <string name="direct_digest_active_today">Active today</string>
     <string name="direct_digest_active_yesterday">Active yesterday</string>
+    <string name="direct_digest_are_active_now">%1$d others are active now</string>
     <string name="direct_digest_is_active_now">Active now</string>
     <string name="direct_digest_mentioned_you_story">Mentioned you in a story</string>
     <string name="direct_digest_no_author_shared_product">Shared a product</string>
@@ -1314,6 +1339,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="direct_digest_shared_post">Shared a post</string>
     <string name="direct_digest_shared_your_countdown">Shared your countdown to their story</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">Tagged you as a business partner</string>
+    <string name="direct_digest_user_is_active_now">%1$s is active now</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s sent a Direct App invite</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">Sent a Direct App invite</string>
     <string name="direct_digest_user_sent_gif">%1$s sent a GIF</string>
@@ -1533,6 +1559,8 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="direct_reel_mention_recipient_info_brand_content">Tagged you as a business partner</string>
     <string name="direct_reel_mention_sender_info">You mentioned %1$s in your story</string>
     <string name="direct_reel_mention_sender_info_branded_content">You tagged %1$s as a business partner</string>
+    <string name="direct_reel_question_response_creator_info">Answered your question</string>
+    <string name="direct_reel_question_response_sender_info">You answered their question</string>
     <string name="direct_reel_reaction_recipient_info">Reacted to your story %1$s</string>
     <string name="direct_reel_reaction_sender_info">You reacted to their story %1$s</string>
     <string name="direct_reel_reply_receiver_highlight_info">Replied to your story highlight</string>
@@ -1720,7 +1748,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="disconnect_contacts_dialog_title">Disconnect Contacts?</string>
     <string name="disconnect_failed">Disconnect Failed.</string>
     <string name="discover_people">Discover People</string>
-    <string name="discovery_item_post_live_label">Was Live</string>
+    <string name="discovery_item_post_live_label">WAS LIVE</string>
     <string name="discovery_surface_button_description">Open Effect Discovery Surface</string>
     <string name="dismiss">Dismiss</string>
     <string name="dismiss_button_hint">Close</string>
@@ -1772,10 +1800,16 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="editable_profile_review_title">Review Your Contact Info</string>
     <string name="edited">Edited</string>
     <string name="edits_not_saved">"Your edits weren't saved. Please try again."</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> by %2$s</string>
-    <string name="effect_by_format">by %1$s</string>
-    <string name="effect_by_format_with_title">%1$s by %2$s</string>
     <string name="effect_created_by_format">created by &lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">More</string>
+    <string name="effect_detail_save_to_camera_button_label">Save to Camera</string>
+    <string name="effect_detail_saved_to_camera_button_label">Saved to Camera</string>
+    <string name="effect_detail_share_button_label">Send To…</string>
+    <string name="effect_detail_view_try_it_button_label">Try It</string>
+    <string name="effect_details_view_created_from_format">from &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> from %2$s</string>
+    <string name="effect_from_format">from %1$s</string>
+    <string name="effect_from_format_with_title">%1$s from %2$s</string>
     <string name="eight_hours">8 hours</string>
     <string name="ellipses">…</string>
     <string name="ellipsis_more">… more</string>
@@ -1785,10 +1819,8 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="email_invalid">Email is invalid</string>
     <string name="email_not_available">This email is taken by another account.</string>
     <string name="email_not_valid">Please enter a valid email.</string>
-    <string name="email_register">Enter your email address</string>
     <string name="email_sent">"An email has been sent to your account's email address. Please check your email to continue. If you are still having problems, please visit the %1$s."</string>
     <string name="email_sent_short">Email sent</string>
-    <string name="email_signup">Sign Up With Email Address</string>
     <string name="email_sms_notification_settings">Email and SMS Notifications</string>
     <string name="emails">Emails</string>
     <string name="emoji_not_allowed">Password contains emoji characters. Please choose something else.</string>
@@ -1824,6 +1856,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="expired_link_dialog_title">Expired Link</string>
     <string name="explore_contextual_title">Explore</string>
     <string name="explore_description">Search and Explore</string>
+    <string name="explore_effects">Explore Effects</string>
     <string name="explore_places">Places</string>
     <string name="explore_places_request_fail">"Couldn't load places. Try again."</string>
     <string name="explore_topical_going_to_next">GOING TO NEXT</string>
@@ -1874,6 +1907,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="failed_to_load_highlight_message">Failed to load highlight</string>
     <string name="failed_to_load_photo_toast">Sorry, this photo cannot be loaded.</string>
     <string name="failed_to_load_video_toast">Sorry, this video cannot be loaded.</string>
+    <string name="family_name">Last Name</string>
     <string name="favorites_tab_title">Close Friends</string>
     <string name="fb_connect_card_button_text">Connect</string>
     <string name="fb_connect_card_main_text">Connect Facebook</string>
@@ -1895,6 +1929,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="feed_controls_message_replies_setting_following">People You Follow</string>
     <string name="feed_controls_message_replies_setting_off">Off</string>
     <string name="feed_controls_settings_title">Feed Controls</string>
+    <string name="feed_emoji_see_more_button_label">Tap to see more emojis</string>
     <string name="feed_item_page_title">Ad</string>
     <string name="feed_product_pivots_view_shop_button">View Shop</string>
     <string name="feed_refereshed">Content Refreshed</string>
@@ -2040,10 +2075,13 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="full_single_line_address">%1$s, %2$s %3$s</string>
     <string name="full_terms_rw">Full Terms</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">Continue</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">"Donations can't be more than %s"</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">Donations must be at least %s</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">Donation Amount</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">Other</string>
     <string name="fundraiser_sticker_default_title">"%1$s's fundraiser"</string>
     <string name="fundraiser_sticker_donate_button_text">Donate</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">Donated</string>
     <string name="fundraiser_sticker_search_following_section_title">Following</string>
     <string name="fundraiser_sticker_search_suggested_section_title">Suggested</string>
     <string name="fundraiser_sticker_subtitle">Supporting %1$s</string>
@@ -2070,7 +2108,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="gdpr_account_privacy">Account Privacy</string>
     <string name="gdpr_activity_status">Activity Status</string>
     <string name="gdpr_blocked_accounts">Blocked Accounts</string>
-    <string name="gdpr_business_signup_option_title">Sign up for a Business Profile</string>
+    <string name="gdpr_business_signup_option_title">Add a Business Account</string>
     <string name="gdpr_close_friends_title">Close Friends</string>
     <string name="gdpr_contacts_syncing_option_title">Contacts Syncing</string>
     <string name="gdpr_data_download">Data Download</string>
@@ -2101,6 +2139,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="gif_sticker_description">Gif Sticker</string>
     <string name="gifs_description">Gifs</string>
     <string name="giphy_section_title">GIPHY</string>
+    <string name="given_name">First Name</string>
     <string name="go_live_button">Go Live</string>
     <string name="go_live_suggestion">"Start your own live video to share what you're up to."</string>
     <string name="go_to_profile">Go to Profile</string>
@@ -2203,9 +2242,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="ig_time_picker_pm">PM</string>
     <string name="igds_reply_button_label">Reply</string>
     <string name="igds_view_reply_button_label">View Reply</string>
-    <string name="iglive_caption_character_count">%1$s/30</string>
-    <string name="iglive_caption_hint">Add a title for your viewers…</string>
-    <string name="iglive_captioned_notification">%1$s is live: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">"You were in %1$s's live video."</string>
     <string name="iglive_cobroadcast_end_title">Thanks for joining!</string>
     <string name="iglive_discard">Discard</string>
@@ -2575,11 +2611,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="live_qa_label">Q&amp;A</string>
     <string name="live_ssi_tooltip">See resources any time to get support.</string>
     <string name="live_starting_live">You are now live!</string>
-    <string name="live_subscribe_button">Turn On</string>
-    <string name="live_subscribe_request_failed_to_send">"Your subscription wasn't successful."</string>
-    <string name="live_subscribe_request_sent">Turned On</string>
-    <string name="live_subscribe_sent_system_comment">You can turn this off any time from their profile.</string>
-    <string name="live_subscribe_system_comment">Get notifications for every live video from %s.</string>
     <string name="live_title">Live</string>
     <string name="live_unpin_comment">Unpin Comment</string>
     <string name="live_video_call_cannot_start_description">"You can't start a live video while you're using video chat."</string>
@@ -2673,6 +2704,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="low_data_mode_toggle">Enable</string>
     <string name="lux">Lux</string>
     <string name="made_with_boomerang">Made with &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">Main Account</string>
     <string name="main_feed_hide_recommended_post_msg">"We won't show posts from %1$s from now on."</string>
     <string name="main_feed_unfollow_from_post_msg">"You won't see more of their posts once you refresh."</string>
     <string name="main_feed_unfollow_from_post_title">Unfollowed %1$s</string>
@@ -2690,6 +2722,8 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="managing_photos_of_you">Managing Photos of You</string>
     <string name="managing_your_account">Managing Your Account</string>
     <string name="map_ad">Map Ad</string>
+    <string name="map_data_legal_notices_label">Map data legal notices</string>
+    <string name="map_information_title">Map Information</string>
     <string name="map_label">Map</string>
     <string name="maps_open_map_reporter">Open</string>
     <string name="maps_report_button">Report</string>
@@ -2770,6 +2804,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="music_overlay_cant_add_song_with_platform_alert">"You can't add a song to a story you shared from another app."</string>
     <string name="music_overlay_cant_save_story_alert">"Saving isn't available for stories with songs"</string>
     <string name="music_overlay_cant_share_to_fb_alert">"Sharing to Facebook isn't available for stories with songs"</string>
+    <string name="music_overlay_no_lyrics_available_toast">No lyrics available</string>
     <string name="music_overlay_question_text_response_description">There are no available songs that match your search. Tap above to send your search as a text response.</string>
     <string name="music_overlay_sticker_description">Music Overlay Sticker</string>
     <string name="music_overlay_story_attribution_from_username">"From %1$s's Story"</string>
@@ -3020,14 +3055,9 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="nux_main_feed_empty_subtitle_active">Follow people to start seeing the photos and videos they share.</string>
     <string name="nux_main_feed_empty_title">Welcome to Instagram</string>
     <string name="nux_one_tap_login_card_remove_icon_description">Remove</string>
-    <string name="nux_one_tap_upsell_detail_save">"We'll save your login info for you. You won't need to enter it when you log in again on this device."</string>
-    <string name="nux_one_tap_upsell_detail_variant1">When you log in using this phone, just tap your profile photo instead of typing all your login info.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">Next time you log in using this phone, just tap your profile photo instead of typing all your login info.</string>
+    <string name="nux_one_tap_upsell_detail">Next time you log in using this phone, just tap your profile photo instead of typing all your login info.</string>
     <string name="nux_one_tap_upsell_enroll_button_ok">OK</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">Save</string>
-    <string name="nux_one_tap_upsell_title_save">Save Login Info</string>
-    <string name="nux_one_tap_upsell_title_variant1">Log In Easier Next Time</string>
-    <string name="nux_one_tap_upsell_title_variant2">Remember Password</string>
+    <string name="nux_one_tap_upsell_title">Remember Password</string>
     <string name="nux_pinch_to_zoom">Pinch to zoom</string>
     <string name="nux_silent_audio_text">This video has no sound</string>
     <string name="odnoklassniki">OK.ru</string>
@@ -3048,7 +3078,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="one_hour">1 hour</string>
     <string name="one_tap_login_landing_edit_accounts">Edit Accounts</string>
     <string name="one_tap_login_text_link_text">Log in With Another Account</string>
-    <string name="one_tap_logo">One Tap Logo</string>
     <string name="one_tap_new_footer_log_in">&lt;b>Log in.&lt;/b></string>
     <string name="one_tap_new_footer_one_button">New to Instagram? &lt;b> Sign up.&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>Switch Accounts&lt;/b> or</string>
@@ -3068,8 +3097,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="open_map_error">"Sorry, we weren't able to open the map."</string>
     <string name="open_phone_error">"Sorry, we weren't able to make the call."</string>
     <string name="open_source_libraries">Open Source Libraries</string>
-    <string name="openstreetmap_copyright_text">© OpenStreetMap contributors</string>
-    <string name="openstreetmap_title">OpenStreetMap</string>
     <string name="opt_into_all_ad_content_label">Keep Watching</string>
     <string name="opt_into_entire_dynamic_ad_label">View %1$d More</string>
     <string name="or">or</string>
@@ -3174,8 +3201,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="phone_number_toast_number_required">Phone number required</string>
     <string name="phone_permission_request_message">"We'll autofill and confirm your phone number for you, making it easier to recover your account if you get locked out."</string>
     <string name="phone_permission_request_title">Make and manage phone calls</string>
-    <string name="phone_register">Enter your phone number</string>
-    <string name="phone_signup">Sign Up With Phone Number</string>
     <string name="photo">Photo</string>
     <string name="photo_edit_error_message">Sorry, there was a problem editing your photo. A report has been sent to Instagram.</string>
     <string name="photo_edit_error_title">"Can't Continue Editing"</string>
@@ -3228,6 +3253,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="post_to_your_story_label">Add post to your story</string>
     <string name="post_to_your_story_label_igtv">Add video to your story</string>
     <string name="post_you_were_tagged_in">Post You Were Tagged In</string>
+    <string name="postal_code">Zipcode</string>
     <string name="posted_comment">Posted Comment</string>
     <string name="posting_failed">"Your video wasn't shared."</string>
     <string name="posting_message">Posting…</string>
@@ -3239,7 +3265,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="posts_tab_title">Posts</string>
     <string name="posts_you_liked">"Posts You've Liked"</string>
     <string name="preferences_label">Preferences</string>
-    <string name="preparing_to_scan">Preparing to scan…</string>
     <string name="presence_permission_explanation">"Allow accounts you follow and anyone you message to see when you were last active on Instagram apps. When this is turned off, you won't be able to see the activity status of other accounts."</string>
     <string name="presence_permission_name">Show Activity Status</string>
     <string name="preview_hint_text">Tap to view the photo or video in this story</string>
@@ -3303,6 +3328,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="product_share_sticker_default_question">Should I get this?</string>
     <string name="product_share_sticker_from">From %1$s</string>
     <string name="product_source">Product Source</string>
+    <string name="product_source_different_catalog">Use a Different Catalog</string>
     <string name="product_source_learn_more">Learn More</string>
     <string name="product_source_learn_more_text">"If you don't see the product catalog you want to add here, then contact a Page Admin, or check your permissions in Business Manager to make sure you have permission. %1$s"</string>
     <string name="product_source_load_more">Load more catalogs</string>
@@ -3386,8 +3412,19 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="project_id">api-4809448487316591555-410575</string>
     <string name="promote">Promote</string>
     <string name="promote_again">Promote Again</string>
+    <string name="promote_audience_header">Select Target Audience</string>
+    <string name="promote_budget_duration_header">Your Total Spend is %1$s Over %2$d Days</string>
+    <string name="promote_budget_duration_screen_title">Budget &amp; Duration</string>
+    <string name="promote_create_new_audience_subtitle">Manually enter your targeting options</string>
+    <string name="promote_create_new_audience_title">Create Your Own</string>
     <string name="promote_debug">Promote Debug [FB]</string>
+    <string name="promote_destination_direct_message_option">Your Direct Messages</string>
+    <string name="promote_destination_header">Select Where to Send People</string>
+    <string name="promote_destination_profile_option">Your Profile</string>
     <string name="promote_destination_screen_title">Destination</string>
+    <string name="promote_destination_website_edit_title">Website</string>
+    <string name="promote_destination_website_option">Your Website</string>
+    <string name="promote_edit">edit</string>
     <string name="promote_error_claim_page_label">Claim Page</string>
     <string name="promote_error_description_network_error">"There's an issue on our end and we can't promote your post right now. Please try again later."</string>
     <string name="promote_error_page_legal_info">Facebook Pages are subject to these %1$s.</string>
@@ -3452,11 +3489,12 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="quick_replies">Quick Replies</string>
     <string name="quick_reply_description">Quick Reply</string>
     <string name="quiz_responder_subtitle_text">answered %1$s</string>
-    <string name="quiz_sticker_first_answer_hint">Option 1</string>
+    <string name="quiz_sticker_add_option_hint">Add</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">Add at least two options</string>
     <string name="quiz_sticker_question_hint">GUESS MY FAVORITE…</string>
     <string name="quiz_sticker_response_composer_privacy_nux">Tap to start the quiz. %1$s will see your answer.</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">Submit Answer</string>
-    <string name="quiz_sticker_second_answer_hint">Option 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">Select a valid option</string>
     <string name="quiz_sticker_tray_description">Quiz Sticker</string>
     <string name="quiz_sticker_tray_label">QUIZ</string>
     <string name="rageshake_bug_report_option">"Something Isn't Working"</string>
@@ -3513,7 +3551,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">"It looks like there's already an account for this email. We can try to log you in using your Google account info."</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">It looks like this username is linked to a Gmail address. We can try to log you in using your Google account info.</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">It looks like you already saved login info for this account.</string>
-    <string name="reel_ad4ad_privacy_subtitle">Only you can see this preview</string>
+    <string name="reel_ad4ad_privacy_subtitle">Only you can see this</string>
     <string name="reel_bakeoff_thank_you_subtitle">"We'll use your responses to help improve Instagram."</string>
     <string name="reel_bakeoff_thank_you_title">Thanks for letting us know.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">Open Camera</string>
@@ -3550,6 +3588,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="reel_poll_voters_list_title">Voters</string>
     <string name="reel_question_responses_list_title">Responses</string>
     <string name="reel_quick_reactions">Quick Reactions</string>
+    <string name="reel_quiz_responders_list_title">Answered</string>
     <string name="reel_reaction_composer_sent_confirmation">Reaction sent to %1$s</string>
     <string name="reel_reshared_from_archive_label">From Archive</string>
     <string name="reel_reshares_empty_state_title">"There aren't any public reshares of this post right now"</string>
@@ -3700,6 +3739,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="reply_to">Reply to %1$s…</string>
     <string name="replying_to_user_format">Replying to %1s</string>
     <string name="report">Report</string>
+    <string name="report_a_problem_label">Report a problem</string>
     <string name="report_accounts_are_inappropriate">Accounts are inappropriate</string>
     <string name="report_ad">Report Ad</string>
     <string name="report_as_ip_violation">Report as intellectual property violation?</string>
@@ -3949,7 +3989,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="set_daily_reminder_subtitle">"We'll send you a reminder once you've reached the time you set for yourself."</string>
     <string name="set_daily_reminder_title">Set Daily Reminder</string>
     <string name="set_main_account">Set Main Account</string>
-    <string name="set_up_business_profile">Set Up Your Business Profile</string>
+    <string name="set_up_business_account">Set Up Your Business Account</string>
     <string name="settings">Settings</string>
     <string name="settings_viewers_choose_locations_feature_off">Off</string>
     <string name="settings_viewers_choose_locations_title">Choose Locations</string>
@@ -4011,6 +4051,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="shop_on_profile_row_continue_shopping">Continue Shopping</string>
     <string name="shop_this_post">SHOP THIS POST</string>
     <string name="shopping">Shopping</string>
+    <string name="shopping_checkout_destination_title">Shop Now With Checkout</string>
     <string name="shopping_destination_title">Shop</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">This will remove the product sticker from this story.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">Remove Sticker</string>
@@ -4183,7 +4224,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="suggested">Suggested</string>
     <string name="suggested_accounts_header">Suggested</string>
     <string name="suggested_categories">Suggested</string>
-    <string name="suggested_for_you">Suggested For You</string>
     <string name="suggested_hashtags">Suggested</string>
     <string name="suggested_hashtags_header">Suggestions</string>
     <string name="suggested_highlight_delete_option_text">Remove Suggestion</string>
@@ -4191,7 +4231,6 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="suggested_highlight_discard_changes_dialog_discard_button">Discard</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">Keep</string>
     <string name="suggested_highlight_discard_changes_dialog_title">Discard Highlight?</string>
-    <string name="suggested_live_and_post_live_videos">Watch Next</string>
     <string name="suggested_live_videos">Live Now</string>
     <string name="suggested_recipients">Suggested</string>
     <string name="suggested_username_allcaps_title">WELCOME TO INSTAGRAM,</string>
@@ -4280,6 +4319,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="tap_to_view_product_items">TAP TO VIEW PRODUCTS</string>
     <string name="tap_to_watch_video_description">Tap to watch video</string>
     <string name="tap_to_watch_video_nux">WATCH FULL IGTV VIDEO</string>
+    <string name="tel">Telephone</string>
     <string name="tell_us_approval_reason">Tell us why your ad should be approved. If we made a mistake, we will approve your ad as soon as we can.</string>
     <string name="terms">Terms</string>
     <string name="terms_and_data_policy">Terms and Data Policy</string>
@@ -4444,6 +4484,8 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="two_fac_confirm_phone_number_fragment_body">Enter the 6-digit code we sent to your number ending in %1$s to finish setting up two-factor authentication.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">Enter the 6-digit code generated by your authentication app.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">Enter Code</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">"We won't ask for a code the next time you log in"</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">Trust this device</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">Change Phone Number</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">Resend Code</string>
     <string name="two_fac_confirmation_code_invalid">Invalid Code</string>
@@ -4611,6 +4653,7 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="username_cannot_be_empty">Username cannot be empty</string>
     <string name="username_hint_access">Username, email or phone</string>
     <string name="username_hint_login">Phone number, email or username</string>
+    <string name="username_lock_help_text">Your old username will be locked for 14 days. You can change it back within this time period. After that, the username will be available for anyone to use.</string>
     <string name="username_not_available">Username not available</string>
     <string name="username_placeholder">username</string>
     <string name="valid_address_to_map">Please add a valid address so people can navigate to your location in maps.</string>
@@ -4849,11 +4892,10 @@ Since you didn't connect your Instagram account to a Facebook Page, we created o
     <string name="zero_video_setting_drawer_title_auto_play_video_settings">Play Videos and Stories Automatically?</string>
     <string name="zero_video_setting_drawer_title_photos_free">Photos are Free</string>
     <string name="zip_code">Zip Code</string>
-    <item type="string" name="APKTOOL_DUMMY_772">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a6e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c31">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c3c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c45">false</item>
-    <item type="string" name="APKTOOL_DUMMY_db9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_dbb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_795">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c4b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c56">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c5f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dde">false</item>
+    <item type="string" name="APKTOOL_DUMMY_de0">false</item>
 </resources>

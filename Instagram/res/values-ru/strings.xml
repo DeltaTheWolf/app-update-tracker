@@ -216,6 +216,10 @@
     <string name="address_book_contacts_screen_title">Пригласить контакты</string>
     <string name="address_book_contacts_screen_title_with_context_1">Выберите контакты</string>
     <string name="address_book_contacts_screen_title_with_context_2">Выберите, кого из контактов пригласить</string>
+    <string name="address_level_1">Штат</string>
+    <string name="address_level_2">Город</string>
+    <string name="address_line_1">Адрес</string>
+    <string name="address_line_2">Квартира/номер (необязательно)</string>
     <string name="adjust">Выровнять</string>
     <string name="admin_contact_info">Контактная информация администратора</string>
     <string name="ads_body">Посмотрите рекламу, которую вы сейчас показываете.</string>
@@ -459,7 +463,7 @@
     <string name="bugreporter_load_external_screenshot_wait">Загрузка изображения...</string>
     <string name="bugreporter_low_memory_screenshot_error">«Недостаточно памяти, чтобы сделать снимок экрана. Извините!»</string>
     <string name="bugreporter_not_now">Не сейчас</string>
-    <string name="bugreporter_rageshake_hint">Кратко объясните, что случилось.</string>
+    <string name="bugreporter_rageshake_hint">Что произошло?</string>
     <string name="bugreporter_rageshake_video_quality_hint">Вкратце объясните, почему вы считаете качество видео или аудио неудовлетворительным.</string>
     <string name="bugreporter_save_annotated_screenshot_error">Не удалось сохранить снимок экрана. Повторите попытку позже.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">Сохранение…</string>
@@ -491,6 +495,7 @@
     <string name="business_profile">Профиль компании</string>
     <string name="business_profile_linked_to_pages">Профили компаний в Instagram привязываются к Страницам Facebook. Смотрите %1$s.</string>
     <string name="business_settings_redesign">Компания</string>
+    <string name="business_signup_account_option_title">Зарегистрировать аккаунт компании</string>
     <string name="business_signup_address_hint">Адрес компании</string>
     <string name="business_signup_change_username">Изменить имя пользователя</string>
     <string name="business_signup_choose_username_desc">Выберите имя пользователя для бизнес-аккаунта. Вы всегда сможете изменить его.</string>
@@ -638,6 +643,10 @@
     <string name="change_username_title">Изменить имя пользователя</string>
     <string name="changes_saved">Изменения сохранены</string>
     <string name="check_connection_and_try_again">Проверьте подключение и повторите попытку.</string>
+    <string name="checkout_module_merchant_card_action_text">Делать покупки</string>
+    <string name="checkout_module_nux_message">Теперь вы можете покупать товары некоторых брендов, не покидая Instagram.</string>
+    <string name="checkout_module_nux_title">Попробуйте оформление заказа в Instagram</string>
+    <string name="checkout_module_title">Оформление заказа в Instagram</string>
     <string name="choose_app_verify_flow">Подтвердить автоматически</string>
     <string name="choose_category">Выбор категорий бизнес-профиля</string>
     <string name="choose_category_for_profile">Выбор категории профиля</string>
@@ -732,7 +741,13 @@
     <string name="comment_ellipsis_less">меньше</string>
     <string name="comment_hint">Добавьте комментарий...</string>
     <string name="comment_offensive_alert_message">Вы уверены, что хотите опубликовать это?</string>
+    <string name="comment_offensive_alert_message_new">Другие люди могут счесть это оскорбительным.</string>
     <string name="comment_undo_button">Отменить</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">сообщите нам</string>
+    <string name="comment_warning_bottom_sheet_para1">Мы просим пользователей, чьи комментарии похожи на те, на которые поступили жалобы, пересмотреть использованные в них формулировки</string>
+    <string name="comment_warning_bottom_sheet_para2">Если мы допустили ошибку,</string>
+    <string name="comment_warning_bottom_sheet_title">Обеспечение благоприятной среды в Instagram</string>
+    <string name="comment_warning_bottom_sheet_toast">Отзыв отправлен</string>
     <string name="commenting_disabled_hint">Комментарии к этой публикации ограничены.</string>
     <string name="commenting_limited_to_followers">Добавлять комментарии могут только ваши подписчики. Комментарии может видеть любой человек.</string>
     <string name="commenting_limited_to_followers_and_following">Добавлять комментарии могут только ваши подписчики и люди, на которых вы подписаны. Комментарии видны всем.</string>
@@ -803,6 +818,7 @@
     <string name="connect_fb_and_agree">Нажимая кнопку выше и получая доступ к статистике, вы соглашаетесь с %1$s.</string>
     <string name="connect_fb_get_insights">Узнайте больше о ваших подписчиках и отслеживайте результативность ваших публикаций. Мы не будем ничего публиковать на Facebook без вашего разрешения.</string>
     <string name="connect_ig_to_fb_page_explain">Привяжите свой аккаунт Instagram Business к Странице Facebook, чтобы люди могли быстрее находить вас. Бизнес-аккаунты в Instagram привязываются к Страницам Facebook. На них распространяются отдельные %1$s.</string>
+    <string name="connect_or_create">Связать или создать</string>
     <string name="connect_page_for_biz_tools">Аккаунты, в которых используются Инструменты Instagram Business, можно связать со Страницей Facebook. Эта связь нужна для создания рекламы. Если у вас уже есть Страница, мы перенесем оттуда информацию, а вы сможете ее отредактировать.</string>
     <string name="connect_page_for_power_tools">Аккаунты, в которых используются Инструменты Instagram Power, можно связать со Страницей Facebook. Эта связь нужна для создания рекламы. Если у вас уже есть Страница, мы перенесем оттуда информацию, а вы сможете ее отредактировать.</string>
     <string name="connect_page_for_pro_tools">Аккаунты, в которых используются Инструменты Instagram Professional, можно связать со Страницей Facebook. Эта связь нужна для создания рекламы. Если у вас уже есть Страница, мы перенесем оттуда информацию, а вы сможете ее отредактировать.</string>
@@ -1059,6 +1075,9 @@
     <string name="delta_login_review_was_me">Это я</string>
     <string name="delta_login_review_was_not_me">Это не я</string>
     <string name="delta_password_change_confirm_new_password_hint">Подтвердите новый пароль</string>
+    <string name="delta_password_change_error_match_failure">Убедитесь, что пароли совпадают.</string>
+    <string name="delta_password_change_error_required_field_native">Оба поля должны быть заполнены.</string>
+    <string name="delta_password_change_error_required_field_react_native">Обязательно для заполнения.</string>
     <string name="delta_password_change_footer">Рекомендуем выбрать для Instagram уникальный пароль, в котором есть хотя бы одна цифра и один специальный символ.</string>
     <string name="delta_password_change_new_password_hint">Новый пароль</string>
     <string name="delta_password_change_submit">Отправить</string>
@@ -1070,6 +1089,7 @@
     <string name="dial_element_capture_format_music">Музыка</string>
     <string name="dial_element_capture_format_reverse">Обратная съемка</string>
     <string name="dial_element_capture_format_superzoom">Суперзум</string>
+    <string name="dialog_always_share_to_facebook">Всегда публиковать на Facebook</string>
     <string name="dialog_block_user_button">Заблокировать</string>
     <string name="dialog_block_user_message">Этот человек не сможет найти ваш профиль, публикации или истории в Instagram. Он/она не узнает, что вы заблокировали его/ее.</string>
     <string name="dialog_block_user_title">Заблокировать %1$s?</string>
@@ -1118,7 +1138,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Переместить в запросы?</string>
     <string name="direct_block_account">Заблокировать аккаунт</string>
     <string name="direct_block_choices_block_account">Заблокировать аккаунт</string>
-    <string name="direct_block_choices_block_messages">Заблокировать сообщения</string>
+    <string name="direct_block_choices_ignore">Игнорировать</string>
     <string name="direct_block_user">Заблокировать пользователя</string>
     <string name="direct_blocked">Заблокирован(-а)</string>
     <string name="direct_button_change_group_name">Готово</string>
@@ -1131,6 +1151,7 @@
     <string name="direct_details_error">Не получилось загрузить информацию о переписке. Повторите попытку.</string>
     <string name="direct_digest_active_today">Был(-а) в сети сегодня</string>
     <string name="direct_digest_active_yesterday">Был(-а) в сети вчера</string>
+    <string name="direct_digest_are_active_now">ещё %1$d сейчас в сети</string>
     <string name="direct_digest_is_active_now">Сейчас в сети</string>
     <string name="direct_digest_mentioned_you_story">Вас упомянули в истории</string>
     <string name="direct_digest_no_author_shared_product">Поделился(-ась) продуктом</string>
@@ -1159,6 +1180,7 @@
     <string name="direct_digest_shared_post">Поделился(-ась) публикацией</string>
     <string name="direct_digest_shared_your_countdown">Поделился(-ась) вашим обратным отсчетом в своей истории</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">Отметил(-а) вас как бизнес-партнера</string>
+    <string name="direct_digest_user_is_active_now">%1$s сейчас в сети</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$s приглашает вас в Direct</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">Приглашение в Direct</string>
     <string name="direct_digest_user_sent_gif">%1$s отправил(-а) GIF</string>
@@ -1370,6 +1392,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">Отметил(-а) вас как бизнес-партнера</string>
     <string name="direct_reel_mention_sender_info">Вы упомянули %1$s в своей истории</string>
     <string name="direct_reel_mention_sender_info_branded_content">Вы отметили %1$s как бизнес-партнера</string>
+    <string name="direct_reel_question_response_creator_info">Ответил(-а) на ваш вопрос</string>
+    <string name="direct_reel_question_response_sender_info">Вы ответили на вопрос этого человека</string>
     <string name="direct_reel_reaction_recipient_info">Поставил(-а) вашей истории «%1$s»</string>
     <string name="direct_reel_reaction_sender_info">Вы поставили его/ее истории «%1$s»</string>
     <string name="direct_reel_reply_receiver_highlight_info">Ответил(-а) на актуальное из вашей истории</string>
@@ -1551,7 +1575,7 @@
     <string name="disconnect_contacts_dialog_title">Отсоединить контакты?</string>
     <string name="disconnect_failed">Отсоединение не удалось.</string>
     <string name="discover_people">Интересные люди</string>
-    <string name="discovery_item_post_live_label">Был(-а) в прямом эфире</string>
+    <string name="discovery_item_post_live_label">БЫЛ(-А) В ПРЯМОМ ЭФИРЕ</string>
     <string name="discovery_surface_button_description">Открыть поиск эффектов</string>
     <string name="dismiss">Отклонить</string>
     <string name="dismiss_button_hint">Закрыть</string>
@@ -1602,23 +1626,27 @@
     <string name="editable_profile_review_title">Проверьте контактную информацию</string>
     <string name="edited">Отредактировано</string>
     <string name="edits_not_saved">Правки не сохранены. Попробуйте еще раз.</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b>, автор: %2$s</string>
-    <string name="effect_by_format">автор: %1$s</string>
-    <string name="effect_by_format_with_title">%1$s, автор: %2$s</string>
     <string name="effect_created_by_format">Создано &lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">Ещё</string>
+    <string name="effect_detail_save_to_camera_button_label">Сохранить в камере</string>
+    <string name="effect_detail_saved_to_camera_button_label">Сохранено в камере</string>
+    <string name="effect_detail_share_button_label">Отправить...</string>
+    <string name="effect_detail_view_try_it_button_label">Попробовать</string>
+    <string name="effect_details_view_created_from_format">от &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> от %2$s</string>
+    <string name="effect_from_format">от %1$s</string>
+    <string name="effect_from_format_with_title">\"%1$s\" от %2$s</string>
     <string name="eight_hours">8 часов</string>
     <string name="ellipses">...</string>
     <string name="ellipsis_more">... еще</string>
-    <string name="email">Эл. адрес</string>
+    <string name="email">Электронный адрес</string>
     <string name="emailAddress">Эл. адрес</string>
     <string name="email_hint">Электронный адрес</string>
     <string name="email_invalid">Неправильный эл. адрес</string>
     <string name="email_not_available">Данный эл. адрес используется другим аккаунтом.</string>
     <string name="email_not_valid">Введите действительный эл. адрес.</string>
-    <string name="email_register">Введите электронный адрес</string>
     <string name="email_sent">На эл. адрес, связанный с вашим аккаунтом, отправлено эл. письмо. Проверьте эл. почту, чтобы продолжить. Если проблема не будет устранена, пожалуйста, посетите %1$s.</string>
     <string name="email_sent_short">Сообщение отправлено</string>
-    <string name="email_signup">Зарегистрироваться при помощи электронного адреса</string>
     <string name="email_sms_notification_settings">Уведомления по электронной почте и SMS</string>
     <string name="emails">Эл. письма</string>
     <string name="emoji_not_allowed">Пароль содержит смайлики. Выберите другой.</string>
@@ -1653,6 +1681,7 @@
     <string name="expired_link_dialog_title">Истекшая ссылка</string>
     <string name="explore_contextual_title">Интересное</string>
     <string name="explore_description">Поиск и интересное</string>
+    <string name="explore_effects">Посмотрите эффекты</string>
     <string name="explore_places">Места</string>
     <string name="explore_places_request_fail">Не удалось загрузить места. Попробуйте еще раз.</string>
     <string name="explore_topical_going_to_next">ПЕРЕХОД</string>
@@ -1699,6 +1728,7 @@
     <string name="failed_to_load_highlight_message">Не удалось загрузить актуальное</string>
     <string name="failed_to_load_photo_toast">К сожалению, нельзя загрузить это фото.</string>
     <string name="failed_to_load_video_toast">К сожалению, нельзя загрузить это видео.</string>
+    <string name="family_name">Фамилия</string>
     <string name="favorites_tab_title">Лучшие друзья</string>
     <string name="fb_connect_card_button_text">Подключить</string>
     <string name="fb_connect_card_main_text">Подключите Facebook</string>
@@ -1719,6 +1749,7 @@
     <string name="feed_controls_message_replies_setting_following">Люди, на которых вы подписаны</string>
     <string name="feed_controls_message_replies_setting_off">Выключено</string>
     <string name="feed_controls_settings_title">Управление лентой</string>
+    <string name="feed_emoji_see_more_button_label">Коснитесь, чтобы увидеть больше смайликов</string>
     <string name="feed_item_page_title">Реклама</string>
     <string name="feed_product_pivots_view_shop_button">Посмотреть магазин</string>
     <string name="feed_refereshed">Контент обновлен</string>
@@ -1862,10 +1893,13 @@
     <string name="full_name_and_password_title">Имя и пароль</string>
     <string name="full_terms_rw">Полный текст Условий использования</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">Продолжить</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">Максимальная сумма пожертвования: %1$s</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">Минимальная сумма пожертвования: %1$s</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">Сумма пожертвования</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">Другая</string>
     <string name="fundraiser_sticker_default_title">Благотворительная акция %1$s</string>
     <string name="fundraiser_sticker_donate_button_text">Сделать пожертвование</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">Средства пожертвованы</string>
     <string name="fundraiser_sticker_search_following_section_title">Подписки</string>
     <string name="fundraiser_sticker_search_suggested_section_title">Рекомендуемые</string>
     <string name="fundraiser_sticker_subtitle">В поддержку %1$s</string>
@@ -1874,6 +1908,8 @@
     <string name="gallery">Галерея</string>
     <string name="gallery_album_thumbnail">Миниатюра альбома</string>
     <string name="gallery_description">Галерея</string>
+    <string name="gallery_empty_state_description">Когда на устройстве появятся фото и видео, вы сможете делиться ими в Instagram.</string>
+    <string name="gallery_empty_state_title">Ваши фото и видео</string>
     <string name="gallery_photo_thumbnail">Миниатюра фото</string>
     <string name="gallery_sticker_description">Галерея наклеек</string>
     <string name="gallery_sticker_grid_empty">НЕТ ФОТО ИЛИ ВИДЕО</string>
@@ -1886,7 +1922,7 @@
     <string name="gdpr_account_privacy">Конфиденциальность аккаунта</string>
     <string name="gdpr_activity_status">Сетевой статус</string>
     <string name="gdpr_blocked_accounts">Заблокированные аккаунты</string>
-    <string name="gdpr_business_signup_option_title">Зарегистрировать бизнес-профиль</string>
+    <string name="gdpr_business_signup_option_title">Добавьте бизнес-аккаунт</string>
     <string name="gdpr_close_friends_title">Лучшие друзья</string>
     <string name="gdpr_contacts_syncing_option_title">Синхронизация контактов</string>
     <string name="gdpr_data_download">Скачивание данных</string>
@@ -1914,6 +1950,7 @@
     <string name="get_started">Начать</string>
     <string name="gif_sticker_description">Наклейка GIF</string>
     <string name="gifs_description">GIF</string>
+    <string name="given_name">Имя</string>
     <string name="go_live_button">В эфир</string>
     <string name="go_live_suggestion">Выйдите в эфир, чтобы рассказать о своих планах.</string>
     <string name="go_to_profile">Перейти в профиль</string>
@@ -2012,8 +2049,6 @@
     <string name="ig_time_picker_pm">после полудня</string>
     <string name="igds_reply_button_label">Ответить</string>
     <string name="igds_view_reply_button_label">Посмотреть ответ</string>
-    <string name="iglive_caption_hint">Добавьте название для зрителей...</string>
-    <string name="iglive_captioned_notification">%1$s в эфире: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">Вы были в прямом эфире %1$s.</string>
     <string name="iglive_cobroadcast_end_title">Благодарим, что присоединились к нам!</string>
     <string name="iglive_discard">Удалить</string>
@@ -2364,11 +2399,6 @@
     <string name="live_qa_label">Конференция</string>
     <string name="live_ssi_tooltip">Используйте справочные ресурсы, чтобы получить поддержку в любой момент.</string>
     <string name="live_starting_live">Вы в прямом эфире!</string>
-    <string name="live_subscribe_button">Включить</string>
-    <string name="live_subscribe_request_failed_to_send">Не удалось выполнить подписку.</string>
-    <string name="live_subscribe_request_sent">Включено</string>
-    <string name="live_subscribe_sent_system_comment">Вы можете в любое время выключить это в профиле создателя трансляции.</string>
-    <string name="live_subscribe_system_comment">Получать уведомления о каждой видеотрансляции от %1$s.</string>
     <string name="live_title">Прямой эфир</string>
     <string name="live_unpin_comment">Отменить прикрепление комментария</string>
     <string name="live_video_call_cannot_start_description">Нельзя начать прямой эфир во время видеочата.</string>
@@ -2452,6 +2482,7 @@
     <string name="lookup_subtitle">Введите свое имя пользователя Instagram или эл. адрес или телефон, привязанные к вашему аккаунту.</string>
     <string name="lookup_title">Найти аккаунт</string>
     <string name="made_with_boomerang">Создано с помощью &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">Главный аккаунт</string>
     <string name="main_feed_hide_recommended_post_msg">Мы больше не будем показывать публикации %1$s.</string>
     <string name="main_feed_unfollow_from_post_msg">Вы больше не увидите его/ее публикаций после обновления ленты.</string>
     <string name="main_feed_unfollow_from_post_title">Вы отменили подписку на %1$s</string>
@@ -2468,6 +2499,8 @@
     <string name="manage_saved_login">Сохраненные данные для входа</string>
     <string name="managing_photos_of_you">Управление фото с вами</string>
     <string name="managing_your_account">Управление аккаунтом</string>
+    <string name="map_data_legal_notices_label">Юридическая информация о данных карты</string>
+    <string name="map_information_title">Информация о карте</string>
     <string name="map_label">Карта</string>
     <string name="maps_open_map_reporter">Открыть</string>
     <string name="maps_report_button">Пожаловаться</string>
@@ -2545,6 +2578,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">Невозможно добавить песню в историю, которой вы поделились из другого приложения.</string>
     <string name="music_overlay_cant_save_story_alert">Сохранение историй с песнями невозможно</string>
     <string name="music_overlay_cant_share_to_fb_alert">Историями с песнями нельзя делиться на Facebook</string>
+    <string name="music_overlay_no_lyrics_available_toast">Слова недоступны</string>
     <string name="music_overlay_question_text_response_description">Не найдено ни одной песни по вашему запросу. Чтобы отправить его в сообщении, коснитесь расположенной выше кнопки.</string>
     <string name="music_overlay_sticker_description">Наклейка \"Музыка\"</string>
     <string name="music_overlay_story_attribution_from_username">Из истории %1$s</string>
@@ -2739,14 +2773,9 @@
     <string name="nux_main_feed_empty_subtitle_active">Подпишитесь, чтобы видеть фото и видео, которыми делятся люди.</string>
     <string name="nux_main_feed_empty_title">Добро пожаловать в Instagram</string>
     <string name="nux_one_tap_login_card_remove_icon_description">Убрать</string>
-    <string name="nux_one_tap_upsell_detail_save">Мы сохраним ваши данные для входа. Вам не придется снова вводить их для входа с этого устройства.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">При следующем входе с этого телефона просто коснитесь своего фото профиля, чтобы не вводить все данные для входа.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">При следующем входе с этого телефона просто коснитесь своего фото профиля, чтобы не вводить все данные для входа.</string>
+    <string name="nux_one_tap_upsell_detail">При следующем входе с этого телефона просто коснитесь своего фото профиля, чтобы не вводить все данные для входа.</string>
     <string name="nux_one_tap_upsell_enroll_button_ok">ОК</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">Сохранить</string>
-    <string name="nux_one_tap_upsell_title_save">Сохранить данные входа</string>
-    <string name="nux_one_tap_upsell_title_variant1">В следующий раз вход будет проще</string>
-    <string name="nux_one_tap_upsell_title_variant2">Запомнить пароль</string>
+    <string name="nux_one_tap_upsell_title">Запомнить пароль</string>
     <string name="nux_pinch_to_zoom">Сведите пальцы, чтобы уменьшить</string>
     <string name="nux_silent_audio_text">В данном видео нет звука</string>
     <string name="off">Выкл.</string>
@@ -2764,7 +2793,6 @@
     <string name="one_hour">1 час</string>
     <string name="one_tap_login_landing_edit_accounts">Редактировать аккаунты</string>
     <string name="one_tap_login_text_link_text">Вход через другой аккаунт</string>
-    <string name="one_tap_logo">Логотип «Одно касание»</string>
     <string name="one_tap_new_footer_log_in">&lt;b>Войти&lt;/b>.</string>
     <string name="one_tap_new_footer_one_button">Еще не пользуетесь Instagram? &lt;b>Зарегистрируйтесь&lt;/b>.</string>
     <string name="one_tap_new_footer_switch_account">&lt;b>Переключить аккаунты&lt;/b> или</string>
@@ -2784,7 +2812,6 @@
     <string name="open_map_error">К сожалению, нам не удалось открыть карту.</string>
     <string name="open_phone_error">К сожалению, не удалось позвонить.</string>
     <string name="open_source_libraries">Библиотеки с открытым исходным кодом</string>
-    <string name="openstreetmap_copyright_text">Соавторы © OpenStreetMap</string>
     <string name="opt_into_all_ad_content_label">Продолжить просмотр</string>
     <string name="opt_into_entire_dynamic_ad_label">Посмотреть ещё %1$d</string>
     <string name="or">или</string>
@@ -2885,8 +2912,6 @@
     <string name="phone_number_toast_number_required">Требуется номер телефона</string>
     <string name="phone_permission_request_message">Мы будем автоматически заполнять поле с номером телефона и подтверждать его, чтобы вам было проще восстановить доступ к аккаунту в случае проблем со входом.</string>
     <string name="phone_permission_request_title">делать телефонные звонки и управлять ими</string>
-    <string name="phone_register">Введите свой номер телефона</string>
-    <string name="phone_signup">Зарегистрироваться с помощью номера телефона</string>
     <string name="photo">Фото</string>
     <string name="photo_edit_error_message">К сожалению, при обработке фото произошла ошибка. Отчет об этом отправлен в Instagram.</string>
     <string name="photo_edit_error_title">Невозможно редактировать дальше</string>
@@ -2938,6 +2963,7 @@
     <string name="post_to_your_story_label">Добавить публикацию в вашу историю</string>
     <string name="post_to_your_story_label_igtv">Добавьте видео в свою историю</string>
     <string name="post_you_were_tagged_in">Публикации, в которых вы отмечены</string>
+    <string name="postal_code">Индекс</string>
     <string name="posted_comment">Опубликованный комментарий</string>
     <string name="posting_failed">Видео не опубликовано.</string>
     <string name="posting_message">Публикуется...</string>
@@ -2949,7 +2975,6 @@
     <string name="posts_tab_title">Публикации</string>
     <string name="posts_you_liked">Понравившиеся вам публикации</string>
     <string name="preferences_label">Предпочтения</string>
-    <string name="preparing_to_scan">Подготовка к сканированию...</string>
     <string name="presence_permission_explanation">Разрешите владельцам аккаунтов, на которые вы подписаны, и всем, кому вы отправляете сообщения, видеть, когда вы заходили в приложения Instagram в последний раз. Отключив эту настройку, вы не сможете видеть сетевой статус других аккаунтов.</string>
     <string name="presence_permission_name">Показывать сетевой статус</string>
     <string name="preview_hint_text">Коснитесь, чтобы посмотреть фото или видео в этой истории</string>
@@ -3012,6 +3037,7 @@
     <string name="product_share_sticker_default_question">Вы рекомендуете это товар?</string>
     <string name="product_share_sticker_from">От %1$s</string>
     <string name="product_source">Источник товара</string>
+    <string name="product_source_different_catalog">Использовать другой каталог</string>
     <string name="product_source_learn_more">Узнать больше</string>
     <string name="product_source_learn_more_text">Если вы не видите каталог товаров, который хотите добавить, свяжитесь с администратором Страницы или проверьте список своих разрешений в Business Manager, чтобы убедиться в наличии нужного разрешения. %1$s</string>
     <string name="product_source_load_more">Загрузить ещё каталоги</string>
@@ -3092,7 +3118,18 @@
     <string name="profile_visits">Посещения профиля</string>
     <string name="promote">Продвигать</string>
     <string name="promote_again">Продвигать снова</string>
+    <string name="promote_audience_header">Выбрать целевую аудиторию</string>
+    <string name="promote_budget_duration_header">Всего вы потратили %1$s за %2$d дней</string>
+    <string name="promote_budget_duration_screen_title">Бюджет и длительность</string>
+    <string name="promote_create_new_audience_subtitle">Вручную введите варианты таргетинга</string>
+    <string name="promote_create_new_audience_title">Создать свою</string>
+    <string name="promote_destination_direct_message_option">Ваши сообщения в Direct</string>
+    <string name="promote_destination_header">Выберите место назначения</string>
+    <string name="promote_destination_profile_option">Свой профиль</string>
     <string name="promote_destination_screen_title">Место назначения</string>
+    <string name="promote_destination_website_edit_title">Сайт</string>
+    <string name="promote_destination_website_option">Ваш сайт</string>
+    <string name="promote_edit">редактировать</string>
     <string name="promote_error_claim_page_label">Заявить права на Страницу</string>
     <string name="promote_error_description_network_error">Произошла ошибка, которая помешала продвижению вашей публикации. Повторите попытку позже.</string>
     <string name="promote_error_page_legal_info">Использование Страниц Facebook регулируется этими %1$s.</string>
@@ -3156,11 +3193,12 @@
     <string name="quick_replies">Быстрые ответы</string>
     <string name="quick_reply_description">Быстрый ответ</string>
     <string name="quiz_responder_subtitle_text">ответил(-а) \"%1$s\"</string>
-    <string name="quiz_sticker_first_answer_hint">Вариант 1</string>
+    <string name="quiz_sticker_add_option_hint">Добавить</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">Добавьте не менее двух вариантов</string>
     <string name="quiz_sticker_question_hint">УГАДАЙТЕ, ЧТО МНЕ НРАВИТСЯ...</string>
     <string name="quiz_sticker_response_composer_privacy_nux">Коснитесь, чтобы начать тест. %1$s увидит ваш результат.</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">Отправить ответ</string>
-    <string name="quiz_sticker_second_answer_hint">Вариант 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">Выберите действительный вариант</string>
     <string name="quiz_sticker_tray_description">Наклейка для викторины</string>
     <string name="quiz_sticker_tray_label">ВИКТОРИНА</string>
     <string name="rageshake_bug_report_option">Что-то не работает</string>
@@ -3185,7 +3223,7 @@
     <string name="recent_section_title">Недавние</string>
     <string name="recipient_picker_add_to_highlights">Добавить в актуальное</string>
     <string name="recipient_picker_added_to_highlights">Добавлено в %1$s</string>
-    <string name="recipient_picker_sharing_preferences">Как можно поделиться</string>
+    <string name="recipient_picker_sharing_preferences">Где можно поделиться</string>
     <string name="recipient_picker_sharing_to_fb">И история на Facebook</string>
     <string name="recipient_view_mode_allow_replay">Разрешить повторный просмотр</string>
     <string name="recipient_view_mode_allow_replay_upper_case">РАЗРЕШИТЬ ПОВТОРНЫЙ ПРОСМОТР</string>
@@ -3207,7 +3245,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">Похоже, на этот электронный адрес уже зарегистрирован аккаунт. Мы можем попробовать выполнить вход с данными вашего аккаунта Google.</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">Похоже, это имя пользователя привязано к адресу Gmail. Мы можем попробовать выполнить вход с данными вашего аккаунта Google.</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">Похоже, вы уже сохранили данные для входа в этот аккаунт.</string>
-    <string name="reel_ad4ad_privacy_subtitle">Этот предпросмотр виден только вам</string>
+    <string name="reel_ad4ad_privacy_subtitle">Это видите только вы</string>
     <string name="reel_bakeoff_thank_you_subtitle">Мы используем ваши ответы, чтобы сделать Instagram лучше.</string>
     <string name="reel_bakeoff_thank_you_title">Спасибо, что сообщили нам об этом.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">Открыть камеру</string>
@@ -3244,6 +3282,7 @@
     <string name="reel_poll_voters_list_title">Проголосовавшие</string>
     <string name="reel_question_responses_list_title">Ответы</string>
     <string name="reel_quick_reactions">Быстрые реакции</string>
+    <string name="reel_quiz_responders_list_title">Ответили</string>
     <string name="reel_reaction_composer_sent_confirmation">Реакция отправлена %1$s</string>
     <string name="reel_reshared_from_archive_label">Из архива</string>
     <string name="reel_reshares_empty_state_title">Общедоступных репостов этой публикации сейчас нет</string>
@@ -3394,6 +3433,7 @@
     <string name="reply_to">Ответить %1$s...</string>
     <string name="replying_to_user_format">Ответ %1$1s</string>
     <string name="report">Пожаловаться</string>
+    <string name="report_a_problem_label">Сообщить о проблеме</string>
     <string name="report_accounts_are_inappropriate">Неуместные аккаунты</string>
     <string name="report_ad">Пожаловаться на рекламу</string>
     <string name="report_as_ip_violation">Пожаловаться на нарушение прав на интеллектуальную собственность?</string>
@@ -3626,7 +3666,7 @@
     <string name="set_daily_reminder_subtitle">Мы отправим вам напоминание, когда установленное вами время будет достигнуто.</string>
     <string name="set_daily_reminder_title">Установить ежедневное напоминание</string>
     <string name="set_main_account">Выбрать главный аккаунт</string>
-    <string name="set_up_business_profile">Настроить профиль компании</string>
+    <string name="set_up_business_account">Настройка аккаунта компании</string>
     <string name="settings">Настройки</string>
     <string name="settings_viewers_choose_locations_feature_off">Выкл.</string>
     <string name="settings_viewers_choose_locations_title">Выбрать места</string>
@@ -3687,6 +3727,7 @@
     <string name="shop_on_profile_row_continue_shopping">Продолжить покупки</string>
     <string name="shop_this_post">КУПИТЬ ЭТО</string>
     <string name="shopping">Покупки</string>
+    <string name="shopping_checkout_destination_title">Покупайте в Instagram Checkout</string>
     <string name="shopping_destination_title">Магазин</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">Наклейка товара будет удалена из истории.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">Убрать наклейку</string>
@@ -3855,7 +3896,6 @@
     <string name="suggested">Рекомендуется</string>
     <string name="suggested_accounts_header">Рекомендации</string>
     <string name="suggested_categories">Рекомендуется</string>
-    <string name="suggested_for_you">Рекомендации для вас</string>
     <string name="suggested_hashtags">Рекомендуется</string>
     <string name="suggested_hashtags_header">Рекомендации</string>
     <string name="suggested_highlight_delete_option_text">Удалить предложение</string>
@@ -3863,7 +3903,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">Сбросить</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">Оставить</string>
     <string name="suggested_highlight_discard_changes_dialog_title">Сбросить актуальное?</string>
-    <string name="suggested_live_and_post_live_videos">Смотреть далее</string>
     <string name="suggested_live_videos">Сейчас в эфире</string>
     <string name="suggested_recipients">Рекомендации</string>
     <string name="suggested_username_allcaps_title">ДОБРО ПОЖАЛОВАТЬ В INSTAGRAM,</string>
@@ -3951,6 +3990,7 @@
     <string name="tap_to_view_product_items">КОСНИТЕСЬ, ЧТОБЫ ПОСМОТРЕТЬ ПРОДУКТЫ</string>
     <string name="tap_to_watch_video_description">Коснитесь, чтобы просмотреть видео</string>
     <string name="tap_to_watch_video_nux">СМОТРЕТЬ ВИДЕО IGTV ПОЛНОСТЬЮ</string>
+    <string name="tel">Номер телефона</string>
     <string name="tell_us_approval_reason">Объясните, почему ваше объявление должно быть одобрено. Если мы допустили ошибку, мы одобрим ваше объявление в кратчайшие сроки.</string>
     <string name="terms">Условия</string>
     <string name="terms_and_data_policy">Условия и Политика использования данных</string>
@@ -4111,6 +4151,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">Для завершения двухфакторной аутентификации введите 6-значный код, отправленный на номер %1$s.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">Введите 6-значный код, сгенерированный вашим приложением для аутентификации.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">Введите код</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">При следующем входе вам не нужно будет вводить код</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">Это доверенное устройство</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">Изменить номер телефона</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">Отправить код повторно</string>
     <string name="two_fac_confirmation_code_invalid">Недействительный код</string>
@@ -4277,6 +4319,7 @@
     <string name="username_cannot_be_empty">Имя пользователя не может быть пустым</string>
     <string name="username_hint_access">Имя пользователя, электронный адрес или телефон</string>
     <string name="username_hint_login">Номер телефона, электронный адрес или имя пользователя</string>
+    <string name="username_lock_help_text">Ваше старое имя пользователя будет недоступно для других в течение 14 дней. В это время у вас будет возможность его вернуть. Затем имя сможет выбрать любой другой пользователь.</string>
     <string name="username_not_available">Имя пользователя недоступно</string>
     <string name="username_placeholder">имя пользователя</string>
     <string name="valid_address_to_map">Укажите действительный адрес, чтобы люди могли найти, где вы находитесь, на картах.</string>

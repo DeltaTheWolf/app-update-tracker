@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/media_viewer_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/media_viewer_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:id="@id/media_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/zero_rating_data_banner">
         <ViewStub android:layout_gravity="center" android:id="@id/media_image_stub" android:layout="@layout/permanent_media_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
@@ -7,4 +7,4 @@
         <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_large" />
     </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
     <ViewStub android:id="@id/zero_rating_data_banner" android:layout="@layout/zero_rating_data_banner" android:inflatedId="@id/zero_rating_data_banner" android:layout_width="fill_parent" android:layout_height="@dimen/zero_rating_data_banner_height" app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

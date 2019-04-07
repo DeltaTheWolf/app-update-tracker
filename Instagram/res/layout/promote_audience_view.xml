@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/promote_stepper_header" />
+    <include layout="@layout/promote_header_view" />
+    <include layout="@layout/row_divider" />
+    <com.instagram.ui.widget.radiogroup.IgRadioGroup android:orientation="vertical" android:id="@id/audience_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/create_audience_row" layout="@layout/promote_row_with_chevron" />
+</LinearLayout>

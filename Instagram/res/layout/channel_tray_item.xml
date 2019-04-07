@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReelFeedItemAvatarContainer">
         <FrameLayout android:layout_width="@dimen/tray_ring_size" android:layout_height="@dimen/tray_ring_size">
@@ -12,4 +12,4 @@
     <TextView android:textSize="@dimen/font_medium_not_scaled" android:id="@id/single_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintBottom_toTopOf="@id/single_item_subtitle" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/button_container" app:layout_constraintTop_toTopOf="@id/button_container" app:layout_constraintVertical_bias="0.5" app:layout_constraintVertical_chainStyle="packed" />
     <TextView android:textSize="@dimen/font_medium_not_scaled" android:id="@id/single_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/button_container" app:layout_constraintStart_toStartOf="@id/single_item_title" app:layout_constraintTop_toBottomOf="@id/single_item_title" />
     <View android:layout_gravity="center_vertical" android:id="@id/separator" android:background="@color/grey_3" android:layout_width="1.0dip" android:layout_height="24.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="@id/button_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toEndOf="@id/button_container" app:layout_constraintTop_toTopOf="@id/button_container" app:layout_constraintVertical_bias="0.5" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,5 +9,5 @@
         <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/grey_9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/interactivity_container_padding_large" android:text="@string/interactivity_ama_broadcaster_question_sheet_empty_state_headline" />
         <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/interactivity_container_padding_large" android:layout_marginBottom="@dimen/interactivity_container_padding_xxxlarge" android:text="@string/interactivity_ama_broadcaster_question_sheet_empty_state_body" />
     </LinearLayout>
-    <android.support.v7.widget.RecyclerView android:id="@id/interactivity_ama_questions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/interactivity_ama_questions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </ViewAnimator>

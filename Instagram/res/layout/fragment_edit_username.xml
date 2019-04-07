@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/edit_profile_fields" android:paddingTop="@dimen/row_text_padding" android:paddingBottom="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/username" android:hint="@string/username" android:inputType="textEmailAddress" style="@style/FieldRedesign" />
+        <com.instagram.ui.widget.spinner.RefreshSpinner android:layout_gravity="end|center" android:id="@id/username_spinner" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" app:dark="true" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginTop="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_padding" android:text="@string/username_lock_help_text" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" />
+</LinearLayout>

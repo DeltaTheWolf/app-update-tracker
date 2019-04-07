@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ViewStub android:id="@id/in_app_signup_flow_stepper_header" android:layout="@layout/catalog_selection_stepper_header" android:inflatedId="@id/stepper_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/in_app_signup_flow_button_and_divider" android:layout="@layout/in_app_signup_flow_button_and_divider" android:inflatedId="@id/in_app_signup_flow_button_and_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/in_app_signup_flow_stepper_header" android:layout="@layout/catalog_selection_stepper_header" android:inflatedId="@id/in_app_signup_flow_stepper_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/in_app_signup_flow_button_and_divider" app:layout_constraintTop_toBottomOf="@id/in_app_signup_flow_stepper_header" />
+    <ViewStub android:id="@id/in_app_signup_flow_button_and_divider" android:layout="@layout/in_app_signup_flow_button_and_divider" android:inflatedId="@id/in_app_signup_flow_button_and_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
     <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" app:backgroundColor="@android:color/transparent" />
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

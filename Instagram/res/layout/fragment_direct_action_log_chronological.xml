@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:background="@drawable/action_log_chronological_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="@dimen/direct_action_log_row_spacing" android:paddingBottom="8.0dip" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/direct_action_log_row_fade" android:layout_width="fill_parent" android:layout_height="@dimen/direct_action_log_height" android:fillViewport="false" android:requiresFadingEdge="vertical" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="@dimen/direct_action_log_row_spacing" android:paddingBottom="8.0dip" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/direct_action_log_row_fade" android:layout_width="fill_parent" android:layout_height="@dimen/direct_action_log_height" android:fillViewport="false" android:requiresFadingEdge="vertical" />
     <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/direct_recycler_view_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 </FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instagram.iig.components.form.IgFormField android:id="@id/given_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/given_name" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/family_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/family_name" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/address_line_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/address_line_1" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/address_line_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/address_line_2" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/address_level_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/address_level_2" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/address_level_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/address_level_1" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/postal_code" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/postal_code" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/email" />
+        <com.instagram.iig.components.form.IgFormField android:id="@id/tel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelText="@string/tel" />
+    </LinearLayout>
+</ScrollView>

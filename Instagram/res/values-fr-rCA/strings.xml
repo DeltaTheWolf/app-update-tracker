@@ -96,6 +96,9 @@
     <string name="address_book_contacts_loading_error">Un problème est survenu lors de l’invitation de vos contacts. Veuillez réessayer plus tard.</string>
     <string name="address_book_contacts_screen_title_with_context_1">Choisissez des contacts</string>
     <string name="address_book_contacts_screen_title_with_context_2">Choisissez des contacts à inviter</string>
+    <string name="address_level_1">Province</string>
+    <string name="address_line_1">Adresse</string>
+    <string name="address_line_2">App. (facultatif)</string>
     <string name="adjust">Régler</string>
     <string name="ads_setting_view_body">Voir toutes les publicités que vous diffusez en un seul endroit permet aux utilisateurs d’en savoir plus sur votre compte.</string>
     <string name="ads_title">Publicités en cours de diffusion</string>
@@ -169,7 +172,7 @@
     <string name="back_dialog_discard_content">Voulez-vous vraiment annuler la conversion?</string>
     <string name="back_dialog_discard_title">Vous avez presque terminé</string>
     <string name="back_to_your_nametag">Revenir à votre porte-nom</string>
-    <string name="background_mode_label_emoji">ÉMOTICÔNE</string>
+    <string name="background_mode_label_emoji">EMOJIS</string>
     <string name="background_mode_label_selfie">ÉGOPORTRAIT</string>
     <string name="backup_access_description">Les code de secours sont utiles si vous n’avez plus accès à votre numéro de téléphone et ne pouvez pas recevoir de code de sécurité par SMS.</string>
     <string name="backup_codes_get_code_description">Vous pouvez obtenir de nouveaux codes si vous craignez que ceux que vous avez ont été volés ou si vous en avez utilisé beaucoup.</string>
@@ -218,7 +221,7 @@
     <string name="bugreporter_legal_info_footer_claim">Les suggestions sont assujetties à nos %1$s. Ce formulaire sert à nous faire part de vos commentaires au sujet de nos outils publicitaires, non à signaler du contenu injurieux, du contenu indésirable ou une violation des droits de propriété intellectuelle. Découvrez comment signaler du contenu %2$s.</string>
     <string name="bugreporter_load_external_screenshot_error">Impossible de charger l’image. Nous en sommes désolés.</string>
     <string name="bugreporter_low_memory_screenshot_error">Mémoire insuffisante pour faire une capture d’écran.</string>
-    <string name="bugreporter_rageshake_hint">Expliquez ce qu’il s’est passé en quelques mots.</string>
+    <string name="bugreporter_rageshake_hint">Qu’est-ce qui s’est mal passé?</string>
     <string name="bugreporter_send_description">Vos commentaires nous sont précieux!</string>
     <string name="bugreporter_send_success">Bogue signalé pour %1$s</string>
     <string name="bugreporter_thankyou">Nous ne pouvons pas répondre à tous les cas signalés. Cependant, de nombreux commentaires nous permettent d’améliorer %1$s pour tout le monde.</string>
@@ -233,6 +236,7 @@
     <string name="business_partner_and_merchant_products_dialog_message">Lorsque vous identifiez les produits d’une entreprise dans une publication, vous pouvez uniquement identifier cette entreprise comme partenaire.</string>
     <string name="business_phone_consent">Ajoutez un numéro de téléphone auquel vous voulez recevoir vos appels d’affaires. Ce numéro ne doit pas être associé à un compte Instagram existant.</string>
     <string name="business_profile">Profil de l’entreprise</string>
+    <string name="business_signup_account_option_title">Créez un compte professionnel</string>
     <string name="business_signup_address_hint">Adresse de l’entreprise</string>
     <string name="business_signup_change_username">Changer le nom d’utilisateur</string>
     <string name="business_signup_choose_username_title">Choisissez un nom d’utilisateur</string>
@@ -302,6 +306,10 @@
     <string name="change_username_link_title">Changer le nom d’utilisateur</string>
     <string name="change_username_subtitle">Choisissez un nom d’utilisateur pour votre compte. Vous pourrez le modifier plus tard.</string>
     <string name="change_username_title">Changer le nom d’utilisateur</string>
+    <string name="checkout_module_merchant_card_action_text">Magasin</string>
+    <string name="checkout_module_nux_message">Vous pouvez maintenant faire des achats auprès de certaines marques sans quitter Instagram.</string>
+    <string name="checkout_module_nux_title">Essayez de passer à la caisse sur Instagram</string>
+    <string name="checkout_module_title">Passer à la caisse sur Instagram</string>
     <string name="choose_category_help_people_understand">Veuillez sélectionner une catégorie et une sous-catégorie pour permettre aux gens d’en savoir plus sur votre entreprise.</string>
     <string name="choose_flow_subtitle">La conversion du compte existant s’effectuera en conservant le contenu déjà partagé. Vous pouvez également créer un nouveau compte pour donner à votre entreprise sa propre identité.</string>
     <string name="choose_flow_title">Convertir le compte existant ou en créer un nouveau?</string>
@@ -345,6 +353,10 @@
     <string name="close_friends_self_privacy_notice">Seules les personnes qui font partie de votre liste d’amis proches peuvent voir ces publications</string>
     <string name="color_picker_nux">Appuyez une nouvelle fois pour la régler</string>
     <string name="comment_offensive_alert_message">Voulez-vous vraiment publier ce contenu?</string>
+    <string name="comment_offensive_alert_message_new">D’autres personnes pourraient être offensées.</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">faites-le-nous savoir</string>
+    <string name="comment_warning_bottom_sheet_para1">Nous demandons aux gens de bien vouloir repenser leur commentaire s’il ressemble à des commentaires qui ont été signalés.</string>
+    <string name="comment_warning_bottom_sheet_title">Pour s’assurer qu’Instagram demeure accueillant</string>
     <string name="commenting_limited_to_followers">Seules les personnes abonnées à votre compte peuvent ajouter des commentaires. Tout le monde peut voir les commentaires.</string>
     <string name="commenting_limited_to_followers_and_following">Seules les personnes abonnées à votre compte et celles auxquelles vous êtes abonné peuvent ajouter des commentaires. Tout le monde peut voir les commentaires.</string>
     <string name="commenting_limited_to_following">Seules les personnes auxquelles vous êtes abonné peuvent ajouter des commentaires. Ces commentaires sont visibles à tous.</string>
@@ -388,6 +400,7 @@
     <string name="connect_fb_and_agree">En touchant le bouton ci-dessus et en accédant aux statistiques, vous acceptez nos %1$s.</string>
     <string name="connect_fb_get_insights">Apprenez-en davantage sur vos abonnés et découvrez les performances de vos publications. Nous ne publierons rien sur Facebook sans votre autorisation.</string>
     <string name="connect_ig_to_fb_page_explain">Associez votre compte Instagram Business à une Page Facebook pour permettre aux gens de vous trouver plus facilement. Les comptes professionnels sur Instagram sont liés à une Page Facebook et sont assujettis à leurs %1$s.</string>
+    <string name="connect_or_create">Se connecter à une Page ou en créer une</string>
     <string name="connect_page_for_biz_tools">Les comptes qui utilisent les outils Instagram Business peuvent être associés à une Page Facebook. Vous devez associer une Page Facebook pour créer des publicités. Si vous avez déjà une Page, nous dupliquerons vos renseignements afin que vous puissiez les modifier.</string>
     <string name="connect_page_for_power_tools">Les comptes qui utilisent les outils professionnels Instagram peuvent être associés à une Page Facebook. Vous devez associer une Page Facebook pour créer des publicités. Si vous avez déjà une Page, nous dupliquerons vos renseignements afin que vous puissiez les modifier.</string>
     <string name="connect_page_for_pro_tools">Les comptes qui utilisent les outils professionnels sur Instagram peuvent être associés à une Page Facebook. Vous devez associer une Page Facebook pour créer des publicités. Si vous avez déjà une Page, nous dupliquerons vos renseignements afin que vous puissiez les modifier.</string>
@@ -449,7 +462,6 @@
     <string name="create_highlight_menu_option">Créer un élément en vedette</string>
     <string name="create_highlights_title">Nouvel élément en vedette</string>
     <string name="create_new_page">Créer une Page</string>
-    <string name="create_page_button_label">Créer une Page Facebook</string>
     <string name="create_page_content">Pour diffuser des promotions sur Instagram, vous devez associer une Page Facebook. Pour créer une promotion, vous pouvez créer une Page Facebook dès maintenant. Les Pages Facebook sont assujetties à ces %1$s.</string>
     <string name="create_username_with_suggestions_subtitle">Ajoutez un nom d’utilisateur ou utilisez notre suggestion. Vous pouvez le changer à tout moment.</string>
     <string name="created_fb_page">Vous avez créé une Page Facebook :</string>
@@ -498,11 +510,13 @@
     <string name="delete_video_title">Supprimer cette vidéo?</string>
     <string name="delivery_info">Adresse de livraison</string>
     <string name="delta_login_review_body">Pour protéger votre compte, dites-nous s’il s’agissait bien de vous.</string>
+    <string name="delta_password_change_error_match_failure">Veuillez vérifier que les deux mots de passe sont identiques.</string>
     <string name="delta_password_change_footer">Nous vous conseillons de choisir un mot de passe unique pour Instagram qui comprend au moins un chiffre et un caractère spécial.</string>
     <string name="delta_password_change_subtitle">Quelqu’un connaît peut-être votre mot de passe. Toutes vos sessions seront donc fermées. Si une personne tente de se connecter à votre compte, elle se verra refuser l’accès.</string>
     <string name="delta_password_change_title">Changez votre mot de passe pour protéger votre compte</string>
     <string name="dial_element_capture_format_handsfree">Mains libres</string>
     <string name="dial_element_capture_format_reverse">Vidéo inversée</string>
+    <string name="dialog_always_share_to_facebook">Toujours partager sur Facebook</string>
     <string name="dialog_block_user_message">Cette personne ne verra pas votre profil, ni vos publications ni vos stories sur Instagram. Instagram ne l’informera pas que vous l’avez bloquée.</string>
     <string name="dialog_block_user_title">Bloquer %1$s?</string>
     <string name="dialog_start_sharing_to_facebook">Commencer à partager sur Facebook</string>
@@ -527,6 +541,7 @@
     <string name="direct_ar_effect_share_generic_sender_info">Vous avez partagé un effet de RA</string>
     <string name="direct_ar_effect_user_shared">%1$s a partagé un effet de RA</string>
     <string name="direct_blended_inbox_move_to_requests_dialog_title">Déplacer vers les demandes?</string>
+    <string name="direct_block_choices_ignore">Ignorer</string>
     <string name="direct_button_change_group_name">Terminé</string>
     <string name="direct_chat">Discuter</string>
     <string name="direct_delete_conversation">Supprimer la conversation?</string>
@@ -539,6 +554,7 @@
     <string name="direct_digest_replied_to_own_story">Vous avez vu son actualité</string>
     <string name="direct_digest_sender_reel_reply_slider_interactive">Vous avez répondu à sa réponse</string>
     <string name="direct_digest_sent_sticker">A envoyé un autocollant</string>
+    <string name="direct_digest_user_is_active_now">%1$s est en ligne</string>
     <string name="direct_digest_user_sent_gif">%1$s a envoyé un GIF.</string>
     <string name="direct_digest_user_sent_photo">%1$s a envoyé une photo</string>
     <string name="direct_digest_user_sent_sticker">%1$s a envoyé un autocollant</string>
@@ -596,6 +612,7 @@
     <string name="direct_not_following_title">Personnes auxquelles vous n’êtes pas abonné</string>
     <string name="direct_open_thread_content_description">Ouvrir le fil</string>
     <string name="direct_pending_inbox_instructions">Les demandes ne sont pas marquées comme étant lues tant que vous ne les avez pas autorisées.</string>
+    <string name="direct_pending_inbox_sort_label_relevant">Demandes en vedette</string>
     <string name="direct_pending_instructions">Voulez-vous autoriser %1$s à vous envoyer des messages à partir de maintenant? Cette personne saura que vous avez vu sa demande uniquement si vous choisissez Autoriser.</string>
     <string name="direct_pending_instructions_accept_action">Voulez-vous autoriser %1$s à vous envoyer des messages à partir de maintenant? Cette personne saura que vous avez vu sa demande uniquement si vous choisissez Autoriser.</string>
     <string name="direct_pending_instructions_blended_inbox">Si vous cliquez sur Répondre, %1$s saura que vous avez vu ce message.</string>
@@ -617,6 +634,7 @@
     <string name="direct_recipient_your_fb_story_nux_body">Les stories Instagram que vous partagez sur votre story Facebook apparaîtront également dans Messenger.</string>
     <string name="direct_reel_mention_recipient_info">Vous a mentionné dans une story</string>
     <string name="direct_reel_mention_recipient_info_brand_content">Vous a identifié en tant que partenaire d’affaires</string>
+    <string name="direct_reel_question_response_creator_info">A répondu à votre question</string>
     <string name="direct_reel_reply_receiver_highlight_info">A répondu à votre story en vedette</string>
     <string name="direct_reel_reply_receiver_highlight_info_own_story">Vous avez vu son actualité en vedette</string>
     <string name="direct_reel_reply_receiver_poll_response">Votre vote :</string>
@@ -704,6 +722,7 @@
     <string name="disconnect_contacts_dialog_msg">La synchronisation de vos contacts vous permet de vous abonner aux comptes de vos amis. Si vous désactivez l’accès à vos contacts, nous annulerons cette synchronisation.</string>
     <string name="disconnect_contacts_dialog_title">Désactiver l’accès aux contacts?</string>
     <string name="discover_people">Découvrir des personnes</string>
+    <string name="discovery_item_post_live_label">ÉTAIT EN DIRECT</string>
     <string name="dismiss_hashtag">Annuler le mot-clic</string>
     <string name="done">Terminer</string>
     <string name="dont_connect_facebook_page">Ne pas associer au compte Facebook</string>
@@ -725,21 +744,24 @@
     <string name="edit_your_close_friends_button_continue">Modifier votre liste d’amis proches</string>
     <string name="editable_profile_review_subtitle">Ces options de communication seront associées à votre profil professionnel. Vous pouvez les modifier à tout moment.</string>
     <string name="edited">Modifiée</string>
-    <string name="effect_by_format_with_title">%1$s de %2$s</string>
+    <string name="effect_detail_more_button_label">Plus</string>
+    <string name="effect_detail_view_try_it_button_label">Essayer</string>
+    <string name="effect_details_view_created_from_format">de &lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> de %2$s</string>
+    <string name="effect_from_format">de %1$s</string>
+    <string name="effect_from_format_with_title">%1$s de %2$s</string>
     <string name="email">Adresse courriel</string>
     <string name="emailAddress">Adresse courriel</string>
     <string name="email_hint">Adresse courriel</string>
     <string name="email_invalid">Adresse courriel non valide</string>
     <string name="email_not_available">Cette adresse courriel est utilisée par un autre compte.</string>
     <string name="email_not_valid">Veuillez saisir une adresse courriel valide.</string>
-    <string name="email_register">Saisissez votre adresse courriel</string>
     <string name="email_sent">Un courriel a été envoyé à l’adresse courriel de votre compte. Veuillez vérifier votre messagerie pour continuer. Si les problèmes persistent, veuillez consulter l’article %1$s.</string>
     <string name="email_sent_short">Courriel envoyé</string>
-    <string name="email_signup">S’inscrire avec une adresse courriel</string>
     <string name="email_sms_notification_settings">Notifications par courriel et par texto</string>
     <string name="emails">Courriels</string>
-    <string name="emoji_not_allowed">Le mot de passe contient des émoticônes. Veuillez choisir un autre mot de passe.</string>
-    <string name="emoji_section_title">Émoticônes</string>
+    <string name="emoji_not_allowed">Le mot de passe contient des emojis. Veuillez choisir un autre mot de passe.</string>
+    <string name="emoji_section_title">Emojis</string>
     <string name="empty_self_followers_list_subtitle">Vous verrez tous vos abonnés ici.</string>
     <string name="empty_self_following_list_subtitle">Lorsque vous vous abonnez au compte d’une personne, il est affiché ici.</string>
     <string name="empty_self_following_list_title">Personnes auxquelles vous êtes abonné</string>
@@ -756,6 +778,7 @@
     <string name="error_msg_switch_page">Une erreur est survenue lors du changement de page. Veuillez réessayer plus tard.</string>
     <string name="exited">Sorties</string>
     <string name="expired_link_dialog_title">Lien expiré</string>
+    <string name="explore_effects">Découvrir les effets</string>
     <string name="explore_topical_muted_topic_banner_dialog_title">Réactiver %1$s?</string>
     <string name="explore_topical_muted_topic_banner_text">%1$s a été désactivé</string>
     <string name="explore_topical_muted_topic_banner_unmute">Réactiver</string>
@@ -776,6 +799,7 @@
     <string name="failed_to_detect_location">Impossible de charger le lieu</string>
     <string name="failed_to_load_highlight_message">Impossible de charger l’élément en vedette</string>
     <string name="failed_to_load_photo_toast">Impossible de charger cette photo. Nous en sommes désolés.</string>
+    <string name="family_name">Nom de famille</string>
     <string name="fb_data_policy">Restrictions en matière d’utilisation des données</string>
     <string name="feed_auto_xpost_to_fb_explanation">Partagez automatiquement vos photos et vos vidéos sur Facebook.</string>
     <string name="feed_auto_xpost_to_fb_upsell_dialog_message">Partagez aussi les photos et vidéos que vous publiez sur Facebook. Vous pouvez changer cela à tout moment dans vos paramètres.</string>
@@ -783,6 +807,7 @@
     <string name="feed_controls_allow_message_replies_header">Autoriser les réponses</string>
     <string name="feed_controls_message_replies_setting_following">Personnes auxquelles vous êtes abonné</string>
     <string name="feed_controls_settings_title">Paramètres du fil</string>
+    <string name="feed_emoji_see_more_button_label">Appuyer ici pour voir plus d’émoticônes</string>
     <string name="feed_product_pivots_view_shop_button">Afficher la boutique</string>
     <string name="feed_tagging_upsell_dialog_message">Cette publication semble présenter du contenu de marque. Voulez-vous ajouter une identification pour permettre à la communauté de savoir quelles actualités sont le résultat de partenariats entre des entreprises et des créateurs?</string>
     <string name="feedback_channel_detail_dissatisfaction">Pourquoi n’étiez-vous pas satisfait de votre promotion?</string>
@@ -856,8 +881,13 @@
     <string name="friends_sticker_header">Choisissez les personnes avec lesquelles partager du contenu</string>
     <string name="friends_sticker_instructions">Lorsque vous ajoutez cet autocollant à une actualité, vous choisissez les personnes qui peuvent voir cette actualité.</string>
     <string name="friends_sticker_max_stickers_per_story_message">Vous pouvez seulement utiliser cet autocollant 5 fois dans une actualité.</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">Les dons ne peuvent pas dépasser %1$s</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">Les dons doivent être supérieurs à %1$s</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">Don effectué</string>
     <string name="fundraiser_sticker_search_following_section_title">Abonnés</string>
     <string name="fundraiser_sticker_tray_description">Autocollant de collecte de fonds</string>
+    <string name="gallery_empty_state_description">Lorsque vous avez des photos et des vidéos sur votre appareil, vous pouvez les partager sur Instagram.</string>
+    <string name="gallery_empty_state_title">Vos photos et vidéos</string>
     <string name="gallery_sticker_description">Autocollant de collection</string>
     <string name="gallery_video_thumbnail">Miniature de la vidéo</string>
     <string name="gdpr_activity_status">État d’activité</string>
@@ -928,7 +958,6 @@
     <string name="ig_time_picker_am">Matinée</string>
     <string name="ig_time_picker_pm">Après-midi ou soirée</string>
     <string name="igds_view_reply_button_label">Afficher la réponse</string>
-    <string name="iglive_captioned_notification">%1$s est en direct : %2$s</string>
     <string name="iglive_cobroadcast_end_title">Merci de votre participation!</string>
     <string name="iglive_discard">Annuler</string>
     <string name="iglive_livewith_notification">%1$s diffuse présentement en direct avec %2$s.</string>
@@ -1052,9 +1081,6 @@
     <string name="live_qa_label">Questions et réponses</string>
     <string name="live_ssi_tooltip">Consultez la documentation à tout moment pour obtenir de l’aide.</string>
     <string name="live_starting_live">Vous êtes en direct!</string>
-    <string name="live_subscribe_request_sent">Activé</string>
-    <string name="live_subscribe_sent_system_comment">Vous pouvez désactiver ceci à tout moment en accédant à son profil.</string>
-    <string name="live_subscribe_system_comment">Recevez une notification chaque fois que %1$s diffuse une vidéo en direct.</string>
     <string name="live_video_ended">Cette vidéo en direct est terminée</string>
     <string name="live_video_ended_gratitude">Merci d’avoir été là!</string>
     <string name="live_video_partially_saved_message">Il n’y a pas suffisamment d’espace dans votre téléphone pour enregistrer la vidéo au complet.</string>
@@ -1103,6 +1129,8 @@
     <string name="manage_data_followup_button_not_allowed_explanation">Les publicités ne seront peut-être pas aussi pertinentes pour vous</string>
     <string name="manage_data_settings">Gérer les paramètres des données</string>
     <string name="manage_saved_login">Informations de connexion enregistrées</string>
+    <string name="map_data_legal_notices_label">Mentions légales sur les données de la carte</string>
+    <string name="map_information_title">Renseignements sur la carte</string>
     <string name="maps_reporter_dialog_message">Cette carte est gérée par des tiers. Vous allez être redirigé vers ceux-ci pour donner votre avis.</string>
     <string name="maximum_accounts_logged_in_multi_tap_aware">Vous avez déjà atteint le nombre maximal de comptes actifs.</string>
     <string name="me_only_explanation_subtitle">Lorsque vous archivez des publications, elles apparaissent ici. Vous seul pouvez les voir. Pour archiver des publications, appuyez sur le bouton ⋮.</string>
@@ -1142,6 +1170,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">Vous ne pouvez pas ajouter de chanson à une actualité que vous avez partagée sur une autre application.</string>
     <string name="music_overlay_cant_save_story_alert">Impossible d’enregistrer les actualités dans lesquelles il y a des chansons</string>
     <string name="music_overlay_cant_share_to_fb_alert">Impossible de partager sur Facebook les actualités dans lesquelles il y a des chansons</string>
+    <string name="music_overlay_no_lyrics_available_toast">Paroles introuvables</string>
     <string name="music_overlay_question_text_response_description">Aucune chanson disponible ne correspond à votre recherche. Appuyez ci-dessus pour envoyer votre recherche sous forme de réponse.</string>
     <string name="music_overlay_sticker_description">Autocollant de musique</string>
     <string name="music_overlay_story_attribution_from_username">De l’actualité de %1$s</string>
@@ -1243,17 +1272,13 @@
     <string name="nux_invite_preview">&lt;b>%1$s&lt;/b> vous a invité à vous inscrire à Instagram.</string>
     <string name="nux_main_feed_empty_subtitle">Lorsque vous vous abonnez aux comptes de personnes, les photos et les vidéos qu’elles publient seront affichées ici.</string>
     <string name="nux_main_feed_empty_subtitle_active">Abonnez-vous aux comptes de personnes pour commencer à voir les photos et vidéos qu’elles partagent.</string>
-    <string name="nux_one_tap_upsell_detail_save">Nous enregistrerons vos informations de connexion. Vous n’aurez pas à les entrer de nouveau lors de votre prochaine connexion sur cet appareil.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">Lorsque vous vous connectez sur ce téléphone, appuyez simplement sur votre photo de profil au lieu de saisir vos renseignements de connexion.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">La prochaine fois que vous vous connectez sur ce téléphone, appuyez simplement sur votre photo de profil au lieu de saisir vos renseignements de connexion.</string>
-    <string name="nux_one_tap_upsell_title_save">Enregistrer les informations de connexion</string>
-    <string name="nux_one_tap_upsell_title_variant2">Enregistrer le mot de passe</string>
+    <string name="nux_one_tap_upsell_detail">La prochaine fois que vous vous connectez sur ce téléphone, appuyez simplement sur votre photo de profil au lieu de saisir vos renseignements de connexion.</string>
+    <string name="nux_one_tap_upsell_title">Enregistrer le mot de passe</string>
     <string name="offline_comment_nux">Vous n’êtes pas en ligne. Vos commentaires seront ajoutés lorsque vous vous connecterez.</string>
     <string name="offline_like_nux_title">Vous n’êtes pas en ligne. Vos mentions J’aime seront mises à jour lorsque vous vous connecterez.</string>
     <string name="offline_status_message">Le commentaire sera ajouté lorsque vous vous connecterez.</string>
     <string name="omnibox_hint">Adresse courriel ou numéro de téléphone</string>
     <string name="omnibox_title">Entrer l’adresse courriel ou le numéro de téléphone</string>
-    <string name="one_tap_logo">Logo « un seul appui »</string>
     <string name="one_tap_new_footer_one_button">Premiers pas sur Instagram? &lt;b> Inscrivez-vous.&lt;/b></string>
     <string name="one_tap_upsell_text">Enregistrer mes informations de connexion</string>
     <string name="one_tap_user_row_login">Connexion</string>
@@ -1304,7 +1329,6 @@
     <string name="phone_number_associated_with_account">Saisissez le numéro de téléphone associé à votre compte.</string>
     <string name="phone_permission_request_message">Nous préremplirons et confirmerons votre numéro de téléphone pour vous. Vous pourrez ainsi récupérer votre compte plus facilement si vous ne pouvez plus y accéder.</string>
     <string name="phone_permission_request_title">Passer et gérer des appels téléphoniques</string>
-    <string name="phone_register">Saisissez votre numéro de téléphone</string>
     <string name="pinch_to_zoom_nux">Écartez ou rapprochez deux doigts pour faire un zoom avant ou arrière</string>
     <string name="play_media">Regarder</string>
     <string name="please_enter_a_valid_address">Veuillez saisir une ville.</string>
@@ -1320,9 +1344,9 @@
     <string name="post_to_your_story_label">Ajouter une publication à l’actualité</string>
     <string name="post_to_your_story_label_igtv">Ajouter une vidéo à l’actualité</string>
     <string name="post_you_were_tagged_in">Publication dans laquelle vous êtes identifié</string>
+    <string name="postal_code">Code postal</string>
     <string name="posting_message">Publication en cours...</string>
     <string name="posts_archive">Archives des publications</string>
-    <string name="preparing_to_scan">Préparation au balayage...</string>
     <string name="presence_permission_explanation">Autorisez les comptes auxquels vous êtes abonné et toute personne à qui vous avez envoyé un message de voir la dernière fois que vous étiez en ligne sur les applications Instagram. Lorsque cette fonctionnalité est désactivée, vous ne pouvez pas voir l’état d’activité des autres comptes.</string>
     <string name="presence_permission_name">Afficher l’état d’activité</string>
     <string name="preview_hint_text">Appuyez pour afficher la photo ou la vidéo de cette story</string>
@@ -1397,7 +1421,12 @@
     <string name="profile_view_effects_button">Afficher les effets</string>
     <string name="profile_visits">Visites du profil</string>
     <string name="promote_again">Promouvoir de nouveau</string>
-    <string name="promote_error_claim_page_label">Revendiquer la Page</string>
+    <string name="promote_budget_duration_header">Vous avez dépensé un total de %1$s en %2$d jours</string>
+    <string name="promote_create_new_audience_subtitle">Entrez vos options de ciblage à la main</string>
+    <string name="promote_create_new_audience_title">Créez la vôtre</string>
+    <string name="promote_destination_header">Sélectionnez la page de destination</string>
+    <string name="promote_destination_website_edit_title">Site Web</string>
+    <string name="promote_destination_website_option">Votre site Web</string>
     <string name="promote_error_description_network_error">Une erreur s’est produite de notre côté et nous ne pouvons pas promouvoir votre publication pour le moment. Veuillez réessayer plus tard.</string>
     <string name="promote_story_archive_body">Les archives d’actualités vous permettent de promouvoir d’anciennes actualités et de faire le suivi de la performance de votre promotion pendant plus de 24 heures.</string>
     <string name="promote_story_archive_error_body">Un problème est survenu lors de l’activation des archives de vos actualités. Veuillez réessayer plus tard.</string>
@@ -1426,6 +1455,7 @@
     <string name="question_sticker_question_music_prompt_last_listened">Quelle est la plus récente chanson que vous avez écoutée?</string>
     <string name="question_sticker_tray_description">Autocollant de question</string>
     <string name="quiz_sticker_response_composer_privacy_nux">Appuyez ici pour démarrer le jeu-questionnaire. %1$s verra votre réponse.</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">Veuillez sélectionner une option valide</string>
     <string name="quiz_sticker_tray_description">Autocollant de jeu-questionnaire</string>
     <string name="quiz_sticker_tray_label">JEU-QUESTIONNAIRE</string>
     <string name="rageshake_disable_option">Désactiver la fonction Shake (Secouer)</string>
@@ -1443,6 +1473,7 @@
     <string name="recommend_accounts_sender_header_text">Choisissez jusqu’à 10 comptes auxquels &lt;b>&lt;font color=#262626>%1$s&lt;/font>&lt;/b> pourrait s’abonner.</string>
     <string name="recommend_accounts_sender_title">Recommandations de comptes</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">Il semble qu’il y ait déjà un compte associé à cette adresse courriel. Nous pouvons essayer de vous connecter en utilisant les informations de connexion de votre compte Google.</string>
+    <string name="reel_ad4ad_privacy_subtitle">Vous êtes la seule personne qui peut voir ceci</string>
     <string name="reel_dashboard_add_to_story_entry_point_label">Ajouter à votre actualité</string>
     <string name="reel_dashboard_cta_add_to_highlight">Ajouter au contenu en vedette</string>
     <string name="reel_dashboard_cta_highlight">En vedette</string>
@@ -1459,6 +1490,7 @@
     <string name="reel_message_composer_text_hint">Envoyez un message</string>
     <string name="reel_option_copy_link">Copier le lien dans toute la story</string>
     <string name="reel_option_share_link">Partager le lien dans toute la story...</string>
+    <string name="reel_quiz_responders_list_title">Répondants</string>
     <string name="reel_reshared_from_archive_label">À partir des archives</string>
     <string name="reel_settings_common_auto_save_explanation">Enregistrez automatiquement vos photos et vos vidéos dans vos archives afin de ne plus avoir besoin de les enregistrer sur votre téléphone. Vous êtes la seule personne qui peut les voir après qu’elles disparaissent.</string>
     <string name="reel_settings_message_from_followers">Personnes auxquelles vous êtes abonné à leur compte</string>
@@ -1545,6 +1577,7 @@
     <string name="removed_from_facebook_success_message">Actualité retirée de Facebook</string>
     <string name="removing_content_from_your_explore">Supprimer du contenu de l’onglet Explorer</string>
     <string name="removing_from_highlights_progress">Suppression des éléments en vedette...</string>
+    <string name="report_a_problem_label">Signaler un problème</string>
     <string name="report_as_ip_violation">Signaler comme violation de propriété intellectuelle?</string>
     <string name="report_business_choose_reason">Veuillez choisir le motif de signalement de ce lieu :</string>
     <string name="report_business_not_on_ig">Je pense que cela ne devrait pas se retrouver sur Instagram.</string>
@@ -1698,6 +1731,7 @@
     <string name="shop_on_profile_row_continue_shopping">Continuer de magasiner</string>
     <string name="shop_this_post">MAGASINEZ LES PRODUITS DE CETTE PUBLICATION</string>
     <string name="shopping">Magasinage</string>
+    <string name="shopping_checkout_destination_title">Magasinez et passez à la caisse</string>
     <string name="shopping_destination_title">Magasiner</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">L’autocollant de produit sera supprimé de cette story.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">Supprimer l’autocollant</string>
@@ -1726,7 +1760,6 @@
     <string name="slideout_menu_nametag">Porte-nom</string>
     <string name="slider_sticker_description">Autocollant de curseur</string>
     <string name="slider_sticker_has_votes_tooltip_text">Balayer l’écran vers le haut pour afficher les réponses.</string>
-    <string name="slider_sticker_nux_tooltip_title">Faire glisser l’émoticône pour répondre.</string>
     <string name="sms_consent">Vous recevrez peut-être des textos de mises à jour d’Instagram, mais vous pouvez vous désinscrire à tout moment.</string>
     <string name="sms_reach_limit_body">Vous avez atteint votre plafond quotidien de SMS, veuillez réessayer demain.</string>
     <string name="sms_resend_dialog_minutes_body">Nous ne pouvons vous envoyer un nouveau code qu’à toutes les %1$s minutes.</string>
@@ -1776,10 +1809,8 @@
     <string name="subtitle_default_people_contacts">Abonnez-vous aux comptes des personnes que vous connaissez</string>
     <string name="subtitle_default_people_facebook">Abonnez-vous au comptes de vos amis</string>
     <string name="suggest_business_title">Entrez en contact avec votre communauté</string>
-    <string name="suggested_for_you">Suggérés pour vous</string>
     <string name="suggested_highlight_discard_changes_dialog_discard_button">Ignorer</string>
     <string name="suggested_highlight_discard_changes_dialog_title">Annuler l’élément en vedette?</string>
-    <string name="suggested_live_and_post_live_videos">Regarder la prochaine</string>
     <string name="suggested_username_subtitle">Trouvez des comptes auxquels vous abonner et commencez à partager des photos. Vous pouvez changer votre nom d’utilisateur à tout moment.</string>
     <string name="suggested_users_embedded_subtitle">Abonnez-vous aux comptes de nouvelles personnes afin de découvrir plus de photos et de vidéos.</string>
     <string name="support_form_account_type_company">Compte pour entreprise ou marque</string>
@@ -1819,6 +1850,7 @@
     <string name="tap_to_unlike">Appuyez pour retirer votre mention J’aime sur ce commentaire</string>
     <string name="tap_to_view_combined_tags">APPUYEZ ICI POUR AFFICHER LES IDENTIFICATIONS</string>
     <string name="tap_to_watch_video_description">Appuyez ici pour regarder la vidéo</string>
+    <string name="tel">Numéro de téléphone</string>
     <string name="tell_us_approval_reason">Dites-nous pourquoi nous devrions approuver votre publicité. Si nous avons fait une erreur, nous approuverons votre publicité le plus tôt possible.</string>
     <string name="terms">Conditions d’utilisation</string>
     <string name="terms_and_privacy">Conditions d’utilisation et politique de confidentialité</string>
@@ -1976,6 +2008,7 @@
     <string name="user_signup_message">Vous n’avez pas de compte? &lt;b>Inscrivez-vous.&lt;/b></string>
     <string name="username_hint_access">Nom d’utilisateur, adresse courriel ou numéro de téléphone</string>
     <string name="username_hint_login">Numéro de téléphone, adresse courriel ou nom d’utilisateur</string>
+    <string name="username_lock_help_text">Votre ancien nom d’utilisateur sera verrouillé pendant 14 jours. Vous pouvez le récupérer pendant cette période. Après cela, le nom d’utilisateur pourra être utilisé par n’importe qui.</string>
     <string name="valid_address_to_map">Veuillez ajouter une adresse valide pour que les visiteurs puissent accéder à votre emplacement sur une carte.</string>
     <string name="verification_code_instructions">Saisissez le code de confirmation à 6 chiffres que nous avons envoyé à %1$s. Si vous ne l’avez pas reçu, nous pouvons &lt;b>renvoyer le code&lt;/b>.</string>
     <string name="verification_code_instructions_with_rate_limit">Entrez le code de confirmation à six chiffres que nous avons envoyé à %1$s. L’envoi du code pourrait prendre quelques minutes. Si vous ne l’avez pas reçu, nous pouvons %2$s.</string>

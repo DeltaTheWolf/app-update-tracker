@@ -4,5 +4,5 @@
     <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_padding_medium" android:src="@drawable/bottom_sheet_drag_handle" />
     <TextView android:textSize="@dimen/font_medium_xxlarge" android:textStyle="bold" android:textColor="@color/grey_9" android:gravity="center" android:id="@id/follow_list_sorting_options_fragment_title" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:text="@string/follow_list_sorting_options_dialog_label" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" />
     <include layout="@layout/row_divider" />
-    <android.support.v7.widget.RecyclerView android:id="@id/follow_list_sorting_options_recycler_view" android:paddingTop="@dimen/row_padding_medium" android:paddingBottom="@dimen/row_padding_medium" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/follow_list_sorting_options_recycler_view" android:paddingTop="@dimen/row_padding_medium" android:paddingBottom="@dimen/row_padding_medium" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </LinearLayout>

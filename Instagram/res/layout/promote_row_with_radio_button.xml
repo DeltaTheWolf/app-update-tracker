@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/promote_row" />
+    <View android:id="@id/select_radio" android:background="@drawable/radio_icon" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+</merge>

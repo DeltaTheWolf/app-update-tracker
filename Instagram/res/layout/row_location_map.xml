@@ -2,5 +2,5 @@
 <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.instagram.maps.ui.IgStaticMapView android:id="@id/row_map_header_imageview" android:background="@color/image_placeholder" android:layout_width="fill_parent" android:layout_height="@dimen/map_height" />
-    <TextView android:textSize="@dimen/font_xsmall" android:textStyle="bold" android:textColor="@color/attribution_text_color" android:layout_gravity="bottom|center|right" android:id="@id/row_map_attribution_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/attribution_margin" android:text="@string/openstreetmap_copyright_text" android:shadowColor="@color/attribution_shadow_color" android:shadowRadius="1.5" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/row_map_info_button" android:padding="@dimen/attribution_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info" />
 </FrameLayout>

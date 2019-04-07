@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <include android:id="@id/header" android:paddingLeft="@dimen/row_padding_large" android:paddingTop="@dimen/title_card_vertical_padding" android:paddingRight="@dimen/row_padding_large" android:paddingBottom="@dimen/title_card_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" layout="@layout/business_title_card_bigger_title" />
         <include android:id="@id/search" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/header" layout="@layout/business_category_search_view" />
         <include android:id="@id/divider" android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/search" layout="@layout/row_divider" />
@@ -9,5 +9,5 @@
         <include android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/navigation_bar" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/suggested_category_header" app:layout_constraintVertical_weight="1.0" layout="@layout/layout_listview" />
         <include layout="@layout/business_conversion_stepper_header" />
         <com.instagram.business.ui.BusinessNavBar android:id="@id/navigation_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:primaryText="@string/import_0_post_label" app:showSecondaryButton="false" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

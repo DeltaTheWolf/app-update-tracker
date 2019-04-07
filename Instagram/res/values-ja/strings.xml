@@ -208,6 +208,10 @@
     <string name="address_book_contacts_screen_title">連絡先を招待</string>
     <string name="address_book_contacts_screen_title_with_context_1">連絡先を選択</string>
     <string name="address_book_contacts_screen_title_with_context_2">招待したい人を選択</string>
+    <string name="address_level_1">都道府県・州</string>
+    <string name="address_level_2">市区町村</string>
+    <string name="address_line_1">町名・番地</string>
+    <string name="address_line_2">部屋番号(任意)</string>
     <string name="adjust">調整</string>
     <string name="admin_contact_info">管理者の連絡先情報</string>
     <string name="ads_body">現在掲載中の広告を見ることができます。</string>
@@ -452,7 +456,7 @@
     <string name="bugreporter_load_external_screenshot_wait">画像を読み込んでいます...</string>
     <string name="bugreporter_low_memory_screenshot_error">スクリーンショットの撮影に必要なメモリが不足しています。申し訳ありません。</string>
     <string name="bugreporter_not_now">後で</string>
-    <string name="bugreporter_rageshake_hint">問題について簡単な説明を入力してください。</string>
+    <string name="bugreporter_rageshake_hint">問題の詳細を入力してください。</string>
     <string name="bugreporter_rageshake_video_quality_hint">動画の画質や音質にどのような問題があったのかを簡単に説明してください。</string>
     <string name="bugreporter_save_annotated_screenshot_error">スクリーンショットを保存できませんでした。あとでもう一度お試しください。</string>
     <string name="bugreporter_save_annotated_screenshot_wait">保存中…</string>
@@ -484,6 +488,7 @@
     <string name="business_profile">ビジネスプロフィール</string>
     <string name="business_profile_linked_to_pages">InstagramのビジネスプロフィールはFacebookページにリンクされ、%1$sが適用されます。</string>
     <string name="business_settings_redesign">ビジネス</string>
+    <string name="business_signup_account_option_title">ビジネスアカウントを登録</string>
     <string name="business_signup_address_hint">ビジネスの住所</string>
     <string name="business_signup_change_username">ユーザーネームを変更</string>
     <string name="business_signup_choose_username_desc">ビジネスアカウントのユーザーネームを選択してください。このユーザーネームはいつでも変更できます。</string>
@@ -630,6 +635,10 @@
     <string name="change_username_title">ユーザーネームを変更</string>
     <string name="changes_saved">変更が保存されました</string>
     <string name="check_connection_and_try_again">接続を確認して、もう一度実行してください。</string>
+    <string name="checkout_module_merchant_card_action_text">ショップ</string>
+    <string name="checkout_module_nux_message">一部のブランドの商品を、Instagramから移動することなく購入できるようになりました。</string>
+    <string name="checkout_module_nux_title">Instagramでチェックアウトしてみよう</string>
+    <string name="checkout_module_title">Instagramでチェックアウト</string>
     <string name="choose_app_verify_flow">自動的に認証</string>
     <string name="choose_category">ビジネスプロフィールのカテゴリを選択</string>
     <string name="choose_category_for_profile">プロフィールのカテゴリを選択</string>
@@ -726,7 +735,13 @@
     <string name="comment_ellipsis_less">閉じる</string>
     <string name="comment_hint">コメントを追加…</string>
     <string name="comment_offensive_alert_message">投稿しますか？</string>
+    <string name="comment_offensive_alert_message_new">他の人が不快に感じるおそれがあります。</string>
     <string name="comment_undo_button">取り消す</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">ご連絡ください</string>
+    <string name="comment_warning_bottom_sheet_para1">Instagramでは、以前に報告があったコメントと同じようなコメントをした人に対して、コメントの内容を見直すようお願いしております</string>
+    <string name="comment_warning_bottom_sheet_para2">これが間違いであると思われる場合は、</string>
+    <string name="comment_warning_bottom_sheet_title">Instagramを支え合える場所にするために</string>
+    <string name="comment_warning_bottom_sheet_toast">フィードバックが送信されました</string>
     <string name="commenting_disabled_hint">この投稿へのコメントは制限されています。</string>
     <string name="commenting_limited_to_followers">フォロワー以外はコメントを追加できません。またコメントは公開されます。</string>
     <string name="commenting_limited_to_followers_and_following">フォロワーとフォロー中の人以外はコメントを追加できません。またコメントは公開されます。</string>
@@ -797,6 +812,7 @@
     <string name="connect_fb_and_agree">上のボタンをタップしてインサイトにアクセスすることで、Facebook%1$sに同意するものとします。</string>
     <string name="connect_fb_get_insights">フォロワーに関する情報や自分の投稿のパフォーマンスをチェックできます。また、あなたの許可なくFacebookに投稿されることはありません。</string>
     <string name="connect_ig_to_fb_page_explain">他の人があなたを見つけやすくなるように、InstagramビジネスアカウントとFacebookページをリンクします。InstagramのビジネスアカウントはFacebookページにリンクされ、%1$sが適用されます。</string>
+    <string name="connect_or_create">リンクまたは作成</string>
     <string name="connect_page_for_biz_tools">Instagramビジネスツールを使用するアカウントは、Facebookページにリンクできます。広告を作成するにはページへのリンクが必須です。すでにページをお持ちの場合は情報が自動的にコピーされるので、適宜編集してください。</string>
     <string name="connect_page_for_power_tools">Instagramパワーツールを使用するアカウントは、Facebookページにリンクできます。広告を作成するにはページへのリンクが必須です。すでにページをお持ちの場合は情報が自動的にコピーされるので、適宜編集してください。</string>
     <string name="connect_page_for_pro_tools">Instagramプロフェッショナルツールを使用するアカウントは、Facebookページにリンクできます。広告を作成するにはページへのリンクが必須です。すでにページをお持ちの場合は情報が自動的にコピーされるので、適宜編集してください。</string>
@@ -942,14 +958,14 @@
     <string name="creation_checkbox_subtitle">新規フォロワーで新たに開始</string>
     <string name="creation_checkbox_title">新規アカウントを作成</string>
     <string name="creation_preview_header_title">プロフィールに掲載中</string>
-    <string name="creator_category_search_description">自分を最もよく表すカテゴリを選択してください。プロフィールに表示するかどうかは選択できます。</string>
+    <string name="creator_category_search_description">あなたの活動内容に合ったカテゴリを選択してください。プロフィールに表示するかどうかを選択できます。</string>
     <string name="creator_conversion_success_dialog_addendum">InstagramアカウントをFacebookページにリンクしなかったため、%1$s用のページを作成して、他の人があなたを見つけやすくなるようにしました。このページの所有権を申請するには、[プロフィールを編集]に移動するか、下記の[詳しくはこちら]をタップしてください。</string>
     <string name="creator_conversion_success_dialog_body">Instagramでオーディエンスとつながるためのツールを利用できるようになりました。</string>
     <string name="creator_conversion_success_dialog_help">詳しくはこちら</string>
     <string name="creator_conversion_success_dialog_title">クリエイターアカウントが利用できるようになりました！</string>
-    <string name="creator_description_subtitle_growth">より高度なインサイトを手に入れて、宣伝でより多くのユーザーにリーチできます。</string>
+    <string name="creator_description_subtitle_growth">より詳細なインサイトにアクセスできるようになり、宣伝でリーチを増やせます。</string>
     <string name="creator_description_subtitle_messaging">新しい受信箱では、メッセージリクエストの管理やファンとの交流がより簡単になります。</string>
-    <string name="creator_description_subtitle_profile">連絡先情報とボタンはプロフィールで表示または非表示にできます。</string>
+    <string name="creator_description_subtitle_profile">プロフィールで連絡先情報やボタンを表示するかどうかを選択できます。</string>
     <string name="creator_description_title_growth">たくさんのインサイトツール</string>
     <string name="creator_description_title_messaging">メッセージがより簡単に</string>
     <string name="creator_description_title_profile">フレキシブルなプロフィール管理</string>
@@ -1052,6 +1068,9 @@
     <string name="delta_login_review_was_me">私です</string>
     <string name="delta_login_review_was_not_me">私ではありません</string>
     <string name="delta_password_change_confirm_new_password_hint">新しいパスワードをもう一度入力</string>
+    <string name="delta_password_change_error_match_failure">一致するパスワードを入力してください。</string>
+    <string name="delta_password_change_error_required_field_native">両方の項目を入力してください。</string>
+    <string name="delta_password_change_error_required_field_react_native">この項目は必須です。</string>
     <string name="delta_password_change_footer">Instagramだけのパスワードを設定することをおすすめします。また、数字と特殊文字をそれぞれ1文字以上使用するようにしてください。</string>
     <string name="delta_password_change_new_password_hint">新しいパスワード</string>
     <string name="delta_password_change_submit">送信</string>
@@ -1063,6 +1082,7 @@
     <string name="dial_element_capture_format_handsfree">ハンズフリー</string>
     <string name="dial_element_capture_format_music">音楽</string>
     <string name="dial_element_capture_format_reverse">逆再生動画</string>
+    <string name="dialog_always_share_to_facebook">常にFacebookでシェア</string>
     <string name="dialog_block_user_button">ブロックする</string>
     <string name="dialog_block_user_message">ブロックされた人は、Instagramであなたのプロフィールや投稿、ストーリーズを見られなくなります。ブロックしたことは、相手に通知されません。</string>
     <string name="dialog_block_user_title">%1$sをブロックしますか？</string>
@@ -1111,7 +1131,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">リクエストに移動しますか？</string>
     <string name="direct_block_account">アカウントをブロック</string>
     <string name="direct_block_choices_block_account">アカウントをブロック</string>
-    <string name="direct_block_choices_block_messages">メッセージをブロック</string>
+    <string name="direct_block_choices_ignore">無視する</string>
     <string name="direct_block_user">ユーザーをブロックする</string>
     <string name="direct_blocked">ブロック済み</string>
     <string name="direct_button_change_group_name">完了</string>
@@ -1124,6 +1144,7 @@
     <string name="direct_details_error">スレッドの詳細を読み込めませんでした。もう一度実行してください。</string>
     <string name="direct_digest_active_today">今日アクセスがありました</string>
     <string name="direct_digest_active_yesterday">昨日アクセスがありました</string>
+    <string name="direct_digest_are_active_now">他%1$d人がオンライン中です</string>
     <string name="direct_digest_is_active_now">オンライン中</string>
     <string name="direct_digest_mentioned_you_story">ストーリーズであなたについて書きました</string>
     <string name="direct_digest_no_author_shared_product">製品がシェアされました</string>
@@ -1152,6 +1173,7 @@
     <string name="direct_digest_shared_post">投稿をシェアしました</string>
     <string name="direct_digest_shared_your_countdown">自分のストーリーズであなたのカウントダウンをシェアしました</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">ビジネスパートナーとしてタグ付けされました</string>
+    <string name="direct_digest_user_is_active_now">%1$sさんがオンライン中です</string>
     <string name="direct_digest_user_sent_direct_app_invite">%1$sさんからDirectアプリへの招待が届きました</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">Directアプリへの招待を送りました</string>
     <string name="direct_digest_user_sent_gif">%1$sさんからGIFが届きました</string>
@@ -1282,7 +1304,7 @@
     <string name="direct_modal_subtitle_poll_response">「%1$s」に投票しました</string>
     <string name="direct_modal_subtitle_question_response">「%1$s」と回答しました</string>
     <string name="direct_modal_title">%1$sにメッセージを送信</string>
-    <string name="direct_mute_mentions">メンションをミュートする</string>
+    <string name="direct_mute_mentions">メンションをミュート</string>
     <string name="direct_mute_messages">メッセージをミュート</string>
     <string name="direct_mute_notifications">お知らせをミュート</string>
     <string name="direct_mute_video_call_notifications">ビデオチャットをミュート</string>
@@ -1364,6 +1386,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">ビジネスパートナーとしてタグ付けされました</string>
     <string name="direct_reel_mention_sender_info">ストーリーズで%1$sさんについて書きました</string>
     <string name="direct_reel_mention_sender_info_branded_content">%1$sさんをビジネスパートナーとしてタグ付けしました</string>
+    <string name="direct_reel_question_response_creator_info">あなたの質問に回答しました</string>
+    <string name="direct_reel_question_response_sender_info">この人の質問に回答しました</string>
     <string name="direct_reel_reaction_recipient_info">あなたのストーリーズにリアクションしました %1$s</string>
     <string name="direct_reel_reaction_sender_info">この人のストーリーズにリアクションしました %1$s</string>
     <string name="direct_reel_reply_receiver_highlight_info">あなたのストーリーズハイライトに返信しました</string>
@@ -1597,22 +1621,26 @@
     <string name="editable_profile_review_title">連絡先情報を確認してください</string>
     <string name="edited">編集済み</string>
     <string name="edits_not_saved">編集は保存されませんでした。もう一度実行してください。</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> ― 作成者: %2$s</string>
-    <string name="effect_by_format">作成者: %1$sさん</string>
-    <string name="effect_by_format_with_title">%1$s ― 作成者: %2$s</string>
     <string name="effect_created_by_format">作成: &lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">さらに表示</string>
+    <string name="effect_detail_save_to_camera_button_label">カメラに保存</string>
+    <string name="effect_detail_saved_to_camera_button_label">カメラに保存されました</string>
+    <string name="effect_detail_share_button_label">送信先…</string>
+    <string name="effect_detail_view_try_it_button_label">使ってみる</string>
+    <string name="effect_details_view_created_from_format">作成者: &lt;b>%1$sさん&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> ― 作成者: %2$sさん</string>
+    <string name="effect_from_format">作成者: %1$sさん</string>
+    <string name="effect_from_format_with_title">%1$s ― 作成者: %2$sさん</string>
     <string name="eight_hours">8時間</string>
     <string name="ellipsis_more">… 続きを読む</string>
-    <string name="email">メール</string>
+    <string name="email">メールアドレス</string>
     <string name="emailAddress">メールアドレス</string>
     <string name="email_hint">メール</string>
     <string name="email_invalid">メールアドレスが無効です</string>
     <string name="email_not_available">このメールアドレスはすでに別のアカウントで使用されています。</string>
     <string name="email_not_valid">有効なメールアドレスを入力してください。</string>
-    <string name="email_register">メールアドレスを入力</string>
     <string name="email_sent">アカウントのメールアドレスに送信されたメールをご確認ください。問題が解決しない場合は、%1$sをご覧ください。</string>
     <string name="email_sent_short">メールが送信されました</string>
-    <string name="email_signup">メールアドレスで登録</string>
     <string name="email_sms_notification_settings">メールとSMSのお知らせ</string>
     <string name="emails">メール</string>
     <string name="emoji_not_allowed">パスワードに絵文字が含まれています。他の文字を選択してください。</string>
@@ -1647,6 +1675,7 @@
     <string name="expired_link_dialog_title">リンクの期限が切れています</string>
     <string name="explore_contextual_title">発見</string>
     <string name="explore_description">検索・発見</string>
+    <string name="explore_effects">エフェクトをチェック</string>
     <string name="explore_places">スポット</string>
     <string name="explore_places_request_fail">スポットを読み込めませんでした。もう一度実行してください。</string>
     <string name="explore_topical_going_to_next">次のコンテンツを読み込み中</string>
@@ -1693,6 +1722,7 @@
     <string name="failed_to_load_highlight_message">ハイライトを読み込めませんでした</string>
     <string name="failed_to_load_photo_toast">この写真を読み込めませんでした。</string>
     <string name="failed_to_load_video_toast">この動画を読み込めませんでした。</string>
+    <string name="family_name">姓</string>
     <string name="favorites_tab_title">親しい友達</string>
     <string name="fb_connect_card_button_text">リンクする</string>
     <string name="fb_connect_card_main_text">Facebookにリンク</string>
@@ -1713,6 +1743,7 @@
     <string name="feed_controls_message_replies_setting_following">フォロー中の人</string>
     <string name="feed_controls_message_replies_setting_off">オフ</string>
     <string name="feed_controls_settings_title">フィードコントロール</string>
+    <string name="feed_emoji_see_more_button_label">タップしてさらに絵文字を表示</string>
     <string name="feed_item_page_title">広告</string>
     <string name="feed_product_pivots_view_shop_button">ショップを表示</string>
     <string name="feed_refereshed">コンテンツが更新されました</string>
@@ -1857,10 +1888,13 @@
     <string name="full_single_line_address">%3$s %2$s %1$s</string>
     <string name="full_terms_rw">利用規約の全文</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">次へ</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">寄付金は%1$s以下にしてください</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">募金額は%1$s以上にしてください</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">寄付金額</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">その他</string>
     <string name="fundraiser_sticker_default_title">%1$sさんの募金キャンペーン</string>
     <string name="fundraiser_sticker_donate_button_text">寄付する</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">寄付済み</string>
     <string name="fundraiser_sticker_search_following_section_title">フォロー中</string>
     <string name="fundraiser_sticker_search_suggested_section_title">おすすめ</string>
     <string name="fundraiser_sticker_subtitle">%1$sさんをサポートしています</string>
@@ -1869,6 +1903,8 @@
     <string name="gallery">ギャラリー</string>
     <string name="gallery_album_thumbnail">アルバムのサムネイル</string>
     <string name="gallery_description">ギャラリー</string>
+    <string name="gallery_empty_state_description">デバイスにある写真や動画をInstagramでシェアできます。</string>
+    <string name="gallery_empty_state_title">あなたの写真や動画</string>
     <string name="gallery_photo_thumbnail">写真サムネイル</string>
     <string name="gallery_sticker_description">ギャラリースタンプ</string>
     <string name="gallery_sticker_grid_empty">写真・動画はありません</string>
@@ -1881,7 +1917,7 @@
     <string name="gdpr_account_privacy">アカウントのプライバシー設定</string>
     <string name="gdpr_activity_status">アクティビティのステータス</string>
     <string name="gdpr_blocked_accounts">ブロックしたアカウント</string>
-    <string name="gdpr_business_signup_option_title">事業者プロフィールを登録</string>
+    <string name="gdpr_business_signup_option_title">ビジネスアカウントを追加</string>
     <string name="gdpr_close_friends_title">親しい友達</string>
     <string name="gdpr_contacts_syncing_option_title">連絡先の同期</string>
     <string name="gdpr_data_download">データのダウンロード</string>
@@ -1910,6 +1946,7 @@
     <string name="get_started">スタート</string>
     <string name="gif_sticker_description">GIFスタンプ</string>
     <string name="gifs_description">GIF</string>
+    <string name="given_name">名</string>
     <string name="go_live_button">ライブ配信を開始</string>
     <string name="go_live_suggestion">あなたもライブ動画を開始して今していることをシェアしよう。</string>
     <string name="go_to_profile">プロフィールへ移動</string>
@@ -2006,8 +2043,6 @@
     <string name="ig_browser_chrome_title_loading_text">読み込み中…</string>
     <string name="igds_reply_button_label">返信する</string>
     <string name="igds_view_reply_button_label">返信を見る</string>
-    <string name="iglive_caption_hint">わかりやすいタイトルを追加…</string>
-    <string name="iglive_captioned_notification">%1$sさんがライブ配信中です。「%2$s」</string>
     <string name="iglive_cobroadcast_end_subtitle">%1$sさんのライブ動画に参加していました。</string>
     <string name="iglive_cobroadcast_end_title">ご参加ありがとうございました！</string>
     <string name="iglive_discard">破棄する</string>
@@ -2150,7 +2185,7 @@
     <string name="in_app_signup_value_prop_title">ショッピングに登録</string>
     <string name="in_review">審査中</string>
     <string name="inbox_folder_general">一般</string>
-    <string name="inbox_folder_move_to_general">一般に移動</string>
+    <string name="inbox_folder_move_to_general">一般フォルダーに移動</string>
     <string name="inbox_folder_primary">メイン</string>
     <string name="info">基本データ</string>
     <string name="inline_add_highlight_title">ハイライトに追加</string>
@@ -2356,11 +2391,6 @@
     <string name="live_post_comment">投稿する</string>
     <string name="live_ssi_tooltip">いつでもサポートのためのリソースをチェックできます。</string>
     <string name="live_starting_live">ライブ配信中です！</string>
-    <string name="live_subscribe_button">オンにする</string>
-    <string name="live_subscribe_request_failed_to_send">サブスクリプションを完了できませんでした。</string>
-    <string name="live_subscribe_request_sent">オンになりました</string>
-    <string name="live_subscribe_sent_system_comment">プロフィールでいつでもオフにできます。</string>
-    <string name="live_subscribe_system_comment">%1$sさんからのライブ動画のお知らせをすべて受け取る。</string>
     <string name="live_unpin_comment">コメントの固定を解除する</string>
     <string name="live_video_call_cannot_start_description">ビデオチャットの使用中にライブ動画を開始することはできません。</string>
     <string name="live_video_call_cannot_start_title">ライブ動画を開始できません</string>
@@ -2443,6 +2473,7 @@
     <string name="lookup_subtitle">Instagramのユーザーネームまたは アカウントにリンクされたメールアドレス、電話番号を入力してください。</string>
     <string name="lookup_title">アカウントの特定</string>
     <string name="made_with_boomerang">&lt;b>Boomerang&lt;/b>で作成</string>
+    <string name="main_account">メインアカウント</string>
     <string name="main_feed_hide_recommended_post_msg">%1$sさんからの投稿は今後表示されません。</string>
     <string name="main_feed_unfollow_from_post_msg">更新すると、この人の投稿はもう表示されなくなります。</string>
     <string name="main_feed_unfollow_from_post_title">%1$sさんのフォローをやめました</string>
@@ -2459,6 +2490,8 @@
     <string name="manage_saved_login">ログイン情報を保存</string>
     <string name="managing_photos_of_you">あなたが写っている写真を管理</string>
     <string name="managing_your_account">アカウントを管理</string>
+    <string name="map_data_legal_notices_label">地図データ規約</string>
+    <string name="map_information_title">マップ情報</string>
     <string name="map_label">地図</string>
     <string name="maps_open_map_reporter">開く</string>
     <string name="maps_report_button">報告</string>
@@ -2536,6 +2569,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">別のアプリからシェアした曲をストーリーズに追加することはできません。</string>
     <string name="music_overlay_cant_save_story_alert">曲が含まれているストーリーズは保存できません</string>
     <string name="music_overlay_cant_share_to_fb_alert">曲が追加されたストーリーズをFacebookでシェアすることはできません</string>
+    <string name="music_overlay_no_lyrics_available_toast">歌詞は表示されません</string>
     <string name="music_overlay_question_text_response_description">検索に一致する曲がありません。上をタップすると、検索した語句をテキストの返信として送信できます。</string>
     <string name="music_overlay_sticker_description">音楽オーバーレイスタンプ</string>
     <string name="music_overlay_story_attribution_from_username">%1$sさんのストーリーズから</string>
@@ -2728,13 +2762,8 @@
     <string name="nux_main_feed_empty_subtitle_active">他の人をフォローして、シェアされる写真や動画をチェックしよう。</string>
     <string name="nux_main_feed_empty_title">Instagramへようこそ</string>
     <string name="nux_one_tap_login_card_remove_icon_description">削除</string>
-    <string name="nux_one_tap_upsell_detail_save">ログイン情報を保存すると、このデバイスでの次回ログイン時に入力が不要になります。</string>
-    <string name="nux_one_tap_upsell_detail_variant1">この携帯電話を使用してログインする際、ログイン情報を入力せずにプロフィール写真をタップしてログインすることができます。</string>
-    <string name="nux_one_tap_upsell_detail_variant2">次回この携帯電話を使用してログインする際、ログイン情報を入力せずにプロフィール写真をタップしてログインすることができます。</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">保存</string>
-    <string name="nux_one_tap_upsell_title_save">ログイン情報を保存</string>
-    <string name="nux_one_tap_upsell_title_variant1">次回のログインがより簡単に！</string>
-    <string name="nux_one_tap_upsell_title_variant2">パスワードを保存</string>
+    <string name="nux_one_tap_upsell_detail">次回この携帯電話を使用してログインする際、ログイン情報を入力せずにプロフィール写真をタップしてログインすることができます。</string>
+    <string name="nux_one_tap_upsell_title">パスワードを保存</string>
     <string name="nux_pinch_to_zoom">ピンチして拡大</string>
     <string name="nux_silent_audio_text">この動画には音声はありません</string>
     <string name="off">オフ</string>
@@ -2752,7 +2781,6 @@
     <string name="one_hour">1時間</string>
     <string name="one_tap_login_landing_edit_accounts">アカウントを編集</string>
     <string name="one_tap_login_text_link_text">他のアカウントでログイン</string>
-    <string name="one_tap_logo">ワンタップロゴ</string>
     <string name="one_tap_new_footer_log_in">&lt;b>ログイン&lt;/b></string>
     <string name="one_tap_new_footer_one_button">Instagramは初めてですか？&lt;b>登録する&lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>アカウントの切り替え&lt;/b>または</string>
@@ -2772,7 +2800,6 @@
     <string name="open_map_error">地図を開くことができませんでした。</string>
     <string name="open_phone_error">通話を発信できませんでした。</string>
     <string name="open_source_libraries">オープンソースライブラリ</string>
-    <string name="openstreetmap_copyright_text">© OpenStreetMapの寄稿者</string>
     <string name="opt_into_all_ad_content_label">このまま見る</string>
     <string name="opt_into_entire_dynamic_ad_label">%1$dをもっと見る</string>
     <string name="or">または</string>
@@ -2785,9 +2812,9 @@
     <string name="os_version_block_toast_message">www.instagram.comにアクセスしてください。ご迷惑をおかけしたことをお詫び申し上げます。</string>
     <string name="other_options">他のオプション</string>
     <string name="outbound_clicks">アウトバウンドクリック</string>
-    <string name="outbound_clicks_explanation">製品の詳細のリンクのクリック数です。</string>
+    <string name="outbound_clicks_explanation">製品の詳細内のリンクのクリック数です。</string>
     <string name="over_18">18歳以上</string>
-    <string name="page_already_linked_subtitle">&lt;b>@%1$s&lt;/b>さんがリンク</string>
+    <string name="page_already_linked_subtitle">&lt;b>@%1$s&lt;/b>さんがリンク済み</string>
     <string name="page_category">カテゴリ</string>
     <string name="page_category_explanation">ビジネスに一番合ったカテゴリを選択してください。</string>
     <string name="page_is_already_linked_message">別のページにリンクしたい場合は、@%1$sアカウントにログインしてください。</string>
@@ -2873,8 +2900,6 @@
     <string name="phone_number_toast_number_required">電話番号が必要です</string>
     <string name="phone_permission_request_message">アカウントにアクセスできなくなった際に簡単にリカバリーできるように、あなたの携帯電話番号を自動入力して確認します。</string>
     <string name="phone_permission_request_title">電話の発信と管理</string>
-    <string name="phone_register">携帯電話番号を入力</string>
-    <string name="phone_signup">携帯電話番号で登録</string>
     <string name="photo">写真</string>
     <string name="photo_edit_error_message">写真を編集できませんでした。Instagramに問題が報告されました。</string>
     <string name="photo_edit_error_title">編集できません</string>
@@ -2926,6 +2951,7 @@
     <string name="post_to_your_story_label">ストーリーズに投稿を追加</string>
     <string name="post_to_your_story_label_igtv">ストーリーズに動画を追加</string>
     <string name="post_you_were_tagged_in">あなたがタグ付けされている投稿</string>
+    <string name="postal_code">郵便番号</string>
     <string name="posted_comment">投稿済みのコメント</string>
     <string name="posting_failed">動画はシェアされませんでした。</string>
     <string name="posting_message">投稿しています…</string>
@@ -2937,7 +2963,6 @@
     <string name="posts_tab_title">投稿</string>
     <string name="posts_you_liked">「いいね！」した投稿</string>
     <string name="preferences_label">設定</string>
-    <string name="preparing_to_scan">スキャンの準備中です…</string>
     <string name="presence_permission_explanation">自分が最後にInstagramアプリを使用した日時が、フォローしているアカウントとメッセージの送信相手に表示されます。この設定をオフにすると、他のアカウントのアクティビティのステータスも表示されなくなります。</string>
     <string name="presence_permission_name">アクティビティのステータスを表示</string>
     <string name="preview_hint_text">タップしてこのストーリーズの写真や動画をチェックできます。</string>
@@ -3000,6 +3025,7 @@
     <string name="product_share_sticker_default_question">これ買うべき？</string>
     <string name="product_share_sticker_from">%1$sの製品</string>
     <string name="product_source">製品ソース</string>
+    <string name="product_source_different_catalog">別のカタログを使用する</string>
     <string name="product_source_learn_more">詳しくはこちら</string>
     <string name="product_source_learn_more_text">必要な製品カタログがここに表示されない場合は、ページ管理者に連絡するか、ビジネスマネージャでアクセス許可を確認してください。%1$s</string>
     <string name="product_source_load_more">他のカタログを表示</string>
@@ -3047,7 +3073,7 @@
     <string name="profile_display_option_subtitle">この設定はいつでも変更できます</string>
     <string name="profile_display_option_title">カテゴリと連絡先情報を表示</string>
     <string name="profile_display_shown">表示</string>
-    <string name="profile_display_subtitle">プロフィールのカテゴリと連絡先情報は表示または非表示にできます。</string>
+    <string name="profile_display_subtitle">プロフィールのカテゴリと連絡先情報を表示するかどうかを選択できます。</string>
     <string name="profile_display_title">プロフィール表示オプション</string>
     <string name="profile_exit_dialog_confirmation_subtitle">変更内容を保存して、後で完了することもできます。</string>
     <string name="profile_grid_description">グリッドビュー</string>
@@ -3080,7 +3106,18 @@
     <string name="profile_visits">プロフィールへのアクセス</string>
     <string name="promote">宣伝する</string>
     <string name="promote_again">もう一度掲載</string>
+    <string name="promote_audience_header">ターゲットオーディエンスを選択</string>
+    <string name="promote_budget_duration_header">%2$d日間の合計消化金額は%1$sです</string>
+    <string name="promote_budget_duration_screen_title">予算と掲載期間</string>
+    <string name="promote_create_new_audience_subtitle">ターゲット設定を直接入力します</string>
+    <string name="promote_create_new_audience_title">カスタムオーディエンスを作成</string>
+    <string name="promote_destination_direct_message_option">ダイレクトメッセージ</string>
+    <string name="promote_destination_header">誘導先を選択</string>
+    <string name="promote_destination_profile_option">自分のプロフィール</string>
     <string name="promote_destination_screen_title">リンク先</string>
+    <string name="promote_destination_website_edit_title">ウェブサイト</string>
+    <string name="promote_destination_website_option">ウェブサイト</string>
+    <string name="promote_edit">編集</string>
     <string name="promote_error_claim_page_label">ページを取得</string>
     <string name="promote_error_description_network_error">エラーが発生したため、投稿を宣伝することができません。後ほどもう一度お試しください。</string>
     <string name="promote_error_page_legal_info">Facebookページには%1$sが適用されます。</string>
@@ -3144,11 +3181,12 @@
     <string name="quick_replies">クイック返信</string>
     <string name="quick_reply_description">クイック返信</string>
     <string name="quiz_responder_subtitle_text">%1$sと回答しました</string>
-    <string name="quiz_sticker_first_answer_hint">オプション1</string>
+    <string name="quiz_sticker_add_option_hint">追加</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">少なくとも2つのオプションを追加してください</string>
     <string name="quiz_sticker_question_hint">私のお気に入りは…？</string>
     <string name="quiz_sticker_response_composer_privacy_nux">タップしてクイズを開始します。%1$sさんにあなたの回答が表示されます。</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">回答を送信</string>
-    <string name="quiz_sticker_second_answer_hint">オプション2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">有効なオプションを選択してください</string>
     <string name="quiz_sticker_tray_description">クイズスタンプ</string>
     <string name="quiz_sticker_tray_label">クイズ</string>
     <string name="rageshake_bug_report_option">機能の問題</string>
@@ -3195,7 +3233,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">このメールアドレスで登録されたアカウントがすでにあります。Googleアカウント情報を使用してログインすることもできます。 </string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">このユーザーネームはGmailアドレスにリンクされています。Googleアカウント情報を使用してログインすることもできます。 </string>
     <string name="recovery_known_account_login_dialog_message_one_tap">このアカウントのログイン情報はすでに保存されています。</string>
-    <string name="reel_ad4ad_privacy_subtitle">このプレビューは他の人には表示されません</string>
+    <string name="reel_ad4ad_privacy_subtitle">他の人には表示されません</string>
     <string name="reel_bakeoff_thank_you_subtitle">いただいた情報はInstagramの改善に役立てさせていただきます。</string>
     <string name="reel_bakeoff_thank_you_title">お知らせいただきありがとうございます。</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">カメラを開く</string>
@@ -3232,6 +3270,7 @@
     <string name="reel_poll_voters_list_title">投票者</string>
     <string name="reel_question_responses_list_title">回答</string>
     <string name="reel_quick_reactions">クイックリアクション</string>
+    <string name="reel_quiz_responders_list_title">回答済み</string>
     <string name="reel_reaction_composer_sent_confirmation">%1$sさんにリアクションが送信されました</string>
     <string name="reel_reshared_from_archive_label">アーカイブから</string>
     <string name="reel_reshares_empty_state_title">この投稿の公開再シェアは現在ありません</string>
@@ -3380,6 +3419,7 @@
     <string name="reply_to">%1$sさんに返信…</string>
     <string name="replying_to_user_format">%1$1sさんに返信</string>
     <string name="report">報告</string>
+    <string name="report_a_problem_label">問題を報告</string>
     <string name="report_accounts_are_inappropriate">アカウントが不適切である</string>
     <string name="report_ad">広告を報告</string>
     <string name="report_as_ip_violation">知的財産権の侵害として報告しますか？</string>
@@ -3611,7 +3651,7 @@
     <string name="set_daily_reminder_subtitle">Instagramの利用時間が指定した時間に達したら、リマインダーが送信されます。</string>
     <string name="set_daily_reminder_title">毎日のリマインダーを設定</string>
     <string name="set_main_account">メインアカウントを設定</string>
-    <string name="set_up_business_profile">ビジネスプロフィールを設定</string>
+    <string name="set_up_business_account">ビジネスアカウントを設定</string>
     <string name="settings">設定</string>
     <string name="settings_viewers_choose_locations_feature_off">オフ</string>
     <string name="settings_viewers_choose_locations_title">場所を選択</string>
@@ -3672,6 +3712,7 @@
     <string name="shop_on_profile_row_continue_shopping">ショッピングを続ける</string>
     <string name="shop_this_post">この投稿の製品を購入</string>
     <string name="shopping">ショッピング</string>
+    <string name="shopping_checkout_destination_title">購入してチェックアウト</string>
     <string name="shopping_destination_title">ショップ</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">ストーリーズから製品スタンプを削除します。</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">スタンプを削除</string>
@@ -3843,7 +3884,6 @@
     <string name="suggested">おすすめ</string>
     <string name="suggested_accounts_header">おすすめ</string>
     <string name="suggested_categories">おすすめ</string>
-    <string name="suggested_for_you">おすすめ</string>
     <string name="suggested_hashtags">おすすめ</string>
     <string name="suggested_hashtags_header">おすすめ</string>
     <string name="suggested_highlight_delete_option_text">おすすめを削除</string>
@@ -3851,7 +3891,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">破棄</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">保存</string>
     <string name="suggested_highlight_discard_changes_dialog_title">ハイライトの変更を破棄しますか？</string>
-    <string name="suggested_live_and_post_live_videos">次の動画</string>
     <string name="suggested_live_videos">ライブ配信中</string>
     <string name="suggested_recipients">おすすめ</string>
     <string name="suggested_username_allcaps_title">Instagramへようこそ！</string>
@@ -3939,6 +3978,7 @@
     <string name="tap_to_view_product_items">タップして製品を表示</string>
     <string name="tap_to_watch_video_description">タップして動画を再生する</string>
     <string name="tap_to_watch_video_nux">IGTV動画の全編を再生</string>
+    <string name="tel">電話番号</string>
     <string name="tell_us_approval_reason">広告が承認されるべきだと思う理由をお聞かせください。何らかの間違いにより広告が却下された場合は、すみやかに承認いたします。</string>
     <string name="terms">利用規約</string>
     <string name="terms_and_data_policy">利用規約とデータに関するポリシー</string>
@@ -4100,6 +4140,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">二段階認証の設定を完了するには、あなたの番号に送信された末尾が%1$sの6桁のコードを入力してください。</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">認証アプリで生成された6桁のコードを入力します。</string>
     <string name="two_fac_confirm_phone_number_fragment_title">コードを入力</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">次回のログイン時にコードの入力が必要なくなります</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">このデバイスを信頼する</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">電話番号を変更</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">コードを再送信</string>
     <string name="two_fac_confirmation_code_invalid">無効なコード</string>
@@ -4266,6 +4308,7 @@
     <string name="username_cannot_be_empty">ユーザーネームを入力してください</string>
     <string name="username_hint_access">ユーザーネーム、メールアドレス、携帯電話番号</string>
     <string name="username_hint_login">電話番号、メールアドレス、ユーザーネーム</string>
+    <string name="username_lock_help_text">以前のユーザーネームは14日間ロックされます。この期間内であれば、以前のユーザーネームに戻すことができますが、この期間を過ぎると、誰もがこのユーザーネームを利用できるようになります。</string>
     <string name="username_not_available">このユーザーネームは使用できません</string>
     <string name="username_placeholder">ユーザーネーム</string>
     <string name="valid_address_to_map">正しい住所を追加することで、利用者が地図上でビジネスの場所を確認することができます。</string>

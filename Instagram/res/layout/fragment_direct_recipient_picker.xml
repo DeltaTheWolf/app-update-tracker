@@ -9,5 +9,5 @@
             <com.instagram.ui.widget.searchedittext.SearchWithDeleteEditText android:id="@id/search_edit_text" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="50.0sp" android:hint="@string/direct_search_edit_text_hint" android:freezesText="true" android:inputType="textAutoComplete" android:imeOptions="actionSearch" />
         </LinearLayout>
     </com.instagram.direct.ui.NonFocusingHorizontalScrollView>
-    <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recipients_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recipients_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </LinearLayout>

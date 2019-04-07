@@ -8,7 +8,7 @@
     </FrameLayout>
     <include layout="@layout/row_divider" />
     <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/save_to_collections_drawer_height" android:layout_marginTop="@dimen/action_bar_item_padding" android:layout_marginBottom="@dimen/action_bar_item_padding">
-        <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@id/save_to_collections_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/save_to_collections_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         <ViewStub android:layout_gravity="center" android:id="@id/save_to_collections_new_collection_stub" android:layout="@layout/save_to_collections_new_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </FrameLayout>

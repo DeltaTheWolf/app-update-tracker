@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="horizontal" android:id="@id/edit_buttons_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/button_width">
         <include layout="@layout/layout_post_capture_edit_control_cancel" />
-        <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="@dimen/quick_capture_edit_button_dim" android:layout_weight="1.0" />
+        <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="@dimen/quick_capture_edit_button_dim" android:layout_weight="1.0" />
         <include layout="@layout/layout_post_capture_change_gradient_stub" />
         <include layout="@layout/layout_post_capture_edit_control_face_filter" />
         <include layout="@layout/layout_post_capture_edit_control_video_mute" />

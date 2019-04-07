@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.instagram.ui.widget.interactive.InteractiveDrawableContainer android:id="@id/capture_interactive_drawable_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="top" android:id="@id/alignment_guide_header_stub" android:layout="@layout/alignment_guide_header_profile_attribution" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/alignment_guide_footer_stub" android:layout="@layout/alignment_guide_footer_message_composer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.instagram.ui.widget.interactive.InteractiveDrawableContainer>

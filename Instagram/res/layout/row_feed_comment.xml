@@ -7,5 +7,4 @@
         <ViewStub android:id="@id/row_feed_comment_like_button_stub" android:layout="@layout/layout_comment_like" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         <ViewStub android:id="@id/row_feed_comment_undo_button_stub" android:layout="@layout/layout_comment_undo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </LinearLayout>
-    <ViewStub android:id="@id/row_feed_comment_warning_stub" android:layout="@layout/layout_comment_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 </LinearLayout>

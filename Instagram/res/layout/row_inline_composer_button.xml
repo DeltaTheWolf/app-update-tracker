@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/row_comment_horizontal_padding" android:paddingTop="@dimen/row_comment_vertical_padding" android:paddingRight="@dimen/row_comment_horizontal_padding" android:paddingBottom="@dimen/row_comment_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/row_comment_horizontal_padding" android:paddingEnd="@dimen/row_comment_horizontal_padding"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v4.widget.Space style="@style/CommentChildRowIndentSpace" />
+    <androidx.legacy.widget.Space style="@style/CommentChildRowIndentSpace" />
     <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/inline_composer_button_avatar" android:layout_width="@dimen/row_comment_child_avatar_size" android:layout_height="@dimen/row_comment_child_avatar_size" android:layout_marginRight="@dimen/inline_composer_avatar_padding_right" android:layout_marginEnd="@dimen/inline_composer_avatar_padding_right" style="@style/Avatar" />
     <TextView android:textSize="@dimen/inline_composer_font_size" android:textColor="?textColorSecondary" android:id="@id/inline_composer_button_textview" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_hint" />
 </LinearLayout>

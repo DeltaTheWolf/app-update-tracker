@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
         <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:id="@id/partner_accounts_header_text" android:padding="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/approved_partner_accounts_header_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
         <View android:id="@id/divider" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/partner_accounts_header_text" style="@style/Widget.Instagram.Divider" />
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_partner_row" android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_padding" android:paddingTop="@dimen/row_padding_medium" android:paddingRight="@dimen/row_padding" android:paddingBottom="@dimen/row_padding_medium" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="@dimen/row_padding_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider">
             <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/add_partner_plus_button" android:padding="@dimen/add_partner_row_icon_padding" android:layout_width="@dimen/profile_double_avatar_size" android:layout_height="@dimen/profile_double_avatar_size" android:src="@drawable/instagram_add_outline_24" app:strokeColor="@color/black_15_transparent" app:strokeWidth="@dimen/add_partner_row_icon_stroke" />
             <TextView android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_partner_account" />
         </LinearLayout>
-        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/add_partner_row" />
-    </android.support.constraint.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/add_partner_row" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

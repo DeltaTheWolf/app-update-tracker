@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:id="@id/preview_container" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginEnd="12.0dip" app:backgroundColour="@color/grey_0" app:edgeRadius="@dimen/item_corner_radius" app:layout_constraintDimensionRatio="H,0.643:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+    <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:id="@id/preview_container" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:animateLayoutChanges="true" android:layout_marginEnd="12.0dip" app:backgroundColour="@color/grey_0" app:edgeRadius="@dimen/item_corner_radius" app:layout_constraintDimensionRatio="H,0.643:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
         <com.instagram.common.ui.widget.imageview.IgImageView android:layout_gravity="center" android:id="@id/preview" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
     </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
     <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/edit_cover" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="12.0dip" android:text="@string/igtv_upload_cover_photo" app:layout_constraintEnd_toEndOf="@id/preview_container" app:layout_constraintStart_toStartOf="@id/preview_container" app:layout_constraintTop_toBottomOf="@id/preview_container" app:layout_constraintWidth_default="wrap" />
@@ -16,4 +16,4 @@
         <View style="@style/igtv_section_divider" />
         <EditText android:textSize="@dimen/font_medium_xlarge" android:id="@id/video_description" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:hint="@string/igtv_upload_description" android:includeFontPadding="false" android:maxLength="@integer/max_comments_length" android:inputType="textAutoComplete|textMultiLine" style="@style/igtv_edit_text" />
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,7 @@
 <FrameLayout android:id="@id/music_editor" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="bottom|center" android:id="@id/track_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <android.support.constraint.ConstraintLayout android:id="@id/music_editor_controls_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/music_editor_controls_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <View android:layout_gravity="center" android:id="@id/lyrics_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/music_editor_lyrics_top_margin" android:layout_marginStart="@dimen/music_editor_lyrics_side_margin" android:layout_marginEnd="@dimen/music_editor_lyrics_side_margin" app:layout_constraintBottom_toTopOf="@id/labels_container" app:layout_constraintTop_toTopOf="parent" />
         <FrameLayout android:id="@id/labels_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/controls_above_scrubber">
             <TextView android:textSize="@dimen/music_editor_rounded_time_view_text_size" android:textStyle="bold" android:textColor="@color/time_indicator_default" android:gravity="center" android:layout_gravity="center" android:id="@id/time_indicator" android:background="@drawable/start_time_indicator" android:paddingLeft="@dimen/music_editor_rounded_time_view_padding_horizontal" android:paddingTop="@dimen/music_editor_rounded_time_view_padding_vertical" android:paddingRight="@dimen/music_editor_rounded_time_view_padding_horizontal" android:paddingBottom="@dimen/music_editor_rounded_time_view_padding_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
@@ -15,8 +15,8 @@
         </LinearLayout>
         <com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/scrubber" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
             <View android:layout_gravity="center|top" android:id="@id/scrubber_focus_box_background_view" android:layout_width="@dimen/music_editor_scrubber_focus_box_background_width" android:layout_height="@dimen/music_editor_scrubber_focus_box_background_height" android:layout_marginTop="@dimen/music_editor_scrubber_focus_box_outer_ring_width" />
-            <android.support.v7.widget.RecyclerView android:layout_gravity="center|top" android:id="@id/scrubber_recycler_view" android:paddingTop="@dimen/music_editor_scrubber_focus_box_total_ring_width" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center|top" android:id="@id/scrubber_recycler_view" android:paddingTop="@dimen/music_editor_scrubber_focus_box_total_ring_width" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             <View android:layout_gravity="center|top" android:id="@id/scrbber_focus_box_ring_view" android:layout_width="@dimen/music_editor_scrubber_focus_box_width" android:layout_height="@dimen/music_editor_scrubber_focus_box_height" />
         </com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

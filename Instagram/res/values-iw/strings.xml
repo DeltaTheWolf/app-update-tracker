@@ -212,6 +212,10 @@
     <string name="address_book_contacts_screen_title">הזמנת אנשי קשר</string>
     <string name="address_book_contacts_screen_title_with_context_1">בחירת אנשי קשר</string>
     <string name="address_book_contacts_screen_title_with_context_2">בחירת אנשי קשר להזמין</string>
+    <string name="address_level_1">מדינה</string>
+    <string name="address_level_2">עיר</string>
+    <string name="address_line_1">כתובת</string>
+    <string name="address_line_2">דירה/סוויטה (לא חובה)</string>
     <string name="adjust">התאם/התאימי</string>
     <string name="admin_contact_info">הפרטים ליצירת קשר של המנהל</string>
     <string name="ads_body">אפשר לראות את המודעות המופעלות על ידך כרגע.</string>
@@ -456,7 +460,7 @@
     <string name="bugreporter_load_external_screenshot_wait">טוען תמונה...</string>
     <string name="bugreporter_low_memory_screenshot_error">\"אין מספיק זיכרון כדי לצלם צילום מסך. מצטערים!\"</string>
     <string name="bugreporter_not_now">לא עכשיו</string>
-    <string name="bugreporter_rageshake_hint">הסבר/הסבירי בקצרה מה קרה</string>
+    <string name="bugreporter_rageshake_hint">מה השתבש?</string>
     <string name="bugreporter_rageshake_video_quality_hint">עליך להסביר בקצרה במה שונה האיכות של הווידאו או השמע מהאיכות שלה ציפית.</string>
     <string name="bugreporter_save_annotated_screenshot_error">לא היתה אפשרות לשמור את צילום המסך. נסה/נסי שוב.</string>
     <string name="bugreporter_save_annotated_screenshot_wait">שומר...</string>
@@ -488,6 +492,7 @@
     <string name="business_profile">פרופיל עסקי</string>
     <string name="business_profile_linked_to_pages">פרופילי עסקים באינסטגרם מקושרים לדפי פייסבוק וכפופים ל%1$s שלהם.</string>
     <string name="business_settings_redesign">עסק</string>
+    <string name="business_signup_account_option_title">הרשמה לחשבון עסק</string>
     <string name="business_signup_address_hint">כתובת העסק</string>
     <string name="business_signup_change_username">שינוי שם משתמש</string>
     <string name="business_signup_choose_username_desc">יש לבחור שם משתמש לחשבון העסק שלך. תמיד אפשר לשנות זאת מאוחר יותר.</string>
@@ -633,6 +638,10 @@
     <string name="change_username_title">שינוי שם המשתמש</string>
     <string name="changes_saved">השינויים נשמרו</string>
     <string name="check_connection_and_try_again">יש לבדוק את החיבור ולנסות שוב.</string>
+    <string name="checkout_module_merchant_card_action_text">קנה/קני</string>
+    <string name="checkout_module_nux_message">עכשיו אפשר לקנות מחלק מהמותגים מבלי לעזוב את אינסטגרם.</string>
+    <string name="checkout_module_nux_title">כדאי לנסות תשלום באינסטגרם</string>
+    <string name="checkout_module_title">תשלום באינסטגרם</string>
     <string name="choose_app_verify_flow">אשר/י באופן אוטומטי</string>
     <string name="choose_category">בחירת קטגוריות לפרופיל העסק</string>
     <string name="choose_category_for_profile">בחירת קטגוריה לפרופיל שלך</string>
@@ -727,7 +736,13 @@
     <string name="comment_ellipsis_less">פחות</string>
     <string name="comment_hint">הוספת תגובה...</string>
     <string name="comment_offensive_alert_message">האם באמת ברצונך לפרסם את זה?</string>
+    <string name="comment_offensive_alert_message_new">אנשים אחרים עלולים לחשוב שזה פוגעני.</string>
     <string name="comment_undo_button">ביטול פעולה</string>
+    <string name="comment_warning_bottom_sheet_feedback_span">אפשר לספר לנו</string>
+    <string name="comment_warning_bottom_sheet_para1">אנו מבקשים מאנשים לחשוב שוב על תגובות שנראות דומות לאחרות שדווח עליהן.</string>
+    <string name="comment_warning_bottom_sheet_para2">אם טעינו,</string>
+    <string name="comment_warning_bottom_sheet_title">שומרים על אינסטגרם כמקום תומך</string>
+    <string name="comment_warning_bottom_sheet_toast">המשוב נשלח</string>
     <string name="commenting_disabled_hint">התגובות בפוסט זה הוגבלו.</string>
     <string name="commenting_limited_to_followers">רק העוקבים שלך יכולים להוסיף תגובות. התגובות מוצגות לכולם.</string>
     <string name="commenting_limited_to_followers_and_following">רק העוקבים שלך ואנשים שאת/ה עוקב/ת אחריהם יכולים להוסיף תגובות. התגובות מוצגות לכולם.</string>
@@ -799,6 +814,7 @@
     <string name="connect_fb_and_agree">בהקשה על הלחצן שלמעלה וגישה לנתוני השימוש, את/ה מסכים/מסכימה ל%1$s שלנו.</string>
     <string name="connect_fb_get_insights">למד/י על האנשים שעוקבים אחריך וראה/ראי את הביצועים של הפוסטים שלך. לא נפרסם דבר בפייסבוק ללא רשותך.</string>
     <string name="connect_ig_to_fb_page_explain">כדאי לחבר את חשבון Instagram Business שלך לדף פייסבוק כדי להקל על אנשים למצוא אותך. חשבונות עסקיים באינסטגרם מקושרים לדפי פייסבוק וכפופים ל%1$s שלהם.</string>
+    <string name="connect_or_create">חיבור או יצירה</string>
     <string name="connect_page_for_biz_tools">ניתן לחבר חשבונות שמשתמשים בכלים העסקיים של אינסטגרם לדף פייסבוק. נדרש חיבור לדף כדי ליצור מודעות. אם כבר יש לך דף, נעתיק את הפרטים שלך כדי שתהיה לך אפשרות לערוך אותם.</string>
     <string name="connect_page_for_power_tools">ניתן לחבר חשבונות שמשתמשים ב-Instagram Power Tools לדף פייסבוק. נדרש חיבור לדף כדי ליצור מודעות. אם כבר יש לך דף, נעתיק את הפרטים שלך כדי שתהיה לך אפשרות לערוך אותם.</string>
     <string name="connect_page_for_pro_tools">ניתן לחבר חשבונות שמשתמשים ב-Instagram Professional Tools לדף פייסבוק. נדרש חיבור לדף כדי ליצור מודעות. אם כבר יש לך דף, נעתיק את הפרטים שלך כדי שתהיה לך אפשרות לערוך אותם.</string>
@@ -817,7 +833,6 @@
     <string name="contact_from_new_button_ix">הפרטים ליצירת קשר אתך מאפשרים לאנשים לשלוח דוא\"ל, להתקשר או לנקוט בפעולה מלחצנים שיופיעו בפרופיל שלך.</string>
     <string name="contact_import_dialog_button_close">סגור/סגרי</string>
     <string name="contact_import_dialog_button_text">מתחילים</string>
-    <string name="contact_import_dialog_title">מצא/י אנשים לעקוב אחריהם</string>
     <string name="contact_import_dialog_title_invite">הזמנת חברים להצטרף לאינסטגרם</string>
     <string name="contact_import_permissions_dialog_subtitle">כדי לעזור לאנשים להתחבר באינסטגרם, תוכל/י לבחור שאנשי הקשר שלך יסונכרנו מדי פעם ויאוחסנו בשרתים שלנו. את/ה בוחר/ת אחרי אילו אנשי קשר לעקוב. ניתן להתנתק בכל עת כדי להפסיק את הסנכרון.</string>
     <string name="contact_import_permissions_dialog_subtitle_invite">כדי לעזור לאנשים להתחבר באינסטגרם, אפשר לבחור שאנשי הקשר שלך יסונכרנו מדי פעם ויאוחסנו בשרתים שלנו. יש לך אפשרות לבחור אילו אנשי קשר יוזמנו. ניתן להתנתק בכל עת כדי להפסיק את הסנכרון.</string>
@@ -1054,6 +1069,9 @@
     <string name="delta_login_review_was_me">אני עשיתי זאת</string>
     <string name="delta_login_review_was_not_me">לא אני עשיתי זאת</string>
     <string name="delta_password_change_confirm_new_password_hint">אישור הסיסמה החדשה</string>
+    <string name="delta_password_change_error_match_failure">יש להקפיד ששתי הסיסמאות יהיו זהות.</string>
+    <string name="delta_password_change_error_required_field_native">שני השדות נדרשים.</string>
+    <string name="delta_password_change_error_required_field_react_native">שדה זה נדרש.</string>
     <string name="delta_password_change_footer">מומלץ ליצור סיסמה ייחודית לאינסטגרם ולכלול מספר אחד ותו מיוחד אחד לפחות.</string>
     <string name="delta_password_change_new_password_hint">סיסמה חדשה</string>
     <string name="delta_password_change_submit">שלח</string>
@@ -1065,6 +1083,7 @@
     <string name="dial_element_capture_format_music">מוזיקה</string>
     <string name="dial_element_capture_format_reverse">הילוך לאחור</string>
     <string name="dial_element_capture_format_superzoom">סופר זום</string>
+    <string name="dialog_always_share_to_facebook">תמיד שתף/שתפי בפייסבוק</string>
     <string name="dialog_block_user_button">חסימה</string>
     <string name="dialog_block_user_message">הוא לא יוכל למצוא את הפרופיל, הפוסטים או הסיפור שלך באינסטגרם. אינסטגרם לא תודיע לו שחסמת אותו.</string>
     <string name="dialog_block_user_title">לחסום את %1$s?</string>
@@ -1113,7 +1132,7 @@
     <string name="direct_blended_inbox_move_to_requests_dialog_title">להעביר לבקשות?</string>
     <string name="direct_block_account">חסימת החשבון</string>
     <string name="direct_block_choices_block_account">חסימת החשבון</string>
-    <string name="direct_block_choices_block_messages">חסימת הודעות</string>
+    <string name="direct_block_choices_ignore">התעלם/התעלמי</string>
     <string name="direct_block_user">חסימת משתמש</string>
     <string name="direct_blocked">נחסם/נחסמה</string>
     <string name="direct_button_change_group_name">סיום</string>
@@ -1126,6 +1145,7 @@
     <string name="direct_details_error">לא ניתן לטעון את פרטי השיחה. יש לנסות שוב.</string>
     <string name="direct_digest_active_today">סטטוס פעיל היום</string>
     <string name="direct_digest_active_yesterday">סטטוס פעיל אתמול</string>
+    <string name="direct_digest_are_active_now">%1$d נוספים פעילים כעת</string>
     <string name="direct_digest_is_active_now">פעיל/ה כעת</string>
     <string name="direct_digest_mentioned_you_story">הוזכרת בסיפור</string>
     <string name="direct_digest_no_author_shared_product">שיתף מוצר</string>
@@ -1154,6 +1174,7 @@
     <string name="direct_digest_shared_post">שיתפו פוסט</string>
     <string name="direct_digest_shared_your_countdown">הספירה לאחור שלך שותפה על ידי בסיפור שלו/שלה</string>
     <string name="direct_digest_tagged_you_as_buiness_partner_story">תויגת כשותף עסקי</string>
+    <string name="direct_digest_user_is_active_now">%1$s פעיל/ה כעת</string>
     <string name="direct_digest_user_sent_direct_app_invite">נשלחה לך הזמנה מ%1$s לאפליקציית Direct</string>
     <string name="direct_digest_user_sent_direct_app_invite_no_author_name">נשלחה הזמנה של אפליקציית Direct</string>
     <string name="direct_digest_user_sent_gif">קיבלת GIF מ%1$s</string>
@@ -1366,6 +1387,8 @@
     <string name="direct_reel_mention_recipient_info_brand_content">תויגת בשותף עסקי</string>
     <string name="direct_reel_mention_sender_info">הזכרת את %1$s בסיפור שלך</string>
     <string name="direct_reel_mention_sender_info_branded_content">תייגת את %1$s כשותף/שותפה עסקי/ת</string>
+    <string name="direct_reel_question_response_creator_info">השיב/ה לשאלה שלך</string>
+    <string name="direct_reel_question_response_sender_info">השבת לשאלה שלו/שלה</string>
     <string name="direct_reel_reaction_recipient_info">נוסף רגש לסיפור שלך %1$s</string>
     <string name="direct_reel_reaction_sender_info">הוספת רגש לסיפור שלו/שלה %1$s</string>
     <string name="direct_reel_reply_receiver_highlight_info">תשובה לנבחר מסיפור שלך</string>
@@ -1598,10 +1621,16 @@
     <string name="editable_profile_review_title">בדיקת הפרטים שלך ליצירת קשר</string>
     <string name="edited">נערך</string>
     <string name="edits_not_saved">פעולות העריכה שלך לא נשמרו. נסה/נסי שוב.</string>
-    <string name="effect_by_author">&lt;b>%1$s&lt;/b> מאת %2$s</string>
-    <string name="effect_by_format">מאת %1$s</string>
-    <string name="effect_by_format_with_title">%1$s מאת %2$s</string>
     <string name="effect_created_by_format">נוצר על ידי &lt;b>%1$s&lt;/b></string>
+    <string name="effect_detail_more_button_label">עוד</string>
+    <string name="effect_detail_save_to_camera_button_label">שמירה במצלמה</string>
+    <string name="effect_detail_saved_to_camera_button_label">נשמר במצלמה</string>
+    <string name="effect_detail_share_button_label">שלח/י אל...</string>
+    <string name="effect_detail_view_try_it_button_label">נסה/נסי את זה</string>
+    <string name="effect_details_view_created_from_format">מ&lt;b>%1$s&lt;/b></string>
+    <string name="effect_from_author">&lt;b>%1$s&lt;/b> מ%2$s</string>
+    <string name="effect_from_format">מ%1$s</string>
+    <string name="effect_from_format_with_title">%1$s מ%2$s</string>
     <string name="eight_hours">8 שעות</string>
     <string name="ellipses">...</string>
     <string name="ellipsis_more">… עוד</string>
@@ -1611,10 +1640,8 @@
     <string name="email_invalid">הדוא\"ל לא תקין</string>
     <string name="email_not_available">הודעת דוא\"ל זו בשימוש בחשבון אחר.</string>
     <string name="email_not_valid">הזן/הזיני כתובת דוא\"ל תקפה.</string>
-    <string name="email_register">יש להזין את כתובת הדוא\"ל שלך</string>
     <string name="email_sent">הודעת דוא\"ל נשלחה אל כתובת הדוא\"ל של החשבון שלך. בדוק/בדקי את הדוא\"ל שלך כדי להמשיך. אם את/ה עדיין נתקל/ת בבעיות, בקר/י ב%1$s.</string>
     <string name="email_sent_short">הודעת הדוא\"ל נשלחה</string>
-    <string name="email_signup">אפשר להירשם עם כתובת דוא\"ל</string>
     <string name="email_sms_notification_settings">התראות בדוא\"ל והודעות טקסט</string>
     <string name="emails">דוא\"ל</string>
     <string name="emoji_not_allowed">"הסיסמה שלך מכילה תווי אמוג'י. יש לבחור משהו אחר."</string>
@@ -1649,6 +1676,7 @@
     <string name="expired_link_dialog_title">פג תוקף הקישור</string>
     <string name="explore_contextual_title">גילוי</string>
     <string name="explore_description">חיפוש וגילוי</string>
+    <string name="explore_effects">גלה/גלי אפקטים</string>
     <string name="explore_places">מקומות</string>
     <string name="explore_places_request_fail">לא היתה אפשרות לטעון מקומות. יש לנסות שוב.</string>
     <string name="explore_topical_going_to_next">מעבר לפריט הבא</string>
@@ -1697,6 +1725,7 @@
     <string name="failed_to_load_highlight_message">טעינת הפריט הנבחר נכשלה</string>
     <string name="failed_to_load_photo_toast">מצטערים, אין אפשרות לטעון תמונה זו.</string>
     <string name="failed_to_load_video_toast">מצטערים, לא ניתן לטעון סרטון זה.</string>
+    <string name="family_name">שם משפחה</string>
     <string name="favorites_tab_title">חברים קרובים</string>
     <string name="fb_connect_card_button_text">התחבר</string>
     <string name="fb_connect_card_main_text">התחבר/י לפייסבוק</string>
@@ -1717,6 +1746,7 @@
     <string name="feed_controls_message_replies_setting_following">אנשים במעקב שלך</string>
     <string name="feed_controls_message_replies_setting_off">מושבתת</string>
     <string name="feed_controls_settings_title">בקרת פיד</string>
+    <string name="feed_emoji_see_more_button_label">"הקשה לצפייה באמוג'ים נוספים"</string>
     <string name="feed_item_page_title">מודעה</string>
     <string name="feed_product_pivots_view_shop_button">הצגת חנות</string>
     <string name="feed_refereshed">התוכן עבר רענון</string>
@@ -1860,10 +1890,13 @@
     <string name="full_name_and_password_title">שם וסיסמה</string>
     <string name="full_terms_rw">התנאים המלאים</string>
     <string name="fundraiser_sticker_consumption_sheet_donation_cta">המשך/המשיכי</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_large">תרומות לא יכולות להיות יותר מ-%1$s</string>
+    <string name="fundraiser_sticker_currency_amount_selector_input_field_error_amount_too_small">תרומות חייבות להיות %1$s לפחות</string>
     <string name="fundraiser_sticker_currency_amount_selector_input_field_hint">סכום התרומה</string>
     <string name="fundraiser_sticker_currency_amount_selector_other">אחר</string>
     <string name="fundraiser_sticker_default_title">גיוס הכספים של %1$s</string>
     <string name="fundraiser_sticker_donate_button_text">תרומה</string>
+    <string name="fundraiser_sticker_donate_button_text_donation_complete">ניתנה תרומה</string>
     <string name="fundraiser_sticker_search_following_section_title">במעקב</string>
     <string name="fundraiser_sticker_search_suggested_section_title">הצעות</string>
     <string name="fundraiser_sticker_subtitle">תמיכה ב%1$s</string>
@@ -1872,6 +1905,8 @@
     <string name="gallery">גלריה</string>
     <string name="gallery_album_thumbnail">תמונה ממוזערת של אלבום</string>
     <string name="gallery_description">גלריה</string>
+    <string name="gallery_empty_state_description">כשיהיו לך תמונות וסרטונים במכשיר שלך, תוכל/י לשתף אותם באינסטגרם.</string>
+    <string name="gallery_empty_state_title">התמונות והסרטונים שלך</string>
     <string name="gallery_photo_thumbnail">תמונה ממוזערת של תמונה</string>
     <string name="gallery_sticker_description">מדבקת גלריה</string>
     <string name="gallery_sticker_grid_empty">אין תמונות או סרטונים</string>
@@ -1884,7 +1919,7 @@
     <string name="gdpr_account_privacy">פרטיות החשבון</string>
     <string name="gdpr_activity_status">סטטוס פעילות</string>
     <string name="gdpr_blocked_accounts">חשבונות חסומים</string>
-    <string name="gdpr_business_signup_option_title">הרשמה לפרופיל עסק</string>
+    <string name="gdpr_business_signup_option_title">הוסף/הוסיפי חשבון עסקי</string>
     <string name="gdpr_close_friends_title">חברים קרובים</string>
     <string name="gdpr_contacts_syncing_option_title">סינכרון אנשי קשר</string>
     <string name="gdpr_data_download">הורדת נתונים</string>
@@ -1913,6 +1948,7 @@
     <string name="get_started">קדימה</string>
     <string name="gif_sticker_description">מדבקת GIF</string>
     <string name="gifs_description">קובצי GIF</string>
+    <string name="given_name">שם פרטי</string>
     <string name="go_live_button">עבור/עברי לשידור חי</string>
     <string name="go_live_suggestion">התחל/התחילי סרטון בשידור חי כדי לשתף מה שאת/ה עושה.</string>
     <string name="go_to_profile">עבור/עברי לפרופיל</string>
@@ -2009,8 +2045,6 @@
     <string name="ig_browser_chrome_title_loading_text">טוען...</string>
     <string name="igds_reply_button_label">תשובה</string>
     <string name="igds_view_reply_button_label">הצגת תשובה</string>
-    <string name="iglive_caption_hint">הוספת כותרת לצופים שלך...</string>
-    <string name="iglive_captioned_notification">%1$s בשידור חי: %2$s</string>
     <string name="iglive_cobroadcast_end_subtitle">היית בסרטון בשידור חי של %1$s.</string>
     <string name="iglive_cobroadcast_end_title">תודה שהצטרפת!</string>
     <string name="iglive_discard">בטל/י</string>
@@ -2360,11 +2394,6 @@
     <string name="live_qa_label">שאלות ותשובות</string>
     <string name="live_ssi_tooltip">הצג/הציגי משאבים בכל עת לקבלת תמיכה.</string>
     <string name="live_starting_live">את/ה בשידור חי עכשיו!</string>
-    <string name="live_subscribe_button">הפעלה</string>
-    <string name="live_subscribe_request_failed_to_send">המנוי שלך לא הצליח.</string>
-    <string name="live_subscribe_request_sent">מופעל</string>
-    <string name="live_subscribe_sent_system_comment">יש לך אפשרות להשבית את זה בכל עת מהפרופיל שלו/שלה.</string>
-    <string name="live_subscribe_system_comment">קבלת התראות על כל סרטון בשידור חי של %1$s.</string>
     <string name="live_title">שידור חי</string>
     <string name="live_unpin_comment">ביטול הצמדת התגובה</string>
     <string name="live_video_call_cannot_start_description">"לא ניתן להתחיל סרטון בשידור חי בזמן שימוש בצ'אט וידאו."</string>
@@ -2448,6 +2477,7 @@
     <string name="lookup_subtitle">הזן/הזיני את שם המשתמש שלך באינסטגרם או את כתובת הדוא\"ל או מספר הטלפון המקושרים לחשבון שלך.</string>
     <string name="lookup_title">איתור החשבון שלך</string>
     <string name="made_with_boomerang">נוצר באמצעות &lt;b>Boomerang&lt;/b></string>
+    <string name="main_account">החשבון הראשי</string>
     <string name="main_feed_hide_recommended_post_msg">לא נציג פוסטים של %1$s מעכשיו ואילך.</string>
     <string name="main_feed_unfollow_from_post_msg">לאחר הרענון לא תראה/תראי עוד את הפוסטים שלו/שלה.</string>
     <string name="main_feed_unfollow_from_post_title">הפסקת לעקוב אחר %1$s</string>
@@ -2464,6 +2494,8 @@
     <string name="manage_saved_login">פרטי התחברות שמורים</string>
     <string name="managing_photos_of_you">ניהול התמונות שלך</string>
     <string name="managing_your_account">ניהול החשבון שלך</string>
+    <string name="map_data_legal_notices_label">הודעות משפטיות על נתוני מפות</string>
+    <string name="map_information_title">פרטי המפה</string>
     <string name="map_label">מפה</string>
     <string name="maps_open_map_reporter">פתיחה</string>
     <string name="maps_report_button">דיווח</string>
@@ -2539,6 +2571,7 @@
     <string name="music_overlay_cant_add_song_with_platform_alert">אי אפשר להוסיף שיר לסיפור ששיתפת מאפליקציה אחרת.</string>
     <string name="music_overlay_cant_save_story_alert">השמירה לא זמינה לסיפורים עם שירים</string>
     <string name="music_overlay_cant_share_to_fb_alert">שיתוף בפייסבוק אינו זמין לסיפורים עם שירים</string>
+    <string name="music_overlay_no_lyrics_available_toast">מילות השיר אינן זמינות</string>
     <string name="music_overlay_question_text_response_description">אין שירים זמינים שמתאימים לחיפוש שלך. יש להקיש למעלה כדי לשלוח את החיפוש כתגובת טקסט.</string>
     <string name="music_overlay_sticker_description">שכבת על של מוזיקה</string>
     <string name="music_overlay_story_attribution_from_username">מהסיפור של %1$s</string>
@@ -2734,14 +2767,9 @@
     <string name="nux_main_feed_empty_subtitle_active">אפשר לעקוב אחרי אנשים כדי להתחיל לראות את התמונות והסרטונים שהם משתפים.</string>
     <string name="nux_main_feed_empty_title">ברוך/ברוכה הבא/ה לאינסטגרם</string>
     <string name="nux_one_tap_login_card_remove_icon_description">הסרה</string>
-    <string name="nux_one_tap_upsell_detail_save">נשמור את פרטי ההתחברות בשבילך. אין צורך להזין אותם שוב כשתתחבר/י שוב במכשיר זה.</string>
-    <string name="nux_one_tap_upsell_detail_variant1">בעת התחברותך באמצעות טלפון זה, אפשר פשוט להקיש על תמונת הפרופיל שלך, במקום להקליד את כל פרטי ההתחברות שלך.</string>
-    <string name="nux_one_tap_upsell_detail_variant2">בפעם הבאה של התחברותך באמצעות טלפון זה, אפשר פשוט להקיש על תמונת הפרופיל שלך במקום להקליד את כל פרטי ההתחברות שלך.</string>
+    <string name="nux_one_tap_upsell_detail">בפעם הבאה של התחברותך באמצעות טלפון זה, אפשר פשוט להקיש על תמונת הפרופיל שלך במקום להקליד את כל פרטי ההתחברות שלך.</string>
     <string name="nux_one_tap_upsell_enroll_button_ok">אישור</string>
-    <string name="nux_one_tap_upsell_enroll_button_save">שמירה</string>
-    <string name="nux_one_tap_upsell_title_save">שמירת פרטי ההתחברות</string>
-    <string name="nux_one_tap_upsell_title_variant1">התחברות יותר בקלות בפעם הבאה</string>
-    <string name="nux_one_tap_upsell_title_variant2">זכירת סיסמה</string>
+    <string name="nux_one_tap_upsell_title">זכירת סיסמה</string>
     <string name="nux_pinch_to_zoom">יש לצבוט כדי להתקרב</string>
     <string name="nux_silent_audio_text">לסרטון זה אין קול</string>
     <string name="off">מושבת</string>
@@ -2760,7 +2788,6 @@
     <string name="one_hour">שעה</string>
     <string name="one_tap_login_landing_edit_accounts">עריכת חשבונות</string>
     <string name="one_tap_login_text_link_text">התחברות באמצעות חשבון אחר</string>
-    <string name="one_tap_logo">לוגו של One Tap</string>
     <string name="one_tap_new_footer_log_in">&lt;b>כניסה.&lt;/b></string>
     <string name="one_tap_new_footer_one_button">חדשים באינסטגרם? &lt;b> הרשמה &lt;/b></string>
     <string name="one_tap_new_footer_switch_account">&lt;b>החלפת חשבונות&lt;/b> או</string>
@@ -2780,7 +2807,6 @@
     <string name="open_map_error">מצטערים, לא הצלחנו לפתוח את המפה.</string>
     <string name="open_phone_error">מצטערים, לא הצלחנו לבצע את השיחה.</string>
     <string name="open_source_libraries">ספריות מקור פתוח</string>
-    <string name="openstreetmap_copyright_text">תורמים ל-© OpenStreetMap</string>
     <string name="opt_into_all_ad_content_label">המשך צפייה</string>
     <string name="opt_into_entire_dynamic_ad_label">%1$d נוספים</string>
     <string name="or">או</string>
@@ -2882,8 +2908,6 @@
     <string name="phone_number_toast_number_required">נדרש מספר טלפון</string>
     <string name="phone_permission_request_message">אנחנו נבצע מילוי אוטומטי ונאשר את הטלפון שלך בשבילך כדי להקל עליך בשחזור החשבון שלך אם תינעל/י מחוץ לחשבון.</string>
     <string name="phone_permission_request_title">בצע/י ונהל/י שיחות טלפון</string>
-    <string name="phone_register">יש להזין מספר טלפון</string>
-    <string name="phone_signup">אפשר להירשם עם מספר טלפון</string>
     <string name="photo">תמונה</string>
     <string name="photo_edit_error_message">מצטערים, אירעה בעיה בעריכת התמונה שלך. נשלח דוח לאינסטגרם.</string>
     <string name="photo_edit_error_title">לא ניתן להמשיך בעריכה</string>
@@ -2935,6 +2959,7 @@
     <string name="post_to_your_story_label">הוספת פוסט לסיפור שלך</string>
     <string name="post_to_your_story_label_igtv">הוספת סרטון לסיפור שלך</string>
     <string name="post_you_were_tagged_in">פוסט שתויגת בו</string>
+    <string name="postal_code">מיקוד</string>
     <string name="posted_comment">התגובה פורסמה</string>
     <string name="posting_failed">הסרטון שלך לא שותף.</string>
     <string name="posting_message">מפרסם...</string>
@@ -2946,7 +2971,6 @@
     <string name="posts_tab_title">פוסטים</string>
     <string name="posts_you_liked">פוסטים שאהבת</string>
     <string name="preferences_label">העדפות</string>
-    <string name="preparing_to_scan">מתכונן לסריקה...</string>
     <string name="presence_permission_explanation">ניתן לאפשר לחשבונות במעקב ולאנשים שנשלחות אליהם הודעות לראות מתי היית לאחרונה בסטטוס פעיל באפליקציות אינסטגרם. כשאפשרות זו מושבתת, לא תהיה לך אפשרות לראות את סטטוס הפעילות של חשבונות אחרים.</string>
     <string name="presence_permission_name">הצגת סטטוס פעילות</string>
     <string name="preview_hint_text">הקש/הקישי כדי לצפות בתמונה או בסרטון שבסיפור זה</string>
@@ -3009,6 +3033,7 @@
     <string name="product_share_sticker_default_question">האם כדאי לי להשיג את זה?</string>
     <string name="product_share_sticker_from">מאת %1$s</string>
     <string name="product_source">מקור המוצר</string>
+    <string name="product_source_different_catalog">יש להשתמש בקטלוג אחר</string>
     <string name="product_source_learn_more">מידע נוסף</string>
     <string name="product_source_learn_more_text">אם קטלוג המוצרים שברצונך להוסיף אינו מופיע כאן, יש לפנות למנהל דף או לבדוק את ההרשאות שלך ב-Business Manager כדי לוודא שיש לך הרשאה. %1$s</string>
     <string name="product_source_load_more">טעינת קטלוגים נוספים</string>
@@ -3089,7 +3114,18 @@
     <string name="profile_visits">ביקורים בפרופיל</string>
     <string name="promote">קדם/קדמי</string>
     <string name="promote_again">קדם/קדמי שוב</string>
+    <string name="promote_audience_header">בחירת קהל יעד</string>
+    <string name="promote_budget_duration_header">ההוצאה הכוללת שלך היא %1$s במשך %2$d ימים</string>
+    <string name="promote_budget_duration_screen_title">תקציב ומשך זמן</string>
+    <string name="promote_create_new_audience_subtitle">יש להזין את אפשרויות הפילוח באופן ידני</string>
+    <string name="promote_create_new_audience_title">יצירה משלך</string>
+    <string name="promote_destination_direct_message_option">ההודעות הישירות שלך</string>
+    <string name="promote_destination_header">בחירה לאן לשלוח אנשים</string>
+    <string name="promote_destination_profile_option">הפרופיל שלך</string>
     <string name="promote_destination_screen_title">יעד</string>
+    <string name="promote_destination_website_edit_title">אתר</string>
+    <string name="promote_destination_website_option">האתר שלך</string>
+    <string name="promote_edit">ערוך/ערכי</string>
     <string name="promote_error_claim_page_label">בקשת דף</string>
     <string name="promote_error_description_network_error">יש בעיה בצד שלנו ואין לנו אפשרות לקדם את הפוסט שלך כעת. יש לנסות שוב מאוחר יותר.</string>
     <string name="promote_error_page_legal_info">הדפים של פייסבוק כפופים ל%1$s אלו.</string>
@@ -3153,11 +3189,12 @@
     <string name="quick_replies">תשובות מהירות</string>
     <string name="quick_reply_description">תגובה מהירה</string>
     <string name="quiz_responder_subtitle_text">התקבלה התשובה %1$s</string>
-    <string name="quiz_sticker_first_answer_hint">אפשרות 1</string>
+    <string name="quiz_sticker_add_option_hint">הוסף/הוסיפי</string>
+    <string name="quiz_sticker_at_least_two_options_error_text">יש להוסיף לפחות שתי אפשרויות</string>
     <string name="quiz_sticker_question_hint">אפשר לנחש מה אהוב עליי...</string>
     <string name="quiz_sticker_response_composer_privacy_nux">יש להקיש כדי להתחיל את החידון. התשובה שלך תוצג ל%1$s.</string>
     <string name="quiz_sticker_response_composer_submit_answer_button">שליחת תשובה</string>
-    <string name="quiz_sticker_second_answer_hint">אפשרות 2</string>
+    <string name="quiz_sticker_select_valid_correct_answer_error_text">יש לבחור אפשרות תקינה</string>
     <string name="quiz_sticker_tray_description">מדבקת שאלון</string>
     <string name="quiz_sticker_tray_label">שאלון</string>
     <string name="rageshake_bug_report_option">משהו לא פועל</string>
@@ -3204,7 +3241,7 @@
     <string name="recovery_known_account_login_dialog_message_gmail_via_email">נראה שכבר קיים חשבון המשויך לדוא\"ל זה. אנו יכולים לנסות לחבר אותך באמצעות פרטי חשבון Google שלך.</string>
     <string name="recovery_known_account_login_dialog_message_gmail_via_username_or_phone">נראה ששם משתמש זה מקושר לכתובת Gmail. אנו יכולים לנסות לחבר אותך באמצעות פרטי חשבון Google שלך.</string>
     <string name="recovery_known_account_login_dialog_message_one_tap">נראה שכבר שמרת את פרטי ההתחברות של חשבון זה.</string>
-    <string name="reel_ad4ad_privacy_subtitle">רק לך יש אפשרות לצפות בתצוגה מקדימה זו</string>
+    <string name="reel_ad4ad_privacy_subtitle">רק לך יש אפשרות לראות את זה</string>
     <string name="reel_bakeoff_thank_you_subtitle">נשתמש בתשובות שלך כדי לסייע לשפר את אינסטגרם.</string>
     <string name="reel_bakeoff_thank_you_title">תודה שהודעת לנו.</string>
     <string name="reel_dashboard_add_to_story_entry_point_cta">פתיחת המצלמה</string>
@@ -3241,6 +3278,7 @@
     <string name="reel_poll_voters_list_title">מצביעים</string>
     <string name="reel_question_responses_list_title">תשובות</string>
     <string name="reel_quick_reactions">רגשות מהירים</string>
+    <string name="reel_quiz_responders_list_title">השיבו</string>
     <string name="reel_reaction_composer_sent_confirmation">הרגש נשלח אל %1$s</string>
     <string name="reel_reshared_from_archive_label">מהארכיון</string>
     <string name="reel_reshares_empty_state_title">אין כרגע שיתופים חוזרים ציבוריים של הפוסט הזה</string>
@@ -3391,6 +3429,7 @@
     <string name="reply_to">השב/השיבי ל%1$s...</string>
     <string name="replying_to_user_format">תשובה ל%1$1s</string>
     <string name="report">דיווח</string>
+    <string name="report_a_problem_label">דווח/י על בעיה</string>
     <string name="report_accounts_are_inappropriate">החשבונות בלתי הולמים</string>
     <string name="report_ad">דיווח על מודעה</string>
     <string name="report_as_ip_violation">האם לדווח על הפרת קניין רוחני?</string>
@@ -3623,7 +3662,7 @@
     <string name="set_daily_reminder_subtitle">אנו נשלח לך תזכורת לאחר שיגיע המועד שקבעת לעצמך.</string>
     <string name="set_daily_reminder_title">הגדרת תזכורת יומית</string>
     <string name="set_main_account">הגדרת חשבון ראשי</string>
-    <string name="set_up_business_profile">הגדר/הגדירי את הפרופיל העסקי שלך</string>
+    <string name="set_up_business_account">הגדרת חשבון עסק</string>
     <string name="settings">הגדרות</string>
     <string name="settings_viewers_choose_locations_feature_off">כבויה</string>
     <string name="settings_viewers_choose_locations_title">בחירת מיקומים</string>
@@ -3684,6 +3723,7 @@
     <string name="shop_on_profile_row_continue_shopping">המשך קנייה</string>
     <string name="shop_this_post">קנייה בפוסט הזה</string>
     <string name="shopping">קניות</string>
+    <string name="shopping_checkout_destination_title">קנה/קני עכשיו באמצעות מעבר לתשלום</string>
     <string name="shopping_destination_title">חנות</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_message">פעולה זו תסיר את מדבקת המוצר מהסטורי הזה.</string>
     <string name="shopping_merchant_remove_product_sticker_dialog_remove_button">הסרת מדבקה</string>
@@ -3852,7 +3892,6 @@
     <string name="suggested">הצעות</string>
     <string name="suggested_accounts_header">הצעות</string>
     <string name="suggested_categories">הצעות</string>
-    <string name="suggested_for_you">הצעות עבורך</string>
     <string name="suggested_hashtags">הצעות</string>
     <string name="suggested_hashtags_header">הצעות</string>
     <string name="suggested_highlight_delete_option_text">הסרת הצעה</string>
@@ -3860,7 +3899,6 @@
     <string name="suggested_highlight_discard_changes_dialog_discard_button">ביטול</string>
     <string name="suggested_highlight_discard_changes_dialog_keep_button">שמירה</string>
     <string name="suggested_highlight_discard_changes_dialog_title">לבטל את הפריט הנבחר?</string>
-    <string name="suggested_live_and_post_live_videos">הסרטון הבא לצפייה</string>
     <string name="suggested_live_videos">בשידור חי עכשיו</string>
     <string name="suggested_recipients">הצעות</string>
     <string name="suggested_username_allcaps_title">ברוכים הבאים לאינסטגרם,</string>
@@ -3948,6 +3986,7 @@
     <string name="tap_to_view_product_items">הקש/הקישי כדי לצפות במוצרים</string>
     <string name="tap_to_watch_video_description">יש להקיש כדי להמשיך לצפות</string>
     <string name="tap_to_watch_video_nux">צפייה בסרטון ה-IGTV המלא</string>
+    <string name="tel">טלפון</string>
     <string name="tell_us_approval_reason">ספר/י לנו מדוע המודעה שלך צריכה להיות מאושרת. אם שגינו, נאשר את המודעה שלך בהקדם האפשרי.</string>
     <string name="terms">תנאים</string>
     <string name="terms_and_data_policy">תנאים ומדיניות הנתונים</string>
@@ -4108,6 +4147,8 @@
     <string name="two_fac_confirm_phone_number_fragment_body">יש להזין את הקוד בן 6 הספרות ששלחנו למספרך המסתיים ב-%1$s כדי לסיים את הגדרת האימות הדו-שלבי.</string>
     <string name="two_fac_confirm_phone_number_fragment_body_authenticator_app">יש להזין את הקוד בן 6 הספרות שנוצר על ידי אפליקציית האימות שלך.</string>
     <string name="two_fac_confirm_phone_number_fragment_title">יש להזין קוד</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_subtitle">לא נבקש קוד בהתחברות הבאה שלך</string>
+    <string name="two_fac_confirm_phone_number_fragment_trusted_device_title">מתן אמון במכשיר זה</string>
     <string name="two_fac_confirm_phone_number_link_change_phone_number">שינוי מספר טלפון</string>
     <string name="two_fac_confirm_phone_number_link_resend_code">יש לשלוח את הקוד שוב</string>
     <string name="two_fac_confirmation_code_invalid">קוד לא תקין</string>
@@ -4275,6 +4316,7 @@
     <string name="username_cannot_be_empty">שם המשתמש אינו יכול להיות ריק</string>
     <string name="username_hint_access">שם משתמש, דוא\"ל או טלפון</string>
     <string name="username_hint_login">מספר טלפון, דוא\"ל או שם משתמש</string>
+    <string name="username_lock_help_text">שם המשתמש הישן שלך יהיה נעול למשך 14 יום. יש לך אפשרות לשנות אותו בחזרה במסגרת פרק זמן זה. לאחר מכן, שם המשתמש יהיה זמין לשימוש כל אדם שהוא.</string>
     <string name="username_not_available">שם המשתמש אינו זמין</string>
     <string name="username_placeholder">שם משתמש</string>
     <string name="valid_address_to_map">יש להוסיף כתובת דוא\"ל תקפה כדי שאנשים יוכלו לנווט למקומך במפות.</string>

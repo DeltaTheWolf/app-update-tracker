@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.text.TitleTextView android:gravity="center" android:id="@id/phone_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/reg_margin_medium" android:text="@string/phone_register" />
-    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/reg_phone_field" />
-    <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/phone_view_next_button" style="@style/RegProgressButtonStyle" />
-    <TextView android:textColor="@color/blue_5" android:gravity="center" android:id="@id/switch_to_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_small" android:text="@string/email_signup" android:fontFamily="Roboto-Medium" />
-</LinearLayout>

@@ -35,6 +35,5 @@
         </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
         <include layout="@layout/layout_reel_item_toolbar" />
         <ViewStub android:id="@id/reel_identifier_overlay_stub" android:layout="@layout/reel_identifier_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-        <ViewStub android:id="@id/broadcast_caption_overlay_stub" android:layout="@layout/layout_iglive_reel_caption_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
 </LinearLayout>

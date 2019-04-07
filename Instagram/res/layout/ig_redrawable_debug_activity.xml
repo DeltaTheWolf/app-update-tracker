@@ -4,5 +4,5 @@
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <EditText android:id="@id/filter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/filter" android:layout_weight="1.0" />
     </LinearLayout>
-    <android.support.v7.widget.RecyclerView android:id="@id/redrawables" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/redrawables" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </LinearLayout>

@@ -69,9 +69,11 @@
     <item type="id" name="action_context_bar">false</item>
     <item type="id" name="action_group">false</item>
     <item type="id" name="action_icon">false</item>
+    <item type="id" name="action_label_text">false</item>
     <item type="id" name="action_mode_close_button">false</item>
     <item type="id" name="action_sheet_header_text_view">false</item>
     <item type="id" name="action_sheet_row_text_view">false</item>
+    <item type="id" name="action_text">false</item>
     <item type="id" name="actionbar_rotate90_button">false</item>
     <item type="id" name="activator_card_big_image">false</item>
     <item type="id" name="activator_card_confirmation_image">false</item>
@@ -125,6 +127,10 @@
     <item type="id" name="additional_likers_number">false</item>
     <item type="id" name="address">false</item>
     <item type="id" name="address_label">false</item>
+    <item type="id" name="address_level_1">false</item>
+    <item type="id" name="address_level_2">false</item>
+    <item type="id" name="address_line_1">false</item>
+    <item type="id" name="address_line_2">false</item>
     <item type="id" name="adjust_container">false</item>
     <item type="id" name="adjust_highlights_title">false</item>
     <item type="id" name="adjust_reset">false</item>
@@ -149,12 +155,17 @@
     <item type="id" name="album_view_pager">false</item>
     <item type="id" name="alertTitle">false</item>
     <item type="id" name="alertTitleContainer">false</item>
+    <item type="id" name="alignment_footer_empty_bar_stub">false</item>
     <item type="id" name="alignment_footer_message_composer">false</item>
     <item type="id" name="alignment_footer_message_composer_button_camera">false</item>
     <item type="id" name="alignment_footer_message_composer_camera_button_container">false</item>
     <item type="id" name="alignment_footer_message_composer_container">false</item>
     <item type="id" name="alignment_footer_message_composer_text">false</item>
+    <item type="id" name="alignment_guide_empty_bar">false</item>
+    <item type="id" name="alignment_guide_footer_stub">false</item>
+    <item type="id" name="alignment_guide_header_stub">false</item>
     <item type="id" name="alignment_header_attribution">false</item>
+    <item type="id" name="alignment_header_empty_bar_stub">false</item>
     <item type="id" name="alignment_header_profile_attribution">false</item>
     <item type="id" name="alignment_header_profile_picture">false</item>
     <item type="id" name="alignment_header_progress_bar">false</item>
@@ -222,6 +233,7 @@
     <item type="id" name="attribution">false</item>
     <item type="id" name="attribution_text_view">false</item>
     <item type="id" name="audience_button_container">false</item>
+    <item type="id" name="audience_group">false</item>
     <item type="id" name="audio_button">false</item>
     <item type="id" name="audio_button_stub">false</item>
     <item type="id" name="audio_only_off_button">false</item>
@@ -387,8 +399,6 @@
     <item type="id" name="branded_content_violation_banner">false</item>
     <item type="id" name="branding_badge">false</item>
     <item type="id" name="branding_badge_stub">false</item>
-    <item type="id" name="broadcast_caption">false</item>
-    <item type="id" name="broadcast_caption_overlay_stub">false</item>
     <item type="id" name="brower_lite_root_container">false</item>
     <item type="id" name="browser_action_button">false</item>
     <item type="id" name="browser_background_protection">false</item>
@@ -510,6 +520,7 @@
     <item type="id" name="camera_effect_attribution_container">false</item>
     <item type="id" name="camera_effect_attribution_label">false</item>
     <item type="id" name="camera_effect_attribution_top_stub">false</item>
+    <item type="id" name="camera_effect_category_recycler_view">false</item>
     <item type="id" name="camera_effect_debug_info_stub">false</item>
     <item type="id" name="camera_effect_preview_video_container">false</item>
     <item type="id" name="camera_effect_preview_video_recycler_view">false</item>
@@ -521,6 +532,7 @@
     <item type="id" name="camera_mq_button_badge">false</item>
     <item type="id" name="camera_photo_texture_view">false</item>
     <item type="id" name="camera_preview_blur_overlay">false</item>
+    <item type="id" name="camera_roll_button">false</item>
     <item type="id" name="camera_save_button">false</item>
     <item type="id" name="camera_save_button_icon">false</item>
     <item type="id" name="camera_save_button_label">false</item>
@@ -549,9 +561,6 @@
     <item type="id" name="canvas_media_group">false</item>
     <item type="id" name="canvas_right">false</item>
     <item type="id" name="caption">false</item>
-    <item type="id" name="caption_character_count">false</item>
-    <item type="id" name="caption_composer">false</item>
-    <item type="id" name="caption_done_button">false</item>
     <item type="id" name="caption_edit_text">false</item>
     <item type="id" name="caption_limit_text">false</item>
     <item type="id" name="caption_row_linear_layout">false</item>
@@ -638,6 +647,7 @@
     <item type="id" name="checked_paragraph">false</item>
     <item type="id" name="chevron">false</item>
     <item type="id" name="chevron_fill">false</item>
+    <item type="id" name="chevron_icon">false</item>
     <item type="id" name="chevron_right">false</item>
     <item type="id" name="choose_frame_text">false</item>
     <item type="id" name="chrome_nav_drawer_stub">false</item>
@@ -710,6 +720,9 @@
     <item type="id" name="comment_typing_avatar">false</item>
     <item type="id" name="comment_typing_pulse">false</item>
     <item type="id" name="comment_typing_text">false</item>
+    <item type="id" name="comment_warning_education_para2">false</item>
+    <item type="id" name="comment_warning_text">false</item>
+    <item type="id" name="comment_warning_undo_button">false</item>
     <item type="id" name="commenter_profile_image">false</item>
     <item type="id" name="composer_buttons_container">false</item>
     <item type="id" name="composer_divider">false</item>
@@ -831,12 +844,18 @@
     <item type="id" name="cover_picker_fragment_container">false</item>
     <item type="id" name="cover_picker_tab_layout">false</item>
     <item type="id" name="cowatch_button">false</item>
+    <item type="id" name="cowatch_debug_move_backward">false</item>
+    <item type="id" name="cowatch_debug_move_forward">false</item>
+    <item type="id" name="cowatch_debug_pause">false</item>
+    <item type="id" name="cowatch_debug_play">false</item>
+    <item type="id" name="cowatch_debug_text">false</item>
     <item type="id" name="cowatch_image_view">false</item>
     <item type="id" name="cowatch_media_container">false</item>
     <item type="id" name="cowatch_media_state_indicator">false</item>
     <item type="id" name="cowatch_playback_indicator">false</item>
     <item type="id" name="cowatch_remove_button">false</item>
     <item type="id" name="create_a_new_promotion">false</item>
+    <item type="id" name="create_audience_row">false</item>
     <item type="id" name="create_biz_account_title">false</item>
     <item type="id" name="create_button">false</item>
     <item type="id" name="create_channel_nux_stub">false</item>
@@ -934,9 +953,11 @@
     <item type="id" name="delta_login_review_title">false</item>
     <item type="id" name="delta_password_change_button_container">false</item>
     <item type="id" name="delta_password_change_confirm_new_password">false</item>
+    <item type="id" name="delta_password_change_confirm_new_password_IGFF">false</item>
     <item type="id" name="delta_password_change_divider">false</item>
     <item type="id" name="delta_password_change_footer">false</item>
     <item type="id" name="delta_password_change_new_password">false</item>
+    <item type="id" name="delta_password_change_new_password_IGFF">false</item>
     <item type="id" name="delta_password_change_password_error">false</item>
     <item type="id" name="delta_password_change_scroll_view">false</item>
     <item type="id" name="delta_password_change_submit_button">false</item>
@@ -952,8 +973,13 @@
     <item type="id" name="design_menu_item_action_area_stub">false</item>
     <item type="id" name="design_menu_item_text">false</item>
     <item type="id" name="destination_hscroll">false</item>
+    <item type="id" name="destination_option_group">false</item>
     <item type="id" name="detail">false</item>
     <item type="id" name="details">false</item>
+    <item type="id" name="details_view_attribution_info">false</item>
+    <item type="id" name="details_view_effect_icon">false</item>
+    <item type="id" name="details_view_effect_title">false</item>
+    <item type="id" name="details_view_options_recycler_view">false</item>
     <item type="id" name="dev_mqtt_server">false</item>
     <item type="id" name="dev_options_button">false</item>
     <item type="id" name="dev_options_instacrash_cancel_button">false</item>
@@ -966,8 +992,8 @@
     <item type="id" name="devserver_indicator_stub">false</item>
     <item type="id" name="dial_ar_effect_picker_background">false</item>
     <item type="id" name="dial_ar_effect_picker_container_stub">false</item>
-    <item type="id" name="dial_ar_effect_picker_switch_camera_container">false</item>
-    <item type="id" name="dial_ar_effect_picker_switch_gallery_container">false</item>
+    <item type="id" name="dial_ar_effect_picker_left_side_button_container">false</item>
+    <item type="id" name="dial_ar_effect_picker_right_side_button_container">false</item>
     <item type="id" name="dial_ar_effect_title">false</item>
     <item type="id" name="dialog_and_bar_container">false</item>
     <item type="id" name="dialog_body">false</item>
@@ -1117,6 +1143,7 @@
     <item type="id" name="disable_clickable_button">false</item>
     <item type="id" name="discard_button">false</item>
     <item type="id" name="disclaimer">false</item>
+    <item type="id" name="discovery_surface_container">false</item>
     <item type="id" name="dismiss">false</item>
     <item type="id" name="dismiss_button">false</item>
     <item type="id" name="dismiss_button_icon">false</item>
@@ -1193,6 +1220,10 @@
     <item type="id" name="education_text_container">false</item>
     <item type="id" name="education_text_in_scroll">false</item>
     <item type="id" name="education_unit">false</item>
+    <item type="id" name="effect_details_view_info_container">false</item>
+    <item type="id" name="effect_details_view_media_container">false</item>
+    <item type="id" name="effect_details_view_video_thumbnail">false</item>
+    <item type="id" name="effect_details_view_videos_container">false</item>
     <item type="id" name="effect_image_view">false</item>
     <item type="id" name="effect_info_bottom_sheet_root">false</item>
     <item type="id" name="effect_info_ellipses">false</item>
@@ -1210,9 +1241,6 @@
     <item type="id" name="email_label">false</item>
     <item type="id" name="email_spinner">false</item>
     <item type="id" name="email_suggestions_row">false</item>
-    <item type="id" name="email_title_text">false</item>
-    <item type="id" name="email_view_container">false</item>
-    <item type="id" name="email_view_next_button">false</item>
     <item type="id" name="emoji_palette_pager">false</item>
     <item type="id" name="emoji_palette_pager_indicator">false</item>
     <item type="id" name="emoji_picker_v1_divider">false</item>
@@ -1311,6 +1339,7 @@
     <item type="id" name="family_bridges_feed_unit_header_title">false</item>
     <item type="id" name="family_bridges_feed_unit_more_button">false</item>
     <item type="id" name="family_bridges_unit_divider">false</item>
+    <item type="id" name="family_name">false</item>
     <item type="id" name="fast_navigation_indicator">false</item>
     <item type="id" name="fast_navigation_layout_container">false</item>
     <item type="id" name="fast_navigation_loading_progress_view">false</item>
@@ -1343,6 +1372,7 @@
     <item type="id" name="featured_user_username">false</item>
     <item type="id" name="featured_user_view_profile_button">false</item>
     <item type="id" name="feed_inline_composer_button_avatar">false</item>
+    <item type="id" name="feed_inline_composer_button_container">false</item>
     <item type="id" name="feed_inline_composer_button_stub">false</item>
     <item type="id" name="feed_inline_composer_button_textview">false</item>
     <item type="id" name="feed_inline_composer_emojis_stub">false</item>
@@ -1384,7 +1414,6 @@
     <item type="id" name="filmstrip_scrollview">false</item>
     <item type="id" name="filmstrip_scrollview_container">false</item>
     <item type="id" name="filter">false</item>
-    <item type="id" name="filter_button">false</item>
     <item type="id" name="filter_handle">false</item>
     <item type="id" name="filter_id">false</item>
     <item type="id" name="filter_image">false</item>
@@ -1393,7 +1422,6 @@
     <item type="id" name="filter_name">false</item>
     <item type="id" name="filter_picker">false</item>
     <item type="id" name="filter_preview_rotate90_button">false</item>
-    <item type="id" name="filter_row">false</item>
     <item type="id" name="filter_strength_seek">false</item>
     <item type="id" name="filter_tool_switcher">false</item>
     <item type="id" name="filter_view">false</item>
@@ -1551,17 +1579,16 @@
     <item type="id" name="fundraiser_sticker_card">false</item>
     <item type="id" name="fundraiser_sticker_color_button">false</item>
     <item type="id" name="fundraiser_sticker_consumption_sheet_body_scrollview">false</item>
+    <item type="id" name="fundraiser_sticker_consumption_sheet_donation_confirmation_stub">false</item>
     <item type="id" name="fundraiser_sticker_consumption_sheet_donation_cta">false</item>
-    <item type="id" name="fundraiser_sticker_consumption_sheet_privacy_row">false</item>
+    <item type="id" name="fundraiser_sticker_consumption_sheet_donation_disclaimer">false</item>
     <item type="id" name="fundraiser_sticker_consumption_sheet_recipient_description">false</item>
     <item type="id" name="fundraiser_sticker_consumption_sheet_recipient_follow_context">false</item>
     <item type="id" name="fundraiser_sticker_consumption_sheet_title">false</item>
-    <item type="id" name="fundraiser_sticker_currency_amount_selector_button_large_amount">false</item>
-    <item type="id" name="fundraiser_sticker_currency_amount_selector_button_medium_amount">false</item>
-    <item type="id" name="fundraiser_sticker_currency_amount_selector_button_other_amount">false</item>
-    <item type="id" name="fundraiser_sticker_currency_amount_selector_button_small_amount">false</item>
     <item type="id" name="fundraiser_sticker_currency_amount_selector_buttons">false</item>
     <item type="id" name="fundraiser_sticker_currency_amount_selector_input_field">false</item>
+    <item type="id" name="fundraiser_sticker_currency_amount_selector_input_field_error_message">false</item>
+    <item type="id" name="fundraiser_sticker_currency_amount_selector_input_field_wrapper">false</item>
     <item type="id" name="fundraiser_sticker_currency_amount_selector_stub">false</item>
     <item type="id" name="fundraiser_sticker_donate_button">false</item>
     <item type="id" name="fundraiser_sticker_donate_button_divider">false</item>
@@ -1580,6 +1607,8 @@
     <item type="id" name="gallery_divider">false</item>
     <item type="id" name="gallery_draft_item_imageview">false</item>
     <item type="id" name="gallery_draft_item_lifespan">false</item>
+    <item type="id" name="gallery_draft_item_selection_circle">false</item>
+    <item type="id" name="gallery_draft_item_selection_overlay">false</item>
     <item type="id" name="gallery_drafts_recycler_view">false</item>
     <item type="id" name="gallery_empty">false</item>
     <item type="id" name="gallery_folder_menu">false</item>
@@ -1633,6 +1662,7 @@
     <item type="id" name="gif_image_container">false</item>
     <item type="id" name="gifs_drawer_hscroll">false</item>
     <item type="id" name="giphy_attribution_stub">false</item>
+    <item type="id" name="given_name">false</item>
     <item type="id" name="go_back">false</item>
     <item type="id" name="go_forward">false</item>
     <item type="id" name="go_live_button">false</item>
@@ -1877,6 +1907,7 @@
     <item type="id" name="in_app_signup_flow_stepper_header">false</item>
     <item type="id" name="in_feed_item_container">false</item>
     <item type="id" name="inbox_flag_stub">false</item>
+    <item type="id" name="inbox_folder_pending_inbox_action_button">false</item>
     <item type="id" name="inbox_folder_tab_layout">false</item>
     <item type="id" name="inbox_option_stub">false</item>
     <item type="id" name="inbox_play_media_stub">false</item>
@@ -1884,6 +1915,7 @@
     <item type="id" name="inbox_refreshable_thread_list_refreshable_container">false</item>
     <item type="id" name="inbox_reply_button_stub">false</item>
     <item type="id" name="inbox_video_call_button_stub">false</item>
+    <item type="id" name="incomplete_error_view">false</item>
     <item type="id" name="incomplete_sticker_error_view">false</item>
     <item type="id" name="indicator">false</item>
     <item type="id" name="indicator_background_view">false</item>
@@ -1965,6 +1997,7 @@
     <item type="id" name="interactivity_qa_sticker_close_button">false</item>
     <item type="id" name="interactivity_qa_sticker_header_background">false</item>
     <item type="id" name="interactivity_qa_sticker_header_label">false</item>
+    <item type="id" name="interactivity_question_bottom_button_stub">false</item>
     <item type="id" name="interactivity_question_button_stub">false</item>
     <item type="id" name="interactivity_question_input">false</item>
     <item type="id" name="interactivity_question_input_container">false</item>
@@ -2058,6 +2091,7 @@
     <item type="id" name="layout_container_main_panel">false</item>
     <item type="id" name="layout_container_parent">false</item>
     <item type="id" name="layout_container_right">false</item>
+    <item type="id" name="layout_container_secondary">false</item>
     <item type="id" name="layout_dialog">false</item>
     <item type="id" name="layout_iglive_end_content">false</item>
     <item type="id" name="layout_iglive_header">false</item>
@@ -2106,6 +2140,7 @@
     <item type="id" name="learn_more_and_policy">false</item>
     <item type="id" name="learn_more_button">false</item>
     <item type="id" name="learn_more_link">false</item>
+    <item type="id" name="learn_more_text">false</item>
     <item type="id" name="left_arrow">false</item>
     <item type="id" name="left_button">false</item>
     <item type="id" name="left_button_new">false</item>
@@ -2150,14 +2185,11 @@
     <item type="id" name="listener_id_for_reel_image_load">false</item>
     <item type="id" name="listview">false</item>
     <item type="id" name="listview_progressbar">false</item>
-    <item type="id" name="live_badge">false</item>
     <item type="id" name="live_badge_margin_spacer">false</item>
     <item type="id" name="live_badge_margin_spacer_stub">false</item>
     <item type="id" name="live_badge_stub">false</item>
     <item type="id" name="live_badge_view">false</item>
     <item type="id" name="live_badge_view_stub">false</item>
-    <item type="id" name="live_caption">false</item>
-    <item type="id" name="live_caption_composer_stub">false</item>
     <item type="id" name="live_direct_invite_button">false</item>
     <item type="id" name="live_direct_logo">false</item>
     <item type="id" name="live_interactivity_qa_button">false</item>
@@ -2174,12 +2206,12 @@
     <item type="id" name="live_with_invite_description">false</item>
     <item type="id" name="live_with_invite_spinner">false</item>
     <item type="id" name="live_with_no_viewers">false</item>
-    <item type="id" name="live_with_request_to_join_button">false</item>
     <item type="id" name="loading_connection_spinner_view">false</item>
     <item type="id" name="loading_cover_for_surface_view">false</item>
     <item type="id" name="loading_gifs_placeholder">false</item>
     <item type="id" name="loading_indicator">false</item>
     <item type="id" name="loading_indicator_button">false</item>
+    <item type="id" name="loading_indicator_guideline">false</item>
     <item type="id" name="loading_overlay">false</item>
     <item type="id" name="loading_overlay_spinner">false</item>
     <item type="id" name="loading_placeholder_shimmer_1">false</item>
@@ -2253,6 +2285,7 @@
     <item type="id" name="media_front_container">false</item>
     <item type="id" name="media_gating_view_stub">false</item>
     <item type="id" name="media_grid">false</item>
+    <item type="id" name="media_grid_section_title">false</item>
     <item type="id" name="media_group">false</item>
     <item type="id" name="media_image">false</item>
     <item type="id" name="media_image_stub">false</item>
@@ -2316,6 +2349,7 @@
     <item type="id" name="menu_username">false</item>
     <item type="id" name="merchant_avatar">false</item>
     <item type="id" name="merchant_name">false</item>
+    <item type="id" name="merchant_username">false</item>
     <item type="id" name="message">false</item>
     <item type="id" name="messageCheckBox">false</item>
     <item type="id" name="message_avatar_container">false</item>
@@ -2340,6 +2374,7 @@
     <item type="id" name="message_content_reel_reply_bubble_container">false</item>
     <item type="id" name="message_content_reel_reply_dashed_edge_container">false</item>
     <item type="id" name="message_content_reel_reply_rounded_corner_container">false</item>
+    <item type="id" name="message_content_reel_share_gated_stub">false</item>
     <item type="id" name="message_content_share_action">false</item>
     <item type="id" name="message_content_voice_bubble_container">false</item>
     <item type="id" name="message_content_voice_visualizer">false</item>
@@ -2554,7 +2589,6 @@
     <item type="id" name="one_tap_account_view_pager">false</item>
     <item type="id" name="one_tap_button_view_stub">false</item>
     <item type="id" name="one_tap_edit_account_dismiss_button">false</item>
-    <item type="id" name="one_tap_icon_view">false</item>
     <item type="id" name="one_tap_invite_button_spinning_gradient_border">false</item>
     <item type="id" name="one_tap_log_in_button">false</item>
     <item type="id" name="one_tap_login_account_card_avatar">false</item>
@@ -2688,8 +2722,6 @@
     <item type="id" name="phone_number_text_divider">false</item>
     <item type="id" name="phone_number_text_view">false</item>
     <item type="id" name="phone_number_view">false</item>
-    <item type="id" name="phone_title_text">false</item>
-    <item type="id" name="phone_view_container">false</item>
     <item type="id" name="phone_view_next_button">false</item>
     <item type="id" name="photo">false</item>
     <item type="id" name="photo_of_you_container">false</item>
@@ -2744,6 +2776,7 @@
     <item type="id" name="post_insights_loading_container">false</item>
     <item type="id" name="post_live_label">false</item>
     <item type="id" name="post_live_label_stub">false</item>
+    <item type="id" name="postal_code">false</item>
     <item type="id" name="postcapture_text_alignment_button">false</item>
     <item type="id" name="postcapture_text_background_button">false</item>
     <item type="id" name="postcapture_text_emphasis_button">false</item>
@@ -2771,6 +2804,7 @@
     <item type="id" name="preview_button">false</item>
     <item type="id" name="preview_button_image">false</item>
     <item type="id" name="preview_container">false</item>
+    <item type="id" name="preview_dialog_image">false</item>
     <item type="id" name="preview_fragment_container">false</item>
     <item type="id" name="preview_image">false</item>
     <item type="id" name="preview_image_container">false</item>
@@ -2789,6 +2823,7 @@
     <item type="id" name="primary_button_text">false</item>
     <item type="id" name="primary_country_location_info_item">false</item>
     <item type="id" name="primary_country_location_navigation_item">false</item>
+    <item type="id" name="primary_text">false</item>
     <item type="id" name="primary_tint_adjustment_view">false</item>
     <item type="id" name="prior_mode_icon">false</item>
     <item type="id" name="privacy_footer">false</item>
@@ -2835,6 +2870,7 @@
     <item type="id" name="product_sticker_tokens_title">false</item>
     <item type="id" name="product_sticker_view">false</item>
     <item type="id" name="product_text_container">false</item>
+    <item type="id" name="product_thumbnail_container">false</item>
     <item type="id" name="product_thumbnail_image">false</item>
     <item type="id" name="product_with_media_context_stub">false</item>
     <item type="id" name="product_with_prominent_save_stub">false</item>
@@ -2907,6 +2943,7 @@
     <item type="id" name="profile_tabs_top_divider_stub">false</item>
     <item type="id" name="profile_tombstone">false</item>
     <item type="id" name="profile_transition_view">false</item>
+    <item type="id" name="profile_view_effects_ar_effect_creator">false</item>
     <item type="id" name="profile_view_effects_ar_effect_icon">false</item>
     <item type="id" name="profile_view_effects_ar_effect_title">false</item>
     <item type="id" name="profile_view_effects_footer_layout">false</item>
@@ -2929,6 +2966,7 @@
     <item type="id" name="promote_empty_view_title">false</item>
     <item type="id" name="promote_error_action_button_container_stub">false</item>
     <item type="id" name="promote_error_legal_info_footer">false</item>
+    <item type="id" name="promote_header">false</item>
     <item type="id" name="promote_post">false</item>
     <item type="id" name="public_check_button">false</item>
     <item type="id" name="public_option_container">false</item>
@@ -3066,6 +3104,7 @@
     <item type="id" name="recommend_accounts_header_title">false</item>
     <item type="id" name="recommend_button">false</item>
     <item type="id" name="recommended_user_row_content_identifier">false</item>
+    <item type="id" name="record_video_button">false</item>
     <item type="id" name="recycler_view">false</item>
     <item type="id" name="recyclerview">false</item>
     <item type="id" name="redrawable_info">false</item>
@@ -3078,7 +3117,6 @@
     <item type="id" name="reel_avatar_view">false</item>
     <item type="id" name="reel_badge">false</item>
     <item type="id" name="reel_branded_content_violation_banner">false</item>
-    <item type="id" name="reel_caption_stub">false</item>
     <item type="id" name="reel_checkmark_overlay">false</item>
     <item type="id" name="reel_cobroadcaster_username">false</item>
     <item type="id" name="reel_countdown_sticker_stub">false</item>
@@ -3093,7 +3131,7 @@
     <item type="id" name="reel_identifier_overlay_stub">false</item>
     <item type="id" name="reel_identifier_overlay_title">false</item>
     <item type="id" name="reel_internal_mode_stub">false</item>
-    <item type="id" name="reel_item_countdown_confetti_stub">false</item>
+    <item type="id" name="reel_item_confetti_stub">false</item>
     <item type="id" name="reel_item_feedback_balloons">false</item>
     <item type="id" name="reel_item_feedback_balloons_stub">false</item>
     <item type="id" name="reel_item_gating_container">false</item>
@@ -3117,7 +3155,6 @@
     <item type="id" name="reel_poll_question_text">false</item>
     <item type="id" name="reel_poll_question_text_stub">false</item>
     <item type="id" name="reel_poll_stub">false</item>
-    <item type="id" name="reel_preview">false</item>
     <item type="id" name="reel_preview_container">false</item>
     <item type="id" name="reel_preview_frame_layout">false</item>
     <item type="id" name="reel_preview_hint_container">false</item>
@@ -3313,6 +3350,7 @@
     <item type="id" name="row_check_imageview">false</item>
     <item type="id" name="row_city_text">false</item>
     <item type="id" name="row_comment">false</item>
+    <item type="id" name="row_comment_container">false</item>
     <item type="id" name="row_comment_imageview">false</item>
     <item type="id" name="row_comment_indent">false</item>
     <item type="id" name="row_comment_like_button">false</item>
@@ -3327,6 +3365,7 @@
     <item type="id" name="row_comment_textview_time_ago">false</item>
     <item type="id" name="row_comment_undo_button">false</item>
     <item type="id" name="row_comment_undo_button_click_area">false</item>
+    <item type="id" name="row_comment_warning_stub">false</item>
     <item type="id" name="row_contact_info">false</item>
     <item type="id" name="row_contact_title">false</item>
     <item type="id" name="row_container">false</item>
@@ -3357,12 +3396,12 @@
     <item type="id" name="row_feed_comment_textview_layout">false</item>
     <item type="id" name="row_feed_comment_undo_button">false</item>
     <item type="id" name="row_feed_comment_undo_button_stub">false</item>
-    <item type="id" name="row_feed_comment_warning_stub">false</item>
     <item type="id" name="row_feed_comments_loading_spinner">false</item>
     <item type="id" name="row_feed_cta">false</item>
     <item type="id" name="row_feed_cta_overlay">false</item>
     <item type="id" name="row_feed_emoji_picker_emoji_1">false</item>
     <item type="id" name="row_feed_emoji_picker_emoji_2">false</item>
+    <item type="id" name="row_feed_emoji_picker_plus_icon">false</item>
     <item type="id" name="row_feed_follow_button_blue_stub">false</item>
     <item type="id" name="row_feed_follow_button_stub">false</item>
     <item type="id" name="row_feed_hashtag_info">false</item>
@@ -3434,8 +3473,8 @@
     <item type="id" name="row_ix_partner_url">false</item>
     <item type="id" name="row_like_and_reply_controls">false</item>
     <item type="id" name="row_load_more_button">false</item>
-    <item type="id" name="row_map_attribution_view">false</item>
     <item type="id" name="row_map_header_imageview">false</item>
+    <item type="id" name="row_map_info_button">false</item>
     <item type="id" name="row_media_image">false</item>
     <item type="id" name="row_media_set">false</item>
     <item type="id" name="row_menu_item_arrow">false</item>
@@ -3740,11 +3779,11 @@
     <item type="id" name="secondary_accept_buttons">false</item>
     <item type="id" name="secondary_button">false</item>
     <item type="id" name="secondary_capture_controls_container">false</item>
+    <item type="id" name="secondary_text">false</item>
     <item type="id" name="secondary_title">false</item>
     <item type="id" name="section_1">false</item>
     <item type="id" name="section_2">false</item>
     <item type="id" name="section_3">false</item>
-    <item type="id" name="section_title">false</item>
     <item type="id" name="see_all">false</item>
     <item type="id" name="see_all_button">false</item>
     <item type="id" name="see_more_bottom_divider">false</item>
@@ -3764,6 +3803,7 @@
     <item type="id" name="segment_progress_bar">false</item>
     <item type="id" name="select_check_mark">false</item>
     <item type="id" name="select_dialog_listview">false</item>
+    <item type="id" name="select_radio">false</item>
     <item type="id" name="selectable_avatar">false</item>
     <item type="id" name="selectable_avatar_back">false</item>
     <item type="id" name="selectable_avatar_front">false</item>
@@ -3943,6 +3983,9 @@
     <item type="id" name="sold_out_separator">false</item>
     <item type="id" name="sold_out_separator_stub">false</item>
     <item type="id" name="song_title">false</item>
+    <item type="id" name="sort_button">false</item>
+    <item type="id" name="sort_label">false</item>
+    <item type="id" name="sort_row">false</item>
     <item type="id" name="sorting_entry_row_icon">false</item>
     <item type="id" name="sorting_entry_row_option">false</item>
     <item type="id" name="space">false</item>
@@ -4088,8 +4131,6 @@
     <item type="id" name="swipe_to_open_text">false</item>
     <item type="id" name="switch_business_pager">false</item>
     <item type="id" name="switch_container">false</item>
-    <item type="id" name="switch_to_email">false</item>
-    <item type="id" name="switch_to_phone">false</item>
     <item type="id" name="switcher_container">false</item>
     <item type="id" name="system_window_spy">false</item>
     <item type="id" name="tab_appbar">false</item>
@@ -4139,6 +4180,7 @@
     <item type="id" name="tap_to_reveal_stub">false</item>
     <item type="id" name="tap_to_reveal_subtitle">false</item>
     <item type="id" name="tap_to_tag_icon_view_stub">false</item>
+    <item type="id" name="tel">false</item>
     <item type="id" name="terms_of_use_link">false</item>
     <item type="id" name="terms_of_use_link_row">false</item>
     <item type="id" name="text1">false</item>
@@ -4345,6 +4387,10 @@
     <item type="id" name="two_fac_back_icon">false</item>
     <item type="id" name="two_fac_confirm_phone_number_body">false</item>
     <item type="id" name="two_fac_confirm_phone_number_title">false</item>
+    <item type="id" name="two_fac_trusted_device_checkbox">false</item>
+    <item type="id" name="two_fac_trusted_device_login_checkbox">false</item>
+    <item type="id" name="two_fac_trusted_device_login_subtitle">false</item>
+    <item type="id" name="two_fac_trusted_device_login_title">false</item>
     <item type="id" name="two_rows_one_column_thumbnail">false</item>
     <item type="id" name="two_rows_one_column_thumbnail_stub">false</item>
     <item type="id" name="type">false</item>
@@ -4499,6 +4545,7 @@
     <item type="id" name="videocall_cell_mute_indicator">false</item>
     <item type="id" name="videocall_cowatch_content_stub">false</item>
     <item type="id" name="videocall_debug_stub">false</item>
+    <item type="id" name="videocall_debug_views_container">false</item>
     <item type="id" name="videocall_end_facepile">false</item>
     <item type="id" name="videocall_end_stub">false</item>
     <item type="id" name="videocall_end_subtitle">false</item>
@@ -4573,6 +4620,7 @@
     <item type="id" name="volume_indicator">false</item>
     <item type="id" name="wam_expand_icon">false</item>
     <item type="id" name="wam_launch_button">false</item>
+    <item type="id" name="warning_text">false</item>
     <item type="id" name="watch_and_browse_chrome">false</item>
     <item type="id" name="watch_and_browse_chrome_stub">false</item>
     <item type="id" name="watch_live_video_button">false</item>
@@ -4616,5 +4664,5 @@
     <item type="id" name="zero_rating_video_setting_banner_stub">false</item>
     <item type="id" name="zip">false</item>
     <item type="id" name="zoomable_view_container">false</item>
-    <item type="id" name="APKTOOL_DUMMY_51">false</item>
+    <item type="id" name="APKTOOL_DUMMY_52">false</item>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView android:textSize="14.0sp" android:textColor="@color/grey_9" android:id="@id/follow_list_sorting_option" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sorting_option_label_margin" android:maxLines="1" android:layout_marginEnd="@dimen/sorting_option_label_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/follow_list_sorting_option_radio_button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
     <RadioButton android:id="@id/follow_list_sorting_option_radio_button" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableEnd="@drawable/radio_button_state_selector" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

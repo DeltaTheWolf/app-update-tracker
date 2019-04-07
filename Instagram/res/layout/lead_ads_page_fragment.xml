@@ -2,12 +2,12 @@
 <FrameLayout android:orientation="vertical" android:id="@id/root_view_layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <android.support.v4.widget.NestedScrollView android:id="@id/lead_ads_scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.core.widget.NestedScrollView android:id="@id/lead_ads_scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
             <LinearLayout android:orientation="vertical" android:id="@id/page_container" android:paddingBottom="@dimen/lead_ad_scroll_view_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <include layout="@layout/lead_ads_header" />
                 <include layout="@layout/lead_ads_profile_header" />
             </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
         <ViewStub android:id="@id/lead_ads_footer_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
     </LinearLayout>
     <include layout="@layout/lead_ads_header_close" />

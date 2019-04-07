@@ -7,6 +7,6 @@
         <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/black" android:id="@id/ar_effect_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
         <TextView android:textSize="@dimen/font_small" android:textColor="@color/black" android:id="@id/ar_profile_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:includeFontPadding="false" />
         <View android:id="@id/divider" android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="14.0dip" />
-        <android.support.v7.widget.RecyclerView android:id="@id/options_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/options_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
     </LinearLayout>
 </com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

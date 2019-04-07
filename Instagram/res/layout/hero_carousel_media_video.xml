@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.instagram.common.ui.widget.videopreviewview.VideoPreviewView android:id="@id/video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:id="@id/video_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.ui.widget.textureview.ScalingTextureView android:id="@id/video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.instagram.common.ui.widget.framelayout.MediaFrameLayout>
     <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
     <include layout="@layout/hero_carousel_media_attribution" />
 </FrameLayout>

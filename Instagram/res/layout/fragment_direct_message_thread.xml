@@ -8,7 +8,7 @@
     </FrameLayout>
     <ViewStub android:id="@id/valued_request_header" android:layout="@layout/direct_valued_request_header" android:inflatedId="@id/valued_request_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
     <FrameLayout android:id="@id/message_thread_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <android.support.v7.widget.RecyclerView android:id="@id/message_list" android:paddingBottom="@dimen/direct_thread_message_list_default_bottom_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/message_list" android:paddingBottom="@dimen/direct_thread_message_list_default_bottom_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <include layout="@layout/layout_listview_progressbar" />
         <FrameLayout android:layout_gravity="bottom|center" android:id="@id/direct_thread_new_message_indicator_avatar_view" android:background="@drawable/direct_new_comment_avatar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
             <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/direct_thread_new_message_indicator_avatar" style="@style/Avatar.Small" />

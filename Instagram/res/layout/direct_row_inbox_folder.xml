@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.design.widget.TabLayout android:theme="@style/DirectFolderTabLayoutTheme" android:id="@id/inbox_folder_tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" app:tabIndicatorColor="@color/black" app:tabIndicatorHeight="1.0dip" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/direct_folder_row_left_padding" android:paddingRight="@dimen/direct_folder_row_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/direct_folder_row_left_padding" android:paddingEnd="@dimen/direct_folder_row_right_padding">
+        <com.google.android.material.tabs.TabLayout android:theme="@style/DirectFolderTabLayoutTheme" android:id="@id/inbox_folder_tab_layout" android:layout_width="wrap_content" android:layout_height="@dimen/row_height_small" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" app:tabIndicatorColor="@color/black" app:tabIndicatorHeight="1.0dip" />
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="?directPaletteColor5" android:ellipsize="end" android:gravity="center" android:id="@id/inbox_folder_pending_inbox_action_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <include layout="@layout/view_switcher_shadow" />
 </LinearLayout>

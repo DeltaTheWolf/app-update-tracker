@@ -2,5 +2,5 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <include android:layout_width="fill_parent" android:layout_height="@dimen/fundraiser_sticker_search_bar_height" layout="@layout/asset_search_bar" />
-    <android.support.v7.widget.RecyclerView android:id="@id/fundraiser_recipient_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/fundraiser_recipient_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </LinearLayout>

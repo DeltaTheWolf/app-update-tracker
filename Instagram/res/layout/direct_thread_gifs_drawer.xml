@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/direct_gifs_drawer_results_container" android:paddingBottom="@dimen/direct_gifs_drawer_results_bottom_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <View android:layout_gravity="center" android:id="@id/loading_gifs_placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/direct_gifs_drawer_item_height" android:layout_marginLeft="@dimen/direct_gifs_drawer_item_horizontal_inset_width" />
-        <android.support.v7.widget.RecyclerView android:id="@id/gifs_drawer_hscroll" android:layout_width="fill_parent" android:layout_height="@dimen/direct_gifs_drawer_item_height" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/gifs_drawer_hscroll" android:layout_width="fill_parent" android:layout_height="@dimen/direct_gifs_drawer_item_height" />
         <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/direct_gifs_drawer_item_height" android:text="@string/no_results_found" />
     </FrameLayout>
     <LinearLayout android:orientation="horizontal" android:id="@id/direct_gifs_edit_text_container" android:background="@drawable/rounded_gray_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="@dimen/direct_in_thread_composer_side_margin" android:layout_marginEnd="@dimen/direct_in_thread_composer_side_margin">

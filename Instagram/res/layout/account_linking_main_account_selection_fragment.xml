@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/container_padding" android:paddingTop="@dimen/container_padding" android:paddingRight="@dimen/container_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/account_missing_prompt_textview" app:layout_constraintTop_toTopOf="parent">
         <TextView android:gravity="center_horizontal" android:paddingLeft="@dimen/title_text_horizontal_padding" android:paddingRight="@dimen/title_text_horizontal_padding" android:paddingBottom="@dimen/detail_text_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_linking_main_account_selection_title" style="@style/Headline1" />
@@ -11,4 +11,4 @@
         <include layout="@layout/row_divider" />
         <com.instagram.ui.widget.progressbutton.ProgressButton android:layout_gravity="center" android:id="@id/next_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/next_button_height" android:layout_margin="@dimen/button_container_padding" android:text="@string/account_linking_next" app:progressBarTint="@color/blue_5" />
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,7 @@
             <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
                 <FrameLayout android:id="@id/media_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
                     <com.instagram.feed.widget.IgProgressImageView android:id="@id/image" android:layout_width="88.0dip" android:layout_height="140.0dip" android:foreground="@drawable/unified_inbox_message_mask" />
+                    <ViewStub android:layout_gravity="center" android:id="@id/message_content_reel_share_gated_stub" android:layout="@layout/message_content_reel_media_gating" android:layout_width="@dimen/direct_row_message_sensitivity_screen_dismiss_icon_size" android:layout_height="@dimen/direct_row_message_sensitivity_screen_dismiss_icon_size" />
                     <ViewStub android:layout_gravity="bottom" android:id="@id/placeholder_reel_reaction" android:layout="@layout/message_content_reel_reaction" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="58.0dip" android:layout_marginStart="58.0dip" />
                     <ViewStub android:layout_gravity="center" android:id="@id/gradient_spinner_stub" android:layout="@layout/message_content_reel_spinner" android:layout_width="32.0dip" android:layout_height="32.0dip" />
                     <include layout="@layout/double_tap_big_heart" />
