@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.common.ui.widget.imageview.TransitionCarouselImageView android:id="@id/account_recs_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/account_recs_background_image_mask" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:paddingBottom="@dimen/row_text_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@drawable/account_recs_profile_background" android:layout_width="@dimen/account_recs_avatar_shadow_radius" android:layout_height="@dimen/account_recs_avatar_shadow_radius" />
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/account_recs_avatar" style="@style/Avatar.AccountRecs" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_medium_xxlarge" android:textColor="@color/white" android:ellipsize="end" android:id="@id/account_recs_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/row_text_button_padding" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:ellipsize="end" android:id="@id/account_recs_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
+        <include android:id="@id/account_recs_follow_button" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" android:layout_marginTop="@dimen/row_text_padding" layout="@layout/follow_button_white_large" />
+    </LinearLayout>
+</FrameLayout>

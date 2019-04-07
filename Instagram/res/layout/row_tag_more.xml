@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?backgroundDrawable" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/tag_more_row_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/row_plus_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tag_more_plus_button_margin" android:layout_marginRight="@dimen/tag_more_plus_button_margin" android:src="@drawable/plus_24" android:tint="@color/blue_5" android:layout_centerVertical="true" />
+    <com.instagram.common.ui.text.TitleTextView android:textColor="@color/blue_5" android:id="@id/row_tag_more_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/row_plus_button" style="?rowUserName" />
+    <View android:id="@id/row_tag_more_divider" android:background="@color/grey_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

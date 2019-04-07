@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:id="@id/camera_shutter_button_container" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.shutterbutton.ShutterButton android:layout_gravity="center_horizontal" android:id="@id/camera_shutter_button" android:layout_width="?quickCaptureControllerShutterButtonSize" android:layout_height="?quickCaptureControllerShutterButtonSize" android:contentDescription="@string/shutter" style="?shutterButtonStyle" />
+    <include layout="@layout/horizontal_mode_picker_icons" />
+</FrameLayout>

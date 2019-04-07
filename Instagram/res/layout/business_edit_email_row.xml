@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:text="@string/business_signup_email_hint" style="@style/BodyDetail" />
+    <EditText android:id="@id/email" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:hint="@string/business_signup_email_hint" android:inputType="textEmailAddress" />
+</LinearLayout>

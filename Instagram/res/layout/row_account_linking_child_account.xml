@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/main_account_adapter_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/avatar_imageview" android:layout_width="@dimen/main_account_adapter_avatar_size" android:layout_height="@dimen/main_account_adapter_avatar_size" android:layout_marginLeft="@dimen/main_account_adapter_avatar_horizontal_margin" android:layout_marginRight="@dimen/main_account_adapter_avatar_horizontal_margin" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/main_account_adapter_username_size" android:textStyle="bold" android:id="@id/username_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/main_account_adapter_username_size" android:textColor="@color/grey_5" android:id="@id/full_name_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ViewStub android:id="@id/checkbox_viewstub" android:layout="@layout/selectable_user_row_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_account_adapter_radiobutton_horizontal_margin" android:layout_marginRight="@dimen/main_account_adapter_radiobutton_horizontal_margin" />
+</LinearLayout>

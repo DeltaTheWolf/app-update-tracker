@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="@dimen/reg_margin_screen_vertical" android:layout_weight="0.25" />
+    <include layout="@layout/reg_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/username_input_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reg_field_horizontal_margin" android:layout_marginTop="@dimen/row_padding" android:layout_marginRight="@dimen/reg_field_horizontal_margin" android:layout_marginBottom="@dimen/row_padding" android:layout_marginStart="@dimen/reg_field_horizontal_margin" android:layout_marginEnd="@dimen/reg_field_horizontal_margin">
+        <include layout="@layout/reg_username_field" />
+        <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" style="@style/RegProgressButtonStyle" />
+    </LinearLayout>
+    <View android:id="@id/bottom_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_horizontal_margin" android:layout_marginRight="@dimen/login_horizontal_margin" android:layout_marginBottom="@dimen/reg_margin_screen_vertical" layout="@layout/privacy_policy" />
+</merge>

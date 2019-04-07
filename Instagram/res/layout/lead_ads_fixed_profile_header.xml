@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/lead_ad_action_bar" android:visibility="gone" style="@style/ActionBar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lead_ad_action_bar_close" android:src="@drawable/instagram_x_outline_24" android:contentDescription="@string/lead_ad_close" style="@style/ActionBarButton.Modal" />
+    <FrameLayout android:id="@id/lead_ad_action_bar_title_container" android:layout_width="0.0dip" android:layout_height="?actionBarHeight" android:layout_weight="1.0">
+        <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:id="@id/lead_ad_action_bar_title" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?actionBarTitleStyle" />
+    </FrameLayout>
+</LinearLayout>

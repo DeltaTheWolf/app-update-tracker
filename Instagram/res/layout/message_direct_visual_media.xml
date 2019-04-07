@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/message_direct_visual_media_image_and_text_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent">
+        <com.instagram.common.ui.text.TightTextView android:textSize="@dimen/direct_row_message_comment_text_size" android:textColor="?textColorSecondary" android:id="@id/direct_visual_message_digest" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DirectMessageContentPadded" />
+        <ImageView android:layout_gravity="start|center|top" android:id="@id/direct_visual_message_icon" android:paddingLeft="@dimen/direct_row_visual_message_icon_start_padding" android:paddingTop="@dimen/direct_row_message_content_vertical_padding" android:paddingRight="@dimen/direct_row_inbox_glyph_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/direct_row_visual_message_icon_start_padding" android:paddingEnd="@dimen/direct_row_inbox_glyph_padding" />
+    </FrameLayout>
+    <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/message_direct_visual_media_image_and_text_view_container" />
+</android.support.constraint.ConstraintLayout>

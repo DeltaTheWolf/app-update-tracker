@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/viewers_facepile_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/viewers_facepile" android:layout_width="wrap_content" android:layout_height="@dimen/button_width" />
+    <TextView android:id="@id/viewers_facepile_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/facepile_label_max_width" android:maxLines="2" style="@style/ReelViewerToolbarButtonLabel" />
+</LinearLayout>

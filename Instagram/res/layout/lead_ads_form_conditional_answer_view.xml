@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/lead_ad_question_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/spinner_select_title" style="@style/lead_ads_spinner_select_title_conditional" />
+    <Spinner android:id="@id/lead_ads_spinner" style="@style/lead_ads_spinner" />
+    <View android:id="@id/spinner_line" android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
+    <TextView android:id="@id/lead_ads_form_error_text_view_conditional_0" style="@style/lead_ads_form_error_text_view_conditional" />
+    <TextView android:id="@id/spinner_select_title_conditional_1" style="@style/lead_ads_spinner_select_title_conditional" />
+    <Spinner android:id="@id/lead_ads_spinner_conditional_1" style="@style/lead_ads_spinner" />
+    <View android:id="@id/spinner_line_conditional_1" android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
+    <TextView android:id="@id/lead_ads_form_error_text_view_conditional_1" style="@style/lead_ads_form_error_text_view_conditional" />
+    <TextView android:id="@id/spinner_select_title_conditional_2" style="@style/lead_ads_spinner_select_title_conditional" />
+    <Spinner android:id="@id/lead_ads_spinner_conditional_2" style="@style/lead_ads_spinner" />
+    <View android:id="@id/spinner_line_conditional_2" android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
+    <TextView android:id="@id/lead_ads_form_error_text_view_conditional_2" style="@style/lead_ads_form_error_text_view_conditional" />
+    <TextView android:id="@id/spinner_select_title_conditional_3" style="@style/lead_ads_spinner_select_title_conditional" />
+    <Spinner android:id="@id/lead_ads_spinner_conditional_3" style="@style/lead_ads_spinner" />
+    <View android:id="@id/spinner_line_conditional_3" android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
+    <TextView android:id="@id/lead_ads_form_error_text_view_conditional_3" style="@style/lead_ads_form_error_text_view_conditional" />
+    <TextView android:id="@id/spinner_select_title_conditional_4" style="@style/lead_ads_spinner_select_title_conditional" />
+    <Spinner android:id="@id/lead_ads_spinner_conditional_4" style="@style/lead_ads_spinner" />
+    <View android:id="@id/spinner_line_conditional_4" android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
+    <TextView android:id="@id/lead_ads_form_error_text_view_conditional_4" style="@style/lead_ads_form_error_text_view_conditional" />
+</LinearLayout>

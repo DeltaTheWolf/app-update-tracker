@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/row_profile_header_followers_container" android:background="?android:selectableItemBackground" android:layout_width="@dimen/profile_header_metric_container_width" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/profile_header_metric_container_margin">
+        <TextView android:layout_gravity="start" android:id="@id/row_profile_header_textview_followers_count" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileHeaderScoreboardCount" />
+        <TextView android:layout_gravity="start" android:id="@id/row_profile_header_textview_followers_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_header_followers" style="@style/ProfileHeaderScoreboardLabel" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/row_profile_header_following_container" android:background="?android:selectableItemBackground" android:layout_width="@dimen/profile_header_metric_container_width" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/profile_header_metric_container_margin">
+        <TextView android:layout_gravity="start" android:id="@id/row_profile_header_textview_following_count" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileHeaderScoreboardCount" />
+        <TextView android:layout_gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_header_following" style="@style/ProfileHeaderScoreboardLabel" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="@dimen/profile_header_metric_container_width" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:layout_gravity="start" android:id="@id/row_profile_header_textview_post_count" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileHeaderScoreboardCount" />
+        <TextView android:layout_gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_header_posts" style="@style/ProfileHeaderScoreboardLabel" />
+    </LinearLayout>
+</LinearLayout>

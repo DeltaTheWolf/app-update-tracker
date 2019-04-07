@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.widget.imagebutton.IgImageButton android:id="@id/day_cover_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholder="@color/image_placeholder" />
+    <LinearLayout android:gravity="center" android:layout_gravity="start|center|top" android:orientation="vertical" android:id="@id/calendar_header" android:background="@drawable/white_rounded_rect" android:layout_width="36.0sp" android:layout_height="36.0sp" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="8.0dip">
+        <TextView android:textSize="16.0sp" android:layout_gravity="center" android:id="@id/day_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationY="2.0sp" />
+        <TextView android:textSize="9.0sp" android:layout_gravity="center" android:id="@id/month_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationY="-2.0sp" />
+    </LinearLayout>
+    <View android:id="@id/selected_item_overlay" android:background="@color/white_50_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="end|center|top" android:id="@id/error_badge_stub" android:layout="@layout/archive_reel_error_badge" android:layout_width="@dimen/item_error_badge_size" android:layout_height="@dimen/item_error_badge_size" android:layout_margin="8.0dip" />
+    <CheckBox android:layout_gravity="end|bottom|center" android:id="@id/media_toggle" android:background="@drawable/blue_checkbox_background" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:button="@null" />
+</com.instagram.common.ui.widget.framelayout.MediaFrameLayout>

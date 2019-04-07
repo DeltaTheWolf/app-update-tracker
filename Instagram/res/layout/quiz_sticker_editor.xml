@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/quiz_sticker" style="@style/QuizSticker"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:id="@id/quiz_sticker_question" style="@style/QuizStickerQuestion" />
+    <LinearLayout android:id="@id/quiz_sticker_answer_list" app:layout_constraintTop_toBottomOf="@id/quiz_sticker_question" style="@style/QuizStickerAnswerList" />
+</android.support.constraint.ConstraintLayout>

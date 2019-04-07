@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/message_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:id="@id/media_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foregroundGravity="fill|clip_horizontal|clip_vertical">
+        <com.instagram.feed.widget.IgProgressImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_play" />
+        <ViewStub android:id="@id/zero_rating_video_play_button_stub" android:layout="@layout/view_media_play_button" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:layout_gravity="center" android:id="@id/tap_to_reveal_stub" android:layout="@layout/tap_to_reveal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <include layout="@layout/double_tap_big_heart" />
+    </com.instagram.common.ui.widget.framelayout.MediaFrameLayout>
+    <ViewStub android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

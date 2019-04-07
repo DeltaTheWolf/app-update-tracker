@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.IgImageView android:layout_gravity="center" android:id="@id/face_effect_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <com.instagram.ui.widget.bubblespinner.BubbleSpinner android:layout_gravity="start|center" android:id="@id/face_effect_loading_indicator" android:visibility="gone" android:layout_width="@dimen/face_effect_loading_indicator_diameter" android:layout_height="@dimen/face_effect_loading_indicator_diameter" android:layout_marginLeft="@dimen/face_effect_loading_indicator_margin_left" android:layout_marginRight="@dimen/face_effect_loading_indicator_margin_right" android:layout_marginStart="@dimen/face_effect_loading_indicator_margin_left" android:layout_marginEnd="@dimen/face_effect_loading_indicator_margin_right" app:bubble_radius="4.0" app:center_bubble_vertically="true" app:total_bubble_count="20" />
+    <ImageView android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/camera_mq_button_badge" android:background="?badgeIndicatorBackgroundDrawable" android:visibility="gone" android:layout_width="@dimen/face_effect_tile_badge_width" android:layout_height="@dimen/face_effect_tile_badge_height" android:layout_marginTop="@dimen/face_effect_tile_badge_margin_top" />
+</FrameLayout>

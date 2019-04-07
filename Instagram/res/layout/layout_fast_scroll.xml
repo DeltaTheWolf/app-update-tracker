@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/fast_scroll" android:paddingRight="@dimen/fast_scroll_padding_right" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/fast_scroll_padding_right">
+        <TextView android:textSize="@dimen/fast_scroll_section_bubble_font_size" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/fast_scroll_section_bubble" android:background="@drawable/fastscroll_handle" android:paddingLeft="@dimen/fast_scroll_section_bubble_padding_x" android:paddingRight="@dimen/fast_scroll_section_bubble_padding_x" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fast_scroll_section_bubble_margin_right" android:singleLine="true" android:paddingStart="@dimen/fast_scroll_section_bubble_padding_x" android:paddingEnd="@dimen/fast_scroll_section_bubble_padding_x" android:layout_marginEnd="@dimen/fast_scroll_section_bubble_margin_right" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/fast_scroll_thumb" android:background="@drawable/fast_scroll_thumb" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

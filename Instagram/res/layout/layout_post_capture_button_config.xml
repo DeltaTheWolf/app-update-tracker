@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/edit_buttons_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/button_width">
+        <include layout="@layout/layout_post_capture_edit_control_cancel" />
+        <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="@dimen/quick_capture_edit_button_dim" android:layout_weight="1.0" />
+        <include layout="@layout/layout_post_capture_change_gradient_stub" />
+        <include layout="@layout/layout_post_capture_edit_control_face_filter" />
+        <include layout="@layout/layout_post_capture_edit_control_video_mute" />
+        <include layout="@layout/layout_post_capture_edit_control_more_options" />
+        <include layout="@layout/layout_post_capture_edit_control_top_save" />
+        <include layout="@layout/layout_post_capture_edit_control_view_mode_toggle" />
+        <include layout="@layout/layout_camera_button_add_asset" />
+        <include layout="@layout/layout_post_capture_edit_control_draw" />
+        <include layout="@layout/layout_camera_button_add_text" />
+    </LinearLayout>
+    <include layout="@layout/layout_post_capture_edit_control_done_button" />
+    <ViewStub android:layout_gravity="start|bottom|center" android:id="@id/post_capture_button_share_container_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

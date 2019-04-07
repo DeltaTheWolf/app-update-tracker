@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_simple_row" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:layout_width="fill_parent" android:layout_height="?searchRowHeight" android:minHeight="?searchRowHeight" android:paddingStart="?searchRowPadding" android:paddingEnd="?searchRowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_vertical" android:id="@id/row_search_keyword_profile_image" style="?searchAvatarTag" />
+        <com.instagram.reels.ui.badge.ReelBrandingBadgeView android:layout_gravity="end|bottom|center" android:id="@id/branding_badge" android:visibility="gone" android:layout_width="@dimen/search_result_badge_size" android:layout_height="@dimen/search_result_badge_size" android:layout_marginRight="@dimen/search_result_badge_margin_right" android:layout_marginBottom="@dimen/search_result_badge_margin_bottom" android:layout_marginEnd="@dimen/search_result_badge_margin_right" />
+    </FrameLayout>
+    <include layout="@layout/keyword_title" />
+    <include layout="@layout/keyword_chevron" />
+</LinearLayout>

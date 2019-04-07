@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/grey_9" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:id="@id/item_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_details_tiny_margin" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:id="@id/item_body_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_details_tiny_margin" />
+</merge>

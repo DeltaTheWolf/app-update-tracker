@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="@dimen/reg_margin_screen_vertical" android:layout_weight="0.25" />
+    <include layout="@layout/reg_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/one_page_input_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_horizontal_margin" android:layout_marginRight="@dimen/login_horizontal_margin" android:layout_marginStart="@dimen/login_horizontal_margin" android:layout_marginEnd="@dimen/login_horizontal_margin">
+        <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/full_name_inline_error" style="@style/RegInlineErrorMessageViewStyle">
+            <com.instagram.ui.widget.searchedittext.SearchEditText android:id="@id/full_name" android:layout_marginTop="@dimen/add_photo_padding_top_bottom" android:layout_marginBottom="@dimen/row_padding" android:hint="@string/full_name" android:drawableEnd="@drawable/search_clear" style="@style/RegEditTextStyle" />
+        </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
+        <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/password_inline_error" style="@style/RegInlineErrorMessageViewStyle">
+            <include layout="@layout/one_page_reg_triage_fragment_password_field" />
+        </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:gravity="start" android:id="@id/search_contact_explanation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_padding" android:lineSpacingMultiplier="@dimen/reg_tertiary_text_link_line_spacing_multiplier" />
+        <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" style="@style/RegProgressButtonStyle" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/reg_blue_text_link_color" android:gravity="center" android:id="@id/continue_without_ci" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:text="@string/continue_without_ci" />
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/reg_blue_text_link_color" android:gravity="center" android:id="@id/continue_without_ci_updated" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:layout_marginTop="@dimen/reg_nux_half_edit_margin" android:text="@string/continue_without_ci_updated" />
+    </LinearLayout>
+    <View android:id="@id/bottom_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/search_contact_explanation_updated" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_horizontal_margin" android:layout_marginRight="@dimen/login_horizontal_margin" android:layout_marginBottom="@dimen/reg_margin_screen_vertical" android:lineSpacingMultiplier="@dimen/reg_tertiary_text_link_line_spacing_multiplier" android:layout_marginStart="@dimen/login_horizontal_margin" android:layout_marginEnd="@dimen/login_horizontal_margin" />
+</merge>

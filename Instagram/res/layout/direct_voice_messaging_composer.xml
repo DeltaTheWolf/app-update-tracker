@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="bottom" android:paddingTop="8.0dip" android:paddingBottom="@dimen/direct_in_thread_composer_side_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/direct_in_thread_composer_side_margin" android:paddingEnd="@dimen/direct_in_thread_composer_side_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:layout_gravity="center|top" android:id="@id/direct_voice_messaging_instructions_text_view" android:layout_width="wrap_content" android:layout_height="@dimen/direct_voice_messaging_instructions_height" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/direct_voice_messaging_visualizer_container" android:background="@drawable/rounded_blue_gradient_rectangle" android:layout_width="fill_parent" android:layout_height="@dimen/direct_in_thread_composer_row_height">
+            <com.instagram.direct.voice.VoiceVisualizer android:id="@id/direct_voice_messaging_visualizer" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="50.0dip" />
+            <Chronometer android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/direct_voice_messaging_composer_chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/direct_voice_messaging_composer_send" android:padding="16.0dip" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/vertical_send_arrow" android:tint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="start|bottom|center" android:id="@id/direct_voice_messaging_composer_trash_can" android:background="@drawable/white_circle_bg" android:padding="7.0dip" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/instagram_delete_outline_24" android:tint="@color/grey_5" android:layout_marginStart="6.0dip" android:layout_marginEnd="8.0dip" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.widget.gradientspinneravatarview.GradientSpinnerAvatarView android:id="@id/row_user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip" app:showSingleAvatarBorder="true" app:singleAvatarGradientRingSize="@dimen/avatar_reel_ring_size_small" app:singleAvatarSize="@dimen/avatar_size_small" />
+    <TextView android:id="@id/row_user_username" android:paddingLeft="@dimen/row_padding_small" android:paddingRight="@dimen/row_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/row_padding_small" android:paddingEnd="@dimen/row_padding_small" />
+    <TextView android:textColor="?textColorSecondary" android:id="@id/row_user_fullname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

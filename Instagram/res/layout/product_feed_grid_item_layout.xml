@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/product_with_media_context_stub" android:layout="@layout/product_with_media_context_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/product_with_prominent_save_stub" android:layout="@layout/product_card_with_prominent_save_grid_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/unavailable_product_stub" android:layout="@layout/unavailable_product_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

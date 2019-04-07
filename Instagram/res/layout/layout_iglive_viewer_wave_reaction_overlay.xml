@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black_50_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/wave_reaction" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/layout_iglive_horizontal_double_avatar" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/wave_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

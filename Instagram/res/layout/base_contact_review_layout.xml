@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/business_title_card_bigger_title" />
+            <com.instagram.common.ui.text.TitleTextView android:textSize="16.0sp" android:textColor="@color/grey_9" android:gravity="center_vertical" android:id="@id/contact_review_header" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="48.0dip" app:capitalize="false" />
+            <RadioGroup android:gravity="center_horizontal" android:id="@id/contact_preference_group" android:background="@color/white" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/business_conversion_stepper_header" />
+    <com.instagram.business.ui.BusinessNavBar android:id="@id/navigation_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:primaryText="@string/done" app:showSecondaryButton="false" />
+</android.support.constraint.ConstraintLayout>

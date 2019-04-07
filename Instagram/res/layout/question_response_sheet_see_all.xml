@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/question_response_sheet_title_bar" />
+    <TextView android:textSize="@dimen/question_music_bottom_sheet_text_response_text_size" android:textColor="@color/question_response_primary_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/see_all" android:padding="@dimen/question_see_all_bottom_sheet_text_padding" android:layout_width="wrap_content" android:layout_height="@dimen/question_music_bottom_sheet_text_response_height" android:text="@string/see_all" android:fontFamily="sans-serif-medium" />
+</LinearLayout>

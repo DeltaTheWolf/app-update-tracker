@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.TransitionCarouselImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:fadeInDurationMs="300" app:onScreenDurationMs="2000" app:scaleEnd="1.0" app:scaleStart="1.2" />
+    <ImageView android:layout_gravity="start|bottom|center" android:id="@id/overlay_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_scrim" android:scaleType="matrix" />
+    <include layout="@layout/destination_overlay" />
+</FrameLayout>

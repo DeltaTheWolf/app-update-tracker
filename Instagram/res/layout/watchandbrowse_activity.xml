@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:orientation="vertical" android:id="@id/watchbrowse_root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="start|center|top" android:id="@id/watchbrowse_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wam_close" android:scaleType="centerInside" />
+    <fragment android:name="com.facebook.browser.lite.BrowserLiteFragment" android:id="@id/browser_lite_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/install_button_stub" android:layout="@layout/install_button_layout" android:layout_width="fill_parent" android:layout_height="@dimen/install_button_container_height" />
+</com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

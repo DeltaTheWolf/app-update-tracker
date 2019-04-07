@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black_60_transparent" android:paddingTop="36.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/iglive_reciever_avatar_imageview" style="@style/PopupLargeAvatarStyle" />
+            <com.instagram.ui.widget.textureview.CircularTextureView android:layout_gravity="center" android:id="@id/iglive_camera_preview_texture" style="@style/PopupLargeAvatarStyle" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/iglive_auto_accept_progress_bar" android:background="@drawable/iglive_progress_background" android:padding="4.0dip" android:layout_width="118.0dip" android:layout_height="118.0dip" android:max="500" android:progress="0" android:progressDrawable="@drawable/iglive_progress_ring" android:rotation="270.0" style="?android:progressBarStyleHorizontal" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_large" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/iglive_livewith_auto_accept_title" android:paddingLeft="45.0dip" android:paddingTop="25.0dip" android:paddingRight="45.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textAlignment="center" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/iglive_livewith_auto_accept_subtitle" android:paddingLeft="45.0dip" android:paddingRight="45.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/iglive_livewith_auto_accept_bottom_container" android:layout_width="fill_parent" android:layout_height="@dimen/button_height">
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center_horizontal" android:id="@id/iglive_livewith_auto_accept_cancel" android:layout_width="@dimen/button_width" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/circled_cancel" android:scaleType="center" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end" android:id="@id/iglive_livewith_switch_camera" android:layout_width="@dimen/button_width" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/flip_states" android:scaleType="center" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+    </FrameLayout>
+</LinearLayout>

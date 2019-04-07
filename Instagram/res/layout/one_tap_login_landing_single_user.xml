@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/top_min_margin" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/login_landing_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/logo_bottom_margin" android:src="?nuxLogoDrawable" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/avatar_login_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_horizontal_margin" android:layout_marginRight="@dimen/login_horizontal_margin">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_horizontal" android:id="@id/avatar_image_view" android:layout_width="@dimen/one_tap_profile_pic_size" android:layout_height="@dimen/one_tap_profile_pic_size" android:layout_marginBottom="@dimen/logo_bottom_margin" android:importantForAccessibility="no" app:strokeColor="@color/avatar_stroke" app:strokeWidth="@dimen/circular_avatar_stroke_width" />
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/username" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/username_vertical_margin" android:layout_marginBottom="@dimen/username_vertical_margin" />
+            <TextView android:textStyle="bold" android:textColor="?nuxActionButtonTextColor" android:gravity="center" android:id="@id/one_tap_log_in_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/remove_text_container" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:layout_marginLeft="@dimen/login_horizontal_margin" android:layout_marginRight="@dimen/login_horizontal_margin">
+            <TextView android:textColor="@color/blue_5" android:gravity="center" android:id="@id/remove_text_link" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/remove" />
+            <TextView android:textColor="@color/blue_5" android:gravity="center" android:id="@id/login_text_link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/one_tap_login_text_link_text" />
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.instagram.nux.ui.NetzDgTermsTextView style="@style/NetDzTermsText" />
+        <include layout="@layout/reg_footer_two_buttons" />
+        <include layout="@layout/reg_footer_two_buttons_new" />
+        <TextView android:textColor="?nuxTextColor" android:gravity="center" android:id="@id/new_footer_one_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/saved_collection_name_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_home_collection_feed_collection_name" style="@style/EditCollectionTitleText" />
+    <EditText android:id="@id/saved_collection_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/save_home_collection_feed_collection_name_hint" android:maxLength="@integer/collection_name_max_length" android:inputType="textAutoCorrect|textCapSentences" android:imeOptions="actionDone" style="@style/EditCollectionEditText" />
+    <include layout="@layout/row_divider" />
+</LinearLayout>

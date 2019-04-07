@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/toolbar_container" android:background="@drawable/reel_viewer_shadow_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/toolbar_actions_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/message_composer_camera_button_container" android:background="@drawable/reels_composer_camera_button_ring" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:layout_marginLeft="@dimen/reel_reply_composer_margin">
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/message_composer_button_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instagram_camera_filled_44" android:scaleType="center" android:contentDescription="@string/camera_description" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/toolbar_background" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/layout_min_height" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/toolbar_text_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="start|center" android:layout_gravity="bottom|center" android:id="@id/toolbar_text" android:layout_width="wrap_content" android:layout_height="@dimen/button_width" android:drawablePadding="4.0dip" style="@style/ShadowTextViewStyle" />
+            </FrameLayout>
+            <include android:id="@id/cta_container" layout="@layout/layout_reel_item_cta" />
+            <LinearLayout android:layout_gravity="end|bottom|center" android:id="@id/toolbar_buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ViewStub android:layout_gravity="center_vertical" android:id="@id/toolbar_reshare_button_on_left_stub" android:layout="@layout/layout_toolbar_reshare_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" />
+                <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/toolbar_menu_button" android:padding="@dimen/row_text_padding" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/media_option_button" android:scaleType="center" android:contentDescription="@string/more" app:normal="@color/white" />
+            </LinearLayout>
+        </FrameLayout>
+        <ViewStub android:layout_gravity="center_vertical" android:id="@id/toolbar_reshare_button_on_right_stub" android:layout="@layout/layout_toolbar_reshare_button" android:layout_width="wrap_content" android:layout_height="@dimen/button_width" android:layout_marginLeft="5.0dip" android:layout_marginRight="13.0dip" />
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom" android:id="@id/reel_political_ad_banner_stub" android:layout="@layout/reel_political_ad_banner" android:layout_width="fill_parent" android:layout_height="@dimen/sponsored_political_ad_banner_height" />
+</LinearLayout>

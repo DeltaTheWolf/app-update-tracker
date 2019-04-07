@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="?searchTextPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="?searchTextPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_search_keyword_title" android:paddingRight="?searchTextPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="?searchTextPadding" style="?searchUserName" />
+    <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_search_keyword_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?searchUserInfo" />
+</LinearLayout>

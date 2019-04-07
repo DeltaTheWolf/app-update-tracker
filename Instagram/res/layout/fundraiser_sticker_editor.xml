@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fundraiser_sticker_color_button" style="@style/InteractiveStickerEditorColorButton" />
+    <FrameLayout android:id="@id/fundraiser_sticker" style="@style/InteractiveSticker">
+        <LinearLayout android:id="@id/fundraiser_sticker_card" style="@style/InteractiveStickerCard">
+            <EditText android:textSize="@dimen/fundraiser_sticker_title_text_size" android:id="@id/fundraiser_sticker_title" android:layout_marginBottom="@dimen/fundraiser_sticker_title_bottom_margin" style="@style/InteractiveStickerTitle" />
+            <TextView android:textSize="@dimen/fundraiser_sticker_subtitle_text_size" android:textColor="@color/fundraiser_sticker_subtitle_text_color" android:gravity="center" android:id="@id/fundraiser_sticker_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/interactive_sticker_padding" android:maxLines="1" android:layout_marginStart="@dimen/interactive_sticker_padding" android:layout_marginEnd="@dimen/interactive_sticker_padding" />
+            <ViewStub android:id="@id/fundraiser_sticker_donate_button_divider_stub" android:layout="@layout/fundraiser_sticker_donate_button_divider" android:layout_width="fill_parent" android:layout_height="@dimen/fundraiser_sticker_donate_button_divider_width" />
+            <TextView android:textSize="@dimen/fundraiser_sticker_donate_button_text_size" android:textStyle="bold" android:textColor="@color/fundraiser_sticker_donate_button_text_color" android:gravity="center" android:id="@id/fundraiser_sticker_donate_button" android:background="@drawable/fundraiser_sticker_donate_button_background" android:layout_width="fill_parent" android:layout_height="@dimen/fundraiser_sticker_donate_button_height" android:text="@string/fundraiser_sticker_donate_button_text" android:maxLines="1" />
+        </LinearLayout>
+        <com.instagram.reels.interactive.view.AvatarView android:id="@id/fundraiser_sticker_avatar" style="@style/InteractiveStickerAvatar" />
+    </FrameLayout>
+</FrameLayout>

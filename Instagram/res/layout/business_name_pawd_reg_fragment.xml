@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/business_reg_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/one_page_input_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/business_sign_up_padding_medium" android:layout_marginRight="@dimen/business_sign_up_padding_medium" android:layout_marginStart="@dimen/business_sign_up_padding_medium" android:layout_marginEnd="@dimen/business_sign_up_padding_medium">
+        <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/full_name_inline_error" style="@style/BusinessInlineErrorMessageViewStyle">
+            <com.instagram.ui.widget.searchedittext.SearchEditText android:id="@id/full_name" android:layout_marginTop="@dimen/add_photo_padding_top_bottom" android:layout_marginBottom="@dimen/row_padding" android:hint="@string/business_name" style="@style/BusinessRegEditTextStyle" />
+        </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
+        <com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/password_inline_error" style="@style/BusinessInlineErrorMessageViewStyle">
+            <LinearLayout android:id="@id/password_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RegEditTextContainerStyle">
+                <com.instagram.ui.widget.searchedittext.SearchEditText android:id="@id/password" android:hint="@string/password" android:inputType="textPassword" style="@style/RegEditTextStyle.InContainer" />
+            </LinearLayout>
+        </com.instagram.ui.widget.inlineerror.InlineErrorMessageView>
+        <TextView android:textAppearance="@android:style/TextAppearance.Widget.TextView" android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/password_detail" android:paddingTop="@dimen/row_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_signup_password_description" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/biz_sign_up_next_button" />
+</merge>

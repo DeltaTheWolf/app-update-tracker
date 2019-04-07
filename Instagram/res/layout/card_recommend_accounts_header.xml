@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="@dimen/card_bottom_padding" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/recommend_account_card_header_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/suggested_entity_card_container" android:background="@drawable/card_background" android:layout_width="fill_parent" android:layout_height="@dimen/recommend_account_card_height">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_marginTop="@dimen/recommend_accounts_chaining_header_icon_top_margin" android:src="@drawable/recommend_accounts_large_icon" android:contentDescription="@string/recommend_accounts_icon_content_description" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/recommend_accounts_header_title" android:paddingLeft="@dimen/card_padding" android:paddingRight="@dimen/card_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/recommend_accounts_chaining_header_title_top_margin" android:layout_marginBottom="@dimen/card_text_padding_small" android:layout_weight="1.0" android:paddingStart="@dimen/card_padding" android:paddingEnd="@dimen/card_padding" />
+        <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/row_divider" />
+        <TextView android:textColor="@color/blue_5" android:gravity="center" android:id="@id/recommend_accounts_button" android:layout_width="fill_parent" android:layout_height="@dimen/recommend_accounts_chaining_button_height" android:text="@string/recommend_accounts_sender_title" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</FrameLayout>

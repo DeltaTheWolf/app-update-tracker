@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/saved_collection_add_contributors_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_home_collection_feed_contributors" style="@style/EditCollectionTitleText" />
+    <TextView android:id="@id/saved_collection_add_contributors_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/save_home_collection_feed_add_contributors_text" android:maxLength="@integer/collection_name_max_length" style="@style/EditCollectionActionText" />
+    <include layout="@layout/row_divider" />
+</LinearLayout>

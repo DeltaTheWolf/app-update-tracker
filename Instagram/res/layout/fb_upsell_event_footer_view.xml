@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/footer_cta" android:layout_width="fill_parent" android:layout_height="@dimen/cta_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/footer_main_action_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" />
+    <include android:layout_gravity="end|center" android:id="@id/footer_glyph" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/row_feed_ad_cta_chevron" />
+    <include android:layout_gravity="bottom" android:id="@id/fb_upsell_event_unit_divider" android:layout_width="fill_parent" android:layout_height="@dimen/footer_row_bottom_divider_height" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" layout="@layout/row_divider" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/business_title_card_bigger_title" layout="@layout/business_title_card_bigger_title" />
+                <com.instagram.common.ui.text.TitleTextView android:textSize="16.0sp" android:textColor="@color/grey_9" android:gravity="center" android:id="@id/contact_confirmation_header" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" app:capitalize="false" />
+                <include android:id="@id/row_email" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_contact_non_edit_row" />
+                <include android:id="@id/row_phone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_contact_non_edit_row" />
+                <include android:id="@id/row_address" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_contact_non_edit_row" />
+                <include android:visibility="gone" layout="@layout/business_fb_page_footer" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/business_conversion_stepper_header" />
+    <com.instagram.business.ui.BusinessNavBar android:layout_gravity="bottom" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:primaryText="@string/done" app:secondaryText="@string/change_contact_option" app:showSecondaryButton="true" />
+</FrameLayout>

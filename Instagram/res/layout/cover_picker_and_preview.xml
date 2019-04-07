@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/cover_picker_and_preview_tabs_layout" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="center"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cover_picker_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" android:layout_marginBottom="@dimen/upload_flow_tab_height" app:layout_constraintBottom_toTopOf="@id/bottom_tabs" />
+    <FrameLayout android:id="@id/preview_fragment_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight" android:layout_marginBottom="@dimen/upload_flow_tab_height" app:layout_constraintBottom_toTopOf="@id/bottom_tabs" />
+    <android.support.design.widget.TabLayout android:theme="@style/IGTVUploadCoverPickerTabTheme" android:id="@id/bottom_tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/upload_flow_tab_height" app:layout_constraintBottom_toBottomOf="parent" app:tabIndicatorHeight="0.0dip" app:tabSelectedTextColor="@color/grey_9" app:tabTextAppearance="@style/IGTVUploadCoverPickerTabText" app:tabTextColor="@color/grey_5">
+        <android.support.design.widget.TabItem android:text="@string/igtv_cover_frame_picker_cover_tab" />
+        <android.support.design.widget.TabItem android:text="@string/igtv_cover_frame_picker_preview_tab" />
+    </android.support.design.widget.TabLayout>
+    <include layout="@layout/action_bar" />
+</android.support.constraint.ConstraintLayout>

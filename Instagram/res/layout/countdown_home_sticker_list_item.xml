@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/countdown_home_sticker_item_vertical_margin" android:layout_marginBottom="@dimen/countdown_home_sticker_item_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/countdown_sticker" android:layout_width="@dimen/countdown_sticker_width" android:layout_height="wrap_content" />
+        <View android:layout_gravity="end|center|top" android:id="@id/countdown_sticker_option_view" android:layout_width="@dimen/countdown_home_sticker_item_options_view_size" android:layout_height="@dimen/countdown_home_sticker_item_options_view_size" />
+    </FrameLayout>
+</FrameLayout>

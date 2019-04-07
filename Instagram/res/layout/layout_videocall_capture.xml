@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/videocall_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:layout_gravity="center" android:id="@id/videocall_cowatch_content_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v7.widget.RecyclerView android:id="@id/videocall_participants_grid_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" app:layout_behavior="com.instagram.video.videocall.view.VideoCallBottomSheetScaleBehavior" />
+    <ViewStub android:id="@id/default_ar_effect_picker_container_stub" android:layout="@layout/default_ar_effect_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/dial_ar_effect_picker_container_stub" android:layout="@layout/dial_ar_effect_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/ar_effect_loading_indicator_stub" android:layout="@layout/ar_effect_loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center" android:id="@id/ar_effect_instruction_text_stub" android:layout="@layout/ar_effect_instruction_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/videocall_calling_stub" android:layout="@layout/layout_videocall_calling" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/videocall_minimized_calling_stub" android:layout="@layout/layout_videocall_minimized_updates" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/videocall_incoming_call_ringer_stub" android:layout="@layout/layout_videocall_incoming_call_ringer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/layout_videocall_controls" />
+    <ViewStub android:id="@id/videocall_end_stub" android:layout="@layout/layout_videocall_end" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/snack_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/videocall_minimized_end_stub" android:layout="@layout/layout_videocall_minimized_end" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/layout_videocall_bottom_sheet" />
+</android.support.design.widget.CoordinatorLayout>

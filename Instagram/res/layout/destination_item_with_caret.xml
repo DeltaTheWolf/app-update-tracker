@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/destination_background_selector" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center" android:id="@id/title" android:paddingLeft="0.0dip" android:paddingTop="@dimen/row_padding_small" android:paddingRight="0.0dip" android:paddingBottom="@dimen/row_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/IgButton" />
+    <ImageView android:id="@id/caret" android:layout_width="@dimen/destination_caret_size" android:layout_height="@dimen/destination_caret_size" android:layout_marginTop="@dimen/destination_caret_vertical_offset" android:src="@drawable/instagram_chevron_down_outline_24" android:layout_marginStart="@dimen/row_padding_small" />
+</LinearLayout>

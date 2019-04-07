@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:id="@id/overlay" android:paddingLeft="@dimen/destination_overlay_horizontal_padding" android:paddingTop="@dimen/destination_overlay_vertical_padding" android:paddingRight="@dimen/destination_overlay_horizontal_padding" android:paddingBottom="@dimen/destination_overlay_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/destination_overlay_horizontal_padding" android:paddingVertical="@dimen/destination_overlay_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:paddingBottom="@dimen/destination_overlay_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/destination_overlay_inner_margin" />
+    <TextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
+    <TextView android:textColor="@color/transparent" android:id="@id/header_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

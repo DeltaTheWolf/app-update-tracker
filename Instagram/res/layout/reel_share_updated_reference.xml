@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="start" android:id="@id/message_content_line" android:background="@drawable/direct_message_content_media_context_line" android:layout_width="4.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:gravity="start|center" android:layout_gravity="start" android:id="@id/sender_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/reel_mention_reshare_cta_stub" android:layout="@layout/message_content_reel_mention_reshare_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/placeholder_title_stub" android:layout="@layout/message_content_reel_placeholder_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/placeholder_message_stub" android:layout="@layout/message_content_reel_placeholder_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_gravity="start" android:id="@id/media_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.instagram.feed.widget.IgProgressImageView android:id="@id/image" android:layout_width="88.0dip" android:layout_height="140.0dip" android:foreground="@drawable/unified_inbox_message_mask" />
+                <ViewStub android:layout_gravity="center" android:id="@id/gradient_spinner_stub" android:layout="@layout/message_content_reel_spinner" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+                <ViewStub android:layout_gravity="end" android:id="@id/direct_persisted_reel_label_stub" android:layout="@layout/direct_persisted_reel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" />
+                <include layout="@layout/double_tap_big_heart" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.instagram.common.ui.text.TightTextView android:layout_gravity="start" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/direct_row_message_spacing" />
+    <ViewStub android:layout_gravity="start" android:id="@id/placeholder_reel_reaction" android:layout="@layout/message_content_reel_reaction" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="12.0dip" />
+    <ViewStub android:layout_gravity="start" android:id="@id/direct_reactions_bar_stub" android:layout="@layout/direct_reactions_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/fundraiser_sticker_currency_amount_selector_button_radius" />
+            <stroke android:width="@dimen/fundraiser_sticker_currency_amount_selector_button_pressed_border_width" android:color="@color/fundraiser_sticker_currency_amount_selector_button_selected_border_color" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/fundraiser_sticker_currency_amount_selector_button_radius" />
+            <stroke android:width="@dimen/fundraiser_sticker_currency_amount_selector_button_border_width" android:color="@color/fundraiser_sticker_currency_amount_selector_button_unselected_border_color" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</selector>

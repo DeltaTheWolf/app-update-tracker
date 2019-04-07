@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/follow_request_layout" android:background="@color/grey_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/row_divider" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/follow_request_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/follow_request_side_margin" android:layout_marginTop="@dimen/follow_request_top_margin" android:layout_marginRight="@dimen/follow_request_side_margin" android:layout_marginStart="@dimen/follow_request_side_margin" android:layout_marginEnd="@dimen/follow_request_side_margin">
+        <ImageView android:id="@id/follow_request_icon" android:layout_width="@dimen/follow_request_avatar_side_length" android:layout_height="@dimen/follow_request_avatar_side_length" android:layout_marginTop="@dimen/follow_request_avatar_top_margin" android:layout_marginRight="@dimen/follow_request_avatar_side_margin" android:src="@drawable/follow_avatar" android:layout_marginEnd="@dimen/follow_request_avatar_side_margin" />
+        <TextView android:textSize="@dimen/font_medium" android:layout_gravity="center_vertical" android:id="@id/follow_request_text" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/follow_button_height" android:layout_marginLeft="@dimen/follow_request_side_margin" android:layout_marginTop="@dimen/follow_request_mid_margin" android:layout_marginRight="@dimen/follow_request_side_margin" android:layout_marginBottom="@dimen/follow_request_bottom_margin" android:layout_marginStart="@dimen/follow_request_side_margin" android:layout_marginEnd="@dimen/follow_request_side_margin">
+        <com.instagram.common.ui.text.TitleTextView android:gravity="center" android:id="@id/follow_request_approve_button" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" android:layout_marginRight="@dimen/row_button_padding" android:text="@string/confirm" android:layout_weight="1.0" android:layout_marginEnd="@dimen/row_button_padding" style="?primaryButtonStyle" />
+        <com.instagram.common.ui.text.TitleTextView android:gravity="center" android:id="@id/follow_request_ignore_button" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" android:text="@string/delete" android:layout_weight="1.0" style="?secondaryButtonStyle" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" />
+</LinearLayout>

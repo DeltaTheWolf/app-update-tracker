@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/grey_2" />
+            <corners android:radius="@dimen/product_overlay_item_corner_radius" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawable="@drawable/instagram_no_photo_outline_24" />
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/mention_tagging_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/mention_tagging_recycler_view" android:layout_width="fill_parent" android:layout_height="@dimen/mention_suggestions_height" />
+    <include android:id="@id/mention_sharing_privacy_setting_toggle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sticker_setting_toggle_height" layout="@layout/layout_sticker_setting_toggle" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.text.TitleTextView android:gravity="start|center" android:id="@id/title_text_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/edit" android:layout_weight="1.0" style="?actionBarTitleStyle" />
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/button_mode_filter" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/filter_off" android:scaleType="centerInside" android:layout_weight="1.0" app:active="@color/blue_5" app:normal="?creationGlyphColor" />
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/button_mode_trim" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tab_trim_off" android:scaleType="centerInside" android:layout_weight="1.0" app:active="@color/blue_5" app:normal="?creationGlyphColor" />
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/button_mode_cover" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tab_cover_off" android:scaleType="centerInside" android:layout_weight="1.0" app:active="@color/blue_5" app:normal="?creationGlyphColor" />
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/button_aspect_crop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/instagram_crop_outline_24" android:scaleType="centerInside" android:layout_weight="1.0" app:active="@color/blue_5" app:normal="?creationGlyphColor" />
+    <ViewStub android:id="@id/audio_button_stub" android:inflatedId="@id/button_mode_mute" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</merge>

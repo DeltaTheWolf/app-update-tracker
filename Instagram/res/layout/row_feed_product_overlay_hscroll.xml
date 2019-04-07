@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:id="@id/product_overlay_background" android:background="@drawable/product_overlay_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/product_overlay_gradient_height" />
+    <android.support.v7.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/product_overlay_recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

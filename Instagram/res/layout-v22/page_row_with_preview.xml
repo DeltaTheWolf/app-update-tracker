@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/row_page_container" android:paddingTop="@dimen/row_button_padding" android:paddingBottom="@dimen/row_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:paddingVertical="@dimen/row_button_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_vertical" android:id="@id/page_profile_image" android:contentDescription="@string/profile_picture" style="@style/Avatar.Large" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginTop="@dimen/row_padding_medium" android:layout_marginRight="@dimen/row_padding" android:layout_marginBottom="@dimen/row_padding_medium">
+            <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:ellipsize="end" android:id="@id/page_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:ellipsize="end" android:id="@id/page_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:ellipsize="end" android:id="@id/page_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_page_empty_subtitle" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_button_padding" layout="@layout/checkbox" />
+</LinearLayout>

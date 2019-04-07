@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/promote_empty_view_padding_horizontal" android:paddingTop="@dimen/promote_empty_view_padding_top" android:paddingRight="@dimen/promote_empty_view_padding_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/promote_empty_view_icon" android:background="@drawable/promote_icon_circle_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instagram_promote_outline_24" />
+    <TextView android:textSize="@dimen/promote_empty_title_font_size" android:textColor="?textColorPrimary" android:gravity="center_horizontal" android:id="@id/promote_empty_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/promote_empty_title_margin_top" android:layout_marginBottom="@dimen/promote_empty_title_margin_bottom" android:text="@string/promote_error_title_network_error" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorPrimary" android:gravity="center_horizontal" android:id="@id/promote_empty_view_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promote_error_description_network_error" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.gradientspinner.GradientSpinner android:layout_gravity="center" android:id="@id/reel_ring" android:layout_width="@dimen/reel_dashboard_viewer_row_ring_size" android:layout_height="@dimen/reel_dashboard_viewer_row_ring_size" />
+    <com.instagram.reels.ui.badge.ReelBrandingBadgeView android:layout_gravity="end|bottom|center" android:id="@id/reel_badge" android:layout_width="@dimen/reel_dashboard_viewer_branding_badge_size" android:layout_height="@dimen/reel_dashboard_viewer_branding_badge_size" android:layout_marginRight="@dimen/reel_dashboard_viewer_branding_badge_margin_right" />
+</FrameLayout>

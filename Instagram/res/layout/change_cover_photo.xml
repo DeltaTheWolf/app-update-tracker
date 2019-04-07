@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.widget.selectableview.RoundedCornerCheckMarkSelectableImageView android:id="@id/collection_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_collection_cover_top_margin" app:imageCornerRadius="@dimen/edit_collection_cover_photo_corner_radius" app:imageHeight="@dimen/edit_collection_cover_photo_size" app:imageWidth="@dimen/edit_collection_cover_photo_size" />
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_home_collection_feed_change_cover_photo" style="@style/EditCollectionActionText" />
+</LinearLayout>

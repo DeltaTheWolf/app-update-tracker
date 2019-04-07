@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/thumbnail_variant_selector_selected_item_size" android:layout_height="@dimen/thumbnail_variant_selector_selected_item_size">
+        <FrameLayout android:layout_gravity="center" android:id="@id/thumbnail_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/thumbnail_image" android:background="@drawable/thumbnail_image_border" android:padding="1.0px" android:layout_width="@dimen/thumbnail_variant_selector_item_size" android:layout_height="@dimen/thumbnail_variant_selector_item_size" android:scaleType="centerCrop" android:cropToPadding="true" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/selected_border" android:background="@drawable/thumbnail_image_selected_border" android:layout_width="@dimen/thumbnail_variant_selector_selected_item_size" android:layout_height="@dimen/thumbnail_variant_selector_selected_item_size" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_smaller" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/label" android:paddingTop="@dimen/thumbnail_variant_selector_label_top_padding" android:layout_width="@dimen/thumbnail_variant_selector_item_size" android:layout_height="wrap_content" android:maxLines="2" />
+    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/sold_out_separator_stub" android:layout="@layout/sold_out_separator" android:layout_width="@dimen/thumbnail_variant_selector_sold_out_separator_width" android:layout_height="@dimen/thumbnail_variant_selector_sold_out_separator_height" android:layout_marginTop="@dimen/thumbnail_variant_selector_sold_out_separator_padding" android:layout_marginBottom="@dimen/thumbnail_variant_selector_sold_out_separator_padding" />
+    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/sold_out_label_stub" android:layout="@layout/sold_out_label" android:layout_width="@dimen/thumbnail_variant_selector_item_size" android:layout_height="wrap_content" />
+</LinearLayout>

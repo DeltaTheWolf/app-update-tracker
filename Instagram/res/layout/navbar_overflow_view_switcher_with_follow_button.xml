@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="end" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end" android:id="@id/action_bar_overflow_icon" android:paddingRight="@dimen/action_bar_item_spacing_last" android:src="@drawable/nav_more" android:paddingEnd="@dimen/action_bar_item_spacing_last" style="@style/ProfileNavbarButton" />
+    <TextView android:id="@id/action_bar_overflow_text" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/ProfileNavBarText" />
+</merge>

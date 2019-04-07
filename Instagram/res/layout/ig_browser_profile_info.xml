@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ig_browser_profile_info" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_horizontal" android:id="@id/ig_browser_profile_info_avatar" android:layout_width="@dimen/ig_browser_chrome_profile_info_avatar_height" android:layout_height="@dimen/ig_browser_chrome_profile_info_avatar_height" android:layout_marginTop="@dimen/ig_browser_chrome_profile_info_avatar_margin_top" android:src="@drawable/profile_anonymous_user" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/ig_browser_profile_info_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingMultiplier="1.05" android:fontFamily="sans-serif-medium" />
+    <TextView android:textSize="@dimen/font_xsmall" android:textColor="@color/grey_9" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/ig_browser_profile_info_scorecard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif" />
+    <TextView android:textSize="@dimen/font_xsmall" android:textColor="@color/grey_5" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/ig_browser_profile_info_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif" />
+</LinearLayout>

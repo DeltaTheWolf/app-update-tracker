@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:layout_gravity="end|bottom|center" android:id="@id/video_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/row_padding_medium" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/selection_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/row_padding_medium" />
+</FrameLayout>

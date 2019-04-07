@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/autocomplete_dropdown_header_text_size" android:textStyle="bold" android:textColor="@color/grey_5" android:id="@id/dropdown_header" android:paddingTop="@dimen/autocomplete_dropdown_header_horizontal_padding" android:paddingBottom="@dimen/autocomplete_dropdown_header_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/autocomplete_dropdown_header_text" />
+    <include layout="@layout/row_divider" />
+</LinearLayout>

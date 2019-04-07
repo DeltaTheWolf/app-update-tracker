@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/interactivity_ama_card_radius" />
+            <gradient android:startColor="@color/ama_scrim_gradient_start" android:endColor="@color/ama_scrim_gradient_end" android:angle="315.0" android:type="linear" />
+        </shape>
+    </item>
+    <item android:left="@dimen/interactivity_qa_card_selected_stroke" android:top="@dimen/interactivity_qa_card_selected_stroke" android:right="@dimen/interactivity_qa_card_selected_stroke" android:bottom="@dimen/interactivity_qa_card_selected_stroke">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/interactivity_qa_card_selected_inner_radius" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

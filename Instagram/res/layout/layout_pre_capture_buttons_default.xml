@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pre_capture_buttons_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/pre_capture_buttons_bottom_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/secondary_capture_controls_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/quick_capture_secondary_capture_controls_margin_bottom">
+            <include layout="@layout/multi_capture_thumbnail_tray" />
+            <ViewStub android:id="@id/music_effect_picker_view_stub" android:layout="@layout/generic_effect_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/generic_effect_picker_margin_top" />
+            <ViewStub android:id="@id/generic_effect_picker_view_stub" android:layout="@layout/generic_effect_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/generic_effect_picker_margin_top" />
+        </LinearLayout>
+        <com.instagram.creation.capture.quickcapture.CaptureFormatPickerTouchableContainer android:gravity="center" android:orientation="vertical" android:id="@id/capture_format_picker_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/presence_overlay_stub" android:layout="@layout/quick_capture_presence_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/interactivity_question_sticker_overlay_stub" android:clipChildren="false" android:layout="@layout/quick_capture_interactivity_question_sticker_overlay" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            <com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/camera_capture_controls_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:gravity="center" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingEnd="4.0dip">
+                        <ViewStub android:id="@id/music_asset_button_stub" android:layout="@layout/layout_camera_button_music_asset_button" android:layout_width="0.0dip" android:layout_height="@dimen/button_width" android:layout_weight="1.0" />
+                        <include android:layout_width="0.0dip" android:layout_height="@dimen/button_width" android:layout_weight="1.0" layout="@layout/layout_camera_capture_controls_gallery_button" />
+                        <FrameLayout android:id="@id/camera_left_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ViewStub android:layout_gravity="center" android:id="@id/color_picker_stub" android:layout="@layout/text_to_cam_color_picker_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" />
+                            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:id="@id/camera_switch_button_prelive" android:clickable="true" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:src="@drawable/flip_states" android:scaleType="center" app:disabled_alpha="0x00000080" />
+                            <include layout="@layout/layout_camera_capture_controls_flash_button" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <include layout="@layout/layout_camera_buttons_shutter_button_container" />
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_weight="1.0" android:paddingStart="4.0dip">
+                        <include layout="@layout/layout_camera_capture_controls_camera_switch_button" />
+                        <include layout="@layout/layout_camera_capture_controls_ar_effect_button" />
+                        <ViewStub android:layout_gravity="center" android:id="@id/music_snippet_button_stub" android:layout="@layout/layout_camera_button_music_snippet_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:layout_weight="1.0" />
+                        <ViewStub android:layout_gravity="end|center" android:id="@id/text_mode_alpha_toggle_stub" android:layout="@layout/text_to_cam_alpha_toggle" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:id="@id/start_iglive_button" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/quick_capture_shutter_button_inner_size" android:contentDescription="@string/start_live_video_button_label" />
+            </com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>
+            <include layout="@layout/capture_format_picker" />
+        </com.instagram.creation.capture.quickcapture.CaptureFormatPickerTouchableContainer>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:layout_gravity="start|center" android:id="@id/camera_settings_gear_stub" android:layout="@layout/layout_camera_settings_gear" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:contentDescription="@string/story_settings_button_description" android:layout_marginStart="4.0dip" />
+        <ViewStub android:layout_gravity="center" android:id="@id/multi_capture_mode_button_stub" android:layout="@layout/multi_capture_mode_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <ViewStub android:layout_gravity="center" android:id="@id/interactivity_question_button_stub" android:layout="@layout/layout_iglive_interactivity_qa_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:layout_marginTop="4.0dip" />
+        <ViewStub android:layout_gravity="end|center" android:id="@id/camera_home_button_stub" android:layout="@layout/layout_camera_home_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginEnd="4.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title_text_view" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" style="@style/LandingPageHeaderText" />
+    <include layout="@layout/location_feed_related_business_view" />
+</LinearLayout>

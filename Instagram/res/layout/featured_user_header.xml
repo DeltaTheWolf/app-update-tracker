@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/featured_user_profile_picture_container" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/featured_user_profile_picture_top_margin" android:layout_marginBottom="@dimen/featured_user_profile_picture_bottom_margin" android:foregroundGravity="center_vertical">
+        <com.instagram.ui.widget.gradientspinner.GradientSpinner android:layout_gravity="center" android:id="@id/featured_user_reel_ring" android:layout_width="@dimen/featured_user_story_ring_size" android:layout_height="@dimen/featured_user_story_ring_size" />
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/featured_user_profile_picture" android:contentDescription="@string/profile_photo_description" style="@style/Avatar.ExtraExtraLargePlus" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorPrimary" android:ellipsize="end" android:id="@id/featured_user_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-medium" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorPrimary" android:ellipsize="end" android:id="@id/featured_user_fullname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:id="@id/featured_user_social_context" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="@dimen/featured_user_follow_button_width" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/featured_user_direct_message_stub" android:layout="@layout/direct_message_bar_button" android:layout_width="0.0dip" android:layout_height="@dimen/follow_button_height" android:layout_marginTop="@dimen/row_padding" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:layout_marginEnd="4.0dip" />
+        <include android:id="@id/featured_user_follow_button" android:layout_width="0.0dip" android:layout_height="@dimen/follow_button_height" android:layout_marginTop="@dimen/row_padding" android:layout_weight="1.0" layout="@layout/follow_button_medium" />
+    </LinearLayout>
+    <com.instagram.common.ui.text.TitleTextView android:id="@id/featured_user_view_profile_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_padding" android:layout_marginBottom="@dimen/row_padding" android:text="@string/view_profile" style="?inversePrimaryButtonStyle" />
+</LinearLayout>

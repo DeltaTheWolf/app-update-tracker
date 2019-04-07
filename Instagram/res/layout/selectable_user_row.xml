@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_container" android:background="@drawable/bg_simple_row" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_medium_redesign" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_user_row" />
+    <ViewStub android:id="@id/selectable_user_row_checkbox_view_stub" android:layout="@layout/selectable_user_row_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/one_tap_button" />
+</LinearLayout>

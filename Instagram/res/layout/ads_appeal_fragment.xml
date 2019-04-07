@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:paddingLeft="@dimen/row_text_padding" android:paddingTop="@dimen/vertical_separator_padding_large" android:paddingRight="@dimen/row_text_padding" android:paddingBottom="@dimen/vertical_separator_padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tell_us_approval_reason" />
+    <include layout="@layout/row_header_divider" />
+    <EditText android:textSize="@dimen/font_medium" android:gravity="top" android:id="@id/appeal_reason" android:paddingTop="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height" android:hint="@string/appeal_approval_reason_hint" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:imeOptions="actionDone" />
+</LinearLayout>

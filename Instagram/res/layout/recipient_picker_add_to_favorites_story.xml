@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_add_to_story_favorites_container" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_medium_redesign" style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/avatar_size_medium_xlarge" android:layout_height="@dimen/avatar_size_medium_xlarge" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/recipient_picker_extra_image_end_margin" android:layout_marginBottom="8.0dip" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/recipient_picker_extra_image_end_margin" />
+    <TextView android:textSize="@dimen/font_medium" android:id="@id/label" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/close_friends_recipient_picker_label" android:layout_weight="1.0" />
+    <include layout="@layout/one_tap_button" />
+</LinearLayout>

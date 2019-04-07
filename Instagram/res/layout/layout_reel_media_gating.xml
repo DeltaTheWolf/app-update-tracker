@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gating_view_container" android:paddingLeft="@dimen/reel_viewer_sensitivity_screen_padding" android:paddingRight="@dimen/reel_viewer_sensitivity_screen_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dismiss_icon_imageview" android:layout_width="@dimen/reel_viewer_sensitivity_screen_title_width" android:layout_height="@dimen/reel_viewer_sensitivity_screen_title_height" android:src="@drawable/dismissed_icon" />
+    <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/restricted_media_title" android:paddingTop="@dimen/reel_viewer_sensitivity_screen_title_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white_70_transparent" android:gravity="center_horizontal" android:id="@id/restricted_media_subtitle" android:paddingTop="@dimen/reel_viewer_sensitivity_screen_subtitle_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reel_viewer_sensitivity_screen_subtitle_padding_side" android:layout_marginRight="@dimen/reel_viewer_sensitivity_screen_subtitle_padding_side" />
+    <include android:id="@id/divider_line" android:layout_width="@dimen/reel_viewer_sensitivity_screen_divider_width" android:layout_height="@dimen/reel_viewer_sensitivity_screen_divider_height" android:layout_marginTop="@dimen/reel_viewer_sensitivity_screen_divider_margin_top" layout="@layout/row_divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_container" android:layout_width="@dimen/reel_viewer_sensitivity_screen_reveal_button_width" android:layout_height="@dimen/reel_viewer_sensitivity_screen_reveal_button_height">
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/center_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

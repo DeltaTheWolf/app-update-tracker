@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+    <stroke android:width="@dimen/quiz_sticker_answer_background_stroke_width" android:color="@color/quiz_sticker_answer_checkbox_unselected" />
+    <corners android:radius="@dimen/quiz_sticker_answer_row_corner_radius" />
+</shape>

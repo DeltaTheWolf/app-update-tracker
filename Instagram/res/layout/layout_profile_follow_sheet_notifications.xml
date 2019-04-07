@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/ProfileFollowSheetScrollContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/ProfileFollowSheetContainer">
+        <LinearLayout style="@style/ProfileFollowSheetContent">
+            <include android:id="@id/posts_setting_row" layout="@layout/profile_follow_sheet_switch" />
+            <include android:id="@id/stories_setting_row" layout="@layout/profile_follow_sheet_switch" />
+            <ViewStub android:id="@id/live_settings_row_stub" android:layout="@layout/profile_follow_relationship_row" android:layout_width="fill_parent" android:layout_height="@dimen/profile_sheet_row_height" />
+            <include layout="@layout/profile_follow_sheet_footer" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

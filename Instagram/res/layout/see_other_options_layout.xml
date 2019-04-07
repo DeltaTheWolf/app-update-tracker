@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/content_text_size" android:textColor="@color/black" android:id="@id/help_center_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/other_options_button_height" android:text="@string/open_help_center" />
+    <include layout="@layout/row_divider" />
+    <Button android:textSize="@dimen/content_text_size" android:textColor="@color/black" android:id="@id/cancel_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/other_options_button_height" android:text="@string/cancel" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" style="@style/Widget.Instagram.Divider" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:gravity="center" android:layout_gravity="center" android:id="@id/hint" android:paddingLeft="@dimen/row_text_padding" android:paddingTop="@dimen/feed_notice_row_padding" android:paddingRight="@dimen/row_text_padding" android:paddingBottom="@dimen/feed_notice_row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_gravity="bottom" style="@style/Widget.Instagram.Divider" />
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_comment_thread_parent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_comment_thread_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" app:backgroundColor="@color/white" app:errorImage="@drawable/loadmore_icon_refresh_compound" />
+        <com.instagram.ui.listview.StickyHeaderListView android:id="@id/sticky_header_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/layout_refreshablelistview" />
+        </com.instagram.ui.listview.StickyHeaderListView>
+        <ViewStub android:layout_gravity="center|top" android:id="@id/realtime_typing_indicator_stub" android:layout="@layout/realtime_typing_indicator" android:layout_width="@dimen/realtime_typing_indicator_pill_width" android:layout_height="@dimen/realtime_typing_indicator_pill_height" />
+        <ViewStub android:layout_gravity="center_horizontal" android:id="@id/comment_detail_pill_stub" android:layout="@layout/comment_detail_pill_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include layout="@layout/layout_listview_progressbar" />
+    <include layout="@layout/comment_textview_layout" />
+    <ViewStub android:id="@id/layout_comment_thread_bigmoji_balloons_stub" android:layout="@layout/layout_balloons" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

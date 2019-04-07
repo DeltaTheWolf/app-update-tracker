@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/gradient_layer">
+        <shape android:shape="oval">
+            <gradient android:startColor="@color/quiz_sticker_answer_checkbox_unselected" android:endColor="@color/quiz_sticker_answer_checkbox_unselected" />
+        </shape>
+    </item>
+    <item android:left="@dimen/quiz_sticker_answer_checkbox_stroke_padding" android:top="@dimen/quiz_sticker_answer_checkbox_stroke_padding" android:right="@dimen/quiz_sticker_answer_checkbox_stroke_padding" android:bottom="@dimen/quiz_sticker_answer_checkbox_stroke_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/quiz_sticker_background" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_simple_row" style="?creationRowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="?creationPadding" android:paddingRight="?creationPadding" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:paddingStart="?creationPadding" android:paddingEnd="?creationPadding">
+        <com.instagram.common.ui.text.TitleTextView android:paddingLeft="?creationLegacyPadding" android:paddingRight="?creationLegacyPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/add_hashtags_label" android:layout_weight="1.0" android:paddingStart="?creationLegacyPadding" android:paddingEnd="?creationLegacyPadding" style="?creationTitleText" />
+        <com.instagram.common.ui.text.TitleTextView android:textColor="?textColorSecondary" android:id="@id/hashtag_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?creationSubTitleText" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" />
+</FrameLayout>

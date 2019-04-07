@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/options_text_view_container" android:background="@drawable/bg_simple_row" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center" android:id="@id/options_text_view" android:paddingLeft="@dimen/inbox_options_icon_horizontal_padding" android:paddingTop="@dimen/direct_row_message_direct_visual_media_vertical_padding" android:paddingRight="@dimen/inbox_options_icon_horizontal_padding" android:paddingBottom="@dimen/direct_row_message_direct_visual_media_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/inbox_options_icon_horizontal_padding" android:paddingEnd="@dimen/inbox_options_icon_horizontal_padding" style="?directRowUserName" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/question_bottom_sheet_title_container_height" android:layout_marginStart="@dimen/question_bottom_sheet_nav_button_width" android:layout_marginEnd="@dimen/question_bottom_sheet_nav_button_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/question_bottom_sheet_title_text_size" android:textStyle="bold" android:textColor="@color/grey_9" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</FrameLayout>

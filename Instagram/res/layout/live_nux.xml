@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/black_50_transparent" android:padding="44.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="@string/live_nux_title" android:fontFamily="sans-serif-light" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/live_nux_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/live_nux_notifications_on" android:lineSpacingMultiplier="1.1" />
+</LinearLayout>

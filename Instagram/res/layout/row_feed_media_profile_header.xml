@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.feed.ui.text.LinkTextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:id="@id/row_feed_social_context_text" android:paddingLeft="@dimen/feed_header_padding" android:paddingTop="@dimen/feed_header_social_context_top_padding" android:paddingRight="@dimen/feed_header_padding" android:paddingBottom="@dimen/feed_header_social_context_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:layout_gravity="bottom" android:id="@id/row_feed_social_context_divider" android:background="?rowDividerColor" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/feed_header_padding" android:layout_marginRight="@dimen/feed_header_padding" />
+    <FrameLayout android:background="?backgroundColorSecondary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/row_feed_profile_header" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/feed_row_header_height"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <FrameLayout android:id="@id/avatar_container" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_header_padding" android:layout_centerVertical="true" android:layout_marginStart="@dimen/feed_header_padding">
+                <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/row_feed_photo_profile_imageview" android:contentDescription="@string/profile_picture" style="@style/Avatar.XXSmall" />
+                <com.instagram.ui.widget.gradientspinner.GradientSpinner android:id="@id/seen_state" android:visibility="gone" android:layout_width="@dimen/small_media_header_ring_size" android:layout_height="@dimen/small_media_header_ring_size" app:activeStrokeWidth="1.5dip" app:inactiveStrokeWidth="1.5dip" />
+                <ViewStub android:layout_gravity="end|bottom|center" android:id="@id/row_feed_photo_profile_badge_stub" android:layout="@layout/row_feed_media_profile_header_badge" android:layout_width="@dimen/small_media_header_profile_badge_size" android:layout_height="@dimen/small_media_header_profile_badge_size" android:layout_marginRight="-2.0dip" android:layout_marginBottom="-1.0dip" android:layout_marginEnd="-2.0dip" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/avatar_container" android:layout_toEndOf="@id/avatar_container">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/row_feed_photo_media_metadata" android:paddingRight="@dimen/media_header_location_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/feed_header_padding" android:layout_weight="1.0" android:paddingEnd="@dimen/media_header_location_padding" android:layout_marginEnd="@dimen/feed_header_padding">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:ellipsize="end" android:id="@id/row_feed_photo_profile_name" android:paddingLeft="@dimen/feed_profile_name_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/feed_profile_name_padding" />
+                        <ViewStub android:id="@id/row_feed_follow_button_stub" android:layout="@layout/follow_button_inverse" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView android:textSize="?textSizeLocation" android:ellipsize="end" android:id="@id/row_feed_photo_subtitle" android:paddingLeft="@dimen/feed_profile_name_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="@dimen/feed_profile_name_padding" />
+                </LinearLayout>
+                <TextView android:ellipsize="none" android:gravity="center_vertical" android:id="@id/row_feed_photo_profile_metalabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:includeFontPadding="false" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ViewStub android:layout_gravity="center_vertical" android:id="@id/close_friends_badge_stub" android:layout="@layout/close_friends_badge" android:inflatedId="@id/close_friends_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginEnd="6.0dip" />
+                    <ViewStub android:layout_gravity="center_vertical" android:id="@id/row_feed_follow_button_blue_stub" android:layout="@layout/follow_button_medium" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" android:layout_marginRight="@dimen/feed_more_button_margin_right" android:layout_marginEnd="@dimen/feed_more_button_margin_right" />
+                    <ViewStub android:layout_gravity="center_vertical" android:id="@id/row_feed_aymf_follow_button_blue_stub" android:layout="@layout/follow_button_medium" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" />
+                    <ViewStub android:layout_gravity="center_vertical" android:id="@id/row_feed_header_button_direct_reply_stub" android:layout="@layout/row_feed_media_header_direct_reply_button" android:layout_width="@dimen/media_header_direct_reply_button_size" android:layout_height="@dimen/media_header_direct_reply_button_size" />
+                    <ViewStub android:id="@id/feed_more_button_stub" android:layout="@layout/row_feed_more_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <ViewStub android:id="@id/extra_location_label_stub" android:layout="@layout/row_feed_media_profile_extra_location_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_gravity="bottom" android:id="@id/divider" android:background="?rowDividerColor" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </FrameLayout>
+</LinearLayout>

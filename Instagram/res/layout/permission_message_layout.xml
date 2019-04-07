@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/permission_preprompt_padding_horizontal" android:paddingRight="@dimen/permission_preprompt_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/permission_preprompt_padding_large" android:paddingStart="@dimen/permission_preprompt_padding_horizontal" android:paddingEnd="@dimen/permission_preprompt_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:gravity="start" android:id="@id/permission_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/permission_preprompt_title_message_padding" />
+    <TextView android:textColor="@color/grey_5" android:gravity="start" android:id="@id/permission_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

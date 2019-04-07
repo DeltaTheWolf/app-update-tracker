@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="?rowPadding" android:paddingRight="?rowPadding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/row_height_small" android:paddingStart="?rowPadding" android:paddingEnd="?rowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="horizontal" android:paddingLeft="?rowTextPadding" android:paddingRight="?rowTextPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingStart="?rowTextPadding" android:paddingEnd="?rowTextPadding">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.instagram.common.ui.text.TitleTextView android:id="@id/row_simple_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?rowTextStyle" />
+            <TextView android:textColor="?textColorSecondary" android:id="@id/row_simple_text_description" android:paddingBottom="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/row_address_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_dot" />
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/row_menu_item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chevron_right" app:normal="@color/grey_5" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

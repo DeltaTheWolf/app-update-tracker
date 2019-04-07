@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_details_horizontal_margin" android:layout_marginRight="@dimen/account_details_horizontal_margin">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/account_details_width" android:layout_height="@dimen/account_details_height" android:layout_marginTop="@dimen/account_details_xlarge_margin" android:layout_marginBottom="@dimen/account_details_large_margin" android:src="@drawable/instagram_wellbeing_illustrations_account_transparency" />
+        <TextView android:textSize="@dimen/font_xlarge" android:textColor="@color/grey_9" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_details_qp_nux_title" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center_horizontal" android:id="@id/info_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_details_medium_margin" />
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/blue_5" android:gravity="center_horizontal" android:id="@id/learn_more_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_details_xlarge_margin" android:layout_marginBottom="@dimen/account_details_xlarge_margin" android:text="@string/learn_more" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_details_horizontal_margin" android:layout_marginTop="@dimen/account_details_medium_margin" android:layout_marginRight="@dimen/account_details_horizontal_margin" android:layout_marginBottom="@dimen/account_details_xlarge_margin">
+        <TextView android:textSize="@dimen/font_medium_xlarge" android:textStyle="bold" android:textColor="@color/grey_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_details_qp_info_title" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_details_small_margin" android:text="@string/account_details_qp_info_subtitle" />
+    </LinearLayout>
+</LinearLayout>

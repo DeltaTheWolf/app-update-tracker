@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_view" android:padding="@dimen/find_friends_empty_view_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginBottom="@dimen/find_friends_empty_view_padding" android:src="@drawable/find_friends_icon" android:scaleType="fitCenter" android:tint="@color/grey_9" />
+    <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/grey_9" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/find_friends_to_follow" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_9" android:gravity="center_horizontal" android:id="@id/detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/find_friends_empty_view_detail_margin_top" android:text="@string/search_find_friends_empty_state_detail" />
+</LinearLayout>

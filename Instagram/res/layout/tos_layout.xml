@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+        <TextView android:gravity="center_vertical" android:id="@id/message" android:padding="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small" android:maxLines="50" android:lineSpacingExtra="4.0dip" />
+    </ScrollView>
+    <include layout="@layout/row_divider" />
+</LinearLayout>

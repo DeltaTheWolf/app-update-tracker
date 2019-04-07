@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/recommend_accounts_header_horizontal_padding" android:paddingRight="@dimen/recommend_accounts_header_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/recommend_accounts_header_horizontal_padding" android:paddingEnd="@dimen/recommend_accounts_header_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/recommend_accounts_header_vertical_spacing">
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_horizontal" android:id="@id/profile_pic" android:layout_width="@dimen/recommend_accounts_header_profile_icon_size" android:layout_height="@dimen/recommend_accounts_header_profile_icon_size" android:contentDescription="@string/profile_photo_description" />
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/sender_icon" android:layout_width="@dimen/recommend_accounts_sender_icon_size" android:layout_height="@dimen/recommend_accounts_sender_icon_size" android:layout_marginLeft="@dimen/recommend_accounts_sender_icon_outer_adjustment" android:layout_marginStart="@dimen/recommend_accounts_sender_icon_outer_adjustment">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/white" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recommend_accounts_small_icon" android:contentDescription="@string/recommend_accounts_icon_content_description" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/recommend_accounts_header_vertical_spacing" android:layout_marginBottom="@dimen/recommend_accounts_header_vertical_spacing" />
+</LinearLayout>

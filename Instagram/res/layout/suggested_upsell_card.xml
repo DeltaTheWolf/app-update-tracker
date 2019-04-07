@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="@dimen/card_bottom_padding" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/card_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/suggested_upsell_card_container" android:background="@drawable/card_background" android:padding="@dimen/card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/suggested_upsell_card_image" style="@style/Avatar.ExtraExtraLargePlus" />
+        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="?textColorPrimary" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/suggested_upsell_card_title" android:paddingTop="@dimen/card_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_text_padding_small" android:maxLines="1" android:includeFontPadding="false" app:capitalize="false" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="?textColorPrimary" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/suggested_user_card_subtitle" android:paddingBottom="@dimen/card_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:includeFontPadding="false" android:fontFamily="sans-serif" />
+        <com.instagram.common.ui.text.TitleTextView android:id="@id/suggested_upsell_card_button" android:layout_width="fill_parent" android:layout_height="@dimen/follow_button_height" style="?primaryButtonStyle" />
+    </LinearLayout>
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center|top" android:id="@id/dismiss_button" android:padding="@dimen/card_close_button_padding" android:layout_width="@dimen/card_close_button_size" android:layout_height="@dimen/card_close_button_size" android:src="@drawable/instagram_x_outline_24" android:contentDescription="@string/dismiss" />
+</FrameLayout>

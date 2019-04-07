@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bottom_sheet_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom_sheet_drag_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_drag_handle" />
+        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium_xxlarge" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autofill_with_instagram" app:capitalize="false" />
+    </LinearLayout>
+    <com.instagram.ui.widget.radiogroup.IgRadioGroup android:orientation="vertical" android:id="@id/autofill_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_margin" android:layout_marginBottom="@dimen/row_margin" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/done_button" android:background="@color/blue_5" android:paddingTop="@dimen/textview_button_padding" android:paddingBottom="@dimen/textview_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/done" app:capitalize="false" />
+</LinearLayout>

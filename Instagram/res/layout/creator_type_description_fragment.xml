@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/scroll_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/value_props_container" android:paddingLeft="16.0dip" android:paddingTop="32.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/title_icon" android:background="@drawable/circular_icon_border" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="18.0dip" android:scaleType="center" />
+            <TextView android:textSize="26.0sp" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/account_type_creator_card_title" android:textAlignment="center" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/secondary_text" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/account_type_creator_card_description" android:textAlignment="center" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="16.0dip" layout="@layout/row_divider" />
+        </LinearLayout>
+    </ScrollView>
+    <com.instagram.business.ui.BusinessNavBar android:layout_gravity="bottom" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:primaryText="@string/next" app:showSecondaryButton="false" />
+</FrameLayout>

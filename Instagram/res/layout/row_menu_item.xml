@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_simple_row" android:paddingLeft="?rowPadding" android:paddingRight="?rowPadding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:minHeight="@dimen/row_height_small" android:paddingStart="?rowPadding" android:paddingEnd="?rowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:paddingLeft="?rowTextPadding" android:paddingRight="?rowTextPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?rowTextPadding" android:paddingEnd="?rowTextPadding">
+        <com.instagram.ui.widget.checkbox.IgCheckBox android:id="@id/checkbox" android:padding="@dimen/row_padding_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/row_simple_text_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="?rowTextStyle" />
+    </LinearLayout>
+    <ViewStub android:layout_gravity="end" android:id="@id/row_simple_text_end_stub" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+</FrameLayout>

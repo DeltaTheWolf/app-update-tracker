@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/browser_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/instant_experiences_browser_chrome" android:layout_width="fill_parent" android:layout_height="@dimen/instant_experiences_browser_chrome_expanded_height" layout="@layout/instant_experiences_browser_chrome" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.instagram.business.instantexperiences.ui.InstantExperiencesWebViewContainerLayout android:id="@id/instant_experiences_webview_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/dialog_and_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ViewStub android:id="@id/instant_experiences_save_autofill_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/instant_experiences_autofill_bar" android:layout="@layout/instant_experiences_browser_autofill_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/instant_experiences_confirmation_dialogs_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/instant_experiences_browser_progress_bar" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="52.0dip" android:max="1000" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/instant_experiences_browser_progress_bar" />
+</FrameLayout>

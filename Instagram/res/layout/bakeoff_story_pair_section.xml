@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/reel_preview_hint_container" layout="@layout/reel_preview_hint_view" />
+    <com.instagram.ui.widget.fixedtabbar.FixedTabBar android:id="@id/hon_tabbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" style="?fixedTabBarStyle" />
+    <View android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/reel_previews_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@id/reel_preview_left" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/reel_preview_content_view" />
+        <View android:background="@color/grey_2" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <include android:id="@id/reel_preview_right" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/reel_preview_content_view" />
+    </LinearLayout>
+    <View android:background="@color/border_color" android:layout_width="fill_parent" android:layout_height="@dimen/border_size" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/inline_tray_action_bar" android:layout_width="fill_parent" android:layout_height="?actionBarHeight">
+        <ViewStub android:id="@id/inline_create_highlight_back_button_stub" android:layout="@layout/inline_create_highlight_back_button" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_large" android:textColor="?textColorPrimary" android:gravity="center" android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/inline_add_highlight_title" app:capitalize="?actionBarTextCapitalize" />
+    </FrameLayout>
+    <include layout="@layout/row_divider" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_highlights_reel_tray" />
+        <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" />
+        <ViewStub android:layout_gravity="center" android:id="@id/inline_create_highlight_metadata_stub" android:layout="@layout/inline_create_highlight_metadata" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include layout="@layout/row_divider" />
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/action_button" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" android:text="@string/cancel" android:maxLines="1" />
+</LinearLayout>

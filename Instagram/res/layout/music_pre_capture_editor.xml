@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/music_pre_capture_editor" android:background="@color/black_60_transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/music_editor_stub" android:layout="@layout/music_editor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:visibility="visible" layout="@layout/layout_post_capture_edit_control_done_button" />
+</FrameLayout>

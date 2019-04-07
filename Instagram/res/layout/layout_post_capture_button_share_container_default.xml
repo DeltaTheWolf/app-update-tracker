@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/post_capture_button_share_container" style="@style/PostCaptureShareContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bottom_save_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginEnd="12.0dip" layout="@layout/layout_share_controls_save_button" />
+    <ViewStub android:layout_gravity="start|bottom|center" android:id="@id/share_controls_stub" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <include layout="@layout/share_controls_recipient_picker" />
+</LinearLayout>

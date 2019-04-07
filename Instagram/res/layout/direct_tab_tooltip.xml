@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:id="@id/badge_tooltip_title" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/direct_tab_tooltip_max_width" android:maxLines="1" />
+    <TextView android:textSize="@dimen/font_medium" android:ellipsize="end" android:id="@id/badge_tooltip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/direct_tab_tooltip_max_width" android:maxLines="2" />
+</LinearLayout>

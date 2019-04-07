@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dense_row_default_padding" android:paddingRight="@dimen/dense_row_default_padding" android:layout_width="fill_parent" android:layout_height="@dimen/section_header_height" android:paddingStart="@dimen/dense_row_default_padding" android:paddingEnd="@dimen/dense_row_default_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="start|center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListRowTitleText" />
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:layout_gravity="start|center" android:id="@id/right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListRowSubTitleTextRegular" />
+    <Space android:layout_width="4.0dip" android:layout_height="fill_parent" />
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center_vertical" android:id="@id/chevron" android:paddingTop="1.0dip" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/instagram_chevron_right_outline_24" app:normal="@color/grey_5" />
+</LinearLayout>

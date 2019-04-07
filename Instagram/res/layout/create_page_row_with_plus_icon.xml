@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/create_page_container" android:background="@drawable/bg_simple_row" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="@dimen/business_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/add_page_glyph" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/row_text_padding" android:src="@drawable/instagram_add_outline_24" android:tint="?glyphColorPrimary" android:layout_marginEnd="@dimen/row_text_padding" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="14.0sp" android:textColor="?textColorPrimary" android:ellipsize="end" android:id="@id/create_page" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/create_new_page" android:maxLines="1" android:layout_weight="1.0" app:capitalize="false" />
+    <ImageView android:id="@id/chevron" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/chevron_right_grey" android:tint="@color/grey_3" />
+</LinearLayout>

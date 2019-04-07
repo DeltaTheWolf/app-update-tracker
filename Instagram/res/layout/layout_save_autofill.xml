@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bottom_sheet_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom_sheet_drag_area" android:paddingBottom="@dimen/row_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_drag_handle" />
+    </LinearLayout>
+    <View android:background="@drawable/instagram_app_instagram_outline_24" android:layout_width="@dimen/instagram_logo_size" android:layout_height="@dimen/instagram_logo_size" android:layout_marginBottom="@dimen/row_padding_medium" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium_xlarge" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/row_padding_small" android:text="@string/remember_for_autofill" app:capitalize="false" />
+    <TextView android:textSize="@dimen/font_medium_large" android:textColor="@color/grey_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remember_for_autofill_description" />
+    <View android:id="@id/autofill_entry_stub" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_margin" android:layout_marginBottom="@dimen/row_margin" android:layout_marginStart="@dimen/row_margin">
+        <ImageView android:layout_width="@dimen/lock_icon_size" android:layout_height="@dimen/lock_icon_size" android:layout_marginLeft="@dimen/row_padding_small" android:layout_marginRight="@dimen/row_padding_small" android:src="@drawable/instagram_lock_outline_24" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_notice" />
+    </LinearLayout>
+    <View style="@style/Widget.Instagram.Divider" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/remember_button" android:background="@drawable/button_blue_background" android:paddingTop="@dimen/textview_button_padding" android:paddingBottom="@dimen/textview_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_margin" android:layout_marginTop="@dimen/row_margin" android:layout_marginRight="@dimen/row_margin" android:text="@string/remember" app:capitalize="false" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:gravity="center_horizontal" android:id="@id/dont_ask_again_button" android:background="@drawable/button_transparent_background" android:paddingTop="@dimen/textview_button_padding" android:paddingBottom="@dimen/textview_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_margin" android:layout_marginRight="@dimen/row_margin" android:text="@string/dont_ask_again" app:capitalize="false" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="center" android:id="@id/change_cover_photo_stub" android:layout="@layout/change_cover_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/collection_name_edit" />
+    <ViewStub android:id="@id/collection_make_public_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/collection_add_contributors_stub" android:layout="@layout/collection_add_contributors" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/manage_collection_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_home_collection_feed_manage_collection" style="@style/EditCollectionTitleText" />
+    <TextView android:id="@id/delete_collection_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_home_collection_feed_delete_collection" style="@style/EditCollectionDeleteText" />
+    <TextView android:id="@id/delete_collection_confirmation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_home_collection_feed_delete_collection_confirmation_message" style="@style/EditCollectionSubText" />
+</LinearLayout>

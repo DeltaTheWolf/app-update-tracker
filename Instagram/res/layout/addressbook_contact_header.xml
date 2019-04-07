@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/contact_list_header_horizontal_margin" android:layout_marginTop="@dimen/contact_list_header_vertical_margin" android:layout_marginRight="@dimen/contact_list_header_horizontal_margin" android:layout_marginBottom="@dimen/contact_list_header_vertical_margin" android:layout_marginStart="@dimen/contact_list_header_horizontal_margin" android:layout_marginEnd="@dimen/contact_list_header_horizontal_margin">
+        <TextView android:textSize="@dimen/font_medium_not_scaled" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/list_header_text_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/font_medium_not_scaled" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/list_header_text_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/font_medium_not_scaled" android:textStyle="bold" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/list_header_text_three" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/row_divider" />
+</FrameLayout>

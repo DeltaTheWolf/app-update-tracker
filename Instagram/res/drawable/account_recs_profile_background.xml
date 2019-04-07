@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/black" android:endColor="@color/transparent" android:type="radial" android:gradientRadius="85.0" />
+    <size android:height="@dimen/account_recs_avatar_shadow_radius" android:width="@dimen/account_recs_avatar_shadow_radius" />
+</shape>

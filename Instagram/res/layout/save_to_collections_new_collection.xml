@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/save_to_collections_new_collection" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/save_to_collections_collection_tile" />
+    <EditText android:textSize="@dimen/font_medium" android:gravity="center" android:id="@id/create_collection_edit_text" android:background="@null" android:paddingBottom="@dimen/save_to_collections_edit_text_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/save_to_collections_max_edit_text_size" android:minWidth="@dimen/save_to_collections_edit_text_underline_min_length" android:maxLines="1" android:scrollHorizontally="true" android:maxLength="@integer/collection_name_max_length" android:inputType="textFilter|textAutoCorrect|textCapSentences|textNoSuggestions" android:imeOptions="actionDone" />
+    <View android:gravity="center" android:id="@id/edit_text_underline" android:background="@color/blue_5" android:layout_width="@dimen/save_to_collections_edit_text_underline_min_length" android:layout_height="@dimen/save_to_collections_edit_text_underline_height" />
+</LinearLayout>

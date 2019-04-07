@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/action_bar_xauth" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight">
+        <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_vertical" android:id="@id/email_Label" android:paddingLeft="@dimen/row_padding" android:paddingTop="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/email" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" style="@style/BodyDetail" />
+        <EditText android:id="@id/username" android:paddingLeft="-8.0dip" android:paddingRight="@dimen/row_padding" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:inputType="textEmailAddress" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" style="@style/FieldWithGlyph" />
+        <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_vertical" android:id="@id/password_Label" android:paddingLeft="@dimen/row_padding" android:paddingTop="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/password" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" style="@style/BodyDetail" />
+        <EditText android:id="@id/password" android:paddingLeft="-8.0dip" android:paddingRight="@dimen/row_padding" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:hint="@string/password" android:inputType="textPassword" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" style="@style/FieldWithGlyph" />
+        <com.instagram.common.ui.text.TitleTextView android:gravity="center_vertical" android:paddingLeft="@dimen/row_padding" android:paddingTop="@dimen/row_text_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/row_height_small" android:text="@string/password_security_message" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" style="?rowUserInfo" />
+    </LinearLayout>
+    <include layout="@layout/action_bar_shadow" />
+</FrameLayout>

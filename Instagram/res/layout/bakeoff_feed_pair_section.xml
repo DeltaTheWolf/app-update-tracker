@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.fixedtabbar.FixedTabBar android:id="@id/hon_tabbar" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" style="?fixedTabBarStyle" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.instagram.ui.viewpager.BakeOffViewPager android:id="@id/layout_container_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:layout_gravity="top" android:background="@drawable/nav_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/view_switcher_shadow_height" />
+    </FrameLayout>
+    <View android:background="@color/border_color" android:layout_width="fill_parent" android:layout_height="@dimen/border_size" />
+</LinearLayout>

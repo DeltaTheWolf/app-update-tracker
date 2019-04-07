@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/consent_screen_margin_horizontal" android:layout_marginRight="@dimen/consent_screen_margin_horizontal" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/title_text_size" android:gravity="start" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_title_margin_top" android:layout_marginBottom="@dimen/content_title_margin_bottom" android:fontFamily="sans-serif-medium" />
+                <LinearLayout android:orientation="vertical" android:id="@id/paragraphs_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:id="@id/data_policy_link" android:text="@string/data_policy_link" style="@style/GDPRLinkStyle" />
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@id/row_divider" layout="@layout/row_divider" />
+        <com.instagram.ui.widget.progressbutton.ProgressButton android:textSize="@dimen/content_text_size" android:gravity="center" android:layout_gravity="bottom" android:id="@id/next_button" android:background="?nuxActionButtonBackground" android:layout_width="fill_parent" android:layout_height="@dimen/gdpr_button_height" android:layout_marginLeft="@dimen/consent_button_margin_horizontal" android:layout_marginTop="@dimen/gdpr_button_margin_vertical" android:layout_marginRight="@dimen/consent_button_margin_horizontal" android:layout_marginBottom="@dimen/gdpr_button_margin_vertical" android:text="@string/next_button" />
+    </LinearLayout>
+    <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/spinner_large" />
+</FrameLayout>

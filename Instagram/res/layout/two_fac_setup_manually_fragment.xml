@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:gravity="center" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/content_title" android:text="@string/two_fac_setup_manually_title" style="@style/TwoFacTitleStyle" />
+            <TextView android:textSize="@dimen/font_xxlarge" android:id="@id/instagram_key" android:layout_marginBottom="0.0dip" style="@style/TwoFacTitleStyle" />
+            <TextView android:textSize="@dimen/font_xxlarge" android:id="@id/instagram_key_additional_line" android:layout_marginTop="0.0dip" style="@style/TwoFacTitleStyle" />
+            <TextView android:id="@id/copy_key" android:layout_marginTop="@dimen/two_fac_button_margin_top" android:text="@string/two_fac_setup_manually_copy_key" style="@style/TwoFacLinkStyle" />
+            <TextView android:id="@id/content_first_paragraph" android:layout_marginTop="@dimen/two_fac_paragraph_margin_top" android:text="@string/two_fac_setup_manually_para1" style="@style/TwoFacParagraphStyle" />
+            <TextView android:id="@id/content_second_paragraph" android:text="@string/two_fac_setup_manually_para2" style="@style/TwoFacParagraphStyle" />
+            <TextView android:id="@id/content_third_paragraph" android:text="@string/two_fac_setup_manually_para3" style="@style/TwoFacParagraphStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/next_button" android:text="@string/next" style="@style/StickyButtonStyle" />
+</LinearLayout>

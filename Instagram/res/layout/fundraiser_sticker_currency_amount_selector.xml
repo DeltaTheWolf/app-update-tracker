@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/fundraiser_sticker_currency_amount_selector_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/fundraiser_sticker_currency_amount_selector_button_small_amount" android:layout_marginRight="@dimen/fundraiser_sticker_currency_amount_selector_button_spacing" style="@style/FundraiserStickerCurrencyAmountSelector.Button" />
+        <RadioButton android:id="@id/fundraiser_sticker_currency_amount_selector_button_medium_amount" android:layout_marginRight="@dimen/fundraiser_sticker_currency_amount_selector_button_spacing" style="@style/FundraiserStickerCurrencyAmountSelector.Button" />
+        <RadioButton android:id="@id/fundraiser_sticker_currency_amount_selector_button_large_amount" android:layout_marginRight="@dimen/fundraiser_sticker_currency_amount_selector_button_spacing" style="@style/FundraiserStickerCurrencyAmountSelector.Button" />
+        <RadioButton android:id="@id/fundraiser_sticker_currency_amount_selector_button_other_amount" style="@style/FundraiserStickerCurrencyAmountSelector.Button" />
+    </RadioGroup>
+    <EditText android:id="@id/fundraiser_sticker_currency_amount_selector_input_field" android:maxLength="15" style="@style/FundraiserStickerCurrencyAmountSelector.InputField" />
+</LinearLayout>

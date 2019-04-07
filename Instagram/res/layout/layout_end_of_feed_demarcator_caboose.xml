@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/end_of_feed_demarcator_container" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.instagram.feed.ui.views.EndOfFeedDemarcatorCheckmark android:id="@id/demarcator_icon" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="40.0dip" />
+    <TextView android:gravity="center" android:id="@id/demarcator_title" android:paddingLeft="@dimen/end_of_feed_unit_outer_padding" android:paddingTop="@dimen/end_of_feed_unit_outer_padding" android:paddingRight="@dimen/end_of_feed_unit_outer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EndOfFeedDemarcatorTitleText" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/demarcator_subtitle" android:paddingLeft="@dimen/end_of_feed_unit_outer_padding" android:paddingTop="@dimen/see_more_outer_padding" android:paddingRight="@dimen/end_of_feed_unit_outer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/end_of_feed_unit_bottom_padding" />
+    <View android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

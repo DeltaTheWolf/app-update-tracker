@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="40.0dip" android:paddingTop="28.0dip" android:paddingRight="40.0dip" android:paddingBottom="28.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="40.0dip" android:paddingEnd="40.0dip">
+        <TextView android:textSize="@dimen/font_xlarge" android:textColor="?textColorPrimary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/direct_inbox_null_state_title" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="?textColorSecondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/direct_inbox_null_state_subtitle" />
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/blue_5" android:id="@id/send_message_button" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/direct_inbox_null_state_button" android:textAlignment="center" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" />
+</FrameLayout>

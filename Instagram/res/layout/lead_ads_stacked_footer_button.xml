@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_divider_thickness" />
+    <FrameLayout android:paddingTop="@dimen/lead_ad_button_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lead_ad_button_margin" android:layout_marginRight="@dimen/lead_ad_button_margin">
+        <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_vertical" android:id="@id/lead_ad_primary_button" android:paddingLeft="@dimen/lead_ad_text_padding" android:paddingRight="@dimen/lead_ad_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_button_height" style="?primaryButtonStyle" />
+    </FrameLayout>
+    <FrameLayout android:paddingTop="@dimen/lead_ad_button_padding_vertical" android:paddingBottom="@dimen/lead_ad_button_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lead_ad_button_margin" android:layout_marginRight="@dimen/lead_ad_button_margin">
+        <com.instagram.common.ui.text.TitleTextView android:layout_gravity="center_vertical" android:id="@id/lead_ad_secondary_button" android:paddingLeft="@dimen/lead_ad_text_padding" android:paddingRight="@dimen/lead_ad_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/lead_ad_button_height" style="?secondaryButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

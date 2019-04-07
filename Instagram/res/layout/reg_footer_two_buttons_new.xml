@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/new_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/left_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:textColor="?nuxTextColor" android:gravity="center_vertical" android:id="@id/left_button_new" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:textColor="?nuxTextColor" android:gravity="center_vertical" android:id="@id/right_button_new" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/new_footer_right_button_margin_left" android:layout_marginStart="@dimen/new_footer_right_button_margin_left" />
+    <View android:id="@id/right_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/selection_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/music_action_buttons_horizontal_padding" android:paddingEnd="@dimen/music_action_buttons_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/selection_button_image" android:layout_width="@dimen/music_preview_button_ring_diameter" android:layout_height="fill_parent" android:src="@drawable/instagram_circle_check_filled_24" android:scaleType="fitCenter" />
+</FrameLayout>

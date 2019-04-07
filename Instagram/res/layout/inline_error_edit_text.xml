@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:id="@id/inline_error" android:paddingTop="@dimen/container_padding" android:paddingBottom="@dimen/error_field_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorColor="@color/red_5" app:hintColor="@color/grey_5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:id="@id/text_field" android:paddingLeft="@dimen/text_left_padding" android:paddingRight="@dimen/text_right_padding" android:paddingBottom="@dimen/text_field_float" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" />
+</com.instagram.ui.widget.inlineerror.InlineErrorMessageView>

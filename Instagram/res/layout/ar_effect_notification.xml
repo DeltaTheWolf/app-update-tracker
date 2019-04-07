@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ar_effect" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/ar_effect_notification_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:layout_gravity="center_vertical" android:id="@id/icon_image_view_1" android:layout_width="@dimen/ar_effect_notification_icon_single_icon_width" android:layout_height="@dimen/ar_effect_notification_icon_single_icon_width" android:layout_marginLeft="7.0dip" app:radius="@dimen/ar_effect_notification_icon_single_icon_corner_radius" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/effects_attribution" android:tint="@color/blue_5" />
+            <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/blue_5" android:layout_gravity="center_vertical" android:id="@id/add_effect_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/try_effect" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:layout_gravity="center_vertical" android:id="@id/ar_effect_notification_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

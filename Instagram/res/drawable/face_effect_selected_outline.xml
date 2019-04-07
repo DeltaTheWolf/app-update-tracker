@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/face_effect_tile_selected_inner_stroke_padding" android:top="@dimen/face_effect_tile_selected_inner_stroke_padding" android:right="@dimen/face_effect_tile_selected_inner_stroke_padding" android:bottom="@dimen/face_effect_tile_selected_inner_stroke_padding">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:width="@dimen/face_effect_tile_selected_inner_stroke_width" android:color="@color/black_10_transparent" />
+            <corners android:radius="@dimen/face_effect_tile_selected_inner_stroke_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:width="@dimen/face_effect_tile_selected_stroke_width" android:color="@color/white" />
+            <corners android:radius="@dimen/face_effect_tile_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

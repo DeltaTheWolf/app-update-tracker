@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/gradient_layer">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/quiz_sticker_answer_checkbox_correct" android:endColor="@color/quiz_sticker_answer_checkbox_correct" />
+            <corners android:radius="@dimen/quiz_sticker_answer_row_corner_radius" />
+        </shape>
+    </item>
+    <item android:left="@dimen/quiz_sticker_answer_checkbox_stroke_padding" android:top="@dimen/quiz_sticker_answer_checkbox_stroke_padding" android:right="@dimen/quiz_sticker_answer_checkbox_stroke_padding" android:bottom="@dimen/quiz_sticker_answer_checkbox_stroke_padding">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/quiz_sticker_background" />
+            <corners android:radius="@dimen/quiz_sticker_answer_row_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

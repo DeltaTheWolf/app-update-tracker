@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="?textColorSecondary" android:gravity="center" android:id="@id/privacy_footer" android:padding="@dimen/archive_disclaimer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/story_archive_privacy_footer_text" />
+</FrameLayout>

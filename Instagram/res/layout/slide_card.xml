@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/content_to_border_margin" android:paddingRight="@dimen/content_to_border_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/content_to_border_margin" android:paddingEnd="@dimen/content_to_border_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:scaleType="centerCrop" />
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_horizontal" android:id="@id/circular_image" android:visibility="gone" android:layout_width="88.0dip" android:layout_height="88.0dip" android:layout_marginBottom="20.0dip" />
+    <TextView android:textSize="26.0sp" android:textStyle="normal" android:textColor="@color/grey_9" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+    <TextView android:textAppearance="@style/Business.TextAppearance" android:textColor="@color/grey_9" android:id="@id/subtitle" android:paddingBottom="14.0dip" android:fontFamily="sans-serif" style="@style/BusinessText.CenterText" />
+    <View android:id="@id/placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

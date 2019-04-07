@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/row_search_user_container" android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="?searchRowHeight" android:minHeight="?searchRowHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/unseen_dot_start_aligned" android:visibility="gone" android:layout_marginLeft="5.0dip" android:layout_marginStart="5.0dip" style="?searchBadgeSmall" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_search_user_info_container" android:paddingLeft="?searchRowPadding" android:paddingTop="?searchVerticalSeparatorPadding" android:paddingRight="?searchRowPadding" android:paddingBottom="?searchVerticalSeparatorPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/row_search_user_imageview" android:visibility="gone" style="?searchAvatar" />
+        <ViewStub android:id="@id/row_search_avatar_with_ring_stub" android:layout="@layout/row_search_avatar_with_reel_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="?searchTextPadding" android:paddingRight="?searchTextPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_search_user_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="?searchDrawablePadding" style="?searchUserName" />
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_search_user_fullname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?searchUserInfo" />
+            <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_small_medium" android:ellipsize="end" android:id="@id/row_search_user_secondary_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?searchUserInfo" />
+        </LinearLayout>
+        <ViewStub android:layout_gravity="center_vertical" android:id="@id/remove_user_stub" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:layout="@layout/remove_user_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/unseen_dot_end_aligned" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:visibility="gone" style="?searchBadge" />
+        <com.instagram.user.follow.FollowButton android:layout_gravity="end|center" android:id="@id/row_search_user_follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="?searchFollowButtonHeight" android:layout_marginLeft="4.0dip" android:minWidth="85.0dip" android:layout_marginStart="4.0dip" app:followButtonStyle="medium" style="?updatableButtonStyle" />
+        <ViewStub android:layout_gravity="center_vertical" android:id="@id/dismiss_button_stub" android:layout="@layout/dismiss_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/survey_question_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/font_medium_xxlarge" android:textColor="?textColorPrimary" android:gravity="center" android:id="@id/survey_question" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/survey_question_number" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" />
+</merge>

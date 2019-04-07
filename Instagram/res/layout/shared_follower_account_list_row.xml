@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/shared_follower_account_list_container" android:layout_width="fill_parent" android:layout_height="@dimen/shared_follows_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_vertical" android:id="@id/shared_follower_account_imageview" android:layout_width="@dimen/shared_follower_account_imageview_width" android:layout_height="@dimen/shared_follower_account_imageview_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" android:layout_marginStart="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding">
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:ellipsize="end" android:id="@id/shared_follower_account_list_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_5" android:ellipsize="end" android:id="@id/shared_follower_account_list_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/Widget.Instagram.Divider" />
+    <TextView android:layout_gravity="center" android:id="@id/in_app_signup_flow_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginTop="@dimen/vertical_separator_padding_large" android:layout_marginRight="@dimen/row_padding" android:layout_marginBottom="@dimen/vertical_separator_padding_large" style="@style/LargeBlueButton" />
+</FrameLayout>

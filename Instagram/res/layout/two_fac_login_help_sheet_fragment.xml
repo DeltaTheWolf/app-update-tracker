@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/use_text_message_button" android:text="@string/two_fac_login_help_sheet_text_message_button" style="@style/TwoFacLoginHelpMenuItem" />
+    <include layout="@layout/row_divider" />
+    <include layout="@layout/row_divider" />
+    <Button android:id="@id/use_authenticator_app_button" android:text="@string/two_fac_login_help_sheet_authenticator_app_button" style="@style/TwoFacLoginHelpMenuItem" />
+    <include layout="@layout/row_divider" />
+    <Button android:id="@id/use_recovery_code_button" android:text="@string/two_fac_login_help_sheet_recovery_code_button" style="@style/TwoFacLoginHelpMenuItem" />
+    <include layout="@layout/row_divider" />
+    <Button android:id="@id/request_support_button" android:text="@string/two_fac_login_help_sheet_request_support_button" style="@style/TwoFacLoginHelpMenuItem" />
+    <include layout="@layout/row_divider" />
+    <Button android:id="@id/learn_more_button" android:text="@string/two_fac_learn_more" style="@style/TwoFacLoginHelpMenuItem" />
+    <include layout="@layout/row_divider" />
+    <Button android:id="@id/cancel_button" android:text="@string/cancel" style="@style/TwoFacLoginHelpMenuItem" />
+</LinearLayout>

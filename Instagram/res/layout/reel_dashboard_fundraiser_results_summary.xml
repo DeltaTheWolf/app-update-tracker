@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/fundraiser_results_summary_horizontal_padding" android:paddingEnd="@dimen/fundraiser_results_summary_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fundraiser_results_summary_amount_raised_text_size" android:textColor="@color/fundraiser_results_summary_amount_raised_text_color" android:gravity="center_horizontal" android:id="@id/fundraiser_results_summary_amount_raised" android:paddingTop="@dimen/fundraiser_results_summary_amount_raised_top_padding" android:paddingBottom="@dimen/fundraiser_results_summary_amount_raised_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/fundraiser_results_summary_description_text_size" android:textColor="@color/fundraiser_results_summary_description_text_color" android:gravity="center_horizontal" android:id="@id/fundraiser_results_summary_description" android:paddingBottom="@dimen/fundraiser_results_summary_description_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

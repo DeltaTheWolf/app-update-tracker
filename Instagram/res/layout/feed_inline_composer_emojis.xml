@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/feed_content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/feed_content_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/row_feed_emoji_picker_emoji_1" layout="@layout/row_feed_emoji_picker_emoji_item" />
+    <include android:id="@id/row_feed_emoji_picker_emoji_2" layout="@layout/row_feed_emoji_picker_emoji_item" />
+    <ImageView android:layout_width="@dimen/like_or_x_button_size" android:layout_height="@dimen/like_or_x_button_size" android:layout_marginLeft="@dimen/row_feed_inline_emoji_picker_item_left_margin" android:layout_marginRight="@dimen/like_or_x_button_margin" android:src="@drawable/instagram_circle_add_outline_24" android:tint="@color/grey_3" android:layout_marginStart="@dimen/row_feed_inline_emoji_picker_item_left_margin" android:layout_marginEnd="@dimen/like_or_x_button_margin" />
+</LinearLayout>

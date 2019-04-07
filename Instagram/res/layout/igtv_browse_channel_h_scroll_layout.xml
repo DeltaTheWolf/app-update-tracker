@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium_not_scaled" android:textStyle="bold" android:textColor="@color/grey_9" android:layout_gravity="start" android:id="@id/igtv_tray_title" android:paddingLeft="12.0dip" android:paddingTop="32.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/items_loading_shimmer" android:paddingLeft="6.0dip" android:layout="@layout/igtv_browse_channel_loading_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.instagram.common.ui.widget.recyclerview.RefreshableRecyclerViewLayout android:id="@id/igtv_feed_channel_tray" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

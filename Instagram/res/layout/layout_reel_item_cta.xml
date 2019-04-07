@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:id="@id/cta_text_container" android:paddingTop="@dimen/cta_toolbar_displacement" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/cta_chevron" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cta_bottom_margin" android:src="@drawable/viewer_swipeup" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/cta_chevron_fill" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cta_fill_chevron_margin" android:src="@drawable/viewer_swipeup_fill" />
+    <TextView android:textSize="@dimen/font_medium" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/cta_text" android:layout_width="wrap_content" android:layout_height="@dimen/button_width" android:drawablePadding="4.0dip" style="@style/ShadowTextViewStyle" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/context_description_viewstub" android:layout="@layout/reel_cta_context_layout" android:layout_width="wrap_content" android:layout_height="@dimen/button_width" />
+</FrameLayout>

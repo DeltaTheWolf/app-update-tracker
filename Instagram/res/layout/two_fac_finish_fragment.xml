@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:gravity="center" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/twofac_on_gglyph" style="@style/TwoFacImageStyle" />
+            <TextView android:id="@id/content_title" style="@style/TwoFacTitleStyle" />
+            <TextView android:id="@id/content_body" style="@style/TwoFacParagraphStyle" />
+            <TextView android:id="@id/learn_more_link" android:text="@string/two_fac_learn_more" style="@style/TwoFacLinkStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/done_button" android:text="@string/two_fac_done_button" style="@style/StickyButtonStyle" />
+</LinearLayout>

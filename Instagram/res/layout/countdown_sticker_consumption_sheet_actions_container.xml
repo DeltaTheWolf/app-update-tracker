@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/countdown_sticker_consumption_sheet_actions_vertical_margin" android:layout_marginBottom="@dimen/countdown_sticker_consumption_sheet_actions_vertical_margin" android:baselineAligned="false">
+        <include android:id="@id/countdown_consumption_sheet_follow_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/bottomsheet_action_button" />
+        <include android:id="@id/countdown_consumption_sheet_reshare_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/bottomsheet_action_button" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/countdown_sticker_consumption_sheet_subtitle_text_size" android:textColor="@color/countdown_sticker_consumption_sheet_subtitle_color" android:ellipsize="end" android:gravity="center" android:id="@id/countdown_consumption_sheet_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/countdown_sticker_consumption_sheet_footer_bottom_margin" android:maxLines="2" />
+</merge>

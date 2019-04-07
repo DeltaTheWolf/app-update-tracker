@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/iglive_reactions_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_iglive_reactions_container" />
+    <include layout="@layout/layout_iglive_video_reactions_container" />
+    <include layout="@layout/layout_iglive_avatar_likes_container" />
+    <View android:id="@id/dismiss_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/button_width" />
+    <ViewStub android:id="@id/wave_reaction_overlay_stub" android:layout="@layout/layout_iglive_viewer_wave_reaction_overlay" android:inflatedId="@id/wave_reaction_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

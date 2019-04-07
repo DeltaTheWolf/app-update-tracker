@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/business_conversion_stepper_header" />
+    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" app:layout_constraintBottom_toTopOf="@id/navigation_bar" app:layout_constraintTop_toBottomOf="@id/stepper_header" app:layout_constraintVertical_weight="1.0">
+        <android.support.design.widget.AppBarLayout android:id="@id/app_bar" android:background="@color/white" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/header" android:paddingLeft="@dimen/row_padding_large" android:paddingTop="@dimen/title_card_vertical_padding" android:paddingRight="@dimen/row_padding_large" android:paddingBottom="@dimen/title_card_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll" layout="@layout/business_title_card_bigger_title" />
+            <include android:id="@id/search" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/business_category_search_view" />
+            <include android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" layout="@layout/row_divider" />
+            <com.instagram.common.ui.text.TitleTextView android:textSize="16.0sp" android:textColor="@color/grey_9" android:gravity="center" android:id="@id/suggested_category_header" android:background="@color/white" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/suggested_categories" app:capitalize="false" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior" />
+        <include android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" layout="@layout/layout_listview" />
+    </android.support.design.widget.CoordinatorLayout>
+    <com.instagram.business.ui.BusinessNavBar android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:primaryText="@string/import_0_post_label" app:showSecondaryButton="false" />
+</android.support.constraint.ConstraintLayout>

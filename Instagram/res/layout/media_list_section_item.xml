@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/horizontal_list_thumbnail_size" android:layout_height="@dimen/horizontal_list_thumbnail_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.imagebutton.IgImageButton android:id="@id/media" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="start|bottom|center" android:id="@id/attribution" android:paddingLeft="@dimen/media_list_section_attribution_margin_horizontal" android:paddingRight="@dimen/media_list_section_attribution_margin_horizontal" android:paddingBottom="@dimen/media_list_section_attribution_margin_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="@color/black_50_transparent" android:shadowRadius="@dimen/media_list_section_attribution_shadow_radius" />
+</FrameLayout>

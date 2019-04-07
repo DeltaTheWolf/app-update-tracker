@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/row_divider" />
+    <FrameLayout android:id="@id/primary_button_container" android:background="@drawable/button_blue_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginTop="@dimen/row_padding_medium" android:layout_marginRight="@dimen/row_padding" android:layout_marginBottom="@dimen/row_padding_medium" android:minHeight="@dimen/button_height">
+        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/action_button_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/button_height" app:capitalize="false" />
+        <com.instagram.ui.widget.spinner.RefreshSpinner android:layout_gravity="center" android:id="@id/action_button_loading_indicator" android:visibility="gone" android:layout_width="@dimen/promote_error_action_button_loading_spinner_size" android:layout_height="@dimen/promote_error_action_button_loading_spinner_size" android:color="@color/white" />
+    </FrameLayout>
+    <TextView android:textColor="?textColorSecondary" android:gravity="center" android:autoLink="web" android:id="@id/promote_error_legal_info_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/row_padding_medium" />
+</LinearLayout>

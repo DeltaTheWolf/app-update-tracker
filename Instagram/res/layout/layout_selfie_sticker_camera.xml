@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.widget.textureview.MaskingTextureView android:id="@id/selfie_sticker_camera_view" android:layout_width="@dimen/asset_picker_selfie_sticker_size" android:layout_height="@dimen/asset_picker_selfie_sticker_size" />
+    <com.instagram.ui.widget.shutterbutton.ShutterButton android:layout_gravity="center_horizontal" android:id="@id/selfie_sticker_camera_shutter_button" android:layout_width="@dimen/selfie_camera_shutter_button_size" android:layout_height="@dimen/selfie_camera_shutter_button_size" android:layout_marginTop="10.0dip" app:innerCircleColour="@android:color/white" app:innerCircleInset="8.0dip" app:outerCircleColour="@color/white_30_transparent" app:progressCircleStrokeWidth="2.5dip" />
+</LinearLayout>

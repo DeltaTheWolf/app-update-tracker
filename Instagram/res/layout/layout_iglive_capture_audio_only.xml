@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="start|center|top" android:orientation="vertical" android:id="@id/iglive_capture_prepare" android:background="@color/black_65_transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:textColor="@color/white" android:id="@id/audio_only_off_button" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="@dimen/row_height_small" android:src="@drawable/microphone_on" android:hapticFeedbackEnabled="true" android:contentDescription="@string/audio_only" />
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:paddingLeft="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/audio_only_label" android:paddingStart="@dimen/row_text_padding" style="@style/OverlayTextStyle" />
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/megaphone_frame" android:background="@color/grey_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/megaphone_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/v3_horizontal_margin" android:layout_marginTop="@dimen/v3_vertical_margin" android:layout_marginRight="@dimen/v3_horizontal_margin">
+        <com.instagram.common.ui.text.TitleTextView android:gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/v3_title_bottom_margin" style="@style/Megaphone.TextAppearance.Title" />
+        <TextView android:gravity="center_horizontal" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Megaphone.TextAppearance.Body" />
+        <ViewStub android:id="@id/inline_edit_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/inline_editing_margin_top" />
+        <FrameLayout android:id="@id/button_placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/v3_button_top_margin" />
+    </LinearLayout>
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center|top" android:id="@id/dismiss_button" android:padding="@dimen/v3_close_button_inner_padding" android:layout_width="@dimen/v3_close_button_size" android:layout_height="@dimen/v3_close_button_size" android:src="@drawable/instagram_x_outline_24" android:contentDescription="@string/dismiss" />
+    <include layout="@layout/row_divider" />
+</FrameLayout>

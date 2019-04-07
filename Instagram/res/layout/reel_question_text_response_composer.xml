@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/question_response_composer_cancel_button_text_size" android:textStyle="bold" android:textColor="@color/question_response_composer_cancel_button_text" android:layout_gravity="end|center|top" android:id="@id/cancel_button" android:padding="@dimen/question_response_composer_cancel_button_padding" android:layout_width="wrap_content" android:layout_height="@dimen/button_width" android:text="@string/cancel" android:shadowColor="@color/question_response_composer_text_shadow" android:shadowRadius="@dimen/question_response_composer_text_shadow_radius" />
+    <FrameLayout android:id="@id/question_sticker" style="@style/InteractiveSticker">
+        <LinearLayout android:id="@id/question_sticker_card" style="@style/InteractiveStickerCard">
+            <TextView android:textSize="@dimen/question_sticker_question_text_size" android:gravity="center_horizontal" android:id="@id/question_sticker_question" style="@style/InteractiveStickerTitle" />
+            <FrameLayout android:id="@id/question_sticker_answer_card" style="@style/QuestionStickerAnswerCard">
+                <EditText android:id="@id/question_sticker_answer" android:hint="@string/question_sticker_answer_hint_text" style="@style/QuestionStickerAnswer" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/question_response_composer_send_button_text_size" android:textStyle="bold" android:textColor="@color/question_response_composer_colored_send_button_text" android:gravity="center" android:id="@id/question_sticker_send_button" android:background="@drawable/question_response_composer_send_button_background_colored" android:padding="@dimen/question_response_composer_send_button_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/send" />
+        </LinearLayout>
+        <com.instagram.reels.interactive.view.AvatarView android:id="@id/question_sticker_avatar" style="@style/InteractiveStickerAvatar" />
+    </FrameLayout>
+</FrameLayout>

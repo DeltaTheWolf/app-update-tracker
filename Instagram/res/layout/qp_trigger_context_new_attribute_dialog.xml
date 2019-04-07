@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:id="@id/attribute_key_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/dev_qp_attribute_key_hint" android:inputType="textNoSuggestions" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <EditText android:id="@id/attribute_value_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_padding_large" android:hint="@string/dev_qp_attribute_value_hint" android:inputType="textNoSuggestions" app:layout_constraintEnd_toEndOf="@id/attribute_key_input" app:layout_constraintStart_toStartOf="@id/attribute_key_input" app:layout_constraintTop_toBottomOf="@id/attribute_key_input" />
+</android.support.constraint.ConstraintLayout>

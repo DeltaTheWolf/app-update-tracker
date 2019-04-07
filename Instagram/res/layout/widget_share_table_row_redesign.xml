@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_table_button_container_redesign" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium_xlarge" android:gravity="start|center" android:id="@id/share_table_button" android:layout_width="wrap_content" android:layout_height="@dimen/row_height_small" />
+    <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/row_text" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textAlignment="viewEnd" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding" style="?bodyDetail" />
+    <com.instagram.ui.widget.switchbutton.IgSwitch android:layout_gravity="center_vertical" android:id="@id/share_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/account_details_scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewStub android:id="@id/viewer_layout" android:layout="@layout/account_details_viewer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/account_details_horizontal_margin" android:layout_marginRight="@dimen/account_details_horizontal_margin" />
+                <ViewStub android:id="@id/owner_layout" android:layout="@layout/account_details_owner_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </ScrollView>
+        <com.instagram.iig.components.bottombutton.IgBottomButtonLayout android:layout_gravity="bottom" android:id="@id/acknowledge_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.instagram.ui.widget.spinner.SpinnerImageView android:layout_gravity="center" android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/spinner_large" />
+</FrameLayout>

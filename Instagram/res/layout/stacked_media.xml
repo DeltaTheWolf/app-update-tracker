@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.IgImageView android:layout_gravity="end" android:id="@id/media_back" android:layout_width="@dimen/media_back_width" android:layout_height="@dimen/media_back_height" android:layout_marginLeft="@dimen/media_back_left_margin" android:layout_marginTop="@dimen/media_back_top_bottom_margin" android:layout_marginBottom="@dimen/media_back_top_bottom_margin" android:scaleType="centerCrop" />
+    <FrameLayout android:gravity="center" android:id="@id/media_front_container" android:background="@color/white" android:layout_width="@dimen/media_front_width" android:layout_height="@dimen/media_front_height" android:layout_marginRight="@dimen/media_front_right_margin">
+        <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/media_front" android:layout_width="@dimen/media_front_media_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/media_front_media_right_margin" android:scaleType="centerCrop" />
+    </FrameLayout>
+</merge>

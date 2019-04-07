@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.browser.lite.views.BrowserLiteGestureDelegateView android:orientation="vertical" android:id="@id/browser_gesture_delegate_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.browser.lite.views.BrowserLiteWrapperView android:orientation="vertical" android:id="@id/browser_wrapper_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/browser_background_protection" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/browser_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/browser_chrome_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ViewStub android:id="@id/ix_progress_bar_stub" android:layout="@layout/browser_lite_progress_bar_ix" android:inflatedId="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/instant_experience_chrome_height" />
+                    <ViewStub android:id="@id/default_le_browser_chrome_stub" android:layout="@layout/default_le_browser_chrome" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/default_browser_chrome_stub" android:layout="@layout/default_browser_chrome" android:layout_width="fill_parent" android:layout_height="@dimen/browser_chrome_height" />
+                    <ViewStub android:id="@id/messenger_platform_chrome_stub" android:layout="@layout/messenger_platform_chrome" android:layout_width="fill_parent" android:layout_height="@dimen/browser_chrome_height" />
+                    <ViewStub android:id="@id/watch_and_browse_chrome_stub" android:layout="@layout/watch_and_browse_chrome" android:layout_width="fill_parent" android:layout_height="@dimen/watch_and_browse_chrome_height" />
+                    <ViewStub android:id="@id/ldp_chrome_stub" android:layout_width="fill_parent" android:layout_height="@dimen/browser_chrome_height" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/webview_frame_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ViewStub android:id="@id/new_offer_stub_lite_browser" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <FrameLayout android:id="@id/webview_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <ViewStub android:id="@id/offer_coupon_code_stub_lite_browser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip" />
+                        <ViewStub android:layout_gravity="bottom" android:id="@id/ldp_bottom_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ViewStub android:id="@id/browser_lite_error_screen_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ViewStub android:layout_gravity="bottom" android:id="@id/messenger_subscription_banner_stub" android:inflatedId="@id/messenger_subscription_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:layout_gravity="bottom" android:id="@id/quote_bar_stub" android:inflatedId="@id/quote_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/browser_lite_debug_overlay_stub" android:layout="@layout/browser_lite_debug_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:layout_gravity="bottom" android:id="@id/visual_prod_hist_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/chrome_nav_drawer_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ViewStub android:id="@id/browser_lite_header_loading_screen_stub" android:layout="@layout/browser_lite_header_loading_screen_stub" android:inflatedId="@id/browser_lite_header_loading_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ViewStub android:id="@id/progress_bar_stub" android:layout="@layout/browser_lite_progress_bar" android:inflatedId="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/browser_progressbar_height" />
+                </FrameLayout>
+                <Button android:textSize="@dimen/view_ad_disclaimer_button_text_size" android:textColor="@color/browser_secondary_text" android:id="@id/view_ad_disclaimer_button" android:background="@drawable/view_ad_disclaimer_button_bg" android:paddingTop="@dimen/view_ad_disclaimer_button_standard_spacing" android:paddingBottom="@dimen/view_ad_disclaimer_button_standard_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:layout_gravity="bottom" android:id="@id/shop_and_browse_placeholder_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:layout_gravity="bottom" android:id="@id/event_consideration_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.facebook.browser.lite.views.BrowserLiteWrapperView>
+    </com.facebook.browser.lite.views.BrowserLiteGestureDelegateView>
+    <FrameLayout android:id="@id/frame_full_screen_video" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/ldp_loading_screen_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/shop_and_browse_product_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/instant_experiences_save_autofill_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/instant_experiences_autofill_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

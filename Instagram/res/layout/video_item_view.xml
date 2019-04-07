@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.discovery.ui.FixedAspectRatioVideoLayout android:id="@id/layout_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/video_item_image_preview_layout" />
+    <com.instagram.ui.widget.imageview.BlinkingImageView android:id="@id/playback_icon" android:background="@drawable/channel_play_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/video_item_overlay_top_aligned_icon_padding" android:layout_marginTop="@dimen/video_item_overlay_top_aligned_icon_padding" android:src="@drawable/channel_play" />
+    <include layout="@layout/destination_overlay" />
+</com.instagram.discovery.ui.FixedAspectRatioVideoLayout>

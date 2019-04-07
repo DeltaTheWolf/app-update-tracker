@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="?defaultActionBarBackground" android:layout_width="fill_parent" android:layout_height="@dimen/direct_action_bar_search_container_height">
+        <LinearLayout android:gravity="start|center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/direct_action_bar_search_bar" android:background="@drawable/direct_action_bar_search_background" android:paddingLeft="@dimen/direct_action_bar_search_bar_horizontal_padding" android:paddingRight="@dimen/direct_action_bar_search_bar_horizontal_padding" android:layout_width="fill_parent" android:layout_height="?actionBarHeight" android:layout_marginLeft="@dimen/direct_action_bar_search_bar_horizontal_margin" android:layout_marginRight="@dimen/direct_action_bar_search_bar_horizontal_margin">
+            <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/search_bar_glyph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/direct_action_bar_search_icon" app:active_alpha="170" app:normal="@color/grey_5" />
+            <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium_xlarge" android:textColor="@color/grey_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/direct_action_bar_search_bar_text_margin_start" android:text="@string/search" android:layout_marginStart="@dimen/direct_action_bar_search_bar_text_margin_start" app:capitalize="false" app:medium="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/view_switcher_shadow_height" android:layout_marginTop="@dimen/direct_action_bar_search_container_height" layout="@layout/view_switcher_shadow" />
+</FrameLayout>

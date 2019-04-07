@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/quiz_sticker" style="@style/QuizSticker">
+        <TextView android:id="@id/quiz_sticker_question" style="@style/QuizStickerQuestion" />
+        <LinearLayout android:id="@id/quiz_sticker_answer_list" app:layout_constraintTop_toBottomOf="@id/quiz_sticker_question" style="@style/QuizStickerAnswerList" />
+        <TextView android:textSize="@dimen/quiz_sticker_submit_answer_button_text_size" android:textStyle="bold" android:textColor="@color/quiz_sticker_response_composer_submit_answer_button_text" android:gravity="center" android:id="@id/quiz_sticker_send_button" android:background="@drawable/quiz_sticker_response_composer_submit_answer_button_background" android:padding="@dimen/quiz_sticker_submit_answer_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quiz_sticker_response_composer_submit_answer_button" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/quiz_sticker_answer_list" />
+    </android.support.constraint.ConstraintLayout>
+    <TextView android:textSize="@dimen/quiz_sticker_response_composer_privacy_nux_text_size" android:textColor="@color/quiz_sticker_response_composer_privacy_nux_text" android:gravity="center" android:id="@id/quiz_response_privacy_nux" android:paddingTop="8.0dip" android:layout_width="@dimen/quiz_sticker_width" android:layout_height="wrap_content" android:shadowColor="@color/quiz_sticker_response_composer_text_shadow" android:shadowRadius="@dimen/quiz_sticker_response_composer_text_shadow_radius" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/quiz_sticker"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</android.support.constraint.ConstraintLayout>

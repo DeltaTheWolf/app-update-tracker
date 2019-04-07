@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:textColor="@android:color/white" android:id="@id/canvas_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/canvas_button_padding" android:layout_marginRight="@dimen/canvas_button_padding" android:minHeight="@dimen/button_min_height">
+        <com.instagram.canvas.view.widget.RichTextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/canvas_button_text" android:paddingLeft="@dimen/canvas_button_text_padding" android:paddingRight="@dimen/canvas_button_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </FrameLayout>
+</FrameLayout>

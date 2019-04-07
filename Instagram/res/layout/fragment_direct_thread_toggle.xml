@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/thread_fragment_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/direct_thread_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarHeight">
+        <ViewStub android:id="@id/recipients_bar_stub" android:layout="@layout/direct_user_search_bar" android:inflatedId="@id/recipients_bar_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:id="@id/thread_toggle_child_fragment_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/row_permissions_choices" app:layout_constraintTop_toBottomOf="@id/recipients_bar_stub" />
+        <ViewStub android:id="@id/row_permissions_choices" android:layout="@layout/direct_row_thread_pending_choices" android:inflatedId="@id/row_permissions_choices" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+        <FrameLayout android:id="@id/message_composer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+            <ViewStub android:layout_gravity="bottom" android:id="@id/direct_composer_style_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/direct_composer_inline_gallery" />
+            <ViewStub android:layout_gravity="bottom" android:id="@id/direct_composer_voice_recording_stub" android:layout="@layout/direct_voice_messaging_composer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/row_thread_gifs_drawer_stub" android:layout="@layout/direct_thread_gifs_drawer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+    <include android:id="@id/direct_thread_toggle_action_bar" layout="@layout/action_bar" />
+    <com.instagram.direct.gallery.DirectGalleryView android:layout_gravity="bottom" android:id="@id/direct_inline_gallery" android:background="@android:color/black" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:columnCount="3" app:useSquareLayout="true" />
+    <ViewStub android:id="@id/direct_smoke_overlay_view_stub" android:layout="@layout/direct_smoke_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/direct_composer_voice_lock_stub" android:layout="@layout/direct_voice_messaging_lock_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

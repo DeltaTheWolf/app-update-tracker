@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_10_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/filter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_large" android:textStyle="bold" android:textColor="?textColorPrimary" android:gravity="center" android:layout_gravity="start" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="44.0dip" android:text="@string/filter_by" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" app:capitalize="false" />
+            <com.instagram.common.ui.text.TitleTextView android:textColor="@color/blue_5" android:gravity="center" android:layout_gravity="end" android:id="@id/apply_button" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="44.0dip" android:text="@string/apply" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+        </FrameLayout>
+        <include layout="@layout/row_divider" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.instagram.ui.widget.wheelview.WheelView android:id="@id/type" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:selectedTextColor="@color/blue_5" app:selectedTextSize="@dimen/font_medium_xlarge" app:selectorColor="@color/white" app:textPadding="8.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <View android:id="@id/space_holder_left" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.instagram.ui.widget.wheelview.WheelView android:id="@id/metric" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:selectedTextColor="@color/blue_5" app:selectedTextSize="@dimen/font_medium_xlarge" app:selectorColor="@color/white" app:textPadding="8.0dip" />
+            <View android:id="@id/space_holder_right" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.instagram.ui.widget.wheelview.WheelView android:id="@id/time" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:selectedTextColor="@color/blue_5" app:selectedTextSize="@dimen/font_medium_xlarge" app:selectorColor="@color/white" app:textPadding="8.0dip" />
+        </LinearLayout>
+        <include layout="@layout/row_divider" />
+        <com.instagram.business.insights.ui.InsightsEducationView android:id="@id/business_education_unit_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

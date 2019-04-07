@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="220.0dip">
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/suggested_highlight_end_card_cover_image" android:padding="4.0dip" android:scaleType="centerCrop" app:strokeColor="@color/grey_2" app:strokeWidth="1.0dip" style="@style/Avatar.ExtraLarge" />
+        <TextView android:textSize="@dimen/font_xlarge" android:textColor="@color/white" android:id="@id/suggested_highlight_end_card_title" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_3" android:id="@id/suggested_highlight_end_card_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/reel_viewer_suggested_highlight_end_card_subtitle" />
+        <TextView android:id="@id/suggested_highlight_end_card_publish_button" android:layout_width="@dimen/reel_viewer_suggested_highlight_button_width" android:layout_height="@dimen/reel_viewer_suggested_highlight_button_height" android:text="@string/reel_viewer_suggested_highlight_end_card_publish_button" style="@style/ReelViewerSuggestedHighlightFooterButton" />
+        <TextView android:id="@id/suggested_highlight_end_card_remove_suggestion_button" android:background="@null" android:layout_width="@dimen/reel_viewer_suggested_highlight_button_width" android:layout_height="@dimen/reel_viewer_suggested_highlight_button_height" android:text="@string/reel_viewer_suggested_highlight_end_card_remove_button" style="@style/ReelViewerSuggestedHighlightFooterButtonClear" />
+    </LinearLayout>
+</FrameLayout>

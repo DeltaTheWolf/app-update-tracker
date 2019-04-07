@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/direct_recipient_picker_action_bar" layout="@layout/action_bar" />
+    <TextView android:paddingLeft="@dimen/direct_recipient_picker_side_margins" android:paddingRight="@dimen/direct_recipient_picker_side_margins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direct_new_chat_to_title" android:paddingStart="@dimen/direct_recipient_picker_side_margins" android:paddingEnd="@dimen/direct_recipient_picker_side_margins" style="@style/DirectRecipientPickerHeader" />
+    <com.instagram.direct.ui.NonFocusingHorizontalScrollView android:layout_gravity="center_vertical" android:id="@id/recipients_scroll_container" android:paddingLeft="@dimen/direct_recipient_picker_side_margins" android:paddingRight="@dimen/direct_recipient_picker_side_margins" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:paddingStart="@dimen/direct_recipient_picker_side_margins" android:paddingEnd="@dimen/direct_recipient_picker_side_margins">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/recipients_container" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <View android:id="@id/search_tap_padding" android:layout_width="48.0dip" android:layout_height="0.0dip" />
+            <com.instagram.ui.widget.searchedittext.SearchWithDeleteEditText android:id="@id/search_edit_text" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="50.0sp" android:hint="@string/direct_search_edit_text_hint" android:freezesText="true" android:inputType="textAutoComplete" android:imeOptions="actionSearch" />
+        </LinearLayout>
+    </com.instagram.direct.ui.NonFocusingHorizontalScrollView>
+    <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recipients_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

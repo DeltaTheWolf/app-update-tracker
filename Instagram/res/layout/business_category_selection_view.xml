@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:id="@id/page_category" android:text="@string/choose_page_category" style="@style/FieldWithGlyph.WithMargin" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" layout="@layout/row_divider" />
+    <TextView android:textStyle="bold" android:id="@id/page_subcategory" android:visibility="gone" android:text="@string/choose_page_subcategory" style="@style/FieldWithGlyph.WithMargin" />
+    <include android:id="@id/subcategory_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" layout="@layout/row_divider" />
+    <HorizontalScrollView android:id="@id/horizontal_scroll_view" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:visibility="gone" android:scrollbars="none" android:fadingEdgeLength="@dimen/category_scroll_fade" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_small" android:overScrollMode="never" android:requiresFadingEdge="horizontal">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/suggested_categories_container" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+    <include android:id="@id/suggest_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_text_padding" android:layout_marginRight="@dimen/row_text_padding" layout="@layout/row_divider" />
+</LinearLayout>

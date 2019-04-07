@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_container" android:background="@drawable/bg_simple_row" android:layout_width="fill_parent" android:layout_height="@dimen/row_height_medium_redesign"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_user_row" />
+    <com.instagram.user.follow.UpdatableButton android:layout_gravity="center_vertical" android:id="@id/updatable_button" android:paddingLeft="@dimen/selectable_user_action_button_horizontal_padding" android:paddingTop="@dimen/selectable_user_action_button_vertical_padding" android:paddingRight="@dimen/selectable_user_action_button_horizontal_padding" android:paddingBottom="@dimen/selectable_user_action_button_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" style="?updatableButtonWithDisabledStyle" />
+</LinearLayout>

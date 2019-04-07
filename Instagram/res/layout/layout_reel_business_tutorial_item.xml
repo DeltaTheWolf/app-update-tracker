@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.reels.viewer.ReelViewGroup android:id="@id/reel_view_group" android:background="@color/grey_8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:id="@id/reel_viewer_media_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceFullWidth="true">
+            <com.instagram.ui.widget.textureview.ScalingTextureView android:id="@id/reel_viewer_texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.instagram.feed.widget.IgProgressImageView android:id="@id/reel_viewer_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:perfTrackingCategory="reel_media" app:retryType="icon" />
+        </com.instagram.common.ui.widget.framelayout.MediaFrameLayout>
+        <com.instagram.ui.widget.segmentedprogressbar.SegmentedProgressBar android:layout_gravity="top" android:id="@id/reel_viewer_progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/segmented_progress_bar_default_height" android:layout_marginTop="@dimen/segmented_progress_bar_default_margin_top" />
+    </com.instagram.reels.viewer.ReelViewGroup>
+</FrameLayout>

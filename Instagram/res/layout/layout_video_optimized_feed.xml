@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_listview_parent_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.ui.listview.StickyHeaderListView android:id="@id/sticky_header_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_video_optimized_feed_list_view" />
+    </com.instagram.ui.listview.StickyHeaderListView>
+    <ViewStub android:id="@id/save_popout_image_stub" android:layout="@layout/save_popout_image" android:layout_width="@dimen/save_popout_size" android:layout_height="@dimen/save_popout_size" />
+    <include layout="@layout/layout_listview_progressbar" />
+    <com.instagram.ui.emptystaterow.EmptyStateView android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" app:errorImage="@drawable/loadmore_icon_refresh_compound" />
+    <ViewStub android:id="@id/blocked_profile_stub" android:layout="@layout/blocked_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center|top" android:id="@id/static_action_bar_stub" android:layout="@layout/static_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/profile_slideout_menu" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?tabBarHeight" layout="@layout/layout_listview" />
+    <View android:layout_gravity="bottom" android:id="@id/menu_settings_row_divider" android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="?tabBarHeight" />
+    <TextView android:textSize="@dimen/font_medium_xlarge" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/menu_settings_row" android:background="@drawable/menu_row_pressed_state" android:paddingLeft="@dimen/menu_item_margin" android:paddingRight="@dimen/menu_item_margin" android:layout_width="fill_parent" android:layout_height="?tabBarHeight" android:text="@string/settings" android:drawableLeft="@drawable/instagram_settings_outline_24" android:drawablePadding="@dimen/menu_item_text_margin" android:paddingStart="@dimen/menu_item_margin" android:paddingEnd="@dimen/menu_item_margin" />
+</FrameLayout>

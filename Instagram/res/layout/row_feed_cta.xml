@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/row_feed_cta" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/cta_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/row_feed_cta_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/cta_row_height" />
+    <TextView android:textColor="@color/blue_5" android:gravity="center_vertical" android:layout_gravity="start|bottom|center" android:id="@id/cta_text" android:layout_width="wrap_content" android:layout_height="@dimen/cta_row_text_height" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" />
+    <ViewStub android:layout_gravity="end" android:id="@id/cta_metadata_stub" android:layout="@layout/row_feed_ad_cta_metadata" android:layout_width="wrap_content" android:layout_height="@dimen/cta_row_metadata_height" />
+    <ViewStub android:layout_gravity="end" android:id="@id/cta_chevron_stub" android:layout="@layout/row_feed_ad_cta_chevron" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom" android:id="@id/divider_view" android:background="?rowDividerColor" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" />
+</FrameLayout>

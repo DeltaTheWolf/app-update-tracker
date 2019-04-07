@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/list_container" android:background="@color/white" android:paddingBottom="?tabBarHeight" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/thread_list_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:layout_gravity="bottom" android:id="@id/direct_inbox_footer_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/view_switcher_shadow_height" layout="@layout/inverse_shadow" />
+        <include android:visibility="gone" layout="@layout/action_bar" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/direct_inbox_footer" android:background="@drawable/bg_selectable_light_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?tabBarHeight">
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:id="@id/direct_inbox_footer_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/instagram_add_outline_24" app:normal="?directPaletteColor5" />
+        <TextView android:textStyle="bold" android:textColor="?directPaletteColor5" android:ellipsize="end" android:id="@id/direct_inbox_footer_label" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direct_new_message" android:maxLines="1" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" />
+    </LinearLayout>
+</com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout>

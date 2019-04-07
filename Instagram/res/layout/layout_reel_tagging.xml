@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:paddingLeft="1.5dip" android:paddingRight="1.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="1.5dip" android:paddingEnd="1.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/reel_tagging_profile_view" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/reel_tagging_name_view" android:layout_width="84.0dip" android:layout_height="30.0dip" android:maxLines="1" style="@style/ShadowTextViewStyle" />
+</LinearLayout>

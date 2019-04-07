@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.business.instantexperiences.ui.InstantExperiencesBrowserChrome android:background="@drawable/instant_experiences_browser_header" android:layout_width="fill_parent" android:layout_height="@dimen/instant_experiences_browser_chrome_expanded_height" android:adjustViewBounds="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fb="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <FrameLayout android:id="@id/instant_experiences_back_button_container" android:layout_width="@dimen/instant_experiences_browser_chrome_expanded_height" android:layout_height="@dimen/instant_experiences_browser_chrome_expanded_height" android:layout_weight="0.0">
+            <ImageView android:layout_gravity="center" android:id="@id/instant_experiences_back_button" android:layout_width="@dimen/instant_experiences_browser_chrome_button_expanded_width" android:layout_height="@dimen/instant_experiences_browser_chrome_button_expanded_width" android:src="@drawable/instagram_x_outline_24" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/browser_chrome_title_text_container" android:layout_width="fill_parent" android:layout_height="@dimen/instant_experiences_browser_chrome_expanded_height" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/instant_experiences_chrome_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/grey_5" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/instant_experiences_chrome_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/instant_experiences_chrome_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instantexperiences_browser_loading" android:maxLines="1" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/instant_experiences_overflow_menu_button_container" android:layout_width="@dimen/instant_experiences_browser_chrome_expanded_height" android:layout_height="@dimen/instant_experiences_browser_chrome_expanded_height" android:layout_weight="0.0">
+            <ImageView android:layout_gravity="center" android:id="@id/instant_experiences_overflow_menu" android:layout_width="@dimen/instant_experiences_browser_chrome_button_expanded_width" android:layout_height="@dimen/instant_experiences_browser_chrome_button_expanded_width" android:src="@drawable/instagram_more_vertical_outline_24" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        </FrameLayout>
+    </LinearLayout>
+</com.instagram.business.instantexperiences.ui.InstantExperiencesBrowserChrome>

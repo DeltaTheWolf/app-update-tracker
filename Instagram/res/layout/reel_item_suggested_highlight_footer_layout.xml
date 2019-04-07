@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/reel_viewer_shadow_bottom" android:paddingLeft="@dimen/reel_viewer_suggested_highlight_button_padding" android:paddingTop="30.0dip" android:paddingRight="@dimen/reel_viewer_suggested_highlight_button_padding" android:paddingBottom="@dimen/reel_viewer_suggested_highlight_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/reel_viewer_edit_suggested_highlights_button" android:layout_width="0.0dip" android:layout_height="@dimen/reel_viewer_suggested_highlight_button_height" android:text="@string/reel_viewer_edit_suggested_highlights_button_text" android:layout_weight="1.0" style="@style/ReelViewerSuggestedHighlightFooterButtonClear" />
+    <TextView android:id="@id/reel_viewer_publish_suggested_highlights_button" android:layout_width="0.0dip" android:layout_height="@dimen/reel_viewer_suggested_highlight_button_height" android:text="@string/reel_viewer_suggested_highlight_end_card_publish_button" android:layout_weight="1.0" style="@style/ReelViewerSuggestedHighlightFooterButton" />
+</LinearLayout>

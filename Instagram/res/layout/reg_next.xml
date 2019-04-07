@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/button_progress" android:visibility="invisible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:indeterminate="true" />
+    <com.instagram.common.ui.text.TitleTextView android:textStyle="bold" android:textColor="?nuxActionButtonTextColor" android:gravity="center" android:id="@id/button_text" android:layout_width="fill_parent" android:layout_height="fill_parent" app:capitalize="false" />
+</merge>

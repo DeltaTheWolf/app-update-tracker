@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/results_height" android:layout_marginLeft="@dimen/results_margin_horizontal" android:layout_marginRight="@dimen/results_margin_horizontal">
+        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/label_font_size" android:textColor="@color/blue_5" android:gravity="start|center" android:id="@id/row_newsfeed_winning_poll_percentage" android:layout_width="@dimen/results_percentage_width" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/row_newsfeed_winning_poll_background" android:background="@drawable/poll_bar_winner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/label_font_size" android:textColor="@color/grey_9" android:gravity="start|center" android:id="@id/row_newsfeed_winning_poll_option" android:paddingLeft="@dimen/results_padding_horizontal" android:paddingRight="@dimen/results_padding_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/results_height" android:layout_marginLeft="@dimen/results_margin_horizontal" android:layout_marginTop="@dimen/results_margin_vertical" android:layout_marginRight="@dimen/results_margin_horizontal">
+        <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/label_font_size" android:textColor="@color/grey_5" android:gravity="start|center" android:id="@id/row_newsfeed_losing_poll_percentage" android:layout_width="@dimen/results_percentage_width" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.instagram.common.ui.widget.imageview.IgImageView android:id="@id/row_newsfeed_losing_poll_background" android:background="@drawable/poll_bar_loser" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/label_font_size" android:textColor="@color/grey_9" android:gravity="start|center" android:id="@id/row_newsfeed_losing_poll_option" android:paddingLeft="@dimen/results_padding_horizontal" android:paddingRight="@dimen/results_padding_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

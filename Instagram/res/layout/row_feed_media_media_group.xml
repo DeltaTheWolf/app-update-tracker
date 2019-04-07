@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.widget.zoomcontainer.SimpleZoomableViewContainer android:id="@id/zoomable_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:id="@id/media_group" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:forceFullWidth="true">
+        <com.instagram.feed.widget.IgProgressImageView android:id="@id/row_feed_photo_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:perfTrackingCategory="feed_photo" />
+        <include layout="@layout/row_feed_tags" />
+        <include layout="@layout/row_feed_video_tags" />
+        <ViewStub android:layout_gravity="bottom" android:id="@id/igtv_feed_preview_stub" android:layout="@layout/igtv_feed_preview_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.instagram.ui.mediaactions.LikeActionView android:layout_gravity="center" android:id="@id/like_heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_like_big" android:scaleX="0.0" android:scaleY="0.0" />
+        <ViewStub android:layout_gravity="start|bottom|center" android:id="@id/media_indicator_view_stub" android:layout="@layout/view_media_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_content_padding" android:layout_marginRight="@dimen/feed_content_padding" android:layout_marginBottom="@dimen/feed_content_padding" android:layout_marginStart="@dimen/feed_content_padding" android:layout_marginEnd="@dimen/feed_content_padding" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/media_subtitle_view_stub" android:layout="@layout/view_media_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/subtitle_horizontal_margin" android:layout_marginRight="@dimen/subtitle_horizontal_margin" android:layout_marginBottom="@dimen/subtitle_margin_bottom" android:layout_marginStart="@dimen/subtitle_horizontal_margin" android:layout_marginEnd="@dimen/subtitle_horizontal_margin" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/branded_content_violation_banner" android:layout="@layout/violation_banner" android:layout_width="fill_parent" android:layout_height="@dimen/violation_banner_row_height" />
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/save_to_collection_upsell_view_stub" android:layout="@layout/row_feed_cta" android:layout_width="fill_parent" android:layout_height="@dimen/cta_row_height" />
+        <com.instagram.ui.mediaactions.MediaActionsView android:id="@id/row_feed_media_actions" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/media_gating_view_stub" android:layout="@layout/row_feed_media_gating" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:layout_gravity="start|center|top" android:id="@id/watchandmore_launch_button_view_stub" android:clickable="true" android:layout="@layout/watchandmore_launch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/zero_rating_video_play_button_stub" android:layout="@layout/view_media_play_button" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.instagram.common.ui.widget.framelayout.MediaFrameLayout>
+</com.instagram.common.ui.widget.zoomcontainer.SimpleZoomableViewContainer>

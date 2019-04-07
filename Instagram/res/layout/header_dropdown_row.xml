@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?profileRowHeightMedium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/row_header_divider" />
+    <com.instagram.common.ui.text.TitleTextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:ellipsize="marquee" android:gravity="bottom" android:layout_gravity="start|center" android:id="@id/row_header_textview" android:paddingLeft="?profileSwitchAccountPadding" android:paddingRight="?profileSwitchAccountPadding" android:paddingBottom="@dimen/header_bottom_padding" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxLines="1" android:layout_weight="1.0" android:textAllCaps="true" android:paddingStart="?profileSwitchAccountPadding" android:paddingEnd="?profileSwitchAccountPadding" style="?profileSwitchAccountUserInfo" />
+</LinearLayout>

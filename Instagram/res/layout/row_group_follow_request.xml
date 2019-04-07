@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundDrawable" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="?activityRowHeight" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/vertical_separator_padding" android:paddingBottom="@dimen/vertical_separator_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.instagram.common.ui.widget.imageview.CircularImageView android:id="@id/row_user_imageview" android:contentDescription="@string/profile_picture" style="?activityAvatar" />
+            <TextView android:id="@id/group_follow_request_count" android:layout_marginLeft="?activityBadgeIconLargeMargin" android:layout_marginBottom="?activityBadgeIconSmallMargin" android:layout_marginStart="?activityBadgeIconLargeMargin" style="@style/NotificationBadge.Medium" />
+        </FrameLayout>
+        <com.instagram.ui.widget.stackedavatar.StackedAvatarView android:id="@id/row_user_stacked_avatar_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?activityPaddingSmall" android:contentDescription="@string/profile_picture" app:avatarSize="?activityStackedAvatar" />
+        <RelativeLayout android:layout_gravity="center" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding">
+            <com.instagram.common.ui.text.TitleTextView android:id="@id/group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_request_title" style="?activityBoldText" />
+            <TextView android:id="@id/group_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_request_subtitle_approve_ignore" android:layout_below="@id/group_title" style="?activityUserInfo" />
+        </RelativeLayout>
+        <TextView android:layout_gravity="center_vertical" android:id="@id/group_follow_request_count_redesign" android:visibility="gone" style="@style/NotificationBadge.Medium" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" style="?defaultDividerStyle" />
+</FrameLayout>

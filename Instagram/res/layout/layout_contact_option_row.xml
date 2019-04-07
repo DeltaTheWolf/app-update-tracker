@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/contact_sheet_row_top_bottom_padding" android:paddingBottom="@dimen/contact_sheet_row_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/profile_sheet_row_height" android:paddingStart="@dimen/profile_sheet_side_padding" android:paddingEnd="@dimen/profile_sheet_side_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/profile_sheet_title_text_size" android:textStyle="bold" android:textColor="?textColorPrimary" android:ellipsize="end" android:id="@id/contact_option_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="@dimen/profile_sheet_title_text_size" android:textColor="?textColorSecondary" android:ellipsize="end" android:id="@id/contact_option_sub_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

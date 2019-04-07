@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.ui.widget.inlineerror.InlineErrorMessageView android:orientation="vertical" android:id="@id/lead_ad_text_question_error_view" android:paddingBottom="@dimen/lead_ad_question_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_7" android:layout_gravity="center_vertical" android:id="@id/lead_ad_text_question_label" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:textAppearance="@style/Label" android:gravity="center_vertical" android:id="@id/lead_ad_question_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/lead_ad_text_question_edit_text_height" style="@style/EditTextStyle" />
+</com.instagram.ui.widget.inlineerror.InlineErrorMessageView>

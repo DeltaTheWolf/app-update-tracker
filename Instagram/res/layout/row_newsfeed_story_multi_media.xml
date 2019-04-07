@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundDrawable" android:paddingLeft="@dimen/row_padding" android:paddingRight="@dimen/row_padding" android:layout_width="fill_parent" android:layout_height="?activityRowHeight" android:minHeight="?activityRowHeight" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:paddingTop="@dimen/vertical_separator_padding" android:paddingBottom="?activityPadding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?activityPaddingSmall">
+                <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/row_newsfeed_user_imageview" android:contentDescription="@string/profile_picture" style="?activityAvatar" />
+                <include layout="@layout/row_newsfeed_story_single_avatar_story_ring" style="?activityAvatarReelRing" />
+                <com.instagram.reels.ui.badge.ReelBrandingBadgeView android:layout_gravity="end|bottom|center" android:id="@id/branding_badge" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="4.0dip" />
+            </FrameLayout>
+            <com.instagram.common.ui.text.TitleTextView android:gravity="start|center" android:id="@id/row_newsfeed_text" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:minHeight="@dimen/row_height_small" android:layout_weight="1.0" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" style="?activityUserDetails" />
+            <ViewStub android:layout_gravity="center_vertical" android:id="@id/row_newsfeed_hashtag_follow_button_small_stub" android:visibility="gone" android:layout="@layout/hashtag_follow_button_layout_in_news_feed" android:layout_width="wrap_content" android:layout_height="@dimen/follow_button_height" />
+        </LinearLayout>
+        <com.instagram.ui.widget.flowlayout.HorizontalFlowLayout android:id="@id/row_newsfeed_media_set" android:paddingBottom="@dimen/row_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?activityMultiMediaRowLeftMargin" android:layout_marginStart="?activityMultiMediaRowLeftMargin" />
+    </LinearLayout>
+    <include layout="@layout/row_divider" style="?defaultDividerStyle" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/consent_screen_margin_horizontal" android:layout_marginRight="@dimen/consent_screen_margin_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/title_text_size" android:gravity="start" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/policy_review_title_margin_top" android:layout_marginBottom="@dimen/content_title_margin_bottom" android:fontFamily="sans-serif-medium" />
+    <LinearLayout android:orientation="vertical" android:id="@id/paragraphs_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/terms_of_use_link" android:text="@string/terms_of_use_link" style="@style/GDPRLinkStyle" />
+    <TextView android:id="@id/terms_of_use_link_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tos_link_margin_top" android:layout_marginBottom="@dimen/tos_link_margin_bottom" />
+</LinearLayout>

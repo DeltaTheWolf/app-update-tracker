@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_places_container" android:background="@drawable/bg_simple_row" android:paddingLeft="?searchRowPadding" android:paddingRight="?searchRowPadding" android:layout_width="fill_parent" android:layout_height="?searchRowHeight" android:minHeight="?searchRowHeight" android:paddingStart="?searchRowPadding" android:paddingEnd="?searchRowPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/search_profile_image" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="?searchTextPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="?searchTextPadding">
+        <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_place_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?searchUserName" />
+        <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_place_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?searchUserInfo" />
+    </LinearLayout>
+    <ViewStub android:id="@id/dismiss_button_stub" android:layout="@layout/dismiss_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

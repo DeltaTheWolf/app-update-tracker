@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.widget.searchedittext.SearchEditText android:id="@id/action_bar_search_edit_text" android:layout_weight="1.0" app:allowTextSelection="true" app:quickBackExperimentParameter="is_disabled_in_action_bar" style="@style/SearchEditText.ActionBar.ClearInLayout" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageButton android:id="@id/action_bar_search_clear" android:background="@null" android:paddingRight="@dimen/search_text_padding_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/search_clear" android:contentDescription="@string/clear" />
+</LinearLayout>

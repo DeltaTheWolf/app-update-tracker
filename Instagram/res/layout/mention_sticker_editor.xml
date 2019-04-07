@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.ui.text.ConstrainedEditText android:textSize="@dimen/mention_sticker_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/mention_composer" android:background="@color/transparent" android:padding="@dimen/mention_sticker_padding" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:inputType="textAutoComplete|textMultiLine|textNoSuggestions" android:textCursorDrawable="@null" />
+    <include layout="@layout/mention_tagging_suggestions_container" />
+</FrameLayout>

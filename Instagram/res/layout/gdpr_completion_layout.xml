@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:layout_width="@dimen/completion_screen_icon_width" android:layout_height="@dimen/completion_screen_icon_height" android:layout_marginTop="@dimen/completion_screen_icon_margin_top" android:src="@drawable/circle_checked_big" app:normal="@color/black" />
+    <TextView android:id="@id/content_title" android:text="@string/completion_screen_title" android:fontFamily="sans-serif-medium" style="@style/GDPRTitleStyle" />
+    <TextView android:id="@id/content_body" android:text="@string/completion_screen_body" style="@style/GDPRBodyStyle" />
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:id="@id/row_divider" layout="@layout/row_divider" />
+    <com.instagram.ui.widget.progressbutton.ProgressButton android:id="@id/ok_button" android:text="@string/completion_screen_button_text" style="@style/GDPRButtonStyle" />
+</LinearLayout>

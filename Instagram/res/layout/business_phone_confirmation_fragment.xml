@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_xlarge_xxlarge" android:textColor="@color/grey_9" android:gravity="center" android:id="@id/field_title" android:paddingLeft="@dimen/business_sign_up_padding_medium" android:paddingRight="@dimen/business_sign_up_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/business_sign_up_margin_medium" android:layout_marginTop="@dimen/business_sign_up_margin_large_1" android:layout_marginRight="@dimen/business_sign_up_margin_medium" android:layout_marginStart="@dimen/business_sign_up_margin_medium" android:layout_marginEnd="@dimen/business_sign_up_margin_medium" />
+    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/grey_5" android:gravity="center" android:id="@id/field_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/business_sign_up_margin_medium" android:layout_marginTop="@dimen/business_sign_up_margin" android:layout_marginRight="@dimen/business_sign_up_margin_medium" android:layout_marginStart="@dimen/business_sign_up_margin_medium" android:layout_marginEnd="@dimen/business_sign_up_margin_medium" />
+    <LinearLayout android:orientation="vertical" android:id="@id/confirmation_field_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/business_sign_up_margin" android:layout_marginTop="@dimen/row_padding" android:layout_marginRight="@dimen/business_sign_up_margin" android:layout_marginBottom="@dimen/row_padding" android:layout_marginStart="@dimen/business_sign_up_margin" android:layout_marginEnd="@dimen/business_sign_up_margin">
+        <include layout="@layout/reg_sms_confirmation_field" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/biz_sign_up_next_button" />
+</merge>

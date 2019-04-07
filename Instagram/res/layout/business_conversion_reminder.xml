@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:id="@id/business_conversion_reminder_wrapper" android:paddingLeft="@dimen/row_padding" android:paddingTop="@dimen/vertical_separator_padding" android:paddingRight="@dimen/row_padding" android:paddingBottom="@dimen/vertical_separator_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/row_padding" android:paddingEnd="@dimen/row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center_vertical" android:id="@id/row_newsfeed_user_imageview" android:contentDescription="@string/profile_picture" style="@style/Avatar.Large" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_medium" android:id="@id/business_conversion_reminder_message" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/blue_5" android:id="@id/reminder_continue" android:paddingLeft="@dimen/row_text_padding" android:paddingRight="@dimen/row_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reminder_continue" android:maxLines="1" android:paddingStart="@dimen/row_text_padding" android:paddingEnd="@dimen/row_text_padding" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/cross_button" android:layout_width="@dimen/business_reminder_close_size" android:layout_height="@dimen/business_reminder_close_size" android:src="@drawable/instagram_x_outline_24" />
+</LinearLayout>

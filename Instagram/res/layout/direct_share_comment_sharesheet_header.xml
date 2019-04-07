@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/share_comment_header_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/context_image_container" android:clipChildren="false" android:layout_width="@dimen/share_comment_header_media_framesize" android:layout_height="@dimen/share_comment_header_media_framesize">
+        <com.instagram.common.ui.widget.imageview.RoundedCornerImageView android:gravity="center_vertical" android:id="@id/context_image" android:layout_width="@dimen/share_comment_header_media_size" android:layout_height="@dimen/share_comment_header_media_size" android:scaleType="fitXY" app:radius="@dimen/share_comment_header_media_corner_radius" app:strokeColor="@color/grey_3" app:strokeWidth="1.0dip" />
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="end|bottom|center" android:id="@id/context_badge" android:layout_width="@dimen/share_comment_header_user_profile_pic_size" android:layout_height="@dimen/share_comment_header_user_profile_pic_size" app:strokeColor="@color/white" app:strokeWidth="1.0dip" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/share_comment_header_text_left_margin">
+        <TextView android:textSize="@dimen/font_medium" android:textStyle="bold" android:ellipsize="end" android:id="@id/shared_comment_username" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/grey_4" android:ellipsize="end" android:id="@id/shared_comment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

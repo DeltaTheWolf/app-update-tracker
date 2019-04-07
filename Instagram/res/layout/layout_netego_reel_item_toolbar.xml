@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/toolbar_container" android:background="@drawable/reel_viewer_shadow_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/layout_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/toolbar_background" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/layout_min_height">
+        <include android:id="@id/cta_container" layout="@layout/layout_reel_item_cta" />
+        <ViewStub android:layout_gravity="end|bottom|center" android:id="@id/toolbar_menu_button_stub" android:layout="@layout/layout_toolbar_menu_option_button" android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_width" />
+    </FrameLayout>
+</LinearLayout>

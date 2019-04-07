@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="?creationRowHeightSmall" android:minHeight="?creationRowHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/row_user_container" android:background="?backgroundDrawable" android:paddingLeft="?creationPaddingRedesign" android:paddingRight="0.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="?creationRowHeightSmall" android:minHeight="?creationRowHeightSmall" android:paddingStart="?creationPaddingRedesign" android:paddingEnd="0.0dip">
+        <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@id/row_user_imageview" android:layout_marginRight="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" style="@style/Avatar.Medium" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="3.0dip" style="?creationTitleText" />
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?creationSubTitleText" />
+        </LinearLayout>
+        <CheckBox android:id="@id/row_recipient_checkbox" android:background="@drawable/blue_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:button="@null" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" />
+    </LinearLayout>
+    <include android:layout_gravity="bottom|center" android:id="@id/bottom_row_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/row_padding" android:layout_marginRight="@dimen/row_padding" android:layout_marginStart="@dimen/row_padding" android:layout_marginEnd="@dimen/row_padding" layout="@layout/row_divider" style="?defaultDividerStyle" />
+</FrameLayout>

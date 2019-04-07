@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/quiz_sticker" android:background="@drawable/quiz_sticker_background" android:layout_width="@dimen/quiz_sticker_width" android:layout_height="wrap_content">
+        <TextView android:id="@id/quiz_sticker_question" style="@style/QuizStickerQuestion" />
+        <LinearLayout android:id="@id/quiz_sticker_answer_list" app:layout_constraintTop_toBottomOf="@id/quiz_sticker_question" style="@style/QuizStickerAnswerList" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

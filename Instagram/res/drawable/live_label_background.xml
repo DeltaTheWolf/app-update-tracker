@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="@dimen/iglive_row_padding" android:insetBottom="@dimen/iglive_row_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <gradient android:startColor="@color/ig_purple" android:endColor="@color/ig_red" android:angle="315.0" />
+        <corners android:radius="@dimen/iglive_button_radius" />
+    </shape>
+</inset>

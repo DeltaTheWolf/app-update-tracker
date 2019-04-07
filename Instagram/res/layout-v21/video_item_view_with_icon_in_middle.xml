@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.discovery.ui.FixedAspectRatioVideoLayout android:id="@id/layout_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/darkened_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/video_item_image_preview_layout" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/overlay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="@color/white_75_transparent" android:ellipsize="end" android:id="@id/header_text" android:paddingBottom="@dimen/video_item_overlay_context_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:letterSpacing="@dimen/video_item_optional_text_letter_spacing" />
+        <TextView android:textSize="@dimen/video_item_overlay_title_font_large" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title_text" android:paddingBottom="@dimen/video_item_overlay_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
+        <com.instagram.ui.widget.imageview.BlinkingImageView android:id="@id/playback_icon" android:background="@drawable/channel_play_container_dark_transparent_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_play" />
+        <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.instagram.discovery.ui.FixedAspectRatioVideoLayout>

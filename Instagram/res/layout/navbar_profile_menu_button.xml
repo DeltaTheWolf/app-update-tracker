@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/instagram_menu_outline_24" app:normal="?actionBarGlyphColor" />
+    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/profile_menu_badge_stub" android:layout="@layout/navbar_profile_icon_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="10.0dip" />
+</FrameLayout>

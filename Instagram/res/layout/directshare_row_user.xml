@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/PaddedRow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/user_row_background" android:layout_width="fill_parent" android:layout_height="?directRowHeight">
+        <com.instagram.ui.widget.gradientspinneravatarview.GradientSpinnerAvatarView android:id="@id/row_user_imageview" android:layout_marginRight="@dimen/row_text_padding" android:layout_marginEnd="@dimen/row_text_padding" app:singleAvatarGradientRingSize="?rowAvatarWidth" app:singleAvatarSize="?rowAvatarWidth" style="?directRowAvatar" />
+        <RelativeLayout android:paddingRight="@dimen/row_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="@dimen/row_text_padding">
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_user_primary_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" style="?directRowUserName" />
+            <com.instagram.common.ui.text.TitleTextView android:ellipsize="end" android:id="@id/row_user_secondary_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:layout_below="@id/row_user_primary_name" style="?directRowUserInfo" />
+        </RelativeLayout>
+        <CheckBox android:id="@id/recipient_toggle" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+    </LinearLayout>
+</FrameLayout>
