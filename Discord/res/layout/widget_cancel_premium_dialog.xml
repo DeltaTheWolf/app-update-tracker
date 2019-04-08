@@ -17,6 +17,6 @@
     <View style="@style/UiKit.Settings.Divider" />
     <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
         <Button android:textColor="@color/primary_100" android:id="@id/cancel_premium_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_cancel_cancel_mobile" style="@style/UiKit.Button.Transparent" />
-        <com.discord.views.LoadingButton android:layout_gravity="center_vertical" android:id="@id/cancel_premium_confirm" android:background="@drawable/button_status_green_500" android:paddingTop="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" app:lb_progress_color="@color/white" app:lb_text="@string/premium_cancel_confirm_mobile" app:lb_text_color="@drawable/button_text_color_primary_100" />
+        <com.discord.views.LoadingButton android:layout_gravity="center_vertical" android:id="@id/cancel_premium_confirm" android:background="@drawable/button_green" android:paddingTop="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" app:lb_progress_color="@color/white" app:lb_text="@string/premium_cancel_confirm_mobile" app:lb_text_color="@drawable/button_text_color_primary_100" />
     </LinearLayout>
 </LinearLayout>

@@ -845,11 +845,6 @@
         <item name="android:layout_height">@dimen/avatar_size_large</item>
         <item name="placeholderImage">@drawable/asset_default_avatar_64dp</item>
     </style>
-    <style name="Avatar.Large.Extra" parent="@style/Avatar">
-        <item name="android:layout_width">@dimen/avatar_size_extra_large</item>
-        <item name="android:layout_height">@dimen/avatar_size_extra_large</item>
-        <item name="placeholderImage">@drawable/asset_default_avatar_64dp</item>
-    </style>
     <style name="Avatar.Large.ExtraAccount" parent="@style/Avatar">
         <item name="android:layout_width">@dimen/avatar_size_extra_large_account</item>
         <item name="android:layout_height">@dimen/avatar_size_extra_large_account</item>
@@ -3326,13 +3321,6 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:inputType">text</item>
     </style>
-    <style name="UiKit.FloatingActionButton" parent="">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-    <style name="UiKit.FloatingActionButton.Mini" parent="@style/UiKit.FloatingActionButton">
-        <item name="fabSize">mini</item>
-    </style>
     <style name="UiKit.Form.Field.EditText" parent="@style/UiKit.EditText">
         <item name="android:textSize">15.0sp</item>
         <item name="android:layout_width">fill_parent</item>
@@ -3735,6 +3723,7 @@
         <item name="android:textColorHint">?primary_400</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
         <item name="android:imeOptions">flagNoExtractUi</item>
         <item name="backgroundTint">?primary_400</item>
         <item name="fontFamily">@font/whitney_medium</item>
@@ -3870,9 +3859,6 @@
         <item name="android:layout_marginRight">0.0dip</item>
     </style>
     <style name="UiKit.User.Phone.Verify.Digits" parent="@style/UiKit.ViewGroup.LinearLayout.Horizontal" />
-    <style name="UiKit.View.HiddenOnSmallScreens" parent="">
-        <item name="android:visibility">gone</item>
-    </style>
     <style name="UiKit.ViewGroup" parent="">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>

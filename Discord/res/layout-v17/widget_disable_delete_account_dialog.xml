@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/notice_header_container" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:id="@id/disable_delete_header" android:padding="@dimen/uikit_spacing_large" android:text="@string/disable_account" style="@style/UiKit.TextView.H1.Bold" />
+        <View style="@style/UiKit.Divider" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView">
+        <LinearLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:id="@id/disable_delete_body" style="@style/UiKit.TextView" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/disable_delete_password_wrap" android:inputType="textPassword" app:hintEnabled="false" app:passwordToggleEnabled="true" app:passwordToggleTint="?primary_400" style="@style/UiKit.TextInputLayout">
+                <EditText android:id="@id/disable_delete_password" android:hint="@string/form_label_password" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.Password" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/disable_delete_code_wrap" app:hintEnabled="false" style="@style/UiKit.TextInputLayout">
+                <EditText android:id="@id/disable_delete_code" android:hint="@string/two_fa_auth_code" android:imeOptions="actionDone" style="@style/UiKit.Form.Field.EditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@style/UiKit.Settings.Divider" />
+    <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
+        <Button android:textColor="?primary_100" android:id="@id/disable_delete_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/UiKit.Button.Transparent" />
+        <com.discord.views.LoadingButton android:layout_gravity="center_vertical" android:id="@id/disable_delete_confirm" android:background="@drawable/button_red" android:paddingTop="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginStart="@dimen/uikit_spacing_medium" app:lb_progress_color="@color/white" app:lb_text="@string/disable" app:lb_text_color="@drawable/button_text_color_primary_100" />
+    </LinearLayout>
+</LinearLayout>
