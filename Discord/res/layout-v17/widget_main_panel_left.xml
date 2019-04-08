@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="start" android:id="@id/main_panel_left" android:background="@drawable/drawable_overlay_status_bar" android:fitsSystemWindows="true" android:layout_width="@dimen/nav_panel_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.discord.widgets.guilds.list.WidgetGuildsList" android:id="@id/widget_guilds" android:layout_width="@dimen/guild_list_size" android:layout_height="fill_parent" android:layout_above="@id/widget_profile_strip" />
+    <fragment android:name="com.discord.widgets.channels.list.WidgetChannelsList" android:id="@id/widget_channels" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/widget_guilds" android:layout_above="@id/widget_profile_strip" android:layout_toEndOf="@id/widget_guilds" />
+    <View android:background="@color/black_alpha_20" android:layout_width="0.25dip" android:layout_height="fill_parent" android:layout_alignRight="@id/widget_guilds" android:layout_alignEnd="@id/widget_guilds" />
+    <View android:background="@color/black_alpha_20" android:layout_width="fill_parent" android:layout_height="0.25dip" android:layout_above="@id/widget_profile_strip" />
+    <fragment android:name="com.discord.widgets.user.WidgetUserProfileStrip" android:id="@id/widget_profile_strip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textColor="@color/primary_100" android:gravity="center" android:id="@id/guild_list_add_hint" android:background="@drawable/asset_tooltip_server_create" android:padding="@dimen/uikit_spacing_large" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="136.0dip" android:text="@string/add_a_server_mobile" android:lineSpacingMultiplier="1.0" android:layout_marginStart="14.0dip" style="@style/UiKit.TextView.Semibold" />
+</RelativeLayout>

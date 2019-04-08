@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/padding_bottom_fab_screen" style="@style/UiKit.ViewGroup.LinearLayout">
+            <LinearLayout android:id="@id/channel_settings_edit_wrap" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:id="@id/channel_settings_channel_name" android:text="@string/form_label_channel_name" style="@style/UiKit.Settings.Item.Header" />
+                <EditText android:id="@id/channel_settings_edit_name" android:hint="@string/form_label_channel_name" style="@style/UiKit.EditText.Themed" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/channel_settings_topic_container" android:hint="@string/form_label_channel_topic" style="@style/UiKit.Form.Field.EditText.Wrap">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/channel_settings_edit_topic" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:maxLines="5" android:inputType="textAutoComplete|textAutoCorrect|textMultiLine" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View style="@style/UiKit.Settings.Divider" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/channel_settings_pinned_messages_container" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/pinned_messages" style="@style/UiKit.Settings.Item.Header" />
+                <FrameLayout style="@style/UiKit.ViewGroup">
+                    <TextView android:id="@id/channel_settings_pinned_messages" android:text="@string/pinned_messages" android:drawableLeft="?ic_pins_a60" android:drawableRight="@drawable/icon_carrot" android:drawableStart="?ic_pins_a60" android:drawableEnd="@drawable/icon_carrot" style="@style/UiKit.Settings.Item.Icon" />
+                    <View android:id="@id/channel_settings_pinned_messages_disabled_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <View style="@style/UiKit.Settings.Divider" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/channel_settings_section_user_management" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/user_management" style="@style/UiKit.Settings.Item.Header" />
+                <TextView android:id="@id/channel_settings_permissions" android:text="@string/permissions" android:drawableLeft="?ic_roles_a60" android:drawableRight="@drawable/icon_carrot" android:drawableStart="?ic_roles_a60" android:drawableEnd="@drawable/icon_carrot" style="@style/UiKit.Settings.Item.Icon" />
+                <View style="@style/UiKit.Settings.Divider" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/channel_settings_section_privacy_safety" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/privacy_and_safety" style="@style/UiKit.Settings.Item.Header" />
+                <com.discord.views.CheckedSetting android:id="@id/channel_settings_nsfw" app:cs_subtext="@string/form_help_nsfw" app:cs_text="@string/nsfw_title" style="@style/UiKit.CheckedSetting.Themed" />
+                <View style="@style/UiKit.Settings.Divider" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/channel_settings_section_slow_mode" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/form_label_slowmode" style="@style/UiKit.Settings.Item.Header" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup">
+                    <TextView android:id="@id/channel_settings_slowmode_label" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/form_label_slowmode_cooldown" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" style="@style/UiKit.TextView" />
+                    <TextView android:layout_gravity="end" android:id="@id/channel_settings_slow_mode_cooldown_label" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_alignBaseline="@id/channel_settings_slowmode_label" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/UiKit.TextView.Subtext" />
+                </RelativeLayout>
+                <SeekBar android:id="@id/channel_settings_slow_mode_cooldown_slider" android:progress="0" style="@style/UiKit.SeekBar" />
+                <TextView android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/form_help_slowmode" style="@style/UiKit.TextView.Subtext" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/channel_settings_save" android:visibility="gone" android:src="@drawable/icon_save" style="@style/Settings.FloatingActionButton" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

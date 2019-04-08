@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Light" parent="@style/AppTheme.Light.Base">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="actionMenuTextColor">@color/primary_500</item>
+        <item name="bottomSheetDialogTheme">@style/AppTheme.Light.BottomSheet</item>
+        <item name="colorAccent">@color/brand_500</item>
+        <item name="colorButtonNormal">@color/brand_500</item>
+        <item name="colorControlActivated">@color/brand_500</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryBg">@drawable/drawable_uikit_primary_white_bg</item>
+        <item name="colorPrimaryCircle">@drawable/drawable_uikit_white_circle</item>
+        <item name="colorPrimaryDark">#ffe5e5e5</item>
+        <item name="colorPrimaryDivider">@color/primary_200_alpha_60</item>
+        <item name="colorPrimaryTabs">@color/primary_200_alpha_30</item>
+        <item name="dialogTheme">@style/AppTheme.Light.Notice</item>
+        <item name="notice_popup_bg">@color/primary_100</item>
+        <item name="notice_theme_positive_red">@style/AppTheme.Light.Notice.PositiveRed</item>
+        <item name="primary_000">@color/black</item>
+        <item name="primary_100">@color/primary_500</item>
+        <item name="primary_100_alpha_30">@color/primary_500_alpha_30</item>
+        <item name="primary_100_alpha_60">@color/primary_500_alpha_60</item>
+        <item name="primary_100_alpha_90">@color/primary_500_alpha_90</item>
+        <item name="primary_100_bg">@drawable/drawable_uikit_primary_600_bg_dark</item>
+        <item name="primary_200">@color/primary_800</item>
+        <item name="primary_200_alpha_30">@color/primary_800_alpha_30</item>
+        <item name="primary_200_alpha_60">@color/primary_800_alpha_60</item>
+        <item name="primary_200_alpha_90">@color/primary_800_alpha_90</item>
+        <item name="primary_200_bg">@drawable/drawable_uikit_primary_800_bg_dark</item>
+        <item name="primary_300">@color/primary_400</item>
+        <item name="primary_300_alpha_30">@color/primary_400_alpha_30</item>
+        <item name="primary_300_alpha_60">@color/primary_400_alpha_60</item>
+        <item name="primary_300_alpha_90">@color/primary_400_alpha_90</item>
+        <item name="primary_300_bg">@drawable/drawable_uikit_primary_400_bg_dark</item>
+        <item name="primary_400">@color/primary_300</item>
+        <item name="primary_400_alpha_30">@color/primary_300_alpha_30</item>
+        <item name="primary_400_alpha_60">@color/primary_300_alpha_60</item>
+        <item name="primary_400_alpha_90">@color/primary_300_alpha_90</item>
+        <item name="primary_400_bg">@drawable/drawable_uikit_primary_300_bg_dark</item>
+        <item name="primary_500">@color/primary_500</item>
+        <item name="primary_500_alpha_30">@color/primary_500_alpha_30</item>
+        <item name="primary_500_alpha_60">@color/primary_500_alpha_60</item>
+        <item name="primary_500_alpha_90">@color/primary_500_alpha_90</item>
+        <item name="primary_500_bg">@drawable/drawable_uikit_primary_500_bg_dark</item>
+        <item name="primary_500_button_outline">@drawable/drawable_uikit_primary_500_button_outline</item>
+        <item name="primary_500_circle">@drawable/drawable_uikit_primary_500_circle</item>
+        <item name="primary_600">@color/primary_400</item>
+        <item name="primary_600_alpha_30">@color/primary_400_alpha_30</item>
+        <item name="primary_600_alpha_60">@color/primary_400_alpha_60</item>
+        <item name="primary_600_alpha_90">@color/primary_400_alpha_90</item>
+        <item name="primary_600_bg">@drawable/drawable_uikit_primary_400_bg_dark</item>
+        <item name="primary_630">@color/primary_100</item>
+        <item name="primary_630_alpha_30">@color/primary_100_alpha_30</item>
+        <item name="primary_630_alpha_60">@color/primary_100_alpha_60</item>
+        <item name="primary_630_alpha_90">@color/primary_100_alpha_90</item>
+        <item name="primary_630_bg">@drawable/drawable_uikit_primary_100_bg_dark</item>
+        <item name="primary_630_circle">@drawable/drawable_uikit_primary_100_circle</item>
+        <item name="primary_700">@color/primary_300</item>
+        <item name="primary_700_alpha_30">@color/primary_300_alpha_30</item>
+        <item name="primary_700_alpha_60">@color/primary_300_alpha_60</item>
+        <item name="primary_700_alpha_90">@color/primary_300_alpha_90</item>
+        <item name="primary_700_bg">@drawable/drawable_uikit_primary_300_bg_dark</item>
+        <item name="primary_800">@color/primary_200</item>
+        <item name="primary_800_alpha_30">@color/primary_200_alpha_30</item>
+        <item name="primary_800_alpha_60">@color/primary_200_alpha_60</item>
+        <item name="primary_800_alpha_90">@color/primary_200_alpha_90</item>
+        <item name="primary_800_bg">@drawable/drawable_uikit_primary_200_bg_dark</item>
+        <item name="primary_900">@color/primary_100</item>
+        <item name="primary_900_alpha_30">@color/primary_100_alpha_30</item>
+        <item name="primary_900_alpha_60">@color/primary_100_alpha_60</item>
+        <item name="primary_900_alpha_90">@color/primary_100_alpha_90</item>
+        <item name="primary_900_bg">@drawable/drawable_uikit_primary_100_bg_dark</item>
+        <item name="status_white_outline">@drawable/drawable_uikit_status_primary_300_button_outline</item>
+        <item name="ternaryCheckboxDisabledColor">@color/primary_100_alpha_60</item>
+        <item name="theme_name">light</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored" />
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+</resources>

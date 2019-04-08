@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:text="@string/change_nickname" style="@style/UiKit.TextView.H1.Bold" />
+    <View style="@style/UiKit.Divider" />
+    <LinearLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <EditText android:textSize="@dimen/uikit_textsize_medium" android:id="@id/channels_list_actions_change_nickname_edit_text" android:layout_width="fill_parent" android:hint="@string/nickname" style="@style/UiKit.EditText" />
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/purple_brand" android:id="@id/channels_list_actions_change_nickname_reset" android:paddingTop="@dimen/uikit_spacing_medium" android:text="@string/reset_nickname" android:textAllCaps="true" style="@style/UiKit.TextView.Semibold" />
+    </LinearLayout>
+    <View style="@style/UiKit.Settings.Divider" />
+    <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
+        <TextView android:id="@id/channels_list_actions_change_nickname_cancel" android:layout_marginRight="@dimen/uikit_spacing_medium" android:text="@string/cancel" style="@style/UiKit.Button.Transparent.Fit" />
+        <TextView android:id="@id/channels_list_actions_change_nickname_save" android:layout_width="wrap_content" android:text="@string/save" style="@style/UiKit.Button.Fit" />
+    </LinearLayout>
+</LinearLayout>

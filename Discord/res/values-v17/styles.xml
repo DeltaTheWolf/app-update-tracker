@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Widget.MaterialComponents.TextInputEditText" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+        <item name="android:paddingStart">12.0dip</item>
+        <item name="android:paddingEnd">12.0dip</item>
+    </style>
+    <style name="FlexInput.Input.Button.Camera.Facing" parent="@style/FlexInput.Input.Button">
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:src">@drawable/ic_camera_front_white_24dp</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="FlexInput.Input.Button.Camera.Flash" parent="@style/FlexInput.Input.Button">
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:src">@drawable/ic_flash_auto_24dp</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="FlexInput.Input.Button.Camera.Launcher" parent="@style/FlexInput.Input.Button">
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/add_content_viewpager_bottom_margin</item>
+        <item name="android:src">@drawable/ic_launch_24dp</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginEnd">@dimen/margin</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="@style/Base.DialogWindowTitle.AppCompat">
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="@android:style/Widget">
+        <item name="android:layout_gravity">start|center</item>
+        <item name="android:paddingEnd">8.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.DialogTitle.Icon" parent="@android:style/Widget">
+        <item name="android:layout_marginEnd">8.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem" parent="@android:style/Widget">
+        <item name="android:paddingEnd">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.InternalGroup" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.Shortcut" parent="@android:style/Widget">
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:layout_marginStart">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.SubmenuArrow" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">8.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.Text" parent="@android:style/Widget">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.Title" parent="@android:style/Widget">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginStart">16.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown" parent="@android:style/Widget">
+        <item name="android:paddingStart">@dimen/abc_dropdownitem_text_padding_left</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Icon1" parent="@android:style/Widget">
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Icon2" parent="@android:style/Widget">
+        <item name="android:layout_toStartOf">@id/edit_query</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Query" parent="@android:style/Widget">
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Text" parent="@style/Base.Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:layout_toStartOf">@android:id/icon2</item>
+        <item name="android:layout_toEndOf">@android:id/icon1</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.SearchView.MagIcon" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">@dimen/abc_dropdownitem_text_padding_left</item>
+    </style>
+    <style name="RtlUnderlay.Widget.AppCompat.ActionButton" parent="@android:style/Widget">
+        <item name="android:paddingStart">12.0dip</item>
+        <item name="android:paddingEnd">12.0dip</item>
+    </style>
+    <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="@style/Base.Widget.AppCompat.ActionButton">
+        <item name="android:paddingStart">@dimen/abc_action_bar_overflow_padding_start_material</item>
+        <item name="android:paddingEnd">@dimen/abc_action_bar_overflow_padding_end_material</item>
+    </style>
+    <style name="UiKit.Auth.Spots.Bot.Left" parent="@style/UiKit.Auth.Spots.Bot">
+        <item name="android:src">@drawable/img_auth_bg_bl</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="UiKit.Auth.Spots.Bot.Right" parent="@style/UiKit.Auth.Spots.Bot">
+        <item name="android:src">@drawable/img_auth_bg_br</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="UiKit.Auth.Spots.Top" parent="@style/UiKit.Auth.Spots">
+        <item name="android:src">@drawable/img_auth_bg_tr</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="UiKit.Chat.Embed.Container" parent="@style/UiKit.ViewGroup.ConstraintLayout">
+        <item name="android:background">?chat_embed_bg</item>
+        <item name="android:layout_marginLeft">@dimen/uikit_guideline_chat</item>
+        <item name="android:layout_marginTop">@dimen/chat_cell_vertical_spacing_padding</item>
+        <item name="android:layout_marginRight">@dimen/chat_cell_horizontal_spacing_total</item>
+        <item name="android:layout_marginBottom">@dimen/chat_cell_vertical_spacing_padding</item>
+        <item name="android:maxWidth">@dimen/chat_embed_width</item>
+        <item name="android:minWidth">220.0dip</item>
+        <item name="android:layout_marginStart">@dimen/uikit_guideline_chat</item>
+        <item name="android:layout_marginEnd">@dimen/chat_cell_horizontal_spacing_total</item>
+    </style>
+    <style name="UiKit.Chat.Embed.Footer" parent="@style/UiKit.TextView.Bold">
+        <item name="android:textColor">?primary_100</item>
+        <item name="android:layout_marginRight">@dimen/uikit_spacing_large</item>
+        <item name="android:layout_marginBottom">@dimen/uikit_spacing_large</item>
+        <item name="android:layout_marginEnd">@dimen/uikit_spacing_large</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+    <style name="UiKit.Chat.Embed.Header" parent="@style/UiKit.TextView.Bold">
+        <item name="android:textSize">@dimen/uikit_textsize_small</item>
+        <item name="android:textColor">?primary_300</item>
+        <item name="android:layout_marginLeft">@dimen/uikit_spacing_large</item>
+        <item name="android:layout_marginTop">@dimen/uikit_spacing_medium</item>
+        <item name="android:layout_marginBottom">@dimen/uikit_spacing_medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginStart">@dimen/uikit_spacing_large</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="UiKit.Checkbox" parent="">
+        <item name="android:textSize">@dimen/uikit_textsize_medium</item>
+        <item name="android:textColor">?primary_100</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:thumbTextPadding">20.0dip</item>
+        <item name="android:paddingStart">8.0dip</item>
+        <item name="buttonTint">?primary_100</item>
+        <item name="fontFamily">@font/whitney_medium</item>
+    </style>
+    <style name="UiKit.GuildsListMentions" parent="@style/Icon.Mentions">
+        <item name="android:background">@drawable/drawable_overlay_guild_mentions</item>
+        <item name="android:layout_width">19.0dip</item>
+        <item name="android:layout_height">21.0dip</item>
+        <item name="android:layout_marginRight">-3.0dip</item>
+        <item name="android:layout_marginBottom">-3.0dip</item>
+        <item name="android:layout_marginEnd">-3.0dip</item>
+    </style>
+    <style name="UiKit.GuildsListSelected" parent="@style/UiKit">
+        <item name="android:background">@drawable/drawable_rect_guild_selected</item>
+        <item name="android:layout_width">4.5dip</item>
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="UiKit.GuildsListUnread" parent="@style/UiKit.ImageView">
+        <item name="android:src">@drawable/ic_unread_white_9dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="UiKit.ImageView.Clickable.Corner.TopEnd" parent="@style/UiKit.ImageView.Clickable">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">@dimen/uikit_spacing_small</item>
+        <item name="android:paddingRight">@dimen/uikit_spacing_small</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:paddingStart">12.0dip</item>
+        <item name="android:paddingEnd">@dimen/uikit_spacing_small</item>
+    </style>
+    <style name="UiKit.Settings.Item" parent="@style/UiKit.Settings.Base.Item">
+        <item name="android:paddingLeft">@dimen/uikit_spacing_large</item>
+        <item name="android:paddingTop">@dimen/uikit_spacing_large</item>
+        <item name="android:paddingBottom">@dimen/uikit_spacing_large</item>
+        <item name="android:paddingStart">@dimen/uikit_spacing_large</item>
+        <item name="android:paddingEnd">@dimen/uikit_spacing_large</item>
+    </style>
+    <style name="UiKit.Sheet.Header.Contents" parent="@style/UiKit.ViewGroup">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_marginRight">@dimen/uikit_spacing_medium</item>
+        <item name="android:layout_marginEnd">@dimen/uikit_spacing_medium</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintLeft_toRightOf">@id/uikit_sheet_header_guideline</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintStart_toEndOf">@id/uikit_sheet_header_guideline</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="UiKit.Sheet.Header.Title" parent="@style/UiKit.TextView.H1.Bold">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">@dimen/uikit_spacing_medium</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginEnd">@dimen/uikit_spacing_medium</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintLeft_toRightOf">@id/uikit_sheet_header_guideline</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintStart_toEndOf">@id/uikit_sheet_header_guideline</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="UiKit.User.Phone.Verify.Digit" parent="@style/UiKit.EditText.Number">
+        <item name="android:textSize">@dimen/uikit_textsize_large</item>
+        <item name="android:textColorHint">?primary_500</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?primary_500_button_outline</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">44.0dip</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+        <item name="android:hint">0</item>
+        <item name="android:imeOptions">@null</item>
+        <item name="android:layout_marginEnd">6.0dip</item>
+    </style>
+    <style name="UiKit.User.Phone.Verify.Digit.Left" parent="@style/UiKit.User.Phone.Verify.Digit">
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:layout_marginStart">6.0dip</item>
+        <item name="android:layout_marginEnd">0.0dip</item>
+    </style>
+</resources>

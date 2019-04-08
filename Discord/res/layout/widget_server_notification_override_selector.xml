@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:background="?primary_630" style="@style/AppTheme.AppBarLayout.Flat.Transparent">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+        <EditText android:id="@id/search_input" android:background="?search_action_bar_bg" android:padding="@dimen/uikit_spacing_small" android:layout_margin="@dimen/uikit_spacing_medium" android:drawableLeft="?theme_search_menu_icon" android:drawablePadding="@dimen/uikit_spacing_medium" android:drawableStart="?theme_search_menu_icon" style="@style/UiKit.SearchInput" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/guild_notifications_channel_list" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingBottom="@dimen/list_bottom_padding" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RecyclerView.AppBarScrollingViewBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

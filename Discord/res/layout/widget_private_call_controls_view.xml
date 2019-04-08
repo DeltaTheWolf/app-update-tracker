@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/private_call_controls_video" android:background="@drawable/drawable_circle_primary_900_alpha_60" android:layout_margin="11.0dip" android:src="@drawable/ic_videocam_white_24dp" android:contentDescription="@string/video" style="@style/UiKit.Calls.ButtonCircle" />
+    <ImageView android:id="@id/private_call_controls_disconnect" android:background="@drawable/drawable_circle_red" android:layout_margin="11.0dip" android:src="@drawable/ic_call_audio_stop_white_24dp" android:contentDescription="@string/disconnect" style="@style/UiKit.Calls.ButtonCircle" />
+    <ImageView android:id="@id/private_call_controls_mute" android:background="@drawable/drawable_circle_primary_900_alpha_60" android:layout_margin="11.0dip" android:src="@drawable/ic_mic_white_24dp" android:contentDescription="@string/mute" style="@style/UiKit.Calls.ButtonCircle" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:layout_height="36.0dip" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/chat_input_item_icon_container" android:layout_width="wrap_content" android:layout_centerVertical="true" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/chat_input_item_avatar" android:layout_marginLeft="@dimen/uikit_spacing_large" style="@style/Avatar.Small" />
+        <RelativeLayout android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="-2.0dip" android:layout_marginBottom="-2.0dip" android:layout_alignRight="@id/chat_input_item_avatar" android:layout_alignBottom="@id/chat_input_item_avatar">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/chat_input_item_presence_canvas" android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholderImage="?theme_chat_input" app:roundAsCircle="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/chat_input_item_presence" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:layout_centerInParent="true" app:placeholderImage="@color/status_grey_500" app:roundAsCircle="true" />
+        </RelativeLayout>
+        <com.discord.utilities.view.text.SimpleDraweeSpanTextView android:textSize="@dimen/uikit_textsize_small" android:id="@id/chat_input_item_emoji" android:layout_width="@dimen/avatar_size_small" android:layout_height="@dimen/avatar_size_small" android:layout_marginLeft="@dimen/uikit_spacing_large" style="@style/UiKit.TextView" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?theme_chat_text" android:id="@id/chat_input_item_name" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:singleLine="true" android:layout_toLeftOf="@id/chat_input_item_name_right" android:layout_toRightOf="@id/chat_input_item_icon_container" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/UiKit.TextView" />
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?theme_chat_timestamp" android:id="@id/chat_input_item_name_right" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:maxWidth="@dimen/chat_input_autocomplete_name_max_width" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/UiKit.TextView" />
+    <View android:layout_alignLeft="@id/chat_input_item_icon_container" android:layout_alignParentBottom="true" style="@style/UiKit.Divider" />
+</RelativeLayout>

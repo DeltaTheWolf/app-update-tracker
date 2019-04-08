@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/camera_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/camera_view_cropper" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <com.google.android.cameraview.CameraView android:gravity="center" android:layout_gravity="center" android:id="@id/camera_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:autoFocus="true" app:facing="back" app:flash="auto" />
+        </ScrollView>
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/camera_flash_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlexInput.Input.Button.Camera.Flash" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/camera_facing_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlexInput.Input.Button.Camera.Facing" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/take_photo_btn" android:layout_width="56.0dip" android:layout_height="56.0dip" style="@style/FlexInput.Input.Button.Camera.Capture" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/launch_camera_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlexInput.Input.Button.Camera.Launcher" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/permissions_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FlexInput.AddContent.Permissions" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

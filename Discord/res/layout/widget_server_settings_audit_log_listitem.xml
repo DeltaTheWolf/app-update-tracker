@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_margin="@dimen/uikit_spacing_medium" app:cardBackgroundColor="?primary_630" app:cardCornerRadius="@dimen/uikit_spacing_small" style="@style/UiKit.ViewGroup"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+        <RelativeLayout android:id="@id/audit_log_listitem_top_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <FrameLayout android:id="@id/audit_log_listitem_action_container" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="12.0dip" android:layout_centerVertical="true">
+                <ImageView android:id="@id/audit_log_listitem_targettype_image" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/UiKit.ImageView" />
+                <ImageView android:id="@id/audit_log_listitem_actiontype_image" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/UiKit.ImageView" />
+            </FrameLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/audit_log_listitem_avatar" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_toRightOf="@id/audit_log_listitem_action_container" android:layout_centerVertical="true" style="@style/Avatar.Standard" />
+            <com.discord.app.AppTextView android:ellipsize="end" android:id="@id/audit_log_listitem_header_text" android:layout_marginTop="@dimen/uikit_spacing_medium" android:maxLines="2" android:layout_toLeftOf="@id/audit_log_listitem_arrow" android:layout_toRightOf="@id/audit_log_listitem_avatar" android:lineSpacingMultiplier="1.0" style="@style/UiKit.TextView" />
+            <TextView android:textColor="?primary_400" android:ellipsize="end" android:id="@id/audit_log_listitem_date_text" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_xxlarge" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:maxLines="2" android:layout_toRightOf="@id/audit_log_listitem_avatar" android:layout_below="@id/audit_log_listitem_header_text" style="@style/UiKit.TextView" />
+            <ImageView android:id="@id/audit_log_listitem_arrow" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="@drawable/ic_chevron_right_grey_12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/more" style="@style/UiKit.ImageView" />
+        </RelativeLayout>
+        <TextView android:textColor="?primary_400" android:id="@id/audit_log_listitem_change_text" android:padding="@dimen/uikit_spacing_large" android:visibility="gone" android:layout_width="fill_parent" style="@style/UiKit.TextView" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

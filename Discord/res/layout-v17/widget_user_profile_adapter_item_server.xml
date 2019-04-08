@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/user_profile_adapter_item_server_wrap" android:layout_width="@dimen/avatar_size_large" android:layout_height="@dimen/avatar_size_large" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_profile_adapter_item_server_image" style="@style/Avatar.Large" />
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:ellipsize="none" android:gravity="center" android:id="@id/user_profile_adapter_item_server_text" android:background="@drawable/drawable_circle_purple_brand" android:padding="@dimen/uikit_spacing_small" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" style="@style/UiKit.TextView.H2" />
+    </RelativeLayout>
+    <LinearLayout android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_toRightOf="@id/user_profile_adapter_item_server_wrap" android:layout_centerVertical="true" android:layout_marginStart="@dimen/uikit_spacing_large" android:layout_toEndOf="@id/user_profile_adapter_item_server_wrap" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:id="@id/user_profile_adapter_item_server_name" android:singleLine="true" style="@style/UiKit.TextView.Large" />
+        <TextView android:id="@id/user_profile_adapter_item_server_nick" android:paddingTop="@dimen/uikit_spacing_small" android:singleLine="true" style="@style/UiKit.TextView" />
+    </LinearLayout>
+</RelativeLayout>

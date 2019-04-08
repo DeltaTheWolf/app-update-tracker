@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chat_list_adapter_item_failed" android:background="?selectableItemBackground" android:paddingLeft="@dimen/chat_cell_horizontal_spacing_padding" android:paddingTop="@dimen/chat_cell_vertical_spacing_padding" android:paddingRight="@dimen/chat_cell_horizontal_spacing_padding" android:paddingBottom="@dimen/chat_cell_vertical_spacing_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_cell_horizontal_spacing_margin" android:layout_marginRight="@dimen/chat_cell_horizontal_spacing_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/chat_list_adapter_item_text_avatar" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/chat_cell_horizontal_spacing_total" android:importantForAccessibility="no" style="@style/Avatar.Standard" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/chat_list_adapter_item_text_avatar">
+        <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="13.75sp" android:textColor="?theme_chat_name" android:id="@id/chat_list_adapter_item_text_name" android:maxWidth="150.0dip" android:text="@string/sample_user_name" android:singleLine="true" android:layout_alignParentBottom="true" style="@style/UiKit.TextView" />
+        </RelativeLayout>
+        <com.discord.utilities.view.text.LinkifiedTextView android:textSize="13.75sp" android:textColor="@color/status_red_500" android:textColorLink="@color/link_500" android:id="@id/chat_list_adapter_item_text" android:layout_width="fill_parent" style="@style/UiKit.TextView" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/status_red_500_alpha_60" android:layout_width="fill_parent" android:layout_marginTop="6.0dip" android:text="@string/send_message_failure" style="@style/UiKit.TextView" />
+    </LinearLayout>
+</RelativeLayout>

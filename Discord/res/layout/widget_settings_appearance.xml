@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/theme" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_appearance_theme_light_radio" app:cs_text="@string/theme_light" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_appearance_theme_dark_radio" app:cs_text="@string/theme_dark" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_appearance_theme_pure_evil_radio" android:visibility="gone" app:cs_text="@string/theme_pure_evil_title" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/sync" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_appearance_sync_switch" app:cs_text="@string/settings_sync" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

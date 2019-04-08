@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/guild_list" android:background="@color/grey_guilds" android:clipToPadding="false" style="@style/UiKit.GuildsList" />
+    <ViewStub android:id="@id/guild_list_unreads_stub" android:layout="@layout/widget_channels_list_unreads" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

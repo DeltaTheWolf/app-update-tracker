@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/server_settings_channels_text_recycler" android:paddingTop="12.0dip" android:paddingBottom="32.0dip" android:clipToPadding="false" style="@style/AppTheme.AppBarScrollingViewBehavior" />
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/server_settings_channels_create_channel" android:src="@drawable/ic_add_white_24dp" app:layout_anchor="@id/server_settings_channels_text_recycler" app:layout_anchorGravity="bottom|center|right" style="@style/Settings.FloatingActionButton" />
+    <FrameLayout android:id="@id/widget_server_settings_channels_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

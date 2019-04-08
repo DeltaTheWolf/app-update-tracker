@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/grey_account" android:padding="16.0dip" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:src="@drawable/asset_mfa_server" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/white_alpha_70" android:gravity="center" android:id="@id/channels_list_item_mfa_text" android:layout_marginTop="16.0dip" android:lineSpacingMultiplier="1.25" style="@style/UiKit.TextView.Semibold" />
+</LinearLayout>

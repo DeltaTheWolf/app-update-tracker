@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <com.google.android.material.textfield.TextInputLayout android:hint="@string/guild_settings_emoji_alias" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/server_settings_emojis_edit_alias" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:maxLength="32" android:inputType="textNoSuggestions" style="@style/UiKit.Form.Field.EditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/server_settings_emojis_edit_alias_save" style="@style/Settings.FloatingActionButton.Save" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

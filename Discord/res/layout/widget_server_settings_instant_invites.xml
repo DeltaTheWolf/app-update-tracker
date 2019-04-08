@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@id/server_settings_instant_invites_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/server_settings_instant_invites_recycler" android:paddingTop="@dimen/uikit_spacing_small" android:scrollbars="vertical" android:clipToPadding="false" style="@style/UiKit.ViewGroup.RecyclerView.AppBarScrollingViewBehavior" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_margin="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:id="@id/no_invites_header" android:text="@string/no_invites_label" android:drawableTop="@drawable/asset_empty_no_invites" android:textAllCaps="true" style="@style/UiKit.TextView.NoResults" />
+            <TextView android:gravity="center" android:id="@id/no_invites_body" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/no_invites_body" style="@style/UiKit.TextView" />
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

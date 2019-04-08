@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_xxlarge" android:focusableInTouchMode="true" style="@style/UiKit.ViewGroup.LinearLayout">
+        <FrameLayout android:id="@id/user_info_rich_presence_container" android:visibility="gone" style="@style/UiKit.ViewGroup" />
+        <View android:id="@id/user_info_activity_divider" android:visibility="gone" android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.Settings.Divider" />
+        <TextView android:text="@string/note" style="@style/UiKit.Settings.Item.Header" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="0.0dip" android:layout_marginRight="@dimen/uikit_spacing_large" app:counterEnabled="true" app:counterMaxLength="256" style="@style/UiKit.Form.Field.EditText.Wrap">
+            <EditText android:id="@id/user_info_notes" android:paddingLeft="@dimen/uikit_spacing_small" android:paddingRight="@dimen/uikit_spacing_small" android:hint="@string/note_placeholder_mobile" android:maxLength="256" style="@style/UiKit.Form.Field.EditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:id="@id/user_info_identities_divider" style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/user_info_identities_header" android:text="@string/connected_accounts" style="@style/UiKit.Settings.Item.Header" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/platform_identities_list" android:paddingBottom="@dimen/uikit_spacing_xxlarge" style="@style/UiKit.ViewGroup.RecyclerView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

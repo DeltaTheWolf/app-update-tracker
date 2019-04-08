@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?primary_100" android:id="@id/voice_fullscreen_controls_num_users_connected" android:layout_width="fill_parent" android:layout_margin="16.0dip" style="@style/UiKit.TextView" />
+    <LinearLayout android:id="@id/voice_fullscreen_controls_controls_wrap" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <ImageView android:id="@id/voice_fullscreen_controls_deafen_state" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="?ic_headset" android:layout_weight="1.0" android:contentDescription="@string/deafen" style="@style/UiKit.ImageView.Clickable" />
+        <ImageView android:id="@id/voice_fullscreen_controls_mute_state" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="?ic_mic" android:layout_weight="1.0" android:contentDescription="@string/mute" style="@style/UiKit.ImageView.Clickable" />
+        <ImageView android:id="@id/voice_fullscreen_controls_disconnect" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="?ic_end_audio_call" android:layout_weight="1.0" android:contentDescription="@string/disconnect_from_voice" style="@style/UiKit.ImageView.Clickable" />
+    </LinearLayout>
+    <Button android:id="@id/voice_fullscreen_controls_ptt" android:visibility="gone" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/keybind_push_to_talk" style="@style/UiKit.Button" />
+    <Button android:id="@id/voice_fullscreen_controls_connect" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/connect_to_voice" style="@style/UiKit.Button.White" />
+</LinearLayout>

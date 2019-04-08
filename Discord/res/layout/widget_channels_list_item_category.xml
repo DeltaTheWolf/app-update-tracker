@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/drawable_overlay_category" android:paddingTop="@dimen/uikit_spacing_medium" android:layout_marginTop="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/channels_item_category_arrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/uikit_spacing_xsmall" android:src="@drawable/ic_chevron_down_grey_12dp" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_400" android:id="@id/channels_item_category_name" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/uikit_spacing_xsmall" android:layout_marginRight="@dimen/uikit_spacing_medium" android:singleLine="true" android:layout_weight="1.0" android:textAllCaps="true" style="@style/UiKit.TextView.Bold" />
+    <ImageView android:id="@id/channels_item_category_add" android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="@drawable/ic_add_grey_24dp" android:scaleType="centerCrop" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView.Clickable" />
+</LinearLayout>

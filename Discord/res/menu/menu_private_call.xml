@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?ic_switch_camera" android:id="@id/menu_private_call_select_camera" android:visible="false" android:title="@string/camera_switch" app:showAsAction="ifRoom" />
+    <item android:icon="?ic_call_participants" android:id="@id/menu_private_call_participants" android:visible="false" android:title="@string/member_list" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_private_call_user_settings" android:visible="false" android:title="@string/user_settings" app:showAsAction="never" />
+    <item android:id="@id/menu_private_call_group_settings" android:visible="false" android:title="@string/group_dm_settings" app:showAsAction="never" />
+    <item android:id="@id/menu_private_call_voice_settings" android:title="@string/voice_settings" app:showAsAction="never" />
+</menu>

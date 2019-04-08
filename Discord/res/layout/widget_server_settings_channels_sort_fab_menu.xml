@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:gravity="end|bottom|center" android:id="@id/fab_menu_table" android:background="@color/primary_630_alpha_60" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableRow android:gravity="end|center" android:id="@id/fab_menu_add_category" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:src="@drawable/ic_category_16dp" app:backgroundTint="?primary_100" style="@style/FabMenuMiniIcon" />
+    </TableRow>
+    <TableRow android:gravity="end|center" android:id="@id/fab_menu_add_voice" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:src="@drawable/ic_channel_voice_grey_18dp" app:backgroundTint="?primary_100" style="@style/FabMenuMiniIcon" />
+    </TableRow>
+    <TableRow android:gravity="end|center" android:id="@id/fab_menu_add_text" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:src="@drawable/ic_channel_text_grey_18dp" app:backgroundTint="?primary_100" style="@style/FabMenuMiniIcon" />
+    </TableRow>
+    <TableRow android:gravity="end|center" android:id="@id/fab_menu_main" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_menu_main_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_clear_white_24dp" android:layout_column="1" app:backgroundTint="@color/status_red_500" app:borderWidth="0.0dip" app:fabSize="normal" />
+    </TableRow>
+</TableLayout>

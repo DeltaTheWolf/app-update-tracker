@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.discord.views.ScrollingViewPager android:id="@id/steps_viewpager" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/steps_button_container" />
+    <ImageView android:id="@id/steps_close" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:foreground="?selectableItemBackgroundBorderless" android:src="?ic_close_24dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/UiKit.ImageView" />
+    <LinearLayout android:id="@id/steps_button_container" android:layout_margin="@dimen/uikit_spacing_large" android:layout_alignParentBottom="true" style="@style/UiKit.ViewGroup.LinearLayout">
+        <Button android:id="@id/steps_done" android:visibility="gone" android:text="@string/done" style="@style/UiKit.Button.Grey" />
+        <Button android:id="@id/steps_next" android:layout_marginBottom="@dimen/uikit_spacing_small" android:text="@string/next" style="@style/UiKit.Button" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/steps_cancel" android:background="?selectableItemBackground" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingBottom="@dimen/uikit_spacing_medium" android:layout_width="fill_parent" android:text="@string/cancel" style="@style/UiKit.TextView.Large.SingleLine" />
+    </LinearLayout>
+</RelativeLayout>

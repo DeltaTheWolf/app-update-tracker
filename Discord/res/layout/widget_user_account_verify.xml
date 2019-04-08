@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable">
+        <LinearLayout android:layout_width="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" style="@style/UiKit.ViewGroup.LinearLayout">
+            <ImageView android:layout_gravity="center" android:layout_marginBottom="32.0dip" android:src="?img_baddies" android:contentDescription="@string/new_terms_title" style="@style/UiKit.ImageView" />
+            <TextView android:layout_gravity="center" android:text="@string/verification_title" style="@style/UiKit.TextView.H1" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/alert_verify_account_text_body" android:layout_marginTop="16.0dip" android:maxWidth="320.0dip" android:text="@string/verification_body" style="@style/UiKit.TextView" />
+        </LinearLayout>
+        <LinearLayout android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" style="@style/UiKit.Alert.Verify.Account.Method.Wrapper">
+            <RelativeLayout android:id="@id/alert_verify_account_by_email" style="@style/UiKit.Alert.Verify.Account.Method.Container">
+                <LinearLayout style="@style/UiKit.Alert.Verify.Account.Method">
+                    <TextView android:layout_marginTop="16.0dip" android:text="@string/verify_by" android:textAllCaps="true" style="@style/UiKit.TextView.Subtext.Semibold" />
+                    <TextView android:text="@string/email" android:textAllCaps="true" style="@style/UiKit.TextView.H1" />
+                </LinearLayout>
+                <ImageView android:src="?img_verify_email" android:layout_centerHorizontal="true" android:contentDescription="@string/email" style="@style/UiKit.ImageView" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/alert_verify_account_by_phone" style="@style/UiKit.Alert.Verify.Account.Method.Container">
+                <LinearLayout style="@style/UiKit.Alert.Verify.Account.Method">
+                    <TextView android:layout_marginTop="16.0dip" android:text="@string/verify_by" android:textAllCaps="true" style="@style/UiKit.TextView.Subtext.Semibold" />
+                    <TextView android:text="@string/phone" android:textAllCaps="true" style="@style/UiKit.TextView.H1" />
+                </LinearLayout>
+                <ImageView android:src="?img_verify_phone" android:layout_centerHorizontal="true" android:contentDescription="@string/phone" style="@style/UiKit.ImageView" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/alert_verify_account_by_captcha" style="@style/UiKit.Alert.Verify.Account.Method.Container">
+                <LinearLayout style="@style/UiKit.Alert.Verify.Account.Method">
+                    <TextView android:layout_marginTop="16.0dip" android:text="@string/verify_by" android:textAllCaps="true" style="@style/UiKit.TextView.Subtext.Semibold" />
+                    <TextView android:text="@string/captcha" android:textAllCaps="true" style="@style/UiKit.TextView.H1" />
+                </LinearLayout>
+                <ImageView android:src="?img_verify_phone" android:layout_centerHorizontal="true" android:contentDescription="@string/phone" style="@style/UiKit.ImageView" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.discord.utilities.view.text.LinkifiedTextView android:gravity="center" android:id="@id/alert_verify_account_support" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/UiKit.TextView.Subtext" />
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat.Transparent">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

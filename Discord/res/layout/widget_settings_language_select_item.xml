@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?selectableItemBackground" style="@style/UiKit.ViewGroup"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/settings_language_select_item_name_localized" style="@style/UiKit.Settings.Item.Icon" />
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:layout_gravity="end|center" android:id="@id/settings_language_select_item_name" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/locale" android:singleLine="true" style="@style/UiKit.TextView" />
+</FrameLayout>

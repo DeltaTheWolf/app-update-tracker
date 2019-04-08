@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FlexInput.Main.Widget"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/attachment_preview_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/attachment_preview_list" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:layoutManager="LinearLayoutManager" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/attachment_clear_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clear_24dp" android:contentDescription="Clear attachments" android:elevation="4.0dip" style="@style/FlexInput.Input.Button" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_input_container" style="@style/FlexInput.Input.Widget">
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlexInput.Input.Button.AddContent" />
+        <com.lytefast.flexinput.widget.FlexEditText android:id="@id/text_input" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="Send a message" android:maxLines="2" android:layout_weight="1.0" android:inputType="textAutoComplete|textMultiLine|textShortMessage" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/emoji_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlexInput.Input.Button.Emoji" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/send_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FlexInput.Input.Button.Send" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/emoji_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/default_keyboard_height" />
+</LinearLayout>

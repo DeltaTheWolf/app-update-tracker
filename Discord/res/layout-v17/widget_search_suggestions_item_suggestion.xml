@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:textSize="@dimen/uikit_textsize_small" android:textColor="?theme_search_suggestion_header_text_color" android:id="@id/suggestion_example_container" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:textAllCaps="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/suggestion_example_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_centerVertical="true" android:contentDescription="@string/sample_empty_string" android:layout_marginStart="17.0dip" />
+    <TextView android:textColor="?theme_search_suggestion_text_color_primary" android:id="@id/suggestion_example_filter" android:layout_marginLeft="72.0dip" android:layout_centerVertical="true" android:layout_marginStart="72.0dip" style="@style/UiKit.TextView.Semibold" />
+    <TextView android:textColor="?theme_search_suggestion_text_color_secondary" android:id="@id/suggestion_example_answer" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/suggestion_example_filter" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/suggestion_example_filter" style="@style/UiKit.TextView" />
+</RelativeLayout>

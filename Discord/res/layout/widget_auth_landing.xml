@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?auth_ptrn" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?auth_gradient" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_auth_logo" android:scaleType="center" android:layout_above="@id/auth_landing_content" android:layout_below="@id/auth_landing_invite_info" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/discord" style="@style/UiKit.ImageView" />
+    <fragment android:id="@id/auth_landing_invite_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginRight="8.0dip" class="com.discord.widgets.auth.WidgetAuthInviteInfo" />
+    <RelativeLayout android:id="@id/auth_landing_content" android:background="?auth_bg_card" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_alignParentBottom="true" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Top" />
+        <LinearLayout android:gravity="center_horizontal" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/nuf_title_mobile" style="@style/UiKit.TextView.H1" />
+            <TextView android:layout_marginBottom="20.0dip" android:text="@string/nuf_body_mobile" style="@style/UiKit.TextView.Subtext" />
+            <Button android:textSize="@dimen/uikit_textsize_large" android:id="@id/auth_landing_login" android:background="?selectableItemBackground" android:text="@string/login" style="@style/UiKit.AuthButton.Transparent" />
+            <View android:background="?primary_500" android:layout_width="wrap_content" android:layout_height="0.25dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:alpha="0.6" />
+            <Button android:textSize="@dimen/uikit_textsize_large" android:id="@id/auth_landing_register" android:background="?selectableItemBackground" android:text="@string/register" style="@style/UiKit.AuthButton.Transparent" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

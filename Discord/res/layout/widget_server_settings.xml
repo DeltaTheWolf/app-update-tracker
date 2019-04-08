@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:background="?primary_630" style="@style/AppTheme.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout style="@style/AppTheme.CollapsingToolbarLayout">
+            <LinearLayout android:gravity="center" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_xxlarge" android:layout_marginTop="?actionBarSize" style="@style/UiKit.ViewGroup.LinearLayout">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/avatar_size_hero" android:layout_height="@dimen/avatar_size_hero" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/server_settings_server_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:placeholderImage="@color/brand_500" app:roundAsCircle="true" style="@style/Avatar.Hero" />
+                    <TextView android:textSize="42.0sp" android:textColor="@color/primary_100" android:ellipsize="none" android:gravity="center_horizontal" android:id="@id/server_settings_server_icon_text" android:padding="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:layout_centerInParent="true" style="@style/UiKit.TextView.Large.SingleLine" />
+                </RelativeLayout>
+                <TextView android:id="@id/server_settings_server_name" android:singleLine="true" style="@style/UiKit.TextView.H1" />
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:background="?primary_630" style="@style/AppTheme.Toolbar" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+            <LinearLayout android:id="@id/server_settings_section_general_settings" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/settings" style="@style/UiKit.Settings.Item.Header" />
+                <TextView android:id="@id/server_settings_option_overview" android:text="@string/overview" android:drawableLeft="?ic_overview_a60" android:drawableStart="?ic_overview_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_option_moderation" android:text="@string/moderation" android:drawableLeft="?ic_privacy_a60" android:drawableStart="?ic_privacy_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_option_audit_log" android:text="@string/guild_settings_label_audit_log" android:drawableLeft="?ic_audit_logs" android:drawableStart="?ic_audit_logs" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_option_channels" android:text="@string/channels" android:drawableLeft="?ic_channels_a60" android:drawableStart="?ic_channels_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_option_integrations" android:text="@string/integrations" android:drawableLeft="?ic_integrations_a60" android:drawableStart="?ic_integrations_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_option_security" android:text="@string/security" android:drawableLeft="?ic_security_a60" android:drawableStart="?ic_security_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_option_vanity_url" android:text="@string/vanity_url" android:drawableLeft="?ic_link_a60" android:drawableStart="?ic_link_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_emojis_option" android:text="@string/emoji" android:drawableLeft="?ic_reactions" android:drawableStart="?ic_reactions" style="@style/UiKit.Settings.Item.Icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/server_settings_section_user_management" style="@style/UiKit.ViewGroup.LinearLayout">
+                <View android:id="@id/server_settings_section_user_management_divider" style="@style/UiKit.Settings.Divider" />
+                <TextView android:text="@string/user_management" style="@style/UiKit.Settings.Item.Header" />
+                <TextView android:id="@id/server_settings_members_option" android:text="@string/members" android:drawableLeft="?ic_members_a60" android:drawableStart="?ic_members_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_roles_option" android:text="@string/roles" android:drawableLeft="?ic_roles_a60" android:drawableStart="?ic_roles_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_instant_invites_option" android:text="@string/instant_invites" android:drawableLeft="?ic_invites_a60" android:drawableStart="?ic_invites_a60" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:id="@id/server_settings_bans_option" android:text="@string/bans" android:drawableLeft="?ic_bans_a60" android:drawableStart="?ic_bans_a60" style="@style/UiKit.Settings.Item.Icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

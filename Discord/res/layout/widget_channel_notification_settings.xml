@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/padding_bottom_fab_screen" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/notification_settings" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.views.CheckedSetting android:id="@id/channel_settings_notifications_mute_toggle" app:cs_text="@string/mute_channel" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <LinearLayout android:id="@id/channel_settings_notifications_frequency_wrap" style="@style/UiKit.ViewGroup.LinearLayout">
+                <View style="@style/UiKit.Settings.Divider" />
+                <TextView android:text="@string/form_label_notification_frequency" style="@style/UiKit.Settings.Item.Header" />
+                <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+                    <com.discord.views.CheckedSetting android:id="@id/channel_settings_notifications_frequency_0" app:cs_text="@string/form_label_all_messages" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+                    <com.discord.views.CheckedSetting android:id="@id/channel_settings_notifications_frequency_1" app:cs_text="@string/form_label_only_mentions" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+                    <com.discord.views.CheckedSetting android:id="@id/channel_settings_notifications_frequency_2" app:cs_text="@string/form_label_nothing" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/channel_notification_settings_system" android:background="?selectableItemBackground" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <ImageView android:padding="@dimen/uikit_textsize_large" android:src="?ic_notifications_a60" android:contentDescription="@string/form_label_mobile_notifications_system_label" style="@style/UiKit.ImageView" />
+                <LinearLayout android:layout_weight="1.0" style="@style/UiKit.ViewGroup.LinearLayout">
+                    <TextView android:text="@string/form_label_mobile_user_notifications_label" style="@style/UiKit.Settings.Item.Label" />
+                    <TextView android:text="@string/form_label_mobile_user_notifications_hint" style="@style/UiKit.Settings.Item.Addition" />
+                </LinearLayout>
+                <ImageView android:padding="@dimen/uikit_spacing_large" android:src="@drawable/icon_carrot" android:importantForAccessibility="no" style="@style/UiKit.ImageView" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/uikit_spacing_xxlarge" android:layout_height="@dimen/uikit_spacing_xxlarge" android:layout_margin="@dimen/uikit_spacing_xsmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/drawable_circle_speaking" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/voice_list_item_user" android:layout_centerInParent="true" style="@style/Avatar.Medium" />
+</RelativeLayout>

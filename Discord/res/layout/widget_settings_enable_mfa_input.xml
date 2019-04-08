@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_margin="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="?primary_100" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/two_fa_login_label" style="@style/UiKit.TextView" />
+    <TextView android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_xlarge" android:text="@string/two_fa_login_body" style="@style/UiKit.TextView" />
+    <com.discord.views.DigitVerificationView android:id="@id/user_settings_mfa_enable_input_digits" android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup" />
+</LinearLayout>

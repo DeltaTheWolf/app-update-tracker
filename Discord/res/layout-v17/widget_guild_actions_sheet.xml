@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="?primary_630" style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.Sheet.Header">
+            <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+            <FrameLayout style="@style/UiKit.Sheet.Header.Icon">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/guild_actions_overview_header_icon_iv" style="@style/Avatar.Large" />
+                <TextView android:textColor="@color/primary_100" android:ellipsize="none" android:layout_gravity="center" android:id="@id/guild_actions_overview_header_icon_tv" android:padding="@dimen/uikit_spacing_small" style="@style/UiKit.TextView.Large.SingleLine" />
+            </FrameLayout>
+            <TextView android:id="@id/guild_actions_overview_header_tv" style="@style/UiKit.Sheet.Header.Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/guild_actions_overview_settings" android:text="@string/server_settings" android:drawableLeft="?ic_settings" android:drawableStart="?ic_settings" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/guild_actions_overview_notifications" android:text="@string/notification_settings" android:drawableLeft="?ic_notifications_a60" android:drawableStart="?ic_notifications_a60" style="@style/UiKit.Settings.Item.Icon" />
+        <View style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/guild_actions_overview_mark_as_read" android:text="@string/mark_as_read" android:drawableLeft="?ic_visibility" android:drawableStart="?ic_visibility" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/guild_actions_overview_show_hide_muted_channels" android:drawableLeft="?ic_visibility_off" android:drawableStart="?ic_visibility_off" style="@style/UiKit.Settings.Item.Icon" />
+        <View style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/guild_actions_overview_change_nickname" android:text="@string/change_nickname" android:drawableLeft="?ic_person" android:drawableStart="?ic_person" style="@style/UiKit.Settings.Item.Icon" />
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+            <ImageView android:layout_gravity="top" android:paddingTop="@dimen/uikit_spacing_small" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:src="?ic_menu_private" android:contentDescription="@string/direct_messages" android:layout_marginStart="@dimen/uikit_spacing_large" style="@style/UiKit.ImageView" />
+            <com.discord.views.CheckedSetting android:id="@id/guild_actions_overview_privacy_cs" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginStart="@dimen/uikit_spacing_large" app:cs_subtext="@string/allow_server_dms" app:cs_text="@string/direct_messages" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+        </LinearLayout>
+        <View android:id="@id/guild_actions_manage_channels_divider" style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/guild_actions_overview_sort" android:text="@string/server_sort" android:drawableLeft="?ic_swap_vertical_circle" android:drawableStart="?ic_swap_vertical_circle" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/guild_actions_overview_create_channel" android:text="@string/create_channel" android:drawableLeft="?ic_plus_a60" android:drawableStart="?ic_plus_a60" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/guild_actions_overview_create_category" android:text="@string/create_category" android:drawableLeft="?ic_category" android:drawableStart="?ic_category" style="@style/UiKit.Settings.Item.Icon" />
+        <View style="@style/UiKit.Settings.Divider" />
+        <TextView android:textColor="@color/status_red_500" android:id="@id/guild_actions_overview_leave" android:text="@string/leave_server" android:drawableLeft="@drawable/ic_exit_to_app_red_24dp" android:drawableStart="@drawable/ic_exit_to_app_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/guild_actions_overview_copy_id" android:visibility="gone" android:text="@string/copy_id" android:drawableLeft="?ic_copy" android:drawableStart="?ic_copy" style="@style/UiKit.Settings.Item.Icon" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

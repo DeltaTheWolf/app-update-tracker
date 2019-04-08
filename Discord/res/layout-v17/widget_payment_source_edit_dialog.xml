@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar app:navigationIcon="?ic_action_bar_close" app:title="@string/payment_source_edit_title" style="@style/AppTheme.Toolbar">
+        <com.discord.views.LoadingButton android:layout_gravity="end|center" android:id="@id/dialog_save" android:padding="@dimen/uikit_spacing_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginStart="@dimen/uikit_spacing_medium" android:layout_marginEnd="@dimen/uikit_spacing_large" app:lb_progress_color="?primary_100_alpha_60" app:lb_text="@string/save" app:lb_text_color="?primary_100" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView android:layout_weight="1.0" style="@style/UiKit.ViewGroup.NestedScrollView">
+        <LinearLayout android:paddingBottom="@dimen/list_bottom_padding" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+            <com.discord.widgets.settings.billing.PaymentSourceView android:id="@id/payment_source_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" />
+            <com.discord.app.AppTextView android:id="@id/payment_source_edit_help" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/payment_source_edit_help_card" style="@style/UiKit.TextView.Subtext" />
+            <TextView android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/billing_address" style="@style/UiKit.TextView.H2" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_source_edit_name" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:text="@string/sample_user_name" android:hint="@string/billing_address_name" android:inputType="textPersonName" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText.Dense" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_source_edit_address1" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:hint="@string/billing_address_address" android:inputType="textPostalAddress" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText.Dense" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_source_edit_address2" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:hint="@string/billing_address_address2" android:inputType="text" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText.Dense" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_source_edit_city" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:hint="@string/billing_address_city" android:inputType="text" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText.Dense" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_source_edit_state" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:focusableInTouchMode="false" android:hint="@string/billing_address_state" android:editable="false" android:drawableRight="@drawable/ic_chevron_right_grey_24dp" android:inputType="none" android:imeOptions="actionGo" android:drawableEnd="@drawable/ic_chevron_right_grey_24dp" style="@style/UiKit.TextInputLayout.EditText.Dense" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_source_edit_postal_code" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:hint="@string/billing_address_zip_code" android:inputType="text" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText.Dense" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:enabled="false" android:id="@id/payment_source_edit_country" android:focusable="false" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:enabled="false" android:textColor="?primary_400" android:paddingRight="@dimen/uikit_spacing_medium" android:hint="@string/billing_address_country" android:drawableRight="@drawable/ic_lock_white_a60_16dp" android:inputType="none" android:drawableEnd="@drawable/ic_lock_white_a60_16dp" android:paddingEnd="@dimen/uikit_spacing_medium" style="@style/UiKit.TextInputLayout.EditText.Dense" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox android:id="@id/payment_source_edit_default" android:layout_marginTop="@dimen/uikit_spacing_medium" android:checked="true" android:text="@string/payment_source_make_default" app:buttonTint="@color/brand_500" style="@style/UiKit.Checkbox" />
+            <Button android:id="@id/dialog_delete" android:layout_marginTop="@dimen/uikit_spacing_xlarge" android:layout_marginBottom="@dimen/uikit_spacing_xlarge" android:text="@string/payment_source_delete" style="@style/UiKit.Button.Red.Outline" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.ViewGroup.ConstraintLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/rich_presence_header" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.Settings.Item.Header" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/embed_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/uikit_spacing_large" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rich_presence_image_large" android:layout_width="80.0dip" android:layout_height="80.0dip" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintLeft_toLeftOf="@id/embed_guideline" app:layout_constraintStart_toStartOf="@id/embed_guideline" app:layout_constraintTop_toBottomOf="@id/rich_presence_header" app:placeholderImage="?colorPrimaryDark" app:roundedCornerRadius="@dimen/uikit_spacing_small" />
+    <androidx.legacy.widget.Space android:id="@id/image_bottom_guideline" android:layout_width="@dimen/uikit_image_border_size" android:layout_height="@dimen/uikit_image_border_size" android:layout_marginLeft="@dimen/uikit_image_border_size" android:layout_marginTop="@dimen/uikit_image_border_size" app:layout_constraintLeft_toRightOf="@id/rich_presence_image_large" app:layout_constraintStart_toEndOf="@id/rich_presence_image_large" app:layout_constraintTop_toBottomOf="@id/rich_presence_image_large" />
+    <FrameLayout android:background="?primary_630_circle" android:padding="@dimen/uikit_image_border_size" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/image_bottom_guideline" app:layout_constraintEnd_toEndOf="@id/image_bottom_guideline" app:layout_constraintRight_toRightOf="@id/image_bottom_guideline">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rich_presence_image_small" android:visibility="gone" app:roundAsCircle="true" style="@style/Avatar.Standard" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/rich_presence_container_data" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:minHeight="80.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toRightOf="@id/rich_presence_image_large" app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toEndOf="@id/rich_presence_image_large" app:layout_constraintTop_toTopOf="@id/rich_presence_image_large" app:layout_goneMarginLeft="0.0dip" app:layout_goneMarginStart="0.0dip" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:ellipsize="marquee" android:id="@id/rich_presence_title" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/UiKit.TextView.H2" />
+        <TextView android:id="@id/rich_presence_details" style="@style/UiKit.TextView.Marquee" />
+        <TextView android:id="@id/rich_presence_state" style="@style/UiKit.TextView.Marquee" />
+        <TextView android:id="@id/rich_presence_time" style="@style/UiKit.TextView.Marquee" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

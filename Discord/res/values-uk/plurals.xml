@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+        <item quantity="other">%d год.</item>
+        <item quantity="one">%d год.</item>
+    </plurals>
+    <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+        <item quantity="other">%d хв.</item>
+        <item quantity="one">%d хв.</item>
+    </plurals>
+    <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+        <item quantity="other">%d с залишилося</item>
+        <item quantity="one">завершення</item>
+    </plurals>
+    <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+        <item quantity="other">%d год.</item>
+        <item quantity="one">%d год.</item>
+    </plurals>
+    <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+        <item quantity="other">%d хв.</item>
+        <item quantity="one">%d хв.</item>
+    </plurals>
+    <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+        <item quantity="other">%d с залишилося</item>
+        <item quantity="one">завершення</item>
+    </plurals>
+    <plurals name="application_store_hide_games_in_library_hidden_gamesHidden">
+        <item quantity="other">%d од. ігор у бібліотеці</item>
+        <item quantity="one">%d гру в бібліотеці</item>
+    </plurals>
+    <plurals name="application_store_recommendation_ever_played_other_count">
+        <item quantity="other">%d людей</item>
+        <item quantity="one">1 людина</item>
+        <item quantity="few">%d людини</item>
+    </plurals>
+    <plurals name="application_store_recommendation_now_playing_other_count">
+        <item quantity="other">%d людей</item>
+        <item quantity="one">1 людина</item>
+        <item quantity="few">%d людини</item>
+    </plurals>
+    <plurals name="application_store_recommendation_recently_played_other_count">
+        <item quantity="other">%d людей</item>
+        <item quantity="one">1 людина</item>
+        <item quantity="few">%d людини</item>
+    </plurals>
+    <plurals name="bans_header_bans">
+        <item quantity="other">%d заборони</item>
+        <item quantity="zero">Без заборон</item>
+        <item quantity="one">1 заборона</item>
+    </plurals>
+    <plurals name="billing_refund_purchase_date_daysSincePurchase">
+        <item quantity="other">%d дн. тому</item>
+        <item quantity="zero">Сьогодні</item>
+        <item quantity="one">%d дн. тому</item>
+    </plurals>
+    <plurals name="blocked_messages_count">
+        <item quantity="other">%d заблокованих повідомлень</item>
+        <item quantity="one">%d заблоковане повідомлення</item>
+        <item quantity="few">%d заблокованих повідомлення</item>
+    </plurals>
+    <plurals name="channel_slowmode_cooldown_seconds">
+        <item quantity="other">%d секунд</item>
+        <item quantity="one">1 секунду</item>
+        <item quantity="few">%d секунди</item>
+    </plurals>
+    <plurals name="channel_slowmode_desc_seconds">
+        <item quantity="other">%d секунд</item>
+        <item quantity="one">1 секунду</item>
+        <item quantity="few">%d секунди</item>
+    </plurals>
+    <plurals name="duration_days_days">
+        <item quantity="other">%d днів)</item>
+        <item quantity="one">1 день</item>
+        <item quantity="few">%d дні</item>
+    </plurals>
+    <plurals name="duration_hours_hours">
+        <item quantity="other">%d годин</item>
+        <item quantity="one">1 година</item>
+        <item quantity="few">%d години</item>
+    </plurals>
+    <plurals name="duration_minutes_minutes">
+        <item quantity="other">%d хвилин</item>
+        <item quantity="one">1 хвилина</item>
+        <item quantity="few">%d хвилини</item>
+    </plurals>
+    <plurals name="duration_seconds_seconds">
+        <item quantity="other">%d секунд</item>
+        <item quantity="one">1 секунда</item>
+        <item quantity="few">%d секунди</item>
+    </plurals>
+    <plurals name="emoji_slots_available_count">
+        <item quantity="other">%d слотів</item>
+        <item quantity="zero">слотів</item>
+        <item quantity="one">%d слот</item>
+        <item quantity="few">%d слота</item>
+    </plurals>
+    <plurals name="form_help_last_seen_days">
+        <item quantity="other">%d дн.</item>
+        <item quantity="one">1 day</item>
+    </plurals>
+    <plurals name="form_help_last_seen_members">
+        <item quantity="other">%d людей</item>
+        <item quantity="zero">0 members</item>
+        <item quantity="one">1 member</item>
+    </plurals>
+    <plurals name="game_feed_activity_more_playing_count_count">
+        <item quantity="other">%d гравців</item>
+        <item quantity="one">гравець</item>
+        <item quantity="few">гравця</item>
+    </plurals>
+    <plurals name="game_feed_activity_more_recently_played_count_count">
+        <item quantity="other">%dнещодавніх гравців</item>
+        <item quantity="one">нещодавній гравець</item>
+        <item quantity="few">нещодавніх гравця</item>
+    </plurals>
+    <plurals name="game_feed_activity_recently_played_count_count">
+        <item quantity="other">%d нещодавніх гравців</item>
+        <item quantity="one">нещодавній гравець</item>
+        <item quantity="few">%d нещодавніх гравця</item>
+    </plurals>
+    <plurals name="game_feed_activity_solo_players_count">
+        <item quantity="other">%d одиночних гравців</item>
+        <item quantity="one">одиночний гравець</item>
+        <item quantity="few">%d одиночних гравця</item>
+    </plurals>
+    <plurals name="game_feed_card_header_group_count">
+        <item quantity="other">%d друзів згруповано</item>
+        <item quantity="one">1 друг згрупований</item>
+        <item quantity="few">%d друга згруповано</item>
+    </plurals>
+    <plurals name="game_feed_card_header_group_guild_count">
+        <item quantity="other">%d друзів</item>
+        <item quantity="one">1 друг</item>
+        <item quantity="few">%d друга</item>
+    </plurals>
+    <plurals name="game_feed_divider_blurb_count">
+        <item quantity="other">людей</item>
+        <item quantity="one">людина</item>
+        <item quantity="few">людини</item>
+    </plurals>
+    <plurals name="game_feed_empty_state_blurb_count">
+        <item quantity="other">друзів</item>
+        <item quantity="one">друг</item>
+        <item quantity="few">друга</item>
+    </plurals>
+    <plurals name="game_feed_user_played_days_ago_time">
+        <item quantity="other">днів</item>
+        <item quantity="one">день</item>
+        <item quantity="few">дня</item>
+    </plurals>
+    <plurals name="game_feed_user_played_hours_ago_time">
+        <item quantity="other">днів</item>
+        <item quantity="one">день</item>
+        <item quantity="few">дня</item>
+    </plurals>
+    <plurals name="game_feed_user_played_minutes_ago_time">
+        <item quantity="other">хвилин</item>
+        <item quantity="one">хвилину</item>
+        <item quantity="few">хвилини</item>
+    </plurals>
+    <plurals name="game_feed_user_playing_for_days_time">
+        <item quantity="other">днів</item>
+        <item quantity="one">день</item>
+        <item quantity="few">дні</item>
+    </plurals>
+    <plurals name="game_feed_user_playing_for_hours_time">
+        <item quantity="other">годин</item>
+        <item quantity="one">годину</item>
+        <item quantity="few">години</item>
+    </plurals>
+    <plurals name="game_feed_user_playing_for_minutes_time">
+        <item quantity="other">хвилин</item>
+        <item quantity="one">хвилину</item>
+        <item quantity="few">хвилини</item>
+    </plurals>
+    <plurals name="game_library_last_played_days_time">
+        <item quantity="other">%d дн. тому</item>
+        <item quantity="one">вчора</item>
+    </plurals>
+    <plurals name="game_library_last_played_hours_time">
+        <item quantity="other">%d год.</item>
+        <item quantity="one">%d год.</item>
+    </plurals>
+    <plurals name="game_library_last_played_minutes_time">
+        <item quantity="other">%d хв.</item>
+        <item quantity="one">%d хв.</item>
+    </plurals>
+    <plurals name="game_library_last_played_months_time">
+        <item quantity="other">%d міс. тому</item>
+        <item quantity="one">минулого місяця</item>
+    </plurals>
+    <plurals name="game_library_last_played_weeks_time">
+        <item quantity="other">%d тиж. тому</item>
+        <item quantity="one">минулого тижня</item>
+    </plurals>
+    <plurals name="game_library_last_played_years_time">
+        <item quantity="other">%d р. тому</item>
+        <item quantity="one">минулого року</item>
+    </plurals>
+    <plurals name="game_library_time_played_hours_time">
+        <item quantity="other">год.</item>
+        <item quantity="one">год.</item>
+    </plurals>
+    <plurals name="game_library_time_played_minutes_time">
+        <item quantity="other">хв.</item>
+        <item quantity="one">хв.</item>
+    </plurals>
+    <plurals name="game_library_time_played_seconds_time">
+        <item quantity="other">с</item>
+        <item quantity="one">с</item>
+    </plurals>
+    <plurals name="game_library_updates_installing_hours_timeRemaining">
+        <item quantity="other">%d год.</item>
+        <item quantity="one">1 год.</item>
+    </plurals>
+    <plurals name="game_library_updates_installing_minutes_timeRemaining">
+        <item quantity="other">%d хв.</item>
+        <item quantity="one">1 хв.</item>
+    </plurals>
+    <plurals name="game_library_updates_installing_seconds_timeRemaining">
+        <item quantity="other">%d с залишилося</item>
+        <item quantity="one">завершення</item>
+    </plurals>
+    <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+        <item quantity="other">%d год.</item>
+        <item quantity="one">1 год.</item>
+    </plurals>
+    <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+        <item quantity="other">%d хв.</item>
+        <item quantity="one">1 хв.</item>
+    </plurals>
+    <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+        <item quantity="other">%d с залишилося</item>
+        <item quantity="one">завершення</item>
+    </plurals>
+    <plurals name="group_dm_add_members_number">
+        <item quantity="other">%d учасників</item>
+        <item quantity="one">1 учасника</item>
+    </plurals>
+    <plurals name="group_dm_invite_remaining_number">
+        <item quantity="other">Ти можеш додати ще %d учасників.</item>
+        <item quantity="one">Ти можете додати ще 1 учасника.</item>
+    </plurals>
+    <plurals name="group_dm_invite_unselect_users_number">
+        <item quantity="other">Ти маєш зняти виділення з %d учасників.</item>
+        <item quantity="one">Ти маєш зняти виділення з 1 учасника.</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+        <item quantity="other">права</item>
+        <item quantity="one">право</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+        <item quantity="other">Встановив тривалість повільного режиму **!!%d!! секунд**</item>
+        <item quantity="zero">Вимкнув повільний режим</item>
+        <item quantity="one">Встановив тривалість повільного режиму **1 секунда**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+        <item quantity="other">Встановив тривалість повільного режиму **!!%d!! секунд**</item>
+        <item quantity="zero">Вимкнув повільний режим</item>
+        <item quantity="one">Встановив тривалість повільного режиму **1 секунда**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_prune_count">
+        <item quantity="other">**!!%d!! членів**</item>
+        <item quantity="one">**члена**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
+        <item quantity="other">%d днів</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дні</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_message_delete_count">
+        <item quantity="other">**!!%d!! повідомлень**</item>
+        <item quantity="one">**повідомлення**</item>
+        <item quantity="few">**!!%d!! повідомлення**</item>
+    </plurals>
+    <plurals name="instant_invite_guild_members_total_count">
+        <item quantity="other">%d учасн.</item>
+        <item quantity="one">1 учасник</item>
+    </plurals>
+    <plurals name="invite_embed_num_open_slots_android_count">
+        <item quantity="other">%d відкритих слотів</item>
+        <item quantity="one">1 відкритий слот</item>
+        <item quantity="few">%d відкритих слота</item>
+    </plurals>
+    <plurals name="invite_embed_num_open_slots_number">
+        <item quantity="other">слотів</item>
+        <item quantity="one">слот</item>
+        <item quantity="few">слота</item>
+    </plurals>
+    <plurals name="invite_expires_hours_numHours">
+        <item quantity="other">%d год</item>
+        <item quantity="one">%d годину</item>
+    </plurals>
+    <plurals name="invite_expires_hours_or_uses_numHours">
+        <item quantity="other">%d год.</item>
+        <item quantity="one">%d годину</item>
+    </plurals>
+    <plurals name="invite_expires_hours_or_uses_numUses">
+        <item quantity="other">%d використань</item>
+        <item quantity="one">%d використання</item>
+    </plurals>
+    <plurals name="last_seen_days">
+        <item quantity="other">%d днів</item>
+        <item quantity="one">1 day</item>
+    </plurals>
+    <plurals name="max_uses_description_mobile_maxUses">
+        <item quantity="other">%d використань</item>
+        <item quantity="zero">Без обмежень</item>
+        <item quantity="one">%d використання</item>
+        <item quantity="few">%d використання</item>
+    </plurals>
+    <plurals name="max_uses_maxUses">
+        <item quantity="other">%d використань</item>
+        <item quantity="zero">без обмеження</item>
+        <item quantity="one">1 використання</item>
+    </plurals>
+    <plurals name="members_header_members">
+        <item quantity="other">%d учасників</item>
+        <item quantity="zero">немає учасників</item>
+        <item quantity="one">1 учасник</item>
+    </plurals>
+    <plurals name="n_days_days">
+        <item quantity="other">%d дні/-в)</item>
+        <item quantity="one">1 день</item>
+    </plurals>
+    <plurals name="new_messages_count">
+        <item quantity="other">%d нових повідомлень</item>
+        <item quantity="one">%d нове повідомлення</item>
+        <item quantity="few">%d нових повідомлення</item>
+    </plurals>
+    <plurals name="new_messages_with_date_count">
+        <item quantity="other">%d нових повідомлень</item>
+        <item quantity="one">%d нове повідомлення</item>
+        <item quantity="few">%d нових повідомлення</item>
+    </plurals>
+    <plurals name="notice_premium_applications_grandfathered_ending_numDays">
+        <item quantity="other">%d дн.</item>
+        <item quantity="one">один день</item>
+    </plurals>
+    <plurals name="num_channels_num">
+        <item quantity="other">%d каналів</item>
+        <item quantity="one">%d канал</item>
+        <item quantity="few">%d канали</item>
+    </plurals>
+    <plurals name="num_friends_friendCount">
+        <item quantity="other">%d друзів</item>
+        <item quantity="zero">0 друзів</item>
+        <item quantity="one">%d друг</item>
+        <item quantity="few">%d друга</item>
+    </plurals>
+    <plurals name="num_sponsors_subscribers">
+        <item quantity="other">**%d** спонсорів</item>
+        <item quantity="zero">**0** спонсорів</item>
+        <item quantity="one">**%d** спонсор</item>
+        <item quantity="few">**%d** спонсори</item>
+    </plurals>
+    <plurals name="num_subscribers_subscribers">
+        <item quantity="other">**%d** підписники/-ів</item>
+        <item quantity="zero">**0** підписників</item>
+        <item quantity="one">**1** підписник</item>
+    </plurals>
+    <plurals name="num_users_num">
+        <item quantity="other">%d користувачів</item>
+        <item quantity="one">%d користувач</item>
+        <item quantity="few">%d користувача</item>
+    </plurals>
+    <plurals name="only_you_can_see_and_delete_these_count">
+        <item quantity="other">ці повідомлення</item>
+        <item quantity="one">це повідомлення</item>
+    </plurals>
+    <plurals name="partial_outage_count">
+        <item quantity="other">**%d** серверів недоступні через тимчасове відключення.</item>
+        <item quantity="one">**%d** сервер недоступний через тимчасове відключення.</item>
+        <item quantity="few">**%d** сервери недоступні через тимчасове відключення.</item>
+    </plurals>
+    <plurals name="premium_code_redemption_confirmation_blurb_numMonths">
+        <item quantity="other">%d місяців</item>
+        <item quantity="one">1 місяця</item>
+    </plurals>
+    <plurals name="reaction_tooltip_1_n_n">
+        <item quantity="other">%d людей поставили</item>
+        <item quantity="one">1 людина поставила</item>
+        <item quantity="few">%d людини поставили</item>
+    </plurals>
+    <plurals name="reaction_tooltip_2_n_n">
+        <item quantity="other">%d людей поставили</item>
+        <item quantity="one">1 людина поставила</item>
+        <item quantity="few">%d людини поставили</item>
+    </plurals>
+    <plurals name="reaction_tooltip_3_n_n">
+        <item quantity="other">%d людей поставили</item>
+        <item quantity="one">1 людина поставила</item>
+        <item quantity="few">%d людини поставили</item>
+    </plurals>
+    <plurals name="reaction_tooltip_n_n">
+        <item quantity="other">%d людей поставили</item>
+        <item quantity="one">1 людина поставила</item>
+        <item quantity="few">%d людини поставили</item>
+    </plurals>
+    <plurals name="roles_list_numRoles">
+        <item quantity="other">Ролі</item>
+        <item quantity="zero">Немає ролей</item>
+        <item quantity="one">Роль</item>
+    </plurals>
+    <plurals name="search_hide_blocked_messages_count">
+        <item quantity="other">%d повідомлень</item>
+        <item quantity="one">%d повідомлення</item>
+        <item quantity="few">%d повідомлення</item>
+    </plurals>
+    <plurals name="search_num_results_blocked_not_shown_count">
+        <item quantity="other">%d результатів</item>
+        <item quantity="one">%d результат</item>
+        <item quantity="few">%d результати</item>
+    </plurals>
+    <plurals name="search_still_indexing_hint_count">
+        <item quantity="other">%d результатів</item>
+        <item quantity="zero">Немає результатів</item>
+        <item quantity="one">%d результат</item>
+        <item quantity="few">%d результати</item>
+    </plurals>
+    <plurals name="spotify_listen_along_title_host_count">
+        <item quantity="other">слухачів</item>
+        <item quantity="one">слухач</item>
+        <item quantity="few">слухача</item>
+    </plurals>
+    <plurals name="total_results_count">
+        <item quantity="other">%d результатів</item>
+        <item quantity="zero">Немає результатів</item>
+        <item quantity="one">%d результат</item>
+        <item quantity="few">%d результати</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_end_hours">
+        <item quantity="other">%d:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_end_minutes">
+        <item quantity="other">%d:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_end_seconds">
+        <item quantity="other">%d</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_start_hours">
+        <item quantity="other">%d:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_start_minutes">
+        <item quantity="other">%d:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_start_seconds">
+        <item quantity="other">%d</item>
+    </plurals>
+    <plurals name="user_activity_user_playing_for_days_time">
+        <item quantity="other">днів</item>
+        <item quantity="one">день</item>
+        <item quantity="few">дні</item>
+    </plurals>
+    <plurals name="user_activity_user_playing_for_hours_time">
+        <item quantity="other">годин</item>
+        <item quantity="one">годину</item>
+        <item quantity="few">години</item>
+    </plurals>
+    <plurals name="user_activity_user_playing_for_minutes_time">
+        <item quantity="other">хвилин</item>
+        <item quantity="one">хвилину</item>
+        <item quantity="few">хвилини</item>
+    </plurals>
+</resources>

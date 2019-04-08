@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <com.discord.app.AppTextView android:id="@id/settings_backup_codes_info" android:layout_margin="@dimen/uikit_spacing_large" android:text="@string/two_fa_backup_codes_body" style="@style/UiKit.TextView" />
+            <View style="@style/UiKit.Divider" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/settings_backup_codes_rv" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.RecyclerView" />
+            <Button android:id="@id/settings_backup_codes_generate" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_xlarge" android:text="@string/two_fa_generate_codes" style="@style/UiKit.Button.Grey" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

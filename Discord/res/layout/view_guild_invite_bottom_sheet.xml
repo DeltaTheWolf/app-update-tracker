@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="?primary_630" style="@style/UiKit.ViewGroup.LinearLayout.BottomSheet"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:background="?primary_630" style="@style/UiKit.ViewGroup.LinearLayout">
+        <LinearLayout android:background="?colorPrimary" android:padding="16.0dip" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:textColor="?primary_300" android:text="@string/form_label_instant_invite_channel" android:textAllCaps="true" style="@style/UiKit.TextView" />
+            <Spinner android:id="@id/guild_invite_channel_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:popupBackground="?colorPrimary" />
+            <View android:background="?primary_400" android:layout_width="fill_parent" android:layout_height="0.25dip" />
+        </LinearLayout>
+        <TextView android:textColor="?primary_300" android:layout_margin="16.0dip" android:text="@string/expire_after" android:textAllCaps="true" style="@style/UiKit.TextView" />
+        <HorizontalScrollView style="@style/UiKit.ViewGroup.ScrollView.Horizontal">
+            <RadioGroup android:orientation="horizontal" android:id="@id/guild_invite_expires_after_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <TextView android:textColor="?primary_300" android:layout_margin="16.0dip" android:text="@string/max_number_of_uses" android:textAllCaps="true" style="@style/UiKit.TextView" />
+        <HorizontalScrollView style="@style/UiKit.ViewGroup.ScrollView.Horizontal">
+            <RadioGroup android:orientation="horizontal" android:id="@id/guild_invite_max_uses_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <com.discord.views.CheckedSetting android:id="@id/guild_invite_temporary_membership" app:cs_subtext="@string/temporary_membership_explanation" app:cs_text="@string/grant_temporary_membership" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+        <Button android:id="@id/guild_invite_generate_link" android:layout_margin="@dimen/uikit_spacing_large" android:text="@string/create_link" style="@style/UiKit.Button.White" />
+    </LinearLayout>
+</merge>

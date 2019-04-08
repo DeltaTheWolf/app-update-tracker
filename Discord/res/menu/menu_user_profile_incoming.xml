@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_user_profile_message" android:orderInCategory="1" android:title="@string/send_message" app:showAsAction="never" />
+    <item android:id="@id/menu_user_profile_ignore" android:orderInCategory="2" android:title="@string/friend_request_ignore" app:showAsAction="never" />
+    <item android:id="@id/menu_user_profile_block" android:orderInCategory="3" android:title="@string/block" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/form_label_input_mode" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_input_mode_radio_1" app:cs_text="@string/input_mode_vad" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_input_mode_radio_2" app:cs_text="@string/input_mode_ptt" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <RelativeLayout android:id="@id/settings_voice_sensitivity_wrap" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?primary_100" android:id="@id/settings_voice_sensitivity_header" android:text="@string/form_label_sensitivty" android:layout_alignBaseline="@id/settings_voice_sensitivity_test_button" style="@style/UiKit.TextView" />
+                <Button android:textColor="?primary_100" android:id="@id/settings_voice_sensitivity_test_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/form_label_test_microphone" android:drawableLeft="?ic_mic" android:layout_alignParentRight="true" android:drawableStart="?ic_mic" style="@style/UiKit.Button.White.Outline" />
+                <LinearLayout android:id="@id/settings_voice_sensitivity_testing_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/settings_voice_sensitivity_header" style="@style/UiKit.ViewGroup.LinearLayout">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.miguelgaeta.super_bar.SuperBar android:id="@id/settings_voice_sensitivity_manual" android:layout_marginTop="@dimen/uikit_spacing_small" app:sb_barBackgroundColor="@color/status_green_500" app:sb_barColor="@color/status_yellow_500" app:sb_barOverlayColor="@color/white_alpha_40" style="@style/UiKit.SuperBar" />
+                        <View android:layout_gravity="center_vertical" android:id="@id/settings_voice_sensitivity_automatic" android:background="@drawable/drawable_voice_indicator_speaking" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="@dimen/uikit_spacing_small" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" />
+                    </FrameLayout>
+                    <TextView android:id="@id/settings_voice_sensitivity_label" android:text="@string/form_help_automatic_vad" style="@style/UiKit.TextView" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:layout_marginTop="0.0dip" style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/settings_advanced" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_auto_vad_toggle" app:cs_text="@string/form_label_automatic_vad" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_echo_cancellation_toggle" app:cs_text="@string/echo_cancellation" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_noise_suppression_toggle" app:cs_text="@string/noise_suppression" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_gain_control_toggle" app:cs_text="@string/automatic_gain_control" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/form_label_output" style="@style/UiKit.Settings.Item.Header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/settings_voice_output_volume_wrap" android:background="@drawable/drawable_bg_settings_item" android:padding="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?primary_100" android:text="@string/form_label_volume" style="@style/UiKit.TextView" />
+                <com.miguelgaeta.super_bar.SuperBar android:id="@id/settings_voice_output_volume" android:layout_marginTop="@dimen/uikit_spacing_small" app:sb_barBackgroundColor="@color/black_alpha_20" app:sb_barColor="@color/purple_brand" style="@style/UiKit.SuperBar" />
+            </LinearLayout>
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_use_speaker_toggle" app:cs_text="@string/use_speaker" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <LinearLayout android:id="@id/settings_voice_video_container" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/video" style="@style/UiKit.Settings.Item.Header" />
+                <com.discord.views.CheckedSetting android:id="@id/settings_voice_enable_hardware_scaling_toggle" app:cs_subtext="@string/mobile_enable_hardware_scaling_desc" app:cs_text="@string/mobile_enable_hardware_scaling" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            </LinearLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/form_label_audio_mode_android" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_audio_mode_communication" app:cs_subtext="@string/form_description_audio_mode_android_communication" app:cs_text="@string/form_label_audio_mode_android_communication" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_audio_mode_call" app:cs_subtext="@string/form_description_audio_mode_android_call" app:cs_text="@string/form_label_audio_mode_android_call" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/form_label_android_opensl" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.app.AppTextView android:text="@string/form_label_android_opensl_desc" app:tv_markdown_enabled="true" style="@style/UiKit.Settings.Item.SubText" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_opensles_default" app:cs_subtext="@string/form_label_android_opensl_default_desc" app:cs_text="@string/form_label_android_opensl_default" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_opensles_force_enabled" app:cs_subtext="@string/form_label_android_opensl_force_enabled_desc" app:cs_text="@string/form_label_android_opensl_force_enabled" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_voice_opensles_force_disabled" app:cs_subtext="@string/form_label_android_opensl_force_disabled_desc" app:cs_text="@string/form_label_android_opensl_force_disabled" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/notice_header_container" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:id="@id/upgrade_premium_header" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.TextView.H1.Bold" />
+        <View style="@style/UiKit.Divider" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView">
+        <LinearLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:id="@id/upgrade_premium_body" style="@style/UiKit.TextView" />
+            <View android:id="@id/error_divider" android:background="@color/primary_630" android:visibility="gone" style="@style/UiKit.Settings.Divider" />
+            <TextView android:textColor="@color/status_red_500" android:id="@id/upgrade_premium_error" android:visibility="gone" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/premium_upgrade_failed_body" style="@style/UiKit.TextView" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@style/UiKit.Settings.Divider" />
+    <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
+        <Button android:textColor="@color/primary_100" android:id="@id/upgrade_premium_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nevermind" style="@style/UiKit.Button.Transparent" />
+        <com.discord.views.LoadingButton android:layout_gravity="center_vertical" android:id="@id/upgrade_premium_confirm" android:background="@drawable/button_brand_500" android:paddingTop="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" app:lb_progress_color="@color/white" app:lb_text="@string/premium_upgrade_confirm_button" app:lb_text_color="@drawable/button_text_color_primary_100" />
+    </LinearLayout>
+</LinearLayout>

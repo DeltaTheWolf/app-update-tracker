@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/guild_management_add_server" android:src="@drawable/ic_add_white_24dp" style="@style/Settings.FloatingActionButton" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/guild_management_recycler" android:paddingBottom="@dimen/padding_bottom_fab_screen" android:clipToPadding="false" style="@style/UiKit.ViewGroup.RecyclerView.AppBarScrollingViewBehavior" />
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

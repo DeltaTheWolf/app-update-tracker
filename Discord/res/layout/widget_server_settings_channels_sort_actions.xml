@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.Sheet.Header">
+            <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+            <TextView android:id="@id/guild_actions_overview_header_tv" android:text="@string/select_sort_mode" style="@style/UiKit.Sheet.Header.Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/server_settings_channels_sort_actions_category" android:text="@string/category" android:drawableLeft="?ic_category" android:drawableStart="?ic_category" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/server_settings_channels_sort_actions_voice" android:text="@string/voice_channel" android:drawableLeft="?ic_volume" android:drawableStart="?ic_volume" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/server_settings_channels_sort_actions_text" android:text="@string/text_channel" android:drawableLeft="?ic_channel_text" android:drawableStart="?ic_channel_text" style="@style/UiKit.Settings.Item.Icon" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/action_bar_toolbar_layout" style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar android:background="?primary_630" style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:id="@id/friends_add_container" android:layout_below="@id/action_bar_toolbar_layout" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:paddingBottom="@dimen/uikit_spacing_medium" android:text="@string/add_friend_add_manually" style="@style/UiKit.Settings.Item.Header" />
+        <TextView android:textColor="?primary_400" android:layout_marginLeft="@dimen/uikit_spacing_large" android:text="@string/add_friend_no_capitalization" android:layout_marginStart="@dimen/uikit_spacing_large" style="@style/UiKit.TextView" />
+        <LinearLayout android:id="@id/friends_add_header" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/friends_add_text_edit_wrap" android:layout_width="fill_parent" android:hint=" " android:layout_weight="6.0" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/friends_add_text_edit" android:hint="@string/add_friend_input_hint" android:imeOptions="actionDone" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:enabled="false" android:layout_gravity="end|center|top" android:id="@id/friends_add_send" android:layout_marginTop="24.0dip" android:text="@string/send" android:layout_weight="1.0" style="@style/UiKit.Button.Fit" />
+        </LinearLayout>
+    </LinearLayout>
+    <fragment android:id="@id/friends_add_nearby" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/friends_add_container" class="com.discord.widgets.friends.WidgetFriendsFindNearby" />
+</RelativeLayout>

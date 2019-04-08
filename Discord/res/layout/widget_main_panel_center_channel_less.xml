@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.ScrollView">
+        <LinearLayout style="@style/UiKit.Copy.Container">
+            <ImageView android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="?img_chat_channel_less" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:layout_gravity="center" android:id="@id/main_panel_center_channel_less_title" android:text="@string/channels_unavailable_title" style="@style/UiKit.TextView.H1" />
+                <TextView android:gravity="center" android:id="@id/main_panel_center_channel_less_body" android:layout_marginTop="16.0dip" android:text="@string/channels_unavailable_body" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

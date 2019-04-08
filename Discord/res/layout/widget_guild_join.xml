@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:layout_height="fill_parent" android:baselineAligned="false" style="@style/UiKit.ViewGroup.LinearLayout">
+            <LinearLayout android:padding="0.0dip" style="@style/UiKit.Copy">
+                <com.google.android.material.textfield.TextInputLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" style="@style/UiKit.Copy.EditText.Wrap">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/guild_join_invite" android:hint="@string/form_label_instant_invite" android:imeOptions="actionDone" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:background="?primary_630" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/UiKit.ViewGroup.LinearLayout">
+                <include layout="@layout/widget_guild_join_invite_examples" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ImageView android:layout_gravity="bottom|center" android:layout_marginBottom="4.0dip" android:src="?img_wumpus_tophat" android:contentDescription="@string/join_server_button_cta_mobile" style="@style/UiKit.ImageView.HideInLandscape" />
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

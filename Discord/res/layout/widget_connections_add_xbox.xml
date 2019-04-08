@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <LinearLayout android:gravity="center" android:layout_centerInParent="true" style="@style/UiKit.ViewGroup.LinearLayout">
+            <LinearLayout style="@style/UiKit.AuthCopyContainer">
+                <TextView android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/xbox_authorization_title" style="@style/UiKit.TextView.H1" />
+                <TextView android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/connection_enter_code" style="@style/UiKit.TextView.Subtext" />
+            </LinearLayout>
+            <com.discord.views.DigitVerificationView android:id="@id/connections_xbox_digits" android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/connections_xbox_login" android:background="?primary_500" android:padding="@dimen/uikit_spacing_medium" android:layout_margin="@dimen/uikit_spacing_medium" android:foreground="?selectableItemBackground" android:layout_alignParentBottom="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+            <TextView android:textColor="?primary_300" android:layout_marginRight="@dimen/uikit_spacing_medium" android:text="@string/connection_login_with" style="@style/UiKit.TextView" />
+            <ImageView android:paddingTop="@dimen/uikit_spacing_small" android:paddingBottom="@dimen/uikit_spacing_small" android:src="@drawable/ic_account_microsoft" style="@style/UiKit.ImageView" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

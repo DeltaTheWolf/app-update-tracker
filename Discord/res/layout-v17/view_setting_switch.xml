@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge style="@style/UiKit.ViewGroup"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/setting_container" android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <LinearLayout android:layout_toLeftOf="@id/setting_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/setting_button" android:layout_alignParentStart="true" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:id="@id/setting_label" style="@style/UiKit.TextView" />
+            <TextView android:id="@id/setting_subtext" android:layout_marginTop="@dimen/uikit_spacing_small" style="@style/UiKit.TextView" />
+        </LinearLayout>
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/setting_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/uikit_spacing_large" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</merge>

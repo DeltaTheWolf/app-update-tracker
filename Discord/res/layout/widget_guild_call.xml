@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout style="@style/UiKit.ViewGroup.RelativeLayout.AppBarScrollingViewBehavior">
+        <com.discord.app.AppViewFlipper android:id="@id/guild_call_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@anim/anim_fade_in" android:outAnimation="@anim/anim_fade_out" android:layout_above="@id/guild_call_controls" android:layout_alignWithParentIfMissing="true">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/guild_call_participant_list" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.LinearLayout">
+                <ImageView android:src="?img_voice_no_connections" style="@style/UiKit.ImageView" />
+                <TextView android:textSize="13.75sp" android:gravity="center" android:layout_margin="16.0dip" android:text="@string/voice_channel_empty" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </com.discord.app.AppViewFlipper>
+        <com.discord.widgets.voice.fullscreen.VoiceControlsView android:id="@id/guild_call_controls" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

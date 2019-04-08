@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/user_avatar_presence_container" android:layout_width="wrap_content" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_avatar_presence_avatar" android:layout_centerVertical="true" app:roundWithOverlayColor="?primary_630" style="@style/Avatar.Large" />
+    <RelativeLayout android:layout_width="@dimen/avatar_status_size_extra" android:layout_height="@dimen/avatar_status_size_extra" android:layout_alignRight="@id/user_avatar_presence_avatar" android:layout_alignBottom="@id/user_avatar_presence_avatar" android:layout_alignEnd="@id/user_avatar_presence_avatar">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholderImage="?primary_630" app:roundAsCircle="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_avatar_presence_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/avatar_status_size_extra_margin" android:layout_centerInParent="true" app:placeholderImage="@color/status_grey_500" app:roundAsCircle="true" />
+    </RelativeLayout>
+</RelativeLayout>

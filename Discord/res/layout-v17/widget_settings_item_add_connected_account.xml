@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/add_connected_account_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginEnd="@dimen/uikit_spacing_large" style="@style/UiKit.ImageView" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/add_connected_account_text" style="@style/UiKit.TextView.Large.SingleLine" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.Sheet.Header">
+            <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+            <LinearLayout android:orientation="vertical" style="@style/UiKit.Sheet.Header.Contents">
+                <TextView android:layout_width="fill_parent" android:text="@string/instant_invite" style="@style/UiKit.TextView.H1.Bold" />
+                <TextView android:id="@id/invite_actions_title" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/invite_actions_revoke" android:text="@string/revoke" android:drawableLeft="@drawable/ic_remove_circle_outline_red_24dp" android:drawableStart="@drawable/ic_remove_circle_outline_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/invite_actions_copy" android:text="@string/copy" android:drawableLeft="?ic_copy" android:drawableStart="?ic_copy" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/invite_actions_share" android:text="@string/share" android:drawableLeft="?ic_share" android:drawableStart="?ic_share" style="@style/UiKit.Settings.Item.Icon" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

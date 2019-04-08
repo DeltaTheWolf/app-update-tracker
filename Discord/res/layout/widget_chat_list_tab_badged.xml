@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/unread_wrap" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?theme_friends_pending_tab_text_color" android:gravity="center" android:id="@id/chat_list_tab_badged_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/App.TabLayout.Text" />
+    <TextView android:textSize="10.0sp" android:textColor="?colorPrimary" android:gravity="center" android:id="@id/chat_list_tab_badged_count" android:background="?theme_friends_tab_mentions" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="8.0dip" android:singleLine="true" style="@style/UiKit.TextView.Semibold" />
+</LinearLayout>

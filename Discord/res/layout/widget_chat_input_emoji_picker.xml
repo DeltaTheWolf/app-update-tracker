@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/emoji_search_bar" layout="@layout/layout_search_actionbar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/chat_input_emoji_picker_recycler" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:clipToPadding="false" android:layout_above="@id/emoji_picker_bottom_bar" android:layout_below="@id/emoji_search_bar" style="@style/UiKit.ViewGroup.RecyclerView"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout android:id="@id/emoji_picker_bottom_bar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/emoji_picker_search_icon" android:src="?theme_search_menu_icon" android:layout_alignParentLeft="true" android:contentDescription="@string/search" style="@style/EmojiPickerButtonIcon" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/emoji_picker_tab_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/emoji_picker_backspace_icon" android:layout_toRightOf="@id/emoji_picker_search_icon" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" app:tabMaxWidth="@dimen/uikit_spacing_xxxlarge" app:tabMode="scrollable" app:tabPaddingEnd="@dimen/uikit_spacing_small" app:tabPaddingStart="@dimen/uikit_spacing_small" />
+        <ImageView android:id="@id/emoji_picker_backspace_icon" android:src="?theme_backspace_icon" android:layout_alignParentRight="true" android:contentDescription="@string/delete" style="@style/EmojiPickerButtonIcon" />
+    </RelativeLayout>
+</RelativeLayout>

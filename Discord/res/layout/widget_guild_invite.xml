@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?ptrn_consoles" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <androidx.core.widget.NestedScrollView android:layout_height="fill_parent" android:layout_above="@id/guild_invite_actions" style="@style/UiKit.ViewGroup.ScrollView">
+            <com.discord.widgets.guilds.invite.WidgetInviteInfo android:id="@id/guild_invite_info" style="@style/UiKit.Copy.Container" />
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:id="@id/guild_invite_actions" style="@style/UiKit.Copy.Anchor">
+            <FrameLayout style="@style/UiKit.Copy.Anchor.Item.Rotatable">
+                <Button android:id="@id/guild_invite_cancel" android:visibility="gone" android:text="@string/cancel" style="@style/UiKit.Button.White" />
+            </FrameLayout>
+            <FrameLayout style="@style/UiKit.Copy.Anchor.Item.Rotatable">
+                <Button android:id="@id/guild_invite_accept" android:visibility="gone" android:text="@string/invite_modal_button" style="@style/UiKit.Button" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat.Transparent">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

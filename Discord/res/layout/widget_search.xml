@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_search_actionbar" />
+    <FrameLayout style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <fragment android:name="com.discord.widgets.search.suggestions.WidgetSearchSuggestions" android:id="@id/widget_search_suggestions" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <fragment android:name="com.discord.widgets.search.results.WidgetSearchResults" android:id="@id/widget_search_results" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </FrameLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/search_send_query_fab" android:visibility="gone" android:src="@drawable/ic_search_white_24dp" style="@style/Settings.FloatingActionButton" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

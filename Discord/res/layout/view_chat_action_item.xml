@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/chat_action_item_image" android:padding="13.0dip" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginRight="@dimen/uikit_spacing_large" android:scaleType="fitCenter" android:layout_alignTop="@id/chat_action_item_text" android:layout_alignBottom="@id/chat_action_item_subtext" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:importantForAccessibility="no" />
+    <com.discord.app.AppTextView android:textSize="16.0sp" android:textColor="@color/primary_100" android:id="@id/chat_action_item_text" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/chat_action_item_image" app:tv_markdown_enabled="true" style="@style/UiKit.TextView.Semibold" />
+    <com.discord.app.AppTextView android:textSize="12.0sp" android:textColor="@color/primary_100_alpha_80" android:id="@id/chat_action_item_subtext" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/chat_action_item_text" android:layout_alignLeft="@id/chat_action_item_text" android:layout_alignParentRight="true" android:lineSpacingMultiplier="1.0" app:tv_markdown_enabled="true" style="@style/UiKit.TextView" />
+</merge>

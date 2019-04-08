@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/action_bar_scrolling_view_behavior" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:id="@id/server_settings_security_label" android:layout_marginTop="@dimen/uikit_spacing_xxlarge" android:text="@string/guild_security_req_mfa_label" style="@style/UiKit.TextView.H2" />
+            <Button android:id="@id/server_settings_security_toggle_mfa_button" android:layout_marginTop="@dimen/uikit_spacing_large" android:text="@string/guild_security_req_mfa_turn_on" style="@style/UiKit.Button.Green.Fit" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/uikit_spacing_xxlarge" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <ImageView android:layout_marginBottom="@dimen/uikit_spacing_xxlarge" android:src="@drawable/asset_security" android:layout_above="@id/mfa_description_text" android:layout_centerHorizontal="true" android:contentDescription="@string/guild_security_req_mfa_turn_on" style="@style/UiKit.ImageView" />
+            <com.discord.app.AppTextView android:id="@id/mfa_description_text" android:text="@string/guild_security_req_mfa_body" android:layout_alignParentBottom="true" style="@style/UiKit.TextView" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

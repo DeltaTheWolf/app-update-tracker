@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+        <RelativeLayout android:id="@id/group_invite_friends_recipients_container" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <TextView android:textColor="?primary_100" android:id="@id/group_invite_friends_text_to" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/group_dm_invite_to" android:layout_marginStart="@dimen/uikit_spacing_large" android:layout_marginEnd="@dimen/uikit_spacing_large" style="@style/UiKit.TextView" />
+            <com.discord.chipsview.ChipsView android:id="@id/group_invite_friends_chips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/group_invite_friends_text_to" android:overScrollMode="never" android:layout_toEndOf="@id/group_invite_friends_text_to" app:cv_bg_color="?primary_630" app:cv_bg_color_clicked="?primary_700" app:cv_chip_layout="@layout/view_chip" app:cv_color="?primary_630" app:cv_color_clicked="?primary_700" app:cv_max_height="120.0dip" app:cv_search_text_color="?primary_300" app:cv_search_text_size="@dimen/uikit_textsize_medium" app:cv_text_color="?primary_300" app:cv_text_color_clicked="?primary_300" app:cv_vertical_spacing="6.0dip" />
+            <View android:layout_alignParentBottom="true" style="@style/UiKit.Divider" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@id/group_invite_friends_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/group_invite_friends_recycler" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RecyclerView" />
+        <TextView android:text="@string/group_dm_invite_empty" android:drawableTop="@drawable/asset_no_results_light" style="@style/UiKit.TextView.NoResults" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/group_dm_invite_full_main" android:drawableTop="@drawable/asset_group_full" style="@style/UiKit.TextView.NoResults" />
+            <TextView android:gravity="center" android:layout_margin="@dimen/uikit_spacing_medium" android:text="@string/group_dm_invite_full_sub" style="@style/UiKit.TextView.Semibold" />
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/group_invite_friends_save_fab" android:src="@drawable/ic_send_white_24dp" style="@style/Settings.FloatingActionButton" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

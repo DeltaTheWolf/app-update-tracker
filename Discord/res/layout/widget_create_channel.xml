@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar android:title="@string/create_channel" style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/create_channel_name_layout" android:layout_margin="@dimen/uikit_spacing_large" style="@style/UiKit.Form.Field.EditText.Wrap">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/create_channel_name" android:layout_width="fill_parent" android:hint="@string/form_label_channel_name" android:maxLength="100" app:hintEnabled="true" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <LinearLayout android:id="@id/create_channel_type_container" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:gravity="center_vertical" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="@string/channel_type" android:textAllCaps="true" style="@style/UiKit.TextView.Semibold" />
+                <RelativeLayout android:id="@id/create_channel_text_container" android:background="?selectableItemBackground" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/UiKit.ViewGroup.RelativeLayout">
+                    <TextView android:textColor="?primary_100" android:text="@string/text_channel" android:drawableLeft="@drawable/ic_channel_text_16dp" android:drawablePadding="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:drawableStart="@drawable/ic_channel_text_16dp" style="@style/UiKit.TextView" />
+                    <RadioButton android:id="@id/create_channel_text_radio" android:background="@null" android:focusable="false" android:clickable="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/UiKit.RadioButton" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/create_channel_voice_container" android:background="?selectableItemBackground" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" style="@style/UiKit.ViewGroup.RelativeLayout">
+                    <TextView android:textColor="?primary_100" android:text="@string/voice_channel" android:drawableLeft="@drawable/ic_channel_voice_16dp" android:drawablePadding="8.0dip" android:layout_alignBaseline="@id/create_channel_voice_radio" android:layout_alignBottom="@id/create_channel_voice_radio" android:layout_alignParentLeft="true" android:drawableStart="@drawable/ic_channel_voice_16dp" style="@style/UiKit.TextView" />
+                    <RadioButton android:id="@id/create_channel_voice_radio" android:background="@null" android:focusable="false" android:clickable="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/UiKit.RadioButton" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <RelativeLayout android:id="@id/create_channel_private_container" android:paddingTop="16.0dip" android:paddingBottom="8.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" style="@style/UiKit.ViewGroup.RelativeLayout">
+                <TextView android:textColor="?primary_100" android:id="@id/create_channel_private_title" android:layout_marginTop="8.0dip" android:text="@string/private_channel" android:drawableLeft="@drawable/ic_channel_lock_16dp" android:drawablePadding="8.0dip" android:layout_alignParentLeft="true" android:drawableStart="@drawable/ic_channel_lock_16dp" style="@style/UiKit.TextView" />
+                <TextView android:id="@id/create_channel_private_info" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:text="@string/private_channel_note" android:layout_below="@id/create_channel_private_title" android:layout_alignParentLeft="true" style="@style/UiKit.TextView" />
+                <Switch android:id="@id/create_channel_private_switch" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:gravity="center_vertical" android:id="@id/create_channel_role_header" android:visibility="gone" android:layout_margin="16.0dip" android:text="@string/form_label_channel_permissions" android:textAllCaps="true" style="@style/UiKit.TextView.Semibold" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/create_channel_role_access_recycler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

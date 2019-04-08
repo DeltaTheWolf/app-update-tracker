@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/notice_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:id="@id/notice_header" android:padding="@dimen/uikit_spacing_large" android:layout_width="fill_parent" style="@style/UiKit.TextView.H1.Bold" />
+        <View style="@style/UiKit.Divider" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView">
+        <LinearLayout android:gravity="center" android:id="@id/notice_body_container" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:gravity="start" android:layout_gravity="start" android:id="@id/notice_body_text" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.TextView" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@style/UiKit.Settings.Divider" />
+    <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
+        <TextView android:id="@id/notice_cancel" android:text="@string/cancel" style="?buttonBarNegativeButtonStyle" />
+        <TextView android:id="@id/notice_ok" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:text="@string/okay" android:layout_marginStart="@dimen/uikit_spacing_medium" style="?buttonBarPositiveButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

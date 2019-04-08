@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="end" android:id="@id/main_panel_right" android:background="@color/grey_channels" android:fitsSystemWindows="true" android:layout_width="@dimen/right_panel_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.discord.widgets.channels.WidgetChannelTopic" android:id="@id/widget_channel_topic" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <fragment android:name="com.discord.widgets.channels.memberlist.WidgetChannelMembersList" android:id="@id/widget_connected_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/widget_channel_topic" />
+</RelativeLayout>

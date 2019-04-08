@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.discord.utilities.view.scroll.MaxHeightScrollView android:theme="@style/AppTheme.Dark" android:id="@id/channel_topic" android:paddingTop="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" android:maxHeight="75.0dip" app:max_height="200.0dip" style="@style/UiKit.ViewGroup"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:background="@color/grey_channels" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/white_alpha_20" android:gravity="center" android:text="@string/form_label_channel_topic" android:textAllCaps="true" style="@style/UiKit.TextView.Bold" />
+        <com.discord.utilities.view.text.LinkifiedTextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/white_alpha_30" android:autoLink="all" android:id="@id/channel_topic_title" style="@style/UiKit.TextView" />
+    </LinearLayout>
+</com.discord.utilities.view.scroll.MaxHeightScrollView>

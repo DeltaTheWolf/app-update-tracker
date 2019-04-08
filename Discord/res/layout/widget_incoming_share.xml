@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationIcon="?ic_action_bar_close" app:title="@string/share" style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/padding_bottom_fab_screen" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:baselineAligned="false" android:animateLayoutChanges="true" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:paddingTop="@dimen/uikit_spacing_medium" android:text="@string/message_preview" android:textAllCaps="true" style="@style/UiKit.Search.Header" />
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/external_share_list" android:background="?container_bg_dark_a60" android:visibility="gone" android:clipToPadding="false" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" style="@style/UiKit.ViewGroup.RecyclerView" />
+            <EditText android:id="@id/external_share_comment" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:hint="@string/add_a_comment_optional" android:inputType="textAutoComplete|textAutoCorrect|textCapSentences" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+            <TextView android:text="@string/share_to" android:textAllCaps="true" style="@style/UiKit.Search.Header" />
+            <com.discord.app.AppViewFlipper android:id="@id/search_flipper" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/external_share_search" android:background="?container_bg_dark_a60" android:paddingLeft="@dimen/uikit_spacing_large" android:layout_height="fill_parent" android:hint="@string/select_channel_or_category" android:drawableLeft="@drawable/ic_search" android:drawablePadding="@dimen/uikit_spacing_large" android:imeOptions="actionSearch" android:drawableStart="@drawable/ic_search" app:backgroundTint="@null" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?container_bg_dark_a60" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                    <com.discord.widgets.user.search.ViewGlobalSearchItem android:id="@id/widget_channel_search_item" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingBottom="@dimen/uikit_spacing_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/widget_channel_search_item_remove" android:padding="@dimen/uikit_spacing_small" android:layout_marginRight="@dimen/uikit_spacing_small" android:src="?ic_close_24dp" android:contentDescription="@string/remove" style="@style/UiKit.ImageView.Clickable" />
+                </LinearLayout>
+            </com.discord.app.AppViewFlipper>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/external_share_search_results" style="@style/UiKit.ViewGroup.RecyclerView" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

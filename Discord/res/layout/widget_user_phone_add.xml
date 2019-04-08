@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/user_phone_add_wrap" android:layout_height="fill_parent" android:layout_above="@id/user_phone_add_anchor" style="@style/UiKit.ViewGroup.ScrollView">
+        <LinearLayout style="@style/UiKit.Copy.Container">
+            <com.airbnb.lottie.LottieAnimationView style="@style/UiKit.Anim.Verify.By.Phone.Frozen" />
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:text="@string/enter_phone_title" style="@style/UiKit.TextView.H1" />
+                <TextView android:gravity="center" android:layout_marginTop="16.0dip" android:text="@string/enter_phone_description" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/user_phone_add_anchor" style="@style/UiKit.Copy.Anchor">
+        <LinearLayout style="@style/UiKit.User.Phone.Add.Number">
+            <EditText android:gravity="center" android:id="@id/user_phone_add_country_code" android:focusableInTouchMode="true" android:minWidth="80.0dip" android:text="+1" android:hint="+1" android:maxLength="6" style="@style/UiKit.EditText.Phone" />
+            <EditText android:id="@id/user_phone_add_number" android:layout_width="0.0dip" android:hint="999-999-9999" android:maxLength="18" android:layout_weight="1.0" style="@style/UiKit.EditText.Phone" />
+        </LinearLayout>
+        <Button android:enabled="false" android:id="@id/user_phone_add_next" android:text="@string/next" style="@style/UiKit.User.Phone.Add.Number.Verify" />
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat.Transparent">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</RelativeLayout>

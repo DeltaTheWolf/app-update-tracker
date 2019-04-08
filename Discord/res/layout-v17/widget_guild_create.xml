@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.LinearLayout">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/guild_create_icon_wrap" android:layout_width="@dimen/avatar_size_hero" android:layout_height="@dimen/avatar_size_hero" android:layout_marginTop="36.0dip" style="@style/UiKit.ViewGroup.RelativeLayout">
+                <TextView android:textColor="?primary_500" android:gravity="center" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/upload_image" android:layout_centerInParent="true" android:textAllCaps="true" style="@style/UiKit.TextView.Semibold" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/guild_create_icon" app:placeholderImage="@drawable/drawable_bg_dashed" style="@style/Avatar.Hero" />
+                <ImageView android:id="@id/guild_create_icon_placeholder" android:background="@drawable/drawable_uikit_white_circle" android:src="@drawable/ic_upload_image_40dp" android:layout_alignParentRight="true" android:contentDescription="@string/sample_empty_string" android:layout_alignParentEnd="true" style="@style/UiKit.ImageView" />
+            </RelativeLayout>
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:text="@string/form_label_server_name" style="@style/UiKit.Form.Label" />
+                <EditText android:id="@id/guild_create_name" android:hint="@string/form_placeholder_server_name" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                <com.discord.utilities.view.text.LinkifiedTextView android:layout_gravity="start" android:id="@id/guild_create_guidelines" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" style="@style/UiKit.TextView.Subtext" />
+            </LinearLayout>
+            <TextView android:background="?primary_630" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/form_label_server_region" android:textAllCaps="true" style="@style/UiKit.TextView.Semibold" />
+            <LinearLayout android:id="@id/guild_create_regions" android:background="?primary_630" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/UiKit.ViewGroup.LinearLayout" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

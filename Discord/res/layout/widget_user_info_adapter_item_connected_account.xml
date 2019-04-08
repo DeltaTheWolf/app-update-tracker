@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.ConstraintLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/connected_account_img" android:layout_width="@dimen/connected_account_img_size" android:layout_height="@dimen/connected_account_img_size" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+    <TextView android:id="@id/connected_account_name" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/connected_account_img" app:layout_constraintRight_toLeftOf="@id/connected_account_link_img" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.TextView.Large" />
+    <ImageView android:id="@id/connected_account_link_img" android:src="?ic_open_in_new_24dp" android:contentDescription="@string/open_link" android:alpha="0.6" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.ImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

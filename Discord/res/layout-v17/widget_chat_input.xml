@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/widget_chat_input_verification" />
+    <LinearLayout android:orientation="vertical" android:id="@id/chat_input_wrap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/chat_input_mentions_recycler" android:background="?theme_chat_input" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/chat_input_edit" android:background="?theme_chat_input_edit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/chat_input_edit_border" android:background="?theme_chat_input_divider" android:layout_width="fill_parent" android:layout_height="0.25dip" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?theme_chat_input_text" android:paddingLeft="16.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:paddingBottom="6.0dip" android:text="@string/editing_message" android:layout_below="@id/chat_input_edit_border" style="@style/UiKit.TextView" />
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/purple_brand" android:id="@id/chat_input_edit_cancel" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:text="@string/cancel" android:layout_below="@id/chat_input_edit_border" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/UiKit.TextView.Bold" />
+        </RelativeLayout>
+        <View android:background="?theme_chat_input_divider" android:layout_width="fill_parent" android:layout_height="0.75dip" />
+        <fragment android:name="com.lytefast.flexinput.fragment.FlexInputFragment" android:id="@id/chat_input_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

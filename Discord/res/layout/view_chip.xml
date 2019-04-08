@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="0.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/chip_image" android:padding="2.0dip" style="@style/Avatar.Medium" />
+    <TextView android:textSize="@dimen/uikit_textsize_medium" android:gravity="center_vertical" android:id="@id/chip_text" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/chip_image" android:layout_centerVertical="true" style="@style/UiKit.TextView" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?ic_file_download_opaque" android:id="@id/menu_media_download" android:title="@string/download" app:showAsAction="always" />
+    <item android:icon="?ic_share_opaque" android:id="@id/menu_media_share" android:title="@string/share" app:showAsAction="ifRoom" />
+    <item android:icon="?ic_open_in_browser_opaque" android:id="@id/menu_media_browser" android:title="@string/open_in_browser" app:showAsAction="ifRoom" />
+</menu>

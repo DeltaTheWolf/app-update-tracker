@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/main_panel_left" layout="@layout/widget_main_panel_left" />
+        <com.discord.widgets.main.WidgetMainDrawerLayout android:id="@id/main_drawer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/main_panel_left">
+            <include layout="@layout/widget_main_panel_center" />
+            <include layout="@layout/widget_main_panel_right" />
+        </com.discord.widgets.main.WidgetMainDrawerLayout>
+        <include layout="@layout/widget_main_panel_loading" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/debugging_item_log_message" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_large" android:maxLines="2" style="@style/UiKit.TextView"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <View style="@style/UiKit.Settings.Divider" />
+</LinearLayout>

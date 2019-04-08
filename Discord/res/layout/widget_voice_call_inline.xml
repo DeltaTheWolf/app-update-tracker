@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/voice" android:background="?primary_630" android:visibility="gone" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/voice_connected_container" style="@style/UiKit.ViewGroup.LinearLayout">
+        <RelativeLayout android:id="@id/voice_info_wrap" android:layout_height="48.0dip" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <RelativeLayout android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_toLeftOf="@id/voice_info_talking_users" android:layout_centerVertical="true" style="@style/UiKit.ViewGroup.RelativeLayout">
+                <LinearLayout android:id="@id/voice_connected_status_container" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                    <ImageView android:layout_gravity="center" android:id="@id/voice_connected_quality" android:layout_marginLeft="1.0dip" android:layout_marginRight="6.0dip" style="@style/UiKit.ImageView" />
+                    <TextView android:textSize="13.0sp" android:gravity="center_vertical" android:id="@id/voice_connected_text" android:layout_height="wrap_content" android:singleLine="true" style="@style/UiKit.TextView" />
+                </LinearLayout>
+                <TextView android:textSize="11.0sp" android:textColor="?primary_400" android:gravity="center" android:id="@id/voice_connected_description" android:layout_height="14.0dip" android:singleLine="true" android:layout_below="@id/voice_connected_status_container" style="@style/UiKit.TextView" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/voice_info_talking_users" android:paddingLeft="@dimen/uikit_spacing_small" android:paddingRight="@dimen/uikit_spacing_small" android:scrollbars="none" android:layout_width="152.0dip" android:layout_height="36.0dip" android:layout_toLeftOf="@id/voice_info_connecting" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:overScrollMode="never" style="@style/UiKit.ViewGroup.RecyclerView.Horizontal" />
+            <ProgressBar android:id="@id/voice_info_connecting" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="true" android:layout_toLeftOf="@id/voice_divider" android:layout_centerVertical="true" style="@style/Base.Widget.AppCompat.ProgressBar" />
+            <View android:id="@id/voice_divider" android:background="?primary_400" android:layout_width="0.25dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_toLeftOf="@id/voice_expand" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/voice_expand" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:src="?ic_expand_up" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/voice" style="@style/UiKit.ImageView" />
+            <View android:id="@id/voice_info_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <Button android:id="@id/voice_connected_ptt" android:visibility="gone" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/uikit_spacing_small" android:text="@string/keybind_push_to_talk" style="@style/UiKit.Button" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/voice_ongoing_container" android:background="?primary_630" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:visibility="gone" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <TextView android:textColor="?primary_100" android:id="@id/voice_ongoing_user_count_label" android:layout_centerVertical="true" style="@style/UiKit.TextView" />
+        <TextView android:textColor="?primary_100" android:gravity="center_vertical" android:text="@string/join" android:drawableRight="?ic_expand_up" android:drawablePadding="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" android:drawableEnd="?ic_expand_up" style="@style/UiKit.TextView.Semibold" />
+    </RelativeLayout>
+</LinearLayout>

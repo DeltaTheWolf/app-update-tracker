@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/guild_transfer_ownership_header" android:padding="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:text="@string/transfer_ownership" style="@style/UiKit.TextView.H1.Bold" />
+    <View style="@style/UiKit.Divider" />
+    <LinearLayout android:id="@id/guild_transfer_ownership_mfa_wrap" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:text="@string/two_fa_enter_token_label" android:textAllCaps="true" style="@style/UiKit.Settings.Item.Label" />
+        <com.google.android.material.textfield.TextInputLayout android:paddingLeft="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_medium" style="@style/UiKit.Form.Field.EditText.Wrap">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@id/guild_transfer_ownership_mfa_code" android:hint="@string/two_fa_auth_code" android:inputType="textVisiblePassword|numberPassword|phone" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.discord.views.CheckedSetting android:id="@id/guild_transfer_ownership_acknowledge_check" app:cs_text="@string/transfer_ownership_acknowledge" app:cs_text_size="@dimen/uikit_textsize_small" style="@style/UiKit.CheckedSetting.Themed" />
+    <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/guild_transfer_ownership_cancel" android:text="@string/cancel" style="@style/UiKit.Button.Transparent.Fit" />
+        <Button android:enabled="true" android:id="@id/guild_transfer_ownership_confirm" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:text="@string/transfer" style="@style/UiKit.Button.Red.Fit" />
+    </LinearLayout>
+</LinearLayout>

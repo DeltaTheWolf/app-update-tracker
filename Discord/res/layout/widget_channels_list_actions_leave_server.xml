@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.Dialog.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.discord.app.AppTextView android:id="@id/channels_list_actions_leave_server_header" android:text="@string/leave_server_title" style="@style/UiKit.Dialog.Title" />
+    <View style="@style/UiKit.Divider" />
+    <com.discord.app.AppTextView android:id="@id/channels_list_actions_leave_server_text" android:text="@string/leave_server_body" style="@style/UiKit.Dialog.Body" />
+    <LinearLayout android:gravity="end" style="@style/UiKit.Dialog.ButtonContainer">
+        <Button android:id="@id/channels_list_actions_leave_server_cancel" android:text="@string/cancel" style="@style/UiKit.Button.Transparent.Fit" />
+        <Button android:id="@id/channels_list_actions_leave_server_confirm" android:text="@string/leave_server" style="@style/UiKit.Button.Red.Fit" />
+    </LinearLayout>
+</LinearLayout>

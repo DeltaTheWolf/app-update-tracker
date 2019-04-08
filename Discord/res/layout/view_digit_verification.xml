@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/UiKit.User.Phone.Verify.Digits"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/verify_digit_1" style="@style/UiKit.User.Phone.Verify.Digit" />
+    <EditText android:id="@id/verify_digit_2" style="@style/UiKit.User.Phone.Verify.Digit" />
+    <EditText android:id="@id/verify_digit_3" style="@style/UiKit.User.Phone.Verify.Digit" />
+    <EditText android:id="@id/verify_digit_4" style="@style/UiKit.User.Phone.Verify.Digit.Left" />
+    <EditText android:id="@id/verify_digit_5" style="@style/UiKit.User.Phone.Verify.Digit.Left" />
+    <EditText android:id="@id/verify_digit_6" style="@style/UiKit.User.Phone.Verify.Digit.Left" />
+</LinearLayout>

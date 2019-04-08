@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_avatar" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="@dimen/uikit_spacing_large" android:layout_centerVertical="true" style="@style/Avatar.Standard" />
+    <RelativeLayout android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="-2.0dip" android:layout_marginBottom="-2.0dip" android:layout_alignRight="@id/friends_list_item_avatar" android:layout_alignBottom="@id/friends_list_item_avatar" android:layout_marginEnd="-2.0dip" android:layout_alignEnd="@id/friends_list_item_avatar">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholderImage="?colorPrimary" app:roundAsCircle="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_presence" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_centerInParent="true" app:placeholderImage="@color/status_grey_500" app:roundAsCircle="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/friends_list_item_text" android:layout_toLeftOf="@id/friends_list_item_mutual_wrap" android:layout_toRightOf="@id/friends_list_item_avatar" android:layout_centerVertical="true" android:layout_toStartOf="@id/friends_list_item_mutual_wrap" android:layout_toEndOf="@id/friends_list_item_avatar" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:textColor="?theme_chat_text" android:id="@id/friends_list_item_name" android:text="@string/sample_user_name" style="@style/UiKit.TextView.Large.SingleLine" />
+        <TextView android:textColor="?theme_chat_timestamp" android:id="@id/friends_list_item_game" android:paddingTop="2.0dip" android:text="@string/sample_user_presence" android:singleLine="true" style="@style/UiKit.TextView" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/friends_list_item_mutual_wrap" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <FrameLayout android:id="@id/friends_list_item_mutual_1" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" style="@style/Avatar.Standard">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_mutual_1_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Avatar.Standard" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/friends_list_item_mutual_1_text" android:background="@drawable/drawable_circle_purple_brand" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" style="@style/UiKit.TextView" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/friends_list_item_mutual_2" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" style="@style/Avatar.Standard">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_mutual_2_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Avatar.Standard" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/friends_list_item_mutual_2_text" android:background="@drawable/drawable_circle_purple_brand" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" style="@style/UiKit.TextView" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/friends_list_item_mutual_3" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" style="@style/Avatar.Standard">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_mutual_3_icon" style="@style/Avatar.Standard" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/friends_list_item_mutual_3_text" android:background="@drawable/drawable_circle_purple_brand" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" style="@style/UiKit.TextView" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/friends_list_item_mutual_4" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" style="@style/Avatar.Standard">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_mutual_4_icon" app:placeholderImage="?primary_500" app:roundAsCircle="true" style="@style/Avatar.Standard" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/primary_400" android:gravity="center" android:id="@id/friends_list_item_mutual_4_text" android:background="?colorPrimaryCircle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:singleLine="true" style="@style/UiKit.TextView.Bold" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="?theme_friends_divider" android:layout_marginLeft="66.0dip" android:layout_below="@id/friends_list_item_avatar" android:layout_marginStart="66.0dip" style="@style/UiKit.Divider" />
+</RelativeLayout>

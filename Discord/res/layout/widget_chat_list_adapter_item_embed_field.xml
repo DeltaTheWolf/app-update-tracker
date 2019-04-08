@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.discord.utilities.view.text.LinkifiedTextView android:textColor="?primary_100" android:id="@id/chat_list_item_embed_field_name" android:layout_width="fill_parent" android:layout_marginTop="@dimen/embed_item_margin" style="@style/UiKit.TextView.Semibold" />
+    <com.discord.utilities.view.text.LinkifiedTextView android:id="@id/chat_list_item_embed_field_value" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_marginTop="@dimen/uikit_spacing_small" android:lineSpacingMultiplier="1.0" style="@style/UiKit.TextView" />
+</LinearLayout>

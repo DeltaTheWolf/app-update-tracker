@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ban_container" android:background="?selectableItemBackground" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:focusable="true" android:clickable="true" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ban_list_item_avatar" android:layout_alignParentLeft="true" style="@style/Avatar.Standard" />
+    <TextView android:id="@id/ban_list_item_name" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/uikit_spacing_large" android:drawableRight="@drawable/ic_unban_grey" android:layout_toRightOf="@id/ban_list_item_avatar" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_unban_grey" style="@style/UiKit.TextView.Large.SingleLine" />
+    <View android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_toRightOf="@id/ban_list_item_avatar" android:layout_below="@id/ban_list_item_avatar" android:layout_alignParentBottom="true" style="@style/UiKit.Settings.Divider" />
+</RelativeLayout>

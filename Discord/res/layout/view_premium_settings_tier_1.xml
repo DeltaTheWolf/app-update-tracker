@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/uikit_spacing_xxlarge" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_xxlarge" android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <ImageView android:id="@id/premium_settings_nitro_classic_wumpus" android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/img_wumpus_riding_wheel" android:adjustViewBounds="true" android:importantForAccessibility="no" style="@style/UiKit.ImageView" />
+        <ImageView android:id="@id/premium_settings_nitro_classic" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginLeft="@dimen/uikit_spacing_large" android:src="@drawable/img_logo_nitro_classic" android:adjustViewBounds="true" android:contentDescription="@string/premium_tier_1" style="@style/UiKit.ImageView" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/primary_100" android:layout_marginTop="@dimen/uikit_spacing_large" android:text="@string/premium_title_mobile" style="@style/UiKit.TextView.Semibold" />
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="@color/primary_200" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/premium_subtitle_mobile" style="@style/UiKit.TextView" />
+    <LinearLayout android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <Button android:id="@id/premium_settings_premium_classic_yearly" style="@style/UiKit.Button.Green" />
+        <Button android:id="@id/premium_settings_premium_classic_monthly" style="@style/UiKit.Button.Grey" />
+    </LinearLayout>
+</LinearLayout>

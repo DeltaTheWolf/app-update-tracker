@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/AppAlertDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/friend_request_delete_confirmation_title" android:text="@string/outgoing_friend_request" style="@style/AppAlertDialogHeader" />
+    <LinearLayout style="@style/AppAlertDialogContent">
+        <TextView android:id="@id/friend_request_delete_confirmation_body" android:text="@string/outgoing_friend_request_delete_msg" style="@style/AppAlertDialogText" />
+    </LinearLayout>
+    <LinearLayout style="@style/AppAlertDialogFooter">
+        <TextView android:id="@id/friend_request_delete_confirmation_cancel" android:text="@string/cancel" style="@style/AppAlertDialogButton" />
+        <TextView android:id="@id/friend_request_delete_confirmation_delete" android:text="@string/delete" style="@style/AppAlertDialogButton.Red" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_marginLeft="@dimen/uikit_spacing_xxlarge" android:layout_marginRight="@dimen/uikit_spacing_xxlarge" android:layout_marginBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/primary_100" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingBottom="@dimen/uikit_spacing_medium" android:text="@string/premium_included" style="@style/UiKit.TextView.Semibold" />
+    <TextView android:text="@string/premium_chat_perks_discriminator_mobile" android:drawableLeft="@drawable/ic_nitro_tag_24dp" android:drawableStart="@drawable/ic_nitro_tag_24dp" style="@style/UiKit.TextView.Perk" />
+    <View android:background="@color/primary_700" style="@style/UiKit.Divider" />
+    <TextView android:text="@string/premium_chat_perks_animated_avatar_and_emoji_mobile" android:drawableLeft="@drawable/ic_nitro_gifs_24dp" android:drawableStart="@drawable/ic_nitro_gifs_24dp" style="@style/UiKit.TextView.Perk" />
+    <View android:background="@color/primary_700" style="@style/UiKit.Divider" />
+    <TextView android:text="@string/premium_chat_perks_custom_emoji_mobile" android:drawableLeft="@drawable/ic_nitro_globalemojis_24dp" android:drawableStart="@drawable/ic_nitro_globalemojis_24dp" style="@style/UiKit.TextView.Perk" />
+    <View android:background="@color/primary_700" style="@style/UiKit.Divider" />
+    <TextView android:id="@id/premium_perks_upload_text" android:text="@string/premium_chat_perks_upload_mobile" android:drawableLeft="@drawable/ic_nitro_boosted_24dp" android:drawableStart="@drawable/ic_nitro_boosted_24dp" style="@style/UiKit.TextView.Perk" />
+    <View android:background="@color/primary_700" style="@style/UiKit.Divider" />
+    <TextView android:text="@string/premium_chat_perks_rep_mobile" android:drawableLeft="@drawable/ic_nitro_rep_24dp" android:drawableStart="@drawable/ic_nitro_rep_24dp" style="@style/UiKit.TextView.Perk" />
+    <View android:background="@color/primary_700" style="@style/UiKit.Divider" />
+    <TextView android:text="@string/premium_chat_perks_screenshare_mobile" android:drawableLeft="@drawable/ic_nitro_highquality_24dp" android:drawableStart="@drawable/ic_nitro_highquality_24dp" style="@style/UiKit.TextView.Perk" />
+    <View android:background="@color/primary_700" style="@style/UiKit.Divider" />
+</LinearLayout>

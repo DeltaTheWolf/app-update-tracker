@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge style="@style/UiKit.Copy.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/invite_avatar_wrap" android:visibility="gone" android:layout_width="@dimen/avatar_size_hero" android:layout_height="@dimen/avatar_size_hero" android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/invite_avatar" style="@style/Avatar.Hero" />
+        <RelativeLayout android:id="@id/invite_avatar_user_wrap" android:background="?colorPrimaryCircle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-3.0dip" android:layout_marginBottom="-3.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="-3.0dip" android:layout_alignParentEnd="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/invite_avatar_user" android:layout_margin="3.0dip" style="@style/Avatar.Large" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/invite_expired_image" android:visibility="gone" android:layout_marginLeft="96.0dip" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="96.0dip" android:layout_marginBottom="@dimen/uikit_spacing_large" android:src="?img_poop" android:contentDescription="@string/instant_invite_expired" style="@style/UiKit.ImageView" />
+    <LinearLayout style="@style/UiKit.Copy">
+        <TextView android:id="@id/invite_title" android:layout_marginBottom="8.0dip" style="@style/UiKit.TextView" />
+        <TextView android:gravity="center" android:id="@id/invite_message" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.TextView.H1" />
+        <LinearLayout android:gravity="center" android:id="@id/invite_members_wrap" android:visibility="gone" android:layout_width="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout">
+            <LinearLayout android:gravity="center" android:id="@id/invite_members_online_wrap" android:background="?primary_630_bg" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" android:layout_width="fill_parent" android:layout_marginTop="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/uikit_spacing_medium" android:layout_height="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_marginEnd="@dimen/uikit_spacing_medium" app:placeholderImage="@color/status_green_500" app:roundAsCircle="true" />
+                <TextView android:textColor="?primary_100" android:gravity="center" android:id="@id/invite_members_online" android:text="@string/instant_invite_guild_members_online" android:singleLine="true" style="@style/UiKit.TextView.Semibold" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:background="?primary_630_bg" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" android:layout_width="fill_parent" android:layout_marginTop="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/uikit_spacing_medium" android:layout_height="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_marginEnd="@dimen/uikit_spacing_medium" app:placeholderImage="@color/status_grey_500" app:roundAsCircle="true" />
+                <TextView android:textColor="?primary_100" android:id="@id/invite_members_total" android:singleLine="true" style="@style/UiKit.TextView.Semibold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?flexInputDialogBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="FlexInput.DialogWhenLarge.Main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:layout_gravity="bottom" android:id="@id/content_pager" android:layout_width="fill_parent" android:layout_height="@dimen/default_keyboard_height" style="@style/FlexInput.AddContent" />
+    <FrameLayout android:background="@android:color/transparent" style="@style/FlexInput.AddContent.Container.TabLayout">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/content_tabs" android:layout_margin="0.0dip" style="@style/FlexInput.AddContent.TabLayout">
+            <com.google.android.material.tabs.TabItem android:icon="@drawable/ic_keyboard_24dp" android:id="@id/add_content_keyboard_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/attachments_keyboard" />
+        </com.google.android.material.tabs.TabLayout>
+    </FrameLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/action_btn" android:visibility="gone" app:layout_anchor="@id/content_pager" style="@style/FlexInput.AddContent.Button.Send" />
+    <ImageView android:id="@id/launch_btn" app:layout_anchor="@id/content_pager" style="@style/FlexInput.AddContent.Button.Launcher" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

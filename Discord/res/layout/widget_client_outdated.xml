@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="fill_parent" android:layout_above="@id/client_outdated_anchor_wrap" style="@style/UiKit.ViewGroup.ScrollView">
+        <LinearLayout style="@style/UiKit.Copy.Container">
+            <ImageView android:src="?img_forced_update" android:contentDescription="@string/new_terms_title" style="@style/UiKit.ImageView" />
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:layout_gravity="center" android:text="@string/out_of_date_title" style="@style/UiKit.TextView.H1" />
+                <TextView android:gravity="center" android:layout_marginTop="16.0dip" android:text="@string/out_of_date_description" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/client_outdated_anchor_wrap" android:layout_marginTop="8.0dip" android:layout_alignParentBottom="true" style="@style/UiKit.Copy.Anchor">
+        <Button android:id="@id/client_outdated_update" android:text="@string/out_of_date_action" style="@style/UiKit.Button" />
+    </LinearLayout>
+</RelativeLayout>

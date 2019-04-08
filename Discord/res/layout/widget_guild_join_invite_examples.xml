@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?primary_500" android:padding="0.0dip" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" android:text="@string/join_server_description_mobile" style="@style/UiKit.Form.Label" />
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?primary_500" android:padding="0.0dip" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/instant_invite_looks_like" android:textAllCaps="true" style="@style/UiKit.Form.Label" />
+    <TextView android:textColor="@color/status_yellow_500" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/invite_link_example_verified" style="@style/UiKit.TextView.Link" />
+    <TextView android:textColor="@color/status_yellow_500" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/invite_link_example_full" style="@style/UiKit.TextView.Link" />
+    <TextView android:textColor="@color/status_yellow_500" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/invite_link_example_simple" style="@style/UiKit.TextView.Link" />
+</merge>

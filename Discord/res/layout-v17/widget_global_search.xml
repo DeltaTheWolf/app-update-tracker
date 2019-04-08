@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/transparent" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:background="?primary_630" style="@style/AppTheme.AppBarLayout">
+        <include layout="@layout/layout_search" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/global_search_guild_list" style="@style/UiKit.GuildsList.Horiz" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@id/global_search_view_flipper" android:background="?colorPrimary" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/global_search_recycler" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingBottom="@dimen/uikit_spacing_xxxlarge" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RecyclerView" />
+        <TextView android:textColor="?primary_400" android:gravity="center" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_xxxlarge" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/quickswitcher_tutorial_message_search" android:drawableTop="?img_empty_search_defaults" android:drawablePadding="@dimen/uikit_spacing_large" android:textAlignment="center" style="@style/UiKit.TextView.H2" />
+        <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView">
+            <LinearLayout android:gravity="center_horizontal" android:paddingBottom="@dimen/list_bottom_padding" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+                <ImageView android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_margin="@dimen/uikit_spacing_large" android:src="?img_empty_search" android:contentDescription="@string/search_no_results" style="@style/UiKit.ImageView" />
+                <TextView android:drawableTop="@null" style="@style/UiKit.TextView.NoResults" />
+                <View android:layout_marginTop="@dimen/uikit_spacing_small" android:layout_marginBottom="@dimen/uikit_spacing_small" style="@style/UiKit.Divider" />
+                <TextView android:layout_margin="@dimen/uikit_spacing_medium" android:text="@string/other_options" style="@style/UiKit.TextView.H2" />
+                <Button android:id="@id/global_search_add_a_friend_btn" android:text="@string/add_friend" style="@style/UiKit.Button.Outline" />
+                <Button android:id="@id/global_search_join_guild_btn" android:text="@string/join_server_button_cta" style="@style/UiKit.Button.Outline" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

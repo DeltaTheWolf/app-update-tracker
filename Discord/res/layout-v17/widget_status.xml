@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/status_wrap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/status_unread_messages" android:background="?theme_status_indicator_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:textSize="11.0sp" android:textColor="@color/white_alpha_40" android:gravity="center_vertical" android:id="@id/status_unread_messages_mark" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_close_white_18dp" android:scaleType="center" android:text="@string/mark_as_read" android:layout_centerVertical="true" android:contentDescription="@string/mark_as_read" style="@style/UiKit.TextView.Semibold" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/status_unread_messages_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/status_unread_messages_mark" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/status_unread_messages_mark" style="@style/UiKit.TextView.Semibold" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/status_connectivity" android:background="?theme_status_indicator_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:id="@id/status_connectivity_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/status_connectivity_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="true" style="@style/Base.Widget.AppCompat.ProgressBar" />
+            <ImageView android:id="@id/status_connectivity_limited" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_signal_cellular_connected_no_internet_4_bar_white_18dp" android:contentDescription="@string/sample_empty_string" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/status_connectivity_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/connecting" android:layout_toRightOf="@id/status_connectivity_icon" android:layout_toEndOf="@id/status_connectivity_icon" style="@style/UiKit.TextView.Semibold" />
+    </RelativeLayout>
+</RelativeLayout>

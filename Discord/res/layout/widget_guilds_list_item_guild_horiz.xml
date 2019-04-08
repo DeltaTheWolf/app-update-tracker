@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.GuildsListItemHoriz"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/widget_guilds_list_item_guild" />
+    <View android:id="@id/guilds_item_selected" style="@style/UiKit.GuildsListSelectedHoriz" />
+    <ImageView android:id="@id/guilds_item_unread" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.GuildsListUnreadHoriz" />
+</RelativeLayout>

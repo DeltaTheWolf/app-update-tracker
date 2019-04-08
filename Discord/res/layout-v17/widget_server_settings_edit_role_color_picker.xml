@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="@color/purple_brand" android:paddingLeft="32.0dip" android:paddingTop="16.0dip" android:paddingRight="32.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:text="@string/form_label_role_color" android:textAllCaps="true" style="@style/UiKit.TextView.Bold" />
+    <View android:background="@color/white_3" android:layout_width="fill_parent" android:layout_height="0.25dip" />
+    <GridView android:layout_gravity="center_horizontal" android:id="@id/color_picker_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="20.0dip" android:horizontalSpacing="4.0dip" android:verticalSpacing="5.0dip" android:numColumns="auto_fit" />
+    <View android:background="@color/white_3" android:layout_width="fill_parent" android:layout_height="0.25dip" />
+    <LinearLayout android:gravity="end" android:background="@color/white_1" android:paddingLeft="32.0dip" android:paddingTop="16.0dip" android:paddingRight="32.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="@color/grey_4" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/color_picker_reset" android:paddingLeft="0.0dip" android:paddingRight="32.0dip" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/reset_to_default" android:layout_weight="1.0" android:paddingStart="0.0dip" android:paddingEnd="32.0dip" style="@style/UiKit.TextView.Semibold" />
+        <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/color_picker_done" android:background="@drawable/drawable_button_purple" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_height="36.0dip" android:text="@string/done" style="@style/UiKit.TextView.Semibold" />
+    </LinearLayout>
+</LinearLayout>

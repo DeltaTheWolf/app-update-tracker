@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.Sheet.Header">
+            <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+            <TextView android:text="@string/language_select" style="@style/UiKit.Sheet.Header.Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/UiKit.Divider" />
+        <com.discord.utilities.view.recycler.MaxHeightRecyclerView android:id="@id/settings_language_select_list" android:scrollbars="vertical" android:overScrollMode="never" app:max_height="250.0dip" style="@style/UiKit.ViewGroup.RecyclerView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?img_gifting_pattern_bg" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" android:minWidth="260.0dip" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView">
+        <LinearLayout android:gravity="center" android:id="@id/accept_gift_body_container" style="@style/UiKit.ViewGroup.LinearLayout">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/accept_gift_body_image" android:layout_margin="@dimen/uikit_spacing_small" style="@style/Icon.Game" />
+            <com.discord.app.AppTextView android:gravity="center_horizontal" android:id="@id/accept_gift_header" android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.TextView.H1.Bold" />
+            <com.discord.app.AppTextView android:gravity="center_horizontal" android:id="@id/accept_gift_body_text" android:layout_marginTop="@dimen/uikit_spacing_medium" style="@style/UiKit.TextView" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_large">
+        <ProgressBar android:layout_gravity="center" android:id="@id/accept_gift_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:layout_gravity="center" android:id="@id/accept_gift_confirm" android:layout_width="wrap_content" style="@style/UiKit.Button" />
+    </FrameLayout>
+</LinearLayout>

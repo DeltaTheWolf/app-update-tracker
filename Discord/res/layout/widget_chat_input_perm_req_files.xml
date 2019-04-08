@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_marginTop="24.0dip" android:src="@drawable/img_permission_prime" android:contentDescription="@string/system_permission_request_files" style="@style/UiKit.ImageView" />
+    <com.discord.app.AppTextView android:gravity="center" android:id="@id/perm_req_text" android:padding="@dimen/uikit_spacing_large" android:text="@string/system_permission_request_files" style="@style/UiKit.TextView" />
+    <TextView android:id="@id/action_btn" android:background="@drawable/drawable_button_purple" android:text="@string/system_permission_grant" style="@style/UiKit.Button.Fit" />
+</LinearLayout>

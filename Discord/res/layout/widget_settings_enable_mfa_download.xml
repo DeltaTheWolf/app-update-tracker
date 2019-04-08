@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_margin="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginBottom="@dimen/uikit_spacing_xxlarge" android:src="@drawable/ic_google_auth_logo" style="@style/UiKit.ImageView" />
+    <TextView android:textSize="24.0sp" android:textColor="?primary_100" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/two_fa_download_app_label" style="@style/UiKit.TextView" />
+    <com.discord.app.AppTextView android:id="@id/mfa_download_body" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:text="@string/two_fa_download_app_body" style="@style/UiKit.TextView" />
+</LinearLayout>

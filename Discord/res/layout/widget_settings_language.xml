@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView style="@style/UiKit.ViewGroup.RelativeLayout.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_medium" android:text="@string/language" style="@style/UiKit.Settings.Item.Header" />
+            <RelativeLayout android:id="@id/settings_language_current" android:padding="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?primary_100" android:text="@string/language" android:layout_toLeftOf="@id/settings_language_current_flag" android:layout_alignParentLeft="true" style="@style/UiKit.TextView" />
+                <ImageView android:id="@id/settings_language_current_flag" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_toLeftOf="@id/settings_language_current_text" android:layout_centerVertical="true" android:contentDescription="@string/language_select" style="@style/UiKit.ImageView" />
+                <TextView android:textColor="?primary_100" android:id="@id/settings_language_current_text" android:drawableRight="@drawable/icon_carrot" android:drawablePadding="@dimen/uikit_spacing_large" android:layout_alignParentRight="true" android:drawableEnd="@drawable/icon_carrot" style="@style/UiKit.TextView" />
+            </RelativeLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:textSize="@dimen/uikit_textsize_medium" android:text="@string/sync" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.views.CheckedSetting android:id="@id/settings_language_sync_check" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cs_text="@string/settings_sync" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

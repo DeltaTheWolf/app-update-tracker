@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/chat_cell_horizontal_spacing_total" android:paddingTop="@dimen/chat_cell_vertical_spacing_padding" android:paddingRight="@dimen/chat_cell_horizontal_spacing_total" android:paddingBottom="@dimen/chat_cell_vertical_spacing_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/chat_list_item_divider_stroke_left" android:layout_width="fill_parent" android:layout_height="0.25dip" android:layout_toLeftOf="@id/chat_list_item_divider_text" android:layout_centerInParent="true" android:layout_toStartOf="@id/chat_list_item_divider_text" />
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:gravity="center" android:id="@id/chat_list_item_divider_text" android:paddingLeft="@dimen/chat_cell_horizontal_spacing_padding" android:paddingRight="@dimen/chat_cell_horizontal_spacing_padding" android:layout_centerInParent="true" style="@style/UiKit.TextView.Semibold" />
+    <View android:id="@id/chat_list_item_divider_stroke_right" android:layout_width="fill_parent" android:layout_height="0.25dip" android:layout_toRightOf="@id/chat_list_item_divider_text" android:layout_centerInParent="true" android:layout_toEndOf="@id/chat_list_item_divider_text" />
+</RelativeLayout>

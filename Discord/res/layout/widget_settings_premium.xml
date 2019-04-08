@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@id/premium_settings_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/action_bar_scrolling_view_behavior">
+        <androidx.core.widget.NestedScrollView android:id="@id/premium_settings_scrollview" style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+            <FrameLayout style="@style/UiKit.ViewGroup">
+                <ImageView android:layout_gravity="top" android:background="@drawable/img_nitro_pattern" android:layout_width="fill_parent" android:layout_height="270.0sp" android:importantForAccessibility="no" />
+                <LinearLayout android:layout_marginTop="@dimen/uikit_spacing_xlarge" style="@style/UiKit.ViewGroup.LinearLayout">
+                    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_100" android:id="@id/premium_settings_grandfathered" android:background="@drawable/bg_nitro_grandfathered" android:padding="@dimen/uikit_spacing_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_xlarge" android:layout_marginRight="@dimen/uikit_spacing_xlarge" android:layout_marginBottom="@dimen/uikit_spacing_large" android:drawableLeft="@drawable/ic_nitro_badge_white" android:drawablePadding="@dimen/uikit_spacing_medium" android:drawableStart="@drawable/ic_nitro_badge_white" style="@style/UiKit.TextView" />
+                    <com.discord.views.ActiveSubscriptionView android:id="@id/premium_settings_active_subscription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_xlarge" android:layout_marginRight="@dimen/uikit_spacing_xlarge" app:cardBackgroundColor="@color/primary_630" />
+                    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_400" android:id="@id/premium_settings_legalese" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_xlarge" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_xlarge" style="@style/UiKit.TextView" />
+                    <include layout="@layout/view_premium_settings_tier_1" />
+                    <include layout="@layout/view_premium_settings_perks" />
+                    <include layout="@layout/view_premium_settings_tier_2" />
+                    <include layout="@layout/view_premium_settings_games" />
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.LinearLayout">
+            <ImageView android:layout_marginBottom="@dimen/uikit_spacing_medium" android:src="@drawable/img_poop_dark" android:importantForAccessibility="no" style="@style/UiKit.ImageView" />
+            <Button android:id="@id/premium_settings_retry" android:layout_width="wrap_content" android:text="@string/retry" style="@style/UiKit.Button.Grey" />
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

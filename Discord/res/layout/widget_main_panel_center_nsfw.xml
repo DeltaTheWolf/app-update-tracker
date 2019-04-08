@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:baselineAligned="false" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/UiKit.ViewGroup.ScrollView">
+        <LinearLayout style="@style/UiKit.Copy.Container">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:src="?img_chat_nsfw" android:scaleType="fitCenter" android:contentDescription="@string/nsfw_title" style="@style/UiKit.ImageView" />
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:layout_gravity="center" android:text="@string/nsfw_title" style="@style/UiKit.TextView.H1" />
+                <TextView android:gravity="center" android:layout_marginTop="16.0dip" android:text="@string/nsfw_description" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/main_panel_center_nsfw_anchor_wrap" style="@style/UiKit.Copy.Anchor">
+        <FrameLayout style="@style/UiKit.Copy.Anchor.Item.Rotatable">
+            <Button android:id="@id/main_panel_center_nsfw_confirm" android:text="@string/nsfw_accept" style="@style/UiKit.Button.Red" />
+        </FrameLayout>
+        <FrameLayout style="@style/UiKit.Copy.Anchor.Item.Rotatable">
+            <Button android:id="@id/main_panel_center_nsfw_deny" android:text="@string/nsfw_decline" style="@style/UiKit.Button.White" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?selectableItemBackground" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:focusable="true" android:clickable="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/member_list_item_avatar" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/Avatar.Standard" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/member_list_item_name" android:layout_marginLeft="@dimen/uikit_spacing_large" style="@style/UiKit.TextView.Large.SingleLine" />
+</LinearLayout>

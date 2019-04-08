@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/primary_630" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/channels_list_header_wrap" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/channels_list_header" android:background="?selectableItemBackground" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:singleLine="true" android:drawableRight="@drawable/icon_more" android:drawablePadding="@dimen/uikit_spacing_small" android:drawableEnd="@drawable/icon_more" style="@style/UiKit.TextView.Bold" />
+        <RelativeLayout android:id="@id/channels_list_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="?actionBarSize" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/white_alpha_20" android:gravity="start|center" android:background="@drawable/drawable_overlay_search" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/uikit_spacing_medium" android:text="@string/dm_search_placeholder" style="@style/UiKit.TextView.Semibold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/channels_list" android:paddingBottom="@dimen/uikit_spacing_medium" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="fill_parent" android:layout_below="@id/channels_list_header_wrap" android:overScrollMode="never" style="@style/UiKit.ViewGroup.RecyclerView" />
+    <ViewStub android:id="@id/channels_list_unreads_stub" android:layout="@layout/widget_channels_list_unreads" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/settings_account_scroll" style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/padding_bottom_fab_screen" android:animateLayoutChanges="true" style="@style/UiKit.ViewGroup.LinearLayout">
+            <RelativeLayout android:id="@id/settings_account_verification" android:background="@color/status_red_500" android:visibility="gone" style="@style/UiKit.ViewGroup.RelativeLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_100" android:text="@string/unverified_account_title" android:layout_centerInParent="true" style="@style/UiKit.TextView.Semibold" />
+                <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_100" android:id="@id/settings_account_verification_resend" android:background="@drawable/drawable_button_white" android:paddingLeft="12.0dip" android:paddingTop="@dimen/uikit_spacing_small" android:paddingRight="12.0dip" android:paddingBottom="@dimen/uikit_spacing_small" android:layout_margin="@dimen/uikit_spacing_medium" android:text="@string/verify_account" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/UiKit.TextView" />
+            </RelativeLayout>
+            <RelativeLayout android:background="?primary_630" android:paddingTop="@dimen/uikit_spacing_xxlarge" android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/settings_account_avatar_wrap" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                    <FrameLayout android:id="@id/settings_account_avatar_container" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/settings_account_avatar" app:roundWithOverlayColor="?primary_630" style="@style/Avatar.Large.ExtraAccount" />
+                        <ImageView android:layout_gravity="center|right|top" android:id="@id/settings_account_avatar_edit" android:background="@drawable/drawable_circle_white_1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_upload_image_34dp" android:scaleType="center" />
+                    </FrameLayout>
+                    <LinearLayout android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginStart="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout">
+                        <TextView android:id="@id/settings_account_tag" style="@style/UiKit.TextView.Large.SingleLine" />
+                        <TextView android:textColor="?primary_400" android:id="@id/settings_account_email" style="@style/UiKit.TextView" />
+                        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/purple_brand" android:id="@id/settings_account_remove_avatar" android:background="?selectableItemBackground" android:layout_marginTop="@dimen/uikit_spacing_small" android:text="@string/remove_icon" style="@style/UiKit.TextView.Semibold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:weightSum="2.0" android:layout_below="@id/settings_account_avatar_wrap" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                    <Button android:ellipsize="end" android:id="@id/settings_account_edit" android:layout_width="0.0dip" android:text="@string/user_settings_edit_account" android:maxLines="1" android:layout_weight="1.0" style="@style/UiKit.Button" />
+                    <Button android:ellipsize="end" android:id="@id/settings_account_change_password" android:layout_width="0.0dip" android:text="@string/change_password" android:maxLines="1" android:layout_weight="1.0" style="@style/UiKit.Button.Grey" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View style="@style/UiKit.Divider" />
+            <TextView android:textColor="@color/status_orange_500" android:id="@id/settings_account_claim_btn" android:visibility="gone" android:text="@string/claim_account" android:drawableRight="@drawable/ic_chevron_right_grey_12dp" android:drawableEnd="@drawable/ic_chevron_right_grey_12dp" style="@style/UiKit.Settings.Item.Header" />
+            <View style="@style/UiKit.Divider" />
+            <LinearLayout android:id="@id/settings_account_mfa_container" style="@style/UiKit.ViewGroup.LinearLayout">
+                <FrameLayout style="@style/UiKit.ViewGroup">
+                    <TextView android:text="@string/two_fa" style="@style/UiKit.Settings.Item.Header" />
+                    <TextView android:textColor="@color/status_green_500" android:layout_gravity="end|center" android:id="@id/settings_account_mfa_enabled_header" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/user_settings_mfa_enabled" android:drawableLeft="@drawable/ic_small_lock_green_24dp" android:textAllCaps="true" android:drawableStart="@drawable/ic_small_lock_green_24dp" android:layout_marginEnd="@dimen/uikit_spacing_large" style="@style/UiKit.TextView.Semibold" />
+                </FrameLayout>
+                <com.discord.app.AppViewFlipper android:id="@id/settings_account_mfa_flipper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/settings_account_mfa_enabled_container" style="@style/UiKit.ViewGroup.LinearLayout">
+                        <TextView android:id="@id/settings_account_view_backup_codes" android:text="@string/two_fa_view_backup_codes" android:drawableRight="@drawable/ic_chevron_right_grey_24dp" android:drawableEnd="@drawable/ic_chevron_right_grey_24dp" style="@style/UiKit.Settings.Item" />
+                        <TextView android:id="@id/settings_account_remove_two_fa" android:text="@string/two_fa_remove" style="@style/UiKit.Settings.Item" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/settings_account_mfa_disabled_container" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout">
+                        <com.airbnb.lottie.LottieAnimationView android:id="@id/settings_account_mfa_lottie" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="118.0dip" app:lottie_autoPlay="true" app:lottie_fileName="animations/anim_verify_by_phone.json" app:lottie_loop="true" />
+                        <TextView android:id="@id/settings_account_mfa_sales_pitch" android:visibility="gone" android:text="@string/two_fa_sales_pitch" style="@style/UiKit.Settings.Item.SubText" />
+                        <Button android:id="@id/settings_account_mfa_enable" android:visibility="gone" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:text="@string/two_fa_enable" style="@style/UiKit.Button.Grey" />
+                    </LinearLayout>
+                </com.discord.app.AppViewFlipper>
+            </LinearLayout>
+            <View style="@style/UiKit.Divider" />
+            <TextView android:text="@string/account_management" style="@style/UiKit.Settings.Item.Header" />
+            <LinearLayout android:id="@id/settings_account_private_data_wrap" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:textColor="?primary_100" android:id="@id/settings_account_private_data_disable" android:text="@string/disable_account" style="@style/UiKit.Settings.Item" />
+                <TextView android:textColor="@color/status_red_500" android:id="@id/settings_account_private_data_delete" android:text="@string/delete_account" style="@style/UiKit.Settings.Item" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/settings_account_save" style="@style/Settings.FloatingActionButton.Save" />
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

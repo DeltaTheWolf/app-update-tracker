@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_suggestion_item_has_container" android:background="?selectableItemBackground" android:padding="@dimen/settings_option_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_suggestions_item_has_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_centerVertical="true" android:layout_marginEnd="32.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="?theme_search_suggestion_text_color_primary" android:gravity="center_vertical" android:id="@id/search_suggestions_item_has_text" android:singleLine="true" android:layout_toRightOf="@id/search_suggestions_item_has_icon" android:layout_centerVertical="true" android:layout_toEndOf="@id/search_suggestions_item_has_icon" style="@style/UiKit.TextView.Semibold" />
+</RelativeLayout>

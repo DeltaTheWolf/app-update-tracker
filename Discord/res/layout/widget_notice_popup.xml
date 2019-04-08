@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?notice_popup_bg" android:focusable="false" android:focusableInTouchMode="false" android:maxWidth="@dimen/popup_notif_max_width" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/popup_icon" android:visibility="gone" android:layout_margin="@dimen/uikit_spacing_medium" app:roundAsCircle="true" style="@style/Avatar.Notification" />
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:layout_weight="1.0" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:textColor="?primary_100" android:id="@id/popup_title" android:lineSpacingMultiplier="1.0" style="@style/UiKit.TextView.Subtext.Semibold.SingleLine" />
+            <com.discord.app.AppTextView android:textColor="?theme_chat_text" android:ellipsize="end" android:id="@id/popup_body" android:maxLines="3" android:lineSpacingMultiplier="1.0" style="@style/UiKit.TextView" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|top" android:id="@id/popup_close_btn" android:src="?ic_close_24dp" android:contentDescription="@string/dismiss" style="@style/UiKit.ImageView.Clickable.Corner.TopEnd" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/popup_countdown_progress" android:progress="0" style="@style/UiKit.ProgressBar.Line.Horizontal.Determinate" />
+</LinearLayout>

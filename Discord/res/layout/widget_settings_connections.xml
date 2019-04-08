@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/connections_recycler" android:paddingBottom="@dimen/padding_bottom_fab_screen" android:clipToPadding="false" style="@style/UiKit.ViewGroup.RecyclerView.AppBarScrollingViewBehavior" />
+    <TextView android:id="@id/connections_empty" android:text="@string/connected_accounts_none" android:drawableTop="@drawable/img_empty_no_connections" style="@style/UiKit.TextView.NoResults" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

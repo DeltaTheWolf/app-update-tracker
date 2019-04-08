@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?primary_630" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:background="?primary_630" style="@style/AppTheme.AppBarLayout">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:gravity="center_vertical" android:background="?search_action_bar_bg" android:layout_height="44.0dip" android:layout_margin="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <EditText android:id="@id/audit_log_filter_input" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_weight="1.0" style="@style/UiKit.SearchInput" />
+        <ImageView android:id="@id/audit_log_filter_search" android:padding="@dimen/uikit_spacing_medium" android:clickable="false" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="?theme_search_menu_icon" android:contentDescription="@string/filter_options" style="@style/UiKit.ImageView.Clickable" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/audit_log_filter_recycler" android:minHeight="200.0dip" style="@style/UiKit.ViewGroup.RecyclerView" />
+</LinearLayout>

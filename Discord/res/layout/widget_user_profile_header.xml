@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/profile_header_avatar_wrap" android:layout_width="@dimen/avatar_size_hero" android:layout_height="@dimen/avatar_size_hero" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/profile_header_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/avatar_status_size_hero_margin" android:layout_marginRight="@dimen/avatar_status_size_hero_margin" android:layout_marginBottom="@dimen/avatar_status_size_hero_margin" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:roundWithOverlayColor="?primary_630" style="@style/Avatar.Hero" />
+        <RelativeLayout android:layout_width="@dimen/avatar_status_size_hero" android:layout_height="@dimen/avatar_status_size_hero" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholderImage="?primary_630" app:roundAsCircle="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/profile_header_presence_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/avatar_status_size_hero_margin" android:layout_centerInParent="true" app:placeholderImage="@color/status_grey_500" app:roundAsCircle="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.cardview.widget.CardView android:id="@id/profile_header_badge_wrap_outer" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginBottom="@dimen/uikit_spacing_large" app:cardBackgroundColor="?colorPrimary" app:cardCornerRadius="12.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/profile_header_badge_wrap" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <LinearLayout android:id="@id/user_profile_header_badges" android:layout_width="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal" />
+                <TextView android:textColor="?primary_400" android:id="@id/profile_header_badge_text" android:singleLine="true" android:textAllCaps="true" style="@style/UiKit.TextView.Subtext.Semibold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:id="@id/profile_header_username" android:singleLine="true" style="@style/UiKit.TextView.H1" />
+        <TextView android:id="@id/profile_header_activity_status" android:layout_marginTop="@dimen/uikit_spacing_small" android:singleLine="true" style="@style/UiKit.TextView" />
+    </LinearLayout>
+</LinearLayout>

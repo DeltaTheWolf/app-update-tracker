@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?theme_friends_add_icon" android:id="@id/menu_chat_add_friend" android:visible="false" android:title="@string/add_friend" app:showAsAction="always" />
+    <item android:icon="?theme_search_menu_icon" android:id="@id/menu_chat_search" android:visible="false" android:title="@string/search" app:showAsAction="ifRoom" />
+    <item android:icon="?theme_group_start_call_icon" android:id="@id/menu_chat_start_call" android:visible="false" android:title="@string/start_call" app:showAsAction="ifRoom" />
+    <item android:icon="?theme_group_start_video_icon" android:id="@id/menu_chat_start_video_call" android:visible="false" android:title="@string/start_video_call" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_call_end_red_24dp" android:id="@id/menu_chat_stop_call" android:visible="false" android:title="@string/leave_call" app:showAsAction="ifRoom" />
+    <item android:icon="?theme_friends_new_group_icon" android:id="@id/menu_chat_start_group" android:visible="false" android:title="@string/create_group_dm" app:showAsAction="ifRoom" />
+    <item android:icon="?theme_chat_header_members" android:id="@id/menu_chat_side_panel" android:visible="false" android:title="@string/members" app:showAsAction="always" />
+    <item android:icon="?theme_friends_profile_icon" android:id="@id/menu_chat_dms_view_profile" android:visible="false" android:title="@string/profile" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_chat_group_add" android:visible="false" android:title="@string/group_dm_add_friends" app:showAsAction="never" />
+    <item android:id="@id/menu_chat_group_settings" android:visible="false" android:title="@string/group_dm_settings" app:showAsAction="never" />
+    <item android:icon="?theme_chat_header_members" android:id="@id/menu_chat_pins" android:visible="false" android:title="@string/pinned_messages" app:showAsAction="never" />
+    <item android:id="@id/menu_channel_settings" android:visible="false" android:title="@string/channel_settings" app:showAsAction="never" />
+    <item android:id="@id/menu_channel_notification_settings" android:visible="false" android:title="@string/notification_settings" app:showAsAction="never" />
+    <item android:id="@id/menu_chat_dms_close" android:visible="false" android:title="@string/close" app:showAsAction="never" />
+</menu>

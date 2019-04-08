@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.discord.utilities.view.scroll.MaxHeightScrollView android:background="?primary_630" style="@style/UiKit.ViewGroup.NestedScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dialog_chat_action_header" style="@style/UiKit.Sheet.Header">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/dialog_chat_actions_avatar" app:roundWithOverlayColor="?primary_630" style="@style/UiKit.Sheet.Header.Icon" />
+            <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+            <LinearLayout android:orientation="vertical" style="@style/UiKit.Sheet.Header.Contents">
+                <TextView android:id="@id/dialog_chat_actions_title" android:layout_width="fill_parent" style="@style/UiKit.TextView.H1.Bold" />
+                <TextView android:ellipsize="end" android:id="@id/dialog_chat_actions_subtitle" android:maxLines="2" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/dialog_chat_actions_copy" android:text="@string/copy_text" android:drawableLeft="?ic_copy" android:drawableStart="?ic_copy" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_add_reaction" android:text="@string/add_reaction" android:drawableLeft="?ic_add_reaction" android:drawableStart="?ic_add_reaction" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_manage_reactions" android:text="@string/reactions" android:drawableLeft="?ic_reactions" android:drawableStart="?ic_reactions" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_remove_all_reactions" android:text="@string/remove_all_reactions" android:drawableLeft="?ic_delete_sweep" android:drawableStart="?ic_delete_sweep" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_edit" android:text="@string/edit" android:drawableLeft="?ic_edit" android:drawableStart="?ic_edit" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_pin" android:text="@string/pin" android:drawableLeft="?ic_pins_a60" android:drawableStart="?ic_pins_a60" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_delete" android:text="@string/delete" android:drawableLeft="?ic_delete" android:drawableStart="?ic_delete" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_resend" android:text="@string/resend_message" android:drawableLeft="?ic_refresh" android:drawableStart="?ic_refresh" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:gravity="center_vertical" android:id="@id/dialog_chat_actions_profile" android:text="@string/profile" android:drawableLeft="?ic_account" android:drawableStart="?ic_account" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_copy_id" android:visibility="gone" android:text="@string/copy_id" android:drawableLeft="?ic_copy" android:drawableStart="?ic_copy" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/dialog_chat_actions_share" android:visibility="gone" android:text="@string/share" android:drawableLeft="?ic_share" android:drawableStart="?ic_share" style="@style/UiKit.Settings.Item.Icon" />
+    </LinearLayout>
+</com.discord.utilities.view.scroll.MaxHeightScrollView>

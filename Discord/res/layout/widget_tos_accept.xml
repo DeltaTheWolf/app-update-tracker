@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="fill_parent" android:layout_above="@id/alert_tos_ack_wrap" style="@style/UiKit.ViewGroup.ScrollView">
+        <LinearLayout style="@style/UiKit.Copy.Container">
+            <ImageView android:src="?img_new_tos" android:contentDescription="@string/new_terms_title" style="@style/UiKit.ImageView" />
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:layout_gravity="start" android:id="@id/alert_tos_text_title" android:text="@string/new_terms_title" style="@style/UiKit.TextView.H1" />
+                <TextView android:id="@id/alert_tos_text_description" android:layout_marginTop="16.0dip" android:text="@string/new_terms_description" style="@style/UiKit.TextView" />
+                <com.discord.utilities.view.text.LinkifiedTextView android:layout_gravity="start" android:id="@id/alert_tos_terms_of_service" android:layout_marginTop="16.0dip" android:text="@string/terms_of_service_url" style="@style/UiKit.TextView.Link" />
+                <com.discord.utilities.view.text.LinkifiedTextView android:layout_gravity="start" android:id="@id/alert_tos_privacy_policy" android:layout_marginTop="12.0dip" android:text="@string/privacy_policy_url" style="@style/UiKit.TextView.Link" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/alert_tos_ack_wrap" android:layout_marginTop="8.0dip" android:layout_alignParentBottom="true" style="@style/UiKit.Copy.Anchor">
+        <FrameLayout style="@style/UiKit.Copy.Anchor.Item.Rotatable">
+            <CheckBox android:id="@id/alert_tos_ack" android:layout_height="52.0dip" android:text="@string/new_terms_ack" style="@style/UiKit.Checkbox" />
+        </FrameLayout>
+        <FrameLayout style="@style/UiKit.Copy.Anchor.Item.Rotatable">
+            <Button android:enabled="false" android:id="@id/alert_tos_ack_continue" android:text="@string/new_terms_continue" style="@style/UiKit.Button" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat.Transparent">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

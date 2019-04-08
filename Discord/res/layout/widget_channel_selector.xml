@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.Sheet.Header">
+            <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+            <TextView android:id="@id/guild_actions_overview_header_tv" android:text="@string/channel_select" style="@style/UiKit.Sheet.Header.Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/UiKit.Settings.Divider" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/channel_selector_list" style="@style/UiKit.ViewGroup.RecyclerView" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/uikit_spacing_xxlarge" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_xxlarge" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/primary_100" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/premium_game_perks_title_mobile" style="@style/UiKit.TextView.Semibold" />
+    <LinearLayout android:gravity="center_vertical" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <ImageView android:layout_width="wrap_content" android:layout_height="60.0dip" android:src="@drawable/img_discord_nitro_logo_left" android:adjustViewBounds="true" android:contentDescription="@string/premium_tier_2" style="@style/UiKit.ImageView" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/uikit_spacing_small" android:src="@drawable/img_wumpus_jetpack" android:adjustViewBounds="true" android:scaleX="-1.0" android:importantForAccessibility="no" style="@style/UiKit.ImageView" />
+    </LinearLayout>
+    <TextView android:textColor="@color/primary_100" android:gravity="center_vertical" android:text="@string/premium_features_chat_perks_mobile" android:drawableLeft="@drawable/ic_check_brand_24dp" android:drawablePadding="@dimen/uikit_spacing_large" style="@style/UiKit.TextView" />
+    <TextView android:textColor="@color/primary_100" android:gravity="center_vertical" android:text="@string/premium_features_game_perks_mobile" android:drawableLeft="@drawable/ic_check_brand_24dp" android:drawablePadding="@dimen/uikit_spacing_large" style="@style/UiKit.TextView" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_large" android:maxWidth="600.0dip" android:minWidth="400.0dip" style="@style/UiKit.ViewGroup.LinearLayout">
+        <Button android:id="@id/premium_settings_premium_yearly" style="@style/UiKit.Button.Green" />
+        <Button android:textColor="@drawable/button_text_color_primary_100" android:id="@id/premium_settings_premium_monthly" style="@style/UiKit.Button.Grey" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="?selectableItemBackground" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_icon_iv" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginEnd="@dimen/uikit_spacing_large" app:placeholderImage="?colorPrimaryCircle" style="@style/Avatar.Standard" />
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:id="@id/item_name_tv" android:layout_weight="1.0" style="@style/UiKit.TextView.Subtext.Semibold.SingleLine" />
+    <TextView android:textColor="@color/status_green_500" android:id="@id/item_invite_btn" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:minWidth="@dimen/uikit_spacing_xxxlarge" android:text="@string/invite_friend_modal_invite" android:textAllCaps="false" style="@style/UiKit.Button.Green.Fit.Outline" />
+    <TextView android:textColor="?primary_300_alpha_30" android:id="@id/item_sent" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:minWidth="@dimen/uikit_spacing_xxxlarge" android:text="@string/invite_friend_modal_sent" android:textAllCaps="false" style="@style/UiKit.Button.Transparent.Fit" />
+</LinearLayout>

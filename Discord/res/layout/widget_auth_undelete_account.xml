@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?auth_ptrn" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/widget_auth_header" />
+    <RelativeLayout android:background="?auth_bg_card" android:layout_margin="@dimen/uikit_spacing_medium" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ImageView android:layout_alignParentBottom="true" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Left" />
+        <ImageView android:layout_alignParentBottom="true" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Right" />
+        <androidx.core.widget.NestedScrollView android:layout_height="fill_parent" android:fillViewport="false" style="@style/UiKit.ViewGroup.NestedScrollView">
+            <LinearLayout android:layout_gravity="center" android:padding="20.0dip" style="@style/UiKit.ViewGroup.LinearLayout">
+                <LinearLayout android:gravity="center" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable">
+                    <ImageView android:src="@drawable/img_wump_trash_dark" style="@style/UiKit.ImageView" />
+                    <LinearLayout android:gravity="center" style="@style/UiKit.ViewGroup.LinearLayout">
+                        <TextView android:id="@id/auth_undelete_title" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/account_scheduled_for_deletion_title" style="@style/UiKit.TextView.H1" />
+                        <TextView android:gravity="center" android:id="@id/auth_undelete_body" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/account_scheduled_for_deletion_description" style="@style/UiKit.TextView" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:id="@id/auth_undelete_delete" android:layout_marginTop="@dimen/uikit_spacing_xxlarge" android:text="@string/return_to_login" style="@style/UiKit.Button" />
+                <Button android:id="@id/auth_undelete_cancel" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/account_scheduled_for_deletion_cancel_mobile" style="@style/UiKit.Button.Outline" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Top" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

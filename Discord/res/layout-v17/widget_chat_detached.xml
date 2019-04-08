@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/status_grey_500" android:visibility="gone" android:layout_height="@dimen/uikit_spacing_xxlarge" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chat_detached_icon" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:src="@drawable/ic_message_white_18dp" android:layout_centerVertical="true" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+    <TextView android:textColor="@color/white" android:text="@string/youre_viewing_older_messages" android:layout_toLeftOf="@id/chat_detached_arrow" android:layout_toRightOf="@id/chat_detached_icon" android:layout_centerVertical="true" android:layout_toStartOf="@id/chat_detached_arrow" android:layout_toEndOf="@id/chat_detached_icon" style="@style/UiKit.TextView.Subtext" />
+    <ImageView android:id="@id/chat_detached_arrow" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="@drawable/ic_arrow_drop_down_white_18dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/sample_empty_string" android:layout_alignParentEnd="true" style="@style/UiKit.ImageView" />
+    <View android:id="@id/chat_detached_handle" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

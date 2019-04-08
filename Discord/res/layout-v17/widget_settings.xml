@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:background="?primary_630" style="@style/AppTheme.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout style="@style/AppTheme.CollapsingToolbarLayout">
+            <LinearLayout android:layout_marginTop="?actionBarSize" app:layout_collapseMode="parallax" style="@style/UiKit.ViewGroup.LinearLayout">
+                <RelativeLayout android:id="@id/settings_account_unclaimed" android:background="@color/status_orange_500" android:visibility="gone" style="@style/UiKit.ViewGroup.RelativeLayout">
+                    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_100" android:text="@string/unclaimed_account_title" android:layout_centerInParent="true" style="@style/UiKit.TextView.Semibold" />
+                    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_100" android:background="@drawable/drawable_button_white" android:paddingLeft="@dimen/uikit_spacing_medium" android:paddingTop="@dimen/uikit_spacing_small" android:paddingRight="@dimen/uikit_spacing_medium" android:paddingBottom="@dimen/uikit_spacing_small" android:layout_margin="@dimen/uikit_spacing_medium" android:text="@string/claim_account" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/UiKit.TextView" />
+                </RelativeLayout>
+                <fragment android:name="com.discord.widgets.user.WidgetUserProfileHeader" android:id="@id/widget_user_profile_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:background="?primary_630" style="@style/AppTheme.Toolbar" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <androidx.appcompat.widget.LinearLayoutCompat style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/user_settings" style="@style/UiKit.Settings.Item.Header" />
+            <TextView android:id="@id/settings_account" android:text="@string/user_settings_my_account" android:drawableLeft="?ic_my_account_a60" android:drawableStart="?ic_my_account_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_privacy" android:text="@string/privacy_and_safety" android:drawableLeft="?ic_privacy_a60" android:drawableStart="?ic_privacy_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_connections" android:text="@string/connections" android:drawableLeft="?ic_phonelink_a60" android:drawableStart="?ic_phonelink_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_billing" android:visibility="gone" android:text="@string/billing" android:drawableLeft="?ic_billing_a60" android:drawableStart="?ic_billing_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:textColor="@color/brand_500" android:id="@id/settings_nitro" android:visibility="gone" android:text="@string/premium_title" android:drawableLeft="@drawable/ic_nitro_rep" android:drawableStart="@drawable/ic_nitro_rep" style="@style/UiKit.Settings.Item.Icon" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/app_settings" style="@style/UiKit.Settings.Item.Header" />
+            <TextView android:id="@id/settings_voice" android:text="@string/voice_and_video" android:drawableLeft="?ic_voice_settings_a60" android:drawableStart="?ic_voice_settings_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_notifications" android:text="@string/notifications" android:drawableLeft="?ic_notifications_a60" android:drawableStart="?ic_notifications_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_games" android:text="@string/games" android:drawableLeft="?ic_games_a60" android:drawableStart="?ic_games_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_text_images" android:text="@string/text_and_images" android:drawableLeft="?ic_text_image_a60" android:drawableStart="?ic_text_image_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_appearance" android:text="@string/appearance" android:drawableLeft="?ic_theme_a60" android:drawableStart="?ic_theme_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_behavior" android:text="@string/form_label_mobile_notifications_behavior" android:drawableLeft="?ic_behavior_a60" android:drawableStart="?ic_behavior_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_language" android:text="@string/language" android:drawableLeft="?ic_locale_a60" android:drawableStart="?ic_locale_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <View android:id="@id/settings_developer_options_divider" android:visibility="gone" style="@style/UiKit.Settings.Divider" />
+            <TextView android:id="@id/settings_developer_options_header" android:visibility="gone" android:text="@string/developer_options" style="@style/UiKit.Settings.Item.Header" />
+            <TextView android:id="@id/settings_developer_options" android:visibility="gone" android:text="@string/developer_options" android:drawableLeft="?ic_security_a60" android:drawableStart="?ic_security_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:id="@id/settings_app_info" style="@style/UiKit.Settings.Item.Header" />
+            <TextView android:id="@id/settings_changelog" android:text="@string/change_log" android:drawableLeft="?ic_info_a60" android:drawableStart="?ic_info_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_support" android:text="@string/support" android:drawableLeft="?ic_help_a60" android:drawableStart="?ic_help_a60" style="@style/UiKit.Settings.Item.Icon" />
+            <TextView android:id="@id/settings_acknowledgements" android:text="@string/acknowledgements" android:drawableLeft="?ic_info_a60" android:drawableStart="?ic_info_a60" style="@style/UiKit.Settings.Item.Icon" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

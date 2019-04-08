@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout style="@style/UiKit.ViewGroup.RelativeLayout.AppBarScrollingViewBehavior">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <VideoView android:layout_gravity="center" android:id="@id/media_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.facebook.samples.zoomable.ZoomableDraweeView android:id="@id/media_image" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent" app:failureImage="@drawable/asset_sadbot" app:failureImageScaleType="center" app:placeholderImage="@drawable/asset_image_loading" app:progressBarAutoRotateInterval="1000" app:progressBarImage="@drawable/asset_image_loading_spinner" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

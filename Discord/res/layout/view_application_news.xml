@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?application_news_background" style="@style/UiKit.ViewGroup"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/application_news_loading" android:padding="@dimen/uikit_spacing_large" android:visibility="gone" android:layout_width="fill_parent" android:src="?application_news_loading" android:scaleType="fitXY" android:contentDescription="@string/loading" style="@style/UiKit.ImageView" />
+    <LinearLayout android:gravity="center" android:id="@id/application_news_error_container" android:padding="@dimen/uikit_spacing_xlarge" android:visibility="gone" style="@style/UiKit.ViewGroup.LinearLayout">
+        <ImageView android:layout_marginBottom="@dimen/uikit_spacing_large" android:src="?application_news_error" android:importantForAccessibility="no" style="@style/UiKit.ImageView" />
+        <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="?application_news_title_text_color" android:gravity="center" android:layout_width="fill_parent" android:text="@string/application_news_error_title" style="@style/UiKit.TextView.Semibold" />
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?application_news_description_text_color" android:gravity="center" android:layout_width="fill_parent" android:text="@string/application_news_error_body" style="@style/UiKit.TextView" />
+        <Button android:id="@id/application_news_error_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_large" android:text="@string/try_again" style="@style/UiKit.Button.Theme" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/application_news_content" android:visibility="visible" style="@style/UiKit.ViewGroup.LinearLayout">
+        <FrameLayout android:id="@id/application_news_header_container" android:background="?application_news_top_strip_color" android:layout_width="fill_parent" android:layout_height="@dimen/application_news_header_strip_height">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/application_news_splash" android:layout_width="fill_parent" android:layout_height="fill_parent" app:actualImageScaleType="fitCenter" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundedCornerRadius="4.0dip" />
+        </FrameLayout>
+        <TextView android:textColor="?application_news_title_text_color" android:id="@id/application_news_title" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:fontFamily="@font/whitney_semibold" style="@style/UiKit.TextView.Large" />
+        <TextView android:textColor="?application_news_description_text_color" android:id="@id/application_news_description" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.TextView" />
+        <View android:background="?application_news_divider_color" android:layout_marginTop="@dimen/uikit_spacing_medium" style="@style/UiKit.Divider.Thick" />
+        <RelativeLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup">
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?application_news_footer_text_color" android:id="@id/application_news_footer_text" android:layout_toLeftOf="@id/application_news_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/UiKit.TextView.SingleLine" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/application_news_icon" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" android:layout_alignParentRight="true" app:placeholderImage="@color/primary_600" style="@style/Icon.Game.Small" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.Sheet.Header">
+            <ImageView android:src="?ic_sort" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Sheet.Header.Icon" />
+            <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+            <TextView android:text="@string/filter_mentions" style="@style/UiKit.Sheet.Header.Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.discord.views.CheckedSetting android:id="@id/user_mentions_filter_this_server" app:cs_text="@string/this_server" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+        <com.discord.views.CheckedSetting android:id="@id/user_mentions_filter_include_everyone" app:cs_text="@string/recent_mentions_filter_everyone" app:cs_view_type="check" style="@style/UiKit.CheckedSetting.Themed" />
+        <com.discord.views.CheckedSetting android:id="@id/user_mentions_filter_include_roles" app:cs_text="@string/recent_mentions_filter_roles" app:cs_view_type="check" style="@style/UiKit.CheckedSetting.Themed" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

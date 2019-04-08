@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?selectableItemBackground" android:paddingLeft="@dimen/uikit_guideline_chat" android:paddingRight="@dimen/chat_cell_horizontal_spacing_total" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.discord.utilities.view.text.LinkifiedTextView android:gravity="center_vertical" android:id="@id/chat_list_adapter_item_text" android:layout_width="fill_parent" android:layout_marginBottom="2.0dip" style="@style/UiKit.Chat.Text" />
+</FrameLayout>

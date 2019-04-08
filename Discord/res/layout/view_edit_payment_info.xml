@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/primary_700" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billing_address" style="@style/UiKit.TextView.H2" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_info_name_textinputlayout" android:hint="@string/billing_address_name" style="@style/UiKit.Form.Field.EditText.Wrap">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/payment_info_name_edittext" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_info_address_1_textinputlayout" android:hint="@string/billing_address_address" style="@style/UiKit.Form.Field.EditText.Wrap">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/payment_info_name_address_1_edittext" android:inputType="textPostalAddress" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_info_address_2_textinputlayout" android:hint="@string/billing_address_address2" style="@style/UiKit.Form.Field.EditText.Wrap">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/payment_info_name_address_2_edittext" android:inputType="textPostalAddress" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_info_city_textinputlayout" android:hint="@string/billing_address_city" style="@style/UiKit.Form.Field.EditText.Wrap">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/payment_info_city_edittext" android:inputType="text" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/payment_info_zip_textinputlayout" android:hint="@string/billing_address_zip_code" style="@style/UiKit.Form.Field.EditText.Wrap">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/payment_info_zip_edittext" android:inputType="number" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox android:textColor="@color/primary_100" android:id="@id/payment_info_make_default_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_source_make_default" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/payment_info_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/payment_info_cancel" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.Button.Red.Outline" />
+        <Button android:id="@id/payment_info_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/payment_info_save" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.Button.Transparent" />
+        <Button android:id="@id/payment_info_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.Button.Green" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

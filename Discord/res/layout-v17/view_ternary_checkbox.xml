@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout style="@style/UiKit.ViewGroup.RelativeLayout">
+            <LinearLayout android:padding="@dimen/uikit_spacing_large" android:layout_toLeftOf="@id/checkboxes_container" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/checkboxes_container" android:layout_alignParentStart="true" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:id="@id/setting_label" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginEnd="@dimen/uikit_spacing_large" style="@style/UiKit.TextView.Large.SingleLine" />
+                <TextView android:id="@id/setting_subtext" android:layout_marginTop="5.0dip" style="@style/UiKit.TextView" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/checkboxes_container" android:layout_width="wrap_content" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/uikit_spacing_large" android:layout_alignParentEnd="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <FrameLayout android:id="@id/checkable_off_container" android:layout_width="44.0dip" android:layout_height="32.0dip">
+                    <com.discord.views.CheckableImageView android:id="@id/ternary_check_off" android:background="@drawable/drawable_bg_ternary_off" android:src="@drawable/drawable_ic_ternary_off" style="@style/UiKit.CheckableImageView" />
+                    <View android:id="@id/off_disabled_overlay" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <com.discord.views.CheckableImageView android:id="@id/ternary_check_neutral" android:background="@drawable/drawable_bg_ternary_neutral" android:src="@drawable/drawable_ic_ternary_neutral" style="@style/UiKit.CheckableImageView" />
+                <com.discord.views.CheckableImageView android:id="@id/ternary_check_on" android:background="@drawable/drawable_bg_ternary_on" android:src="@drawable/drawable_ic_ternary_on" style="@style/UiKit.CheckableImageView" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/setting_disabled_overlay" android:background="?ternaryCheckboxDisabledColor" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

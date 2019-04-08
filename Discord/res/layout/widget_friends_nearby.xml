@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/UiKit.ViewGroup.Page.LinearLayout">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="start|center" android:text="@string/add_friend_nearby" style="@style/UiKit.Settings.Item.Header" />
+            <TextView android:textSize="@dimen/uikit_settings_item_header_size" android:layout_gravity="end|center" android:id="@id/nearby_friends_learn_more" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/learn_more" app:fontFamily="@font/whitney_semibold" style="@style/UiKit.TextView.Link" />
+        </FrameLayout>
+        <com.discord.app.AppViewFlipper android:id="@id/nearby_friends_flipper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/nearby_friends_error" android:layout_margin="@dimen/uikit_spacing_large" android:text="@string/add_friend_nearby_enable_settings_android" android:drawableTop="?img_addfriends_notconnected" android:drawablePadding="@dimen/uikit_spacing_medium" style="@style/UiKit.TextView" />
+            <LinearLayout android:gravity="center" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.LinearLayout">
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/nearby_friends_searching_lottie" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginBottom="@dimen/uikit_spacing_medium" app:lottie_autoPlay="false" app:lottie_fileName="animations/anim_friends_add_nearby_looking.json" app:lottie_loop="true" />
+                <TextView android:gravity="center" android:id="@id/nearby_friends_searching" android:layout_marginLeft="@dimen/uikit_spacing_xxlarge" android:layout_marginRight="@dimen/uikit_spacing_xxlarge" android:text="@string/add_friend_nearby_looking" style="@style/UiKit.TextView" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/nearby_friends_recycler" android:padding="@dimen/uikit_spacing_small" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RecyclerView" />
+        </com.discord.app.AppViewFlipper>
+        <com.discord.app.AppViewFlipper android:id="@id/nearby_friends_button_flipper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/nearby_friends_enable" android:layout_width="fill_parent" android:layout_margin="@dimen/uikit_spacing_large" android:text="@string/add_friend_nearby_enable" android:textAllCaps="true" style="@style/UiKit.Button" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/nearby_friends_disable" android:layout_margin="@dimen/uikit_spacing_large" android:text="@string/add_friend_nearby_disable_scanning" android:textAllCaps="true" style="@style/UiKit.Button.Outline" />
+        </com.discord.app.AppViewFlipper>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

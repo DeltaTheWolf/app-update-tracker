@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/manage_reactions_emojis_recycler" android:background="?primary_630" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:clipToPadding="false" android:layout_height="50.0dip" android:layout_alignParentTop="true" style="@style/UiKit.ViewGroup.RecyclerView.Horizontal" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/manage_reactions_results_recycler" android:paddingTop="8.0dip" android:clipToPadding="false" android:layout_below="@id/manage_reactions_emojis_recycler" android:layout_alignParentBottom="true" style="@style/UiKit.ViewGroup.RecyclerView" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

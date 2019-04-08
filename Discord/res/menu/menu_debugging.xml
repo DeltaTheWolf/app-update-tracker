@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?ic_share_opaque" android:id="@id/menu_debugging_share" android:orderInCategory="1" android:title="@string/share" app:showAsAction="ifRoom" />
+    <item android:icon="?ic_filter_list" android:id="@id/menu_debugging_filter" android:checked="true" android:orderInCategory="2" android:title="@string/filter" android:checkable="true" app:showAsAction="withText" />
+</menu>

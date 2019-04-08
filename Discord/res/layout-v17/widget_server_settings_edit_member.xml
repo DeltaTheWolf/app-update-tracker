@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/nickname" style="@style/UiKit.Settings.Item.Header" />
+            <LinearLayout android:id="@id/edit_member_nickname_container" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <EditText android:id="@id/edit_member_nickname" android:layout_width="0.0dip" android:hint="@string/change_nickname" android:singleLine="true" android:maxLength="32" android:layout_weight="1.0" android:inputType="textNoSuggestions" style="@style/UiKit.EditText.Themed" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/edit_member_nickname_lock" android:layout_marginRight="10.0dip" android:src="@drawable/ic_role_lock" android:layout_marginEnd="10.0dip" style="@style/UiKit.ImageView" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/edit_member_roles_container" style="@style/UiKit.ViewGroup.LinearLayout">
+                <View style="@style/UiKit.Settings.Divider" />
+                <TextView android:text="@string/roles" style="@style/UiKit.Settings.Item.Header" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/edit_member_roles_recycler" style="@style/UiKit.ViewGroup.RecyclerView" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/edit_member_administrative_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/UiKit.Settings.Divider" />
+                <TextView android:text="@string/administrative" style="@style/UiKit.Settings.Item.Header" />
+                <TextView android:textColor="@color/status_red_500" android:id="@id/edit_member_kick_button" android:text="@string/kick_user_title" android:drawableLeft="@drawable/ic_remove_friend_red_24dp" android:drawableStart="@drawable/ic_remove_friend_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:textColor="@color/status_red_500" android:id="@id/edit_member_ban_button" android:text="@string/ban_user_title" android:drawableLeft="@drawable/ic_ban_red_24dp" android:drawableStart="@drawable/ic_ban_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+                <TextView android:textColor="@color/status_red_500" android:id="@id/edit_member_transfer_ownership_button" android:text="@string/transfer_ownership" android:drawableLeft="@drawable/ic_transfer_red_24dp" android:drawableStart="@drawable/ic_transfer_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+            </LinearLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="64.0dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/edit_member_save" style="@style/Settings.FloatingActionButton.Save" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

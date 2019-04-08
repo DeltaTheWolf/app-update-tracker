@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?auth_ptrn" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/widget_auth_header" />
+    <RelativeLayout android:background="?auth_bg_card" android:layout_margin="8.0dip" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Left" />
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Right" />
+        <androidx.core.widget.NestedScrollView android:layout_height="fill_parent" android:layout_above="@id/auth_button_container" style="@style/UiKit.ViewGroup.NestedScrollView">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout">
+                <LinearLayout style="@style/UiKit.AuthCopyContainer">
+                    <TextView android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/two_fa" style="@style/UiKit.TextView.H1" />
+                    <TextView android:layout_marginBottom="8.0dip" android:text="@string/two_fa_enter_token_label" style="@style/UiKit.TextView.Subtext" />
+                </LinearLayout>
+                <com.discord.views.DigitVerificationView android:id="@id/auth_mfa_verification" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                <TextView android:textSize="11.0sp" android:gravity="center" android:id="@id/auth_login_forgot_password" android:padding="8.0dip" android:maxWidth="320.0dip" android:text="@string/two_fa_enter_token_body" style="@style/UiKit.TextView.Subtext" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Top" />
+        <LinearLayout android:id="@id/auth_button_container" android:layout_alignParentBottom="true" style="@style/UiKit.ViewGroup.LinearLayout" />
+    </RelativeLayout>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

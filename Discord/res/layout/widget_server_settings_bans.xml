@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+        <EditText android:id="@id/server_settings_bans_search" android:hint="@string/members_search_placeholder" style="@style/UiKit.Search.EditText" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@id/server_settings_bans_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/server_settings_bans_recycler" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RecyclerView.AppBarScrollingViewBehavior" />
+        <TextView android:id="@id/no_bans_body" android:text="@string/bans_no_users_banned" android:drawableTop="@drawable/asset_empty_no_bans" style="@style/UiKit.TextView.NoResults" />
+        <TextView android:id="@id/no_results_text" android:text="@string/bans_no_results" android:drawableTop="@drawable/asset_no_results_light" style="@style/UiKit.TextView.NoResults" />
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

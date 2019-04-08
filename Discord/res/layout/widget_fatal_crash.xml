@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="24.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_marginBottom="8.0dip" android:fillViewport="true" android:overScrollMode="never" style="@style/UiKit.ViewGroup.ScrollView.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_marginBottom="8.0dip" android:src="?img_wumpus_tophat" style="@style/UiKit.ImageView" />
+        <LinearLayout android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:layout_marginBottom="8.0dip" android:text="@string/crash_unexpected" style="@style/UiKit.TextView.H2" />
+            <com.discord.utilities.view.text.LinkifiedTextView android:autoLink="web" android:id="@id/fatal_crash_testers_invite" android:layout_marginBottom="8.0dip" android:text="@string/crash_testers_invite" style="@style/UiKit.TextView" />
+            <TextView android:text="@string/crash_disclaimer" style="@style/UiKit.TextView" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/fatal_crash_details" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" android:layout_weight="1.0" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:layout_marginBottom="8.0dip" android:text="@string/crash_details" style="@style/UiKit.TextView.H2" />
+            <TextView android:id="@id/fatal_crash_app_version" android:layout_marginBottom="8.0dip" android:text="@string/crash_app_version" style="@style/UiKit.TextView" />
+            <TextView android:id="@id/fatal_crash_device" android:layout_marginBottom="8.0dip" android:text="@string/crash_device" style="@style/UiKit.TextView" />
+            <TextView android:id="@id/fatal_crash_os_version" android:layout_marginBottom="8.0dip" android:text="@string/crash_device_version" style="@style/UiKit.TextView" />
+            <TextView android:id="@id/fatal_crash_source" android:layout_marginBottom="8.0dip" android:text="@string/crash_source" style="@style/UiKit.TextView" />
+            <TextView android:id="@id/fatal_crash_time" android:text="@string/crash_timestamp" style="@style/UiKit.TextView" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

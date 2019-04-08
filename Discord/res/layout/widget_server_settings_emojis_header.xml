@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/widget_server_settings_emojis_upload" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/upload_emoji" style="@style/UiKit.Button" />
+    <TextView android:id="@id/widget_server_settings_emojis_upload_description" android:text="@string/guild_settings_emoji_upload_to_server_message" style="@style/UiKit.Settings.Item.SubText" />
+</LinearLayout>

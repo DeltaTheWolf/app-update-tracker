@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?auth_ptrn" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/widget_auth_header" />
+    <RelativeLayout android:background="?auth_bg_card" android:layout_margin="@dimen/uikit_spacing_medium" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ImageView android:layout_above="@id/guild_join_action_btn" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Left" />
+        <ImageView android:layout_above="@id/guild_join_action_btn" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Right" />
+        <androidx.core.widget.NestedScrollView android:id="@id/guild_join_content" android:layout_height="fill_parent" android:layout_marginBottom="-6.0dip" android:fillViewport="false" android:layout_above="@id/guild_join_action_btn" style="@style/UiKit.ViewGroup.NestedScrollView">
+            <LinearLayout android:background="?auth_bg_card" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable">
+                <LinearLayout style="@style/UiKit.AuthCopyContainer">
+                    <TextView android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/nux_post_reg_join_server_title" style="@style/UiKit.TextView.H1" />
+                    <TextView android:layout_marginBottom="8.0dip" android:text="@string/nux_post_reg_join_server_description" style="@style/UiKit.TextView.Subtext" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" style="@style/UiKit.ViewGroup.LinearLayout">
+                    <com.google.android.material.textfield.TextInputLayout style="@style/UiKit.Form.Field.EditText.Wrap">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/guild_join_invite" android:hint="@string/instant_invite" android:imeOptions="actionDone" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <include layout="@layout/widget_guild_join_invite_examples" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Top" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/guild_join_action_btn" android:text="@string/nux_post_reg_join_server_skip" android:layout_alignParentBottom="true" style="@style/UiKit.AuthButton" />
+        <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

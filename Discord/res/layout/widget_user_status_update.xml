@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/guild_actions_overview_header_tv" android:layout_marginLeft="60.0dip" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" android:text="@string/set_status" style="@style/UiKit.Sheet.Header.Title" />
+    <View style="@style/UiKit.Divider" />
+    <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+        <include android:id="@id/user_status_update_online" layout="@layout/view_user_status_presence" />
+        <include android:id="@id/user_status_update_idle" layout="@layout/view_user_status_presence" />
+        <include android:id="@id/user_status_update_dnd" layout="@layout/view_user_status_presence" />
+        <include android:id="@id/user_status_update_invisible" layout="@layout/view_user_status_presence" />
+    </LinearLayout>
+</LinearLayout>

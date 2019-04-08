@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:id="@id/server_settings_overview_scroll" style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:focusableInTouchMode="true" style="@style/UiKit.ViewGroup.LinearLayout">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/server_settings_overview_icon_name_container" android:background="?selectableItemBackground" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:clipToPadding="false" style="@style/UiKit.ViewGroup.ConstraintLayout">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/server_settings_overview_icon" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" app:placeholderImage="@color/brand_500" app:roundAsCircle="true" style="@style/Avatar.Large.ExtraExtra" />
+                <ImageView android:background="@drawable/drawable_uikit_white_circle" android:layout_width="@dimen/uikit_spacing_xxlarge" android:layout_height="@dimen/uikit_spacing_xxlarge" android:src="@drawable/ic_upload_image_40dp" android:contentDescription="@string/sample_empty_string" android:elevation="@dimen/app_elevation" app:layout_constraintEnd_toEndOf="@id/server_settings_overview_icon" app:layout_constraintRight_toRightOf="@id/server_settings_overview_icon" app:layout_constraintTop_toTopOf="@id/server_settings_overview_icon" style="@style/UiKit.ImageView" />
+                <TextView android:textSize="42.0sp" android:textColor="@color/primary_100" android:ellipsize="none" android:gravity="center" android:id="@id/server_settings_overview_icon_text" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="@dimen/uikit_spacing_medium" android:singleLine="true" app:layout_constraintBottom_toBottomOf="@id/server_settings_overview_icon" app:layout_constraintEnd_toEndOf="@id/server_settings_overview_icon" app:layout_constraintLeft_toLeftOf="@id/server_settings_overview_icon" app:layout_constraintRight_toRightOf="@id/server_settings_overview_icon" app:layout_constraintStart_toStartOf="@id/server_settings_overview_icon" app:layout_constraintTop_toTopOf="@id/server_settings_overview_icon" app:textAllCaps="true" style="@style/UiKit.TextView" />
+                <com.discord.app.AppTextView android:textSize="@dimen/uikit_textsize_small" android:gravity="center_horizontal" android:id="@id/server_settings_overview_icon_label" android:layout_width="wrap_content" android:text="@string/minimum_size" android:maxLines="2" android:layout_centerHorizontal="true" android:textAlignment="center" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="@id/server_settings_overview_icon" app:layout_constraintLeft_toLeftOf="@id/server_settings_overview_icon" app:layout_constraintRight_toRightOf="@id/server_settings_overview_icon" app:layout_constraintStart_toStartOf="@id/server_settings_overview_icon" app:layout_constraintTop_toBottomOf="@id/server_settings_overview_icon" style="@style/UiKit.TextView.Subtext.Semibold" />
+                <TextView android:textColor="@color/brand_500" android:id="@id/server_settings_overview_icon_remove" android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_medium" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/remove" android:layout_centerHorizontal="true" app:layout_constraintEnd_toEndOf="@id/server_settings_overview_icon" app:layout_constraintLeft_toLeftOf="@id/server_settings_overview_icon" app:layout_constraintRight_toRightOf="@id/server_settings_overview_icon" app:layout_constraintStart_toStartOf="@id/server_settings_overview_icon" app:layout_constraintTop_toBottomOf="@id/server_settings_overview_icon_label" style="@style/UiKit.TextView.Subtext.Semibold" />
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="0.0dip" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginStart="@dimen/uikit_spacing_large" android:layout_marginEnd="@dimen/uikit_spacing_large" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toRightOf="@id/server_settings_overview_icon" app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toEndOf="@id/server_settings_overview_icon" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.Form.Field.EditText.Wrap">
+                    <EditText android:id="@id/server_settings_overview_name" android:paddingLeft="@dimen/uikit_spacing_small" android:paddingRight="@dimen/uikit_spacing_small" android:hint="@string/form_label_server_name" style="@style/UiKit.Form.Field.EditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <LinearLayout android:id="@id/server_settings_overview_region_wrap" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <LinearLayout android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/UiKit.ViewGroup.LinearLayout">
+                    <TextView android:text="@string/form_label_server_region" style="@style/UiKit.Settings.Item.Label" />
+                    <TextView android:id="@id/server_settings_overview_region" style="@style/UiKit.Settings.Item.Addition" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/server_settings_overview_region_flag" android:padding="@dimen/uikit_spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/form_label_server_region" />
+            </LinearLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <include layout="@layout/widget_server_settings_overview_section_afk_channel" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <LinearLayout android:id="@id/server_settings_overview_system_channel_wrap" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/form_label_system_channel" style="@style/UiKit.Settings.Item.Label" />
+                <TextView android:id="@id/server_settings_overview_system_channel" android:drawablePadding="@dimen/uikit_spacing_xsmall" style="@style/UiKit.Settings.Item.Addition" />
+            </LinearLayout>
+            <TextView android:text="@string/form_help_system_channel" style="@style/UiKit.Settings.Item.SubText" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/form_label_default_notification_settings" style="@style/UiKit.Settings.Item.Header" />
+            <TextView android:text="@string/form_help_default_notification_settings_mobile" style="@style/UiKit.Settings.Item.SubText" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_overview_notification_all" app:cs_text="@string/form_label_all_messages" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_overview_notification_only_mentions" app:cs_text="@string/form_label_only_mentions" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <View android:layout_width="fill_parent" android:layout_height="64.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/server_settings_overview_save" style="@style/Settings.FloatingActionButton.Save" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

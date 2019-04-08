@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <RelativeLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_xxlarge" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout">
+                <TextView android:text="@string/vanity_url" android:textAllCaps="true" style="@style/UiKit.TextView.Bold" />
+                <TextView android:textColor="@color/status_red_500" android:id="@id/server_settings_vanity_url_remove" android:visibility="gone" android:text="@string/remove" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/UiKit.TextView.Bold" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/server_settings_vanity_url_input_container" android:padding="@dimen/uikit_spacing_large" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" style="@style/UiKit.ViewGroup.RelativeLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:id="@id/server_settings_vanity_url_prefix" android:text="@string/discord_gg" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/UiKit.TextView" />
+                <com.discord.app.AppEditText android:textSize="@dimen/uikit_textsize_large" android:textColor="?primary_100" android:id="@id/server_settings_vanity_input" android:background="@android:color/transparent" android:layout_width="fill_parent" android:hint="@string/vanity_url_hint_mobile" android:singleLine="true" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-" android:layout_toLeftOf="@id/server_settings_vanity_url_loading_indicator" android:layout_toRightOf="@id/server_settings_vanity_url_prefix" android:layout_centerVertical="true" android:inputType="textNoSuggestions" android:imeOptions="actionDone" android:layout_toStartOf="@id/server_settings_vanity_url_loading_indicator" android:layout_toEndOf="@id/server_settings_vanity_url_prefix" style="@style/UiKit.TextView" />
+                <ProgressBar android:id="@id/server_settings_vanity_url_loading_indicator" android:layout_width="@dimen/uikit_spacing_xxlarge" android:layout_height="@dimen/uikit_spacing_xxlarge" android:indeterminate="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/status_red_500" android:id="@id/server_settings_vanity_url_error_text" android:visibility="gone" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/change_vanity_url_error" style="@style/UiKit.TextView" />
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/vanity_url_help" style="@style/UiKit.TextView" />
+            <com.discord.app.AppTextView android:textSize="@dimen/uikit_textsize_small" android:id="@id/server_settings_vanity_url_current_url" android:visibility="gone" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:text="@string/vanity_url_help_extended" style="@style/UiKit.TextView" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

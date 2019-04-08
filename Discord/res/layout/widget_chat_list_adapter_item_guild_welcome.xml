@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?primary_200" android:id="@id/item_guild_welcome_header" style="@style/UiKit.TextView.H1" />
+    <TextView android:textColor="?primary_200" android:id="@id/item_guild_welcome_subheader" android:text="@string/welcome_message_mobile_owner_subtitle" style="@style/UiKit.TextView" />
+    <com.discord.views.ChatActionItem android:id="@id/welcome_card_upload_icon" android:layout_marginTop="@dimen/uikit_spacing_large" app:action_item_img_src="@drawable/ic_add_circle_outline_white_24dp" app:action_item_subtext="@string/welcome_message_mobile_upload_icon_desc" app:action_item_text="@string/welcome_message_mobile_upload_icon" style="@style/UiKit.WelcomeMessageCard" />
+    <com.discord.views.ChatActionItem android:id="@id/welcome_card_invite_friends" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" app:action_item_img_src="@drawable/ic_person_add_white_24dp" app:action_item_subtext="@string/welcome_message_mobile_instant_invite_desc" app:action_item_text="@string/welcome_message_mobile_instant_invite" style="@style/UiKit.WelcomeMessageCard" />
+</LinearLayout>

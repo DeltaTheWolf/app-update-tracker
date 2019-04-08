@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/padding_bottom_fab_screen" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/form_label_channel_name" style="@style/UiKit.Settings.Item.Header" />
+            <EditText android:id="@id/channel_settings_edit_name" android:hint="@string/form_label_channel_name" android:inputType="textNoSuggestions" style="@style/UiKit.EditText.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/form_label_bitrate" style="@style/UiKit.Settings.Item.Header" />
+            <LinearLayout style="@style/UiKit.Settings.Item">
+                <TextView android:id="@id/current_bitrate_display" style="@style/UiKit.TextView" />
+                <SeekBar android:id="@id/bitrate_seekbar" android:max="88" style="@style/UiKit.SeekBar" />
+            </LinearLayout>
+            <TextView android:id="@id/settings_bitrate_help" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.TextView.Subtext" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/form_label_user_limit" style="@style/UiKit.Settings.Item.Header" />
+            <LinearLayout style="@style/UiKit.Settings.Item">
+                <TextView android:id="@id/current_user_limit_display" android:text="@string/no_user_limit" style="@style/UiKit.TextView" />
+                <SeekBar android:id="@id/user_limit_seekbar" android:max="99" style="@style/UiKit.SeekBar" />
+            </LinearLayout>
+            <TextView android:id="@id/settings_user_limit_help" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.TextView.Subtext" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <LinearLayout android:id="@id/channel_settings_section_user_management" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/user_management" style="@style/UiKit.Settings.Item.Header" />
+                <TextView android:id="@id/channel_settings_permissions" android:text="@string/permissions" android:drawableLeft="?ic_roles_a60" android:drawableStart="?ic_roles_a60" style="@style/UiKit.Settings.Item.Icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/channel_settings_save" style="@style/Settings.FloatingActionButton.Save" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

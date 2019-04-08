@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/AppTheme.Dark" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/premium_upsell_viewpager" android:layout_width="fill_parent" android:layout_height="250.0dip" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/premium_upsell_dots" android:layout_width="fill_parent" android:layout_height="16.0dip" app:tabBackground="@drawable/tab_dot_selector" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" />
+    <View style="@style/UiKit.Settings.Divider" />
+    <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
+        <Button android:textColor="@color/primary_100" android:id="@id/premium_upsell_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" style="@style/UiKit.Button.Transparent" />
+        <Button android:id="@id/premium_upsell_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:text="@string/learn_more" style="@style/UiKit.Button.Green.Fit" />
+    </LinearLayout>
+</LinearLayout>

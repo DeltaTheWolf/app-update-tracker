@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/AppAlertDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/user_dm_settings" style="@style/AppAlertDialogHeader" />
+    <LinearLayout style="@style/AppAlertDialogContent">
+        <TextView android:text="@string/user_dm_settings_question" style="@style/AppAlertDialogText" />
+    </LinearLayout>
+    <LinearLayout style="@style/AppAlertDialogFooter">
+        <TextView android:id="@id/settings_privacy_defaults_existing_no" android:text="@string/no_text" style="@style/AppAlertDialogButton" />
+        <TextView android:id="@id/settings_privacy_defaults_existing_yes" android:text="@string/yes_text" style="@style/AppAlertDialogButton.Red" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/transparent" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.Page.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/guild_actions_add_create" android:background="?colorPrimaryBg" android:layout_margin="@dimen/uikit_spacing_medium" android:layout_marginTop="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup">
+        <LinearLayout android:gravity="center_vertical" android:background="?selectableItemBackgroundBorderless" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+            <LinearLayout android:layout_width="0.0dip" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" android:layout_weight="1.0" android:layout_marginStart="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/create_server_button_cta" style="@style/UiKit.TextView.H1" />
+                <TextView android:textColor="?primary_300" android:ellipsize="end" android:id="@id/guild_actions_add_create_desc" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/create_server_button_cta_mobile_desc" android:singleLine="true" style="@style/UiKit.TextView.Semibold" />
+            </LinearLayout>
+            <ImageView android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="@drawable/ic_chevron_right_grey_24dp" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/uikit_spacing_medium" style="@style/UiKit.ImageView" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/guild_actions_add_join" android:background="?colorPrimaryBg" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <LinearLayout android:gravity="center_vertical" android:background="?selectableItemBackgroundBorderless" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+            <LinearLayout android:layout_width="0.0dip" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_large" android:layout_weight="1.0" android:layout_marginStart="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:text="@string/join_server_button_cta" style="@style/UiKit.TextView.H1" />
+                <TextView android:textColor="?primary_300" android:ellipsize="end" android:id="@id/guild_actions_add_join_desc" android:layout_marginTop="@dimen/uikit_spacing_medium" android:text="@string/join_server_button_cta_mobile_desc" android:singleLine="true" style="@style/UiKit.TextView.Semibold" />
+            </LinearLayout>
+            <ImageView android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="@drawable/ic_chevron_right_grey_24dp" android:contentDescription="@string/coming_soon" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/uikit_spacing_medium" style="@style/UiKit.ImageView" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_height="24.0dip" android:layout_marginBottom="8.0dip" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/channels_item_voice_user_avatar" android:layout_marginLeft="36.0dip" android:layout_marginRight="8.0dip" android:layout_centerVertical="true" style="@style/Avatar.Small" />
+    <TextView android:textColor="@color/primary_400" android:id="@id/channels_item_voice_user_name" android:layout_marginRight="4.0dip" android:singleLine="true" android:layout_toLeftOf="@id/channels_item_voice_user_headphones" android:layout_toRightOf="@id/channels_item_voice_user_avatar" android:layout_centerVertical="true" style="@style/UiKit.TextView" />
+    <ImageView android:id="@id/channels_item_voice_user_headphones" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/icon_deafened_small" android:layout_toLeftOf="@id/channels_item_voice_user_microphone" android:layout_centerVertical="true" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+    <ImageView android:id="@id/channels_item_voice_user_microphone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/icon_muted_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="fill_parent" android:layout_above="@id/alert_verify_email_anchor" style="@style/UiKit.ViewGroup.ScrollView">
+        <LinearLayout android:layout_gravity="center_vertical" style="@style/UiKit.Copy.Container">
+            <ImageView android:src="@drawable/img_claim_party" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="720.0dip" android:importantForAccessibility="no" style="@style/UiKit.ImageView" />
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:gravity="center" android:layout_marginBottom="16.0dip" android:text="@string/claim_account_body_mobile" style="@style/UiKit.TextView.H2" />
+                <TextView android:text="@string/email" style="@style/UiKit.Form.Label" />
+                <EditText android:id="@id/alert_verify_email_change_email" android:hint="@string/email" android:inputType="textEmailAddress" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                <TextView android:text="@string/form_label_password" style="@style/UiKit.Form.Label" />
+                <EditText android:id="@id/alert_verify_email_change_password" android:hint="@string/form_label_password" android:inputType="textPassword" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/alert_verify_email_anchor" android:layout_alignParentBottom="true" style="@style/UiKit.Copy.Anchor">
+        <Button android:enabled="false" android:id="@id/alert_verify_email_change" android:text="@string/claim_account" style="@style/UiKit.Button.White" />
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat.Transparent">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</RelativeLayout>

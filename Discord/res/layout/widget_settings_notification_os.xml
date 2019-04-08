@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?primary_630" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.discord.views.CheckedSetting android:id="@id/settings_notification_switch" app:cs_subtext="@string/form_label_mobile_notifications_system_desc" app:cs_text="@string/form_label_mobile_notifications_system_label" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+    <com.discord.views.CheckedSetting android:id="@id/settings_inapp_notifs_switch" app:cs_subtext="@string/form_label_mobile_notifications_inapp_desc" app:cs_text="@string/form_label_mobile_notifications_inapp_label" app:cs_view_type="switchview" style="@style/UiKit.CheckedSetting.Themed" />
+    <View style="@style/UiKit.Settings.Divider" />
+    <RelativeLayout android:id="@id/settings_notification_os" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" style="@style/UiKit.Settings.Item">
+        <TextView android:id="@id/settings_notification_os_label" android:clickable="false" android:text="@string/form_label_mobile_notifications_os_control_jump" android:layout_alignParentTop="true" style="@style/UiKit.Settings.Text" />
+        <TextView android:clickable="false" android:text="@string/form_label_mobile_notifications_os_control_jump_help" android:layout_below="@id/settings_notification_os_label" style="@style/UiKit.TextView.Subtext" />
+        <ImageView android:src="@drawable/icon_carrot" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:ellipsize="end" android:id="@id/prune_user_header" android:padding="@dimen/uikit_spacing_large" android:text="@string/prune_members" android:maxLines="1" style="@style/UiKit.TextView.H1.Bold" />
+        <View style="@style/UiKit.Divider" />
+        <TextView android:text="@string/form_label_last_seen" style="@style/UiKit.Settings.Item.Header" />
+        <com.discord.views.CheckedSetting android:id="@id/prune_users_history_1_radio" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+        <com.discord.views.CheckedSetting android:id="@id/prune_users_history_2_radio" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+        <com.discord.views.CheckedSetting android:id="@id/prune_users_history_3_radio" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+        <RelativeLayout android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <ProgressBar android:id="@id/prune_users_loading_progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:indeterminate="true" android:layout_alignTop="@id/prune_users_estimate_text" android:layout_alignBottom="@id/prune_users_estimate_text" android:layout_centerInParent="true" />
+            <com.discord.app.AppTextView android:textSize="@dimen/uikit_textsize_small" android:id="@id/prune_users_estimate_text" android:layout_centerInParent="true" style="@style/UiKit.TextView" />
+        </RelativeLayout>
+        <LinearLayout style="@style/UiKit.Dialog.ButtonContainer">
+            <TextView android:id="@id/prune_user_cancel" android:layout_marginRight="@dimen/uikit_spacing_medium" android:text="@string/cancel" android:layout_marginEnd="@dimen/uikit_spacing_medium" style="@style/UiKit.Button.Transparent.Fit" />
+            <Button android:id="@id/prune_user_prune" android:text="@string/prune" style="@style/UiKit.Button.Red.Fit" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

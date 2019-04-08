@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="?primary_630" style="@style/UiKit.ViewGroup.NestedScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/user_sheet_header" android:focusable="true" android:clickable="true" style="@style/UiKit.Sheet.Header">
+            <androidx.constraintlayout.widget.Guideline android:id="@id/uikit_sheet_header_guideline" style="@style/UiKit.Sheet.Guideline" />
+            <include android:id="@id/user_sheet_avatar_presence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="@id/uikit_sheet_header_guideline" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" layout="@layout/view_user_avatar_presence" />
+            <LinearLayout android:orientation="vertical" android:id="@id/user_sheet_name_wrap" style="@style/UiKit.Sheet.Header.Contents">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:id="@id/user_sheet_primary_name" android:singleLine="true" style="@style/UiKit.TextView.Bold" />
+                <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?primary_400" android:id="@id/user_sheet_secondary_name" android:singleLine="true" style="@style/UiKit.TextView.Semibold" />
+                <TextView android:id="@id/user_sheet_now_playing" style="@style/UiKit.TextView" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/user_sheet_roles_recycler" android:paddingTop="@dimen/uikit_spacing_xsmall" android:overScrollMode="never" style="@style/UiKit.ViewGroup.RecyclerView" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:id="@id/user_sheet_activity_divider" android:visibility="gone" style="@style/UiKit.Settings.Divider" />
+        <FrameLayout android:id="@id/rich_presence_container" android:visibility="gone" style="@style/UiKit.ViewGroup" />
+        <View android:id="@id/user_sheet_audio_settings_divider" android:layout_marginTop="@dimen/uikit_spacing_large" style="@style/UiKit.Settings.Divider" />
+        <LinearLayout android:id="@id/user_sheet_audio_settings_container" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/voice_settings" style="@style/UiKit.Settings.Item.Header" />
+            <LinearLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                <ImageView android:id="@id/user_sheet_volume_icon" android:src="?ic_volume" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.ImageView" />
+                <SeekBar android:id="@id/user_sheet_volume" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="8.0dip" android:max="100" android:progressDrawable="@drawable/drawable_settings_progress" android:thumb="@drawable/drawable_thumb_white" android:splitTrack="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/user_sheet_muted" android:text="@string/form_label_local_mute" style="@style/UiKit.Settings.Item" />
+        <View android:id="@id/user_sheet_actions_divider" style="@style/UiKit.Settings.Divider" />
+        <TextView android:text="@string/actions" style="@style/UiKit.Settings.Item.Header" />
+        <TextView android:gravity="center_vertical" android:id="@id/user_sheet_profile" android:text="@string/profile" android:drawableLeft="?ic_account" android:drawableStart="?ic_account" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/user_sheet_message" android:text="@string/send_message" android:drawableLeft="?ic_chat_bubble" android:drawableStart="?ic_chat_bubble" style="@style/UiKit.Settings.Item.Icon" />
+        <View android:id="@id/user_sheet_administrative_divider" style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/user_sheet_administrative_header" android:text="@string/administrative" style="@style/UiKit.Settings.Item.Header" />
+        <TextView android:id="@id/user_sheet_server_edit_member" android:visibility="gone" android:text="@string/manage_user" android:drawableLeft="?ic_roles_a60" android:drawableStart="?ic_roles_a60" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/user_sheet_server_mute" android:visibility="gone" android:text="@string/server_voice_mute" android:drawableLeft="@drawable/ic_mic_red_24dp" android:drawableStart="@drawable/ic_mic_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/user_sheet_server_deafen" android:visibility="gone" android:text="@string/server_deafen" android:drawableLeft="@drawable/ic_headset_red_24dp" android:drawableStart="@drawable/ic_headset_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/user_sheet_server_move" android:visibility="gone" android:text="@string/move_to" android:drawableLeft="@drawable/ic_transfer_red_24dp" android:drawableStart="@drawable/ic_transfer_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/user_sheet_kick" android:visibility="gone" android:text="@string/kick" android:drawableLeft="@drawable/ic_remove_friend_red_24dp" android:drawableStart="@drawable/ic_remove_friend_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+        <TextView android:id="@id/user_sheet_ban" android:visibility="gone" android:text="@string/ban" android:drawableLeft="@drawable/ic_ban_red_24dp" android:drawableStart="@drawable/ic_ban_red_24dp" style="@style/UiKit.Settings.Item.Icon" />
+        <View android:id="@id/user_sheet_developer_divider" style="@style/UiKit.Settings.Divider" />
+        <TextView android:id="@id/user_sheet_developer_header" android:text="@string/developer_mode" style="@style/UiKit.Settings.Item.Header" />
+        <TextView android:id="@id/user_sheet_copy_id" android:visibility="gone" android:text="@string/copy_id" android:drawableLeft="?ic_copy" android:drawableStart="?ic_copy" style="@style/UiKit.Settings.Item.Icon" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

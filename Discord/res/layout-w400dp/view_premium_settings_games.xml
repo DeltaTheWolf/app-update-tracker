@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_xxlarge" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="400.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_large" android:src="@drawable/img_games_preview" android:adjustViewBounds="true" android:importantForAccessibility="no" style="@style/UiKit.ImageView" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/premium_perks_view_games" android:layout_marginTop="@dimen/uikit_spacing_large" android:text="@string/application_store_home_view_all_applications" style="@style/UiKit.Button.Grey.Fit" />
+</LinearLayout>

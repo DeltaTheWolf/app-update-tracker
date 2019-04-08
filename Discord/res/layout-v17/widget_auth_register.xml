@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?auth_ptrn" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/widget_auth_header" />
+    <RelativeLayout android:background="?auth_bg_card" android:layout_margin="8.0dip" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ImageView android:layout_above="@id/auth_register_button_container" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Left" />
+        <ImageView android:layout_above="@id/auth_register_button_container" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Right" />
+        <androidx.core.widget.NestedScrollView android:layout_height="fill_parent" android:layout_marginBottom="-6.0dip" android:fillViewport="false" android:layout_above="@id/auth_register_button_container" style="@style/UiKit.ViewGroup.NestedScrollView">
+            <LinearLayout android:background="?auth_bg_card" android:padding="16.0dip" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable">
+                <LinearLayout style="@style/UiKit.AuthCopyContainer">
+                    <TextView android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/register_title" style="@style/UiKit.TextView.H1" />
+                </LinearLayout>
+                <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/auth_register_username_wrap" android:hint="@string/form_label_username" style="@style/UiKit.Form.Field.EditText.Wrap">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/auth_register_username" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/auth_register_email_wrap" android:hint="@string/form_label_email" style="@style/UiKit.Form.Field.EditText.Wrap">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/auth_register_email" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/auth_register_password_wrap" android:hint="@string/form_label_password" style="@style/UiKit.Form.Field.EditText.Wrap.Password">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/auth_register_password" android:imeOptions="actionDone" style="@style/UiKit.Form.Field.EditText.Password" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" android:layout_marginStart="-4.0dip" style="@style/UiKit.ViewGroup">
+                        <CheckBox android:id="@id/auth_tos_opt_in" android:layout_width="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/auth_policy_links" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/auth_policy_links" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5" style="@style/UiKit.Checkbox" />
+                        <com.discord.utilities.view.text.LinkifiedTextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/grey_2" android:id="@id/auth_policy_links" android:visibility="visible" android:layout_width="0.0dip" android:lineSpacingMultiplier="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toRightOf="@id/auth_tos_opt_in" app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toEndOf="@id/auth_tos_opt_in" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5" app:layout_goneMarginLeft="@dimen/uikit_spacing_medium" app:layout_goneMarginStart="@dimen/uikit_spacing_medium" style="@style/UiKit.TextView" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Top" />
+        <FrameLayout android:id="@id/auth_register_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/auth_register_button" android:text="@string/register" style="@style/UiKit.AuthButton" />
+        </FrameLayout>
+    </RelativeLayout>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

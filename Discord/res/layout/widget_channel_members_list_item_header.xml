@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/grey_account" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" android:layout_width="fill_parent" android:layout_height="@dimen/channel_list_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@color/primary_100_alpha_30" android:gravity="bottom" android:id="@id/channel_members_list_item_header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:textAllCaps="true" style="@style/UiKit.TextView.Semibold" />
+    <View android:layout_gravity="bottom" android:id="@id/channel_members_list_item_header_placeholder" android:background="@drawable/drawable_empty_text_placeholder_dark" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="@dimen/channel_list_placeholder_height" />
+</FrameLayout>

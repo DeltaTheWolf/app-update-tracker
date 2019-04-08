@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_profile_adapter_item_friend_avatar" style="@style/Avatar.Large" />
+    <FrameLayout android:background="?colorPrimaryCircle" android:layout_width="@dimen/avatar_status_size_extra" android:layout_height="@dimen/avatar_status_size_extra" android:layout_alignRight="@id/user_profile_adapter_item_friend_avatar" android:layout_alignBottom="@id/user_profile_adapter_item_friend_avatar">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/user_profile_adapter_item_friend_presence" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/avatar_status_size_extra_margin" app:placeholderImage="@color/status_grey_500" app:roundAsCircle="true" />
+    </FrameLayout>
+    <LinearLayout android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_small" android:layout_toLeftOf="@id/user_profile_adapter_item_friend_mutual" android:layout_toRightOf="@id/user_profile_adapter_item_friend_avatar" android:layout_centerVertical="true" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:id="@id/user_profile_adapter_item_friend_user_name" android:singleLine="true" style="@style/UiKit.TextView.Large" />
+        <TextView android:id="@id/user_profile_adapter_item_friend_user_game" android:paddingTop="@dimen/uikit_spacing_small" android:singleLine="true" style="@style/UiKit.TextView" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/user_profile_adapter_item_friend_mutual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <include layout="@layout/widget_user_profile_adapter_item_friend_mutual_server" />
+        <include layout="@layout/widget_user_profile_adapter_item_friend_mutual_server" />
+        <include layout="@layout/widget_user_profile_adapter_item_friend_mutual_server" />
+        <include layout="@layout/widget_user_profile_adapter_item_friend_mutual_server" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FlexInput.Items.Photo"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/content_iv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:roundedCornerRadius="4.0dip" style="FlexInput.Items.Photo.Image" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_check_indicator" android:visibility="gone" style="@style/FlexInput.Items.Photo.Selection" />
+</FrameLayout>

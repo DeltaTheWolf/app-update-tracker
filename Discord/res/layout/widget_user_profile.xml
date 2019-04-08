@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:background="?primary_630" style="@style/AppTheme.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout style="@style/AppTheme.CollapsingToolbarLayout">
+            <LinearLayout android:gravity="center" android:paddingBottom="@dimen/uikit_spacing_small" android:layout_marginTop="?actionBarSize" app:layout_collapseMode="parallax" style="@style/UiKit.ViewGroup.LinearLayout">
+                <fragment android:name="com.discord.widgets.user.WidgetUserProfileHeader" android:id="@id/widget_user_profile_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:id="@id/user_profile_friend_request_incoming_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginBottom="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+                    <Button android:id="@id/user_profile_friend_request_ignore_btn" android:text="@string/friend_request_ignore" style="@style/UiKit.Button.Grey.Fit" />
+                    <Button android:id="@id/user_profile_friend_request_accept_btn" android:text="@string/friend_request_accept" style="@style/UiKit.Button.Green.Fit" />
+                </LinearLayout>
+                <Button android:id="@id/user_profile_friend_request" android:visibility="gone" android:layout_marginBottom="@dimen/uikit_spacing_large" android:minWidth="152.0dip" android:text="@string/add_friend" style="@style/UiKit.Button.Green.Fit" />
+                <Button android:id="@id/user_profile_friend_request_sent_btn" android:visibility="gone" android:layout_marginBottom="@dimen/uikit_spacing_large" android:minWidth="152.0dip" android:text="@string/add_friend_button_after" style="@style/UiKit.Button.Green.Fit.Outline" />
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:background="?primary_630" style="@style/AppTheme.Toolbar" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout android:id="@id/action_bar_tabs" style="@style/UiKit.Tabs" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.utilities.simple_pager.SimplePager android:id="@id/user_profile_view_pager" style="@style/AppTheme.AppBarScrollingViewBehavior" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/user_profile_send_message_fab" android:src="@drawable/ic_chat_bubble_white_24dp" style="@style/Settings.FloatingActionButton" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

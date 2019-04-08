@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?primary_630" android:paddingBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/UiKit.Sheet.Header">
+        <androidx.constraintlayout.widget.Guideline style="@style/UiKit.Sheet.Guideline" />
+        <FrameLayout style="@style/UiKit.Sheet.Header.Icon">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/voice_actions_icon" style="@style/Avatar.Large" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" app:layout_constraintEnd_toStartOf="@id/voice_actions_user_count" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.Sheet.Header.Contents">
+            <TextView android:id="@id/voice_actions_header" style="@style/UiKit.Sheet.Header.Title" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/voice_actions_users_recyclerview" android:layout_marginTop="@dimen/uikit_spacing_xsmall" style="@style/UiKit.ViewGroup.RecyclerView.Horizontal" />
+        </LinearLayout>
+        <TextView android:id="@id/voice_actions_user_count" android:background="?primary_600_bg" android:padding="@dimen/uikit_spacing_small" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/uikit_spacing_large" android:singleLine="true" android:layout_marginEnd="@dimen/uikit_spacing_large" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/UiKit.TextView.Subtext" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View style="@style/UiKit.Settings.Divider" />
+    <TextView android:id="@id/voice_actions_settings" android:text="@string/edit_channel" android:drawableLeft="?ic_settings" android:drawableStart="?ic_settings" style="@style/UiKit.Settings.Item.Icon" />
+    <TextView android:id="@id/voice_actions_copy_id" android:text="@string/copy_id" android:drawableLeft="?ic_copy" android:drawableStart="?ic_copy" style="@style/UiKit.Settings.Item.Icon" />
+    <View android:id="@id/voice_actions_settings_divider" style="@style/UiKit.Settings.Divider" />
+    <LinearLayout android:layout_margin="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <Button android:id="@id/voice_actions_connect" android:text="@string/connect_to_voice" style="@style/UiKit.Button" />
+        <Button android:id="@id/voice_actions_disconnect" android:text="@string/disconnect" style="@style/UiKit.Button.White" />
+    </LinearLayout>
+</LinearLayout>

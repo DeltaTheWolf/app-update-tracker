@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_margin="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_xxlarge" android:src="?img_mfa" style="@style/UiKit.ImageView" />
+    <TextView android:textSize="24.0sp" android:textColor="?primary_100" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/two_fa_success_header" style="@style/UiKit.TextView" />
+    <TextView android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:text="@string/two_fa_success_body_mobile" style="@style/UiKit.TextView" />
+</LinearLayout>

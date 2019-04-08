@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UiKit.Alert.Verify.Account.Method.Wrapper" parent="@style/UiKit.ViewGroup.LinearLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+    </style>
+    <style name="UiKit.Copy" parent="@style/UiKit.ViewGroup.LinearLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/uikit_spacing_large</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="UiKit.Copy.Anchor" parent="@style/UiKit.Copy.Anchor.Base">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="UiKit.Copy.Anchor.Item.Rotatable" parent="@style/UiKit.ViewGroup">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="UiKit.ImageView.HideInLandscape" parent="@style/UiKit.ImageView">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="UiKit.User.Phone.Add.Number" parent="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="UiKit.User.Phone.Add.Number.Verify" parent="@style/UiKit.Button">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="UiKit.User.Phone.Verify.Digits" parent="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="UiKit.ViewGroup.LinearLayout.Rotatable" parent="@style/UiKit.ViewGroup.LinearLayout.Horizontal" />
+    <style name="UiKit.ViewGroup.LinearLayout.Rotatable.Horizontal" parent="@style/UiKit.ViewGroup.LinearLayout" />
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/manage_reactions_emoji_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="60.0dip" android:layout_centerHorizontal="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <com.discord.utilities.view.text.SimpleDraweeSpanTextView android:gravity="center" android:id="@id/manage_reactions_emoji_emoji_textview" android:layout_height="24.0dip" style="@style/UiKit.TextView" />
+        <TextView android:textSize="18.0sp" android:textColor="?primary_100" android:id="@id/manage_reactions_emoji_counter" android:layout_marginLeft="8.0dip" android:layout_marginStart="8.0dip" style="@style/UiKit.TextView" />
+    </LinearLayout>
+    <View android:id="@id/manage_reactions_emoji_selected_indicator" android:background="?manage_reactions_emoji_selection_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="4.0dip" android:layout_alignLeft="@id/manage_reactions_emoji_container" android:layout_alignRight="@id/manage_reactions_emoji_container" android:layout_alignParentBottom="true" android:layout_alignStart="@id/manage_reactions_emoji_container" android:layout_alignEnd="@id/manage_reactions_emoji_container" />
+</RelativeLayout>

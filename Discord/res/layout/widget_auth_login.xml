@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?auth_ptrn" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/widget_auth_header" />
+    <RelativeLayout android:background="?auth_bg_card" android:layout_margin="8.0dip" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ImageView android:layout_above="@id/auth_login" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Left" />
+        <ImageView android:layout_above="@id/auth_login" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Right" />
+        <androidx.core.widget.NestedScrollView android:layout_height="fill_parent" android:layout_marginBottom="-6.0dip" android:fillViewport="false" android:layout_above="@id/auth_login" style="@style/UiKit.ViewGroup.NestedScrollView">
+            <LinearLayout android:background="?auth_bg_card" android:padding="16.0dip" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable">
+                <LinearLayout style="@style/UiKit.AuthCopyContainer">
+                    <TextView android:layout_marginTop="@dimen/uikit_spacing_large" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/login_title" style="@style/UiKit.TextView.H1" />
+                    <TextView android:layout_marginBottom="8.0dip" android:text="@string/login_body" style="@style/UiKit.TextView.Subtext" />
+                </LinearLayout>
+                <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/auth_login_email_wrap" android:hint="@string/form_label_email" style="@style/UiKit.Form.Field.EditText.Wrap">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/auth_login_email" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText.SingleLine" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/auth_login_password_wrap" android:hint="@string/form_label_password" style="@style/UiKit.Form.Field.EditText.Wrap.Password">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/auth_login_password" android:imeOptions="actionDone" style="@style/UiKit.Form.Field.EditText.Password" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView android:id="@id/auth_login_forgot_password" android:padding="@dimen/uikit_spacing_small" android:text="@string/forgot_password" style="@style/UiKit.TextView.Subtext" />
+                    <TextView android:id="@id/auth_login_password_manager_link" android:padding="@dimen/uikit_spacing_small" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:text="@string/password_manager_use" style="@style/UiKit.TextView.Subtext" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Top" />
+        <Button android:id="@id/auth_login" android:text="@string/login" android:layout_alignParentBottom="true" style="@style/UiKit.AuthButton" />
+    </RelativeLayout>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

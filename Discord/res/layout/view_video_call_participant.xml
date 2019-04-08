@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/participant_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/participant_bg_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/participant_bg_letterbox" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.discord.views.VoiceUserView android:id="@id/participant_voice_user_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:vuv_avatar_size="@dimen/avatar_size_large" />
+    </RelativeLayout>
+    <ImageView android:id="@id/participant_voice_status_indicator" android:background="@drawable/drawable_bg_voice_status_indicator" android:padding="4.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/participant_video_loading_indicator" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

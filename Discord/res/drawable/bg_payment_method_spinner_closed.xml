@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/primary_630" />
+            <corners android:radius="2.0dip" />
+            <stroke android:width="1.0dip" android:color="@color/primary_700" />
+        </shape>
+    </item>
+    <item android:right="@dimen/uikit_spacing_medium">
+        <bitmap android:gravity="end" android:src="@drawable/ic_dropdown_white_18dp" />
+    </item>
+</layer-list>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/friend_container" android:background="?selectableItemBackground" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingBottom="@dimen/uikit_spacing_medium" android:focusable="true" android:clickable="true" style="@style/UiKit.ViewGroup.RelativeLayout">
+        <RelativeLayout android:id="@id/friends_list_item_avatar_wrap" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginTop="@dimen/uikit_spacing_xsmall" android:layout_marginRight="@dimen/uikit_spacing_large" android:layout_centerVertical="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_avatar" style="@style/Avatar.Standard" />
+            <RelativeLayout android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholderImage="?colorPrimary" app:roundAsCircle="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/friends_list_item_presence" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_centerInParent="true" app:placeholderImage="@color/status_grey_500" app:roundAsCircle="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_toRightOf="@id/friends_list_item_avatar_wrap" android:layout_centerVertical="true" android:layout_toEndOf="@id/friends_list_item_avatar_wrap" style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:textColor="?primary_100" android:id="@id/friends_list_item_name" android:text="@string/sample_user_name" android:singleLine="true" style="@style/UiKit.TextView" />
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:id="@id/friends_list_item_game" android:layout_marginTop="@dimen/uikit_spacing_xsmall" android:text="@string/sample_user_presence" android:singleLine="true" style="@style/UiKit.TextView" />
+        </LinearLayout>
+        <CheckBox android:id="@id/user_selected_checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:buttonTint="@color/purple_brand" style="@style/UiKit.Checkbox" />
+    </RelativeLayout>
+    <View style="@style/UiKit.Divider" />
+</LinearLayout>

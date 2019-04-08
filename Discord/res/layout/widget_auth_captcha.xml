@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?auth_ptrn" style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/widget_auth_header" />
+    <RelativeLayout android:background="?auth_bg_card" android:layout_margin="@dimen/uikit_spacing_medium" style="@style/AppTheme.AppBarScrollingViewBehavior">
+        <ImageView android:layout_above="@id/auth_captcha_verify" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Left" />
+        <ImageView android:layout_above="@id/auth_captcha_verify" android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Bot.Right" />
+        <androidx.core.widget.NestedScrollView android:layout_height="fill_parent" android:layout_marginBottom="-6.0dip" android:fillViewport="false" android:layout_above="@id/auth_captcha_verify" style="@style/UiKit.ViewGroup.NestedScrollView">
+            <LinearLayout android:gravity="center" android:background="?auth_bg_card" android:padding="@dimen/uikit_spacing_large" android:layout_height="wrap_content" style="@style/UiKit.ViewGroup.LinearLayout.Rotatable">
+                <com.airbnb.lottie.LottieAnimationView style="@style/UiKit.Anim.Verify.By.Phone" />
+                <LinearLayout android:gravity="center" android:padding="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+                    <TextView android:text="@string/verify_by_recaptcha" style="@style/UiKit.TextView.H1" />
+                    <TextView android:layout_marginTop="@dimen/uikit_spacing_large" android:text="@string/verify_by_recaptcha_description" style="@style/UiKit.TextView" />
+                    <TextView android:textColor="@color/link_500" android:id="@id/auth_captcha_help" android:layout_marginTop="@dimen/uikit_spacing_large" android:text="@string/captcha_issues" style="@style/UiKit.TextView" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <ImageView android:contentDescription="@string/sample_empty_string" style="@style/UiKit.Auth.Spots.Top" />
+        <Button android:id="@id/auth_captcha_verify" android:text="@string/verify" android:layout_alignParentBottom="true" style="@style/UiKit.AuthButton" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

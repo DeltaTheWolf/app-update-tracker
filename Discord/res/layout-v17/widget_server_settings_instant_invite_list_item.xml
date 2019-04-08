@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginTop="@dimen/uikit_spacing_small" android:layout_marginRight="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_small" app:cardBackgroundColor="?primary_630" app:cardElevation="@dimen/app_elevation" style="@style/UiKit.ViewGroup.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/invite_container" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" style="@style/UiKit.ViewGroup.LinearLayout">
+        <RelativeLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.RelativeLayout">
+            <LinearLayout android:id="@id/invite_name_container" android:layout_toLeftOf="@id/invite_expiration_container" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_toStartOf="@id/invite_expiration_container" android:layout_alignParentStart="true" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?primary_100" android:id="@id/invite_code" style="@style/UiKit.TextView" />
+                <TextView android:id="@id/invite_channel" style="@style/UiKit.TextView" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/invite_expiration_container" android:layout_width="wrap_content" android:layout_marginRight="@dimen/uikit_spacing_xxlarge" android:layout_toLeftOf="@id/invite_settings_icon" android:layout_marginEnd="@dimen/uikit_spacing_xxlarge" android:layout_toStartOf="@id/invite_settings_icon" style="@style/UiKit.ViewGroup.LinearLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:id="@id/invite_expires_label" android:text="@string/expires_in" style="@style/UiKit.TextView" />
+                <TextView android:id="@id/invite_expiration_time" style="@style/UiKit.TextView" />
+            </LinearLayout>
+            <ImageView android:id="@id/invite_settings_icon" android:src="@drawable/ic_overflow_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/settings" android:layout_alignParentEnd="true" style="@style/UiKit.ImageView" />
+            <View android:id="@id/invite_divider" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium" android:layout_below="@id/invite_name_container" android:layout_alignLeft="@id/invite_name_container" android:layout_alignRight="@id/invite_expiration_container" android:layout_alignStart="@id/invite_name_container" android:layout_alignEnd="@id/invite_expiration_container" style="@style/UiKit.Settings.Divider" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/invite_list_item_avatar" android:layout_marginRight="@dimen/uikit_spacing_small" android:layout_below="@id/invite_divider" android:layout_alignParentLeft="true" android:layout_marginEnd="@dimen/uikit_spacing_small" android:layout_alignParentStart="true" style="@style/Avatar.Small" />
+            <TextView android:gravity="center_vertical" android:id="@id/invite_user_name" android:layout_toRightOf="@id/invite_list_item_avatar" android:layout_below="@id/invite_divider" android:layout_alignWithParentIfMissing="true" android:layout_toEndOf="@id/invite_list_item_avatar" style="@style/UiKit.TextView" />
+            <TextView android:id="@id/invite_uses_label" android:text="@string/instant_invite_uses" android:layout_alignBaseline="@id/invite_user_name" android:layout_alignLeft="@id/invite_expiration_container" android:layout_alignStart="@id/invite_expiration_container" style="@style/UiKit.TextView.Semibold" />
+            <TextView android:id="@id/invite_uses" android:layout_marginLeft="@dimen/uikit_spacing_small" android:layout_toRightOf="@id/invite_uses_label" android:layout_below="@id/invite_expiration_container" android:layout_alignBaseline="@id/invite_uses_label" android:layout_marginStart="@dimen/uikit_spacing_small" android:layout_toEndOf="@id/invite_uses_label" style="@style/UiKit.TextView" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

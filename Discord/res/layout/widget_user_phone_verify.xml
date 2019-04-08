@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/user_phone_verify_wrap" android:layout_height="fill_parent" android:layout_above="@id/user_phone_digit_verification" style="@style/UiKit.ViewGroup.ScrollView.Page">
+        <LinearLayout style="@style/UiKit.Copy.Container">
+            <com.airbnb.lottie.LottieAnimationView style="@style/UiKit.Anim.Verify.By.Phone" />
+            <LinearLayout style="@style/UiKit.Copy">
+                <TextView android:text="@string/verification_phone_title" style="@style/UiKit.TextView.H1" />
+                <TextView android:gravity="center" android:layout_marginTop="16.0dip" android:text="@string/verification_phone_description" style="@style/UiKit.TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.discord.views.DigitVerificationView android:id="@id/user_phone_digit_verification" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat.Transparent">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar.Transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.utilities.dimmer.DimmerView style="@style/UiKit.DimmerView" />
+</RelativeLayout>

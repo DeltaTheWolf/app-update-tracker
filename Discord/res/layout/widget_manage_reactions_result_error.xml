@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_height="fill_parent" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/manage_reactions_result_error_img" android:focusable="true" android:clickable="true" android:src="?img_poop" android:layout_above="@id/manage_reactions_result_error_text" android:layout_centerHorizontal="true" style="@style/UiKit.ImageView" />
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?primary_100" android:gravity="center_horizontal" android:id="@id/manage_reactions_result_error_text" android:layout_marginTop="10.0dip" android:text="@string/load_reactions_error" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/UiKit.TextView" />
+</RelativeLayout>

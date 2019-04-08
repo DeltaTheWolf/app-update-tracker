@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/AppAlertDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.discord.app.AppTextView android:id="@id/server_settings_delete_server_header" android:text="@string/two_fa_backup_codes_label" style="@style/AppAlertDialogHeader" />
+    <LinearLayout style="@style/AppAlertDialogContent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/drawable_bg_settings_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textColor="@color/grey_2" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:text="@string/two_fa_backup_code_enter" android:textAllCaps="true" style="@style/UiKit.TextView.Bold" />
+            <EditText android:textSize="11.0sp" android:textColorHint="@color/grey_1" android:gravity="center_vertical" android:id="@id/widget_auth_mfa_backup_codes_edittext" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="32.0dip" android:hint="@string/two_fa_backup_code_hint" android:maxLength="8" android:inputType="textVisiblePassword" style="@style/UiKit.TextView" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/AppAlertDialogFooter">
+        <TextView android:id="@id/widget_auth_mfa_backup_codes_cancel" android:text="@string/cancel" style="@style/AppAlertDialogButton" />
+        <TextView android:id="@id/widget_auth_mfa_backup_codes_send" android:text="@string/send" style="@style/AppAlertDialogButton.Purple" />
+    </LinearLayout>
+</LinearLayout>

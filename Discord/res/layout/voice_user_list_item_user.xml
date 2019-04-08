@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="?selectableItemBackground" android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" android:paddingBottom="@dimen/uikit_spacing_medium" android:focusable="true" android:clickable="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.discord.views.VoiceUserView android:id="@id/voice_user_list_item_user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vuv_avatar_size="52.0dip" />
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?primary_100" android:id="@id/voice_user_list_item_user_name" android:layout_width="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/UiKit.TextView" />
+    <ImageView android:id="@id/voice_user_list_item_mute_indicator" android:padding="8.0dip" android:src="@drawable/ic_mic_grey_24dp" android:contentDescription="@string/form_label_muted" style="@style/UiKit.ImageView" />
+    <ImageView android:id="@id/voice_user_list_item_deafen_indicator" android:padding="8.0dip" android:src="@drawable/ic_headset_grey_24dp" android:contentDescription="@string/sound_deafen" style="@style/UiKit.ImageView" />
+</LinearLayout>

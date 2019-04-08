@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:padding="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/audit_log_filter_image_container" android:layout_width="@dimen/avatar_size_large" android:layout_height="@dimen/avatar_size_large" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginTop="@dimen/uikit_spacing_medium" android:layout_marginBottom="@dimen/uikit_spacing_medium">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/audit_log_filter_avatar" style="@style/Avatar.Large" />
+        <ImageView android:layout_gravity="center" android:id="@id/audit_log_filter_image" style="@style/UiKit.ImageView" />
+    </FrameLayout>
+    <com.discord.views.CheckedSetting android:id="@id/audit_log_filter_cs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cs_background="@color/transparent" app:cs_text_color="?primary_200" app:cs_text_size="@dimen/uikit_textsize_large" app:cs_view_type="radio" />
+</LinearLayout>

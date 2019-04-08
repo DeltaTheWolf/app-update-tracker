@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" style="@style/UiKit.ViewGroup.RelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:background="?primary_700_alpha_60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/auth_invite_info_content" android:layout_alignTop="@id/auth_invite_info_content" android:layout_alignRight="@id/auth_invite_info_content" android:layout_alignBottom="@id/auth_invite_info_content" android:layout_alignStart="@id/auth_invite_info_content" android:layout_alignEnd="@id/auth_invite_info_content" app:roundedCornerRadius="@dimen/uikit_spacing_small" />
+    <LinearLayout android:id="@id/auth_invite_info_content" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/auth_invite_info_guild_avatar" android:layout_margin="@dimen/uikit_spacing_large" style="@style/Avatar.Large" />
+        <LinearLayout android:layout_gravity="center_vertical" style="@style/UiKit.ViewGroup.LinearLayout">
+            <com.discord.app.AppTextView android:id="@id/auth_invite_info_invited_text" style="@style/UiKit.TextView" />
+            <com.discord.app.AppTextView android:id="@id/auth_invite_info_guild_name" android:layout_marginTop="@dimen/uikit_spacing_xsmall" style="@style/UiKit.TextView.H2" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

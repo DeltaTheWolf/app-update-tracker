@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/UiKit.ViewGroup.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout style="@style/AppTheme.AppBarLayout.Flat">
+        <androidx.appcompat.widget.Toolbar style="@style/AppTheme.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@style/UiKit.ViewGroup.NestedScrollView.AppBarScrollingViewBehavior">
+        <LinearLayout style="@style/UiKit.ViewGroup.LinearLayout">
+            <TextView android:text="@string/form_label_verification_level" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.app.AppTextView android:paddingTop="0.0dip" android:text="@string/form_help_verification_level" app:tv_markdown_enabled="true" style="@style/UiKit.Settings.Item" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_verification_1" app:cs_subtext="@string/verification_level_none_criteria" app:cs_text="@string/verification_level_none" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_verification_2" app:cs_subtext="@string/verification_level_low_criteria" app:cs_text="@string/verification_level_low" app:cs_text_color="@color/status_green_500" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_verification_3" app:cs_subtext="@string/verification_level_medium_criteria" app:cs_text="@string/verification_level_medium" app:cs_text_color="@color/status_yellow_500" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_verification_4" app:cs_subtext="@string/verification_level_high_criteria" app:cs_text="(╯°□°）╯︵ ┻━━┻" app:cs_text_color="@color/status_orange_500" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_verification_5" app:cs_subtext="@string/verification_level_very_high_criteria" app:cs_text="┻━┻ ﾐヽ(ಠ益ಠ)ノ彡┻━┻" app:cs_text_color="@color/status_red_500" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+            <TextView android:text="@string/form_label_explicit_content_filter" style="@style/UiKit.Settings.Item.Header" />
+            <com.discord.app.AppTextView android:paddingTop="0.0dip" android:text="@string/form_help_explicit_content_filter" app:tv_markdown_enabled="true" style="@style/UiKit.Settings.Item" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_explicit_1" app:cs_subtext="@string/explicit_content_filter_disabled_description" app:cs_text="@string/explicit_content_filter_disabled" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_explicit_2" android:layout_height="wrap_content" app:cs_subtext="@string/explicit_content_filter_medium_description" app:cs_text="@string/explicit_content_filter_medium" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <com.discord.views.CheckedSetting android:id="@id/server_settings_moderation_explicit_3" app:cs_subtext="@string/explicit_content_filter_high_description" app:cs_text="@string/explicit_content_filter_high" app:cs_view_type="radio" style="@style/UiKit.CheckedSetting.Themed" />
+            <View style="@style/UiKit.Settings.Divider" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

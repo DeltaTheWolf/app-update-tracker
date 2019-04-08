@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="?search_action_bar_bg" android:layout_height="44.0dip" android:layout_margin="@dimen/uikit_spacing_medium" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_back" android:padding="@dimen/uikit_spacing_medium" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="?theme_search_back_arrow" android:contentDescription="@string/back" style="@style/UiKit.ImageView.Clickable" />
+    <EditText android:id="@id/search_input" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/UiKit.SearchInput">
+        <requestFocus />
+    </EditText>
+    <ImageView android:id="@id/search_clear" android:padding="@dimen/uikit_spacing_medium" android:visibility="gone" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="?theme_search_clear_icon" android:contentDescription="@string/reset" style="@style/UiKit.ImageView.Clickable" />
+    <ImageView android:id="@id/search_filter" android:padding="@dimen/uikit_spacing_medium" android:visibility="gone" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginRight="@dimen/uikit_spacing_medium" android:src="?ic_filter_list" android:contentDescription="@string/filter_options" style="@style/UiKit.ImageView.Clickable" />
+</LinearLayout>

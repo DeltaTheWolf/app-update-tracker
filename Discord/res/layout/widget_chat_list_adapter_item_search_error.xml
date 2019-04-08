@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?theme_search_broken_results" android:layout_above="@id/chat_list_search_error_text" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textColor="?theme_chat_text" android:gravity="center" android:id="@id/chat_list_search_error_text" android:layout_marginTop="10.0dip" android:text="@string/search_error" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/UiKit.TextView" />
+</RelativeLayout>

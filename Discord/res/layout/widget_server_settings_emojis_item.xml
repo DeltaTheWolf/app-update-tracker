@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/server_settings_emojis_container" android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_medium" android:focusable="true" android:clickable="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/server_settings_emojis_avatar" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/avatar_size_standard" android:layout_height="@dimen/avatar_size_standard" android:layout_margin="@dimen/uikit_spacing_medium" app:actualImageScaleType="fitCenter" app:placeholderImage="?theme_emoji_placeholder" />
+    <TextView android:id="@id/server_settings_emojis_name" android:layout_margin="@dimen/uikit_spacing_medium" android:width="0.0dip" android:layout_weight="1.0" style="@style/UiKit.TextView.Large.SingleLine" />
+    <TextView android:textColor="?primary_100_alpha_60" android:gravity="right" android:id="@id/server_settings_emojis_username" android:layout_width="wrap_content" android:maxWidth="100.0dip" style="@style/UiKit.TextView.Subtext.SingleLine" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/server_settings_emojis_username_avatar" android:layout_margin="@dimen/uikit_spacing_medium" style="@style/Avatar.Medium" />
+    <ImageView android:id="@id/server_settings_emojis_overflow" android:layout_margin="@dimen/uikit_spacing_medium" android:src="@drawable/ic_overflow_grey" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" style="@style/UiKit.ImageView" />
+</LinearLayout>

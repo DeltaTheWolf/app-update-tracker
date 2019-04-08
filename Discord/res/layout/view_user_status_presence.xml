@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/user_status_update_online" android:background="?selectableItemBackground" android:padding="@dimen/uikit_spacing_large" android:focusable="true" android:clickable="true" style="@style/UiKit.ViewGroup.LinearLayout.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="top" android:id="@id/user_status_presence_dot" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/uikit_spacing_medium" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/uikit_spacing_medium" app:roundAsCircle="true" />
+    <LinearLayout android:layout_marginLeft="@dimen/uikit_spacing_large" android:layout_marginRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
+        <TextView android:textColor="?primary_100" android:id="@id/user_status_presence_title" style="@style/UiKit.TextView.Large" />
+        <TextView android:id="@id/user_status_presence_subtitle" android:layout_marginTop="@dimen/uikit_spacing_small" style="@style/UiKit.TextView" />
+    </LinearLayout>
+</LinearLayout>
