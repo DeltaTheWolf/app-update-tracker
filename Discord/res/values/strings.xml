@@ -103,6 +103,11 @@
     <string name="activity_feed_share_modal_sent">Sent</string>
     <string name="activity_feed_share_modal_share">Share</string>
     <string name="activity_feed_single_member_list_header">%1$s</string>
+    <string name="activity_feed_user_played_days_ago">%1$s %2$s ago</string>
+    <string name="activity_feed_user_played_hours_ago">%1$s %2$s ago</string>
+    <string name="activity_feed_user_played_minutes_ago">%1$s %2$s ago</string>
+    <string name="activity_feed_user_played_seconds_ago">%1$s %2$s ago</string>
+    <string name="activity_feed_user_playing">Now Playing</string>
     <string name="activity_feed_user_playing_for_days">%1$s – %2$sd</string>
     <string name="activity_feed_user_playing_for_hours">%1$s – %2$sh</string>
     <string name="activity_feed_user_playing_for_minutes">%1$s – %2$sm</string>
@@ -245,7 +250,6 @@
     <string name="application_library_import_deny">Nah</string>
     <string name="application_library_inventory">Gift Inventory</string>
     <string name="application_library_my_games">My Games</string>
-    <string name="application_library_premium_games">Nitro Games</string>
     <string name="application_library_remove_confirm_body">%1$s will be hidden from your library. You can show it again from the Game Library settings page.</string>
     <string name="application_library_remove_confirm_confirm">"I'm Sure"</string>
     <string name="application_library_remove_confirm_header">Hide from library</string>
@@ -541,6 +545,7 @@
     <string name="application_store_recommendation_recently_played_double">%1$s and %2$s have played recently</string>
     <string name="application_store_recommendation_recently_played_other">**%1$s you know** have played recently</string>
     <string name="application_store_recommendation_recently_played_single">%1$s has played recently</string>
+    <string name="application_store_recommended_header">Recommended For You</string>
     <string name="application_store_restricted">Unavailable in your region</string>
     <string name="application_store_rich_presence">Rich Presence</string>
     <string name="application_store_rich_presence_tooltip">Show detailed stats about your game experience on your profile.</string>
@@ -961,7 +966,7 @@ HERE ARE MORE THINGS {progress}
     <string name="cloud_sync_modal_error_header">Unable to sync cloud saves</string>
     <string name="cloud_sync_modal_or">OR</string>
     <string name="collapse_category">Collapse Category</string>
-    <string name="com.crashlytics.android.build_id">bead5caa-e1a1-49c4-81a1-80be94653556</string>
+    <string name="com.crashlytics.android.build_id">7289bfde-43b1-4441-a606-756039a6f7cc</string>
     <string name="coming_soon">Coming Soon</string>
     <string name="coming_soon_notifications">Granular notification control only works on desktop apps at the moment. For now use the iOS notification settings.</string>
     <string name="coming_soon_title">COMING SOON!</string>
@@ -1666,13 +1671,13 @@ HERE ARE MORE THINGS {progress}
     <string name="game_feed_empty_state_title">Nobody is playing anything right now…</string>
     <string name="game_feed_not_linked">Not linked</string>
     <string name="game_feed_people_now_playing">Now Playing</string>
-    <string name="game_feed_personalization_notice">Your Activity tab could be better. Discord can tailor it to you by looking at what games you play and who you talk to. You can change this anytime in [privacy settings](onClickPrivacy).</string>
+    <string name="game_feed_personalization_notice">Your Activity Feed could be better. Discord can tailor it to you by looking at what games you play and who you talk to. You can change this anytime in [privacy settings](onClickPrivacy).</string>
     <string name="game_feed_personalization_notice_accept">Yes, please!</string>
     <string name="game_feed_personalization_notice_alt_1">"Seeing games you don't care about? Let Discord use info like what games you play and who you play with to make sure you only see the good stuff! You can change this anytime in [privacy settings](onClickPrivacy)."</string>
     <string name="game_feed_personalization_notice_alt_2">Want to see more updates from your favorite games? Let Discord use info like what games you play and who you play with to make sure you only see the good stuff! You can change this anytime in [privacy settings](onClickPrivacy).</string>
     <string name="game_feed_personalization_notice_dismiss">"I don't want to"</string>
     <string name="game_feed_promoted">Promoted</string>
-    <string name="game_feed_settings_visibility">Show on Activity Tab</string>
+    <string name="game_feed_settings_visibility">Show on Activity Feed</string>
     <string name="game_feed_spotify_overflow">And %1$s more listeners</string>
     <string name="game_feed_unknown_player">Unknown Player</string>
     <string name="game_feed_user_overflow">And %1$s more players</string>
@@ -1747,7 +1752,15 @@ HERE ARE MORE THINGS {progress}
     <string name="game_library_updates_updating_updating_seconds">Patching — %1$s of %2$s (%3$s%%) — %4$s</string>
     <string name="game_popout_add_to_home">Add to Home</string>
     <string name="game_popout_developer">by %1$s</string>
+    <string name="game_popout_follow">Follow</string>
+    <string name="game_popout_go_to_server">Go to server</string>
+    <string name="game_popout_no_recent_players">None of your friends have played this game recently.</string>
+    <string name="game_popout_online_in_server">%1$s Online in server</string>
+    <string name="game_popout_play">Play</string>
+    <string name="game_popout_playing">Playing</string>
     <string name="game_popout_trailer_video">Game trailer video</string>
+    <string name="game_popout_unfollow">Unfollow</string>
+    <string name="game_popout_view_server">View server</string>
     <string name="games">Games</string>
     <string name="gcm_defaultSenderId">162066849712</string>
     <string name="general_permissions">General Permissions</string>
@@ -2538,6 +2551,7 @@ Want to know more about Discord?"</string>
     <string name="link_your_xbox_account_2">"Discord is a voice, text, and video chat app for gamers that's free, secure, and works on desktop and mobile."</string>
     <string name="linux">Linux</string>
     <string name="listening_to">Listening to **%1$s**</string>
+    <string name="live">Live</string>
     <string name="live_on_twitch">Live on Twitch</string>
     <string name="load_image_error">Failed to load the image. Please try again.</string>
     <string name="load_more_messages">Load more messages</string>
@@ -3242,7 +3256,7 @@ To keep your sub, go to Settings and update your payment."</string>
     <string name="premium_upsell_emoji_description_mobile">Lift off with **Discord Nitro** to use animated and custom emojis on any server.</string>
     <string name="premium_upsell_emoji_passive_mobile">Get upgraded emoji power!</string>
     <string name="premium_upsell_tag_active_mobile">Trying to change your tag?</string>
-    <string name="premium_upsell_tag_description_mobile">Subscribe to **Discord Nitro** to choose your own custom Discord tag.</string>
+    <string name="premium_upsell_tag_description_mobile">Deck out your profile! Subscribe to **Discord Nitro** and get an exclusive Nitro badge.</string>
     <string name="premium_upsell_tag_passive_mobile">Want to get your own custom tag?</string>
     <string name="premium_upsell_upload_active_mobile">Your files are too powerful!</string>
     <string name="premium_upsell_upload_description_mobile">Max file size is %1$s. Upgrade to **Discord Nitro** for %2$s file limit!</string>
@@ -4152,8 +4166,8 @@ To keep your sub, go to Settings and update your payment."</string>
     <string name="user_settings_appearance_preview_message_4">Compact mode would be turned on</string>
     <string name="user_settings_appearance_preview_message_5">Oh here it is!</string>
     <string name="user_settings_appearance_zoom_tip">You can change the zoom level with %1$s +/- and reset to the default zoom with %1$s+0.</string>
-    <string name="user_settings_apperannce_disable_games_tab">Show Activity Tab</string>
-    <string name="user_settings_apperannce_disable_games_tab_note">Turn this off to hide the Activity tab so you can focus on your conversations.</string>
+    <string name="user_settings_apperannce_disable_games_tab">Show Activity Feed</string>
+    <string name="user_settings_apperannce_disable_games_tab_note">Turn this off to hide the Activity Feed so you can focus on your conversations.</string>
     <string name="user_settings_available_codes">Available Backup Codes</string>
     <string name="user_settings_close_button">Close Button</string>
     <string name="user_settings_confirm_logout">Are you sure you want to logout?</string>

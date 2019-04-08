@@ -25,7 +25,7 @@
                 <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_email" android:hint="@string/email" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText" />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_account_password_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.TextInputLayout">
-                <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_password" android:hint="@string/user_settings_edit_account_password_label" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/UiKit.TextInputLayout.EditText" />
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_password" android:hint="@string/user_settings_edit_account_password_label" android:inputType="textPassword" android:imeOptions="actionDone" android:autofillHints="password" style="@style/UiKit.TextInputLayout.EditText" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </ScrollView>

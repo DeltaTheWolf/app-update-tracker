@@ -7,25 +7,25 @@
     <ScrollView app:layout_behavior="@string/action_bar_scrolling_view_behavior" style="@style/UiKit.ViewGroup.ScrollView">
         <LinearLayout android:paddingLeft="@dimen/uikit_spacing_large" android:paddingTop="@dimen/uikit_spacing_medium" android:paddingRight="@dimen/uikit_spacing_large" style="@style/UiKit.ViewGroup.LinearLayout">
             <RelativeLayout style="@style/UiKit.ViewGroup.LinearLayout.Horizontal">
-                <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/edit_account_tag_layout_container" style="@style/UiKit.Form.Field.EditText.Wrap">
-                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_username" android:hint="@string/username" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_account_username_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/edit_account_tag_layout_container" style="@style/UiKit.TextInputLayout">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_username" android:hint="@string/username" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText">
                         <requestFocus />
                     </androidx.appcompat.widget.AppCompatEditText>
                 </com.google.android.material.textfield.TextInputLayout>
                 <FrameLayout android:id="@id/edit_account_tag_layout_container" android:layout_width="72.0sp" android:layout_alignParentRight="true" style="@style/UiKit.ViewGroup">
-                    <com.google.android.material.textfield.TextInputLayout style="@style/UiKit.Form.Field.EditText.Wrap">
-                        <androidx.appcompat.widget.AppCompatEditText android:gravity="left" android:id="@id/edit_account_discrim_hash" android:focusable="false" android:text="\#" android:maxLength="1" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText" />
+                    <com.google.android.material.textfield.TextInputLayout style="@style/UiKit.TextInputLayout">
+                        <androidx.appcompat.widget.AppCompatEditText android:gravity="left" android:focusable="false" android:text="\#" android:maxLength="1" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText" />
                     </com.google.android.material.textfield.TextInputLayout>
-                    <com.google.android.material.textfield.TextInputLayout style="@style/UiKit.Form.Field.EditText.Wrap">
-                        <androidx.appcompat.widget.AppCompatEditText android:gravity="center_horizontal" android:id="@id/edit_account_discriminator" android:hint="@string/user_settings_edit_account_tag" android:maxLength="4" android:inputType="number" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText" />
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_account_discriminator_wrap" style="@style/UiKit.TextInputLayout">
+                        <androidx.appcompat.widget.AppCompatEditText android:gravity="center_horizontal" android:id="@id/edit_account_discriminator" android:hint="@string/user_settings_edit_account_tag" android:maxLength="4" android:inputType="number" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </FrameLayout>
             </RelativeLayout>
-            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.Form.Field.EditText.Wrap">
-                <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_email" android:hint="@string/email" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/UiKit.Form.Field.EditText" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_account_email_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.TextInputLayout">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_email" android:hint="@string/email" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/UiKit.TextInputLayout.EditText" />
             </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.Form.Field.EditText.Wrap">
-                <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_password" android:hint="@string/user_settings_edit_account_password_label" android:imeOptions="actionDone" style="@style/UiKit.Form.Field.EditText.Password" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_account_password_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UiKit.TextInputLayout">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit_account_password" android:hint="@string/user_settings_edit_account_password_label" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/UiKit.TextInputLayout.EditText" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </ScrollView>
