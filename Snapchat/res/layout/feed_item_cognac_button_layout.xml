@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.imageloading.view.SnapImageView android:id="@id/cognac_feed_item_thumbnail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:id="@id/cognac_feed_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:id="@id/cognac_feed_item_thumbnail" android:layout_width="@dimen/cognac_feed_thumbnail_size" android:layout_height="@dimen/cognac_feed_thumbnail_size" android:scaleType="fitCenter" custom:isCircular="true" />
+    <TextView android:textSize="@dimen/cognac_feed_cell_secondary_text_size" android:textColor="@color/regular_green" android:layout_gravity="center" android:id="@id/cognac_feed_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_join" />
 </LinearLayout>

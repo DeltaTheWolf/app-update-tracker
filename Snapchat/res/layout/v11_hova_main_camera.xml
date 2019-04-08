@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/hova_page" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/hova_main_camera_shared" />
+    <com.snap.ui.view.TakeSnapButton android:layout_gravity="bottom|center" android:id="@id/camera_capture_button" android:padding="@dimen/hova_nav_default_camera_button_padding" android:focusable="true" android:clickable="true" android:layout_width="@dimen/hova_nav_default_camera_button_size" android:layout_height="@dimen/hova_nav_default_camera_button_size" android:layout_marginBottom="@dimen/v11_hova_nav_default_camera_button_margin_bottom" />
+    <com.snap.hova.HovaNavIconContainerView android:layout_gravity="bottom|center|left" android:id="@id/feed_icon_container" app:badge_margin_right="@dimen/hova_nav_feed_badge_right_margin" app:badge_margin_top="@dimen/hova_nav_feed_badge_top_margin" app:page_type="feed" app:show_label="true" style="@style/v11_hova_icon_container_style" />
+    <com.snap.hova.HovaNavIconContainerView android:layout_gravity="bottom|center|right" android:id="@id/discoverfeed_icon_container" app:badge_margin_right="@dimen/hova_nav_discover_badge_right_margin" app:badge_margin_top="@dimen/hova_nav_discover_badge_top_margin" app:page_type="discover_feed" app:show_label="true" style="@style/v11_hova_icon_container_style" />
+</FrameLayout>

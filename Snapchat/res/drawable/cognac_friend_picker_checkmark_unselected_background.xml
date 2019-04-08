@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <size android:height="@dimen/cognac_friend_picker_checkmark_size" android:width="@dimen/cognac_friend_picker_checkmark_size" />
+    <stroke android:width="@dimen/cognac_friend_picker_checkmark_unselected_border" android:color="@color/cognac_friend_picker_checkmark_border" />
+</shape>

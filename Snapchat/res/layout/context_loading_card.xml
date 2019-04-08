@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/loadingcardview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale" style="@style/CardFrame"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/context_loading_primary_text" android:background="@drawable/context_loading_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/loading_card_text_height" android:layout_marginTop="@dimen/loading_card_primary_text_margin_top" android:layout_marginBottom="@dimen/loading_card_margin_bottom" android:layout_marginStart="@dimen/loading_card_text_margin_left" android:layout_marginEnd="@dimen/loading_card_primary_text_margin_right" />
-    <ImageView android:id="@id/context_loading_secondary_text" android:background="@drawable/context_loading_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/loading_card_text_height" android:layout_marginTop="@dimen/loading_card_secondary_text_margin_top" android:layout_marginBottom="@dimen/loading_card_margin_bottom" android:layout_marginStart="@dimen/loading_card_text_margin_left" android:layout_marginEnd="@dimen/loading_card_secondary_text_margin_right" />
-</FrameLayout>

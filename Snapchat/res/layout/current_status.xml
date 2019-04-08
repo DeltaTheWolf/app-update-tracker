@@ -5,5 +5,5 @@
     <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-56.0dip" android:layout_below="@id/header">
         <FrameLayout android:id="@id/composerParent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
-    <com.snap.ui.view.ScHeaderView android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/status_bar" custom:headerArrowColorScheme="@color/regular_blue" custom:headerColorScheme="@color/passport_header_gray" custom:headerTitle="@string/map_status_current_status_header" custom:showBackArrow="true" />
+    <com.snap.ui.view.ScHeaderView android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/status_bar" custom:arrowDirection="down" custom:headerArrowColorScheme="@color/regular_blue" custom:headerColorScheme="@color/passport_header_gray" custom:headerRightImage="@drawable/map_status_trash" custom:headerTitle="@string/map_status_current_status_header" custom:showBackArrow="true" />
 </RelativeLayout>

@@ -23,6 +23,10 @@
                 <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_square_view" custom:exportFormat="square" style="@style/SpectaclesSaveToExportFormatStyle" />
                 <include layout="@layout/list_separator" />
                 <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_horizontal_view" custom:exportFormat="horizontal" style="@style/SpectaclesSaveToExportFormatStyle" />
+                <include layout="@layout/list_separator" />
+                <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_horizontal_16_9_view" custom:exportFormat="horizontal_16_9" style="@style/SpectaclesSaveToExportFormatStyle" />
+                <include layout="@layout/list_separator" />
+                <com.snap.spectacles.lib.fragments.SpectaclesSaveToExportFormatView android:id="@id/save_to_format_portrait_view" custom:exportFormat="portrait" style="@style/SpectaclesSaveToExportFormatStyle" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

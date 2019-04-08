@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cognac_settings" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/cognac_settings_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/cognac_settings_title_text" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <ScrollView android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/cognac_settings_sounds_label_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cognac_settings_sounds_text" style="@style/cognac_settings_section_header" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/cognac_settings_disable_music_linear_layout" style="@style/cognac_settings_item_outer">
+                <TextView android:id="@id/cognac_settings_disable_music_text_view" android:paddingTop="@dimen/default_gap_half" android:text="@string/cognac_settings_game_audio_text" style="@style/cognac_settings_item_name" />
+                <CheckBox android:id="@id/cognac_settings_disable_music_checkbox" android:layout_centerInParent="false" style="@style/cognac_settings_checkbox" />
+            </RelativeLayout>
+            <TextView android:id="@id/cognac_settings_support_label_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cognac_settings_support_text" style="@style/cognac_settings_section_header" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/cognac_settings_support_i_need_help_linear_layout" style="@style/cognac_settings_item_outer">
+                <TextView android:id="@id/cognac_settings_support_i_need_help_text_view" android:text="@string/cognac_settings_support_i_need_help_text" style="@style/cognac_settings_item_name" />
+            </RelativeLayout>
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" layout="@layout/cognac_list_separator" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/cognac_settings_support_i_have_a_privacy_question_linear_layout" style="@style/cognac_settings_item_outer">
+                <TextView android:id="@id/cognac_settings_support_i_have_a_privacy_question_text_view" android:text="@string/cognac_settings_support_i_have_a_privacy_question_text" style="@style/cognac_settings_item_name" />
+            </RelativeLayout>
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" layout="@layout/cognac_list_separator" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/cognac_settings_support_safety_center_linear_layout" style="@style/cognac_settings_item_outer">
+                <TextView android:id="@id/cognac_settings_support_safety_center_text_view" android:text="@string/cognac_settings_support_safety_center_text" style="@style/cognac_settings_item_name" />
+            </RelativeLayout>
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" layout="@layout/cognac_list_separator" />
+            <LinearLayout android:orientation="vertical" android:id="@id/cognac_settings_feedback_section_linear_layout" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/cognac_settings_feedback_label_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cognac_settings_feedback_text" style="@style/cognac_settings_section_header" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/cognac_settings_feedback_i_spotted_a_bug_linear_layout" style="@style/cognac_settings_item_outer">
+                    <TextView android:id="@id/cognac_settings_feedback_i_spotted_a_bug_text_view" android:text="@string/cognac_settings_feedback_i_spotted_a_bug_text" style="@style/cognac_settings_item_name" />
+                </RelativeLayout>
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/single_dp" layout="@layout/cognac_list_separator" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/cognac_settings_feedback_i_have_a_suggestion_linear_layout" style="@style/cognac_settings_item_outer">
+                    <TextView android:id="@id/cognac_settings_feedback_i_have_a_suggestion_text_view" android:text="@string/cognac_settings_feedback_i_have_a_suggestion_text" style="@style/cognac_settings_item_name" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/context_usercardlayoutview" android:paddingTop="@dimen/context_story_vertical_padding" android:paddingBottom="@dimen/context_story_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/context_story_min_height" android:layoutDirection="locale" android:paddingStart="@dimen/context_story_horizontal_padding" android:paddingEnd="@dimen/context_story_horizontal_padding" style="@style/CardFrame"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snapchat.android.app.shared.ui.view.friend.StoryAndBitmojiViewV2 android:layout_gravity="center_vertical" android:id="@id/story_and_bitmoji_view" android:visibility="gone" android:layout_width="@dimen/context_story_thumbnail_size" android:layout_height="@dimen/context_story_thumbnail_size" android:layout_marginEnd="@dimen/context_story_horizontal_padding" custom:storyThumbnailBackground="whiteRing" xmlns:custom="http://schemas.android.com/apk/res-auto" />
-    <include layout="@layout/context_mini_card_story_text_container" />
-    <ViewStub android:id="@id/context_add_friend_button_stub" android:background="@color/dark_blue" android:visibility="gone" android:layout="@layout/context_add_friend_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_marginStart="15.0dip" />
-</LinearLayout>

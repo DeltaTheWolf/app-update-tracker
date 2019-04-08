@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/caption_carousel_container" android:background="@drawable/caption_carousel_background_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content"
+<FrameLayout android:id="@id/caption_carousel_container" android:background="@drawable/caption_carousel_background_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/caption_carousel_recycler_view_height"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.snap.previewtools.caption.CaptionCarouselRecyclerView android:id="@id/style_carousel_recycler_view" android:layout_width="fill_parent" android:layout_height="@dimen/caption_carousel_recycler_view_height_v25" />
-    <com.snap.previewtools.caption.CaptionCarouselRecyclerView android:id="@id/tagging_carousel_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/caption_carousel_recycler_view_height_v25" />
+    <com.snap.previewtools.shared.view.CarouselRecyclerView android:id="@id/style_carousel_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.snap.previewtools.shared.view.CarouselRecyclerView android:id="@id/tagging_carousel_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <ImageButton android:layout_gravity="center|left" android:id="@id/caption_floating_tag_button" android:background="@drawable/floating_tag_button" android:visibility="gone" android:layout_width="@dimen/caption_floating_tag_button_size" android:layout_height="@dimen/caption_floating_tag_button_size" />
 </FrameLayout>

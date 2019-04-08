@@ -103,6 +103,8 @@ void main(void) {
     float mask = texture2D(maskTexture, varTexMask).r;
 #elif MASK_CHANNEL==1
     vec4 mask = texture2D(maskTexture, varTexMask);
+#elif MASK_CHANNEL==2
+    float mask = texture2D(maskTexture, varTexMask).a;
 #endif
     vec4 back = texture2D(backTexture, varTexBack)*backColorMult;
     result = mix(back,result,mask);

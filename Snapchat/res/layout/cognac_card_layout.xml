@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/card_container" android:background="@drawable/cognac_popup_view_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.snapchat.android.framework.ui.views.RoundedFrameLayout android:id="@id/thumbnail_container" android:background="@drawable/cognac_card_background" android:layout_width="fill_parent" android:layout_height="@dimen/cognac_card_thumbnail_height" android:layout_margin="@dimen/default_gap_half" app:corner_radius="@dimen/default_gap">
+            <TextView android:textSize="@dimen/cognac_card_title_text_size" android:textColor="@color/medium_grey" android:gravity="center" android:id="@id/title" android:background="@drawable/cognac_chat_drawer_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.snap.imageloading.view.SnapImageView android:id="@id/thumbnail" android:background="@drawable/cognac_card_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:id="@id/logo_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+            <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/presence_subtext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cognac_subtext_bottom_margin" android:textAlignment="center" />
+        </com.snapchat.android.framework.ui.views.RoundedFrameLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap_1_5x">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:layout_marginStart="@dimen/default_gap" android:layout_marginEnd="@dimen/default_gap_3x">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/cancel" android:background="@drawable/cognac_card_cancel" android:layout_width="@dimen/cognac_card_button_size" android:layout_height="@dimen/cognac_card_button_size" />
+                <TextView android:textStyle="bold" android:textColor="@color/dark_red" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_now" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:layout_marginStart="@dimen/default_gap_3x" android:layout_marginEnd="@dimen/default_gap">
+                <Button android:id="@id/join" android:background="@drawable/cognac_game_card_join" android:layout_width="@dimen/cognac_card_button_size" android:layout_height="@dimen/cognac_card_button_size" />
+                <TextView android:textStyle="bold" android:textColor="@color/regular_green" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/join" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/chat_input_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/card_container" layout="@layout/cognac_card_input_bar" />
+</RelativeLayout>

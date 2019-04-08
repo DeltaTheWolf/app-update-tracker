@@ -214,7 +214,7 @@ void sc_ProcessVertex(sc_Vertex_t v) {
     varNormal = normalize(varNormal);
     varTangent = normalize(varTangent);
     varBitangentSign = tangent.w;
-    
+
     varTex0 = v.texture0;
     varTex1 = v.texture1;
 #ifdef STD_ENABLE_VERTEX_COLOR
@@ -223,17 +223,17 @@ void sc_ProcessVertex(sc_Vertex_t v) {
 
     varScreenPos = screenPosition;
     varScreenTexturePos = screenPosition.xy / screenPosition.w * 0.5 + 0.5;
-    
+
 #ifdef sc_ProjectiveShadowsReceiver
     varShadowTex = getProjectedTexCoords(v.position);
 #endif // sc_ProjectiveShadowsReceiver
-    
+
 #if (sc_DepthBufferMode == SC_DEPTH_BUFFER_MODE_LOGARITHMIC)
     float fCoefficient = 2.0 / log2(sc_Camera.clipPlanes.y + 1.0);
     screenPosition.z = (log2(max(sc_Camera.clipPlanes.x, 1.0 + screenPosition.w)) * fCoefficient - 1.0) * screenPosition.w;
 #endif // sc_DepthBufferMode == SC_DEPTH_BUFFER_MODE_LOGARITHMIC
-    
-    gl_Position = screenPosition;
+
+    gl_Position = screenPosition * 1.0; // GPU_BUG_008 [LOOK-35574] 03/14//2019 Adreno 630 Android 8.0: There is a bug when vertex shader inputs are passed directly to the outputs, causing vertices to flicker. Multiplying by 1 works around the bug.
 }
 
 #endif // VERTEX_SHADER

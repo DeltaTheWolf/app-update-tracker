@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="SCinternalLayout" format="reference" />
-    <attr name="SCinternalMaxHeight" format="dimension" />
-    <attr name="SCinternalMaxWidth" format="dimension" />
-    <attr name="SCinternalMinHeight" format="dimension" />
-    <attr name="SCinternalMinWidth" format="dimension" />
-    <attr name="SCselectionDivider" format="reference" />
-    <attr name="SCselectionDividerHeight" format="dimension" />
-    <attr name="SCselectionDividersDistance" format="dimension" />
-    <attr name="SCsolidColor" format="reference|color" />
     <attr name="Small" format="dimension" />
     <attr name="actionBarDivider" format="reference" />
     <attr name="actionBarItemBackground" format="reference" />
@@ -84,6 +75,12 @@
         <enum name="cw_180" value="180" />
         <enum name="cw_270" value="270" />
         <enum name="cw_90" value="90" />
+    </attr>
+    <attr name="arrowDirection">
+        <enum name="down" value="270" />
+        <enum name="left" value="0" />
+        <enum name="right" value="180" />
+        <enum name="up" value="90" />
     </attr>
     <attr name="arrowHeadLength" format="dimension" />
     <attr name="arrowShaftLength" format="dimension" />
@@ -207,12 +204,6 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
-    <attr name="button_color" format="integer">
-        <enum name="blue" value="1" />
-        <enum name="gray" value="3" />
-        <enum name="purple" value="0" />
-        <enum name="white" value="2" />
-    </attr>
     <attr name="cameraBearing" format="float" />
     <attr name="cameraMaxZoomPreference" format="float" />
     <attr name="cameraMinZoomPreference" format="float" />
@@ -244,6 +235,9 @@
     <attr name="closeIcon" format="reference" />
     <attr name="closeItemLayout" format="reference" />
     <attr name="closedIconTint" format="color" />
+    <attr name="cognacFillColor" format="color" />
+    <attr name="cognacStrokeColor" format="color" />
+    <attr name="cognacStrokeWidth" format="float" />
     <attr name="collapseContentDescription" format="string" />
     <attr name="collapseIcon" format="reference" />
     <attr name="collapsedTitleGravity">
@@ -339,7 +333,6 @@
         <enum name="gone" value="0" />
         <enum name="invisible" value="1" />
     </attr>
-    <attr name="enable_dismiss_button" format="boolean" />
     <attr name="errorEnabled" format="boolean" />
     <attr name="errorTextAppearance" format="reference" />
     <attr name="excludeClass" format="string" />
@@ -368,6 +361,8 @@
     <attr name="exportFormat">
         <enum name="black_background" value="2" />
         <enum name="horizontal" value="4" />
+        <enum name="horizontal_16_9" value="5" />
+        <enum name="portrait" value="6" />
         <enum name="square" value="3" />
         <enum name="white_background" value="1" />
     </attr>
@@ -1078,13 +1073,12 @@
         <enum name="start" value="8388611" />
         <enum name="top" value="48" />
     </attr>
-    <attr name="snapchatTimePickerStyle" format="reference" />
     <attr name="spanCount" format="integer" />
     <attr name="spinBars" format="boolean" />
     <attr name="spinnerDropDownItemStyle" format="reference" />
     <attr name="spinnerStyle" format="reference" />
     <attr name="splitTrack" format="boolean" />
-    <attr name="src" format="reference" />
+    <attr name="src" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="srcCompat" format="reference" />
     <attr name="stackFromEnd" format="boolean" />
     <attr name="startDelay" format="integer" />
@@ -1097,13 +1091,6 @@
     <attr name="storyReplayViewPadding" format="dimension" />
     <attr name="storyReplayViewResource" format="reference" />
     <attr name="storyReplayViewRingColor" format="color" />
-    <attr name="storyThumbnailBackground">
-        <enum name="blueRing" value="4" />
-        <enum name="none" value="5" />
-        <enum name="whiteDisk" value="3" />
-        <enum name="whiteRing" value="1" />
-        <enum name="whiteRingWithShadow" value="2" />
-    </attr>
     <attr name="strokeColor" format="color" />
     <attr name="strokeJoinStyle">
         <enum name="bevel" value="1" />
@@ -1163,8 +1150,6 @@
     <attr name="targetClass" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="targetId" format="reference" />
     <attr name="targetName" format="string" />
-    <attr name="text" format="string" />
-    <attr name="textAdornment" format="reference" />
     <attr name="textAllCaps" format="reference|boolean" />
     <attr name="textAppearanceLargePopupMenu" format="reference" />
     <attr name="textAppearanceListItem" format="reference" />
@@ -1178,9 +1163,6 @@
     <attr name="textColorAlertDialogListItem" format="reference|color" />
     <attr name="textColorError" format="reference|color" />
     <attr name="textColorSearchUrl" format="reference|color" />
-    <attr name="textHorizontalMargin" format="dimension" />
-    <attr name="textRightPadding" format="dimension" />
-    <attr name="textStyle" format="reference" />
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />
     <attr name="thumbTextPadding" format="dimension" />
@@ -1269,7 +1251,6 @@
     <attr name="unsubscribed_color" format="color" />
     <attr name="unsubscribed_icon" format="reference" />
     <attr name="unsubscribed_text" format="string" />
-    <attr name="upperPaneHeight" format="dimension" />
     <attr name="useCompatPadding" format="boolean" />
     <attr name="useFixedDevice" format="boolean" />
     <attr name="useImageMatrix" format="boolean" />

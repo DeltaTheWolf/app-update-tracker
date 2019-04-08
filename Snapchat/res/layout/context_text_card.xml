@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="@dimen/textcard_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale" style="@style/CardFrame"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/textcard_text" android:paddingBottom="@dimen/textcard_icon_y_half_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minLines="1" style="@style/TextCardTextStyle" />
-    <ImageView android:id="@id/textcard_icon" android:paddingTop="@dimen/textcard_icon_y_half_padding" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/textcard_icon_height" android:adjustViewBounds="true" />
-</LinearLayout>

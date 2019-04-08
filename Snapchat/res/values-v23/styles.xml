@@ -12,6 +12,20 @@
     <style name="CardView" parent="@style/Base.CardView">
         <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
     </style>
+    <style name="alert_dialog_description">
+        <item name="android:textSize">@dimen/alert_dialog_description_text_size</item>
+        <item name="android:textColor">@color/off_black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/alert_dialog_item_padding</item>
+        <item name="android:paddingRight">@dimen/alert_dialog_item_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/alert_dialog_description_margin_top</item>
+        <item name="android:maxLines">12</item>
+        <item name="android:breakStrategy">simple</item>
+        <item name="scFontWeight">regular</item>
+    </style>
     <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
         <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
         <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>

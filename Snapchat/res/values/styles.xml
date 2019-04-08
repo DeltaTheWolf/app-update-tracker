@@ -1086,63 +1086,6 @@
         <item name="android:layout_height">35.0dip</item>
         <item name="android:scaleType">fitXY</item>
     </style>
-    <style name="CardFrame">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/context_card_margin_bottom</item>
-        <item name="android:layout_marginStart">@dimen/context_card_margin_side</item>
-        <item name="android:layout_marginEnd">@dimen/context_card_margin_side</item>
-    </style>
-    <style name="CardStyleAppList">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">@color/light_charcoal</item>
-    </style>
-    <style name="CardStyleAppListSurgeStyle">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">@color/link_color_blue</item>
-    </style>
-    <style name="CardStyleCategory">
-        <item name="android:textSize">9.0sp</item>
-        <item name="android:textColor">@color/light_charcoal</item>
-        <item name="scFontWeight">bold</item>
-    </style>
-    <style name="CardStyleDetailPrimaryText">
-        <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">@color/black</item>
-    </style>
-    <style name="CardStyleError">
-        <item name="android:textSize">15.0sp</item>
-        <item name="android:textColor">@color/off_black</item>
-        <item name="scFontWeight">bold</item>
-    </style>
-    <style name="CardStyleHeader">
-        <item name="android:textSize">11.0sp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="scFontWeight">bold</item>
-    </style>
-    <style name="CardStyleRatingsCard">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">@color/light_charcoal</item>
-    </style>
-    <style name="CardStyleShowMore">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:background">@drawable/show_more_background</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">30.0dip</item>
-        <item name="android:layout_marginStart">@dimen/context_card_show_more_margin_side</item>
-        <item name="android:layout_marginEnd">@dimen/context_card_show_more_margin_side</item>
-        <item name="scFontWeight">bold</item>
-    </style>
-    <style name="CardStyleTitle1">
-        <item name="android:textSize">15.0sp</item>
-        <item name="android:textColor">@color/black</item>
-    </style>
-    <style name="CardStyleTitle2">
-        <item name="android:textSize">15.0sp</item>
-        <item name="android:textColor">@color/off_black</item>
-        <item name="scFontWeight">regular</item>
-    </style>
     <style name="CardView" parent="@style/Base.CardView" />
     <style name="CardView.Dark" parent="@style/CardView">
         <item name="cardBackgroundColor">@color/cardview_dark_background</item>
@@ -1544,13 +1487,6 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">@dimen/neon_header_height</item>
     </style>
-    <style name="MiniCardImageStyle">
-        <item name="android:gravity">center</item>
-        <item name="android:layout_centerVertical">true</item>
-    </style>
-    <style name="MiniCardSubTitleTextStyle">
-        <item name="android:textColor">@color/light_charcoal</item>
-    </style>
     <style name="MushroomTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>
         <item name="android:dropDownSpinnerStyle">@style/SpinnerLightCustom</item>
@@ -1921,16 +1857,6 @@
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item" />
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Title" parent="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title" />
-    <style name="TextCardTextStyle">
-        <item name="android:textSize">15.0sp</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textColorLink">@color/color_grey</item>
-    </style>
-    <style name="TextCardWebsiteStyle">
-        <item name="android:textSize">11.0sp</item>
-        <item name="android:textColor">@color/link_color_blue</item>
-        <item name="scFontWeight">bold</item>
-    </style>
     <style name="Theme.AppCompat" parent="@style/Base.Theme.AppCompat" />
     <style name="Theme.AppCompat.CompactMenu" parent="@style/Base.Theme.AppCompat.CompactMenu" />
     <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat.Light" />
@@ -2168,6 +2094,74 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">@dimen/default_gap</item>
     </style>
+    <style name="alert_dialog_button_base">
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/alert_dialog_item_padding</item>
+        <item name="android:paddingRight">@dimen/alert_dialog_item_padding</item>
+        <item name="android:layout_width">@dimen/alert_dialog_button_min_width</item>
+        <item name="android:layout_height">@dimen/alert_dialog_button_height</item>
+        <item name="android:layout_marginLeft">@dimen/alert_dialog_item_margin</item>
+        <item name="android:layout_marginTop">@dimen/alert_dialog_button_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/alert_dialog_item_margin</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="alert_dialog_cancel_button" parent="@style/alert_dialog_button_base">
+        <item name="android:textColor">@color/dark_charcoal</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="alert_dialog_default_button" parent="@style/alert_dialog_button_base">
+        <item name="scButtonBackground">@drawable/alert_dialog_button_charcoal_selector</item>
+        <item name="scButtonTextColor">@color/white</item>
+    </style>
+    <style name="alert_dialog_description">
+        <item name="android:textSize">@dimen/alert_dialog_description_text_size</item>
+        <item name="android:textColor">@color/off_black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/alert_dialog_item_padding</item>
+        <item name="android:paddingRight">@dimen/alert_dialog_item_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/alert_dialog_description_margin_top</item>
+        <item name="android:maxLines">12</item>
+        <item name="scFontWeight">regular</item>
+    </style>
+    <style name="alert_dialog_edit_text" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textSize">@dimen/alert_dialog_edit_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:gravity">start</item>
+        <item name="android:background">@drawable/dialog_edit_text_background</item>
+        <item name="android:padding">@dimen/alert_dialog_item_padding</item>
+        <item name="android:layout_width">@dimen/alert_dialog_edit_text_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/alert_dialog_item_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">textCapWords|textNoSuggestions</item>
+    </style>
+    <style name="alert_dialog_title">
+        <item name="android:textSize">@dimen/alert_dialog_title_text_size</item>
+        <item name="android:textColor">@color/off_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/alert_dialog_title_top_margin</item>
+        <item name="scFontWeight">bold</item>
+    </style>
+    <style name="alert_dialog_window">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="android:paddingLeft">@dimen/alert_dialog_background_padding_left</item>
+        <item name="android:paddingRight">@dimen/alert_dialog_background_padding_left</item>
+        <item name="android:paddingBottom">@dimen/alert_dialog_background_padding_bottom</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/alert_dialog_window_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alert_dialog_window_min_height</item>
+    </style>
     <style name="amu_Bubble.TextAppearance.Dark" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ff7f7f7f</item>
@@ -2191,14 +2185,6 @@
         <item name="android:windowAnimationStyle">@style/bt_no_activity_animation</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowTranslucentStatus">true</item>
-    </style>
-    <style name="call_prompt_btn">
-        <item name="android:background">@color/transparent</item>
-    </style>
-    <style name="call_prompt_btn_label">
-        <item name="android:textSize">@dimen/call_prompt_button_text_size</item>
-        <item name="android:textColor">@color/incomingPromptButtonText</item>
-        <item name="android:textAllCaps">false</item>
     </style>
     <style name="camera_mode_dropdown_overlay">
         <item name="android:background">@color/black</item>
@@ -2245,10 +2231,10 @@
     <style name="chat_input_bar_icon">
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:background">@null</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/chat_input_bar_icon_size</item>
+        <item name="android:layout_height">@dimen/chat_input_bar_icon_size</item>
+        <item name="android:layout_margin">@dimen/default_gap_half</item>
         <item name="android:scaleType">centerInside</item>
-        <item name="android:adjustViewBounds">true</item>
     </style>
     <style name="chat_input_bar_v3_icon">
         <item name="android:layout_gravity">center_vertical</item>
@@ -2277,7 +2263,7 @@
         <item name="android:layout_marginEnd">@dimen/default_gap_half</item>
     </style>
     <style name="chat_message_text">
-        <item name="android:textSize">16.0sp</item>
+        <item name="android:textSize">@dimen/chat_message_text_size</item>
         <item name="android:textDirection">locale</item>
         <item name="android:layout_marginStart">@dimen/default_gap</item>
     </style>
@@ -2334,23 +2320,76 @@
         <item name="android:shadowDy">4.0</item>
         <item name="android:shadowRadius">20.0</item>
     </style>
-    <style name="context_header_subtext">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/white_seventy_opacity</item>
+    <style name="cognac_profile_header_close_button">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">@dimen/default_gap_1_5x</item>
+        <item name="android:layout_width">@dimen/cognac_app_profile_header_buttons_size</item>
+        <item name="android:layout_height">@dimen/cognac_app_profile_header_buttons_size</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="cognac_profile_header_menu_button">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">@dimen/default_gap_three_quarters</item>
+        <item name="android:layout_width">@dimen/cognac_app_profile_header_buttons_size</item>
+        <item name="android:layout_height">@dimen/cognac_app_profile_header_buttons_size</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/medium_charcoal</item>
+    </style>
+    <style name="cognac_settings_checkbox">
+        <item name="android:background">@drawable/settings_button_selector</item>
+        <item name="android:layout_width">@dimen/cognac_checkbox_size</item>
+        <item name="android:layout_height">@dimen/cognac_checkbox_size</item>
+        <item name="android:checked">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginStart">@dimen/default_gap</item>
+        <item name="android:layout_marginEnd">@dimen/default_gap_half</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="cognac_settings_item_name">
+        <item name="android:textSize">@dimen/cognac_section_primary_text_size</item>
+        <item name="android:textColor">@color/cognac_settings_text_color</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:shadowColor">@color/black_fifty_opacity</item>
-        <item name="android:shadowDy">4.0</item>
-        <item name="android:shadowRadius">20.0</item>
+        <item name="android:fontFamily">@font/avenir_next_demi_bold</item>
     </style>
-    <style name="context_header_text">
-        <item name="android:textStyle">bold</item>
+    <style name="cognac_settings_item_outer">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/settings_menu_item_selector</item>
+        <item name="android:focusable">false</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?android:listPreferredItemHeightSmall</item>
+        <item name="android:paddingStart">@dimen/default_gap_2x</item>
+        <item name="android:paddingEnd">@dimen/default_gap_2x</item>
+    </style>
+    <style name="cognac_settings_section_header">
+        <item name="android:textSize">@dimen/cognac_section_header_text_size</item>
+        <item name="android:textColor">@color/dark_charcoal</item>
+        <item name="android:gravity">start</item>
+        <item name="android:background">@color/settings_section_header_background_color</item>
+        <item name="android:paddingTop">@dimen/default_gap</item>
+        <item name="android:paddingBottom">@dimen/default_gap</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/avenir_next_bold</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:paddingStart">@dimen/default_gap_2x</item>
+        <item name="android:paddingEnd">@dimen/default_gap_2x</item>
+    </style>
+    <style name="cognac_webview_chat_button_icon">
+        <item name="android:layout_width">@dimen/icon_size_extra_extra_smaller</item>
+        <item name="android:layout_height">@dimen/icon_size_extra_extra_smaller</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginEnd">@dimen/default_gap</item>
+    </style>
+    <style name="cognac_webview_chat_button_text">
+        <item name="android:textSize">@dimen/text_size_small</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:shadowColor">@color/black_fifty_opacity</item>
-        <item name="android:shadowDy">4.0</item>
-        <item name="android:shadowRadius">20.0</item>
     </style>
     <style name="explore_my_status_badge">
         <item name="android:layout_gravity">center|right|top</item>
@@ -2567,6 +2606,7 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:clipChildren">false</item>
         <item name="android:layout_width">fill_parent</item>
+        <item name="android:animateLayoutChanges">true</item>
     </style>
     <style name="hova_header_icon_vertical_base.normal_margin.text_view" parent="@style/hova_header_icon_vertical_base.normal_margin" />
     <style name="hova_header_text">
@@ -2647,9 +2687,6 @@
     <style name="in_app_report_reason_item_text" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@drawable/in_app_report_reason_item_text_selector</item>
         <item name="android:layout_marginStart">@dimen/default_gap</item>
-    </style>
-    <style name="incoming_call_prompt">
-        <item name="textHorizontalMargin">@dimen/call_prompt_corner_radius</item>
     </style>
     <style name="lens_name_text">
         <item name="android:textSize">21.0sp</item>
@@ -2970,6 +3007,10 @@
         <item name="android:paddingStart">@dimen/default_gap_2x</item>
         <item name="android:paddingEnd">@dimen/default_gap_2x</item>
     </style>
+    <style name="nudge_window_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_animation</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_animation</item>
+    </style>
     <style name="opera_context_menu_header_title_primary_text">
         <item name="android:textSize">@dimen/opera_context_menu_primary_text_size</item>
         <item name="android:textColor">@color/faded_white</item>
@@ -2983,13 +3024,6 @@
         <item name="android:textColor">@color/medium_charcoal</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-    </style>
-    <style name="outgoing_call_prompt">
-        <item name="android:textColor">@color/outgoingPromptText</item>
-        <item name="text">Ringing</item>
-        <item name="textAdornment">@drawable/gray_bell</item>
-        <item name="textRightPadding">@dimen/call_prompt_description_text_padding_horz</item>
-        <item name="upperPaneHeight">@dimen/outgoing_call_prompt_upper_height</item>
     </style>
     <style name="profile_button_plus_icon">
         <item name="android:gravity">center_vertical</item>
@@ -3024,9 +3058,8 @@
     <style name="profile_unblock_friend_button">
         <item name="android:textSize">@dimen/text_size_small</item>
         <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:gravity">center_vertical</item>
         <item name="android:background">@drawable/profile_unblock_friend_button_background</item>
-        <item name="android:paddingTop">@dimen/default_gap_half</item>
-        <item name="android:paddingBottom">@dimen/default_gap_half</item>
         <item name="android:clickable">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -3161,17 +3194,15 @@
         <item name="android:layout_marginTop">@dimen/default_gap</item>
         <item name="android:minWidth">@dimen/alert_dialog_button_min_width</item>
     </style>
-    <style name="sc_alert_dialog_no_blue_button">
-        <item name="android:textColor">@color/alert_dialog_blue_text_thirty_opacity_selector</item>
-        <item name="android:background">@color/transparent</item>
-    </style>
-    <style name="sc_alert_dialog_no_button">
-        <item name="android:textColor">@color/alert_dialog_purple_text_thirty_opacity_selector</item>
-        <item name="android:background">@color/transparent</item>
-    </style>
-    <style name="sc_alert_dialog_no_charcoal_button">
+    <style name="sc_alert_dialog_no_button" parent="@style/sc_alert_dialog_button">
+        <item name="android:textSize">@dimen/text_size_fine_print</item>
         <item name="android:textColor">@color/dark_charcoal</item>
         <item name="android:background">@color/transparent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/default_vertical_gap</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontKerning">0.084</item>
+        <item name="scFontWeight">bold</item>
     </style>
     <style name="sc_alert_dialog_yes_button" parent="@style/sc_alert_dialog_button">
         <item name="android:textColor">@color/white</item>
@@ -3443,9 +3474,10 @@
     </style>
     <style name="tile_secondary_label">
         <item name="android:textSize">@dimen/tile_secondary_text_size</item>
-        <item name="android:textColor">@color/faded_black</item>
+        <item name="android:textColor">@color/secondary_label_color</item>
+        <item name="android:ellipsize">end</item>
         <item name="android:layout_marginTop">-6.0dip</item>
-        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
         <item name="android:fontFamily">@string/typeface_avenir_next_demi_bold</item>
         <item name="android:textAlignment">center</item>
         <item name="scFontWeight">bold</item>
@@ -3459,7 +3491,8 @@
     <style name="tile_title">
         <item name="android:textSize">@dimen/tile_header_text_size</item>
         <item name="android:textColor">@color/faded_black</item>
-        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
         <item name="android:fontFamily">@string/typeface_avenir_next_bold</item>
         <item name="android:textAlignment">center</item>
         <item name="scFontWeight">bolder</item>
@@ -3485,6 +3518,12 @@
         <item name="android:layout_height">@dimen/header_buttons_size</item>
         <item name="android:scaleType">centerInside</item>
         <item name="android:tint">@color/medium_charcoal</item>
+    </style>
+    <style name="v11_hova_icon_container_style" parent="@style/hova_icon_container_style_default">
+        <item name="android:layout_marginLeft">@dimen/v11_hova_icon_container_margin_side</item>
+        <item name="android:layout_marginRight">@dimen/v11_hova_icon_container_margin_side</item>
+        <item name="android:layout_marginBottom">@dimen/v11_hova_icon_container_margin_bottom</item>
+        <item name="icon_and_badge_scale">@dimen/v11_hova_icon_container_size_scale</item>
     </style>
     <style name="venuefilter_subtitle_style">
         <item name="android:textSize">12.0sp</item>

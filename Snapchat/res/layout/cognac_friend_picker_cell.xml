@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cognac_friend_picker_cell_container" android:layout_width="fill_parent" android:layout_height="@dimen/cognac_friend_picker_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.snap.ui.avatar.AvatarView android:id="@id/cognac_friend_picker_cell_thumbnail" android:layout_width="@dimen/cognac_friend_picker_thumbnail_size" android:layout_height="@dimen/cognac_friend_picker_thumbnail_size" android:layout_marginLeft="@dimen/cognac_invite_dismiss_left_margin" android:scaleType="fitCenter" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cognac_friend_picker_cell_text_margin_left">
+            <TextView android:id="@id/cognac_friend_picker_cell_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/black_sixty_opacity" android:id="@id/cognac_friend_picker_cell_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right" android:id="@id/cognac_friend_picker_cell_checkmark" android:background="@drawable/cognac_friend_picker_checkmark_background" android:layout_width="@dimen/cognac_friend_picker_checkmark_size" android:layout_height="@dimen/cognac_friend_picker_checkmark_size" android:layout_marginRight="@dimen/cognac_friend_picker_checkmark_margin_right" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_page" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/settings_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/settings_title" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/settings_items_layout" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

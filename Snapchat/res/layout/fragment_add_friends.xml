@@ -9,7 +9,7 @@
             <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@id/add_friends_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" />
             <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@id/add_friends_search_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" />
         </RelativeLayout>
-        <include android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:layout_below="@id/header_container" layout="@layout/search_bar_layout" />
+        <include android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="@dimen/my_friends_search_height" android:layout_marginLeft="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap_2x" android:layout_marginBottom="@dimen/default_gap_2x" android:layout_below="@id/header_container" layout="@layout/search_bar_layout" />
         <include android:id="@id/section_header_container" layout="@layout/section_header_view" />
     </RelativeLayout>
 </FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cognac_settings" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.ScHeaderView android:id="@id/cognac_settings_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="Webview" custom:showBackArrow="true" custom:showBottomBorder="true" />
+    <WebView android:id="@id/cognac_settings_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -89,10 +89,8 @@
     <string name="ad_slug">廣告</string>
     <string name="ad_slug_text">廣告</string>
     <string name="ad_web_view_loading_text">正在載入...</string>
-    <string name="ad_webview_loading_text">正在載入...</string>
     <string name="add">新增</string>
     <string name="add_a_chat">新增聊天…</string>
-    <string name="add_a_friend_send_to">添加好友</string>
     <string name="add_friend">新增好友</string>
     <string name="add_friend_avatar_icon">這位朋友的大頭貼</string>
     <string name="add_friend_back">加回去</string>
@@ -100,19 +98,13 @@
     <string name="add_friend_button_blocked_text">解除封鎖</string>
     <string name="add_friend_button_text">新增好友</string>
     <string name="add_friend_deep_link_dialog_title">添加好友</string>
-    <string name="add_friend_group_title">新增好友</string>
     <string name="add_friend_ignore">現在不要</string>
     <string name="add_friend_nobitmoji_icon">沒有 Bitmoji 朋友的預設圖片</string>
     <string name="add_friends">添加好友</string>
     <string name="add_friends_button_title">新增好友</string>
     <string name="add_friends_helper_text">新增好友即可傳送 Snap 給他們，還能欣賞他們的故事！</string>
-    <string name="add_friends_invite_contacts">邀請聯絡人</string>
     <string name="add_friends_loading_tips">正在載入...</string>
-    <string name="add_friends_on_snapchat">我的聯絡人中的 Snapchatter</string>
-    <string name="add_friends_on_snapchat_truncated">新增一些 Snapchatter 以開始使用。</string>
-    <string name="add_friends_recommended">快速新增</string>
     <string name="add_friends_search_hint">用戶名、姓名、手機號碼或電子郵件</string>
-    <string name="add_friends_who_added_me">已添加</string>
     <string name="add_member_button_text">添加</string>
     <string name="add_member_error_message">無法將成員添加到群組，請重試！</string>
     <string name="add_member_header_text">添加到群組</string>
@@ -206,6 +198,9 @@
     <string name="arrow_try_lens">試用鏡頭</string>
     <string name="attachment_show_links_copied_dialogue">顯示最近複製的連結？</string>
     <string name="attachment_show_links_copied_dialogue_explanation">Snapchat 需要存取剪貼簿。</string>
+    <string name="attachments_chat_link_action_call">打給 %s</string>
+    <string name="attachments_chat_link_action_save">儲存</string>
+    <string name="attachments_chat_link_action_sms">傳簡訊到 %s</string>
     <string name="audience_match_alert_body">如果停用此功能，你依然會看到類似數量的廣告，但這些廣告與你的興趣關聯的程度可能較低。</string>
     <string name="audience_match_alert_disable">停用</string>
     <string name="audience_match_alert_title">關閉以受眾為基礎的廣告？</string>
@@ -225,11 +220,10 @@
     <string name="batch_capture_save_as_x_snaps">儲存為 %1$d 則 Snap</string>
     <string name="batch_capture_save_cancel">取消</string>
     <string name="batch_capture_save_tool_title">儲存全部</string>
-    <string name="bestfriend_group_title">摯友</string>
     <string name="big_text_style_display_name">大字報</string>
-    <string name="birthday_settings_format">yyyy/MM/dd</string>
     <string name="bitmoji">Bitmoji</string>
     <string name="bitmoji_cancel">取消</string>
+    <string name="bitmoji_change_outfit">更換服飾</string>
     <string name="bitmoji_change_outfit_mine">更換我的服飾</string>
     <string name="bitmoji_connect_message">要連結 Bitmoji 到你的 Snapchat 帳戶 %s 嗎？</string>
     <string name="bitmoji_connect_option">連結</string>
@@ -258,12 +252,6 @@
     <string name="bitmoji_unlinking">正在解除連結…</string>
     <string name="bitmoji_usage">你現在可以在聊天和 Snap 中使用你的 Bitmoji 貼圖了！</string>
     <string name="block">封鎖</string>
-    <string name="block_reason_annoying">很煩人</string>
-    <string name="block_reason_dont_know_whom">我不認識他</string>
-    <string name="block_reason_harassing_me">騷擾我</string>
-    <string name="block_reason_inappropriate_content">不恰當的內容</string>
-    <string name="block_reason_other">其他</string>
-    <string name="blocked_group_title">封鎖</string>
     <string name="bluetooth_access_setting_header">使用藍牙設定</string>
     <string name="bluetooth_access_setting_text">自動和之前設定過的 Spectacles 配對。</string>
     <string name="bluetooth_pair_setting_header">和藍牙裝置配對</string>
@@ -272,10 +260,7 @@
     <string name="browser_geolocation_accept">僅限一次</string>
     <string name="browser_location_access_message">此網站：\"%1$s\" 希望使用你的目前位置。</string>
     <string name="browser_location_access_title">位置存取</string>
-    <string name="browser_warn_proceedtext">若你理解該風險，你可以&lt;font color=#5765BD>在消除風險前&lt;/font>造訪此不安全的網站。</string>
-    <string name="browser_warn_proceedtext_sc_blacklist">如果你瞭解這個風險，你可以繼續 &lt;font color=#5765BD> 造訪這個網站 &lt;/font>。</string>
     <string name="browser_warn_text">Snapchat 使用來自 Google 安全瀏覽服務的資訊，協助警告 Snapchatter ：那些危險網站可能會個資竊取機密或在你的裝置上安裝惡意軟體。來自 Google 安全瀏覽服務的資訊指出此為潛在的惡意網站。</string>
-    <string name="browser_warn_text_sc_blacklist">您嘗試造訪的網站已被檢舉為危險， 它可能被設計為欺騙你披露的個人訊息，或包含可能會影響你設備的惡意軟件。</string>
     <string name="browser_warn_title">這可能是危險網站！</string>
     <string name="browser_warn_visiting_url_primary">警告！</string>
     <string name="browser_warn_visiting_url_proceed">繼續執行</string>
@@ -524,10 +509,90 @@
     <string name="cluster_six">%1$s、 %2$s、 %3$s、 %4$s、 %5$s 和 %6$s</string>
     <string name="cluster_three">%1$s、 %2$s 和 %3$s</string>
     <string name="cluster_two">%1$s和 %2$s</string>
-    <string name="cognac_drawer_tooltip">abcd 12345 與你的好友們！</string>
+    <string name="cognac_active_playing_game_text_multiple_player">%1$s、%2$s 和其他 %3$d 位正在玩</string>
+    <string name="cognac_active_playing_game_text_multiple_player_shortened">%1$s 和其他 %2$d 位正在玩</string>
+    <string name="cognac_active_playing_game_text_one_player">%1$s 正在玩</string>
+    <string name="cognac_active_playing_game_text_three_player">%1$s、%1$s 和 %3$s 正在玩</string>
+    <string name="cognac_active_playing_game_text_two_player">%1$s 和 %2$s 正在玩</string>
+    <string name="cognac_app_profile_multiple_player_text">支援%1$s-%2$d播放器</string>
+    <string name="cognac_chat_drawer_game_name_subtext">按一下即可在聊天中隱藏遊戲圖示</string>
+    <string name="cognac_chat_drawer_header_text">遊戲</string>
+    <string name="cognac_chat_drawer_incompatible_header_text">不支援</string>
+    <string name="cognac_chat_drawer_no_app_state_primary_text">沒有遊戲可玩</string>
+    <string name="cognac_chat_drawer_no_app_state_secondary_text">稍後再來查看</string>
+    <string name="cognac_close_status_message_multiple_player_second_person">你、%1$s 和其他 %2$d 位已玩過 %3$s</string>
+    <string name="cognac_close_status_message_multiple_player_third_person">%1$s、%2$s 和其他 %3$d 位已玩過 %4$s</string>
+    <string name="cognac_close_status_message_non_whitelisted_status_text">你的好友想和你一起玩遊戲，但他們目前還無法在你所在的國家/地區加入此遊戲。我們正努力試著讓他們早點加入。</string>
+    <string name="cognac_close_status_message_one_player_second_person">你已玩過 %1$s</string>
+    <string name="cognac_close_status_message_one_player_third_person">%1$s 已玩過 %2$s</string>
+    <string name="cognac_close_status_message_three_player_second_person">你、%1$s 和 %2$s 已玩過 %3$s</string>
+    <string name="cognac_close_status_message_three_player_third_person">%1$s、%2$s 和 %3$s 已玩過 %4$s</string>
+    <string name="cognac_close_status_message_two_player_second_person">你和 %1$s 已玩過 %2$s</string>
+    <string name="cognac_close_status_message_two_player_third_person">%1$s 和 %2$s 已玩過 %3$s</string>
+    <string name="cognac_continue">繼續</string>
+    <string name="cognac_conversation_subtext">在遊戲中與好友聊天</string>
+    <string name="cognac_drawer_tooltip">與你的好友一起玩遊戲！</string>
+    <string name="cognac_error_something_went_wrong">發生錯誤，請重試。</string>
+    <string name="cognac_exit_confirm">你確定要離開遊戲嗎？</string>
     <string name="cognac_fail_to_launch_app">無法啟動應用程式 %1$s</string>
+    <string name="cognac_fail_to_terminate_app">無法終止應用程式 %1$s</string>
+    <string name="cognac_friend_picker_cell_subtitle">%1$s | %2$s</string>
+    <string name="cognac_friend_picker_dismiss_text">取消</string>
+    <string name="cognac_friend_picker_header_text">邀請朋友</string>
+    <string name="cognac_friend_picker_invite_button_text">邀請</string>
+    <string name="cognac_friend_picker_nudge_description">通知你的好友一起來玩遊戲。</string>
+    <string name="cognac_friend_picker_nudge_friends_text">要用響鈴通知好友嗎？</string>
+    <string name="cognac_friend_picker_ring_text">響鈴</string>
+    <string name="cognac_friend_picker_ringing_text_multiple_players">正在以響鈴通知 %1$s 和其他 %2$d 個好友...</string>
+    <string name="cognac_friend_picker_ringing_text_one_player">用響鈴通知 %1$s...</string>
+    <string name="cognac_friend_picker_ringing_text_two_players">用響鈴通知 %1$s 和 %2$s...</string>
+    <string name="cognac_in_settings_report_description">提供遊戲相關意見</string>
+    <string name="cognac_in_settings_report_headings">遊戲</string>
+    <string name="cognac_in_settings_support_option_audio_notes">語音留言</string>
+    <string name="cognac_in_settings_support_option_bitmoji">Bitmoji</string>
+    <string name="cognac_in_settings_support_option_chats">聊天</string>
+    <string name="cognac_in_settings_support_option_crash">App 會當機</string>
+    <string name="cognac_in_settings_support_option_game_crash">遊戲當機了</string>
+    <string name="cognac_in_settings_support_option_generic_gameplay">遊戲操作</string>
+    <string name="cognac_in_settings_support_option_launching_games">啟動遊戲</string>
+    <string name="cognac_in_settings_support_option_live_audio_chat">即時語音聊天</string>
+    <string name="cognac_in_settings_support_option_notifications">通知</string>
+    <string name="cognac_in_settings_support_option_profile">個人資料</string>
+    <string name="cognac_in_settings_support_option_ringing_friends">致電給好友</string>
+    <string name="cognac_in_settings_support_option_saving_game_progress">儲存遊戲進度</string>
+    <string name="cognac_incompatible_message">哎呀！%1$s 無法在你目前的手機上使用。</string>
+    <string name="cognac_individual_friend_nudge_text">以響鈴通知 %1$s？</string>
+    <string name="cognac_individual_friend_picker_description">發送簡短的響鈴通知給好友，吸引他們加入遊戲。</string>
+    <string name="cognac_launch_app_end_call_alert_description">啟動 %1$s 會結束通話</string>
+    <string name="cognac_launch_app_end_call_alert_yes">繼續</string>
+    <string name="cognac_learn_more">了解更多</string>
+    <string name="cognac_no_conversation_text">正在玩 %1$s</string>
+    <string name="cognac_oops">哎呀！</string>
     <string name="cognac_play">播放</string>
     <string name="cognac_play_again">再玩一次</string>
+    <string name="cognac_rewarded_video_back_message">如果你返回，就無法獲得獎賞！</string>
+    <string name="cognac_rewarded_video_go_back">返回</string>
+    <string name="cognac_ring_tooltip">以響鈴通知你的好友一起玩遊戲</string>
+    <string name="cognac_settings_feedback_i_have_a_suggestion_text">我有個建議</string>
+    <string name="cognac_settings_feedback_i_spotted_a_bug_text">我發現一個程式錯誤</string>
+    <string name="cognac_settings_feedback_text">意見回饋</string>
+    <string name="cognac_settings_game_audio_text">遊戲音訊</string>
+    <string name="cognac_settings_sounds_text">聲音</string>
+    <string name="cognac_settings_support_help_center_text">支援中心</string>
+    <string name="cognac_settings_support_i_have_a_privacy_question_text">我有隱私權的問題</string>
+    <string name="cognac_settings_support_i_need_help_text">我需要協助</string>
+    <string name="cognac_settings_support_report_an_issue_text">回報問題</string>
+    <string name="cognac_settings_support_safety_center_text">安全中心</string>
+    <string name="cognac_settings_support_text">支援</string>
+    <string name="cognac_settings_title_text">設定</string>
+    <string name="cognac_tap_to_play">點擊來播放！</string>
+    <string name="cognac_terminate_title_2">隱藏 %1$s</string>
+    <string name="cognac_third_party_alert_description_with_display_name">玩這個遊戲會讓 %1$s 存取一些你的相關資訊，包括你的 Bitmoji 自拍照和顯示名稱。你的資料使用將受到 %2$s 的約束。進一步了解%3$s。</string>
+    <string name="cognac_third_party_alert_here_link">這裡</string>
+    <string name="cognac_third_party_alert_privacy_policy_link">隱私權政策</string>
+    <string name="cognac_unsupported_title">不支援的裝置</string>
+    <string name="cognac_vpl_tooltip">按一下即可和好友交談！</string>
+    <string name="cognac_webgl_error_message">糟糕！你必須啟用 WebGL 才能玩這個遊戲。></string>
     <string name="coming_soon">即將推出</string>
     <string name="coming_soon_send_batched_media">複選功能即將推出！</string>
     <string name="commerce_checkout_price_limit_exceeded">抱歉，你已超過此商家的購買價格的上限！</string>
@@ -620,18 +685,34 @@
     <string name="common_profile_category_v3_product_brand">產品和品牌</string>
     <string name="common_profile_coming_soon">即將推出</string>
     <string name="common_profile_confirm_unsubscribe">你確定要取消訂閱 $0 嗎？</string>
+    <string name="common_profile_confirm_unsubscribe_title">要取消訂閱嗎？</string>
     <string name="common_profile_copy_lens_link">複製鏡頭連結</string>
     <string name="common_profile_create_snap">建立 Snap</string>
+    <string name="common_profile_definitions_lens_reach">用你的鏡頭播放的使用者總數。</string>
+    <string name="common_profile_definitions_lens_scans">鏡頭分享的次數。</string>
+    <string name="common_profile_definitions_lens_shares">鏡頭分享的總次數。</string>
+    <string name="common_profile_definitions_lens_snap_camera_play_time">Snap 相機使用者使用鏡頭的總時間。</string>
+    <string name="common_profile_definitions_lens_snap_camera_total_view_time">所有 Snap 相機串流媒體和觀眾在整合平台（例如 Twitch）上觀看鏡頭的總時間。</string>
+    <string name="common_profile_definitions_lens_views">Snap、故事貼文和播放的鏡頭瀏覽總和。</string>
     <string name="common_profile_done">完成</string>
     <string name="common_profile_editions">貼文</string>
     <string name="common_profile_email">電子郵件</string>
     <string name="common_profile_episode_number">第 $0 集</string>
     <string name="common_profile_error_screen_description">發生錯誤，請重試！</string>
     <string name="common_profile_error_screen_title">哎呀！</string>
+    <string name="common_profile_hide_confirm_description">系統不會再推薦此創作者的內容給你。</string>
+    <string name="common_profile_hide_confirm_title">要隱藏 $0 嗎？</string>
     <string name="common_profile_hide_from_discover">在 Discover 中隱藏</string>
     <string name="common_profile_hide_show">隱藏 $0</string>
-    <string name="common_profile_lens_engagement">鏡頭參與度</string>
+    <string name="common_profile_lens_metrics">鏡頭指標</string>
+    <string name="common_profile_lens_reach">鏡頭觸及率</string>
+    <string name="common_profile_lens_scans">鏡頭掃描次數</string>
+    <string name="common_profile_lens_shares">鏡頭分享</string>
+    <string name="common_profile_lens_snap_camera_play_time">Snap 相機播放時間</string>
+    <string name="common_profile_lens_snap_camera_total_view_time">Snap 相機總觀看時間</string>
+    <string name="common_profile_lens_views">鏡頭瀏覽次數</string>
     <string name="common_profile_lenses">鏡頭</string>
+    <string name="common_profile_location">位置</string>
     <string name="common_profile_nothing_to_see_here">哎呀，這裡沒東西看。</string>
     <string name="common_profile_notifications_banner">開啟 $0 的通知</string>
     <string name="common_profile_notifications_tooltip">按一下以開啟通知</string>
@@ -649,10 +730,7 @@
     <string name="common_profile_send_to_friend">傳送給好友</string>
     <string name="common_profile_share_show">分享</string>
     <string name="common_profile_shares">分享</string>
-    <string name="common_profile_snap_camera_play_time">Snap 相機播放時間</string>
-    <string name="common_profile_snap_camera_total_view_time">Snap 相機總瀏覽時間</string>
     <string name="common_profile_stories">故事</string>
-    <string name="common_profile_story_engagement">故事交流</string>
     <string name="common_profile_story_notifications">故事通知</string>
     <string name="common_profile_subcategory_v3_actor">演員</string>
     <string name="common_profile_subcategory_v3_apparel_fashion">服飾 / 時尚</string>
@@ -721,7 +799,8 @@
     <string name="common_profile_unsubscribe">取消訂閱</string>
     <string name="common_profile_up_next">敬請期待</string>
     <string name="common_profile_view_insights">瀏覽洞察</string>
-    <string name="common_profile_view_public_info">瀏覽基本資訊</string>
+    <string name="common_profile_view_profile">查看個人資料</string>
+    <string name="common_profile_view_public_info">查看基本資訊</string>
     <string name="common_profile_views">觀看人數</string>
     <string name="common_profile_watch">觀看</string>
     <string name="common_profile_watch_again">再看一次</string>
@@ -731,7 +810,10 @@
     <string name="common_seconds_ago">$0 秒前</string>
     <string name="common_signin_button_text">登入</string>
     <string name="common_signin_button_text_long">使用 Google 帳戶登入</string>
+    <string name="common_today_at_time">今天的 $0</string>
+    <string name="common_tomorrow_at_time">明天的 $0</string>
     <string name="common_weeks_ago">$0 週前</string>
+    <string name="common_yesterday_at_time">昨天的 $0</string>
     <string name="configurable_group">配置</string>
     <string name="confirm_password_field_hint"><i>確認密碼</i></string>
     <string name="confirm_phone_number_call">打電話給我</string>
@@ -749,14 +831,9 @@
     <string name="contacts">聯絡人</string>
     <string name="contacts_not_on_snapchat">邀請加入 Snapchat</string>
     <string name="contacts_on_snapchat">Snapchat 上的好友</string>
-    <string name="context_copied_to_clipboard">已複製到剪貼簿！</string>
     <string name="context_error_message">哎呀！發生錯誤。</string>
-    <string name="context_header_more_info">更多資訊</string>
-    <string name="context_reply_input_hint">傳送聊天內容給 %s</string>
     <string name="context_retry_message">按一下以重試</string>
     <string name="context_show_chat">聊天</string>
-    <string name="context_show_less">部分顯示</string>
-    <string name="context_show_more">顯示更多</string>
     <string name="continue_anyways">繼續</string>
     <string name="continue_next">繼續</string>
     <string name="continue_text">繼續</string>
@@ -782,21 +859,13 @@
     <string name="date_format_mmm_d">M月d日</string>
     <string name="date_format_mmm_d_yyyy">yyyy年M月d日</string>
     <string name="date_time_bullet_point">• %s</string>
-    <string name="day_abbreviated">%d 天</string>
     <string name="day_story_tooltip_text">觀看今天的故事</string>
-    <string name="days_abbreviated">%d 天</string>
     <string name="days_ago">$0 天前</string>
     <string name="days_ago_abbreviated_camera_roll">%1$d 天前來自相機膠卷</string>
     <string name="days_ago_abbreviated_creative_kit">%1$d 天前來自 %2$s</string>
     <string name="days_ago_abbreviated_memories">%1$d 天前來自回憶</string>
     <string name="days_ago_abbreviated_spectacles">%1$d 天前來自 Spectacles</string>
-    <string name="deep_link_attachment_open_app_label_text">點擊以開啟</string>
-    <string name="deep_link_attachment_tap_to_unlock_text">點擊以解鎖</string>
     <string name="deep_link_open_app_format">開啟 %s</string>
-    <string name="deep_link_open_label">開啟</string>
-    <string name="deep_link_opening_google_play_label">Google Play 商店</string>
-    <string name="deep_link_opening_label">開啟中</string>
-    <string name="deep_link_opening_play_label">開啟 Play 商店中…</string>
     <string name="deep_link_title_format">%s 開啟中...</string>
     <string name="deeplink_unavailable_edition_msg">本期選集內容已結束 %s</string>
     <string name="deeplink_unavailable_in_region_msg">你所在的地區無法觀看這個故事。</string>
@@ -848,6 +917,9 @@
     <string name="dont_snap_and_drive_toast">開車不 Snap 。</string>
     <string name="dont_snap_and_drive_warning_slug">開車不 Snap</string>
     <string name="downloading">下載中…</string>
+    <string name="drag_to_hide">拖移來隱藏</string>
+    <string name="drawer_alert_dialog_subtitle_games">在聊天中按一下遊戲方塊與好友一起玩。</string>
+    <string name="drawer_alert_dialog_title_games">為你介紹 Snapchat 上的遊戲</string>
     <string name="easter_egg_hunt_tooltip">點擊以查看排行榜</string>
     <string name="edit_group_err">無法更改群組名稱，請重試！</string>
     <string name="edit_group_name">編輯群組名稱</string>
@@ -859,16 +931,17 @@
 %s 的名稱"</string>
     <string name="edits_not_supported">這則 Snap 有不受支援的編輯內容。</string>
     <string name="edits_not_supported_dismiss">取消</string>
+    <string name="effective_request_locale_code">zh-TW</string>
     <string name="egg_hunt_acquisition_denied">我們找不到你！請停用任何可能會改變你所在 GPS 地點的 app 或程式。</string>
     <string name="egg_hunt_acquisition_request_fail">哎呀！發生錯誤。請試著重新收集彩蛋！</string>
     <string name="egg_hunt_egg_too_far_label">太遠了，靠近一點 ！</string>
-    <string name="egg_hunt_max_score">999 分以上</string>
+    <string name="egg_hunt_max_score">×9999</string>
     <string name="egg_hunt_score_display">×%s</string>
-    <string name="egg_hunt_welcome_body">"遊戲已經開始 — 4 月 1 日之前盡量找出所有彩蛋！
+    <string name="egg_hunt_welcome_body">"遊戲已經開始 — 4 月 21 日之前盡量找出所有彩蛋！
 
  只要在地圖上按一下附近的彩蛋，就能把蛋加到你的籃子裡。
 
- 請記得：保持安全，留意身邊的環境，不要闖入禁區，還有玩得開心！"</string>
+ 小叮嚀：保持安全，留意身邊的環境，不要闖入禁區，還有玩得開心！"</string>
     <string name="egg_hunt_welcome_title">Snapchat 找彩蛋遊戲開始</string>
     <string name="email_field_hint"><i>電子郵件地址</i></string>
     <string name="email_label">電子郵件</string>
@@ -947,6 +1020,7 @@
     <string name="failed_to_send">傳送失敗</string>
     <string name="feature_unsupported_in_alpha">抱歉，Snapchat Alpha 尚未支援此功能</string>
     <string name="featured">精選</string>
+    <string name="feed_join">加入</string>
     <string name="feed_loading">正在載入...</string>
     <string name="feed_title">好友</string>
     <string name="ff_add_contacts_button">添加聯絡人</string>
@@ -1092,6 +1166,7 @@
     <string name="fragment_context_context_hint">請讓我們知道！</string>
     <string name="fragment_show_snap_id">顯示 SNAP ID</string>
     <string name="fragment_title_in_app_report">檢舉</string>
+    <string name="friend_active_secondary_text">正在玩 %1$s</string>
     <string name="friend_card_add_contacts_button">所有聯絡人</string>
     <string name="friend_card_add_snapcode_button">掃描 Snap 代碼</string>
     <string name="friend_cell_added">已添加</string>
@@ -1100,18 +1175,13 @@
 立即和 %s 一起建立群組！
  此功能即將推出！"</string>
     <string name="friend_profile_shared_group_header_text">已分享的群組</string>
-    <string name="friend_story_notification_title_update">%d 位好友新增了他們的故事！</string>
-    <string name="friend_story_notification_title_watch">觀賞故事，來自</string>
     <string name="friend_suggest_new_contact_no_username">新聯絡人</string>
     <string name="friends_in_this_snap_header">在這則 Snap 中的好友</string>
     <string name="friends_only">只有朋友</string>
-    <string name="friends_search_section_my_address_book">從聯絡人新增</string>
-    <string name="friends_search_section_my_friends">我的好友</string>
-    <string name="friends_search_section_official_stories">官方故事</string>
-    <string name="friends_search_section_top_stories">熱門使用者</string>
-    <string name="friends_search_section_username">以用戶名新增</string>
-    <string name="friends_stories_title">最近更新</string>
     <string name="friendship_profile_attachments_add_snapchatter">新增</string>
+    <string name="friendship_profile_attachments_empty_chat_attachments_section">聊天中儲存的連結、地址、用戶名和其他附件將顯示在此處。</string>
+    <string name="friendship_profile_attachments_section_title">聊天附件</string>
+    <string name="friendship_profile_attachments_view_more_button">瀏覽更多</string>
     <string name="full_network_header">完整網路存取</string>
     <string name="full_network_text">傳送並接收 Snap、聊天內容及其他資料。</string>
     <string name="gallery_confirm_passcode">確認通行碼</string>
@@ -1158,17 +1228,10 @@
     <string name="gallery_save_changes_title">儲存變更？</string>
     <string name="gallery_saving_options_description_save_space">儲存到「回憶」而非相機膠卷可節省你手機的儲存空間。</string>
     <string name="gallery_saving_options_title">儲存 Snap？</string>
-    <string name="gallery_tab_highlights">精彩畫面</string>
-    <string name="gallery_tab_name_all">全部</string>
     <string name="gallery_tab_name_camera_roll">相機膠卷</string>
-    <string name="gallery_tab_name_context_menu">內容選單</string>
-    <string name="gallery_tab_name_laguna">Spectacle</string>
     <string name="gallery_tab_name_my_eyes_only">私人閱覽</string>
-    <string name="gallery_tab_name_screenshots">截圖</string>
-    <string name="gallery_tab_name_search">搜尋</string>
     <string name="gallery_tab_name_snaps">SNAP</string>
     <string name="gallery_tab_name_stories">故事</string>
-    <string name="gallery_tab_name_videos">影片</string>
     <string name="gallery_ultra_secure_desc">此模式將使用強化密碼。如果你忘記密碼短句，Snapchat 將無法為你復原密碼或你的私人 Snap。</string>
     <string name="gallery_ultra_secure_mode">使用密碼短句</string>
     <string name="gauge_altitude_unit_feet">呎</string>
@@ -1186,13 +1249,13 @@
     <string name="general_ringing_channel_description" />
     <string name="general_unknown_audio_channel">其他通知</string>
     <string name="general_unknown_audio_channel_description" />
-    <string name="generic_error_msg">發生錯誤。</string>
     <string name="generic_push_sound">generic_push</string>
     <string name="ghost_mode_is_on">噗噗鬼模式已開啟</string>
     <string name="giphy_sticker_intro">新功能！尋找 GIF 動畫！</string>
     <string name="give_access">允許</string>
     <string name="go_back">返回</string>
     <string name="group_action_menu_edit_name">編輯群組名稱</string>
+    <string name="group_active_secondary_text">遊戲開始 - %1$s</string>
     <string name="group_display_name_me">%s (我)</string>
     <string name="group_member_accept_friend_text">接受</string>
     <string name="group_member_add_friend_checked_text">已添加</string>
@@ -1238,9 +1301,6 @@
     <string name="hide_show">隱藏 $0</string>
     <string name="highlight_story_tooltip_text">瀏覽故事中的「精彩畫面」</string>
     <string name="hour">%d 小時前</string>
-    <string name="hour_abbreviated">%d 小時</string>
-    <string name="hour_ago_abbreviated">%d 小時之前</string>
-    <string name="hours_abbreviated">%d 小時</string>
     <string name="hours_ago">$0 小時前</string>
     <string name="hours_ago_abbreviated">%d 小時之前</string>
     <string name="hours_ago_abbreviated_camera_roll">%1$d 小時前來自相機膠卷</string>
@@ -1252,6 +1312,8 @@
     <string name="identity_empty_find_friends_button">尋找好友</string>
     <string name="identity_empty_image_description">圖片為空白狀態</string>
     <string name="ignore_button">忽略</string>
+    <string name="image_picker_no_faces">你裝置的照片中找不到有臉部的照片。</string>
+    <string name="image_picker_no_photos">找不到照片。</string>
     <string name="impala_accept">接受</string>
     <string name="impala_action_and_thriller_genre_fans">動作驚悚影迷</string>
     <string name="impala_activity">活動</string>
@@ -1307,7 +1369,7 @@
     <string name="impala_comics_and_animation_fans">動漫迷</string>
     <string name="impala_company_enterprise">公司 / 企業</string>
     <string name="impala_concert_and_festival_goers">演唱會和音樂祭迷</string>
-    <string name="impala_confirm_deactivate">停用公開個人資料？</string>
+    <string name="impala_confirm_deactivate">你確定要停用此公開個人資料嗎？</string>
     <string name="impala_confirm_remove_me">你確定要從這則公開個人資料中移除自己嗎？被刪除之後，就必須請管理者再次將你新增回來。</string>
     <string name="impala_console_and_pc_gamers">電競重度機台玩家</string>
     <string name="impala_continue">繼續</string>
@@ -1320,9 +1382,10 @@
     <string name="impala_crime_and_mystery_genre_fans">懸疑推理影迷</string>
     <string name="impala_cycling_enthusiasts">鐵馬好手</string>
     <string name="impala_dance_and_electronic_music_fans">舞曲和電音樂迷</string>
+    <string name="impala_day">$0 天</string>
+    <string name="impala_days">$0 天</string>
     <string name="impala_days_ago_short">$0 天前</string>
     <string name="impala_deactivate">停用</string>
-    <string name="impala_deactivate_disclaimer">你的個人資料將被刪除，若你之後改變心意也無法還原此操作。</string>
     <string name="impala_deactivate_profile">停用公開個人資料</string>
     <string name="impala_definitions_action_and_thriller_genre_fans">愛看動作和驚悚類型的電影電視節目</string>
     <string name="impala_definitions_adventure_seekers">對極限運動、冒險旅行和刺激的活動充滿熱情</string>
@@ -1395,6 +1458,7 @@
     <string name="impala_definitions_liquor_and_spirits_drinkers">會去酒吧和小酒館，也會 Snap 關於烈酒品牌的內容。本類別有年齡限制</string>
     <string name="impala_definitions_luxury_shoppers">會去精品服裝和配件商店，並與高端時尚媒體和廣告互動</string>
     <string name="impala_definitions_math_and_science_enthusiasts">熱愛科學、數學和工程。可能專注於 STEM 領域，或密切關注科技媒體報導</string>
+    <string name="impala_definitions_mens_lifestyle">經常關注有關男性生活方式的媒體，尤其是裝備、運動、女士、男性健康和造型風格</string>
     <string name="impala_definitions_motor_sports_fans">對 NASCAR、摩托車越野賽和其他賽車運動充滿熱情</string>
     <string name="impala_definitions_moviegoers">每個月看一次以上的電影</string>
     <string name="impala_definitions_music_fans">熱愛音樂和參加音樂會或演唱會，包括音樂媒體和音樂影片</string>
@@ -1454,11 +1518,12 @@
     <string name="impala_do_it_yourselfers">DIY 達人</string>
     <string name="impala_drama_genre_fans">劇情片影迷</string>
     <string name="impala_duration_secs_short">秒</string>
+    <string name="impala_edit">編輯</string>
     <string name="impala_edit_image">編輯圖片</string>
     <string name="impala_edit_profile">編輯個人資料</string>
     <string name="impala_email">電子郵件</string>
     <string name="impala_energy_drink_consumers">能量飲料消費者</string>
-    <string name="impala_engaged_audience">觀眾參與度</string>
+    <string name="impala_engaged_story_audience">參與的故事觀眾</string>
     <string name="impala_engagement">參與度</string>
     <string name="impala_family_genre_fans">家庭片影迷</string>
     <string name="impala_family_travelers">家庭式旅行家</string>
@@ -1482,22 +1547,29 @@
     <string name="impala_hockey_fans">冰上曲棍球迷</string>
     <string name="impala_home_decoristas">居家風格大師</string>
     <string name="impala_horror_genre_fans">恐怖片影迷</string>
-    <string name="impala_host_account_role_cannot_update">$0 擁有 $1 的個人檔案，無法移除管理者身分。</string>
+    <string name="impala_host_account_role_cannot_update">$0 擁有 $1 的個人資料，無法移除。</string>
+    <string name="impala_hour">$0 小時</string>
+    <string name="impala_hours">$0 小時</string>
     <string name="impala_hours_ago_short">$0 小時前</string>
     <string name="impala_ignore">忽略</string>
     <string name="impala_indie_and_alternative_music_fans">獨立和另類樂迷</string>
     <string name="impala_indie_and_foreign_film_fans">獨立和外語片迷</string>
     <string name="impala_insights">洞見</string>
+    <string name="impala_interests">興趣</string>
     <string name="impala_invalid_value_warning">*特定值無效。</string>
     <string name="impala_investors_and_entrepreneurs">投資人和企業家</string>
     <string name="impala_invited_by">邀請者：$0</string>
     <string name="impala_jazz_and_blues_fans">爵士藍調樂迷</string>
     <string name="impala_just_now">剛剛</string>
+    <string name="impala_last_n_days">過去 $0 天</string>
     <string name="impala_latin_music_fans">拉美樂迷</string>
     <string name="impala_learn_more">了解更多</string>
+    <string name="impala_learn_more_audience">在開始貼文到你的公眾故事之後，進一步了解你的觀眾。</string>
+    <string name="impala_learn_more_audience_with_past_stories">一旦發佈到公眾故事之後，你就可看到洞察內容！注意：洞察可能需要最多 28 天才會顯示。</string>
     <string name="impala_leave_role">離開 $0</string>
     <string name="impala_leave_role_confirm">確定要離開 $0？</string>
     <string name="impala_lifestyle_categories">生活風格類別與 Snapchat 平均比較</string>
+    <string name="impala_lifetime">一輩子</string>
     <string name="impala_liquor_and_spirits_drinkers">烈酒愛好者</string>
     <string name="impala_location">位置</string>
     <string name="impala_luxury_shoppers">奢侈品消費者</string>
@@ -1508,10 +1580,13 @@
     <string name="impala_men">男性</string>
     <string name="impala_mens_lifestyle">男士生活風格</string>
     <string name="impala_millions">$0 百萬</string>
+    <string name="impala_minute">$0 分鐘</string>
+    <string name="impala_minutes">$0 分鐘</string>
     <string name="impala_minutes_ago_short">$0 分鐘前</string>
     <string name="impala_motor_sports_fans">摩托車賽事迷</string>
     <string name="impala_moviegoers">重度影迷</string>
     <string name="impala_music_fans">樂迷</string>
+    <string name="impala_n_day_summary">$0 天的摘要</string>
     <string name="impala_new_snaps_are_added">新 Snap 已新增</string>
     <string name="impala_news_watchers">新聞閱聽者</string>
     <string name="impala_notification_batch_posted_to_story">$0 新增了 $1 則 Snap 到 $2 的公眾故事</string>
@@ -1575,6 +1650,7 @@
     <string name="impala_punk_and_metal_fans">龐克和金屬樂迷</string>
     <string name="impala_reach">觸及率</string>
     <string name="impala_reality_tv_fans">實境秀粉絲</string>
+    <string name="impala_recent_resource">最近的 $0</string>
     <string name="impala_reject_role_invite_confirmation">確定要忽略這個邀請？</string>
     <string name="impala_remove">移除</string>
     <string name="impala_remove_me">移除我</string>
@@ -1599,15 +1675,22 @@
     <string name="impala_role_moderated_story_contributor">故事貢獻者</string>
     <string name="impala_role_moderated_story_contributor_definition">所有發佈到 $0 公開故事的 Snap 都必須經由管理者或協作者同意。</string>
     <string name="impala_role_moderated_story_contributor_with_article">一位故事貢獻者</string>
+    <string name="impala_role_profile_owner">個人資料擁有者</string>
+    <string name="impala_role_profile_owner_definition">此個人資料擁有者可以管理 $0 的公開個人資料、新增或刪除公開故事中的任何 Snap、分配角色和瀏覽「洞察」。</string>
     <string name="impala_role_story_contributor">故事貢獻者</string>
     <string name="impala_role_story_contributor_definition">故事貢獻者可以瀏覽所有 $0 過去的 Snap，他們可以新增、刪除並瀏覽自己發表的 Snap 貼文「洞察」。</string>
     <string name="impala_role_story_contributor_with_article">一位故事貢獻者</string>
     <string name="impala_romance_and_rom_com_fans">浪漫喜劇迷</string>
     <string name="impala_running_enthusiasts">路跑好手</string>
+    <string name="impala_scans">掃描次數</string>
     <string name="impala_sci_fi_and_fantasy_fans">科幻奇幻迷</string>
+    <string name="impala_second">$0 秒鐘</string>
+    <string name="impala_seconds">$0 秒鐘</string>
     <string name="impala_seconds_ago_short">$0 秒前</string>
+    <string name="impala_see_more">看更多</string>
     <string name="impala_settings">設定</string>
     <string name="impala_share_profile">分享個人資料</string>
+    <string name="impala_shares">分享</string>
     <string name="impala_sharp_dressed_men">時尚型男</string>
     <string name="impala_shoppers">購物者</string>
     <string name="impala_shopping_mall_shoppers">購物中心消費者</string>
@@ -1615,7 +1698,8 @@
     <string name="impala_show_story_attribution_description">讓 Snapchatter 知道你新增了哪一則 Snap 到公開故事中。</string>
     <string name="impala_shows_seasons_episode_short">S%1$d • E%2$d</string>
     <string name="impala_skip">略過</string>
-    <string name="impala_snapchat_lifestyle_categories">Snapchat 生活方式類別</string>
+    <string name="impala_snap_camera_play_time">Snap 相機播放時間</string>
+    <string name="impala_snap_camera_total_view_time">Snap 相機總觀看時間</string>
     <string name="impala_snapchat_username">Snapchat 用戶名</string>
     <string name="impala_sneakerheads">球鞋迷</string>
     <string name="impala_snow_sport_enthusiasts">冬季運動迷</string>
@@ -1643,8 +1727,11 @@
     <string name="impala_theme_park_visitors">主題樂園玩家</string>
     <string name="impala_thousands">$0 千</string>
     <string name="impala_time_seconds_short">$0 秒</string>
-    <string name="impala_top_interest">熱門主題</string>
+    <string name="impala_top_interest">熱門興趣</string>
+    <string name="impala_top_interests">熱門興趣</string>
+    <string name="impala_top_interests_description">這是過去 28 天內你的觀眾與所有興趣類別的 Snapchat 平均值相比較的情況。</string>
     <string name="impala_top_location">熱門地點</string>
+    <string name="impala_total_view_time">總觀看時間</string>
     <string name="impala_toy_shoppers">玩具消費者</string>
     <string name="impala_travel_enthusiasts">旅行家</string>
     <string name="impala_turn_off_story_notifications">關閉故事通知</string>
@@ -1661,6 +1748,7 @@
     <string name="impala_vegans_and_organic_foodies">素食和有機飲食美食家</string>
     <string name="impala_view_all_stories">瀏覽所有故事</string>
     <string name="impala_view_time">觀看時間</string>
+    <string name="impala_views">觀看次數</string>
     <string name="impala_vs_previous_days">對比前 $0 天</string>
     <string name="impala_water_sport_enthusiasts">水上運動迷</string>
     <string name="impala_website">網站</string>
@@ -1675,6 +1763,7 @@
     <string name="impala_world_music_fans">世界音樂樂迷</string>
     <string name="impala_yes">是</string>
     <string name="impala_yoga_enthusiasts">瑜伽大師</string>
+    <string name="impala_you_have_not_posted_to_story">你還沒貼文到公眾故事。</string>
     <string name="impala_zip_code">郵遞區號</string>
     <string name="import_interrupted">匯入中斷</string>
     <string name="importing">正在匯入 Snap...</string>
@@ -1701,10 +1790,10 @@
     <string name="interests_tags_subtitle">Snapchat 內容興趣標籤是用來個人化 Snapchat 的內容，例如出現在你 Discover 動態中的故事。</string>
     <string name="interests_tags_title">內容興趣標籤</string>
     <string name="interests_update_failed_message">發生錯誤！請重試。</string>
-    <string name="internal_server_error">內部伺服器發生錯誤。</string>
     <string name="invite_friend_message_body_with_deep_link" formatted="false">加我為 Snapchat 好友！用戶名： %s https://www.snapchat.com/add/%s</string>
     <string name="invite_friend_message_body_with_invite_link" formatted="false">加我為 Snapchat 好友！用戶名：%s %s</string>
     <string name="invite_to_snapchat">邀請加入 Snapchat</string>
+    <string name="join">加入</string>
     <string name="just_now">剛剛</string>
     <string name="just_now_camera_roll">剛剛來自相機膠卷</string>
     <string name="just_now_creative_kit">剛剛來自 %1$s</string>
@@ -1784,6 +1873,7 @@
     <string name="last_seen">%1$s 最後看過</string>
     <string name="last_snap_button_subtext">%1$s 和 %2$s 位其他好友</string>
     <string name="learn_more">了解更多</string>
+    <string name="leave_game">離開遊戲</string>
     <string name="leave_group">離開群組</string>
     <string name="leave_group_dialog_confirm">離開</string>
     <string name="leave_group_dialog_description">你傳的 Snap 和聊天會在群組中清除。</string>
@@ -1834,11 +1924,12 @@
     <string name="lens_cta_watch_more">觀看更多</string>
     <string name="lens_cta_watch_trailer">觀看預告</string>
     <string name="lens_cta_watch_video">觀看影片</string>
+    <string name="lens_explorer_title">搜尋</string>
     <string name="lens_hint_blink">眨眼</string>
     <string name="lens_hint_blow_a_kiss">來個飛吻</string>
     <string name="lens_hint_come_closer">靠近一點</string>
     <string name="lens_hint_do_not_smile">忍住笑</string>
-    <string name="lens_hint_do_not_try_with_a_friend">不要與你的好友嘗試</string>
+    <string name="lens_hint_do_not_try_with_a_friend">別與你的好友嘗試</string>
     <string name="lens_hint_draw_with_your_finger">用手指畫畫</string>
     <string name="lens_hint_face_swap">換臉</string>
     <string name="lens_hint_face_swap_camera_roll">點擊照片來換臉</string>
@@ -1858,7 +1949,7 @@
     <string name="lens_hint_open_your_mouth">張開嘴</string>
     <string name="lens_hint_open_your_mouth_again">再張開嘴</string>
     <string name="lens_hint_open_your_mouth_voice_changer">張開嘴變聲器</string>
-    <string name="lens_hint_press_and_hold_for_song_info">按住以瞭解歌曲資訊</string>
+    <string name="lens_hint_press_and_hold_for_song_info">按住以取得歌曲資訊</string>
     <string name="lens_hint_raise_eyebrows_or_open_mouth">"挑挑眉
 或是
 張開嘴"</string>
@@ -1876,8 +1967,8 @@
     <string name="lens_hint_tap_surface_to_place">按一下表面來放置</string>
     <string name="lens_hint_try_friend">找好友試試看</string>
     <string name="lens_hint_try_rear_camera">用後置相機鏡頭試試看</string>
-    <string name="lens_hint_try_rear_camera_tooltip">試試背後相機</string>
-    <string name="lens_hint_voice_changer">變音器</string>
+    <string name="lens_hint_try_rear_camera_tooltip">試試後置相機</string>
+    <string name="lens_hint_voice_changer">變聲器</string>
     <string name="lens_hint_warning_please_be_aware_of_your_surroundings">"請注意
 你周圍的環境"</string>
     <string name="lens_loading">正在載入…</string>
@@ -1889,9 +1980,8 @@
     <string name="lens_sponsored_slug_sponsored">贊助商</string>
     <string name="lens_string_location_ar_location_cannot_be_determined_desc">請確認 Snapchat 可以取得你的位置來使用此鏡頭。</string>
     <string name="lens_string_location_ar_location_cannot_be_determined_title">無法確定你的位置</string>
-    <string name="lens_tooltip_swipe_to_try_another_lens">滑動來試用其他鏡頭</string>
-    <string name="lens_tooltip_tap_or_hold_for_snap">"按一下以拍照 
-按住以拍攝影片"</string>
+    <string name="lens_tooltip_swipe_to_try_another_lens">&lt;b>滑動&lt;/b>來試用其他鏡頭</string>
+    <string name="lens_tooltip_tap_or_hold_for_snap">&lt;b>按一下&lt;/b>來拍照。&lt;br>&lt;b>按住&lt;/b>即可拍攝影片。</string>
     <string name="lens_tooltip_tap_to_use_lens_on_lens_button">按一下這裡來使用鏡頭！</string>
     <string name="lenses_discover">發現鏡頭！</string>
     <string name="lifestyle_categories_description">Snapchat 會推測你的興趣，以更貼切地為你建議內容，打造專屬的體驗。</string>
@@ -1910,6 +2000,7 @@
     <string name="location_text">Snapchat 會透過你的位置來使用濾鏡、搜尋、Snap 地圖、廣告等功能。</string>
     <string name="lock_screen_chat_button">聊天</string>
     <string name="lock_screen_group_is_calling">%1$s 正在開始聊天...</string>
+    <string name="lock_screen_group_is_video_calling">%1$s 正在撥打視訊…</string>
     <string name="lock_screen_keyguard_error">解鎖螢幕時發生錯誤</string>
     <string name="lock_screen_session_created_error">無法建立通話</string>
     <string name="locked_help_unlock"><a href="https://www.snapchat.com/unlock">幫我解除鎖定帳戶</a></string>
@@ -1994,8 +2085,9 @@
     <string name="map_status_create_a_bitmoji_subtitle">Bitmoji 可以幫你客製你的個人狀態</string>
     <string name="map_status_create_a_bitmoji_title">按一下來製作你的 Bitmoji</string>
     <string name="map_status_current_status_detail_page_header">觀看人數</string>
-    <string name="map_status_current_status_header">你目前的狀態</string>
+    <string name="map_status_current_status_header">觀看次數</string>
     <string name="map_status_delete">刪除</string>
+    <string name="map_status_empty_passport_title">設定你的「狀態」，開始看「地標」中的內容！</string>
     <string name="map_status_empty_status">看來你目前對什麼都沒興趣</string>
     <string name="map_status_header">你想做什麼？</string>
     <string name="map_status_hint_ghost_mode">分享你的位置，即可與好友分享自己的狀態。</string>
@@ -2123,10 +2215,7 @@
     <string name="max_group_member_dialog_description">群組只能容納 %s 位 Snapchatter。</string>
     <string name="max_group_member_dialog_title">全滿！</string>
     <string name="me">我</string>
-    <string name="me_group_title">我</string>
     <string name="me_hint"><i> (我)</i></string>
-    <string name="media_drawer_tab_name_camera_roll">相機膠卷</string>
-    <string name="media_drawer_tab_name_memories">回憶</string>
     <string name="member_in_group">已在群組內</string>
     <string name="member_sharing_location">1 個好友分享位置</string>
     <string name="members_sharing_location">%1$d 個好友分享位置</string>
@@ -2159,6 +2248,7 @@
     <string name="memories_meo_unlock_options">選項</string>
     <string name="memories_new_snaps">近期新增內容</string>
     <string name="memories_no_snaps_to_show">你沒有任何 Snap :(</string>
+    <string name="memories_not_now">現在不要</string>
     <string name="memories_save_destination_error">無法設定儲存位置。</string>
     <string name="memories_save_error">儲存失敗 :(</string>
     <string name="memories_settings_save">儲存到指定位置</string>
@@ -2174,6 +2264,8 @@
     <string name="memories_submit">提交</string>
     <string name="memories_tab_name_snap_pro">Pro</string>
     <string name="memories_title">回憶</string>
+    <string name="mention_sticker_at">\@</string>
+    <string name="mention_sticker_mention_hint">標記</string>
     <string name="message_notifications">訊息通知</string>
     <string name="messaging_group">傳送訊息</string>
     <string name="messaging_settings_clear_confirm">確定要清除此對話？</string>
@@ -2189,9 +2281,6 @@
     <string name="mini_profile_action_menu_6_text">有關廣告</string>
     <string name="mini_profile_action_menu_7_text">排行榜</string>
     <string name="mini_profile_share_story">分享故事</string>
-    <string name="minute_abbreviated">%d 分鐘</string>
-    <string name="minute_ago_abbreviated">%d 分鐘之前</string>
-    <string name="minutes_abbreviated">%d 分鐘</string>
     <string name="minutes_ago">$0 分鐘前</string>
     <string name="minutes_ago_abbreviated">%d 分鐘之前</string>
     <string name="minutes_ago_abbreviated_camera_roll">%1$d 分鐘前來自相機膠卷</string>
@@ -2199,6 +2288,7 @@
     <string name="minutes_ago_abbreviated_memories">%1$d 分鐘前來自回憶</string>
     <string name="minutes_ago_abbreviated_spectacles">%1$d 分鐘前來自 Spectacles</string>
     <string name="mischief_active_talk">與 %s 開始通話</string>
+    <string name="mischief_active_video_call">視訊通話啟動 - %s</string>
     <string name="mischief_group_friends_notification">在分享位置之前，你必須和群組內所有人成為好友。</string>
     <string name="mischief_map_not_friends_yet">添加 %1$s 為好友來查看他們的位置</string>
     <string name="mischief_search_friend_header_name">好友</string>
@@ -2269,21 +2359,18 @@ Z
     <string name="my_story_posts_settings_off_long">不要儲存我的故事發表內容</string>
     <string name="my_story_posts_settings_off_short">不要儲存</string>
     <string name="name_group_prompt">為群組命名</string>
-    <string name="needs_love_group_title">好友想你了</string>
-    <string name="network_error_msg">請檢查你的網路連線。</string>
     <string name="network_setting_header">更換網路連線</string>
     <string name="network_setting_text">透過 Wi-Fi 直接連線至 Spectacles。</string>
     <string name="new_card_badge_label">新</string>
     <string name="new_chat">新聊天訊息</string>
     <string name="new_chats_message">新聊天訊息</string>
-    <string name="new_friends">新好友</string>
     <string name="new_group_button_text">新群組</string>
     <string name="new_password_field_hint"><i>新密碼</i></string>
     <string name="next">下一步</string>
     <string name="no">否</string>
     <string name="no_blocked_snapchatters">沒有封鎖任何 Snapchatter</string>
     <string name="no_connection_notification_message">沒有連線</string>
-    <string name="no_internet_connection">沒有網路連線</string>
+    <string name="no_internet_connection">沒有網路連線。</string>
     <string name="no_network_connection">沒有網路連線</string>
     <string name="no_new_friends_text">沒有新好友 %s</string>
     <string name="no_results_text">沒有結果 %s</string>
@@ -2421,7 +2508,6 @@ Snap 地圖"</string>
     <string name="nyc_setup_prompt_body">用手指向內輕捏相機螢幕就可開啟 Snap 地圖！</string>
     <string name="nyc_setup_prompt_title">先設定 Snap 地圖</string>
     <string name="nyc_share_location_location_with_select_friends">與特定好友分享你的位置！</string>
-    <string name="nyc_sharing_friends">和你分享位置</string>
     <string name="nyc_sharing_friends_group_title">和你分享位置</string>
     <string name="nyc_sharing_group_confirm_dialog_subtitle">你之前封鎖過這裡的某些好友，不讓他們在地圖上看到你。</string>
     <string name="nyc_sharing_group_confirm_dialog_title">你確定嗎？</string>
@@ -2462,7 +2548,6 @@ Snap 地圖"</string>
     <string name="one_tap_login_opt_in_dialog_description">你將無需輸入用戶名或密碼即可登入此裝置。</string>
     <string name="one_tap_login_opt_in_dialog_description_alt">你是否想在此裝置上儲存登入資訊？你將無需輸入用戶名或密碼即可登入此裝置。</string>
     <string name="one_tap_login_opt_in_dialog_title">儲存登入資訊</string>
-    <string name="oops_exclamation">哎呀！</string>
     <string name="open_mobile_settings">開啟設定</string>
     <string name="open_settings">開啟設定</string>
     <string name="opened">已開啟</string>
@@ -2487,7 +2572,6 @@ Snap 地圖"</string>
     <string name="opt_out_action_success_notification">你將不會收到任何來自 %s 的通知</string>
     <string name="order_inquiry_text">對這個訂單有問題嗎？請聯絡業務代表：</string>
     <string name="our_story">我們的故事</string>
-    <string name="our_story_header">我們的故事</string>
     <string name="pair_new_specs">和新 Spectacle 配對</string>
     <string name="pair_now">立即配對</string>
     <string name="pair_with_specs">和 Spectacle 配對？</string>
@@ -2570,7 +2654,6 @@ Snap 地圖"</string>
     <string name="payments_v2_create_card_invalid_zip">請提供有效的郵遞區號。</string>
     <string name="payments_zip_code">帳單郵遞區號</string>
     <string name="pending">等候中</string>
-    <string name="pending_group_title">等候中</string>
     <string name="pending_invitations">等待確認的邀請</string>
     <string name="pending_uploads_logout_confirm">稍等一下！</string>
     <string name="percent_progress_view_text">%1$d%%</string>
@@ -2595,17 +2678,24 @@ Snap 地圖"</string>
     <string name="place_autocomplete_clear_button">清除搜尋</string>
     <string name="place_autocomplete_search_hint">搜尋</string>
     <string name="place_order_failed_message">哎呀！有錯誤發生！別擔心 - 並未向你的卡收費。請再下訂單一次。</string>
+    <string name="play_with_error_alert_text">錯誤！</string>
+    <string name="play_with_error_description">發生錯誤，請重試。</string>
+    <string name="play_with_max_player_alert_text">遊戲只允許最多 %1$d 位玩家參加</string>
+    <string name="play_with_one_group_alert_text">你只能選一個群組</string>
+    <string name="play_with_one_type_alert_text">你只能選擇一個群組或一些好友，且不能同時選擇</string>
+    <string name="play_with_search_bar_text">一起玩的對象是...</string>
     <string name="please_check_your_connection">請確認你的連線狀態並重試。</string>
     <string name="political_ad">政治廣告</string>
     <string name="political_ad_paid_for_by_format">由 %s 贊助</string>
     <string name="popular_story_text">熱門故事</string>
+    <string name="post_accept_chat">聊天</string>
+    <string name="post_accept_say_hi">說聲嗨！</string>
     <string name="post_button_hint_label_text">故事</string>
     <string name="preparing_update">準備更新…</string>
     <string name="press_to_confirm">按一下 Spectacles 上的按鈕以繼續。</string>
     <string name="press_to_replay">按住以重新播放</string>
     <string name="prevent_sleeping_header">防止手機進入睡眠</string>
     <string name="prevent_sleeping_text">當你使用 Snapchat 時，你的螢幕不會自動關閉。</string>
-    <string name="preview">預覽</string>
     <string name="preview_save_failed">儲存失敗 :(</string>
     <string name="preview_save_success">已儲存！</string>
     <string name="previously_attached_remove_button">移除</string>
@@ -2630,7 +2720,6 @@ Happy Snapping！"</string>
     <string name="profile_quick_add_header">為你推薦</string>
     <string name="profile_quick_add_post_add">已新增</string>
     <string name="public_story_text">公眾故事</string>
-    <string name="quick_add">快速新增</string>
     <string name="quiet_group">靜音</string>
     <string name="rainy">下雨</string>
     <string name="rating_sticker_onboarding_tooltip_text">按一下來評分！</string>
@@ -2724,32 +2813,13 @@ Happy Snapping！"</string>
     <string name="reason_user_theyve_been_hacked">他們的帳戶被盜用</string>
     <string name="receive_data_header">從網際網路接收資料</string>
     <string name="receive_data_text">接收 Snapchatter 所傳送的 Snap、聊天及其他內容。</string>
-    <string name="recent_group_title">最近</string>
     <string name="register_to_vote_header">18 歲生日快樂</string>
     <string name="register_to_vote_subtext">你終於可以投票啦！按一下來註冊</string>
     <string name="registration_continue">繼續</string>
     <string name="registration_continue_cap_case">繼續</string>
+    <string name="release_to_hide">放開來隱藏</string>
     <string name="remote_action_double_click">切換相機</string>
     <string name="remote_action_one_click">快門</string>
-    <string name="remote_web_auto_fill_prompt_button_auto_fill">自動填寫</string>
-    <string name="remote_web_auto_fill_prompt_button_not_now">現在不要</string>
-    <string name="remote_web_auto_fill_prompt_content_email_name_phone">這會使用你添加到 Snapchat 帳戶的電子郵件、姓名和電話號碼。</string>
-    <string name="remote_web_auto_fill_prompt_content_email_only">這會使用你添加到 Snapchat 帳戶的電子郵件地址。</string>
-    <string name="remote_web_auto_fill_prompt_content_email_phone">這會使用你添加到 Snapchat 帳戶的電子郵件地址和電話號碼。</string>
-    <string name="remote_web_auto_fill_prompt_content_email_phone_zip_code">這會使用你添加到 Snapchat 帳戶的電子郵件地址和電話號碼，以及你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_content_email_zip_code">這會使用你添加到 Snapchat 帳戶的電子郵件地址，以及你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_content_name_email">這會使用你添加到 Snapchat 帳戶的姓名和電子郵件地址。</string>
-    <string name="remote_web_auto_fill_prompt_content_name_email_phone_zip_code">這會使用你添加到 Snapchat 帳戶的姓名、電子郵件地址和電話號碼，以及你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_content_name_email_zip_code">這會使用你添加到 Snapchat 帳戶的姓名和電子郵件地址，以及你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_content_name_only">這會使用你添加到 Snapchat 帳戶的姓名。</string>
-    <string name="remote_web_auto_fill_prompt_content_name_phone">這會使用你添加到 Snapchat 帳戶的姓名和電話號碼。</string>
-    <string name="remote_web_auto_fill_prompt_content_name_phone_zip_code">這會使用你添加到 Snapchat 帳戶的姓名和電話號碼，以及你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_content_name_zip_code">這會使用你添加到 Snapchat 帳戶的姓名，以及你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_content_phone_only">這會使用你添加到 Snapchat 帳戶的電話號碼。</string>
-    <string name="remote_web_auto_fill_prompt_content_phone_zip_code">這會使用你添加到 Snapchat 帳戶的電話號碼，以及你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_content_zip_code_only">這會使用到你目前所在地點的郵遞區號。</string>
-    <string name="remote_web_auto_fill_prompt_title">自動填寫此表格？</string>
-    <string name="remote_webview_location_service_prompt_title">這個網站需要用到你目前的位置。</string>
     <string name="remove">移除</string>
     <string name="remove_one_tap_login_account">移除帳戶</string>
     <string name="remove_one_tap_login_account_dialog_description">確定要移除已儲存的登入資料？</string>
@@ -3040,6 +3110,7 @@ Happy Snapping！"</string>
     <string name="scan_unblock_and_add_friend">解除封鎖和添加</string>
     <string name="scan_unblock_and_subscribe_friend">解除封鎖和訂閱</string>
     <string name="scan_view_more">顯示更多</string>
+    <string name="scissors_onboarding_message">用手指把物體框起來，放開後就可做成貼圖！</string>
     <string name="scrolling_full_search_bitmoji">搜尋 Bitmoji</string>
     <string name="scrolling_full_search_giphy">搜尋 GIF 動畫</string>
     <string name="scrolling_full_search_stickers">搜尋貼圖</string>
@@ -3049,6 +3120,7 @@ Happy Snapping！"</string>
     <string name="scrolling_search_stickers">貼圖</string>
     <string name="search_add_friends">添加</string>
     <string name="search_add_reason">以用戶名新增</string>
+    <string name="search_game_button_label">開始玩</string>
     <string name="search_group_stories_section">群組故事</string>
     <string name="search_header_title">新增好友</string>
     <string name="search_hint">搜尋</string>
@@ -3073,8 +3145,6 @@ Happy Snapping！"</string>
     <string name="search_unsubscribe">取消訂閱</string>
     <string name="season_number">第 $0 季</string>
     <string name="second">%d 秒前</string>
-    <string name="secondary_text_with_hyphen_timestamp">%1$s - %2$s</string>
-    <string name="seconds_abbreviated">%d 秒</string>
     <string name="seconds_ago">$0 秒前</string>
     <string name="seconds_ago_abbreviated">%d 秒之前</string>
     <string name="seconds_ago_abbreviated_camera_roll">%1$d 秒鐘前來自相機膠卷</string>
@@ -3092,13 +3162,11 @@ Happy Snapping！"</string>
     <string name="select_friend_multiple_friends">%1$d 位好友</string>
     <string name="select_friend_other">%1$s 和 1 位其他人</string>
     <string name="select_friend_others">%1$s 和 %2$d 位其他人</string>
-    <string name="selected_group_title">精選的</string>
     <string name="send">傳送</string>
     <string name="send_button_hint_label_text">傳送給</string>
     <string name="send_my_location">傳送我的位置</string>
     <string name="send_profile_to">傳送個人資料給…</string>
     <string name="send_show">傳送節目</string>
-    <string name="send_to_add_friend">添加好友</string>
     <string name="send_to_add_friend_short_label">新增</string>
     <string name="send_to_add_friends">添加好友</string>
     <string name="send_to_all_friends_subtitle">將你的 Snap 直接傳送給一位好友。</string>
@@ -3115,9 +3183,9 @@ Happy Snapping！"</string>
     <string name="send_to_groups_scroll_bar_label">群組</string>
     <string name="send_to_header_back_button">Send to header back button</string>
     <string name="send_to_hint">傳送給...</string>
-    <string name="send_to_invite_title">聯絡人</string>
     <string name="send_to_last_snap_button">上一則 Snap</string>
     <string name="send_to_new_group">新群組</string>
+    <string name="send_to_new_private_story">私密故事</string>
     <string name="send_to_no_groups">你還沒有任何群組！ %s</string>
     <string name="send_to_our_story">我們的故事</string>
     <string name="send_to_quick_add">快速添加</string>
@@ -3239,7 +3307,6 @@ Happy Snapping！"</string>
     <string name="settings_item_header_support">支援</string>
     <string name="settings_item_header_terms_of_service">服務條款</string>
     <string name="settings_item_header_travel_mode">省流量模式</string>
-    <string name="settings_item_header_turducken">Snapchat ALPHA</string>
     <string name="settings_item_header_two_factor_authentication">雙重驗證</string>
     <string name="settings_item_header_username">用戶名</string>
     <string name="settings_item_header_view_my_story">觀看我的故事</string>
@@ -3303,22 +3370,6 @@ Happy Snapping！"</string>
     <string name="settings_shake_to_report">搖動回報</string>
     <string name="settings_snap_pro_group_header">SNAP PRO</string>
     <string name="settings_snapchat_alpha_header">Snapchat ALPHA</string>
-    <string name="settings_snapchat_alpha_no_thanks">不用，謝謝</string>
-    <string name="settings_snapchat_alpha_prompt_body">"有些功能可能還沒出現，但會隨著每次更新補上。
-
-你可以從設定中隨時切換為較早的版本。"</string>
-    <string name="settings_snapchat_alpha_prompt_header">試試看更新更快的 Snapchat 版本！</string>
-    <string name="settings_snapchat_alpha_reminder_body">"你已經不是使用最新的 Alpha 版本 Snapchat。
-
-你想要再次使用 Snapchat Alpha 嗎？"</string>
-    <string name="settings_snapchat_alpha_settings_body">"試試更新、更快的 Snapchat 版本！此產品仍在開發中，可能缺少某些功能。
-
-你可以隨時切換回舊的 Snapchat。請注意，變更此設定後，尚未儲存的回憶和沒有送出的聊天內容及 Snap 都會遺失。"</string>
-    <string name="settings_snapchat_alpha_settings_header">試試 Android 專用的全新 Snapchat！</string>
-    <string name="settings_snapchat_alpha_settings_opt_in">允許使用</string>
-    <string name="settings_snapchat_alpha_settings_opt_out">停用</string>
-    <string name="settings_snapchat_alpha_settings_title">Snapchat ALPHA</string>
-    <string name="settings_snapchat_alpha_settings_warning_cancel">取消</string>
     <string name="settings_storage">儲存空間</string>
     <string name="settings_support_group_header">支援</string>
     <string name="settings_tfa_enrollment_description">"登入驗證有助於讓你的帳戶更安全。
@@ -3407,6 +3458,7 @@ Happy Snapping！"</string>
     <string name="share_location_only_share_with_person">只有 %1$s</string>
     <string name="share_location_sent">位置已傳送！</string>
     <string name="share_location_share_back">分享回去</string>
+    <string name="share_location_status">你目前正使用噗噗鬼模式，好友無法看見你的狀態。你想分享所在位置嗎？</string>
     <string name="share_location_you_are_not_on_the_map">你目前不在地圖上</string>
     <string name="share_my_location">分享我的位置</string>
     <string name="share_show">分享</string>
@@ -3538,7 +3590,7 @@ Happy Snapping！"</string>
     <string name="spectacles">Spectacle</string>
     <string name="spectacles_cancel_pairing">取消配對</string>
     <string name="spectacles_crash_error_full">發生錯誤，你的 Spectacles 需要重新啟動。稍後再試著傳 Snap 吧！</string>
-    <string name="spectacles_crash_error_short">Spectacles 需要重新啟動，按一下以了解詳情。</string>
+    <string name="spectacles_crash_error_short">Spectacles 必須重新啟動。</string>
     <string name="spectacles_device_settings_header">裝置設定</string>
     <string name="spectacles_disable_location_button">停用</string>
     <string name="spectacles_disable_location_description">地理濾鏡、位置標籤和「回憶」中的 Spectacles Snap 智慧整理功能將無法再使用。</string>
@@ -3550,7 +3602,9 @@ Happy Snapping！"</string>
     <string name="spectacles_export_customization_square">正方形</string>
     <string name="spectacles_export_customization_title">Spectacles 匯出</string>
     <string name="spectacles_export_customization_white_border">白色背景</string>
+    <string name="spectacles_export_format_16_9">16:9</string>
     <string name="spectacles_export_format_4_3">4:3</string>
+    <string name="spectacles_export_format_9_16">9:16</string>
     <string name="spectacles_export_format_black_border">黑色背景</string>
     <string name="spectacles_export_format_error">Spectacles 匯出時出現錯誤，請重試</string>
     <string name="spectacles_export_format_export_other_apps_button">輸出至其他的 App</string>
@@ -3565,18 +3619,17 @@ Happy Snapping！"</string>
     <string name="spectacles_found">找到 Spectacles</string>
     <string name="spectacles_go_to_settings">前往設定</string>
     <string name="spectacles_high_temp_error_full" />
-    <string name="spectacles_high_temp_error_short">Spectacles 溫度太高！按一下以了解詳情</string>
+    <string name="spectacles_high_temp_error_short">Spectacles 過熱！</string>
     <string name="spectacles_high_temp_error_status">溫度太高</string>
     <string name="spectacles_keep_close">請確保 Spectacles 就在附近！</string>
     <string name="spectacles_location_data_description">透過 Spectacles 拍攝 Snap 時，你是否要附上位置資訊以啟用位置功能？</string>
     <string name="spectacles_low_battery_error_full">你的 Spectacles 電量太低！充電一下再傳 Snap。</string>
-    <string name="spectacles_low_battery_error_short">Spectacles 電量太低，按一下以了解詳情。</string>
-    <string name="spectacles_low_battery_error_status">低電量</string>
+    <string name="spectacles_low_battery_error_short">Spectacles 電量不足。</string>
     <string name="spectacles_low_storage_error_full" />
-    <string name="spectacles_low_storage_error_short">Spectacles 容量已滿！按一下以了解詳情。</string>
+    <string name="spectacles_low_storage_error_short">Spectacles 儲存空間已滿！</string>
     <string name="spectacles_low_storage_error_status">Spectacles 儲存容量太低</string>
     <string name="spectacles_low_temp_error_full" />
-    <string name="spectacles_low_temp_error_short">Spectacles 溫度太低！按一下以了解詳情</string>
+    <string name="spectacles_low_temp_error_short">Spectacles 過冷！</string>
     <string name="spectacles_low_temp_error_status">溫度太低</string>
     <string name="spectacles_manage_settings_notifications">通知</string>
     <string name="spectacles_manage_settings_notifications_all_friends">所有好友</string>
@@ -3584,9 +3637,8 @@ Happy Snapping！"</string>
     <string name="spectacles_manage_settings_notifications_description">當你收到朋友傳來的 Snap 時，就會收到通知。</string>
     <string name="spectacles_manage_settings_notifications_enable">啟用</string>
     <string name="spectacles_manage_settings_notifications_indication">標示</string>
-    <string name="spectacles_manage_settings_notifications_only_these_friends">僅限這些好友…</string>
+    <string name="spectacles_manage_settings_notifications_only_these_friends">只分享給這些好友…</string>
     <string name="spectacles_manage_settings_notifications_who_do_i_see_notifications_for">我會看到誰的通知？</string>
-    <string name="spectacles_manage_status_header">狀態</string>
     <string name="spectacles_need_pairing_help">需要幫忙嗎？</string>
     <string name="spectacles_network_unreachable">"哎呀！出了點問題。
  請檢查你的網路連線然後再試一次！"</string>
@@ -3625,7 +3677,9 @@ Happy Snapping！"</string>
 Snap 還會繼續儲存到原來的地方。"</string>
     <string name="spectacles_save_to_change_in_next_import_title">匯入中</string>
     <string name="spectacles_save_to_description">當你從 Spectacles 匯入一則 Snap，應該要儲存到哪裡？</string>
+    <string name="spectacles_save_to_export_format_16_9">寬螢幕 16:9</string>
     <string name="spectacles_save_to_export_format_4_3">寬螢幕 4:3</string>
+    <string name="spectacles_save_to_export_format_9_16">人像 9:16</string>
     <string name="spectacles_save_to_export_format_black_background">黑色背景</string>
     <string name="spectacles_save_to_export_format_dialog_description">自動儲存 Snap 為 %s 格式到你的相機膠卷，Snapchat 在導入後將需要在後台進行額外處理。</string>
     <string name="spectacles_save_to_export_format_dialog_title">還有一些要處理</string>
@@ -3673,7 +3727,7 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="stories_action_menu_i_dont_like_this_story">我不喜歡這則故事。</string>
     <string name="stories_action_menu_opt_in_notif">故事通知</string>
     <string name="stories_action_menu_press_and_hold">按住來查看選項！</string>
-    <string name="stories_action_menu_send_story">傳送故事</string>
+    <string name="stories_action_menu_send_story">傳送故事給…</string>
     <string name="stories_action_menu_share_url">分享網址</string>
     <string name="stories_action_menu_subscribe_story">訂閱 %1$s</string>
     <string name="stories_action_menu_view_more_episodes">觀看更多集數</string>
@@ -3707,7 +3761,12 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="story_delete_dialog_message">你和你的好友再也無法看到這則 Snap</string>
     <string name="story_delete_dialog_title">要刪除這則 Snap？</string>
     <string name="story_edit_done">完成</string>
+    <string name="story_friend_story_notification_title_update">%d 位好友新增了他們的故事！</string>
+    <string name="story_friend_story_notification_title_watch">觀賞故事，來自</string>
     <string name="story_fullscreen_footer_view_count">%d 觀看人數</string>
+    <string name="story_geo_story_privacy_notice_description_friends">如果 %1$s 的好友最近曾經來過這裡，他們就可以觀看並新增內容到故事中。%1$s 還能在故事中儲存和傳送 Snap。</string>
+    <string name="story_geo_story_privacy_notice_description_friends_of_friends">如果 %1$s 的好友和他們的好友最近曾經來過這裡，他們就可以觀看並新增內容到故事中。%1$s 還能在故事中儲存和傳送 Snap。</string>
+    <string name="story_geo_story_privacy_notice_title">地理圍籬內的故事</string>
     <string name="story_interstitial_title">%s 的故事</string>
     <string name="story_loading">載入中…</string>
     <string name="story_management_search_bar_hint">搜尋</string>
@@ -3740,6 +3799,7 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="story_mob_private_story_subtext">" "<b>選擇誰能看到這則故事！</b>"
 
  這些朋友將在 Discover 中看到這則私密故事，就在好友的其他故事旁。 "</string>
+    <string name="story_mob_subtext_more">%1$s 和 %2$d 及更多…</string>
     <string name="story_my_story_name">我的故事</string>
     <string name="story_my_story_privacy_notice_description">將 Snap 新增至你的「故事」，方便好友在 24 小時內不限次數觀看你的 Snap。你可以在「設定」變更誰能觀看你的「故事」。</string>
     <string name="story_my_story_privacy_notice_title">要新增至你的「故事」？</string>
@@ -3747,8 +3807,6 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="story_notification_could_not_delete">無法刪除 Snap。請重試。</string>
     <string name="story_notification_deleting_snap">正在刪除 Snap…</string>
     <string name="story_notification_in_app_public_user_subtitle">已新增到他們的故事。</string>
-    <string name="story_notification_in_app_publisher_subtitle">新的版本 - %s</string>
-    <string name="story_notification_in_app_show_subtitle">新的一集 - %s</string>
     <string name="story_notification_save_failed">Snap 儲存失敗。</string>
     <string name="story_notification_save_story_failed">故事儲存失敗。</string>
     <string name="story_notification_saved">已儲存！</string>
@@ -3757,7 +3815,7 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="story_notification_send_failed">Snap 傳送失敗。</string>
     <string name="story_notification_snap_deleted">已刪除 Snap！</string>
     <string name="story_notification_system_public_user_title">%s 已新增到他們的故事</string>
-    <string name="story_notification_system_publisher_title">%s 新的版本</string>
+    <string name="story_notification_system_publisher_title">來自 %s 的新故事</string>
     <string name="story_notification_system_show_title">%s 新的一集</string>
     <string name="story_notifications_settings_description">當訂閱項目發表新故事時通知我。</string>
     <string name="story_notifications_settings_title">故事通知</string>
@@ -3823,7 +3881,6 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="successfully_cleared_cache">已成功清除快取。</string>
     <string name="suggest_username_change_username">變更我的用戶名</string>
     <string name="suggest_username_your_username">你的用戶名</string>
-    <string name="suggested">已建議</string>
     <string name="suggested_usernames">建議的用戶名</string>
     <string name="sunny">晴天</string>
     <string name="swipe_filters_onboarding_message">輕滑以使用濾鏡！</string>
@@ -3835,6 +3892,8 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="sync_contacts">同步聯絡人</string>
     <string name="sync_contacts_disable_description">停用聯絡人同步功能可能會讓你在 Snapchat 上難以找到新好友。如果你停用了聯絡人同步功能，我們就不會將你通訊錄中的新聯絡人上傳到我們的伺服器。我們仍會使用你已上傳的聯絡人來幫你找好友及進行其他功能。</string>
     <string name="sync_contacts_disable_header">停止同步聯絡人？</string>
+    <string name="system_notification_disabled_alert_description">Snapchat 通知已停用，除非你允許 Snapchat 向你發送通知，否則詳細資訊通知將無效</string>
+    <string name="system_notification_disabled_alert_title">Snapchat 通知已停用</string>
     <string name="tab_empty_state_button_text">開始</string>
     <string name="tab_empty_state_msg_subscribed">"沒有已訂閱的故事，
 按住一則故事來訂閱。"</string>
@@ -3852,6 +3911,7 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="talk_call_prompt_connection_error_text">通話連線失敗</string>
     <string name="talk_call_prompt_incoming_default_text">%1$s 來電！</string>
     <string name="talk_call_prompt_is_calling_text">正在開始聊天...</string>
+    <string name="talk_call_prompt_is_video_calling_text">正在撥打視訊…</string>
     <string name="talk_call_prompt_join">加入</string>
     <string name="talk_call_prompt_listen">聆聽</string>
     <string name="talk_call_prompt_outgoing_default_text">撥打中...</string>
@@ -3876,11 +3936,8 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="tap_to_chat">點擊以開始聊天</string>
     <string name="tap_to_chat_short">聊天</string>
     <string name="tap_to_load">點擊以載入</string>
-    <string name="tap_to_retry">點擊以重試</string>
     <string name="tap_to_send">點擊以傳送</string>
     <string name="tap_to_view">點擊以查看</string>
-    <string name="tap_tutorial_tap_to_go_back">返回</string>
-    <string name="tap_tutorial_tap_to_skip">下一則 Snap</string>
     <string name="test_string">Test</string>
     <string name="timer_selector_no_limit_text">無上限</string>
     <string name="timer_video_tooltip_loop">循環播放</string>
@@ -3927,6 +3984,7 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="transferring">正在匯入…</string>
     <string name="travel_places">旅遊 &amp; 各地風情</string>
     <string name="try_again">重試</string>
+    <string name="turn_off_ghost_mode">要關閉噗噗鬼模式嗎？</string>
     <string name="turn_off_notifications">關閉通知</string>
     <string name="turn_on">開啟</string>
     <string name="turn_on_notifications">開啟通知</string>
@@ -4035,7 +4093,7 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="venuefeedback_button_submit">提交</string>
     <string name="venuefeedback_page_title">檢舉</string>
     <string name="venuefeedback_place_closed">這個地點已永久關閉</string>
-    <string name="venuefeedback_place_offensive">這令人反感且不該出現在 Snapchat 上</string>
+    <string name="venuefeedback_place_offensive">這令人反感，而且不該出現在 Snapchat</string>
     <string name="venuefeedback_place_problems">$0 有問題嗎？</string>
     <string name="venuefeedback_place_spelling">建議更正拼寫</string>
     <string name="venuefeedback_place_suggestion">我們該顯示哪些地點？</string>
@@ -4046,13 +4104,15 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="verify_email_address_v2">驗證你的電子郵件</string>
     <string name="verify_phone_button_text">提交</string>
     <string name="verify_phone_number">驗證你的電話號碼</string>
-    <string name="verify_phone_number_subtext">按一下來保障你的帳戶安全</string>
+    <string name="verify_phone_number_subtext">保護你的帳戶，讓好友找到你</string>
     <string name="verify_phone_resend_sms_waiting">%d 後重傳</string>
     <string name="verify_resend">重新傳送</string>
     <string name="verify_resend_waiting_n_seconds">%d 後重傳</string>
     <string name="vibration_header">控制震動</string>
     <string name="vibration_text">讓你啟用 Snapchat 震動通知功能。</string>
     <string name="video_recording_failed">影片錄製失敗。</string>
+    <string name="video_recording_microphone_permission_dialog_description">Snap 有聲音會更好玩！%s 想添加聲音，請至設定中允許 Snapchat 取用麥克風。</string>
+    <string name="video_recording_microphone_permission_dialog_title">Snapchat 想取用你的麥克風</string>
     <string name="video_too_long_to_send_or_post">很抱歉！這則影片太長，無法傳送。</string>
     <string name="view_again">再看一次</string>
     <string name="view_all">檢視全部</string>
@@ -4065,20 +4125,15 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="view_wifi_text">Snapchat 根據你的 Wi-Fi 連線強度，最佳化 Snap 的傳送品質。</string>
     <string name="viewer_error_header_default">哎呀！</string>
     <string name="viewer_error_header_network">連線失敗！</string>
-    <string name="viewer_error_header_storage">儲存空間已滿！</string>
     <string name="viewer_error_retry">重試</string>
     <string name="viewer_error_subtext_default">出問題了，請重試！</string>
     <string name="viewer_error_subtext_network">請確認你的連線狀態並重試。</string>
-    <string name="viewer_error_subtext_storage">試試刪除不用的應用程式、音樂或照片。</string>
     <string name="waiting">正在等候…</string>
     <string name="waiting_to_import">等待匯入</string>
     <string name="wants_to_see_on_map">%1$s 想在地圖上看到你！</string>
     <string name="watch">觀看</string>
     <string name="watch_again">再看一次</string>
     <string name="we_will_send_notice">我們會傳簡訊驗證代碼給你。</string>
-    <string name="webview_file_upload_title">選擇一個檔案上傳</string>
-    <string name="week_abbreviated">%d 週</string>
-    <string name="weeks_abbreviated">%d 週</string>
     <string name="weeks_ago">$0 週前</string>
     <string name="weeks_ago_abbreviated_camera_roll">%1$d 週前來自相機膠卷</string>
     <string name="weeks_ago_abbreviated_creative_kit">%1$d 週前來自 %2$s</string>
@@ -4092,7 +4147,6 @@ Snap 還會繼續儲存到原來的地方。"</string>
     <string name="years_ago_abbreviated_memories">%1$d 年前來自回憶</string>
     <string name="years_ago_abbreviated_spectacles">%1$d 年前來自 Spectacles</string>
     <string name="yes">是</string>
-    <string name="yes_exclamation_mark">是！</string>
     <string name="yesterday">昨天</string>
     <string name="you_for_saved_by">你</string>
     <string name="you_requested_location">你請求了 %1$s 的位置</string>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.StackingLayout android:background="@color/sendto_card_background" android:layout_width="fill_parent" android:layout_height="@dimen/send_to_item_height" android:layoutDirection="locale"
+<com.snap.ui.view.StackingLayout android:background="@color/sendto_card_background" android:layout_width="fill_parent" android:layout_height="@dimen/send_to_item_height" android:textDirection="locale" android:layoutDirection="locale"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:paddingTop="8.0dip" android:clipToPadding="false" android:layout_width="@dimen/send_to_bf_avatar_size" android:layout_height="fill_parent" android:layout_marginStart="4.0dip" app:layout_affinity="startHorizontal"
       xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/cognac_friend_picker_container" android:background="@drawable/cognac_main_page_white_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/cognac_friend_picker_header_container" android:layout_width="fill_parent" android:layout_height="@dimen/cognac_friend_invite_picker_header_height">
+            <ImageButton android:id="@id/cognac_friend_picker_dismiss_button" android:background="@drawable/cognac_invite_dismiss" android:layout_width="@dimen/cognac_invite_dismiss_size" android:layout_height="@dimen/cognac_invite_dismiss_size" android:layout_centerVertical="true" android:layout_marginStart="@dimen/cognac_invite_dismiss_left_margin" />
+            <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/cognac_invite_header_text_size" android:textColor="@color/dark_charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cognac_friend_picker_nudge_friends_text" android:layout_centerInParent="true" custom:scFontWeight="bold" />
+        </RelativeLayout>
+        <View android:background="@color/black_ten_opacity" android:layout_width="fill_parent" android:layout_height="@dimen/cognac_friend_picker_header_bottom_border" />
+        <TextView android:textColor="@color/light_charcoal" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cognac_friend_picker_nudge_description_margins" android:layout_marginBottom="@dimen/cognac_friend_picker_nudge_description_margins" android:text="@string/cognac_friend_picker_nudge_description" android:textAlignment="center" />
+        <android.support.v7.widget.RecyclerView android:id="@id/cognac_friends_list" android:paddingLeft="@dimen/cognac_friend_picker_recycler_view_padding" android:paddingRight="@dimen/cognac_friend_picker_recycler_view_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:textColor="@color/white" android:gravity="center" android:id="@id/cognac_invite_friends_button" android:background="@drawable/cognac_friend_picker_invite_background" android:layout_width="fill_parent" android:layout_height="@dimen/cognac_friend_invite_button_height" android:layout_margin="@dimen/cognac_friend_invite_button_margins" android:text="@string/cognac_friend_picker_ring_text" />
+    </LinearLayout>
+</FrameLayout>

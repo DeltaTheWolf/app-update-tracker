@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.cognac.impl.chatdrawer.CognacChatDrawerItemLayout android:background="@drawable/cognac_chat_drawer_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cognac_chat_drawer_game_title_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/cognac_chat_drawer_game_title_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitCenter" />
+        <TextView android:textColor="@color/medium_grey" android:gravity="center" android:id="@id/cognac_chat_drawer_game_title" android:paddingLeft="@dimen/default_gap" android:paddingRight="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/medium_grey" android:gravity="center" android:id="@id/cognac_chat_drawer_game_subtitle" android:paddingLeft="@dimen/default_gap" android:paddingRight="@dimen/default_gap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cognac_chat_drawer_game_name_subtext" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/cognac_chat_drawer_launching_image" android:background="@drawable/cognac_game_drawer_tile_winking_ghost" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/cognac_chat_drawer_game_tile_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/cognac_chat_drawer_game_tile_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.snap.imageloading.view.SnapImageView android:id="@id/cognac_chat_drawer_game_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_gap_half" android:scaleType="fitCenter" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/cognac_chat_drawer_player_badge_container" android:background="@drawable/cognac_chat_drawer_item_player_badge_background" android:layout_width="wrap_content" android:layout_height="@dimen/chat_drawer_tile_player_badge_container_normal_height" android:layout_margin="@dimen/chat_drawer_tile_player_badge_container_normal_margin" android:paddingStart="@dimen/chat_drawer_tile_player_badge_container_padding" android:paddingEnd="@dimen/chat_drawer_tile_player_badge_container_padding">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/cognac_badge_user" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/chat_drawer_tile_player_badge_text_normal_size" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/cognac_chat_drawer_player_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/chat_drawer_tile_player_badge_text_margin_start" />
+        </LinearLayout>
+    </FrameLayout>
+</com.snap.cognac.impl.chatdrawer.CognacChatDrawerItemLayout>

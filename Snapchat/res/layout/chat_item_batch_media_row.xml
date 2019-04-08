@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container">
-        <include layout="@layout/chat_message_timestamp" />
-        <include layout="@layout/chat_message_color_bar" />
-        <com.snap.messaging.chat.ui.view.ReplyLayout android:id="@id/reply_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <LinearLayout android:orientation="horizontal" android:id="@id/chat_media_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
-                <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
-                <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
-                <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
-            </LinearLayout>
-        </com.snap.messaging.chat.ui.view.ReplyLayout>
-    </LinearLayout>
+    <include layout="@layout/chat_message_timestamp" />
+    <include layout="@layout/chat_message_color_bar" />
+    <com.snap.messaging.chat.ui.view.ReplyLayout android:id="@id/reply_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/chat_media_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
+            <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
+            <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
+            <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_width="wrap_content" android:layout_height="@dimen/chat_batched_media_max_height" android:layout_marginBottom="@dimen/chat_media_margin" android:layout_marginEnd="@dimen/chat_media_margin" />
+        </LinearLayout>
+    </com.snap.messaging.chat.ui.view.ReplyLayout>
 </com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

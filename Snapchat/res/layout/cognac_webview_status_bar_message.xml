@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingRight="@dimen/default_gap" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/cognac_header_name_text_size" android:textColor="@color/light_red" android:layout_gravity="left" android:id="@id/name_header" android:paddingTop="@dimen/default_gap_quarter" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:fontKerning="0.084" custom:scFontWeight="bold" />
+    <com.snap.ui.view.SnapFontTextView android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/chat_message_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_gap_half" android:layout_marginBottom="@dimen/default_gap" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="@dimen/default_gap_half" />
+</LinearLayout>

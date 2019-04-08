@@ -4,20 +4,12 @@
     <com.snap.ui.view.ScHeaderView android:id="@id/spectacles_manage_sc_header" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:headerColorScheme="@color/regular_green" custom:headerTitle="@string/laguna_manage_specs" custom:showBackArrow="true" custom:showBottomBorder="true" />
     <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="false" android:layout_weight="1.0">
         <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/laguna_manage_container" android:layout_width="fill_parent" android:layout_height="0.0px">
-            <LinearLayout android:orientation="vertical" android:id="@id/spectacles_status_section_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <LinearLayout android:orientation="horizontal" android:background="@color/section_header_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                    <com.snap.ui.view.SnapFontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_half" android:text="@string/spectacles_manage_status_header" android:textAllCaps="true" style="@style/new_settings_section_header" />
-                    <View android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
-                    <com.snap.ui.view.SnapFontTextView android:id="@id/spectacles_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap" style="@style/new_settings_item_status" />
-                </LinearLayout>
-                <com.snap.ui.view.SnapFontTextView android:id="@id/spectacles_status_full_error" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_gap_2x" android:paddingEnd="@dimen/default_gap_2x" android:layout_marginEnd="@dimen/default_gap" style="@style/new_settings_item_status" />
-            </LinearLayout>
             <com.snap.ui.view.SnapFontTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_half" android:text="@string/updates" android:textAllCaps="true" style="@style/new_settings_section_header" />
             <LinearLayout android:orientation="horizontal" android:id="@id/laguna_check_for_updates" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/new_settings_item_outer">
                 <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_check_for_updates_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/check_for_updates" android:layout_weight="1.0" style="@style/new_settings_item_name" />
-                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_check_for_updates_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginEnd="@dimen/default_gap" />
-                <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_update_available_sign_icon" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="@dimen/default_gap_2x" android:src="@drawable/exclamation_point_update_error" android:layout_marginEnd="@dimen/default_gap" style="@style/new_settings_item_error" />
-                <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_updating_progress_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap" style="@style/new_settings_item_status" />
+                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_check_for_updates_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginRight="@dimen/default_gap" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_update_available_sign_icon" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="@dimen/default_gap_2x" android:layout_marginRight="@dimen/default_gap" android:src="@drawable/exclamation_point_update_error" style="@style/new_settings_item_error" />
+                <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_updating_progress_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_gap" style="@style/new_settings_item_status" />
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:id="@id/spectacles_importing_section_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <com.snap.ui.view.SnapFontTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_half" android:text="@string/laguna_importing" android:textAllCaps="true" style="@style/new_settings_section_header" />
@@ -50,17 +42,17 @@
             <com.snap.ui.view.SnapFontTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_gap_half" android:text="@string/actions" android:textAllCaps="true" style="@style/new_settings_section_header" />
             <LinearLayout android:orientation="horizontal" android:id="@id/laguna_clear_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/new_settings_item_outer">
                 <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_clear_content_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/laguna_clear_specs_storage" android:layout_weight="1.0" style="@style/new_settings_item_name" />
-                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_clear_content_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginEnd="@dimen/default_gap" />
+                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_clear_content_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginRight="@dimen/default_gap" />
             </LinearLayout>
             <include layout="@layout/list_separator" />
             <LinearLayout android:orientation="horizontal" android:id="@id/laguna_restart_specs" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/new_settings_item_outer">
                 <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_restart_specs_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/laguna_restart_specs" android:layout_weight="1.0" style="@style/new_settings_item_name" />
-                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_restart_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginEnd="@dimen/default_gap" />
+                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_restart_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginRight="@dimen/default_gap" />
             </LinearLayout>
             <include layout="@layout/list_separator" />
             <LinearLayout android:orientation="horizontal" android:id="@id/laguna_forget_spectacles" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/new_settings_item_outer">
                 <com.snap.ui.view.SnapFontTextView android:id="@id/laguna_forget_specs_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/laguna_forget_specs" android:layout_weight="1.0" style="@style/new_settings_item_name" />
-                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_unpair_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginEnd="@dimen/default_gap" />
+                <com.snap.ui.view.LoadingSpinnerView android:id="@id/laguna_unpair_spinner" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginRight="@dimen/default_gap" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

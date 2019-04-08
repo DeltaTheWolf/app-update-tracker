@@ -1,3 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.snap.ui.view.emoji.SnapEmojiTextView android:textSize="@dimen/alert_dialog_description_text_size" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:padding="@dimen/alert_dialog_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/alert_dialog_item_margin" android:maxLines="12"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<com.snap.ui.view.SnapFontTextView style="@style/alert_dialog_description" />

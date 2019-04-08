@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+<com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:id="@id/chat_message_content_container" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" style="@style/chat_message_content_container">
-        <include layout="@layout/chat_message_timestamp" />
-        <include layout="@layout/chat_message_color_bar" />
-        <LinearLayout android:id="@id/chat_item_story_share_info_full_story_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/chat_message_rounded_card_container">
-            <FrameLayout android:id="@id/info_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
-              xmlns:android="http://schemas.android.com/apk/res/android">
-                <LinearLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                    <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_gravity="center_vertical" android:id="@id/thumbnail_view" android:layout_width="@dimen/chat_story_share_thumbnail_size" android:layout_height="@dimen/chat_story_share_thumbnail_size" android:layout_marginTop="@dimen/chat_story_share_thumbnail_top_bottom_margin" android:layout_marginBottom="@dimen/chat_story_share_thumbnail_top_bottom_margin" android:scaleType="centerCrop" android:layout_marginStart="@dimen/chat_story_share_thumbnail_left_right_margin" android:layout_marginEnd="@dimen/chat_story_share_thumbnail_left_right_margin" />
-                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-                        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_message_text_size" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
-                        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_story_share_secondary_text_size" android:textColor="@color/dark_grey" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_memories_story_share_subtitle" android:maxLines="1" android:includeFontPadding="false" />
-                    </LinearLayout>
+    <include layout="@layout/chat_message_timestamp" />
+    <include layout="@layout/chat_message_color_bar" />
+    <LinearLayout android:id="@id/chat_item_story_share_info_full_story_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/chat_message_rounded_card_container">
+        <FrameLayout android:id="@id/info_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.snap.messaging.chat.ui.view.VideoCapableThumbnailView android:layout_gravity="center_vertical" android:id="@id/thumbnail_view" android:layout_width="@dimen/chat_story_share_thumbnail_size" android:layout_height="@dimen/chat_story_share_thumbnail_size" android:layout_marginTop="@dimen/chat_story_share_thumbnail_top_bottom_margin" android:layout_marginBottom="@dimen/chat_story_share_thumbnail_top_bottom_margin" android:scaleType="centerCrop" android:layout_marginStart="@dimen/chat_story_share_thumbnail_left_right_margin" android:layout_marginEnd="@dimen/chat_story_share_thumbnail_left_right_margin" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_message_text_size" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_story_share_secondary_text_size" android:textColor="@color/dark_grey" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_memories_story_share_subtitle" android:maxLines="1" android:includeFontPadding="false" />
                 </LinearLayout>
-                <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loading_spinner_view" android:visibility="gone" android:layout_width="@dimen/chat_item_loading_spinner_size" android:layout_height="@dimen/chat_item_loading_spinner_size" />
-            </FrameLayout>
-        </LinearLayout>
+            </LinearLayout>
+            <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loading_spinner_view" android:visibility="gone" android:layout_width="@dimen/chat_item_loading_spinner_size" android:layout_height="@dimen/chat_item_loading_spinner_size" />
+        </FrameLayout>
     </LinearLayout>
 </com.snap.messaging.chat.ui.view.SwipeableMessageLinearLayout>

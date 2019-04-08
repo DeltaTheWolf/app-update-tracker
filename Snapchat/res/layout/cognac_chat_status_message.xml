@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/cognac_chat_status_message_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_gap" android:layout_marginTop="@dimen/default_gap" android:layout_marginRight="@dimen/default_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.snap.imageloading.view.SnapImageView android:layout_gravity="center" android:id="@id/cognac_status_message_icon" android:layout_width="@dimen/cognac_feed_thumbnail_size" android:layout_height="@dimen/cognac_feed_thumbnail_size" android:layout_margin="@dimen/default_gap" android:scaleType="fitCenter" custom:isCircular="true" />
+    <TextView android:textSize="@dimen/cognac_chat_status_message_text_size" android:textColor="@color/regular_grey" android:layout_gravity="center" android:id="@id/cognac_status_message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_gap" />
+</LinearLayout>

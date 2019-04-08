@@ -4,6 +4,20 @@
     <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light" />
     <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar" />
     <style name="Base.Widget.Design.AppBarLayout" parent="@style/Base.V26.Widget.Design.AppBarLayout" />
+    <style name="alert_dialog_edit_text" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textSize">@dimen/alert_dialog_edit_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:gravity">start</item>
+        <item name="android:background">@drawable/dialog_edit_text_background</item>
+        <item name="android:padding">@dimen/alert_dialog_item_padding</item>
+        <item name="android:layout_width">@dimen/alert_dialog_edit_text_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/alert_dialog_item_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">textCapWords|textNoSuggestions</item>
+        <item name="android:importantForAutofill">no</item>
+    </style>
     <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
         <item name="colorError">?android:colorError</item>
     </style>

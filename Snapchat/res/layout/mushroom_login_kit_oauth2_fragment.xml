@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@color/snapchat_yellow" android:paddingTop="@dimen/status_bar_height" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<com.snapchat.android.framework.ui.views.statusbar.StatusBarTopMarginFrameLayout android:background="@color/snapchat_yellow" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView android:layout_gravity="center|top" android:layout_width="@dimen/login_kit_ghost_header_icon_size" android:layout_height="@dimen/login_kit_ghost_header_icon_size" android:layout_marginTop="@dimen/default_gap" android:layout_marginBottom="@dimen/default_gap" android:src="@drawable/snaplogin_button_ghost" />
     <com.snap.ui.view.LoadingSpinnerView android:layout_gravity="center" android:id="@id/loginkit_oauth2_spinner" android:visibility="visible" android:layout_width="@dimen/default_gap_6x" android:layout_height="@dimen/default_gap_6x" app:loading_spinner_color="@color/white" />
     <ViewStub android:id="@id/auth_privacy_explainer_stub" android:layout="@layout/login_kit_auth_privacy_explainer_card" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/login_kit_authorization_screen_margin_top" />
     <ViewStub android:id="@id/authorization_screen_stub" android:layout="@layout/mushroom_login_kit_auth_card" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/login_kit_authorization_screen_margin_top" />
-</FrameLayout>
+</com.snapchat.android.framework.ui.views.statusbar.StatusBarTopMarginFrameLayout>

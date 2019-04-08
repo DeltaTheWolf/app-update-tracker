@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snap.cognac.impl.chatdrawer.CognacChatDrawerItemLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cognac_chat_drawer_game_tile_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.snap.imageloading.view.SnapImageView android:id="@id/cognac_chat_drawer_game_tile_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <TextView android:textColor="@color/regular_green" android:layout_gravity="bottom" android:id="@id/cognac_chat_drawer_game_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</com.snap.cognac.impl.chatdrawer.CognacChatDrawerItemLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_thirty_opacity" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/termination_view_container" android:background="@drawable/cognac_popup_view_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/termination_view_title_text_size" android:textStyle="bold" android:textColor="@color/dark_red" android:gravity="center" android:id="@id/terminate_title" android:layout_width="fill_parent" android:layout_height="@dimen/cognac_chat_dock_termination_height" android:layout_margin="@dimen/default_gap_half" />
+        <View android:background="@color/black_twenty_opacity" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="@dimen/cognac_chat_dock_termination_height" android:layout_margin="@dimen/default_gap_half" android:text="@string/cancel" />
+    </LinearLayout>
+</FrameLayout>

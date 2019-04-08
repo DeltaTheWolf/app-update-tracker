@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/add_friend_checked_bg_color_v11" />
+    <corners android:radius="@dimen/default_gap_2x" />
+    <stroke android:width="@dimen/loading_spinner_button_stroke_width" android:color="@color/transparent" />
+</shape>

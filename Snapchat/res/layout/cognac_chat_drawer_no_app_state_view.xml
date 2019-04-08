@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="22.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.snap.bitmoji.view.BitmojiSilhouetteView android:id="@id/cognac_chat_drawer_no_app_state_avatar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_drawer_no_app_state_primary_text_size" android:textColor="@color/dark_charcoal" android:id="@id/cognac_chat_drawer_no_app_state_primary_text" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cognac_chat_drawer_no_app_state_primary_text" />
+    <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/chat_drawer_no_app_state_secondary_text_size" android:textColor="@color/light_charcoal" android:id="@id/cognac_chat_drawer_no_app_state_secondary_text" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cognac_chat_drawer_no_app_state_secondary_text" />
+</LinearLayout>

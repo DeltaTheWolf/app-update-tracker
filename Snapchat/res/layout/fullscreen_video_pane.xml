@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.snapchat.android.talkv3.fullscreen.FullscreenTouchPane android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<com.snapchat.android.talkv3.fullscreen.GroupFullscreenPane android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/fullscreen_background_stub" android:visibility="gone" android:layout="@layout/fullscreen_background" android:inflatedId="@id/fullscreen_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ImageView android:layout_gravity="end" android:id="@id/down_caret" android:background="@drawable/transparent_circle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_chat_down_arrow" />
-</com.snapchat.android.talkv3.fullscreen.FullscreenTouchPane>
+    <FrameLayout android:id="@id/keyboard_up_local_media_container" android:visibility="gone" android:layout_width="@dimen/fullscreen_local_media_container_size" android:layout_height="@dimen/fullscreen_local_media_container_size" android:layout_marginLeft="@dimen/fullscreen_local_media_margin" android:layout_marginTop="@dimen/fullscreen_local_media_margin" />
+    <ImageView android:id="@id/down_caret" android:background="@drawable/transparent_circle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_chat_down_arrow" />
+    <include android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="@dimen/accessory_button_height" android:layout_marginTop="15.0dip" android:layout_marginRight="16.0dip" layout="@layout/end_call_button" />
+    <com.snapchat.android.talk.mushroom.views.fullscreen.FullscreenControlBar android:gravity="center" android:layout_gravity="bottom" android:id="@id/fullscreen_bar" android:paddingBottom="@dimen/fullscreen_control_bar_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:layout_gravity="bottom" android:id="@id/fullscreen_background" android:background="@drawable/expanded_local_media_black_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/expanded_background_gradient_height" />
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/keyboard_down_local_media_container" android:layout_width="@dimen/local_preview_large_size" android:layout_height="@dimen/local_preview_large_size" android:layout_marginBottom="@dimen/fullscreen_control_bar_padding_bottom" />
+</com.snapchat.android.talkv3.fullscreen.GroupFullscreenPane>

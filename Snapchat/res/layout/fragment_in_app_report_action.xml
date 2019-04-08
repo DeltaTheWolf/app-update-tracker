@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:id="@id/in_app_report_fragment" android:background="@color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+<FrameLayout android:orientation="vertical" android:id="@id/in_app_report_fragment" android:background="@color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
     <ScrollView android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/in_app_report_understand_button_height">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">

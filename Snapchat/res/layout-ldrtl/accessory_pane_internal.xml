@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/start_call_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/start_audio" android:background="@drawable/pill_bg_right" android:layout_width="@dimen/accessory_button_half_width" android:layout_height="@dimen/accessory_button_height" android:src="@drawable/start_audiocall" android:paddingStart="@dimen/accessory_pane_accessory_margin" android:paddingEnd="@dimen/accessory_pane_accessory_margin" />
+        <Space android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/start_video" android:background="@drawable/pill_bg_left" android:layout_width="@dimen/accessory_button_half_width" android:layout_height="@dimen/accessory_button_height" android:src="@drawable/start_videocall" android:paddingStart="@dimen/accessory_pane_accessory_margin" android:paddingEnd="@dimen/accessory_pane_accessory_margin" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/join_call" android:background="@drawable/accessory_button_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/accessory_button_height" android:paddingStart="@dimen/accessory_button_left_padding" android:paddingEnd="@dimen/accessory_button_right_padding">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/join_call_media_type" android:layout_width="@dimen/accessory_button_join_icon_size" android:layout_height="@dimen/accessory_button_join_icon_size" android:src="@drawable/start_videocall" android:tint="@color/dark_charcoal" />
+        <com.snap.ui.view.SnapFontTextView android:textSize="@dimen/accessory_button_text_size" android:textColor="@color/dark_charcoal" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/talk_call_prompt_join" android:paddingStart="@dimen/accessory_button_join_icon_padding" android:paddingEnd="0.0dip" custom:scFontWeight="bold" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/end_call_button" />
+</merge>
