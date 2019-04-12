@@ -1,10 +1,7 @@
 package com.kik.storage
 
-import com.kik.kin.IKinTransactionStorage
-import com.kik.kin.ITransaction
-import com.kik.kin.P2PTransaction
-import com.kik.kin.P2PTransactionStatus
-import com.kik.kin.P2PPayment
+import com.kik.kin.*
+import java.util.*
 
 class StubP2PTransactionEntrySqlStorage : IKinTransactionStorage<P2PPayment, P2PTransactionStatus> {
     override fun storeTransactions(entries: List<ITransaction<P2PPayment, P2PTransactionStatus>>) = false
@@ -15,7 +12,7 @@ class StubP2PTransactionEntrySqlStorage : IKinTransactionStorage<P2PPayment, P2P
 
     override fun retrieveTransaction(offer: P2PPayment) = P2PTransaction(offer, P2PTransactionStatus.COMPLETE)
 
-    override fun deleteTransactions(toDelete: List<P2PPayment>) = 0
+    override fun deleteTransactions(idsToDelete: List<String>) = 0
 
-    override fun deleteTransaction(offer: P2PPayment) = false
+    override fun deleteTransaction(offerId: String) = false
 }

@@ -11,6 +11,7 @@ import "common/v2/model.proto";
 import "groups/v2/groups_common.proto";
 import "google/protobuf/timestamp.proto";
 import "asset/v1/asset_common.proto";
+import "persona/v2/persona_common.proto";
 
 // Chat-specific information is contained here. For global information common to all chats,
 // see common.chats.v2.Chat.
@@ -126,6 +127,61 @@ message GroupMember {
 
     // If true, other members will not be able to start one to one chats with this group member.
     bool direct_messaging_disabled = 5;
+}
+
+// This is all the information the client needs to display about a group
+// before a user joins; this info is found by searching for the group
+// or being invited to join it by someone who is not in your contact list.
+// This message will not contain a ChatId or any PersonaIds.
+message GroupInfoDisplayOnly {
+    // Optional group display name.
+    DisplayName display_name = 1;
+
+    // Optional display picture for the group.
+    DisplayImage display_pic = 2;
+
+    // Optional public group fields.
+    // A group is a public group iff this is set.
+    // Hashtag is in here.
+    common.groups.v2.PublicGroupFields public_group_fields = 3;
+
+    // Group member list, does not include banned users, does include admins.
+    // Only the display names and profile pictures of the members are returned.
+    repeated GroupMemberDisplayOnly members = 4 [(kik.validation.field_validation) = {
+        // NOTE: Max group size can be 50 or 100 at the present time, but MAY be subject to further increase beyond
+        // 100 members in the future. Clients MUST NOT validate against this limit
+        max_repetitions: 1000 // (Sanity bound)
+    }];
+
+    // The maximum number of members that can be in this group.
+    uint32 max_group_size = 5;
+
+    // Optional background picture for the group.
+    DisplayImage background_pic = 6;
+
+    // Optional group bio.
+    Bio bio = 7;
+}
+
+// Display info for a member of a group, used specific contexts where only a
+// subset of the full member information of GroupMember should be returned.
+message GroupMemberDisplayOnly {
+    // Optional member display name.
+    // Note: In classic the Group "display info only" only returns the first name, not the
+    // user's full display name. Discussed this with client devs, decided that display name
+    // is appropriate here, for consistency's sake more than anything, and the client can
+    // choose what parts of it to show.
+    common.persona.v2.DisplayName display_name = 1;
+
+    // Optional member profile pic info.
+    common.persona.v2.DisplayImage display_image = 2;
+
+    // Will be true for both admins and super admins
+    bool is_admin = 3;
+
+    bool is_super_admin = 4;
+
+    bool is_bot = 5;
 }
 
 // Display name of a chat.

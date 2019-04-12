@@ -10,6 +10,7 @@ import "google/protobuf/timestamp.proto";
 import "common_model.proto";
 import "common/v1/model.proto";
 import "matching/v1/matching_common.proto";
+import "kin/payment/v1/payment_common.proto";
 
 // These endpoints facilitate clients starting, ending and voting on anonymous chat sessions
 service AnonMatching {
@@ -51,10 +52,11 @@ service AnonMatching {
     // Users call this to submit a new interest
     rpc SubmitUserGeneratedInterest(SubmitUserGeneratedInterestRequest) returns (SubmitUserGeneratedInterestResponse);
 
-    // clients call this to get a progress update on the weekly EARN offer
-    // returns the number of completed daily challenges for the current week and
+    // clients call this to get info regarding all anon matching EARN offers
+    // returns the number of completed daily challenges for the current week
     // the total number of completed daily challenges required to finish the weekly challenge
-    rpc GetWeeklyEarnOfferStatus(GetWeeklyEarnOfferStatusRequest) returns (GetWeeklyEarnOfferStatusResponse);
+    // and the amount of kin to be earned for completing a daily challenge
+    rpc GetEarnOfferDetails(GetEarnOfferDetailsRequest) returns (GetEarnOfferDetailsResponse);
 }
 
 // If the user already has an ongoing search in the queue, it will be updated
@@ -253,18 +255,22 @@ message SubmitUserGeneratedInterestResponse {
     }
 }
 
-message GetWeeklyEarnOfferStatusRequest {
+message GetEarnOfferDetailsRequest {
     
 }
 
-message GetWeeklyEarnOfferStatusResponse {
+message GetEarnOfferDetailsResponse {
     // the number of daily challenges succesfully completed for the current week
     int32 completed_daily_challenges = 1 [(kik.validation.field_validation) = {
         mandatory: true
     }];
-    // the total number of completed daily challenges required finish the weekly challenge
+    // the total number of completed daily challenges required to finish the weekly challenge
     int32 required_daily_challenges = 2 [(kik.validation.field_validation) = {
-        mandatory:true
+        mandatory: true
+    }];
+    // the amount of kin a user should earn by completing a daily chat challenge
+    common.kin.payment.v1.KinAmount daily_earn_kin_amount = 3 [(kik.validation.field_validation) = {
+        mandatory: true
     }];
 }
 

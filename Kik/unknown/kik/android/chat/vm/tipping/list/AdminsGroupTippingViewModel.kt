@@ -269,7 +269,7 @@ class AdminsGroupTippingViewModel(private val conversationJid: String) : IAdmins
                         .first()
                         .flatMap { contactProfileRepository.profileForJid(it) }
                         .subscribe({ profile: ContactProfile ->
-                            val payment = P2PPayment(profile.jid, profile.kinUserId, amount, PaymentType.ADMIN_TIP, AdminTippingMetaData(BareJid.fromString(conversationJid)))
+                            val payment = P2PPayment(profile.jid, profile.kinUserId, amount, PaymentType.ADMIN_TIP, AdminTippingMetaData(profile.jid, BareJid.fromString(conversationJid)))
                             p2pTransactionManager.getOfferAndDoTransaction(payment)
                             navigator.finish()
                         },

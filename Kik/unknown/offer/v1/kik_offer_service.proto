@@ -35,6 +35,9 @@ service KikOffer {
 
     // Retrieves all unclaimed offers available to the user for the provided feature id
     rpc GetKikOffersByFeature (GetKikOffersByFeatureRequest) returns (GetKikOffersByFeatureResponse);
+
+    // Cancels (deletes) a kik user offer.
+    rpc CancelKikUserOffer (CancelKikUserOfferRequest) returns (CancelKikUserOfferResponse);
 }
 
 message GetKikOffersByFeatureRequest {
@@ -56,8 +59,20 @@ message GetKikOffersByFeatureResponse {
         max_repetitions: 100
     }];
 
-    // TODO: not implemented yet 
+    // TODO: not implemented yet
     PageToken page_token = 3;
+}
+
+message CancelKikUserOfferRequest {
+    common.offer.v1.KikUserOfferId kik_user_offer_id = 1 [(kik.validation.field_validation) = { mandatory: true }];
+}
+
+message CancelKikUserOfferResponse {
+    Result result = 1;
+    enum Result {
+        OK = 0;
+        OFFER_NOT_FOUND = 1;
+    }
 }
 
 message PageToken {

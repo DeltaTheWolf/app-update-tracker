@@ -32,4 +32,11 @@ interface IOneToOneMatchingV3ViewModel : IViewModel {
 
     fun shouldShowTotalChatsRemaining(): Observable<Boolean>
 
+    fun getKinBalance(): Observable<String>
+
+    fun isTransactionPending(): Observable<Boolean>
+
+    fun isKinBalanceVisible(): Observable<Boolean>
+
+    fun goToChallengesScreen()
 }

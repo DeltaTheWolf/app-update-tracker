@@ -65,7 +65,7 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
     override fun doRequestConfirmationJwt(payment: P2PPayment) =
             kinStellarSDKController.getOrderConfirmation(payment.paymentJwt)
 
-    override fun doKinTransaction(payment: P2PPayment, jwt: String) = kinStellarSDKController.payTo(payment.id.toString(), jwt, payment.recipient.toString())
+    override fun doKinTransaction(payment: P2PPayment, jwt: String) = kinStellarSDKController.payTo(payment.id.toString(), jwt, payment.metaData)
             .observeOn(scheduler)
             .timeout(30, TimeUnit.SECONDS)
             .retryWhen { errors ->
@@ -99,13 +99,13 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
 
     override fun updateTransactionStatusStorage(transaction: ITransaction<P2PPayment, P2PTransactionStatus>) {
         when (transaction.status) {
-            P2PTransactionStatus.COMPLETE -> storage.deleteTransaction(transaction.offer)
+            P2PTransactionStatus.COMPLETE -> storage.deleteTransaction(transaction.offer.id.toString())
             else -> storage.storeTransaction(P2PTransaction(transaction.offer, transaction.status))
         }
     }
 
     override fun deleteTransaction(payment: P2PPayment) {
-        storage.deleteTransaction(payment)
+        storage.deleteTransaction(payment.id.toString())
     }
 
     override fun onTransactionStatusMapFault(payment: P2PPayment) {

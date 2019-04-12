@@ -9,6 +9,7 @@ option objc_class_prefix = "KPBCommonMessagingV2";
 import "protobuf_validation.proto";
 import "common/v2/model.proto";
 import "contactlist/v2/contact_list_common.proto";
+import "groups/v2/groups_common.proto";
 
 // Optional Chat-specific metadata included when a kik service generates a message to inform clients about an
 // action or event that has taken place.
@@ -56,9 +57,9 @@ message ChatEvent {
         }];
 
         // All other members of the group, not including the creator.
+        // Optional, since public groups may legitimately be creator-only, specifying no initial members.
         // Note: Max repetitions should match the value found in mobile group service's create request.
         repeated common.v2.PersonaId initial_members = 2 [(kik.validation.field_validation) = {
-            mandatory: true
             max_repetitions: 1024
         }];
 
@@ -214,10 +215,8 @@ message ChatEvent {
         common.v2.ChatId group_chat_id = 2 [(kik.validation.field_validation) = {
             mandatory: true
         }];
-        bytes invite_code = 3 [(kik.validation.field_validation) = {
+        common.groups.v2.GroupInviteCode invite_code = 3 [(kik.validation.field_validation) = {
             mandatory: true
-            min_byte_length: 20
-            max_byte_length: 20
         }];
     }
 }

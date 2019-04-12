@@ -8,6 +8,7 @@ option objc_class_prefix = "KPBMobileIAMV2";
 
 import "protobuf_validation.proto";
 import "common/v2/model.proto";
+import "client/v2/client_meta.proto";
 import "session/v2/model.proto";
 
 // Authentication is the 'public' facing service that clients use to authenticate
@@ -31,9 +32,11 @@ message AuthenticateRequest {
         EmailCredentials email_credentials = 2;
     }
 
-    common.v2.ClientInstanceId client_instance_id = 10 [(kik.validation.field_validation) = {
-        mandatory: true
-    }];
+    oneof device_info_type {
+        // Deprecated: Use DeviceDetails field instead
+        common.v2.ClientInstanceId client_instance_id = 10 [deprecated = true];
+        common.client.v2.DeviceDetails device_details = 11;
+    }
 
     // The set of credentials when a user logs in using their username
     message UsernameCredentials{

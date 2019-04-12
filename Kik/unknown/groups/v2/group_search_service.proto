@@ -1,8 +1,10 @@
 syntax = "proto3";
 
 package mobile.groups.v2;
-option java_package = "com.kik.groups.v2";
+
 option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/groups/v2;groups";
+option java_package = "com.kik.gen.groups.v2";
+option objc_class_prefix = "KPBMobileGroupsV2";
 
 import "common_rpc.proto";
 import "protobuf_validation.proto";

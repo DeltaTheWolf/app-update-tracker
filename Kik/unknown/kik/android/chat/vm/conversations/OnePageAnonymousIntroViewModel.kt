@@ -34,17 +34,7 @@ class OnePageAnonymousIntroViewModel : AbstractResourceViewModel(), IOnePageAnon
 
     override fun acceptTerms() {
         oneTimeUseRecordManager.setMeetNewPeopleTermsAccepted(true)
-        val inAnonMatchingV3 = abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_0) ||
-                                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_QUICKCHAT_INTEREST) ||
-                                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_2) ||
-                                abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_LAUNCHSCREEN_INTEREST_5)
-        if (abManager.isIn(AbManager.ANONYMOUS_MATCHING_V3, AbManager.ANONYMOUS_MATCHING_V3_SHOW_QUICKCHAT_INTEREST)) {
-            navigator.navigateToOneToOneMatchingV3ViewModel()
-        } else if (inAnonMatchingV3) {
-            navigator.navigateToInterestsPickerOnBoarding()
-        } else {
-            navigator.navigateToOneToOneMatchingViewModel()
-        }
+        navigator.navigateToOneToOneMatchingV3ViewModel()
         navigator.finish()
     }
 

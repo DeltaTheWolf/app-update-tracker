@@ -2,6 +2,7 @@ package kik.android.chat.vm.conversations
 
 import com.kik.components.CoreComponent
 import com.kik.core.storage.FeatureConfig
+import com.kik.kin.IKinStellarSDKController
 import com.kik.matching.rpc.AnonMatchingService
 import com.kik.metrics.events.*
 import com.kik.metrics.service.MetricsService
@@ -19,6 +20,7 @@ import kik.core.interfaces.IStorage
 import kik.core.net.messageExtensions.AnonymousChatInfoAttachment
 import kik.core.net.outgoing.TemporaryBanDialogDescriptor
 import kik.core.util.ListUtils
+import kik.core.xdata.IOneTimeUseRecordManager
 import kik.core.xiphias.IMatchingService
 import kik.core.xiphias.XiphiasUtils
 import rx.Observable
@@ -52,6 +54,9 @@ class OneToOneMatchingViewModel : AbstractResourceViewModel(), IOneToOneMatching
 
     @Inject
     lateinit var abManager: IAbManager
+
+    @Inject
+    lateinit var _kinStellarSDKController: IKinStellarSDKController
 
     private val interestSearchInterval = 10L
 

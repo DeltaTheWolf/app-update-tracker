@@ -15,7 +15,7 @@ class StubKinProductTransactionEntrySqlStorage : IKinTransactionStorage<UUID, Pr
 
     override fun retrieveTransaction(offerId: UUID) = KinProductTransaction(offerId, ProductTransactionStatus.COMPLETE)
 
-    override fun deleteTransactions(toDelete: List<UUID>) = 0
+    override fun deleteTransactions(idsToDelete: MutableList<String>) = 0
 
-    override fun deleteTransaction(offer: UUID) = false
+    override fun deleteTransaction(offerId: String) = false
 }

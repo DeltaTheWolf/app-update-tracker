@@ -51,6 +51,8 @@ message GetChatInfoResponse {
 
             // No chat info was found for this chat_id that can be returned to the caller's account.
             NOT_FOUND = 1;
+
+            INTERNAL = 2;
         }
     }
 }

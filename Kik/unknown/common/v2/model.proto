@@ -82,9 +82,12 @@ message OneToOneId {
 }
 
 message ClientInstanceId {
-    bytes raw_value = 1 [(kik.validation.field_validation) = {
+    bytes uuid_bytes = 1 [(kik.validation.field_validation) = {
         mandatory: true
-        max_byte_length: 100
+        // Expect the length to be exactly 16 or 32 bytes, depending on the
+        // encoding of the UUID.
+        min_byte_length: 16
+        max_byte_length: 32
     }];
 }
 

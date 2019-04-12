@@ -39,11 +39,11 @@ class KinProductTransactionEntrySqlStorage(storage: IStorage, context: Context)
         return entries
     }
 
-    override fun deleteTransaction(db: SQLiteDatabase, offerId: UUID) =
+    override fun deleteTransaction(db: SQLiteDatabase, offerId: String) =
         try {
             db.delete(KinProductTransactionEntryStorageHelper.KIN_PRODUCT_TRANSACTION_ENTRY_TABLE_NAME,
                     KinProductTransactionEntryCursor.OFFER_ID + " = ?",
-                    arrayOf(offerId.toString())) == 1
+                    arrayOf(offerId)) == 1
         } catch (e: Exception) {
             // Something went wrong deleting the thing?! Oh dear.
             LogUtils.throwOrSilent(e)

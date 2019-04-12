@@ -7,8 +7,10 @@ import com.kik.core.domain.kin.KinController
 import com.kik.core.domain.kin.KinRepository
 import com.kik.kin.*
 import com.kik.metrics.service.MetricsService
+import com.kik.storage.KikOfferTransactionEntrySqlStorage
 import com.kik.storage.KinProductTransactionEntrySqlStorage
 import com.kik.storage.P2PTransactionEntrySqlStorage
+import com.kik.storage.StubKikOfferTransactionEntrySqlStorage
 import com.kik.storage.StubKinProductTransactionEntrySqlStorage
 import com.kik.storage.StubP2PTransactionEntrySqlStorage
 import dagger.Module
@@ -85,9 +87,25 @@ class KinModule(private val _applicationContext: Context, private val _configura
 
     @Provides
     @Singleton
+    internal fun providesKikOfferTransactionStorage(): IKinTransactionStorage<KikOffer, KikOfferTransactionStatus> {
+        return if (DeviceUtils.kinSupportedDevice()) {
+            KikOfferTransactionEntrySqlStorage(_storage, _applicationContext)
+        } else StubKikOfferTransactionEntrySqlStorage()
+    }
+
+    @Provides
+    @Singleton
     internal fun providesP2PPaymentService(communicator: ICommunication, storage: IStorage): IP2PPaymentService {
         return XiphiasP2PPaymentService(communicator, storage)
     }
+
+    @Provides
+    @Singleton
+    internal fun providesKikOfferService(communicator: ICommunication): IKikOfferService = XiphiasKikOfferService(communicator)
+
+    @Provides
+    @Singleton
+    internal fun providesKikOfferManager(kikOfferService: IKikOfferService): IKikOfferManager = KikOfferManager(kikOfferService)
 
     @Provides
     @Singleton
@@ -103,6 +121,18 @@ class KinModule(private val _applicationContext: Context, private val _configura
         return if (DeviceUtils.kinSupportedDevice()) {
             ProductPaymentManager(kinStellarSDKController, productDataService, storage, Schedulers.io())
         } else StubProductPaymentManager()
+
+    }
+
+    @Provides
+    @Singleton
+    internal fun providesOfferTransactionManager(kinStellarSDKController: IKinStellarSDKController,
+                                                 paymentService: IPaymentService,
+                                                 storage: IKinTransactionStorage<KikOffer, KikOfferTransactionStatus>,
+                                                 metricsService: MetricsService): IKikOfferTransactionManager {
+        return if (DeviceUtils.kinSupportedDevice()) {
+            KikOfferTransactionManager(kinStellarSDKController, paymentService, storage, metricsService)
+        } else StubKikOfferTransactionManager()
 
     }
 

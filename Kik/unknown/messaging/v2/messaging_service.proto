@@ -8,6 +8,7 @@ option objc_class_prefix = "KPBMobileMessagingV2";
 
 import "protobuf_validation.proto";
 import "messaging/v2/model.proto";
+import "common/v2/model.proto";
 
 // Messaging is the 'public' facing service in which clients connect to to both
 // send and receive messages, as well as receive some metadata updates about chats.
@@ -200,6 +201,12 @@ service Messaging {
     // batch of pointers. If they don't retry, the state should eventually
     // become consistent as they update pointers from a later cause.
     rpc UpdatePointers(UpdatePointersRequest) returns (UpdatePointersResponse) {}
+
+    // NotifyIsTyping sends an is-typing notification to participants of a chat.
+    //
+    // This notification will _not_ be persisted anywhere and thus there are no
+    // delivery guarantees.
+    rpc NotifyIsTyping(NotifyIsTypingRequest) returns (NotifyIsTypingResponse) {}
 }
 
 message OpenMessageStreamRequest {
@@ -260,4 +267,24 @@ message UpdatePointersResponse {
     enum Result {
         OK = 0;
     }
+}
+
+message NotifyIsTypingRequest {
+    common.v2.ChatId chat_id = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    common.v2.PersonaId sender = 2 [(kik.validation.field_validation) = {
+        mandatory: true
+    }];
+
+    // Indicates that the sender is, is still, or stopped typing a message.
+    //
+    // A participant which has stopped typing can be indicated by either:
+    //  1. a lack of periodic is-typing=true notifications
+    //  2. a notification with is_typing=false
+    bool is_typing = 5;
+}
+
+message NotifyIsTypingResponse {
 }

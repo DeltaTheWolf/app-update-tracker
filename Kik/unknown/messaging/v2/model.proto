@@ -190,8 +190,7 @@ message Message {
             Platform platform = 4;
             GalleryVideo gallery_video = 5;
             CameraVideo camera_video = 6;
-
-            IsTyping is_typing = 10;
+            Gif gif = 7;
         }
 
         // A pure-text message including smiley rendering, links, etc.
@@ -229,6 +228,18 @@ message Message {
             common.blob.v2.BlobReference blob = 2 [(kik.validation.field_validation) = { mandatory: true }];
         }
 
+        // A GIF message with a preview image for immediate rendering and a series of
+        // gif references which contain urls for various formats
+        // A GIF should always have at least a full size MP4 version, but may also include other formats that clients
+        // may or may not use, as well as smaller versions
+        message Gif {
+            ImagePreview preview = 1 [(kik.validation.field_validation) = { mandatory: true }];
+
+            // Reference to the GIF
+            // This reference should always contain an original MP4 version, and may also contain preview versions of various formats (including MP4).
+            common.blob.v2.BlobReference gif = 2 [(kik.validation.field_validation) = { mandatory: true }];
+        }
+
         // A message constructed using one of the provided Kik SDK integrations.
         // The rendering of the message will be predicated on the existance of
         // certain fields
@@ -256,14 +267,6 @@ message Message {
                 // todo: total map size validation?
                 max_byte_length: 512 // This restriction currently enforces key size.
             }];
-        }
-
-        // A transient notification indicating that the sender is, is still, or stopped typing a message.
-        // Messages with IsTyping content should _never_ be persisted anywhere. Additionally, receivers
-        // are _not_ expected to receive messages with IsTyping content, instead signal(s) will
-        // indicate a chat participant is typing.
-        message IsTyping {
-            bool is_typing = 1;
         }
     }
 

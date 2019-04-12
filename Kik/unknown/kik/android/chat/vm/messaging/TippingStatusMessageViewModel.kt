@@ -63,6 +63,7 @@ class TippingStatusMessageViewModel(message: Message,
         if (!transactionDetails.hasAmount()) {
             return Observable.just("")
         }
+
         return Observable.just("${transactionDetails.amount.amountDouble.toInt()}")
     }
 

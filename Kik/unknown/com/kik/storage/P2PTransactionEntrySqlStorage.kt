@@ -13,10 +13,7 @@ import kik.android.storage.KikSQLiteOpenHelper
 import kik.android.util.LogUtils
 import kik.core.chat.profile.KinUserId
 import kik.core.interfaces.IStorage
-import kik.core.kin.AdminTippingMetaData
-import kik.core.kin.EmptyMetaData
-import kik.core.kin.PaymentMetaData
-import kik.core.kin.PaymentType
+import kik.core.kin.*
 import java.math.BigDecimal
 import java.util.*
 
@@ -34,7 +31,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
         val whereStatement = P2PTransactionEntryCursor.ID + " = ?"
         val whereValues = arrayListOf(entry.offer.id.toString())
 
-         if (db.update(P2PTransactionEntryStorageHelper.P2P_TRANSACTION_ENTRY_TABLE_NAME,
+        if (db.update(P2PTransactionEntryStorageHelper.P2P_TRANSACTION_ENTRY_TABLE_NAME,
                         contentValues, whereStatement, whereValues.toTypedArray()) == 0) {
             db.insert(P2PTransactionEntryStorageHelper.P2P_TRANSACTION_ENTRY_TABLE_NAME, null, contentValues)
         }
@@ -46,19 +43,23 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
                 P2PTransactionEntryCursor::class.java,
                 P2PTransactionEntryStorageHelper.P2P_TRANSACTION_ENTRY_TABLE_NAME)
         resultsCursor.callForEach({ cursor: P2PTransactionEntryCursor ->
-            val payment = P2PPayment(cursor.user.toBareJid(), cursor.kinUserId, BigDecimal(cursor.amount), cursor.type, cursor.metaData, cursor.id)
-            payment.confirmationJwt = cursor.confirmationJwt
-            payment.paymentJwt = cursor.paymentJwt
-            entries.add(P2PTransaction(payment, cursor.status))
+            try {
+                val payment = P2PPayment(cursor.user.toBareJid(), cursor.kinUserId, BigDecimal(cursor.amount), cursor.type, cursor.metaData, cursor.id)
+                payment.confirmationJwt = cursor.confirmationJwt
+                payment.paymentJwt = cursor.paymentJwt
+                entries.add(P2PTransaction(payment, cursor.status))
+            } catch (e : Exception) {
+                deleteTransaction(db, cursor.id.toString())
+            }
         }, true)
 
         return entries
     }
 
-    override fun deleteTransaction(db: SQLiteDatabase, payment: P2PPayment) =
+    override fun deleteTransaction(db: SQLiteDatabase, paymentId: String) =
             try {
                 val whereStatement = P2PTransactionEntryCursor.ID + " = ?"
-                val whereValues = arrayOf(payment.id.toString())
+                val whereValues = arrayOf(paymentId)
                 db.delete(P2PTransactionEntryStorageHelper.P2P_TRANSACTION_ENTRY_TABLE_NAME,
                         whereStatement, whereValues) == 1
             } catch (e: Exception) {
@@ -118,7 +119,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
         }
 
         override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-            // Use updateSchema instead of onUpgrade, it will be called once when instantiated and will not require a db version upgrade
+
         }
 
         companion object {
@@ -162,6 +163,7 @@ class P2PTransactionEntrySqlStorage(storage: IStorage, context: Context)
             get() {
                 when (type) {
                     PaymentType.ADMIN_TIP -> return AdminTippingMetaData.fromString(getString(METADATA))
+                    PaymentType.MESSAGE_TIP -> return MessageTippingMetaData.fromString(getString(METADATA))
                     else -> return EmptyMetaData()
                 }
             }
