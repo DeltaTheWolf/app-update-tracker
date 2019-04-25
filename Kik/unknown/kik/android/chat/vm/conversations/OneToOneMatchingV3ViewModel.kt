@@ -86,6 +86,7 @@ class OneToOneMatchingV3ViewModel : AbstractResourceViewModel(), IOneToOneMatchi
 
     private val _connectingSubject = BehaviorSubject.create<Boolean>(false)
     private val _quickMatchEnabled = BehaviorSubject.create<Boolean>(false)
+    private val _matchingWithInterests = BehaviorSubject.create<Boolean>(true)
     private val totalChatsRemaining = BehaviorSubject.create<Int>()
     private val _isTransactionPending = BehaviorSubject.create<Boolean>()
     private val _cancelEnabled = BehaviorSubject.create<Boolean>()
@@ -246,6 +247,8 @@ class OneToOneMatchingV3ViewModel : AbstractResourceViewModel(), IOneToOneMatchi
         var searchType = MatchingMatchsearchInitiated.SearchType.quickChat()
 
         chatInterest = selectedInterestsList()
+
+        _matchingWithInterests.onNext(shouldInterestSearch)
 
         if (!ListUtils.isNullOrEmpty(chatInterest) && shouldInterestSearch) {
             _timerSubscription?.unsubscribe()
@@ -469,6 +472,8 @@ class OneToOneMatchingV3ViewModel : AbstractResourceViewModel(), IOneToOneMatchi
         metricsService.track(MatchingBigprizedialogShown.builder().build())
     }
 
+    override fun matchingWithInterest() = _matchingWithInterests.distinctUntilChanged()
+
     override fun openFilterPicker() {
         metricsService.track(MatchingFiltersTapped.builder().build())
         navigator.navigateToAnonymousFilterPicker(selectedInterests).subscribe {
@@ -580,6 +585,7 @@ class OneToOneMatchingV3ViewModel : AbstractResourceViewModel(), IOneToOneMatchi
         _connectingSubject.onNext(false)
         _quickMatchEnabled.onNext(false)
         _cancelEnabled.onNext(false)
+        _matchingWithInterests.onNext(true)
         _timerSubscription?.unsubscribe()
         if (_isSearching) {
             _requestId?.let {

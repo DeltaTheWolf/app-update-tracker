@@ -173,4 +173,10 @@ class KinModule(private val _applicationContext: Context, private val _configura
     internal fun providesKinMetrics(metricsService: MetricsService): IKinSdkMetrics {
         return KinSdkMetrics(metricsService)
     }
+
+    @Provides
+    @Singleton
+    internal fun providesMessageTipQueue(p2pTransactionManager: IP2PTransactionManager): IMessageTipQueue {
+        return MessageTipQueue(p2pTransactionManager)
+    }
 }

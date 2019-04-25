@@ -8,6 +8,7 @@ import com.kik.kin.IKinAccountsManager
 import com.kik.kin.IKinStellarSDKController
 import com.kik.metrics.events.ChatInactivetipmessageTapped
 import com.kik.metrics.events.CommonTypes
+import com.kik.metrics.events.KikKinsdkFailedtostart
 import com.kik.metrics.service.MetricsService
 import kik.android.MessageTippingStatusLayout
 import kik.android.R
@@ -22,6 +23,7 @@ import kik.core.datatypes.messageExtensions.ContentMessage
 import kik.core.datatypes.messageExtensions.MessageAttachment
 import kik.core.datatypes.messageExtensions.MessageBody
 import kik.core.interfaces.IConversation
+import kik.core.interfaces.INetworkConnectivity
 import rx.Observable
 import javax.inject.Inject
 
@@ -42,6 +44,8 @@ class MessageTippingButtonViewModel(private val convoId: ConvoId,
     lateinit var metricsService: MetricsService
     @Inject
     lateinit var converastionManager: IConversation
+    @Inject
+    lateinit var networkConnectivity: INetworkConnectivity
 
     override fun attach(coreComponent: CoreComponent, navigator: INavigator) {
         coreComponent.inject(this)
@@ -78,11 +82,20 @@ class MessageTippingButtonViewModel(private val convoId: ConvoId,
                 }
 
                 return@combineLatest isLastTextMessage || message.kinTipped > 0
-            }
+            }.onErrorReturn { false }
         }
 
     override fun disabledButtonTapped() {
         trackInactiveTipMessageTapped()
+
+        if (!networkConnectivity.isConnected) {
+            navigator.showDialog(DialogViewModel.Builder<DialogViewModel.Builder<*>>()
+                    .title(getString(R.string.title_network_unavailable))
+                    .message(getString(R.string.message_tipping_no_connection_dialog_message))
+                    .cancelAction(getString(R.string.title_got_it), null)
+                    .build())
+            return
+        }
 
         lifecycleSubscription.add(kinStellarSDKController.isSDKStarted.first()
                 .subscribe { sdkStarted ->
@@ -106,27 +119,45 @@ class MessageTippingButtonViewModel(private val convoId: ConvoId,
                 })
     }
 
-    override val canTipUser: Observable<Boolean>
+    private val enableTipping: Observable<Boolean>
         get() {
             if (convoId.jidType != ConvoId.JidType.GROUP_JID) {
                 return Observable.just(false)
             }
 
-            val messageShouldShow = Observable.combineLatest(isBot(),
+            return Observable.combineLatest(isBot(),
                     groupKinAccessManager.getGroupKinAccessDetails(convoId.jids[0]))
             { isBot, groupKinAccessDetails ->
                 !isBot && groupKinAccessDetails.pgMessageTippingEnabled
             }
+        }
 
-
-            return messageShouldShow.filter { it }
+    override val enableTipButton: Observable<Boolean>
+        get() {
+            return enableTipping.filter { it }
                     .flatMap {
                         return@flatMap Observable.combineLatest(kinStellarSDKController.isSDKStarted,
                                 kinAccountsManager.canUserBeTipped(BareJid.fromString(message.correspondentId)))
                         { sdkStarted, canTipUser ->
                             return@combineLatest sdkStarted && canTipUser
                         }
-                    }
+                    }.onErrorReturn { false }
+        }
+
+    override val enableKPlusButton: Observable<Boolean>
+        get() {
+            return enableTipping.filter { it }
+                    .flatMap {
+                        if (message.kinTipped > 0) {
+                            return@flatMap Observable.just(true)
+                        }
+
+                        return@flatMap Observable.combineLatest(kinStellarSDKController.isSDKStarted,
+                                kinAccountsManager.canUserBeTipped(BareJid.fromString(message.correspondentId)))
+                        { sdkStarted, canTipUser ->
+                            return@combineLatest sdkStarted && canTipUser
+                        }
+                    }.onErrorReturn { false }
         }
 
     private fun isLastMessage(): Observable<Boolean> = nextMessage.map { it == null }
@@ -153,14 +184,27 @@ class MessageTippingButtonViewModel(private val convoId: ConvoId,
 
     private fun trackInactiveTipMessageTapped() {
         lifecycleSubscription.add(
-                kinStellarSDKController.balance.first()
-                        .subscribe { balance ->
+                kinStellarSDKController.balance
+                        .first()
+                        .subscribe({ balance ->
                             metricsService.track(ChatInactivetipmessageTapped.Builder()
                                     .setGroupJid(CommonTypes.GroupJid(convoId.jids[0].localPart))
                                     .setRecipientAliasJid(CommonTypes.AliasJid(BareJid.fromString(message.correspondentId).localPart))
                                     .setKinBalance(CommonTypes.KinBalance(balance.toDouble()))
                                     .setMessageTipAmount(CommonTypes.KinValue(message.kinTipped.toDouble()))
                                     .build())
+                        }) {
+                            val kinSdkFailedMetric = with(KikKinsdkFailedtostart.builder()) {
+                                setLocation(CommonTypes.KinSdkLocations.tipMessage())
+                                setException(KikKinsdkFailedtostart.Exception(it.javaClass.name))
+                                setCause(KikKinsdkFailedtostart.Cause(
+                                        it.cause?.let {
+                                            it.cause?.javaClass?.name
+                                        } ?: "null"))
+                                build()
+                            }
+
+                            metricsService.track(kinSdkFailedMetric)
                         }
         )
     }

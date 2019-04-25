@@ -18,7 +18,12 @@ interface IMessageTippingButtonViewModel : IViewModel {
     fun disabledButtonTapped()
 
     /**
-     * Returns whether or not the user that sent this message can be tipped
+     * Returns whether or not the tip button should be enabled on this message
      */
-    val canTipUser: Observable<Boolean>
+    val enableTipButton: Observable<Boolean>
+
+    /**
+     * Returns whether or not the k plus button should be enabled on this message
+     */
+    val enableKPlusButton: Observable<Boolean>
 }

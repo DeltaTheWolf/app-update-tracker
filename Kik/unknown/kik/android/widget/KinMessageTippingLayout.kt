@@ -65,7 +65,8 @@ class KinMessageTippingLayout @JvmOverloads constructor(context: Context, attrs:
 
     fun animateToHeight(animationState: KinMessageAnimationState, duration: Int) {
         animatorSet?.end()
-        animatorSet = null
+        animatorSet = AnimatorSet()
+        animatorSet?.duration = duration.toLong()
         when (animationState) {
             KinMessageAnimationState.NO_ANIMATION_IN -> {
                 showView()
@@ -78,8 +79,6 @@ class KinMessageTippingLayout @JvmOverloads constructor(context: Context, attrs:
                     showView()
                     return
                 }
-
-                animatorSet = AnimatorSet()
 
                 val alphaAnimator = ObjectAnimator.ofFloat(this, View.ALPHA, 0f, 1f)
                 val heightAnimator = ValueAnimator.ofInt(0, viewHeight)
@@ -110,8 +109,6 @@ class KinMessageTippingLayout @JvmOverloads constructor(context: Context, attrs:
                     hideView()
                     return
                 }
-
-                animatorSet = AnimatorSet()
 
                 val alphaAnimator = ObjectAnimator.ofFloat(this, View.ALPHA, 1f, 0f)
                 val heightAnimator = ValueAnimator.ofInt(viewHeight, 0)
@@ -162,9 +159,9 @@ class KinMessageTippingLayout @JvmOverloads constructor(context: Context, attrs:
         layoutParams = params
     }
 
-    fun setCanTip(canTip: Boolean?) {
-        canTip?.let {
-            if (canTip) {
+    fun setTipButtonEnabled(tipButtonEnabled: Boolean?) {
+        tipButtonEnabled?.let {
+            if (tipButtonEnabled) {
                 setBackgroundResource(R.drawable.kin_tip_pill_background_blue)
             } else {
                 setBackgroundResource(R.drawable.kin_tip_background_gray)

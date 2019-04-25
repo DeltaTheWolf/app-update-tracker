@@ -161,13 +161,11 @@ class MessageTippingStatusLayout @JvmOverloads constructor(
                 else -> {
                 }
             }
-        } ?: let {
-            post {
-                plus_icon.visibility = View.GONE
-                tipping_loading_progress.visibility = View.VISIBLE
-            }
-        }
+        } ?: setTipLoadingView()
 
+        currentAnimatorSet?.addListener(object : AnimatorListenerAdapter() {
+            override fun onAnimationEnd(animation: Animator?) = setTipLoadingView()
+        })
         runAnimation()
         currentStatus = MessageTippingState.IN_FLIGHT
     }
@@ -201,7 +199,8 @@ class MessageTippingStatusLayout @JvmOverloads constructor(
                     })
                     currentAnimatorSet?.playSequentially(completedAlphaAnimator, defaultAlphaAnimator)
                 }
-                else -> {}
+                else -> {
+                }
             }
         } ?: setTipDefaultView()
 
@@ -226,6 +225,18 @@ class MessageTippingStatusLayout @JvmOverloads constructor(
             tipping_checkmark.visibility = View.GONE
             tip_amount.visibility = View.VISIBLE
             exclamation_icon.visibility = View.GONE
+        }
+    }
+
+    private fun setTipLoadingView() {
+        post {
+            background = resources.getDrawable(R.drawable.rounded_rectangle_blue_border)
+            kin_icon.setImageResource(R.drawable.ic_kin_kikblue)
+            tipping_loading_progress.visibility = View.VISIBLE
+            tipping_checkmark.visibility = View.GONE
+            tip_amount.visibility = View.GONE
+            exclamation_icon.visibility = View.GONE
+            plus_icon.visibility = View.GONE
         }
     }
 

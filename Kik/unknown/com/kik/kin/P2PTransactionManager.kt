@@ -13,7 +13,6 @@ import rx.Single
 import rx.schedulers.Schedulers
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
-import com.kik.kin.P2PTransaction
 
 class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKController,
                             private val p2pPaymentService: IP2PPaymentService,

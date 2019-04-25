@@ -39,4 +39,6 @@ interface IOneToOneMatchingV3ViewModel : IViewModel {
     fun isKinBalanceVisible(): Observable<Boolean>
 
     fun goToChallengesScreen()
+
+    fun matchingWithInterest(): Observable<Boolean>
 }

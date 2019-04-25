@@ -139,7 +139,6 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
-    <attr name="canTipUser" format="reference" />
     <attr name="chainUseRtl" format="boolean" />
     <attr name="checkboxStyle" format="reference" />
     <attr name="checkedTextViewStyle" format="reference" />
@@ -258,6 +257,7 @@
         <enum name="gone" value="0" />
         <enum name="invisible" value="1" />
     </attr>
+    <attr name="enableTipButton" format="reference" />
     <attr name="errorDrawable" format="reference" />
     <attr name="errorEnabled" format="boolean" />
     <attr name="errorText" format="reference" />

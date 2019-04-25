@@ -89,7 +89,7 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                 })
 
         lifecycleSubscription.add(oneTimeUseRecordManager.tippingAdminTooltipShown.first().subscribe { firstTimeViewed.onNext(!it) })
-        lifecycleSubscription.add(Observable.combineLatest(kinStellarSDKController.balance.map { it.intValueExact() },
+        lifecycleSubscription.add(Observable.combineLatest(kinStellarSDKController.balance.map { it.intValueExact() }.onErrorReturn { 0 },
                 p2pTransactionManager.retrieveSpendTransactionLimits(PaymentType.ADMIN_TIP).map { it.remainingDailyLimit.toInt() == 0 }.startWith(true),
                 KikObservable.fromEvent(networkState.eventNetworkAvailable()).startWith(networkState.isNetworkAvailable),
                 kinStellarSDKController.isSDKStarted, canAdminsBeTipped)
@@ -329,6 +329,18 @@ class GroupTippingButtonViewModel(private val group: KikGroup, val context: Cont
                             .setVariant(ChatDialogshownBase.Variant(DIALOG_TYPE))
                             .build())
                 }, {
+                    val kinSdkFailedMetric = with(KikKinsdkFailedtostart.builder()) {
+                        setLocation(CommonTypes.KinSdkLocations.adminTip())
+                        setException(KikKinsdkFailedtostart.Exception(it.javaClass.name))
+                        setCause(KikKinsdkFailedtostart.Cause(
+                                it.cause?.let {
+                                    it.cause?.javaClass?.name
+                                } ?: "null"))
+                        build()
+                    }
+
+                    metricsService.track(kinSdkFailedMetric)
+
                     LOG.error(it.message)
                 }))
     }
