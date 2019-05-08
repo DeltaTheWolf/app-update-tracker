@@ -10,6 +10,8 @@ import com.kik.kin.IKikOfferTransactionManager
 import com.kik.kin.IKinStellarSDKController
 import com.kik.kin.KikOfferTransactionStatus
 import com.kik.kin.KinMarketplaceViewModel
+import com.kik.metrics.events.MatchingActivitymarketplaceTapped
+import com.kik.metrics.service.MetricsService
 import kik.android.R
 import kik.android.chat.vm.*
 import kik.core.abtesting.AbManager
@@ -48,6 +50,9 @@ class AnonMatchingChallengesViewModel: AbstractResourceViewModel(), IAnonMatchin
     @Inject
     lateinit var matchingService: IMatchingService
 
+    @Inject
+    lateinit var metricsService: MetricsService
+
     override fun attach(coreComponent: CoreComponent, navigator: INavigator) {
         coreComponent.inject(this)
         super.attach(coreComponent, navigator)
@@ -68,7 +73,10 @@ class AnonMatchingChallengesViewModel: AbstractResourceViewModel(), IAnonMatchin
 
     override fun onBackClick() = navigator.finish()
 
-    override fun marketplaceButtonTapped() = navigator.navigateTo(kinMarketplaceViewModel)
+    override fun marketplaceButtonTapped() {
+        metricsService.track(MatchingActivitymarketplaceTapped.builder().build())
+        navigator.navigateTo(kinMarketplaceViewModel)
+    }
 
     override fun kinBalance(): Observable<String> = _kinStellarSDKController.balance.map {it.intValueExact().toString()}
 

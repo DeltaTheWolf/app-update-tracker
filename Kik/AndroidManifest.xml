@@ -225,7 +225,7 @@
         <activity android:label="@string/kinecosystem_kin_marketplace" android:name="com.kin.ecosystem.main.view.EcosystemActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar" android:windowSoftInputMode="adjustNothing"/>
         <activity android:name="com.kin.ecosystem.poll.view.PollWebViewActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar"/>
         <activity android:name="com.kin.ecosystem.settings.view.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:exported="true" android:name="com.kin.ecosystem.transfer.view.AccountInfoActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar.Transparent"/>
+        <activity android:exported="true" android:name="com.kin.ecosystem.transfer.view.AccountInfoActivity" android:screenOrientation="portrait" android:theme="@style/KinecosysNoActionBar"/>
         <provider android:authorities="kik.android.KinRecoveryFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.kin.ecosystem.recovery.KinRecoveryFileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/kinrecovery_file_provider_paths"/>
         </provider>

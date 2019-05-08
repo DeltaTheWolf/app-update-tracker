@@ -18,6 +18,7 @@ import kik.core.kin.TransactionType
 import com.kik.metrics.events.CommonTypes
 import com.kik.metrics.events.MatchingBuychatsTapped
 import com.kik.metrics.events.MatchingBuychatsetselectedTapped
+import com.kik.metrics.events.MatchingBuychatsmarketplaceTapped
 import com.kik.metrics.service.MetricsService
 import kik.core.kin.AnonMatchingBuyChatData
 
@@ -158,6 +159,7 @@ class AnonMatchingBuyChatsDialogViewModel(var timeRemaining: Long, private var s
     }
 
     private fun onMarketPlaceButtonTapped() {
+        metricsService.track(MatchingBuychatsmarketplaceTapped.builder().build())
         val kinMarketplaceViewModel = KinMarketplaceViewModel()
         kinMarketplaceViewModel.attach(coreComponent, navigator)
         navigator.navigateTo(kinMarketplaceViewModel)

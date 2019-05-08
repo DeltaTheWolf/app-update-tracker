@@ -24,6 +24,8 @@ enum class P2PTransactionStatus(val id: Int) : StatefulEnum<P2PTransactionStatus
     },
 
     KIN_P2P_PAYMENT_ERROR(2001) {
+        override fun advance() = PENDING_P2P_PAYMENT_CONFIRM
+
         override fun retry() = PENDING_P2P_PAYMENT_JWT_FETCH
     },
 

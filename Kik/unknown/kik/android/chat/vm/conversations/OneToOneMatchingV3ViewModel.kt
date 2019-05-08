@@ -579,7 +579,10 @@ class OneToOneMatchingV3ViewModel : AbstractResourceViewModel(), IOneToOneMatchi
 
     override fun isKinBalanceVisible(): Observable<Boolean> = _kinStellarSDKController.isSDKStarted.map { it && inV4Variant() }
 
-    override fun goToChallengesScreen() = navigator.navigateToChallengesViewModel()
+    override fun goToChallengesScreen() {
+        metricsService.track(MatchingActivityTapped.builder().build())
+        navigator.navigateToChallengesViewModel()
+    }
 
     private fun cancelSearch() {
         _connectingSubject.onNext(false)

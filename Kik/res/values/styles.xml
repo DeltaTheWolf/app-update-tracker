@@ -1508,10 +1508,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="KinecosysNoActionBar.Transparent" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-    </style>
     <style name="KinecosysSmallTitle" parent="@style/KinecosysTitleText">
         <item name="android:textSize">@dimen/kinecosystem_small_title_size</item>
     </style>

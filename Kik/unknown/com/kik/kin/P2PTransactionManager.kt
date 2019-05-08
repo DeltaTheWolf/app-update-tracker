@@ -4,15 +4,17 @@ import com.github.mproberts.rxtools.SubjectMap
 import com.kik.kin.payment.rpc.FeaturePaymentService
 import kik.core.kin.PaymentType
 import kik.core.kin.SpendLimits
+import kik.core.util.TimeUtils
 import kik.core.xiphias.IP2PPaymentService
+import org.apache.commons.lang3.tuple.Pair
 import org.slf4j.LoggerFactory
 import rx.Completable
 import rx.Observable
 import rx.Scheduler
 import rx.Single
 import rx.schedulers.Schedulers
+import java.util.*
 import java.util.concurrent.TimeUnit
-import java.util.concurrent.TimeoutException
 
 class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKController,
                             private val p2pPaymentService: IP2PPaymentService,
@@ -22,9 +24,13 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
 
     companion object {
         private val LOG = LoggerFactory.getLogger(P2PTransactionManager::class.java.simpleName)
+        private val INITIAL_BACKOFF_MS = 1000L
+        private val BACKOFF_SCALE_FACTOR = 2L
+        private val MAX_RETRY_COUNT = 15
     }
 
     private val spendLimitsSubjectMap = SubjectMap<PaymentType, SpendLimits>()
+    private val random = Random()
 
     init {
         Single.create<List<ITransaction<P2PPayment, P2PTransactionStatus>>>
@@ -65,16 +71,17 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
             kinStellarSDKController.getOrderConfirmation(payment.paymentJwt)
 
     override fun doKinTransaction(payment: P2PPayment, jwt: String) = kinStellarSDKController.payTo(payment.id.toString(), jwt, payment.metaData)
-            .observeOn(scheduler)
             .timeout(30, TimeUnit.SECONDS)
             .retryWhen { errors ->
-                errors.flatMap { error: Throwable ->
-                    if (error is TimeoutException) {
-                        return@flatMap Observable.just(null)
-                    } else {
-                        return@flatMap Observable.error<Throwable>(error)
-                    }
-                }
+                errors.zipWith(Observable.range(0, MAX_RETRY_COUNT)) { left, right -> Pair.of(left, right) }
+                        .flatMap { pair ->
+                            val retryAttempts = pair.right
+                            if (retryAttempts == 4) {
+                                _transactionStateMap.advanceErrorState(payment)
+                            }
+                            val delayMs = Math.pow(BACKOFF_SCALE_FACTOR.toDouble(), retryAttempts.toDouble()).toLong() * INITIAL_BACKOFF_MS
+                            Observable.timer(TimeUtils.jitterMeTimbers(random, delayMs), TimeUnit.MILLISECONDS)
+                        }
             }
 
     override fun doConfirmTransaction(payment: P2PPayment, offerConfirmationJwt: String): Completable {
@@ -135,7 +142,6 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
 
     private fun retryFailedTransaction(transaction: P2PPayment, status: P2PTransactionStatus, advanceState: Boolean) {
         when (status) {
-            P2PTransactionStatus.KIN_P2P_PAYMENT_ERROR,
             P2PTransactionStatus.P2P_PAYMENT_JWT_FETCH_ERROR -> getOfferAndDoTransaction(transaction)
             P2PTransactionStatus.P2P_PAYMENT_CONFIRM_ERROR -> {
                 if (advanceState) {
@@ -152,9 +158,11 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
     private fun recoverPendingTransaction(transaction: P2PPayment, status: P2PTransactionStatus) {
         when (status) {
             P2PTransactionStatus.PENDING_P2P_PAYMENT_JWT_FETCH -> getOfferAndDoTransaction(transaction)
-            P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT -> getTransaction(transaction, transaction.paymentJwt).flatMapCompletable { confirmTransaction(transaction, it) }
-                    .onErrorComplete()
-                    .subscribe()
+            P2PTransactionStatus.PENDING_KIN_P2P_PAYMENT , P2PTransactionStatus.KIN_P2P_PAYMENT_ERROR ->
+                getTransaction(transaction, transaction.paymentJwt)
+                        .flatMapCompletable { confirmTransaction(transaction, it) }
+                        .onErrorComplete()
+                        .subscribe()
             P2PTransactionStatus.PENDING_P2P_PAYMENT_CONFIRM, P2PTransactionStatus.P2P_PAYMENT_CONFIRM_ERROR ->
                 // in this case the payment might have been successful, so we need to force a retry
                 retryConfirmTransaction(transaction)
