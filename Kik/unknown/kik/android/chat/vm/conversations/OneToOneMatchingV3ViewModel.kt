@@ -36,6 +36,7 @@ import rx.Observable
 import rx.Subscription
 import rx.android.schedulers.AndroidSchedulers
 import rx.subjects.BehaviorSubject
+import java.math.BigDecimal
 import java.util.*
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
@@ -179,17 +180,30 @@ class OneToOneMatchingV3ViewModel : AbstractResourceViewModel(), IOneToOneMatchi
                             .subscribe { failedTransactions ->
                                 var dialogShown: Boolean = false
                                 failedTransactions.filter { it.feature == FeatureGroup.ANON_MATCHING }
-                                        .forEach {
+                                        .forEach { offer ->
                                             // Failed silent transactions should be discarded
-                                            if (it.claimSilently) {
-                                                cancelFailedOfferAndTransaction(it)
+                                            if (offer.claimSilently) {
+                                                cancelFailedOfferAndTransaction(offer)
                                                 return@forEach
                                             }
-                                            // Show dialog for non-silent fail
-                                            if (!dialogShown) {
-                                                showTransactionFailedDialog(it)
-                                                dialogShown = true
+
+                                            if (dialogShown) {
+                                                return@subscribe
                                             }
+
+                                            lifecycleSubscription.add(_kinStellarSDKController.currentBalance.subscribe({
+                                                // If not enough balance, show Insufficient Fund dialog and don't allow retry
+                                                if (it < BigDecimal(offer.amount) && offer.transactionType == TransactionType.SPEND) {
+                                                    showNotEnoughKinDialog(offer)
+                                                    dialogShown = true
+                                                    return@subscribe
+                                                }
+                                                // Otherwise show failed transaction dialog and allow retry
+                                                showTransactionFailedDialog(offer)
+                                                dialogShown = true
+                                            }, {
+                                                LOG.error(it.message ?: "currentBalance Error")
+                                            }))
                                         }
                             })
 
@@ -424,6 +438,21 @@ class OneToOneMatchingV3ViewModel : AbstractResourceViewModel(), IOneToOneMatchi
 
         // Fire daily challenge dialog shown
         metricsService.track(MatchingDailychallengeintroShown.builder().build())
+    }
+
+    private fun showNotEnoughKinDialog(transaction: KikOffer) {
+        navigator.showDialog(
+            with(DialogViewModel.Builder<DialogViewModel.Builder<*>>()) {
+                image(getDrawable(R.drawable.img_errorload))
+                title(getString(R.string.transaction_failed_title))
+                message(getString(R.string.insufficient_kin_balance))
+                style(DialogViewModel.DialogStyle.IMAGE)
+                confirmAction(getString(R.string.ok)) {
+                    cancelFailedOfferAndTransaction(transaction)
+                }
+                build()
+            }
+        )
     }
 
     private fun showTransactionFailedDialog(transaction: KikOffer) {

@@ -7,7 +7,6 @@ import com.kik.metrics.events.MatchingTransactionInitiated
 import com.kik.metrics.events.MatchingTransactionSuccess
 import com.kik.metrics.service.MetricsService
 import kik.core.kin.FeatureGroup
-import kik.core.kin.TransactionType
 import kik.core.xiphias.IPaymentService
 import org.slf4j.LoggerFactory
 import rx.Completable
@@ -15,7 +14,6 @@ import rx.Observable
 import rx.Scheduler
 import rx.Single
 import rx.schedulers.Schedulers
-import rx.subjects.BehaviorSubject
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
@@ -115,7 +113,7 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
             }
             .doOnSuccess { offerJwt -> offer.paymentJwt = offerJwt }
 
-    override fun doRequestConfirmationJwt(offer: KikOffer) = kinStellarSDKController.getOrderConfirmation(offer.paymentJwt)
+    override fun doRequestConfirmationJwt(offer: KikOffer) = kinStellarSDKController.getOrderConfirmation(offer.kikUserOfferId)
 
     override fun doKinTransaction(offer: KikOffer, offerJwt: String) = when (offer.transactionType) {
         kik.core.kin.TransactionType.EARN -> requestPaymentTransaction(offerJwt)
@@ -208,10 +206,20 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
 
     private fun recoverPendingTransaction(offer: KikOffer, status: KikOfferTransactionStatus) {
         when (status) {
-            KikOfferTransactionStatus.PENDING_OFFER_JWT_FETCH,
-            KikOfferTransactionStatus.PENDING_KIN_PURCHASE,
+            KikOfferTransactionStatus.PENDING_OFFER_JWT_FETCH -> getOfferAndDoTransaction(offer)
+            KikOfferTransactionStatus.PENDING_KIN_PURCHASE -> getOrderConfirmation(offer)
             KikOfferTransactionStatus.PENDING_UNLOCK_OFFER -> getOfferAndDoTransaction(offer)
         }
+    }
+
+    private fun getOrderConfirmation(offer: KikOffer) {
+        retryConfirmTransaction(offer)
+            .subscribeOn(scheduler)
+            .subscribe({
+                completeTransaction(offer)
+            }, {
+                error -> LOG.error("error found when confirming transaction with KinSDK", error)
+            })
     }
 
     private fun deletePaymentConfirmTransaction(offer: KikOffer) {
@@ -219,5 +227,4 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
             deleteTransaction(offer)
         }
     }
-
 }

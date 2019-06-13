@@ -145,15 +145,23 @@ class AnonMatchingBuyChatsDialogViewModel(var timeRemaining: Long, private var s
     }
 
     private fun onBuyButtonTapped() {
-        currentOfferHolder?.let {
+        currentOfferHolder?.let { currentOffer ->
             // Fire 'buy' tapped metric
-            val numberOfChats: Int? = (it.kikOfferData as? AnonMatchingBuyChatData)?.getNumberOfChats()
+            val numberOfChats: Int? = (currentOffer.kikOfferData as? AnonMatchingBuyChatData)?.getNumberOfChats()
             val eventBuilder = MatchingBuychatsTapped.builder()
             eventBuilder.setSetSelected(CommonTypes.SetSelected(numberOfChats ?: 0))
             metricsService.track(eventBuilder.build())
 
+            // Check balance before starting transaction
+            balanceHolder?.let { balance ->
+                if (currentOffer.amount > balance) {
+                    showNotEnoughKinDialog(currentOffer)
+                    return
+                }
+            }
+
             // Kick off transaction
-            offerTransactionManager.getOfferAndDoTransaction(it)
+            offerTransactionManager.getOfferAndDoTransaction(currentOffer)
             onCancel.run()
         }
     }
@@ -164,5 +172,18 @@ class AnonMatchingBuyChatsDialogViewModel(var timeRemaining: Long, private var s
         kinMarketplaceViewModel.attach(coreComponent, navigator)
         navigator.navigateTo(kinMarketplaceViewModel)
         onCancel.run()
+    }
+
+    private fun showNotEnoughKinDialog(transaction: KikOffer) {
+        navigator.showDialog(
+            with(DialogViewModel.Builder<DialogViewModel.Builder<*>>()) {
+                image(resources.getDrawable(R.drawable.img_errorload))
+                title(resources.getString(R.string.transaction_failed_title))
+                message(resources.getString(R.string.insufficient_kin_balance))
+                style(DialogViewModel.DialogStyle.IMAGE)
+                confirmAction(resources.getString(R.string.ok)) {}
+                build()
+            }
+        )
     }
 }
