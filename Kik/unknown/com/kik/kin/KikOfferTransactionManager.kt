@@ -30,15 +30,15 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
     init {
         Single.create<List<ITransaction<KikOffer, KikOfferTransactionStatus>>>
         { singleSubscriber -> singleSubscriber.onSuccess(storage.retrieveAllTransactions()) }
-                .subscribeOn(scheduler)
-                .subscribe({ transactions ->
-                    transactions.map { transaction -> transaction as KikOfferTransaction }
-                            .forEach {
-                                _transactionStateMap.initialize(it.offer, it.status)
-                                recoverPendingTransaction(it.offer, it.status)
-                                updateFailedTransactionsSet(it)
-                            }
-                }, { error -> LOG.error("error found when retrieving transactions from storage", error) })
+            .subscribeOn(scheduler)
+            .subscribe({ transactions ->
+                transactions.map { transaction -> transaction as KikOfferTransaction }
+                    .forEach {
+                        _transactionStateMap.initialize(it.offer, it.status)
+                        recoverPendingTransaction(it.offer, it.status)
+                        updateFailedTransactionsSet(it)
+                    }
+            }, { error -> LOG.error("error found when retrieving transactions from storage", error) })
 
         // Track transaction status metrics
         onTransactionMapChanged().filter {
@@ -79,58 +79,65 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
 
     override fun retryFailedTransaction(offer: KikOffer) {
         transactionStatus(offer)
-                .first()
-                .subscribe { status -> retryFailedTransaction(offer, status, true) }
+            .first()
+            .subscribe { status -> retryFailedTransaction(offer, status, true) }
     }
 
     override fun getTransactionType(status: KikOfferTransactionStatus) =
-            if (status.isErrorState()) TransactionType.ERROR
-            else
-                when (status) {
-                    KikOfferTransactionStatus.COMPLETE -> TransactionType.COMPLETE
-                    else -> TransactionType.PENDING
-                }
+        if (status.isErrorState()) TransactionType.ERROR
+        else
+            when (status) {
+                KikOfferTransactionStatus.COMPLETE -> TransactionType.COMPLETE
+                else -> TransactionType.PENDING
+            }
 
     override fun doRequestTransactionJwt(offer: KikOffer) = paymentService.getKikOfferJwt(offer.kikOfferId, offer.kikUserOfferId, offer.recipient, offer.amount, offer.metaData)
-            .observeOn(scheduler)
-            .flatMap {
-                when (it.result) {
-                    FeaturePaymentService.GetKikOfferJwtResponse.Result.REJECTED -> {
-                        Single.error(Throwable(it.rejectionReason.descriptorForType.name))
-                    }
-                    FeaturePaymentService.GetKikOfferJwtResponse.Result.OK -> {
-                        if (!it.hasOfferJwt()) {
-                            Single.error(Error("No JWT in response"))
-                        } else {
-                            if (it.hasUserOfferId()) offer.kikUserOfferId = it.userOfferId.id
-                            Single.just(it.offerJwt.jwt)
-                        }
-                    }
-                    else -> {
-                        Single.error(Error("Unrecognized response"))
+        .observeOn(scheduler)
+        .flatMap {
+            when (it.result) {
+                FeaturePaymentService.GetKikOfferJwtResponse.Result.REJECTED -> {
+                    Single.error(Throwable(it.rejectionReason.descriptorForType.name))
+                }
+                FeaturePaymentService.GetKikOfferJwtResponse.Result.OK -> {
+                    if (!it.hasOfferJwt()) {
+                        Single.error(Error("No JWT in response"))
+                    } else {
+                        if (it.hasUserOfferId()) offer.kikUserOfferId = it.userOfferId.id
+                        Single.just(it.offerJwt.jwt)
                     }
                 }
+                else -> {
+                    Single.error(Error("Unrecognized response"))
+                }
             }
-            .doOnSuccess { offerJwt -> offer.paymentJwt = offerJwt }
+        }
+        .doOnSuccess { offerJwt -> offer.paymentJwt = offerJwt }
 
     override fun doRequestConfirmationJwt(offer: KikOffer) = kinStellarSDKController.getOrderConfirmation(offer.kikUserOfferId)
 
-    override fun doKinTransaction(offer: KikOffer, offerJwt: String) = when (offer.transactionType) {
-        kik.core.kin.TransactionType.EARN -> requestPaymentTransaction(offerJwt)
-        kik.core.kin.TransactionType.SPEND -> purchasePaymentTransaction(offer.kikOfferId, offerJwt)
-        else -> requestUnknownTransaction()
-    }
+    override fun doKinTransaction(offer: KikOffer, offerJwt: String) =
+        when (offer.transactionType) {
+            kik.core.kin.TransactionType.EARN -> requestPaymentTransaction(offerJwt)
+            kik.core.kin.TransactionType.SPEND -> {
+                if (kinStellarSDKController.getCachedBalance().getAmount().toInt() < offer.amount) {
+                    Single.error<String>(Exception("Balance too low"))
+                } else {
+                    purchasePaymentTransaction(offer.kikOfferId, offerJwt)
+                }
+            }
+            else -> requestUnknownTransaction()
+        }
 
     override fun doConfirmTransaction(offer: KikOffer, offerConfirmationJwt: String): Completable {
         offer.confirmationJwt = offerConfirmationJwt
         return paymentService
-                .processKikOfferTransactionConfirmation(offerConfirmationJwt, offer.kikUserOfferId)
-                .flatMapCompletable { processResponse ->
-                    if (processResponse.result == FeaturePaymentService.ProcessKikOfferTransactionConfirmationResponse.Result.OK) {
-                        return@flatMapCompletable Completable.complete()
-                    }
-                    return@flatMapCompletable Completable.error(Error("Can't process payment to user with code: ${processResponse.rejectionReason.name}"))
+            .processKikOfferTransactionConfirmation(offerConfirmationJwt, offer.kikUserOfferId)
+            .flatMapCompletable { processResponse ->
+                if (processResponse.result == FeaturePaymentService.ProcessKikOfferTransactionConfirmationResponse.Result.OK) {
+                    return@flatMapCompletable Completable.complete()
                 }
+                return@flatMapCompletable Completable.error(Error("Can't process payment to user with code: ${processResponse.rejectionReason.name}"))
+            }
     }
 
     override fun initialTransactionStatus() = KikOfferTransactionStatus.initialValue()
@@ -163,17 +170,17 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
     override fun createTransaction(offer: KikOffer, status: KikOfferTransactionStatus) = KikOfferTransaction(offer, status)
 
     private fun requestPaymentTransaction(offerJwt: String) = kinStellarSDKController.requestPayment(offerJwt)
-            .observeOn(scheduler)
-            .timeout(30, TimeUnit.SECONDS)
-            .retryWhen { errors ->
-                errors.flatMap {
-                    if (it is TimeoutException) {
-                        return@flatMap Observable.just(null)
-                    } else {
-                        return@flatMap Observable.error<Throwable>(it)
-                    }
+        .observeOn(scheduler)
+        .timeout(30, TimeUnit.SECONDS)
+        .retryWhen { errors ->
+            errors.flatMap {
+                if (it is TimeoutException) {
+                    return@flatMap Observable.just(null)
+                } else {
+                    return@flatMap Observable.error<Throwable>(it)
                 }
             }
+        }
 
     override fun completeTransaction(offer: KikOffer) {
         _transactionStateMap.advanceToSuccessState(offer, KikOfferTransactionStatus.COMPLETE)
@@ -184,17 +191,17 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
     private fun requestUnknownTransaction() = Single.just("")
 
     private fun purchasePaymentTransaction(offerID: String, offerJwt: String) = kinStellarSDKController.purchase(offerID, offerJwt)
-            .observeOn(scheduler)
-            .timeout(30, TimeUnit.SECONDS)
-            .retryWhen { errors ->
-                errors.flatMap { error: Throwable ->
-                    if (error is TimeoutException) {
-                        return@flatMap Observable.just(null)
-                    } else {
-                        return@flatMap Observable.error<Throwable>(error)
-                    }
+        .observeOn(scheduler)
+        .timeout(30, TimeUnit.SECONDS)
+        .retryWhen { errors ->
+            errors.flatMap { error: Throwable ->
+                if (error is TimeoutException) {
+                    return@flatMap Observable.just(null)
+                } else {
+                    return@flatMap Observable.error<Throwable>(error)
                 }
             }
+        }
 
     private fun retryFailedTransaction(offer: KikOffer, status: KikOfferTransactionStatus, advanceState: Boolean) {
         when (status) {
@@ -217,8 +224,8 @@ class KikOfferTransactionManager(private val kinStellarSDKController: IKinStella
             .subscribeOn(scheduler)
             .subscribe({
                 completeTransaction(offer)
-            }, {
-                error -> LOG.error("error found when confirming transaction with KinSDK", error)
+            }, { error ->
+                LOG.error("error found when confirming transaction with KinSDK", error)
             })
     }
 

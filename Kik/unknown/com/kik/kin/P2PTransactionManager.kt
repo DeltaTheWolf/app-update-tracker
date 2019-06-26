@@ -13,7 +13,7 @@ import rx.Observable
 import rx.Scheduler
 import rx.Single
 import rx.schedulers.Schedulers
-import java.util.*
+import java.util.Random
 import java.util.concurrent.TimeUnit
 
 class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKController,
@@ -70,10 +70,14 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
     override fun doRequestConfirmationJwt(payment: P2PPayment) =
             kinStellarSDKController.getOrderConfirmation(payment.paymentJwt)
 
-    override fun doKinTransaction(payment: P2PPayment, jwt: String) = kinStellarSDKController.payTo(payment.id.toString(), jwt, payment.metaData)
-            .timeout(30, TimeUnit.SECONDS)
-            .retryWhen { errors ->
-                errors.zipWith(Observable.range(0, MAX_RETRY_COUNT)) { left, right -> Pair.of(left, right) }
+    override fun doKinTransaction(payment: P2PPayment, jwt: String) =
+        if (kinStellarSDKController.getCachedBalance().getAmount().toLong() < payment.amount.toLong()) {
+            Single.error<String>(Exception("Balance too low"))
+        } else {
+            kinStellarSDKController.payTo(payment.id.toString(), jwt, payment.metaData)
+                .timeout(30, TimeUnit.SECONDS)
+                .retryWhen { errors ->
+                    errors.zipWith(Observable.range(0, MAX_RETRY_COUNT)) { left, right -> Pair.of(left, right) }
                         .flatMap { pair ->
                             val retryAttempts = pair.right
                             if (retryAttempts == 4) {
@@ -82,7 +86,8 @@ class P2PTransactionManager(private val kinStellarSDKController: IKinStellarSDKC
                             val delayMs = Math.pow(BACKOFF_SCALE_FACTOR.toDouble(), retryAttempts.toDouble()).toLong() * INITIAL_BACKOFF_MS
                             Observable.timer(TimeUtils.jitterMeTimbers(random, delayMs), TimeUnit.MILLISECONDS)
                         }
-            }
+                }
+        }
 
     override fun doConfirmTransaction(payment: P2PPayment, offerConfirmationJwt: String): Completable {
         payment.confirmationJwt = offerConfirmationJwt
