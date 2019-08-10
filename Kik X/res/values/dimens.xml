@@ -56,7 +56,7 @@
     <dimen name="abc_seekbar_track_background_height_material">2.0dip</dimen>
     <dimen name="abc_seekbar_track_progress_height_material">2.0dip</dimen>
     <dimen name="abc_select_dialog_padding_start_material">20.0dip</dimen>
-    <dimen name="abc_switch_padding">3.0dip</dimen>
+    <dimen name="abc_switch_padding">0.0px</dimen>
     <dimen name="abc_text_size_body_1_material">14.0sp</dimen>
     <dimen name="abc_text_size_body_2_material">14.0sp</dimen>
     <dimen name="abc_text_size_button_material">14.0sp</dimen>
@@ -178,9 +178,9 @@
     <dimen name="kin_transaction_balance_text_size">36.0sp</dimen>
     <dimen name="list_item_action_margin_start">16.0dip</dimen>
     <dimen name="listing_horizontal_padding">16.0dip</dimen>
-    <dimen name="listing_kin_logo_padding">2.0dip</dimen>
     <dimen name="listing_preview_image_corner_radius">8.0dip</dimen>
     <dimen name="listing_preview_image_size">60.0dip</dimen>
+    <dimen name="listing_progress_bar_size">12.0dip</dimen>
     <dimen name="listing_subtitle_bottom_margin">4.0dip</dimen>
     <dimen name="listing_title_bottom_margin">5.0dip</dimen>
     <dimen name="listing_vertical_padding">10.0dip</dimen>
@@ -264,11 +264,11 @@
     <dimen name="notification_action_icon_size">32.0dip</dimen>
     <dimen name="notification_action_text_size">13.0sp</dimen>
     <dimen name="notification_big_circle_margin">12.0dip</dimen>
-    <dimen name="notification_content_margin_start">8.0dip</dimen>
+    <dimen name="notification_content_margin_start">0.0dip</dimen>
     <dimen name="notification_large_icon_height">64.0dip</dimen>
     <dimen name="notification_large_icon_width">64.0dip</dimen>
-    <dimen name="notification_main_column_padding_top">10.0dip</dimen>
-    <item type="dimen" name="notification_media_narrow_margin">@dimen/notification_content_margin_start</item>
+    <dimen name="notification_main_column_padding_top">0.0dip</dimen>
+    <dimen name="notification_media_narrow_margin">12.0dip</dimen>
     <dimen name="notification_right_icon_size">16.0dip</dimen>
     <dimen name="notification_right_side_padding_top">4.0dip</dimen>
     <dimen name="notification_small_icon_background_padding">3.0dip</dimen>

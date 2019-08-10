@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:tag="layout/dialog_kinmarketplace_daily_reward_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:drawable="@drawable/kin_marketplace_daily_reward" app:titleText="@string/daily_kin_reward_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.KinTextView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" app:gravity="center" app:kinAmountColor="@color/kik_blue" app:kinDrawable="@drawable/ic_kikblue_kin" app:kinDrawablePadding="@dimen/kin_text_view_kin_icon_padding" app:textColor="@color/gray_5" app:textSize="@dimen/text_content_text_size" />
+    <com.kik.design.BorderlessButton android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_ok" />
+</com.kik.design.StandardDialog>

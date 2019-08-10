@@ -21,7 +21,7 @@
     </item>
     <item android:state_enabled="true">
         <set>
-            <objectAnimator android:duration="@integer/mtrl_btn_anim_duration_ms" android:valueTo="@dimen/mtrl_btn_z" android:valueType="floatType" android:propertyName="translationZ" />
+            <objectAnimator android:duration="@integer/mtrl_btn_anim_duration_ms" android:valueTo="@dimen/mtrl_btn_z" android:valueType="floatType" android:propertyName="translationZ" android:startDelay="@integer/mtrl_btn_anim_delay_ms" />
             <objectAnimator android:duration="0" android:valueTo="@dimen/mtrl_btn_elevation" android:valueType="floatType" android:propertyName="elevation" />
         </set>
     </item>

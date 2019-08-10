@@ -48,6 +48,12 @@
 
 Becoming friends allows you to send and receive photos and videos"</string>
     <string name="anon_match_add_friend_dialog_title">Heads Up!</string>
+    <string name="anonmatch_challenge_completed_description">"You're on a roll! You've successfully completed the chat challenge to earn the Big Prize"</string>
+    <string name="anonmatch_challenge_completed_title">Congratulations!</string>
+    <string name="anonmatch_kin_intro_description">Earn Kin by completing daily challeneges and spend it on chats, themes and more!</string>
+    <string name="anonmatch_kin_intro_title">Use Kin to Buy Chats</string>
+    <string name="anonmatch_transaction_failed_description">Your purchase could not be completed. Please try again, or cancel to discard the transaction.</string>
+    <string name="anonmatch_transaction_failed_title">Transaction Failed</string>
     <string name="anonymous_rate_chat_thank_you">Thanks for helping make Kik better</string>
     <string name="app_name">Kik X</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
@@ -167,7 +173,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="chats_search_empty_text">Find chats by searching for people or groups</string>
     <string name="chatsettings_title">Chat Settings</string>
     <string name="choose_an_email_client">Choose an email client</string>
-    <string name="com.crashlytics.android.build_id">6170afed-a7de-4ba1-8494-a0ff7f0f9e01</string>
+    <string name="com.crashlytics.android.build_id">5451e2c7-fffd-44f3-a47b-b441a43fa71a</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -186,11 +192,18 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="confirm_password">Confirm Password</string>
     <string name="create_group">Create %1$s</string>
     <string name="create_group_hashtag_available">Available</string>
     <string name="create_group_hashtag_invalid">Invalid</string>
     <string name="create_group_hashtag_placeholder">\#tag</string>
     <string name="create_group_hashtag_unavailable">Unavailable</string>
+    <string name="daily_kin_reward_description">You have claimed your {kinlogo} %s giveaway for today!</string>
+    <string name="daily_kin_reward_error_claimed_description">"Looks like you've already claimed your daily kin reward, but you'll be able to claim it again tomorrow!"</string>
+    <string name="daily_kin_reward_error_claimed_title">Reward claimed</string>
+    <string name="daily_kin_reward_error_description">Unable to load Daily Kin Reward. Please try again later!</string>
+    <string name="daily_kin_reward_error_title">Something Went Wrong</string>
+    <string name="daily_kin_reward_title">Daily Kin Reward</string>
     <string name="day_abbreviation">d</string>
     <string name="default_web_client_id">7203525089-e03oo6c0o84br5cm6vhgu815d0l8die3.apps.googleusercontent.com</string>
     <string name="delete_chat">Delete Chat</string>
@@ -241,7 +254,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="findpeople_usernamesearch_title">Username Search</string>
     <string name="firebase_database_url">https://kik-core-server-android-push.firebaseio.com</string>
     <string name="first_name_last_name_restricted_error">Your first or last name contains words restricted for security reasons. Please update your name and try again</string>
-    <string name="font_fontFamily_medium">sans-serif</string>
+    <string name="font_fontFamily_medium">sans-serif-medium</string>
     <string name="forgot_interrogation">Forgot?</string>
     <string name="gcm_defaultSenderId">7203525089</string>
     <string name="gif_cant_load">"Couldn't load GIFs"</string>
@@ -272,6 +285,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="home_title_newchat">1 New Chat</string>
     <string name="home_title_newchats">%1$d New Chats</string>
     <string name="hour_abbreviation">h</string>
+    <string name="i_understand_checkbox_description">I understand this password is required to restore my Kin and it can’t be recovered if lost.</string>
     <string name="interestspicker_body">Pick 5 things you like from the list. These will show on your profile.</string>
     <string name="interestspicker_discardinterestchanges_body">This will discard any interests you have selected from the list</string>
     <string name="interestspicker_discardinterestchanges_title">Are You Sure?</string>
@@ -362,6 +376,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="privacy_letfriendsfindme_title">Let Friends Find Me</string>
     <string name="privacy_usephonecontacts_subtitle">Your phone contacts will be continuously synced to find your friends</string>
     <string name="privacy_usephonecontacts_title">Use Phone Contacts</string>
+    <string name="profile_picture_changed_successfully">Profile picture changed successfully</string>
     <string name="project_id">kik-core-server-android-push</string>
     <string name="promote_x_to_admin_dialog_body">%s will be able to remove people from the group and change the group name and photo</string>
     <string name="promote_x_to_admin_dialog_title">Promote %s to Admin?</string>
@@ -423,6 +438,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="selectusertoblock_title">Select User To Block</string>
     <string name="send_qr_code_via_email">Send QR Code via Email</string>
     <string name="set_photo">Set Photo</string>
+    <string name="set_profile_picture">Set Profile Picture</string>
     <string name="settings_auto_download_videos">Auto Download Videos</string>
     <string name="settings_autoplay_videos">Auto Play Videos</string>
     <string name="settings_autoplay_videos_blurb">Kik may automatically download and play certain videos that are less than 1MB in size</string>
@@ -438,6 +454,8 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="sign_up_error">Sign Up Error</string>
     <string name="signup_title">Sign Up</string>
     <string name="simple_problem_uploading_profpic_message">There was a problem uploading your picture. Please check your connection and try again</string>
+    <string name="something_went_wrong_saving_photo">Something went wrong while saving your photo.</string>
+    <string name="something_went_wrong_saving_video">Something went wrong while saving your video.</string>
     <string name="something_went_wrong_try_again">Something went wrong. Please give it another whirl</string>
     <string name="sorry_trimming_failed">Sorry! Looks like there was problem with trimming</string>
     <string name="splash_title">Splash</string>

@@ -4,6 +4,6 @@
     <item android:id="@android:id/background" android:drawable="@drawable/abc_ic_star_black_48dp" />
     <item android:id="@android:id/secondaryProgress" android:drawable="@drawable/abc_ic_star_half_black_48dp" />
     <item android:id="@android:id/progress">
-        <bitmap android:src="@drawable/abc_ic_star_black_48dp" />
+        <bitmap android:src="@drawable/abc_ic_star_black_48dp" android:tileModeX="repeat" />
     </item>
 </layer-list>

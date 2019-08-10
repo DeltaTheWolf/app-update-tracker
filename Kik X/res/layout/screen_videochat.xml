@@ -5,7 +5,7 @@
         <FrameLayout android:tag="binding_1" android:background="@color/video_chat_media_placeholder_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <FrameLayout android:tag="binding_2" android:background="@color/video_chat_media_placeholder_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
-    <FrameLayout android:id="@id/video_chat_local_video_container" android:tag="binding_3" android:layout_width="100.0dip" android:layout_height="140.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:foreground="@drawable/video_chat_border" android:layout_below="@id/toolbar" android:layout_alignParentRight="true">
+    <FrameLayout android:id="@id/video_chat_local_video_container" android:tag="binding_3" android:layout_width="100.0dip" android:layout_height="140.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:foreground="@drawable/video_chat_border" android:layout_below="@id/toolbar" android:layout_alignParentRight="true" android:elevation="4.0dip">
         <com.kik.design.videochat.VideoChatMediaPlaceholder android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.kik.design.videochat.VideoChatMediaPlaceholder android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>

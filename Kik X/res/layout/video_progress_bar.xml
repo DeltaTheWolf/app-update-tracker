@@ -2,6 +2,6 @@
 <merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/video_progress_current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <SeekBar android:id="@id/video_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" android:layout_marginRight="-4.0dip" android:thumb="@drawable/scrubber_thumb" android:layout_toLeftOf="@id/video_progress_total_time" android:layout_toRightOf="@id/video_progress_current_time" android:layout_alignParentTop="true" />
+    <SeekBar android:id="@id/video_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" android:layout_marginRight="-4.0dip" android:thumb="@drawable/scrubber_thumb" android:layout_toLeftOf="@id/video_progress_total_time" android:layout_toRightOf="@id/video_progress_current_time" android:layout_alignParentTop="true" android:splitTrack="false" />
     <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/video_progress_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
 </merge>

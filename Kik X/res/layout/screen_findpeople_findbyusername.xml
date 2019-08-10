@@ -10,7 +10,7 @@
             </FrameLayout>
         </androidx.core.widget.NestedScrollView>
         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
-            <EditText android:id="@id/searchquery" android:tag="binding_3" android:background="@drawable/bg_edittext_light" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" android:layout_marginRight="-4.0dip" android:hint="@string/find_people_search" android:drawableLeft="@drawable/ic_home_search" android:drawablePadding="8.0dip" android:layout_weight="1.0" style="@style/Theme.Base.Widget.EditText">
+            <EditText android:id="@id/searchquery" android:tag="binding_3" android:background="@drawable/bg_edittext_light" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" android:layout_marginRight="-4.0dip" android:hint="@string/find_people_search" android:drawableLeft="@drawable/ic_home_search" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:elevation="8.0dip" style="@style/Theme.Base.Widget.EditText">
                 <requestFocus />
             </EditText>
         </LinearLayout>
