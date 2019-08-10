@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_publicgroups_search_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="@string/public_groups_title">
+        <ImageView android:id="@id/create_publicgroup" android:tag="binding_1" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus" />
+    </com.kik.design.Titlebar>
+    <com.kik.design.FloatingSearchRecyclerView android:id="@id/searchusers" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="text" app:hintText="@string/search_public_groups_placeholder" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:searchDrawable="@drawable/ic_home_search" app:searchDrawableVisibility="always" />
+</LinearLayout>

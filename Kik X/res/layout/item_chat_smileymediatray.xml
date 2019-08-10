@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_chat_smileymediatray_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.kikx.widget.AutoSizingGridRecyclerView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" app:maxColumnWidth="40.0dip" app:minColumnWidth="40.0dip" app:spanCount="10" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/bg_chat_draft" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.kik.design.TouchSlop android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:tag="binding_2" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add" />
+        </com.kik.design.TouchSlop>
+        <com.kik.design.TouchSlop android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:tag="binding_3" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_backspace" />
+        </com.kik.design.TouchSlop>
+    </FrameLayout>
+</FrameLayout>

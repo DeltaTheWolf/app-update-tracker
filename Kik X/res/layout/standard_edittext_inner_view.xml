@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?gray_3" android:id="@id/standard_edittext_hint_textview" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="2.0dip" android:minHeight="24.0dip">
+        <EditText android:id="@id/standard_edittext_edittext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:imeOptions="actionDone" style="@style/StandardEditText" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/standard_eddittext_clear_image" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:tint="?gray_3" app:srcCompat="@drawable/ic_cancel_black_24dp" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/standard_eddittext_right_image" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/standard_eddittext_underline_view" android:background="@drawable/edittext_resting_underline" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <TextView android:textSize="12.0sp" android:gravity="right" android:id="@id/standard_eddittext_helper_textview" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" />
+</merge>

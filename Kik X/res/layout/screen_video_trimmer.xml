@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/screen_video_trimmer_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginBottom="16.0dip" app:isLight="true" app:isTransparent="false" app:title="@string/title_edit_video">
+        <ImageView android:id="@id/video_trimmer_ready" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/done_white" />
+    </com.kik.design.Titlebar>
+    <RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layout_above="@id/video_trimmer_timeline" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <VideoView android:layout_gravity="center" android:id="@id/video_trimmer_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/video_trimmer_play" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:background="@drawable/largevideoplay_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </FrameLayout>
+        <com.kik.design.video.VideoTrimmingTimeline android:id="@id/video_trimmer_timeline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-16.0dip" android:layout_above="@id/video_trimmer_duration" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffbebebe" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/video_trimmer_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

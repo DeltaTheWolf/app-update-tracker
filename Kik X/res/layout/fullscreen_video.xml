@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:layout_gravity="center" android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/video_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/video_playback_control" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/video_play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fullscreen_media_play" android:scaleType="center" android:maxWidth="46.0dip" android:maxHeight="46.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_pause_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fullscreen_media_pause" android:scaleType="center" android:maxWidth="46.0dip" android:maxHeight="46.0dip" />
+    </FrameLayout>
+    <com.kik.design.video.VideoProgressBar android:layout_gravity="bottom" android:id="@id/video_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/VideoProgressBar" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_anonmatch_addfriend_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:drawable="@drawable/ic_anonmatch_addfrienddialog_selector" app:subtitleText="@string/anon_match_add_friend_dialog_description" app:titleText="@string/anon_match_add_friend_dialog_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.BorderlessButton android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_not_now" />
+    <com.kik.design.BorderlessButton android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_add_friend" />
+</com.kik.design.StandardDialog>

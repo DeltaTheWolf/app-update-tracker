@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_chat_stickerpreview_0" android:layout_width="80.0dip" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rahatarmanahmed.cpv.CircularProgressView android:layout_gravity="center" android:id="@id/sticker_progress_view" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" app:cpv_thickness="2.0dip" style="@style/CircularProgressView" />
+    <ImageView android:layout_gravity="center" android:id="@id/sticker_image" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:scaleType="fitCenter" />
+</FrameLayout>

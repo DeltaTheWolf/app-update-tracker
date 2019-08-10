@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/screen_home_0" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraints" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kik.design.Titlebar android:layout_gravity="top" android:id="@id/toolbar" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:icon="@drawable/ic_home_topbar" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/account" android:tag="binding_3" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_home_account" />
+        </com.kik.design.Titlebar>
+        <include app:layout_constraintTop_toTopOf="parent" layout="@layout/home_search_chats" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/chats" android:tag="binding_4" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" app:layoutManager="com.kik.kikx.coordinator.behaviors.LinearLayoutManagerWithAccurateOffset" app:layout_behavior="com.kik.kikx.coordinator.behaviors.ScrollBehavior" />
+    <FrameLayout android:layout_gravity="bottom" android:tag="binding_5" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/anonymous_match_bar_height" android:elevation="10.0dip">
+        <LinearLayout android:gravity="center" android:tag="binding_6" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/anonymous_match_bar_height">
+            <ImageView android:id="@id/meet_new_people_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/bounding_box" />
+            <com.kik.design.SimpleTextView android:id="@id/meet_new_people_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:text="@string/title_meet_new_people" app:textColor="@color/kik_blue" app:textSize="16.0sp" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.kik.kikx.widget.ExtendedFloatingButtonViewGroup android:layout_gravity="bottom|center|right" android:id="@id/floating_action_button" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kik.design.home.FloatingButton android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge="false" app:icon="@drawable/ic_home_fabfindpeople" app:title="@string/findpeople_title" />
+        <com.kik.design.home.FloatingButton android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge="false" app:icon="@drawable/ic_home_fabscankikcode" app:title="@string/scan_kik_code" />
+        <com.kik.design.home.FloatingButton android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge="false" app:icon="@drawable/ic_home_fabstartagroup" app:title="@string/title_start_a_group" />
+        <com.kik.design.home.FloatingButton android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge="false" app:icon="@drawable/ic_home_fabhashtag" app:title="@string/public_groups_title" />
+        <com.kik.design.home.FloatingButton android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge="false" app:icon="@drawable/ic_kin" app:title="Kin Marketplace" />
+    </com.kik.kikx.widget.ExtendedFloatingButtonViewGroup>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

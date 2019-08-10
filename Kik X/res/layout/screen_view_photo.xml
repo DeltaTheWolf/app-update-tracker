@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/screen_view_photo_0" android:background="@color/black" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:isLight="true" />
+    <FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.github.chrisbanes.photoview.PhotoView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

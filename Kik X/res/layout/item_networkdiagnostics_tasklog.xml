@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.ThreeByTwoLayout android:tag="layout/item_networkdiagnostics_tasklog_0" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.SimpleTextView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_column="1" app:layout_row="0" app:textColor="?gray_5" app:textSize="12.0sp" />
+    <com.kik.design.SimpleTextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" app:layout_column="1" app:layout_row="1" app:maxLines="1" app:textColor="?gray_3" app:textSize="12.0sp" />
+</com.kik.design.ThreeByTwoLayout>

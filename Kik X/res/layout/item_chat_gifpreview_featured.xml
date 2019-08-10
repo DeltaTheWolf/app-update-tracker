@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_chat_gifpreview_featured_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.kikx.widget.AspectRatioLayout android:tag="binding_1" android:background="?gray_3" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:foreground="@color/thirty_percent_black">
+        <androidx.appcompat.widget.AppCompatImageView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </com.kik.kikx.widget.AspectRatioLayout>
+    <com.kik.design.SimpleTextView android:layout_gravity="center" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:bold="true" app:maxLines="1" app:textColor="@color/white" app:textSize="14.0sp" />
+</FrameLayout>

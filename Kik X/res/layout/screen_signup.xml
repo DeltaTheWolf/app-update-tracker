@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_signup_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:isTransparent="true" app:title="@string/title_sign_up" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="16.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                <com.kik.design.SettableProfilePicture android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip">
+                    <com.kik.design.StandardEditText android:id="@id/signup_firstname_text" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_first_name" android:inputType="textPersonName" app:errorTint="@color/destructive_red" style="@style/StandardEditText" />
+                    <com.kik.design.StandardEditText android:id="@id/signup_lastname_text" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_last_name" android:inputType="textPersonName" app:errorTint="@color/destructive_red" style="@style/StandardEditText" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.kik.design.StandardEditText android:id="@id/signup_username_text" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/kik_username" android:inputType="textNoSuggestions" app:errorDrawable="@drawable/ic_error" app:errorTint="@color/destructive_red" app:progressDrawable="@drawable/indeterminate_input_spinner" app:successDrawable="@drawable/ic_checkmark" style="@style/StandardEditText" />
+            <com.kik.design.StandardEditText android:id="@id/signup_email_text" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_email" android:inputType="textEmailAddress" app:errorDrawable="@drawable/ic_error" app:errorTint="@color/destructive_red" app:progressDrawable="@drawable/indeterminate_input_spinner" app:successDrawable="@drawable/ic_checkmark" style="@style/StandardEditText" />
+            <com.kik.design.StandardEditText android:id="@id/signup_password_text" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_password" android:inputType="textPassword" app:errorDrawable="@drawable/ic_error" app:errorTint="@color/destructive_red" app:progressDrawable="@drawable/indeterminate_input_spinner" app:successDrawable="@drawable/ic_checkmark" style="@style/StandardEditText" />
+            <com.kik.design.StandardEditText android:id="@id/signup_birthday_text" android:tag="binding_7" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_birthday" app:errorTint="@color/destructive_red" style="@style/StandardEditText" />
+            <com.kik.design.StandardEditText android:id="@id/signup_phone_text" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/registration_phone_placeholder" android:inputType="phone" style="@style/StandardEditText" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColorLink="@color/kik_blue" android:layout_gravity="center" android:id="@id/signup_termspp_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="By checking this you agree to Kik's Terms &amp; Privacy Policy" android:layout_weight="1.0" />
+                <CheckBox android:tag="binding_9" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="16.0dip" />
+            </LinearLayout>
+            <Button android:id="@id/login" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_sign_up" style="@style/Theme.Base.Widget.Button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

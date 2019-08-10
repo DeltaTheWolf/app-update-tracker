@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_chat_gifmediatray_featuredset_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:tag="binding_1" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <com.kik.kikx.widget.StaggeredGridRecyclerView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:numColumnsLandscape="@integer/gif_columns_landscape" app:numColumnsPortrait="@integer/gif_columns_portrait" />
+</FrameLayout>

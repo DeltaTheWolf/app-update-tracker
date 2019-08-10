@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_errordialog_0" android:background="@android:color/background_light" android:padding="20.0dip" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/errortitle" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/errortext" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok" android:onClick="onDismiss" style="@style/BaseWidgetButtonDialogTheme" />
+</LinearLayout>

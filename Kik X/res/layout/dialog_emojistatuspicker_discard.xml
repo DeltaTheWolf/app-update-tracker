@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_emojistatuspicker_discard_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:subtitleText="@string/emoji_status_back_dialog_description" app:titleText="@string/title_are_you_sure"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.StandardDialogButton android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_cancel" />
+    <com.kik.design.StandardDialogButton android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_discard" />
+</com.kik.design.StandardDialog>

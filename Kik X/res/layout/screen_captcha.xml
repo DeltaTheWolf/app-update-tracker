@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/screen_captcha_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.kikx.widget.CaptchaWebView android:id="@id/webview" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:tag="binding_2" android:background="@color/white" android:padding="32.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hero_dialog_captcha" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/gray_6" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/on_demand_verification" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/on_demand_error_secondary" />
+        <com.kik.design.PrimaryButton android:tag="binding_3" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on_demand_error_try_again" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_findpeople_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <com.kik.design.StandardSearchView android:id="@id/searchquery" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:hint="@string/find_people_search_placeholder" style="@style/StandardSearchVew">
+            <requestFocus />
+        </com.kik.design.StandardSearchView>
+    </com.kik.design.Titlebar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/searchusers" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

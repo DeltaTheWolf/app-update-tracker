@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_createprivategroup_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="@string/title_start_a_group">
+        <com.kik.design.BorderlessButton android:id="@id/save_button" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/title_start" />
+    </com.kik.design.Titlebar>
+    <com.kik.design.MultiItemPicker android:id="@id/multi_item_picker" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:hintText="@string/add_group_hint" app:searchDrawable="@drawable/ic_search_black_24dp" app:searchDrawableVisibility="always" />
+</LinearLayout>

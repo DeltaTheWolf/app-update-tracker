@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/kik_code_switcher_left" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" />
+    <SeekBar android:id="@id/kik_code_switcher_seekbar" android:paddingBottom="2.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" android:progressDrawable="@drawable/rounded_track_switch" android:thumb="@drawable/rounded_track_thumb" />
+    <ImageView android:layout_gravity="center" android:id="@id/kik_code_switcher_right" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/screen_restore_upload_qr_code_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginBottom="24.0dip" app:isTransparent="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:title="@string/restore_kin_wallet" />
+    <com.kik.design.SimpleTextView android:id="@id/upload_qr_code_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" app:text="@string/screen_restore_upload_qr_code_title" app:textColor="@color/gray_6" app:textSize="24.0sp" />
+    <com.kik.design.SimpleTextView android:id="@id/upload_qr_code_description_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" app:gravity="center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/upload_qr_code_title_text" app:text="@string/screen_restore_upload_qr_code_description" app:textColor="@color/gray_5" app:textSize="14.0sp" />
+    <FrameLayout android:tag="binding_1" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginTop="24.0dip" android:foreground="?selectableItemBackground" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/upload_qr_code_description_text" style="@style/SecondaryButton">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_set_photo" />
+            <com.kik.design.SimpleTextView android:layout_width="fill_parent" android:layout_height="wrap_content" app:gravity="center" app:text="Select QR\nCode" app:textColor="@color/kik_blue" />
+        </LinearLayout>
+        <ImageView android:id="@id/qr_code_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

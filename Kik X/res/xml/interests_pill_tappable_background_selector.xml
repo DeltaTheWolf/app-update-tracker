@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/half_dp" android:color="?gray_5" />
+            <corners android:radius="100.0dip" />
+            <solid android:color="?light_gray" />
+        </shape>
+    </item>
+    <item android:drawable="@xml/interests_pill_background_selector" />
+</selector>

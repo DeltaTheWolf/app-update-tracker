@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/kik_code_target_photo" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/kik_code_target_display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="@color/eighty_percent_white" android:ellipsize="end" android:id="@id/kik_code_target_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</merge>

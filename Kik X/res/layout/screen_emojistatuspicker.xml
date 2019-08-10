@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/screen_emojistatuspicker_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:isTransparent="true">
+        <com.kik.design.BorderlessButton android:id="@id/done_button" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/done" />
+    </com.kik.design.Titlebar>
+    <LinearLayout android:orientation="vertical" android:id="@id/emoji_status_header" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <FrameLayout android:layout_gravity="center_horizontal" android:paddingBottom="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:tag="binding_3" android:layout_width="112.0dip" android:layout_height="112.0dip" />
+            <com.kik.design.EmojiStatusCircleView android:layout_gravity="bottom|center|right" android:id="@id/emoji_circle_view" android:tag="binding_4" style="@style/EmojiStatusCircleView.Large" />
+        </FrameLayout>
+        <com.kik.design.SimpleTextView android:layout_gravity="center_horizontal" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:maxLines="1" app:text="@string/title_emoji_status" app:textColor="@color/gray_6" app:textSize="24.0sp" />
+        <com.kik.design.SimpleTextView android:layout_gravity="center_horizontal" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginRight="48.0dip" app:gravity="center" app:text="@string/emoji_status_description" app:textColor="@color/gray_5" app:textSize="16.0sp" />
+    </LinearLayout>
+    <View android:id="@id/emoji_divider" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="@dimen/half_dp" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/emoji_status_header" />
+    <androidx.recyclerview.widget.RecyclerView android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/emoji_divider" app:layoutManager="com.kik.kikx.emojistatus.EmojiStatusPickerLayoutManager" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_chatinfo_mutenotifications_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:titleText="@string/mute_notifications_dialog_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/radio_button_option_1" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mute_notifications_option_1_hr" style="@style/DialogRadioButton" />
+            <RadioButton android:id="@id/radio_button_option_2" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mute_notifications_option_8_am" style="@style/DialogRadioButton" />
+            <RadioButton android:id="@id/radio_button_option_3" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mute_notifications_option_forever" style="@style/DialogRadioButton" />
+            <RadioButton android:id="@id/radio_button_option_4" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mute_notifications_option_30_s" style="@style/DialogRadioButton" />
+        </RadioGroup>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kik.design.BorderlessButton android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_cancel" />
+            <com.kik.design.BorderlessButton android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</com.kik.design.StandardDialog>

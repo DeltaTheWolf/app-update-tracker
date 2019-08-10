@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/screen_scan_kik_code_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/camera_background_blur" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kik.kikx.widget.camera.KikCodeScannerView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kik.kikx.widget.KikCodeScannerViewFinder android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/point_camera_kik_code" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="binding_4" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/camera_error_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/camera_error_message" />
+    </LinearLayout>
+    <FrameLayout android:tag="binding_5" android:background="@color/seventy_percent_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="bottom|center" android:tag="binding_6" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginBottom="200.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/spinner_loading" android:indeterminateDuration="1000" />
+        <FrameLayout android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="200.0dip" android:src="@drawable/kik_code_scan_error" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="21.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/scan_code_oh_no" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/scan_code_having_troubles_reading" />
+                <Button android:layout_gravity="bottom|center" android:id="@id/kik_code_scan_retry" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="30.0dip" android:text="@string/scan_code_try_again" style="@style/MediaModalButton" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

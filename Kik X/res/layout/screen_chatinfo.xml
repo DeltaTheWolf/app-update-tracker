@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/screen_chatinfo_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+            <com.kik.design.ProfileHeaderLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.kik.design.DaysOnKikView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:formatPlural="@string/chatinfo_days_on_kik_format_plural" app:formatSingular="@string/chatinfo_days_on_kik_format_singular" style="@style/DaysOnKik" />
+                <androidx.recyclerview.widget.RecyclerView android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" />
+            </com.kik.design.ProfileHeaderLayout>
+            <androidx.recyclerview.widget.RecyclerView android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="5.0dip" android:columnWidth="75.0dip" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="5" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:isTransparent="false" app:title="@string/chatinfo_title">
+        <ImageButton android:tag="binding_8" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.kik.design.Titlebar>
+</FrameLayout>

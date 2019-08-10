@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:minHeight="24.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/standard_searchview_search_image" android:paddingRight="8.0dip" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?gray_3" />
+        <EditText android:id="@id/standard_searchview_edittext" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:imeOptions="actionDone" style="@style/StandardEditText" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/standard_searchview_clear_image" android:background="?selectableItemBackgroundBorderless" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:tint="?gray_3" app:srcCompat="@drawable/ic_clear_black_24dp" />
+    </LinearLayout>
+</merge>

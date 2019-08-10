@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <bitmap android:src="@drawable/ic_gifbar_trending" android:tint="@color/kik_blue" />
+    </item>
+    <item android:drawable="@drawable/ic_gifbar_trending" />
+</selector>

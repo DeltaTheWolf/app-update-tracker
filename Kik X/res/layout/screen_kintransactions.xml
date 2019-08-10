@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_kintransactions_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginBottom="24.0dip" app:isTransparent="true" app:title="@string/kin_transactions">
+        <com.kik.design.PrimaryButton android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Give money please" />
+        <ImageButton android:tag="binding_2" android:background="?selectableItemBackgroundBorderless" android:layout_width="27.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_kin_backup_logo" />
+    </com.kik.design.Titlebar>
+    <com.kik.design.PrimaryButton android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Send 1 kin to a random address" />
+    <com.kik.design.kinmarketplace.KinBalanceDisplayCell android:layout_gravity="center_horizontal" android:id="@id/kin_balance_cell" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/transaction_recycler_view" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

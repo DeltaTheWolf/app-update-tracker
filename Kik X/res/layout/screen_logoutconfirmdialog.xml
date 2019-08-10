@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/screen_logoutconfirmdialog_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:subtitleText="Are you sure you would like to log out? Your chat history will be cleared and you'll need to log in again" app:titleText="Log Out"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.BorderlessButton android:id="@id/yes" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" />
+    <com.kik.design.BorderlessButton android:id="@id/no" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" />
+</com.kik.design.StandardDialog>

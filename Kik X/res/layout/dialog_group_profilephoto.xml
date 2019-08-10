@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_group_profilephoto_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:titleText="@string/group_change_photo_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_take_picture" style="@style/DialogAction" />
+        <Button android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_choose_existing" style="@style/DialogAction" />
+    </LinearLayout>
+</com.kik.design.StandardDialog>

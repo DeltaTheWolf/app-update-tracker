@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.kikcodes.KikCodeContainerView android:id="@id/kikcode_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" />
+    <com.kik.design.kikcodes.KikCodeContentView android:id="@id/kikcode_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" app:logo="@drawable/kikcode_badge" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/kik_code_spinner" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/spinner_loading" android:indeterminateDuration="1000" />
+    <ImageView android:layout_gravity="center" android:id="@id/kikcode_retry" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/kikcode_retry" android:scaleType="fitCenter" />
+</merge>

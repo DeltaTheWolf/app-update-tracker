@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/screen_content_gallery_0" android:background="@color/black" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/DarkToolbar">
+        <ImageButton android:layout_gravity="center|right" android:tag="binding_1" android:background="?selectableItemBackgroundBorderless" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_save" style="@style/Theme.Base.Widget.Toolbar.Icon" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kik.kikx.widget.SafeViewPager android:tag="binding_3" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

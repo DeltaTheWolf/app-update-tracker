@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/filtered_chats" android:tag="layout/home_search_chats_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/filter_titlebar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navIcon="@drawable/ic_arrow_back_black_24dp">
+        <com.kik.design.StandardSearchView android:id="@id/searchquery" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:hint="Name or Username" style="@style/Theme.Base.Widget.EditText" />
+    </com.kik.design.Titlebar>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:src="@drawable/img_chat_search" />
+        <com.kik.design.SimpleTextView android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:gravity="center" app:text="@string/chats_search_empty_text" app:textColor="@color/gray_5" app:textSize="16.0sp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/search_chats" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="com.kik.kikx.widget.ScrollToTopLayoutManager" />
+</LinearLayout>

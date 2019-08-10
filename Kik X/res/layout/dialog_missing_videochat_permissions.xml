@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_missing_videochat_permissions_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:subtitleText="@string/video_chat_permissions_instructions" app:titleText="@string/title_video_chat_access"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.StandardDialogButton android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_now_caps" />
+    <com.kik.design.StandardDialogButton android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_settings" />
+</com.kik.design.StandardDialog>

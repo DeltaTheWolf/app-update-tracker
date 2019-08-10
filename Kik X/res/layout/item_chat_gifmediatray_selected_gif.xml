@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/selected_gif_layout" android:tag="layout/item_chat_gifmediatray_selected_gif_0" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/stagedLoadingSpinner" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <com.kik.kikx.widget.AspectRatioLayout android:layout_gravity="center" android:id="@id/gifImageView" android:tag="binding_1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:foreground="?selectableItemBackground">
+        <androidx.appcompat.widget.AppCompatImageView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </com.kik.kikx.widget.AspectRatioLayout>
+    <Button android:layout_gravity="bottom|center|left" android:id="@id/backButton" android:tag="binding_3" android:background="@drawable/ic_arrow_back_white_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="16.0dip" />
+    <Button android:layout_gravity="bottom|center|right" android:id="@id/sendGifButton" android:tag="binding_4" android:background="@drawable/ic_send_gif_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="16.0dip" />
+</FrameLayout>

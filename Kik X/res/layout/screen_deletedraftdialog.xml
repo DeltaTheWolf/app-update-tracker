@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_deletedraftdialog_0" android:background="@android:color/background_light" android:paddingLeft="20.0dip" android:paddingTop="12.0dip" android:paddingRight="20.0dip" android:paddingBottom="12.0dip" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginBottom="12.0dip" android:text="Delete Content" android:singleLine="true" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <TextView android:textColor="?gray_6" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="Are you sure you want to delete this content?" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/kik_blue" android:id="@id/yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:onClick="onDismiss" style="@style/Theme.Base.Widget.Button.Dialog" />
+        <Button android:textColor="@color/kik_blue" android:id="@id/no" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" style="@style/Theme.Base.Widget.Button.Dialog" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:tag="layout/header_creategroup_0" android:padding="@dimen/default_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.SettableProfilePicture android:tag="binding_1" android:focusable="true" android:clickable="true" android:layout_width="64.0dip" android:layout_height="64.0dip" app:placeholderText="" />
+    <com.kik.design.StandardEditText android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/name_group_hint" />
+</LinearLayout>

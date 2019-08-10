@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_changeyourname_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.Titlebar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="@string/your_name">
+        <com.kik.design.BorderlessButton android:id="@id/save_button" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/save" />
+    </com.kik.design.Titlebar>
+    <com.kik.design.StandardEditText android:id="@id/firstNameText" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="First Name" android:inputType="textEmailAddress" app:neutralText=" " style="@style/StandardEditText" />
+    <com.kik.design.StandardEditText android:id="@id/lastNameText" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Last Name" app:neutralText=" " style="@style/StandardEditText" />
+</LinearLayout>
