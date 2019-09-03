@@ -80,6 +80,7 @@
     <string name="chat_bubble_colors_pastel">粉彩</string>
     <string name="chat_with_friends">和朋友聊天</string>
     <string name="chats_search_empty_text">通過搜尋使用者或群組查找聊天</string>
+    <string name="close_kik">關閉 Kik</string>
     <string name="common_google_play_services_enable_button">啟用</string>
     <string name="common_google_play_services_enable_text">您必須啟用 Google Play 服務，方可執行「%1$s」。</string>
     <string name="common_google_play_services_enable_title">啟用 Google Play 服務</string>
@@ -104,6 +105,9 @@
     <string name="create_group_hashtag_placeholder">\#標籤</string>
     <string name="create_group_hashtag_unavailable">無法使用</string>
     <string name="day_abbreviation">d</string>
+    <string name="delete_message_confirmation_dialog_body">這條訊息不會從 %1$s 的聊天中刪除</string>
+    <string name="delete_message_confirmation_dialog_body_group">這條訊息不會從其他成員的聊天中刪除</string>
+    <string name="delete_message_confirmation_dialog_title">刪除訊息？</string>
     <string name="disable_debug">停用除錯模式</string>
     <string name="download_website">kik.me/%s</string>
     <string name="email_already_registered">電子郵件 %1$s 已註冊過 Kik</string>
@@ -157,6 +161,10 @@
     <string name="never_autoplay_videos">永不自動播放影片</string>
     <string name="no_public_groups_result">搜尋「%1$s」沒有結果</string>
     <string name="not_now_caps">現在不要</string>
+    <string name="notification_new_gif_message">新的動圖訊息！</string>
+    <string name="notification_new_message">你有新訊息。</string>
+    <string name="notification_new_picture_message">新照片讯息！</string>
+    <string name="notification_new_video_message">新影片讯息！</string>
     <string name="ok">好的</string>
     <string name="on_demand_error_primary">解開這個 Captcha 我們即會知道你是真人。</string>
     <string name="on_demand_error_secondary">我們好像未能載入 Captcha。</string>
@@ -215,6 +223,11 @@
     <string name="something_went_wrong_try_again">出問題了。請再試一次</string>
     <string name="sorry_trimming_failed">抱歉！修剪時出現問題</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suggested_chat_delete_contact_prompt_message">%s 將被從快速聊天中移除</string>
+    <string name="suggested_chat_delete_contact_prompt_title">隱藏 %s 嗎？</string>
+    <string name="suggested_chat_delete_group_prompt_message">此群組將被從快速聊天中移除</string>
+    <string name="suggested_chat_delete_group_prompt_title">隱藏群組嗎？</string>
+    <string name="suggested_chat_header">快速聊天</string>
     <string name="suggested_groups_header">熱門搜尋</string>
     <string name="summary_developer">允許開發者使用除錯功能</string>
     <string name="superadmins">所有者</string>
@@ -230,6 +243,7 @@
     <string name="title_community_guidelines">社群標準</string>
     <string name="title_conversation_info">對話訊息</string>
     <string name="title_copy">拷貝</string>
+    <string name="title_delete">刪除</string>
     <string name="title_developer_mode">開發者模式</string>
     <string name="title_developers">開發者</string>
     <string name="title_discard">放棄</string>
@@ -240,6 +254,7 @@
     <string name="title_first_name">名字</string>
     <string name="title_help">輔助說明</string>
     <string name="title_help_about_us">輔助說明 &amp; 關於我們</string>
+    <string name="title_hide">隱藏</string>
     <string name="title_invalid_group_name">群組名稱無效</string>
     <string name="title_kik_username">Kik 使用者名稱</string>
     <string name="title_last_name">姓氏</string>
@@ -255,6 +270,7 @@
     <string name="title_privacy">隱私權</string>
     <string name="title_privacy_policy">隐私政策</string>
     <string name="title_profile_picture">個人資料照片</string>
+    <string name="title_receive_dms">接受私人訊息</string>
     <string name="title_scroll_to_last_read">更多未看訊息</string>
     <string name="title_settings">設定</string>
     <string name="title_sign_up">註冊</string>

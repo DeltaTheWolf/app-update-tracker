@@ -74,6 +74,7 @@
         <flag name="SHIFT" value="0x00000001" />
         <flag name="SYM" value="0x00000004" />
     </attr>
+    <attr name="amount" format="string" />
     <attr name="animationPlaying" format="reference" />
     <attr name="approximateTimestamp" format="string" />
     <attr name="arrowHeadLength" format="dimension" />
@@ -105,6 +106,11 @@
     </attr>
     <attr name="badge" format="boolean" />
     <attr name="balance" format="string" />
+    <attr name="balanceState">
+        <enum name="error" value="2" />
+        <enum name="pending" value="1" />
+        <enum name="show" value="0" />
+    </attr>
     <attr name="barLength" format="dimension" />
     <attr name="barrierAllowsGoneWidgets" format="boolean" />
     <attr name="barrierDirection">
@@ -258,6 +264,7 @@
     <attr name="colorSwitchThumbNormal" format="color" />
     <attr name="columnWidth" format="dimension" />
     <attr name="commitIcon" format="reference" />
+    <attr name="completedChallengeSegment" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="constraintSet" format="reference" />
     <attr name="constraint_referenced_ids" format="string" />
     <attr name="content" format="reference" />
@@ -307,6 +314,7 @@
     <attr name="customNavigationLayout" format="reference" />
     <attr name="dark_color" format="color" />
     <attr name="data" format="reference" />
+    <attr name="dayAbbreviation" format="string" />
     <attr name="daysOnKik" format="integer" />
     <attr name="defaultQueryHint" format="string" />
     <attr name="defaultText" format="string" />
@@ -404,6 +412,7 @@
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
     <attr name="fastScrollVerticalThumbDrawable" format="reference" />
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
+    <attr name="filledSegment" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="firstBaselineToTopHeight" format="dimension" />
     <attr name="flexDirection">
         <enum name="column" value="2" />
@@ -482,6 +491,7 @@
     <attr name="hintTextAppearance" format="reference" />
     <attr name="homeAsUpIndicator" format="reference" />
     <attr name="homeLayout" format="reference" />
+    <attr name="hourAbbreviation" format="string" />
     <attr name="hoveredFocusedTranslationZ" format="dimension" />
     <attr name="html" format="string" />
     <attr name="icon" format="reference" />
@@ -519,12 +529,12 @@
     <attr name="initialActivityCount" format="string" />
     <attr name="insetForeground" format="reference|color" />
     <attr name="intrinsicAspectRatio" format="reference" />
+    <attr name="invalid" format="boolean" />
     <attr name="invisibility" format="boolean" />
     <attr name="isCountdownEndingSoon" format="boolean" />
     <attr name="isIncoming" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="isLight" format="boolean" />
     <attr name="isLightTheme" format="boolean" />
-    <attr name="isLoading" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="isMuted" format="boolean" />
     <attr name="isTransparent" format="boolean" />
     <attr name="isUnread" format="boolean" />
@@ -737,8 +747,9 @@
         <flag name="chains" value="0x00000004" />
         <flag name="dimensions" value="0x00000008" />
         <flag name="direct" value="0x00000001" />
+        <flag name="groups" value="0x00000020" />
         <flag name="none" value="0x00000000" />
-        <flag name="standard" value="0x00000003" />
+        <flag name="standard" value="0x00000007" />
     </attr>
     <attr name="layout_order" format="integer" />
     <attr name="layout_position">
@@ -778,6 +789,11 @@
     <attr name="listPreferredItemHeightSmall" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
+    <attr name="listingState">
+        <enum name="deselected" value="0" />
+        <enum name="disabled" value="2" />
+        <enum name="selected" value="1" />
+    </attr>
     <attr name="logo" format="reference" />
     <attr name="logoDescription" format="string" />
     <attr name="lottie_autoPlay" format="boolean" />
@@ -852,6 +868,7 @@
     <attr name="met_validateOnFocusLost" format="boolean" />
     <attr name="minColumnWidth" format="dimension" />
     <attr name="minTrimmedDuration" format="integer" />
+    <attr name="minuteAbbreviation" format="string" />
     <attr name="multiChoiceItemLayout" format="reference" />
     <attr name="navIcon" format="reference" />
     <attr name="navigationContentDescription" format="string" />
@@ -966,6 +983,7 @@
     <attr name="searchHintIcon" format="reference" />
     <attr name="searchIcon" format="reference" />
     <attr name="searchViewStyle" format="reference" />
+    <attr name="secondAbbreviation" format="string" />
     <attr name="seekBarStyle" format="reference" />
     <attr name="selectableItemBackground" format="reference" />
     <attr name="selectableItemBackgroundBorderless" format="reference" />
@@ -1145,6 +1163,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="timeLeftMillis" format="integer" />
     <attr name="timestamp" format="string" />
     <attr name="timestampVisibleByDefault" format="boolean" />
     <attr name="tint" format="color" />
@@ -1174,6 +1193,8 @@
     <attr name="tooltipForegroundColor" format="reference|color" />
     <attr name="tooltipFrameBackground" format="reference" />
     <attr name="tooltipText" format="string" />
+    <attr name="totalChallengeSegment" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="totalSegment" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="track" format="reference" />
     <attr name="trackTint" format="color" />
     <attr name="trackTintMode">
@@ -1193,6 +1214,11 @@
     <attr name="translucent_white" format="color" />
     <attr name="transparent" format="color" />
     <attr name="ttcIndex" format="integer" />
+    <attr name="type">
+        <enum name="large" value="2" />
+        <enum name="medium" value="1" />
+        <enum name="small" value="0" />
+    </attr>
     <attr name="useCompatPadding" format="boolean" />
     <attr name="videoDuration" format="integer" />
     <attr name="videoEnabled" format="boolean" />

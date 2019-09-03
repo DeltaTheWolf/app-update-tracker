@@ -80,12 +80,16 @@
     <string name="chat_bubble_colors_pastel">Pastel</string>
     <string name="chat_with_friends">Converse com amigos</string>
     <string name="chats_search_empty_text">Encontre chats pesquisando por pessoas e grupos</string>
+    <string name="close_kik">Encerrar Kik</string>
     <string name="create_group">Criar %1$s</string>
     <string name="create_group_hashtag_available">Disponível</string>
     <string name="create_group_hashtag_invalid">Inválido</string>
     <string name="create_group_hashtag_placeholder">\#tag</string>
     <string name="create_group_hashtag_unavailable">Indisponível</string>
     <string name="day_abbreviation">d</string>
+    <string name="delete_message_confirmation_dialog_body">A mensagem não será excluída do chat de %1$s</string>
+    <string name="delete_message_confirmation_dialog_body_group">A mensagem não será excluída dos chats dos outros membros</string>
+    <string name="delete_message_confirmation_dialog_title">Excluir mensagem?</string>
     <string name="disable_debug">Desabilitar Modo Debug</string>
     <string name="download_website">kik.me/%s</string>
     <string name="email_already_registered">O e-mail %1$s já está registrado no Kik</string>
@@ -138,6 +142,10 @@
     <string name="never_autoplay_videos">Nunca reproduzir vídeos automaticamente</string>
     <string name="no_public_groups_result">Nenhum resultado para %1$s</string>
     <string name="not_now_caps">AGORA NÃO</string>
+    <string name="notification_new_gif_message">Nova mensagem de GIF!</string>
+    <string name="notification_new_message">Você tem uma nova mensagem.</string>
+    <string name="notification_new_picture_message">Nova mensagem com imagem!</string>
+    <string name="notification_new_video_message">Nova mensagem de vídeo!</string>
     <string name="ok">OK</string>
     <string name="on_demand_error_primary">Resolva este Captcha para que saibamos que você é uma pessoa real.</string>
     <string name="on_demand_error_secondary">Parece que não conseguimos carregar o Captcha.</string>
@@ -196,6 +204,11 @@
     <string name="something_went_wrong_try_again">Algo deu errado. Tente novamente</string>
     <string name="sorry_trimming_failed">Desculpe! Parece que houve um problema ao cortar</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suggested_chat_delete_contact_prompt_message">%s será removido dos Chats rápidos</string>
+    <string name="suggested_chat_delete_contact_prompt_title">Ocultar %s?</string>
+    <string name="suggested_chat_delete_group_prompt_message">Este grupo será removido dos Chats rápidos</string>
+    <string name="suggested_chat_delete_group_prompt_title">Ocultar grupo?</string>
+    <string name="suggested_chat_header">Chats rápidos</string>
     <string name="suggested_groups_header">Pesquisas populares</string>
     <string name="summary_developer">Permite acesso à recursos de correção de erro (debug) para desenvolvedores</string>
     <string name="superadmins">Proprietários</string>
@@ -211,6 +224,7 @@
     <string name="title_community_guidelines">Diretrizes da comunidade</string>
     <string name="title_conversation_info">Informações do chat</string>
     <string name="title_copy">Copiar</string>
+    <string name="title_delete">Excluir</string>
     <string name="title_developer_mode">Modo para Desenvolvedores</string>
     <string name="title_developers">Desenvolvedores</string>
     <string name="title_discard">Descartar</string>
@@ -221,6 +235,7 @@
     <string name="title_first_name">Nome</string>
     <string name="title_help">Ajuda</string>
     <string name="title_help_about_us">Ajuda &amp; Sobre Nós</string>
+    <string name="title_hide">Ocultar</string>
     <string name="title_invalid_group_name">Nome do grupo inválido</string>
     <string name="title_kik_username">Usuário Kik</string>
     <string name="title_last_name">Sobrenome</string>
@@ -236,6 +251,7 @@
     <string name="title_privacy">Privacidade</string>
     <string name="title_privacy_policy">Política de privacidade</string>
     <string name="title_profile_picture">Imagem de perfil</string>
+    <string name="title_receive_dms">Receber mensagens diretas</string>
     <string name="title_scroll_to_last_read">Mais mensagens não lidas</string>
     <string name="title_settings">Configurações</string>
     <string name="title_sign_up">Inscrição</string>

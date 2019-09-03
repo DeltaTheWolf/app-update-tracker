@@ -80,6 +80,7 @@
     <string name="chat_bubble_colors_pastel">Пастель</string>
     <string name="chat_with_friends">Чат с друзьями</string>
     <string name="chats_search_empty_text">Найти чаты поиском людей или групп</string>
+    <string name="close_kik">Закрыть Kik</string>
     <string name="common_google_play_services_enable_button">Включить</string>
     <string name="common_google_play_services_enable_text">Для работы приложения \"%1$s\" требуется включить сервисы Google Play.</string>
     <string name="common_google_play_services_enable_title">Включите сервисы Google Play</string>
@@ -104,6 +105,9 @@
     <string name="create_group_hashtag_placeholder">\#tag</string>
     <string name="create_group_hashtag_unavailable">Недоступно</string>
     <string name="day_abbreviation">d</string>
+    <string name="delete_message_confirmation_dialog_body">Сообщение не будет удалено из чата %1$s</string>
+    <string name="delete_message_confirmation_dialog_body_group">Это сообщение не будет удалено из чатов других участников</string>
+    <string name="delete_message_confirmation_dialog_title">Удалить сообщение?</string>
     <string name="disable_debug">Отключить режим отладки</string>
     <string name="download_website">kik.me/%s</string>
     <string name="email_already_registered">Email %1$s уже зарегистрирован в Kik</string>
@@ -157,6 +161,10 @@
     <string name="never_autoplay_videos">Без автопросмотра видео</string>
     <string name="no_public_groups_result">Нет результатов для %1$s</string>
     <string name="not_now_caps">НЕ СЕЙЧАС</string>
+    <string name="notification_new_gif_message">Новое GIF-сообщение!</string>
+    <string name="notification_new_message">У вас новое сообщение.</string>
+    <string name="notification_new_picture_message">Новое изображение с картинкой!</string>
+    <string name="notification_new_video_message">Новое сообщение с видео!</string>
     <string name="ok">ОК</string>
     <string name="on_demand_error_primary">Чтобы мы убедились, что перед нами реальный человек, решите эту задачку Captcha.</string>
     <string name="on_demand_error_secondary">Похоже, нам не удалось загрузить Captcha.</string>
@@ -215,6 +223,11 @@
     <string name="something_went_wrong_try_again">Что-то пошло не так. Попробуйте еще разок</string>
     <string name="sorry_trimming_failed">Извините! Похоже, была проблема с обрезкой</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suggested_chat_delete_contact_prompt_message">%s будет удален из быстрых чатов</string>
+    <string name="suggested_chat_delete_contact_prompt_title">Скрыть %s?</string>
+    <string name="suggested_chat_delete_group_prompt_message">Эта группа будет удалена из быстрых чатов</string>
+    <string name="suggested_chat_delete_group_prompt_title">Скрыть группу?</string>
+    <string name="suggested_chat_header">Быстрые чаты</string>
     <string name="suggested_groups_header">Популярные поиски</string>
     <string name="summary_developer">Дает разработчикам доступ к отладочным функциям</string>
     <string name="superadmins">Владельцев</string>
@@ -230,6 +243,7 @@
     <string name="title_community_guidelines">Стандарты сообщества</string>
     <string name="title_conversation_info">Данные о разговоре</string>
     <string name="title_copy">Скопировать</string>
+    <string name="title_delete">Удалить</string>
     <string name="title_developer_mode">Режим разработчика</string>
     <string name="title_developers">Разработчики</string>
     <string name="title_discard">Отменить</string>
@@ -240,6 +254,7 @@
     <string name="title_first_name">Имя</string>
     <string name="title_help">Справка</string>
     <string name="title_help_about_us">Справка &amp; О нас&amp;</string>
+    <string name="title_hide">Скрыть</string>
     <string name="title_invalid_group_name">Неверное имя группы</string>
     <string name="title_kik_username">Имя пользователя Kik</string>
     <string name="title_last_name">Фамилия</string>
@@ -255,6 +270,7 @@
     <string name="title_privacy">Конфиденциальность</string>
     <string name="title_privacy_policy">Политика конфиденциальности</string>
     <string name="title_profile_picture">Изображение профиля</string>
+    <string name="title_receive_dms">Получать прямые сообщения</string>
     <string name="title_scroll_to_last_read">Больше непросмотренных сообщений</string>
     <string name="title_settings">Настройки</string>
     <string name="title_sign_up">Регистрация</string>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/section_suggested_chats_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.HeaderCellLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/suggested_chat_header" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:columnWidth="75.0dip" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4" />
+</LinearLayout>

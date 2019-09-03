@@ -80,6 +80,7 @@
     <string name="chat_bubble_colors_pastel">パステル</string>
     <string name="chat_with_friends">友達とチャット</string>
     <string name="chats_search_empty_text">ユーザーまたはグループを検索してチャットを見つける</string>
+    <string name="close_kik">Kik を閉じる</string>
     <string name="common_google_play_services_enable_button">有効にする</string>
     <string name="common_google_play_services_enable_text">%1$sの実行には、Google Play開発者サービスの有効化が必要です。</string>
     <string name="common_google_play_services_enable_title">Google Play開発者サービスの有効化</string>
@@ -104,6 +105,9 @@
     <string name="create_group_hashtag_placeholder">\#タグ</string>
     <string name="create_group_hashtag_unavailable">利用できません</string>
     <string name="day_abbreviation">d</string>
+    <string name="delete_message_confirmation_dialog_body">このメッセージは %1$s のチャットからは削除されません</string>
+    <string name="delete_message_confirmation_dialog_body_group">このメッセージは他のメンバーのチャットからは削除されません</string>
+    <string name="delete_message_confirmation_dialog_title">メッセージを削除しますか？</string>
     <string name="disable_debug">デバッグモードを無効にする</string>
     <string name="download_website">kik.me/%s</string>
     <string name="email_already_registered">メールアドレス %1$s は Kik にすでに登録されています</string>
@@ -157,6 +161,10 @@
     <string name="never_autoplay_videos">ビデオは自動再生しない</string>
     <string name="no_public_groups_result">%1$s の結果なし</string>
     <string name="not_now_caps">今はしない</string>
+    <string name="notification_new_gif_message">新しい GIF メッセージ！</string>
+    <string name="notification_new_message">新しいメッセージが届きました。</string>
+    <string name="notification_new_picture_message">新着画像メッセージ！</string>
+    <string name="notification_new_video_message">新着ビデオメッセージ！</string>
     <string name="ok">OK</string>
     <string name="on_demand_error_primary">あなたが人間であることを確認するため、この Captcha にお答えください。</string>
     <string name="on_demand_error_secondary">Captcha をロードできませんでした。</string>
@@ -215,6 +223,11 @@
     <string name="something_went_wrong_try_again">エラーが発生しました。もう一度お試しください</string>
     <string name="sorry_trimming_failed">申し訳ありません。トリミング中に問題が発生しました。</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suggested_chat_delete_contact_prompt_message">%s はクイックチャットから削除されます</string>
+    <string name="suggested_chat_delete_contact_prompt_title">%s を隠しますか？</string>
+    <string name="suggested_chat_delete_group_prompt_message">このグループはクイックチャットから削除されます</string>
+    <string name="suggested_chat_delete_group_prompt_title">グループを隠しますか？</string>
+    <string name="suggested_chat_header">クイックチャット</string>
     <string name="suggested_groups_header">人気の検索</string>
     <string name="summary_developer">開発者用のデバッグ機能にアクセスできます</string>
     <string name="superadmins">所有者</string>
@@ -230,6 +243,7 @@
     <string name="title_community_guidelines">コミュニティ規約</string>
     <string name="title_conversation_info">トーク情報</string>
     <string name="title_copy">コピー</string>
+    <string name="title_delete">削除</string>
     <string name="title_developer_mode">開発者モード</string>
     <string name="title_developers">開発者</string>
     <string name="title_discard">破棄</string>
@@ -240,6 +254,7 @@
     <string name="title_first_name">名</string>
     <string name="title_help">ヘルプ</string>
     <string name="title_help_about_us">ヘルプ &amp; 弊社について</string>
+    <string name="title_hide">非表示</string>
     <string name="title_invalid_group_name">グループ名が無効です</string>
     <string name="title_kik_username">Kik ユーザ名</string>
     <string name="title_last_name">姓</string>
@@ -255,6 +270,7 @@
     <string name="title_privacy">プライバシー</string>
     <string name="title_privacy_policy">プライバシーポリシー</string>
     <string name="title_profile_picture">プロフィール画像</string>
+    <string name="title_receive_dms">ダイレクトメッセージを受け取る</string>
     <string name="title_scroll_to_last_read">未読メッセージなし</string>
     <string name="title_settings">設定</string>
     <string name="title_sign_up">登録</string>

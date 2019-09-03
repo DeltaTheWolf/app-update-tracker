@@ -173,7 +173,8 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="chats_search_empty_text">Find chats by searching for people or groups</string>
     <string name="chatsettings_title">Chat Settings</string>
     <string name="choose_an_email_client">Choose an email client</string>
-    <string name="com.crashlytics.android.build_id">5451e2c7-fffd-44f3-a47b-b441a43fa71a</string>
+    <string name="close_kik">Close Kik</string>
+    <string name="com.crashlytics.android.build_id">8ecc4b31-30ca-4bf2-bdb7-faf246122b89</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -209,6 +210,9 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="delete_chat">Delete Chat</string>
     <string name="delete_chat_dialog_title">Delete Chat?</string>
     <string name="delete_chat_with_x_dialog_body">The chat with %s will be deleted</string>
+    <string name="delete_message_confirmation_dialog_body">"The message will not be deleted from %1$s's chat"</string>
+    <string name="delete_message_confirmation_dialog_body_group">The message will not be deleted from the chats of the other members</string>
+    <string name="delete_message_confirmation_dialog_title">Delete Message?</string>
     <string name="disable_debug">Disable Debug Mode</string>
     <string name="discard_filter_dialog_message">This will discard any changes you have made to your filters</string>
     <string name="done">Done</string>
@@ -230,6 +234,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="end_chat">End Chat</string>
     <string name="enter_send_summary">Send messages when you hit enter</string>
     <string name="error">Error</string>
+    <string name="error_failed_to_restore_kin_wallet">Failed to restore your wallet. Please try again.</string>
     <string name="error_finding_user">There was an error trying to find that user</string>
     <string name="error_no_activity_to_open_external">"Can't open link, not supported"</string>
     <string name="error_unknown">Unknown error</string>
@@ -346,6 +351,10 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="next_captalized">NEXT</string>
     <string name="no_public_groups_result">No result for %1$s</string>
     <string name="not_now_caps">NOT NOW</string>
+    <string name="notification_new_gif_message">New GIF message!</string>
+    <string name="notification_new_message">New message!</string>
+    <string name="notification_new_picture_message">New picture message!</string>
+    <string name="notification_new_video_message">New video message!</string>
     <string name="notifications_title">Notifications</string>
     <string name="null_" />
     <string name="ok">OK</string>
@@ -454,6 +463,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="sign_up_error">Sign Up Error</string>
     <string name="signup_title">Sign Up</string>
     <string name="simple_problem_uploading_profpic_message">There was a problem uploading your picture. Please check your connection and try again</string>
+    <string name="something_went_wrong">Something Went Wrong</string>
     <string name="something_went_wrong_saving_photo">Something went wrong while saving your photo.</string>
     <string name="something_went_wrong_saving_video">Something went wrong while saving your video.</string>
     <string name="something_went_wrong_try_again">Something went wrong. Please give it another whirl</string>
@@ -462,12 +472,18 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="subtitle_incoming_video_chat">Do you want to join this video chat?</string>
     <string name="subtitle_leave_video_chat">Do you want to leave this video chat?</string>
+    <string name="suggested_chat_delete_contact_prompt_message">%s will be removed from Quick Chats</string>
+    <string name="suggested_chat_delete_contact_prompt_title">Hide %s?</string>
+    <string name="suggested_chat_delete_group_prompt_message">This group will be removed from Quick Chats</string>
+    <string name="suggested_chat_delete_group_prompt_title">Hide group?</string>
+    <string name="suggested_chat_header">Quick Chats</string>
     <string name="suggested_groups_header">Popular Searches</string>
     <string name="summary_developer">Allow access to debugging features for developers</string>
     <string name="superadmins">Owners</string>
     <string name="talk_to_find_by_username">Find by Username</string>
     <string name="tap_to_reveal_title">Reveal</string>
     <string name="temp_ban">Temporary Ban</string>
+    <string name="temporary_ban_dialog_body" formatted="false">"You have been banned for 24 hours for reports that you are violating Kik's &lt;a href=http://kikinteractive.zendesk.com/hc/en-us/articles/219006357-Kik-s-List-of-Nopes>Community Guidelines&lt;/a>. Further reports will result in a permanent ban.&lt;br/>&lt;br/>If you believe this is incorrect you can contact us through our &lt;a href=http://help.kik.com/hc/en-us/requests/new?subject=Appealing%20my%20temporary%20ban>Help Center&lt;/a>"</string>
     <string name="the_password_you_entered_is_incorrect">The password you entered is incorrect</string>
     <string name="timestamp_now">Now</string>
     <string name="timestamp_x_min_ago">%d min ago</string>
@@ -490,6 +506,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="title_copied">Copied!</string>
     <string name="title_copy">Copy</string>
     <string name="title_decline">Decline</string>
+    <string name="title_delete">Delete</string>
     <string name="title_developer_mode">Developer Mode</string>
     <string name="title_developers">Developers</string>
     <string name="title_discard">Discard</string>
@@ -501,6 +518,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="title_first_name">First Name</string>
     <string name="title_help">Help</string>
     <string name="title_help_about_us">Help &amp; About Us</string>
+    <string name="title_hide">Hide</string>
     <string name="title_incoming_video_chat">Incoming Video Chat</string>
     <string name="title_invalid_group_name">Invalid Group Name</string>
     <string name="title_join">Join</string>
@@ -525,6 +543,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="title_privacy_policy">Privacy Policy</string>
     <string name="title_profile_picture">Profile Picture</string>
     <string name="title_rate_this_conversation">Rate this conversation</string>
+    <string name="title_receive_dms">Receive Direct Messages</string>
     <string name="title_scroll_to_last_read">Unseen Messages</string>
     <string name="title_settings">Settings</string>
     <string name="title_sign_up">Sign Up</string>
@@ -545,6 +564,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="unblock_x_dialog_body">%s will be able to message you</string>
     <string name="unblock_x_dialog_title">Unblock %s?</string>
     <string name="unknown_name">...</string>
+    <string name="user_turned_off_direct_messages_for_group">This user has turned off direct messages for %1$s</string>
     <string name="username_already_taken">Username already taken</string>
     <string name="username_bad_characters">Usernames can only contain letters, numbers, underscores and periods</string>
     <string name="username_not_registered">The username %1$s is not registered with Kik</string>
@@ -567,6 +587,7 @@ Becoming friends allows you to send and receive photos and videos"</string>
     <string name="x_started_a_video_chat">%1$s started a video chat</string>
     <string name="yesterday">Yesterday</string>
     <string name="you">You</string>
+    <string name="you_can_continue_to_use_kik_in">You can continue to use Kik in</string>
     <string name="you_need_to_accept_terms">"You need to accept Kik's Terms and Privacy Policy to sign up."</string>
     <string name="your_name">Your Name</string>
     <string name="your_name_could_not_be_updated">Your name could not be updated</string>

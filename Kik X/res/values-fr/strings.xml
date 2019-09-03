@@ -80,6 +80,7 @@
     <string name="chat_bubble_colors_pastel">Pastel</string>
     <string name="chat_with_friends">Chatter avec des amis</string>
     <string name="chats_search_empty_text">Trouver des discussions en recherchant par personnes ou par groupes</string>
+    <string name="close_kik">Fermer Kik</string>
     <string name="common_google_play_services_enable_button">Activer</string>
     <string name="common_google_play_services_enable_text">"%1$s ne fonctionnera pas tant que vous n'aurez pas activé les services Google Play."</string>
     <string name="common_google_play_services_enable_title">Activer les services Google Play</string>
@@ -104,6 +105,9 @@
     <string name="create_group_hashtag_placeholder">\#tag</string>
     <string name="create_group_hashtag_unavailable">Indisponible</string>
     <string name="day_abbreviation">d</string>
+    <string name="delete_message_confirmation_dialog_body">Le message ne sera pas effacé du chat de %1$s</string>
+    <string name="delete_message_confirmation_dialog_body_group">Le message ne sera pas effacé des chats des autres membres</string>
+    <string name="delete_message_confirmation_dialog_title">Effacer le message ?</string>
     <string name="disable_debug">Désactiver le mode debug</string>
     <string name="download_website">kik.me/%s</string>
     <string name="email_already_registered">"L'adresse email %1$s est déjà inscrite sur Kik"</string>
@@ -157,6 +161,10 @@
     <string name="never_autoplay_videos">Ne jamais lire les vidéos automatiquement</string>
     <string name="no_public_groups_result">Aucun résultat pour %1$s</string>
     <string name="not_now_caps">PAS MAINTENANT</string>
+    <string name="notification_new_gif_message">Nouveau message GIF !</string>
+    <string name="notification_new_message">Vous avez un nouveau message.</string>
+    <string name="notification_new_picture_message">Nouveau message photo!</string>
+    <string name="notification_new_video_message">Nouveau message vidéo!</string>
     <string name="ok">OK</string>
     <string name="on_demand_error_primary">Veuillez résoudre ce Captcha pour que nous sachions que vous êtes une personne réelle.</string>
     <string name="on_demand_error_secondary">"On dirait que nous n'avons pas pu pas charger le Captcha."</string>
@@ -215,6 +223,11 @@
     <string name="something_went_wrong_try_again">"Quelque chose s'est mal passé. Veuillez retenter"</string>
     <string name="sorry_trimming_failed">"Désolé! On dirait qu'il y a un problème avec le découpage"</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suggested_chat_delete_contact_prompt_message">%s vont être supprimés des Discussions rapides</string>
+    <string name="suggested_chat_delete_contact_prompt_title">Masquer %s ?</string>
+    <string name="suggested_chat_delete_group_prompt_message">Ce groupe va être suppimé des Discussions rapides</string>
+    <string name="suggested_chat_delete_group_prompt_title">Masquer le groupe ?</string>
+    <string name="suggested_chat_header">Discussions rapides</string>
     <string name="suggested_groups_header">Recherches populaires</string>
     <string name="summary_developer">"Autoriser l'accès aux fonctionnalités de débogage pour les développeurs"</string>
     <string name="superadmins">Propriétaires</string>
@@ -230,6 +243,7 @@
     <string name="title_community_guidelines">Standards communautaires</string>
     <string name="title_conversation_info">Info conversation</string>
     <string name="title_copy">Copier</string>
+    <string name="title_delete">Suppr.</string>
     <string name="title_developer_mode">Mode développeur</string>
     <string name="title_developers">Développeurs</string>
     <string name="title_discard">Abandonner</string>
@@ -240,6 +254,7 @@
     <string name="title_first_name">Prénom</string>
     <string name="title_help">Aide</string>
     <string name="title_help_about_us">Aide &amp; A propos de nous</string>
+    <string name="title_hide">Masquer</string>
     <string name="title_invalid_group_name">Nom de groupe invalide</string>
     <string name="title_kik_username">"Nom d'utilisateur Kik"</string>
     <string name="title_last_name">Nom de famille</string>
@@ -255,6 +270,7 @@
     <string name="title_privacy">Vie privée</string>
     <string name="title_privacy_policy">Politique de confidentialité</string>
     <string name="title_profile_picture">Photo de profil</string>
+    <string name="title_receive_dms">Recevoir des messages directs</string>
     <string name="title_scroll_to_last_read">Plus de messages non vus</string>
     <string name="title_settings">Réglages</string>
     <string name="title_sign_up">"S'inscrire"</string>

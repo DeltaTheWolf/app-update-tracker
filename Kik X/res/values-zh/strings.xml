@@ -53,12 +53,16 @@
     <string name="chat_bubble_colors_pastel">粉彩</string>
     <string name="chat_with_friends">和朋友聊天</string>
     <string name="chats_search_empty_text">通过搜索用户或群组查找聊天</string>
+    <string name="close_kik">关闭 Kik</string>
     <string name="create_group">创建 %1$s</string>
     <string name="create_group_hashtag_available">在线</string>
     <string name="create_group_hashtag_invalid">无效</string>
     <string name="create_group_hashtag_placeholder">\#标签</string>
     <string name="create_group_hashtag_unavailable">不可用</string>
     <string name="day_abbreviation">天</string>
+    <string name="delete_message_confirmation_dialog_body">这条信息不会从 %1$s 的聊天中删除</string>
+    <string name="delete_message_confirmation_dialog_body_group">这条信息不会从其他成员的聊天中删除</string>
+    <string name="delete_message_confirmation_dialog_title">删除信息？</string>
     <string name="disable_debug">停用调试模式</string>
     <string name="download_website">kik.me/%s</string>
     <string name="email_already_registered">电子邮件 %1$s 已注册过 Kik</string>
@@ -111,6 +115,10 @@
     <string name="never_autoplay_videos">永不自动播放视频</string>
     <string name="no_public_groups_result">搜索 %1$s 无结果</string>
     <string name="not_now_caps">现在不要</string>
+    <string name="notification_new_gif_message">新的动图消息！</string>
+    <string name="notification_new_message">你有新信息。</string>
+    <string name="notification_new_picture_message">新照片信息！</string>
+    <string name="notification_new_video_message">新视频信息！</string>
     <string name="ok">好的</string>
     <string name="on_demand_error_primary">解开这个 Captcha 我们即会知道你是真人。</string>
     <string name="on_demand_error_secondary">我们好像未能加载 Captcha。</string>
@@ -167,6 +175,11 @@
     <string name="something_went_wrong_saving_video">存储你的视频时发生错误。</string>
     <string name="something_went_wrong_try_again">出问题了。请再试一次</string>
     <string name="sorry_trimming_failed">抱歉！修剪时出现问题</string>
+    <string name="suggested_chat_delete_contact_prompt_message">%s 将被从快速聊天中移除</string>
+    <string name="suggested_chat_delete_contact_prompt_title">隐藏 %s 吗？</string>
+    <string name="suggested_chat_delete_group_prompt_message">此群组将被从快速聊天中移除</string>
+    <string name="suggested_chat_delete_group_prompt_title">隐藏群组吗？</string>
+    <string name="suggested_chat_header">快速聊天</string>
     <string name="suggested_groups_header">热门搜索</string>
     <string name="summary_developer">允许开发者使用调试功能</string>
     <string name="superadmins">所有者</string>
@@ -182,6 +195,7 @@
     <string name="title_community_guidelines">社区标准</string>
     <string name="title_conversation_info">对话信息</string>
     <string name="title_copy">拷贝</string>
+    <string name="title_delete">删除</string>
     <string name="title_developer_mode">开发者模式</string>
     <string name="title_developers">开发者</string>
     <string name="title_discard">放弃</string>
@@ -192,6 +206,7 @@
     <string name="title_first_name">名字</string>
     <string name="title_help">帮助</string>
     <string name="title_help_about_us">帮助 &amp; 关于我们</string>
+    <string name="title_hide">隐藏</string>
     <string name="title_invalid_group_name">群组名称无效</string>
     <string name="title_kik_username">Kik 用户名</string>
     <string name="title_last_name">姓氏</string>
@@ -207,6 +222,7 @@
     <string name="title_privacy">隐私</string>
     <string name="title_privacy_policy">隐私政策</string>
     <string name="title_profile_picture">个人资料照片</string>
+    <string name="title_receive_dms">接收私信</string>
     <string name="title_scroll_to_last_read">更多未看信息</string>
     <string name="title_settings">设置</string>
     <string name="title_sign_up">注册</string>
