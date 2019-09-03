@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_confirm_report_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:drawable="@drawable/img_raised_hands" app:titleText="@string/reporting_dialog_confirmation_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.StandardDialogButton android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.kik.design.StandardDialogButton android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.kik.design.StandardDialogButton android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_ok" />
+</com.kik.design.StandardDialog>

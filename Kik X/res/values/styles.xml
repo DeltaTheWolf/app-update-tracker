@@ -17,10 +17,25 @@
     </style>
     <style name="AppThemeDark" parent="@style/Base.AppThemeDark">
         <item name="android:colorControlHighlight">@color/gray_4</item>
+        <item name="floating_search_background">@drawable/floating_search_background_border</item>
+        <item name="gray_outline">@drawable/gray_outline</item>
+        <item name="interests_pill_background_selector">@xml/interests_pill_background_selector</item>
+        <item name="interests_pill_edit_background_selector">@xml/interests_pill_edit_background_selector</item>
+        <item name="interests_pill_selectable_background_selector">@xml/interests_pill_selectable_background_selector</item>
+        <item name="interests_pill_selectable_text_selector">@xml/interests_pill_selectable_text_selector</item>
+        <item name="interests_pill_tappable_background_selector">@xml/interests_pill_tappable_background_selector</item>
+        <item name="settable_profile_picture_background_selector">@xml/settable_profile_picture_background_selector</item>
     </style>
     <style name="AppThemeLight" parent="@style/Base.AppThemeLight">
         <item name="android:colorControlNormal">@color/gray_4</item>
         <item name="android:colorControlHighlight">@color/gray_2</item>
+        <item name="floating_search_background">@drawable/floating_search_background_border</item>
+        <item name="gray_outline">@drawable/gray_outline</item>
+        <item name="interests_pill_background_selector">@xml/interests_pill_background_selector</item>
+        <item name="interests_pill_edit_background_selector">@xml/interests_pill_edit_background_selector</item>
+        <item name="interests_pill_selectable_background_selector">@xml/interests_pill_selectable_background_selector</item>
+        <item name="interests_pill_selectable_text_selector">@xml/interests_pill_selectable_text_selector</item>
+        <item name="interests_pill_tappable_background_selector">@xml/interests_pill_tappable_background_selector</item>
         <item name="settable_profile_picture_background_selector">@xml/settable_profile_picture_background_selector</item>
     </style>
     <style name="Base.AlertDialog.AppCompat" parent="@android:style/Widget">
@@ -53,13 +68,19 @@
         <item name="colorPrimaryDark">@color/gray_5</item>
         <item name="dark_color">@color/white</item>
         <item name="expression_bar_background_color">@color/gray_6</item>
+        <item name="floating_search_background">@drawable/floating_search_background_border_dark</item>
         <item name="gray_1">@color/gray_7</item>
         <item name="gray_2">@color/gray_6</item>
         <item name="gray_3">@color/gray_5</item>
         <item name="gray_4">@color/gray_4</item>
         <item name="gray_5">@color/gray_4</item>
         <item name="gray_6">@color/gray_1</item>
-        <item name="gray_6_overlay">@color/gray_6_overlay_dark</item>
+        <item name="gray_outline">@drawable/gray_outline_dark</item>
+        <item name="interests_pill_background_selector">@xml/interests_pill_background_selector_dark</item>
+        <item name="interests_pill_edit_background_selector">@xml/interests_pill_edit_background_selector_dark</item>
+        <item name="interests_pill_selectable_background_selector">@xml/interests_pill_selectable_background_selector_dark</item>
+        <item name="interests_pill_selectable_text_selector">@xml/interests_pill_selectable_text_selector_dark</item>
+        <item name="interests_pill_tappable_background_selector">@xml/interests_pill_tappable_background_selector_dark</item>
         <item name="light_color">@color/gray_7</item>
         <item name="light_gray">@color/gray_4</item>
         <item name="settable_profile_picture_background_selector">@xml/settable_profile_picture_background_selector_dark</item>
@@ -79,13 +100,19 @@
         <item name="dark_color">@color/black</item>
         <item name="destructive_red">@color/destructive_red</item>
         <item name="expression_bar_background_color">@color/expression_bar_background_color</item>
+        <item name="floating_search_background">@drawable/floating_search_background_border</item>
         <item name="gray_1">@color/gray_1</item>
         <item name="gray_2">@color/gray_2</item>
         <item name="gray_3">@color/gray_3</item>
         <item name="gray_4">@color/gray_4</item>
         <item name="gray_5">@color/gray_5</item>
         <item name="gray_6">@color/gray_6</item>
-        <item name="gray_6_overlay">@color/gray_6_overlay</item>
+        <item name="gray_outline">@drawable/gray_outline</item>
+        <item name="interests_pill_background_selector">@xml/interests_pill_background_selector</item>
+        <item name="interests_pill_edit_background_selector">@xml/interests_pill_edit_background_selector</item>
+        <item name="interests_pill_selectable_background_selector">@xml/interests_pill_selectable_background_selector</item>
+        <item name="interests_pill_selectable_text_selector">@xml/interests_pill_selectable_text_selector</item>
+        <item name="interests_pill_tappable_background_selector">@xml/interests_pill_tappable_background_selector</item>
         <item name="kik_blue">@color/kik_blue</item>
         <item name="kik_blue_fifty_percent">@color/kik_blue_fifty_percent</item>
         <item name="kik_green">@color/kik_green</item>
@@ -1202,6 +1229,8 @@
         <item name="android:textColorPrimary">?gray_6</item>
         <item name="android:textColorSecondary">?gray_4</item>
         <item name="android:textColorHighlight">@color/kik_blue</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
         <item name="colorAccent">@color/kik_blue</item>
         <item name="colorControlHighlight">?gray_2</item>
     </style>
@@ -1326,7 +1355,7 @@
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@xml/blue_text_button_selector</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@xml/interests_pill_edit_background_selector</item>
+        <item name="android:background">?interests_pill_edit_background_selector</item>
         <item name="android:paddingLeft">8.0dip</item>
         <item name="android:paddingTop">5.0dip</item>
         <item name="android:paddingRight">8.0dip</item>
@@ -1352,7 +1381,7 @@
     <style name="InterestPill">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">?gray_5</item>
-        <item name="android:background">@xml/interests_pill_background_selector</item>
+        <item name="android:background">?interests_pill_background_selector</item>
         <item name="android:paddingLeft">8.0dip</item>
         <item name="android:paddingTop">5.0dip</item>
         <item name="android:paddingRight">8.0dip</item>
@@ -1477,8 +1506,8 @@
     </style>
     <style name="SelectableInterestPill">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@xml/interests_pill_selectable_text_selector</item>
-        <item name="android:background">@xml/interests_pill_selectable_background_selector</item>
+        <item name="android:textColor">?interests_pill_selectable_text_selector</item>
+        <item name="android:background">?interests_pill_selectable_background_selector</item>
         <item name="android:paddingLeft">12.0dip</item>
         <item name="android:paddingTop">6.0dip</item>
         <item name="android:paddingRight">12.0dip</item>
@@ -1488,7 +1517,7 @@
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">?gray_5</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@xml/interests_pill_tappable_background_selector</item>
+        <item name="android:background">?interests_pill_tappable_background_selector</item>
         <item name="android:paddingLeft">8.0dip</item>
         <item name="android:paddingTop">5.0dip</item>
         <item name="android:paddingRight">8.0dip</item>
@@ -1507,7 +1536,7 @@
     </style>
     <style name="StandardEditText" parent="@style/Widget.AppCompat.EditText">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@color/gray_6</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textColorHint">@color/gray_3</item>
         <item name="android:background">@null</item>
         <item name="android:singleLine">true</item>
@@ -1567,22 +1596,9 @@
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="@style/Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem" />
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification" />
     <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info" />
-    <style name="TextAppearance.Compat.Notification.Info.Media" parent="@style/TextAppearance.Compat.Notification.Info">
-        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
-    </style>
     <style name="TextAppearance.Compat.Notification.Line2" parent="@style/TextAppearance.Compat.Notification.Info" />
-    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="@style/TextAppearance.Compat.Notification.Info.Media" />
-    <style name="TextAppearance.Compat.Notification.Media" parent="@style/TextAppearance.Compat.Notification">
-        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
-    </style>
     <style name="TextAppearance.Compat.Notification.Time" parent="@android:style/TextAppearance.Material.Notification.Time" />
-    <style name="TextAppearance.Compat.Notification.Time.Media" parent="@style/TextAppearance.Compat.Notification.Time">
-        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
-    </style>
     <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.Material.Notification.Title" />
-    <style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title">
-        <item name="android:textColor">@color/primary_text_default_material_dark</item>
-    </style>
     <style name="TextAppearance.Design.CollapsingToolbar.Expanded" parent="@style/TextAppearance.AppCompat.Display1">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>

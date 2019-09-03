@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_chatsettings_autodownloadvideos_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" app:titleText="@string/settings_auto_download_videos"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:tag="binding_1" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wifi_only" style="@style/DialogRadioButton" />
+        <RadioButton android:tag="binding_2" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wifi_and_cellular" style="@style/DialogRadioButton" />
+        <RadioButton android:tag="binding_3" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/never" style="@style/DialogRadioButton" />
+    </RadioGroup>
+</com.kik.design.StandardDialog>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.StandardDialog android:layout_gravity="center" android:tag="layout/dialog_report_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kik.design.ThreeByTwoRadioActionCell android:tag="binding_1" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DialogRadioButton" />
+        <com.kik.design.ThreeByTwoRadioActionCell android:tag="binding_2" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:title="@string/reporting_dialog_user_unwanted" style="@style/DialogRadioButton" />
+        <com.kik.design.ThreeByTwoRadioActionCell android:tag="binding_3" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:title="@string/reporting_dialog_group_offensive" style="@style/DialogRadioButton" />
+        <com.kik.design.ThreeByTwoRadioActionCell android:tag="binding_4" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:title="@string/reporting_dialog_group_spam_user" style="@style/DialogRadioButton" />
+        <com.kik.design.ThreeByTwoRadioActionCell android:tag="binding_5" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:title="@string/reporting_dialog_user_spam" style="@style/DialogRadioButton" />
+        <com.kik.design.ThreeByTwoRadioActionCell android:tag="binding_6" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DialogRadioButton" />
+        <com.kik.design.ThreeByTwoRadioActionCell android:tag="binding_7" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DialogRadioButton" />
+        <View android:background="?gray_3" android:layout_width="fill_parent" android:layout_height="@dimen/half_dp" android:layout_marginLeft="30.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="25.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="25.0dip" />
+        <com.kik.design.ThreeByTwoCheckableActionCell android:tag="binding_8" android:paddingLeft="20.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:paddingStart="20.0dip" android:paddingEnd="0.0dip" style="@style/ThreeByTwoActionCell" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kik.design.BorderlessButton android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_cancel" />
+            <com.kik.design.BorderlessButton android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</com.kik.design.StandardDialog>

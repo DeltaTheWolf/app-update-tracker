@@ -9,7 +9,7 @@
         <com.kik.design.videochat.VideoChatMediaPlaceholder android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.kik.design.videochat.VideoChatMediaPlaceholder android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
-    <View android:id="@id/video_chat_top_gradient" android:background="@drawable/video_chat_top_gradient" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_alignParentTop="true" android:alpha="0.5" />
+    <View android:id="@id/video_chat_top_gradient" android:background="@drawable/video_chat_top_gradient" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_alignParentTop="true" android:alpha="0.5" />
     <View android:id="@id/video_chat_bottom_gradient" android:background="@drawable/video_chat_bottom_gradient" android:layout_width="fill_parent" android:layout_height="202.0dip" android:layout_alignParentBottom="true" android:alpha="0.5" />
     <com.kik.design.videochat.CallingView android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="96.0dip" android:layout_marginRight="36.0dip" app:subtitle="@string/title_calling_dotdotdot" />
     <com.kik.design.videochat.FullscreenVideoChatMediaPlaceholder android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />

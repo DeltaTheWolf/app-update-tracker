@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kik.design.DrawerLayoutManager android:tag="layout/screen_changetheme_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:drawerOpenDelay="500" app:maxDrawerHeight="260.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.messaging.ChatBackground android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:tag="binding_2" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kik.design.messaging.ChatTitlebar android:id="@id/toolbar" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="Theme Preview" />
+        <com.kik.design.messaging.IncomingMessageLayout android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:approximateTimestamp="10 minutes ago" app:groupedBelow="false" app:preciseTimestamp="10 minutes ago" app:profilePhoto="@drawable/ic_photo_default" app:timestampVisibleByDefault="true">
+            <com.kik.design.messaging.TextContentView android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:isIncoming="true" app:text="Tap on a theme to preview" />
+        </com.kik.design.messaging.IncomingMessageLayout>
+        <com.kik.design.messaging.OutgoingMessageLayout android:layout_gravity="right" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:groupedBelow="false" app:receipt="read">
+            <com.kik.design.messaging.TextContentView android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" app:isIncoming="false" app:text="Tap &quot;Set Theme&quot; to style the chat" />
+        </com.kik.design.messaging.OutgoingMessageLayout>
+    </LinearLayout>
+    <com.kik.design.HeaderViewGroup android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kik.design.ThreeByTwoLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <com.kik.design.SimpleTextView android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" app:bold="true" app:layout_column="0" app:layout_row="0" app:textColor="?gray_6" app:textSize="18.0sp" />
+            <com.kik.design.SimpleTextView android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" app:layout_column="0" app:layout_row="1" app:textColor="?gray_4" app:textSize="15.0sp" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" app:layout_column="2" app:layout_row="0">
+                <com.kik.design.FeatureButton android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_theme" />
+                <com.kik.design.FeatureButton android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_theme" />
+            </FrameLayout>
+        </com.kik.design.ThreeByTwoLayout>
+    </com.kik.design.HeaderViewGroup>
+    <com.kik.design.DrawerViewGroup android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.kik.design.SimpleTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" app:gravity="center" app:text="@string/themes_drawer_header_text" app:textColor="?gray_4" app:textSize="12.0sp" />
+                <com.kik.kikx.widget.AutoSizingGridRecyclerView android:layout_gravity="center_horizontal" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="fill_parent" app:maxColumnWidth="120.0dip" app:minColumnWidth="120.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </com.kik.design.DrawerViewGroup>
+</com.kik.design.DrawerLayoutManager>

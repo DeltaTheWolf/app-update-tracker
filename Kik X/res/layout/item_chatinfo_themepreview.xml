@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_chatinfo_themepreview_0" android:layout_width="120.0dip" android:layout_height="160.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kik.design.ThemePreviewButton android:tag="binding_1" android:layout_width="112.0dip" android:layout_height="112.0dip" android:layout_margin="6.0dip" />
+    <com.kik.design.SimpleTextView android:layout_gravity="bottom" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" app:bold="true" app:text="@string/theme_purchased" app:textColor="?kik_blue" app:textSize="15.0sp" />
+    <com.kik.design.SimpleTextView android:layout_gravity="bottom" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" app:bold="true" app:text="@string/theme_free" app:textColor="?kik_blue" app:textSize="15.0sp" />
+    <com.kik.design.KinTextView android:layout_gravity="bottom" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" app:bold="true" app:kinAmountColor="@color/kik_blue" app:kinDrawable="@drawable/ic_kikblue_kin" app:kinDrawablePadding="@dimen/kin_text_view_kin_icon_padding" app:textColor="?kik_blue" app:textSize="15.0sp" />
+</FrameLayout>

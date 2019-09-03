@@ -4,5 +4,6 @@
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <Button android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_delete" style="@style/DialogAction" />
         <Button android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_copy" style="@style/DialogAction" />
+        <Button android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_report" style="@style/DialogAction" />
     </LinearLayout>
 </com.kik.design.StandardDialog>

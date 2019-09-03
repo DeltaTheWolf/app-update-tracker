@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/search_bar_padding" android:insetRight="@dimen/search_bar_padding" android:insetTop="@dimen/search_bar_padding" android:insetBottom="@dimen/search_bar_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="2.0dip" />
+        <solid android:color="@color/gray_7" />
+        <stroke android:width="@dimen/search_bar_border_width" android:color="@color/gray_5" />
+        <padding android:top="-12.0dip" android:bottom="-12.0dip" />
+    </shape>
+</inset>

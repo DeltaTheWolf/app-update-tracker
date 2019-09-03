@@ -345,6 +345,7 @@
     <attr name="drawable" format="reference" />
     <attr name="drawableSize" format="dimension" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="drawerOpenDelay" format="integer" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
     <attr name="duration" format="integer" />
@@ -426,6 +427,7 @@
         <enum name="wrap_reverse" value="2" />
     </attr>
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="floating_search_background" format="reference" />
     <attr name="font" format="reference" />
     <attr name="fontFamily" format="string" />
     <attr name="fontProviderAuthority" format="string" />
@@ -472,7 +474,7 @@
     <attr name="gray_4" format="color" />
     <attr name="gray_5" format="color" />
     <attr name="gray_6" format="color" />
-    <attr name="gray_6_overlay" format="color" />
+    <attr name="gray_outline" format="reference" />
     <attr name="groupedAbove" format="boolean" />
     <attr name="groupedBelow" format="boolean" />
     <attr name="headerLayout" format="reference" />
@@ -515,7 +517,6 @@
     <attr name="iconifiedByDefault" format="boolean" />
     <attr name="ifFalse" format="reference" />
     <attr name="ifTrue" format="reference" />
-    <attr name="ignoreLayoutWidthAndHeight" format="boolean" />
     <attr name="imageAspectRatio" format="float" />
     <attr name="imageAspectRatioAdjust">
         <enum name="adjust_height" value="2" />
@@ -528,6 +529,11 @@
     <attr name="indeterminateProgressStyle" format="reference" />
     <attr name="initialActivityCount" format="string" />
     <attr name="insetForeground" format="reference|color" />
+    <attr name="interests_pill_background_selector" format="reference" />
+    <attr name="interests_pill_edit_background_selector" format="reference" />
+    <attr name="interests_pill_selectable_background_selector" format="reference" />
+    <attr name="interests_pill_selectable_text_selector" format="reference" />
+    <attr name="interests_pill_tappable_background_selector" format="reference" />
     <attr name="intrinsicAspectRatio" format="reference" />
     <attr name="invalid" format="boolean" />
     <attr name="invisibility" format="boolean" />
@@ -822,6 +828,8 @@
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="maxButtonHeight" format="dimension" />
     <attr name="maxColumnWidth" format="dimension" />
+    <attr name="maxDrawerHeight" format="dimension" />
+    <attr name="maxDrawerRatio" format="float" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="maxLine" format="integer" />
     <attr name="maxLines" format="integer" />
@@ -867,6 +875,8 @@
     <attr name="met_underlineColor" format="color" />
     <attr name="met_validateOnFocusLost" format="boolean" />
     <attr name="minColumnWidth" format="dimension" />
+    <attr name="minDrawerHeight" format="dimension" />
+    <attr name="minDrawerRatio" format="float" />
     <attr name="minTrimmedDuration" format="integer" />
     <attr name="minuteAbbreviation" format="string" />
     <attr name="multiChoiceItemLayout" format="reference" />
